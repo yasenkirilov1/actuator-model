@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "actuator": "leadscrew",
+      "scenario": "flat",
+      "peak_error_N": 0.03733471461877258,
+      "rms_error_N": 0.011033597885082744,
+      "peak_gap_accel": 0.025469042271274177,
+      "peak_axial_force": 12.648129223974207,
+      "peak_current": 0.2912505632413057,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": true
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "peak_error_N": 0.3246255795874404,
+      "rms_error_N": 0.06519321261618917,
+      "peak_gap_accel": 0.16170238305268606,
+      "peak_axial_force": 12.919939246514708,
+      "peak_current": 0.3624830053171748,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": true
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "bump",
+      "peak_error_N": 0.24583644246452607,
+      "rms_error_N": 0.023647279310349854,
+      "peak_gap_accel": 0.41717218798753564,
+      "peak_axial_force": 12.780726381689396,
+      "peak_current": 0.6426889709059931,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": true
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "bump",
+      "peak_error_N": 0.3615279957177968,
+      "rms_error_N": 0.07326504783198176,
+      "peak_gap_accel": 0.08960153886657571,
+      "peak_axial_force": 12.963449971323987,
+      "peak_current": 0.0,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": true
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "peak_error_N": 1.2889785253662431,
+      "rms_error_N": 0.1210203203860983,
+      "peak_gap_accel": 2.5879712478473,
+      "peak_axial_force": 14.796098049325037,
+      "peak_current": 1.5941025474887105,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "ramp",
+      "peak_error_N": 0.09664539614360734,
+      "rms_error_N": 0.04306061568194326,
+      "peak_gap_accel": 0.025469042271274177,
+      "peak_axial_force": 12.737537675545955,
+      "peak_current": 0.2912505632413057,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": true
+    }
+  ],
+  "extra_checks": {
+    "half_step_bump": {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "peak_error_N": 0.3246257780631865,
+      "rms_error_N": 0.06519370333777819,
+      "peak_gap_accel": 0.16185579369568137,
+      "peak_axial_force": 12.919947184278735,
+      "peak_current": 0.36256662647374627,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0001,
+      "pass": true
+    },
+    "rigid_impact_impulse_Ns": 0.018334361285816076,
+    "severe_bump": {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "peak_error_N": 53.07841668186927,
+      "rms_error_N": 4.099859257586011,
+      "peak_gap_accel": 7.300681796862185,
+      "peak_axial_force": 75.53219383476434,
+      "peak_current": 2.999999999999994,
+      "lost_contact": true,
+      "impacts": 1,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": false
+    },
+    "limited_ideal": {
+      "actuator": "ideal_position",
+      "scenario": "bump",
+      "peak_error_N": 4.199679774405958,
+      "rms_error_N": 0.7292217546235364,
+      "peak_gap_accel": 1.2533204880572266,
+      "peak_axial_force": 13.0,
+      "peak_current": 0.0,
+      "lost_contact": false,
+      "impacts": 0,
+      "stroke_stop": false,
+      "time_step": 0.0002,
+      "pass": false
+    }
+  }
+}

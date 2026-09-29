@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACF · 2D replay</title>
+<style>
+:root{color-scheme:light;--bg:#eef2f5;--paper:#fff;--ink:#182d40;--muted:#586c7b;--line:#d9e2e8;--teal:#087e82;--tealsoft:#e4f4ef;--slate:#425d72;--amber:#ad5915;--ambersoft:#fff1df;--purple:#6b5d9b;--red:#b73536;--redsoft:#fbecec}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums}button,input,select{font:inherit}button,select{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:9px 12px}button{cursor:pointer}button:hover{border-color:var(--slate)}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #83b9d1;outline-offset:2px}button:disabled{opacity:.45;cursor:default}input[type=checkbox]{accent-color:var(--teal)}[hidden]{display:none!important}
+.app{max-width:1510px;padding:24px;margin:auto}.header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}.brand{display:flex;gap:14px;align-items:center}.logo{width:44px;height:44px;border-radius:10px;background:var(--ink);display:grid;place-items:center;color:#fff;font-size:27px}h1{font-size:27px;margin:0 0 5px}h2{font-size:13px;font-weight:700;letter-spacing:1.2px;margin:0;color:var(--muted)}p{margin:0}.sub{color:var(--muted);font-size:14px}.header-right{text-align:right;display:grid;gap:8px;justify-items:end}.badge{font-size:12px;letter-spacing:.4px;font-weight:700;border-radius:7px;padding:7px 11px;display:inline-block;background:#edf4f9;color:#376889}.badge.good{background:var(--tealsoft);color:var(--teal)}.badge.bad{background:var(--redsoft);color:var(--red)}.badge.warn{background:var(--ambersoft);color:var(--amber)}
+.toolbar,.panel,.plot-card{background:var(--paper);border:1px solid var(--line);border-radius:14px}.toolbar{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:12px 16px;margin-bottom:18px}.toolbar label{font-size:12px;color:var(--muted);font-weight:bold;letter-spacing:1px}.toolbar select{max-width:350px}.param{color:var(--muted);font-size:14px}.param b{color:var(--ink);font-weight:500}.grow{flex:1}.toolbar button{font-size:13px}.workspace{display:grid;grid-template-columns:minmax(0,1.97fr) minmax(330px,1fr);gap:18px}.panel{overflow:hidden}.mechanism-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 20px 4px}.mechanism-head .sub{font-size:12px}.mechanism-svg{width:100%;display:block;aspect-ratio:910/590}.mechanism-foot{padding:4px 20px 16px;font-size:12px;color:var(--muted)}.readouts{display:grid;gap:16px;grid-template-rows:auto auto 1fr}.readout{padding:18px 20px}.card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.big-row{display:flex;align-items:end;justify-content:space-between;gap:12px}.value{font-size:43px;font-weight:700;letter-spacing:-1.3px;white-space:nowrap}.value .unit{font-size:20px;font-weight:400;color:var(--muted);letter-spacing:0;margin-left:6px}.reference{text-align:right;color:var(--muted);font-size:14px;line-height:1.65}.error-row{display:flex;justify-content:space-between;gap:12px;margin:13px 0 8px;font-size:14px}.error-row strong{font-size:17px;color:var(--teal)}.error-row .bad{color:var(--red)}.muted{color:var(--muted)}.meter{position:relative;height:12px;background:var(--bg);border-radius:6px;margin:22px 2px 12px}.meter-band{position:absolute;height:100%;background:var(--tealsoft)}.meter-mid{position:absolute;top:-6px;height:24px;width:1px;background:var(--muted)}.meter-dot{position:absolute;width:13px;height:13px;top:-.5px;border-radius:50%;transform:translateX(-50%);background:var(--teal)}.meter-stop{position:absolute;width:4px;height:23px;top:-5px;background:var(--amber);border-radius:2px;transform:translateX(-50%)}.meter-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.travel-value{font-size:33px;color:var(--purple)}.travel-value .unit{font-size:17px}.remaining{display:flex;justify-content:space-between;margin-top:13px;gap:8px;font-size:12px;color:var(--muted)}.electrical{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:16px 0}.electrical strong{font-size:29px;font-weight:600}.electrical .sub{font-size:12px;margin-top:6px}.robot-rows{border-top:1px solid var(--line);padding-top:9px}.robot-row{display:flex;justify-content:space-between;gap:10px;line-height:2;font-size:14px}.robot-row span{color:var(--muted)}.robot-row strong{font-weight:600}.flags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;min-height:27px}.flags .badge{padding:6px 8px;font-size:11px}
+.plots{display:grid;grid-template-columns:1.8fr 1fr;gap:18px;margin-top:18px}.plot-card{padding:16px 18px 6px}.plot-heading{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.plot-heading .sub,.legend{font-size:12px}.legend{display:flex;align-items:center;gap:12px;color:var(--muted)}.swatch{display:inline-block;width:17px;height:2px;vertical-align:middle;margin-right:5px}.plot{display:block;width:100%;height:182px;touch-action:none;cursor:crosshair}.playback{display:flex;align-items:center;gap:10px;margin:18px 0 0;padding:8px 0;flex-wrap:wrap}.playback button{min-height:38px}.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}.timeline{flex:1;min-width:150px;accent-color:var(--slate)}.clock{font-size:14px;font-weight:600;min-width:145px;text-align:right}.summary{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between;margin-top:10px;color:var(--muted);font-size:12px;line-height:1.7}.summary strong{color:var(--ink)}.alert{padding:14px 18px;margin:0 0 16px;background:var(--redsoft);color:var(--red);border-radius:10px;line-height:1.5}.empty{background:var(--paper);padding:50px;border-radius:14px;text-align:center;color:var(--muted);line-height:1.8}.empty strong{color:var(--ink)}.event-info{color:var(--amber);font-size:12px;min-height:18px}
+@media(max-width:1020px){.workspace{grid-template-columns:minmax(0,1.6fr) minmax(290px,1fr)}.app{padding:14px}.readout{padding:14px}.value{font-size:34px}.electrical strong{font-size:24px}.reference{font-size:12px}.remaining{font-size:11px}.mechanism-head{padding:16px 14px 4px}.mechanism-head .sub{display:none}.robot-row{font-size:12px}.param{font-size:12px}}
+@media(max-width:760px){.workspace{grid-template-columns:1fr}.readouts{grid-template-columns:1fr 1fr;grid-template-rows:auto}.readouts .readout:last-child{grid-column:1/-1}.plots{grid-template-columns:1fr}.header{align-items:start}h1{font-size:21px}.header-right .sub{max-width:160px;font-size:11px}.brand{gap:9px}.logo{width:34px;height:34px;font-size:23px}.toolbar{gap:10px}.toolbar select{max-width:240px}.summary{display:block}.summary span{display:block}.mechanism-svg{min-height:0}.clock{min-width:120px}.playback{gap:7px}.playback select{max-width:76px}}
+@media(max-width:440px){.readouts{grid-template-columns:1fr}.readouts .readout:last-child{grid-column:auto}.header-right .badge{font-size:10px}.header-right .sub{display:none}.toolbar select{max-width:210px}.param{flex:1 1 38%}.timeline{flex-basis:60%;order:2}.clock{order:3}.playback .optional{display:none}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="header"><div class="brand"><div class="logo" aria-hidden="true">↕</div><div><h1>Active contact flange</h1><p class="sub">2D motion viewer · recorded simulation</p></div></div><div class="header-right"><span id="run-status" class="badge">REPLAY</span><span id="source" class="sub">Offline viewer</span></div></header>
+  <div id="alert" class="alert" role="alert" hidden></div>
+  <div class="toolbar"><label for="run-select">RUN</label><select id="run-select" aria-label="Recorded run"></select><span class="param">Height <b id="height">—</b></span><span class="param">Width <b id="width">—</b></span><span class="param">Scan <b id="scan">—</b></span><span class="grow"></span><button id="load">Load results</button><input id="file" type="file" accept=".html,.htm,.json" hidden></div>
+  <div id="empty" class="empty" hidden><strong>Load a recorded ACF run.</strong><p>Use <code>acf_visualize(r)</code> in MATLAB, then open the generated HTML.<br>You can also load a previously exported HTML or JSON file here.</p></div>
+  <div id="viewer">
+    <section class="workspace">
+      <div class="panel"><div class="mechanism-head"><h2 id="mechanism-title">MECHANISM</h2><span class="sub">Axial motion · schematic geometry</span></div><svg id="mechanism" class="mechanism-svg" viewBox="24 218 910 564" role="img" aria-label="Robot, active flange and tool over the workpiece"></svg><p class="mechanism-foot">R, A, B and S show their own positions; stroke is the relative A–B motion.</p></div>
+      <aside class="readouts">
+        <section class="panel readout"><div class="card-head"><h2>CONTACT FORCE</h2><span id="force-state" class="badge good">IN BAND</span></div><div class="big-row"><div class="value"><span id="force-value">—</span><span class="unit">N</span></div><div class="reference">Target <span id="force-target">—</span> N<br>Measured <span id="force-measured">—</span> N</div></div><div class="error-row"><strong id="force-error">Error —</strong><span class="muted" id="force-tolerance">—</span></div><div class="meter"><div id="force-band" class="meter-band"></div><div class="meter-mid" style="left:50%"></div><div id="force-dot" class="meter-dot"></div></div><div class="meter-labels"><span id="force-low">—</span><span>0</span><span id="force-high">—</span></div></section>
+        <section class="panel readout"><div class="card-head"><h2>ACTUATOR TRAVEL</h2><span id="centre-state" class="badge">RECENTERING</span></div><div class="big-row"><div class="value travel-value"><span id="travel-value">—</span><span class="unit">mm</span></div><span id="centre-error" class="muted" style="font-size:12px;text-align:right">—</span></div><div class="meter"><div id="travel-fill" class="meter-band" style="background:#f0edf7"></div><div id="travel-mid" class="meter-mid" style="background:#6b5d9b"></div><div class="meter-stop" style="left:0"></div><div class="meter-stop" style="left:100%"></div><div id="travel-dot" class="meter-dot" style="background:#6b5d9b"></div></div><div class="meter-labels"><span id="travel-low">—</span><span id="travel-centre">—</span><span id="travel-high">—</span></div><div class="remaining"><span id="remaining-low">—</span><span id="remaining-high">—</span></div></section>
+        <section class="panel readout"><div class="card-head"><h2>DRIVE & ROBOT RESPONSE</h2></div><div class="electrical"><div><strong id="drive-left" style="color:var(--amber)">—</strong><p class="sub" id="drive-left-limit">—</p></div><div><strong id="drive-right">—</strong><p class="sub" id="drive-right-limit">—</p></div></div><div class="robot-rows"><div class="robot-row"><span>Robot command delay</span><strong id="robot-delay">—</strong></div><div class="robot-row"><span>Requested robot speed</span><strong id="robot-request">—</strong></div><div class="robot-row"><span>After command delay</span><strong id="robot-delayed">—</strong></div><div class="robot-row"><span>Actual robot speed</span><strong id="robot-actual">—</strong></div></div><div id="flags" class="flags" aria-live="off"></div></section>
+      </aside>
+    </section>
+    <section class="plots"><div class="plot-card"><div class="plot-heading"><h2>CONTACT-FORCE ERROR</h2><span class="sub">actual − target · N</span><label class="legend"><input id="measured-toggle" type="checkbox"> Measured</label></div><svg id="force-plot" class="plot" role="img" aria-label="Contact-force error over time; select a time to seek"></svg></div><div class="plot-card"><div class="plot-heading"><h2>AXIAL DISPLACEMENT</h2><div class="legend"><span><i class="swatch" style="background:var(--teal)"></i>surface</span><span><i class="swatch" style="background:var(--slate)"></i>robot</span></div></div><svg id="motion-plot" class="plot" role="img" aria-label="Surface and robot displacement over time; select a time to seek"></svg></div></section>
+    <nav class="playback" aria-label="Playback"><button id="play" class="primary" aria-label="Play" title="Space: play or pause">▶ Play</button><button id="previous" aria-label="Previous frame" title="Left arrow: previous frame">◀</button><button id="next" aria-label="Next frame" title="Right arrow: next frame">▶</button><select id="speed" aria-label="Playback speed"><option value="0.1">0.1×</option><option value="0.25" selected>0.25×</option><option value="0.5">0.5×</option><option value="1">1×</option><option value="2">2×</option><option value="5">5×</option></select><input id="timeline" class="timeline" type="range" aria-label="Replay time" min="0" max="1" step="any" value="0"><span id="clock" class="clock">0.000 / 0.000 s</span><button id="worst" title="Jump to largest logged absolute force error">Worst error</button><button id="next-event" class="optional" title="Jump to the next limit or contact event">Next event</button></nav>
+    <div id="event-info" class="event-info" role="status"></div>
+    <footer class="summary"><span id="summary">—</span><span id="frame-info">—</span><span>1D model · 2D view · all samples retained</span></footer>
+  </div>
+</main>
+<script id="acf-data" type="application/json">__ACF_DATA_JSON__</script>
+<script>
+(() => {
+'use strict';
+const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const C={ink:'#182d40',muted:'#586c7b',line:'#d9e2e8',teal:'#087e82',tealsoft:'#e4f4ef',slate:'#425d72',steel:'#dbe5ec',amber:'#ad5915',ambersoft:'#fff1df',purple:'#6b5d9b',red:'#b73536'};
+const required=['Fc_N','travel_m','gapSpeed_m_s','gapAcceleration_m_s2','xA_m','xB_m','xS_m','actuatorAxialForce_N','current_A','voltage_V','contact','impactImpulse_Ns','strokeStopHit','effortSaturated','voltageSaturated','robotPosition_m','robotVelocity_m_s','surfaceHeight_m','requestedForce_N','measuredForce_N','robotVelocityRequest_m_s','robotVelocityDelayed_m_s'];
+let runs=[],run=null,ci={},frame=0,playing=false,playTime=0,lastWall=null,rafId=null,charts=[],plotWidth=0;
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const fmt=(v,n=2)=>Number.isFinite(v)?v.toFixed(n):'unlimited';
+const signed=(v,n=3)=>(v>=0?'+':'−')+fmt(Math.abs(v),n);
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const set=(id,v)=>{$(id).textContent=v;};
+const val=(name,k=frame)=>run.data[k][ci[name]];
+const lerp=(a,b,t)=>a+(b-a)*t;
+function sampleIndex(time,r=run){let lo=0,hi=r.time.length-1;while(lo<hi){const m=Math.ceil((lo+hi)/2);if(r.time[m]<=time)lo=m;else hi=m-1;}return lo;}
+function valueAt(time,column){const k=sampleIndex(time);if(k===run.time.length-1||time<=run.time[0])return run.data[k][column];const f=(time-run.time[k])/(run.time[k+1]-run.time[k]);return lerp(run.data[k][column],run.data[k+1][column],f);}
+function badge(id,label,kind=''){set(id,label);$(id).className='badge '+kind;}
+function error(message){$('alert').hidden=false;set('alert',message);}
+function validate(bundle){
+ if(!bundle||bundle.schema!=='acf-replay-v1'||!Array.isArray(bundle.runs)||!bundle.runs.length)throw Error('This is not an ACF replay export (acf-replay-v1).');
+ return bundle.runs.map((r,index)=>{
+  if(!Array.isArray(r.time)||r.time.length<2||!Array.isArray(r.data)||r.data.length!==r.time.length||!Array.isArray(r.names))throw Error('Run '+(index+1)+': time, data and signal names do not match.');
+  if(new Set(r.names).size!==r.names.length||required.some(n=>!r.names.includes(n)))throw Error('Run '+(index+1)+': required ACF signals are missing or duplicated.');
+  for(let k=0;k<r.time.length;k++){
+   if(!Number.isFinite(r.time[k])||(k&&r.time[k]<=r.time[k-1]))throw Error('Run '+(index+1)+': times must be finite and strictly increasing.');
+   if(!Array.isArray(r.data[k])||r.data[k].length!==r.names.length||r.data[k].some(v=>!Number.isFinite(v)))throw Error('Run '+(index+1)+': invalid signal values.');
+  }
+  const p=r.parameters,m=p&&p.mechanics;
+  if(!p||!m||!p.force||!p.robot||!p.surface||!p.actuator||!p.sim)throw Error('Run '+(index+1)+': missing model parameters.');
+  if(![m.travelMin,m.travelMax,m.midTravel,p.force.tolerance,p.robot.delay,p.robot.deadband,p.surface.scanSpeed].every(Number.isFinite)||m.travelMax<=m.travelMin||m.midTravel<m.travelMin||m.midTravel>m.travelMax||p.force.tolerance<0||p.robot.deadband<0)throw Error('Run '+(index+1)+': invalid stroke, force or robot parameters.');
+  if(Number.isFinite(p.sim.evaluateFrom)&&p.sim.evaluateFrom>r.time.at(-1))throw Error('The evaluation interval contains no recorded samples.');
+  if(!['voice_coil','leadscrew','ideal_position'].includes(p.actuator.kind))throw Error('Unsupported actuator type: '+p.actuator.kind);
+  const drive=p[p.actuator.kind==='voice_coil'?'coil':p.actuator.kind==='leadscrew'?'screw':'ideal'];
+  if(!drive||(p.actuator.kind!=='ideal_position'&&(!Number.isFinite(drive.peakCurrent)||drive.peakCurrent<=0||!Number.isFinite(drive.voltage)||drive.voltage<=0)))throw Error('Missing drive limits in run '+(index+1)+'.');
+  r._index=Object.fromEntries(r.names.map((n,i)=>[n,i]));r.label=String(r.label||p.actuator.kind+' / '+p.surface.kind);r.source=String(r.source||'Recorded ACF result');
+  return r;
+ });
+}
+function analyze(r){
+ const ix=r._index,p=r.parameters,tol=p.force.tolerance,drive=p.actuator.kind==='voice_coil'?p.coil:p.screw;
+ const limit=p.actuator.kind==='ideal_position'?Infinity:drive.peakCurrent;
+ let peak=0,worst=0,outside=0,passed=true,contact=true,stops=false,impacts=0,over=false;
+ const events=[];let previous={};const from=Number.isFinite(p.sim.evaluateFrom)?p.sim.evaluateFrom:r.time[0];
+ worst=Math.max(0,r.time.findIndex(t=>t>=from));
+ for(let k=0;k<r.time.length;k++){
+  const a=r.data[k],e=Math.abs(a[ix.Fc_N]-a[ix.requestedForce_N]);
+  const flags={'Force outside tolerance':e>tol,'Contact lost':a[ix.contact]<.5,'Rigid impact':a[ix.impactImpulse_Ns]>1e-10,'Stroke stop reached':a[ix.strokeStopHit]>.5,'Current above limit':Math.abs(a[ix.current_A])>limit*1.0001,'Effort limit active':a[ix.effortSaturated]>.5,'Voltage limit active':a[ix.voltageSaturated]>.5};
+  for(const [label,active] of Object.entries(flags))if(active&&!previous[label])events.push({index:k,label});
+  previous=flags;
+  if(r.time[k]<from)continue;
+  if(e>peak){peak=e;worst=k;}
+  if(e>tol&&k+1<r.time.length)outside+=r.time[k+1]-r.time[k];
+  contact=contact&&!flags['Contact lost'];stops=stops||flags['Stroke stop reached'];impacts+=flags['Rigid impact']?1:0;over=over||flags['Current above limit'];
+ }
+ passed=peak<=tol&&contact&&!stops&&!impacts&&!over;
+ return {peak,worst,outside,passed,events,impacts,from,contact,stops,over};
+}
+function load(bundle){
+ const validated=validate(bundle);pause();runs=validated;
+ $('run-select').replaceChildren(...runs.map((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+'. '+r.label;return o;}));
+ $('alert').hidden=true;$('empty').hidden=true;$('viewer').hidden=false;selectRun(0);
+}
+function selectRun(index){
+ pause();run=runs[index];ci=run._index;run.analysis=analyze(run);frame=0;playTime=run.time[0];$('run-select').value=index;
+ const p=run.parameters,m=p.mechanics;
+ set('height',fmt(p.surface.height*1000,2)+' mm');set('width',fmt(p.surface.width*1000,1)+' mm');set('scan',fmt(p.surface.scanSpeed*1000,1)+' mm/s');
+ set('source',run.source);set('mechanism-title',p.actuator.kind.replaceAll('_',' ').toUpperCase()+' · MECHANISM');
+ badge('run-status',run.analysis.passed?'RUN PASSES':'RUN FAILS',run.analysis.passed?'good':'bad');
+ $('run-status').title='Based on the complete recorded evaluation interval, not only the displayed frame.';
+ $('timeline').min=run.time[0];$('timeline').max=run.time.at(-1);
+ set('robot-delay',fmt(p.robot.delay*1000,0)+' ms');
+ set('travel-low',fmt(m.travelMin*1000,1));set('travel-centre',fmt(m.midTravel*1000,1));set('travel-high',fmt(m.travelMax*1000,1)+' mm');
+ $('travel-mid').style.left=100*(m.midTravel-m.travelMin)/(m.travelMax-m.travelMin)+'%';
+ $('next-event').disabled=!run.analysis.events.length;
+ set('event-info','');
+ set('summary','Peak force error '+fmt(run.analysis.peak,3)+' N · Outside tolerance '+fmt(run.analysis.outside,3)+' s'+(run.analysis.impacts?' · '+run.analysis.impacts+' rigid impact(s); peak force is not finite':''));
+ $('summary').title='Evaluation starts at '+fmt(run.analysis.from,3)+' s. Heating is not evaluated.';
+ makeCharts();render();
+}
+function shape(tag,attrs,children=''){return '<'+tag+' '+Object.entries(attrs).map(([k,v])=>k+'="'+esc(v)+'"').join(' ')+'>'+children+'</'+tag+'>';}
+const rect=(x,y,w,h,fill,rx=0,stroke='none')=>shape('rect',{x,y,width:w,height:h,rx,fill,stroke,'stroke-width':1.3});
+const line=(x1,y1,x2,y2,color=C.line,width=1,dash='',arrow='')=>shape('line',{x1,y1,x2,y2,stroke:color,'stroke-width':width,'stroke-dasharray':dash,'marker-end':arrow?'url(#'+arrow+')':'none'});
+const txt=(x,y,s,size=15,color=C.ink,weight=400,anchor='start')=>shape('text',{x,y,'font-size':size,fill:color,'font-weight':weight,'text-anchor':anchor},esc(s));
+const path=(d,color=C.slate,width=1.5,fill='none')=>shape('path',{d,stroke:color,'stroke-width':width,fill,'stroke-linecap':'round','stroke-linejoin':'round'});
+const circle=(cx,cy,r,fill,stroke='none')=>shape('circle',{cx,cy,r,fill,stroke,'stroke-width':1.5});
+function spring(x,y1,y2){const h=y2-y1;let points=[[x,y1],[x,y1+h*.12]];for(let j=0;j<8;j++)points.push([x+(j%2?11:-11),y1+h*(.2+.6*j/7)]);points.push([x,y2-h*.12],[x,y2]);return path('M '+points.map(q=>q.join(',')).join(' L '),C.slate,2);}
+function damper(x,y1,y2){const m=(y1+y2)/2;return line(x,y1,x,m+7,C.slate,2)+path(`M ${x-12} ${m-13} V ${m+18} H ${x+12} V ${m-13}`,C.slate,2)+line(x-10,m+7,x+10,m+7,C.slate,2)+line(x,m+18,x,y2,C.slate,2);}
+function tag(y,letter,title,subtitle,color=C.slate,end=371){return circle(64,y,15,color)+txt(64,y+5,letter,15,'#fff',600,'middle')+txt(90,y-1,title,17,C.ink,600)+txt(90,y+20,subtitle,13,C.muted)+line(275,y,end,y);}
+function drawMechanism(){
+ const p=run.parameters,m=p.mechanics,span=m.travelMax-m.travelMin;
+ const scale=Math.min(10000,250/span),aHome=350,bHome=aHome+45+(m.midTravel-m.travelMin)*scale;
+ const R=250-val('robotPosition_m')*scale,A=aHome-val('xA_m')*scale,B=bHome-val('xB_m')*scale;
+ const sHome=bHome+141,S=sHome-val('xS_m')*scale,groundHome=sHome+54,ground=groundHome-val('surfaceHeight_m')*scale,tip=S+54;
+ const low=A+45,high=low+span*scale,mid=low+(m.midTravel-m.travelMin)*scale,travel=val('travel_m');
+ const fa=val('actuatorAxialForce_N'),fc=val('Fc_N'),touch=val('contact')>.5,kind=p.actuator.kind;
+ let defs='<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="#dfe7ec"/></pattern><pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="9" stroke="#bac9d3"/></pattern>';
+ for(const [id,color] of [['teal-arrow',C.teal],['amber-arrow',C.amber],['slate-arrow',C.slate]])defs+=`<marker id="${id}" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4.5 L0,9 Z" fill="${color}"/></marker>`;
+ defs+='</defs>';
+ const top=Math.min(218,R-38,A-30,B-30,S-30),bottom=Math.max(782,ground+65,high+30,tip+30);
+ $('mechanism').setAttribute('viewBox',`24 ${top} 910 ${bottom-top}`);
+ let out=defs+rect(42,top+6,874,bottom-top-14,'url(#dots)',8)+line(501,top+5,501,bottom-12,C.line,1,'4 7');
+ out+=shape('g',{'data-body':'R','data-position':val('robotPosition_m')},rect(474,R-29,54,29,C.steel,5,C.slate)+rect(371,R-12,260,24,C.slate,5));
+ out+=tag(R,'R','Robot flange','delayed recentering motion')+spring(466,R+12,A-12)+damper(536,R+12,A-12)+txt(578,(R+A)/2,'k₂, c₂',14,C.muted);
+ const rv=val('robotVelocity_m_s');if(Math.abs(rv)>1e-7)out+=line(674,R+(rv>0?14:-23),674,R+(rv>0?-23:14),C.slate,2,'','slate-arrow')+txt(691,R-8,rv>0?'moving up':'moving down',13,C.muted);
+ let upper=rect(371,A-12,260,24,C.steel,5,C.slate)+rect(391,A+12,7,high-A+24,C.steel,3)+rect(604,A+12,7,high-A+24,C.steel,3);
+ if(kind==='voice_coil')upper+=rect(425,A+12,21,124,C.slate,4)+rect(556,A+12,21,124,C.slate,4)+rect(445,A+12,112,16,C.slate,2);
+ for(const yy of [low,high])upper+=rect(381,yy-4,26,8,C.amber,2)+rect(595,yy-4,26,8,C.amber,2);
+ out+=shape('g',{'data-body':'A','data-position':val('xA_m')},upper)+tag(A,'A','Upper flange','actuator mounting side');
+ let lower=rect(371,B-12,260,24,C.steel,5,C.slate),actTitle='',actSub='';
+ if(kind==='voice_coil'){
+  lower+=rect(446,B-80,110,39,C.ambersoft,4,C.amber);for(let j=0;j<7;j++)lower+=line(448,B-75+j*29/6,554,B-75+j*29/6,C.amber,1.4);
+  lower+=rect(465,B-41,8,29,C.steel,1,C.slate)+rect(529,B-41,8,29,C.steel,1,C.slate);actTitle='Voice coil';actSub='current creates axial force';
+ }else if(kind==='leadscrew'){
+  out+=rect(483,A+14,36,high-A-24,C.steel,3,C.slate);
+  const lead=p.screw.lead||.005,phase=((travel-m.midTravel)/lead*10)%10;
+  for(let yy=A+24+phase;yy<high-12;yy+=10)out+=line(485,yy,517,yy+7,C.slate,1.3);
+  lower+=rect(459,B-38,84,26,C.ambersoft,4,C.amber);actTitle='Leadscrew';actSub='rotation changes A–B spacing';
+ }else{
+  out+=line(501,A+20,501,B-20,C.purple,3,'6 4');actTitle='Position source';actSub='limited speed, force and acceleration';
+ }
+ out+=shape('g',{'data-body':'B','data-position':val('xB_m')},lower)+tag(B,'B','Lower flange','moving actuator side',C.amber);
+ out+=txt(90,B-65,actTitle,17,C.amber,600)+txt(90,B-44,actSub,kind==='ideal_position'?11:13,C.muted)+line(287,B-61,422,B-61);
+ if(Math.abs(fa)>1e-9){const s=Math.sign(fa);out+=line(669,A+32+s*27,669,A+32-s*27,C.amber,2.4,'','amber-arrow')+line(669,B-32-s*27,669,B-32+s*27,C.amber,2.4,'','amber-arrow');}
+ out+=txt(690,(A+B)/2-2,'Fa '+fmt(fa,2)+' N',16,C.amber,600)+txt(690,(A+B)/2+18,'opposite on A / B',12,C.muted);
+ out+=spring(466,B+12,S-12)+damper(536,B+12,S-12)+txt(578,(B+S)/2,'k₁, c₁',14,C.muted)+txt(90,(B+S)/2,'Lower compliance',16,C.muted)+line(287,(B+S)/2-4,440,(B+S)/2-4);
+ out+=shape('g',{'data-body':'S','data-position':val('xS_m')},rect(432,S-12,138,24,touch?C.tealsoft:'#fbecec',5,touch?C.teal:C.red)+rect(474,S+12,54,22,C.steel,3,C.slate)+path(`M 474 ${S+34} H 528 L 501 ${tip} Z`,C.slate,1.3,C.steel));
+ out+=tag(S,'S','Tool head',touch?'contact with workpiece':'free motion · no contact',touch?C.teal:C.red,432);
+ out+=line(807,low,807,high,C.line,3)+txt(822,low-17,'STROKE',12,C.muted,600)+txt(822,low+5,fmt(m.travelMin*1000,1)+' mm',13,C.muted)+txt(822,high+5,fmt(m.travelMax*1000,1)+' mm',13,C.muted);
+ for(let j=0;j<=5;j++)out+=line(801,low+(high-low)*j/5,813,low+(high-low)*j/5,C.muted,1);
+ out+=line(638,mid,813,mid,C.purple,1,'4 4')+txt(822,mid+5,fmt(m.midTravel*1000,2),13,C.purple)+txt(822,mid+22,'centre',12,C.muted)+path(`M 784 ${B-6} L 796 ${B} L 784 ${B+6} Z`,C.purple,1,C.purple)+circle(807,B,4,C.purple);
+ const travelLabelY=Math.abs(B-mid)<27?B-19:B-9;
+ out+=txt(822,travelLabelY,fmt(travel*1000,2)+' mm',16,C.purple,600);
+ const profileScale=390/Math.max(.001,p.surface.width||.06),speed=p.surface.scanSpeed;
+ let pts=[];for(let j=0;j<=145;j++){const xx=44+870*j/145,tt=speed>0?run.time[frame]+(xx-501)/(profileScale*speed):run.time[frame],yy=groundHome-valueAt(tt,ci.surfaceHeight_m)*scale;pts.push([xx,yy]);}
+ const poly='M '+pts.map(q=>q.join(',')).join(' L '),base=Math.max(...pts.map(q=>q[1]),tip)+44;
+ out+=path(poly+` L 914 ${base} L 44 ${base} Z`,'none',0,'#e0e8ed')+path(poly+` L 914 ${base} L 44 ${base} Z`,'none',0,'url(#hatch)')+path(poly,C.slate,2);
+ out+=txt(68,base-13,'WORKPIECE',12,C.slate,600)+txt(718,base-13,touch?'Rigid contact':'Contact open',15,touch?C.slate:C.red,600);
+ if(touch){out+=circle(501,tip,7,C.tealsoft,C.teal)+circle(501,tip,2.5,C.teal);if(fc>1e-9)out+=line(557,tip,557,tip-54,C.teal,2.7,'','teal-arrow');out+=txt(579,tip-24,'Fc '+fmt(fc,2)+' N',17,C.teal,600);}
+ else out+=line(557,tip,557,ground,C.red,2,'4 4')+txt(579,(tip+ground)/2,'Fc 0 N',16,C.red,600);
+ out+=line(867,base-55,867,base-89,C.slate,1.3,'','slate-arrow')+txt(880,base-79,'+z',13,C.muted);
+ $('mechanism').innerHTML=out;
+}
+function render(){
+ if(!run)return;
+ const p=run.parameters,m=p.mechanics,fc=val('Fc_N'),target=val('requestedForce_N'),e=fc-target,tol=p.force.tolerance,travel=val('travel_m'),span=m.travelMax-m.travelMin,touch=val('contact')>.5,impact=val('impactImpulse_Ns')>1e-10;
+ set('force-value',fmt(fc,2));set('force-target',fmt(target,2));set('force-measured',fmt(val('measuredForce_N'),2));set('force-error','Error '+signed(e,3)+' N');set('force-tolerance','±'+fmt(tol,2)+' N limit');
+ $('force-error').className=Math.abs(e)>tol?'bad':'';
+ badge('force-state',impact?'IMPACT':!touch?'NO CONTACT':Math.abs(e)<=tol?'IN BAND':'OUTSIDE BAND',(impact||!touch||Math.abs(e)>tol)?'bad':'good');
+ const forceRange=Math.max(tol*1.2,Math.abs(e)*1.1,1e-6);
+ $('force-band').style.left=(.5-tol/forceRange/2)*100+'%';$('force-band').style.width=tol/forceRange*100+'%';$('force-dot').style.left=(.5+e/forceRange/2)*100+'%';$('force-dot').style.background=Math.abs(e)>tol?C.red:C.teal;
+ set('force-low','−'+fmt(forceRange,2));set('force-high','+'+fmt(forceRange,2)+' N');
+ set('travel-value',fmt(travel*1000,2));set('centre-error',signed((travel-m.midTravel)*1000,2)+' mm from centre');
+ const frac=clamp((travel-m.travelMin)/span,0,1)*100;$('travel-dot').style.left=frac+'%';$('travel-fill').style.width=frac+'%';
+ set('remaining-low','To min '+fmt((travel-m.travelMin)*1000,2)+' mm');set('remaining-high','To max '+fmt((m.travelMax-travel)*1000,2)+' mm');
+ const centered=Math.abs(travel-m.midTravel)<=p.robot.deadband,stop=val('strokeStopHit')>.5;
+ badge('centre-state',stop?'STOP REACHED':centered?'CENTRED':'RECENTERING',stop?'bad':centered?'good':'');
+ const kind=p.actuator.kind,drive=kind==='voice_coil'?p.coil:p.screw;
+ if(kind==='ideal_position'){
+  set('drive-left',fmt(val('actuatorAxialForce_N'),2)+' N');set('drive-right',fmt(val('gapAcceleration_m_s2'),3)+' m/s²');set('drive-left-limit','Force budget '+fmt(p.ideal.maxAxialForce,1)+' N');set('drive-right-limit','Requested accel limit '+fmt(p.ideal.maxAcceleration,1)+' m/s²');
+ }else{
+  set('drive-left',fmt(val('current_A'),3)+' A');set('drive-right',fmt(val('voltage_V'),2)+' V');set('drive-left-limit','Current limit ±'+fmt(drive.peakCurrent,2)+' A');set('drive-right-limit','Supply limit ±'+fmt(drive.voltage,1)+' V');
+ }
+ set('robot-request',signed(val('robotVelocityRequest_m_s')*1000,3)+' mm/s');set('robot-delayed',signed(val('robotVelocityDelayed_m_s')*1000,3)+' mm/s');set('robot-actual',signed(val('robotVelocity_m_s')*1000,3)+' mm/s');
+ const warnings=[];
+ if(impact)warnings.push(['Rigid impact · '+fmt(val('impactImpulse_Ns'),5)+' N·s','bad']);
+ if(!touch)warnings.push(['Contact lost','bad']);if(stop)warnings.push(['Stroke stop reached','bad']);
+ if(val('effortSaturated')>.5)warnings.push(['Effort limit active','warn']);if(val('voltageSaturated')>.5)warnings.push(['Voltage limit active','warn']);
+ if(kind!=='ideal_position'&&Math.abs(val('current_A'))>drive.peakCurrent*1.0001)warnings.push(['Current above limit','bad']);
+ if(!warnings.length)warnings.push(['No active limit','good']);
+ $('flags').replaceChildren(...warnings.map(([label,cls])=>{const e=document.createElement('span');e.className='badge '+cls;e.textContent=label;return e;}));
+ const tt=run.time[frame];$('timeline').value=tt;set('clock',fmt(tt,3)+' / '+fmt(run.time.at(-1),3)+' s');set('frame-info','Sample '+(frame+1).toLocaleString()+' / '+run.time.length.toLocaleString());
+ drawMechanism();updateCursors();
+ $('previous').disabled=frame===0;$('next').disabled=frame===run.time.length-1;
+}
+function extents(arr){let lo=Infinity,hi=-Infinity;for(const x of arr){if(x<lo)lo=x;if(x>hi)hi=x;}return [lo,hi];}
+function envelopeIndices(series,count){
+ const n=run.time.length,step=Math.max(1,Math.ceil(n/count)),keep=new Set([0,n-1]);
+ for(let a=0;a<n;a+=step){const b=Math.min(n,a+step);keep.add(a);keep.add(b-1);for(const values of series){let lo=a,hi=a;for(let k=a+1;k<b;k++){if(values[k]<values[lo])lo=k;if(values[k]>values[hi])hi=k;}keep.add(lo);keep.add(hi);}}
+ return [...keep].sort((a,b)=>a-b);
+}
+function chart(id,series,domain,unit,band=0){
+ const el=$(id),width=Math.max(310,el.clientWidth),height=182,box={x:50,y:13,w:width-63,h:133};el.setAttribute('viewBox',`0 0 ${width} ${height}`);
+ const t0=run.time[0],t1=run.time.at(-1),fx=t=>box.x+(t-t0)/(t1-t0)*box.w,fy=v=>box.y+box.h-(v-domain[0])/(domain[1]-domain[0])*box.h;
+ let out='';if(band>0)out+=rect(box.x,fy(band),box.w,fy(-band)-fy(band),C.tealsoft);
+ for(let i=0;i<5;i++){const v=lerp(domain[0],domain[1],i/4),yy=fy(v);out+=line(box.x,yy,box.x+box.w,yy,'#eaf0f4')+txt(box.x-9,yy+4,fmt(v,Math.abs(v)<10?2:1),11,C.muted,400,'end');}
+ for(let i=0;i<5;i++){const tt=lerp(t0,t1,i/4),xx=fx(tt);out+=line(xx,box.y,xx,box.y+box.h,'#eaf0f4')+txt(xx,box.y+box.h+21,fmt(tt,tt%1?2:0)+(i===4?' s':''),11,C.muted,400,i===4?'end':i===0?'start':'middle');}
+ if(domain[0]<0&&domain[1]>0)out+=line(box.x,fy(0),box.x+box.w,fy(0),C.line,1,'3 4');
+ if(band>0){out+=line(box.x,fy(band),box.x+box.w,fy(band),C.teal,1,'3 4')+line(box.x,fy(-band),box.x+box.w,fy(-band),C.teal,1,'3 4');}
+ const indices=envelopeIndices(series.map(s=>s.values),Math.ceil(box.w/2));
+ for(const s of series){const d='M '+indices.map(k=>fx(run.time[k]).toFixed(2)+','+fy(s.values[k]).toFixed(2)).join(' L ');out+=shape('path',{d,fill:'none',stroke:s.color,'stroke-width':s.dashed?1.4:1.8,'stroke-dasharray':s.dashed?'4 3':''});}
+ out+=rect(box.x,box.y,box.w,box.h,'none',0,C.line)+txt(box.x+3,10,unit,10,C.muted);
+ out+=shape('g',{'data-cursor':'true'},line(fx(playTime),box.y,fx(playTime),box.y+box.h,C.ink,1,'4 3')+series.map(s=>circle(fx(playTime),fy(s.values[frame]),3.7,s.color,'#fff')).join(''));
+ el.innerHTML=out;return {el,series,fx,fy,box,width};
+}
+function makeCharts(){
+ if(!run)return;const p=run.parameters,err=run.data.map(a=>a[ci.Fc_N]-a[ci.requestedForce_N]),measured=run.data.map(a=>a[ci.measuredForce_N]-a[ci.requestedForce_N]);
+ const series=[{values:err,color:C.teal}];if($('measured-toggle').checked)series.push({values:measured,color:C.amber,dashed:true});
+ let lo=-p.force.tolerance,hi=p.force.tolerance;for(const s of series){const [a,b]=extents(s.values);lo=Math.min(lo,a);hi=Math.max(hi,b);}const pad=Math.max(.02,(hi-lo)*.12);
+ const surface=run.data.map(a=>a[ci.surfaceHeight_m]*1000),robot=run.data.map(a=>a[ci.robotPosition_m]*1000),[slo,shi]=extents(surface),[rlo,rhi]=extents(robot);const ml=Math.min(slo,rlo),mh=Math.max(shi,rhi),mp=Math.max(.05,(mh-ml)*.1);
+ charts=[chart('force-plot',series,[lo-pad,hi+pad],'N',p.force.tolerance),chart('motion-plot',[{values:surface,color:C.teal},{values:robot,color:C.slate}],[ml-mp,mh+mp],'mm')];
+ plotWidth=$('force-plot').clientWidth;updateCursors();
+}
+function updateCursors(){if(!run)return;for(const c of charts){const x=c.fx(run.time[frame]);c.el.querySelector('[data-cursor]').innerHTML=line(x,c.box.y,x,c.box.y+c.box.h,C.ink,1,'4 3')+c.series.map(s=>circle(x,c.fy(s.values[frame]),3.7,s.color,'#fff')).join('');}}
+function seek(time){playTime=clamp(time,run.time[0],run.time.at(-1));frame=sampleIndex(playTime);render();}
+function pause(){playing=false;lastWall=null;if(rafId!==null)cancelAnimationFrame(rafId);rafId=null;set('play','▶ Play');$('play').setAttribute('aria-label','Play');}
+function toggle(){if(!run)return;if(playing){pause();return;}if(frame===run.time.length-1)seek(run.time[0]);playing=true;lastWall=null;set('play','Ⅱ Pause');$('play').setAttribute('aria-label','Pause');rafId=requestAnimationFrame(tick);}
+function tick(wall){rafId=null;if(!playing||!run)return;if(lastWall!==null){const dt=(wall-lastWall)/1000;seek(playTime+dt*Number($('speed').value));}lastWall=wall;if(playTime>=run.time.at(-1)){pause();return;}rafId=requestAnimationFrame(tick);}
+function step(direction){if(!run)return;pause();const minStep=Math.min(...run.time.slice(1,25).map((v,k)=>v-run.time[k]));seek(playTime+direction*Math.max(1/60,minStep));}
+$('play').addEventListener('click',toggle);$('previous').addEventListener('click',()=>step(-1));$('next').addEventListener('click',()=>step(1));
+$('timeline').addEventListener('input',()=>{if(!run)return;pause();seek(Number($('timeline').value));set('event-info','');});
+$('run-select').addEventListener('change',()=>selectRun(Number($('run-select').value)));
+$('measured-toggle').addEventListener('change',makeCharts);
+$('worst').addEventListener('click',()=>{if(!run)return;pause();seek(run.time[run.analysis.worst]);set('event-info','Largest logged absolute force error in the evaluation interval. Rigid impact impulses are separate.');});
+$('next-event').addEventListener('click',()=>{if(!run||!run.analysis.events.length)return;pause();const e=run.analysis.events.find(e=>e.index>frame)||run.analysis.events[0];seek(run.time[e.index]);set('event-info',e.label+' at '+fmt(run.time[e.index],4)+' s');});
+for(const id of ['force-plot','motion-plot'])$(id).addEventListener('pointerdown',e=>{if(!run)return;pause();const c=charts.find(c=>c.el.id===id),bounds=c.el.getBoundingClientRect(),x=(e.clientX-bounds.left)*c.width/bounds.width,f=clamp((x-c.box.x)/c.box.w,0,1);seek(lerp(run.time[0],run.time.at(-1),f));});
+window.addEventListener('keydown',e=>{if(e.target.closest('input,select,button'))return;if(e.code==='Space'){e.preventDefault();toggle();}if(e.code==='ArrowLeft'){e.preventDefault();step(-1);}if(e.code==='ArrowRight'){e.preventDefault();step(1);}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(run&&Math.abs(plotWidth-$('force-plot').clientWidth)>1)makeCharts();},120);});
+$('load').addEventListener('click',()=>$('file').click());
+$('file').addEventListener('change',async()=>{const file=$('file').files[0];if(!file)return;try{let raw=await file.text();if(/\.html?$/i.test(file.name)){const doc=new DOMParser().parseFromString(raw,'text/html'),tag=doc.getElementById('acf-data');if(!tag)throw Error('This HTML file does not contain ACF replay data.');raw=tag.textContent;}load(JSON.parse(raw));}catch(e){error(e.message);}finally{$('file').value='';}});
+try{load(JSON.parse($('acf-data').textContent));}catch(e){$('viewer').hidden=true;$('empty').hidden=false;$('run-select').disabled=true;if(!$('acf-data').textContent.includes('__ACF_'))error(e.message);}
+// Permit loading results into the empty template as well as a populated replay.
+$('file').addEventListener('change',()=>{$('run-select').disabled=false;});
+})();
+</script>
+</body>
+</html>

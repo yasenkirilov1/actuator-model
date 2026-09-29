@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checks": 31,
+  "items": [
+    "Four complete reference recordings load",
+    "Smooth bump passes",
+    "Worst error seeks the original peak sample",
+    "True force, signed error and stroke match reference values",
+    "R uses its own logged position",
+    "A uses its own logged position",
+    "B uses its own logged position",
+    "S uses its own logged position",
+    "Forward step advances to a logged sample",
+    "Backward step moves back",
+    "Playback advances using elapsed time and selected speed",
+    "Pause cancels scheduled playback",
+    "Paused time stays fixed",
+    "Playback stops exactly at the final sample",
+    "Play from the end restarts at the beginning",
+    "Measured trace adds a second cursor",
+    "A failed whole run can have an in-band displayed frame",
+    "Sharp-bump peak is outside tolerance",
+    "Ramp recording passes",
+    "Contact loss changes force status and separates tool from surface",
+    "A one-sample impact is preserved and shows impulse",
+    "Rigid impacts prevent a finite peak-force claim",
+    "Event jump seeks an actual recorded event",
+    "Clicking a trace seeks in time",
+    "Stop, effort, voltage and overcurrent states are reported",
+    "Imported run labels remain text",
+    "Duplicate timestamps are rejected without replacing valid data",
+    "leadscrew display uses its own actuator representation",
+    "ideal_position display uses its own actuator representation",
+    "Ideal position displays mechanical effort rather than electrical current",
+    "Empty evaluation intervals are rejected"
+  ],
+  "method": "Node.js VM with minimal in-memory DOM; shipped application script, no replacement physics or replay logic",
+  "limitations": [
+    "Not a browser rendering test",
+    "MATLAB/Simulink runtime not available",
+    "HTML file-chooser parsing and mobile layout require a real browser"
+  ],
+  "referenceRuns": [
+    {
+      "label": "Voice coil · 1 mm bump",
+      "samples": 16001
+    },
+    {
+      "label": "Voice coil · 1 mm sharp bump",
+      "samples": 16001
+    },
+    {
+      "label": "Voice coil · 3 mm ramp",
+      "samples": 21001
+    },
+    {
+      "label": "Stress case · 3 mm / 5 mm bump at 400 mm/s",
+      "samples": 13001
+    }
+  ]
+}
