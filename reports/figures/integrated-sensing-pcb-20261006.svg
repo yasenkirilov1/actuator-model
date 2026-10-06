@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-labelledby="title desc">
+  <title id="title">Proposed integrated sensing and control PCB</title>
+  <desc id="desc">On S, amplify the B-S axial load-cell signal and sample it together with three ADXL354C analog acceleration outputs using ADS131M04. The microcontroller runs a local 10 kHz force loop and receives S-A position. Programming, calibration and robot communication use the same board. An external bipolar coil driver on A receives the command. Architecture proposed, not hardware-qualified.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#50677a" />
+    </marker>
+  </defs>
+  <rect width="1320" height="760" fill="#ffffff" />
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <text x="35" y="44" font-size="25" font-weight="700" text-anchor="start" fill="#24374b">One programmable board for sensing, calibration and force control</text>
+    <text x="35" y="77" font-size="16" font-weight="400" text-anchor="start" fill="#526578">Proposed architecture · one-axis prototype · real noise, timing and robustness require assembled tests</text>
+    <rect x="245" y="110" width="810" height="500" rx="18" fill="#eef8f5" stroke="#328b78" stroke-width="2" />
+    <text x="267" y="145" font-size="18" font-weight="700" text-anchor="start" fill="#24715f">CUSTOM SENSING / CONTROL PCB — RIGIDLY MOUNTED ON S</text>
+    <rect x="25" y="190" width="180" height="88" rx="12" fill="#f4e8f5" stroke="#a36aab" stroke-width="2" />
+    <text x="115.0" y="220" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">B–S load cell</text>
+    <text x="115.0" y="248" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Axial bridge signal</text>
+    <rect x="275" y="185" width="220" height="105" rx="12" fill="#ffffff" stroke="#a36aab" stroke-width="2" />
+    <text x="385.0" y="215" font-size="16" font-weight="700" text-anchor="middle" fill="#24374b">Instrumentation amp</text>
+    <text x="385.0" y="243" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Gain + analogue filter</text>
+    <text x="385.0" y="267" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Excitation / reference</text>
+    <rect x="275" y="365" width="220" height="110" rx="12" fill="#ffffff" stroke="#328b78" stroke-width="2" />
+    <text x="385.0" y="395" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">ADXL354C on S</text>
+    <text x="385.0" y="423" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Three analogue axes</text>
+    <text x="385.0" y="447" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Matched conditioning</text>
+    <rect x="535" y="225" width="210" height="163" rx="12" fill="#ffffff" stroke="#4875b4" stroke-width="2" />
+    <text x="640.0" y="255" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">ADS131M04</text>
+    <text x="640.0" y="283" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">4 simultaneous inputs</text>
+    <text x="640.0" y="307" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">30 ksample/s/channel</text>
+    <text x="640.0" y="331" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Common ADC clock</text>
+    <text x="640.0" y="355" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">SPI + data-ready</text>
+    <rect x="785" y="208" width="240" height="164" rx="12" fill="#ffffff" stroke="#4875b4" stroke-width="2" />
+    <text x="905.0" y="238" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">Programmable MCU</text>
+    <text x="905.0" y="266" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">10 kHz force loop</text>
+    <text x="905.0" y="290" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Force / inertia estimate</text>
+    <text x="905.0" y="314" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Tool mass + gains</text>
+    <text x="905.0" y="338" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Fault / enable logic</text>
+    <path d="M205 234 L275 234" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <path d="M495 237 L515 237 L515 266 L535 266" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <path d="M495 421 L515 421 L515 347 L535 347" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <path d="M745 292 L785 292" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <rect x="1090" y="207" width="205" height="165" rx="12" fill="#fff6e9" stroke="#a16a29" stroke-width="2" />
+    <text x="1192.5" y="237" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">Driver on A</text>
+    <text x="1192.5" y="265" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Bipolar current drive</text>
+    <text x="1192.5" y="289" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Current limits + disable</text>
+    <text x="1192.5" y="313" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Coil + heat removal</text>
+    <text x="1192.5" y="337" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Power stage separate</text>
+    <path d="M1025 292 L1090 292" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <rect x="25" y="489" width="180" height="85" rx="12" fill="#e4eefb" stroke="#4875b4" stroke-width="2" />
+    <text x="115.0" y="519" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">S–A position</text>
+    <text x="115.0" y="547" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Separate sensor input</text>
+    <path d="M205 531 L225 531 L225 580 L907 580 L907 548" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <rect x="775" y="437" width="250" height="111" rx="12" fill="#ffffff" stroke="#328b78" stroke-width="2" />
+    <text x="900.0" y="467" font-size="18" font-weight="700" text-anchor="middle" fill="#24374b">Configuration / I/O</text>
+    <text x="900.0" y="495" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">USB + debug + robot link</text>
+    <text x="900.0" y="519" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Tare / presets / calibration</text>
+    <text x="900.0" y="543" font-size="14" font-weight="400" text-anchor="middle" fill="#24374b">Compact synchronized logs</text>
+    <path d="M902 437 L902 372" fill="none" stroke="#50677a" stroke-width="2.3" marker-end="url(#arrow)" />
+    <text x="277" y="523" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">Bridge input + 3 acceleration outputs = 4 ADC channels</text>
+    <text x="277" y="549" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">Match installed filter phase; include PCB / mount mass in S</text>
+    <text x="35" y="653" font-size="18" font-weight="700" text-anchor="start" fill="#24374b">Customizable</text>
+    <text x="35" y="680" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">Gain / filter options</text>
+    <text x="350" y="653" font-size="18" font-weight="700" text-anchor="start" fill="#24374b">Easy to use</text>
+    <text x="350" y="680" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">One setup / tare interface</text>
+    <text x="680" y="653" font-size="18" font-weight="700" text-anchor="start" fill="#24374b">Programmable</text>
+    <text x="680" y="680" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">Local loop + saved calibration</text>
+    <text x="1000" y="653" font-size="18" font-weight="700" text-anchor="start" fill="#24374b">Robust by design</text>
+    <text x="1000" y="680" font-size="15" font-weight="400" text-anchor="start" fill="#24374b">Protected wiring / fault disable</text>
+    <text x="35" y="728" font-size="15" font-weight="400" text-anchor="start" fill="#526578">ADC and accelerometer chips target &lt; €100. Amplifier, MCU, PCB, connectors and driver are additional.</text>
+  </g>
+</svg>

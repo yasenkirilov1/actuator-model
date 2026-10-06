@@ -1,6 +1,6 @@
 {
   "status": "completed_report_delivery_and_preservation_audit",
-  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "checked_utc": "2026-10-06T21:55:05.882196+00:00",
   "protected_inputs": [
     {
       "path": "acf_simulink/generated/fixed_upper_20261005/GETTING_STARTED_FIXED.md",
@@ -93,8 +93,8 @@
   "engine_source_files_verified": 35,
   "native_model_manifest_files_verified": 20,
   "native_trace_roundtrips_verified": 9,
-  "local_markdown_links_verified": 13,
-  "svg_figures_xml_checked": 7,
+  "local_markdown_links_verified": 14,
+  "svg_figures_xml_checked": 8,
   "new_figures_visually_reviewed": true,
   "native_worker_temporary_cleanup": {
     "status": "native_worker_completed_and_owned_temporaries_released",
@@ -118,18 +118,18 @@
   "retained_bytes_by_owner_before_this_small_audit": {
     "engine": 18503800,
     "native": 9339660,
-    "root_report_assumptions": 1665751
+    "root_report_assumptions": 1774705
   },
-  "retained_total_bytes_before_this_small_audit": 29509211,
+  "retained_total_bytes_before_this_small_audit": 29618165,
   "retained_limit_bytes": 33554432,
-  "conservative_accounting": "Includes complete report/AGENTS and all seven deliveredSVGs, even unchanged reference figures; does not count unrelated old reports.",
+  "conservative_accounting": "Includes complete report/AGENTS, eight delivered SVGs and the preserved published report/audit; does not count unrelated old reports.",
   "shared_array_audit": {
     "scopes": [
       "/home/tommie/Projects/actuator-model/acf_simulink/validation",
       "/run/media/tommie/SATA SSD/actuator-model-evidence"
     ],
-    "count": 2764,
-    "bytes": 4347292257,
+    "count": 2770,
+    "bytes": 4349417189,
     "extensions": [
       ".mat",
       ".npz",
@@ -142,13 +142,13 @@
   "new_study_bulk_arrays": [],
   "report_inputs": {
     "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/report_inputs.json",
-    "sha256": "a07e6015e2aaa4b0e5f9351c528fe22f3b60723c09558d0f9ba70af693f10624",
-    "bytes": 8349
+    "sha256": "f97f0738f7950bb717b903ffa704114740aa3b533f0403fee2763120d706b7c6",
+    "bytes": 9622
   },
   "markdown_delivery_manifest": {
     "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/markdown_delivery_manifest.json",
-    "sha256": "67de8062c9ddf5ebe064239bb2438e5bd197de9d121b0086b63286bc5b049e1f",
-    "bytes": 4029
+    "sha256": "a5cbdd60cfd4c47554b25664fb86052cc4e779e588f11fe1b1dc384c052b129f",
+    "bytes": 4510
   },
-  "report_word_count_including_tables": 3613
+  "report_word_count_including_tables": 4006
 }

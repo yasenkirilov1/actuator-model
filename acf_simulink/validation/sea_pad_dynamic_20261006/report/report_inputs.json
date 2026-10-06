@@ -1,6 +1,6 @@
 {
   "status": "completed_source_bound_markdown_report",
-  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "checked_utc": "2026-10-06T21:55:05.882196+00:00",
   "scope": "Reduced-scope total axial pressing force; drag ignored, robot fixed,2s loaded equilibrium. No local pressure or hardware qualification.",
   "sources": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/finalize_report.py",
-      "sha256": "f255c6b5fb0e8f5bc87cc27879f1d0af189f96b292496aa49e9c4e037f27bfc8",
-      "bytes": 15889
+      "sha256": "54db48d6d4a06b8916cca96e05a1ca51b730d300217f274e9b52e092176cff57",
+      "bytes": 17025
     },
     {
       "path": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/final_summary.json",
@@ -117,6 +117,21 @@
       "path": "acf_simulink/validation/report_readability_20261006/report/report_inputs_design_explained.json",
       "sha256": "51e07a7eeda1d0519527116fec9e16c09f9ba4bf087aeb80a7f871ec62951128",
       "bytes": 9195
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json",
+      "sha256": "734b065a7fa27d946933705a6a38869a09593c6441dff893231be7d5470dee47",
+      "bytes": 2712
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/build_voice_coil_pcb_figures.py",
+      "sha256": "1891f13cc65f3508107a101f4ab5dc219d2b5d2902d44efdc5241ebe8e193a2f",
+      "bytes": 7831
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/voice_coil_pcb_figure_manifest.json",
+      "sha256": "fc08be99aa7452031a57dc697a99cc961bc759ea1a6a711ec333cdf818bad897",
+      "bytes": 1749
     }
   ],
   "selected_5mm_grids": {
@@ -196,6 +211,17 @@
   },
   "native_base_samples_scored": 7200009,
   "qualification": false,
+  "recommendation_revision": {
+    "preferred_actuator": "voice_coil",
+    "decision_priority": "Lower nominal force error and direct programmable current-to-force actuation; accept higher modeled winding loss subject to thermal validation.",
+    "pcb_architecture_status": "proposed_prototype_architecture_not_tested_hardware",
+    "new_simulations": 0,
+    "previous_published_report": {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/published_ed85cfc_report/repository.md",
+      "sha256": "c59dab7e1dba29be94615b75bb27bad2fad595b68fecc6d7fb0dc073bdf5b076",
+      "bytes": 25614
+    }
+  },
   "metadata_notes": [
     "Native pad5mmContractSha256 records the inherited base contract. Both base and actual5mm extension are separately bound here.",
     "Extension allocation text was superseded by later redistribution inside the unchanged32MiB cap; final storage_forecast.json governs accounting.",

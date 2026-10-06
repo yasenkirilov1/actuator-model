@@ -1,0 +1,1 @@
+Published report revision at commit ed85cfc73c9ddff0f33f3e0b1dc57a2437f4883f, preserved before the user-requested voice-coil/custom-PCB recommendation. Scientific results and original SVGs remain unchanged at the paths bound by this delivery manifest.

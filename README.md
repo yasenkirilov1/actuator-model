@@ -12,9 +12,17 @@ two-second recordings starting at loaded equilibrium.
 
 The selected 77 mm × 5 mm pad geometry uses an **unmeasured 50 N/mm stiffness
 assumption and zero pad damping**. Both 54-case grids pass: voice coil worst
-error 0.046075 N, internal-spring screw 0.118307 N. The report provisionally
-favours the screw because of its lower modeled winding loss. These are
-simulation results, not measured Mirka pad properties or hardware qualification.
+error 0.046075 N, internal-spring screw 0.118307 N. The report recommends a
+**voice-coil prototype with a custom sensing/control PCB**, prioritizing lower
+force error, direct actuation and configurable electronics. The screw retains
+lower modeled winding loss (7.4 W versus the coil's 37.4 W). These are simulation
+results, not measured Mirka pad properties or hardware qualification.
+
+The proposed PCB integrates load-cell amplification/filtering, an ADXL354C,
+ADS131M04 and local MCU control on S. The bipolar power driver stays on A.
+This architecture supports customization, one calibration/configuration
+interface, programming and controlled sensing timing; assembled robustness
+and thermal performance still require testing.
 
 - [Latest actuator/pad study and reproduction](acf_simulink/experiments/sea_pad_dynamic_20261006/README.md)
 - [Open the shallow native pad-model replay](acf_simulink/generated/sea_pad_dynamic_20261006/GETTING_STARTED.md)

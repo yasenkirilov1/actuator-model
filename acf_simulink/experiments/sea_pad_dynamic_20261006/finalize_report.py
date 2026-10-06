@@ -166,6 +166,16 @@ def main(deliver):
         verify(item["figure"])
         for source in item["sources"]:
             verify(source)
+    proposal_figures = load(OUT / "voice_coil_pcb_figure_manifest.json")
+    verify(proposal_figures["builder"])
+    verify(proposal_figures["proposal"])
+    assert proposal_figures["no_scientific_results_changed"]
+    for item in proposal_figures["figures"]:
+        verify(item["figure"])
+        for source in item["sources"]:
+            verify(source)
+    proposal = load(RECIPE / "voice_coil_pcb_proposal.json")
+    assert proposal["decision_basis"]["new_simulations"] == 0
     old_figures = load(OUT / "figure_manifest.json")["figures"]
     for item in old_figures:
         verify({"path": item["figure"], "sha256": item["sha256"]})
@@ -179,7 +189,8 @@ def main(deliver):
     report = REPORT.read_text()
     assert "How do soft pads influence our results?" in report
     image_paths = [REPORT.parent / p for p in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", report)]
-    assert len(image_paths) == 7
+    assert len(image_paths) == len(set(image_paths)) == 8
+    assert all(ROOT / item["figure"]["path"] in image_paths for item in proposal_figures["figures"])
     for path in image_paths:
         ET.parse(path)
     links = re.findall(r"\[[^\]]*\]\(([^)]+)\)", report)
@@ -213,6 +224,8 @@ def main(deliver):
     sources = [RECIPE / name for name in ["study_contract.json", "pad5mm_contract.json", "engine.c", "engine_api.py", "README.md", "build_pad5mm_figures.py", "build_report_figures.py", "finalize_report.py"]]
     sources += [STUDY / name for name in ["engine/final_summary.json", "engine/evidence_manifest.json", "native/validation_summary.json", "native/trace_archive_manifest.json", "assumptions/source_bound_assumptions.json", "evaluation/conservative_material_sensitivity.json", "evaluation/pad5mm_exact_width_pairs.json", "evaluation/pad5mm_k20_guard_corners.json", "evaluation/voltage_limit_pairs.json", "evaluation/closed_loop_numerical_refinement.json", "report/pad5mm_figure_manifest.json", "report/figure_manifest.json", "storage_forecast.json"]]
     sources += [GENERATED / "model_manifest.json", ROOT / "acf_simulink/validation/report_readability_20261006/report/report_inputs_design_explained.json"]
+    sources += [RECIPE / "voice_coil_pcb_proposal.json", RECIPE / "build_voice_coil_pcb_figures.py",
+                OUT / "voice_coil_pcb_figure_manifest.json"]
     save("report_inputs.json", {
         "status": "completed_source_bound_markdown_report", "checked_utc": checked_utc,
         "scope": summary["scope"], "sources": [bound(p) for p in sources],
@@ -220,6 +233,12 @@ def main(deliver):
         "primary_recordings": summary["all_primary_recordings"],
         "native_base_samples_scored": native["fullNativeBaseSamplesScored"],
         "qualification": False,
+        "recommendation_revision": {
+            "preferred_actuator": proposal["actuator_preference"],
+            "decision_priority": proposal["decision_basis"]["priority"],
+            "pcb_architecture_status": proposal["status"],
+            "new_simulations": 0,
+            "previous_published_report": bound(OUT / "published_ed85cfc_report/repository.md")},
         "metadata_notes": [
             "Native pad5mmContractSha256 records the inherited base contract. Both base and actual5mm extension are separately bound here.",
             "Extension allocation text was superseded by later redistribution inside the unchanged32MiB cap; final storage_forecast.json governs accounting.",
@@ -263,7 +282,7 @@ def main(deliver):
         "retained_bytes_by_owner_before_this_small_audit": sizes,
         "retained_total_bytes_before_this_small_audit": total,
         "retained_limit_bytes": forecast["retained_total_limit_bytes"],
-        "conservative_accounting": "Includes complete report/AGENTS and all seven deliveredSVGs, even unchanged reference figures; does not count unrelated old reports.",
+        "conservative_accounting": "Includes complete report/AGENTS, eight delivered SVGs and the preserved published report/audit; does not count unrelated old reports.",
         "shared_array_audit": array_audit, "shared_array_limit_bytes": forecast["shared_array_budget_bytes"],
         "new_study_bulk_arrays": study_arrays,
         "report_inputs": bound(OUT / "report_inputs.json"),

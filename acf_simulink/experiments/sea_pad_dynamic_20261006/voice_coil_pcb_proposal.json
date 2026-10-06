@@ -1,0 +1,30 @@
+{
+  "status": "proposed_prototype_architecture_not_tested_hardware",
+  "date": "2026-10-06",
+  "reason_for_revision": "User prioritizes a voice-coil prototype and integrated sensing/amplification electronics for customizability, ease of use, programming and robustness.",
+  "actuator_preference": "voice_coil",
+  "decision_basis": {
+    "coil_grid": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_pad5mm_k50_c0.json",
+    "screw_grid": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_pad5mm_k50_c0.json",
+    "priority": "Lower nominal force error and direct programmable current-to-force actuation; accept higher modeled winding loss subject to thermal validation.",
+    "new_simulations": 0
+  },
+  "pcb": {
+    "location": "Rigidly mounted on S; board, mounting and associated downstream mass included in identified S mass",
+    "integrated_electronics": ["bridge instrumentation amplifier", "analog filtering", "ADXL354C accelerometer", "ADS131M04 ADC", "microcontroller", "programming and robot interfaces", "calibration storage", "protected sensor connectors"],
+    "adc_channels": ["conditioned axial B-S cell force", "S acceleration X", "S acceleration Y", "S acceleration Z"],
+    "adc_rate_samples_per_second_per_channel": 30000,
+    "local_force_control_rate_Hz": 10000,
+    "relative_position_input": "S relative to A; separate input, not a spare M04 channel",
+    "power_driver_location": "On A, with coil-current switching and cooling separated from low-level sensing on S",
+    "sensor_and_adc_chip_budget_EUR": 100,
+    "budget_excludes": ["PCB", "instrumentation amplifier", "microcontroller", "power driver", "connectors", "other components"]
+  },
+  "scope": "One-axis axial-force prototype, ignoring axial drag coupling. Existing 2 s loaded-equilibrium fixed-robot tests are development evidence, not engagement, recentering, calibration or thermal qualification.",
+  "unverified_hardware_targets": ["matched installed sensor/filter phase", "relative force/acceleration timestamp residual at most 2 us", "assembled noise and calibration", "powered-spindle vibration", "thermal drift", "driver current response and continuous hot force", "watchdog and driver-disable behavior"],
+  "manufacturer_sources_reviewed": [
+    {"url": "https://www.analog.com/en/products/adxl354.html", "supports": "Three analog acceleration outputs with configurable analog bandwidth; C variant supports +/-8 g range."},
+    {"url": "https://www.ti.com/product/ADS131M04", "supports": "Four-channel simultaneous-sampling ADC with SPI interface."}
+  ],
+  "previous_published_report": "acf_simulink/validation/sea_pad_dynamic_20261006/report/published_ed85cfc_report/repository.md"
+}

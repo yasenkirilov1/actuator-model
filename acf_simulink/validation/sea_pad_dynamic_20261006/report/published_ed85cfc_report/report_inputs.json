@@ -1,0 +1,205 @@
+{
+  "status": "completed_source_bound_markdown_report",
+  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "scope": "Reduced-scope total axial pressing force; drag ignored, robot fixed,2s loaded equilibrium. No local pressure or hardware qualification.",
+  "sources": [
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/study_contract.json",
+      "sha256": "c2077261ffff69e10682ea524577eb669d2f47641e02154358043ba3dc3e26b6",
+      "bytes": 8852
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/pad5mm_contract.json",
+      "sha256": "674b1217279f8a9ca689f55afbcecbd6640b63cf45c4240f63b2549074a5efff",
+      "bytes": 2547
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/engine.c",
+      "sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+      "bytes": 18582
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/engine_api.py",
+      "sha256": "4bc06898fef060577454f0139f2b3012cf6dc81af40ca17a02ceb13af78630c9",
+      "bytes": 8817
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/README.md",
+      "sha256": "7712f7fb3d991ece0945dbba76b81d7cef47c7b9a83f4db3639da1471963024c",
+      "bytes": 12782
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/build_pad5mm_figures.py",
+      "sha256": "57a92655e91318a6c865393d5031e67063fe3c46203eb2ce746ea8d62e1dec8b",
+      "bytes": 12897
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/build_report_figures.py",
+      "sha256": "8ca572a790412ce4372a6b7b6b7547512d098e05b6b2cb1672cbc33ae1e6055e",
+      "bytes": 11426
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/finalize_report.py",
+      "sha256": "f255c6b5fb0e8f5bc87cc27879f1d0af189f96b292496aa49e9c4e037f27bfc8",
+      "bytes": 15889
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/final_summary.json",
+      "sha256": "3959b1b6b4789ff896fe4975cd798466f35b1499740b132365193370d72fc086",
+      "bytes": 22751
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/evidence_manifest.json",
+      "sha256": "1cb5b36a3867858a7df5428aca1ea0d2e6aa7663dac28e9c2189d2d7b2b1c2eb",
+      "bytes": 34496
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/validation_summary.json",
+      "sha256": "e822a57b07610f3cbd981fde096e5e0c415a0ce66556094a2f839817d769d228",
+      "bytes": 13737
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/trace_archive_manifest.json",
+      "sha256": "5b2b4181302b366d0ec7f22b558d128d85df19597b63cdaa6a2fc314d9c08bf2",
+      "bytes": 5050
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/assumptions/source_bound_assumptions.json",
+      "sha256": "ef06fd092ea6f7ef6758f81c585071528ded4adec5e90f6a6b3e98905956d512",
+      "bytes": 20278
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/conservative_material_sensitivity.json",
+      "sha256": "65c533d28b900e9a91b727a5282cab2478c8758940d71d0c5d9cb067a74b6c08",
+      "bytes": 454727
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/pad5mm_exact_width_pairs.json",
+      "sha256": "fbd8ad55ff9134b8d7a109f4d1c4ee714e06230ee950729d6dd598bfa9899fde",
+      "bytes": 115953
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/pad5mm_k20_guard_corners.json",
+      "sha256": "eb365b323c97161ec27df5d91e90f88a436d856e8cbef289635a2ecc1f013278",
+      "bytes": 38257
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/voltage_limit_pairs.json",
+      "sha256": "4024fb1c00d78b7dcc780a19db82911b58046e9133110637562621250c4608a2",
+      "bytes": 21213
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/closed_loop_numerical_refinement.json",
+      "sha256": "ae2bfd9f17b1f21fe8007b9eec1a56008d5cae5321f91262d255f67c740b39de",
+      "bytes": 130114
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/pad5mm_figure_manifest.json",
+      "sha256": "d8e69a4789a48e847272bff8122275b2667bd7003af9722de022050337f22de9",
+      "bytes": 7293
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/figure_manifest.json",
+      "sha256": "efed7b7d8ad748f0af6034804e1cc1d48d9593103362f054abae9cdaa938bb9d",
+      "bytes": 6774
+    },
+    {
+      "path": "acf_simulink/validation/sea_pad_dynamic_20261006/storage_forecast.json",
+      "sha256": "e038e95fc43af9120ab22c34c21e5dd260c62eff0e6998ea2b560e16c1839f6f",
+      "bytes": 1547
+    },
+    {
+      "path": "acf_simulink/generated/sea_pad_dynamic_20261006/model_manifest.json",
+      "sha256": "bbc9a15334591e2e42aa34d52b44cc3f079e7dfd45ff14312b8d9494bbf8121a",
+      "bytes": 4412
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/report/report_inputs_design_explained.json",
+      "sha256": "51e07a7eeda1d0519527116fec9e16c09f9ba4bf087aeb80a7f871ec62951128",
+      "bytes": 9195
+    }
+  ],
+  "selected_5mm_grids": {
+    "coil": {
+      "source": {
+        "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_pad5mm_k50_c0.json",
+        "sha256": "45c97df7ff98e2bcc26cc484f87b3645e234c0a5b36d1c1c26b9bf9af76b9dd3",
+        "bytes": 258325
+      },
+      "executed": 54,
+      "passes": 54,
+      "worst_error_N": 0.04607506420735774,
+      "maximum_average_hot_winding_loss_W": 37.357240892373206,
+      "maximum_current_rms_A": 2.0492267166623996,
+      "maximum_voltage_request_V": 21.098772063828637,
+      "maximum_pad_compression_m": 0.0019875965336781567,
+      "raw_cell_min_N": -19.154619626057453,
+      "raw_cell_max_N": 54.975696856564284,
+      "gains": {
+        "force_kp": 10,
+        "force_ki": 0,
+        "velocity_gain": 200,
+        "inertia_gain": 0,
+        "inertia_cutoff": 80
+      },
+      "locked_before_evaluation": true
+    },
+    "sea": {
+      "source": {
+        "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_pad5mm_k50_c0.json",
+        "sha256": "c15dd3e49d93a4c8a728c7ecaf69cb44527aa7a070ef9fe6435e547e0f4394f1",
+        "bytes": 262492
+      },
+      "executed": 54,
+      "passes": 54,
+      "worst_error_N": 0.11830740686522212,
+      "maximum_average_hot_winding_loss_W": 7.437285202916383,
+      "maximum_current_rms_A": 1.0692441709207299,
+      "maximum_voltage_request_V": 26.376463157797545,
+      "maximum_pad_compression_m": 0.0019891466253198434,
+      "raw_cell_min_N": -14.746468762151,
+      "raw_cell_max_N": 50.14191642600807,
+      "gains": {
+        "force_kp": 0.5,
+        "force_ki": 0,
+        "velocity_gain": 100,
+        "inertia_gain": 0,
+        "inertia_cutoff": 100,
+        "servo_hz": 60,
+        "servo_zeta": 1,
+        "servo_target_cutoff": 300,
+        "force_feedback_cutoff": 0,
+        "servo_velocity_feedforward": 1
+      },
+      "locked_before_evaluation": true
+    }
+  },
+  "primary_recordings": {
+    "record_count": 1975,
+    "executed_record_count": 1975,
+    "preparation_rejected_count": 0,
+    "other_unexecuted_count": 0,
+    "force_pass_count": 599,
+    "completed_count": 1341,
+    "physical_stops": {
+      "contact_loss": 558,
+      "pad_compression_limit": 65,
+      "spring_working_travel_stop": 7,
+      "tool_travel_stop": 4
+    },
+    "force_worst_error_N": 57.458957665191804,
+    "scored_integration_endpoint_count": 1403759763,
+    "sensor_ratings_checked_count": 562,
+    "sensor_ratings_failed_count": 6,
+    "actuator_ratings_checked_count": 1115,
+    "actuator_ratings_failed_count": 0
+  },
+  "native_base_samples_scored": 7200009,
+  "qualification": false,
+  "metadata_notes": [
+    "Native pad5mmContractSha256 records the inherited base contract. Both base and actual5mm extension are separately bound here.",
+    "Extension allocation text was superseded by later redistribution inside the unchanged32MiB cap; final storage_forecast.json governs accounting.",
+    "Earlier10mm figure plaintext traces are retained losslessly as gzip; their original content hashes still pass.",
+    "Historical reference and ADC evidence remains separate; no renewed qualification or newADC sweep is claimed."
+  ]
+}

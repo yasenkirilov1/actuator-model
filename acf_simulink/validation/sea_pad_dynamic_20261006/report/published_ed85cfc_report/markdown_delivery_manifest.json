@@ -1,0 +1,103 @@
+{
+  "status": "delivered_markdown_and_svg",
+  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "report": {
+    "path": "reports/active-contact-flange-report-design-explained-20261006.md",
+    "sha256": "c59dab7e1dba29be94615b75bb27bad2fad595b68fecc6d7fb0dc073bdf5b076",
+    "bytes": 25614
+  },
+  "notes_report": {
+    "path": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+    "sha256": "c59dab7e1dba29be94615b75bb27bad2fad595b68fecc6d7fb0dc073bdf5b076",
+    "bytes": 25614
+  },
+  "previous_notes_report_sha256": "40e87212f26ebd5d144194011fef07efb0cb425654a654293eefa283ee2f5008",
+  "figures": [
+    {
+      "source": {
+        "path": "reports/figures/fixed-force-operating-grid-20261006.svg",
+        "sha256": "ce1932bdf6f692beb3b6ef3f9fc34b9a28ec56e03db91952fe313703a6f993a0",
+        "bytes": 44638
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/fixed-force-operating-grid-20261006.svg",
+        "sha256": "ce1932bdf6f692beb3b6ef3f9fc34b9a28ec56e03db91952fe313703a6f993a0",
+        "bytes": 44638
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/prototype-mechanics-pad5mm-20261006.svg",
+        "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920",
+        "bytes": 6965
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/prototype-mechanics-pad5mm-20261006.svg",
+        "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920",
+        "bytes": 6965
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/load-cell-mode-explained-20261006.svg",
+        "sha256": "44b4738c661f9792fe56175d95e3bb3fa72c823e6a463df9462779880819af28",
+        "bytes": 10996
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/load-cell-mode-explained-20261006.svg",
+        "sha256": "44b4738c661f9792fe56175d95e3bb3fa72c823e6a463df9462779880819af28",
+        "bytes": 10996
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/pad5mm-force-and-actuator-results-20261006.svg",
+        "sha256": "fcd3f06d93ca54f316d2abd4cb63bd6b583447c5c2a9f193baa23fe726867843",
+        "bytes": 16466
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/pad5mm-force-and-actuator-results-20261006.svg",
+        "sha256": "fcd3f06d93ca54f316d2abd4cb63bd6b583447c5c2a9f193baa23fe726867843",
+        "bytes": 16466
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/pad5mm-material-sensitivity-20261006.svg",
+        "sha256": "37820e638169f3b12f86295e6caa510ae8680954eb40e049185d32b67efad150",
+        "bytes": 22695
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/pad5mm-material-sensitivity-20261006.svg",
+        "sha256": "37820e638169f3b12f86295e6caa510ae8680954eb40e049185d32b67efad150",
+        "bytes": 22695
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/adc-fixed-diagnostics-20261006.svg",
+        "sha256": "23f8da9ecb374a48625104b07d5942f44f3c267177646845023413c0bf678c89",
+        "bytes": 18456
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/adc-fixed-diagnostics-20261006.svg",
+        "sha256": "23f8da9ecb374a48625104b07d5942f44f3c267177646845023413c0bf678c89",
+        "bytes": 18456
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/fixed-mechanics-force-limit-20261005.svg",
+        "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+        "bytes": 196584
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/fixed-mechanics-force-limit-20261005.svg",
+        "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+        "bytes": 196584
+      }
+    }
+  ],
+  "html_updated": false,
+  "protected_inputs_verified": 18
+}

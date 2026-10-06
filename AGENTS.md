@@ -15,8 +15,20 @@ The user's example is **77 mm diameter × 5 mm thickness**. Its assumed
 **50 N/mm stiffness and zero damping are not Mirka specifications**. Each
 selected actuator passes 54/54 nominal records: coil 0.046075 N worst and
 37.357 W maximum average hot winding loss; spring-driven screw 0.118307 N
-and 7.437 W. The main report provisionally favours the screw for this pad;
-unknown material properties and limited test scope prevent a final qualification.
+and 7.437 W. At the user's latest instruction, the main report recommends the
+**voice coil**, prioritizing its lower force error, direct force control and
+mechanical simplicity; retain the screw's lower heating as a real tradeoff.
+Unknown material properties and limited test scope prevent final qualification.
+
+The report also recommends a **custom sensing/control PCB on S**, integrating
+load-cell amplification/filtering, ADXL354C, ADS131M04 and MCU/interface
+electronics for customization, ease of use, programming and robustness.
+Keep the hot bipolar power driver on A; include PCB/mount mass in identified S.
+Read `acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json`
+when revising this architecture. It is a proposal, not tested hardware; no new
+simulation accompanies this recommendation revision. The published `ed85cfc`
+Markdown and delivery audit are preserved under the study's
+`report/published_ed85cfc_report/`; original study figures remain unchanged.
 
 Compact evidence lives in `acf_simulink/validation/sea_pad_dynamic_20261006/`.
 There are 1,975 primary C recordings; native command replays separately score

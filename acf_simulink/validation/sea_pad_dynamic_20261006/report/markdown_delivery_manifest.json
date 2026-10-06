@@ -1,15 +1,15 @@
 {
   "status": "delivered_markdown_and_svg",
-  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "checked_utc": "2026-10-06T21:55:05.882196+00:00",
   "report": {
     "path": "reports/active-contact-flange-report-design-explained-20261006.md",
-    "sha256": "c59dab7e1dba29be94615b75bb27bad2fad595b68fecc6d7fb0dc073bdf5b076",
-    "bytes": 25614
+    "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d",
+    "bytes": 28609
   },
   "notes_report": {
     "path": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
-    "sha256": "c59dab7e1dba29be94615b75bb27bad2fad595b68fecc6d7fb0dc073bdf5b076",
-    "bytes": 25614
+    "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d",
+    "bytes": 28609
   },
   "previous_notes_report_sha256": "40e87212f26ebd5d144194011fef07efb0cb425654a654293eefa283ee2f5008",
   "figures": [
@@ -27,14 +27,14 @@
     },
     {
       "source": {
-        "path": "reports/figures/prototype-mechanics-pad5mm-20261006.svg",
-        "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920",
-        "bytes": 6965
+        "path": "reports/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+        "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6",
+        "bytes": 6966
       },
       "delivery": {
-        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/prototype-mechanics-pad5mm-20261006.svg",
-        "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920",
-        "bytes": 6965
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+        "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6",
+        "bytes": 6966
       }
     },
     {
@@ -83,6 +83,18 @@
         "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/adc-fixed-diagnostics-20261006.svg",
         "sha256": "23f8da9ecb374a48625104b07d5942f44f3c267177646845023413c0bf678c89",
         "bytes": 18456
+      }
+    },
+    {
+      "source": {
+        "path": "reports/figures/integrated-sensing-pcb-20261006.svg",
+        "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca",
+        "bytes": 8356
+      },
+      "delivery": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/integrated-sensing-pcb-20261006.svg",
+        "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca",
+        "bytes": 8356
       }
     },
     {

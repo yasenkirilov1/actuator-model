@@ -1,0 +1,44 @@
+{
+  "status": "versioned_prototype_proposal_diagrams",
+  "builder": {
+    "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/build_voice_coil_pcb_figures.py",
+    "sha256": "1891f13cc65f3508107a101f4ab5dc219d2b5d2902d44efdc5241ebe8e193a2f"
+  },
+  "proposal": {
+    "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json",
+    "sha256": "734b065a7fa27d946933705a6a38869a09593c6441dff893231be7d5470dee47"
+  },
+  "figures": [
+    {
+      "figure": {
+        "path": "reports/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+        "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6"
+      },
+      "sources": [
+        {
+          "path": "reports/figures/prototype-mechanics-pad5mm-20261006.svg",
+          "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920"
+        },
+        {
+          "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json",
+          "sha256": "734b065a7fa27d946933705a6a38869a09593c6441dff893231be7d5470dee47"
+        }
+      ],
+      "scope": "Proposed voice-coil mechanics and sensing locations; no new simulation."
+    },
+    {
+      "figure": {
+        "path": "reports/figures/integrated-sensing-pcb-20261006.svg",
+        "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca"
+      },
+      "sources": [
+        {
+          "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json",
+          "sha256": "734b065a7fa27d946933705a6a38869a09593c6441dff893231be7d5470dee47"
+        }
+      ],
+      "scope": "Proposed architecture and hardware targets, not measured PCB performance."
+    }
+  ],
+  "no_scientific_results_changed": true
+}
