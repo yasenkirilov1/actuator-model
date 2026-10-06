@@ -1,0 +1,1049 @@
+{
+  "scope": "Source XML inventory; parameter names do not alone establish tunability. Recompile for changed clocks, state/filter dimensions or unqualified delays.",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "parameters": [
+    {
+      "systemXml": "simulink/systems/system_1628.xml",
+      "blockName": "All ADC conversion samples",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_200.xml",
+      "blockName": "Safety check sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1601.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1601.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.channels.position.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1601.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1601.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1601.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1617.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1617.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.channels.frame.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1617.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1617.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1617.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1609.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1609.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.channels.frame.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1609.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1609.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1609.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Fresh 10 kHz position frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Fresh 10 kHz robot acceleration frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Fresh 10 kHz robot velocity frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Head gap and velocity observer",
+      "blockType": "DiscreteStateSpace",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Position ADC delivery pipeline",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.position.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Position frame matching",
+      "blockType": "DiscreteStateSpace",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Robot acceleration frame matching",
+      "blockType": "DiscreteStateSpace",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Robot acceleration frame matching delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.frame.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Robot velocity frame matching",
+      "blockType": "DiscreteStateSpace",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1248.xml",
+      "blockName": "Robot velocity frame matching delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.frame.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1405.xml",
+      "blockName": "Previous filtered drag ratio",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1272.xml",
+      "blockName": "Measured drag native sample 1",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1272.xml",
+      "blockName": "Measured drag native sample 2",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1272.xml",
+      "blockName": "Measured drag native sample 3",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1443.xml",
+      "blockName": "Native audit sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1443.xml",
+      "blockName": "Proper identified lower-link inverse",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1324.xml",
+      "blockName": "Acceleration FF audit native rate",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1324.xml",
+      "blockName": "Filtered measured acceleration rate",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1304.xml",
+      "blockName": "Normal error derivative memory",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1304.xml",
+      "blockName": "Normal error previous sample",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1304.xml",
+      "blockName": "Normal force error integral",
+      "blockType": "DiscreteIntegrator",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1304.xml",
+      "blockName": "Optional feedback rolloff",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "p.d.feedbackFilter.initialStates"
+    },
+    {
+      "systemXml": "simulink/systems/system_1304.xml",
+      "blockName": "Optional feedback rolloff",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1299.xml",
+      "blockName": "Optional structural-mode current notch",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "p.d.currentNotch.initialStates"
+    },
+    {
+      "systemXml": "simulink/systems/system_1299.xml",
+      "blockName": "Optional structural-mode current notch",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_821.xml",
+      "blockName": "Filtered force derivative",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_821.xml",
+      "blockName": "Force controller sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_821.xml",
+      "blockName": "Integral action",
+      "blockType": "DiscreteIntegrator",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "ADC output noise correlation",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(round((((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))+(p.adcStudy.d.forceGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.forceGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15)))*p.adcStudy.d.channels.force.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Independent converter output noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1514.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_244.xml",
+      "blockName": "Fresh 10 kHz force frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_244.xml",
+      "blockName": "Previous filtered force",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_244.xml",
+      "blockName": "Sensor sample delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.force.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_244.xml",
+      "blockName": "Sensor sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_244.xml",
+      "blockName": "Uniform sensor noise",
+      "blockType": "UniformRandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Acceleration validation log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Head motion recording clock",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Motion observer validation log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 1",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 2",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 3",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 4",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 5",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_1188.xml",
+      "blockName": "Record every physical step 6",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_974.xml",
+      "blockName": "Expected command delay",
+      "blockType": "Delay",
+      "parameter": "DelayLength",
+      "expression": "p.robotPrediction.delaySamples"
+    },
+    {
+      "systemXml": "simulink/systems/system_974.xml",
+      "blockName": "Expected command delay",
+      "blockType": "Delay",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "ADC output noise correlation",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(round((((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))+(p.adcStudy.d.lateralGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.lateralGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15)))*p.adcStudy.d.channels.lateral.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Independent converter output noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1534.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Filter memory",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Fresh 10 kHz force frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Independent lateral noise",
+      "blockType": "UniformRandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Previous lateral derivative",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Previous measured lateral force",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Sensor sample delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.lateral.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1030.xml",
+      "blockName": "Sensor sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1356.xml",
+      "blockName": "Fast error sample",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1356.xml",
+      "blockName": "Fast force variance",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1356.xml",
+      "blockName": "Fast normal force mean",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1356.xml",
+      "blockName": "Held slow stability at fast rate",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1356.xml",
+      "blockName": "Previous fast stable count",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Fast ready at robot rate",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Force trend filter",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Native fast stability sample 1",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Native fast stability sample 2",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Native fast stability sample 3",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Native fast stability sample 4",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Native fast stability sample 5",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Previous force trend",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Previous stable count",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Record force settling",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_848.xml",
+      "blockName": "Robot-rate force sample",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_258.xml",
+      "blockName": "Nominal path sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_258.xml",
+      "blockName": "Robot feedback sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_639.xml",
+      "blockName": "Position noise",
+      "blockType": "UniformRandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.d.positionSampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_639.xml",
+      "blockName": "Position sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.d.positionSampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_271.xml",
+      "blockName": "Held issued command at transport clock",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.d.actualRobotTransportSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_271.xml",
+      "blockName": "Robot command samples",
+      "blockType": "Delay",
+      "parameter": "DelayLength",
+      "expression": "p.d.robotDelaySamples"
+    },
+    {
+      "systemXml": "simulink/systems/system_271.xml",
+      "blockName": "Robot command samples",
+      "blockType": "Delay",
+      "parameter": "SampleTime",
+      "expression": "p.d.actualRobotTransportSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "ADC output noise correlation",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(round(((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))+(0))/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*p.adcStudy.d.channels.acceleration.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Independent converter output noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1579.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "ADC output noise correlation",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Actual ADC output samples",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(round(((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))+(0))/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*p.adcStudy.d.channels.acceleration.emaSteadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Fresh per-conversion EMA",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Independent converter output noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.outputSampleTime_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "InitialStates",
+      "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))*p.adcStudy.d.converter.steadyStatePerUnitInput"
+    },
+    {
+      "systemXml": "simulink/systems/system_1557.xml",
+      "blockName": "Native converter impulse response",
+      "blockType": "DiscreteTransferFcn",
+      "parameter": "SampleTime",
+      "expression": "p.adcStudy.fineClock_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "X filter memory",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "X fresh 10 kHz acceleration frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "X known channel delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.acceleration.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "X raw noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "X sensor sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "Z filter memory",
+      "blockType": "UnitDelay",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "Z fresh 10 kHz acceleration frame",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "Z known channel delay",
+      "blockType": "TransportDelay",
+      "parameter": "DelayTime",
+      "expression": "p.adcStudy.d.channels.acceleration.pipelineDelay_s"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "Z raw noise",
+      "blockType": "RandomNumber",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_1059.xml",
+      "blockName": "Z sensor sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sensor.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_287.xml",
+      "blockName": "Normal command change 1",
+      "blockType": "Step",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_287.xml",
+      "blockName": "Normal command change 2",
+      "blockType": "Step",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_287.xml",
+      "blockName": "Normal command change 3",
+      "blockType": "Step",
+      "parameter": "SampleTime",
+      "expression": "p.robot.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Command prediction diagnostics",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Control log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Native control history clock",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 1",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 2",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 3",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 4",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 5",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 6",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 7",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Normal logging sample 8",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Plant log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Predicted velocity sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Robot log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Robot prediction sampling",
+      "blockType": "ZeroOrderHold",
+      "parameter": "SampleTime",
+      "expression": "p.force.sampleTime"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Surface log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    },
+    {
+      "systemXml": "simulink/systems/system_root.xml",
+      "blockName": "Surface normal log",
+      "blockType": "ToWorkspace",
+      "parameter": "SampleTime",
+      "expression": "p.sim.step"
+    }
+  ]
+}

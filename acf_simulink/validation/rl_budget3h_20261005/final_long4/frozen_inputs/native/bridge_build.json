@@ -1,0 +1,33 @@
+{
+  "emitted_c_sha256": "0b43ec114366a962ba6107295fb52adbdb5f19fe999869aaa915350290df0469",
+  "adapted_c_sha256": "51b4b88d793b79c94f9a3eba51b23387db408ad76d707293128f5a7162951895",
+  "bridge_sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+  "parameter_bank_sha256": "4400326572ae1e958b176355a4c0997bd322f67b988f7dada27c4d02e128cdae",
+  "shared_library_sha256": "cf10919870a1e205deef6260437052df91b76bdc14d2a714e21313d449f95d12",
+  "native_computation_recovered_exactly": true,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fopenmp",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/code/acf_rl_native_grt_rtw",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_bridge.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/native_parameter_bank.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+    "-lm",
+    "-pthread",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/libacf_native.so"
+  ],
+  "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+}

@@ -1,0 +1,158 @@
+{
+  "date": "2026-09-30",
+  "status": "lower_series_v1_endpoint_and_execution_pipeline_verified_final_combined_source_pending",
+  "scope": "Own measured-acceleration controller lane; every native execution is counted, including repeated benchmarks. These totals are not distinct design configurations and exclude other agents. Previous no-accelerometer and axial diagnostics remain separate.",
+  "previousLedger": "acf_simulink/validation/normal_mass_controller_inertial_ledger_20260930_v7_damper_checkpoint.json",
+  "previousLedgerSha256": "576bf6f6fdeecbf7f419860b06577ee01e192dce0ce3010df675d329bf969a52",
+  "previousValidatedNativeHistories": 509,
+  "newStudies": [
+    {
+      "evidence": "acf_simulink/validation/normal_mass_controller_runner_20260930_lower_series_v1_results.json",
+      "sha256": "3d5e30155cb6bcde24b7beec25bc0b283a73d8537aaa88f151f6b973df58a0c8",
+      "status": "complete",
+      "scope": "Fixed-mass/fixed-topology full native histories, force/orientation/seed changes. Sampling and notch remain fixed; no hardware qualification.",
+      "modelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+      "candidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+      "experimentSha256": "6a5952763e052bb518f0b24cffd139108b7c56120152623f7cb83a856ae011eb",
+      "validatedNativeHistories": 15,
+      "nativeReturned": 15,
+      "attempts": 15,
+      "preparationRejections": 0,
+      "validationRejectionsAfterNativeReturn": 0,
+      "forcePasses": null
+    },
+    {
+      "evidence": "acf_simulink/validation/normal_mass_controller_inertial_endpoint_confirmation_20260930_lower_series_v1_results.json",
+      "sha256": "82509cf0e160b428e30e6d88e31cfbc3ff61778b3c8ab3f7b61e302a3fc2ab8b",
+      "status": "complete",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, through each case-specific full recording;1mm high10mm wide bumps at100mm/s. Conditional finite simulation, not physical qualification.",
+      "modelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+      "candidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+      "experimentSha256": "fc1c3df768b2934b727dae0783ec2c785887190ceb6f3b12c6a2582206e74e4a",
+      "validatedNativeHistories": 80,
+      "nativeReturned": 80,
+      "attempts": 80,
+      "preparationRejections": 0,
+      "validationRejectionsAfterNativeReturn": 0,
+      "forcePasses": 80
+    },
+    {
+      "evidence": "acf_simulink/validation/normal_mass_controller_inertial_full_range_mass_20260930_lower_series_v1_partition_smoke_results.json",
+      "sha256": "78424224f28788fee1b417684bbb165dad212d912be95b5a2eb19e330728502e",
+      "status": "complete",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, through each case-specific full recording;1mm high10mm wide bumps at100mm/s. Conditional finite simulation, not physical qualification.",
+      "modelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+      "candidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+      "experimentSha256": "f6e0e01f881552912ff51a73ec617e26d289c0a7d42947d2037e05eb93bdc252",
+      "validatedNativeHistories": 1,
+      "nativeReturned": 1,
+      "attempts": 1,
+      "preparationRejections": 0,
+      "validationRejectionsAfterNativeReturn": 0,
+      "forcePasses": 1
+    }
+  ],
+  "newValidatedNativeHistories": 96,
+  "validatedNativeHistories": 605,
+  "nativeReturned": 606,
+  "attempts": 609,
+  "preparationRejections": 3,
+  "validationRejectionsAfterNativeReturn": 1,
+  "lowerSeriesDistinctEndpointPhysicalConfigurations": 80,
+  "lowerSeriesPipelineRepeatedExecutions": 16,
+  "lowerSeriesEndpoint": {
+    "executed": 80,
+    "passed": 80,
+    "worstNormalForceError_N": 0.33570390418683616,
+    "minimumMargin_N": 0.16429609581316384,
+    "worstCase": {
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "mu": 0.3,
+      "seedRequested": 97,
+      "peakNormalForceErrorTime_s": 2.00077
+    },
+    "commonSpringPreload_N": 33.6,
+    "commonPreloadInterval_N": [
+      30.36861742866233,
+      36.866512571337665
+    ],
+    "combinedFreeLength_mm": 37.18000000000001,
+    "combinedInstalledLength_mm": 30.37355818900031,
+    "maxCurrent_A": 2.96478839601141,
+    "maxVoltage_V": 17.937776498998286,
+    "maxInverseCurrent_A": 0.46217335329086373,
+    "allNativeNoClipping": true,
+    "allNativeNoStops": true,
+    "nativeSamplesScored": 32000080
+  },
+  "full3500FinalMeshCasesExecuted": 0,
+  "fullRangePhaseSmokeCasesExecuted": 1,
+  "fullRangePhaseSmokeInterpretation": "A single already-recorded condition was repeated to validate partition and memory options. It is execution-pipeline evidence, not a launched final3500-case qualification grid.",
+  "oldAxialPerformanceRecipeCasesExecuted": 0,
+  "earlierNoAccelerometerDiagnostics": {
+    "evidence": "normal_mass_controller_diagnostic_summary_20260930.json",
+    "validatedNativeHistories": 132,
+    "preparationRejections": 1,
+    "scope": "separate diagnostic observer/controller without measured tool acceleration; not the selected system"
+  },
+  "physicalQualification": false,
+  "candidateFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_lower_series_v1_candidate_20260930.mat",
+  "candidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+  "modelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "candidateStatus": "All80 endpoint cases pass with stored preload; repeated/refinement/uncertainty evidence belongs to other workers. Final engineered acquisition and fast force-stability gate integration and the full mesh are pending root coordination.",
+  "fullRangeRunner": {
+    "phase": "full_range_mass",
+    "massS_kg": [
+      0.1,
+      0.5,
+      1,
+      1.4,
+      2
+    ],
+    "forceValues_N": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "angleValues_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "muValues": [
+      0,
+      0.3
+    ],
+    "seeds": [
+      0,
+      7,
+      29,
+      97,
+      1729
+    ],
+    "partitionCount": 4,
+    "partitionIndex": "one each1..4",
+    "plannedCasesPerPartition": 875,
+    "simulationMode": "accelerator",
+    "simulationStep_s": 1e-05,
+    "keepNativeWorstInMemory": false,
+    "clearSDIEvery": 1,
+    "retainPlotExcerpts": false,
+    "checkpointEvery": 8,
+    "estimatedCold10usWorkerPeakResidentGiB": 3.0580291748046875,
+    "finalSourceLaunchStatus": "held"
+  }
+}

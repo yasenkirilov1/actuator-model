@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-30",
+  "review": "sensor/issued-command and sequential-batch recipe provenance audit",
+  "reports": [
+    {
+      "report": "inertial_actuators_screw_endpoints_v7_20260930.json",
+      "reportSHA256": "8dd2507d0ffd0753228b53c5de6fbcef966daa5378260f814cbefa7e965b5c98",
+      "status": "stopped_by_coordinator",
+      "executed": 26,
+      "planned": 32,
+      "setupRejections": 0,
+      "reportedPasses": 13,
+      "actualSensorContract": {
+        "forceFilterTime_s": 0.0002,
+        "accelerationFilterTime_s": 0.0002,
+        "sensorSampleTime_s": 0.0001,
+        "sensorDelays_s": 0.0001,
+        "accelerometerRange_g": 8,
+        "accelerometerQuantum_m_s2": 0.00187038
+      },
+      "qualificationScope": "retained diagnostic only; does not use the selected 100us/50g common contract",
+      "sharpActualCaseIndices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "slowActualCaseIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "slowCommandMismatch": {
+        "physicalScanSpeed_m_s": 0.02,
+        "causalControllerIssuedScanSpeed_m_s": 0.1
+      },
+      "remainingPlannedCasesNotExecuted": 6
+    },
+    {
+      "report": "inertial_actuators_solver_refinement_v7_20260930.json",
+      "reportSHA256": "850ee7a0e86a9d5bece9490d502eed7390ceabe7c2ea80e12eb2590970acc27d",
+      "status": "complete",
+      "executed": 3,
+      "planned": 3,
+      "setupRejections": 0,
+      "reportedPasses": 0,
+      "actualSensorContract": {
+        "forceFilterTime_s": 0.0002,
+        "accelerationFilterTime_s": 0.0002,
+        "sensorSampleTime_s": 0.0001,
+        "sensorDelays_s": 0.0001,
+        "accelerometerRange_g": 8,
+        "accelerometerQuantum_m_s2": 0.00187038
+      },
+      "qualificationScope": "retained diagnostic only; does not use the selected 100us/50g common contract",
+      "recipeSnapshotCaveat": "This was the second call in an already running MATLAB batch after the recipe file changed. MATLAB retained its first compiled function (initial a74cb85616e8a3e796e1a710bcb4f96cfe3f7edc0a4dec131b3371f294d606d6), while copying the new on-disk recipe. Missing new per-row metadata confirms the compiled/copy discrepancy; exclude from final source-bound qualification. Actual native recordings and their physical parameter structs are retained."
+    }
+  ],
+  "correctedRecipeSHA256": "4d6305c993374346a5c08a3cb6d848840169903f4384bd9db3bbf47f2f0b66f9",
+  "newSensorContract": "matched_100us_50g",
+  "newActualMatchedPilot": "inertial_actuators_matched100us_prediction_v7_20260930.json",
+  "newEndpointRecording": "inertial_actuators_matched100us_screw_endpoints_v7_20260930.json",
+  "corrections": "New batch binds per-row filter/delay/range/quantization and both commanded/physical scan speed. Final sequential batch uses an unchanged recipe throughout."
+}

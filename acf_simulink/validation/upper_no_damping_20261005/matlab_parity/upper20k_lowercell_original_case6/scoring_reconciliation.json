@@ -1,0 +1,18 @@
+{
+  "status": "strict_all_channel_guard_failed_force_verdict_reproduced",
+  "strictReplayPassed": false,
+  "nativeSamples": 600001,
+  "maximumForceHistoryDifference_N": 2.89443382968102e-05,
+  "maximumForceHistoryDifferenceTime_s": 1.9877266666666666,
+  "firstForceDifferenceAbove1nNTime_s": 0.10765666666666666,
+  "forceDifferenceRMS_N": 1.7052008132738365e-06,
+  "matlabForcePeakError_N": 62.11524597817309,
+  "cForcePeakError_N": 62.11524597817302,
+  "forcePeakDifference_N": 7.105427357601002e-14,
+  "earlyFirst100msMaxForceHistoryDifference_N": 1.2315126696194056e-10,
+  "beforeBumpMaxForceHistoryDifference_N": 8.992524868745022e-06,
+  "sourceRecordingSha256": "fa5df180b0ccc0893ab02403797bec6ac532bd96a022597aefe7e954334a0c18",
+  "nativeRecordingSha256": "d4641d1825a9c94f084987ae1fda801ee94d7a0f222e8019cce730d7f2da7318",
+  "strictReportSha256": "1709bb0d366c04e4140255ab48e8a9af50eaf16b46207050f6a67bfd9c5f98e5",
+  "interpretation": "The independently simulated native MATLAB case reproduces the very large pre-bump force failure and exact failure/clock verdict. It fails the tighter all-channel1e-8 mathematical parity guard; numerical divergence must remain reported separately. A quantization/roundoff amplification explanation is plausible, not established by this comparison alone."
+}

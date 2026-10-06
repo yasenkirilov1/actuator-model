@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-05",
+  "status": "paired_native_results_audited",
+  "learning": "supervised robot-policy imitation",
+  "training_trajectories": 8,
+  "selection_trajectories": 4,
+  "heldout_identities": 11,
+  "heldout_recordings": 22,
+  "heldout_native_samples": 43200022.0,
+  "collection_native_samples": 21600012.0,
+  "trained_network_sha256": "1fc08b808bc43986bd927532d60edf27a930bcfe6ef5a5ff4f545f391406e52e",
+  "test_trajectories_used_in_training": 0,
+  "teacher_passes": 11,
+  "learned_passes": 11,
+  "teacher_worst_error_N": 0.41786797669264075,
+  "learned_worst_error_N": 0.41786797670179254,
+  "maximum_abs_paired_peak_change_N": 9.15179043659009e-12,
+  "gate_closed_command_violations": 0,
+  "direction_or_gain_envelope_violations": 0,
+  "maximum_network_inference_residual_m": 1.734723475976807e-18,
+  "maximum_raw_network_teacher_action_error_m_s": 2.710505431213761e-16,
+  "maximum_bounded_network_teacher_action_error_m_s": 2.710505431213761e-16,
+  "raw_network_safety_clipped_frames": 0,
+  "paired_results": [
+    {
+      "identity": "heldout_01",
+      "split": "test",
+      "teacher_peak_N": 0.09647440710047661,
+      "learned_peak_N": 0.0964744071004553,
+      "change_N": -2.1316282072803006e-14,
+      "teacher_rms_N": 0.007088058314306477,
+      "learned_rms_N": 0.007088058314310175,
+      "teacher_final_travel_error_mm": -0.509535291964994,
+      "learned_final_travel_error_mm": -0.509535291964968,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 591,
+      "learned_nonzero_command_frames": 591
+    },
+    {
+      "identity": "heldout_02",
+      "split": "test",
+      "teacher_peak_N": 0.09369532240087608,
+      "learned_peak_N": 0.09369532240027922,
+      "change_N": -5.968558980384842e-13,
+      "teacher_rms_N": 0.008601463240826729,
+      "learned_rms_N": 0.008601463240786525,
+      "teacher_final_travel_error_mm": 0.511567940151645,
+      "learned_final_travel_error_mm": 0.5115679401515842,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 586,
+      "learned_nonzero_command_frames": 586
+    },
+    {
+      "identity": "heldout_03",
+      "split": "test",
+      "teacher_peak_N": 0.16898591098524207,
+      "learned_peak_N": 0.16898591098530957,
+      "change_N": 6.750155989720952e-14,
+      "teacher_rms_N": 0.011129504122945033,
+      "learned_rms_N": 0.011129504122944197,
+      "teacher_final_travel_error_mm": -0.5038626817045339,
+      "learned_final_travel_error_mm": -0.5038626817045182,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 591,
+      "learned_nonzero_command_frames": 591
+    },
+    {
+      "identity": "heldout_04",
+      "split": "test",
+      "teacher_peak_N": 0.17359869489708046,
+      "learned_peak_N": 0.17359869489663993,
+      "change_N": -4.405364961712621e-13,
+      "teacher_rms_N": 0.012073161093041894,
+      "learned_rms_N": 0.012073161093039327,
+      "teacher_final_travel_error_mm": 0.5067588231237614,
+      "learned_final_travel_error_mm": 0.5067588231237665,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 584,
+      "learned_nonzero_command_frames": 584
+    },
+    {
+      "identity": "heldout_05",
+      "split": "test",
+      "teacher_peak_N": 0.26086008683806483,
+      "learned_peak_N": 0.2608600868379689,
+      "change_N": -9.592326932761353e-14,
+      "teacher_rms_N": 0.019075951267300485,
+      "learned_rms_N": 0.01907595126730148,
+      "teacher_final_travel_error_mm": -0.5074538972492261,
+      "learned_final_travel_error_mm": -0.5074538972493006,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 591,
+      "learned_nonzero_command_frames": 591
+    },
+    {
+      "identity": "heldout_06",
+      "split": "test",
+      "teacher_peak_N": 0.24107033897896457,
+      "learned_peak_N": 0.24107033897896457,
+      "change_N": 0.0,
+      "teacher_rms_N": 0.0187044034193133,
+      "learned_rms_N": 0.01870440341931383,
+      "teacher_final_travel_error_mm": 0.5101476331684802,
+      "learned_final_travel_error_mm": 0.5101476331685287,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 584,
+      "learned_nonzero_command_frames": 584
+    },
+    {
+      "identity": "heldout_07",
+      "split": "test",
+      "teacher_peak_N": 0.042792409270649756,
+      "learned_peak_N": 0.04279240927059824,
+      "change_N": -5.1514348342607263e-14,
+      "teacher_rms_N": 0.004292208360866136,
+      "learned_rms_N": 0.0042922083608679835,
+      "teacher_final_travel_error_mm": -0.501948994580878,
+      "learned_final_travel_error_mm": -0.5019489945808728,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 591,
+      "learned_nonzero_command_frames": 591
+    },
+    {
+      "identity": "heldout_08",
+      "split": "test",
+      "teacher_peak_N": 0.3402586352880377,
+      "learned_peak_N": 0.3402586352879453,
+      "change_N": -9.237055564881302e-14,
+      "teacher_rms_N": 0.021049905671194153,
+      "learned_rms_N": 0.0210499056711934,
+      "teacher_final_travel_error_mm": 0.5035559557030854,
+      "learned_final_travel_error_mm": 0.5035559557030802,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 584,
+      "learned_nonzero_command_frames": 584
+    },
+    {
+      "identity": "calibration_01",
+      "split": "stress_test",
+      "teacher_peak_N": 0.41786797669264075,
+      "learned_peak_N": 0.41786797670179254,
+      "change_N": 9.15179043659009e-12,
+      "teacher_rms_N": 0.07626751284508194,
+      "learned_rms_N": 0.07626751285046154,
+      "teacher_final_travel_error_mm": -0.5117707531653738,
+      "learned_final_travel_error_mm": -0.5117707531644768,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 686,
+      "learned_nonzero_command_frames": 686
+    },
+    {
+      "identity": "calibration_04",
+      "split": "stress_test",
+      "teacher_peak_N": 0.07279987982736014,
+      "learned_peak_N": 0.07279987982710345,
+      "change_N": -2.566835632933362e-13,
+      "teacher_rms_N": 0.013015824351129274,
+      "learned_rms_N": 0.013015824350429066,
+      "teacher_final_travel_error_mm": -0.5025783267525054,
+      "learned_final_travel_error_mm": -0.5025783267523527,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 747,
+      "learned_nonzero_command_frames": 747
+    },
+    {
+      "identity": "calibration_05",
+      "split": "stress_test",
+      "teacher_peak_N": 0.4139261203364484,
+      "learned_peak_N": 0.413926120337166,
+      "change_N": 7.176481631177012e-13,
+      "teacher_rms_N": 0.07503514583879976,
+      "learned_rms_N": 0.07503514584120641,
+      "teacher_final_travel_error_mm": -0.5196043729803219,
+      "learned_final_travel_error_mm": -0.5196043729799732,
+      "teacher_passed": true,
+      "learned_passed": true,
+      "teacher_nonzero_command_frames": 628,
+      "learned_nonzero_command_frames": 628
+    }
+  ],
+  "active_plot_identity": "calibration_05",
+  "sources": [
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_heldout/results.json",
+      "sha256": "f4e6f966c60b4bc059bfcd60e4d69fef7db857de1b64ce298620360f875b044d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/results.json",
+      "sha256": "59e1e1a2650c2a265a6dab8e775457dfd422f69a42351344a62ca64d5fc82bda"
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_training/training_summary.json",
+      "sha256": "bc16cc449aa169e186948fc958fa046f93b5ebfd2fe75a29d2f31295605a148b"
+    }
+  ],
+  "figures": [
+    {
+      "file": "ml_robot_active_trajectory.svg",
+      "sha256": "41d2b11b5bdebfc3ce768d3366381b343c80016c35ff7d53b6d7a673b0a7cd3e"
+    },
+    {
+      "file": "ml_robot_learned_policy.svg",
+      "sha256": "710bc699992c152288547e04f8b8f44e2ee7d516b89a4671daf730aa53e594be"
+    },
+    {
+      "file": "ml_robot_paired_results.svg",
+      "sha256": "366ff4ee5ea81202e00be3e90aee48e9223c5a8271fa6eb4aeb88cf14f434ee0"
+    }
+  ],
+  "recommendation": "Retain the transparent deterministic recenter policy. This learned policy imitates it and offers no demonstrated performance or complexity advantage.",
+  "limitations": "Finite trajectory-level holdouts, partial calibration corners, and modeled delay errors. No full range requalification, online RL, or physical sanding validation."
+}

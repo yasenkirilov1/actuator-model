@@ -1,0 +1,6 @@
+{
+  "time_utc": "2026-10-05T13:26:58.484511+00:00",
+  "reason": "User revised robot centering objective to an acceptable +/-7.5mm band; end this old quadratic-centering experiment gracefully and continue with revised reward in a new run.",
+  "signal": "SIGTERM handled by collector checkpoint logic",
+  "canonical_model_untouched": true
+}

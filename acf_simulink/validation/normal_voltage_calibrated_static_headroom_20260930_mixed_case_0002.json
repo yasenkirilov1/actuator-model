@@ -1,0 +1,371 @@
+{
+  "date": "2026-09-30",
+  "status": "complete_pointwise_algebraic_screen",
+  "family": "mixed",
+  "nativeCaseId": 2,
+  "nativeSourceRow": {
+    "caseIndex": 2,
+    "sourceConfigurationIndex": 18,
+    "seed": 29,
+    "executed": true,
+    "completed": true,
+    "peakNormalForceError_N": 0.3769380787560621,
+    "forcePassed": true,
+    "packingPassed": true,
+    "passed": true,
+    "actualLowerStiffness_N_m": 23695.2,
+    "actualLowerDamping_Ns_m": 48,
+    "identifiedLowerStiffness_N_m": 23695.2,
+    "identifiedLowerDamping_Ns_m": 48,
+    "identifiedMassB_kg": 0.6014999999999999,
+    "identifiedForceConstant_N_A": 20.049999999999997,
+    "identifiedMassS_kg": 1.995,
+    "feasibleCommonPreloadMin_N": 30.942393009685542,
+    "feasibleCommonPreloadMax_N": 40.56250699031447,
+    "configuredCommonPreload_N": 33.6,
+    "combinedFreeSpringLength_mm": 40.980000000000004,
+    "combinedInstalledSpringLength_mm": 35.30796515750026,
+    "individualSpringForceMin_N": 5.619506990314463,
+    "individualSpringForceMax_N": 61.58049300968554,
+    "maximumCurrent_A": 2.998686403537713,
+    "maximumVoltage_V": 19.837917007097296,
+    "forceBalanceMaxResidual_N": 4.385380947269368e-15,
+    "lowerForceBalanceMaxResidual_N": 3.552713678800501e-15,
+    "normalProjectionMaxResidual_N": 2.842170943040401e-14,
+    "uncertainty": {
+      "forceScaleZ": -0.0005,
+      "forceScaleX": -0.0005,
+      "positionScale": 0.0005,
+      "forceFrameAngle_rad": 0.0008726646259971648,
+      "accelFrameAngle_rad": 0.0008726646259971648,
+      "forceCrossZFromX": 0.0005,
+      "forceCrossXFromZ": 0.0005,
+      "accelBiasX_m_s2": -0.005,
+      "massB_model_kg": 0.6014999999999999,
+      "forceConstant_model_N_A": 20.049999999999997,
+      "recenterGain": 0.7352941176470588,
+      "jointCorner": 8,
+      "jointSigns": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ]
+    },
+    "staticCalibrationGuard": {
+      "passed": true,
+      "staticResidualCount": 16,
+      "primitiveAllowedPaths": [
+        "sensor.bias",
+        "contact.lateralBias_N",
+        "uncertainty.forceScaleZ",
+        "uncertainty.forceScaleX",
+        "uncertainty.forceFrameAngle_rad",
+        "uncertainty.accelFrameAngle_rad",
+        "uncertainty.forceCrossZFromX",
+        "uncertainty.forceCrossXFromZ",
+        "accel.bias",
+        "uncertainty.accelBiasX_m_s2",
+        "accel.scaleError",
+        "sensor.distalMassCalibrationScale",
+        "uncertainty.massB_model_kg",
+        "uncertainty.forceConstant_model_N_A",
+        "uncertainty.positionScale",
+        "contact.commandedScanSpeed_m_s"
+      ],
+      "derivedAllowedPaths": [
+        "sensor.distalMass_model_kg",
+        "inertial.holderMassCalibrationScale",
+        "inertial.forceConstantCalibrationScale",
+        "inertial.lowerLoadInverse.identifiedMassB_kg",
+        "inertial.lowerLoadInverse.identifiedForceConstant_N_A",
+        "inertial.lowerLoadInverse.numerator",
+        "inertial.lowerLoadInverse.denominator",
+        "d.coilControl.* (identified-mass coefficients for inactive alternative)"
+      ],
+      "actualChangedPaths": [
+        "accel.bias",
+        "accel.scaleError",
+        "contact.commandedScanSpeed_m_s",
+        "contact.lateralBias_N",
+        "d.coilControl.A",
+        "d.coilControl.B",
+        "d.coilControl.C",
+        "d.coilControl.D",
+        "inertial.lowerLoadInverse.identifiedForceConstant_N_A",
+        "inertial.lowerLoadInverse.identifiedMassB_kg",
+        "inertial.lowerLoadInverse.numerator",
+        "sensor.bias",
+        "sensor.distalMassCalibrationScale",
+        "sensor.distalMass_model_kg",
+        "uncertainty.accelBiasX_m_s2",
+        "uncertainty.accelFrameAngle_rad",
+        "uncertainty.forceConstant_model_N_A",
+        "uncertainty.forceCrossXFromZ",
+        "uncertainty.forceCrossZFromX",
+        "uncertainty.forceFrameAngle_rad",
+        "uncertainty.forceScaleX",
+        "uncertainty.forceScaleZ",
+        "uncertainty.massB_model_kg",
+        "uncertainty.positionScale"
+      ],
+      "physicalAndTimingCoefficientsIdentical": true,
+      "originalSeed": 29,
+      "jointCorner": 8
+    },
+    "preparedParametersPreservedAfterRun": true,
+    "runtimeSeconds": 13.637466,
+    "nativeTraceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_20260930_case_02_native.mat",
+    "nativeTraceSHA256": "fe88db4ddcb5fd942f7dba93b20649dda6d3508958cfbb18fe58bcc35f12215c"
+  },
+  "noNewNativeSimulation": true,
+  "counterfactual": "Real known physicalKf24.4N/A, hotR8.896ohm,L4mH,currentresponse100us. Uniform20/24.4 current scaling preserves the original residualKf identification; all other recorded sensor, robot, guide and mechanics calibration remains fixed.",
+  "nativeSamples": 400001,
+  "timeRange_s": [
+    0.0,
+    4.0
+  ],
+  "loadedStartupIncluded": true,
+  "genericCompleted": true,
+  "genericNormalPeakError_N": 0.3769380787560621,
+  "genericVoltageRange_V": {
+    "minimum": -0.5293097339586161,
+    "maximum": 19.837917007097296,
+    "peakAbsolute": 19.837917007097296,
+    "rms": 10.193645428857026
+  },
+  "genericRequestedVoltageRange_V": {
+    "minimum": -0.5293097339586161,
+    "maximum": 19.837917007097296,
+    "peakAbsolute": 19.837917007097296,
+    "rms": 10.193645428857026
+  },
+  "genericPhysicalCurrentRange_A": {
+    "minimum": 1.912517657860563,
+    "maximum": 2.998686403537713,
+    "peakAbsolute": 2.998686403537713,
+    "rms": 2.504645123811373
+  },
+  "genericCurrentCommandRange_A": {
+    "minimum": 1.823079526957863,
+    "maximum": 3.0730149300786933,
+    "peakAbsolute": 3.0730149300786933,
+    "rms": 2.5053755961034625
+  },
+  "genericAppliedCurrentCommandRange_A": {
+    "minimum": 1.823079526957863,
+    "maximum": 3.0730149300786933,
+    "peakAbsolute": 3.0730149300786933,
+    "rms": 2.5053755961034625
+  },
+  "genericCurrentTrackingErrorRange_A": {
+    "minimum": -0.36048505500840067,
+    "maximum": 0.3548553405213455,
+    "peakAbsolute": 0.36048505500840067,
+    "rms": 0.06364483601400725
+  },
+  "gapVelocityRange_m_s": {
+    "minimum": -0.03480838330699246,
+    "maximum": 0.024113557316852913,
+    "peakAbsolute": 0.03480838330699246,
+    "rms": 0.004809669802665947
+  },
+  "genericVoltageClippingSamples": 0,
+  "genericEffortClippingSamples": 0,
+  "genericRequestedVsAppliedVoltageResidual_V": 3.552713678800501e-15,
+  "mappedHotRequestedVoltageRange_V": {
+    "minimum": 6.216652374815559,
+    "maximum": 29.572088466257267,
+    "peakAbsolute": 29.572088466257267,
+    "rms": 18.376185775826592
+  },
+  "mappedRealPhysicalCurrentRange_A": {
+    "minimum": 1.5676374244758713,
+    "maximum": 2.4579396750309126,
+    "peakAbsolute": 2.4579396750309126,
+    "rms": 2.0529878064027653
+  },
+  "mappedRealCurrentCommandRange_A": {
+    "minimum": 1.4943274811130025,
+    "maximum": 2.518864696785814,
+    "peakAbsolute": 2.518864696785814,
+    "rms": 2.053586554183166
+  },
+  "mappedHotRequestedVsDirectRegulatorResidual_V": 1.0658141036401503e-14,
+  "minimumReserveAt31V_V": 1.4279115337427335,
+  "peakMappedRequestedVoltageTime_s": 2.0627,
+  "mappedHotVoltageComponentsAtPeak_V": {
+    "currentRegulator": 8.511020339935465,
+    "resistance": 20.51496941900496,
+    "backEMF": 0.5460987073168491
+  },
+  "predicted31VClippingSamples": 0,
+  "predicted31VClippingFraction": 0.0,
+  "mappedCurrentCommandWithin3p5A": true,
+  "conditional31VHeadroomSupported": true,
+  "calibrationPreservation": {
+    "physicalKfGeneric_N_A": 20.0,
+    "identifiedKfGeneric_N_A": 20.049999999999997,
+    "identifiedInverseKfGeneric_N_A": 20.049999999999997,
+    "physicalKfReal_N_A": 24.4,
+    "identifiedKfReal_N_A": 24.460999999999995,
+    "identifiedInverseKfReal_N_A": 24.460999999999995,
+    "identifiedToPhysicalKfRatioUnchanged": true,
+    "identifiedToPhysicalKfRatio": 1.0025,
+    "uniformCurrentScale": 0.819672131147541,
+    "forceKpGeneric_A_N": 0.3,
+    "forceKiGeneric_A_Ns": 20.0,
+    "forceKpReal_A_N": 0.2459016393442623,
+    "forceKiReal_A_Ns": 16.393442622950822,
+    "forceKdReal_A_s_N": 0.0,
+    "massSActual_kg": 2.0,
+    "massSIdentified_kg": 1.995,
+    "massBActual_kg": 0.6,
+    "massBIdentified_kg": 0.6014999999999999,
+    "lowerStiffnessActual_N_m": 23695.2,
+    "lowerDampingActual_Ns_m": 48.0,
+    "lowerStiffnessIdentified_N_m": 23695.2,
+    "lowerDampingIdentified_Ns_m": 48.0,
+    "allSensorRobotGuideAndMechanicalCalibrationResidualsRetained": true,
+    "initialActualGenericCurrent_A": 2.5,
+    "initialActualRealCurrent_A": 2.0491803278688527,
+    "initialGenericCommand_A": 2.511793837011624,
+    "initialRealCommand_A": 2.058847407386577,
+    "initialNormalForceError_N": 0.0
+  },
+  "mapping": {
+    "equation": "Vhot=alpha*VgenericRequested+beta*Igeneric+gamma*vGap",
+    "alpha": 1.0928961748633879,
+    "beta_ohm": 2.920218579234974,
+    "gamma_V_s_m": 2.542076502732243,
+    "currentResponse_s": 0.0001,
+    "realPhysicalR_ohm": 8.896,
+    "realPhysicalL_H": 0.004,
+    "residualIdentifiedKfScaledRatherThanCorrected": true
+  },
+  "assumptions": [
+    "Pointwise requested-voltage algebra only, not a real-coil native simulation or hardware qualification.",
+    "Generic requested voltage matches applied voltage because both native clipping flags are zero; the logged regulator uses the same limited current command.",
+    "All active current-unit feedback gains, holding/acceleration/guide feedforward and proper inverse current outputs, initial current and identifiedKf must use the uniform force-current transformation. Residual identified-to-physicalKf error is preserved.",
+    "The real winding has matched hotR/L/back-EMF compensation and the same100us current response. The modeled amplifier realizes the mapped terminal voltage/current without added phase, ripple or clipping.",
+    "Same upper-rigid prescribed robot-side kinematics and all original sensor, robot, guide and mechanical calibration. Actual finite robot impedance is not qualified.",
+    "HotRfactor1.39 corresponds to an assumed100degreeC copper rise. Temperature-dependentKf, Kf-versus-stroke, physical thermal response and safe supplier operating temperature remain unqualified.",
+    "31V usable output is a terminal-voltage envelope, not a guaranteed output specification from a36V supply."
+  ],
+  "sources": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_20260930_results.json",
+      "sha256": "27ae79689baaa6c3ec3270738f1d0a8514523111d0ea037b9d379a2f4a626011",
+      "sizeBytes": 25733
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_20260930_case_02_native.mat",
+      "sha256": "fe88db4ddcb5fd942f7dba93b20649dda6d3508958cfbb18fe58bcc35f12215c",
+      "sizeBytes": 90553930
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_source_20260930/acf_force_control_normal_trial.slx",
+      "sha256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b",
+      "sizeBytes": 609168
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_20260930_configuration.mat",
+      "sha256": "fe2376a79b1084096c3b808bf6cdda4aa68431671cb5dac1b3ab35d9c359726c",
+      "sizeBytes": 25304
+    }
+  ],
+  "sourceModelSha256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b",
+  "privateModelSha256": null,
+  "candidateSha256": null,
+  "recipeSha256": "3dbf23e27c29d15f7f3d91114e2fe24c494f67b6662497e74acd13ffbda48603",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "peakResidentMemory_kB": 325348,
+  "memoryScope": "One complete retained MAT history in this short-lived process; process exit releases every3-million-sample array before the next file is loaded."
+}

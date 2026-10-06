@@ -1,0 +1,46 @@
+{
+  "version": "inertial-v4",
+  "scope": "Optionalfeedbackfilteridentitybypass on4 referencecases; floating summation association differs fromv3",
+  "rows": [
+    {
+      "caseIndex": 1,
+      "massS_kg": 2,
+      "force_N": 50,
+      "peakNormalError_N": 0.34992276535191991,
+      "original35Difference": 7.1054273576010019E-14,
+      "normal8Difference": 7.1054273576010019E-14,
+      "accelerometer6Difference": 5.6843418860808015E-14,
+      "motion2Difference": 2.5673907444456745E-16
+    },
+    {
+      "caseIndex": 2,
+      "massS_kg": 0.1,
+      "force_N": 50,
+      "peakNormalError_N": 0.36831082634149226,
+      "original35Difference": 7.1054273576010019E-14,
+      "normal8Difference": 7.1054273576010019E-14,
+      "accelerometer6Difference": 5.6843418860808015E-14,
+      "motion2Difference": 2.7582103268031233E-16
+    },
+    {
+      "caseIndex": 3,
+      "massS_kg": 0.1,
+      "force_N": 5,
+      "peakNormalError_N": 0.32989924593288844,
+      "original35Difference": 5.1039727999580009E-13,
+      "normal8Difference": 3.2240876635114546E-13,
+      "accelerometer6Difference": 2.8954616482224083E-13,
+      "motion2Difference": 6.6266436782314031E-16
+    },
+    {
+      "caseIndex": 4,
+      "massS_kg": 2,
+      "force_N": 5,
+      "peakNormalError_N": 0.32045621877001018,
+      "original35Difference": 1.5543122344752192E-13,
+      "normal8Difference": 1.3677947663381929E-13,
+      "accelerometer6Difference": 9.3258734068513149E-14,
+      "motion2Difference": 7.3205330686221259E-16
+    }
+  ]
+}

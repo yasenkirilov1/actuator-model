@@ -1,0 +1,13 @@
+{
+  "status": "saved_native_block_parameter_and_edge_graph_exactly_selected_source",
+  "parentModel": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx",
+    "sha256": "c801331c16deb6d5dd5513c394edcbc4a4ee34cf7f28d39ca1476b2d9f9e6557"
+  },
+  "privateModelSha256": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+  "systemCount": 49,
+  "allNativeBlockParametersExact": true,
+  "allConnectedEdgesExact": true,
+  "changedScope": "Model Workspace p, tunable coefficient/default bank, solver/code generation settings only.",
+  "qualificationEpisodes": 0
+}

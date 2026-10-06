@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "cellStiffness_N_m": 64000000.0,
+      "holderMass_kg": 0.6,
+      "frequency_Hz": 1643.7451841639995,
+      "period_ms": 0.6083668013960418,
+      "cellFlexForHalfNewton_nm": 7.8125,
+      "modalCurrentBound_A": 0.05,
+      "modalForceBound_N": 1.22,
+      "diagram": "Schematic fast cell flexing under maintained contact; motion exaggerated",
+      "input": "Acquired axial cell deviation, not surface truth or preview",
+      "scope": "Explanation of the locked reference model, not a measured physical mode"
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/upper_no_damping_20261005/report/fixed_controller_contract.json": "7362c2300d99e9b6d5879f49fca200ba16e995d9705c315657e4204b0dbf9e68",
+    "acf_simulink/experiments/report_readability_20261006/build_explanatory_figures.py": "11916c9a19d1ca17e653436c4df0ea4d0d9e85ab0357f29d2d2c3c06b5b74972",
+    "acf_simulink/experiments/upper_no_damping_20261005/qualification_v8/acf_prepare_cell_modal.m": "1d61689ac9852c5017064d75c759cc750b01c925a8468fb8a8ec03e38157168e"
+  },
+  "kind": "mechanical_mode_and_causal_controller_explanation",
+  "primaryReferences": [
+    {
+      "url": "https://www.mathworks.com/discovery/modal-analysis.html",
+      "claim": "Natural frequencies and corresponding patterns of structural motion define modes",
+      "readDate": "2026-10-06"
+    }
+  ]
+}

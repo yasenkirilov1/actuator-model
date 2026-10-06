@@ -1,0 +1,23 @@
+{
+  "scope": "Matched development case, not final holdout or hardware validation.",
+  "metrics": [
+    {
+      "label": "Partial inverse (0.3)",
+      "forcePeak_N": 0.2936370012176184,
+      "endTime_s": 4.0,
+      "finalTravelError_mm": 6.938631117219572,
+      "readyControllerSamples": 33100,
+      "nativeHistory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/inverse_0p3/sustained_gate_replay/selection_sustained_02_native.npz",
+      "actions": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/inverse_0p3/sustained_gate_replay/selection_sustained_02_actions.npz"
+    },
+    {
+      "label": "Full inverse (1.0)",
+      "forcePeak_N": 0.2738760715678197,
+      "endTime_s": 1.0928966666666666,
+      "finalTravelError_mm": 12.50001215814257,
+      "readyControllerSamples": 600,
+      "nativeHistory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_selection_8206/failed_native/selection_sustained_02_native.npz",
+      "actions": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_selection_8206/failed_native/selection_sustained_02_actions.npz"
+    }
+  ]
+}

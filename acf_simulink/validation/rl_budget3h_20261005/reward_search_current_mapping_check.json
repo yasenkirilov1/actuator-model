@@ -1,0 +1,11 @@
+{
+  "robot_mean_max_difference": 0.0,
+  "current_mean_max_difference": 0.05520510673522949,
+  "timesteps": 250,
+  "batch": 3,
+  "seed": 8205,
+  "sigma": 0.05,
+  "parameterDegrees": 41,
+  "baseCheckpointSha256": "e1243afa9ac99b5f0cb530d4f7348e15e490a012e88b0be0b7467882fd1f0754",
+  "scope": "Identical synthetic observation history; changed current coefficients cannot reach robot head through the frozen sparse recurrent graph. Closed-loop robot commands may still differ because physical measurements change."
+}

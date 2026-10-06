@@ -1,0 +1,65 @@
+
+--------------------------------------------------------------------------------
+          Segmentation violation detected at 2026-09-30 10:06:43 +0200
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Desktop Environment      : KDE
+  GNU C Library            : 2.44 stable
+  MATLAB Architecture      : glnxa64
+  MATLAB Root              : /home/tommie/.local/opt/MATLAB/R2026b
+  MATLAB Version           : 26.2.0.3386108 (R2026b)
+  Operating System         : "CachyOS"
+  Process ID               : 3262959
+  Processor ID             : x86 Family 25 Model 33 Stepping 2, AuthenticAMD
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Current Thread: 'MCR 0 interpret' id 139741014918848
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 00007f17fd8dda48
+  RCX = 00007f17fd8dda48  RDX = 0000000018000000
+  RSP = 00007f17fd8dd9a0  RBP = 00007f17d5ab8760
+  RSI = 0000000000001000  RDI = 0000000000000000
+
+   R8 = 0000000000000000   R9 = 0000000000000000
+  R10 = 0000000000000000  R11 = 00000000000004f2
+  R12 = 0000000000000000  R13 = 00007f17fd8dd9c0
+  R14 = 00007f17fd8dd9d0  R15 = 0000000000000000
+
+  RIP = 00007f17d5b614a8  EFL = 0000000000010246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00007f17d5b614a8 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+03544232 lc_new_job+00000216
+[  1] 0x00007f17d59bb517 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01815831
+[  2] 0x00007f17d59bc10b /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01818891
+[  3] 0x00007f17d5a587da /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+02459610
+[  4] 0x00007f17d59c0258 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01835608
+[  5] 0x00007f17d59be188 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01827208
+[  6] 0x00007f17d59e3d23 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01981731
+[  7] 0x00007f17d59e6c2b /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so+01993771
+[  8] 0x00007f17e9d8fdc0 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/authz/licensing/product/matlab_impl/mwlicensingproductmatlab.so+00323008
+[  9] 0x00007f1845dc87e9 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/fctrl_plugins/ddux_fctrl_impl/../../../../bin/glnxa64/libmwservices.so+03966953 _ZN15MatlabLicensing11getInstanceEPKN4lmgr6config17LmStartPropertiesE+00003321
+[ 10] 0x00007f183104c83d /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmcr.so+00854077
+[ 11] 0x00007f183106a0ab /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmcr.so+00975019
+[ 12] 0x00007f183103796b /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmcr.so+00768363
+[ 13] 0x00007f1831037c8d /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmcr.so+00769165
+[ 14] 0x00007f184dfed140 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwboost_thread.so.1.85.0+00049472
+[ 15] 0x00007f184e8aca9f                                 /usr/lib/libc.so.6+00707231
+[ 16] 0x00007f184e94f3dc                                 /usr/lib/libc.so.6+01373148
+
+** This crash report has been saved to disk as /home/tommie/matlab_crash_dump.3262959-1 **
+
+
+
+MATLAB is exiting because of fatal error

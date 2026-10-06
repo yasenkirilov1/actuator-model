@@ -1,0 +1,74 @@
+{
+  "status": "complete_frozen_numerical_refinement",
+  "scope": "Final-source integration convergence of the finite-grid worstglobal3489 only. Every fine native surface-normal/contact/stop/packing sample scored; every input except integrationstep and correspondingtickcounts remains fixed. Numerical validation is separate from uncertain mechanics and hardware acceptance.",
+  "identity": {
+    "globalCaseIndex": 3489,
+    "massS_kg": 2,
+    "forceReference_N": 50,
+    "orientation_deg": 75,
+    "mu": 0.3,
+    "seed": 97
+  },
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "rows": [
+    {
+      "integrationStep_s": 1e-05,
+      "nativeSamples": 400001,
+      "peakNormalForceError_N": 0.3158109290657549,
+      "margin_N": 0.18418907093424508,
+      "differenceFrom10us_N": 0,
+      "origin": "Original3500-grid worstglobal3489",
+      "gateSamples": 401,
+      "passed": true
+    },
+    {
+      "integrationStep_s": 5e-06,
+      "nativeSamples": 800001,
+      "peakNormalForceError_N": 0.31582297621351074,
+      "margin_N": 0.18417702378648926,
+      "differenceFrom10us_N": 1.2047147755822607e-05,
+      "origin": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+      "gateSamples": 401,
+      "passed": true
+    },
+    {
+      "integrationStep_s": 2.5e-06,
+      "nativeSamples": 1600001,
+      "peakNormalForceError_N": 0.3158253993246518,
+      "margin_N": 0.1841746006753482,
+      "differenceFrom10us_N": 1.4470258896892574e-05,
+      "origin": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_results.json",
+      "gateSamples": 401,
+      "passed": true
+    }
+  ],
+  "finePeakDifference2p5vs5us_N": 2.423111141069967e-06,
+  "maximumObservedIncreaseFromNominal10us_N": 1.4470258896892574e-05,
+  "minimumNumericallyCheckedMargin_N": 0.1841746006753482,
+  "qualifiedFineNativeHistories": 2,
+  "qualifiedFineNativeSamplesScored": 2400002,
+  "newNativeExecutions": 3,
+  "extraNativeAuditRejectExecutions": 1,
+  "wrapperLaunches": 4,
+  "wrapperRejectsBeforeExperiment": 1,
+  "nativeExecutionAccounting": "Attempt01 native5us returned but no trace survived its incorrect68-versus72-channel audit. Attempt02 MLintwrapper rejected before experiment execution. Attempt03 native5us was retained; its incorrect shared gate-grid assertion was corrected by offline audit with no new simulation. Native2.5us completed/exited0. Only two qualified fine-step histories enter the numerical comparison. All software reject logs/snapshots are preserved.",
+  "loggerSampling": "68 physical/fast measurement/control channels use full integration grids;4 robotGate channels retain the unchanged10ms grid. Gate ready/stable decisions match nominal10us exactly in both finer runs.",
+  "samplingInterpretation": "Normal-contact histories differ by at most5.30e-8N at the original10us timestamps. The14.47uN higher fine peak largely comes from evaluating between the coarser timestamps. This supports the chosen10us solver for this worstcase; the3500 nominal grid remains unchanged.",
+  "sourceGridSummary": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+  "sourceGridSummarySha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf",
+  "results": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+      "sha256": "386001c7f46ae1ca5854d21d67a7545c54e13d55a1649ebcf8155f5ab14a7908",
+      "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_step_5000ns_native.mat",
+      "nativeTraceSha256": "338d565e6b9167b7be5cbf212de3e6a5282a8ddb78436e54b72b45fa3aff5ca2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_results.json",
+      "sha256": "393792e2fa9b596041e6d5f199a88cf416f70479975f31936a7dc26c0d1355f9",
+      "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_step_2500ns_native.mat",
+      "nativeTraceSha256": "e0bb181e34b0a5b6f9c2ae61c3f7922ae41170c4f369dc89024256a4fbf8e87d"
+    }
+  ]
+}

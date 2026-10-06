@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "checkpointSha256": "39d403289ca2b7b081c9e2fec7f7ced070ea5e8bdcbc93abefc58b23d407d474",
+  "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v6",
+  "sourceHashes": {
+    "policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1",
+    "policy_export.py": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735",
+    "env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+    "reward_search_native.c": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+    "final_evaluate.py": "03bb4501aeadac7849bdf94dc40f680fd09ee58947f384ba3afcdd300158fd81"
+  },
+  "files": {
+    "policy_inference.c": {
+      "original": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+      "regenerated": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+      "matched": true
+    },
+    "policy_inference.h": {
+      "original": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+      "regenerated": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+      "matched": true
+    },
+    "policy_weights.f32": {
+      "original": "ecc7f6f24d0985db6be1ed3077af78ed805ec45bdc6725b8677131d6114ca57b",
+      "regenerated": "ecc7f6f24d0985db6be1ed3077af78ed805ec45bdc6725b8677131d6114ca57b",
+      "matched": true
+    },
+    "policy_weights.json": {
+      "original": "8756b7490eafbc25b13b3ef420281bc5b7364ef3df951c7ad9814324fca9c7f8",
+      "regenerated": "8756b7490eafbc25b13b3ef420281bc5b7364ef3df951c7ad9814324fca9c7f8",
+      "matched": true
+    },
+    "policy_weights.npz": {
+      "original": "b6b54692bb12214384ff053b3a4a3e659b7873748ec0b6f29b1ba4b4f7b1384c",
+      "regenerated": "b6b54692bb12214384ff053b3a4a3e659b7873748ec0b6f29b1ba4b4f7b1384c",
+      "matched": true
+    }
+  },
+  "actorWeightMaxAbs": 861.3506469726562,
+  "actorAuxWeightMaxAbs": 111.53639221191406,
+  "noTorchForwardUsed": true,
+  "nativeEpisodesExecuted": 0,
+  "CFloat32ReadoutArithmeticUnchanged": true
+}

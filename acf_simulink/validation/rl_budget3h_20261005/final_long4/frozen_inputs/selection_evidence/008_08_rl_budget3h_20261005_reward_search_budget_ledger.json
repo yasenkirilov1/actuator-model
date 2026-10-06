@@ -1,0 +1,166 @@
+{
+  "status": "audited_budget_stage_only",
+  "evolutionaryRun": {
+    "run": "reward_search_budget_8211",
+    "status": "search_complete",
+    "completedGenerations": 1,
+    "optimizedDegrees": 37,
+    "storedTrainableNNParameters": 8101,
+    "storedFloatsIncludingFixedNormalization": 8181,
+    "trainingEpisodeEvaluationsScored": 144,
+    "trainingActorDecisionsScored": 4440000,
+    "trainingPhysicalFailures": 0,
+    "trainingDistinctScenarios": [
+      15,
+      19,
+      23,
+      27,
+      31,
+      44,
+      45,
+      47,
+      111,
+      118,
+      131,
+      134
+    ],
+    "freshFinalHoldoutIdsPresentInScoredMetrics": [],
+    "softwareFailuresInScoredTrainingEpisodes": 0,
+    "trainingNativeSamplesRetained": 133200000,
+    "trainingNativeCounterComplete": true,
+    "selectionEpisodeEvaluationsExecuted": 84,
+    "selectionEpisodeMetricsRetained": 84,
+    "selectionActorDecisionsRetained": 2790000,
+    "selectionNativeSamplesRetained": 83700000,
+    "selectionPhysicalFailuresInRetainedMetrics": 0,
+    "selectionCounterCoverageComplete": true,
+    "audits": [
+      {
+        "name": "initial_training_audit",
+        "episodes": 84,
+        "decisions": 2760000.0,
+        "nativeSamples": 82800000.0,
+        "physicalFailures": 0
+      },
+      {
+        "name": "final_training_audit",
+        "episodes": 84,
+        "decisions": 2760000.0,
+        "nativeSamples": 82800000.0,
+        "physicalFailures": 0
+      },
+      {
+        "name": "final_selected_selection_audit",
+        "episodes": 28,
+        "decisions": 930000.0,
+        "nativeSamples": 27900000.0,
+        "physicalFailures": 0
+      }
+    ],
+    "failedNativeRecoveryEpisodes": 0,
+    "failedNativeRecoveryIncludedInTraining": false,
+    "retainedScoredEpisodeEvaluations": 424,
+    "wallTime_s": 420.5979261119501,
+    "wallTimeScope": "Complete process including audits when results.elapsed_s is present; otherwise last fully scored generation.",
+    "selectedCheckpoint": {
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001",
+      "generation": 1,
+      "rank": [
+        0,
+        -28,
+        1.1133142064268837,
+        0.45730204269547414,
+        0.046326341651007005
+      ],
+      "checkpointSha256": "e1c98ad22edeca8f528f7d5e3d293060a1f207797b331acf1ca1e13f5790778d"
+    },
+    "ancestry": {
+      "status": "explicit_budget_warm_start",
+      "immediateCheckpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_checkpoint.pt",
+      "immediateCheckpointSha256": "23070fac00d3ae0da8a8444e471e3a37e90eee7f720f2103efd030108aa37b8e",
+      "fastSensorAncestor": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_8207/checkpoints/generation_0025/policy_checkpoint.pt",
+      "fastSensorAncestorSha256": "a90edbd6dc932aeedb8127b8ac652b17ada0d41ca9fe72af22f658675532e762",
+      "fastStageLedger": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json",
+      "fastStageLedgerSha256": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f",
+      "scope": "Ancestral episodes are already counted in the sealed fast-stage ledger; never add them twice."
+    },
+    "exportProvenance": {
+      "optimizer": "reward_only_antithetic_CMA",
+      "physicalActionScales": {
+        "currentOffset_A": 2.0,
+        "robotRequest_m_s": 0.01
+      },
+      "smoothRobotBandInitialization": false
+    },
+    "generations": [
+      {
+        "generation": 1,
+        "population": 12,
+        "cases": [
+          45,
+          47,
+          44,
+          15,
+          19,
+          23,
+          31,
+          27,
+          111,
+          118,
+          131,
+          134
+        ],
+        "episodeEvaluations": 144
+      }
+    ],
+    "inflightExcluded": null,
+    "counterScope": "Native samples are interval scoring samples; full history includes separate endpoint conventions. Only retained counters are summed; unrecorded losing selection proposals are not assumed to complete full horizons.",
+    "sourceHashes": {
+      "generations.jsonl": "6b0941ecf55a9b564d5d5bec85f4965b26a310b243773154530ea6f051f4d144",
+      "selection.json": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+      "initial.json": "b43d41e6a99001d6930eecf1b5d38511dc082c410bbd967d42c7b8620255f994"
+    },
+    "recordedEpisodeCounterMatchesAudit": true,
+    "trainingActorCounterSource": "Per-candidate retained statistics."
+  },
+  "pairedBaselinePolicyScreen": {
+    "episodes": 56,
+    "actorDecisions": 1843981,
+    "nativeScoringSamples": 55319402,
+    "physicalFailures": 1
+  },
+  "initializationTrainingComparisons": {
+    "episodes": 80,
+    "actorDecisions": 2953517,
+    "nativeScoringSamples": 88605455,
+    "physicalFailures": 4
+  },
+  "initializationSelectionComparisons": {
+    "episodes": 56,
+    "actorDecisions": 1860000,
+    "nativeScoringSamples": 55800000,
+    "physicalFailures": 0
+  },
+  "recoveryEpisodesExcludedFromOptimization": 3,
+  "selectionRegistry": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_candidate_registry.json",
+  "threadAuditPerformance": "Native mutex serializes threaded episode stepping; numeric parity is accepted, no audit speedup is claimed.",
+  "sourceEvidence": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/results.json",
+      "sha256": "87708b906a4cd8e72b678f2837cdd8b018de67f6ed93888baf4c964f62ae5714"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+      "sha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/results.json",
+      "sha256": "ebd9a03e2bffb026b65d8b62fa168238ce482426e9a26ea00490b8f38a64cda5"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json",
+      "sha256": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f"
+    }
+  ],
+  "scope": "Only the newly executed budget-sensor work is counted here. The sealed fast-sensor ledger and manifest are unchanged; final tests are outside this ledger."
+}

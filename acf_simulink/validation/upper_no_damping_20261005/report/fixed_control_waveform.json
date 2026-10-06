@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "kind": "paired_native_controller_waveform_and_spectral_analysis",
+  "rows": [
+    {
+      "identity": "upper_20k_lower_cell_observer_noise_v4_obs33_A1.5_dev07",
+      "massS_kg": 2,
+      "massA_kg": 1.5,
+      "force_N": 50,
+      "angle_rad": 1.5707963267948966,
+      "nativeSamples": 600001,
+      "peakNormalForceError_N": 1.0736152681478117,
+      "peakErrorTime_s": 1.1231533333333332,
+      "passed": false,
+      "peakVoltage_V": 23.745910501723788,
+      "usableVoltage_V": 32,
+      "voltageClipSamples": 0,
+      "controller": "before_mode_control",
+      "modeVarianceFraction": 0.9718439391638571,
+      "modeBand_Hz": [
+        1300,
+        1900
+      ],
+      "spectrumWindow_s": [
+        1.1,
+        1.35
+      ]
+    },
+    {
+      "identity": "upper_20k_lower_cell_active_modal_damping_v6_obs33_modal17_A1.5_dev07",
+      "massS_kg": 2,
+      "massA_kg": 1.5,
+      "force_N": 50,
+      "angle_rad": 1.5707963267948966,
+      "nativeSamples": 600001,
+      "peakNormalForceError_N": 0.4585186839914144,
+      "peakErrorTime_s": 1.0005633333333332,
+      "passed": true,
+      "peakVoltage_V": 23.76244193144842,
+      "usableVoltage_V": 32,
+      "voltageClipSamples": 0,
+      "controller": "selected_controller",
+      "modeVarianceFraction": 0.5116878469401481,
+      "modeBand_Hz": [
+        1300,
+        1900
+      ],
+      "spectrumWindow_s": [
+        1.1,
+        1.35
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retention_replay.json": "e00c5ce6632570667c406e051189a3d1b0829fde5ccfe1375853811adaa4163a",
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/result.json": "ea67f6df89023536ce8310841db5be6b7cb381e315828f5659496e85d5003abd",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retained_native_history.npz": "c97f013186f18eee45ee2872abbe8615f000b790b16c382cc0e8aa137f872602",
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/native_history.npz": "e5355fc537739841b120a31c2e9623c6cbebc9167423ebc8d82e2b3cefc1a72e"
+  },
+  "cellBandSpectralPowerReduction_dB": 14.560787714017174,
+  "displayReduction": "Min/max per bin; full original samples for metrics and spectra",
+  "scope": "Matched development case and seed; controller comparison is not whole-range or hardware qualification"
+}

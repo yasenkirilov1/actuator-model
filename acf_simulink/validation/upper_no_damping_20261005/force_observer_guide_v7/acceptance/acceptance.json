@@ -1,0 +1,44 @@
+{
+  "status": "private_saved_copy_roundtrip_source_and_loop_acceptance_passed",
+  "physicalQualificationEpisodes": 0,
+  "privateControllerGraphSha256": "cd7bc6baedb8f7325ade3f10cf3a9036ec8f4a4310077b2a27fec130b08ca2df",
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "workspaceSaveReopenEqual": true,
+  "explicitAcquiredForceSourceChainVerified": true,
+  "temporaryHarnessBlocksAbsent": true,
+  "nativeSFunctionCount": 0,
+  "audits": [
+    {
+      "scenario": 23,
+      "massA_kg": 0.4,
+      "parentObserverProfileID": 24,
+      "guideCoulombScale": 1,
+      "guideSmoothingSpeed_m_s": 0.001,
+      "algebraicLoopCount": 0
+    },
+    {
+      "scenario": 34,
+      "massA_kg": 1.5,
+      "parentObserverProfileID": 24,
+      "guideCoulombScale": 1,
+      "guideSmoothingSpeed_m_s": 0.001,
+      "algebraicLoopCount": 0
+    },
+    {
+      "scenario": 155,
+      "massA_kg": 0.4,
+      "parentObserverProfileID": 33,
+      "guideCoulombScale": 1,
+      "guideSmoothingSpeed_m_s": 0.001,
+      "algebraicLoopCount": 0
+    },
+    {
+      "scenario": 166,
+      "massA_kg": 1.5,
+      "parentObserverProfileID": 33,
+      "guideCoulombScale": 1,
+      "guideSmoothingSpeed_m_s": 0.001,
+      "algebraicLoopCount": 0
+    }
+  ]
+}

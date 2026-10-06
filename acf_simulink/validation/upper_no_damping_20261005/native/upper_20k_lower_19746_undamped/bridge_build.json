@@ -1,0 +1,33 @@
+{
+  "emitted_c_sha256": "a5987546735cf3f69fa0459f2ae158dd49bac817a752fb2dba1dd062fdade3cc",
+  "adapted_c_sha256": "62cb7e06dd0efb6ed4a2e6dcfb1a35efaf1286d18ea6e3c82357579a939182c3",
+  "bridge_sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+  "parameter_bank_sha256": "cd5ce2ec2ba5a1ac8209b1d2cc0ec6cecf8e1e5c5c0621ed8a05d80f1d98129c",
+  "shared_library_sha256": "d82afef835dd4dbe1aab32d6dafa51b40e47787768a4f42608710ddb7fb00a2c",
+  "native_computation_recovered_exactly": true,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fopenmp",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/code/acf_rl_native_grt_rtw",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_bridge.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/native_parameter_bank.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+    "-lm",
+    "-pthread",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/libacf_native.so"
+  ],
+  "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+}

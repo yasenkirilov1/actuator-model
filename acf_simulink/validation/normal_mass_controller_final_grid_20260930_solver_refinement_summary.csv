@@ -1,0 +1,4 @@
+integrationStep_s,nativeSamples,peakNormalForceError_N,margin_N,differenceFrom10us_N,origin,gateSamples,passed
+1e-05,400001,0.3158109290657549,0.18418907093424508,0,Original3500-grid worstglobal3489,401,True
+5e-06,800001,0.31582297621351074,0.18417702378648926,1.2047147755822607e-05,/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json,401,True
+2.5e-06,1600001,0.3158253993246518,0.1841746006753482,1.4470258896892574e-05,/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_results.json,401,True

@@ -1,0 +1,45 @@
+{
+  "status": "complete_primary_document_review",
+  "rows": [
+    {
+      "part": "ADXL1002",
+      "class": "Single-axis analog accelerometer",
+      "manufacturer": "Analog Devices",
+      "range_g": 50,
+      "nominalSensitivity_mV_g_at5V": 40,
+      "typicalNoiseDensity_ug_sqrtHz": 25,
+      "responseWithin5Percent_Hz": 4700,
+      "responseBandwidth_Hz": 11000,
+      "ratiometricSupply": "Output zero and sensitivity depend on supply; use calibrated reference/supply ratios or measured correction.",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl1001-1002.pdf",
+      "qualification": "Part response/noise reference, not assembled calibration or powered-sanding qualification."
+    },
+    {
+      "part": "AD7606C-18",
+      "class": "Simultaneous-sampling analog converter",
+      "manufacturer": "Analog Devices",
+      "analogChannels": 8,
+      "nominalBits": 18,
+      "maximumSampleRate_perChannel_Hz": 1000000,
+      "lowBandwidthInputFilter_Hz_typical": 25000,
+      "lowBandwidthPhaseDelay_us_typical": 6.8,
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf",
+      "qualification": "Model raw acquisition100kHz; converter/filter/reference/amplifier contributions must be measured in complete chain."
+    },
+    {
+      "part": "TA115",
+      "class": "Linear current amplifier",
+      "manufacturer": "Trust Automation",
+      "supplyRange_V": [
+        24,
+        48
+      ],
+      "publishedCurrentBandwidth_Hz": 5000,
+      "publishedBandwidthLoad_H": 0.0025,
+      "publishedSOA_at70C_W": 50,
+      "source": "https://trustautomation.com/datasheets/TA115DataSheet.pdf",
+      "qualification": "Actual3\u20134mH hot-winding response and bipolar voltage headroom need measurement; source bandwidth is specified at2.5mH."
+    }
+  ],
+  "scope": "Representative manufacturer properties already reviewed for this report; no extra native simulations or guaranteed chain accuracy."
+}

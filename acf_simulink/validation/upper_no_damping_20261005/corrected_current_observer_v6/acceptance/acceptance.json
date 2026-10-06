@@ -1,0 +1,127 @@
+{
+  "status": "private_graph_acceptance_complete_no_episodes",
+  "createdEpisodes": 0,
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "516f47e24bbe4010aad0e4ef6cd6fe953ff26076ed52c65016a22106655f98f1",
+  "configurationsSha256": "d292bbf999b2d7e6b81a95c83285a7cbc0df6010fc36a4d6b5d1685de0db8695",
+  "audits": [
+    {
+      "scenario": 0,
+      "massA_kg": 0.4,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "upperObserverEnabled": true,
+      "loadedEquilibriumICIsZero": true,
+      "observerGain": [
+        -2.649416480396642,
+        756.57601789628416,
+        0.40903835428480428,
+        1064.0721512669245
+      ],
+      "estimatorPoleMagnitude": 0.99274823075756857,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "forcePredictionInputTag": "EXPLICIT_NATIVE_INPORT2",
+      "issuedCommandChain": {
+        "status": "explicit_selected_command_chain_verified",
+        "source": "acf_rl_native/Force controller/1",
+        "sameSourceAsActualPlantCommand": true,
+        "measurementSubsystemInputPort": 3,
+        "headEstimatorInputPort": 2,
+        "sink": "acf_rl_native/Contact force measurement/Head motion estimator/Identified causal current lag/1",
+        "rootLocalTagUsed": false,
+        "physicalPlantTruthUsed": false,
+        "activeController": "Coil PI and PID"
+      },
+      "guideFeedforwardCoulombScale": 0,
+      "guideFeedforwardSmoothingSpeed_m_s": 0.0002,
+      "observerPhysicalFrictionEstimateUnchanged": true,
+      "measurementFrameFrictionHasNoPredictionLead": true
+    },
+    {
+      "scenario": 11,
+      "massA_kg": 1.5,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "upperObserverEnabled": true,
+      "loadedEquilibriumICIsZero": true,
+      "observerGain": [
+        -2.2126926692283542,
+        121.02410644609573,
+        0.28066125371043904,
+        460.27948331979763
+      ],
+      "estimatorPoleMagnitude": 0.99656055211846806,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "forcePredictionInputTag": "EXPLICIT_NATIVE_INPORT2",
+      "issuedCommandChain": {
+        "status": "explicit_selected_command_chain_verified",
+        "source": "acf_rl_native/Force controller/1",
+        "sameSourceAsActualPlantCommand": true,
+        "measurementSubsystemInputPort": 3,
+        "headEstimatorInputPort": 2,
+        "sink": "acf_rl_native/Contact force measurement/Head motion estimator/Identified causal current lag/1",
+        "rootLocalTagUsed": false,
+        "physicalPlantTruthUsed": false,
+        "activeController": "Coil PI and PID"
+      },
+      "guideFeedforwardCoulombScale": 0,
+      "guideFeedforwardSmoothingSpeed_m_s": 0.0002,
+      "observerPhysicalFrictionEstimateUnchanged": true,
+      "measurementFrameFrictionHasNoPredictionLead": true
+    }
+  ],
+  "emittedCurrentInputContract": {
+    "status": "emitted_current_lag_uses_live_selected_command",
+    "inputOperand": "acf_rl_native_B.Currentlimits",
+    "inputSignalAssignments": [
+      [
+        "acf_rl_native_P.Currentlimits_UpperSat"
+      ],
+      [
+        "acf_rl_native_P.Currentlimits_LowerSat"
+      ],
+      [
+        "rtb_Robotcommandsamples"
+      ]
+    ],
+    "derivativeSection": "\n  _rtXdot->Identifiedcausalcurrentlag_CSTA = 0.0;\n  for (ri = acf_rl_native_P.Identifiedcausalcurrentlag_A_jc[0U]; ri <\n       acf_rl_native_P.Identifiedcausalcurrentlag_A_jc[1U]; ri++) {\n    _rtXdot->Identifiedcausalcurrentlag_CSTA +=\n      acf_rl_native_P.Identifiedcausalcurrentlag_A_pr *\n      acf_rl_native_X.Identifiedcausalcurrentlag_CSTA;\n  }\n\n  for (ri = acf_rl_native_P.Identifiedcausalcurrentlag_B_jc[0U]; ri <\n       acf_rl_native_P.Identifiedcausalcurrentlag_B_jc[1U]; ri++) {\n    _rtXdot->Identifiedcausalcurrentlag_CSTA +=\n      acf_rl_native_P.Identifiedcausalcurrentlag_B_pr *\n      acf_rl_native_B.Currentlimits;\n  }\n\n  ",
+    "nativeCodeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+    "currentLagInputGrounded": false,
+    "physicalQualificationEpisodes": 0
+  },
+  "scope": "Saved private native diagram compilation, no algebraic loops, authorized causal observer tags, stable observable upper estimator, no dynamic actor/plant MATLAB function. These are preparation checks, not force qualification or prototype measurements."
+}

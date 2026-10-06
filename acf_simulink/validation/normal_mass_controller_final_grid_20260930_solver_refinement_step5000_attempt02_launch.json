@@ -1,0 +1,14 @@
+{
+  "status": "launched_not_yet_returned",
+  "nativeReruns": 1,
+  "integrationStep_s": 5e-06,
+  "globalCaseIndex": 3489,
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "recipeSha256": "30ec8ed0a9a71132eaa04619be8b2de3b3da13dbb562fa6cad77dc705c8d2960",
+  "session": 82118,
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-recovery-20260930/batch.log",
+  "previousRejectedExecution": "normal_mass_controller_final_grid_20260930_solver_refinement_step5000_attempt01_postrun_reject.json",
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "change": "Validation audit4 robot-gate channels plus preserve native before audit; no simulation change."
+}

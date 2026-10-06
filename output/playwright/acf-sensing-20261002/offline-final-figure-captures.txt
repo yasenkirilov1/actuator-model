@@ -1,0 +1,6 @@
+### Result
+{"captured":3,"offline":true}
+### Ran Playwright code
+```js
+await (async (page) => { const items=[["Native ADC bandwidth and rate sweep","bandwidth-final.png"],["Native long-test force waveforms","waveforms-final.png"],["Cheaper sensing under calibration and drive stress","stress-final.png"]]; for (const [name,file] of items) {const image=page.getByRole("img",{name,exact:true});await image.scrollIntoViewIfNeeded();await image.evaluate(async i=>{if(!i.complete||!i.naturalWidth)await new Promise((resolve,reject)=>{i.addEventListener("load",resolve,{once:true});i.addEventListener("error",reject,{once:true});});await i.decode();});await image.locator("..").screenshot({path:"output/playwright/acf-sensing-20261002/"+file});}return {captured:items.length,offline:true};})(page);
+```

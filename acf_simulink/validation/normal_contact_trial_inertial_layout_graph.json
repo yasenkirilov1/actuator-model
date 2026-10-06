@@ -1,0 +1,26 @@
+{
+  "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/frozen-inertial-v3-helpers1/acf_force_control_normal_trial.slx",
+  "layoutModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-layout-20260930/acf_force_control_normal_trial.slx",
+  "blockCount": 986,
+  "dynamicBlockParameterDifferences": [],
+  "signalGraphDifferences": [],
+  "visualExcludedParameters": [
+    "BackgroundColor",
+    "BlockMirror",
+    "ComputedModelVersion",
+    "ContentPreviewEnabled",
+    "FontAngle",
+    "FontName",
+    "FontSize",
+    "FontWeight",
+    "ForegroundColor",
+    "IconShape",
+    "Location",
+    "Open",
+    "Orientation",
+    "Position",
+    "ZOrder",
+    "ZoomFactor"
+  ],
+  "note": "The only prior parameter difference was native Gain BlockMirror=on for the left-pointing antiwindup return; this is an icon/port orientation setting."
+}

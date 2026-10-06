@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "kind": "user_constraints_and_declared_mechanical_model",
+  "rows": [
+    {
+      "component": "Goal",
+      "forceQuantity": "Normal pressing force experienced by the workpiece",
+      "forceTolerance_N": 0.5,
+      "preferredReserve_N": 0.05,
+      "forceRange_N": [
+        5,
+        50
+      ],
+      "orientationRange_deg": [
+        0,
+        90
+      ],
+      "toolMassSRange_kg": [
+        0.1,
+        2.0
+      ],
+      "holderMassB_kg": 0.6,
+      "bumpHeight_m": 0.001,
+      "bumpWidth_m": 0.01,
+      "scanSpeed_m_s": 0.1,
+      "surfacePreviewAvailable": false
+    },
+    {
+      "component": "Upper attachment R-A",
+      "netStiffness_N_m": 20000,
+      "externalDamping_N_s_m": 0,
+      "springLengthAndTravel": "Ideal unlimited; prescribed by user",
+      "optimizationVariable": false,
+      "actuatorStrokeStillLimited": true
+    },
+    {
+      "component": "Lower attachment B-S",
+      "externalAttachment": "Rigid; prescribed for current study",
+      "externalSpringPresent": false,
+      "externalDamperPresent": false,
+      "representativeCellStiffness_N_m": 64000000,
+      "cellStructuralDamping_N_s_m": 0,
+      "optimizationVariable": false,
+      "internalGuideFrictionRetained": true
+    },
+    {
+      "component": "Sensing and control",
+      "loadCell": "Multi-axis between B and S; whole S downstream",
+      "position": "S relative to A",
+      "accelerometer": "On S",
+      "causalRobotInput": "Already-issued commands only",
+      "knownToolWeightOrTare": true,
+      "chipBudget_EUR": 100,
+      "budgetScope": "Accelerometer plus ADC chips on own PCB",
+      "softTravelBandRadius_m": 0.0075,
+      "failureStops": [
+        "Contact loss",
+        "Actuator travel stop"
+      ]
+    }
+  ],
+  "sourceHashes": {},
+  "sourceInstructions": [
+    "Upper spring cannot be chosen by the optimizer.",
+    "Upper spring is 20N/mm with zero damping and infinite allowed length/travel.",
+    "The lower connection should be assumed rigid for now."
+  ],
+  "scope": "This is the task contract, not executed force qualification or a spring parts specification."
+}

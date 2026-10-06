@@ -1,0 +1,133 @@
+{
+  "status": "complete",
+  "kind": "reviewed_native_study_excerpt",
+  "scope": "Native logged recenter-law imitation with eight training and four selection trajectories. Raw-network teacher reproduction checked separately from the hard envelope. No test trajectories used for fitting.",
+  "rows": [
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_001_compact.mat",
+      "sha256": "34ad139dfc599d595c5fc24c5ecfbba41cbe69d590c01e0e2f1096f5e535752b",
+      "identity": "train_01",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_002_compact.mat",
+      "sha256": "cb48e378fc28f85e9efbae66b7bf7f5da5b8faecb438793980e170c3ada3bb68",
+      "identity": "train_02",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_003_compact.mat",
+      "sha256": "36ba8eb4342854fa2057493536095adac49549981222f14f73f413fbd3e5ddc1",
+      "identity": "train_03",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_004_compact.mat",
+      "sha256": "3977f026d0e4521e65a6d72fe014d8d5d7b65ddf8fe94b35b00f271c7a453699",
+      "identity": "train_04",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_005_compact.mat",
+      "sha256": "2d7263a2461b4c32318ba753698cc16504b4678ed36bd78936886e71a4fcf644",
+      "identity": "train_05",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 571
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_006_compact.mat",
+      "sha256": "cfc586751a7ca09f3e60c07e0ebf1c1326b373598adc429e1e2c1176370f8f86",
+      "identity": "train_06",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 596,
+      "nonzero_issued_frames": 586
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_007_compact.mat",
+      "sha256": "28dcb4e52843c8706c99b95523c067543443ef836054aa0c3b9b0ed17edc5834",
+      "identity": "train_07",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_008_compact.mat",
+      "sha256": "a27896d0b8cdcbdc602d8b5201f3b1b5923dab14efb90715a462b9efdf1970be",
+      "identity": "train_08",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_009_compact.mat",
+      "sha256": "baa6549f3faa209a20e6d10a6ab402786e01715a83abac0056ab661877071443",
+      "identity": "selection_01",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_010_compact.mat",
+      "sha256": "b8168771cda3f50ce6ae52db61a5dabf101f12b17b6a0b8021dae47ef6d0ed05",
+      "identity": "selection_02",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_011_compact.mat",
+      "sha256": "47f6f39a2d45b6b3664aa7239ae309280d27ebec410f94f375ac8aabf03577e7",
+      "identity": "selection_03",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 571
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_012_compact.mat",
+      "sha256": "a832bcac376f35c2cbd5d42d92d472f0d1e7bd72b0ce11e2430ce832332c46f9",
+      "identity": "selection_04",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 596,
+      "nonzero_issued_frames": 576
+    }
+  ],
+  "sources": [
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_training/training_summary.json",
+      "sha256": "bc16cc449aa169e186948fc958fa046f93b5ebfd2fe75a29d2f31295605a148b"
+    }
+  ]
+}

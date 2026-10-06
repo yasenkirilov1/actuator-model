@@ -1,0 +1,33 @@
+SDI_STORAGE_PILOT disk repetition1 native181.3980s parity1 SDI522.7MiB read5848.1MiB write520.3MiB
+SDI_STORAGE_PILOT disk repetition2 native39.7820s parity1 SDI522.7MiB read1076.4MiB write519.9MiB
+SDI_STORAGE_PILOT tmpfs repetition1 native50.7476s parity1 SDI522.7MiB read1655.2MiB write0.0MiB
+SDI_STORAGE_PILOT tmpfs repetition2 native6.8087s parity1 SDI522.7MiB read32.0MiB write0.0MiB
+
+ans = 
+
+  struct with fields:
+
+                                        status: 'complete'
+                                          date: '2026-09-30'
+                                         scope: 'Execution-path benchmark only: same heavy noisy10s reference, unchanged native plant/control/actual acquisition, temporary SDI disk versus tmpfs. Wall timing measured while four independent mesh workers continue.'
+                                   modelSha256: '73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643'
+                               candidateSha256: 'd8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7'
+                                 referenceFile: '/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_final_performance_limits_20260930_v8_traces/performance_case_05_native.mat'
+                               referenceSha256: '73915721386048ed6ab4b8f24b5219c3a86cc6e9f7c8474ae77e301bb88d19cc'
+                                  privateModel: '/home/tommie/.local/state/actuator-model/tpb3623713_c772_4fa8_b27e_6750bf894fb0/acf_force_control_normal_trial.slx'
+                                 helperSources: [1×16 struct]
+                            experimentSnapshot: '/home/tommie/.local/state/actuator-model/tpb3623713_c772_4fa8_b27e_6750bf894fb0/benchmark_inertial_tmpfs_storage.m'
+                              experimentSha256: '3432b190de0e75d1cffe5f192630d093024576121ac1144ac8b365e0262a1802'
+                                 matlabVersion: '26.2.0.3386108 (R2026b)'
+                                baseParameters: [1×1 struct]
+                                   diskStorage: '/home/tommie/.local/state/actuator-model/tpb3623713_c772_4fa8_b27e_6750bf894fb0/sdi'
+                                  tmpfsStorage: '/dev/shm/tp93970709_c52d_49eb_a49b_11d767aec0b7'
+                       plannedNativeExecutions: 4
+                                          rows: [1×4 struct]
+                     executedNativeComparisons: 4
+                                elapsedSeconds: 306.8992
+                             warmNativeSpeedup: 5.8428
+    allFourFullNativeHistoriesBitwiseIdentical: 1
+                          sourceModelUnchanged: 1
+                         privateModelUnchanged: 1
+

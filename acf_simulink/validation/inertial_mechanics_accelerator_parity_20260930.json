@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-30",
+  "scope": "One equal finite64MN/m-cell noisyS2/F50/90/mu.3 case,10us,fastsensor100us,PI.03/20,guide400us,notch.01/.5. Native Normal versus native Accelerator histories; source model/helpers identical.",
+  "normalResult": "/home/tommie/.local/state/actuator-model/tpaaa50e11_2143_4982_ac7a_d8952a3daffb/traces/case_0004.mat",
+  "acceleratorResult": "/home/tommie/.local/state/actuator-model/tpe8b8bc09_4406_4678_be0c_415e727baf74/traces/case_0016.mat",
+  "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+  "allBitwiseEqual": true,
+  "channels": [
+    {
+      "signal": "time",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "data",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "normalContact.time",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "normalContact.data",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "accelerometer.time",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "accelerometer.data",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "motionObserver.time",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "motionObserver.data",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "commandPrediction.data",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "robotGate.ready",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "robotGate.filteredError_N",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "robotGate.forceRate_N_s",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    },
+    {
+      "signal": "robotGate.stableNow",
+      "bitwiseEqual": true,
+      "maxAbsoluteDifference": 0.0
+    }
+  ]
+}

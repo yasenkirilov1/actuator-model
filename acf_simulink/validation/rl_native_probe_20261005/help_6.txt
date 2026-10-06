@@ -1,0 +1,65 @@
+ <strong>Simulink.SimulationInput</strong> - Create Simulink.SimulationInput objects to make changes to model for multiple or individual simulations
+    The Simulink.SimulationInput object allows you to make changes to a
+    model and run simulations with those changes.
+
+    <strong>Creation</strong>
+      <strong>Syntax</strong>
+        simIn = Simulink.SimulationInput(mdlName)
+
+      <strong>Input Arguments</strong>
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#mw_ab33dddb-eaae-4fdc-b042-3ff9ec6c300b">mdlName</a> - Model name
+          string | character vector
+
+    <strong>Properties</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_ModelName">ModelName</a> - Name of model
+        character vector
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_InitialState">InitialState</a> - Initial state
+        Simulink.op.ModelOperatingPoint object
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_ExternalInput">ExternalInput</a> - External input
+        Simulink.SimulationData.Dataset object | timeseries object |
+        numerical array
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_BlockParameters">BlockParameters</a> - Block parameters
+        array of Simulink.Simulation.BlockParameter objects
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_Variables">Variables</a> - Variables
+        array of Simulink.Simulation.Variable objects
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_ModelParameters">ModelParameters</a> - Model parameters
+        array of Simulink.Simulation.ModelParameter objects
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_PreSimFcn">PreSimFcn</a> - Presimulation function
+        MATLAB function
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_PostSimFcn">PostSimFcn</a> - Post simulation function
+        MATLAB function
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_UserString">UserString</a> - User string
+        character array | string
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#prop_VariantConfiguration">VariantConfiguration</a> - Name of variant configuration
+        string | character vector
+
+    <strong>Object Functions</strong>
+      <a href="matlab:help applyToModel -displayBanner">applyToModel</a>                    - Apply configuration in SimulationInput object to model
+      <a href="matlab:help getVariantConfiguration -displayBanner">getVariantConfiguration</a>         - Get name of variant configuration from SimulationInput object
+      <a href="matlab:help loadVariablesFromExternalSource -displayBanner">loadVariablesFromExternalSource</a> - Load variables from a custom file into Simulink.SimulationInput object
+      <a href="matlab:help loadVariablesFromMATFile -displayBanner">loadVariablesFromMATFile</a>        - Load variables from MAT file into Simulink.SimulationInput object
+      <a href="matlab:help removeVariable -displayBanner">removeVariable</a>                  - Remove variable from SimulationInput or Simulation object
+      <a href="matlab:help setBlockParameter -displayBanner">setBlockParameter</a>               - Set block parameter values for simulation using SimulationInput or Simulation object
+      <a href="matlab:help setExternalInput -displayBanner">setExternalInput</a>                - Specify external input data for top-level input ports using SimulationInput or Simulation object
+      <a href="matlab:help setInitialState -displayBanner">setInitialState</a>                 - Specify initial state for simulation using SimulationInput or Simulation object
+      <a href="matlab:help setPostSimFcn -displayBanner">setPostSimFcn</a>                   - Set MATLAB function to run after each simulation
+      <a href="matlab:help setPreSimFcn -displayBanner">setPreSimFcn</a>                    - Specify MATLAB function to run before start of each simulation on Simulink.SimulationInput object
+      <a href="matlab:help setModelParameter -displayBanner">setModelParameter</a>               - Set model parameter values for simulation using Simulink.SimulationInput or Simulation object
+      <a href="matlab:help setVariable -displayBanner">setVariable</a>                     - Set variable values for simulation using SimulationInput or Simulation object
+      <a href="matlab:help setVariantConfiguration -displayBanner">setVariantConfiguration</a>         - Set variant configuration for simulation using SimulationInput object
+      <a href="matlab:help showContents -displayBanner">showContents</a>                    - View summary of specification in SimulationInput or Simulation object
+      <a href="matlab:help Simulink.SimulationInput.validate -displayBanner">validate</a>                        - Validate contents of SimulationInput object
+
+    <strong>Examples</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#bvojnzn-1">Create Simulink.SimulationInput Object</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#bvn_jrf-2">Create Array of Simulink.SimulationInput Objects</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#d127e842971">Set Block Parameter Value Using Simulink.SimulationInput Object</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulationinput.html#mw_b139053b-6cf0-47d9-88f6-413a7dc5d225">Use Dataset as External Input with Simulink.SimulationInput Object</a>
+
+    <strong>See also</strong> <a href="matlab:help sim -displayBanner">sim</a>, <a href="matlab:help parsim -displayBanner">parsim</a>, <a href="matlab:help batchsim -displayBanner">batchsim</a>, <a href="matlab:help('Simulation Manager', '-displayBanner')">Simulation Manager</a>,
+      <a href="matlab:help Simulink.SimulationOutput -displayBanner">Simulink.SimulationOutput</a>, <a href="matlab:help Simulation -displayBanner">Simulation</a>
+
+    Introduced in Simulink in R2017a
+    <a href="matlab:doc Simulink.SimulationInput">Documentation for Simulink.SimulationInput</a>
+
+

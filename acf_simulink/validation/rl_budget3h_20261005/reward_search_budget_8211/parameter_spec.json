@@ -1,0 +1,495 @@
+[
+  {
+    "name": "dc_preserving_history_pair_00",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          0,
+          1
+        ],
+        "factors": [
+          20.0,
+          -20.0
+        ]
+      },
+      {
+        "name": "actor_skip.weight",
+        "indices": [
+          0
+        ],
+        "factors": [
+          -0.5001005902886391
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_01",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          2,
+          3
+        ],
+        "factors": [
+          20.0,
+          -20.0
+        ]
+      },
+      {
+        "name": "actor_skip.weight",
+        "indices": [
+          0
+        ],
+        "factors": [
+          -0.5001005902886391
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_02",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          4,
+          5
+        ],
+        "factors": [
+          20.0,
+          -20.0
+        ]
+      },
+      {
+        "name": "actor_skip.weight",
+        "indices": [
+          0
+        ],
+        "factors": [
+          -0.5001005902886391
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_03",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          6,
+          7
+        ],
+        "factors": [
+          20.0,
+          -20.0
+        ]
+      },
+      {
+        "name": "actor_skip.weight",
+        "indices": [
+          0
+        ],
+        "factors": [
+          -0.5001005902886391
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_04",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          8,
+          9
+        ],
+        "factors": [
+          662.1097412109375,
+          -662.1097412109375
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          1
+        ],
+        "factors": [
+          -82.78037180368847
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_05",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          10,
+          11
+        ],
+        "factors": [
+          36.47466278076172,
+          -36.47466278076172
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          1
+        ],
+        "factors": [
+          -4.560250300627558
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_06",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          12,
+          13
+        ],
+        "factors": [
+          17.506805419921875,
+          -17.506805419921875
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          1
+        ],
+        "factors": [
+          -2.1887910289697174
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_07",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          14,
+          15
+        ],
+        "factors": [
+          10.0,
+          -10.0
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          1
+        ],
+        "factors": [
+          -1.2502515316009521
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_08",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          16,
+          17
+        ],
+        "factors": [
+          332.8578796386719,
+          -332.8578796386719
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          2
+        ],
+        "factors": [
+          -41.61560738236949
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_09",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          18,
+          19
+        ],
+        "factors": [
+          10.0,
+          -10.0
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          2
+        ],
+        "factors": [
+          -1.2502515316009521
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_10",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          20,
+          21
+        ],
+        "factors": [
+          10.0,
+          -10.0
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          2
+        ],
+        "factors": [
+          -1.2502515316009521
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "dc_preserving_history_pair_11",
+    "terms": [
+      {
+        "name": "actor.weight",
+        "indices": [
+          22,
+          23
+        ],
+        "factors": [
+          10.0,
+          -10.0
+        ]
+      },
+      {
+        "name": "actor_aux.weight",
+        "indices": [
+          2
+        ],
+        "factors": [
+          -1.2502515316009521
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "actor.weight",
+    "groups": [
+      {
+        "indices": [
+          24,
+          25
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          26,
+          27
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          28,
+          29
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "actor_skip.weight",
+    "indices": [
+      0,
+      6,
+      13
+    ],
+    "scale": 0.05
+  },
+  {
+    "name": "actor_aux.weight",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "scale": 0.2
+  },
+  {
+    "name": "actor.bias",
+    "indices": [
+      0
+    ],
+    "scale": 0.003
+  },
+  {
+    "name": "recurrent.layers.0.bias",
+    "groups": [
+      {
+        "indices": [
+          40,
+          41
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          42,
+          43
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          44,
+          45
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          46,
+          47
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          48,
+          49
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          50,
+          51
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          52,
+          53
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          54,
+          55
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          56,
+          57
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          58,
+          59
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          60,
+          61
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.15
+  }
+]

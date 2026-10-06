@@ -1,0 +1,214 @@
+{
+  "date": "2026-09-30",
+  "phase": "smoke",
+  "status": "running",
+  "options": {
+    "label": "smoke_v6_20260930",
+    "step_s": 1E-5,
+    "stopTime_s": 4,
+    "cellStiffness_N_m": 6.4E+7,
+    "cellDampingRatio": 0.02,
+    "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/frozen-inertial-v3-helpers1/normal_contact_trial_candidate.mat",
+    "selectedScrewFile": "",
+    "coilGains": [
+      0.03,
+      20,
+      0
+    ],
+    "coilNotch": false,
+    "notchZeroDamping": 0.01,
+    "notchPoleDamping": 0.3,
+    "saveEveryTrace": false
+  },
+  "sourceFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/frozen-inertial-v3-helpers1",
+  "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+  "privateModelFile": "/home/tommie/.local/state/actuator-model/tp5fe40c94_8354_4e45_9d2a_fa8c804c5912/acf_force_control_normal_trial.slx",
+  "privateModelSHA256": "685cf1670e0d447f585fa8079a932b27039ba5ae67cc72d41a1d9521b8996a60",
+  "privateWorkerFolder": "/home/tommie/.local/state/actuator-model/tp5fe40c94_8354_4e45_9d2a_fa8c804c5912",
+  "candidateSHA256": "6b8838aed5a01e23e9cf6ee5fecabb5db4dbda8e0ed0b0cd9ac1b9007c84843e",
+  "recipeSHA256": "2e4fed6d061a170ccfcc1b3439126bbe0736c6be39ef751f3651fe82efba2b1f",
+  "helperHashes": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "d2c187883c5189dbbd799fbee74209a13f05f4b202275e4cf24dc1919355abe4"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "7e56f1cf321aa2ad47c7870a42897cc192c2a5c76434dd5bdd545ae09a89055e"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "79f67c747a3294d13698316c498eccc1844a6d47824172625e9f06cba39e7ce8"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "commonSensorContract": "B-S multi-axis cell plus measured S acceleration and S-A position; no surface preview",
+  "metric": "max(abs(native normal force - Fref)) over every native time including startup; <=0.5N and no stops/overcurrent",
+  "screwPlantEquation": "Jax=Jrot/ell^2; L=q1-mB*(g+aR); udd=(torque/ell-L)/(mB+Jax); Fa=mB*udd+L",
+  "rigidReferenceEquation": "Fa=torque/ell-Jax*(aR-aS); counterfactual zero cell compliance",
+  "screwProvision": {
+    "lead": 0.005,
+    "rotorInertia": 1.5800000000000001E-6,
+    "torqueConstant": 0.0234,
+    "backEmfConstant": 0.0234,
+    "resistance": 2.32,
+    "inductance": 0.000238,
+    "peakCurrent": 3.5,
+    "voltage": 24,
+    "currentResponse": 0.0001,
+    "coulombTorque": 0.001,
+    "viscousTorque": 1E-6,
+    "frictionSpeed": 1,
+    "speedBandwidth": 1000,
+    "speedDamping": 0.9,
+    "speedAntiWindup": 1000,
+    "maxLinearSpeedRequest": 0.1,
+    "forceKp": 0.0005,
+    "forceKi": 0.005,
+    "forceKd": 0,
+    "motorReference": "maxon RE25 302005 (NRND): winding reference only",
+    "motorRotorInertia_kg_m2": 1.08E-6,
+    "screwCouplerInertia_kg_m2": 5E-7,
+    "motorMass_kg": 0.13,
+    "continuousCurrent_A": 1.16,
+    "continuousTorque_Nm": 0.0263,
+    "sizingEfficiency": 0.9,
+    "currentDerivativeFilter": 0.0003,
+    "currentNotch": {
+      "enabled": false,
+      "frequency_Hz": 1000,
+      "zeroDamping": 0.01,
+      "poleDamping": 0.3
+    },
+    "controlStrategy": "speed",
+    "velocityFeedforwardScale": 0,
+    "currentForceKp": 0.020404479883576326,
+    "currentForceKi": 13.602986589050884,
+    "currentForceKd": 0
+  },
+  "screwThermalNote": "1.16A continuous catalog; 3.5A peak is a drive assumption with no qualified allowed duration",
+  "transmissionNote": "Native ideal reversible pitch transform plus explicit Coulomb/viscous losses; 90% efficiency used only as conservative sizing bound",
+  "sources": [
+    "https://www.maxongroup.com/maxon/view/product/302005",
+    "https://www.maxongroup.com/medias/sys_master/root/8992314097694/EN-22-154.pdf"
+  ],
+  "plannedCases": 4,
+  "executedCases": 1,
+  "setupRejections": 0,
+  "passedCases": 0,
+  "algebraicLoopCount": 0,
+  "rows": {
+    "caseIndex": 1,
+    "purpose": "native_force_balance_voice_coil",
+    "scenario": "sharp",
+    "actuator": "voice_coil",
+    "controller": "coil_pi",
+    "massS_kg": 2,
+    "massB_kg": 0.6,
+    "referenceForce_N": 50,
+    "angle_deg": 90,
+    "seed": 7,
+    "forceNoiseRms_N": 0,
+    "accelNoiseRms_m_s2": 0,
+    "step_s": 1E-5,
+    "lowerRigid": false,
+    "upperRigid": true,
+    "cellStiffness_N_m": 6.4E+7,
+    "cellDamping_Ns_m": 247.87093415727469,
+    "screwPitch_m": 0.005,
+    "rotorInertia_kg_m2": 1.5800000000000001E-6,
+    "reflectedRotorMass_kg": 2.4950359925953896,
+    "currentForceKp": 0.020404479883576326,
+    "currentForceKi": 13.602986589050884,
+    "currentForceKd": 0,
+    "speedForceKp": 0.0005,
+    "speedForceKi": 0.005,
+    "speedForceKd": 0,
+    "velocityFeedforwardScale": 0,
+    "notchEnabled": false,
+    "notchFrequency_Hz": 723.73115212731363,
+    "executed": true,
+    "passed": false,
+    "completed": false,
+    "contactLoss": true,
+    "strokeStop": false,
+    "overCurrent": false,
+    "peakNormalForceError_N": 50,
+    "rmsNormalForceError_N": 2.1747409081015596,
+    "peakCurrent_A": 2.988851770461554,
+    "rmsCurrent_A": 2.5006427312398802,
+    "peakVoltage_V": 24,
+    "peakMotorSpeed_rad_s": 13.023141593391717,
+    "currentSaturationFraction": 0,
+    "voltageSaturationFraction": 0.00020907926717716855,
+    "holdCurrent_A": 2.5,
+    "holdCopperLoss_W": 25,
+    "continuousStaticCatalogPassed": false,
+    "sizingEfficiency": 0.9,
+    "holdCurrentEfficiencyBound_A": 1.8893036929237339,
+    "continuousStaticEfficiencyBoundPassed": false,
+    "normalBalanceResidual_N": 0,
+    "downstreamForceBalanceResidual_N": 1.2013785099635535E-15,
+    "actuatedForceBalanceResidual_N": 8.306805867564555E-15,
+    "rotorForceBalanceResidual_N": null,
+    "actualDuration_s": 1.14788,
+    "minTravel_mm": 12.49984374999965,
+    "maxTravel_mm": 12.635783670413119,
+    "failureReason": "incomplete, contact loss, normal force error",
+    "executionSeconds": 4.05438,
+    "executionError": "",
+    "nativeTraceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_smoke_v6_20260930_native_0001.mat"
+  },
+  "elapsedSeconds": 4.255179
+}

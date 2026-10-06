@@ -1,0 +1,157 @@
+{
+  "scope": "Read-only comparison of two recovery duplicate benchmarks;40 unique timing configurations were covered by42 native executions. No extra coverage is inferred from duplicates.",
+  "checks": [
+    {
+      "originalCaseId": 33,
+      "recoveryCaseId": 1,
+      "firstTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition/inertial_uncertainty_matched_acquisition_20260930_native_traces/case_0033.mat",
+      "recoveryTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition_remainder/inertial_uncertainty_matched_acquisition_remainder_20260930_native_traces/case_0001.mat",
+      "firstSha256": "2f048df79a44faa9914e168b21013cb896b25623ebd1a5638470456986e415f5",
+      "recoverySha256": "c241debdaafddc0630ac03ed13a1037f85a9b0c56411f4a862a294c86782b56b",
+      "checks": {
+        "time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "normalContact.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "normalContact.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerometer.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerometer.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "motionObserver.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "motionObserver.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "commandPrediction.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "commandPrediction.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "forceVariation.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "forceVariation.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerationFeedforward.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerationFeedforward.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "measuredDrag.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "measuredDrag.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        }
+      },
+      "allBitwiseEqual": true,
+      "maxTrueNormalDifference_N": 0.0
+    },
+    {
+      "originalCaseId": 34,
+      "recoveryCaseId": 2,
+      "firstTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition/inertial_uncertainty_matched_acquisition_20260930_native_traces/case_0034.mat",
+      "recoveryTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition_remainder/inertial_uncertainty_matched_acquisition_remainder_20260930_native_traces/case_0002.mat",
+      "firstSha256": "423da87c103aa79b038dc213af5168ce3c839b7363c2f325e53324ceea039747",
+      "recoverySha256": "a4d7e2b4b676ba614a2c7e75cc8b8cf3613dcc4716a291820d174270e7553b4e",
+      "checks": {
+        "time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "normalContact.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "normalContact.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerometer.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerometer.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "motionObserver.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "motionObserver.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "commandPrediction.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "commandPrediction.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "forceVariation.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "forceVariation.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerationFeedforward.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "accelerationFeedforward.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "measuredDrag.time": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        },
+        "measuredDrag.data": {
+          "bitwiseEqual": true,
+          "maxDifference": 0.0
+        }
+      },
+      "allBitwiseEqual": true,
+      "maxTrueNormalDifference_N": 0.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+### Ran Playwright code
+```js
+await page.getByRole('complementary', { name: 'Data source for Native ADC' }).getByRole('button', { name: 'Close data source' }).click();
+```
+### Page
+- Page URL: http://127.0.0.1:8772/?view=1
+- Page Title: Active contact flange: control and prototype design
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-10-02T19-05-17-919Z.yml)

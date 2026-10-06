@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-30",
+  "sourceFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-lead-20260930/frozen-lead-v2",
+  "modelFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-lead-20260930/frozen-lead-v2/acf_force_control_normal_trial.slx",
+  "modelSha256": "ab346f61d78c5e1e2a7b524fab1e3715fd2d0b18683b0d3752ba229a0914574d",
+  "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-lead-20260930/frozen-lead-v2/normal_contact_trial_candidate.mat",
+  "candidateSha256": "7414eaa5ca38379a3ddbdac30d409403154f088b7563a57e89eeb295719db6f7",
+  "helperSha256": {
+    "acf_desktop_available.m": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+    "acf_experiment.m": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+    "acf_metrics.m": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+    "acf_open.m": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+    "acf_parameters.m": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+    "acf_plot.m": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+    "acf_prepare.m": "f087c24d37d8c5cf501794e6210de5919be8c96c1cddf716e94012c5cd35d0d8",
+    "acf_run.m": "584ab19c8a6ea36f822d1ae3d674d21697d38de8a44302e4daec740567d14294",
+    "acf_select_actuator.m": "832674387040ac3300ee43876a5cc46125db3c8b1dfdb990c7cf5df713ba48a6",
+    "acf_select_controller.m": "18e6fdc85998dff6fe992ccb0f52112388f7372410d0724803725ffe702848f9",
+    "acf_signals.m": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+    "acf_start.m": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+    "acf_start_visualizer.m": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+    "acf_sweep.m": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+    "acf_viewer_selftest.m": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+    "acf_visualize.m": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+  },
+  "recipeFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-lead-20260930/frozen-lead-v2/build_normal_contact_trial.m",
+  "recipeSha256": "40ce2196cc326772bf1b9b8f14c15e39a231d259575247401d2f756cd739db32",
+  "normalLogColumns": [
+    "N",
+    "Rx",
+    "trueSlope",
+    "Nhat",
+    "shat",
+    "Rz_requested",
+    "Rx_measured",
+    "vRobot_predicted"
+  ],
+  "zeroPredictionExactRegression": {
+    "baselineSampleCount": 80001,
+    "leadSampleCount": 80001,
+    "physicalControl35MaxAbsDiff": 0.0,
+    "normalContact8MaxAbsDiff": 0.0,
+    "observerMaxAbsDiff": 0.0
+  }
+}

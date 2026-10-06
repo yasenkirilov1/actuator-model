@@ -1,0 +1,61 @@
+{
+  "status": "complete_audited_grid_frozen",
+  "validatedUniqueNativeHistories": 3500,
+  "passed": 3500,
+  "auditErrors": 0,
+  "nativeSamplesScored": 1400003500,
+  "minimumNormalForceMargin_N": 0.18418907093424508,
+  "worstNativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_worst_native_trace.mat",
+  "worstNativeTraceSha256": "c9483c087549910f011480f696cb5d1fa3f24555e354e2b35559d54d538c6bb1",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+      "sha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf",
+      "bytes": 325520
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_coverage.json",
+      "sha256": "73216ee2164009d08cc62fd95f1038fcc57a1fd3abef62f16c72bd2e58ad77a7",
+      "bytes": 84400
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_rows.csv",
+      "sha256": "59d53a66a3528663f761abbbaa82dac31f00bedb113d6a7596f147e947bd94f5",
+      "bytes": 7737973
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_groups.csv",
+      "sha256": "51b4d0060b7f5261aefe0e5a90a9043b36087c1c8bc642fbe35afc22781e10bc",
+      "bytes": 45545
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.json",
+      "sha256": "7b7158252951d96588d58d3f35a6fc03dae55f462ed419d758894e6e655727fd",
+      "bytes": 6015011
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+      "sha256": "cfd4a280412e3c586c4201838975986a51e2ec9725ae7c97fd4ebdd54c0dff25",
+      "bytes": 6015703
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.json",
+      "sha256": "2a582b4f804f6fc2512b76135abd775ea3cd48636c0ebd6fd571352b90057137",
+      "bytes": 6014568
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.json",
+      "sha256": "a66be5691e7046b0a4ee1c268bde754455a2c779df56b06e86bf6371d6566197",
+      "bytes": 6015568
+    }
+  ],
+  "executionSourceManifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/source_manifest.json",
+  "executionSourceManifestSha256": "3747761258b37c37dccd47ae84da55e6a46a6bb6c2a53936aec8f617f0b4b361",
+  "executionSourceArchiveFiles": 27,
+  "note": "Do not overwrite these frozen aggregate artifacts with later diagnostic cohorts. Numerical refinement and actuator/electrical/uncertainty evidence have separate outputs."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "prepared_held_for_complete_grid_and_ram",
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "recipeSha256": "650f25401a1e5c4da049723a9a82ae630fc8eb924ccd68862974dd831afeda70",
+  "plannedNativeReruns": 2,
+  "integrationSteps_s": [
+    5e-06,
+    2.5e-06
+  ],
+  "baseline": "Selected complete-grid worst retained10us full native recording; not yet selected",
+  "scientificSourceSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "fixedAcquisitionPeriod_s": 1e-05,
+  "fixedForceControlPeriod_s": 0.0001,
+  "noiseSeedAndConditioning": "Preserved from selected source parameters; only integration step changes",
+  "comparison": "All72 native channels compared at original10us timestamps. Each fine force/contact/stop/packing score includes every new native sample.",
+  "executionGate": "No execution alongsidefour warmed mesh processes; wait for selected worst and root RAM-aware scheduling."
+}

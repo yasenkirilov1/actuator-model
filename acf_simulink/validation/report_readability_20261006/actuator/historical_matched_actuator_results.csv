@@ -1,0 +1,5 @@
+condition,coilPeakNormalError_N,screwPeakNormalError_N,coilPeakCurrent_A,screwPeakCurrent_A,coilPassed,screwPassed,screwContinuousStaticCatalogPassed
+"S=2 kg, F=50 N, 90°, noise off",0.29325969727796064,0.30100661641908744,2.8044636162951333,3.9004801282939225,True,True,False
+"S=2 kg, F=50 N, 90°, one noisy seed",0.28352182307020257,0.2921908188681286,2.8992333366500778,4.155382715925964,True,True,False
+"S=2 kg, F=5 N, 0°, one noisy seed",0.27479613369848277,0.2827360769332756,1.4707389524669212,2.5204614425031524,True,True,False
+"S=0.1 kg, F=50 N, 90°, one noisy seed",0.10045915137901318,0.21943624062798506,2.6545107355112636,3.672960370939108,True,True,False

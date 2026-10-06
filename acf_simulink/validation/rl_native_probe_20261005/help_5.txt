@@ -1,0 +1,90 @@
+ <strong>Simulation</strong> - Control simulation execution and tune variable, block parameter, and model parameter values
+    The Simulation object represents a simulation of a model and provides an
+    interface to control the simulation.
+
+    <strong>Creation</strong>
+      <strong>Syntax</strong>
+        s = simulation(mdlname)
+        s = simulation(simin)
+
+      <strong>Input Arguments</strong>
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#mw_43c587d7-2ec6-4175-8efe-b957ee5fdf90">mdlname</a> - Model name
+          string | character vector
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#mw_38f45f5c-a123-45fa-8e7b-35003a729b07">simin</a> - Simulation inputs and configuration
+          Simulink.SimulationInput object
+
+    <strong>Properties</strong>
+      Model Information
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_ModelName">ModelName</a> - Name of model to simulate
+          string | character vector
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_LoadModel">LoadModel</a> - Option to load model automatically as needed
+          true or 1 (default) | false or 0
+
+      Simulation Status and Results
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_Time">Time</a> - Current simulation time
+          scalar number
+
+      Simulation Status and Results
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_Status">Status</a> - Simulation status
+          "inactive" | "initializing" | "initialized" | "paused" |
+          "running" | "stopping" | "terminating" | "restarting"
+
+      Simulation Status and Results
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_SimulationOutput">SimulationOutput</a> - Simulation results
+          Simulink.SimulationOutput object
+
+      Simulation Configuration
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_InitialState">InitialState</a> - Initial state or operating point for simulation
+          Simulink.op.ModelOperatingPoint object |
+          Simulink.SimulationData.Dataset object | structure
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_ExternalInput">ExternalInput</a> - External input data to load using top-level input ports
+          Simulink.SimulationData.Dataset object | timetable |
+          timeseries object | ...
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_ModelParameters">ModelParameters</a> - Model parameter values specified for simulation
+          array of Simulink.Simulation.ModelParameter objects | ...
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_BlockParameters">BlockParameters</a> - Block parameter values specified for simulation
+          array of Simulink.Simulation.BlockParameter objects | ...
+
+      Simulation Configuration
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_Variables">Variables</a> - Variable values specified for simulation
+          array of Simulink.Simulation.Variable objects
+
+      App Designer
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_TunableVariables">TunableVariables</a> - Run-to-run and run-time tunable variables
+          simulink.sim.Variables object
+
+      App Designer
+        <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.simulation.html#prop_LoggedSignals">LoggedSignals</a> - Signals logged in model
+          simulink.sim.Signals object
+
+    <strong>Object Functions</strong>
+      Control Simulation Execution
+        <a href="matlab:help initialize -displayBanner">initialize</a> - Initialize simulation represented by Simulation object
+        <a href="matlab:help simulink.Simulation.start -displayBanner">start</a>      - Start simulation represented by Simulation object
+        <a href="matlab:help simulink.Simulation.step -displayBanner">step</a>       - Advance simulation represented by Simulation object by specified amount
+        <a href="matlab:help simulink.Simulation.pause -displayBanner">pause</a>      - Pause active simulation represented by Simulation object
+        <a href="matlab:help simulink.Simulation.resume -displayBanner">resume</a>     - Continue paused simulation represented by Simulation object
+        <a href="matlab:help simulink.Simulation.stop -displayBanner">stop</a>       - Stop simulation represented by Simulation object
+        <a href="matlab:help simulink.Simulation.terminate -displayBanner">terminate</a>  - Terminate simulation represented by Simulation object
+
+      Configure Simulation
+        <a href="matlab:help setExternalInput -displayBanner">setExternalInput</a>  - Specify external input data for top-level input ports using SimulationInput or Simulation object
+        <a href="matlab:help setInitialState -displayBanner">setInitialState</a>   - Specify initial state for simulation using SimulationInput or Simulation object
+        <a href="matlab:help setVariable -displayBanner">setVariable</a>       - Set variable values for simulation using SimulationInput or Simulation object
+        <a href="matlab:help setModelParameter -displayBanner">setModelParameter</a> - Set model parameter values for simulation using Simulink.SimulationInput or Simulation object
+        <a href="matlab:help setBlockParameter -displayBanner">setBlockParameter</a> - Set block parameter values for simulation using SimulationInput or Simulation object
+
+      Tune Parameter and Variable Values During Simulation
+        <a href="matlab:help setVariable -displayBanner">setVariable</a>       - Set variable values for simulation using SimulationInput or Simulation object
+        <a href="matlab:help setModelParameter -displayBanner">setModelParameter</a> - Set model parameter values for simulation using Simulink.SimulationInput or Simulation object
+        <a href="matlab:help setBlockParameter -displayBanner">setBlockParameter</a> - Set block parameter values for simulation using SimulationInput or Simulation object
+
+    <strong>Examples</strong>
+      <a href="matlab:openExample('simulink/ControlSimulationExecutionAndCheckSimulationStatusExample')">Control Simulation Execution and Check Simulation Status</a>
+
+    <strong>See also</strong> <a href="matlab:help Simulink.SimulationInput -displayBanner">Simulink.SimulationInput</a>, <a href="matlab:help Simulink.SimulationOutput -displayBanner">Simulink.SimulationOutput</a>, <a href="matlab:help sim -displayBanner">sim</a>
+
+    Introduced in Simulink in R2024a
+    <a href="matlab:doc Simulation">Documentation for Simulation</a>
+
+

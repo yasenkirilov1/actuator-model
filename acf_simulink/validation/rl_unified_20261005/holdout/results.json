@@ -1,0 +1,244 @@
+{
+  "status": "holdout_complete_native_replay_pending",
+  "selection": {
+    "status": "frozen_before_holdout",
+    "candidates": [
+      {
+        "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7101_fixed",
+        "seed": 7101,
+        "rank": [
+          0,
+          0,
+          11.888588152918238,
+          1.5273064799452527
+        ],
+        "update": 50,
+        "transitions": 2621440
+      },
+      {
+        "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7102_fixed",
+        "seed": 7102,
+        "rank": [
+          1,
+          0,
+          10.763202599412018,
+          1.206252484834228
+        ],
+        "update": 10,
+        "transitions": 2621440
+      },
+      {
+        "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7103_1khz",
+        "seed": 7103,
+        "rank": [
+          1,
+          0,
+          9.95679848516302,
+          1.0652342592642454
+        ],
+        "update": 48,
+        "transitions": 393216
+      }
+    ],
+    "selected": {
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7101_fixed",
+      "seed": 7101,
+      "rank": [
+        0,
+        0,
+        11.888588152918238,
+        1.5273064799452527
+      ],
+      "update": 50,
+      "transitions": 2621440
+    },
+    "selectedCheckpointSha256": "183f32c7ce5c62348323ada5217befe4fc2039993896b0d7ed9496ccf1a557e3",
+    "ranking": "Fewest physical failures, most full-episode\u00b10.5N passes, lowest worst peak error, lowest mean RMS; selection episodes only.",
+    "heldoutRetuning": false
+  },
+  "cases": 12,
+  "nativeRecordings": 36,
+  "nativeSamples": 42612009,
+  "comparisons": [
+    {
+      "identity": "holdout_nominal_01",
+      "baselinePeak_N": 0.03573856769772821,
+      "untrainedPeak_N": 2.7737995773637367,
+      "trainedPeak_N": 3.8141387101802806,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 3.7784001424825524,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_02",
+      "baselinePeak_N": 0.29984063173065323,
+      "untrainedPeak_N": 6.6146811653059245,
+      "trainedPeak_N": 7.5517139230488155,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 7.251873291318162,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_03",
+      "baselinePeak_N": 0.16150865460545916,
+      "untrainedPeak_N": 6.841929180028579,
+      "trainedPeak_N": 7.8839996288237515,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 7.722490974218292,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_04",
+      "baselinePeak_N": 0.25644824707019964,
+      "untrainedPeak_N": 4.916545766256803,
+      "trainedPeak_N": 5.660534539462464,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 5.404086292392265,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_05",
+      "baselinePeak_N": 0.09437402274105011,
+      "untrainedPeak_N": 7.745017787646702,
+      "trainedPeak_N": 8.809305405485802,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 8.714931382744751,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_06",
+      "baselinePeak_N": 0.3420729223830863,
+      "untrainedPeak_N": 5.469717088009215,
+      "trainedPeak_N": 6.353659587937251,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 6.011586665554165,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_07",
+      "baselinePeak_N": 0.096260202642803,
+      "untrainedPeak_N": 9.945042834031057,
+      "trainedPeak_N": 10.981604343129561,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 10.885344140486758,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_nominal_08",
+      "baselinePeak_N": 0.2298195822577611,
+      "untrainedPeak_N": 5.70723542981203,
+      "trainedPeak_N": 6.635417745967729,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 6.405598163709968,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_stress_01",
+      "baselinePeak_N": 0.41993089141715956,
+      "untrainedPeak_N": 11.810534117468272,
+      "trainedPeak_N": 12.798829522523711,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 12.378898631106551,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_stress_02",
+      "baselinePeak_N": 0.39323379075499076,
+      "untrainedPeak_N": 11.804466758917123,
+      "trainedPeak_N": 12.794585280557584,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 12.401351489802593,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_stress_03",
+      "baselinePeak_N": 0.41660198416550287,
+      "untrainedPeak_N": 11.8879769917666,
+      "trainedPeak_N": 12.876052576562287,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 12.459450592396784,
+      "trainedPhysicalFailure": false
+    },
+    {
+      "identity": "holdout_stress_04",
+      "baselinePeak_N": 0.3896508249800945,
+      "untrainedPeak_N": 11.881708885149763,
+      "trainedPeak_N": 12.871684814309475,
+      "baselinePassed": true,
+      "untrainedPassed": false,
+      "trainedPassed": false,
+      "trainedMinusBaseline_N": 12.48203398932938,
+      "trainedPhysicalFailure": false
+    }
+  ],
+  "outcomes": {
+    "baseline": {
+      "status": "complete",
+      "phase": "baseline",
+      "baseline": true,
+      "recordings": 12,
+      "passed": 12,
+      "physicalFailures": 0,
+      "worstNormalForceError_N": 0.41993089141715956,
+      "meanRmsNormalForceError_N": 0.033998020306375575,
+      "totalNativeSamples": 14400012,
+      "elapsed_s": 106.87768887000857,
+      "fullNativeHistories": true,
+      "noTestRetuning": true
+    },
+    "untrained": {
+      "status": "complete",
+      "phase": "untrained",
+      "baseline": false,
+      "recordings": 12,
+      "passed": 0,
+      "physicalFailures": 1,
+      "worstNormalForceError_N": 11.8879769917666,
+      "meanRmsNormalForceError_N": 0.7742618698561435,
+      "totalNativeSamples": 13811985,
+      "elapsed_s": 112.03978508798173,
+      "fullNativeHistories": true,
+      "noTestRetuning": true
+    },
+    "trained": {
+      "status": "complete",
+      "phase": "trained",
+      "baseline": false,
+      "recordings": 12,
+      "passed": 0,
+      "physicalFailures": 0,
+      "worstNormalForceError_N": 12.876052576562287,
+      "meanRmsNormalForceError_N": 1.2229648650282434,
+      "totalNativeSamples": 14400012,
+      "elapsed_s": 112.6338889230392,
+      "fullNativeHistories": true,
+      "noTestRetuning": true
+    }
+  },
+  "trainedBetterCases": 0,
+  "trainedWorseCases": 12,
+  "promoted": false,
+  "scope": "Finite new held-out native codegen recordings, every physical tick incl startup. No retuning or hardware qualification."
+}

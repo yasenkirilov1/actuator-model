@@ -1,0 +1,137 @@
+{
+  "status": "complete",
+  "scriptSha256": "361a30d093ed4bd7881ab2ff674e7406b03cb27400191a8b2ebb2cdbee39015c",
+  "manifestSchema": {
+    "selectedCheckpointSha256": "bafc9cc407f1d26fa8033d161cbf25d2a9bc2642e1310ec22631ff2a8b6b16c0",
+    "selectionBank": "budget_development/manifest.json",
+    "selectionBankSha256": "8803a6975ef4cfda424a8f179202233bc1f16e1fc83246f56fbaca2f641776a1",
+    "cohorts": {
+      "holdout32": {
+        "bank": "budget_development/manifest.json",
+        "bankSha256": "8803a6975ef4cfda424a8f179202233bc1f16e1fc83246f56fbaca2f641776a1",
+        "nativeBuild": "budget_native_144",
+        "nativeLibrarySha256": "551f05fe5df5129b988ce5ee854c2ca13764b010844bdbd3f86254dd0514fc41",
+        "nativeMetadataSha256": "925b454fbac2442036ba0c43592c76b0e76c010912f9c5e08963915678dbb0ec",
+        "nativeScenariosSha256": "0730aca174051de445817d84be0a56977f5d19d077263a3fc65f2c498539300d",
+        "nativeBridgeBuildSha256": "cd44c88397483a517311508d01ee4ab091fb8f2d5b8937245026d55751f0eb3b",
+        "selectionReview": "selected_controller/selection_review_holdout32.json",
+        "selectionReviewSha256": "f9f89e8be45d511109f8989ccdb03bb00f2212683228ceaed97143e6932ce28d",
+        "evaluationSplit": "holdout",
+        "cases": 32,
+        "aggregateOnly": false,
+        "workers": 1
+      },
+      "nominal700": {
+        "bank": "budget_grid/manifest.json",
+        "bankSha256": "489425d366f311382bb119e5a35717b31abf29aef4cbf737d153c7fa0315a20a",
+        "nativeBuild": "budget_native_700",
+        "nativeLibrarySha256": "5e4b11fbdadb4adcca547e2e6ad363d69eb9c0c8eb8d8098af54282ade2f0de3",
+        "nativeMetadataSha256": "925b454fbac2442036ba0c43592c76b0e76c010912f9c5e08963915678dbb0ec",
+        "nativeScenariosSha256": "25538e7a571206010a361fb674fba0483daa39d1329964b37f2da77ef7cd42da",
+        "nativeBridgeBuildSha256": "cd44c88397483a517311508d01ee4ab091fb8f2d5b8937245026d55751f0eb3b",
+        "selectionReview": "selected_controller/selection_review_nominal700.json",
+        "selectionReviewSha256": "c6e1951b1341dcb90007dde3e43bd20077f0521b0b7817ad25cd0d0e0fec1d9d",
+        "evaluationSplit": "qualification",
+        "cases": 700,
+        "aggregateOnly": true,
+        "workers": 4
+      },
+      "long4": {
+        "bank": "budget_long/manifest.json",
+        "bankSha256": "400fe8447813ec0264ce9d0401c5feb04e608c153b5fe0101a633556571606ed",
+        "nativeBuild": "budget_native_long",
+        "nativeLibrarySha256": "5fdf7abbcbc3449bde37098da7030d785f9b94d9554d6ca281c36f063e46f78c",
+        "nativeMetadataSha256": "925b454fbac2442036ba0c43592c76b0e76c010912f9c5e08963915678dbb0ec",
+        "nativeScenariosSha256": "9de2d7bcebc9981586351cd2d248e40818d3e2a18566b8b1f157cda2525450b2",
+        "nativeBridgeBuildSha256": "cd44c88397483a517311508d01ee4ab091fb8f2d5b8937245026d55751f0eb3b",
+        "selectionReview": "selected_controller/selection_review_long4.json",
+        "selectionReviewSha256": "448e4b332dd7444e9a39e45314ab0c9cbc9187c8386bf01090cbb09f512c3c0b",
+        "evaluationSplit": "qualification",
+        "cases": 4,
+        "aggregateOnly": false,
+        "workers": 2
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "manifest_budget_dispatch_holdout32",
+      "passed": true
+    },
+    {
+      "name": "manifest_budget_dispatch_nominal700",
+      "passed": true
+    },
+    {
+      "name": "manifest_budget_dispatch_long4",
+      "passed": true
+    },
+    {
+      "name": "changed_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "changed_policy_source",
+      "passed": true
+    },
+    {
+      "name": "changed_native_libacf_native.so",
+      "passed": true
+    },
+    {
+      "name": "changed_native_metadata.json",
+      "passed": true
+    },
+    {
+      "name": "changed_native_scenarios.json",
+      "passed": true
+    },
+    {
+      "name": "changed_native_bridge_build.json",
+      "passed": true
+    },
+    {
+      "name": "changed_bank",
+      "passed": true
+    },
+    {
+      "name": "changed_review",
+      "passed": true
+    },
+    {
+      "name": "manifest_other_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "old_expensive_native_path",
+      "passed": true
+    },
+    {
+      "name": "absolute_manifest_path",
+      "passed": true
+    },
+    {
+      "name": "escaped_manifest_path",
+      "passed": true
+    },
+    {
+      "name": "existing_output",
+      "passed": true
+    },
+    {
+      "name": "write_into_package",
+      "passed": true
+    },
+    {
+      "name": "incomplete_review_even_if_rehashed",
+      "passed": true
+    },
+    {
+      "name": "missing_cohort_manifest_no_fallback",
+      "passed": true
+    }
+  ],
+  "checksPassed": 19,
+  "plantContextsCreated": 0,
+  "freshEpisodesExecuted": 0
+}

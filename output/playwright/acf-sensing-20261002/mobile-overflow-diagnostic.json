@@ -1,0 +1,194 @@
+[
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 891.375,
+    "width": 855.375,
+    "text": "Robot R ─ upper attachment ─ A ─ actuator ─ B ─ lower attachment ─ load cell ─ S ─ surface\n                             ",
+    "overflow": "visible"
+  },
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 397.15625,
+    "width": 361.15625,
+    "text": "q1 = q10 + k1 (xS − xB) + c1 (vS − vB)\nq2 = q20 + k2 (xA − xR) + c2 (vA − vR)\n\nmA aA = Fa − q2 − mA g_axis\nmB aB = q1 − ",
+    "overflow": "visible"
+  },
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 634.765625,
+    "width": 598.765625,
+    "text": "mu_hat_raw = −(Rx_hat + s_hat Rz_hat) / (Rz_hat − s_hat Rx_hat)\nRz_request = Nref (1 − mu_hat s_hat) / sqrt(1+s_hat²)\n",
+    "overflow": "visible"
+  },
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 796.328125,
+    "width": 760.328125,
+    "text": "Irequest = Ih_hold + (Rz_request − Nref)/Kf\n           − (mB_identified + mS_identified) aS_FF/Kf\n           + friction_",
+    "overflow": "visible"
+  },
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 644.265625,
+    "width": 608.265625,
+    "text": "deltaL_desired = (Rz_request − Nref) − mS_identified aS_measured\ndeltaL = k1 q + c1 dq/dt\naB = aS − d²q/dt²\nFa_net = Rz ",
+    "overflow": "visible"
+  },
+  {
+    "tag": "CODE",
+    "class": "language-text",
+    "right": 615.75,
+    "width": 579.75,
+    "text": "I_lower_inverse(s) = (mB_identified / Kf_identified)\n                     × s² / (k1_identified + c1_identified s)\n     ",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TABLE",
+    "class": "study-table",
+    "right": 600,
+    "width": 580,
+    "text": "Selected core setting\tValue\tMeaning\nUpper connection\tRigid\tA follows the modeled robot boundary\nLower opposed-pair net s",
+    "overflow": "visible"
+  },
+  {
+    "tag": "THEAD",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Selected core setting\tValue\tMeaning\n",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Selected core setting\tValue\tMeaning",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TH",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "Meaning",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TBODY",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Upper connection\tRigid\tA follows the modeled robot boundary\nLower opposed-pair net stiffness\t19,746 N/m\tTwo approximatel",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Upper connection\tRigid\tA follows the modeled robot boundary",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "A follows the modeled robot boundary",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Lower opposed-pair net stiffness\t19,746 N/m\tTwo approximately 9.873 N/mm springs",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "Two approximately 9.873 N/mm springs",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Lower parallel damping\t60 N·s/m\tAbout 2 N peak damping force in the retained repeated test",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "About 2 N peak damping force in the retained repeated test",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Common preload\t33.6 N per spring\tBoth springs remain seated throughout the tested motion",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "Both springs remain seated throughout the tested motion",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Proportional / integral gain\t0.30 A/N / 20 A/(N·s)\tModerate force correction around the feedforward command",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "Moderate force correction around the feedforward command",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Derivative gain\t0\tNo derivative term in the selected PI preset",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TD",
+    "class": "",
+    "right": 600,
+    "width": 298.703125,
+    "text": "No derivative term in the selected PI preset",
+    "overflow": "visible"
+  },
+  {
+    "tag": "TR",
+    "class": "",
+    "right": 600,
+    "width": 580,
+    "text": "Feedback-only filter\t1 kHz, two poles, damping 0.707\tLimits force-feedback noise without filtering every feedforward ter",
+    "overflow": "visible"
+  }
+]

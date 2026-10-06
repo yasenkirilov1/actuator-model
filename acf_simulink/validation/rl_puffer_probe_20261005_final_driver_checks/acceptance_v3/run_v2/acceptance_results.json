@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "trainOnly": true,
+  "guards": {
+    "guard_default_holdout": {
+      "rejected": true,
+      "reason": "holdout requires explicit --run-locked-holdout after selection",
+      "noPhysicalEpisode": true
+    },
+    "guard_fixture_holdout": {
+      "rejected": true,
+      "reason": "this mode may execute only train cases",
+      "noPhysicalEpisode": true
+    },
+    "guard_reset_holdout": {
+      "rejected": true,
+      "reason": "ValueError: state-reset ablation is permitted only on TRAIN fixtures",
+      "noPhysicalEpisode": true
+    },
+    "guard_bad_native": {
+      "rejected": true,
+      "reason": "native seal mismatch: libacf_native.so",
+      "noPhysicalEpisode": true
+    },
+    "guard_bad_feature": {
+      "rejected": true,
+      "reason": "checkpoint feature names differ from frozen env",
+      "noPhysicalEpisode": true
+    },
+    "guard_bad_action_scale": {
+      "rejected": true,
+      "reason": "checkpoint and supplied frozen env physical action scales differ",
+      "noPhysicalEpisode": true
+    }
+  },
+  "benchmarks": {
+    "aggregate_serial2s": {
+      "workers": 1,
+      "elapsed_s": 19.668928685016,
+      "uniqueRecordings": 8,
+      "uniqueNativeSamples": 4800008,
+      "replaySamples": 2400004,
+      "summedOrdinaryCaseElapsed_s": 7.466560809931252
+    },
+    "aggregate_workers4_2s": {
+      "workers": 4,
+      "elapsed_s": 17.34539616899565,
+      "uniqueRecordings": 8,
+      "uniqueNativeSamples": 4800008,
+      "replaySamples": 2400004,
+      "summedOrdinaryCaseElapsed_s": 13.348262471030466
+    }
+  },
+  "serialFourWorkerBitExact": true,
+  "driverSha256": "53e4ecbf735aea4f5914f7d1c11a354f2e63753ec4420a7bb2daf803696fbb98",
+  "freshHoldoutEpisodesExecuted": 0,
+  "qualification700EpisodesExecuted": 0
+}

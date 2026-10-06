@@ -1,0 +1,156 @@
+{
+  "status": "complete",
+  "date": "2026-10-02",
+  "frozenAcquisitionModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "metric": "maximum absolute true workpiece-normal force error over every native sample including startup",
+  "physicalRequirement_N": 0.5,
+  "preferredDesignThreshold_N": 0.45,
+  "sources": [
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/results.json",
+      "sha256": "f965cdb9f62ecbadcb67d7d0fd96173849ca3f3bc3d8e132126af15c472e0618",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/results.json",
+      "sha256": "6ddf03ca05687b24365a7ff314c45c7beaa74dced986db17e775f8e3ecb173a2",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/results.json",
+      "sha256": "97c391e5fd6f419561efe4c648e2f38b782bd4559d0b9015f58318d9a3cf3ece",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/results.json",
+      "sha256": "8223a5f44fd47971aeeb82393fe07b7b3a590baa94cf0bdf8de5d840524dc58d",
+      "recordings": 4,
+      "nativeSamples": 12000004.0
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "adc_sinc_long5100_20261002",
+      "group": "sinc3_30000Hz_fc5100Hz",
+      "recordings": 4,
+      "passes": 4,
+      "designMarginPasses": 3,
+      "peakError_N": 0.4513297997943013,
+      "reserve_N": 0.04867020020569868,
+      "nativeSamples": 36000004.0,
+      "worstCaseId": 3,
+      "worstSeed": 1729,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sinc3",
+      "rate_Hz": 30000,
+      "cutoff_Hz": 5100,
+      "converterGroupDelay_us": 49.609375,
+      "peakVoltage_V": 21.517063734998782,
+      "peakCurrent_A": 2.9885107648142033,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/adc_sinc_long5100_20261002/results.json",
+        "sha256": "f965cdb9f62ecbadcb67d7d0fd96173849ca3f3bc3d8e132126af15c472e0618",
+        "recordings": 4,
+        "nativeSamples": 36000004.0
+      }
+    },
+    {
+      "cohort": "adc_sinc_long8000_20261002",
+      "group": "sinc3_30000Hz_fc8000Hz",
+      "recordings": 4,
+      "passes": 4,
+      "designMarginPasses": 4,
+      "peakError_N": 0.43882082755963836,
+      "reserve_N": 0.06117917244036164,
+      "nativeSamples": 36000004.0,
+      "worstCaseId": 2,
+      "worstSeed": 29,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sinc3",
+      "rate_Hz": 30000,
+      "cutoff_Hz": 8000,
+      "converterGroupDelay_us": 49.609375,
+      "peakVoltage_V": 21.543724403079025,
+      "peakCurrent_A": 2.995950307716714,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/adc_sinc_long8000_20261002/results.json",
+        "sha256": "6ddf03ca05687b24365a7ff314c45c7beaa74dced986db17e775f8e3ecb173a2",
+        "recordings": 4,
+        "nativeSamples": 36000004.0
+      }
+    },
+    {
+      "cohort": "adc_sinc_long15000_20261002",
+      "group": "sinc3_15000Hz_fc8000Hz",
+      "recordings": 4,
+      "passes": 4,
+      "designMarginPasses": 1,
+      "peakError_N": 0.4943162231423912,
+      "reserve_N": 0.005683776857608791,
+      "nativeSamples": 36000004.0,
+      "worstCaseId": 1,
+      "worstSeed": 7,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sinc3",
+      "rate_Hz": 15000,
+      "cutoff_Hz": 8000,
+      "converterGroupDelay_us": 99.609375,
+      "peakVoltage_V": 19.86908413803898,
+      "peakCurrent_A": 2.9779687947862308,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/adc_sinc_long15000_20261002/results.json",
+        "sha256": "97c391e5fd6f419561efe4c648e2f38b782bd4559d0b9015f58318d9a3cf3ece",
+        "recordings": 4,
+        "nativeSamples": 36000004.0
+      }
+    },
+    {
+      "cohort": "adc_sar_long5100_20261002",
+      "group": "sar_50000Hz_fc5100Hz",
+      "recordings": 4,
+      "passes": 4,
+      "designMarginPasses": 4,
+      "peakError_N": 0.40421430007220494,
+      "reserve_N": 0.09578569992779506,
+      "nativeSamples": 12000004.0,
+      "worstCaseId": 1,
+      "worstSeed": 7,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sar",
+      "rate_Hz": 50000,
+      "cutoff_Hz": 5100,
+      "converterGroupDelay_us": 0.0,
+      "peakVoltage_V": 21.810632987299527,
+      "peakCurrent_A": 2.9942896297370445,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/adc_sar_long5100_20261002/results.json",
+        "sha256": "8223a5f44fd47971aeeb82393fe07b7b3a590baa94cf0bdf8de5d840524dc58d",
+        "recordings": 4,
+        "nativeSamples": 12000004.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+No algebraic loops were found.
+FINAL_ACTUATORS 1/9 voice_coil S2.0 F50 angle90 seed0 step10.0us: 0.293259697N pass1 I2.80446 V12.1216
+FINAL_ACTUATORS 2/9 voice_coil S2.0 F50 angle90 seed1729 step10.0us: 0.283521823N pass1 I2.89923 V18.4449
+FINAL_ACTUATORS 3/9 voice_coil S2.0 F5 angle0 seed1729 step10.0us: 0.274796134N pass1 I1.47074 V12.8618
+FINAL_ACTUATORS 4/9 voice_coil S0.1 F50 angle90 seed1729 step10.0us: 0.100459151N pass1 I2.65451 V11.5093
+No algebraic loops were found.
+FINAL_ACTUATORS 5/9 leadscrew S2.0 F50 angle90 seed0 step10.0us: 0.301006616N pass1 I3.90048 V9.45809
+FINAL_ACTUATORS 6/9 leadscrew S2.0 F50 angle90 seed1729 step10.0us: 0.292190819N pass1 I4.15538 V10.3831
+FINAL_ACTUATORS 7/9 leadscrew S2.0 F5 angle0 seed1729 step10.0us: 0.282736077N pass1 I2.52046 V6.09375
+FINAL_ACTUATORS 8/9 leadscrew S0.1 F50 angle90 seed1729 step10.0us: 0.219436241N pass1 I3.67296 V9.02364
+No algebraic loops were found.
+FINAL_ACTUATORS 9/9 leadscrew S2.0 F50 angle90 seed1729 step5.0us: 0.292190834N pass1 I4.15538 V10.3831
+FINAL_ACTUATORS_COMPLETE: 9 executed/9 attempted, 9 pass, 0 setup rejects.
+FINAL_ACTUATOR_REPLAY: 9 retained histories; every plot includes its full native force peak.

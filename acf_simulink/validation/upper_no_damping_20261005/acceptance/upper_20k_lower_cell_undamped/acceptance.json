@@ -1,0 +1,82 @@
+{
+  "status": "private_graph_acceptance_complete_no_episodes",
+  "createdEpisodes": 0,
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "2e6e8dd7a8b42b4b504c54e394c671d7ddf86831e5e815607cc25d8561776679",
+  "configurationsSha256": "8deb93131870e4ac05c85ac6852f589c24e6273e8dd3d5253891c4979a6dc6d0",
+  "audits": [
+    {
+      "scenario": 0,
+      "massA_kg": 0.4,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "actuator_command",
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "upperObserverEnabled": true,
+      "loadedEquilibriumICIsZero": true,
+      "observerGain": [
+        -2.649416480396642,
+        756.57601789628416,
+        0.40903835428480428,
+        1064.0721512669245
+      ],
+      "estimatorPoleMagnitude": 0.99274823075756857,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "forcePredictionInputTag": "actuator_command",
+      "measurementFrameFrictionHasNoPredictionLead": true
+    },
+    {
+      "scenario": 11,
+      "massA_kg": 1.5,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "actuator_command",
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "upperObserverEnabled": true,
+      "loadedEquilibriumICIsZero": true,
+      "observerGain": [
+        -2.2126926692283542,
+        121.02410644609573,
+        0.28066125371043904,
+        460.27948331979763
+      ],
+      "estimatorPoleMagnitude": 0.99656055211846806,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "forcePredictionInputTag": "actuator_command",
+      "measurementFrameFrictionHasNoPredictionLead": true
+    }
+  ],
+  "scope": "Saved private native diagram compilation, no algebraic loops, authorized causal observer tags, stable observable upper estimator, no dynamic actor/plant MATLAB function. These are preparation checks, not force qualification or prototype measurements."
+}

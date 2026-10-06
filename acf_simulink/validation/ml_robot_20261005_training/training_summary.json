@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-05",
+  "status": "trained_from_native_trajectories",
+  "learning": "supervised teacher imitation",
+  "objective": "Weighted mean-square reproduction of logged pre-gate recenter correction; selection on untouched trajectories",
+  "feature": "causal robot-rate estimated actuator distance from mid stroke, normalized by 2 mm",
+  "features_excluded": [
+    "future surface profile",
+    "plant truth",
+    "true normal force",
+    "future commands"
+  ],
+  "architecture": "1 input, 8 ReLU hidden units, 1 output; odd symmetric pairs",
+  "learned_scalar_parameters": 8,
+  "stored_affine_coefficients": 25,
+  "hard_constraints": [
+    "original slow force band/rate and dwell gate",
+    "original 10 kHz variation and dwell gate",
+    "same-signed action no larger than delay-bounded teacher action",
+    "robot speed and acceleration limits"
+  ],
+  "inference_updates_Hz": 100,
+  "input_scale_m": 0.002,
+  "training_trajectories": 8,
+  "selection_trajectories": 4,
+  "test_trajectories_used_in_training": 0,
+  "training_frames": 4808,
+  "selection_frames": 2404,
+  "training_input_range_m": [
+    -0.00200057068443942,
+    0.0020003742268153504
+  ],
+  "training_nonzero_target_frames": 4782,
+  "training_nonzero_issued_frames": 4682,
+  "initialization_seeds": [
+    5,
+    29,
+    1729,
+    20261005
+  ],
+  "selected_initialization_seed": 29,
+  "candidates": [
+    {
+      "seed": 5,
+      "converged": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "function_evaluations": 20,
+      "theta": [
+        0.2498459163578238,
+        0.2500146555012789,
+        0.5185054953592774,
+        1.0002256520037915,
+        0.08685300268107553,
+        0.9131469973189243,
+        4.858251713828161e-17,
+        1.8423736232628282e-12
+      ],
+      "training_normalized_rmse": 3.3065722620560454e-17,
+      "selection_normalized_rmse": 3.2976568769386525e-17,
+      "selection_max_distance_error_m": 2.220446049250313e-19
+    },
+    {
+      "seed": 29,
+      "converged": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "function_evaluations": 25,
+      "theta": [
+        0.2499439139032112,
+        0.2500146554994195,
+        0.5238505346466835,
+        0.9992239895018107,
+        0.20716947602280986,
+        0.7928305239771901,
+        1.77523187250527e-17,
+        -2.220797076909316e-13
+      ],
+      "training_normalized_rmse": 2.9579847507889454e-17,
+      "selection_normalized_rmse": 2.709604437543461e-17,
+      "selection_max_distance_error_m": 2.220446049250313e-19
+    },
+    {
+      "seed": 1729,
+      "converged": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "function_evaluations": 17,
+      "theta": [
+        0.24994751441062718,
+        0.2500146555012794,
+        0.5513815010373502,
+        1.5577225000982091,
+        0.21827916611172488,
+        0.7817208338882751,
+        -3.280456200002763e-17,
+        7.104303292460013e-13
+      ],
+      "training_normalized_rmse": 2.872312557725401e-17,
+      "selection_normalized_rmse": 2.813157781293224e-17,
+      "selection_max_distance_error_m": 2.220446049250313e-19
+    },
+    {
+      "seed": 20261005,
+      "converged": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "function_evaluations": 23,
+      "theta": [
+        0.24994748459786548,
+        0.2500146555011349,
+        0.4987412298428328,
+        0.9388614515854813,
+        0.2181822846136188,
+        0.7818177153863811,
+        1.0545080429642011e-16,
+        4.583191687186361e-16
+      ],
+      "training_normalized_rmse": 2.6612461789530104e-17,
+      "selection_normalized_rmse": 2.8584300274627524e-17,
+      "selection_max_distance_error_m": 2.220446049250313e-19
+    }
+  ],
+  "teacher_command_metrics": {
+    "train": {
+      "raw_pre_gate_rmse_m_s": 4.290924297688248e-20,
+      "raw_pre_gate_max_error_m_s": 6.505213034913027e-19,
+      "bounded_pre_gate_rmse_m_s": 3.3614810263946246e-20,
+      "bounded_pre_gate_max_error_m_s": 6.505213034913027e-19,
+      "issued_correction_rmse_m_s": 2.556087394580816e-20,
+      "issued_correction_max_error_m_s": 4.336808689942018e-19,
+      "safety_clipped_frames": 0
+    },
+    "selection": {
+      "raw_pre_gate_rmse_m_s": 3.4219754347628145e-20,
+      "raw_pre_gate_max_error_m_s": 2.168404344971009e-19,
+      "bounded_pre_gate_rmse_m_s": 2.116898535826131e-20,
+      "bounded_pre_gate_max_error_m_s": 2.168404344971009e-19,
+      "issued_correction_rmse_m_s": 2.0620506011742632e-20,
+      "issued_correction_max_error_m_s": 2.168404344971009e-19,
+      "safety_clipped_frames": 0
+    }
+  },
+  "sources": [
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_001_compact.mat",
+      "sha256": "34ad139dfc599d595c5fc24c5ecfbba41cbe69d590c01e0e2f1096f5e535752b",
+      "identity": "train_01",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_002_compact.mat",
+      "sha256": "cb48e378fc28f85e9efbae66b7bf7f5da5b8faecb438793980e170c3ada3bb68",
+      "identity": "train_02",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_003_compact.mat",
+      "sha256": "36ba8eb4342854fa2057493536095adac49549981222f14f73f413fbd3e5ddc1",
+      "identity": "train_03",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_004_compact.mat",
+      "sha256": "3977f026d0e4521e65a6d72fe014d8d5d7b65ddf8fe94b35b00f271c7a453699",
+      "identity": "train_04",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_005_compact.mat",
+      "sha256": "2d7263a2461b4c32318ba753698cc16504b4678ed36bd78936886e71a4fcf644",
+      "identity": "train_05",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 571
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_006_compact.mat",
+      "sha256": "cfc586751a7ca09f3e60c07e0ebf1c1326b373598adc429e1e2c1176370f8f86",
+      "identity": "train_06",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 596,
+      "nonzero_issued_frames": 586
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_007_compact.mat",
+      "sha256": "28dcb4e52843c8706c99b95523c067543443ef836054aa0c3b9b0ed17edc5834",
+      "identity": "train_07",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_008_compact.mat",
+      "sha256": "a27896d0b8cdcbdc602d8b5201f3b1b5923dab14efb90715a462b9efdf1970be",
+      "identity": "train_08",
+      "split": "train",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_009_compact.mat",
+      "sha256": "baa6549f3faa209a20e6d10a6ab402786e01715a83abac0056ab661877071443",
+      "identity": "selection_01",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 591
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_010_compact.mat",
+      "sha256": "b8168771cda3f50ce6ae52db61a5dabf101f12b17b6a0b8021dae47ef6d0ed05",
+      "identity": "selection_02",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 594,
+      "nonzero_issued_frames": 584
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_011_compact.mat",
+      "sha256": "47f6f39a2d45b6b3664aa7239ae309280d27ebec410f94f375ac8aabf03577e7",
+      "identity": "selection_03",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 601,
+      "nonzero_issued_frames": 571
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_collect/recording_012_compact.mat",
+      "sha256": "a832bcac376f35c2cbd5d42d92d472f0d1e7bd72b0ce11e2430ce832332c46f9",
+      "identity": "selection_04",
+      "split": "selection",
+      "native_samples_scored": 1800001.0,
+      "robot_frames": 601,
+      "nonzero_teacher_pre_gate_frames": 596,
+      "nonzero_issued_frames": 576
+    }
+  ],
+  "native_source_sha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "recipe_sha256": "c96334ad8ced68e1df756b0ae340c8b32646c86e1eaaaf9c0647b385990e1d59",
+  "network_file": "acf_simulink/validation/ml_robot_20261005_training/network_weights.mat",
+  "network_sha256": "1fc08b808bc43986bd927532d60edf27a930bcfe6ef5a5ff4f545f391406e52e",
+  "limitations": "Imitation can reproduce the existing safe policy but does not optimize closed-loop force or recenter speed. Finite native trajectory data; no hardware qualification."
+}

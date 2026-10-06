@@ -1,0 +1,11 @@
+{
+  "status": "updating",
+  "narrative": {
+    "OUTCOME": "**Active cell-mode control makes the fixed arrangement promising, but good margin is not established.** One no-lead controller passes all 11 development cases with A = 1.5 kg, with **0.495 N** worst error. Full-range and long-recording tests will follow the final gain comparison; earlier compliant-link passes remain reference results.",
+    "VOLTAGE_RESULT": "The paired heavy-tool example reaches **23.76 V**, with **zero clipped samples**. Raising voltage at unchanged current-loop tuning would not address its structural ringing.",
+    "CONTROL_RESULT": "A phase-shaped cell-feedback branch reduces the illustrated heavy-tool peak from **1.074 to 0.459 N**, and reduces post-bump cell-band spectral power by **14.6 dB**. Its no-lead parent passes all 11 development cases at A = 1.5 kg. Additional acceleration lead worsens the low-force bump. The final bounded gain comparison is running.",
+    "CONTROL_RECOMMENDATION": "Keep deterministic PI, measured-inertia feedforward, the moving-body observer and bounded cell-mode feedback. The latter depends on identified acquisition/driver phase and is not broadband damping. Measure the installed mode and response before retuning; do not treat development passes as prototype qualification.",
+    "FINAL_RECOMMENDATION": "**Build an instrumented development prototype, with the prescribed mechanics and a voice coil.** The current fixed-mechanics simulations do not establish the required force accuracy, so the design remains a testable prototype proposal.",
+    "FINAL_ACCEPTANCE": "Accept the controller only after the fixed plant passes fresh full-range and repeated-bump tests, followed by independent physical force measurements. Prioritize structural response and synchronized sensing before increasing supply voltage."
+  }
+}

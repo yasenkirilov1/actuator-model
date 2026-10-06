@@ -1,0 +1,91 @@
+{
+  "status": "completed_isolated_native_physical_replay_research_model",
+  "model_path": "acf_simulink/generated/sea_pad_dynamic_20261006/acf_sea_pad_research_20261006.slx",
+  "default_replay_case": "coil_pad5mm_k50_c0",
+  "controllerIndependentlyImplementedOrQualified": false,
+  "case_count": 9,
+  "native_base_samples_scored": 7200009,
+  "temporary_arrays_sdi_cache_preferences_released": true,
+  "files": {
+    "acf_simulink/generated/sea_pad_dynamic_20261006/acf_sea_pad_research_20261006.slx": {
+      "sha256": "8134f122efe88b0c18d4da80fbea13e059fefa1d453d4bc3e0db47addeedf2e0",
+      "bytes": 602714
+    },
+    "acf_simulink/generated/sea_pad_dynamic_20261006/native-block-diagram.pdf": {
+      "sha256": "962cd8a43b5d4543ba491a275e526b60c870b35139ba17614b4c7bef15ab5af7",
+      "bytes": 27126
+    },
+    "acf_simulink/generated/sea_pad_dynamic_20261006/native-block-diagram.svg": {
+      "sha256": "5429d3525f6af6ecc69ca2a7ce3ca829639902a14f583d25516accac98803c94",
+      "bytes": 295134
+    },
+    "acf_simulink/generated/sea_pad_dynamic_20261006/native_block_architecture.json": {
+      "sha256": "f7794a90b5bb587fb6c747e9cd2b128a8b58c2058a5b5a84410c414aae45fe1c",
+      "bytes": 1746
+    },
+    "acf_simulink/generated/sea_pad_dynamic_20261006/GETTING_STARTED.md": {
+      "sha256": "ac90692ab9d9b9fe661df8aefc8002dd3917170a47f696367b029c20206cbf9c",
+      "bytes": 3166
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/sea_pad_native_build.m": {
+      "sha256": "fc0943bc43393f0e40ba9da25682d03355152b822c2f996010e21114a19f8e2d",
+      "bytes": 32421
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/sea_pad_native_params.m": {
+      "sha256": "ce455a27d3be302678c09d9ecff09551e05d36bad0c836c0a2e707d2b90db1dd",
+      "bytes": 2984
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/sea_pad_native_from_engine.m": {
+      "sha256": "08a971ac1677bfc7f87412360ef49b52d86f773fcc1723a37614c9da230549ff",
+      "bytes": 1360
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/run_native_replays.m": {
+      "sha256": "f3ac9c0c1ddaec6feefb4ee66a65f4c41f1886858c7059e278ff475b707b6567",
+      "bytes": 11622
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/run_native_failure_checks.m": {
+      "sha256": "cbf50468a3be6d5c3566f370fedfbb8f80bce32f3b356560f068175966a6660a",
+      "bytes": 4592
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/prepare_native_replay.py": {
+      "sha256": "e1f6679b8975d87cb9657ccdca4df2fcf0760df9f350173c0477202c1f65c6e5",
+      "bytes": 5091
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/prepare_native_pad5mm.py": {
+      "sha256": "e55bf42a42a08f6313216e006e794101a9a341c58e3cd3f8b68e63fa9f362135",
+      "bytes": 2718
+    },
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native/README.md": {
+      "sha256": "ad584516bb8cc59ee5c0b371642839d1561f751c22c40ffb5a0b240bfd6f1f4a",
+      "bytes": 9602
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/pad5mm_cases.json": {
+      "sha256": "bfb417a415cce1cc5f6e0a07785b834b2a68b93a909dfbd7a887dac5929d0cc8",
+      "bytes": 11207
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/pad5mm_replay_manifest.json": {
+      "sha256": "c9f6bd6b894d19a0cf57fab53fe26e2c8f2ccaf70593e8423bfead6ef73aedee",
+      "bytes": 13548
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/pad5mm_replay_results.json": {
+      "sha256": "1275514657321740a13f5acd24652239a997ee22ffe97c54704a7177d90cbe2a",
+      "bytes": 14625
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/previous_evidence_freeze.json": {
+      "sha256": "f418e0786dcaad655df416ff65b4d5d322512ec914c9dc5bb584a1c869fda68d",
+      "bytes": 966
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/trace_archive_manifest.json": {
+      "sha256": "5b2b4181302b366d0ec7f22b558d128d85df19597b63cdaa6a2fc314d9c08bf2",
+      "bytes": 5050
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/validation_summary.json": {
+      "sha256": "e822a57b07610f3cbd981fde096e5e0c415a0ce66556094a2f839817d769d228",
+      "bytes": 13737
+    },
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native/storage_completion.json": {
+      "sha256": "8715a226735adcbf39bde8d74a64afb5432f194ca7e2f0762945de631988d3a5",
+      "bytes": 787
+    }
+  }
+}

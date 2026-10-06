@@ -1,0 +1,40 @@
+{
+  "status": "zero_direct_context_dependence_proved",
+  "frames": 20000,
+  "compared_outputs": "two latentmeans,recurrentcriticvalue,all64hiddenstates perframe",
+  "voltage_and_currenttau_encoder_skip_columns_zero": true,
+  "auxiliary_has_noV_orTaupath": true,
+  "counterfactuals": [
+    {
+      "voltage_V": 36,
+      "tau_s": 0.0001,
+      "all_actor_critic_state_values_bit_identical": true,
+      "max_difference": 0.0
+    },
+    {
+      "voltage_V": 48,
+      "tau_s": 0.0001,
+      "all_actor_critic_state_values_bit_identical": true,
+      "max_difference": 0.0
+    },
+    {
+      "voltage_V": 32,
+      "tau_s": 5e-05,
+      "all_actor_critic_state_values_bit_identical": true,
+      "max_difference": 0.0
+    },
+    {
+      "voltage_V": 36,
+      "tau_s": 5e-05,
+      "all_actor_critic_state_values_bit_identical": true,
+      "max_difference": 0.0
+    },
+    {
+      "voltage_V": 48,
+      "tau_s": 5e-05,
+      "all_actor_critic_state_values_bit_identical": true,
+      "max_difference": 0.0
+    }
+  ],
+  "interpretation": "ChangingstaticV/tau cannot directlyalterpolicyaction for fixedcausalhistory.50us alsochanges matchingidentifiedcommand/currentresponseobserver preparation; thatis explicittuningchange, notvoltage-onlyevidence."
+}

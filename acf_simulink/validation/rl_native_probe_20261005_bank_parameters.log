@@ -1,0 +1,10 @@
+{Error using assert
+Native coefficient shape mismatch for case1 ADCanaloginputfilter_A_jc_ir.
+
+Error in build_native>export_parameter_bank (line 127)
+  assert(isreal(v)&&numel(v)==m.count,'Native coefficient shape mismatch for case%d %s.',k,m.name);values{k,j}=v(:);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in build_native (line 12)
+ loaded=load(configsFile,'configs');export_parameter_bank(mdl,loaded.configs,folder);
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

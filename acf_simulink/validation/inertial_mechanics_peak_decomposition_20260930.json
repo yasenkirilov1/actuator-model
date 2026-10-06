@@ -1,0 +1,202 @@
+{
+  "status": "provisional_candidate_not_qualified",
+  "method": "Additive axial force-balance decomposition of original native logs. The displayed normal error is evaluated independently from native normalContact channel1. Derived guide feedforward follows the saved native frame-matching recurrence. Its raw predictor sampling is verified against native normalContact channel8; matched acceleration is derived from that input, not an independently logged channel. PSD identifies spectral content in each stated window, not proof of a unique physical mode.",
+  "cases": [
+    {
+      "label": "clean",
+      "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_notch_selected_trace_20260930_first_native_trace.mat",
+      "nativeTraceSHA256": "e0dad1fbfc740310c0836b869f9579655db9649a06e748ed8b4c57c19c8539d1",
+      "nativeSamples": 400001,
+      "nativeStep_s": 1e-05,
+      "peakTime_s": 2.00044,
+      "peakNormalError_N": 0.3653626380780892,
+      "trueNormalForceAtPeak_N": 50.36536263807809,
+      "measuredReconstructedNormalAtPeak_N": 50.232345963235936,
+      "normalEstimateMinusTrueAtPeak_N": -0.1330166748421533,
+      "trueActuatorGapVelocityAtPeak_m_s": 0.0029850743974850057,
+      "trueHeadGapVelocityAtPeak_m_s": 0.0029965549242741483,
+      "estimatedHeadGapVelocityAtPeak_m_s": 0.003025633913351984,
+      "causalPredictedGuideVelocityAtPeak_m_s": 0.0029871115278102163,
+      "holderAccelerationAtPeak_m_s2": 0.3027738571704924,
+      "toolAccelerationAtPeak_m_s2": 0.1645320946926362,
+      "measuredToolAccelerationAtPeak_m_s2": 0.0936,
+      "postNotchCurrentRequestAtPeak_A": 2.4978446424894454,
+      "actualCurrentAtPeak_A": 2.502754140411703,
+      "trueAxialErrorAtPeak_N": 0.3653225839506362,
+      "axialToNormalErrorFactorAtPeak": 1.000109640436186,
+      "axialTermsAtPeak_N": {
+        "currentTracking": 0.09818995844515399,
+        "postNotchCurrentMinusDirectFeedforward": -0.004518872290837805,
+        "geometryEstimation": 0.004278919848104579,
+        "measuredAccelerationPhaseAndNoise": 0.1844234462008541,
+        "finiteCellHolderInertia": 0.08294505748671371,
+        "guideFrictionEstimation": 4.0742606512989e-06
+      },
+      "decompositionResidualMaximum_N": 1.8721135752741702e-14,
+      "reconstructedRawPredictorSamplingResidualMaximum_m_s": 0.0,
+      "nominalCellMode_Hz": 1643.7451841639995,
+      "notchFrequency_Hz": 1643.7451841639995,
+      "entryWindowPeakError_N": 0.3653626380780892,
+      "guideReversalWindowPeakError_N": 0.2512181439667813,
+      "frequencyWindows": [
+        {
+          "window_s": [
+            1.2,
+            1.8
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1641.8457031249998,
+          "frequencyBinWidth_Hz": 6.103515624999999,
+          "rmsAboutWindowMean_N": 0.00048292066882745405,
+          "peakAbsoluteError_N": 0.001042435737687697
+        },
+        {
+          "window_s": [
+            2.04,
+            2.08
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1649.587603099225,
+          "frequencyBinWidth_Hz": 24.99375156210947,
+          "rmsAboutWindowMean_N": 0.11559554661072892,
+          "peakAbsoluteError_N": 0.2512181439667813
+        },
+        {
+          "window_s": [
+            3,
+            4
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1641.8457031249998,
+          "frequencyBinWidth_Hz": 6.103515624999999,
+          "rmsAboutWindowMean_N": 0.0017801105316361655,
+          "peakAbsoluteError_N": 0.0068838259054331274
+        }
+      ],
+      "voltageClippedSamples": 0,
+      "currentClippedSamples": 0
+    },
+    {
+      "label": "noise1729",
+      "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_notch_selected_trace_20260930_worst_native_trace.mat",
+      "nativeTraceSHA256": "61213a28b4b31135bf5b0bf9bf9cb72e03d459409ec7536e9a95a4a15dabe43c",
+      "nativeSamples": 400001,
+      "nativeStep_s": 1e-05,
+      "peakTime_s": 2.00041,
+      "peakNormalError_N": 0.4041992653252535,
+      "trueNormalForceAtPeak_N": 50.40419926532525,
+      "measuredReconstructedNormalAtPeak_N": 50.30055487544636,
+      "normalEstimateMinusTrueAtPeak_N": -0.10364438987889457,
+      "trueActuatorGapVelocityAtPeak_m_s": 0.0029892896839982864,
+      "trueHeadGapVelocityAtPeak_m_s": 0.003001385999057691,
+      "estimatedHeadGapVelocityAtPeak_m_s": 0.0030106693024206654,
+      "causalPredictedGuideVelocityAtPeak_m_s": 0.002970274869909014,
+      "holderAccelerationAtPeak_m_s2": 0.3460585202734965,
+      "toolAccelerationAtPeak_m_s2": 0.15359338740939665,
+      "measuredToolAccelerationAtPeak_m_s2": 0.09828,
+      "postNotchCurrentRequestAtPeak_A": 2.4979595492770232,
+      "actualCurrentAtPeak_A": 2.5045276315060785,
+      "trueAxialErrorAtPeak_N": 0.4041607466797714,
+      "axialToNormalErrorFactorAtPeak": 1.0000953052610926,
+      "axialTermsAtPeak_N": {
+        "currentTracking": 0.131361644581105,
+        "postNotchCurrentMinusDirectFeedforward": 0.012228256828684891,
+        "geometryEstimation": 0.0013149879152791755,
+        "measuredAccelerationPhaseAndNoise": 0.1438148072644313,
+        "finiteCellHolderInertia": 0.11547907971845989,
+        "guideFrictionEstimation": -3.80296281872472e-05
+      },
+      "decompositionResidualMaximum_N": 1.8596235662471372e-14,
+      "reconstructedRawPredictorSamplingResidualMaximum_m_s": 0.0,
+      "nominalCellMode_Hz": 1643.7451841639995,
+      "notchFrequency_Hz": 1643.7451841639995,
+      "entryWindowPeakError_N": 0.4041992653252535,
+      "guideReversalWindowPeakError_N": 0.28230150037168045,
+      "frequencyWindows": [
+        {
+          "window_s": [
+            1.2,
+            1.8
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1068.1152343749998,
+          "frequencyBinWidth_Hz": 6.103515624999999,
+          "rmsAboutWindowMean_N": 0.04222154507059426,
+          "peakAbsoluteError_N": 0.14403234769093842
+        },
+        {
+          "window_s": [
+            2.04,
+            2.08
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1649.587603099225,
+          "frequencyBinWidth_Hz": 24.99375156210947,
+          "rmsAboutWindowMean_N": 0.12079247929305036,
+          "peakAbsoluteError_N": 0.2846797477487115
+        },
+        {
+          "window_s": [
+            3,
+            4
+          ],
+          "band_Hz": [
+            500,
+            4000
+          ],
+          "dominantFrequency_Hz": 1068.1152343749998,
+          "frequencyBinWidth_Hz": 6.103515624999999,
+          "rmsAboutWindowMean_N": 0.0435762670117143,
+          "peakAbsoluteError_N": 0.16304288036621273
+        }
+      ],
+      "voltageClippedSamples": 0,
+      "currentClippedSamples": 0
+    }
+  ],
+  "solverRefinement": [
+    {
+      "resultFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_notch_selected_trace_20260930_results.json",
+      "sha256": "fdb8d51d38dedde867affc6418e0b1928ea9e6d8a6b56f0207436a78508a1324",
+      "step_s": 1e-05,
+      "peakNormalErrors_N": [
+        0.3653626380780892,
+        0.4041992653252535
+      ]
+    },
+    {
+      "resultFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_notch_selected_trace_20260930_step5us_results.json",
+      "sha256": "f3ade574f79993702698cad0c0f2316668666c7ee5fd96e71ada8da73d01d6a2",
+      "step_s": 5e-06,
+      "peakNormalErrors_N": [
+        0.3653598407428973,
+        0.4042004371633894
+      ]
+    },
+    {
+      "resultFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_notch_selected_trace_20260930_step2p5us_results.json",
+      "sha256": "d9a5f86dc45a17125dd2c699f247c3865336c1818b05e18a4ccd105d558c3ca9",
+      "step_s": 2.5e-06,
+      "peakNormalErrors_N": [
+        0.36537698217355796,
+        0.4042129588256884
+      ]
+    }
+  ],
+  "limitation": "The 4-second cases pass but repeated bumps and notch-frequency errors fail. This is diagnostic evidence, not a promoted controller."
+}

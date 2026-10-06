@@ -1,0 +1,264 @@
+{
+  "status": "content_checks_passed_interaction_checks_unverified",
+  "page": "Final locally served HTML build",
+  "dom": {
+    "components": [
+      {
+        "id": "report:nested:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results"
+      },
+      {
+        "id": "report:nested:results:table-1",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results"
+      },
+      {
+        "id": "report:nested:results:mechanics-load-path-springs-and-guides:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform"
+      },
+      {
+        "id": "report:nested:results:mechanics-load-path-springs-and-guides:intro:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform"
+      },
+      {
+        "id": "report:nested:results:mechanics-load-path-springs-and-guides:question:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform"
+      },
+      {
+        "id": "report:nested:results:mechanics-load-path-springs-and-guides:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform"
+      },
+      {
+        "id": "report:nested:results:mechanics-load-path-springs-and-guides:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform"
+      },
+      {
+        "id": "report:nested:results:actuator-and-electrical-drive:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_voltage_diagnostics coil_parts final_actuator_comparison"
+      },
+      {
+        "id": "report:nested:results:actuator-and-electrical-drive:intro:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_voltage_diagnostics coil_parts final_actuator_comparison"
+      },
+      {
+        "id": "report:nested:results:actuator-and-electrical-drive:question:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_voltage_diagnostics coil_parts final_actuator_comparison"
+      },
+      {
+        "id": "report:nested:results:actuator-and-electrical-drive:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_voltage_diagnostics coil_parts final_actuator_comparison"
+      },
+      {
+        "id": "report:nested:results:actuator-and-electrical-drive:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_voltage_diagnostics coil_parts final_actuator_comparison"
+      },
+      {
+        "id": "report:nested:results:force-and-position-measurement:evidence",
+        "queries": "fixed_mechanics_contract force_position_parts joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:force-and-position-measurement:intro:evidence",
+        "queries": "fixed_mechanics_contract force_position_parts joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:force-and-position-measurement:question:evidence",
+        "queries": "fixed_mechanics_contract force_position_parts joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:force-and-position-measurement:results:evidence",
+        "queries": "fixed_mechanics_contract force_position_parts joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:force-and-position-measurement:recommendation:evidence",
+        "queries": "fixed_mechanics_contract force_position_parts joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:acceleration-measurement:evidence",
+        "queries": "rl_budget_parts rl_budget_sensing_contract fixed_mechanics_contract budget_accelerometer_stress"
+      },
+      {
+        "id": "report:nested:results:acceleration-measurement:intro:evidence",
+        "queries": "rl_budget_parts rl_budget_sensing_contract fixed_mechanics_contract budget_accelerometer_stress"
+      },
+      {
+        "id": "report:nested:results:acceleration-measurement:question:evidence",
+        "queries": "rl_budget_parts rl_budget_sensing_contract fixed_mechanics_contract budget_accelerometer_stress"
+      },
+      {
+        "id": "report:nested:results:acceleration-measurement:results:evidence",
+        "queries": "rl_budget_parts rl_budget_sensing_contract fixed_mechanics_contract budget_accelerometer_stress"
+      },
+      {
+        "id": "report:nested:results:acceleration-measurement:recommendation:evidence",
+        "queries": "rl_budget_parts rl_budget_sensing_contract fixed_mechanics_contract budget_accelerometer_stress"
+      },
+      {
+        "id": "report:nested:results:acquisition-electronics-amplifier-adc-and-timing:evidence",
+        "queries": "fixed_acquisition_reference rl_budget_parts rl_budget_sensing_contract budget_adc_screen"
+      },
+      {
+        "id": "report:nested:results:acquisition-electronics-amplifier-adc-and-timing:intro:evidence",
+        "queries": "fixed_acquisition_reference rl_budget_parts rl_budget_sensing_contract budget_adc_screen"
+      },
+      {
+        "id": "report:nested:results:acquisition-electronics-amplifier-adc-and-timing:question:evidence",
+        "queries": "fixed_acquisition_reference rl_budget_parts rl_budget_sensing_contract budget_adc_screen"
+      },
+      {
+        "id": "report:nested:results:acquisition-electronics-amplifier-adc-and-timing:results:evidence",
+        "queries": "fixed_acquisition_reference rl_budget_parts rl_budget_sensing_contract budget_adc_screen"
+      },
+      {
+        "id": "report:nested:results:acquisition-electronics-amplifier-adc-and-timing:recommendation:evidence",
+        "queries": "fixed_acquisition_reference rl_budget_parts rl_budget_sensing_contract budget_adc_screen"
+      },
+      {
+        "id": "report:nested:results:fast-force-controller:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_controller_contract"
+      },
+      {
+        "id": "report:nested:results:fast-force-controller:intro:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_controller_contract"
+      },
+      {
+        "id": "report:nested:results:fast-force-controller:question:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_controller_contract"
+      },
+      {
+        "id": "report:nested:results:fast-force-controller:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_controller_contract"
+      },
+      {
+        "id": "report:nested:results:fast-force-controller:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_control_waveform fixed_controller_contract"
+      },
+      {
+        "id": "report:nested:results:robot-commands-and-recentering:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results rl_method_contract final_robot_OAT"
+      },
+      {
+        "id": "report:nested:results:robot-commands-and-recentering:intro:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results rl_method_contract final_robot_OAT"
+      },
+      {
+        "id": "report:nested:results:robot-commands-and-recentering:question:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results rl_method_contract final_robot_OAT"
+      },
+      {
+        "id": "report:nested:results:robot-commands-and-recentering:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results rl_method_contract final_robot_OAT"
+      },
+      {
+        "id": "report:nested:results:robot-commands-and-recentering:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results rl_method_contract final_robot_OAT"
+      },
+      {
+        "id": "report:nested:results:learned-control-policy:evidence",
+        "queries": "rl_selected_candidate rl_nominal_grid rl_fresh_tests rl_long_tests"
+      },
+      {
+        "id": "report:nested:results:learned-control-policy:intro:evidence",
+        "queries": "rl_selected_candidate rl_nominal_grid rl_fresh_tests rl_long_tests"
+      },
+      {
+        "id": "report:nested:results:learned-control-policy:question:evidence",
+        "queries": "rl_selected_candidate rl_nominal_grid rl_fresh_tests rl_long_tests"
+      },
+      {
+        "id": "report:nested:results:learned-control-policy:results:evidence",
+        "queries": "rl_selected_candidate rl_nominal_grid rl_fresh_tests rl_long_tests"
+      },
+      {
+        "id": "report:nested:results:learned-control-policy:recommendation:evidence",
+        "queries": "rl_selected_candidate rl_nominal_grid rl_fresh_tests rl_long_tests"
+      },
+      {
+        "id": "report:nested:results:calibration-model-qualification-and-prototype-validation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_sensing_contract joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:calibration-model-qualification-and-prototype-validation:intro:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_sensing_contract joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:calibration-model-qualification-and-prototype-validation:question:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_sensing_contract joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:calibration-model-qualification-and-prototype-validation:results:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_sensing_contract joint_budget_plan"
+      },
+      {
+        "id": "report:nested:results:calibration-model-qualification-and-prototype-validation:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_sensing_contract joint_budget_plan"
+      },
+      {
+        "id": "report:nested:recommendation:evidence",
+        "queries": "fixed_mechanics_contract fixed_development_results fixed_qualification_results fixed_voltage_diagnostics fixed_controller_contract fixed_native_verification rl_budget_parts rl_budget_sensing_contract"
+      }
+    ],
+    "creating": false,
+    "hasFailedStrictGuards": true,
+    "hasForceWorst": true,
+    "hasFresh": true,
+    "hasLong": true,
+    "hasNoiseNormalization": true,
+    "hasNominal": true,
+    "hasVoltageDiagnostic": true,
+    "href": "http://localhost:8772/?study=upper-fixed&stage=complete&view=1",
+    "images": [
+      {
+        "alt": "Prescribed mechanics and measurement locations",
+        "loaded": true,
+        "width": 980.0130004882812
+      },
+      {
+        "alt": "Native experiments supporting the ADC rate",
+        "loaded": true,
+        "width": 980.0130004882812
+      },
+      {
+        "alt": "Matched native force traces before and after cell-mode control",
+        "loaded": true,
+        "width": 980.0130004882812
+      }
+    ],
+    "scrollWidth": 1267,
+    "tables": [
+      "Test cohort\tPassed\tWorst error\tHard stops\nNominal: 10 masses × 10 forces × 7 angles\t683/700\t0.580 N\t0\nCalibration/motion stress\t21/32\t3.948 N\t0\nRepeated bumps/drift, up to 30 s\t1/4\t0.691 N\t1"
+    ],
+    "title": "Active contact flange: control and prototype design",
+    "updating": false,
+    "viewport": 1280
+  },
+  "passedChecks": [
+    "Final cohort table and current force failures rendered",
+    "Voltage diagnostics, noise normalization and strict failed MATLAB guard disclosure rendered",
+    "All three SVG figures loaded",
+    "No horizontal overflow at the observed 1280 pixel viewport",
+    "Creating and updating indicators cleared",
+    "Evidence query IDs present on the component sections"
+  ],
+  "visualReviews": [
+    "All three SVGs previously inspected as rendered images",
+    "Native Simulink root, controller and observer diagram PNGs previously inspected"
+  ],
+  "unverifiedChecks": [
+    {
+      "check": "Preview screenshot and snapshot",
+      "reason": "T3 preview returned generic client failure preview-658780b3a22ea71872ac79950863130c"
+    },
+    {
+      "check": "Evidence inspector click interaction",
+      "reason": "Focused preview click failed; DOM click did not establish that the inspector opened"
+    },
+    {
+      "check": "Narrow viewport layout",
+      "reason": "T3 preview resize timed out; preview was reattached at 1280 pixels"
+    },
+    {
+      "check": "Standalone exported HTML interactive execution",
+      "reason": "Exporter and artifact hashes verified; DOM observations apply to the locally served build"
+    }
+  ],
+  "alternateBrowserUsed": false
+}

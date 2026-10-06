@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-29",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "activeMatlabHelpers": 15,
+  "archivedMatlabFiles": 18,
+  "archivedOldModels": 8,
+  "comparisons": [
+    {
+      "actuator": "leadscrew",
+      "maxAll35Difference": 0
+    },
+    {
+      "actuator": "voice_coil",
+      "maxAll35Difference": 0
+    },
+    {
+      "actuator": "ideal_position",
+      "maxAll35Difference": 0
+    }
+  ],
+  "slowBump": {
+    "toolAndHolder_kg": 2,
+    "holder_kg": 0.6,
+    "tool_kg": 1.4,
+    "scanSpeed_mm_s": 20,
+    "bumpDuration_s": 3,
+    "peakForceError_N": 0.082827734250024321,
+    "passed": true
+  },
+  "directBlockEditsPreserved": true,
+  "sweepsUseEditedBlocksAndRestoreSettings": true,
+  "parameterDefaultsReadFromModel": true,
+  "toolbarStopTimeHonored": true,
+  "saveReopenPreservesEdits": true,
+  "motorSwitchingChecked": true,
+  "replayUsesEditedBlocks": true,
+  "experimentScriptChecked": true,
+  "removedDependenciesAbsent": true,
+  "dependencies": [
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_desktop_available.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_experiment.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_metrics.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_open.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_parameters.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_plot.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_prepare.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_run.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_select_actuator.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_signals.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_start.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_start_visualizer.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_sweep.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_viewer_selftest.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/acf_visualize.m",
+    "/home/tommie/Projects/actuator-model/acf_simulink/generated/acf_force_control_simple.slx"
+  ],
+  "products": [
+    {
+      "Name": "MATLAB",
+      "Version": "26.2",
+      "ProductNumber": 1,
+      "Certain": true
+    },
+    {
+      "Name": "Simulink",
+      "Version": "26.2",
+      "ProductNumber": 2,
+      "Certain": false
+    },
+    {
+      "Name": "Simulink Real-Time",
+      "Version": "26.2",
+      "ProductNumber": 56,
+      "Certain": false
+    },
+    {
+      "Name": "SoC Blockset",
+      "Version": "26.2",
+      "ProductNumber": 163,
+      "Certain": false
+    },
+    {
+      "Name": "Stateflow",
+      "Version": "26.2",
+      "ProductNumber": 38,
+      "Certain": false
+    }
+  ]
+}

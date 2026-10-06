@@ -1,0 +1,21 @@
+{
+  "status": "complete_read_only_paired_diagnostic",
+  "newSimulations": 0,
+  "source": "acf_simulink/validation/inertial_uncertainty_v8_paired_peak_interpretation.json",
+  "sourceSHA256": "6ea1933f353975f3bbe3d1a341dc2bf53e636100c33f0b60604e1e64ea3137b4",
+  "qualificationLimit": "Worst entry shifts10us across a10kHz current-command update; individual balance terms at the two peaks must not be compared as isolated bottlenecks. Quiet windows are explicitly defined in the source diagnostic.",
+  "rows": [
+    {
+      "cohort": "Original static stress",
+      "quietActualErrorMean_N": 0.14881028371929148,
+      "peakError_N": 0.4903960465866817,
+      "peakAboveQuiet_N": 0.3415857628673902
+    },
+    {
+      "cohort": "Tighter static calibration",
+      "quietActualErrorMean_N": 0.07425544592518049,
+      "peakError_N": 0.4153107484491727,
+      "peakAboveQuiet_N": 0.3410553025239922
+    }
+  ]
+}

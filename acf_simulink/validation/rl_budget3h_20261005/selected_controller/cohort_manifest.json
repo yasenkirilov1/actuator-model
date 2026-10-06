@@ -1,0 +1,52 @@
+{
+  "selectedCheckpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "selectionBank": "scenario_bank_budget50/manifest.json",
+  "selectionBankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+  "cohorts": {
+    "holdout32": {
+      "bank": "scenario_bank_budget50/manifest.json",
+      "nativeBuild": "native_bank_budget50",
+      "evaluationSplit": "holdout",
+      "cases": 32,
+      "aggregateOnly": false,
+      "workers": 2,
+      "bankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+      "nativeLibrarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+      "nativeMetadataSha256": "f0f13ad885fe9a673f4d8c8cdee1146c728133bb63c7c468966d132c08f837f5",
+      "nativeScenariosSha256": "22cc51053b22e342039a7aaca3e9b0c5ee9a5174235754e57d32fb4af9cf3815",
+      "nativeBridgeBuildSha256": "4d7ace1f89dfd53c682fc0064140c4ce09f2fee82e2a6ee8d704d0ffa9c9eaf7",
+      "selectionReview": "selected_controller/selection_review_holdout.json",
+      "selectionReviewSha256": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+    },
+    "nominal700": {
+      "bank": "qualification_bank_budget700/manifest.json",
+      "nativeBuild": "native_qualification_budget700",
+      "evaluationSplit": "qualification",
+      "cases": 700,
+      "aggregateOnly": true,
+      "workers": 4,
+      "bankSha256": "173445a54844fb337c57937e08408f458336c4f1fcf0824c761b83a09bb9cc5d",
+      "nativeLibrarySha256": "30e55889886de9fd00cc6eb227a884e0693cd14b2ead7edcd0c449c7370ce1ad",
+      "nativeMetadataSha256": "c1948559a08d23808a386cf467763a672fb5e8629472b05380eda3ddef95e9f6",
+      "nativeScenariosSha256": "cd11b67d806db6af6fea75fda68cbe89d4bd317eb78b73140e862d53dc59953f",
+      "nativeBridgeBuildSha256": "121fd45b650b90dd69393ce2d06b4df358276368229ab8aaa7891055ef103179",
+      "selectionReview": "selected_controller/selection_review_grid.json",
+      "selectionReviewSha256": "65a83286aceb703b0f5b1708a74659b60354169a7d52c06bf44c834f7c112312"
+    },
+    "long4": {
+      "bank": "long_qualification_bank_budget/manifest.json",
+      "nativeBuild": "native_long_qualification_budget",
+      "evaluationSplit": "qualification",
+      "cases": 4,
+      "aggregateOnly": true,
+      "workers": 2,
+      "bankSha256": "3f28aa7b0384fb599f06bc190a52dd4950c25233929ab566f9405dff05833041",
+      "nativeLibrarySha256": "cf10919870a1e205deef6260437052df91b76bdc14d2a714e21313d449f95d12",
+      "nativeMetadataSha256": "b43ae7cbb5e4227a21495d276e04f52c30586b5a729b4d2d60f86b0488a4a24f",
+      "nativeScenariosSha256": "794f26798f8b88b34f51d36036363d0866547d82ac6f22acf4a954af559d85a3",
+      "nativeBridgeBuildSha256": "70d2e459a17abddf59efa329c304f51b5f87707cdf8e3c78d8a7397dba95b506",
+      "selectionReview": "selected_controller/selection_review_long.json",
+      "selectionReviewSha256": "4123e153f69bceb1d014c4a6e99adc9e44bc73d251feeee4900c45cbfbf26cd3"
+    }
+  }
+}

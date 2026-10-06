@@ -1,0 +1,426 @@
+{
+  "status": "sealed_native_input_bank",
+  "qualificationEpisodesExecutedByPreparationLane": 0,
+  "files": [
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/acf_rl_native.slx",
+      "bytes": 758293,
+      "sha256": "54c782727d79ad66ed0cc761ea02de12934f9c31f1ffa0821b6d6eb5559f4848"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/acf_rl_native_context.c",
+      "bytes": 209366,
+      "sha256": "796b4ac1144641a72f54e64767c74549cbf26864d7c6ec4a8cd9a41a7a732e8e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/bridge_build.json",
+      "bytes": 2057,
+      "sha256": "4d7ace1f89dfd53c682fc0064140c4ce09f2fee82e2a6ee8d704d0ffa9c9eaf7"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/budget_part_model_parity.json",
+      "bytes": 7007,
+      "sha256": "bbf488ad13daa121f89bf6dfeda3bc8445049ddc18142ccf73dc8c783e836da9"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/build_native.m",
+      "bytes": 19035,
+      "sha256": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/c_compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "bytes": 209507,
+      "sha256": "d1c488201b25cacba577eccae915252304d16cc9959f92324c9c46f32e05da69"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "bytes": 158850,
+      "sha256": "53d5faab41f9a9834effa4bcd119d3ca5c8bbb55f9b634425e5149832777c9c2"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native.mk",
+      "bytes": 16175,
+      "sha256": "e62497710a7b456ccea74fd5a26ef3060a5193d42d44ac557849a310d0cbb597"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "bytes": 16881,
+      "sha256": "109f88aef6cd7e508a74fc4895867c164bdb824820b03ad6727196e675ba7f9c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "bytes": 1859,
+      "sha256": "8c1584aaf463fd915eee87a6381a95f7dd69fb76aeb8857cea4894e04917bb25"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "bytes": 1002,
+      "sha256": "fc7e125bc0fc2fc27e9e7a3e61b8e941e23a8846e1910c53f58b1bfe61f60e46"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/buildInfo.mat",
+      "bytes": 8472,
+      "sha256": "3fc98e3e56bafb2f6bb01debd26cf6c0bc8a06bae2c7050194f6f4a5ee70f0fb"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/codedescriptor.dmr",
+      "bytes": 4242432,
+      "sha256": "6ae408e875b8bd34616b901cd093cb0c24c7938824ca312565cbf38b18eeae19"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/compileInfo.mat",
+      "bytes": 3796,
+      "sha256": "06b05c14b5361e5e11afeba170196e0883e9e86ed351f45894a0dce6774ecbc0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "bytes": 28350,
+      "sha256": "fa852b03e3a3e3bed37b2dc0aa01e40fbbbaf5110774c60f39c65c782632e354"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/reportInfo.mat",
+      "bytes": 12117,
+      "sha256": "bb2aaaf17b75a66dea7240509b6295d3ed1c426999f07cc555a160f4d9701f33"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "bytes": 900,
+      "sha256": "fb783386c451ed71612545bdb737b1e98af6bb792564d0698c3cd9d10bf6370e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "bytes": 877,
+      "sha256": "171c6ce5a97857df9913922e59cba22bad34ffc027c3639d61a4eec221f0ec18"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "bytes": 1429,
+      "sha256": "4352ed6e845d3c457b8d758051ba9f90e78a3ce139661929674769ae99d1dabb"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "bytes": 1115,
+      "sha256": "0aa0c6b2217339744c2dd289a26d10a0159d9229d882ca9fd5ce3e9a0bf0e65e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "bytes": 830,
+      "sha256": "6a0d45eb2890e509e99994424f68b1e94c5cc80e063d47e4cdbf47a4e8fbae78"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtw_proj.tmw",
+      "bytes": 380,
+      "sha256": "ee0b3230620103c110eb6cafd4bdcd159a1701ad317ddf35f0a9ae2dc4707480"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "bytes": 1051,
+      "sha256": "cc493c03a699adc2e633030ec4c8416934df7cd928285682c248834f4ab31f1c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/rtwtypeschksum.mat",
+      "bytes": 1901,
+      "sha256": "d65b814806ec9d169135e7ae26e5e6bf2d3506d503bf4731e2f87d18985ebe8d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/BlockTraceInfo.mat",
+      "bytes": 26984,
+      "sha256": "a789fd43f8363b35eff013a32aedb48c0f6a57fedd8b00566529832f354a6de0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/CompileInfo.xml",
+      "bytes": 41172,
+      "sha256": "456f84ea4eae4876ff28e65a13a9e8267ea6773d2b6da9d6388c1ca4a21c04fe"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/binfo.mat",
+      "bytes": 29183,
+      "sha256": "7cb55697e4acaf4ad2a08cdb0bf7271994bf7141cca3f49bbc45f019f9339b08"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/buildStats.mat",
+      "bytes": 675,
+      "sha256": "b5cf5e4a25f5f62d43c054d7e9880af9840613c3f4edf8427ab32394711ac817"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/minfo.mat",
+      "bytes": 2226,
+      "sha256": "f41c9e5355e33ee424f1e9da129fcd75e3190c3e159a8ceab29c99eaaecc7221"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/acf_rl_native_grt_rtw/tmwinternal/simulink_cache.xml",
+      "bytes": 366,
+      "sha256": "26f11106bf27aa16889ded41d6ebeb66e62752481e422a95a40f3ba32c8e6ca7"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/slprj/grt/_sharedutils/shared_file.dmr",
+      "bytes": 200704,
+      "sha256": "53b9a2dfd6315762d687181551987da1920fdc4c550a0d76381c769c9d8515d9"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/code/slprj/sl_proj.tmw",
+      "bytes": 83,
+      "sha256": "5add05c0b566c6733e3af307738eba47062feae27d7894f5865b281657b13366"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/consumed_native_sources/build_native.m",
+      "bytes": 19035,
+      "sha256": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/consumed_native_sources/native_api.py",
+      "bytes": 14727,
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/consumed_native_sources/native_bridge.c",
+      "bytes": 13166,
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_adc_prepare.m",
+      "bytes": 9332,
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_parameters.m",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_prepare.m",
+      "bytes": 122,
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_prepare_baseline_v8.m",
+      "bytes": 28898,
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_run.m",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_select_actuator.m",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_select_controller.m",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/helpers/acf_visualize.m",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/libacf_native.so",
+      "bytes": 1585392,
+      "sha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/metadata.json",
+      "bytes": 2573,
+      "sha256": "f0f13ad885fe9a673f4d8c8cdee1146c728133bb63c7c468966d132c08f837f5"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/native_bank_aux.h",
+      "bytes": 47624,
+      "sha256": "a0e658d3d6c225889e68eb0407074bea8efd5f24d418df5e44b65b4803790354"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/native_parameter_bank.c",
+      "bytes": 4438208,
+      "sha256": "68b7db9a1d384f4d1bbe55fe446e2b4eef2ca3859db24c3ae3c7126c2a059607"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/parameter_mapping.json",
+      "bytes": 116935,
+      "sha256": "594a86edffe3add411ccb8ca43002b6da57c4ddd78ab4be02fd03f1e49b9dae7"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/parameter_mapping.mat",
+      "bytes": 136836,
+      "sha256": "cae9f92a11c7bd6e3f13d44a6456ba67f86758e59c3b236f79290e40543ab78c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/preparation_acceptance.json",
+      "bytes": 1736,
+      "sha256": "f2526a960da6b7ea96bd3fe06e5cf8177ca1247c2d46c5949e5e3a9ddf7cc82b"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/prepared_configs.mat",
+      "bytes": 6358278,
+      "sha256": "f9cac4d2340b50f11f69b1dcce3d205d4829538a642a247043e4f2ce4035821d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/scenarios.json",
+      "bytes": 69936,
+      "sha256": "22cc51053b22e342039a7aaca3e9b0c5ee9a5174235754e57d32fb4af9cf3815"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/configs.mat",
+      "bytes": 6314021,
+      "sha256": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_adc_prepare.m",
+      "bytes": 9332,
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_parameters.m",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_prepare.m",
+      "bytes": 122,
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_prepare_baseline_v8.m",
+      "bytes": 28898,
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_run.m",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_select_actuator.m",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_select_controller.m",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/helpers/acf_visualize.m",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+      "bytes": 283278,
+      "sha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/prepare_budget_bank.m",
+      "bytes": 6574,
+      "sha256": "ba6e42b98673dbee158e7649db3b47fb0ebd02264ffcc70c30b75a8b06a5a843"
+    }
+  ]
+}

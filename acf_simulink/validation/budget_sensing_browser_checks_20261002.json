@@ -1,0 +1,42 @@
+{
+  "status": "passed_with_direct_file_navigation_unavailable",
+  "date": "2026-10-02",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "htmlSha256": "8d0093fd0645957c6f614718b0f53decc0c5fcd6a5a0bd74c41349ff8e68ec60",
+  "runtimeSha256": "9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e",
+  "standaloneHttpLoad": {
+    "url": "http://127.0.0.1:8773/reports/active-contact-flange-report.html?view=1",
+    "title": "Active contact flange: control and prototype design",
+    "figures": 25,
+    "containsFinalHot": true,
+    "contains999": true,
+    "working": false,
+    "updating": false,
+    "pageWidth": 1265,
+    "viewportWidth": 1280
+  },
+  "networkDisconnectedAfterStandaloneLoad": true,
+  "threeNewFiguresDecodedAndCapturedWithNetworkOffline": true,
+  "mobile": {
+    "pageWidth": 375,
+    "viewportWidth": 390,
+    "figures": 25,
+    "working": false
+  },
+  "sourceInspection": {
+    "figure": "Native ADC bandwidth and rate sweep",
+    "sourceFile": "acf_simulink/validation/budget_adc_screen_summary_20261002.json",
+    "reviewedRows": 42,
+    "previewFirstPageRows": 8,
+    "overviewAndDataPreviewOperated": true
+  },
+  "retainedReferenceFilters": {
+    "massS_kg": 2,
+    "reference_N": 50,
+    "matchingResults": 70,
+    "firstPageRows": 8
+  },
+  "consoleErrors": 0,
+  "consoleWarnings": 0,
+  "caveat": "T3 preview host became unavailable; used an isolated Playwright browser. Browser automation blocks file: URLs, so standalone HTML was served locally before disabling network. Direct file: cold open was not tested. Failed attempts remain in the browser output folder. No desktop or unrelated application was driven."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "preserved_executed_partial_contact_native_model",
+  "model_sha256": "c26145517741b3bbb76272a5abbf30931258e9036cdd3004dc9151e1b09310ec",
+  "source_results": "../../../validation/sea_pad_dynamic_20261006/native/partial_replay_results.json",
+  "strict_split_event_point_guard_failure_N": 3.218112507852311e-05,
+  "partial_contact_refinement_waveform_difference_N": 0.3318364462030168,
+  "files": {
+    "acf_sea_pad_research_20261006.slx": "c26145517741b3bbb76272a5abbf30931258e9036cdd3004dc9151e1b09310ec",
+    "native-block-diagram.pdf": "59bb00a93032f8060f2677deff8bd75d978324b2cd192347648224f3f0231bd1",
+    "native-block-diagram.svg": "5429d3525f6af6ecc69ca2a7ce3ca829639902a14f583d25516accac98803c94",
+    "native_block_architecture.json": "2732b4f671e8a2e2599a59e3659ef8e513ed1e376ffbe166f2ea00d64d5b0d2e",
+    "sea_pad_native_build.m": "fc0943bc43393f0e40ba9da25682d03355152b822c2f996010e21114a19f8e2d",
+    "sea_pad_native_params.m": "ce455a27d3be302678c09d9ecff09551e05d36bad0c836c0a2e707d2b90db1dd",
+    "sea_pad_native_from_engine.m": "08a971ac1677bfc7f87412360ef49b52d86f773fcc1723a37614c9da230549ff",
+    "run_native_replays.m": "c7dd915f68537481fa8d53fe3c679a18eda715ae8d6b9905a9aeefd960507a1c"
+  }
+}

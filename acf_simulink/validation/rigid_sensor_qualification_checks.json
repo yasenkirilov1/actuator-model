@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-30",
+  "snapshotSha256": "d9dd1c45eaae940ea12bebcd8b60ad5f805a85874adc4bb8edbc52c52b7cd3f8",
+  "nativeSensorAdditionZeroDistalMass": {
+    "signals": 35,
+    "samples": 40001,
+    "maxNumericDifference": 0.0,
+    "sampleTimesIdentical": true
+  },
+  "sensorPhysics": "Gravity-tared Fcell = Fc - distalMass * surfaceAcceleration; native Simulink Sum/Gain blocks before force-sensor sampling. Acceleration enters only the physical measurement equation. The controller receives measured force and magnet position, not surface truth.",
+  "calibratedObserver": "Private helper copy replaces the measurement row Cf with Cf - distalMass*surfaceAccelerationState; estimated true-force control row remains Cf. No plant dynamics are changed.",
+  "scopeLimitations": [
+    "Sensing and placement grids use the baseline fully-rigid observer weights unless explicitly stated. They do not establish the sensor envelope of a separately tuned compliant design.",
+    "The sensor is gravity-tared exactly, so imperfect mass/orientation compensation would introduce additional static error.",
+    "Rows rejected by covariance synthesis have null numerical metrics and are counted as attempts, not successful simulations.",
+    "Rate screen uses one extra unknown force sample per rate; the single-link robustness phase also tests absolute delay at 10 kHz."
+  ]
+}

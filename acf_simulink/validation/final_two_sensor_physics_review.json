@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-30",
+  "scope": "Read-only review of original corrected both-rigid native winner; raw-cell slow gate. A later gate-input experiment is separate evidence.",
+  "sources": [
+    {
+      "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_worker/acf_force_control_simple.slx",
+      "sha256": "57d15c7bc4cced37c42f077546c0f9110ca42435addbe2482a62888721442267"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_worker/helpers/acf_prepare.m",
+      "sha256": "fef523b59f2733a4c930476525c172c6df1ce013daee9322f0d97766056a929c"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_worker/helpers/acf_run.m",
+      "sha256": "68bbf072d11bc93f276e9ec25e8a1b3ed9df4e0e672284ccb4ece345843af611"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/compare_force_controllers.m",
+      "sha256": "d84b450e5119a117b06074bf96337af3659a8c43d86b383696e650ee15c58d18"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_qualify.json",
+      "sha256": "5b5cc40f3b77cf71af00d4dd2ad6370265ba9731f929484107c77273dad0404a"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_candidate.mat",
+      "sha256": "e9fdc0050d53bf87f45888be528c2e5842092eb124dc7587804c7627375e6bb6"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_qualified_histories.mat",
+      "sha256": "b1059c048c6f9cef608042f288f56758f40aaa2fab3536f9d604d2f7665791f0"
+    }
+  ],
+  "signalPathAudit": {
+    "passed": true,
+    "controllerInputs": [
+      "sampled/filtered/delayed tared B/S load-cell force",
+      "sampled/delayed toolhead S relative to body A position",
+      "own clipped issued current command",
+      "Coulomb friction calculated only from estimated coil-gap velocity",
+      "nominal robot acceleration predictor driven only by issued velocity commands"
+    ],
+    "surfaceTruthUse": "Plant mechanics and physical sensor construction only; no separate surface/acceleration preview channel enters controller.",
+    "actualRobotAccelerationUse": "Plant upper rigid reaction and validation log only; controller receives own-command prediction.",
+    "extraMagnetSensorUsed": false,
+    "recenterPosition": "Estimated gap state plus known initial offset and mid-travel"
+  },
+  "coulombAudit": {
+    "passed": true,
+    "lowerRigidFilterKnownInput": "Ba(fi,2)=-(1-filterAlpha)",
+    "forceEstimate": "reference+Cf*xhat-double(lowerRigid)*Fc*tanh(estimatedGapVelocity/frictionSpeed)",
+    "forceDelaySamples": 1,
+    "minimumForceDelayRequiredForCurrentImplementation": 1
+  },
+  "offsetAudit": {
+    "passed": true,
+    "gravityTareAssumedExact": true,
+    "distalMassPhysical_kg": 1.4,
+    "distalMassObserver_kg": 1.4,
+    "toolAndHolderMass_kg": 2.0,
+    "currentInitial": "(reference-2*g_axis)/Kf",
+    "positionInitial": "-u0",
+    "positionObserverBias": "+u0",
+    "initialExcessForceNotExcitedInRigidMode": true,
+    "legacyRobotErrorDisplacementZeroInRigidMode": true
+  },
+  "qualification": {
+    "cornerRuns": 20,
+    "allCoarsePassed": true,
+    "worstCornerPeakError_N": 0.4263842803687865,
+    "step25usError_N": 0.42605793670818315,
+    "step12p5usError_N": 0.4260415311731478,
+    "step25usCommonHistoryDifference_N": 0.00044276135246690274,
+    "step12p5usCommonHistoryDifference_N": 0.0004650491974587112,
+    "allFinePassed": true,
+    "peakCurrent_A": 2.7526585744168464,
+    "peakVoltage_V": 11.825937192838879,
+    "saveReopenAll35SignalDifference": 0,
+    "privateSavedModel": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_worker/acf_force_control_simple.slx",
+    "algebraicLoopCount": 0,
+    "remainingPeakErrorMargin_N": 0.0736157196312135,
+    "remainingPeakErrorMarginFractionOfTolerance": 0.147231439262427
+  },
+  "nativeHistoryChecks": [
+    {
+      "step_s": 5e-05,
+      "forceBalanceResidual_N": 7.105427357601002e-15,
+      "lowerRigidPositionResidual_m": 2.4239196229661018e-14,
+      "upperRigidPositionResidual_m": 2.3360633494505897e-15,
+      "peakReconstructedForceError_N": 0.2242207166921446,
+      "peakAccelerationEstimationError_m_s2": 0.11896466978324458,
+      "peakCurrentModelError_A": 6.88300347162496e-06,
+      "peakActualVsExpectedRobotAccelerationDifference_m_s2": 8.881641895466114e-15,
+      "physicalCellContactDifferencePeak_N": 3.3599999999999945,
+      "gateReadyFraction": 0.0,
+      "allGateSamplesClosed": true
+    },
+    {
+      "step_s": 2.5e-05,
+      "forceBalanceResidual_N": 7.105427357601002e-15,
+      "lowerRigidPositionResidual_m": 5.924420114733535e-15,
+      "upperRigidPositionResidual_m": 2.170701570573019e-15,
+      "peakReconstructedForceError_N": 0.22434510801826235,
+      "peakAccelerationEstimationError_m_s2": 0.11888689564347087,
+      "peakCurrentModelError_A": 3.487200208596164e-07,
+      "peakActualVsExpectedRobotAccelerationDifference_m_s2": 8.881784197001252e-15,
+      "physicalCellContactDifferencePeak_N": 3.3599999999999945,
+      "gateReadyFraction": 0.0,
+      "allGateSamplesClosed": true
+    },
+    {
+      "step_s": 1.25e-05,
+      "forceBalanceResidual_N": 7.105427357601002e-15,
+      "lowerRigidPositionResidual_m": 4.833408791586438e-15,
+      "upperRigidPositionResidual_m": 1.9132965105670865e-15,
+      "peakReconstructedForceError_N": 0.22435139253130387,
+      "peakAccelerationEstimationError_m_s2": 0.11888298632935682,
+      "peakCurrentModelError_A": 1.963010021199807e-08,
+      "peakActualVsExpectedRobotAccelerationDifference_m_s2": 8.881784197001252e-15,
+      "physicalCellContactDifferencePeak_N": 3.3599999999999945,
+      "gateReadyFraction": 0.0,
+      "allGateSamplesClosed": true
+    }
+  ],
+  "remainingScope": [
+    "Axial force, rather than full normal force, is qualified by this 1D model.",
+    "Uniform white-noise seeds and zero bias do not establish hardware accuracy, latency robustness, or statistical guarantee.",
+    "The qualified worst-case raw-cell gate never opens, so active recenter feedback is not demonstrated in this trace.",
+    "Robot predictor parameters exactly match native robot dynamics in reviewed traces; mismatch is unqualified here.",
+    "The current model remains accurate because native voltage/current clipping is absent; real current readback is useful but not proven necessary by this pass.",
+    "Both-rigid attachment/contact equations exclude distributed contact compliance, guide lateral loads and moments, and thermal/force-constant drift."
+  ],
+  "nominalContinuousRangeArgument": "Within constant-parameter both-rigid axial equations, shifting hold current by (deltaReference-2*deltaGravity)/Kf leaves force error and positions invariant; unclipped endpoint current/voltage bounds and positive minimum contact force cover intermediate force/orientation values analytically.",
+  "normalGeometry": {
+    "maxSlope": 0.34346004134396774,
+    "maxSlopeAngle_deg": 18.955548729696652,
+    "normalCosine": 0.9457708736398058,
+    "normalForceFor50NAxial_N": 52.86692727972754,
+    "lateralReactionFor50NAxial_N": 17.173002067198386
+  },
+  "latestReviewedSnapshot": {
+    "scope": "Native corrected contact-force slow gate; both-rigid two-sensor winner.",
+    "sources": [
+      {
+        "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_gate_worker/acf_force_control_simple.slx",
+        "sha256": "37f206017e988dc65aa8dc2b0e025d249163338191e8b12e1fbdee62c156d49e"
+      },
+      {
+        "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_gate_worker/helpers/acf_prepare.m",
+        "sha256": "fef523b59f2733a4c930476525c172c6df1ce013daee9322f0d97766056a929c"
+      },
+      {
+        "path": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_gate_worker/controller_authorship.m",
+        "sha256": "d84b450e5119a117b06074bf96337af3659a8c43d86b383696e650ee15c58d18"
+      },
+      {
+        "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate.json",
+        "sha256": "5662f1eec2756caf431d8a21ce752166dc3da35892eaff3815911aa0007c753c"
+      },
+      {
+        "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate_candidate.mat",
+        "sha256": "5a22c5fdacdfca92addea329623aa031a44bbcd47227575a60cbe5a1e64db4ed"
+      },
+      {
+        "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate_histories.mat",
+        "sha256": "fb9a49a84cc35702a5a7c93145ee0f10e25aed2d23709e022ea3b013b667c3a2"
+      }
+    ],
+    "qualification": {
+      "cornerRuns": 20,
+      "allCoarsePassed": true,
+      "worstCornerPeakError_N": 0.4263842803687865,
+      "step25usError_N": 0.42605793670818315,
+      "step12p5usError_N": 0.4260415311731478,
+      "step25usCommonHistoryDifference_N": 0.00044276135246690274,
+      "step12p5usCommonHistoryDifference_N": 0.0004650491974587112,
+      "allFinePassed": true,
+      "peakCurrent_A": 2.7526585744168464,
+      "peakVoltage_V": 11.825937192838879,
+      "contactGateUsesReconstructedForce": true,
+      "coarseGateReadyFractions": [
+        0.8628428927680798,
+        0.8628428927680798,
+        0.8628428927680798,
+        0.8628428927680798,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "saveReopenAll35SignalDifference": 0,
+      "privateSavedModel": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_upstream_rigid_gate_worker/acf_force_control_simple.slx",
+      "algebraicLoopCount": 0
+    },
+    "gateSignalPath": "Physical estimated force deviation -> Gain -1 -> global inferred_contact_error_N -> Recenter travel Force settling gate.",
+    "gatePhysicalInputsStillAllowed": true,
+    "observerHelperUnchangedFromOriginalWinner": true,
+    "cleanRun": {
+      "forceReference_N": 50,
+      "angle_deg": 90.0,
+      "peakForceError_N": 0.27795441269657317,
+      "gateReadyFraction": 0.8628428927680798,
+      "nonzeroRecenterCorrectionExercised": true,
+      "peakAbsoluteRecenterVelocityCorrection_m_s": 0.002475322583530274
+    },
+    "noisyGateNeverReady": true,
+    "claimLimit": "Active recenter is exercised only in the clean cases. All sixteen noisy corner/seed runs retain a closed gate. Fast force tracking passes in both cases."
+  }
+}

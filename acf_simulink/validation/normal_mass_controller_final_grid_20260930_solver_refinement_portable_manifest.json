@@ -1,0 +1,22 @@
+{
+  "status": "complete_frozen",
+  "combinedSummary": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+  "combinedSummarySha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35",
+  "nativeHistoryRows": 3,
+  "qualifiedNewFineHistories": 2,
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "sha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35",
+      "bytes": 10295
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/source_manifest.json",
+      "sha256": "a3468151f69443d9655a9e7fce052975f6c8b28ea21b9ac279efd2309ad3641b",
+      "bytes": 2444
+    }
+  ],
+  "predecessorNumericalManifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_final_manifest.json",
+  "predecessorNumericalManifestSha256": "30c32454fb34b9b4ded499ad36aa59231ebb807be27367ec15accbc661f3f447",
+  "previousGridAndNumericalArtifactsUnchanged": true
+}

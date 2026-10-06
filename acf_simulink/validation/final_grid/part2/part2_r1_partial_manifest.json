@@ -1,0 +1,51 @@
+{
+  "status": "preserved_coordinator_checkpoint_stop_before_tmpfs_continuation",
+  "validatedNativeCases": 263,
+  "passedCases": 263,
+  "preparationRejects": 0,
+  "files": [
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_configuration.mat",
+      "sha256": "07c0cab937e0c949202db6774bc10e29a6faeba6970bacc9f25f02abb0033cae"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_first_native_trace.mat",
+      "sha256": "9a4716afc1f5bbe750a90d1b1cd6801617bcc83e235fceb8cef68126a2f7f016"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_plot_traces.mat",
+      "sha256": "92c61ac1355723cea7f97f180a2f46446263853cfb4aca238bab6cc31cccae46"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.json",
+      "sha256": "123d243f9819e22accdaede1f91e3566f920e9fc4b77b788b726071808ee3dc7"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.mat",
+      "sha256": "ecc4883bfb66488c159b1c1bb3758b5304be2105560455b2d0a85e607e7911c4"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.csv",
+      "sha256": "fbbb3cd26aefa696349894b8829fc6b06b4157714cce7b633c1cf5b5c7b80fa8"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.jsonl",
+      "sha256": "72dbbfe0e52aa9dcae38d42fa5adf6b7ee967dad2534d076b58d71e008dafbca"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_traces/controller_01_worst_native.mat",
+      "sha256": "4ee53a54bf7c27a3c3a8d6d8b69abeed8856ee6150f1b028869a152729e6ebad"
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_worst_native_trace.mat",
+      "sha256": "5abbf5cc43e75141a379c9c138acafa6601decd9ae10f138987b9bfc456ba27d"
+    },
+    {
+      "file": "part2_invocation_manifest.json",
+      "sha256": "b9ec840eeb35160ac777d32be52714c64fad433033a1e85bf973ca7e05599bdb"
+    }
+  ],
+  "privateModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "privateCandidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "privateRecipeSnapshotSHA256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db"
+}

@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "scope": "architecture only; not physical qualification",
+  "checks": [
+    {
+      "file": "frozen_sources/policy.py",
+      "match": true
+    },
+    {
+      "file": "frozen_sources/ppo.py",
+      "match": true
+    },
+    {
+      "file": "frozen_sources/policy_export.py",
+      "match": true
+    },
+    {
+      "file": "frozen_sources/policy_checks.py",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_weights.npz",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_weights.f32",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_weights.json",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_inference.h",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_inference.c",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_checkpoint.pt",
+      "match": true
+    },
+    {
+      "file": "portable_initial_policy/policy_inference.so",
+      "match": true
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7321,
+      "sha256": "89685c63a6164afd30155baf761ab8d3d1d5878c3fe9cfac2cdc885ad6a60c51"
+    },
+    {
+      "path": "dependency_manifest.json",
+      "bytes": 987,
+      "sha256": "1e2a34329939fb43f45b1a81de5cdfe910feaec361ffe982510c90defd345d46"
+    },
+    {
+      "path": "frozen_sources/policy.py",
+      "bytes": 10377,
+      "sha256": "f6da6f88c683e2fd7e8949e9747bdbd8522830549fb131cbf65af437ed06743e"
+    },
+    {
+      "path": "frozen_sources/policy_checks.py",
+      "bytes": 21170,
+      "sha256": "5a0cb9d42a8355a1c4ae78f8a069d2d4d9405ae35e4ba45e747599ce0d318643"
+    },
+    {
+      "path": "frozen_sources/policy_export.py",
+      "bytes": 11907,
+      "sha256": "2e12dbfc45fa1a4a56f66f888bf7afdd6c8f6fe4483f13d251ba7692f081965d"
+    },
+    {
+      "path": "frozen_sources/ppo.py",
+      "bytes": 12437,
+      "sha256": "6cf05950ce40b6d9b5667499b2ba999a9eaf8fd4c85de45b21e05302b2b5075f"
+    },
+    {
+      "path": "portable_initial_policy/policy_checkpoint.pt",
+      "bytes": 34924,
+      "sha256": "6dfc13ee7beb7b4d4ca385775b6301adc4a3a073d57729fda6859e3b041615ec"
+    },
+    {
+      "path": "portable_initial_policy/policy_export_manifest.json",
+      "bytes": 857,
+      "sha256": "eb5227a14bc602b88a85b6ae1704a602e9a53b092ebe1f890e1d516da3a90849"
+    },
+    {
+      "path": "portable_initial_policy/policy_inference.c",
+      "bytes": 2397,
+      "sha256": "b3fbe8aa76c04c92cef8a5b95e9d8ac57bafb8fce208f80f7bfc19c5df510c14"
+    },
+    {
+      "path": "portable_initial_policy/policy_inference.h",
+      "bytes": 833,
+      "sha256": "8a2edaae998b845f4700609c2c40beddee7164792f5e5d93a809b30cb81bd54d"
+    },
+    {
+      "path": "portable_initial_policy/policy_inference.so",
+      "bytes": 15672,
+      "sha256": "5cae3d6bb7db4e9e694f1b0038431c7ccabd32c2e6afb0d4e427652ebcc4fd8b"
+    },
+    {
+      "path": "portable_initial_policy/policy_weights.f32",
+      "bytes": 29972,
+      "sha256": "8ec358fc3c1d5808f1d34c35645f5bc3a6b88c3909ba2fe1f339b557c380a945"
+    },
+    {
+      "path": "portable_initial_policy/policy_weights.json",
+      "bytes": 224567,
+      "sha256": "b75b845a2022889dcefac44133115a631c7fde75de7994b1a3fa6503478ba0fe"
+    },
+    {
+      "path": "portable_initial_policy/policy_weights.npz",
+      "bytes": 32840,
+      "sha256": "e24155995d089ac353edeb9ef007c8fe22af2da9462f93660baab101a4ea3236"
+    },
+    {
+      "path": "results.json",
+      "bytes": 9500,
+      "sha256": "dedc0f1c35ae365b2a6384e3fcf002a14237cab4b26ed402861d9a9465a8e97c"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "scope": "Read-only exact force decomposition using actual B-S relative inertia. Full native true normal force history is scored. Calibration injections, if any, are defined in the source run, not this diagnostic.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_worst_native_trace.mat",
+  "nativeTraceSha256": "a319a8d816369e9f845b7627048ba9855d8136cd03967ba57c8fed9fff81fdd8",
+  "nativeSamples": 3000001,
+  "step_s": 9.999999999621423e-06,
+  "endTime_s": 30.000000000000004,
+  "parameters": {
+    "massB_kg": 0.6,
+    "massS_kg": 2.0,
+    "Kf_N_A": 20.0,
+    "seed": 1729,
+    "k1_N_m": 19746.0,
+    "c1_N_s_m": 60.0
+  },
+  "peak": {
+    "time_s": 12.8007,
+    "signedNormalForceError_N": 0.4153107484491727,
+    "normalForce_N": 50.41531074844917,
+    "estimatedNormalForce_N": 50.29889561439073,
+    "trueSlope": 0.0009146874506144338,
+    "estimatedSlope": -0.000399865486937611,
+    "current_A": 2.1322663781395668,
+    "currentCommand_A": 1.9519508996514912,
+    "idealRigidCurrent_A": 2.455495642220394,
+    "actualCoilGapVelocity_m_s": -0.0032388203176736932,
+    "actualHeadGapVelocity_m_s": -9.146871202888388e-05,
+    "measuredObserverHeadGapVelocity_m_s": 3.99665653515091e-05,
+    "actualAccelerationS_m_s2": 0.2576416510084423,
+    "measuredAccelerationS_m_s2": 0.21495999999999998,
+    "actualAccelerationB_m_s2": 11.723944805206894,
+    "actualRobotVelocity_m_s": 3.3032521345263025e-11,
+    "predictedRobotVelocity_m_s": 9.90702000534551e-12,
+    "robotGateReady": true,
+    "meanRateRobotGateReady": true,
+    "currentTrackingNormalError_N": 3.607300944247583,
+    "commandAndFeedforwardNormalError_N": -10.073663340331775,
+    "finiteCellBInertiaNormalError_N": 6.881673144533365,
+    "BRelativeInertiaNormalError_N": 6.881673144533365,
+    "nativeVariationGate": {
+      "loggedTime_s": 12.8007,
+      "data": [
+        0.0015723021552221902,
+        0.05285791400163046,
+        1001.0,
+        1.0,
+        1.0
+      ],
+      "schema": [
+        "meanError_N",
+        "rmsDeviation_N",
+        "stableSampleCount",
+        "stableNow",
+        "ready"
+      ]
+    },
+    "nativeLowerInverseExtraCurrent_A": -0.4537186650189362,
+    "nativeDesiredLowerLoadDeviation_N": -0.42281227848794817
+  },
+  "decompositionIdentityResidual_N": 2.708944180085382e-14,
+  "peakWindow_s": [
+    12.770700000000001,
+    12.8307
+  ],
+  "peakWindowDominantForceFrequencyIn1000To2200Hz_Hz": 1216.463922725606,
+  "diagnosticRingingBand_Hz": [
+    1000,
+    2200
+  ],
+  "diagnosticBandAmplitudeWithin3ms_N": 0.03435496601553102,
+  "diagnosticBandPeakToPeakWithin3ms_N": 0.06608981607301923,
+  "diagnosticBandConvention": "Zero-phase offline 4th-order bandpass; diagnostic only, never a controller input or qualification score.",
+  "BRelativeInertiaConvention": "B*(aB-aS) measures holder inertia relative to S. In a lower-series spring candidate it is the external compliant-link contribution; the legacy finiteCellBInertia key is retained for compatibility. The proper inverse intentionally commands extra current to counteract this term, so the individual term is not an independent unavoidable error.",
+  "bumps": [
+    {
+      "index": 1,
+      "start_s": 2.0,
+      "peak_s": 2.0005300000000004,
+      "peakPhase_s": 0.0005300000000003635,
+      "peakError_N": 0.35617071681454604,
+      "estimatedErrorAtTruePeak_N": 0.30652828909865804
+    },
+    {
+      "index": 2,
+      "start_s": 3.2,
+      "peak_s": 3.2005600000000003,
+      "peakPhase_s": 0.000560000000000116,
+      "peakError_N": 0.34629320659905716,
+      "estimatedErrorAtTruePeak_N": 0.3165977904172621
+    },
+    {
+      "index": 3,
+      "start_s": 4.4,
+      "peak_s": 4.40068,
+      "peakPhase_s": 0.0006800000000000139,
+      "peakError_N": 0.39365532811812187,
+      "estimatedErrorAtTruePeak_N": 0.3045879579630153
+    },
+    {
+      "index": 4,
+      "start_s": 5.6000000000000005,
+      "peak_s": 5.600560000000001,
+      "peakPhase_s": 0.000560000000000116,
+      "peakError_N": 0.3661540902275391,
+      "estimatedErrorAtTruePeak_N": 0.2850429271197683
+    },
+    {
+      "index": 5,
+      "start_s": 6.800000000000001,
+      "peak_s": 6.8006400000000005,
+      "peakPhase_s": 0.0006399999999997519,
+      "peakError_N": 0.37073592829687385,
+      "estimatedErrorAtTruePeak_N": 0.3191139696043379
+    },
+    {
+      "index": 6,
+      "start_s": 8.0,
+      "peak_s": 8.00069,
+      "peakPhase_s": 0.0006900000000005235,
+      "peakError_N": 0.3781025954486026,
+      "estimatedErrorAtTruePeak_N": 0.26556217822491135
+    },
+    {
+      "index": 7,
+      "start_s": 9.200000000000001,
+      "peak_s": 9.200700000000001,
+      "peakPhase_s": 0.000700000000000145,
+      "peakError_N": 0.3947413584557111,
+      "estimatedErrorAtTruePeak_N": 0.3326581653934326
+    },
+    {
+      "index": 8,
+      "start_s": 10.400000000000002,
+      "peak_s": 10.40066,
+      "peakPhase_s": 0.0006599999999981065,
+      "peakError_N": 0.4037562466236295,
+      "estimatedErrorAtTruePeak_N": 0.33303127345851635
+    },
+    {
+      "index": 9,
+      "start_s": 11.600000000000001,
+      "peak_s": 11.60054,
+      "peakPhase_s": 0.0005399999999990968,
+      "peakError_N": 0.36219140805695105,
+      "estimatedErrorAtTruePeak_N": 0.2683616340428685
+    },
+    {
+      "index": 10,
+      "start_s": 12.8,
+      "peak_s": 12.8007,
+      "peakPhase_s": 0.000700000000000145,
+      "peakError_N": 0.4153107484491727,
+      "estimatedErrorAtTruePeak_N": 0.2988956143907302
+    },
+    {
+      "index": 11,
+      "start_s": 14.000000000000002,
+      "peak_s": 14.000570000000002,
+      "peakPhase_s": 0.0005699999999997374,
+      "peakError_N": 0.38382137576699904,
+      "estimatedErrorAtTruePeak_N": 0.2699023492837682
+    },
+    {
+      "index": 12,
+      "start_s": 15.200000000000003,
+      "peak_s": 15.200520000000001,
+      "peakPhase_s": 0.0005199999999980776,
+      "peakError_N": 0.3398561658167196,
+      "estimatedErrorAtTruePeak_N": 0.3178986941147599
+    },
+    {
+      "index": 13,
+      "start_s": 16.400000000000002,
+      "peak_s": 16.40061,
+      "peakPhase_s": 0.0006099999999982231,
+      "peakError_N": 0.36559130243998794,
+      "estimatedErrorAtTruePeak_N": 0.3159613949136215
+    },
+    {
+      "index": 14,
+      "start_s": 17.6,
+      "peak_s": 17.60056,
+      "peakPhase_s": 0.000560000000000116,
+      "peakError_N": 0.4116159539697648,
+      "estimatedErrorAtTruePeak_N": 0.30127736645437153
+    },
+    {
+      "index": 15,
+      "start_s": 18.800000000000004,
+      "peak_s": 18.800610000000002,
+      "peakPhase_s": 0.0006099999999982231,
+      "peakError_N": 0.3734546915550965,
+      "estimatedErrorAtTruePeak_N": 0.31454490547948666
+    },
+    {
+      "index": 16,
+      "start_s": 20.000000000000004,
+      "peak_s": 20.00071,
+      "peakPhase_s": 0.00070999999999799,
+      "peakError_N": 0.37799570114155756,
+      "estimatedErrorAtTruePeak_N": 0.2788136851950114
+    },
+    {
+      "index": 17,
+      "start_s": 21.200000000000003,
+      "peak_s": 21.200560000000003,
+      "peakPhase_s": 0.000560000000000116,
+      "peakError_N": 0.38771119678239074,
+      "estimatedErrorAtTruePeak_N": 0.26331130904820554
+    },
+    {
+      "index": 18,
+      "start_s": 22.400000000000002,
+      "peak_s": 22.40071,
+      "peakPhase_s": 0.00070999999999799,
+      "peakError_N": 0.3499050233525196,
+      "estimatedErrorAtTruePeak_N": 0.2783289178281123
+    },
+    {
+      "index": 19,
+      "start_s": 23.6,
+      "peak_s": 23.60057,
+      "peakPhase_s": 0.0005699999999997374,
+      "peakError_N": 0.4022429459789194,
+      "estimatedErrorAtTruePeak_N": 0.26378591678238905
+    },
+    {
+      "index": 20,
+      "start_s": 24.800000000000004,
+      "peak_s": 24.800510000000003,
+      "peakPhase_s": 0.0005099999999984561,
+      "peakError_N": 0.3263781227841207,
+      "estimatedErrorAtTruePeak_N": 0.2568795972051774
+    },
+    {
+      "index": 21,
+      "start_s": 26.000000000000004,
+      "peak_s": 26.00073,
+      "peakPhase_s": 0.0007299999999972329,
+      "peakError_N": 0.36305801814560823,
+      "estimatedErrorAtTruePeak_N": 0.3040935867622778
+    },
+    {
+      "index": 22,
+      "start_s": 27.200000000000003,
+      "peak_s": 27.200560000000003,
+      "peakPhase_s": 0.000560000000000116,
+      "peakError_N": 0.3743989056545729,
+      "estimatedErrorAtTruePeak_N": 0.2713012963291561
+    },
+    {
+      "index": 23,
+      "start_s": 28.400000000000006,
+      "peak_s": 28.400550000000003,
+      "peakPhase_s": 0.0005499999999969418,
+      "peakError_N": 0.36362140571616663,
+      "estimatedErrorAtTruePeak_N": 0.3302065973447412
+    },
+    {
+      "index": 24,
+      "start_s": 29.600000000000005,
+      "peak_s": 29.600540000000002,
+      "peakPhase_s": 0.0005399999999973204,
+      "peakError_N": 0.3935391154825538,
+      "estimatedErrorAtTruePeak_N": 0.3235956352667557
+    }
+  ],
+  "quietFlatWindows": {
+    "convention": "t>=3.5s; excludes 50ms before each bump through 200ms after its duration. Offline read-only summary.",
+    "samples": 1879984,
+    "trueErrorMean_N": 0.07425544592518049,
+    "trueErrorRms_N": 0.07648842427083874,
+    "estimatedErrorMean_N": -2.417030023578727e-05,
+    "estimatedMinusTrueMean_N": -0.07427961622541626,
+    "estimatedMinusTrueRms_N": 0.0840360039635923,
+    "estimatedMinusTrueP95Absolute_N": 0.1390766802589112,
+    "combinedGateReadyFraction": 1.0
+  },
+  "samePhaseFirstVersusWorstBump": {
+    "worstBumpIndex": 10,
+    "phaseAfterEntry_s": 0.000700000000000145,
+    "firstBumpTime_s": 2.0007,
+    "firstTrueError_N": 0.33623449319868115,
+    "firstEstimatedError_N": 0.25535643291160426,
+    "firstEstimatedMinusTrue_N": -0.08087806028707689,
+    "worstEstimatedMinusTrue_N": -0.1164151340584425,
+    "firstMeasuredAccelZ_m_s2": 0.2056,
+    "worstMeasuredAccelZ_m_s2": 0.21495999999999998,
+    "firstActualAccelZ_m_s2": 0.25764165100805114,
+    "worstActualAccelZ_m_s2": 0.2576416510084423,
+    "staticCalibrationAndNoiseSettings": "Identical throughout the recording; different samples of the same seeded sensor-noise streams occur at later bumps."
+  },
+  "peakWindowDominantFrequencyIn20To500Hz_Hz": 99.98333611443337,
+  "finiteWindowFrequencyResolution_Hz": 16.663889352405562
+}

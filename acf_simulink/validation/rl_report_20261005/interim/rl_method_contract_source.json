@@ -1,0 +1,37 @@
+{
+  "status": "training_with_soft_travel_band",
+  "started_utc": "2026-10-05T12:53:44Z",
+  "training_deadline_utc": "2026-10-05T15:33:44Z",
+  "delivery_deadline_utc": "2026-10-05T15:53:44Z",
+  "user_budget_s": 10800,
+  "goal": "Best one causal recurrent learned policy for current and robot requests, reward-trained against native Simulink physical plant. Final finite fresh tests score actual surface-normal force on all native samples including startup.",
+  "previous_12_case_holdout": "Now development evidence, never relabel it as unseen test for new training.",
+  "no_teacher_labels": true,
+  "no_dynamic_PI_under_actor": true,
+  "actor_history": "Carried across rollouts; resets only at physical episode reset.",
+  "planned_lanes": [
+    "PPO with learned direct measurement skip and physical clock horizon",
+    "reward-only whole-episode evolutionary optimization of same shared model"
+  ],
+  "hardware": {
+    "cpu": "Ryzen 7 5800X3D 8 physical cores",
+    "gpu": "RTX 3090 24GB"
+  },
+  "resource_policy": "Benchmark GPU optimization; preserve desktop; log all failures and exact requested actions sufficient for native replay, retain representative full traces; reserve final20min for qualification/report.",
+  "active_runs": [
+    "ppo_peak_8405",
+    "reward_search_inverse_8207",
+    "reward_search_inverse_seed_8209"
+  ],
+  "selection_contract": "selection_contract_band_v2.json",
+  "training_bank_cases": 84,
+  "selection_cases": 28,
+  "untouched_final_cases": 32,
+  "gpu_optimizer_speedup_measured": 3.018,
+  "user_acceptable_travel_radius_m": 0.0075,
+  "active_bank": "scenario_bank_sustained/manifest.json",
+  "updated_utc": "2026-10-05T14:48:47.406907+00:00",
+  "bounded_robot_program": "24training+8selection bounded0,+v,-v,0program and12training+4selection sustainedconstant nominalmotion fromt0; original96parameters preserved.",
+  "active_run_bank_note": "All three use144bank:84training,28developmentselection,32untouchedholdout. Separate700nominalqualificationbank untouched.",
+  "winner_lock_target_utc": "2026-10-05T15:20:00Z"
+}

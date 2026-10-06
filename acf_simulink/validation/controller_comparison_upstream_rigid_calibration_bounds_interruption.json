@@ -1,0 +1,10 @@
+{
+  "status": "interrupted_for_host_memory",
+  "workerPid": 3135521,
+  "workerExitCode": 130,
+  "checkpointedExecutedCases": 36,
+  "checkpointedPassedCases": 30,
+  "plannedCases": 90,
+  "uncheckpointedInFlightExecutionCount": "not confirmed; excluded from retained count",
+  "reason": "Parent requested stop after RAM31Gi and swap31Gi saturated; only owned worker received SIGINT. JSON/CSV/MAT checkpoint was36 completed executions. No claim remaining54 planned cases executed."
+}

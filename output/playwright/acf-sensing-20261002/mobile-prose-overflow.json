@@ -1,0 +1,51 @@
+[
+  {
+    "tag": "CODE",
+    "right": 891.375,
+    "text": "Robot R ─ upper attachment ─ A ─ actuator ─ B ─ lower attachment ─ load cell ─ S ─ surface\n                                               position sensor: S relative to A\n         ",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 397.15625,
+    "text": "q1 = q10 + k1 (xS − xB) + c1 (vS − vB)\nq2 = q20 + k2 (xA − xR) + c2 (vA − vR)\n\nmA aA = Fa − q2 − mA g_axis\nmB aB = q1 − Fa − mB g_axis\nmS aS = Rz − q1 − mS g_axis\n",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 634.765625,
+    "text": "mu_hat_raw = −(Rx_hat + s_hat Rz_hat) / (Rz_hat − s_hat Rx_hat)\nRz_request = Nref (1 − mu_hat s_hat) / sqrt(1+s_hat²)\n",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 796.328125,
+    "text": "Irequest = Ih_hold + (Rz_request − Nref)/Kf\n           − (mB_identified + mS_identified) aS_FF/Kf\n           + friction_estimate(vgap_hat)/Kf\n           + lower_inverse_current\n   ",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 644.265625,
+    "text": "deltaL_desired = (Rz_request − Nref) − mS_identified aS_measured\ndeltaL = k1 q + c1 dq/dt\naB = aS − d²q/dt²\nFa_net = Rz − (mB+mS)(g_axis+aS) + mB d²q/dt²\nFcoil = Fa_net + guide_fri",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 615.75,
+    "text": "I_lower_inverse(s) = (mB_identified / Kf_identified)\n                     × s² / (k1_identified + c1_identified s)\n                     × LP2(s, 1500 Hz, damping 0.707)\n           ",
+    "whiteSpace": "pre",
+    "wrap": "normal"
+  },
+  {
+    "tag": "CODE",
+    "right": 542.734375,
+    "text": "validation/normal_mass_controller_final_grid_20260930_*",
+    "whiteSpace": "normal",
+    "wrap": "normal"
+  }
+]

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="1120" viewBox="0 0 1340 1120" role="img" aria-labelledby="title desc">
+  <title id="title">One learned recurrent policy requests current and robot motion</title>
+  <desc id="desc">Only causal sensors, identified context and already-issued robot commands enter the policy. A shared two-layer Puffer minGRU and trainable direct measurement readout produce two action means. The current servo and the robot force-stability gate, bounds and command queue remain hard native constraints. Actual normal-force truth enters only simulation reward and reward-driven learning. Robot raw requests span ±10 mm/s, with a ±7.5 mm accepted travel band around center. Closing the force gate retains commands already in the delay queue. The diagram describes the experimental architecture; complete recordings determine its performance.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,1 L8,5 L0,9" fill="none" stroke="#287497" stroke-width="1.8"/></marker>
+    <marker id="trainingArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L8,5 L0,9" fill="none" stroke="#9259a6" stroke-width="1.8"/></marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#183245}
+      .heading{font-size:34px;font-weight:700}.subtitle{font-size:21px;fill:#516b7a}
+      .cardtitle{font-size:25px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#516b7a}
+      .white{fill:white}.flow{fill:none;stroke:#287497;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .training{fill:none;stroke:#9259a6;stroke-width:3;stroke-dasharray:8 7;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#trainingArrow)}
+      .card{fill:#f0f7fa;stroke:#b4cedb;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1340" height="1120" rx="20" fill="#fcfdfd"/>
+  <text x="56" y="55" class="heading">One learned policy, two coordinated requests</text>
+  <text x="56" y="91" class="subtitle">Measured history and known context; hard physical constraints remain in the native model.</text>
+
+  <rect x="56" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="80" y="178" class="cardtitle">Causal sensor frame</text>
+  <text x="80" y="215" class="body">Multi-axis load cell on B–S</text>
+  <text x="80" y="247" class="body">S acceleration and S–A position</text>
+  <text x="80" y="280" class="small">Timestamp-aligned observer outputs</text>
+  <text x="80" y="302" class="small">Fresh measurements at 10 kHz</text>
+
+  <rect x="444" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="468" y="178" class="cardtitle">Identified parameters</text>
+  <text x="468" y="215" class="body">Tool mass and force target</text>
+  <text x="468" y="247" class="body">Mechanics, coil and orientation</text>
+  <text x="468" y="280" class="small">Fixed centering and physical products</text>
+  <text x="468" y="302" class="small">No actual-state or preview inputs</text>
+
+  <rect x="832" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="856" y="178" class="cardtitle">Commands already issued</text>
+  <text x="856" y="215" class="body">Issued current and robot commands</text>
+  <text x="856" y="247" class="body">Causal robot-motion prediction</text>
+  <text x="856" y="280" class="small">Pending motion survives gate closure</text>
+  <text x="856" y="302" class="small">Current 100 Hz command phase</text>
+
+  <path d="M230,318 V348 H445 V375" class="flow"/>
+  <path d="M618,318 V375" class="flow"/>
+  <path d="M1006,318 V348 H910 V375" class="flow"/>
+
+  <rect x="205" y="375" width="930" height="224" rx="18" fill="#1a536f"/>
+  <text x="670" y="416" text-anchor="middle" class="cardtitle white">One shared recurrent actor: 32 states × 2 Puffer minGRU layers</text>
+  <text x="670" y="450" text-anchor="middle" class="body white">40 causal inputs + 8 identified-mass / coil / motion features</text>
+  <rect x="228" y="469" width="442" height="82" rx="10" fill="#dbeef5"/>
+  <text x="449" y="500" text-anchor="middle" class="body">Trainable recurrent filters and readout</text>
+  <text x="449" y="531" text-anchor="middle" class="small">Paired memory starts at 0.1, 0.4, 3, 20 ms</text>
+  <rect x="698" y="469" width="414" height="82" rx="10" fill="#dbeef5"/>
+  <text x="905" y="500" text-anchor="middle" class="body">Trainable direct measurement readout</text>
+  <text x="905" y="531" text-anchor="middle" class="small">Fast sensor path; no underlying PI loop</text>
+  <text x="670" y="581" text-anchor="middle" class="small" style="fill:#d1e6ee">Combined action means → bounded current request and bounded robot request</text>
+  <path d="M205,428 H167 V559 H205" class="flow"/>
+  <text x="151" y="494" transform="rotate(-90 151 494)" text-anchor="middle" class="small">carried state</text>
+
+  <path d="M490,599 V626 H364 V656" class="flow"/>
+  <path d="M840,599 V626 H976 V656" class="flow"/>
+
+  <rect x="128" y="656" width="472" height="162" rx="14" class="card"/>
+  <text x="152" y="696" class="cardtitle">Full current request</text>
+  <text x="152" y="733" class="body">Known static equilibrium + actor output</text>
+  <text x="152" y="768" class="body">Native current servo and physical limits</text>
+  <text x="152" y="801" class="small">Actor cadence: 1, 5 or 10 kHz</text>
+
+  <rect x="740" y="656" width="472" height="162" rx="14" class="card"/>
+  <text x="764" y="696" class="cardtitle">Robot correction request · 100 Hz</text>
+  <text x="764" y="733" class="body">Force-stability gate + delay-aware bounds</text>
+  <text x="764" y="768" class="body">100 Hz sample → retained delay queue</text>
+  <text x="764" y="801" class="small">Raw request ±10 mm/s; accepted travel ±7.5 mm</text>
+
+  <path d="M364,818 V847 H490 V879" class="flow"/>
+  <path d="M976,818 V847 H840 V879" class="flow"/>
+  <rect x="340" y="879" width="650" height="124" rx="16" fill="#eef8f3" stroke="#a9cbb8" stroke-width="1.5"/>
+  <text x="665" y="918" text-anchor="middle" class="cardtitle">One native Simulink physical model</text>
+  <text x="665" y="953" text-anchor="middle" class="body">Coil, flange mechanics, contact and robot response</text>
+  <text x="665" y="986" text-anchor="middle" class="small">Stop at contact loss or a travel limit</text>
+
+  <path d="M340,946 H24 V232 H56" class="flow"/>
+  <text x="48" y="590" transform="rotate(-90 48 590)" text-anchor="middle" class="small">Measured response and causal observer feedback</text>
+
+  <rect x="1045" y="879" width="260" height="124" rx="14" fill="#faf2fc" stroke="#c6a2d2" stroke-width="1.5"/>
+  <text x="1066" y="914" class="cardtitle" style="fill:#77408c">Training only</text>
+  <text x="1066" y="949" class="body" style="fill:#77408c">Normal-force truth</text>
+  <text x="1066" y="984" class="body" style="fill:#77408c">Reward-driven learning</text>
+  <path d="M990,946 H1045" class="training"/>
+  <path d="M1305,940 H1320 V426 H1135" class="training"/>
+  <text x="1204" y="403" text-anchor="middle" class="small" style="fill:#77408c">Reward only</text>
+  <text x="56" y="1048" class="small">Blue: physical closed loop. Purple dashed: simulation reward, PPO or reward-driven parameter search.</text>
+  <text x="56" y="1076" class="small">Travel objective: center ±7.5 mm; native 0–25 mm physical stops still apply.</text>
+  <text x="56" y="1104" class="small">Architecture and causal paths; achieved performance requires complete native recordings.</text>
+</svg>

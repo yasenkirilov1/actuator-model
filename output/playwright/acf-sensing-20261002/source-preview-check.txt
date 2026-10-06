@@ -1,0 +1,8 @@
+### Result
+{
+  "tables": 0
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({sourcePane:document.querySelector("[role=complementary]")?.innerText.slice(0,1800), tables:document.querySelectorAll("[role=complementary] table").length})');
+```

@@ -1,0 +1,134 @@
+{
+  "status": "all_requested_native_banks_prepared_frozen",
+  "preparedConfigurations": 572,
+  "createdEpisodesByPreparation": 0,
+  "banks": [
+    {
+      "bank": "baseline_upper_rigid_lower_damped",
+      "mechanicalDesign": "baseline_upper_rigid_lower_damped",
+      "caseCountPrepared": 11,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "31e82543da3a9b9624f3acf92000e0341ac8f6828ac5fc1de623de855b181daa",
+      "configsSha256": "c08a5838c6c9546bd36eaf15ad15a0f2a9c8203dda87cc0249bfb9afc07bb3a2",
+      "sharedLibrarySha256": "c267f31ae9a208c1eb376d908c681ffa6046f2e255d4277ca2b94d459a82b7c9",
+      "fileHashesSha256": "264193025fb840b9825ce219a642d7581bc2ee4410ecb1056c4fb79290051971",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/baseline_upper_rigid_lower_damped/acceptance.json",
+      "graphAcceptanceSha256": "242326a8fb8f81ae8731e0c7c9df60c2f65a87660f352349a1f7e2df25461861",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    },
+    {
+      "bank": "both_external_springs_absent",
+      "mechanicalDesign": "both_external_springs_absent",
+      "caseCountPrepared": 66,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "8c2d1039a732b7bbc0c6f009007cea48fed4c1c328db2961b94837e43c7324fd",
+      "configsSha256": "e3349508253f0d8291c13eb7717dd4a1d1d3c58150435c9da37146373aa3589b",
+      "sharedLibrarySha256": "9af2cd20ffd8986111c0cd6af385a8faa9f757dd8c8dd5be598c4824da695993",
+      "fileHashesSha256": "e370abb78b5cafd1cb81b8f60dc6ceb33743a7acab375c7d174302f2335a7908",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/both_external_springs_absent/acceptance.json",
+      "graphAcceptanceSha256": "30cbd181d6f521b3f131e0f96c08d4fcdc6585449a9efca32ec2f8561495b476",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    },
+    {
+      "bank": "both_external_springs_absent_control_v2",
+      "mechanicalDesign": "both_external_springs_absent",
+      "caseCountPrepared": 66,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "0be4c395a009b9a2c79e783689884f933b452268141151e22fc3519329c3cc3d",
+      "configsSha256": "9848a29d938ad41f7114759c1e66fead0b9ac0af37dd74b96b7bdfb785ac508b",
+      "sharedLibrarySha256": "475f63fb1742b42183c405c2a467058b0a42dda722fcf120244644f9d9a1e1a0",
+      "fileHashesSha256": "55c8aedc7da7bdfe98bbdbf8f2da80fa2349e4b2166c470103ea6b04d0394261",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/both_external_springs_absent_control_v2/acceptance.json",
+      "graphAcceptanceSha256": "4ddc3f01440559e19770492f158fd3a2087ba5c45a28aa4dbb13b3204046f8c8",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    },
+    {
+      "bank": "upper_20k_lower_19746_undamped",
+      "mechanicalDesign": "upper_20k_lower_19746_undamped",
+      "caseCountPrepared": 66,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "0da046285fa8bcfec859e5a82561e73efca141a33568c83db03c60ec5bee224c",
+      "configsSha256": "f743b55cff8c22d7e7d5a96bc270b92ae3996ae348326521a7c94d805b3dde75",
+      "sharedLibrarySha256": "d82afef835dd4dbe1aab32d6dafa51b40e47787768a4f42608710ddb7fb00a2c",
+      "fileHashesSha256": "4d055bda848a9ee1383460a19a1e494a8cb5bdc98cd8dc2df9c5f5d0ed154313",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/upper_20k_lower_19746_undamped/acceptance.json",
+      "graphAcceptanceSha256": "de80ba79992dc3c0a9b16376e4ab5e95c39e0f1f4075fb3b04deada488b10341",
+      "auditedAlgebraicLoops": [
+        0,
+        0
+      ]
+    },
+    {
+      "bank": "upper_20k_lower_cell_undamped",
+      "mechanicalDesign": "upper_20k_lower_cell_undamped",
+      "caseCountPrepared": 132,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "2e6e8dd7a8b42b4b504c54e394c671d7ddf86831e5e815607cc25d8561776679",
+      "configsSha256": "8deb93131870e4ac05c85ac6852f589c24e6273e8dd3d5253891c4979a6dc6d0",
+      "sharedLibrarySha256": "36e0bba948c70845bb7ef46281b81d267984ea851adf2392427a0ef36c9c8b07",
+      "fileHashesSha256": "d274538c73c1ece4f389f5b1db4450e290d491e0ea6987e7d36a61df46c44638",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/upper_20k_lower_cell_undamped/acceptance.json",
+      "graphAcceptanceSha256": "ea4e4981ba2096db2097e0d91ed143023af5ad43094bb3c48a0b24885ed57d6a",
+      "auditedAlgebraicLoops": [
+        0,
+        0
+      ]
+    },
+    {
+      "bank": "upper_rigid_lower_undamped",
+      "mechanicalDesign": "upper_rigid_lower_undamped",
+      "caseCountPrepared": 33,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "7d55d82fff37f4e6c9a7928524526dfc5b673dc27eb69a6b96ccc49b1cbc4a49",
+      "configsSha256": "7a8599de0f6d72ed8c19c913a34fb952ee4ff64363b486310c00efb474394e08",
+      "sharedLibrarySha256": "80a2645bc51380eb2b4169bbcb67122b715869cbfd5e5a66c5ca1a116ad3aba7",
+      "fileHashesSha256": "8f2c34a1d4df48ce4005942fc20b19faa4678172e4fec4e010fd5899a94b3aff",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/upper_rigid_lower_undamped/acceptance.json",
+      "graphAcceptanceSha256": "119888c3ac362d41a086ed9176d4973bbbd84327b2d46cb55220ae910c32ece5",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    },
+    {
+      "bank": "upper_rigid_lower_undamped_control_v2",
+      "mechanicalDesign": "upper_rigid_lower_undamped",
+      "caseCountPrepared": 132,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "a3150e062eeafde0f9705f6e33531e1c06909a0de69915e90a1ae43a1deca361",
+      "configsSha256": "433a9f7911d76dc316197a6363405581c71965c41f40ce3d200b995fe83fda4d",
+      "sharedLibrarySha256": "3e20dcc1306bd53a286df91457878841e57c5a562f63c81e4f817b7892856cbf",
+      "fileHashesSha256": "cb106edee9f6d55cef1148c3bebce0585729fcbc24ba4cf24155e46f70b341fb",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/upper_rigid_lower_undamped_control_v2/acceptance.json",
+      "graphAcceptanceSha256": "0f2f9aba200a6a151bb7c8e5c78a2282e3c6f1b7294e80147fbe0d9f6349b6fb",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    },
+    {
+      "bank": "both_external_springs_absent_accel_lead_v1",
+      "mechanicalDesign": "both_external_springs_absent",
+      "caseCountPrepared": 66,
+      "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+      "privateControllerGraphSha256": "8f1d7b2c15334fdb3c4a89be90566655d48bf59646623141e7129a8a1c2a4eab",
+      "configsSha256": "545851d3b5f6a2f6413192d4585a19e2825d2cc69e44fce7f1cb5fc562d4784e",
+      "sharedLibrarySha256": "e5b65e5125d9284b7d2200520053bdecdd343618802690756b5c06c1c80ae700",
+      "fileHashesSha256": "2c04b896194ef2182e1c3859b06da7d22971c0aeea31c9ef43f10cf928896751",
+      "graphAcceptanceFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/both_external_springs_absent_accel_lead_v1/acceptance.json",
+      "graphAcceptanceSha256": "2d66bcfa5ba5c0b3e230c2a53dab201a7e62361a5f74f3bcb2520cb5caa08cb0",
+      "auditedAlgebraicLoops": [
+        0
+      ]
+    }
+  ],
+  "upperSpringConstraint": "Ideal linear20N/mm link withzero damping andunlimitedspringlength/travel, perusersteering. Parent evaluates actuator25mmstop andlowerexternal springconditions; upper targetfields arediagnostics only.",
+  "note": "Executed cases and failures belong to evaluation results; prepared bank count is not an experiment count.",
+  "previousInventorySha256": "e6fbc2b0004c2c938b60e92082f0cd7e29de07e4f3379a0ea70bf934371cc3e5",
+  "accelerationLeadGraphScopeFile": "acf_simulink/validation/upper_no_damping_20261005/acceptance/accel_lead_saved_graph_scope.json",
+  "accelerationLeadGraphScopeSha256": "7893dda1e37d8ea832dbc386ce8dcd0a494420ed496988c15788adf5c8a470dc"
+}

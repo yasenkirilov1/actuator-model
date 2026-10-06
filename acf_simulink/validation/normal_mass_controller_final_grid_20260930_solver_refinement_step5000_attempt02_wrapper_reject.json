@@ -1,0 +1,9 @@
+{
+  "status": "wrapper_rejected_before_experiment",
+  "nativeCasesAttempted": 0,
+  "nativeCasesReturned": 0,
+  "reportedExitCode": 1,
+  "reason": "The launcher asserted that MLint returned no advisory items before calling the experiment; this wrapper assertion failed. The experiment was never called and there was no duplicate native rerun. Relaunch will print code-analyzer advice and retain the actual native/source/sample-grid/channel audits.",
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-recovery-20260930/batch.log",
+  "previousNativeAuditReject": "normal_mass_controller_final_grid_20260930_solver_refinement_step5000_attempt01_postrun_reject.json"
+}

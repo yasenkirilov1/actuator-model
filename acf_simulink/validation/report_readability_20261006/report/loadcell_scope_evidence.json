@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "kind": "recorded_capacity_and_measurement_geometry",
+  "rows": [
+    {
+      "geometry": {
+        "height_m": 0.001,
+        "width_m": 0.01,
+        "scanSpeed_m_s": 0.1,
+        "bumpDuration_s": 0.09999999999999999,
+        "polynomial": "h(q)=64 H q^3 (1-q)^3",
+        "maximumAbsSlope": 0.3434600413439677,
+        "maximumSlopeAngle_deg": 18.95554872969665,
+        "slopeMaximumProgress": 0.27639320225002106,
+        "actualNominalMu": 0.3,
+        "gravityOrientationIsSeparateFromLocalBumpSlope": true
+      },
+      "equations": {
+        "surfaceNormal": "n=(-s,1)/sqrt(1+s^2)",
+        "scanTangent": "t=(1,s)/sqrt(1+s^2)",
+        "contactForceOnTool": "R=N*n-T*t; T=mu*N in the retained plant",
+        "singleAxisObservation": "Rz=(N-s*T)/sqrt(1+s^2)",
+        "perfectKnownFrictionOracle": "N=Rz*sqrt(1+s^2)/(1-mu*s)",
+        "twoForceAxisReconstruction": "N=(Rz-s*Rx)/sqrt(1+s^2)",
+        "loadCellSignConvention": "Lraw is minus support force on S: Lraw=R+mS*gVector-mS*aS",
+        "gravityTaredReconstruction": "Ltared=Lraw-mS*gVector; R=Ltared+mS*aS",
+        "nativeAxialConvention": "Lraw_z=Rz-mS*(gPositiveAlongFlange+aS_z), where gPositiveAlongFlange=9.81*cos(angle)",
+        "knownFrictionMismatch": "Nhat/N=(1-mu*s)/(1-muhat*s)"
+      },
+      "nativeCapacityRows": [
+        {
+          "cohort": "nominal700",
+          "recordings": 700,
+          "minimumRawAxialCell_N": -18.88507646548481,
+          "minimumScenario": 630,
+          "maximumRawAxialCell_N": 56.21157040692211,
+          "maximumScenario": 699,
+          "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+        },
+        {
+          "cohort": "fresh32",
+          "recordings": 32,
+          "minimumRawAxialCell_N": -18.879709301126894,
+          "minimumScenario": 707,
+          "maximumRawAxialCell_N": 59.80337633997574,
+          "maximumScenario": 728,
+          "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+        },
+        {
+          "cohort": "long4",
+          "recordings": 4,
+          "minimumRawAxialCell_N": 2.956784891440972,
+          "minimumScenario": 735,
+          "maximumRawAxialCell_N": 56.441170525811614,
+          "maximumScenario": 732,
+          "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+        }
+      ],
+      "capacityTargets": {
+        "axialMeasurementRangeDevelopmentTarget_N": 100,
+        "existingAdcBipolarHalfRange_N": 160,
+        "transverseDevelopmentTarget_N": 100,
+        "planarConservativeRawSideForceBoundAtN50Mu0p3Mass2_N": 50.0482882727095,
+        "rawSideBoundIncludesPossibleGravityAdditionNotQualificationMaximum": true,
+        "momentExampleForce_N": 50,
+        "momentExampleLeverArm_m": 0.1,
+        "momentExample_Nm": 5,
+        "qualificationIsNotCollisionSizing": true,
+        "mechanicalCombinedLoadEnvelopeRequired": true
+      },
+      "calibrationTargets": {
+        "residualForceZeroPerAxis_N": 0.01,
+        "residualGainFraction": 0.0005,
+        "residualCrossAxisFraction": 0.0005,
+        "relativeAlignment_deg": 0.05,
+        "residualAccelerationBias_m_s2": 0.005,
+        "relativeTimingResidual_s": 2e-06,
+        "approximateNormalBiasFromTwoForceAxesAtMaximumSlope_N": 0.01270605377002054,
+        "normalErrorAt50N_mu0p3_directionError0p05deg_N": 0.013109006316055962,
+        "wholeRequirementIsNotSensorErrorBudget": true,
+        "targetsAreNotCatalogGuaranteesOrNewQualification": true
+      }
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/report_readability_20261006/loadcell/loadcell_evidence.json": "8c375963c1afce52e3e9c9701fdd9c10d5581281bf8d1ee8c49c0db5635b9622"
+  },
+  "scope": "Reference multi-axis model and offline reconstruction; no new single-axis closed-loop qualification."
+}

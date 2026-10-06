@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/native_api.py", line 220, in <module>
+    plant=NativePlant(args.build_dir,rebuild=True)
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/native_api.py", line 136, in __init__
+    raise RuntimeError("Prepared bank case0 differs from Coder's emitted native parameters")
+RuntimeError: Prepared bank case0 differs from Coder's emitted native parameters

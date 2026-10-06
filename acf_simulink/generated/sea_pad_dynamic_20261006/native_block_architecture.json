@@ -1,0 +1,76 @@
+{
+  "model_sha256": "8134f122efe88b0c18d4da80fbea13e059fefa1d453d4bc3e0db47addeedf2e0",
+  "ordinary_native_block_counts": {
+    "Inport": 18,
+    "Constant": 27,
+    "Switch": 9,
+    "Sum": 34,
+    "Integrator": 9,
+    "Gain": 43,
+    "Mux": 9,
+    "Demux": 10,
+    "Outport": 15,
+    "Saturate": 5,
+    "Product": 10,
+    "DataTypeConversion": 1,
+    "Reference": 1,
+    "Sqrt": 1,
+    "MinMax": 2,
+    "Abs": 3,
+    "Logic": 4,
+    "RelationalOperator": 5,
+    "From": 17,
+    "Trigonometry": 2,
+    "SubSystem": 6,
+    "Goto": 9,
+    "ZeroOrderHold": 1,
+    "Stop": 1,
+    "Clock": 1
+  },
+  "total_saved_graph_blocks": 243,
+  "systems": [
+    {
+      "file": "simulink/systems/system_11.xml",
+      "block_count": 39
+    },
+    {
+      "file": "simulink/systems/system_5.xml",
+      "block_count": 22
+    },
+    {
+      "file": "simulink/systems/system_14.xml",
+      "block_count": 67
+    },
+    {
+      "file": "simulink/systems/system_17.xml",
+      "block_count": 28
+    },
+    {
+      "file": "simulink/systems/system_20.xml",
+      "block_count": 11
+    },
+    {
+      "file": "simulink/systems/system_8.xml",
+      "block_count": 47
+    },
+    {
+      "file": "simulink/systems/system_root.xml",
+      "block_count": 29
+    }
+  ],
+  "root_subsystems": [
+    "A B and S dynamics",
+    "Electrical drive",
+    "Pad total force",
+    "Physical stops",
+    "Replay output channels",
+    "Spring and independent screw nut"
+  ],
+  "physical_state_integrators": 9,
+  "maximum_subsystem_nesting_depth": 1,
+  "MATLAB_Function_or_Stateflow_plant_blocks": 0,
+  "library_reference_type": "Compare To Constant",
+  "vector_diagram": "native-block-diagram.svg",
+  "vector_diagram_embedded_raster_count": 0,
+  "root_diagram_visually_inspected": true
+}

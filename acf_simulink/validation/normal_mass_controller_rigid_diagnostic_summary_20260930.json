@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-30",
+  "status": "rigid_timing_and_runner_diagnostics_complete_awaiting_finite_cell_contract",
+  "studies": [
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json",
+      "sha256": "ebff7b32e22a068588a37f0e8cf0c232de18bd569d38e79c9fd15c4ed5b7ab07",
+      "status": "complete",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, for the entire0-4s recording;1mm high10mm wide bump at100mm/s. Conditional finite simulation, not physical qualification.",
+      "validatedNativeHistories": 72,
+      "attempts": 72,
+      "preparationRejections": 0,
+      "normalBandPassed": 72,
+      "modelSha256": "3f502c5b5a3c80f20d95cbcce39a00fe5d9bb1bc2e9d0177fa58d66c972c597a",
+      "experimentSha256": "3fc11250c1903dc0ccb84ee32a334846626c747d0db69d36d385296ad0cf7b01"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json",
+      "sha256": "3d81e89f862dcd8141b9991f2f0048786936f6c259a28540b90a3707caadae50",
+      "status": "complete",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, for the entire0-4s recording;1mm high10mm wide bump at100mm/s. Conditional finite simulation, not physical qualification.",
+      "validatedNativeHistories": 56,
+      "attempts": 56,
+      "preparationRejections": 0,
+      "normalBandPassed": 40,
+      "modelSha256": "3f502c5b5a3c80f20d95cbcce39a00fe5d9bb1bc2e9d0177fa58d66c972c597a",
+      "experimentSha256": "dc88d5f04b6deb2c6dcbb4c31af9800ffbb09e7e3fa820d6b85b579514c8d8d8"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_guide_velocity_lead_20260930_results.json",
+      "sha256": "b214747c689fa42c737a3118ed8858481fc43efd91f90c20eeed089c2fafef90",
+      "status": "setup_failure",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, for the entire0-4s recording;1mm high10mm wide bump at100mm/s. Conditional finite simulation, not physical qualification.",
+      "validatedNativeHistories": 1,
+      "attempts": 2,
+      "preparationRejections": 1,
+      "normalBandPassed": 1,
+      "modelSha256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "experimentSha256": "79b7e7fdddc6732ec855ab8540e2d6b6b31311730895ffd8f18cbb3f3b7a3471"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_guide_velocity_lead_20260930_helpers1_results.json",
+      "sha256": "8d5b6e159f931c6befcdeece9da2e2621c48657cef050b32fcd1a1bee1c28ec9",
+      "status": "complete",
+      "scope": "Surface-normal pressing force within +/-0.5 N on every native sample, including startup, for the entire0-4s recording;1mm high10mm wide bump at100mm/s. Conditional finite simulation, not physical qualification.",
+      "validatedNativeHistories": 24,
+      "attempts": 24,
+      "preparationRejections": 0,
+      "normalBandPassed": 24,
+      "modelSha256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "experimentSha256": "79b7e7fdddc6732ec855ab8540e2d6b6b31311730895ffd8f18cbb3f3b7a3471"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_runner_20260930_rigid_results.json",
+      "sha256": "914c646446f5c58628aa9fb6d59d35418bbd59451f093920bae338b174044186",
+      "status": "complete",
+      "scope": "Fixed-mass/fixed-topology full native histories, force/orientation/seed changes. Sampling and notch remain fixed; no hardware qualification.",
+      "validatedNativeHistories": 10,
+      "attempts": 12,
+      "preparationRejections": 2,
+      "normalBandPassed": null,
+      "modelSha256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "experimentSha256": "8a0ce2bd5224db72f1b75aa01272228447fdcdebb0291f8e66961d7b86d17491"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_runner_20260930_rigid_accelerator_results.json",
+      "sha256": "3a6b5379ba05f592aa21b295b09872227900bdcedc10d3b856b420b601234d9c",
+      "status": "complete",
+      "scope": "Fixed-mass/fixed-topology full native histories, force/orientation/seed changes. Sampling and notch remain fixed; no hardware qualification.",
+      "validatedNativeHistories": 15,
+      "attempts": 15,
+      "preparationRejections": 0,
+      "normalBandPassed": null,
+      "modelSha256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "experimentSha256": "0a7a4c0d94dc139bf0c66e191935019216fe267248c03d3d2b428f04efee1806"
+    }
+  ],
+  "validNativeHistories": 178,
+  "attempts": 181,
+  "preparationRejections": 3,
+  "scopeWarning": "These diagnostics are explicitly rigid-cell unless separately labeled; the full mass/force/orientation/friction grid and real finite-cell mechanics are not qualified here. Timing benchmarks repeat physical cases and must not be presented as distinct sweep configurations.",
+  "findings": {
+    "rigidCommonController": "PI .03 A/N,20 A/(N s),Kd0; measured-acceleration/geometry/guide FF enabled",
+    "guideLead400usWorst_N": 0.3103871161851188,
+    "guideLead400usLightWorst_N": 0.10516931127656459,
+    "guideLead300usWorst_N": 0.3103868344595,
+    "acceleratorNativeWarmSpeedup": 4.889616902590629,
+    "acceleratorExactPairs": 5,
+    "FastRestartHonorSeeds": "Full paired histories and repeated7\u219229\u21927 proof exact, changed seeds distinct",
+    "SDIOff": "Rejected on this installation because required manual histories were empty; no speedup or qualification claimed"
+  },
+  "fullMeshExecuted": 0
+}

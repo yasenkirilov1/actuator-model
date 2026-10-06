@@ -1,0 +1,51 @@
+{
+  "status": "corrected_native_candidate_ready_for_root_development_scoring",
+  "physicalQualificationEpisodesByWorker": 0,
+  "shortWiringHarnessRuns": 3,
+  "requiredPlant": "upper20k/c0/unlimited; lower rigid with finite64MN/m cell/c0; actuator25mmtravel",
+  "nativeDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3",
+  "configurationFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cellsource_v2/configs.mat",
+  "caseCount": 132,
+  "caseOrdering": "6 profiles \u00d7 (11 cases A0.4 then11cases A1.5), samecaseIDs/seeds991000+caseID as parent",
+  "sourceSHA": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSHA": "1e66bdf5a6d32e1a70b9cecbede75495fc349886da5355d8127f129ad0264ad3",
+  "librarySHA": "f52520d1748d3f8293da0acdada8e0527715615b139a3e8bb09ed3f9d7d71ae9",
+  "slxSHA": "68b8ac3eaa1b8a5f5bb648f16f5a7c2540e208c8ee2a6d19a71e2819fd7b303a",
+  "independentReadOnlyReview": "upper_spring_native_contract explorer confirms LIVE emitted-C source/sign/causality, no rerun",
+  "rejectedOrInactive": [
+    "native originalnestedlocaltag source",
+    "rejected_native_long_block_name parserattempt",
+    "rejected_native_cellsource_guard_v2 numericalguardattempt",
+    "native_lower_damped_v2 cancelledbeforeexport"
+  ],
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/file_hashes.json",
+      "sha256": "bdeadb347af172577c5fa31a765a2f637f473ae2776f3f019df0bd834d530d59"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/local_cell_source_guard.json",
+      "sha256": "cd812fa981110c712d866d4d87d4800aa0dd0d3dd28d2be3cd817f2d448a5af4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/generated_cell_source_audit.json",
+      "sha256": "0cdd1fff58807c4c5b44dcac1858cc072d6f89c749199a3138d71b8485f2514a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/graph_acceptance_cellsource_v3/acceptance.json",
+      "sha256": "6aeea4101e0ebabbd19cf32d640624f5e6466b939a694a513d979f1e05cff591"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/scientific_input_parity_cellsource_v3.json",
+      "sha256": "2259bf935d0602fd2871cb654af1600303440317e2de5f9c7e797b34ef6be137"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/v1_wiring_rejection.json",
+      "sha256": "682ab0fd48d79bd4f02efe9b7bd58aeb8ea6f850f34f0e164c677f15f67f39cf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/lower_damped_v2_cancelled.json",
+      "sha256": "f9140e8bc7f371142861a37a270dd352a14a46794cb22c937ec718e9ee6b5c1e"
+    }
+  ]
+}

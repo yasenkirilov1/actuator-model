@@ -1,0 +1,28 @@
+{
+  "command": [
+    "cc",
+    "-std=c99",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/selected_policy",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/executor/final_episode.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/selected_policy/policy_inference.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/frozen_inputs/native/libacf_native.so",
+    "-Wl,-rpath,/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/frozen_inputs/native",
+    "-lm",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_long4/executor/final_episode.so"
+  ],
+  "episodeSourceSha256": "2be6e2fd0456930949d6a782a7885d3e5ec73cfd0a3deba1f0e61b64c8a9589f",
+  "acceptedEpisodeSourceSha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+  "policyCSourceSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+  "nativeLibrarySha256": "cf10919870a1e205deef6260437052df91b76bdc14d2a714e21313d449f95d12",
+  "compiledExecutorSha256": "4c1169dd0a8ad37829d67b1f41d8a3ceb964663b4304b02e7819b0c561eecec3",
+  "onlyAdapterChanges": [
+    "Skip NN inference in native baseline mode."
+  ],
+  "physicalGraphUnchanged": true
+}

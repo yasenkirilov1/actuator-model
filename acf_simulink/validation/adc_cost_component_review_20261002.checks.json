@@ -1,0 +1,24 @@
+{
+  "status": "passed_component_budget_checks_no_force_simulations",
+  "checkedDate": "2026-10-02",
+  "recipeByteStable": true,
+  "derivedRows": 22,
+  "pricedComponents": 7,
+  "primaryManufacturerSpecs": true,
+  "priceFreshnessCaveatPreserved": true,
+  "noForceSimulationOrHardwareQualification": true,
+  "checks": [
+    "Recipe regeneration preserved all four artifact hashes.",
+    "All 22 CSV/JSON rows have unique names.",
+    "Gain-2 and gain-4 ADC acceleration scaling agrees with sensitivity and ideal codes.",
+    "30 ksample/s Sinc3 FIR timing, cutoff and frame-read arithmetic match exact modulator-clock calculations.",
+    "All relative Markdown links resolve."
+  ],
+  "artifactSHA256": {
+    "acf_simulink/validation/adc_cost_component_review_20261002.md": "03c8b3195d0746d2ef9628739c1226b3e002f50bbe1713d4da93b97f8efed249",
+    "acf_simulink/validation/adc_cost_component_review_20261002.json": "8ca1de208dea39dc3de782851346c9b9b9569fbacd6d04700e3583821d15ffd2",
+    "acf_simulink/validation/adc_cost_component_review_20261002.csv": "bf7a78af53adbc0abe3886bafc4fe9f69a0f1b40e5b8716df7337481ed1ee4a0",
+    "acf_simulink/validation/adc_cost_component_review_20261002.py": "726a61779aa1d9e36f99c6e98bc16ec189d5da3e80fd6ee14012f1c43b7003f7"
+  },
+  "recipeOutput": "Wrote 22 electrical budgets; no simulations executed."
+}

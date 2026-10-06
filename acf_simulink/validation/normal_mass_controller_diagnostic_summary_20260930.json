@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-30",
+  "status": "baseline_diagnostics_complete_no_full_baseline_grid",
+  "validatedNativeHistories": 132,
+  "passed": 120,
+  "normalBandFailures": 12,
+  "preparationRejections": 1,
+  "preparationRejectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_response_screen_20260930_results.json",
+  "sourceMetadata": [
+    {
+      "study": "screen",
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_screen_20260930_results.json",
+      "sha256": "641b71bf2edac667bc39b539f9112c68818e5d87bbe354a47f8933a85f82b652",
+      "rows": 96,
+      "modelSha256": "bfba2bc0d54144a11eb55f029a3b54fbed50bdae5f0a82d657a46bf78b901632",
+      "candidateInputSha256": "c81a9871aa97448dc38193e53871089e67f9789fe01250fca4b302032e9d7a2f"
+    },
+    {
+      "study": "response_screen_v2",
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_response_screen_v2_20260930_results.json",
+      "sha256": "1f40485c06023c36de6ab4d0b993c9079aeb361da7311dbc3d6ceb4a8a410585",
+      "rows": 36,
+      "modelSha256": "bfba2bc0d54144a11eb55f029a3b54fbed50bdae5f0a82d657a46bf78b901632",
+      "candidateInputSha256": "28caf1db0b50c4253164312163544ef6177d2fd5f07515e5da327a1b8f54717e"
+    }
+  ],
+  "bestWeights": {
+    "forceScale_N": 0.5,
+    "surfaceJerkPower": 70,
+    "cohortCases": 8,
+    "passedCases": 8,
+    "worstNormalForceError_N": 0.4745843852694449,
+    "minimumForceMargin_N": 0.02541561473055509,
+    "rowIds": [
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ]
+  },
+  "currentResponseResults": [
+    {
+      "currentResponse_s": 5e-05,
+      "cases": 12,
+      "passedCases": 12,
+      "worstNormalForceError_N": 0.4578193108736244,
+      "minimumForceMargin_N": 0.042180689126375626,
+      "rowIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "currentResponse_us": 50.0,
+      "peakVoltage_V": 12.982915996267405,
+      "peakCurrent_A": 2.8843879062951485,
+      "voltageClippedCases": 0,
+      "effortClippedCases": 0,
+      "fullNativeSamplesPerRun": 160001,
+      "forceScale_N": 0.5,
+      "surfaceJerkPower": 70
+    },
+    {
+      "currentResponse_s": 0.0001,
+      "cases": 12,
+      "passedCases": 10,
+      "worstNormalForceError_N": 0.5242198413328225,
+      "minimumForceMargin_N": -0.02421984133282251,
+      "rowIds": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "currentResponse_us": 100.0,
+      "peakVoltage_V": 12.635230497615197,
+      "peakCurrent_A": 2.881906030429475,
+      "voltageClippedCases": 0,
+      "effortClippedCases": 0,
+      "fullNativeSamplesPerRun": 160001,
+      "forceScale_N": 0.5,
+      "surfaceJerkPower": 70
+    },
+    {
+      "currentResponse_s": 0.0002,
+      "cases": 12,
+      "passedCases": 8,
+      "worstNormalForceError_N": 0.5921382194911047,
+      "minimumForceMargin_N": -0.09213821949110468,
+      "rowIds": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "currentResponse_us": 200.0,
+      "peakVoltage_V": 12.479924049885021,
+      "peakCurrent_A": 2.879353169344993,
+      "voltageClippedCases": 0,
+      "effortClippedCases": 0,
+      "fullNativeSamplesPerRun": 160001,
+      "forceScale_N": 0.5,
+      "surfaceJerkPower": 70
+    }
+  ],
+  "bestBaselineCandidate": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_response_screen_v2_20260930_candidate.mat",
+  "bestBaselineCandidateSha256": "469fa3275621d4cce71e7887ba2e751ca55453458c39cad823f74e2584dc4779",
+  "candidateStatus": "Diagnostic only; not promoted to final system. Faster50us current regulation gives.457819N worst on its12-case cohort,still above desired.35Nmargin target and without full-range/calibration proof.",
+  "all132NativeHistoriesCompleted": true,
+  "contactOrTravelStops": 0,
+  "sourceModelUnmodified": true,
+  "all132ForceBalanceResidualsBelow_N": 1e-08,
+  "fullNativeWorstTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_response_screen_v2_20260930_worst_native_trace.mat",
+  "nextWork": "Realistic measured-acceleration plus multi-axis force-cell normal feedback, native PI/PID and causal acceleration feedforward. User-authorized sensor; source prototype under preparation. No huge baseline grid started."
+}

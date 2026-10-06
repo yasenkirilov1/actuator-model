@@ -1,0 +1,49 @@
+{
+  "status": "authorized_ready_to_launch",
+  "created_utc": "2026-09-30T12:35:39.838382+00:00",
+  "plannedCases": 3,
+  "seeds": [
+    7,
+    29,
+    1729
+  ],
+  "actualLowerStiffness_N_m": 23695.2,
+  "actualLowerDamping_Ns_m": 48,
+  "identifiedLowerStiffness_N_m": 23695.2,
+  "identifiedLowerDamping_Ns_m": 48,
+  "scope": "Three exact paired mixed corner8 histories, with only identified inverse k/c and derived coefficients updated to known assembled values. Full parameter equality guards cover every other field. Native source, actual mechanics, PI/current/acquisition/robot and calibration residuals unchanged. Prepared config MAT is hashed before the first native run.",
+  "inputs": [
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-known-assembled-link-20260930/frozen-recipe/inertial_mechanics_run_calibrated_mechanics_20260930.m",
+      "sha256": "3d65820839be917e2c7ab9e2f5501e69d09840cd8011fb0c7359331e1ca40924"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-known-assembled-link-20260930/run_known_assembled_link.m",
+      "sha256": "5b5f0ca2f0974f5af6f0ea8ceacc60ceb1419e12813f40e29157102ff550235f"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-mixed-corner8-20260930/frozen-calibrated-source/acf_force_control_normal_trial.slx",
+      "sha256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-mixed-corner8-20260930/frozen-calibrated-source/joint_configs.mat",
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_results.json",
+      "sha256": "8b09dafb79ad4d467f28cc05375c2001c741f5508a07f0fba9761167018a524f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_01_native.mat",
+      "sha256": "4b24929ed7faaee8623d0df360746902aed91bda86f979cb90a2cf09d392600a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_02_native.mat",
+      "sha256": "d350da20af77133b99d2598716e267ea66a9d99852a08ed1c8ca517b77ce4925"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_03_native.mat",
+      "sha256": "e800ee5b1354ed4316b68a259dbd0a37604194a95e03f5b0a2932eff07117c03"
+    }
+  ]
+}

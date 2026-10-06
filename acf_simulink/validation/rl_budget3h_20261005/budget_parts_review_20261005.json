@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "scope": "Quantity-one accelerometer and ADC chips for the user's own PCB; no purchase",
+  "observed_at_utc": "2026-10-05T15:12:00Z/2026-10-05T15:17:00Z",
+  "source_method": "Direct web opens of distributor product pages and manufacturer datasheets; current page content supersedes stale search snippets",
+  "currency": "EUR",
+  "budget_including_vat_eur": 100,
+  "vat_rate": 0.21,
+  "exclusions": ["instrumentation amplifiers", "buffers", "clock", "power supplies", "PCB", "assembly", "shipping"],
+  "parts": [
+    {
+      "part": "ADXL354CEZ",
+      "manufacturer": "Analog Devices",
+      "seller": "DigiKey Netherlands",
+      "packaging": "Tray",
+      "price_quantity": 1,
+      "unit_price_excluding_vat_eur": 61.71,
+      "unit_price_including_vat_eur_unrounded": 74.6691,
+      "displayed_stock": 64,
+      "url": "https://www.digikey.nl/en/products/detail/analog-devices-inc/ADXL354CEZ/6557313"
+    },
+    {
+      "part": "ADS131M08IPBSR",
+      "manufacturer": "Texas Instruments",
+      "seller": "DigiKey Netherlands",
+      "packaging": "Cut tape, without paid reeling service",
+      "price_quantity": 1,
+      "unit_price_excluding_vat_eur": 9.45,
+      "unit_price_including_vat_eur_unrounded": 11.4345,
+      "displayed_stock": 4,
+      "url": "https://www.digikey.nl/en/products/detail/texas-instruments/ADS131M08IPBSR/11502308"
+    }
+  ],
+  "configurations": [
+    {
+      "accelerometers": 1,
+      "adcs": 1,
+      "subtotal_excluding_vat_eur": 71.16,
+      "subtotal_including_vat_eur": 86.10,
+      "budget_margin_eur": 13.90,
+      "channels": "Six bridge channels plus two acceleration axes; position must be digital or separately acquired"
+    },
+    {
+      "accelerometers": 1,
+      "adcs": 2,
+      "subtotal_excluding_vat_eur": 80.61,
+      "subtotal_including_vat_eur": 97.54,
+      "budget_margin_eur": 2.46,
+      "channels": "Six bridge channels plus three acceleration axes; sixteen total ADC channels leave capacity for analog position",
+      "requirement": "Shared ADC clock, synchronized conversion reset, verified inter-device timing"
+    }
+  ],
+  "technical": {
+    "accelerometer": {
+      "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf",
+      "revision": "D",
+      "locations": ["Table 1, pages 4-5", "Applications Information, page 26"],
+      "mode_range_g": 8,
+      "sensitivity_V_per_g_typical": 0.1,
+      "overall_bandwidth_Hz": 1900,
+      "internal_filter_cutoff_Hz_approximate": 1500,
+      "mechanical_resonance_Hz": 2400,
+      "noise_density_at_2g_ug_per_sqrtHz": 22.5,
+      "noise_density_at_8g_ug_per_sqrtHz_derived": 33.75,
+      "noise_basis": "Datasheet footnote 6 estimates 50 percent greater density at 8g than at 2g",
+      "output_series_resistance_ohm": 32000,
+      "model_limit": "A 1900 Hz response envelope is not the exact manufacturer transfer function or assembled phase response"
+    },
+    "adc": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ads131m08.pdf",
+      "revision": "B",
+      "locations": ["Tables 7-1 and 7-2, page 18", "Section 8.3.7, pages 22-25"],
+      "channels": 8,
+      "simultaneous_sampling": true,
+      "output_bits": 24,
+      "maximum_samples_per_second_per_channel": 32000,
+      "selected_clock_Hz": 7680000,
+      "selected_OSR": 128,
+      "selected_samples_per_second_per_channel": 30000,
+      "gain": 1,
+      "differential_full_scale_V": 1.2,
+      "input_noise_uV_RMS_at_32k_gain1": 21.31,
+      "effective_bits_at_32k_gain1": 16.8,
+      "noise_use_at_30k": "Retain the 32k OSR128 datasheet noise value without claiming improvement",
+      "filter": "sinc3",
+      "derived_filter_group_delay_s": 0.000049609375,
+      "group_delay_formula": "3*(OSR-1)/(2*(master_clock_Hz/2))",
+      "group_delay_exclusions": ["analog sensor response", "additional analog filtering", "transport", "controller latching", "startup settling"]
+    },
+    "derived_acceleration_acquisition": {
+      "gravity_m_per_s2": 9.80665,
+      "adc_noise_m_per_s2_RMS": 0.002089797115,
+      "adc_nominal_code_step_m_per_s2": 0.000014028525352478027,
+      "adc_equivalent_full_scale_g": 12,
+      "physical_sensor_full_scale_g": 8,
+      "distinction": "Code spacing is smaller than ADC random noise and does not establish calibrated accuracy"
+    }
+  },
+  "limited_alternatives": [
+    {
+      "part": "ADXL354BEZ",
+      "url": "https://www.digikey.nl/en/products/detail/analog-devices-inc/ADXL354BEZ/6557312",
+      "unit_price_excluding_vat_eur": 61.71,
+      "conclusion": "No saving at this seller; lower maximum range of 4g"
+    },
+    {
+      "part": "EVAL-ADXL354CZ",
+      "url": "https://www.digikey.nl/en/products/detail/analog-devices-inc/EVAL-ADXL354CZ/6557294",
+      "unit_price_excluding_vat_eur": 45.95,
+      "displayed_stock": 210,
+      "conclusion": "Cheaper board-level prototype option; outside selected chips-for-own-PCB scope"
+    }
+  ],
+  "tax_sources": [
+    "https://www.digikey.nl/en/terms-and-conditions",
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/vat/vat_in_the_netherlands/calculating_vat/vat_tariffs"
+  ],
+  "stock_status": "Displayed stock only; not reserved and subject to change",
+  "shipping_note": "Distributor page lists EUR25 below EUR75 order value; excluded from component budget",
+  "performance_status": "Parts and budget review only. New native-model results and assembled bench measurements are separate evidence gates."
+}

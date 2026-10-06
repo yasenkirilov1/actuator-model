@@ -1,0 +1,22 @@
+{
+  "lossless": true,
+  "csv_paths": {
+    "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/coil_point_trace_1k.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/coil_point_trace_1k.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/sea_point_trace_1k.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/sea_point_trace_1k.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/sea_wide_trace_1k.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/engine/replay/sea_wide_trace_1k.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/development/pilot_0.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/development/pilot_0.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/development/pilot_1.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/development/pilot_1.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c0_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c0_worst.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_point20k_c0_5k_l10_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_point20k_c0_5k_l10_worst.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c80_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c80_worst.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_point20k_c80_5k_l10_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_point20k_c80_5k_l10_worst.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c0_d0_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c0_d0_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c80_d0_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c80_d0_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c0_d0.077_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c0_d0.077_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c80_d0.077_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k20000_c80_d0.077_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k0_c0_d0_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k0_c0_d0_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k1e+06_c80_d0_S2_F50.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_k1e+06_c80_d0_S2_F50.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c0_5k_l10_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c0_5k_l10_worst.csv.gz",
+    "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c80_5k_l10_worst.csv": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c80_5k_l10_worst.csv.gz"
+  }
+}

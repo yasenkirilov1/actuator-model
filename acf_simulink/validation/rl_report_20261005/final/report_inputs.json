@@ -1,0 +1,365 @@
+{
+  "status": "complete",
+  "queries": [
+    {
+      "id": "rl_method_contract",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_method_contract.json",
+      "sha256": "0cd1256d13a65e69ba6af5e79a4872d178fb3467c41d0c609a3108283c7fbd50",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/study_contract.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selection_contract_band_v2.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+      ],
+      "label": "Approved task and locked recurrent-policy methodology",
+      "kind": "method_and_user_constraints",
+      "caveats": []
+    },
+    {
+      "id": "rl_budget_parts",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_budget_parts.json",
+      "sha256": "8042d76252893ffbe4999acc7dcd459896d41ae044f514130a793c51efa274e0",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/budget_parts_review_20261005.json"
+      ],
+      "label": "Live quantity-one chip prices and primary ADXL354C/M08 specifications",
+      "kind": "manufacturer_and_distributor_review",
+      "caveats": [
+        "Chips for the user's PCB; amplifier, board, clock, assembly and shipping costs are additional.",
+        "The 1.9 kHz matched response is a declared model envelope, not a complete measured ADXL354 transfer."
+      ]
+    },
+    {
+      "id": "rl_budget_sensing_contract",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_budget_sensing_contract.json",
+      "sha256": "80637db7a292c8e99211c5322d960a943b2d5b63fab6c7f3fcd555184a12502e",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/preparation_acceptance.json"
+      ],
+      "label": "Budget sensing, noise, ADC scaling and 50 \u00b5s current-response inputs",
+      "kind": "frozen_model_assumptions",
+      "caveats": [
+        "This record binds preparation; only completed final results establish finite simulation outcomes."
+      ]
+    },
+    {
+      "id": "rl_ppo_training",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_ppo_training.json",
+      "sha256": "0801e91b3df0343daa8814a905bd58b975521ec5b40380bb8afe8762e2515142",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/runner_checks/ppo_final_ledger_v1/ledger.json"
+      ],
+      "label": "Executed PPO runs and preserved rejections",
+      "kind": "optimizer_training",
+      "caveats": [
+        "Decisions used by completed updates and the 98,304 post-collection rejected decisions are separate.",
+        "Different warm starts, seeds, reward functions and development banks are explicit; this is not a one-factor causal comparison."
+      ]
+    },
+    {
+      "id": "rl_reward_search",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_reward_search.json",
+      "sha256": "904d2c794443ba9afee2ee07c2a8ae990bdda9f68217a29a3fcdcc0880a6a36c",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json"
+      ],
+      "label": "Audited episodic reward-search counts and checkpoint ancestry",
+      "kind": "reward_search_execution",
+      "caveats": [
+        "Evolved directions differ from total stored neural parameters; read the ancestry and completed-stage counts.",
+        "Recovery replays and unscored interrupted work are not new training generations."
+      ]
+    },
+    {
+      "id": "rl_initialization_probes",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_initialization_probes.json",
+      "sha256": "0fe51bafad79199c02b96dc6ace73482de476d8ee9b34c7dc2dd989131dd0ff5",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/reward_search_auxiliary_ledger.json"
+      ],
+      "label": "Separate physics-initialization comparisons and implementation audits",
+      "kind": "development_initialization",
+      "caveats": [
+        "These are separate episode evaluations, not additional evolutionary generations or fresh qualification."
+      ]
+    },
+    {
+      "id": "rl_budget_reward_search",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_budget_reward_search.json",
+      "sha256": "1b436ba8582c2f1c2bcca5e6a453d3c5b34b9d2b4094709251d48ea349d58c73",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_ledger.json"
+      ],
+      "label": "Separate budget-chain screen, history attenuation and constrained search",
+      "kind": "budget_policy_execution",
+      "caveats": [
+        "The final winner retains previously evolved weights with reward-selected history attenuation; the short budget CMA continuation did not outrank it.",
+        "Winner development coverage is its own 20-case training screen and 28-case selection, not the alternate policy's 84-case audit."
+      ]
+    },
+    {
+      "id": "rl_selected_candidate",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_selected_candidate.json",
+      "sha256": "9f8e071e16c32d8e388ff0ccdc1bc885490217a6ca2c9b5b3f2799ca2cb2571c",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/00_rl_budget3h_20261005_selection_contract_band_v2.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/01_rl_budget3h_20261005_study_contract.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/02_rl_budget3h_20261005_reward_search_completed_ledger.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/04_ppo_final_ledger_v1_ledger.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/06_reward_search_budget_bootstrap_8210_results.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/07_reward_search_budget_8211_selection.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/08_rl_budget3h_20261005_reward_search_budget_ledger.json"
+      ],
+      "label": "Selection-only review and selected weight identity",
+      "kind": "candidate_selection",
+      "caveats": [
+        "Weights are selected using development evidence only, before final outcomes."
+      ]
+    },
+    {
+      "id": "rl_implementation_checks",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_implementation_checks.json",
+      "sha256": "161fb42a1f89d11bca7659ff60ea40b040548ff4b19e6a51498480e9b22ef190",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json",
+        "acf_simulink/validation/rl_budget3h_20261005/runner_checks/inverse_replay_v1/results.json",
+        "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/acceptance_results.json",
+        "acf_simulink/validation/final_driver_checks/final_budget_selected_acceptance/results.json"
+      ],
+      "label": "GPU benchmark, replay guard and native evaluation acceptance",
+      "kind": "software_verification",
+      "caveats": [
+        "Desktop timing is not a microcontroller deadline measurement; high-gain C and PyTorch arithmetic are not interchangeable."
+      ]
+    },
+    {
+      "id": "rl_fresh_tests",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_fresh_tests.json",
+      "sha256": "71b66b7784ec988f1dbccf2340c3f1c8d954060caf62a15423ad5fa76cba7932",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+      ],
+      "label": "Fresh 4\u20136 s paired tests",
+      "kind": "locked_native_evaluation",
+      "caveats": [
+        "Every native force sample is scored, including startup and endpoint.",
+        "The \u00b17.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+        "Finite simulated cases and noise seeds do not establish physical sanding performance."
+      ]
+    },
+    {
+      "id": "rl_nominal_grid",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_nominal_grid.json",
+      "sha256": "a382ff8c4ff61ac3dd3b8154ece4e7d11ab2eba638e3df7daf1e5a082db780e9",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/final_nominal700/results.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+      ],
+      "label": "Fresh-seed nominal hot-coil grid",
+      "kind": "locked_native_evaluation",
+      "caveats": [
+        "Every native force sample is scored, including startup and endpoint.",
+        "The \u00b17.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+        "Finite simulated cases and noise seeds do not establish physical sanding performance."
+      ]
+    },
+    {
+      "id": "rl_long_tests",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_long_tests.json",
+      "sha256": "f7945d12b42b2519b9b48e866f912b53c451d58c310bbcc2e977392b24ce9c99",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/final_long4/results.json",
+        "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+      ],
+      "label": "Fresh 30 s repeated-bump recordings",
+      "kind": "locked_native_evaluation",
+      "caveats": [
+        "Every native force sample is scored, including startup and endpoint.",
+        "The \u00b17.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+        "Finite simulated cases and noise seeds do not establish physical sanding performance."
+      ]
+    },
+    {
+      "id": "rl_actuator_response",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_actuator_response.json",
+      "sha256": "5aabfb0f45620dae5f51dc6384ea6900923b7d002afb1de87c2d83110b8f3219",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/summary.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/summary.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/metric_semantics_overlay.json"
+      ],
+      "label": "Fixed earlier checkpoint: voltage and current-response development tests",
+      "kind": "development_counterfactual",
+      "caveats": [
+        "These tests use frozen gen5 checkpoint 48618b8d, not necessarily the final winning weights.",
+        "50 \u00b5s changes current-loop tuning and matching identified response; voltage-only pairs retain 100 \u00b5s tuning.",
+        "Ignore the inherited historical recenterPassed flag; use native band excess and actual travel metrics."
+      ]
+    },
+    {
+      "id": "rl_budget_response_limits",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_budget_response_limits.json",
+      "sha256": "6f924f53f5842b7c7c098ec647fab36aa671829b40689257b57b4b2d3cbabba5",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/comparison.json"
+      ],
+      "label": "Locked budget policy: current response and added sensing delay",
+      "kind": "development_sensitivity",
+      "caveats": [
+        "112 new paired development recordings, no retuning; primary references are reused.",
+        "Known matched latency is still harmful; a filter cutoff does not establish its complete transfer function."
+      ]
+    },
+    {
+      "id": "rl_memory_reliance",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_memory_reliance.json",
+      "sha256": "b1a44f881cfa2aa7cac516e09e238d35402f4765e4c61d3c1f216abc67383549",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/results.json"
+      ],
+      "label": "Four development cases: same weights with and without carried memory",
+      "kind": "development_ablation",
+      "caveats": [
+        "Resetting memory each frame is an intervention in this controller, not an independently optimized memoryless baseline.",
+        "This recorded ablation uses the earlier gen5 checkpoint; final-winner results must be separately identified."
+      ]
+    },
+    {
+      "id": "rl_gate_tradeoff",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_gate_tradeoff.json",
+      "sha256": "4e39957a8d8f9dcbc614e290c0988fc0bcb140f7895196bbaa6275bd76f5acef",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_gate_figure/data_sources.json"
+      ],
+      "label": "Stronger inverse force response can block robot commands and exhaust travel",
+      "kind": "development_failure_comparison",
+      "caveats": [
+        "Full and partial inverse initialization in the same development case; not the final winning checkpoint."
+      ]
+    },
+    {
+      "id": "rl_final_native_replay",
+      "file": "acf_simulink/validation/rl_report_20261005/final/rl_final_native_replay.json",
+      "sha256": "654a9be48b38bc464544d26f8ca5842c1cb07c64ff8583b586fe68ec029f7a41",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/input_binding.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_parity/native_replay.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/active_robot_parity/native_replay.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_recorded_actions_600k/recorded_action_refinement.json",
+        "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/summary.json"
+      ],
+      "label": "Independent MATLAB replay of the locked neural worst and active robot cases",
+      "kind": "native_model_implementation_verification",
+      "caveats": [
+        "Recorded-action normal MATLAB plant/sensor/gate replays; neural inference remains the frozen C implementation.",
+        "The worst case remains a force-specification failure.",
+        "The finer-step result replays frozen requests; it is not closed-loop neural refinement."
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "file": "figures/unified_recurrent_control_band10_v3.svg",
+      "queryId": "rl_method_contract",
+      "sha256": "a7b705d98167e0b7440e9817db7593459e743205367a12e61ece68a958962aa0"
+    },
+    {
+      "file": "figures/memory_reliance_v2.svg",
+      "queryId": "rl_memory_reliance",
+      "sha256": "7946dd26d418974b73162a544e471386dcc5a1d3f23966646c00542bff943fd2"
+    },
+    {
+      "file": "figures/current_response_28cases.svg",
+      "queryId": "rl_actuator_response",
+      "sha256": "45272e69e03a97cc2b503ba6ddf9701384894d1078c06ebf93d8b55fd06ee6e5"
+    },
+    {
+      "file": "figures/actuator_limit_peaks.svg",
+      "queryId": "rl_actuator_response",
+      "sha256": "707afa685874e408c29468c29513d646ee6a7dd43194c0945cd52f25afeed04f"
+    },
+    {
+      "file": "figures/force_gate_travel_tradeoff.svg",
+      "queryId": "rl_gate_tradeoff",
+      "sha256": "35288b2da44024bc868ba8c4aed19f01b829f89403090fff55410f6e7d763742"
+    },
+    {
+      "file": "figures/rl_budget_chip_cost.svg",
+      "queryId": "rl_budget_parts",
+      "sha256": "216c9420a9889a53da77290e51c3fac12c791737d4115c06cfc330576c1ca020"
+    },
+    {
+      "file": "figures/development_convergence.svg",
+      "queryId": "rl_reward_search",
+      "sha256": "4ac76a30fdf45538624cfab0049b88093ae579a167e2201c5ffc55d2da853266"
+    },
+    {
+      "file": "figures/budget_response_limits.svg",
+      "queryId": "rl_budget_response_limits",
+      "sha256": "95f0443d52cd7e735fda3ea5e98a04be6c11ee17d10f156d1912d1dcafcd694c"
+    },
+    {
+      "file": "figures/rl_3h_fresh_pairs.svg",
+      "queryId": "rl_fresh_tests",
+      "sha256": "2ae8d710208eee22a46df64e9f6d1acbacbae97ae5f531e68aa42ef2b8dd8dcd"
+    },
+    {
+      "file": "figures/rl_3h_worst_force.svg",
+      "queryId": "rl_fresh_tests",
+      "sha256": "b5c01acbe2d187868420fb3a58b20abd12f829a68216b7559ba0d883bf87e2ec"
+    },
+    {
+      "file": "figures/rl_3h_drive.svg",
+      "queryId": "rl_fresh_tests",
+      "sha256": "629285c5449521e6119b983ea845f95a78173afd39dd188402fc6502b7f4ae79"
+    },
+    {
+      "file": "figures/rl_3h_robot_travel.svg",
+      "queryId": "rl_fresh_tests",
+      "sha256": "852eb58caacced914aea3669fd8adec19aec43a5b4f21c5960c0885f49efdcdd"
+    },
+    {
+      "file": "figures/rl_3h_nominal_grid.svg",
+      "queryId": "rl_nominal_grid",
+      "sha256": "e063a68b4f842931cd615d0ad16ff6c2a2dd7eb0e52827ac2f2991624dfd2806"
+    },
+    {
+      "file": "figures/rl_3h_long_stop.svg",
+      "queryId": "rl_long_tests",
+      "sha256": "739b5b9fc53fbdde44455b1b44bd531c347e89b61a4301b355c40e20203d8e1c"
+    }
+  ],
+  "robotQueryIds": [
+    "rl_method_contract",
+    "rl_fresh_tests",
+    "rl_long_tests"
+  ],
+  "actuatorQueryIds": [
+    "rl_actuator_response",
+    "rl_budget_response_limits",
+    "rl_budget_sensing_contract"
+  ],
+  "methodQueryIds": [
+    "rl_method_contract"
+  ],
+  "sectionQueries": {},
+  "accelerationQueryIds": [
+    "rl_budget_parts",
+    "rl_budget_sensing_contract",
+    "rl_fresh_tests",
+    "rl_long_tests",
+    "rl_nominal_grid",
+    "rl_budget_response_limits"
+  ],
+  "acquisitionQueryIds": [
+    "rl_budget_parts",
+    "rl_budget_sensing_contract",
+    "rl_fresh_tests",
+    "rl_long_tests",
+    "rl_nominal_grid",
+    "rl_budget_response_limits"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "syntheticOnly": true,
+  "noPhysicalCasesExecuted": true,
+  "driverSha256": "d5842b5ccad60ee34607fa06f2ee661f97b3f2d1acb059f84f410eab1d3a14a0",
+  "checks": {
+    "zero_robot_inside_band_passes": true,
+    "final_sample_force_failure_detected": true,
+    "unflagged_record_contact_loss_detected": true,
+    "unflagged_record_travel_stop_detected": true,
+    "electrical_extrema_and_flags_scored": true,
+    "nonfinite_record_rejected": true,
+    "force_and_band_acceptance_separate": true,
+    "closed_gate_raw_request_rejected": true,
+    "non100Hz_raw_request_rejected": true,
+    "lossless_noncontiguous_npz_roundtrip": true,
+    "split_guards": true
+  }
+}

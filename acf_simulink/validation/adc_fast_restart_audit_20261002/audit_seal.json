@@ -1,0 +1,179 @@
+{
+  "status": "complete_software_execution_audit",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "helperManifestSha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48",
+  "executedNativeRuns": 9,
+  "softwareRejectedPreSimulationAttempts": 2,
+  "nativePhysicalSamples": 7425009.0,
+  "adcOutputFrames": 742509,
+  "requiredWarmColdComparisonsExact": true,
+  "preferencesRestored": true,
+  "files": [
+    {
+      "file": "results.json",
+      "bytes": 103479,
+      "sha256": "b2b7d1cbaf4bedd1a4a01e3aa6367a21a6dc4c9aced779d23e1737c11be96f49"
+    },
+    {
+      "file": "prepared_configs.mat",
+      "bytes": 2817264,
+      "sha256": "f430a32200fff9d93ac8923b5d7e563817cc0b5eed85e608b7861e095d7e8ce7"
+    },
+    {
+      "file": "audit_adc_fast_restart_20261002.m",
+      "bytes": 16354,
+      "sha256": "c0adf3ab91d911e700427ba5697e78259fc2be50478b6d240f3dad1dfee933d6"
+    },
+    {
+      "file": "frozen_helper_manifest.json",
+      "bytes": 2900,
+      "sha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48"
+    },
+    {
+      "file": "clock_delay_parameter_inventory.json",
+      "bytes": 37306,
+      "sha256": "18bdd4e489043f3dbcbedd73a7afb23babfaeb301f0fd3f0d52960ac4b9a8c47"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3684,
+      "sha256": "1089c8385ff1371263c102e3d5b7c8c726b331b797ff1c56d9221657f5adb625"
+    },
+    {
+      "file": "matlab_batch.log",
+      "bytes": 1516,
+      "sha256": "d4ca0c28c7e533b2c505e2e4c9eb7c6a1e079525ff3829fed43fe81f5a2f3498"
+    },
+    {
+      "file": "private_worker/acf_force_control_adc_trial.slx",
+      "bytes": 720308,
+      "sha256": "b115fc719148cd4f9dbe8818882bd2acc67bc0d8a1067aa2e3180d053a56e484"
+    },
+    {
+      "file": "private_worker/baseline_candidate.mat",
+      "bytes": 7161,
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "file": "heavy29_cold_short_native.mat",
+      "bytes": 5958337,
+      "sha256": "99848b0716b5bc21439f58cfc1496f66ed714587a0a161fc95b4a71cce1db38f"
+    },
+    {
+      "file": "heavy29_warm_short_native.mat",
+      "bytes": 5958697,
+      "sha256": "f629ed2790c537f92d25274835036afb269e765a5d9dfe4c8294a7a448c3ae2e"
+    },
+    {
+      "file": "heavy7_cold_long_native.mat",
+      "bytes": 92302128,
+      "sha256": "9b9f95257cd6c6edb5e261d4a869df5e14da516b8e7888f74c23149e170bfb87"
+    },
+    {
+      "file": "heavy7_fc500_first_long_native.mat",
+      "bytes": 91494799,
+      "sha256": "67d0371b606676b35c0cd587679e0eae920e2c064df3e728ebcb11d032e8c333"
+    },
+    {
+      "file": "heavy7_fc5100_warm_long_native.mat",
+      "bytes": 92302520,
+      "sha256": "b8c66ff1257833734b61c9ec64f25afdb05e5d2347c0d604c865641cdb6465e0"
+    },
+    {
+      "file": "heavy7_first_long_native.mat",
+      "bytes": 92302136,
+      "sha256": "8fcb8e79f6eb6a89ce581e1032ed365b3e8cdd9c5022800d1ee0c46096770daf"
+    },
+    {
+      "file": "heavy7_first_short_native.mat",
+      "bytes": 5959842,
+      "sha256": "32a09d5b539ff750fa1939bd64a2e8e1c8423120e59944771ac55549e1bc8511"
+    },
+    {
+      "file": "light7_cold_long_native.mat",
+      "bytes": 100565592,
+      "sha256": "421b539e9417ee31b789710df2981235371728b547f2ffeeba0599d86069224b"
+    },
+    {
+      "file": "light7_warm_long_native.mat",
+      "bytes": 100565952,
+      "sha256": "09f52bb29044df6031fdbdec31a6b626772ee2136f5faf1967a4e15dbe3aa0d6"
+    },
+    {
+      "file": "heavy29_cold_short_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "heavy29_warm_short_transcript.txt",
+      "bytes": 12981,
+      "sha256": "1299cd382a94da3b06d9953346878835ff89ace69c62869b9ef4d11b49150fd9"
+    },
+    {
+      "file": "heavy7_cold_long_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "heavy7_fc500_first_long_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "heavy7_fc5100_warm_long_transcript.txt",
+      "bytes": 12981,
+      "sha256": "1299cd382a94da3b06d9953346878835ff89ace69c62869b9ef4d11b49150fd9"
+    },
+    {
+      "file": "heavy7_first_long_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "heavy7_first_short_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "light7_cold_long_transcript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "light7_warm_long_transcript.txt",
+      "bytes": 12981,
+      "sha256": "1299cd382a94da3b06d9953346878835ff89ace69c62869b9ef4d11b49150fd9"
+    },
+    {
+      "file": "software_rejected_attempt_0001/audit_adc_fast_restart_20261002.m",
+      "bytes": 16526,
+      "sha256": "274a333393b02499c16223093fee470ee0f8255e66f077a5811175f51c602a4e"
+    },
+    {
+      "file": "software_rejected_attempt_0001/matlab_batch.log",
+      "bytes": 194,
+      "sha256": "b412112451f7afb11f3f96860b73c98870ac9bd36f38570af7c3f10c6ab40df1"
+    },
+    {
+      "file": "software_rejected_attempt_0002/audit_adc_fast_restart_20261002.m",
+      "bytes": 16347,
+      "sha256": "8b7582098aa4424cb8fa3208d2f00fbe6eb9e404e1f46f8f4de7311be971f38a"
+    },
+    {
+      "file": "software_rejected_attempt_0002/matlab_batch.log",
+      "bytes": 604,
+      "sha256": "07a952ca741842bc7daee3877c06b31b65fdc574229fed7ce10cd8f3fcdeceb1"
+    },
+    {
+      "file": "software_rejected_attempt_0002/prepared_configs.mat",
+      "bytes": 2817264,
+      "sha256": "fec3ba883e4e4e25cedf7d08abf8c9c3b3cea470f6442c4f5a62d324bd0a3838"
+    },
+    {
+      "file": "software_rejected_attempt_0002/results.json",
+      "bytes": 4406,
+      "sha256": "4d2736869ce5778976e6d7060e1cd74a8a620e793b2601bd2374d3eca6a79ee6"
+    }
+  ],
+  "scope": "Finite native cold/warm software parity; excludes private preferences and generated cache/code; not physical hardware validation."
+}

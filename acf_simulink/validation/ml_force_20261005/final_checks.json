@@ -1,0 +1,70 @@
+{
+  "status": "passed_planned_software_numerical_checks",
+  "mainExecutedNativeRecordings": 48,
+  "mainNativeSamplesScored": 88800048.0,
+  "additionalRefinementRecordings": 2,
+  "additionalRefinementSamplesScored": 4800002.0,
+  "additionalShortSoftwareRecordings": 2,
+  "additionalShortSoftwareSamplesCompared": 60002,
+  "totalNativeRecordingsIncludingChecks": 52,
+  "refinement": [
+    {
+      "gain": 0,
+      "originalStep_s": 3.3333333333333333e-06,
+      "refinedStep_s": 1.6666666666666667e-06,
+      "originalPeak_N": 0.33504360887562257,
+      "refinedPeak_N": 0.33504395320444047,
+      "absolutePeakDifference_N": 3.443288179028059e-07,
+      "refinedNativeSamples": 2400001.0,
+      "passed": true
+    },
+    {
+      "gain": 1,
+      "originalStep_s": 3.3333333333333333e-06,
+      "refinedStep_s": 1.6666666666666667e-06,
+      "originalPeak_N": 0.3534168578015695,
+      "refinedPeak_N": 0.353417713617759,
+      "absolutePeakDifference_N": 8.558161894711702e-07,
+      "refinedNativeSamples": 2400001.0,
+      "passed": true
+    }
+  ],
+  "acceptance": {
+    "status": "passed_private_builder_save_reopen",
+    "builder": {
+      "nativeInference": true,
+      "residualBound_A": 0.05,
+      "gain": 1,
+      "truthOnlyInLogger": true,
+      "freshClock_s": 0.0001,
+      "architecture": "10-8-1 ReLU",
+      "inputs": [
+        "reconstructed normal deviation",
+        "100 us normal increment",
+        "existing predicted acceleration current",
+        "100 us acceleration-current increment",
+        "observed head gap velocity",
+        "100 us velocity increment",
+        "estimated slope",
+        "100 us slope increment",
+        "identified S mass",
+        "force target"
+      ],
+      "insertion": "seventh current-sum input, before notch/current limits and antiwindup"
+    },
+    "nativeNormalSamplesPerRecording": 30001,
+    "executedShortNativeRecordings": 2,
+    "durationEach_s": 0.1,
+    "algebraicLoops": 0,
+    "exactNormalHistoryAfterSaveReopen": true,
+    "exactFeatureAndActionHistoryAfterSaveReopen": true,
+    "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+    "scope": "Software acceptance only, separate from qualification. No canonical model promotion."
+  },
+  "inferenceParityMaximumDifference_A": 2.7755575615628914e-17,
+  "noTruthToActionPath": true,
+  "existingPlantControllerEdgesPreserved": true,
+  "startupRejectedProcesses": 1,
+  "startupRejection": "First executable launch omitted online-license mode and crashed before running MATLAB code; retried using -licmode onlinelicensing. This is not an executed scientific recording.",
+  "prototypeValidationPerformed": false
+}

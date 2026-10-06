@@ -1,0 +1,178 @@
+### Result
+{
+  "selected": [
+    {
+      "value": ""
+    },
+    {
+      "value": "system"
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": "2",
+      "label": "Tool S \nAll masses\n0.1 kg\n0.5 kg\n1 kg\n1.4 kg\n2 kg"
+    },
+    {
+      "value": "50",
+      "label": "Target \nAll forces\n5 N\n10 N\n15 N\n20 N\n25 N\n30 N\n35 N\n40 N\n45 N\n50 N"
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    },
+    {
+      "value": ""
+    }
+  ],
+  "tableContext": "\nNative full-history qualification\nS (kg)\tTarget (N)\tAngle (°)\tFriction\tNoise seed\tPeak error (N)\tCurrent (A)\tVoltage (V)\tPass\n2\t50\t0\t0\t0\t0.283\t1.504\t6.577\ttrue\n2\t50\t0\t0\t7\t0.299\t1.587\t14.489\ttrue\n2\t50\t0\t0\t29\t0.289\t1.560\t13.082\ttrue\n2\t50\t0\t0\t97\t0.287\t1.579\t12.930\ttrue\n2\t50\t0\t0\t1,729\t0.274\t1.602\t13.154\ttrue\n2\t50\t0\t0.30\t0\t0.291\t1.531\t7.031\ttrue\n2\t50\t0\t0.30\t7\t0.299\t1.640\t14.530\ttrue\n2\t50\t0\t0.30\t29\t0.298\t1.670\t12.983\ttrue\n1–8 of 70 results\nPage 1 of 9",
+  "visibleRows": 8
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => {const t=Array.from(document.querySelectorAll("table")).find(t=>t.caption?.innerText==="Native full-history qualification");return {selected:Array.from(document.querySelectorAll("select")).map(s=>({value:s.value,label:s.closest("label")?.innerText})),tableContext:t?.parentElement?.parentElement?.innerText.slice(-450),visibleRows:t?.querySelectorAll("tbody tr").length};}');
+```

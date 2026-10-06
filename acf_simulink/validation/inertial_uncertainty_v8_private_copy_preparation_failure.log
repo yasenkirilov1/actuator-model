@@ -1,0 +1,9 @@
+{Error using save_system (line 17)
+The file
+"/home/tommie/.local/state/actuator-model/tp4d85e249_0302_4fde_8bf4_89e2f11c31fc/acf_force_control_normal_trial.slx"
+you are trying to save is not writable.
+
+Error in qualify_inertial_uncertainty (line 67)
+set_param(mdl,'SimulationMode',simulationMode);save_system(mdl,modelFile);
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

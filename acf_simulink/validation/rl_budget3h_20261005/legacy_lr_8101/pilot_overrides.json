@@ -1,0 +1,7 @@
+{
+  "purpose": "Learning-rate/value-initialization diagnostic",
+  "learning_rate": 1e-05,
+  "critic_initial_weight_and_bias": 0,
+  "teacher_data": false,
+  "selection_only": true
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-30",
+  "kind": "analytical_geometry_and_force_screen_not_native_simulation",
+  "source": "acf_simulink/experiments/spring_catalog.json",
+  "sourceSHA256": "cd027b5dd04d283f8734f946e34007111cfb10625a8b517f9ed6072d7328083c",
+  "equations": "Opposed equal guided compression pair: Pmin=|Q|/2+ks*unseatingClearance;Pmax=min[ks*(L0-tol-Lmin-workingClearance),Fmax]-|Q|/2. Both links at horizontal50N have steady Q=50N. Combined lengths shown for4identical springs.",
+  "unseatingClearance_m": 0.00025,
+  "workingClearance_m": 0.0005,
+  "midBumpCondition": "Only for a zero-damping lower pair atS2kg,theta90deg: at the sharp bump center aS=-2.4m/s2 and slope0; keeping trueN>=49.5N requires transmittedlowerQ>=54.3N. A damper can share dynamicload,so this is not a general rejection when damping is present.",
+  "rows": [
+    {
+      "pairRate_N_mm": 3.954,
+      "singleSpringForceEnvelope_N": 21.999,
+      "usableCapacityBeforeUnseating_N": 21.747000000000003,
+      "preloadMinAt50N_N": 25.49425,
+      "preloadMaxAt50N_N": -3.2529999999999966,
+      "static50NFeasible": false,
+      "largestConstantLinkForceWithClearance_N": 21.252750000000002,
+      "combinedFourSpringFreeLengthMax_mm": 85.6,
+      "representativeCommonPreload_N": null,
+      "combinedFourSpringInstalledLengthMax_mm": null,
+      "zeroDampingLowerLinkHeavyMidBumpMin54_3NFeasible": false
+    },
+    {
+      "pairRate_N_mm": 7.346,
+      "singleSpringForceEnvelope_N": 50.267,
+      "usableCapacityBeforeUnseating_N": 49.2182,
+      "preloadMinAt50N_N": 25.91825,
+      "preloadMaxAt50N_N": 24.218200000000003,
+      "static50NFeasible": false,
+      "largestConstantLinkForceWithClearance_N": 48.29995,
+      "combinedFourSpringFreeLengthMax_mm": 94.2,
+      "representativeCommonPreload_N": null,
+      "combinedFourSpringInstalledLengthMax_mm": null,
+      "zeroDampingLowerLinkHeavyMidBumpMin54_3NFeasible": false
+    },
+    {
+      "pairRate_N_mm": 12.826,
+      "singleSpringForceEnvelope_N": 56.792,
+      "usableCapacityBeforeUnseating_N": 54.70288999999998,
+      "preloadMinAt50N_N": 26.60325,
+      "preloadMaxAt50N_N": 29.702889999999982,
+      "static50NFeasible": true,
+      "largestConstantLinkForceWithClearance_N": 53.09963999999998,
+      "combinedFourSpringFreeLengthMax_mm": 78.88,
+      "representativeCommonPreload_N": 28.153069999999992,
+      "combinedFourSpringInstalledLengthMax_mm": 61.32,
+      "zeroDampingLowerLinkHeavyMidBumpMin54_3NFeasible": false
+    },
+    {
+      "pairRate_N_mm": 19.746,
+      "singleSpringForceEnvelope_N": 68.543,
+      "usableCapacityBeforeUnseating_N": 64.76688,
+      "preloadMinAt50N_N": 27.46825,
+      "preloadMaxAt50N_N": 39.76688,
+      "static50NFeasible": true,
+      "largestConstantLinkForceWithClearance_N": 62.29863,
+      "combinedFourSpringFreeLengthMax_mm": 74.36000000000001,
+      "representativeCommonPreload_N": 33.617565,
+      "combinedFourSpringInstalledLengthMax_mm": 60.74000000000001,
+      "zeroDampingLowerLinkHeavyMidBumpMin54_3NFeasible": true
+    }
+  ]
+}

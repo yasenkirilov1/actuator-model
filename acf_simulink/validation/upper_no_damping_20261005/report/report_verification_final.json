@@ -1,0 +1,64 @@
+{
+  "status": "artifact_delivery_verified_with_browser_interaction_limits",
+  "verifiedUtc": "2026-10-05T19:13:50.362675+00:00",
+  "mainReport": {
+    "markdown": {
+      "path": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-upper-spring-20261005.md",
+      "sha256": "0c1ef39725731afe142c58d80498594f875f8856d3bc455d689004307c80ef3f"
+    },
+    "markdownWordTokensIncludingLinks": 2298,
+    "wordTokensWithoutLinkDestinations": 2201,
+    "figureCount": 3,
+    "localLinkCountAcrossRepoAndNotes": 16
+  },
+  "evidenceInputs": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/report/report_inputs_compact_final.json",
+    "sha256": "b7519335e64555d7ef2ed6772f9c81a708ca520072185c24f14338a1fa51abc8"
+  },
+  "reviewedWrapperHashesVerified": 25,
+  "deliveredArtifactCount": 6,
+  "deliveryManifest": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/report/notes_delivery_final.json",
+    "sha256": "c557fff33a0caa22a3d5316537d42eeba17b13b518f136af76ce8418e0c51d97"
+  },
+  "offlineHtml": {
+    "path": "/home/tommie/Projects/actuator-model/reports/prototype-design-20260930/.data-app-offline/exports/active-contact-flange-fixed-upper-final.html",
+    "sha256": "147c16f154b4221c655802478027cf578b271d89ee418537bc2f8c8c64a2fbeb"
+  },
+  "buildManifest": {
+    "path": "/home/tommie/Projects/actuator-model/reports/prototype-design-20260930/dist/data-app-build.json",
+    "sha256": "0c3be10fec5e0a455e82a4d5ef2492b548f2c6af831892e976b35640285a482d"
+  },
+  "reportIdentityPreserved": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "authoredRevision": 1,
+  "unchangedHistoricalQueriesVerified": 71,
+  "totalQueries": 79,
+  "nativeModelBundle": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/generated/fixed_upper_20261005/bundle_manifest.json",
+    "sha256": "96f9619a3c904109e1b9faaaa09832de5c1631977910c4d16b69e714c30d4490"
+  },
+  "nativeBundleFilesVerified": 14,
+  "browserVerification": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/report/report_browser_verification_final.json",
+    "sha256": "906fca477f06c789298b4c97e5261ac743b24129c59c185fbe3b3d201dd60ed2"
+  },
+  "unverifiedBrowserChecks": [
+    {
+      "check": "Preview screenshot and snapshot",
+      "reason": "T3 preview returned generic client failure preview-658780b3a22ea71872ac79950863130c"
+    },
+    {
+      "check": "Evidence inspector click interaction",
+      "reason": "Focused preview click failed; DOM click did not establish that the inspector opened"
+    },
+    {
+      "check": "Narrow viewport layout",
+      "reason": "T3 preview resize timed out; preview was reattached at 1280 pixels"
+    },
+    {
+      "check": "Standalone exported HTML interactive execution",
+      "reason": "Exporter and artifact hashes verified; DOM observations apply to the locally served build"
+    }
+  ],
+  "scientificScope": "705 of 736 final cases pass; fixed prescribed mechanics are not qualified to the full force requirement. Delivery and artifact checks do not establish physical performance."
+}

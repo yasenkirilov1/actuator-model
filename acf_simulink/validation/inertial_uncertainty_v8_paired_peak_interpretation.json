@@ -1,0 +1,15 @@
+{
+  "scope": "Read-only paired worst-case interpretation, same heavyseed1729/corner8. No simulation or controller truth injection.",
+  "originalDiagnosticSha256": "ae00267c7af37a39a13a468796fbdf389899a90943f59093f040b01f26cb97c2",
+  "calibratedDiagnosticSha256": "7c3ce572d4df4ce24029a951afc5c9bae86783bba02f57ff5b19c29905b445ef",
+  "originalQuietTrueErrorMean_N": 0.14881028371929148,
+  "calibratedQuietTrueErrorMean_N": 0.07425544592518049,
+  "quietOffsetReduction_N": 0.07455483779411098,
+  "peakReduction_N": 0.07508529813750897,
+  "originalPeakAboveQuietMean_N": 0.3415857628673902,
+  "calibratedPeakAboveQuietMean_N": 0.3410553025239922,
+  "transientExcessReduction_N": 0.0005304603433979871,
+  "fractionOfPeakImprovementExplainedByQuietOffset": 0.992935230244055,
+  "interpretation": "Static calibration accounts for almost all recovered margin through reduced steady force-reconstruction offset. Noise amplitudes/seeds and controller strategy/drive response were held unchanged; observed peak above quiet mean changes only0.531mN. Balance components cancel and are not independent unavoidable limits.",
+  "qualificationLimit": "Worst entry shifts10us across a10kHz current-command update; individual balance terms at the two peaks must not be compared as isolated bottlenecks. Quiet windows are explicitly defined in the source diagnostic."
+}

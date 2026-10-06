@@ -1,0 +1,3660 @@
+{
+  "createdUTC": "2026-10-05T14:11:51.892742+00:00",
+  "scope": "Read-only analysis of completed PPO training and reused selection data; no held-out records accessed.",
+  "comparison": "Each curve is normalized to its own warm start. Different seeds, initial checkpoints, GAE horizons and banks prevent a controlled causal comparison between lanes.",
+  "forcePenaltyCaveat": "The .30 N lane changes both the threshold for the additional peak penalty and force-error reward scaling; it also starts from another ES checkpoint and uses the sustained bank.",
+  "noUncertaintyClaim": "These are deterministic repeated evaluations of finite selection banks, not confidence intervals or hardware qualification.",
+  "lanes": [
+    {
+      "name": "ppo_band_8401",
+      "status": "training_complete",
+      "stopReason": "signal",
+      "updates": 132,
+      "decisions": 12957432,
+      "completedEpisodes": 417,
+      "completedEpisodePasses": 417,
+      "physicalFailures": 0,
+      "selectedUpdate": 0,
+      "trainingRolloutPeak_N": 0.4605133252972635,
+      "forcePenaltyThreshold_N": 0.45,
+      "rolloutsWithThresholdExcess": 1,
+      "recent40UpdateMedians": {
+        "approx_kl": 9.025827408215559e-05,
+        "grad_norm": 2.344368057946364,
+        "critic_grad_norm": 0.0019255954705386102,
+        "force_advantage_std": 0.0019102917867712677,
+        "advantage_std": 0.008692808914929628,
+        "current_policy_loss": -1.0074116289615631e-05,
+        "robot_policy_loss": 0.0022088601253926754,
+        "optimizationElapsed_s": 0.37782604098902084
+      },
+      "selection": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4408699281100894,
+          "meanRmsNormalForceError_N": 0.03731784406951166,
+          "jointScore": 0.9998899969190739,
+          "jointScoreTerms": {
+            "forcePeak": 0.9598335482063971,
+            "forceRms": 0.01216326598673452,
+            "runningBandExcess": 0.027893182725942257,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 0,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5883,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.004890210032463074,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.09140398439175712,
+              "rmsNormalForceError_N": 0.02990906694152791,
+              "finalAbsTravelError_m": 0.0009481009522404205,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.10427953616759567,
+              "rmsNormalForceError_N": 0.0252787683061095,
+              "finalAbsTravelError_m": 0.0009461201457905064,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.1418702069700899,
+              "rmsNormalForceError_N": 0.03788881727121156,
+              "finalAbsTravelError_m": 0.0008011176286944043,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.11329677788481973,
+              "rmsNormalForceError_N": 0.0279685865527279,
+              "finalAbsTravelError_m": 0.0008102998944492651,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.1449681923379913,
+              "rmsNormalForceError_N": 0.026988026609784718,
+              "finalAbsTravelError_m": 0.0009050173736946457,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2537649637299282,
+              "rmsNormalForceError_N": 0.041514120328975446,
+              "finalAbsTravelError_m": 0.0008698179311838767,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.23677879380027278,
+              "rmsNormalForceError_N": 0.03412874336730942,
+              "finalAbsTravelError_m": 0.0006054357286910603,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.11719819752640603,
+              "rmsNormalForceError_N": 0.02512422383887382,
+              "finalAbsTravelError_m": 0.000624198212249974,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.31376175200725953,
+              "rmsNormalForceError_N": 0.03825543187975825,
+              "finalAbsTravelError_m": 1.1117618800345758e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.12846556938934128,
+              "rmsNormalForceError_N": 0.025054653179452317,
+              "finalAbsTravelError_m": 9.34987883857187e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.1646891003810076,
+              "rmsNormalForceError_N": 0.03808313482747085,
+              "finalAbsTravelError_m": 0.0010289152383245823,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.17325103452129653,
+              "rmsNormalForceError_N": 0.03143589454981025,
+              "finalAbsTravelError_m": 0.001061005038650007,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.4006965482106821,
+              "rmsNormalForceError_N": 0.06120845697937629,
+              "finalAbsTravelError_m": 0.0028593508931442236,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4408699281100894,
+              "rmsNormalForceError_N": 0.059349735785740466,
+              "finalAbsTravelError_m": 0.00450070174118718,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.4101092546734719,
+              "rmsNormalForceError_N": 0.054369896701400126,
+              "finalAbsTravelError_m": 0.00275372408482448,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.34107242926394576,
+              "rmsNormalForceError_N": 0.06222720657727898,
+              "finalAbsTravelError_m": 0.004493127140204809,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.13571880417044913,
+              "rmsNormalForceError_N": 0.028995258982292757,
+              "finalAbsTravelError_m": 6.44477327923984e-05,
+              "integratedTravelBandPeakExcess_m2_s": 4.556000676134322e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33313641482009615,
+              "rmsNormalForceError_N": 0.038523018048118834,
+              "finalAbsTravelError_m": 0.00026763002881498993,
+              "integratedTravelBandPeakExcess_m2_s": 4.540317181442285e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.16285008018327574,
+              "rmsNormalForceError_N": 0.0370458726216672,
+              "finalAbsTravelError_m": 0.0008472384931805625,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.1159427634073964,
+              "rmsNormalForceError_N": 0.024348033957767502,
+              "finalAbsTravelError_m": 0.0006517674382006643,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.21496896822642153,
+              "rmsNormalForceError_N": 0.04330584797528009,
+              "finalAbsTravelError_m": 0.0005467691691966141,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18140942254146353,
+              "rmsNormalForceError_N": 0.032251827560176055,
+              "finalAbsTravelError_m": 0.0005519601767198477,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.13797501234862253,
+              "rmsNormalForceError_N": 0.03175960724291559,
+              "finalAbsTravelError_m": 0.0007962541853758203,
+              "integratedTravelBandPeakExcess_m2_s": 1.1535848264161183e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.22082206887630562,
+              "rmsNormalForceError_N": 0.0406140275832541,
+              "finalAbsTravelError_m": 0.00207082154547932,
+              "integratedTravelBandPeakExcess_m2_s": 1.1509238941931946e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000060",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44627934494786814,
+          "meanRmsNormalForceError_N": 0.03493374880385894,
+          "jointScore": 1.0227437904399037,
+          "jointScoreTerms": {
+            "forcePeak": 0.9835321171708556,
+            "forceRms": 0.011375097024558623,
+            "runningBandExcess": 0.027836576244489514,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 60,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5882,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.004940924048423767,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.08254098472272986,
+              "rmsNormalForceError_N": 0.023918264446086007,
+              "finalAbsTravelError_m": 0.0009463110047957541,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.09722192272886332,
+              "rmsNormalForceError_N": 0.022789288758372866,
+              "finalAbsTravelError_m": 0.0009479680655547756,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.13298130428555766,
+              "rmsNormalForceError_N": 0.03400091448804908,
+              "finalAbsTravelError_m": 0.000800730378522253,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.10555548927449365,
+              "rmsNormalForceError_N": 0.025257213917321986,
+              "finalAbsTravelError_m": 0.0008106620249183627,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.14388782154816937,
+              "rmsNormalForceError_N": 0.024637216315479885,
+              "finalAbsTravelError_m": 0.0009052792879193985,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.26306273914125633,
+              "rmsNormalForceError_N": 0.036955366593593476,
+              "finalAbsTravelError_m": 0.0008692835530408581,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.24521911469962632,
+              "rmsNormalForceError_N": 0.02987107162353428,
+              "finalAbsTravelError_m": 0.0006050336521428185,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.11933391787329839,
+              "rmsNormalForceError_N": 0.021516163405610755,
+              "finalAbsTravelError_m": 0.0006245418053935359,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.3215456062784767,
+              "rmsNormalForceError_N": 0.03508262636383055,
+              "finalAbsTravelError_m": 7.994250449117057e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.11814214108412546,
+              "rmsNormalForceError_N": 0.02032153089649366,
+              "finalAbsTravelError_m": 9.812092322309188e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.15029670463420075,
+              "rmsNormalForceError_N": 0.03324352119823465,
+              "finalAbsTravelError_m": 0.0010226018669962835,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.15974089614077513,
+              "rmsNormalForceError_N": 0.02894392319898547,
+              "finalAbsTravelError_m": 0.0010641779425029831,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.4079179638618129,
+              "rmsNormalForceError_N": 0.06637314812716076,
+              "finalAbsTravelError_m": 0.002859753151664181,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.44627934494786814,
+              "rmsNormalForceError_N": 0.0635942441991982,
+              "finalAbsTravelError_m": 0.004503073146526742,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.41751918037984126,
+              "rmsNormalForceError_N": 0.05974273823246249,
+              "finalAbsTravelError_m": 0.00275421074487342,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.34724810381199234,
+              "rmsNormalForceError_N": 0.06666746820296068,
+              "finalAbsTravelError_m": 0.004498342048061408,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.1392437811884637,
+              "rmsNormalForceError_N": 0.02264826900288704,
+              "finalAbsTravelError_m": 7.651796485088833e-06,
+              "integratedTravelBandPeakExcess_m2_s": 4.5357774345893927e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33692668699477224,
+              "rmsNormalForceError_N": 0.03680753779010651,
+              "finalAbsTravelError_m": 0.00026255909727582356,
+              "integratedTravelBandPeakExcess_m2_s": 4.538119248050763e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.1724670642334054,
+              "rmsNormalForceError_N": 0.03194931422164945,
+              "finalAbsTravelError_m": 0.0008433642459997701,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.11587843774650963,
+              "rmsNormalForceError_N": 0.02167568892138653,
+              "finalAbsTravelError_m": 0.0006519678731762152,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2279849696567755,
+              "rmsNormalForceError_N": 0.03869207490436423,
+              "finalAbsTravelError_m": 0.0005778819964881061,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18843865042874341,
+              "rmsNormalForceError_N": 0.029539240060299593,
+              "finalAbsTravelError_m": 0.0005522845982570065,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.12562637005317256,
+              "rmsNormalForceError_N": 0.02599944056583941,
+              "finalAbsTravelError_m": 0.0007875944806407693,
+              "integratedTravelBandPeakExcess_m2_s": 1.1483182179062405e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.23207244670707539,
+              "rmsNormalForceError_N": 0.03818370585870695,
+              "finalAbsTravelError_m": 0.002081181143273483,
+              "integratedTravelBandPeakExcess_m2_s": 1.1505687537557968e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4520632628361483,
+          "meanRmsNormalForceError_N": 0.0343962104692402,
+          "jointScore": 1.048568761866313,
+          "jointScoreTerms": {
+            "forcePeak": 1.009191079536121,
+            "forceRms": 0.011569465934132295,
+            "runningBandExcess": 0.027808216396059866,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 120,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5880,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.004961656332015991,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.0777654914735244,
+              "rmsNormalForceError_N": 0.02167183140389916,
+              "finalAbsTravelError_m": 0.0009512358551937213,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.09161366094053136,
+              "rmsNormalForceError_N": 0.021771639756148983,
+              "finalAbsTravelError_m": 0.0009453086749967414,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.12649016113327605,
+              "rmsNormalForceError_N": 0.032066224455262846,
+              "finalAbsTravelError_m": 0.0008004643232805767,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.09913332617956172,
+              "rmsNormalForceError_N": 0.024199336004981083,
+              "finalAbsTravelError_m": 0.0008109148751073367,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.14937189601381817,
+              "rmsNormalForceError_N": 0.023702707013866283,
+              "finalAbsTravelError_m": 0.0009054877260588744,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2674050345020458,
+              "rmsNormalForceError_N": 0.03531860582712229,
+              "finalAbsTravelError_m": 0.0008696295687047086,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.25042732048840577,
+              "rmsNormalForceError_N": 0.028214161595213828,
+              "finalAbsTravelError_m": 0.0006047941543612222,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.12413296259074968,
+              "rmsNormalForceError_N": 0.020198854562291844,
+              "finalAbsTravelError_m": 0.0006247662978576506,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.32773496330000285,
+              "rmsNormalForceError_N": 0.03372692852540687,
+              "finalAbsTravelError_m": 5.645373015207567e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.11478490040352352,
+              "rmsNormalForceError_N": 0.018738764641314683,
+              "finalAbsTravelError_m": 1.0049061410463342e-05,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.1507540724851637,
+              "rmsNormalForceError_N": 0.031246673406607223,
+              "finalAbsTravelError_m": 0.0010387281103481864,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.15395732153479003,
+              "rmsNormalForceError_N": 0.028125201572400588,
+              "finalAbsTravelError_m": 0.0010542366743829731,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.41284309025122923,
+              "rmsNormalForceError_N": 0.07057359133289332,
+              "finalAbsTravelError_m": 0.002854187822461097,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4520632628361483,
+              "rmsNormalForceError_N": 0.06806845498008496,
+              "finalAbsTravelError_m": 0.004463437066249135,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.4234463738226282,
+              "rmsNormalForceError_N": 0.06408495905979233,
+              "finalAbsTravelError_m": 0.002747489687951639,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.3532441665976549,
+              "rmsNormalForceError_N": 0.07098214725232378,
+              "finalAbsTravelError_m": 0.004459390289725477,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.142204665230536,
+              "rmsNormalForceError_N": 0.02070817647477632,
+              "finalAbsTravelError_m": 7.925290472975133e-05,
+              "integratedTravelBandPeakExcess_m2_s": 4.5508361140577134e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3408984916713962,
+              "rmsNormalForceError_N": 0.03552956736873307,
+              "finalAbsTravelError_m": 0.00017289110611774273,
+              "integratedTravelBandPeakExcess_m2_s": 4.518443941105762e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.1773500418720424,
+              "rmsNormalForceError_N": 0.030022824947817373,
+              "finalAbsTravelError_m": 0.0008487482244678886,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.12036429929838022,
+              "rmsNormalForceError_N": 0.0202788515085301,
+              "finalAbsTravelError_m": 0.000649658631657531,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.23539998891627878,
+              "rmsNormalForceError_N": 0.03694192344956855,
+              "finalAbsTravelError_m": 0.0005308854694504195,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.1938887974826713,
+              "rmsNormalForceError_N": 0.028234374678105363,
+              "finalAbsTravelError_m": 0.0005723914923470869,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.12499160805989717,
+              "rmsNormalForceError_N": 0.023849844379675578,
+              "finalAbsTravelError_m": 0.0008046643342614502,
+              "integratedTravelBandPeakExcess_m2_s": 1.1534657706314207e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.23865272504132662,
+              "rmsNormalForceError_N": 0.03725340706494834,
+              "finalAbsTravelError_m": 0.0020076737613332687,
+              "integratedTravelBandPeakExcess_m2_s": 1.1453781252197094e-06
+            }
+          ]
+        }
+      ],
+      "pairedLastMinusInitial": [
+        {
+          "identity": "selection_nominal_01",
+          "peakChange_N": -0.013638492918232714,
+          "rmsChange_N": -0.00823723553762875,
+          "finalAbsTravelChange_m": 3.1349029533007944e-06
+        },
+        {
+          "identity": "selection_nominal_02",
+          "peakChange_N": -0.012665875227064305,
+          "rmsChange_N": -0.0035071285499605163,
+          "finalAbsTravelChange_m": -8.114707937649512e-07
+        },
+        {
+          "identity": "selection_nominal_03",
+          "peakChange_N": -0.01538004583681385,
+          "rmsChange_N": -0.005822592815948713,
+          "finalAbsTravelChange_m": -6.533054138276734e-07
+        },
+        {
+          "identity": "selection_nominal_04",
+          "peakChange_N": -0.014163451705258012,
+          "rmsChange_N": -0.003769250547746815,
+          "finalAbsTravelChange_m": 6.149806580715844e-07
+        },
+        {
+          "identity": "selection_nominal_05",
+          "peakChange_N": 0.0044037036758268755,
+          "rmsChange_N": -0.0032853195959184345,
+          "finalAbsTravelChange_m": 4.703523642287516e-07
+        },
+        {
+          "identity": "selection_nominal_06",
+          "peakChange_N": 0.013640070772117596,
+          "rmsChange_N": -0.0061955145018531554,
+          "finalAbsTravelChange_m": -1.883624791681332e-07
+        },
+        {
+          "identity": "selection_nominal_07",
+          "peakChange_N": 0.01364852668813299,
+          "rmsChange_N": -0.005914581772095594,
+          "finalAbsTravelChange_m": -6.415743298380377e-07
+        },
+        {
+          "identity": "selection_nominal_08",
+          "peakChange_N": 0.006934765064343651,
+          "rmsChange_N": -0.004925369276581975,
+          "finalAbsTravelChange_m": 5.680856076765994e-07
+        },
+        {
+          "identity": "selection_nominal_09",
+          "peakChange_N": 0.013973211292743315,
+          "rmsChange_N": -0.004528503354351385,
+          "finalAbsTravelChange_m": -5.472245785138191e-07
+        },
+        {
+          "identity": "selection_nominal_10",
+          "peakChange_N": -0.013680668985817768,
+          "rmsChange_N": -0.006315888538137634,
+          "finalAbsTravelChange_m": 6.991825718914713e-07
+        },
+        {
+          "identity": "selection_nominal_11",
+          "peakChange_N": -0.013935027895843888,
+          "rmsChange_N": -0.006836461420863631,
+          "finalAbsTravelChange_m": 9.812872023604036e-06
+        },
+        {
+          "identity": "selection_nominal_12",
+          "peakChange_N": -0.019293712986506506,
+          "rmsChange_N": -0.003310692977409664,
+          "finalAbsTravelChange_m": -6.7683642670339494e-06
+        },
+        {
+          "identity": "selection_stress_01",
+          "peakChange_N": 0.012146542040547104,
+          "rmsChange_N": 0.009365134353517025,
+          "finalAbsTravelChange_m": -5.163070683126755e-06
+        },
+        {
+          "identity": "selection_stress_02",
+          "peakChange_N": 0.011193334726058879,
+          "rmsChange_N": 0.008718719194344492,
+          "finalAbsTravelChange_m": -3.7264674938045084e-05
+        },
+        {
+          "identity": "selection_stress_03",
+          "peakChange_N": 0.013337119149156251,
+          "rmsChange_N": 0.009715062358392208,
+          "finalAbsTravelChange_m": -6.2343968728409416e-06
+        },
+        {
+          "identity": "selection_stress_04",
+          "peakChange_N": 0.012171737333709132,
+          "rmsChange_N": 0.0087549406750448,
+          "finalAbsTravelChange_m": -3.373685047933228e-05
+        },
+        {
+          "identity": "selection_band_01",
+          "peakChange_N": 0.006485861060086862,
+          "rmsChange_N": -0.008287082507516436,
+          "finalAbsTravelChange_m": 1.4805171937352923e-05
+        },
+        {
+          "identity": "selection_band_02",
+          "peakChange_N": 0.007762076851300037,
+          "rmsChange_N": -0.0029934506793857646,
+          "finalAbsTravelChange_m": -9.47389226972472e-05
+        },
+        {
+          "identity": "selection_band_03",
+          "peakChange_N": 0.01449996168876666,
+          "rmsChange_N": -0.007023047673849824,
+          "finalAbsTravelChange_m": 1.509731287326066e-06
+        },
+        {
+          "identity": "selection_band_04",
+          "peakChange_N": 0.004421535890983819,
+          "rmsChange_N": -0.004069182449237402,
+          "finalAbsTravelChange_m": -2.108806543133293e-06
+        },
+        {
+          "identity": "selection_band_05",
+          "peakChange_N": 0.02043102068985725,
+          "rmsChange_N": -0.006363924525711537,
+          "finalAbsTravelChange_m": -1.5883699746194538e-05
+        },
+        {
+          "identity": "selection_band_06",
+          "peakChange_N": 0.012479374941207766,
+          "rmsChange_N": -0.004017452882070692,
+          "finalAbsTravelChange_m": 2.0431315627239197e-05
+        },
+        {
+          "identity": "selection_band_07",
+          "peakChange_N": -0.012983404288725353,
+          "rmsChange_N": -0.007909762863240015,
+          "finalAbsTravelChange_m": 8.410148885629881e-06
+        },
+        {
+          "identity": "selection_band_08",
+          "peakChange_N": 0.017830656165020997,
+          "rmsChange_N": -0.003360620518305761,
+          "finalAbsTravelChange_m": -6.314778414605142e-05
+        }
+      ],
+      "sources": [
+        {
+          "path": "ppo_band_8401/results.json",
+          "sha256": "956aeca239ce7a04a2111b5558957a796c9163e3a8d06fdb1f7c4cf3ca1e3609"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000000.json",
+          "sha256": "485a30c2a1e85c78d736f29417c0bd4d38c6bf9bcea0238da0895b0cd9e7f393"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000060.json",
+          "sha256": "10b269f4ad9cbe9ce7ffa8191ac062bfbb766843f1c499629c50d799d646a249"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000120.json",
+          "sha256": "ca8fc5c98ccb8425a92a0df152bc26b8c1fb474adc8338bc5295f57ad280ccf8"
+        }
+      ]
+    },
+    {
+      "name": "ppo_band_8402",
+      "status": "training_complete",
+      "stopReason": "signal",
+      "updates": 330,
+      "decisions": 32440320,
+      "completedEpisodes": 1102,
+      "completedEpisodePasses": 1102,
+      "physicalFailures": 0,
+      "selectedUpdate": 0,
+      "trainingRolloutPeak_N": 0.4497818906728739,
+      "forcePenaltyThreshold_N": 0.45,
+      "rolloutsWithThresholdExcess": 0,
+      "recent40UpdateMedians": {
+        "approx_kl": 0.000506592233191346,
+        "grad_norm": 5.01554836332798,
+        "critic_grad_norm": 0.0016819736031266075,
+        "force_advantage_std": 0.0013100687647238374,
+        "advantage_std": 0.007713074330240488,
+        "current_policy_loss": 0.00010240326325098673,
+        "robot_policy_loss": 0.00226688957203199,
+        "optimizationElapsed_s": 0.34873170699574985
+      },
+      "selection": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4401471305409288,
+          "meanRmsNormalForceError_N": 0.0400056681547156,
+          "jointScore": 0.9969062081089733,
+          "jointScoreTerms": {
+            "forcePeak": 0.9566888717205599,
+            "forceRms": 0.013998800726791502,
+            "runningBandExcess": 0.026218535661621883,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 0,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5698,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.005871840715408325,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.09500622156250671,
+              "rmsNormalForceError_N": 0.029626259867390235,
+              "finalAbsTravelError_m": 0.000946606725860737,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.11343200817241339,
+              "rmsNormalForceError_N": 0.026382938104614177,
+              "finalAbsTravelError_m": 0.0009448584673407943,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.15100124203014786,
+              "rmsNormalForceError_N": 0.0396744162371684,
+              "finalAbsTravelError_m": 0.0008009829097177616,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.12374122317014269,
+              "rmsNormalForceError_N": 0.02948472388675343,
+              "finalAbsTravelError_m": 0.0008104179535508432,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.173848692082899,
+              "rmsNormalForceError_N": 0.029100817544908644,
+              "finalAbsTravelError_m": 0.0009085685254269071,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2670833158728545,
+              "rmsNormalForceError_N": 0.04475317283026814,
+              "finalAbsTravelError_m": 0.000917714321448642,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.23481577920391317,
+              "rmsNormalForceError_N": 0.0365924071330488,
+              "finalAbsTravelError_m": 0.0006346125944337189,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.15016072620719711,
+              "rmsNormalForceError_N": 0.027416480221851603,
+              "finalAbsTravelError_m": 0.0006360025651036272,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.3119053939443859,
+              "rmsNormalForceError_N": 0.04139412395221277,
+              "finalAbsTravelError_m": 1.0351551579679957e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.16349355620497352,
+              "rmsNormalForceError_N": 0.02687298701044977,
+              "finalAbsTravelError_m": 9.499102714227367e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.20886099234821742,
+              "rmsNormalForceError_N": 0.04046875152010797,
+              "finalAbsTravelError_m": 0.0011309425625913375,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.2213986617743373,
+              "rmsNormalForceError_N": 0.035981444619578945,
+              "finalAbsTravelError_m": 0.001111493363388099,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.40150856996525874,
+              "rmsNormalForceError_N": 0.06603149649270743,
+              "finalAbsTravelError_m": 0.002865140539857435,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4401471305409288,
+              "rmsNormalForceError_N": 0.06285289889779594,
+              "finalAbsTravelError_m": 0.00441797163742676,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.40834270016436847,
+              "rmsNormalForceError_N": 0.057565511238777595,
+              "finalAbsTravelError_m": 0.002753556763588112,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.33593292196839286,
+              "rmsNormalForceError_N": 0.06698662950925469,
+              "finalAbsTravelError_m": 0.0044112248067521495,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.17633341126166258,
+              "rmsNormalForceError_N": 0.03070647568870321,
+              "finalAbsTravelError_m": 0.0003090338580285495,
+              "integratedTravelBandPeakExcess_m2_s": 4.314308132269106e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.34544826689462127,
+              "rmsNormalForceError_N": 0.04199340335172649,
+              "finalAbsTravelError_m": 0.00010004687074490794,
+              "integratedTravelBandPeakExcess_m2_s": 4.301507257283573e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.20344184761852802,
+              "rmsNormalForceError_N": 0.039350794646499675,
+              "finalAbsTravelError_m": 0.0008428921406555111,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.15046354653033234,
+              "rmsNormalForceError_N": 0.025664671748002958,
+              "finalAbsTravelError_m": 0.0006421767386618898,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.20950676885763286,
+              "rmsNormalForceError_N": 0.04742247286762404,
+              "finalAbsTravelError_m": 0.0007076723558717118,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.1782669526519669,
+              "rmsNormalForceError_N": 0.03524826966894054,
+              "finalAbsTravelError_m": 0.0006293369924571073,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.1641031454139359,
+              "rmsNormalForceError_N": 0.03344531983507856,
+              "finalAbsTravelError_m": 0.0007577258377880237,
+              "integratedTravelBandPeakExcess_m2_s": 1.0807981264580806e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.23581233350169128,
+              "rmsNormalForceError_N": 0.04511956883971045,
+              "finalAbsTravelError_m": 0.0018907736014191177,
+              "integratedTravelBandPeakExcess_m2_s": 1.0786760713306828e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000060",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44444856950585887,
+          "meanRmsNormalForceError_N": 0.036842611513905894,
+          "jointScore": 1.0139373409211576,
+          "jointScoreTerms": {
+            "forcePeak": 0.9754791651150828,
+            "forceRms": 0.01220568362158257,
+            "runningBandExcess": 0.026252492184492143,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 60,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5682,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.006062724590301514,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.0843103295581571,
+              "rmsNormalForceError_N": 0.02515925530311852,
+              "finalAbsTravelError_m": 0.0009710886926730059,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.09691499646481105,
+              "rmsNormalForceError_N": 0.02267601188586162,
+              "finalAbsTravelError_m": 0.0009450333785747111,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.1361119592733928,
+              "rmsNormalForceError_N": 0.03570137645415513,
+              "finalAbsTravelError_m": 0.0008295287864708619,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.11373885804175643,
+              "rmsNormalForceError_N": 0.026031385970404195,
+              "finalAbsTravelError_m": 0.0008105243781214473,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.1755491652273804,
+              "rmsNormalForceError_N": 0.02811233581663035,
+              "finalAbsTravelError_m": 0.0009120628183354029,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.26691652174479685,
+              "rmsNormalForceError_N": 0.039398263564608176,
+              "finalAbsTravelError_m": 0.0009417542651640291,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.2426109382126782,
+              "rmsNormalForceError_N": 0.03269790597248546,
+              "finalAbsTravelError_m": 0.0006356190054100166,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.15050020599484526,
+              "rmsNormalForceError_N": 0.02516917417302899,
+              "finalAbsTravelError_m": 0.00063612777070861,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.31620495637255175,
+              "rmsNormalForceError_N": 0.038395619334646316,
+              "finalAbsTravelError_m": 9.31242857455522e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.1615567011311807,
+              "rmsNormalForceError_N": 0.024234408906033986,
+              "finalAbsTravelError_m": 7.6272023555885166e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.2008641219078129,
+              "rmsNormalForceError_N": 0.036751804449498625,
+              "finalAbsTravelError_m": 0.0011653031183907151,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.2094757182470417,
+              "rmsNormalForceError_N": 0.031441877277411774,
+              "finalAbsTravelError_m": 0.001111689699978928,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.39914076450386915,
+              "rmsNormalForceError_N": 0.06444862628912139,
+              "finalAbsTravelError_m": 0.002827349380581599,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.44444856950585887,
+              "rmsNormalForceError_N": 0.06388776340713682,
+              "finalAbsTravelError_m": 0.0044180803396511245,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.4100630112669563,
+              "rmsNormalForceError_N": 0.0572102125092136,
+              "finalAbsTravelError_m": 0.002715438347937516,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.34366088462359556,
+              "rmsNormalForceError_N": 0.06609388826809175,
+              "finalAbsTravelError_m": 0.004411380824597647,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.17401990858834715,
+              "rmsNormalForceError_N": 0.02656619215515671,
+              "finalAbsTravelError_m": 2.3701960738838415e-05,
+              "integratedTravelBandPeakExcess_m2_s": 4.381029586132436e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3373199288305173,
+              "rmsNormalForceError_N": 0.03796535496850907,
+              "finalAbsTravelError_m": 0.00011134390165118066,
+              "integratedTravelBandPeakExcess_m2_s": 4.2659637760568055e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.19082663673704658,
+              "rmsNormalForceError_N": 0.03472095568086786,
+              "finalAbsTravelError_m": 0.0008846331360291594,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.15180636705188988,
+              "rmsNormalForceError_N": 0.02372215858465597,
+              "finalAbsTravelError_m": 0.0006421195782672605,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2197386240818675,
+              "rmsNormalForceError_N": 0.04177128379345702,
+              "finalAbsTravelError_m": 0.0006075173272658049,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18679401737572476,
+              "rmsNormalForceError_N": 0.03191577770973256,
+              "finalAbsTravelError_m": 0.0006476327379139699,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.16513594998780334,
+              "rmsNormalForceError_N": 0.029806938856206402,
+              "finalAbsTravelError_m": 0.0007822156281279274,
+              "integratedTravelBandPeakExcess_m2_s": 1.0995191305943933e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.22166828566693297,
+              "rmsNormalForceError_N": 0.04034410500370923,
+              "finalAbsTravelError_m": 0.001871814041785904,
+              "integratedTravelBandPeakExcess_m2_s": 1.0685614793004739e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4477936906742812,
+          "meanRmsNormalForceError_N": 0.035207320308945,
+          "jointScore": 1.0276368703717982,
+          "jointScoreTerms": {
+            "forcePeak": 0.9902182192972535,
+            "forceRms": 0.011227533624341798,
+            "runningBandExcess": 0.026191117450203045,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 120,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5683,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.006155955791473389,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.08377641098406485,
+              "rmsNormalForceError_N": 0.02609121639914243,
+              "finalAbsTravelError_m": 0.0010447185871932819,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.09143121780770613,
+              "rmsNormalForceError_N": 0.021301151295384825,
+              "finalAbsTravelError_m": 0.0009450621637759719,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.12453125619212813,
+              "rmsNormalForceError_N": 0.032751075858391064,
+              "finalAbsTravelError_m": 0.0008911416235347445,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.10145557348189982,
+              "rmsNormalForceError_N": 0.02363394390104547,
+              "finalAbsTravelError_m": 0.0008107201854965947,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.17080507610780415,
+              "rmsNormalForceError_N": 0.026661826198453278,
+              "finalAbsTravelError_m": 0.0009122071955868817,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.26003085622986966,
+              "rmsNormalForceError_N": 0.03832313903733178,
+              "finalAbsTravelError_m": 0.0010289483615903827,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.24331258552869528,
+              "rmsNormalForceError_N": 0.03143521370883808,
+              "finalAbsTravelError_m": 0.0006981698029911061,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.1429413024837558,
+              "rmsNormalForceError_N": 0.023103854782604964,
+              "finalAbsTravelError_m": 0.0006362790296977564,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.3248498760815366,
+              "rmsNormalForceError_N": 0.035546950686122396,
+              "finalAbsTravelError_m": 6.9306899658228e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.15977542525641564,
+              "rmsNormalForceError_N": 0.025790996202039174,
+              "finalAbsTravelError_m": 6.6785165201317664e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.1926273173842894,
+              "rmsNormalForceError_N": 0.0345281892134311,
+              "finalAbsTravelError_m": 0.0012193950068908228,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.1944732900261883,
+              "rmsNormalForceError_N": 0.029032938201523653,
+              "finalAbsTravelError_m": 0.0011117090567952029,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.39532748658022143,
+              "rmsNormalForceError_N": 0.06259468979620082,
+              "finalAbsTravelError_m": 0.0027993277198760103,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4477936906742812,
+              "rmsNormalForceError_N": 0.06219122121943379,
+              "finalAbsTravelError_m": 0.004418065571427678,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.41582353587033793,
+              "rmsNormalForceError_N": 0.05640102971300866,
+              "finalAbsTravelError_m": 0.0026884430754217647,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.34493420091777693,
+              "rmsNormalForceError_N": 0.06376395018433677,
+              "finalAbsTravelError_m": 0.0044113774494636965,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.16206726305605024,
+              "rmsNormalForceError_N": 0.025948102007627413,
+              "finalAbsTravelError_m": 2.4428623196636606e-05,
+              "integratedTravelBandPeakExcess_m2_s": 4.3876186777465593e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3404672084085547,
+              "rmsNormalForceError_N": 0.03600749349713223,
+              "finalAbsTravelError_m": 0.00011524050441226279,
+              "integratedTravelBandPeakExcess_m2_s": 4.252353958256833e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.1733068714675845,
+              "rmsNormalForceError_N": 0.032640428955254555,
+              "finalAbsTravelError_m": 0.0009695794873214383,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.14742518691620887,
+              "rmsNormalForceError_N": 0.02117008392924467,
+              "finalAbsTravelError_m": 0.0006421331067232982,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.22234911281587877,
+              "rmsNormalForceError_N": 0.040671240416805636,
+              "finalAbsTravelError_m": 0.0006204269756672452,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.19000446795600823,
+              "rmsNormalForceError_N": 0.028792668395300838,
+              "finalAbsTravelError_m": 0.0007154206489050231,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.15977567104990342,
+              "rmsNormalForceError_N": 0.02912416230446251,
+              "finalAbsTravelError_m": 0.0008445599116634218,
+              "integratedTravelBandPeakExcess_m2_s": 1.0999433103133993e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.2266387676170467,
+              "rmsNormalForceError_N": 0.03747012151156407,
+              "finalAbsTravelError_m": 0.0018583515799471886,
+              "integratedTravelBandPeakExcess_m2_s": 1.0633084273351053e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000180",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44544083411503266,
+          "meanRmsNormalForceError_N": 0.03207076813163759,
+          "jointScore": 1.0154163113098584,
+          "jointScoreTerms": {
+            "forcePeak": 0.9798396873930668,
+            "forceRms": 0.009397051525549772,
+            "runningBandExcess": 0.026179572391241874,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 180,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5696,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.006193482279777527,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.0734370922287404,
+              "rmsNormalForceError_N": 0.021603192050924414,
+              "finalAbsTravelError_m": 0.0010948364073535381,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.08298350749977601,
+              "rmsNormalForceError_N": 0.019723780461316055,
+              "finalAbsTravelError_m": 0.0009450804576801551,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.11764775306572517,
+              "rmsNormalForceError_N": 0.03140761585915956,
+              "finalAbsTravelError_m": 0.0010038474862899636,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.09303594716846675,
+              "rmsNormalForceError_N": 0.021736689614027655,
+              "finalAbsTravelError_m": 0.0008107757700343519,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.16078620582320013,
+              "rmsNormalForceError_N": 0.02682467728358978,
+              "finalAbsTravelError_m": 0.0009085853298609458,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2718252950366917,
+              "rmsNormalForceError_N": 0.0338354645060883,
+              "finalAbsTravelError_m": 0.0010321494031146055,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.25119270960673035,
+              "rmsNormalForceError_N": 0.028576764399969142,
+              "finalAbsTravelError_m": 0.0007696935070622812,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.13233343478258064,
+              "rmsNormalForceError_N": 0.021072125997010277,
+              "finalAbsTravelError_m": 0.0006246340370875767,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.3254467697867156,
+              "rmsNormalForceError_N": 0.03416593751354094,
+              "finalAbsTravelError_m": 7.802483146142347e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.14893804372042307,
+              "rmsNormalForceError_N": 0.0236972745894368,
+              "finalAbsTravelError_m": 5.3194849500386165e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.17876773316982764,
+              "rmsNormalForceError_N": 0.031789053910860024,
+              "finalAbsTravelError_m": 0.0013096187747181041,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.1758567593659457,
+              "rmsNormalForceError_N": 0.025836368366265117,
+              "finalAbsTravelError_m": 0.0011119303931097588,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.39003728722797604,
+              "rmsNormalForceError_N": 0.058903028937500414,
+              "finalAbsTravelError_m": 0.002691993952888827,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.44544083411503266,
+              "rmsNormalForceError_N": 0.05661944672377289,
+              "finalAbsTravelError_m": 0.00441786998303139,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.4145252321233315,
+              "rmsNormalForceError_N": 0.053076082539684453,
+              "finalAbsTravelError_m": 0.0025992240578048015,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.3441374593924422,
+              "rmsNormalForceError_N": 0.057928120523028884,
+              "finalAbsTravelError_m": 0.004411220091903242,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.14757056549473013,
+              "rmsNormalForceError_N": 0.019775101226281514,
+              "finalAbsTravelError_m": 0.00010185819924050932,
+              "integratedTravelBandPeakExcess_m2_s": 4.3877227981787893e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33966356012405186,
+              "rmsNormalForceError_N": 0.034518038884837766,
+              "finalAbsTravelError_m": 0.00011861031290624248,
+              "integratedTravelBandPeakExcess_m2_s": 4.232187490352e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.18234304271103596,
+              "rmsNormalForceError_N": 0.028581450240017108,
+              "finalAbsTravelError_m": 0.0010694324002579123,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.1347756761882195,
+              "rmsNormalForceError_N": 0.020000862289935997,
+              "finalAbsTravelError_m": 0.0006417742019819931,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.24431692175794417,
+              "rmsNormalForceError_N": 0.03565485384331782,
+              "finalAbsTravelError_m": 0.0005507865968565704,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.1960292646749977,
+              "rmsNormalForceError_N": 0.026295239695761852,
+              "finalAbsTravelError_m": 0.0008189056224529815,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.14766472947223974,
+              "rmsNormalForceError_N": 0.024151766630511013,
+              "finalAbsTravelError_m": 0.000980029631010522,
+              "integratedTravelBandPeakExcess_m2_s": 1.1040829181258685e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.2411409521933372,
+              "rmsNormalForceError_N": 0.03392549907246447,
+              "finalAbsTravelError_m": 0.0018507355621124148,
+              "integratedTravelBandPeakExcess_m2_s": 1.0614500685615215e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000240",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44165403792073477,
+          "meanRmsNormalForceError_N": 0.02970634743970535,
+          "jointScore": 0.9974217983842355,
+          "jointScoreTerms": {
+            "forcePeak": 0.9632508109219249,
+            "forceRms": 0.007992516640262003,
+            "runningBandExcess": 0.026178470822048633,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 240,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5702,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.00617665708065033,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.06401593290047813,
+              "rmsNormalForceError_N": 0.017879943730456507,
+              "finalAbsTravelError_m": 0.0010805287379546703,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.0768877652316391,
+              "rmsNormalForceError_N": 0.018539497129025872,
+              "finalAbsTravelError_m": 0.0009451255784167483,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.11469352461418936,
+              "rmsNormalForceError_N": 0.029760646586346775,
+              "finalAbsTravelError_m": 0.0009797839062422788,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.08744503909871781,
+              "rmsNormalForceError_N": 0.02033217304479302,
+              "finalAbsTravelError_m": 0.0008108393327944923,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.17150679734049845,
+              "rmsNormalForceError_N": 0.02909089022950149,
+              "finalAbsTravelError_m": 0.0009147878042707978,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.28813358958703006,
+              "rmsNormalForceError_N": 0.030669656466584167,
+              "finalAbsTravelError_m": 0.0010394794478703305,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.2597864754617909,
+              "rmsNormalForceError_N": 0.026546341169793257,
+              "finalAbsTravelError_m": 0.000747714760932194,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.13506890319846576,
+              "rmsNormalForceError_N": 0.02016619630948201,
+              "finalAbsTravelError_m": 0.0006246786968314745,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.32672132270680976,
+              "rmsNormalForceError_N": 0.034271812518786846,
+              "finalAbsTravelError_m": 8.862025696731307e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.14641364718143368,
+              "rmsNormalForceError_N": 0.0211004874232596,
+              "finalAbsTravelError_m": 6.917761565028435e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.17680779755803755,
+              "rmsNormalForceError_N": 0.028884502068218538,
+              "finalAbsTravelError_m": 0.0012506453052827451,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.1679913789979004,
+              "rmsNormalForceError_N": 0.024166378552812173,
+              "finalAbsTravelError_m": 0.0011120937489275742,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.3856228423486172,
+              "rmsNormalForceError_N": 0.055514795607891194,
+              "finalAbsTravelError_m": 0.0027120667240991044,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.44165403792073477,
+              "rmsNormalForceError_N": 0.04818487285178761,
+              "finalAbsTravelError_m": 0.004417390632209556,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.41308125241440763,
+              "rmsNormalForceError_N": 0.047188692335463404,
+              "finalAbsTravelError_m": 0.0026159574287484676,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.34338748757770077,
+              "rmsNormalForceError_N": 0.05199229903879934,
+              "finalAbsTravelError_m": 0.004410879120051902,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.14595534071349991,
+              "rmsNormalForceError_N": 0.016621720917341105,
+              "finalAbsTravelError_m": 0.00011078264793823282,
+              "integratedTravelBandPeakExcess_m2_s": 4.3844671306622977e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3311842195571515,
+              "rmsNormalForceError_N": 0.03638530665335852,
+              "finalAbsTravelError_m": 0.00013272004001026183,
+              "integratedTravelBandPeakExcess_m2_s": 4.235097007105646e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.19545435219527363,
+              "rmsNormalForceError_N": 0.02513615278834172,
+              "finalAbsTravelError_m": 0.0010527200333528153,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.12890093150315352,
+              "rmsNormalForceError_N": 0.02080635634285996,
+              "finalAbsTravelError_m": 0.000641711242048237,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2651666170230387,
+              "rmsNormalForceError_N": 0.03140517563619132,
+              "finalAbsTravelError_m": 0.0005527346800682214,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.1996727037438788,
+              "rmsNormalForceError_N": 0.025419577925083908,
+              "finalAbsTravelError_m": 0.0007930247760208342,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.14948107066684457,
+              "rmsNormalForceError_N": 0.021492728210499152,
+              "finalAbsTravelError_m": 0.0009347549085867816,
+              "integratedTravelBandPeakExcess_m2_s": 1.1027612085400273e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.2555304259350102,
+              "rmsNormalForceError_N": 0.031396135016250874,
+              "finalAbsTravelError_m": 0.0018526207721129805,
+              "integratedTravelBandPeakExcess_m2_s": 1.0621515504685994e-06
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000300",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.453225091500812,
+          "meanRmsNormalForceError_N": 0.028236519845553504,
+          "jointScore": 1.047966654275463,
+          "jointScoreTerms": {
+            "forcePeak": 1.0143851040292315,
+            "forceRms": 0.007445993418929661,
+            "runningBandExcess": 0.026135556827301804,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 300,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5720,
+          "robot100HzFrames": 7200,
+          "peakIssuedRobotCorrection_m_s": 0.006192658543586731,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.05792798599263094,
+              "rmsNormalForceError_N": 0.016456068345618337,
+              "finalAbsTravelError_m": 0.0010806628811410052,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.06819581188327462,
+              "rmsNormalForceError_N": 0.016305958142850036,
+              "finalAbsTravelError_m": 0.000945330162715698,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.1107472835804657,
+              "rmsNormalForceError_N": 0.028055534401409312,
+              "finalAbsTravelError_m": 0.0009282115775723424,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.08182830502611438,
+              "rmsNormalForceError_N": 0.018783841984884784,
+              "finalAbsTravelError_m": 0.000810911868263535,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.16656634446081142,
+              "rmsNormalForceError_N": 0.025438955508136445,
+              "finalAbsTravelError_m": 0.0009121898578477797,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.29294522272525825,
+              "rmsNormalForceError_N": 0.029905170938876513,
+              "finalAbsTravelError_m": 0.0010243851727841334,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.2678265770677086,
+              "rmsNormalForceError_N": 0.025083624801123642,
+              "finalAbsTravelError_m": 0.0007186496336673513,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.1296914604511059,
+              "rmsNormalForceError_N": 0.018284715701432346,
+              "finalAbsTravelError_m": 0.0006248587530033912,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.33196524206571354,
+              "rmsNormalForceError_N": 0.03177473694784563,
+              "finalAbsTravelError_m": 8.132652081251079e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.14379097475540714,
+              "rmsNormalForceError_N": 0.019916552570020153,
+              "finalAbsTravelError_m": 7.318846485207531e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.17466098665607177,
+              "rmsNormalForceError_N": 0.027488437023067646,
+              "finalAbsTravelError_m": 0.0012068613767742611,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.16208462553805347,
+              "rmsNormalForceError_N": 0.022714762317066428,
+              "finalAbsTravelError_m": 0.0011068693459364357,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.3888120442719014,
+              "rmsNormalForceError_N": 0.05404438286501875,
+              "finalAbsTravelError_m": 0.002762247514728087,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.453225091500812,
+              "rmsNormalForceError_N": 0.050475344985373885,
+              "finalAbsTravelError_m": 0.004417495561999385,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.42190592490077705,
+              "rmsNormalForceError_N": 0.049583207312638586,
+              "finalAbsTravelError_m": 0.0026570995405817525,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.3529606704484891,
+              "rmsNormalForceError_N": 0.05077280627599166,
+              "finalAbsTravelError_m": 0.004417973733897386,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.13619530267227997,
+              "rmsNormalForceError_N": 0.015292347778743292,
+              "finalAbsTravelError_m": 7.422575687222703e-05,
+              "integratedTravelBandPeakExcess_m2_s": 4.3811833380896474e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33461411306168287,
+              "rmsNormalForceError_N": 0.03403889010437111,
+              "finalAbsTravelError_m": 0.00019798153716798876,
+              "integratedTravelBandPeakExcess_m2_s": 4.23632236465632e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.20340456379489424,
+              "rmsNormalForceError_N": 0.02329500998320493,
+              "finalAbsTravelError_m": 0.00100922139953003,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.125337539078906,
+              "rmsNormalForceError_N": 0.017420180170825028,
+              "finalAbsTravelError_m": 0.0006419699216946226,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2785503472098032,
+              "rmsNormalForceError_N": 0.029488326780120148,
+              "finalAbsTravelError_m": 0.0005929321179187277,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.2066330663173943,
+              "rmsNormalForceError_N": 0.024111504101646468,
+              "finalAbsTravelError_m": 0.0007685633460442556,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.1425731991750574,
+              "rmsNormalForceError_N": 0.017909739915823952,
+              "finalAbsTravelError_m": 0.0008992194728121936,
+              "integratedTravelBandPeakExcess_m2_s": 1.099353284797609e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.2611804803135023,
+              "rmsNormalForceError_N": 0.03103637733719496,
+              "finalAbsTravelError_m": 0.0018543668684334307,
+              "integratedTravelBandPeakExcess_m2_s": 1.0604001398842918e-06
+            }
+          ]
+        }
+      ],
+      "pairedLastMinusInitial": [
+        {
+          "identity": "selection_nominal_01",
+          "peakChange_N": -0.03707823556987577,
+          "rmsChange_N": -0.013170191521771898,
+          "finalAbsTravelChange_m": 0.00013405615528026826
+        },
+        {
+          "identity": "selection_nominal_02",
+          "peakChange_N": -0.045236196289138775,
+          "rmsChange_N": -0.01007697996176414,
+          "finalAbsTravelChange_m": 4.71695374903644e-07
+        },
+        {
+          "identity": "selection_nominal_03",
+          "peakChange_N": -0.04025395844968216,
+          "rmsChange_N": -0.011618881835759088,
+          "finalAbsTravelChange_m": 0.00012722866785458073
+        },
+        {
+          "identity": "selection_nominal_04",
+          "peakChange_N": -0.04191291814402831,
+          "rmsChange_N": -0.010700881901868645,
+          "finalAbsTravelChange_m": 4.939147126917232e-07
+        },
+        {
+          "identity": "selection_nominal_05",
+          "peakChange_N": -0.0072823476220875705,
+          "rmsChange_N": -0.0036618620367721982,
+          "finalAbsTravelChange_m": 3.6213324208726055e-06
+        },
+        {
+          "identity": "selection_nominal_06",
+          "peakChange_N": 0.02586190685240375,
+          "rmsChange_N": -0.014848001891391627,
+          "finalAbsTravelChange_m": 0.00010667085133549137
+        },
+        {
+          "identity": "selection_nominal_07",
+          "peakChange_N": 0.03301079786379546,
+          "rmsChange_N": -0.01150878233192516,
+          "finalAbsTravelChange_m": 8.403703923363232e-05
+        },
+        {
+          "identity": "selection_nominal_08",
+          "peakChange_N": -0.020469265756091204,
+          "rmsChange_N": -0.009131764520419257,
+          "finalAbsTravelChange_m": -1.1143812100235934e-05
+        },
+        {
+          "identity": "selection_nominal_09",
+          "peakChange_N": 0.02005984812132766,
+          "rmsChange_N": -0.009619387004367139,
+          "finalAbsTravelChange_m": -2.218899498428878e-07
+        },
+        {
+          "identity": "selection_nominal_10",
+          "peakChange_N": -0.01970258144956638,
+          "rmsChange_N": -0.006956434440429617,
+          "finalAbsTravelChange_m": -2.1802562290198363e-06
+        },
+        {
+          "identity": "selection_nominal_11",
+          "peakChange_N": -0.03420000569214565,
+          "rmsChange_N": -0.012980314497040322,
+          "finalAbsTravelChange_m": 7.591881418292368e-05
+        },
+        {
+          "identity": "selection_nominal_12",
+          "peakChange_N": -0.05931403623628384,
+          "rmsChange_N": -0.013266682302512517,
+          "finalAbsTravelChange_m": -4.624017451663326e-06
+        },
+        {
+          "identity": "selection_stress_01",
+          "peakChange_N": -0.01269652569335733,
+          "rmsChange_N": -0.011987113627688673,
+          "finalAbsTravelChange_m": -0.00010289302512934799
+        },
+        {
+          "identity": "selection_stress_02",
+          "peakChange_N": 0.013077960959883228,
+          "rmsChange_N": -0.012377553912422054,
+          "finalAbsTravelChange_m": -4.760754273754053e-07
+        },
+        {
+          "identity": "selection_stress_03",
+          "peakChange_N": 0.013563224736408586,
+          "rmsChange_N": -0.007982303926139009,
+          "finalAbsTravelChange_m": -9.645722300635935e-05
+        },
+        {
+          "identity": "selection_stress_04",
+          "peakChange_N": 0.01702774848009625,
+          "rmsChange_N": -0.01621382323326303,
+          "finalAbsTravelChange_m": 6.74892714523645e-06
+        },
+        {
+          "identity": "selection_band_01",
+          "peakChange_N": -0.040138108589382604,
+          "rmsChange_N": -0.015414127909959918,
+          "finalAbsTravelChange_m": -0.00023480810115632245
+        },
+        {
+          "identity": "selection_band_02",
+          "peakChange_N": -0.010834153832938398,
+          "rmsChange_N": -0.007954513247355376,
+          "finalAbsTravelChange_m": 9.793466642308082e-05
+        },
+        {
+          "identity": "selection_band_03",
+          "peakChange_N": -3.728382363377136e-05,
+          "rmsChange_N": -0.016055784663294746,
+          "finalAbsTravelChange_m": 0.00016632925887451883
+        },
+        {
+          "identity": "selection_band_04",
+          "peakChange_N": -0.025126007451426347,
+          "rmsChange_N": -0.00824449157717793,
+          "finalAbsTravelChange_m": -2.0681696726726484e-07
+        },
+        {
+          "identity": "selection_band_05",
+          "peakChange_N": 0.06904357835217034,
+          "rmsChange_N": -0.017934146087503895,
+          "finalAbsTravelChange_m": -0.00011474023795298403
+        },
+        {
+          "identity": "selection_band_06",
+          "peakChange_N": 0.028366113665427406,
+          "rmsChange_N": -0.011136765567294073,
+          "finalAbsTravelChange_m": 0.00013922635358714838
+        },
+        {
+          "identity": "selection_band_07",
+          "peakChange_N": -0.021529946238878495,
+          "rmsChange_N": -0.01553557991925461,
+          "finalAbsTravelChange_m": 0.00014149363502416988
+        },
+        {
+          "identity": "selection_band_08",
+          "peakChange_N": 0.025368146811810988,
+          "rmsChange_N": -0.014083191502515493,
+          "finalAbsTravelChange_m": -3.6406732985687015e-05
+        }
+      ],
+      "sources": [
+        {
+          "path": "ppo_band_8402/results.json",
+          "sha256": "ba8eb91bdf605852caa242aa90e658a707ae61430b6014e2b3fb05277ae172a1"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000000.json",
+          "sha256": "1d8e232bd4bb73e74fd780949b56a9bcfa72e784da1b0609905eb3913138ed4f"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000060.json",
+          "sha256": "6822cb0ecbc0731a56b90e53f23cf3aa7230690aa21b0f37906acb8d8f716829"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000120.json",
+          "sha256": "79877acc96a60bbd53e55be93e0dfdbbd3b52354965663acb3d9b3dfc1420a0a"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000180.json",
+          "sha256": "33ca878a446693d7a09d18beb03c08b5c14253c357612307f4c6f0e03cb3423d"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000240.json",
+          "sha256": "7627f34a516f3903691a9e69faa94a871d40725ce9b3aead372f5675f8b827b2"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000300.json",
+          "sha256": "6f9d11bdc155e11323a468a7737c89d89d4eb976d67f69b4044b698e338165a0"
+        }
+      ]
+    },
+    {
+      "name": "ppo_tail_8403",
+      "status": "training_complete",
+      "stopReason": "updates",
+      "updates": 200,
+      "decisions": 19660800,
+      "completedEpisodes": 589,
+      "completedEpisodePasses": 589,
+      "physicalFailures": 0,
+      "selectedUpdate": 0,
+      "trainingRolloutPeak_N": 0.4369189635489903,
+      "forcePenaltyThreshold_N": 0.3,
+      "rolloutsWithThresholdExcess": 70,
+      "recent40UpdateMedians": {
+        "approx_kl": 0.00027364286753310074,
+        "grad_norm": 3.8630184084177017,
+        "critic_grad_norm": 0.003590015592635609,
+        "force_advantage_std": 0.0058297752402722836,
+        "advantage_std": 0.022833972238004208,
+        "current_policy_loss": -1.7374133070309956e-05,
+        "robot_policy_loss": 0.0009584082290530205,
+        "optimizationElapsed_s": 0.32378139047068544
+      },
+      "selection": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.41871941146435887,
+          "meanRmsNormalForceError_N": 0.0424987327712742,
+          "jointScore": 0.933844882540765,
+          "jointScoreTerms": {
+            "forcePeak": 0.8658071384546125,
+            "forceRms": 0.015428408333837186,
+            "runningBandExcess": 0.052609335752315266,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 0,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5535,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764735,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.10219668033118268,
+              "rmsNormalForceError_N": 0.028716434977412032,
+              "finalAbsTravelError_m": 0.0023328511789526985,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.13253145890107376,
+              "rmsNormalForceError_N": 0.03203124815849745,
+              "finalAbsTravelError_m": 0.002399200988179258,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.17920976574873038,
+              "rmsNormalForceError_N": 0.045223395119724626,
+              "finalAbsTravelError_m": 0.0017357807686847644,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.14169835073077053,
+              "rmsNormalForceError_N": 0.03576365025204912,
+              "finalAbsTravelError_m": 0.0017990930954678887,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.11401388805862922,
+              "rmsNormalForceError_N": 0.0295655708361524,
+              "finalAbsTravelError_m": 0.001999155132656239,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.26514637173541367,
+              "rmsNormalForceError_N": 0.04977283518920109,
+              "finalAbsTravelError_m": 0.0019421931346204676,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.22123554949727975,
+              "rmsNormalForceError_N": 0.0403104332723043,
+              "finalAbsTravelError_m": 0.0009368150273381861,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.14482666342773598,
+              "rmsNormalForceError_N": 0.03130692542538132,
+              "finalAbsTravelError_m": 0.000999172440197607,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.29368320558873506,
+              "rmsNormalForceError_N": 0.045291252633549904,
+              "finalAbsTravelError_m": 2.3279903911543887e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.13861847524941773,
+              "rmsNormalForceError_N": 0.029016823764251135,
+              "finalAbsTravelError_m": 9.739324364523017e-08,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.18765029428487523,
+              "rmsNormalForceError_N": 0.04011310248974282,
+              "finalAbsTravelError_m": 0.0027275058311068204,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.21542418720723333,
+              "rmsNormalForceError_N": 0.043213953996830944,
+              "finalAbsTravelError_m": 0.0027988180478223205,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.36827288824523663,
+              "rmsNormalForceError_N": 0.06650782445983819,
+              "finalAbsTravelError_m": 0.002126686277892538,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.41871941146435887,
+              "rmsNormalForceError_N": 0.05816957544776216,
+              "finalAbsTravelError_m": 0.0047764131460460504,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.3867617778797694,
+              "rmsNormalForceError_N": 0.056424962132561055,
+              "finalAbsTravelError_m": 0.002060887088405256,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.32993544405585595,
+              "rmsNormalForceError_N": 0.06588330831016513,
+              "finalAbsTravelError_m": 0.005101529523830438,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.14651869947474339,
+              "rmsNormalForceError_N": 0.032942235727610784,
+              "finalAbsTravelError_m": 0.0016450978903592237,
+              "integratedTravelBandPeakExcess_m2_s": 4.227042173697874e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3340649106117013,
+              "rmsNormalForceError_N": 0.04974504810746819,
+              "finalAbsTravelError_m": 0.0017876739444589642,
+              "integratedTravelBandPeakExcess_m2_s": 4.211377453767685e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.18284724525841156,
+              "rmsNormalForceError_N": 0.042281491996908574,
+              "finalAbsTravelError_m": 0.0032989846571685084,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.1424998094258143,
+              "rmsNormalForceError_N": 0.02923624205653076,
+              "finalAbsTravelError_m": 0.003499588203782159,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.21217516536384728,
+              "rmsNormalForceError_N": 0.0522384781026018,
+              "finalAbsTravelError_m": 0.0014624284648764134,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18464608266400262,
+              "rmsNormalForceError_N": 0.04031262521756859,
+              "finalAbsTravelError_m": 0.0015353599949004051,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.1319823852131563,
+              "rmsNormalForceError_N": 0.03331210467060416,
+              "finalAbsTravelError_m": 0.004086305267052729,
+              "integratedTravelBandPeakExcess_m2_s": 1.0477391213336766e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.23295236041148826,
+              "rmsNormalForceError_N": 0.05268079319911761,
+              "finalAbsTravelError_m": 0.004785525977062555,
+              "integratedTravelBandPeakExcess_m2_s": 1.0451611050267235e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.14602702205068674,
+              "rmsNormalForceError_N": 0.032687498610648215,
+              "finalAbsTravelError_m": 0.0059699654240610266,
+              "integratedTravelBandPeakExcess_m2_s": 1.7740794137322308e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.28844159070291653,
+              "rmsNormalForceError_N": 0.05086012935235696,
+              "finalAbsTravelError_m": 0.006465647544724791,
+              "integratedTravelBandPeakExcess_m2_s": 2.2629315855653548e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.2051711976749182,
+              "rmsNormalForceError_N": 0.04699220233661541,
+              "finalAbsTravelError_m": 0.006917852585418341,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.16477957391133913,
+              "rmsNormalForceError_N": 0.029364371752222878,
+              "finalAbsTravelError_m": 0.007132357518942924,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000040",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4232588932091943,
+          "meanRmsNormalForceError_N": 0.04113225170117846,
+          "jointScore": 0.9520073891913317,
+          "jointScoreTerms": {
+            "forcePeak": 0.8846819292872697,
+            "forceRms": 0.014709727518104823,
+            "runningBandExcess": 0.052615732385957036,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 40,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5537,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764735,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.09788253275923253,
+              "rmsNormalForceError_N": 0.02702351431184333,
+              "finalAbsTravelError_m": 0.002401242510887072,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.12771918516776282,
+              "rmsNormalForceError_N": 0.029476783667107247,
+              "finalAbsTravelError_m": 0.002254804853101448,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.17247456065754818,
+              "rmsNormalForceError_N": 0.04323203487135554,
+              "finalAbsTravelError_m": 0.0018006925779677461,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.13720014674871805,
+              "rmsNormalForceError_N": 0.033952316673376025,
+              "finalAbsTravelError_m": 0.0016776937911981739,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.10697960213320812,
+              "rmsNormalForceError_N": 0.026277817338863443,
+              "finalAbsTravelError_m": 0.0018556596914124038,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2636570944535812,
+              "rmsNormalForceError_N": 0.04846862736384374,
+              "finalAbsTravelError_m": 0.0020008990313590234,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.224045801639015,
+              "rmsNormalForceError_N": 0.03834800143063387,
+              "finalAbsTravelError_m": 0.0010003100189421524,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.13859269137187624,
+              "rmsNormalForceError_N": 0.029076832490327314,
+              "finalAbsTravelError_m": 0.0008838794738194773,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.29611090051395905,
+              "rmsNormalForceError_N": 0.04381476743750996,
+              "finalAbsTravelError_m": 1.1504980331096537e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.13468732368758207,
+              "rmsNormalForceError_N": 0.027016301166513438,
+              "finalAbsTravelError_m": 1.1571059837182235e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.1829596779713114,
+              "rmsNormalForceError_N": 0.03803572977300886,
+              "finalAbsTravelError_m": 0.002800785906006015,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.20347975052239775,
+              "rmsNormalForceError_N": 0.0401825409525086,
+              "finalAbsTravelError_m": 0.0026599944206955883,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.37184492543461545,
+              "rmsNormalForceError_N": 0.0679448533895306,
+              "finalAbsTravelError_m": 0.002086306204678791,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4232588932091943,
+              "rmsNormalForceError_N": 0.060565979468876076,
+              "finalAbsTravelError_m": 0.004745097673558275,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.39043465971450786,
+              "rmsNormalForceError_N": 0.0583142030827853,
+              "finalAbsTravelError_m": 0.0020375476609604086,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.33126656084580475,
+              "rmsNormalForceError_N": 0.06776986729099724,
+              "finalAbsTravelError_m": 0.005062285266542385,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.14171354175922168,
+              "rmsNormalForceError_N": 0.031787534381245826,
+              "finalAbsTravelError_m": 0.0017643342699096443,
+              "integratedTravelBandPeakExcess_m2_s": 4.2270826515194655e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3346602370670837,
+              "rmsNormalForceError_N": 0.04785352909327604,
+              "finalAbsTravelError_m": 0.0016885383493211968,
+              "integratedTravelBandPeakExcess_m2_s": 4.2127303398089396e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.1780905774866426,
+              "rmsNormalForceError_N": 0.040555796139481425,
+              "finalAbsTravelError_m": 0.0035270159928099624,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.1367727557461791,
+              "rmsNormalForceError_N": 0.026614241320523594,
+              "finalAbsTravelError_m": 0.0030799046965207556,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2089501370275606,
+              "rmsNormalForceError_N": 0.05039582948813455,
+              "finalAbsTravelError_m": 0.0015221189197534325,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18514389639221207,
+              "rmsNormalForceError_N": 0.038707965944286465,
+              "finalAbsTravelError_m": 0.0013713268350287813,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.12925323138884437,
+              "rmsNormalForceError_N": 0.030957030073638266,
+              "finalAbsTravelError_m": 0.004329525058723133,
+              "integratedTravelBandPeakExcess_m2_s": 1.0476402641910986e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.22838467408710983,
+              "rmsNormalForceError_N": 0.05120800564841664,
+              "finalAbsTravelError_m": 0.004673167190600097,
+              "integratedTravelBandPeakExcess_m2_s": 1.045240237680653e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.14166272419759363,
+              "rmsNormalForceError_N": 0.03198393029755541,
+              "finalAbsTravelError_m": 0.005969923279552973,
+              "integratedTravelBandPeakExcess_m2_s": 1.7740832527785579e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.2929477822229245,
+              "rmsNormalForceError_N": 0.04897571088403542,
+              "finalAbsTravelError_m": 0.006465878219811642,
+              "integratedTravelBandPeakExcess_m2_s": 2.263494234151239e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.1997994281598494,
+              "rmsNormalForceError_N": 0.045189362609588495,
+              "finalAbsTravelError_m": 0.006917982328650939,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.15996220955045004,
+              "rmsNormalForceError_N": 0.027973941043734095,
+              "finalAbsTravelError_m": 0.007132246008412256,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000080",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4265894355442583,
+          "meanRmsNormalForceError_N": 0.04021108415513982,
+          "jointScore": 0.9650685915916731,
+          "jointScoreTerms": {
+            "forcePeak": 0.8986594889776243,
+            "forceRms": 0.014298250682599807,
+            "runningBandExcess": 0.05211085193144908,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 80,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5572,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764735,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.0952267613064599,
+              "rmsNormalForceError_N": 0.02636247942015452,
+              "finalAbsTravelError_m": 0.0024012220412240742,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.12329067964053309,
+              "rmsNormalForceError_N": 0.028228648930132258,
+              "finalAbsTravelError_m": 0.002312258379270519,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.16457054754067002,
+              "rmsNormalForceError_N": 0.041076847914285446,
+              "finalAbsTravelError_m": 0.0018005239202007108,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.1337021591662122,
+              "rmsNormalForceError_N": 0.032691498792015744,
+              "finalAbsTravelError_m": 0.0017231950985214187,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.10702386172691547,
+              "rmsNormalForceError_N": 0.025315340027291723,
+              "finalAbsTravelError_m": 0.0019212625649336866,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.26284103692146843,
+              "rmsNormalForceError_N": 0.04659369101113976,
+              "finalAbsTravelError_m": 0.0020007929164778462,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.22692786387938568,
+              "rmsNormalForceError_N": 0.0364687952277844,
+              "finalAbsTravelError_m": 0.0010001873588493908,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.13596503953915118,
+              "rmsNormalForceError_N": 0.028155922886415084,
+              "finalAbsTravelError_m": 0.0009333476622388134,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.29888705539654126,
+              "rmsNormalForceError_N": 0.041970446448617096,
+              "finalAbsTravelError_m": 1.0320122244625307e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.13195863298032684,
+              "rmsNormalForceError_N": 0.025942549573231704,
+              "finalAbsTravelError_m": 1.0752344125099234e-06,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.17777996261616735,
+              "rmsNormalForceError_N": 0.0363349342146189,
+              "finalAbsTravelError_m": 0.002800657151922908,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.19566770176496107,
+              "rmsNormalForceError_N": 0.03856554221096751,
+              "finalAbsTravelError_m": 0.002707836853434188,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.3763485088301124,
+              "rmsNormalForceError_N": 0.07056492435678992,
+              "finalAbsTravelError_m": 0.0020866074754061614,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4265894355442583,
+              "rmsNormalForceError_N": 0.06347757950490625,
+              "finalAbsTravelError_m": 0.004756033538798221,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.3944503540370974,
+              "rmsNormalForceError_N": 0.06202765137874442,
+              "finalAbsTravelError_m": 0.0020377991805388337,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.33167061983273527,
+              "rmsNormalForceError_N": 0.06982878125203273,
+              "finalAbsTravelError_m": 0.0048030833624302036,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.13626182568491174,
+              "rmsNormalForceError_N": 0.030636472753844568,
+              "finalAbsTravelError_m": 0.001762079566417567,
+              "integratedTravelBandPeakExcess_m2_s": 4.2265646442546395e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33347292480703317,
+              "rmsNormalForceError_N": 0.046213225740770005,
+              "finalAbsTravelError_m": 0.0017277079211334978,
+              "integratedTravelBandPeakExcess_m2_s": 4.2135478155090364e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.17115535568476403,
+              "rmsNormalForceError_N": 0.03814863089339551,
+              "finalAbsTravelError_m": 0.003508706961156089,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.13536003561963383,
+              "rmsNormalForceError_N": 0.025977732126681117,
+              "finalAbsTravelError_m": 0.0032441707647870854,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.20170285925949294,
+              "rmsNormalForceError_N": 0.047696286715877216,
+              "finalAbsTravelError_m": 0.0015191704063134415,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.1870564451789889,
+              "rmsNormalForceError_N": 0.03736692492830205,
+              "finalAbsTravelError_m": 0.001436051030051842,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.12330436466641004,
+              "rmsNormalForceError_N": 0.028987752386860192,
+              "finalAbsTravelError_m": 0.004275782312724031,
+              "integratedTravelBandPeakExcess_m2_s": 1.0474291459720189e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.22027437968181474,
+              "rmsNormalForceError_N": 0.04938401270963203,
+              "finalAbsTravelError_m": 0.004676472880896527,
+              "integratedTravelBandPeakExcess_m2_s": 1.0452967735378498e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.135846860418261,
+              "rmsNormalForceError_N": 0.030955195112673597,
+              "finalAbsTravelError_m": 0.005969905141784391,
+              "integratedTravelBandPeakExcess_m2_s": 1.7739514807277557e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.29608231542254515,
+              "rmsNormalForceError_N": 0.04720008826104125,
+              "finalAbsTravelError_m": 0.00642091342562524,
+              "integratedTravelBandPeakExcess_m2_s": 2.2070724671500504e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.19627672713291489,
+              "rmsNormalForceError_N": 0.04243770092671535,
+              "finalAbsTravelError_m": 0.006918087834168557,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.15725419349170267,
+              "rmsNormalForceError_N": 0.027300700638994674,
+              "finalAbsTravelError_m": 0.007132193037634535,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4261824520587183,
+          "meanRmsNormalForceError_N": 0.03915411196159086,
+          "jointScore": 0.9588083742245553,
+          "jointScoreTerms": {
+            "forcePeak": 0.8969455923100332,
+            "forceRms": 0.013696465086992009,
+            "runningBandExcess": 0.048166316827530094,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 120,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 6183,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764733,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.09175427719972262,
+              "rmsNormalForceError_N": 0.024994777062710135,
+              "finalAbsTravelError_m": 0.002383254162682851,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.11978211602220767,
+              "rmsNormalForceError_N": 0.027224594128827214,
+              "finalAbsTravelError_m": 0.0023802830021029224,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.15886075174553582,
+              "rmsNormalForceError_N": 0.03969220122266514,
+              "finalAbsTravelError_m": 0.0018003966399994225,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.13087262247400844,
+              "rmsNormalForceError_N": 0.031706182246111686,
+              "finalAbsTravelError_m": 0.0017914315695134724,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.11051241965551384,
+              "rmsNormalForceError_N": 0.02528105841624861,
+              "finalAbsTravelError_m": 0.0019863777835493653,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2641624474727209,
+              "rmsNormalForceError_N": 0.04450562342904476,
+              "finalAbsTravelError_m": 0.002000359339847128,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.22998609870804643,
+              "rmsNormalForceError_N": 0.034869611058011674,
+              "finalAbsTravelError_m": 0.0009998239108641588,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.132252089940053,
+              "rmsNormalForceError_N": 0.027389181932701238,
+              "finalAbsTravelError_m": 0.0009985380375784197,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.29980718170808274,
+              "rmsNormalForceError_N": 0.04116625587393864,
+              "finalAbsTravelError_m": 4.845035920780089e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.12842599154866186,
+              "rmsNormalForceError_N": 0.024657981500150087,
+              "finalAbsTravelError_m": 7.644665396162875e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.172928850273685,
+              "rmsNormalForceError_N": 0.03486757216469093,
+              "finalAbsTravelError_m": 0.0027998361091465633,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.18640334359139032,
+              "rmsNormalForceError_N": 0.03680899918109849,
+              "finalAbsTravelError_m": 0.002787598526964913,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.3789190077005955,
+              "rmsNormalForceError_N": 0.07155266501300601,
+              "finalAbsTravelError_m": 0.002087123784490455,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4261824520587183,
+              "rmsNormalForceError_N": 0.06272922405395223,
+              "finalAbsTravelError_m": 0.0047678578287702784,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.39498733458441393,
+              "rmsNormalForceError_N": 0.06189298881700163,
+              "finalAbsTravelError_m": 0.00203777256566421,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.33027080552408705,
+              "rmsNormalForceError_N": 0.07040641330328319,
+              "finalAbsTravelError_m": 0.004816408061564425,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.1321863524332052,
+              "rmsNormalForceError_N": 0.029064618914952482,
+              "finalAbsTravelError_m": 0.0017261933373014515,
+              "integratedTravelBandPeakExcess_m2_s": 4.225433325420402e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.33193968171280375,
+              "rmsNormalForceError_N": 0.045230866567517555,
+              "finalAbsTravelError_m": 0.0017578556236087749,
+              "integratedTravelBandPeakExcess_m2_s": 4.2138282982584333e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.16714342335306753,
+              "rmsNormalForceError_N": 0.03622890370675594,
+              "finalAbsTravelError_m": 0.0034610271440549123,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.13242737488579337,
+              "rmsNormalForceError_N": 0.02582768202497776,
+              "finalAbsTravelError_m": 0.0034113269191257192,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.19805575757602423,
+              "rmsNormalForceError_N": 0.04572037786980114,
+              "finalAbsTravelError_m": 0.0015127525397822163,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18738514754258517,
+              "rmsNormalForceError_N": 0.03648418866165744,
+              "finalAbsTravelError_m": 0.0015126180274406594,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.12006698428036344,
+              "rmsNormalForceError_N": 0.02778779720102279,
+              "finalAbsTravelError_m": 0.004191113232691335,
+              "integratedTravelBandPeakExcess_m2_s": 1.0472561222649381e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.214282696925288,
+              "rmsNormalForceError_N": 0.047899467260129225,
+              "finalAbsTravelError_m": 0.004718101294215859,
+              "integratedTravelBandPeakExcess_m2_s": 1.045400409817449e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.1325018714869648,
+              "rmsNormalForceError_N": 0.028827486017485728,
+              "finalAbsTravelError_m": 0.005969770959364187,
+              "integratedTravelBandPeakExcess_m2_s": 1.773532409784425e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.29726506138643316,
+              "rmsNormalForceError_N": 0.04603315300185712,
+              "finalAbsTravelError_m": 0.006370437720049107,
+              "integratedTravelBandPeakExcess_m2_s": 1.7656230019791425e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.1916056218934159,
+              "rmsNormalForceError_N": 0.04098298402102077,
+              "finalAbsTravelError_m": 0.006918143081394382,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.1533838848124418,
+              "rmsNormalForceError_N": 0.026482280273924345,
+              "finalAbsTravelError_m": 0.00713209722586897,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000160",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4293907880300125,
+          "meanRmsNormalForceError_N": 0.03866688240526929,
+          "jointScore": 0.9722824215213406,
+          "jointScoreTerms": {
+            "forcePeak": 0.9105009819507908,
+            "forceRms": 0.0136141288340437,
+            "runningBandExcess": 0.04816731073650614,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 160,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5282,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764735,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.09007372084111154,
+              "rmsNormalForceError_N": 0.02470151704372589,
+              "finalAbsTravelError_m": 0.0024011131355882315,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.11885729034166559,
+              "rmsNormalForceError_N": 0.026634280279668698,
+              "finalAbsTravelError_m": 0.002184353207055104,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.1521559115103841,
+              "rmsNormalForceError_N": 0.03831232076853654,
+              "finalAbsTravelError_m": 0.0018001892902360962,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.1272704707813901,
+              "rmsNormalForceError_N": 0.030264275021977684,
+              "finalAbsTravelError_m": 0.0015968454865792868,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.10893851109502606,
+              "rmsNormalForceError_N": 0.024910561354023485,
+              "finalAbsTravelError_m": 0.001799881633980328,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2655994827351158,
+              "rmsNormalForceError_N": 0.04311545067990187,
+              "finalAbsTravelError_m": 0.002000411972176642,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.2317981881953628,
+              "rmsNormalForceError_N": 0.03380917158504146,
+              "finalAbsTravelError_m": 0.0009999390614650518,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.1307346964792444,
+              "rmsNormalForceError_N": 0.0265514924042946,
+              "finalAbsTravelError_m": 0.0008218768160607182,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.30381998941668087,
+              "rmsNormalForceError_N": 0.03962791098891746,
+              "finalAbsTravelError_m": 8.326473074742047e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.12796924621482475,
+              "rmsNormalForceError_N": 0.024314452165948408,
+              "finalAbsTravelError_m": 9.264343884436699e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.16824427131591335,
+              "rmsNormalForceError_N": 0.03344550394142676,
+              "finalAbsTravelError_m": 0.0028003671459480486,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.18160674759674578,
+              "rmsNormalForceError_N": 0.03579820610570673,
+              "finalAbsTravelError_m": 0.0025968936271683427,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.38275527403341414,
+              "rmsNormalForceError_N": 0.07490566070665716,
+              "finalAbsTravelError_m": 0.0020869800176287756,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4293907880300125,
+              "rmsNormalForceError_N": 0.06475493914642381,
+              "finalAbsTravelError_m": 0.00472313593522173,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.3983797904998738,
+              "rmsNormalForceError_N": 0.06504027696799562,
+              "finalAbsTravelError_m": 0.002037982703234265,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.33123328554030707,
+              "rmsNormalForceError_N": 0.07304747507296627,
+              "finalAbsTravelError_m": 0.004769722839242461,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.12823160748361584,
+              "rmsNormalForceError_N": 0.02811382257639407,
+              "finalAbsTravelError_m": 0.00177227131396104,
+              "integratedTravelBandPeakExcess_m2_s": 4.224413230135332e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.32947092873629913,
+              "rmsNormalForceError_N": 0.04424258201418745,
+              "finalAbsTravelError_m": 0.0016370668811101462,
+              "integratedTravelBandPeakExcess_m2_s": 4.2143786244800125e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.16737019907257888,
+              "rmsNormalForceError_N": 0.03452852346555891,
+              "finalAbsTravelError_m": 0.0036006448242526193,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.13351663637253353,
+              "rmsNormalForceError_N": 0.025657598791021495,
+              "finalAbsTravelError_m": 0.0029719286562675303,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.19916040411833613,
+              "rmsNormalForceError_N": 0.044201281062900714,
+              "finalAbsTravelError_m": 0.0015371357712901587,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.18923889181417053,
+              "rmsNormalForceError_N": 0.035316306034428785,
+              "finalAbsTravelError_m": 0.0012715565361784437,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.11562685008334128,
+              "rmsNormalForceError_N": 0.026781163961619326,
+              "finalAbsTravelError_m": 0.004360042745357949,
+              "integratedTravelBandPeakExcess_m2_s": 1.0470798615871196e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.20790271422814754,
+              "rmsNormalForceError_N": 0.046555232631094845,
+              "finalAbsTravelError_m": 0.004573084072332759,
+              "integratedTravelBandPeakExcess_m2_s": 1.0454710781610628e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.13118601298156385,
+              "rmsNormalForceError_N": 0.028058900561709857,
+              "finalAbsTravelError_m": 0.005969741284264395,
+              "integratedTravelBandPeakExcess_m2_s": 1.773332131718468e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.2998708696991983,
+              "rmsNormalForceError_N": 0.04489811050719611,
+              "finalAbsTravelError_m": 0.006370575595356295,
+              "integratedTravelBandPeakExcess_m2_s": 1.7659276510002087e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.1920797675271757,
+              "rmsNormalForceError_N": 0.03892864445287311,
+              "finalAbsTravelError_m": 0.00691825271034743,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.1539964286439286,
+              "rmsNormalForceError_N": 0.026157047055342966,
+              "finalAbsTravelError_m": 0.007132007297942393,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "selection_update_000200",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4308972636809685,
+          "meanRmsNormalForceError_N": 0.03775853144882869,
+          "jointScore": 0.9782160991902826,
+          "jointScoreTerms": {
+            "forcePeak": 0.916900996778993,
+            "forceRms": 0.013147694734088501,
+            "runningBandExcess": 0.04816740767720119,
+            "finalBandExcess": 0.0
+          },
+          "finalTravelBandViolations": 0,
+          "update": 200,
+          "worstCase": "selection_stress_02",
+          "robotNonzeroIssued100HzFrames": 5291,
+          "robot100HzFrames": 9300,
+          "peakIssuedRobotCorrection_m_s": 0.006533381613764735,
+          "rows": [
+            {
+              "identity": "selection_nominal_01",
+              "peakNormalForceError_N": 0.08598985461339126,
+              "rmsNormalForceError_N": 0.023090459528664165,
+              "finalAbsTravelError_m": 0.002400988321441795,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_02",
+              "peakNormalForceError_N": 0.11648887314581202,
+              "rmsNormalForceError_N": 0.02558881655176079,
+              "finalAbsTravelError_m": 0.0019241117078590813,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_03",
+              "peakNormalForceError_N": 0.14907105400651943,
+              "rmsNormalForceError_N": 0.03763783140251554,
+              "finalAbsTravelError_m": 0.0018002042419199664,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_04",
+              "peakNormalForceError_N": 0.12460401862337989,
+              "rmsNormalForceError_N": 0.029674562863490628,
+              "finalAbsTravelError_m": 0.0013403698398477618,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_05",
+              "peakNormalForceError_N": 0.10846457784499108,
+              "rmsNormalForceError_N": 0.023389441395618653,
+              "finalAbsTravelError_m": 0.0015329197668810437,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_06",
+              "peakNormalForceError_N": 0.2628035131158768,
+              "rmsNormalForceError_N": 0.04243919398329995,
+              "finalAbsTravelError_m": 0.002000430014605101,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_07",
+              "peakNormalForceError_N": 0.23263616551002286,
+              "rmsNormalForceError_N": 0.0329895110716349,
+              "finalAbsTravelError_m": 0.0009998938894942213,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_08",
+              "peakNormalForceError_N": 0.12575007717867948,
+              "rmsNormalForceError_N": 0.025247020820701176,
+              "finalAbsTravelError_m": 0.0006442730738806489,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_09",
+              "peakNormalForceError_N": 0.3031970596961244,
+              "rmsNormalForceError_N": 0.03937778205009978,
+              "finalAbsTravelError_m": 8.675193811542858e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_10",
+              "peakNormalForceError_N": 0.12497540996860934,
+              "rmsNormalForceError_N": 0.02314996685153481,
+              "finalAbsTravelError_m": 8.043105505263493e-07,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_11",
+              "peakNormalForceError_N": 0.1650975968111048,
+              "rmsNormalForceError_N": 0.03258787832181514,
+              "finalAbsTravelError_m": 0.0028003229155981017,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_nominal_12",
+              "peakNormalForceError_N": 0.17229729512859748,
+              "rmsNormalForceError_N": 0.03458491548234635,
+              "finalAbsTravelError_m": 0.0023429830060331704,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_01",
+              "peakNormalForceError_N": 0.3821570456643215,
+              "rmsNormalForceError_N": 0.07454642643239155,
+              "finalAbsTravelError_m": 0.0020870779641614743,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_02",
+              "peakNormalForceError_N": 0.4308972636809685,
+              "rmsNormalForceError_N": 0.06497968003444012,
+              "finalAbsTravelError_m": 0.0046655771983012025,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_03",
+              "peakNormalForceError_N": 0.39760645507602277,
+              "rmsNormalForceError_N": 0.06455563602351524,
+              "finalAbsTravelError_m": 0.002038048415354557,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_stress_04",
+              "peakNormalForceError_N": 0.3290425432221298,
+              "rmsNormalForceError_N": 0.07330298589940111,
+              "finalAbsTravelError_m": 0.004705583809986268,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_01",
+              "peakNormalForceError_N": 0.12572895028442765,
+              "rmsNormalForceError_N": 0.026240293955939915,
+              "finalAbsTravelError_m": 0.001793538277970793,
+              "integratedTravelBandPeakExcess_m2_s": 4.223863748064465e-07
+            },
+            {
+              "identity": "selection_band_02",
+              "peakNormalForceError_N": 0.3258192872603942,
+              "rmsNormalForceError_N": 0.04351767330683945,
+              "finalAbsTravelError_m": 0.0014742877073684185,
+              "integratedTravelBandPeakExcess_m2_s": 4.2145174919998543e-07
+            },
+            {
+              "identity": "selection_band_03",
+              "peakNormalForceError_N": 0.16210612313281914,
+              "rmsNormalForceError_N": 0.033731287911224435,
+              "finalAbsTravelError_m": 0.0037960418248643903,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_04",
+              "peakNormalForceError_N": 0.1281351057073934,
+              "rmsNormalForceError_N": 0.024174851848039094,
+              "finalAbsTravelError_m": 0.002502618526359324,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_05",
+              "peakNormalForceError_N": 0.2017311459084059,
+              "rmsNormalForceError_N": 0.04321392618416854,
+              "finalAbsTravelError_m": 0.0015731438301178485,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_06",
+              "peakNormalForceError_N": 0.19034948747911073,
+              "rmsNormalForceError_N": 0.03473300667003443,
+              "finalAbsTravelError_m": 0.0009514858012617759,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_band_07",
+              "peakNormalForceError_N": 0.11211972493598665,
+              "rmsNormalForceError_N": 0.025060077547848794,
+              "finalAbsTravelError_m": 0.004379303004680951,
+              "integratedTravelBandPeakExcess_m2_s": 1.046961296059184e-06
+            },
+            {
+              "identity": "selection_band_08",
+              "peakNormalForceError_N": 0.2060066327627439,
+              "rmsNormalForceError_N": 0.04554930149862566,
+              "finalAbsTravelError_m": 0.004191788640944886,
+              "integratedTravelBandPeakExcess_m2_s": 1.0455065726709006e-06
+            },
+            {
+              "identity": "selection_sustained_01",
+              "peakNormalForceError_N": 0.12686921418902486,
+              "rmsNormalForceError_N": 0.026891095563966325,
+              "finalAbsTravelError_m": 0.00596966130258114,
+              "integratedTravelBandPeakExcess_m2_s": 1.7732234529127805e-06
+            },
+            {
+              "identity": "selection_sustained_02",
+              "peakNormalForceError_N": 0.3010376528766727,
+              "rmsNormalForceError_N": 0.043984076855236844,
+              "finalAbsTravelError_m": 0.006370627245836015,
+              "integratedTravelBandPeakExcess_m2_s": 1.7660772554567063e-06
+            },
+            {
+              "identity": "selection_sustained_03",
+              "peakNormalForceError_N": 0.18737965986004212,
+              "rmsNormalForceError_N": 0.03739865171743917,
+              "finalAbsTravelError_m": 0.006918384945779538,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            },
+            {
+              "identity": "selection_sustained_04",
+              "peakNormalForceError_N": 0.1516211860551877,
+              "rmsNormalForceError_N": 0.025602528794610623,
+              "finalAbsTravelError_m": 0.007131992294528933,
+              "integratedTravelBandPeakExcess_m2_s": 0.0
+            }
+          ]
+        }
+      ],
+      "pairedLastMinusInitial": [
+        {
+          "identity": "selection_nominal_01",
+          "peakChange_N": -0.016206825717791418,
+          "rmsChange_N": -0.005625975448747867,
+          "finalAbsTravelChange_m": 6.813714248909628e-05
+        },
+        {
+          "identity": "selection_nominal_02",
+          "peakChange_N": -0.01604258575526174,
+          "rmsChange_N": -0.006442431606736659,
+          "finalAbsTravelChange_m": -0.0004750892803201765
+        },
+        {
+          "identity": "selection_nominal_03",
+          "peakChange_N": -0.030138711742210944,
+          "rmsChange_N": -0.007585563717209087,
+          "finalAbsTravelChange_m": 6.442347323520198e-05
+        },
+        {
+          "identity": "selection_nominal_04",
+          "peakChange_N": -0.017094332107390642,
+          "rmsChange_N": -0.006089087388558491,
+          "finalAbsTravelChange_m": -0.0004587232556201269
+        },
+        {
+          "identity": "selection_nominal_05",
+          "peakChange_N": -0.005549310213638137,
+          "rmsChange_N": -0.006176129440533747,
+          "finalAbsTravelChange_m": -0.00046623536577519546
+        },
+        {
+          "identity": "selection_nominal_06",
+          "peakChange_N": -0.0023428586195368695,
+          "rmsChange_N": -0.007333641205901138,
+          "finalAbsTravelChange_m": 5.823687998463348e-05
+        },
+        {
+          "identity": "selection_nominal_07",
+          "peakChange_N": 0.011400616012743114,
+          "rmsChange_N": -0.007320922200669398,
+          "finalAbsTravelChange_m": 6.30788621560352e-05
+        },
+        {
+          "identity": "selection_nominal_08",
+          "peakChange_N": -0.019076586249056504,
+          "rmsChange_N": -0.006059904604680144,
+          "finalAbsTravelChange_m": -0.0003548993663169582
+        },
+        {
+          "identity": "selection_nominal_09",
+          "peakChange_N": 0.009513854107389363,
+          "rmsChange_N": -0.0059134705834501256,
+          "finalAbsTravelChange_m": 6.34720342038847e-07
+        },
+        {
+          "identity": "selection_nominal_10",
+          "peakChange_N": -0.013643065280808386,
+          "rmsChange_N": -0.005866856912716326,
+          "finalAbsTravelChange_m": 7.069173068811191e-07
+        },
+        {
+          "identity": "selection_nominal_11",
+          "peakChange_N": -0.022552697473770422,
+          "rmsChange_N": -0.007525224167927683,
+          "finalAbsTravelChange_m": 7.281708449128135e-05
+        },
+        {
+          "identity": "selection_nominal_12",
+          "peakChange_N": -0.04312689207863585,
+          "rmsChange_N": -0.008629038514484592,
+          "finalAbsTravelChange_m": -0.0004558350417891502
+        },
+        {
+          "identity": "selection_stress_01",
+          "peakChange_N": 0.013884157419084886,
+          "rmsChange_N": 0.008038601972553364,
+          "finalAbsTravelChange_m": -3.96083137310637e-05
+        },
+        {
+          "identity": "selection_stress_02",
+          "peakChange_N": 0.012177852216609608,
+          "rmsChange_N": 0.006810104586677954,
+          "finalAbsTravelChange_m": -0.00011083594774484798
+        },
+        {
+          "identity": "selection_stress_03",
+          "peakChange_N": 0.010844677196253372,
+          "rmsChange_N": 0.00813067389095419,
+          "finalAbsTravelChange_m": -2.2838673050699226e-05
+        },
+        {
+          "identity": "selection_stress_04",
+          "peakChange_N": -0.0008929008337261735,
+          "rmsChange_N": 0.007419677589235979,
+          "finalAbsTravelChange_m": -0.0003959457138441695
+        },
+        {
+          "identity": "selection_band_01",
+          "peakChange_N": -0.02078974919031573,
+          "rmsChange_N": -0.006701941771670869,
+          "finalAbsTravelChange_m": 0.00014844038761156926
+        },
+        {
+          "identity": "selection_band_02",
+          "peakChange_N": -0.008245623351307074,
+          "rmsChange_N": -0.006227374800628738,
+          "finalAbsTravelChange_m": -0.0003133862370905457
+        },
+        {
+          "identity": "selection_band_03",
+          "peakChange_N": -0.020741122125592426,
+          "rmsChange_N": -0.008550204085684139,
+          "finalAbsTravelChange_m": 0.0004970571676958819
+        },
+        {
+          "identity": "selection_band_04",
+          "peakChange_N": -0.014364703718420913,
+          "rmsChange_N": -0.005061390208491664,
+          "finalAbsTravelChange_m": -0.0009969696774228352
+        },
+        {
+          "identity": "selection_band_05",
+          "peakChange_N": -0.010444019455441378,
+          "rmsChange_N": -0.009024551918433259,
+          "finalAbsTravelChange_m": 0.00011071536524143513
+        },
+        {
+          "identity": "selection_band_06",
+          "peakChange_N": 0.005703404815108115,
+          "rmsChange_N": -0.005579618547534165,
+          "finalAbsTravelChange_m": -0.0005838741936386293
+        },
+        {
+          "identity": "selection_band_07",
+          "peakChange_N": -0.019862660277169653,
+          "rmsChange_N": -0.008252027122755363,
+          "finalAbsTravelChange_m": 0.0002929977376282221
+        },
+        {
+          "identity": "selection_band_08",
+          "peakChange_N": -0.026945727648744366,
+          "rmsChange_N": -0.007131491700491946,
+          "finalAbsTravelChange_m": -0.0005937373361176689
+        },
+        {
+          "identity": "selection_sustained_01",
+          "peakChange_N": -0.01915780786166188,
+          "rmsChange_N": -0.00579640304668189,
+          "finalAbsTravelChange_m": -3.0412147988649607e-07
+        },
+        {
+          "identity": "selection_sustained_02",
+          "peakChange_N": 0.012596062173756195,
+          "rmsChange_N": -0.0068760524971201165,
+          "finalAbsTravelChange_m": -9.502029888877606e-05
+        },
+        {
+          "identity": "selection_sustained_03",
+          "peakChange_N": -0.01779153781487608,
+          "rmsChange_N": -0.009593550619176244,
+          "finalAbsTravelChange_m": 5.323603611967487e-07
+        },
+        {
+          "identity": "selection_sustained_04",
+          "peakChange_N": -0.013158387856151421,
+          "rmsChange_N": -0.0037618429576122547,
+          "finalAbsTravelChange_m": -3.652244139912969e-07
+        }
+      ],
+      "sources": [
+        {
+          "path": "ppo_tail_8403/results.json",
+          "sha256": "4ebec82e5b9e9087aae27a9250c2edb7d73d56b9148bc81d5f88c73c651b0cdf"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000000.json",
+          "sha256": "81e6ff28e63f1dafc83014a2a78cdc7d9436ce21b9bb03e062785a197875359a"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000040.json",
+          "sha256": "f2e9ea5a07c42d9910296a51c21abf7310ce5fb4c07f99aed4e0276095d278c0"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000080.json",
+          "sha256": "c6ba3f756be0570e6491481ccf56d900a2c97983ad699fd1f748588ffc0a5c6a"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000120.json",
+          "sha256": "c491708a989eab3f95c5ce76260c93c3bd3819fbc6fde4d304ad5353727751c6"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000160.json",
+          "sha256": "7a92a92de4ea5ed8f870e5cb91a20b66bdbea588aeefd0c28783999e504c3069"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000200.json",
+          "sha256": "e023cb8b6312375f94c87d9cfc97ed8830603b133f233b01e0a462b2a614c976"
+        }
+      ]
+    }
+  ]
+}

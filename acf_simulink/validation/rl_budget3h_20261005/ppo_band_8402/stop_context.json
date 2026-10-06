@@ -1,0 +1,34 @@
+{
+  "stopped_utc": "2026-10-05T14:02:55.905529+00:00",
+  "reason": "Bounded300-update review complete. Reallocate twoCPUcores to independent current-only episodic reward search; preservebest checkpoint and every selection result.",
+  "lastSelection": {
+    "update": 300,
+    "rank": [
+      0,
+      -24,
+      1.047966654275463,
+      0.453225091500812,
+      0.028236519845553504
+    ],
+    "worstNormalForceError_N": 0.453225091500812,
+    "passed": 24,
+    "physicalFailures": 0,
+    "centeringViolations": null,
+    "centeringEligibleRecordings": null,
+    "minimumAchievedCenteringFraction": null,
+    "finalTravelBandViolations": 0,
+    "peakTravelBandExcess_m": 0.0018003051509319253,
+    "integratedTravelBandPeakExcess_m2_s": 3.0215039949564976e-06,
+    "jointScore": 1.047966654275463,
+    "checkpointFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/ppo_band_8402/selection_policies/update_000300/policy_checkpoint.pt",
+    "checkpointSha256": "03217546170a8ad3465d0387e2005b44f2e39f8f80bed5095e543a2fb17dc297"
+  },
+  "selectedUpdate": 0,
+  "selectedRank": [
+    0,
+    -24,
+    0.9969062081089733,
+    0.4401471305409288,
+    0.0400056681547156
+  ]
+}

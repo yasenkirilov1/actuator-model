@@ -1,0 +1,327 @@
+{
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "markdown": "reports/active-contact-flange-report.md",
+  "markdownSha256": "f05566c2f80e36934ceb89d048fb6a4954af930e1197cf15d7109dc258a3678e",
+  "status": "complete",
+  "evidence": [
+    {
+      "file": "acf_simulink/validation/inertial_bump_calculation.json",
+      "sha256": "a9425546df11a016e29d9358ce5fb1ff54cc3dfec661ea9427753cbc142eb8b4",
+      "rowCount": 1001,
+      "kind": "analytical_calculation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json",
+      "sha256": "ebff7b32e22a068588a37f0e8cf0c232de18bd569d38e79c9fd15c4ed5b7ab07",
+      "rowCount": 72,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json",
+      "sha256": "3d81e89f862dcd8141b9991f2f0048786936f6c259a28540b90a3707caadae50",
+      "rowCount": 56,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/realistic_force_position_sensors.json",
+      "sha256": "e975bf49330d76ddbf9be869ef8696fcce76af7c4a87021ed8244ed1a19c511b",
+      "rowCount": 14,
+      "kind": "manufacturer_document_review"
+    },
+    {
+      "file": "acf_simulink/validation/realistic_voice_coil_examples.json",
+      "sha256": "8f240405786f6747be94c3510289c86be4b7fcfc5b8aa65935fe8acd7e47bdf7",
+      "rowCount": 6,
+      "kind": "manufacturer_document_review"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_structural_summary.json",
+      "sha256": "5ffd23828a0130f45dacf4bb2b2bc5fbfcc0fc146f46b8bfab5812f4b319a589",
+      "rowCount": 78,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_v7_drive_shape_analysis_20260930.json",
+      "sha256": "b358d898721f6b78909d98b3c7a86b0cf95995bdc82f08b69992d520f30d323f",
+      "rowCount": 5,
+      "kind": "native_trace_analysis"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_spring_chart_data_20260930.json",
+      "sha256": "8621d86a454739c69d129b27223863567cb7d0732c22c31dfd1003e3bc9af9ec",
+      "rowCount": 168,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json",
+      "sha256": "dbfff16f8f5fd1ac306b170cb61ddf262668657897717b4a40166d20d7d1b4fe",
+      "rowCount": 3,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_chart_data_v7.json",
+      "sha256": "13867b3f3d5c81289da503a2d334de8087c68b71866ccbe18577ea6eb92b4640",
+      "rowCount": 3,
+      "kind": "analytical_calculation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_lower_series_v1_reviewed_comparison.json",
+      "sha256": "81add0605fd00841068f69ac0fba91fef5b0aecbc93debb70662effb452336a6",
+      "rowCount": 8,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_core_summary.json",
+      "sha256": "643654871fcbacb8eee2513b360a6013950649ca9b4f1319eaa719818f9bff18",
+      "rowCount": 7,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930.json",
+      "sha256": "3ff306905ce8cb29fd48a04facc458d58a85ec9c0c42997735a9a801d53782d2",
+      "rowCount": 1,
+      "kind": "native_trace_analysis"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+      "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f",
+      "rowCount": 72,
+      "kind": "native_simulation_and_analytical_geometry_rescore"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_engineered_sensing/inertial_uncertainty_engineered_sensing_20260930_results.json",
+      "sha256": "a7e931117af9de95b0f0735b12ff283fe39bccbec1cb5e0378eab3d06f839ebc",
+      "rowCount": 42,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_robot_fine_delay/inertial_uncertainty_robot_fine_delay_20260930_results.json",
+      "sha256": "a2610b8951f3dd82f883afe387d5229b8f91f0c0e972967654de8a1dce91900f",
+      "rowCount": 14,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.json",
+      "sha256": "2cfaa5e372a72df1c7003b33d1f4a2dec3ab0dd6ec4c7d1c563d85c5149ad8ed",
+      "rowCount": 60,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json",
+      "sha256": "6ae6636e1097b5fc4c797eb2dd185da9b3df37ed5b2405746127bda5de9f61ae",
+      "rowCount": 12,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_sensor_subset.json",
+      "sha256": "d272e3b7cef0b8a5cdcd3e1cceec2f7c925d3996b69936fcd4d32a55b1c2cb8b",
+      "rowCount": 16,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_budget_plan.json",
+      "sha256": "14648b6a1b23bd67d2bafe77897b8fdc32dd479e4ad6e0380e981cf6f707ecef",
+      "rowCount": 10,
+      "kind": "executed_experiment_design"
+    },
+    {
+      "file": "acf_simulink/validation/normal_contact_trial_inertial_v8_manifest.json",
+      "sha256": "89b0b7d60edff5d6723256a36e33534b662dc55fa5362efda155ad82781470c2",
+      "rowCount": 9,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_selected_settings.json",
+      "sha256": "c3b98e99b0c98d3cefa5cc0473d32e5abccd952ae6a72aac0901609a48705f9c",
+      "rowCount": 33,
+      "kind": "native_model_parameter_review"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_acceleration_drive_parts.json",
+      "sha256": "725a16d445385d69ca51195c688a79a4e3e748a9ce464dcda44bffda24740f82",
+      "rowCount": 3,
+      "kind": "manufacturer_document_review"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_final_grid_rows_20260930.json",
+      "sha256": "f75bd5c1bc927083d16952cb390cfb18923f07891da700936b5569038fbc40b7",
+      "rowCount": 3500,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json",
+      "sha256": "dc72f67504a0bb3ff9d07c3bcc814e8c4c62a0a308173ffd85e62da42765c10e",
+      "rowCount": 22001,
+      "kind": "native_simulation_excerpt"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+      "sha256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660",
+      "rowCount": 6,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+      "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+      "rowCount": 9,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_final_grid_hot_mapping_20260930.json",
+      "sha256": "e917319f0009e0073d1f257c1becd502f6c1eb4e809442780fe804d79ab5c54e",
+      "rowCount": 5,
+      "kind": "read_only_analysis"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof.json",
+      "sha256": "e0e0b4ed3c949efae9c81f115974e12087518076d6b55ddd8f3e43970042f9ef",
+      "rowCount": 2,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "sha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35",
+      "rowCount": 3,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "sha256": "7900999f5090b2e9c1e1ca3f2a6b359359a9c494d7ec8518b4b1aeeb00a3a23e",
+      "rowCount": 4,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "sha256": "34386cf4796359563a3e98955ae4eb0cdf82577bd11a7fcb5919a01204f13711",
+      "rowCount": 4,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibration_refinement.json",
+      "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e",
+      "rowCount": 4,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json",
+      "sha256": "d848e6290bda98baf244aa7863106fa7b5920c7c5c36438e225d112aa7d15666",
+      "rowCount": 6,
+      "kind": "native_simulation"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_paired_calibration_diagnostic_20260930.json",
+      "sha256": "037867622785b34af6e4b5627a1baf84ac3476aae2c014f7c19efeaf98d47ffa",
+      "rowCount": 2,
+      "kind": "read_only_analysis"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_calibrated_static_headroom_20260930.json",
+      "sha256": "9f15e7dc080d058d77bd3766ccaeff87eb90f9a7fc925d5f2f2ba9ed85c240b1",
+      "rowCount": 7,
+      "kind": "read_only_analysis"
+    }
+  ],
+  "figures": [
+    {
+      "file": "reports/figures/bump_motion_and_inertia.png",
+      "sha256": "793187bbecf03f68246a40e13519f27926b942ba8f4bf106f50c0f289f632cbe",
+      "queryId": "bump_motion"
+    },
+    {
+      "file": "reports/figures/inertial_controller_reference_comparison.png",
+      "sha256": "51457b96f1c57d1db708a1877e9f8868dc44ccad9ebeb4c565f0896fb229623c",
+      "queryId": "reference_strategies"
+    },
+    {
+      "file": "reports/figures/inertial_PI_reference_gain_search.png",
+      "sha256": "2216c7b16ae90fe44ee1caa4bbedc8350d91c837f7722ca115161dcaafac005c",
+      "queryId": "reference_PI_gains"
+    },
+    {
+      "file": "reports/figures/inertial_cell_stiffness_sensitivity.png",
+      "sha256": "945a25c1799fd159a0ab30b60b05a1c9c79e5b5faba4d9ae1dc6cc10494f3e14",
+      "queryId": "cell_stiffness"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_spring_tuning.png",
+      "sha256": "bb7211b61b522abd12f107035f11c908e49af8af333efc4bdbc0161d5e1504c5",
+      "queryId": "lower_spring_search"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_selected_repeated.png",
+      "sha256": "a3d4f6ead9ef89168dff1ddd709d7c166b1cb04517be990d64c14df6115ede59",
+      "queryId": "lower_series_repeated_reference"
+    },
+    {
+      "file": "reports/figures/inertial_final_range_coverage.png",
+      "sha256": "fec3b2f07664d0f103bb17fc1e5b8ff6ade51c9a34b9559e66a8f3d13a21b06b",
+      "queryId": "qualified_range"
+    },
+    {
+      "file": "reports/figures/inertial_final_worst_native.png",
+      "sha256": "166b0e793cd8aa6575e82fef8dfb1d22701f04ba1b244ea1dff7c0a82c4053d5",
+      "queryId": "final_worst_excerpt"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_v8_actual_tolerance.png",
+      "sha256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee",
+      "queryId": "actual_mechanics_tolerance"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_mixed_comparison.png",
+      "sha256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62",
+      "queryId": "mixed_mechanics_identification"
+    },
+    {
+      "file": "reports/figures/inertial_mixed_static_calibration.png",
+      "sha256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8",
+      "queryId": "mixed_static_calibration"
+    },
+    {
+      "file": "reports/figures/inertial_calibration_refinement.png",
+      "sha256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36",
+      "queryId": "static_calibration_comparison"
+    },
+    {
+      "file": "reports/figures/inertial_uncertainty_v8_sensing.png",
+      "sha256": "d2cde5a865f99f77a19f05eeb9d78212f69d0f04007b0d4f4fe28caeef365f7f",
+      "queryId": "final_sensing_OAT"
+    },
+    {
+      "file": "reports/figures/inertial_uncertainty_v8_joint.png",
+      "sha256": "c06aea4d854bc04371add73eadd680ad978483b91a8ab1ab32fda81626f52363",
+      "queryId": "final_joint_budget"
+    },
+    {
+      "file": "reports/figures/inertial_performance_limit_decomposition.png",
+      "sha256": "943a0c21cd4d2d6e3397c0b71ef26486b72069b4d7142a1e673abcd287fa03d4",
+      "queryId": "force_error_balance"
+    },
+    {
+      "file": "reports/figures/inertial_final_current_response.png",
+      "sha256": "b8f6557210125669860e2da3826e4c71a1b26f46b95a585907029f6976cfc1d6",
+      "queryId": "final_current_response"
+    },
+    {
+      "file": "reports/figures/inertial_final_actuator_peak_errors.png",
+      "sha256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5",
+      "queryId": "final_actuator_comparison"
+    },
+    {
+      "file": "reports/figures/inertial_final_actuator_heavy_bump.png",
+      "sha256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818",
+      "queryId": "final_actuator_comparison"
+    },
+    {
+      "file": "reports/figures/screw_pitch_inertia_and_heating.png",
+      "sha256": "2630c47af1f10a6557d9b0b3008716a7c12f4b6afaa7b8945b48901b2be68bf9",
+      "queryId": "screw_pitch_sizing"
+    },
+    {
+      "file": "reports/figures/inertial_final_voltage_headroom.png",
+      "sha256": "efd8df9ebc9b5436354ab45c5bdb682e6b95cec397fee2e8a72c3d91fdc35f09",
+      "queryId": "final_electrical"
+    }
+  ],
+  "configSha256": "258bf205186b9b3e7d38207daa54d049103a793c4b4ebdfd447695ac17a799a2"
+}

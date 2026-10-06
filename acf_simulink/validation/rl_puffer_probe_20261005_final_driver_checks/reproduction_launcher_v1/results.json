@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "scriptSha256": "72aae3e0ae20e749e845826cdf94486e087d60b392022a3249dd93f4d10742e0",
+  "checks": [
+    {
+      "name": "frozen_dispatch_holdout32",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "frozen_dispatch_nominal700",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "frozen_dispatch_long4",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "mutated_checkpoint",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "mutated_source",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "incomplete_selection_review",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "existing_output",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "write_inside_locked_package",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "invalid_workers",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "partial_grid_even_if_rehashed",
+      "passed": true,
+      "physicsExecuted": false
+    },
+    {
+      "name": "missing_source_lock",
+      "passed": true,
+      "physicsExecuted": false
+    }
+  ],
+  "checksPassed": 11,
+  "plantContextsCreated": 0,
+  "holdoutEpisodesExecuted": 0
+}

@@ -1,0 +1,98 @@
+{
+  "status": "codegen_rejected",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "upperObserverContract": {
+    "enabled": true,
+    "nativeBlocksOnly": true,
+    "stateNames": [
+      "A_minus_R_m",
+      "vA_minus_vR_m_s",
+      "A_minus_S_m",
+      "vA_minus_vS_m_s"
+    ],
+    "inputNames": [
+      "measured_A_minus_S_m",
+      "aligned_delta_actuator_force_N",
+      "aligned_robot_acceleration_m_s2",
+      "measured_S_acceleration_m_s2"
+    ],
+    "observabilityRank": 4,
+    "maximumPoleMagnitude": 0.99274823075756857,
+    "gain": [
+      -2.649416480396642,
+      756.57601789628416,
+      0.40903835428480428,
+      1064.0721512669245
+    ],
+    "causality": "Post-limit issued request only; current lag D=0; matched existing ADC frame; no-lead physical guide-friction estimate from corrected measured-frame gap velocity; no actual A/current/force/surface truth.",
+    "predictorLimitation": "Identified current response is a linear lag; electrical voltage clipping and operating-point identification errors are not reproduced exactly by this observer prediction. Native physical drive still has its full electrical clipping."
+  },
+  "mechanicalDesign": "upper_20k_lower_cell_undamped",
+  "modelName": "acf_rl_native",
+  "modelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_cell_undamped/acf_rl_native.slx",
+  "step_s": 3.3333333333333333E-6,
+  "actionStep_s": 0.0001,
+  "physicalTicksPerAction": 30,
+  "robotStep_s": 0.01,
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "installedProducts": [
+    {
+      "Name": "MATLAB",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "MATLAB Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    }
+  ],
+  "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/upper_20k_lower_cell_undamped/configs.mat",
+  "configsSha256": "39fadb787e6eb3f6e61000c3e15c35446c03cbd7a1a859df734de4114e8a93ea",
+  "observationNames": [
+    "estimated_normal_N",
+    "inertial_axial_N",
+    "inertial_lateral_N",
+    "measured_acceleration_z_m_s2",
+    "measured_acceleration_x_m_s2",
+    "relative_position_m",
+    "estimated_relative_velocity_m_s",
+    "estimated_actuator_travel_m",
+    "estimated_slope",
+    "issued_command_robot_velocity_m_s",
+    "issued_command_robot_acceleration_m_s2",
+    "aligned_issued_command_robot_velocity_m_s",
+    "aligned_issued_command_robot_acceleration_m_s2",
+    "issued_current_request_A",
+    "issued_robot_velocity_request_m_s",
+    "issued_robot_correction_m_s",
+    "force_gate_ready",
+    "recenter_error_m"
+  ],
+  "scoringNames": [
+    "true_normal_N",
+    "plant_log_25",
+    "true_surface_slope"
+  ],
+  "comparatorNames": [
+    "baseline_current_request_A",
+    "baseline_robot_correction_m_s",
+    "known_loaded_equilibrium_current_A"
+  ],
+  "causalContract": "Observations use measured/estimated signals and actual already-issued commands only. Truth and disconnected baseline actions are separate scoring/comparator outputs. Actor current replaces all dynamic PI/FF actuation before current notch/limit; actor robot correction is 100Hz held and passes original gate and teacher sign/amplitude envelope.",
+  "error": "Error using cpp_feval_wrapper\nError due to multiple causes.\n\nError in tlc_c\n\nError in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n     compatibilityTypesRequested] = tlc_c ...\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in coder.internal.ModelBuilder.make_rtw (line 118)\n                [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in coder.internal.build_target\n\nError in coder.internal.build_target\n\nError in coder.internal.build_standalone_rtw_target\n\nError in coder.internal.updateModelTargets\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.codegenAndCompile\n\nError in coder.internal.buildSimulinkModel\n\nError in slbuild\n\nError in slbuild\n\nError in build_mechanical_native_v2 (line 58)\n timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in prepare_and_build_v2 (line 10)\n prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nCaused by:\n    Error using tlc_c\n    Unable to solve algebraic loop in model 'acf_rl_native' because the \"Algebraic\n    loop\" parameter value is 'error' which disables the algebraic loop solver.\n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Suggested Actions:\n        • Change the 'Algebraic loop' parameter value to 'warning' or 'none'. - Open\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Aligned transmitted actuator force deviation'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Head gap and velocity observer'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Identified measured-frame viscous force'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Measured-frame guide velocity scale'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Measured-frame friction direction'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Identified measured-frame Coulomb force'\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error using tlc_c\n    Error in algebraic loop that contains block 'acf_rl_native/Contact force\n    measurement/Head motion estimator/Physical guide friction in measurement frame'\n    (algebraic variable)\n    \n    \n    Error in coder.internal.ModelBuilder>i_buildProcedure (line 814)\n         compatibilityTypesRequested] = tlc_c ...\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.ModelBuilder.make_rtw (line 118)\n                    [modelBuildResult, mainObjFolder] = i_buildProcedure ...\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_target\n    \n    Error in coder.internal.build_standalone_rtw_target\n    \n    Error in coder.internal.updateModelTargets\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.slBuildAll\n    \n    Error in coder.internal.codegenAndCompile\n    \n    Error in coder.internal.buildSimulinkModel\n    \n    Error in slbuild\n    \n    Error in slbuild\n    \n    Error in build_mechanical_native_v2 (line 58)\n     timer=tic;slbuild(mdl);metadata.buildElapsed_s=toc(timer);metadata.status='generated_native_c';\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    Error in prepare_and_build_v2 (line 10)\n     prepare_mechanical_bank(folder,design);metadata=build_mechanical_native_v2(build,fullfile(folder,'configs.mat'));\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+}

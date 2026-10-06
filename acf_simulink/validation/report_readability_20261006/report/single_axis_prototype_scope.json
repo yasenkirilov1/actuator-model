@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "kind": "user_scope_decision_not_experimental_result",
+  "rows": [
+    {
+      "date": "2026-10-06",
+      "userInstruction": "Ah I see now, put that in the document as an open problem that needs a multi axis sensor, drag. But it's fine to ignore for now! We are already slightly out of scope anyway!",
+      "prototypeAssumption": "One-axis B-S load sensing and S acceleration; neglect axial sanding-drag coupling for now.",
+      "openProblem": "Distinguishing normal pressing force from unknown tangent drag on slopes requires multi-axis force sensing.",
+      "frozenEvidence": "Recorded multi-axis studies remain reference evidence and do not qualify the new single-axis architecture.",
+      "thisRevision": "Documentation and figures only; no new simulation, training or model changes."
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/report_readability_20261006/report/prototype_scope_source.json": "7f3751ded234352839641a04f040203fe79a83c4581def77eb9986601bb76e51",
+    "reports/figures/fixed-upper-rigid-lower-20261005.svg": "2111608bee3e85538177ff39d256ef80fc3c8e5972fbe03d28809b35311c46dc",
+    "acf_simulink/validation/upper_no_damping_20261005/report/fixed_mechanics_contract.json": "f2713f60856c2d0623d9856f5ee3940af9b92183846964851da0a51485145c47"
+  }
+}

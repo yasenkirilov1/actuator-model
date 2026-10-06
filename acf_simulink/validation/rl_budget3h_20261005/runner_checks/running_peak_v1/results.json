@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Training cases only; no held-out records accessed.",
+  "analyticTelescopingResidual": 1.1102230246251565e-16,
+  "nonzeroStartupIncluded": true,
+  "nativeArrayObjectIncrementParity": true,
+  "noDtMultiplier": true,
+  "policyCheckpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_8203/checkpoints/generation_0005/policy_checkpoint.pt",
+  "policyCheckpointSha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+  "fullNativeRecords": [
+    {
+      "identity": "train_curriculum_01",
+      "nativeSamples": 600001,
+      "nativeFirstTime_s": 0.0,
+      "peakNormalForceError_N": 0.1081149976788609,
+      "reward": -0.057722729496790595,
+      "completed": true,
+      "physicalFailure": false
+    },
+    {
+      "identity": "train_stress_03",
+      "nativeSamples": 600001,
+      "nativeFirstTime_s": 0.0,
+      "peakNormalForceError_N": 0.32916850552085464,
+      "reward": -0.5350711359349772,
+      "completed": true,
+      "physicalFailure": false
+    }
+  ],
+  "fullNativeTelescopingMaxResidual": 1.1102230246251565e-16,
+  "resetTruncationEpisodes": 6,
+  "collectorFloat32ReturnTelescopingMaxResidual": 5.842231490249539e-10,
+  "exactMidEpisodeResumePassed": true,
+  "corruptedPeakRejected": true,
+  "zeroWeightBitIdenticalToFrozenV5": true,
+  "zeroWeightReferenceSha256": "8da22a065bfc733667c0ae5f1e2ed2a794d2ad557e551cd3bdab420b842b5a94",
+  "sourceHashes": {
+    "train.py": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c",
+    "env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+    "ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940"
+  }
+}

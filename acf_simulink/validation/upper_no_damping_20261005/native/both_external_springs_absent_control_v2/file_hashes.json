@@ -1,0 +1,204 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "createdEpisodes": 0,
+  "design": "both_external_springs_absent",
+  "caseCount": 66,
+  "nativeBankCase0MatchesCoder": true,
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "9848a29d938ad41f7114759c1e66fead0b9ac0af37dd74b96b7bdfb785ac508b",
+  "sharedLibrarySha256": "475f63fb1742b42183c405c2a467058b0a42dda722fcf120244644f9d9a1e1a0",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/acf_rl_native.slx",
+      "sha256": "0be4c395a009b9a2c79e783689884f933b452268141151e22fc3519329c3cc3d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/metadata.json",
+      "sha256": "f1e468448116288be9d82342ea061174035153a46e203e3b5ece70b9fcc888b7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/prepared_configs.mat",
+      "sha256": "cf36c56c1aff7ff8117ce352bffdb2ac6b6c2b6141d4fc2d697b1925f658341a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/native_parameter_bank.c",
+      "sha256": "a6a9fccd5055b5064c63edc22a52b5de28df6b0d380e36e95adc1a8c9e655978"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/parameter_mapping.json",
+      "sha256": "594a86edffe3add411ccb8ca43002b6da57c4ddd78ab4be02fd03f1e49b9dae7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/parameter_mapping.mat",
+      "sha256": "678c8b16d29c434d2ef41b9229c737ff09caa3607beb91b3a0a003c3dce43503"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/scenarios.json",
+      "sha256": "1c3eecd2886b15acbc34e0236ba92bd2dcb5a1a9fdb30484c3251995b152bea7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/libacf_native.so",
+      "sha256": "475f63fb1742b42183c405c2a467058b0a42dda722fcf120244644f9d9a1e1a0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/bridge_build.json",
+      "sha256": "a011fba866e63c54e58fd3331bd5ab3a32388317408f7ba0b3bac52d5e8834ee"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/acf_rl_native_context.c",
+      "sha256": "efc8754459cde74d64d61ba09b779781abc38ab160ee50e7992ce2c5c3bbeb1f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/native_bank_aux.h",
+      "sha256": "53104bff77877e68cef530c198716bbda3efd0a5d1f570d00cb216a55018542c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent_control_v2/configs.mat",
+      "sha256": "9848a29d938ad41f7114759c1e66fead0b9ac0af37dd74b96b7bdfb785ac508b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent_control_v2/manifest.json",
+      "sha256": "ed84373c2c022855d1ad6c2afaa10de0db338b7041826c562b6be375416bef94"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_prepare.m",
+      "sha256": "add113a661f85b7024b362021da53dfcadefd4a18168fffc14dc2936e51ef56e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_prepare_upper_observer.m",
+      "sha256": "28c7089fe0ad15bc93f85cc77ae0235daa8a0a65e468a9430edc50632065d21a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "17f400a9cfe8de5974fb95a9d63910a4a7d0e8000b4e977dc5118a121b3ba964"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "sha256": "b6283c326b1f8224eb70fb4f11f4ba27d03351468f813c40a77c9fcfaa698561"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "sha256": "ef85bc4b9532ab71827d792d3b49e91beb4a11d2d3b560a788d7d186c2763175"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "sha256": "e176adf3630598977d36395ef20d56a3844d95055d25eab1d7d97ea84851680f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "sha256": "fe45d8c286facd320415f0028a3dc2ed4a682c7520234b547bcec2a2b0fb3b7e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "sha256": "d26f0a09b758b37dce401234e8603998c7be773d4e4266c31cd5a6005de85d66"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "sha256": "aea9bc636df161412c4f3974175828935bdddce2bc858dd2cea92f8df08205c5"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "sha256": "c7b5a0c6c7cb5adf2559eae78c72b75d81069305ab6ab81e7ce263ed6b308f97"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "sha256": "62c41ebb1a4c5cf565f49495eb433d53e3d351030e10d643c244a089d795446f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "sha256": "83fc52b81229d04c449735c94f18171c2627eb97316224b3ce6f5d8f5037cae7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "sha256": "aa22c5939ab582c48ff3bd9498f1b549ee9e1a620f5a70b7f743ddb41a63cd20"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "sha256": "148a39ec97b46e103d0126ce7723b799ab92634beb3b79f63570627c322d1829"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_api.py",
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_bridge.c",
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/build_native.m",
+      "sha256": "c7ef352790e72e1f73f195dd13f263618229413b97b6c1550f9ccc525b1e09da"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/install_upper_observer_v3.m",
+      "sha256": "78b17c3f40a45ee39ec350432568b6c3497fc2847cdf8fee33c546d93c966943"
+    }
+  ]
+}

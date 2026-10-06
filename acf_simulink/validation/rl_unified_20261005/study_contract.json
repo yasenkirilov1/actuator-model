@@ -1,0 +1,78 @@
+{
+  "status": "training_complete_holdout_running",
+  "date": "2026-10-05",
+  "objective": "Train one shared recurrent continuous-action policy with reinforcement rewards, controlling full requested coil current and gated robot recentering. No supervised imitation or dynamic PI/feedforward underneath the actor.",
+  "sourceModel": "acf_simulink/validation/adc_acquisition_trial_20261002/acf_force_control_adc_trial.slx",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "nativePhysicsOnly": true,
+  "proposedArchitecture": {
+    "kind": "Puffer minGRU",
+    "hiddenSize": 32,
+    "layers": 2,
+    "sharedTrunk": true,
+    "actorOutputs": 2,
+    "criticUsesSameCausalInputs": true
+  },
+  "clocks": {
+    "physicalStep_s": 3.3333333333333333e-06,
+    "controller_s": 0.0001,
+    "robot_s": 0.01
+  },
+  "actions": {
+    "current": "Known loaded-equilibrium current plus normalized full-control request, saturated by actual current/voltage dynamics. No dynamic PI/feedforward command passed to actor.",
+    "robot": "Learned desired recenter velocity, latched at100Hz and constrained by existing force gates and delay-aware sign/amplitude envelope. Queued commands remain active."
+  },
+  "observationsAllowed": [
+    "Synchronous force/acceleration/relative-position measurements and their causal reconstructions",
+    "Estimated normal/sliding reaction, slope and S-A velocity",
+    "Already-issued robot-command predictor",
+    "Previous issued current and robot commands",
+    "Force stability gate and robot update phase",
+    "Force target, identified masses, fixed orientation, identified mechanical/coil/acquisition/robot parameters"
+  ],
+  "observationsExcluded": [
+    "True plant force, acceleration, robot motion or current",
+    "Bump profile, bump phase, episode elapsed time, future path or preview",
+    "Actual hidden calibration errors or friction coefficient",
+    "Reward or baseline-controller action"
+  ],
+  "trainingSplit": "Separate complete episodes/seeds for training, selection and final native holdout; no final-test retuning. Randomize disturbance timing so recurrence cannot memorize a known bump schedule.",
+  "rewardScope": "Actual workpiece-normal force and physical metrics allowed only for reward/scoring. Score every native physical tick, including startup, not merely controller-rate samples.",
+  "qualification": "A completed finite RL attempt is not full-range or hardware qualification. Preserve trained alternatives and failed episodes; canonical promotion requires separate native evidence.",
+  "references": [
+    {
+      "title": "Puffer minGRU recurrent architecture",
+      "url": "https://puffer.ai/blog/mingru/"
+    },
+    {
+      "title": "Were RNNs All We Needed?",
+      "url": "https://arxiv.org/abs/2410.01201"
+    }
+  ],
+  "scenarioBank": "acf_simulink/validation/rl_unified_20261005/scenario_bank/manifest.json",
+  "plannedTraining": {
+    "seeds": [
+      7101,
+      7102
+    ],
+    "environmentsEach": 16,
+    "updatesEach": 80,
+    "rolloutStepsEach": 2048,
+    "transitionsEach": 2621440,
+    "selectionEveryUpdates": 10,
+    "trainingKind": "Reward-driven recurrent PPO; no imitation pretraining"
+  },
+  "additionalTraining": {
+    "seed": 7103,
+    "decisionRate_Hz": 1000,
+    "nativeForceLatch_Hz": 10000,
+    "decisionRepeat": 10,
+    "updates": 48,
+    "rolloutDecisionSteps": 512,
+    "environments": 16,
+    "transitions": 393216,
+    "initialCurrentLogStd": -6,
+    "currentWhiteExplorationHeldFor_s": 0.001,
+    "scope": "Decision cadence and exploration changed together; not a pure cadence isolation."
+  }
+}

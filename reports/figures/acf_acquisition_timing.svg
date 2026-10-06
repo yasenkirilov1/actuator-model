@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="910" viewBox="0 0 1200 910" role="img" aria-labelledby="acf_acquisition_timing-title acf_acquisition_timing-desc">
+  <title id="acf_acquisition_timing-title">Acquisition: response, sampling and time</title>
+  <desc id="acf_acquisition_timing-desc">Force and analog S acceleration have matched complete response envelopes around 8 kHz. The ADS131M08 samples simultaneous channels at 30 ksample/s with Sinc cubed OSR128. A 50 microsecond EMA setting at this clock gives about 35.2 microseconds DC delay. The total 20 microsecond readout and MCU pipeline includes SPI. A fresh 10 kHz controller latch follows. Position uses a separately timestamped encoder. The nominal component low-frequency delays total 132.9 microseconds before sample-age and latch effects.</desc>
+  <defs>
+    <marker id="arrow-182b49" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#182b49" />
+    </marker>
+    <marker id="arrow-285cc5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#285cc5" />
+    </marker>
+    <marker id="arrow-087d80" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#087d80" />
+    </marker>
+    <marker id="arrow-7750af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7750af" />
+    </marker>
+    <marker id="arrow-9a5b0a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#9a5b0a" />
+    </marker>
+    <marker id="arrow-ae3f70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ae3f70" />
+    </marker>
+    <marker id="arrow-52647c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#52647c" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="910" fill="#ffffff" stroke="none" stroke-width="1.8" rx="0" />
+  <text x="48" y="62" fill="#182b49" font-size="34" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Acquisition: response, sampling and time</text>
+  <text x="48" y="99" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Lower-cost prototype starting point: matched channels and a shared clock</text>
+  <path d="M 350 218 L 410 218" fill="none" stroke="#ae3f70" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-ae3f70)" />
+  <path d="M 350 347 L 410 347" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 750 283 L 820 283" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 981 363 L 981 467" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 820 528 L 750 528" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 425 528 L 350 528" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <rect x="50" y="159" width="300" height="104" fill="#fceef4" stroke="#ae3f70" stroke-width="1.8" rx="14" />
+  <rect x="50" y="172" width="5" height="78" fill="#ae3f70" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="193" fill="#ae3f70" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Force channels</text>
+  <text x="72" y="225" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Cell + instrumentation amp</text>
+  <rect x="50" y="298" width="300" height="104" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="50" y="311" width="5" height="78" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="332" fill="#087d80" font-size="21" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Acceleration channels</text>
+  <text x="72" y="364" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Analog accelerometers on S</text>
+  <rect x="410" y="159" width="340" height="243" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="410" y="172" width="5" height="217" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="432" y="193" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Matched response</text>
+  <text x="432" y="225" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">About 8 kHz complete response</text>
+  <text x="432" y="253" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Include the sensor’s own phase.</text>
+  <text x="432" y="281" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Conditioning + analog rejection</text>
+  <text x="432" y="309" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Match axes after assembly.</text>
+  <text x="432" y="337" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">28.1 µs nominal DC delay</text>
+  <rect x="820" y="186" width="325" height="177" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="820" y="199" width="5" height="151" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="842" y="220" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">ADS131M08</text>
+  <text x="842" y="252" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">30 ksample/s per channel</text>
+  <text x="842" y="280" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Simultaneous · Sinc³ · OSR128</text>
+  <text x="842" y="308" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">49.6 µs group delay</text>
+  <text x="842" y="336" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Own ADC noise + quantization</text>
+  <rect x="820" y="467" width="325" height="133" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="820" y="480" width="5" height="107" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="842" y="501" fill="#285cc5" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Digital smoothing</text>
+  <text x="842" y="533.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">EMA setting: 50 µs</text>
+  <text x="842" y="559.5" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">At 30 ksample/s: 35.2 µs DC delay</text>
+  <text x="842" y="586.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Filter samples on the ADC clock.</text>
+  <rect x="425" y="467" width="325" height="133" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="425" y="480" width="5" height="107" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="447" y="501" fill="#285cc5" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Readout + MCU</text>
+  <text x="447" y="533.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">20 µs total pipeline allowance</text>
+  <text x="447" y="559.5" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">SPI: 15.625 µs, included above</text>
+  <text x="447" y="586.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Verify the actual assembled path.</text>
+  <rect x="50" y="467" width="300" height="133" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="50" y="480" width="5" height="107" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="501" fill="#285cc5" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Force controller</text>
+  <text x="72" y="533.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Fresh-sample latch: 10 kHz</text>
+  <text x="72" y="559.5" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">100 µs controller interval</text>
+  <text x="72" y="586.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Align estimated normal.</text>
+  <rect x="50" y="628" width="1095" height="53" fill="#f2f5f9" stroke="none" stroke-width="1.8" rx="14" />
+  <text x="74" y="661" fill="#182b49" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Position uses a separate encoder, timestamped to the same force/acceleration measurement frame.</text>
+  <text x="51" y="735" fill="#182b49" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Nominal low-frequency delay budget</text>
+  <rect x="50" y="759" width="231.5237020316027" height="72" fill="#e9f7f5" stroke="#087d80" stroke-width="1" rx="0" />
+  <text x="165.76185101580137" y="786" fill="#087d80" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">Analog response</text>
+  <text x="165.76185101580137" y="815" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">28.1 µs</text>
+  <rect x="281.52370203160274" y="759" width="408.66817155756206" height="72" fill="#eef3fe" stroke="#285cc5" stroke-width="1" rx="0" />
+  <text x="485.8577878103838" y="786" fill="#285cc5" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">Sinc³ decimator</text>
+  <text x="485.8577878103838" y="815" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">49.6 µs</text>
+  <rect x="690.1918735891647" y="759" width="290.02257336343115" height="72" fill="#f3eef9" stroke="#7750af" stroke-width="1" rx="0" />
+  <text x="835.2031602708803" y="786" fill="#7750af" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">Sampled EMA</text>
+  <text x="835.2031602708803" y="815" fill="#7750af" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">35.2 µs</text>
+  <rect x="980.2144469525958" y="759" width="164.78555304740405" height="72" fill="#fff5e7" stroke="#9a5b0a" stroke-width="1" rx="0" />
+  <text x="1062.6072234762978" y="786" fill="#9a5b0a" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">Readout + MCU</text>
+  <text x="1062.6072234762978" y="815" fill="#9a5b0a" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">20.0 µs</text>
+  <text x="52" y="872" fill="#182b49" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">About 132.9 µs before sample-age / latch effects. Complete filter phase depends on frequency.</text>
+</svg>

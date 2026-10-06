@@ -1,0 +1,29 @@
+{
+  "command": [
+    "cc",
+    "-std=c99",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/selected_policy",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/executor/final_episode.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/selected_policy/policy_inference.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/frozen_inputs/native/libacf_native.so",
+    "-Wl,-rpath,/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/frozen_inputs/native",
+    "-lm",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/executor/final_episode.so"
+  ],
+  "episodeSourceSha256": "dad1bb5d1eac83f6cf32d137ad4015a1b2db2991e5f73b535bd46f6a262130e0",
+  "acceptedEpisodeSourceSha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+  "policyCSourceSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+  "nativeLibrarySha256": "98a02c1aa5d490b99e8e4d0815cd7418a84b24ef035de039b3e0fde1ce420cc8",
+  "compiledExecutorSha256": "03c27698b493323e98ac555c043e266e7883f3f13106f151191ce92da28b12bd",
+  "onlyAdapterChanges": [
+    "Skip NN inference in native baseline mode.",
+    "TRAIN fixture ablation: reset learned recurrent state on every actor decision."
+  ],
+  "physicalGraphUnchanged": true
+}

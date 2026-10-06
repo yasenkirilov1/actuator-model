@@ -1,0 +1,231 @@
+{
+  "figures": [
+    {
+      "figure": {
+        "path": "reports/figures/pad5mm-material-sensitivity-20261006.svg",
+        "sha256": "37820e638169f3b12f86295e6caa510ae8680954eb40e049185d32b67efad150"
+      },
+      "sources": [
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/conservative_material_sensitivity.json",
+          "sha256": "65c533d28b900e9a91b727a5282cab2478c8758940d71d0c5d9cb067a74b6c08"
+        }
+      ],
+      "rows": [
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 0,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.046298051024216136
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 40,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.04273822855337972
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 80,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.04683997847210808
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 150,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.055544659451969736
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 0,
+          "count": 4,
+          "passes": 0,
+          "stops": 4,
+          "peak_error_N": 50.0
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 40,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.27446473796064463
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 80,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.25322741693325757
+        },
+        {
+          "actuator": "Voice coil",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 150,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.31047613436807264
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 0,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.11629173997131392
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 40,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.11445783294792289
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 80,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.11304338651885892
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 50.0,
+          "damping_N_s_m": 150,
+          "count": 4,
+          "passes": 4,
+          "stops": 0,
+          "peak_error_N": 0.11181881365519519
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 0,
+          "count": 4,
+          "passes": 2,
+          "stops": 1,
+          "peak_error_N": 8.23114145596306
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 40,
+          "count": 4,
+          "passes": 3,
+          "stops": 0,
+          "peak_error_N": 0.7296052102924069
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 80,
+          "count": 4,
+          "passes": 3,
+          "stops": 0,
+          "peak_error_N": 0.6765264951301635
+        },
+        {
+          "actuator": "Screw + spring",
+          "stiffness_N_mm": 100.0,
+          "damping_N_s_m": 150,
+          "count": 4,
+          "passes": 3,
+          "stops": 0,
+          "peak_error_N": 0.6166203371416303
+        }
+      ],
+      "scope": "Total axial force, 2 s loaded-equilibrium diagnostics; no local pressure metric or hardware qualification."
+    },
+    {
+      "figure": {
+        "path": "reports/figures/pad5mm-force-and-actuator-results-20261006.svg",
+        "sha256": "fcd3f06d93ca54f316d2abd4cb63bd6b583447c5c2a9f193baa23fe726867843"
+      },
+      "sources": [
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/pad5mm_exact_width_pairs.json",
+          "sha256": "fbd8ad55ff9134b8d7a109f4d1c4ee714e06230ee950729d6dd598bfa9899fde"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_pad5mm_k50_c0.json",
+          "sha256": "45c97df7ff98e2bcc26cc484f87b3645e234c0a5b36d1c1c26b9bf9af76b9dd3"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_pad5mm_k50_c0.json",
+          "sha256": "c15dd3e49d93a4c8a728c7ecaf69cb44527aa7a070ef9fe6435e547e0f4394f1"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Voice coil",
+          "color": "#197b9b",
+          "matched_point_peak_N": 48.65144796280631,
+          "matched_wide_peak_N": 0.04433689835466481,
+          "matched_point_passes": 0,
+          "matched_wide_passes": 8,
+          "matched_point_stops": 4,
+          "matched_point_sensor_range_failures": 3,
+          "full_grid_peak_N": 0.04607506420735774,
+          "full_grid_count": 54,
+          "full_grid_peak_copper_loss_W": 37.357240892373206,
+          "full_grid_peak_current_rms_A": 2.0492267166623996
+        },
+        {
+          "label": "Screw + spring",
+          "color": "#a16a29",
+          "matched_point_peak_N": 7.2043433329037185,
+          "matched_wide_peak_N": 0.11807803888362489,
+          "matched_point_passes": 0,
+          "matched_wide_passes": 8,
+          "matched_point_stops": 2,
+          "matched_point_sensor_range_failures": 0,
+          "full_grid_peak_N": 0.11830740686522212,
+          "full_grid_count": 54,
+          "full_grid_peak_copper_loss_W": 7.437285202916383,
+          "full_grid_peak_current_rms_A": 1.0692441709207299
+        }
+      ],
+      "scope": "Axial total-force, loaded equilibrium, robot fixed; modeled winding loss is not measured temperature or thermal qualification."
+    },
+    {
+      "figure": {
+        "path": "reports/figures/prototype-mechanics-pad5mm-20261006.svg",
+        "sha256": "d3a031cba6ed2b4267125f31b881d4ddcbcb05d1623dcb209fed1d6b8a221920"
+      },
+      "sources": [
+        {
+          "path": "reports/figures/prototype-mechanics-single-axis-20261006.svg",
+          "sha256": "5c672256a5ccb3587242f77c6cf337f24b292e27e1ef3c56e611a67d922363db"
+        },
+        {
+          "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/pad5mm_contract.json",
+          "sha256": "674b1217279f8a9ca689f55afbcecbd6640b63cf45c4240f63b2549074a5efff"
+        }
+      ],
+      "scope": "Schematic of load path and measurement placement; not a dimensional spring drawing."
+    }
+  ]
+}

@@ -1,0 +1,871 @@
+{
+  "date": "2026-09-30",
+  "gateFilterTime_s": 0.1,
+  "parameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 5E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 1.4,
+      "k1": 0,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.5707963267948966,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": true,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0001,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 1729,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 1.4,
+      "distalMass_model_kg": 1.4,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "observer",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 6.0068925498177676E-16,
+      "keq": null,
+      "ell": 0.00079577471545947678,
+      "q10": 50,
+      "q20": 50,
+      "holdForce": 50,
+      "r0": 0,
+      "u0": 0,
+      "z0": 0,
+      "forceTicks": 2,
+      "sensorTicks": 2,
+      "robotTicks": 200,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.79577471545947664,
+      "coilHoldCurrent": 2.5,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.5,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2.6758842139126095E-14,
+            -3.2952489173466589E-9
+          ],
+          [
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.01,
+            0,
+            -5.0000000000000009E-5,
+            4.9972233792439362E-5,
+            7.5604773087392636E-5,
+            0.030764915469023976
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.01,
+            0.00999167129436793,
+            0.00527845864875106,
+            0.045378313277628521
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -7.2940461543261986E-13,
+            6.1719480676864814E-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.18943257675615821,
+            0.0015775947878580497
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            -2.5454192503789494E-8,
+            0.0077483604573685165
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.12642411176571153,
+            12.642411176571153,
+            3.7927233529713469,
+            0,
+            -0.64345751284354613,
+            -0.00091147545853144081
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -3.2291814134699882E-5,
+            -0.030311444731666384
+          ]
+        ],
+        "B": [
+          [
+            -2.6758842139126095E-14,
+            3.2952489173466589E-6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -7.5604773087392636E-5,
+            -30.764915469023975,
+            0,
+            0,
+            5E-6
+          ],
+          [
+            -0.00527845864875106,
+            -45.378313277628529,
+            0,
+            0,
+            0.001
+          ],
+          [
+            7.2940461543261986E-13,
+            -6.1719480676864814E-11,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.18943257675615821,
+            -1.5775947878580496,
+            0,
+            0,
+            0
+          ],
+          [
+            2.5454192503789494E-8,
+            -7.7483604573685163,
+            0,
+            0,
+            0
+          ],
+          [
+            1.0113369540149884,
+            0.91147545853144152,
+            0,
+            -0.63212055882855767,
+            0
+          ],
+          [
+            3.2291814134699882E-5,
+            30.311444731666384,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2.9573094133539312E-17,
+            -3.6418132712717916E-12
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            3.2291814164272977E-8,
+            3.0311441089853114E-5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00033841331359436388,
+            0.0045316541015375956
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.9827273117246487E-12,
+            1.6777094278585078E-13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -1.8943257675615821,
+            0.0157759478785805
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -2.5496651530656385E-7,
+            0.077612851590570409
+          ]
+        ],
+        "D": [
+          [
+            -2.9573094133539312E-17,
+            3.6418132712717912E-9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -3.2291814164272977E-8,
+            -0.030311441089853113,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00033841331359436388,
+            -4.5316541015375957,
+            0,
+            0,
+            0
+          ],
+          [
+            1.9827273117246487E-12,
+            -1.6777094278585079E-10,
+            0,
+            0,
+            0
+          ],
+          [
+            1.8943257675615821,
+            -15.775947878580496,
+            0,
+            0,
+            0
+          ],
+          [
+            2.5496651530656385E-7,
+            -77.612851590570415,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -0,
+          -0,
+          -0,
+          -0,
+          0,
+          0,
+          -0.58413293311658288,
+          -0.15841329331165829,
+          0
+        ],
+        "integralGain": 1.2641098067025676,
+        "force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          20,
+          2,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.0125,
+      "positionMeasurementInitial": 0.0125,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003
+    },
+    "springs": {
+      "maxCombinedLength_m": 0.1,
+      "commonPreload_N": 32,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "lower": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    }
+  },
+  "cases": [
+    {
+      "forceReference_N": 5,
+      "angle_deg": 0,
+      "seed": 1729,
+      "stress": false,
+      "peakForceError_N": 0.27464095722971571,
+      "passed": true,
+      "readyFraction": 0.97506234413965087,
+      "peakCurrent_A": 0.92647858281086837,
+      "peakVoltage_V": 4.0135086843722183
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 90,
+      "seed": 1729,
+      "stress": false,
+      "peakForceError_N": 0.27464095723275861,
+      "passed": true,
+      "readyFraction": 0.97506234413965087,
+      "peakCurrent_A": 0.49587469904804177,
+      "peakVoltage_V": 2.2480963787394281
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 0,
+      "seed": 1729,
+      "stress": false,
+      "peakForceError_N": 0.27464095722165638,
+      "passed": true,
+      "readyFraction": 0.97506234413965087,
+      "peakCurrent_A": 1.7648746990480413,
+      "peakVoltage_V": 7.3240963787393145
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "seed": 1729,
+      "stress": false,
+      "peakForceError_N": 0.27464095723129134,
+      "passed": true,
+      "readyFraction": 0.97506234413965087,
+      "peakCurrent_A": 2.7458746990480405,
+      "peakVoltage_V": 11.24809637873944
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 0,
+      "seed": 7,
+      "stress": true,
+      "peakForceError_N": 0.36324867083750156,
+      "passed": true,
+      "readyFraction": 0.33416458852867831,
+      "peakCurrent_A": 0.93225603907846932,
+      "peakVoltage_V": 4.4945123400295515
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 0,
+      "seed": 29,
+      "stress": true,
+      "peakForceError_N": 0.42634744325296836,
+      "passed": true,
+      "readyFraction": 0.31920199501246882,
+      "peakCurrent_A": 0.93010185213215468,
+      "peakVoltage_V": 4.4557265176441732
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 0,
+      "seed": 1729,
+      "stress": true,
+      "peakForceError_N": 0.41972799145399087,
+      "passed": true,
+      "readyFraction": 0.20698254364089774,
+      "peakCurrent_A": 0.93185030219184273,
+      "peakVoltage_V": 4.5030778817030672
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 0,
+      "seed": 31415,
+      "stress": true,
+      "peakForceError_N": 0.37523024041860609,
+      "passed": true,
+      "readyFraction": 0.3117206982543641,
+      "peakCurrent_A": 0.93282458222694,
+      "peakVoltage_V": 4.4880432399764771
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 90,
+      "seed": 7,
+      "stress": true,
+      "peakForceError_N": 0.36324867083669687,
+      "passed": true,
+      "readyFraction": 0.33416458852867831,
+      "peakCurrent_A": 0.50173772730439736,
+      "peakVoltage_V": 2.7347683844701596
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 90,
+      "seed": 29,
+      "stress": true,
+      "peakForceError_N": 0.42634744325574303,
+      "passed": true,
+      "readyFraction": 0.31920199501246882,
+      "peakCurrent_A": 0.50245831977342348,
+      "peakVoltage_V": 2.8156416176769348
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 90,
+      "seed": 1729,
+      "stress": true,
+      "peakForceError_N": 0.41972799145543505,
+      "passed": true,
+      "readyFraction": 0.20698254364089774,
+      "peakCurrent_A": 0.50099085712127667,
+      "peakVoltage_V": 2.744213034426759
+    },
+    {
+      "forceReference_N": 5,
+      "angle_deg": 90,
+      "seed": 31415,
+      "stress": true,
+      "peakForceError_N": 0.37523024041905373,
+      "passed": true,
+      "readyFraction": 0.3117206982543641,
+      "peakCurrent_A": 0.50244505595187761,
+      "peakVoltage_V": 2.7977736201257031
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 0,
+      "seed": 7,
+      "stress": true,
+      "peakForceError_N": 0.36324867084400836,
+      "passed": true,
+      "readyFraction": 0.33416458852867831,
+      "peakCurrent_A": 1.7707377273043983,
+      "peakVoltage_V": 7.8107683844821079
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 0,
+      "seed": 29,
+      "stress": true,
+      "peakForceError_N": 0.42634744324446672,
+      "passed": true,
+      "readyFraction": 0.31920199501246882,
+      "peakCurrent_A": 1.7714583197734215,
+      "peakVoltage_V": 7.8916416176767772
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 0,
+      "seed": 1729,
+      "stress": true,
+      "peakForceError_N": 0.41972799144351569,
+      "passed": true,
+      "readyFraction": 0.20698254364089774,
+      "peakCurrent_A": 1.7699908571212772,
+      "peakVoltage_V": 7.8202130344266809
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 0,
+      "seed": 31415,
+      "stress": true,
+      "peakForceError_N": 0.37523024041512087,
+      "passed": true,
+      "readyFraction": 0.3117206982543641,
+      "peakCurrent_A": 1.7714450559518771,
+      "peakVoltage_V": 7.8737736201256183
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "stress": true,
+      "peakForceError_N": 0.36324867083673951,
+      "passed": true,
+      "readyFraction": 0.33416458852867831,
+      "peakCurrent_A": 2.7517377273043975,
+      "peakVoltage_V": 11.734768384470247
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "seed": 29,
+      "stress": true,
+      "peakForceError_N": 0.42634744325539486,
+      "passed": true,
+      "readyFraction": 0.31920199501246882,
+      "peakCurrent_A": 2.7524583197734205,
+      "peakVoltage_V": 11.815641617676905
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "seed": 1729,
+      "stress": true,
+      "peakForceError_N": 0.41972799145597151,
+      "passed": true,
+      "readyFraction": 0.20698254364089774,
+      "peakCurrent_A": 2.750990857121276,
+      "peakVoltage_V": 11.744213034426711
+    },
+    {
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "seed": 31415,
+      "stress": true,
+      "peakForceError_N": 0.37523024041926334,
+      "passed": true,
+      "readyFraction": 0.3117206982543641,
+      "peakCurrent_A": 2.7524450559518772,
+      "peakVoltage_V": 11.797773620125707
+    }
+  ]
+}

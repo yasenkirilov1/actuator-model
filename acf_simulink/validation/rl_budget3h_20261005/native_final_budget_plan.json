@@ -1,0 +1,21 @@
+{
+  "winnerLocked": true,
+  "checkpointFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/policy_checkpoint.pt",
+  "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "replays": [
+    {
+      "label": "worst_parity",
+      "buildFolder": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50",
+      "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/configs.mat",
+      "recordingMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_final_budget_inputs/case_086_replay.mat",
+      "recordingMatSha256": "05edae0d96dbed40caf04895c0a1a9d2d4d655850e4c345ce61fd71a1ac45561"
+    },
+    {
+      "label": "active_robot_parity",
+      "buildFolder": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50",
+      "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/configs.mat",
+      "recordingMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_final_budget_inputs/case_095_replay.mat",
+      "recordingMatSha256": "19d18ea5b7c1d8c6ae4f9b4386ad957676968380a7aad0ce152013c49ab50f0b"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "status": "completed_report_delivery_and_preservation_audit",
+  "checked_utc": "2026-10-06T21:35:17.772126+00:00",
+  "protected_inputs": [
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/GETTING_STARTED_FIXED.md",
+      "sha256": "85a30b8ec16a60fda4ac8f8cd6e00aa9245e57d45c22d4f3ef01854aaf6add8a",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx",
+      "sha256": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/delivery_acceptance.json",
+      "sha256": "cbe6cda3a0355752501913b7dfa9eec03eb762bae26a7c167617057818a1bf14",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_force_controller.png",
+      "sha256": "b707c9408c08937cdf5652002b5e8cd542781b1c01143a4d93f6118688093064",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_root.png",
+      "sha256": "d47950f8e81ab27f3540492acae1331af3151204b9021c95d1fa51dd9e7a22e0",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_upper_observer.png",
+      "sha256": "761a2bbad2032b9941170c5be2f50cdbb158df99372f3e7bcfc383b676ec7237",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_adc_prepare.m",
+      "sha256": "1824aa920349ce3411aaa5decdc15cbad14784f347884dc81c37b60b7d1d86bc",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_apply.m",
+      "sha256": "9b24217528d0a4b9e53b042f6afac19eeede3b30022f546fc222bdfa4c5e00c7",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare.m",
+      "sha256": "b8eedbc32a214bb7871a5aa3283267f919febbc935523f183f83a1cd9b2f9acb",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_baseline_v8.m",
+      "sha256": "5ba68f2ead88f35c6e1c30a59036a256570bd10b11ae611fe4eaa0e98213d5ce",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_cell_modal.m",
+      "sha256": "77386214c5059efd023ef9bbf960643517e3082202e9dc130f49f8387486d6df",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_upper_observer.m",
+      "sha256": "fc16f7a5dc1cd19be32c55d57e295c7841dfd1b64bf7cbabe92fcf5498ba3a15",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_actuator.m",
+      "sha256": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_controller.m",
+      "sha256": "ac031acc9203d6d35605b58e120cf180be64fddd1577f1a8f587d3d490f9d55c",
+      "matches_frozen": true
+    },
+    {
+      "path": "reports/active-contact-flange-report.html",
+      "sha256": "8d0093fd0645957c6f614718b0f53decc0c5fcd6a5a0bd74c41349ff8e68ec60"
+    },
+    {
+      "path": "reports/active-contact-flange-report-design-explained-20261006.html",
+      "sha256": "f44740b9f6a5a7fd6f5b945797940747182060a71fc4c1296f6b0fec74881a91"
+    },
+    {
+      "path": "reports/prototype-design-20260930/src/data.json",
+      "sha256": "1d87387cefc838356904a03d254c895ffe9edf34e5b223a11c25f490ff2d19a8"
+    },
+    {
+      "path": "reports/prototype-design-20260930/src/content/report/ReportContent.jsx",
+      "sha256": "fb777fdc2eb74ffcb23ff116ceec916a49e51699ebb517c23dd6d06178e6a287"
+    }
+  ],
+  "all_protected_hashes_passed": true,
+  "engine_source_files_verified": 35,
+  "native_model_manifest_files_verified": 20,
+  "native_trace_roundtrips_verified": 9,
+  "local_markdown_links_verified": 13,
+  "svg_figures_xml_checked": 7,
+  "new_figures_visually_reviewed": true,
+  "native_worker_temporary_cleanup": {
+    "status": "native_worker_completed_and_owned_temporaries_released",
+    "retained_limit_bytes": 10485760,
+    "observed_temporary_peak_bytes": 180756025,
+    "observed_5mm_temporary_bytes": 176224733,
+    "temporary_limit_bytes": 629145600,
+    "temporary_array_limit_bytes": 314572800,
+    "owned_sdi_cache_code_reference_arrays_preferences_absent": true,
+    "representative_trace_archives_count": 9,
+    "all_trace_archives_exact_roundtrip_verified": true,
+    "canonical_models_and_desktop_untouched": true,
+    "scope_folders": [
+      "acf_simulink/validation/sea_pad_dynamic_20261006/native",
+      "acf_simulink/generated/sea_pad_dynamic_20261006",
+      "acf_simulink/experiments/sea_pad_dynamic_20261006/native"
+    ],
+    "retained_bytes_including_sources": 9339660,
+    "retained_budget_passed": true
+  },
+  "retained_bytes_by_owner_before_this_small_audit": {
+    "engine": 18503800,
+    "native": 9339660,
+    "root_report_assumptions": 1665751
+  },
+  "retained_total_bytes_before_this_small_audit": 29509211,
+  "retained_limit_bytes": 33554432,
+  "conservative_accounting": "Includes complete report/AGENTS and all seven deliveredSVGs, even unchanged reference figures; does not count unrelated old reports.",
+  "shared_array_audit": {
+    "scopes": [
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation",
+      "/run/media/tommie/SATA SSD/actuator-model-evidence"
+    ],
+    "count": 2764,
+    "bytes": 4347292257,
+    "extensions": [
+      ".mat",
+      ".npz",
+      ".npy",
+      ".bin"
+    ],
+    "symlinks_and_hardlinks_deduplicated": true
+  },
+  "shared_array_limit_bytes": 5368709120,
+  "new_study_bulk_arrays": [],
+  "report_inputs": {
+    "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/report_inputs.json",
+    "sha256": "a07e6015e2aaa4b0e5f9351c528fe22f3b60723c09558d0f9ba70af693f10624",
+    "bytes": 8349
+  },
+  "markdown_delivery_manifest": {
+    "path": "acf_simulink/validation/sea_pad_dynamic_20261006/report/markdown_delivery_manifest.json",
+    "sha256": "67de8062c9ddf5ebe064239bb2438e5bd197de9d121b0086b63286bc5b049e1f",
+    "bytes": 4029
+  },
+  "report_word_count_including_tables": 3613
+}

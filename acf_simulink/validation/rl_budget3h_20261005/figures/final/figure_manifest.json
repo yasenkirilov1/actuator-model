@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "figures": [
+    {
+      "file": "rl_3h_fresh_pairs.svg",
+      "sha256": "2ae8d710208eee22a46df64e9f6d1acbacbae97ae5f531e68aa42ef2b8dd8dcd",
+      "description": "All-native force peaks in paired fresh cases.",
+      "sourceHashes": {
+        "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json": "b01be11df8801e88766d611b3159e201bc5555cffaaee33eb3c3f4bdaeb36b7c"
+      }
+    },
+    {
+      "file": "rl_3h_worst_force.svg",
+      "sha256": "b5c01acbe2d187868420fb3a58b20abd12f829a68216b7559ba0d883bf87e2ec",
+      "description": "Complete history plus a peak-region view; extrema-preserving display bins.",
+      "sourceHashes": {
+        "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json": "b01be11df8801e88766d611b3159e201bc5555cffaaee33eb3c3f4bdaeb36b7c"
+      }
+    },
+    {
+      "file": "rl_3h_drive.svg",
+      "sha256": "629285c5449521e6119b983ea845f95a78173afd39dd188402fc6502b7f4ae79",
+      "description": "Current and voltage at unchanged 3.5 A / 32 V usable limits.",
+      "sourceHashes": {
+        "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json": "b01be11df8801e88766d611b3159e201bc5555cffaaee33eb3c3f4bdaeb36b7c"
+      }
+    },
+    {
+      "file": "rl_3h_robot_travel.svg",
+      "sha256": "852eb58caacced914aea3669fd8adec19aec43a5b4f21c5960c0885f49efdcdd",
+      "description": "Full histories; centering inside the shaded band is optional.",
+      "sourceHashes": {
+        "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json": "b01be11df8801e88766d611b3159e201bc5555cffaaee33eb3c3f4bdaeb36b7c"
+      }
+    },
+    {
+      "file": "rl_3h_nominal_grid.svg",
+      "sha256": "e063a68b4f842931cd615d0ad16ff6c2a2dd7eb0e52827ac2f2991624dfd2806",
+      "description": "Fresh nominal hot-coil grid; each heatmap cell takes the maximum across orientations.",
+      "sourceHashes": {
+        "acf_simulink/validation/rl_budget3h_20261005/final_nominal700/results.json": "d5ee803966e314d1ba33d31562fce5a9cad46f552e4e4dc3a55b240f8649a3ed"
+      }
+    }
+  ],
+  "worstCase": "holdout_nominal_23",
+  "robotCase": "holdout_stress_08",
+  "nativeMetricDefinition": "Every native sample, startup and endpoint included.",
+  "waveformDisplay": "Min/max bins; metric values are never computed from display bins."
+}

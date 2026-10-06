@@ -1,0 +1,18 @@
+{
+  "arguments": {
+    "native_build": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50",
+    "bank": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+    "policy": "acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_8207/checkpoints/generation_0025/policy_checkpoint.pt",
+    "output": "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210",
+    "workers": 2
+  },
+  "startedUtc": "2026-10-05T15:14:18.194745+00:00",
+  "policyCheckpointSha256": "a90edbd6dc932aeedb8127b8ac652b17ada0d41ca9fe72af22f658675532e762",
+  "nativeLibrarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+  "scenarioManifestSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+  "physicalActionScales": {
+    "currentOffset_A": 2.0,
+    "robotRequest_m_s": 0.01
+  },
+  "scope": "Paired development screen. Final scenarios 64 through 95 are not evaluated."
+}

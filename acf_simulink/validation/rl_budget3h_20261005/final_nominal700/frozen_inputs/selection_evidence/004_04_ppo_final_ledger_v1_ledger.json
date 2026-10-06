@@ -1,0 +1,1515 @@
+{
+  "status": "complete",
+  "createdUTC": "2026-10-05T14:52:56.237941+00:00",
+  "scope": "Root-owned PPO attempts during the three-hour budget. Excludes ES searches, runner acceptance/smoke tests, discarded plans and held-out qualification.",
+  "definitions": {
+    "ppoRolloutUpdate": "One collected batch followed by PPO optimization; may contain several optimizer minibatch steps.",
+    "decisions": "One physical action decision in one environment; all actual decision intervals and model versions are retained per attempt.",
+    "episodes": "Completed training episodes only; partial active episodes remain in final checkpoints and are not added to this count.",
+    "selectionRecordings": "Repeated completed recordings on reused selection banks, not distinct or held-out cases.",
+    "comparability": "Banks, initialization, action scales, reward objectives and ranking rules changed between phases; ranks are meaningful within their recorded contracts."
+  },
+  "totals": {
+    "completedPpoRolloutUpdates": 1372,
+    "completedOptimizerMinibatchSteps": 15824,
+    "decisionsUsedByCompletedUpdates": 124368632,
+    "executedRejectedDecisions": 98304,
+    "completedTrainingEpisodes": 5130,
+    "completedTrainingEpisodeForcePasses": 4344,
+    "trainingPhysicalFailures": 38,
+    "completedSelectionRecordings": 864,
+    "allExecutedTrainingDecisions": 124466936,
+    "attempts": 11,
+    "completedTrainingAttempts": 7,
+    "preparationRejections": 3,
+    "postCollectionSoftwareRejections": 1
+  },
+  "attempts": [
+    {
+      "name": "legacy_lr_8101",
+      "status": "training_complete",
+      "seed": 8101,
+      "stopReason": null,
+      "completedPpoRolloutUpdates": 160,
+      "completedOptimizerMinibatchSteps": 1280,
+      "decisionsUsedByCompletedUpdates": 5242880,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 671,
+      "completedTrainingEpisodeForcePasses": 0,
+      "trainingPhysicalFailures": 38,
+      "selectedUpdate": 140,
+      "selectedRank": [
+        1,
+        0,
+        10.243707840286767,
+        1.32380710313906
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_native_probe_20261005_bank",
+      "bankSha256": "eaaa564437de94c28ab00122b5df4c839d01c80d2e458795a5d6a4fbab8b3201",
+      "reward": {
+        "force_error_scale_N": 0.5,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 4.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative dt times weighted native mean squared normal error, interval peak excess squared, true stroke error squared, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001,
+        "runningRewardTimeWeight": "Actual native elapsed time, including partial physical-failure intervals."
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.1,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 4,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "clip_coef": 0.15,
+        "value_clip": 0.25,
+        "value_coef": 0.5,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.03
+      },
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "legacy_lr_8101/results.json",
+          "sha256": "fe10a11a7ad3c93524d5435914cd329a3ebdd9d007efcd36a2d6b1cbeb7969fa"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0020.json",
+          "sha256": "961aade55edaff66c71e8a4e17889a899c143959ce0a1499de7ed07b757b6494"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0040.json",
+          "sha256": "56cff67c5f5099651791f7cdf847dacc3c5d3498c8d1ef3707682ad876d499a8"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0060.json",
+          "sha256": "cd9d5bcdbd5ca983b11b141f715d5ec56b2d0a61b1c17c3516515cf5cbbd4746"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0080.json",
+          "sha256": "dba52c889bda6abd649ab0f341e400690be52222313d68eec40159583c8f6b4a"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0100.json",
+          "sha256": "09fc0f2491c18ef66266a6b69eac750f33edf241b78f2d384f42e1601b065988"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0120.json",
+          "sha256": "7f9caa6e400a8ac89b5d6d9e68645d825be1ccdf5e9e78a71d0006bd7dc06bbb"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0140.json",
+          "sha256": "65dbb1ca9a1493d8245e74565071adf3b61604c702385ec2f8b21b914ddb1fcb"
+        },
+        {
+          "path": "legacy_lr_8101/selection/selection_update_0160.json",
+          "sha256": "b35a0cb1ceda7bb9d30226b82c94743b57d9f738d4471d1649f9cf849df87ce2"
+        },
+        {
+          "path": "legacy_lr_8101/latest_training.pt",
+          "sha256": "3137132787158dae4a59767c70e3eddc689d1a8f96c86f88dc11da7049e0dec0"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_0020",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.960905552550216,
+          "meanRmsNormalForceError_N": 1.1637470524483233,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0040",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.817460859890474,
+          "meanRmsNormalForceError_N": 1.1514709348916388,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0060",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.715958441166443,
+          "meanRmsNormalForceError_N": 1.1586739116594988,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0080",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.628655407662812,
+          "meanRmsNormalForceError_N": 1.1682665620121453,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0100",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.481113407043637,
+          "meanRmsNormalForceError_N": 1.1959072037462604,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0120",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.388790599280469,
+          "meanRmsNormalForceError_N": 1.245614672387768,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0140",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.243707840286767,
+          "meanRmsNormalForceError_N": 1.32380710313906,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_0160",
+          "recordings": 8,
+          "passed": 0,
+          "physicalFailures": 1,
+          "worstNormalForceError_N": 10.278837082482497,
+          "meanRmsNormalForceError_N": 1.3101791093560595,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        }
+      ],
+      "completedSelectionRecordings": 64,
+      "trainingRolloutWorstError_N": 10.851819445786042,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": false,
+      "legacyCheckpointNote": "Legacy checkpoint contains optimizer state but no collector snapshot; transition/episode totals are cross-checked between final report and per-update records.",
+      "selectedCheckpoint": {
+        "path": "legacy_lr_8101/selected_policy/policy_checkpoint.pt",
+        "sha256": "2fe379c7c3d981ba55fba42095c87ec58f073adf7f617731959f07561e4cc8eb"
+      }
+    },
+    {
+      "name": "pilot_10k_8201",
+      "status": "preparation_rejection",
+      "seed": 8201,
+      "stopReason": null,
+      "completedPpoRolloutUpdates": 0,
+      "completedOptimizerMinibatchSteps": 0,
+      "decisionsUsedByCompletedUpdates": 0,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 0,
+      "completedTrainingEpisodeForcePasses": 0,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": null,
+      "selectedRank": null,
+      "decisionRepeat": 1,
+      "nativeBuild": null,
+      "bankSha256": null,
+      "reward": null,
+      "ppoConfig": null,
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "pilot_10k_8201/results.json",
+          "sha256": "65c2e0919cb97278241a028f9df71366e908f6730d072f6892d63644a112b447"
+        }
+      ],
+      "selectionEvaluations": [],
+      "completedSelectionRecordings": 0,
+      "rejectionReason": "Scenario metadata overlay length mismatch during native preparation; zero executed decisions."
+    },
+    {
+      "name": "pilot_5k_8202",
+      "status": "preparation_rejection",
+      "seed": 8202,
+      "stopReason": null,
+      "completedPpoRolloutUpdates": 0,
+      "completedOptimizerMinibatchSteps": 0,
+      "decisionsUsedByCompletedUpdates": 0,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 0,
+      "completedTrainingEpisodeForcePasses": 0,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": null,
+      "selectedRank": null,
+      "decisionRepeat": 2,
+      "nativeBuild": null,
+      "bankSha256": null,
+      "reward": null,
+      "ppoConfig": null,
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "pilot_5k_8202/results.json",
+          "sha256": "eccaf04d79f4f9d48b8943c2fc06c0f6f577978bd8a8a18c004315da081af1e6"
+        }
+      ],
+      "selectionEvaluations": [],
+      "completedSelectionRecordings": 0,
+      "rejectionReason": "Scenario metadata overlay length mismatch during native preparation; zero executed decisions."
+    },
+    {
+      "name": "pilot_1k_8203",
+      "status": "preparation_rejection",
+      "seed": 8203,
+      "stopReason": null,
+      "completedPpoRolloutUpdates": 0,
+      "completedOptimizerMinibatchSteps": 0,
+      "decisionsUsedByCompletedUpdates": 0,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 0,
+      "completedTrainingEpisodeForcePasses": 0,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": null,
+      "selectedRank": null,
+      "decisionRepeat": 10,
+      "nativeBuild": null,
+      "bankSha256": null,
+      "reward": null,
+      "ppoConfig": null,
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "pilot_1k_8203/results.json",
+          "sha256": "871cfc7d961835ec25d83b74f8a953c9c6b46f2f132984f40afc21f6f6843536"
+        }
+      ],
+      "selectionEvaluations": [],
+      "completedSelectionRecordings": 0,
+      "rejectionReason": "Scenario metadata overlay length mismatch during native preparation; zero executed decisions."
+    },
+    {
+      "name": "ppo_warm_10k_8301",
+      "status": "training_complete",
+      "seed": 8301,
+      "stopReason": "signal",
+      "completedPpoRolloutUpdates": 200,
+      "completedOptimizerMinibatchSteps": 2400,
+      "decisionsUsedByCompletedUpdates": 19660800,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 960,
+      "completedTrainingEpisodeForcePasses": 904,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 200,
+      "selectedRank": [
+        0,
+        -14,
+        0.5517564617600215,
+        0.0343627037462961
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank",
+      "bankSha256": "5a3ba492e61eb71c32cffd428ff3c767049cda8dbaa55fdb85990539550d0977",
+      "reward": {
+        "force_error_scale_N": 0.5,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 4.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative dt times weighted native mean squared normal error, interval peak excess squared, true stroke error squared, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 1e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.02
+      },
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "ppo_warm_10k_8301/results.json",
+          "sha256": "d36a7f76d3b0b6b5130eb30eb2f99149a9c835cb4ee2f53aaaf66b815fe88451"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000000.json",
+          "sha256": "1f96b75c8c631eb76692f8dfe4988bffe07cbe39afd7c419a60c9ae3767b74a8"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000040.json",
+          "sha256": "62308f0b34f6ae7cdb94e623206de8dc09b12b04017c177619cce9c14ed1acb7"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000080.json",
+          "sha256": "a393ac79b4cd6ffaab7775461e6eecd2e1c00e59bce965e083c5b93dadb09d60"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000120.json",
+          "sha256": "a9e2f519e56a60b99afc1b0e77f29490071b1a6bcf21cc244f5f7684e270f691"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000160.json",
+          "sha256": "eef525e6ac2a5cd2d660b5d21f9aa6fe6c9420cb0eb40cb11956410c25bb95b2"
+        },
+        {
+          "path": "ppo_warm_10k_8301/selection/selection_update_000200.json",
+          "sha256": "a39d059cc23c35cbcd6965461df919191543319a3d280e2cb9a789dd154e287b"
+        },
+        {
+          "path": "ppo_warm_10k_8301/latest_training.pt",
+          "sha256": "0dc84d92bf09ecfee9868879e672faacc9ab4a1c47e4b30e873f8fa58fd1d651"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.57392588869957,
+          "meanRmsNormalForceError_N": 0.033095243098900176,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000040",
+          "recordings": 16,
+          "passed": 12,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5770920083189566,
+          "meanRmsNormalForceError_N": 0.033504108711473794,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000080",
+          "recordings": 16,
+          "passed": 12,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5806179932545774,
+          "meanRmsNormalForceError_N": 0.03371986073790932,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5697019831252774,
+          "meanRmsNormalForceError_N": 0.03268780925480916,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000160",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5598437325792318,
+          "meanRmsNormalForceError_N": 0.03301717148206869,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000200",
+          "recordings": 16,
+          "passed": 14,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5517564617600215,
+          "meanRmsNormalForceError_N": 0.0343627037462961,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        }
+      ],
+      "completedSelectionRecordings": 96,
+      "trainingRolloutWorstError_N": 0.6100311444458058,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_warm_10k_8301/selected_policy/policy_checkpoint.pt",
+        "sha256": "0b65ef0aca8128f0cfbabc1a79ae22681ac8fa78f3d3410b51acb1a45ba6f686"
+      }
+    },
+    {
+      "name": "ppo_warm_10k_8302",
+      "status": "training_complete",
+      "seed": 8302,
+      "stopReason": "signal",
+      "completedPpoRolloutUpdates": 200,
+      "completedOptimizerMinibatchSteps": 2400,
+      "decisionsUsedByCompletedUpdates": 19660800,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 960,
+      "completedTrainingEpisodeForcePasses": 901,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 200,
+      "selectedRank": [
+        0,
+        -14,
+        0.5536588480353686,
+        0.032120757969289655
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank",
+      "bankSha256": "5a3ba492e61eb71c32cffd428ff3c767049cda8dbaa55fdb85990539550d0977",
+      "reward": {
+        "force_error_scale_N": 0.5,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 4.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative dt times weighted native mean squared normal error, interval peak excess squared, true stroke error squared, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 3e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.02
+      },
+      "warmStart": null,
+      "sources": [
+        {
+          "path": "ppo_warm_10k_8302/results.json",
+          "sha256": "274e9bd640e18dd065a97fc70e65b4c78fd8dbf004f13f42dc5ec56192b05a7f"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000000.json",
+          "sha256": "62b368bddce98024717f5650720ecceb42d024b882bca678088efedc2fbc61c8"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000040.json",
+          "sha256": "4b7eee09bf4aa73a1fa3da318fbc99363e04be45a8deb30ba9277f919dc413d8"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000080.json",
+          "sha256": "8e12e014b0e5f76ef361f48ca5edfad0d0e4dce789ab1cf49f710f99b1843aa6"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000120.json",
+          "sha256": "ca154275af2d6cdab19b09b5b4a417fc3f215e3482c0502cef5e8d2ff239f60f"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000160.json",
+          "sha256": "e6d633d3425897c10c43f797a0f959325108cf27bb623283a6faa7eed1c120e7"
+        },
+        {
+          "path": "ppo_warm_10k_8302/selection/selection_update_000200.json",
+          "sha256": "994ad8525c4b6a26068d93c9fca69ca746f87ba3430dd67c3d332f9df2999bb4"
+        },
+        {
+          "path": "ppo_warm_10k_8302/latest_training.pt",
+          "sha256": "10dfdef4a236b1760f4fab80f7ef546e77c1c4111e2d0b5047be6b9dc56d0cdd"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.57392588869957,
+          "meanRmsNormalForceError_N": 0.033095243098900176,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000040",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5769108185912586,
+          "meanRmsNormalForceError_N": 0.03406578021335009,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000080",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5657780324471133,
+          "meanRmsNormalForceError_N": 0.034002821776278225,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5573093001532001,
+          "meanRmsNormalForceError_N": 0.03393671616573394,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000160",
+          "recordings": 16,
+          "passed": 13,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5582683246510882,
+          "meanRmsNormalForceError_N": 0.03190101931300656,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        },
+        {
+          "phase": "selection_update_000200",
+          "recordings": 16,
+          "passed": 14,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.5536588480353686,
+          "meanRmsNormalForceError_N": 0.032120757969289655,
+          "jointScore": null,
+          "finalTravelBandViolations": null
+        }
+      ],
+      "completedSelectionRecordings": 96,
+      "trainingRolloutWorstError_N": 0.5991809940788357,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_warm_10k_8302/selected_policy/policy_checkpoint.pt",
+        "sha256": "399e9eacb6838f17676ab2caab999d284fb5b5277948f51fa2498f6f4992ab2e"
+      }
+    },
+    {
+      "name": "ppo_band_8401",
+      "status": "training_complete",
+      "seed": 8401,
+      "stopReason": "signal",
+      "completedPpoRolloutUpdates": 132,
+      "completedOptimizerMinibatchSteps": 1584,
+      "decisionsUsedByCompletedUpdates": 12957432,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 417,
+      "completedTrainingEpisodeForcePasses": 417,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 0,
+      "selectedRank": [
+        0,
+        -24,
+        0.9998899969190739,
+        0.4408699281100894,
+        0.03731784406951166
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_band",
+      "bankSha256": "95ffa485b6a15be5abc13f0870e15ed6c8e3b8ea407f0066bca872926cbc44e4",
+      "reward": {
+        "force_error_scale_N": 0.45,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 25.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "acceptable_travel_radius_m": 0.0075,
+        "travel_excess_weight": 10.0,
+        "inside_travel_weight": 0.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative elapsed time times weighted native mean squared normal error, interval force peak excess squared, configured travel objective, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "travel_reward": "Zero/default optional weak mean-square cost inside the acceptable band; outside it, dt times squared interval-peak excess from native min/max travel. This is an interval-peak penalty, not an excess MSE.",
+        "legacy_recenter_weight_used": false,
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 1e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.02,
+        "force_lambda_time_s": 0.02
+      },
+      "warmStart": {
+        "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_direct_8201/checkpoints/generation_0010/policy_checkpoint.pt",
+        "sha256": "f61840f3e625dcdb10e4eed6bd62d58ecae24c1578f809381cc9f229084de54b",
+        "recordedSourceActionScales": null,
+        "runtimeActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "note": "Policy-only warm start preserves normalized neural weights; the runtime physical action contract is versioned separately."
+      },
+      "sources": [
+        {
+          "path": "ppo_band_8401/results.json",
+          "sha256": "956aeca239ce7a04a2111b5558957a796c9163e3a8d06fdb1f7c4cf3ca1e3609"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000000.json",
+          "sha256": "485a30c2a1e85c78d736f29417c0bd4d38c6bf9bcea0238da0895b0cd9e7f393"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000060.json",
+          "sha256": "10b269f4ad9cbe9ce7ffa8191ac062bfbb766843f1c499629c50d799d646a249"
+        },
+        {
+          "path": "ppo_band_8401/selection/selection_update_000120.json",
+          "sha256": "ca8fc5c98ccb8425a92a0df152bc26b8c1fb474adc8338bc5295f57ad280ccf8"
+        },
+        {
+          "path": "ppo_band_8401/latest_training.pt",
+          "sha256": "9907636325ada2cb0000c2dd0daa095bf4c90a25b8b08d18c0e79ac6937ca857"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4408699281100894,
+          "meanRmsNormalForceError_N": 0.03731784406951166,
+          "jointScore": 0.9998899969190739,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000060",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44627934494786814,
+          "meanRmsNormalForceError_N": 0.03493374880385894,
+          "jointScore": 1.0227437904399037,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4520632628361483,
+          "meanRmsNormalForceError_N": 0.0343962104692402,
+          "jointScore": 1.048568761866313,
+          "finalTravelBandViolations": 0
+        }
+      ],
+      "completedSelectionRecordings": 72,
+      "trainingRolloutWorstError_N": 0.4605133252972635,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_band_8401/selected_policy/policy_checkpoint.pt",
+        "sha256": "27b035bda5e145ecbc30039286965a706b4fe28a711ffb54c2283f9ab280c003"
+      }
+    },
+    {
+      "name": "ppo_band_8402",
+      "status": "training_complete",
+      "seed": 8402,
+      "stopReason": "signal",
+      "completedPpoRolloutUpdates": 330,
+      "completedOptimizerMinibatchSteps": 3960,
+      "decisionsUsedByCompletedUpdates": 32440320,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 1102,
+      "completedTrainingEpisodeForcePasses": 1102,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 0,
+      "selectedRank": [
+        0,
+        -24,
+        0.9969062081089733,
+        0.4401471305409288,
+        0.0400056681547156
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_band",
+      "bankSha256": "95ffa485b6a15be5abc13f0870e15ed6c8e3b8ea407f0066bca872926cbc44e4",
+      "reward": {
+        "force_error_scale_N": 0.45,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 25.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "acceptable_travel_radius_m": 0.0075,
+        "travel_excess_weight": 10.0,
+        "inside_travel_weight": 0.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative elapsed time times weighted native mean squared normal error, interval force peak excess squared, configured travel objective, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "travel_reward": "Zero/default optional weak mean-square cost inside the acceptable band; outside it, dt times squared interval-peak excess from native min/max travel. This is an interval-peak penalty, not an excess MSE.",
+        "legacy_recenter_weight_used": false,
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 3e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.02,
+        "force_lambda_time_s": 0.01
+      },
+      "warmStart": {
+        "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_recurrent_8202/checkpoints/generation_0001/policy_checkpoint.pt",
+        "sha256": "7ec6008019d72990773c3d9fae9bdf77e615aec3075360704c696a06ad170327",
+        "recordedSourceActionScales": null,
+        "runtimeActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "note": "Policy-only warm start preserves normalized neural weights; the runtime physical action contract is versioned separately."
+      },
+      "sources": [
+        {
+          "path": "ppo_band_8402/results.json",
+          "sha256": "ba8eb91bdf605852caa242aa90e658a707ae61430b6014e2b3fb05277ae172a1"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000000.json",
+          "sha256": "1d8e232bd4bb73e74fd780949b56a9bcfa72e784da1b0609905eb3913138ed4f"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000060.json",
+          "sha256": "6822cb0ecbc0731a56b90e53f23cf3aa7230690aa21b0f37906acb8d8f716829"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000120.json",
+          "sha256": "79877acc96a60bbd53e55be93e0dfdbbd3b52354965663acb3d9b3dfc1420a0a"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000180.json",
+          "sha256": "33ca878a446693d7a09d18beb03c08b5c14253c357612307f4c6f0e03cb3423d"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000240.json",
+          "sha256": "7627f34a516f3903691a9e69faa94a871d40725ce9b3aead372f5675f8b827b2"
+        },
+        {
+          "path": "ppo_band_8402/selection/selection_update_000300.json",
+          "sha256": "6f9d11bdc155e11323a468a7737c89d89d4eb976d67f69b4044b698e338165a0"
+        },
+        {
+          "path": "ppo_band_8402/latest_training.pt",
+          "sha256": "079be201e2afbc6e6ed80682ec905768d4111af28fb92e5953aa26212696272a"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4401471305409288,
+          "meanRmsNormalForceError_N": 0.0400056681547156,
+          "jointScore": 0.9969062081089733,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000060",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44444856950585887,
+          "meanRmsNormalForceError_N": 0.036842611513905894,
+          "jointScore": 1.0139373409211576,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4477936906742812,
+          "meanRmsNormalForceError_N": 0.035207320308945,
+          "jointScore": 1.0276368703717982,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000180",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44544083411503266,
+          "meanRmsNormalForceError_N": 0.03207076813163759,
+          "jointScore": 1.0154163113098584,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000240",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.44165403792073477,
+          "meanRmsNormalForceError_N": 0.02970634743970535,
+          "jointScore": 0.9974217983842355,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000300",
+          "recordings": 24,
+          "passed": 24,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.453225091500812,
+          "meanRmsNormalForceError_N": 0.028236519845553504,
+          "jointScore": 1.047966654275463,
+          "finalTravelBandViolations": 0
+        }
+      ],
+      "completedSelectionRecordings": 144,
+      "trainingRolloutWorstError_N": 0.4497818906728739,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_band_8402/selected_policy/policy_checkpoint.pt",
+        "sha256": "5c66d2ecf34c484636a2404cb81b0681124e8846b5893b0313cfd5a1f4697001"
+      }
+    },
+    {
+      "name": "ppo_tail_8403",
+      "status": "training_complete",
+      "seed": 8403,
+      "stopReason": "updates",
+      "completedPpoRolloutUpdates": 200,
+      "completedOptimizerMinibatchSteps": 2400,
+      "decisionsUsedByCompletedUpdates": 19660800,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 589,
+      "completedTrainingEpisodeForcePasses": 589,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 0,
+      "selectedRank": [
+        0,
+        -28,
+        0.933844882540765,
+        0.41871941146435887,
+        0.0424987327712742
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained",
+      "bankSha256": "01341cf1f22bf9d8c9d78685f4a1947411e7f698d5631795298b6014c31089e4",
+      "reward": {
+        "force_error_scale_N": 0.3,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 25.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "acceptable_travel_radius_m": 0.0075,
+        "travel_excess_weight": 10.0,
+        "inside_travel_weight": 0.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative elapsed time times weighted native mean squared normal error, interval force peak excess squared, configured travel objective, true current squared and issued-action changes squared.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "travel_reward": "Zero/default optional weak mean-square cost inside the acceptable band; outside it, dt times squared interval-peak excess from native min/max travel. This is an interval-peak penalty, not an excess MSE.",
+        "legacy_recenter_weight_used": false,
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 1e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.02,
+        "force_lambda_time_s": 0.02
+      },
+      "warmStart": {
+        "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_8203/checkpoints/generation_0005/policy_checkpoint.pt",
+        "sha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+        "recordedSourceActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "runtimeActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "note": "Policy-only warm start preserves normalized neural weights; the runtime physical action contract is versioned separately."
+      },
+      "sources": [
+        {
+          "path": "ppo_tail_8403/results.json",
+          "sha256": "4ebec82e5b9e9087aae27a9250c2edb7d73d56b9148bc81d5f88c73c651b0cdf"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000000.json",
+          "sha256": "81e6ff28e63f1dafc83014a2a78cdc7d9436ce21b9bb03e062785a197875359a"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000040.json",
+          "sha256": "f2e9ea5a07c42d9910296a51c21abf7310ce5fb4c07f99aed4e0276095d278c0"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000080.json",
+          "sha256": "c6ba3f756be0570e6491481ccf56d900a2c97983ad699fd1f748588ffc0a5c6a"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000120.json",
+          "sha256": "c491708a989eab3f95c5ce76260c93c3bd3819fbc6fde4d304ad5353727751c6"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000160.json",
+          "sha256": "7a92a92de4ea5ed8f870e5cb91a20b66bdbea588aeefd0c28783999e504c3069"
+        },
+        {
+          "path": "ppo_tail_8403/selection/selection_update_000200.json",
+          "sha256": "e023cb8b6312375f94c87d9cfc97ed8830603b133f233b01e0a462b2a614c976"
+        },
+        {
+          "path": "ppo_tail_8403/latest_training.pt",
+          "sha256": "5f1bd35d5522647747ddd5a9f5892378d59e3e9441192c53df791ba957e17c63"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.41871941146435887,
+          "meanRmsNormalForceError_N": 0.0424987327712742,
+          "jointScore": 0.933844882540765,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000040",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4232588932091943,
+          "meanRmsNormalForceError_N": 0.04113225170117846,
+          "jointScore": 0.9520073891913317,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000080",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4265894355442583,
+          "meanRmsNormalForceError_N": 0.04021108415513982,
+          "jointScore": 0.9650685915916731,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000120",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4261824520587183,
+          "meanRmsNormalForceError_N": 0.03915411196159086,
+          "jointScore": 0.9588083742245553,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000160",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4293907880300125,
+          "meanRmsNormalForceError_N": 0.03866688240526929,
+          "jointScore": 0.9722824215213406,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000200",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4308972636809685,
+          "meanRmsNormalForceError_N": 0.03775853144882869,
+          "jointScore": 0.9782160991902826,
+          "finalTravelBandViolations": 0
+        }
+      ],
+      "completedSelectionRecordings": 168,
+      "trainingRolloutWorstError_N": 0.4369189635489903,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_tail_8403/selected_policy/policy_checkpoint.pt",
+        "sha256": "d1f36229921e374e8988bbf7c6dd5eae115f809ce3390f6bd9332dcec3586676"
+      }
+    },
+    {
+      "name": "ppo_peak_8404",
+      "status": "software_rejection",
+      "seed": 8404,
+      "stopReason": null,
+      "completedPpoRolloutUpdates": 0,
+      "completedOptimizerMinibatchSteps": 0,
+      "decisionsUsedByCompletedUpdates": 0,
+      "executedRejectedDecisions": 98304,
+      "completedTrainingEpisodes": 0,
+      "completedTrainingEpisodeForcePasses": 0,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 0,
+      "selectedRank": [
+        0,
+        -28,
+        0.8604231652784357,
+        0.39790512549586055,
+        0.04558356350533703
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained",
+      "bankSha256": "01341cf1f22bf9d8c9d78685f4a1947411e7f698d5631795298b6014c31089e4",
+      "reward": {
+        "force_error_scale_N": 0.45,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 0.0,
+        "force_running_peak_weight": 1.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "acceptable_travel_radius_m": 0.0075,
+        "travel_excess_weight": 10.0,
+        "inside_travel_weight": 0.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative elapsed time times weighted native mean squared normal error, interval force peak excess squared, configured travel objective, true current squared and issued-action changes squared.",
+        "force_running_peak_reward": "Optional negative weight times the increase in squared episode-running true normal-force peak, divided by force scale squared, without dt. Startup is charged on the first decision. Undiscounted increments telescope to the full episode peak squared; PPO still applies its configured discount/GAE. Episode peak and step counter carry across rollouts and checkpoints. This truth is reward-only.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "travel_reward": "Zero/default optional weak mean-square cost inside the acceptable band; outside it, dt times squared interval-peak excess from native min/max travel. This is an interval-peak penalty, not an excess MSE.",
+        "legacy_recenter_weight_used": false,
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 3e-06,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 3e-06,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.01,
+        "force_lambda_time_s": 0.005
+      },
+      "warmStart": {
+        "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/inverse_0p3/policy_checkpoint.pt",
+        "sha256": "d078b20cd39f72d3cb28b716f5587c502a858920ded33ee439e60e1390312565",
+        "recordedSourceActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "runtimeActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "note": "Policy-only warm start preserves normalized neural weights; the runtime physical action contract is versioned separately."
+      },
+      "sources": [
+        {
+          "path": "ppo_peak_8404/results.json",
+          "sha256": "d130bf1c05863c61466e8d59b133a8a5a57e438774324a721fa5f053c9e79a94"
+        },
+        {
+          "path": "ppo_peak_8404/selection/selection_update_000000.json",
+          "sha256": "25bbcd36b5523748a96f877aacb7b3f714011dc731aeeb394c8df275e5ceb614"
+        },
+        {
+          "path": "ppo_peak_8404/latest_training.pt",
+          "sha256": "51472cfdc6f9f6f13282857757639fb759209ffe9a8addaa6cd2fa3d1780f068"
+        },
+        {
+          "path": "ppo_peak_8404/rollouts/rollout_000000.npz",
+          "sha256": "d7b1718fd24ac681134dd937925efcd83f600f9104861694527119efa3268763"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.39790512549586055,
+          "meanRmsNormalForceError_N": 0.04558356350533703,
+          "jointScore": 0.8604231652784357,
+          "finalTravelBandViolations": 0
+        }
+      ],
+      "completedSelectionRecordings": 28,
+      "rejectionReason": "C-versus-Torch behavior replay mean guard; likelihood also exceeded its existing guard on diagnosis. No optimizer update.",
+      "selectedCheckpoint": {
+        "path": "ppo_peak_8404/selected_policy/policy_checkpoint.pt",
+        "sha256": "43422c472f8675f09890d4781add5aab2e5e4afabeb0e9e2f458fe46c007f0bd"
+      }
+    },
+    {
+      "name": "ppo_peak_8405",
+      "status": "training_complete",
+      "seed": 8405,
+      "stopReason": "signal",
+      "completedPpoRolloutUpdates": 150,
+      "completedOptimizerMinibatchSteps": 1800,
+      "decisionsUsedByCompletedUpdates": 14745600,
+      "executedRejectedDecisions": 0,
+      "completedTrainingEpisodes": 431,
+      "completedTrainingEpisodeForcePasses": 431,
+      "trainingPhysicalFailures": 0,
+      "selectedUpdate": 0,
+      "selectedRank": [
+        0,
+        -28,
+        0.933844882540765,
+        0.41871941146435887,
+        0.0424987327712742
+      ],
+      "decisionRepeat": 1,
+      "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained",
+      "bankSha256": "01341cf1f22bf9d8c9d78685f4a1947411e7f698d5631795298b6014c31089e4",
+      "reward": {
+        "force_error_scale_N": 0.45,
+        "force_mse_weight": 1.0,
+        "force_excess_weight": 0.0,
+        "force_running_peak_weight": 1.0,
+        "recenter_weight": 0.1,
+        "recenter_scale_m": 0.005,
+        "effort_weight": 0.01,
+        "effort_scale_A": 3.5,
+        "current_change_weight": 0.001,
+        "current_change_scale_A": 0.05,
+        "robot_change_weight": 0.001,
+        "robot_change_scale_m_s": 0.005,
+        "physical_failure_penalty": 10.0,
+        "return_scale": 10.0,
+        "acceptable_travel_radius_m": 0.0075,
+        "travel_excess_weight": 10.0,
+        "inside_travel_weight": 0.0,
+        "dt_s": 0.0001,
+        "force_truth": "Native actual workpiece-normal force, every physical tick incl startup.",
+        "running_reward": "Negative elapsed time times weighted native mean squared normal error, interval force peak excess squared, configured travel objective, true current squared and issued-action changes squared.",
+        "force_running_peak_reward": "Optional negative weight times the increase in squared episode-running true normal-force peak, divided by force scale squared, without dt. Startup is charged on the first decision. Undiscounted increments telescope to the full episode peak squared; PPO still applies its configured discount/GAE. Episode peak and step counter carry across rollouts and checkpoints. This truth is reward-only.",
+        "failure": "Contact loss/travel stop terminates with negative fixed penalty; horizon truncation bootstraps final causal observation.",
+        "travel_reward": "Zero/default optional weak mean-square cost inside the acceptable band; outside it, dt times squared interval-peak excess from native min/max travel. This is an interval-peak penalty, not an excess MSE.",
+        "legacy_recenter_weight_used": false,
+        "excluded": "No teacher action, future profile, inferred-force-only reward or sample-rate-dependent discount.",
+        "policyDecisionInterval_s": 0.0001
+      },
+      "ppoConfig": {
+        "dt": 0.0001,
+        "gamma_time_s": 1.0,
+        "lambda_time_s": 0.3,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "epochs": 2,
+        "minibatch_sequences": 8,
+        "learning_rate": 1e-05,
+        "actor_learning_rate": 1e-05,
+        "critic_learning_rate": 0.0003,
+        "log_std_learning_rate": 1e-05,
+        "clip_coef": 0.1,
+        "value_clip": 0.0,
+        "value_coef": 0.1,
+        "value_huber_delta": 1.0,
+        "channelwise_policy_loss": true,
+        "robot_policy_weight": 1.0,
+        "entropy_coef": 0.0001,
+        "max_grad_norm": 0.5,
+        "target_kl": 0.01,
+        "force_lambda_time_s": 0.005
+      },
+      "warmStart": {
+        "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_8203/checkpoints/generation_0005/policy_checkpoint.pt",
+        "sha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+        "recordedSourceActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "runtimeActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "note": "Policy-only warm start preserves normalized neural weights; the runtime physical action contract is versioned separately."
+      },
+      "sources": [
+        {
+          "path": "ppo_peak_8405/results.json",
+          "sha256": "ea324374001b49ad5b3b1e940db5d9b902bb773cd9c21772b1e572741006e638"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000000.json",
+          "sha256": "dd65551435aae52f8bf07463a59d406acb01ff0d7094f07aa98a6810d9c5602d"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000025.json",
+          "sha256": "90742dcba83586d1724090553e01b948d7960a34c3a024ae5ad20f9937e063f3"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000050.json",
+          "sha256": "e605c33b1081e1f23cd5766f69051897c2dc96a88bcaafa960b24ffd943615f9"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000075.json",
+          "sha256": "577d093b088c7111c1b4679502e890405d693bebb385c99aebb4487de26b0099"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000100.json",
+          "sha256": "1439eb85a3aee9ae0b743092025b24ca398987d048e5faceb7655ce917ce8a54"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000125.json",
+          "sha256": "2a6cc32aabd333272702df9cd53c0d5b411831d15588834497615082ee01ea33"
+        },
+        {
+          "path": "ppo_peak_8405/selection/selection_update_000150.json",
+          "sha256": "3ee29eb44bb578cc45094218c82ca749791cf9b34dbe6e8f3236de8c8b7a27d1"
+        },
+        {
+          "path": "ppo_peak_8405/latest_training.pt",
+          "sha256": "badfa563630c9d749c8ea434ede199c7e4b04ed584f260227f5b361668899ef1"
+        }
+      ],
+      "selectionEvaluations": [
+        {
+          "phase": "selection_update_000000",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.41871941146435887,
+          "meanRmsNormalForceError_N": 0.0424987327712742,
+          "jointScore": 0.933844882540765,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000025",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.42157539552130174,
+          "meanRmsNormalForceError_N": 0.04102736461835519,
+          "jointScore": 0.9448722671129582,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000050",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.4257246775913046,
+          "meanRmsNormalForceError_N": 0.039745332575051515,
+          "jointScore": 0.9616447483792419,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000075",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.428283686009884,
+          "meanRmsNormalForceError_N": 0.0392720107334777,
+          "jointScore": 0.9718163553408774,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000100",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.42910679935889817,
+          "meanRmsNormalForceError_N": 0.038577749276698756,
+          "jointScore": 0.9709584670556789,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000125",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.43338558324644794,
+          "meanRmsNormalForceError_N": 0.03810620631409872,
+          "jointScore": 0.989177268886854,
+          "finalTravelBandViolations": 0
+        },
+        {
+          "phase": "selection_update_000150",
+          "recordings": 28,
+          "passed": 28,
+          "physicalFailures": 0,
+          "worstNormalForceError_N": 0.43271383245019734,
+          "meanRmsNormalForceError_N": 0.03739713135924823,
+          "jointScore": 0.9858824857748724,
+          "finalTravelBandViolations": 0
+        }
+      ],
+      "completedSelectionRecordings": 196,
+      "trainingRolloutWorstError_N": 0.4196163768515575,
+      "optimizerEarlyStops": 0,
+      "checkpointOptimizerUpdateCountVerified": true,
+      "checkpointCollectorCountsVerified": true,
+      "selectedCheckpoint": {
+        "path": "ppo_peak_8405/selected_policy/policy_checkpoint.pt",
+        "sha256": "71af1e68a2f8042ba94a7440aafb534aac50f5c88a84e68596ffb23a0f90d4a6"
+      }
+    }
+  ],
+  "finalConclusion": "The four band-aware completed PPO lanes kept their own starting checkpoint. Their last evaluated checkpoints reduced mean RMS but worsened worst force error and shared score. Earlier PPO lanes improved their force-only rank but did not pass every selection case. No PPO checkpoint superseded the selected ES candidate."
+}

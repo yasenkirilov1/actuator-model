@@ -1,0 +1,92 @@
+{
+  "same_seed_interleaved_max_difference": 0.0,
+  "different_seed_max_difference": 0.8117151255794506,
+  "batch_actions_per_s": 20554.554408307544,
+  "reset_time_s": 0.0,
+  "clock_events": [
+    {
+      "decision": 1900,
+      "request": 0.004,
+      "end": 0.1901,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1901,
+      "request": 0.004,
+      "end": 0.1902,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1998,
+      "request": 0.004,
+      "end": 0.1999,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1999,
+      "request": 0.004,
+      "end": 0.2,
+      "issued_robot": 0.0007346769608534991,
+      "gate": 1.0
+    },
+    {
+      "decision": 2000,
+      "request": 0,
+      "end": 0.2001,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2001,
+      "request": 0,
+      "end": 0.2002,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2098,
+      "request": 0,
+      "end": 0.2099,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2099,
+      "request": 0,
+      "end": 0.21,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2100,
+      "request": 0.004,
+      "end": 0.2101,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2101,
+      "request": 0.004,
+      "end": 0.2102,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2198,
+      "request": 0.004,
+      "end": 0.2199,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2199,
+      "request": 0.004,
+      "end": 0.22,
+      "issued_robot": 0.0007329789184053121,
+      "gate": 1.0
+    }
+  ]
+}

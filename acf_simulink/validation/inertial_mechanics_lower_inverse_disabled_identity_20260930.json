@@ -1,0 +1,193 @@
+{
+  "date": "2026-09-30",
+  "status": "one_critical_seed_full_native_identity_pass",
+  "referenceTrace": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_feedback_20260930_v6_finite_traces/controller_03_worst_native.mat",
+  "referenceTraceSHA256": "93fa5a4fbba298b135c8520355e425523a21d427e8bccd2ef5f586f03b1648b4",
+  "candidateTrace": "acf_simulink/validation/inertial_mechanics_structural_feedback_selected_trace_20260930_lower_inverse_disabled_identity_first_native_trace.mat",
+  "candidateTraceSHA256": "21d89dfe85cb9fcaa748b31405ff8a161d749bff4dfe72f9e8eae4fa52f70b0f",
+  "referenceModelSHA256": "72bed757d52763f197e208bc2e9aa210f8d6d3c07394f1b36aefe56114b7a149",
+  "inverseModelSHA256": "0f57a1e9faacc397ed1f5175fd60a6253c2c8c83f8765bf08238423cba52c283",
+  "nativeSamples": 400001,
+  "allOriginalNumericLogArraysBitwiseEqual": true,
+  "checks": [
+    {
+      "signal": "time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "data",
+      "shape": [
+        400001,
+        35
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "normalContact.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "normalContact.data",
+      "shape": [
+        400001,
+        8
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "accelerometer.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "accelerometer.data",
+      "shape": [
+        400001,
+        6
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "motionObserver.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "motionObserver.data",
+      "shape": [
+        400001,
+        2
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "measuredDrag.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "measuredDrag.data",
+      "shape": [
+        400001,
+        3
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "forceVariation.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "forceVariation.data",
+      "shape": [
+        400001,
+        5
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "accelerationFeedforward.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "accelerationFeedforward.data",
+      "shape": [
+        400001,
+        2
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "commandPrediction.time",
+      "shape": [
+        400001
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "commandPrediction.data",
+      "shape": [
+        400001,
+        3
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "robotGate.time",
+      "shape": [
+        401
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "robotGate.ready",
+      "shape": [
+        401
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "robotGate.filteredError_N",
+      "shape": [
+        401
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "robotGate.forceRate_N_s",
+      "shape": [
+        401
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "signal": "robotGate.stableNow",
+      "shape": [
+        401
+      ],
+      "bitwiseEqual": true,
+      "maxAbsDifference": 0.0
+    }
+  ],
+  "inverseCurrentExactlyZeroWhenDisabled": true,
+  "desiredLowerLoadIdentityExact": true,
+  "scope": "One existing heavy S2/F50/90deg/seed7 original full-native reference paired with one newly executed disabled-inverse recording. This is native branch preservation evidence, not controller qualification."
+}

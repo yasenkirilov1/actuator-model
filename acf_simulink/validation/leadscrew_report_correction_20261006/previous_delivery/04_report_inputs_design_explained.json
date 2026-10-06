@@ -1,0 +1,234 @@
+{
+  "status": "complete",
+  "evidenceAsOf": "2026-10-06",
+  "queries": [
+    {
+      "id": "explained_cell_mode",
+      "file": "acf_simulink/validation/report_readability_20261006/report/explained_cell_mode.json",
+      "sha256": "5c6a5ecf26cf6161b6bdc1adf4864784ab7d0bc891c8d1fb4474cad2594e8f66",
+      "label": "Cell-mode mechanics and locked feedback contract",
+      "kind": "mechanical_mode_and_causal_controller_explanation",
+      "sourceFiles": [
+        "acf_simulink/validation/upper_no_damping_20261005/report/fixed_controller_contract.json",
+        "acf_simulink/experiments/report_readability_20261006/build_explanatory_figures.py",
+        "acf_simulink/experiments/upper_no_damping_20261005/qualification_v8/acf_prepare_cell_modal.m"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "explained_nominal_grid",
+      "file": "acf_simulink/validation/report_readability_20261006/report/explained_nominal_grid.json",
+      "sha256": "100c6a0135936886462423002a9dbd573e9473bd4a84a0871d3a39592ff7b6f0",
+      "label": "700 locked reference nominal recordings",
+      "kind": "full_nominal_grid_aggregated_over_recorded_angles",
+      "sourceFiles": [
+        "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json",
+        "acf_simulink/experiments/report_readability_20261006/build_explanatory_figures.py"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "adc_native_diagnostics",
+      "file": "acf_simulink/validation/report_readability_20261006/report/adc_native_diagnostics.json",
+      "sha256": "36b1bc12cf7041b7b51fc319d35b7e60cc8e6a75f2e232ba5386f663331fa374",
+      "label": "42 completed fixed-controller ADC diagnostics",
+      "kind": "executed_diagnostics_not_qualification",
+      "sourceFiles": [
+        "acf_simulink/validation/report_readability_20261006/adc/executed_results_compact.json",
+        "acf_simulink/validation/report_readability_20261006/adc/reference_native_parity.json",
+        "acf_simulink/validation/report_readability_20261006/adc/matlab_replay.log"
+      ],
+      "caveats": [
+        "Known development cases; no new qualification or controller retuning.",
+        "Bit tests change code spacing only; rate tests change converter noise and delay.",
+        "The independent MATLAB rate replay did not complete.",
+        "Bulk raw histories were removed under the storage audit; compact results are retained."
+      ]
+    },
+    {
+      "id": "adc_parts_reviewed",
+      "file": "acf_simulink/validation/report_readability_20261006/report/adc_parts_reviewed.json",
+      "sha256": "7d3f156b023a0181aed3f679eab9be862e4ce2810f3377824f26fd501697bd4f",
+      "label": "Manufacturer specifications and recorded 6 October prices",
+      "kind": "manufacturer_specifications_and_recorded_prices",
+      "sourceFiles": [
+        "acf_simulink/validation/report_readability_20261006/adc/parts_review_20261006.json"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "single_axis_prototype_scope",
+      "file": "acf_simulink/validation/report_readability_20261006/report/single_axis_prototype_scope.json",
+      "sha256": "800f87b8b2d8b845b5b2c2e34149d5af6a115e3d921fc4b51b0bb9fae53351ec",
+      "label": "First-prototype sensing scope accepted by the user",
+      "kind": "user_scope_decision_not_experimental_result",
+      "sourceFiles": [
+        "acf_simulink/validation/report_readability_20261006/report/prototype_scope_source.json",
+        "reports/figures/fixed-upper-rigid-lower-20261005.svg",
+        "acf_simulink/validation/upper_no_damping_20261005/report/fixed_mechanics_contract.json"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "loadcell_scope_evidence",
+      "file": "acf_simulink/validation/report_readability_20261006/report/loadcell_scope_evidence.json",
+      "sha256": "7683dd8e6696e246c4ea1f61e6697ed15ec4be3cbe46bace3b35b50e29c793d6",
+      "label": "Reference measurement geometry and load-cell capacity",
+      "kind": "recorded_capacity_and_measurement_geometry",
+      "sourceFiles": [
+        "acf_simulink/validation/report_readability_20261006/loadcell/loadcell_evidence.json"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "actuator_sizing_reviewed",
+      "file": "acf_simulink/validation/report_readability_20261006/report/actuator_sizing_reviewed.json",
+      "sha256": "1a1c36a8ff9eb01edc2859b14b558f8d4c59ca6db660ab73ae3c5e095ceabab7",
+      "label": "Actuator sizing and distinct historical/native diagnostics",
+      "kind": "analytical_sizing_and_separate_recorded_comparisons",
+      "sourceFiles": [
+        "acf_simulink/validation/report_readability_20261006/actuator/actuator_evidence_reviewed.json"
+      ],
+      "caveats": []
+    }
+  ],
+  "componentQueryIds": {
+    "Mechanics: load path, springs and guides": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "fixed_control_waveform",
+      "explained_cell_mode"
+    ],
+    "Actuator and electrical drive": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "fixed_control_waveform",
+      "fixed_voltage_diagnostics",
+      "coil_parts",
+      "final_actuator_comparison",
+      "actuator_sizing_reviewed"
+    ],
+    "Force and position measurement": [
+      "fixed_mechanics_contract",
+      "force_position_parts",
+      "joint_budget_plan",
+      "single_axis_prototype_scope",
+      "loadcell_scope_evidence"
+    ],
+    "Acceleration measurement": [
+      "rl_budget_parts",
+      "rl_budget_sensing_contract",
+      "fixed_mechanics_contract",
+      "budget_accelerometer_stress",
+      "single_axis_prototype_scope",
+      "adc_parts_reviewed"
+    ],
+    "Acquisition electronics: amplifier, ADC and timing": [
+      "fixed_acquisition_reference",
+      "rl_budget_parts",
+      "rl_budget_sensing_contract",
+      "budget_adc_screen",
+      "adc_native_diagnostics",
+      "adc_parts_reviewed",
+      "single_axis_prototype_scope"
+    ],
+    "Fast force controller": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "fixed_control_waveform",
+      "fixed_controller_contract",
+      "explained_cell_mode"
+    ],
+    "Robot commands and recentering": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "rl_method_contract",
+      "final_robot_OAT"
+    ],
+    "Learned control policy": [
+      "rl_selected_candidate",
+      "rl_nominal_grid",
+      "rl_fresh_tests",
+      "rl_long_tests"
+    ],
+    "Calibration, model qualification and prototype validation": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "fixed_voltage_diagnostics",
+      "fixed_controller_contract",
+      "fixed_native_verification",
+      "rl_budget_sensing_contract",
+      "joint_budget_plan",
+      "single_axis_prototype_scope"
+    ]
+  },
+  "rootQueryIds": {
+    "Intro": [
+      "fixed_mechanics_contract",
+      "single_axis_prototype_scope"
+    ],
+    "Question": [
+      "fixed_mechanics_contract",
+      "single_axis_prototype_scope"
+    ],
+    "Results": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "single_axis_prototype_scope",
+      "explained_nominal_grid"
+    ],
+    "Recommendation": [
+      "fixed_mechanics_contract",
+      "fixed_development_results",
+      "fixed_qualification_results",
+      "fixed_voltage_diagnostics",
+      "fixed_controller_contract",
+      "fixed_native_verification",
+      "rl_budget_parts",
+      "rl_budget_sensing_contract",
+      "single_axis_prototype_scope",
+      "adc_native_diagnostics",
+      "adc_parts_reviewed",
+      "actuator_sizing_reviewed"
+    ]
+  },
+  "figures": [
+    {
+      "file": "figures/fixed-mechanics-force-limit-20261005.svg",
+      "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+      "queryId": "fixed_control_waveform"
+    },
+    {
+      "file": "figures/fixed-force-operating-grid-20261006.svg",
+      "sha256": "ce1932bdf6f692beb3b6ef3f9fc34b9a28ec56e03db91952fe313703a6f993a0",
+      "queryId": "explained_nominal_grid"
+    },
+    {
+      "file": "figures/prototype-mechanics-single-axis-20261006.svg",
+      "sha256": "5c672256a5ccb3587242f77c6cf337f24b292e27e1ef3c56e611a67d922363db",
+      "queryId": "single_axis_prototype_scope"
+    },
+    {
+      "file": "figures/load-cell-mode-explained-20261006.svg",
+      "sha256": "44b4738c661f9792fe56175d95e3bb3fa72c823e6a463df9462779880819af28",
+      "queryId": "explained_cell_mode"
+    },
+    {
+      "file": "figures/leadscrew-pitch-inertia-current-20261006.svg",
+      "sha256": "da8147ebd8b97333bafed8faa96e986174bcdaaef231fa8ac5ca0d4f8ef72b22",
+      "queryId": "actuator_sizing_reviewed"
+    },
+    {
+      "file": "figures/adc-fixed-diagnostics-20261006.svg",
+      "sha256": "23f8da9ecb374a48625104b07d5942f44f3c267177646845023413c0bf678c89",
+      "queryId": "adc_native_diagnostics"
+    }
+  ],
+  "scope": "Readable report revision and reduced prototype sensing scope. No new simulation or training in this authoring step."
+}

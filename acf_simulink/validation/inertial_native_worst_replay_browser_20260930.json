@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "scope": "Browser proof of the retained actual native global3489 replay; no extra simulation or synthetic physical events.",
+  "htmlFile": "acf_simulink/generated/active_contact_flange_inertial_worst_20260930.html",
+  "htmlSHA256": "00b97cfc7df8478045d7f0d66ef21a45dce4f8ac4d51b9aca1c779a693b84661",
+  "sourceTraceSHA256": "c9483c087549910f011480f696cb5d1fa3f24555e354e2b35559d54d538c6bb1",
+  "nativeSamples": 400001,
+  "displaySamples": 12664,
+  "nativeWorstTime_s": 2.00063,
+  "displayWorstTime_s": 2.00063,
+  "nativeAndDisplayPeak_N": 0.3158109290657549,
+  "screenshot": "acf_simulink/validation/inertial_native_worst_replay_browser_20260930.png",
+  "checks": {
+    "wholeNativeMetricBeforeReduction": true,
+    "exactPeakRetained": true,
+    "worstButtonSeeksExactNativeSample": true,
+    "normalForceAndAxialCellLabeledSeparately": true,
+    "robotGateSidecarVisible": true,
+    "noContactOrStopEventsNextButtonDisabled": true,
+    "runPassVisible": true,
+    "noHorizontalOverflowAt1440px": true,
+    "mechanismAndLimitsVisuallyReviewed": true
+  }
+}

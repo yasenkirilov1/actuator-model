@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "kind": "exact_full_native_history_hashes_for_selected_reference_family",
+  "rows": [
+    {
+      "selectedCaseID": 0,
+      "oldScenario": 363,
+      "selectedScenario": 165,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.30100473913323533
+    },
+    {
+      "selectedCaseID": 1,
+      "oldScenario": 364,
+      "selectedScenario": 166,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.31699580135389915
+    },
+    {
+      "selectedCaseID": 2,
+      "oldScenario": 365,
+      "selectedScenario": 167,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.33419166168620507
+    },
+    {
+      "selectedCaseID": 3,
+      "oldScenario": 366,
+      "selectedScenario": 168,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.35285937917167587
+    },
+    {
+      "selectedCaseID": 4,
+      "oldScenario": 367,
+      "selectedScenario": 169,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.4045859297351573
+    },
+    {
+      "selectedCaseID": 5,
+      "oldScenario": 368,
+      "selectedScenario": 170,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.495250233524442
+    },
+    {
+      "selectedCaseID": 6,
+      "oldScenario": 369,
+      "selectedScenario": 171,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.4348773407086455
+    },
+    {
+      "selectedCaseID": 7,
+      "oldScenario": 370,
+      "selectedScenario": 172,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.4585186839914144
+    },
+    {
+      "selectedCaseID": 8,
+      "oldScenario": 371,
+      "selectedScenario": 173,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.36961648454077434
+    },
+    {
+      "selectedCaseID": 9,
+      "oldScenario": 372,
+      "selectedScenario": 174,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.3658470068659945
+    },
+    {
+      "selectedCaseID": 10,
+      "oldScenario": 373,
+      "selectedScenario": 175,
+      "allNativeArraysHashExact": true,
+      "peakNormalForceError_N": 0.38682384545344917
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints/results.json": "b55fe59254382acbc67dd3448f132d36ab0cc778dd0c5091816f32194be6ed3d",
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints/results.json": "de09923d37878f9166d756d4e68a73af9f6c76d81eb84a1540758e8ef98596e1",
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining/results.json": "d077a9a0f5019e26d4074734f57fa27dee59d293005ca92cfc2afafe37ce9253",
+    "acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11/results.json": "529067bc382584222b35e77c248849fac2b1205dcfa7632dd04a92da02006dbe"
+  },
+  "scope": "Eleven complete native arrays and input histories match V6parent17 exactly; source parameters and actual algorithm were independently reviewed. Retained V6 histories may illustrate this selected controller."
+}

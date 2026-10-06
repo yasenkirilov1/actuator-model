@@ -1,0 +1,37 @@
+{
+  "status": "native_budget_prepared_no_episodes",
+  "createdContexts": 0,
+  "episodesExecuted": 0,
+  "scenarios": 4,
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "1a20935b8aa6c76ca01fb3a6d84f2612093a9fe83a0e82a3e2fad7e7afb0576d",
+  "librarySha256": "cf10919870a1e205deef6260437052df91b76bdc14d2a714e21313d449f95d12",
+  "bankCaseZeroMatchesEmittedParameters": true,
+  "parameterFields": 549,
+  "budgetContract": {
+    "referenceRecipe": "acf_simulink/experiments/prepare_budget_sensor_stress_20261002.m",
+    "sensor": "ADXL354C-like\u00b18g",
+    "density_ug_sqrtHz": 33.75,
+    "sensitivity_V_g": 0.1,
+    "fixedReferenceENBW_Hz": 3177.1265617575177,
+    "referenceConditionedAccelerationNoiseRms_m_s2": 0.018655706922592906,
+    "accelerationQuantum_m_s2": 1.4028525352478024e-05,
+    "accelerationAdcNoiseRms_m_s2": 0.0020897931911799373,
+    "sensorRange_g": 8,
+    "adcRange_g": 11.999999999999998,
+    "nominalActualAndIdentifiedCompleteResponseCutoff_Hz": 1900,
+    "extraKnownMatchedCommonLatency_s": 0,
+    "currentResponse_s": 5e-05,
+    "coilKf_N_A": 24.4,
+    "coilR_ohm": 8.896,
+    "coilL_H": 0.004,
+    "usableVoltage_V": 32,
+    "rawNoiseClock_Hz": 300000,
+    "adcRate_Hz": 30000,
+    "controllerRate_Hz": 10000,
+    "qualification": "Parameter/sourcepreparationonly;noepisodesorqualificationexecuted. Exactoldresponse/noise/range/quantizationmodelcontract,includingnativeactualcalibration/timingresiduals. CompleteADXL354internalmechanical/filterphaseisnotrepresentedexactly andassembledchainmustmeetthe1900Hzmatchedresponseenvelope. No waveformfuture/previewinputs."
+  },
+  "splits": {
+    "qualification": 4
+  }
+}

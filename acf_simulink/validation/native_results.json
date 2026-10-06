@@ -1,0 +1,200 @@
+{
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "buildSeconds": 25.5973,
+  "nativeBlockCount": 2180,
+  "cases": [
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxSignalDifference": 2.4089619188316647E-12,
+      "worstSignal": "actuatorCommand",
+      "simulationSeconds": 3.452602,
+      "peakForceError_N": 0.32462557958743687,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "maxSignalDifference": 1.3375967000683886E-12,
+      "worstSignal": "actuatorCommand",
+      "simulationSeconds": 2.915017,
+      "peakForceError_N": 1.2889785253662218,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "bump",
+      "maxSignalDifference": 7.5761619200420682E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 2.969391,
+      "peakForceError_N": 0.24583644246452607,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "sharp_bump",
+      "maxSignalDifference": 6.6080474425689317E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 3.064729,
+      "peakForceError_N": 1.4700772082307161,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "bump",
+      "maxSignalDifference": 4.0856207306205761E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 2.992469,
+      "peakForceError_N": 0.3615279957177755,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "sharp_bump",
+      "maxSignalDifference": 3.0020430585864233E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 2.935508,
+      "peakForceError_N": 1.9027690099652546,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "ramp",
+      "maxSignalDifference": 2.4078516958070395E-12,
+      "worstSignal": "actuatorCommand",
+      "simulationSeconds": 2.785344,
+      "peakForceError_N": 0.096645396143614448,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "robot_error",
+      "maxSignalDifference": 3.2440716779547074E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 2.965341,
+      "peakForceError_N": 0.22542120950702937,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "repeated",
+      "maxSignalDifference": 2.411626454090765E-12,
+      "worstSignal": "actuatorCommand",
+      "simulationSeconds": 3.545145,
+      "peakForceError_N": 0.32462557958743687,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "flat",
+      "maxSignalDifference": 7.4940054162198066E-14,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 0.803722,
+      "peakForceError_N": 0.17247966608081455,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxSignalDifference": 1.3386625141720288E-11,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 1.560839,
+      "peakForceError_N": 0.801504782626747,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxSignalDifference": 2.7267077484793845E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 2.779682,
+      "peakForceError_N": 2.3557617355886045,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "bump",
+      "maxSignalDifference": 6.3327121324618929E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 3.044646,
+      "peakForceError_N": 0.25297997382724446,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "bump",
+      "maxSignalDifference": 1.3965629763745824E-9,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 3.013247,
+      "peakForceError_N": 4.199679774405924,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "maxSignalDifference": 2.7853275241795927E-12,
+      "worstSignal": "surfaceAcceleration_m_s2",
+      "simulationSeconds": 2.780303,
+      "peakForceError_N": 53.078416681869271,
+      "passed": false,
+      "impactCount": 1,
+      "strokeStopHit": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxSignalDifference": 2.1405099914773018E-12,
+      "worstSignal": "actuatorCommand",
+      "simulationSeconds": 2.86684,
+      "peakForceError_N": 0.79190815486234456,
+      "passed": false,
+      "impactCount": 0,
+      "strokeStopHit": true
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "bump",
+      "maxSignalDifference": 8.9039886574937555E-13,
+      "worstSignal": "motorSpeed_rad_s",
+      "simulationSeconds": 5.362865,
+      "peakForceError_N": 0.24584059717682294,
+      "passed": true,
+      "impactCount": 0,
+      "strokeStopHit": false
+    }
+  ],
+  "benchmark": {
+    "simulatedSeconds": 6,
+    "legacySeconds": 30.345541,
+    "nativeSeconds": 2.79608,
+    "speedup": 10.852887256444738
+  }
+}

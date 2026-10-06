@@ -1,0 +1,21 @@
+{
+  "sourceRescore": "inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+  "sourceRescoreSHA256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f",
+  "nativeForceExecutions": 72,
+  "newForceExecutionsForPackingOrFigure": 0,
+  "nativeModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "metric": "max(abs(true normal force - 50 N)) over every 4 s native sample; eight cases per matrix cell",
+  "geometry": "approximate 20 mm free length per spring, 33.6 N common preload; analytical packing only",
+  "script": "inertial_mechanics_make_v8_tolerance_figure_20260930.py",
+  "scriptSHA256": "ef740a3bb8db89314bd8097a4959aa2cf66eda9b859394f9878f4e28ec414b3f",
+  "figures": [
+    {
+      "file": "inertial_mechanics_v8_actual_tolerance_20260930.svg",
+      "sha256": "b51d51e3e4330e15bef19b886cfa9098a981159748cf6dce482bf46c148f6c7f"
+    },
+    {
+      "file": "inertial_mechanics_v8_actual_tolerance_20260930.png",
+      "sha256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee"
+    }
+  ]
+}

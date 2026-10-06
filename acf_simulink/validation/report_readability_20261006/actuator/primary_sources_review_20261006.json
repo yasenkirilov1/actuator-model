@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "status": "primary_manufacturer_review_complete",
+  "reviewedDate": "2026-10-06",
+  "newNativeRuns": 0,
+  "prototypeMeasurements": 0,
+  "sources": [
+    {
+      "id": "moticont_product",
+      "url": "https://www.moticont.com/lvcm-070-051-01.htm",
+      "title": "Moticont LVCM-070-051-01 product page",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer page with web tool; followed linked manufacturer drawing.",
+      "facts": {"stroke_mm": 25.4, "continuousForceCatalog_N": 64.7, "intermittentForceCatalog_N": 204.3, "intermittentDutyFraction": 0.1},
+      "scope": "Direct drive with force approximately proportional to current; external guidance is required. The part page does not establish the installed hot force, our current servo, or full-stroke precision."
+    },
+    {
+      "id": "moticont_drawing",
+      "url": "https://www.moticont.com/pdf/lvcm-070-051-01.pdf",
+      "title": "Moticont LVCM-070-051-01 drawing Rev1",
+      "readDate": "2026-10-06",
+      "method": "Downloaded official PDF, rendered it locally and visually read the single sheet; it has no searchable specification text.",
+      "file": "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.pdf",
+      "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+      "facts": {"forceConstant_N_A": 24.4, "backEmfConstant_V_s_m": 24.4, "R_25C_ohm": 6.4, "L_1kHz_H": 0.004, "movingCoilMass_kg": 0.24, "stationaryBodyMass_kg": 1.24, "maximumContinuousPowerCatalog_W": 45, "bodyDiameter_mm": 69.9, "housingLength_mm": 50.8, "overallMidStrokeLength_mm": 76.2},
+      "continuousForceCurve": {"center_N": 64.7, "nearEnd_N_approx": 52, "readingPrecision": "Approximately, from the plotted force curve; do not infer an exact Kf(position) map."},
+      "ratingConditions": "The sheet states all values at25°C. No installed hot-rating/cooling boundary is established.",
+      "importantDistinction": "Rhot8.896Ω in the native plant is an engineering100°C-rise resistance assumption, not a manufacturer measured rating. The catalog204.3N intermittent force would need8.37A at nominalKf, more than our3.5A driver."
+    },
+    {
+      "id": "maxon_re25_302005",
+      "url": "https://www.maxongroup.com/maxon/view/product/302005",
+      "title": "maxon RE25 302005 product page",
+      "readDate": "2026-10-06",
+      "method": "Read part-specific manufacturer specifications with web tool.",
+      "facts": {"voltage_V": 24, "torqueConstant_Nm_A": 0.0234, "resistance_ohm": 2.32, "inductance_H": 0.000238, "motorRotorInertia_kg_m2": 0.00000108, "mass_kg": 0.13, "maximumContinuousCurrent_A": 1.16, "maximumContinuousTorque_Nm": 0.0263, "maximumWindingTemperature_degC": 125, "housingAmbientThermalResistance_K_W": 14, "windingHousingThermalResistance_K_W": 3.1, "windingThermalTimeConstant_s": 12.5},
+      "sourceCaution": "The product's Catalog page link now opens a2025 replacement-family page containing339xxx parts, not302005. Its replacement specifications were not substituted for the simulated302005 winding. The302005 product is marked NRND.",
+      "modelAssumptions": "Total modeled rotating inertia adds5e-7kgm² assumed screw/coupler inertia. Native transmission is ideal reversible lead conversion plus explicit friction;90% efficiency is a separate analytical sizing scenario."
+    },
+    {
+      "id": "maxon_eci30_539489",
+      "url": "https://www.maxongroup.com/maxon/view/product/539489",
+      "title": "maxon EC-i30 539489 product page",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer page; static counterexample only, not a simulated candidate.",
+      "facts": {"nominalVoltage_V": 48, "continuousTorque_Nm": 0.103, "continuousCurrent_A": 1.82, "torqueConstant_Nm_A": 0.0554, "rotorInertia_kg_m2": 0.00000155, "motorMass_kg": 0.242},
+      "analyticalStaticInference": "With10mm lead and90% assumed motoring efficiency,0.103Nm supports58.25N before guide loss. This illustrates that a better-sized screw motor may be viable; commutation, backlash/ripple, mounted dynamics and current control remain untested."
+    },
+    {
+      "id": "sensata_las28_53",
+      "url": "https://www.sensata.com/sites/default/files/a/sensata-linear-actuator-sensor-LAS-28-53-drawing.pdf?cb=e13e7ccb",
+      "title": "Sensata LAS28-53-000A-P01 drawing X2",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer product and linked two-page drawing with web tool.",
+      "facts": {"stroke_mm": 25, "continuousStallForce_N": 60.1, "peakForce_N": 266.9, "peakDuration_s": 10, "Kf_N_A": 20.28, "R_25C_ohm": 2.4, "L_1kHz_H": 0.00315, "movingAssemblyMass_kg": 0.755, "totalMass_kg": 2.4, "motorConstant_N_sqrtW": 13.09},
+      "ratingConditions": "Continuous force is at25°C ambient/155°C coil. Winding constants are at midstroke/25°C; peak is limited to10s under stated temperatures.",
+      "scope": "Efficiency/thermal reference, not recommended as-is: its0.755kg moving assembly already exceeds the entire modeledB=0.6kg budget. Integrated position specifications do not establish our1µm sensor target."
+    }
+  ],
+  "answerScope": "Approximate component targets supported by manufacturer data, analytical sizing, existing native histories and fixed-model voltage diagnostics. No purchased actuator, installed cooling, real driver response or new fixed-mechanics leadscrew controller is qualified."
+}

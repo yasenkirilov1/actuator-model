@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "date": "2026-10-02",
+  "frozenAcquisitionModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "metric": "maximum absolute true workpiece-normal force error over every native sample including startup",
+  "physicalRequirement_N": 0.5,
+  "preferredDesignThreshold_N": 0.45,
+  "sources": [
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/results.json",
+      "sha256": "fb321979a4dca87bfc4ca1d2719f95a558a851a563d7fceafec00b1957485924",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "budget_adc_hot_coil_20261002",
+      "group": "ADXL1002_8000_M08_30k_current100_hot32V",
+      "recordings": 7,
+      "passes": 7,
+      "designMarginPasses": 7,
+      "peakError_N": 0.4388208275612797,
+      "reserve_N": 0.061179172438720286,
+      "nativeSamples": 39600007.0,
+      "worstCaseId": 2,
+      "worstSeed": 29,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sinc3",
+      "rate_Hz": 30000,
+      "cutoff_Hz": 8000,
+      "converterGroupDelay_us": 49.609375,
+      "peakVoltage_V": 31.738465740089605,
+      "peakCurrent_A": 2.4556969735383407,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/results.json",
+        "sha256": "fb321979a4dca87bfc4ca1d2719f95a558a851a563d7fceafec00b1957485924",
+        "recordings": 7,
+        "nativeSamples": 39600007.0
+      }
+    }
+  ],
+  "inputManifestSha256": "e3b49f7e5fab4a2faa771e94dfdf681bf69c0e9bbebcfa1806ce28347b99e28f",
+  "caveat": "Seven native selected-acquisition records with fixed hot Kf24.4 N/A, R8.896 ohm, L4 mH, 32 V usable output and unchanged 100 us current response. No evolving thermal state or measured assembled sensor/driver phase."
+}

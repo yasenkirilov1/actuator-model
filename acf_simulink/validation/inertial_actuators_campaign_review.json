@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-30",
+  "review": "Coulomb controller-field mapping found and corrected before canonical promotion",
+  "issue": "Coil-native field coulombForce was not replaced by screw CoulombTorque/ell. Current-controller references therefore use coil .2N FF despite modeled screw friction .001Nm/ell.",
+  "physicalPlantStatus": "Native winding, rotor, transmitted-force and downstream contact balances remain valid. Histories are retained diagnostic controller results, not final fair-controller qualification.",
+  "unaffected": "Voice-coil branches and inherited speed-control references are unaffected by the controller-field omission. Speed references still assume an extra exact shaft-velocity signal.",
+  "correction": "Map both coulombForce/coulombFriction, viscousFriction, frictionSpeed, forceConstant, moving/reflected mass and current units; assert no remaining coil-specific Gain parameter except shared PI/PID strategy.",
+  "reports": [
+    {
+      "report": "inertial_actuators_smoke_v8_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 4,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 2,
+      "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "privateModelSHA256": "4f3790aac8e31188a8f50fe2bca41d021d4ac4c968498c9d5fde4bb46ab082fa",
+      "recipeSHA256": "5c9c0b86d04c8ae47f9ec912573a12148b980585123ab6632eb3a3bf0f5f9420"
+    },
+    {
+      "report": "inertial_actuators_current_tune_v1_20260930.json",
+      "status": "stopped_by_coordinator",
+      "nativeExecutions": 24,
+      "setupRejections": 11,
+      "undercompensatedCurrentControllerExecutions": 24,
+      "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "privateModelSHA256": "25b081bf362e4308ef2fe043e78fe9cda242503d478be1d6b1851ddec0a8c844",
+      "recipeSHA256": "2176d63b0bcd4991c48b80f042b634e8d77c26db29b29aec8f9fb2aac04f39f4"
+    },
+    {
+      "report": "inertial_actuators_current_resume_v1_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 12,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 12,
+      "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "privateModelSHA256": "52e90cff69a76753d00eeb5ba8cdf10ea9d351237ceadb96c93b05906a2c276f",
+      "recipeSHA256": "862a9de436815c5aae11e5baffc8c6b46231ab2689dee6a7af754e11a638b6a2"
+    },
+    {
+      "report": "inertial_actuators_speed_tune_v1_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 25,
+      "setupRejections": 11,
+      "undercompensatedCurrentControllerExecutions": 0,
+      "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "privateModelSHA256": "658c2928196b3ed4cf0ab8d15d32d941d42bbfed1eea164191bdbdb4f772271c",
+      "recipeSHA256": "1ad82acaf01fa7a5e38c3b18f114f8f524476b64cb6e2aeae4adb075ec692186"
+    },
+    {
+      "report": "inertial_actuators_speed_resume_v1_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 11,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 0,
+      "sourceModelSHA256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+      "privateModelSHA256": "f2ff3b72706dce7aa98e3f2fdad757c2adce3a9cab884a0bfe633b29fec1c410",
+      "recipeSHA256": "ed4b93c6ff2230cb8ce75e0768e9329cb4f0416e0ea9704973ad621307a0b672"
+    },
+    {
+      "report": "inertial_actuators_current_refine_v4_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 24,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 24,
+      "sourceModelSHA256": "2aaafd4da3b6f5593157f1667e84e2fb72ebdc994804f743f8e5c80d8202668b",
+      "privateModelSHA256": "9ccd873b0070e2ae7a4484075ed7ec7481822160e04712b7fe750e51f5febb90",
+      "recipeSHA256": "28defe84c47c8632d5b0f895b6eed7eb7dcaa5f760cef6887036b08b7d538e58"
+    },
+    {
+      "report": "inertial_actuators_feedback_notch_v4_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 12,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 12,
+      "sourceModelSHA256": "2aaafd4da3b6f5593157f1667e84e2fb72ebdc994804f743f8e5c80d8202668b",
+      "privateModelSHA256": "f9797c4b056547ee9ce1881f5e619992d6ebf8456ad8302aa9fc660e80a5fbf3",
+      "recipeSHA256": "60741a24b9678861eb88429422225b3a105f8380c593054c6efb4a3f5286c3b7"
+    },
+    {
+      "report": "inertial_actuators_solver_refinement_v4_20260930.json",
+      "status": "complete",
+      "nativeExecutions": 3,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 3,
+      "sourceModelSHA256": "2aaafd4da3b6f5593157f1667e84e2fb72ebdc994804f743f8e5c80d8202668b",
+      "privateModelSHA256": "14582bcafa0ece4c39a94950f9d49d7786b5004dda6c740f96506ed5c5109018",
+      "recipeSHA256": "10f98cceb9187f23c4f7997663224622dbb6764aa2c2ddd30b5bd0e264fa21b3"
+    },
+    {
+      "report": "inertial_actuators_screw_endpoints_v4_20260930.json",
+      "status": "stopped_by_coordinator",
+      "nativeExecutions": 9,
+      "setupRejections": 0,
+      "undercompensatedCurrentControllerExecutions": 9,
+      "sourceModelSHA256": "2aaafd4da3b6f5593157f1667e84e2fb72ebdc994804f743f8e5c80d8202668b",
+      "privateModelSHA256": "a262f68af968aaf15d3f18cb3ab1fa80fee9bf834a5992e2ba43cac0cb593b63",
+      "recipeSHA256": "060f8d59097966f21e0d886bcce1b62faafb185da2a4cd3552cd5daa2951002b"
+    }
+  ],
+  "nativeExecutionsTotal": 124,
+  "setupRejectionsTotal": 22,
+  "undercompensatedCurrentExecutionsTotal": 86,
+  "next": "Bounded selected-controller runs on forthcoming frozen v6 common normal-force geometry and optional causal measured-acceleration prediction; no preview."
+}

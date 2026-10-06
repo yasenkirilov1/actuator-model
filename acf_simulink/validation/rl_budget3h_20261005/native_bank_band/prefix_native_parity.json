@@ -1,0 +1,14 @@
+{
+  "status": "original_native_prefix_trajectories_identical",
+  "scenarios": [
+    0,
+    23,
+    56,
+    63
+  ],
+  "action_steps_each": 3000,
+  "physical_samples": 360004,
+  "endpoint72_values_exact": true,
+  "full_native_time_inputs_truth_exact": true,
+  "original_holdout64_95_not_run": true
+}

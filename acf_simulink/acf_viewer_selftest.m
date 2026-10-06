@@ -1,9 +1,13 @@
 function acf_viewer_selftest
-%ACF_VIEWER_SELFTEST Check the MATLAB export contract without Simulink/browser.
-% Uses a short reference run. Creates and removes only its own temporary folder.
+%ACF_VIEWER_SELFTEST Check the export contract with a short Simulink run.
+% Preserves the loaded model settings. Creates and removes only its own temporary folder.
 root=tempname; mkdir(root); cleanup=onCleanup(@() rmdir(root,'s')); %#ok<NASGU>
-p=acf_parameters('voice_coil','flat'); p.sim.stopTime=0.01;
-r=acf_reference(p);
+mdl=acf_open;mw=get_param(mdl,'ModelWorkspace');original=getVariable(mw,'p');
+step=get_param(mdl,'FixedStep');stop=get_param(mdl,'StopTime');
+choice=get_param([mdl '/Actuator selection'],'ActuatorChoice');
+modelCleanup=onCleanup(@() restore(mdl,original,step,stop,choice)); %#ok<NASGU>
+p=acf_parameters('voice_coil','flat');p.sim.stopTime=10*p.sim.step;
+r=acf_run(mdl,p,false);
 original=r.data; expectedNames=r.names;
 % Reordered input channels must be exported in canonical order.
 order=numel(r.names):-1:1; r.names=r.names(order); r.data=r.data(:,order);
@@ -29,4 +33,10 @@ end
 assert(rejected,'Non-increasing time must be rejected.');
 acf_visualize({r,r},fullfile(root,'two_runs.html'),false);
 fprintf('ACF viewer export checks passed: signal order, all samples, label escaping, time validation and multiple runs.\n');
+end
+
+function restore(mdl,p,step,stop,choice)
+assignin(get_param(mdl,'ModelWorkspace'),'p',p);
+acf_select_actuator(mdl,choice);
+set_param(mdl,'FixedStep',step,'StopTime',stop);
 end

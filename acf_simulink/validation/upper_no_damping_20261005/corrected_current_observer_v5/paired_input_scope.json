@@ -1,0 +1,13 @@
+{
+  "status": "corrected_current_bank_original_physical_sensing_and_controller_coefficients_equal",
+  "preparedConfigurationsCompared": 132,
+  "physicalQualificationEpisodes": 0,
+  "originalConfigsSha256": "8deb93131870e4ac05c85ac6852f589c24e6273e8dd3d5253891c4979a6dc6d0",
+  "correctedConfigsSha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e",
+  "allChangedParameterPaths": [
+    "p.mechanicalStudy.controlDevelopmentLane",
+    "p.mechanicalStudy.upperSpringLengthAndTravelUnconstrained",
+    "p.upperObserver.contract"
+  ],
+  "comparison": "Exact recursive comparison of all original and repaired p fields; only declaration/eligibility metadata changed. Actual and identified mechanics, all observer coefficients, PI/notch/filter gains, current lag/friction, ADC/AA/noise clocks/offsets, seeds, robot gates and commands are exactly equal."
+}

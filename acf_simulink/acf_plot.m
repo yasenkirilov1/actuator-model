@@ -1,14 +1,24 @@
 function acf_plot(r)
 p=r.parameters; t=r.time; d=r.data;
-f=figure('Name',['ACF: ' p.actuator.kind ' / ' p.surface.kind],'Color','w');
+if isfield(r,'normalContact'),d(:,1)=r.normalContact.data(:,1);end
+% Let the figure and axes use the same MATLAB light/dark theme.
+f=figure('Name',['ACF: ' p.actuator.kind ' / ' p.surface.kind]);
 if exist('acf_visualize','file')==2
     uimenu(f,'Label','2D replay','Callback',@(~,~) acf_visualize(r));
 end
 subplot(3,2,1);
 plot(t,d(:,31)-d(:,1),'LineWidth',1.2); hold on;
-plot(t,d(:,31)-d(:,32),':');
+if isfield(r,'normalContact')
+    plot(t,p.force.reference-r.normalContact.data(:,4),':');
+    estimateLabel='Estimated normal';
+elseif isfield(r,'contactEstimate')
+    plot(r.contactEstimate.time,p.force.reference-r.contactEstimate.force_N,':');
+    estimateLabel='Estimated normal';
+else
+    plot(t,d(:,31)-d(:,32),':');estimateLabel='Cell reading';
+end
 plot(t,0*t+p.force.tolerance,'--r',t,0*t-p.force.tolerance,'--r');
-ylabel('Force error (N)'); grid on; legend('True','Measured','Tolerance','Location','best');
+ylabel('Normal-force error (N)'); grid on; legend('True',estimateLabel,'Tolerance','Location','best');
 title(r.metrics.reason,'Interpreter','none');
 subplot(3,2,2);
 plot(t,1000*d(:,2)); hold on;

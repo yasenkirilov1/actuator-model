@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Critical review: group member polishing model</title>
+<style>
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #26343d; background: #f2f5f6; }
+body { margin: 0; line-height: 1.7; }
+main { max-width: 940px; margin: 32px auto; padding: 32px 42px; background: white; border-top: 6px solid #087f8c; box-shadow: 0 3px 24px #0000000b; }
+h1, h2 { color: #163a44; line-height: 1.25; } h1 { font-size: 2rem; } h2 { margin-top: 2rem; font-size: 1.4rem; }
+a { color: #006b82; overflow-wrap: anywhere; } code { font-size: .87em; background: #edf2f4; padding: .1em .25em; overflow-wrap: anywhere; }
+figure { margin: 1.6rem 0; } figure svg { width: 100%; height: auto; display: block; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; } th, td { border-bottom: 1px solid #d9e2e7; padding: .65rem; text-align: left; vertical-align: top; } th { background: #e8f1f3; }
+pre { white-space: pre-wrap; } @media (max-width: 650px) { main { margin: 0; padding: 20px; } table { font-size: .8rem; } }
+@media print { body, :root { background: white; } main { margin: 0; box-shadow: none; padding: 0; } figure, tr { break-inside: avoid; } }
+</style></head><body><main><h1>Critical review of the group member’s polishing model</h1>
+<p><strong>6 October 2026 · Code inspection, catalogue checks and seven small deterministic experiments</strong></p>
+<h2>Goal and verdict</h2>
+<p>Our question is whether a flange can maintain the workpiece’s pressing force within <strong>±0.5 N</strong>, including a <strong>1 mm high, 10 mm wide bump at 100 mm/s</strong>, across 5–50 N and the specified tool masses and orientations. The prescribed upper spring is 20 N/mm with zero damping; the lower connection is rigid apart from the load cell’s finite stiffness. The first prototype uses a B–S load cell and an accelerometer on S, with drag reconstruction deferred.</p>
+<p><strong>Our model is the stronger basis for that design question. The supplied script is a useful demonstration of a different, easier polishing system, but its results do not qualify our flange.</strong> Its most useful addition is a compliant sanding pad with a finite footprint, which our present model lacks. That deserves a properly calibrated implementation and a separate comparison.</p>
+<p>This review concerns the supplied <a href="/home/tommie/.t3/userdata/attachments/01841b08-301d-4777-adff-31fadb25efcb-88b1025a-6ce3-4001-9d13-cf2dc04258b1-txt.txt">MATLAB file</a>. I inspected the equations and ran a deterministic C transcription of their update sequence, with Gaussian noise disabled. <strong>These were not native MATLAB replays or hardware qualification runs.</strong> The original script, our models and the main report were preserved.</p>
+<h2>Does the broad pad make the comparison unfair?</h2>
+<p>A real broad pad distributes load. Under full contact, a linear elastic pad’s total force can legitimately depend on area-weighted surface height. That is a physical design benefit. It becomes an unfair controller comparison when the pad, bump geometry and speed change together and the resulting small error is presented as solving our original test.</p>
+<p>The executing code uses a <strong>77 mm pad</strong> and, by default, a <strong>0.15 mm high circular island of 16 mm diameter at 50 mm/s</strong>. Our test is larger and faster; its specified longitudinal width does not establish a circular footprint. Even the script’s stress preset uses a different bump: 0.7 mm high and 28 mm in diameter.</p>
+<p>Using its own 35-strip geometry, the default island raises the pad’s mean surface height by just <strong>6.60 µm</strong>. With its 20 kN/m pad stiffness and the tool held fixed, that adds <strong>0.132 N</strong> of elastic force. Applying the full 0.15 mm height to the whole lumped spring would add 3 N. This arithmetic isolates the geometry effect; neither value is a closed-loop simulation of our sharp-bump flange.</p>
+<p><figure role="img" aria-label="Area weighting and the partial-contact counterexample"><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="756pt" height="360pt" viewBox="0 0 756 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 756 360 
+L 756 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.48 252 
+L 343.185882 252 
+L 343.185882 72 
+L 60.48 72 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m93b10431d5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m93b10431d5" x="118.92799" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(64.555334 268.459355)">Peak height applied</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(76.526428 281.662363)">to whole spring</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m93b10431d5" x="284.737892" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(253.174767 268.459355)">77 mm pad</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(243.676095 281.662363)">area weighting</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <path d="M 60.48 252 
+L 343.185882 252 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <defs>
+       <path id="m2241a3f05a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="256.178711" transform="rotate(-0 53.48 256.178711)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <path d="M 60.48 228.315789 
+L 343.185882 228.315789 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="228.315789" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="232.4945" transform="rotate(-0 53.48 232.4945)">0.5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <path d="M 60.48 204.631579 
+L 343.185882 204.631579 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="204.631579" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="208.81029" transform="rotate(-0 53.48 208.81029)">1.0</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 60.48 180.947368 
+L 343.185882 180.947368 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="180.947368" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="185.126079" transform="rotate(-0 53.48 185.126079)">1.5</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <path d="M 60.48 157.263158 
+L 343.185882 157.263158 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="157.263158" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="161.441869" transform="rotate(-0 53.48 161.441869)">2.0</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <path d="M 60.48 133.578947 
+L 343.185882 133.578947 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="133.578947" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="137.757658" transform="rotate(-0 53.48 137.757658)">2.5</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <path d="M 60.48 109.894737 
+L 343.185882 109.894737 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="109.894737" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="114.073448" transform="rotate(-0 53.48 114.073448)">3.0</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_17">
+      <path d="M 60.48 86.210526 
+L 343.185882 86.210526 
+" clip-path="url(#pd350137289)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="60.48" y="86.210526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="53.48" y="90.389237" transform="rotate(-0 53.48 90.389237)">3.5</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="29.343984" y="162" transform="rotate(-90 29.343984 162)">Instant elastic-force increment (N)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.330267 252 
+L 164.525713 252 
+L 164.525713 109.894737 
+L 73.330267 109.894737 
+z
+" clip-path="url(#pd350137289)" style="fill: #b85032"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 239.140169 252 
+L 330.335615 252 
+L 330.335615 245.749192 
+L 239.140169 245.749192 
+z
+" clip-path="url(#pd350137289)" style="fill: #087f8c"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 60.48 252 
+L 60.48 72 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 60.48 252 
+L 343.185882 252 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="118.92799" y="105.157895" transform="rotate(-0 118.92799 105.157895)">3.000 N</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="284.737892" y="241.01235" transform="rotate(-0 284.737892 241.01235)">0.132 N</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #455361" x="201.832941" y="86.210526" transform="rotate(-0 201.832941 86.210526)">0.15 mm feature; 20 kN/m stiffness</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="201.832941" y="66" transform="rotate(-0 201.832941 66)">Its pad substantially reduces the input disturbance</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 450.614118 252 
+L 733.32 252 
+L 733.32 72 
+L 450.614118 72 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_3">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m93b10431d5" x="509.062108" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(448.717655 268.459355)">Check contact locally,</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(464.631561 281.662363)">then sum forces</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m93b10431d5" x="674.87201" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(631.257869 268.459355)">Average height,</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(622.179432 281.662363)">then check contact</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_9">
+     <g id="line2d_21">
+      <path d="M 450.614118 252 
+L 733.32 252 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="252" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="256.178711" transform="rotate(-0 443.614118 256.178711)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_23">
+      <path d="M 450.614118 226.285714 
+L 733.32 226.285714 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="226.285714" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="230.464425" transform="rotate(-0 443.614118 230.464425)">0.1</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_25">
+      <path d="M 450.614118 200.571429 
+L 733.32 200.571429 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="200.571429" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="204.75014" transform="rotate(-0 443.614118 204.75014)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_27">
+      <path d="M 450.614118 174.857143 
+L 733.32 174.857143 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="174.857143" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="179.035854" transform="rotate(-0 443.614118 179.035854)">0.3</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_29">
+      <path d="M 450.614118 149.142857 
+L 733.32 149.142857 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="149.142857" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="153.321568" transform="rotate(-0 443.614118 153.321568)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_31">
+      <path d="M 450.614118 123.428571 
+L 733.32 123.428571 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="123.428571" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="127.607282" transform="rotate(-0 443.614118 127.607282)">0.5</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_33">
+      <path d="M 450.614118 97.714286 
+L 733.32 97.714286 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="97.714286" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="101.892997" transform="rotate(-0 443.614118 101.892997)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_35">
+      <path d="M 450.614118 72 
+L 733.32 72 
+" clip-path="url(#p734bae7ff6)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="450.614118" y="72" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="443.614118" y="76.178711" transform="rotate(-0 443.614118 76.178711)">0.7</text>
+     </g>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="419.478102" y="162" transform="rotate(-90 419.478102 162)">Predicted contact force (N)</text>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 463.464385 252 
+L 554.659831 252 
+L 554.659831 123.428571 
+L 463.464385 123.428571 
+z
+" clip-path="url(#p734bae7ff6)" style="fill: #087f8c"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 629.274287 252 
+L 720.469733 252 
+L 720.469733 252 
+L 629.274287 252 
+z
+" clip-path="url(#p734bae7ff6)" style="fill: #b85032"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 450.614118 252 
+L 450.614118 72 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 450.614118 252 
+L 733.32 252 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="509.062108" y="118.285714" transform="rotate(-0 509.062108 118.285714)">0.500 N</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="674.87201" y="246.857143" transform="rotate(-0 674.87201 246.857143)">0.000 N</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #455361" transform="translate(505.815965 79.197539)">Half the area: +0.05 mm compression</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #455361" transform="translate(536.412449 90)">Other half: 0.05 mm gap</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="591.967059" y="66" transform="rotate(-0 591.967059 66)">Averaging first fails when contact is partial</text>
+   </g>
+  </g>
+  <g id="text_31">
+   <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="17.837812" transform="rotate(-0 378 17.837812)">Pad averaging can be real physics; contact averaging needs care</text>
+  </g>
+  <g id="text_32">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(60.48 314.997539)">Left: scalar audit of the source’s centred 16 mm circular feature, with the tool held fixed and full contact.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(60.48 325.8)">Right: two equal-area regions of one strip; a unilateral spring cannot pull across a gap.</text>
+  </g>
+  <g id="text_33">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #455361" x="60.48" y="351" transform="rotate(-0 60.48 351)">Neither panel is a simulation of our sharp-bump flange. These checks explain the changed disturbance and a contact-model error.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd350137289">
+   <rect x="60.48" y="72" width="282.705882" height="180"/>
+  </clipPath>
+  <clipPath id="p734bae7ff6">
+   <rect x="450.614118" y="72" width="282.705882" height="180"/>
+  </clipPath>
+ </defs>
+</svg></figure></p>
+<p>There is also a contact-model defect. Lines 697–704 average the island’s height across each strip <strong>before</strong> checking whether contact exists. With half a strip compressed by 0.05 mm and the other half separated by a 0.05 mm gap, averaging first predicts zero force. Checking local contact first and then integrating predicts <strong>0.5 N</strong> at 20 kN/m. Averaging works for the elastic term while all those locations remain in contact; this counterexample demonstrates why it fails with partial contact, rather than an observed failure of the default run.</p>
+<p>The damping term is simply <code>d_pad * vy</code> (line 709). It omits the changing surface height’s contribution to compression velocity and the active contact area. Calling this an “exact 2D Winkler” model overstates the implementation. Finally, controlling total force does not guarantee uniform local pressure or uniform sanding removal: a raised island can carry disproportionately high pressure.</p>
+<p><strong>Recommendation:</strong> borrow finite-pad contact, but integrate local compression and compression velocity before summing forces. Use the same physical pad and surface geometry for competing controllers, and inspect pressure as well as total force.</p>
+<h2>Does it measure the force that our load cell would measure?</h2>
+<p><strong>No.</strong> Lines 714–724 feed the calculated contact force <code>Fc</code> directly into the alleged load cell, then add errors and filtering. This represents a sensor measuring contact force directly. It does not represent our cell mounted above the tool, between B and S.</p>
+<p>For that location, the measurement includes the downstream tool’s dynamic inertia. Taring removes static weight, not acceleration. For its 1.1 kg tool, only <strong>0.455 m/s²</strong> produces a 0.5 N inertial contribution.</p>
+<p>The deterministic fine- and coarse-sanding cases produced peak tool accelerations of <strong>0.603 and 1.470 m/s²</strong>. Multiplying by 1.1 kg gives omitted inertia-term magnitudes of <strong>0.663 and 1.617 N</strong>, respectively. These magnitudes show that the omission matters; they are not simulations of a corrected sensing chain. That requires a specified load-cell location, where the vibration forces act, and synchronized acceleration acquisition.</p>
+<p>The error model also needs clearer provenance. Its nonlinear term is +0.075 N at 25 N and +0.100 N at 50 N. Corresponding deterministic mean contact errors were approximately −0.075 and −0.100 N: integral control corrects measured error, including the biased reading. The velocity-dependent term labelled “hysteresis” has no load-history memory. Unseeded Gaussian noise prevents exact reproduction.</p>
+<p><strong>Recommendation:</strong> retain our physical sensing location and inertia reconstruction. The one-axis choice is acceptable within the agreed drag-free prototype scope; direct access to contact-force truth is the consequential simplification here.</p>
+<h2>Can the named motor and driver produce the simulated motion?</h2>
+<p>The motor itself is real, and its main catalogue numbers largely match: 25.6 N/A, 5.7 Ω, 8.15 mH, 46.1 N continuous and 202.3 N peak. However, naming a part does not enforce its operating limits. The script declares inductance and continuous force but does not use them in the dynamics. <a href="https://akribis-sys.oss-cn-shanghai.aliyuncs.com/uploads/upload/files/20250831/4a3605602de3c1cb6f2a38a76d3884c2.pdf">Akribis catalogue</a></p>
+<p>Line 746 models current as a first-order response with a fixed 40 µs time constant, independent of supply voltage, inductance, resistance and back EMF. The EPOS4 Micro 24/5 has a <strong>25 kHz current-control clock</strong>; a 40 µs clock interval does not establish a 40 µs current-response time constant. Its maximum output is 90% of supply, or <strong>21.6 V at 24 V</strong>. <a href="https://www.maxongroup.com/medias/sys_master/root/8994700853278/EPOS4-Micro-24-5-CAN-Hardware-Reference-En.pdf">Maxon hardware reference, pp. 10 and 54</a></p>
+<p>Its allowed 202.3 N command requires 7.90 A and <strong>45.0 V just for cold winding resistance</strong>, before inductive voltage or back EMF. The named 24 V drive therefore cannot deliver that peak envelope. This does not mean every low-effort default trajectory exceeds its voltage: voltage clipping must be evaluated on the actual waveform.</p>
+<p>Continuous operation is also unchecked. At 50 N with a horizontal axis, static current is <strong>1.953 A</strong>, above the motor’s 1.8 A continuous rating. The display’s cold <code>I²R</code> value does not establish hot-coil thermal feasibility; there is no temperature state or continuous-current failure criterion.</p>
+<p>The ADC claim is similarly unsupported. <code>50/4096</code> gives 0.0122 N per code, despite a declared 100 N sensor. At 100 N mapped onto 0–10 V, the EPOS input’s specified 5.64 mV increment corresponds to <strong>0.0564 N per code</strong>. It refreshes at <strong>2.5 ksample/s</strong>, separate from the 25 kHz current loop. A different gain mapping could change force resolution, but must also provide the necessary range. The script never clips ADC codes; our horizontal 50 N check generated 12,639 latched codes outside 0–4095. These are chain-definition defects, not evidence that 12 bits can never meet ±0.5 N.</p>
+<p><strong>Recommendation:</strong> borrow catalogue parameters, then enforce electrical, thermal and acquisition limits. Do not copy the ideal current response or use this script to justify ADC selection.</p>
+<h2>What does the claimed 43 dB rejection demonstrate?</h2>
+<p>The header claims robot-wobble rejection of 43 dB, but the script does not simulate a rigid baseline or calculate that rejection. Switching PID off retains constant-current force/gravity feedforward. A free-moving force actuator can already isolate slow robot motion mechanically.</p>
+<p><figure role="img" aria-label="Robot-wobble check with PID off and on"><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="324pt" viewBox="0 0 720 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 720 324 
+L 720 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 72 236.52 
+L 698.4 236.52 
+L 698.4 51.84 
+L 72 51.84 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 100.46701 236.52 
+L 100.46701 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m93b10431d5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m93b10431d5" x="100.46701" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="100.46701" y="251.877422" transform="rotate(-0 100.46701 251.877422)">5.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 214.81474 236.52 
+L 214.81474 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m93b10431d5" x="214.81474" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="214.81474" y="251.877422" transform="rotate(-0 214.81474 251.877422)">5.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 329.162471 236.52 
+L 329.162471 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m93b10431d5" x="329.162471" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="329.162471" y="251.877422" transform="rotate(-0 329.162471 251.877422)">6.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 443.510202 236.52 
+L 443.510202 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m93b10431d5" x="443.510202" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="443.510202" y="251.877422" transform="rotate(-0 443.510202 251.877422)">6.5</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 557.857932 236.52 
+L 557.857932 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m93b10431d5" x="557.857932" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="557.857932" y="251.877422" transform="rotate(-0 557.857932 251.877422)">7.0</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 672.205663 236.52 
+L 672.205663 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m93b10431d5" x="672.205663" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="672.205663" y="251.877422" transform="rotate(-0 672.205663 251.877422)">7.5</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="385.2" y="266.878281" transform="rotate(-0 385.2 266.878281)">Time (s)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <path d="M 72 236.52 
+L 698.4 236.52 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <defs>
+       <path id="m2241a3f05a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="240.698711" transform="rotate(-0 65 240.698711)">−0.03</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_15">
+      <path d="M 72 205.74 
+L 698.4 205.74 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="205.74" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="209.918711" transform="rotate(-0 65 209.918711)">−0.02</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17">
+      <path d="M 72 174.96 
+L 698.4 174.96 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="174.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="179.138711" transform="rotate(-0 65 179.138711)">−0.01</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_19">
+      <path d="M 72 144.18 
+L 698.4 144.18 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="144.18" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="148.358711" transform="rotate(-0 65 148.358711)">0.00</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <path d="M 72 113.4 
+L 698.4 113.4 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="113.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="117.578711" transform="rotate(-0 65 117.578711)">0.01</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_23">
+      <path d="M 72 82.62 
+L 698.4 82.62 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="82.62" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="86.798711" transform="rotate(-0 65 86.798711)">0.02</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_25">
+      <path d="M 72 51.84 
+L 698.4 51.84 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #d9e2e7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m2241a3f05a" x="72" y="51.84" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="65" y="56.018711" transform="rotate(-0 65 56.018711)">0.03</text>
+     </g>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="24.647578" y="144.18" transform="rotate(-90 24.647578 144.18)">Contact-force error (N)</text>
+    </g>
+   </g>
+   <g id="line2d_27">
+    <path d="M 100.472727 74.354246 
+L 102.759693 74.512714 
+L 105.046659 75.065686 
+L 107.333625 76.010106 
+L 109.620591 77.340765 
+L 111.907558 79.050308 
+L 114.194524 81.129278 
+L 116.48149 83.566153 
+L 118.768456 86.347396 
+L 121.055422 89.457518 
+L 123.342388 92.87914 
+L 125.629354 96.593095 
+L 127.91632 100.578508 
+L 132.490252 109.272359 
+L 137.064184 118.763994 
+L 141.638116 128.837503 
+L 150.78598 149.800908 
+L 157.646878 165.291922 
+L 162.220811 175.063621 
+L 166.794743 184.128993 
+L 169.081709 188.331715 
+L 171.368675 192.282304 
+L 173.655641 195.958482 
+L 175.942607 199.339591 
+L 178.229573 202.40668 
+L 180.516539 205.142625 
+L 182.803505 207.532184 
+L 185.090471 209.562097 
+L 187.377437 211.221115 
+L 189.664403 212.500079 
+L 191.951369 213.391933 
+L 194.238335 213.891769 
+L 196.525301 213.996843 
+L 198.812267 213.706587 
+L 201.099233 213.022603 
+L 203.386199 211.948674 
+L 205.673165 210.490721 
+L 207.960131 208.656802 
+L 210.247097 206.457076 
+L 212.534064 203.903736 
+L 214.82103 201.010982 
+L 217.107996 197.79494 
+L 219.394962 194.273597 
+L 221.681928 190.466696 
+L 223.968894 186.395663 
+L 228.542826 177.55452 
+L 233.116758 167.950397 
+L 237.69069 157.801932 
+L 253.699452 121.398654 
+L 258.273384 111.729668 
+L 262.847317 102.80264 
+L 265.134283 98.681444 
+L 267.421249 94.819982 
+L 269.708215 91.240007 
+L 271.995181 87.96162 
+L 274.282147 85.003169 
+L 276.569113 82.381163 
+L 278.856079 80.110183 
+L 281.143045 78.202833 
+L 283.430011 76.669663 
+L 285.716977 75.51914 
+L 288.003943 74.7576 
+L 290.290909 74.389234 
+L 292.577875 74.416065 
+L 294.864841 74.83793 
+L 297.151807 75.652504 
+L 299.438773 76.855288 
+L 301.725739 78.439639 
+L 304.012705 80.396801 
+L 306.299671 82.715929 
+L 308.586637 85.384152 
+L 310.873604 88.386621 
+L 313.16057 91.706582 
+L 315.447536 95.325452 
+L 317.734502 99.222911 
+L 320.021468 103.37701 
+L 324.5954 112.359861 
+L 329.169332 122.070384 
+L 336.03023 137.51304 
+L 347.46506 163.612193 
+L 352.038992 173.480215 
+L 356.612924 182.677956 
+L 358.89989 186.959411 
+L 361.186857 190.996491 
+L 363.473823 194.766404 
+L 365.760789 198.247936 
+L 368.047755 201.42156 
+L 370.334721 204.269535 
+L 372.621687 206.775984 
+L 374.908653 208.926977 
+L 377.195619 210.710594 
+L 379.482585 212.116973 
+L 381.769551 213.138352 
+L 384.056517 213.769108 
+L 386.343483 214.005778 
+L 388.630449 213.847061 
+L 390.917415 213.293846 
+L 393.204381 212.34918 
+L 395.491347 211.018284 
+L 397.778313 209.308507 
+L 400.065279 207.229309 
+L 402.352245 204.792213 
+L 404.639211 202.01076 
+L 406.926177 198.900441 
+L 409.213143 195.478628 
+L 411.50011 191.764498 
+L 413.787076 187.778919 
+L 418.361008 179.084788 
+L 422.93494 169.592938 
+L 427.508872 159.519284 
+L 436.656736 138.555805 
+L 443.517634 123.064935 
+L 448.091566 113.293424 
+L 452.665498 104.228305 
+L 454.952464 100.025736 
+L 457.23943 96.075311 
+L 459.526396 92.399308 
+L 461.813363 89.018393 
+L 464.100329 85.951504 
+L 466.387295 83.215775 
+L 468.674261 80.826434 
+L 470.961227 78.796752 
+L 473.248193 77.137965 
+L 475.535159 75.859244 
+L 477.822125 74.967633 
+L 480.109091 74.468043 
+L 482.396057 74.363216 
+L 484.683023 74.653717 
+L 486.969989 75.337944 
+L 489.256955 76.41212 
+L 491.543921 77.87031 
+L 493.830887 79.70446 
+L 496.117853 81.904411 
+L 498.404819 84.457969 
+L 500.691785 87.350929 
+L 502.978751 90.567168 
+L 505.265717 94.088696 
+L 507.552683 97.895766 
+L 509.83965 101.96696 
+L 514.413582 110.808373 
+L 518.987514 120.412703 
+L 523.561446 130.5613 
+L 539.570208 166.964461 
+L 544.14414 176.63325 
+L 548.718072 185.560013 
+L 551.005038 189.681052 
+L 553.292004 193.542345 
+L 555.57897 197.122139 
+L 557.865936 200.400329 
+L 560.152903 203.358576 
+L 562.439869 205.980367 
+L 564.726835 208.251122 
+L 567.013801 210.158244 
+L 569.300767 211.691178 
+L 571.587733 212.84146 
+L 573.874699 213.602754 
+L 576.161665 213.970871 
+L 578.448631 213.943796 
+L 580.735597 213.521683 
+L 583.022563 212.706865 
+L 585.309529 211.503841 
+L 587.596495 209.919253 
+L 589.883461 207.96186 
+L 592.170427 205.642511 
+L 594.457393 202.974072 
+L 596.744359 199.9714 
+L 599.031325 196.651248 
+L 601.318291 193.0322 
+L 603.605257 189.134572 
+L 605.892223 184.980318 
+L 610.466156 175.997206 
+L 615.040088 166.286491 
+L 621.900986 150.843679 
+L 633.335816 124.744643 
+L 637.909748 114.876797 
+L 642.48368 105.679296 
+L 644.770646 101.397985 
+L 647.057612 97.361068 
+L 649.344578 93.591331 
+L 651.631544 90.109984 
+L 653.91851 86.936556 
+L 656.205476 84.088791 
+L 658.492442 81.58256 
+L 660.779409 79.431792 
+L 663.066375 77.648408 
+L 665.353341 76.24227 
+L 667.640307 75.221131 
+L 669.927273 74.590618 
+L 669.927273 74.590618 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #b85032; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 100.472727 92.517118 
+L 102.759693 87.504826 
+L 105.046659 88.049389 
+L 107.333625 87.962386 
+L 109.620591 89.81155 
+L 111.907558 93.386318 
+L 114.194524 98.341802 
+L 116.48149 102.581307 
+L 121.055422 108.865983 
+L 123.342388 112.692214 
+L 125.629354 117.390156 
+L 127.91632 122.557795 
+L 130.203286 118.760617 
+L 132.490252 126.587682 
+L 134.777218 125.550442 
+L 137.064184 129.04066 
+L 141.638116 145.485715 
+L 143.925082 151.295723 
+L 148.499014 159.167767 
+L 150.78598 162.480089 
+L 153.072946 163.836724 
+L 155.359912 169.897706 
+L 157.646878 165.88898 
+L 159.933844 172.448294 
+L 162.220811 179.627051 
+L 164.507777 184.504435 
+L 166.794743 187.134641 
+L 169.081709 189.172243 
+L 171.368675 191.824436 
+L 175.942607 198.179441 
+L 178.229573 199.935443 
+L 180.516539 200.207714 
+L 182.803505 200.252209 
+L 185.090471 195.251247 
+L 187.377437 196.117246 
+L 189.664403 197.524627 
+L 191.951369 197.965982 
+L 194.238335 197.059852 
+L 196.525301 195.357075 
+L 198.812267 200.979322 
+L 201.099233 200.057227 
+L 203.386199 199.637579 
+L 205.673165 197.953925 
+L 210.247097 188.219978 
+L 212.534064 184.547693 
+L 214.82103 181.690832 
+L 217.107996 178.466962 
+L 219.394962 174.258422 
+L 223.968894 164.029622 
+L 226.25586 168.907107 
+L 228.542826 166.199954 
+L 230.829792 162.337171 
+L 233.116758 156.99428 
+L 235.403724 148.315487 
+L 237.69069 140.665263 
+L 239.977656 135.589428 
+L 242.264622 131.844589 
+L 244.551588 127.645643 
+L 246.838554 125.334342 
+L 249.12552 129.09201 
+L 251.412486 124.114392 
+L 253.699452 120.54068 
+L 255.986418 113.443464 
+L 258.273384 106.868222 
+L 260.56035 102.798694 
+L 265.134283 98.324405 
+L 267.421249 95.450172 
+L 269.708215 92.19282 
+L 271.995181 89.268341 
+L 274.282147 88.614584 
+L 276.569113 88.389022 
+L 278.856079 87.557257 
+L 281.143045 93.573752 
+L 283.430011 91.758831 
+L 285.716977 90.220801 
+L 288.003943 90.3144 
+L 290.290909 91.804398 
+L 292.577875 93.756318 
+L 294.864841 87.507039 
+L 297.151807 87.879431 
+L 299.438773 88.643785 
+L 301.725739 91.864702 
+L 304.012705 97.034631 
+L 306.299671 101.539783 
+L 308.586637 104.732063 
+L 310.873604 107.570634 
+L 313.16057 111.134044 
+L 315.447536 115.690706 
+L 317.734502 120.825469 
+L 320.021468 118.453334 
+L 322.308434 126.180853 
+L 324.5954 130.571322 
+L 326.882366 127.135427 
+L 329.169332 133.850097 
+L 331.456298 142.649415 
+L 333.743264 149.650769 
+L 336.03023 154.185362 
+L 338.317196 157.893093 
+L 340.604162 162.369626 
+L 342.891128 163.315104 
+L 345.178094 167.26765 
+L 347.46506 164.902795 
+L 349.752026 169.948031 
+L 352.038992 177.263825 
+L 354.325958 183.138271 
+L 356.612924 186.502315 
+L 358.89989 188.599394 
+L 361.186857 190.952358 
+L 368.047755 199.933984 
+L 370.334721 200.185697 
+L 372.621687 200.148287 
+L 374.908653 194.435651 
+L 377.195619 195.398837 
+L 379.482585 197.415201 
+L 381.769551 198.36727 
+L 384.056517 197.612153 
+L 386.343483 195.842906 
+L 388.630449 200.854952 
+L 390.917415 200.310143 
+L 393.204381 200.3969 
+L 395.491347 198.547499 
+L 397.778313 194.972497 
+L 400.065279 190.016785 
+L 402.352245 185.777062 
+L 406.926177 179.491976 
+L 409.213143 175.665551 
+L 411.50011 170.967437 
+L 413.787076 165.799635 
+L 416.074042 169.596665 
+L 418.361008 161.769465 
+L 420.647974 162.806588 
+L 422.93494 159.316271 
+L 427.508872 142.871071 
+L 429.795838 137.061017 
+L 434.36977 129.188937 
+L 436.656736 125.876627 
+L 438.943702 124.52002 
+L 441.230668 118.459087 
+L 443.517634 122.467877 
+L 445.8046 115.90865 
+L 448.091566 108.729994 
+L 450.378532 103.85273 
+L 452.665498 101.222656 
+L 454.952464 99.185208 
+L 457.23943 96.533179 
+L 461.813363 90.178543 
+L 464.100329 88.422741 
+L 466.387295 88.150683 
+L 468.674261 88.106409 
+L 470.961227 93.107599 
+L 473.248193 92.241834 
+L 475.535159 90.834693 
+L 477.822125 90.393581 
+L 480.109091 91.299957 
+L 482.396057 93.002984 
+L 484.683023 87.380983 
+L 486.969989 88.303324 
+L 489.256955 88.723212 
+L 491.543921 90.407103 
+L 496.117853 100.141509 
+L 498.404819 103.814012 
+L 500.691785 106.67108 
+L 502.978751 109.895146 
+L 505.265717 114.103868 
+L 509.83965 124.333001 
+L 512.126616 119.45566 
+L 514.413582 122.16294 
+L 516.700548 126.025833 
+L 518.987514 131.368816 
+L 521.27448 140.04769 
+L 523.561446 147.697972 
+L 525.848412 152.773844 
+L 528.135378 156.518705 
+L 530.422344 160.717654 
+L 532.70931 163.028933 
+L 534.996276 159.271231 
+L 537.283242 164.248797 
+L 539.570208 167.822435 
+L 541.857174 174.919558 
+L 544.14414 181.494696 
+L 546.431106 185.564101 
+L 551.005038 190.038091 
+L 553.292004 192.912158 
+L 555.57897 196.169325 
+L 557.865936 199.093607 
+L 560.152903 199.747162 
+L 562.439869 199.972511 
+L 564.726835 200.804048 
+L 567.013801 194.787322 
+L 569.300767 196.602009 
+L 571.587733 198.139796 
+L 573.874699 198.045954 
+L 576.161665 196.555707 
+L 578.448631 194.603541 
+L 580.735597 200.852573 
+L 583.022563 200.479938 
+L 585.309529 199.715341 
+L 587.596495 196.49419 
+L 589.883461 191.324033 
+L 592.170427 186.818657 
+L 594.457393 183.626164 
+L 596.744359 180.787387 
+L 599.031325 177.223783 
+L 601.318291 172.666942 
+L 603.605257 167.532013 
+L 605.892223 169.903994 
+L 608.179189 162.176337 
+L 610.466156 157.785748 
+L 612.753122 161.221535 
+L 615.040088 154.506776 
+L 617.327054 145.707387 
+L 619.61402 138.705983 
+L 621.900986 134.171357 
+L 624.187952 130.463613 
+L 626.474918 125.987081 
+L 628.761884 125.04163 
+L 631.04885 121.089124 
+L 633.335816 123.454038 
+L 635.622782 118.408882 
+L 637.909748 111.093187 
+L 640.196714 105.218851 
+L 642.48368 101.854936 
+L 644.770646 99.758005 
+L 647.057612 97.405201 
+L 653.91851 88.424132 
+L 656.205476 88.172626 
+L 658.492442 88.210257 
+L 660.779409 93.923118 
+L 663.066375 92.960165 
+L 665.353341 90.944039 
+L 667.640307 89.992213 
+L 669.927273 90.747576 
+L 669.927273 90.747576 
+" clip-path="url(#p1c646f1d87)" style="fill: none; stroke: #087f8c; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 72 236.52 
+L 72 51.84 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 72 236.52 
+L 698.4 236.52 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="385.2" y="37.84" transform="rotate(-0 385.2 37.84)">Most robot-wobble isolation is already present with PID off</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_5">
+     <path d="M 79 231.52 
+L 342.145313 231.52 
+Q 344.145313 231.52 344.145313 229.52 
+L 344.145313 200.518438 
+Q 344.145313 198.518438 342.145313 198.518438 
+L 79 198.518438 
+Q 77 198.518438 77 200.518438 
+L 77 229.52 
+Q 77 231.52 79 231.52 
+z
+" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="line2d_29">
+     <path d="M 81 206.616875 
+L 91 206.616875 
+L 101 206.616875 
+" style="fill: none; stroke: #b85032; stroke-width: 1.6; stroke-linecap: square"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="109" y="210.116875" transform="rotate(-0 109 210.116875)">PID off; constant-current feedforward retained</text>
+    </g>
+    <g id="line2d_30">
+     <path d="M 81 221.617656 
+L 91 221.617656 
+L 101 221.617656 
+" style="fill: none; stroke: #087f8c; stroke-width: 1.6; stroke-linecap: square"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="109" y="225.117656" transform="rotate(-0 109 225.117656)">PID on</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="72" y="289.98" transform="rotate(-0 72 289.98)">1.2 Hz force amplitude: 0.0227 → 0.0185 N; extra PID rejection 1.75 dB.</text>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(72 300.237539)">Deterministic C transcription; flat surface, 0.15 mm robot wobble, no random noise or spindle forcing.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(72 311.04)">This isolates the PID contribution. It is not an executed rigid-flange comparison or a MATLAB/hardware qualification.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1c646f1d87">
+   <rect x="72" y="51.84" width="626.4" height="184.68"/>
+  </clipPath>
+ </defs>
+</svg></figure></p>
+<p>On a flat surface, without random noise or spindle forcing, the 1.2 Hz contact-force amplitude was <strong>0.02270 N with PID off and 0.01855 N with PID on</strong>. That is <strong>1.75 dB of additional rejection from PID</strong>. It does not measure total isolation against a rigid flange, so it neither establishes nor categorically disproves 43 dB against that other baseline.</p>
+<p>The assumed 0.15 mm, 1.2 Hz robot sine is not established by a positional accuracy specification. Real amplitude and spectrum depend on the path, posture and motion. The vibration amplitudes assigned to sanding presets also need measurements.</p>
+<p>The PID itself is causal and has legitimate force/gravity feedforward. Its integrator clamp provides limited windup protection, and its derivative is unfiltered. None of this proves the controller is intrinsically bad; it simply has not been tested on our plant.</p>
+<h2>Which model should lead the project?</h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Supplied script</th>
+<th>Our current fixed-mechanics model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mechanics</td>
+<td>One moving mass; pad and guide losses</td>
+<td>Prescribed upper spring, A/B/S dynamics and finite cell stiffness</td>
+</tr>
+<tr>
+<td>Sensing</td>
+<td>Contact-force truth plus errors</td>
+<td>Physical cell measurement and measured-inertia reconstruction</td>
+</tr>
+<tr>
+<td>Drive</td>
+<td>Ideal current lag and peak force clamp</td>
+<td>Winding dynamics, back EMF, voltage/current clipping</td>
+</tr>
+<tr>
+<td>Sanding contact</td>
+<td>Simplified finite compliant footprint</td>
+<td>No finite compliant pad or pressure distribution</td>
+</tr>
+<tr>
+<td>Robot</td>
+<td>Prescribed slow sine</td>
+<td>Delayed, stability-gated recentering and issued-command observer inputs</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Interactive cases; startup excluded</td>
+<td>Locked cohorts, fresh seeds, full-history scoring and failure stops</td>
+</tr>
+</tbody>
+</table>
+<p>The script’s 3D presentation accompanies <strong>one-dimensional dynamics</strong>, not a spatial mechanical simulation. Its rendered Gaussian bump, finite-depth hole and pit also differ from the solver’s circular island, removed contact area and omitted pit. Orientation changes gravity; it does not solve general spatial sanding. Our model also simplifies spatial contact, and neither model proves real sanding performance.</p>
+<p>The numerical method is not the main problem. Exact exponential updates for its first-order filters are sensible. Halving the mechanical step from 100 to 50 µs changed one deterministic polishing peak by only <strong>0.000025 N</strong>. That supports this one smooth case, not every preset. The original also mixes pre-update force and post-update motion timestamps.</p>
+<p>Its acceptance metric excludes the first 0.2 s, and contact loss or stroke-limit violations do not stop and invalidate the simulation. No automatic full-range qualification is provided. Our current model has stronger checks, but <strong>still fails the full requirement</strong>: the locked reference results are 683/700 nominal, 21/32 stress and 1/4 long passes, with worst errors of 0.580, 3.948 and 0.691 N. These reference tests used their frozen multi-axis sensing assumptions; they do not qualify the proposed one-axis prototype. <a href="/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/report/fixed_qualification_results.json">Recorded results</a></p>
+<p><strong>Concrete recommendation:</strong> keep our native Simulink mechanics, sensing and drive as the project’s foundation. Add a separately versioned, calibrated finite-pad contact model and measured spindle/robot disturbances. Borrow the clear replay, force overlays and component telemetry. Compare controllers on identical inputs, include startup and physical failures, and retain PID as a simple baseline. Do not replace our model with this script or treat its small force errors as proof of a practical design.</p>
+<h2>Inspectable evidence</h2>
+<p>The <a href="/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/review_checks.json">compact checks</a>, <a href="/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/deterministic_checks.json">seven case metrics</a> and <a href="/home/tommie/Projects/actuator-model/acf_simulink/experiments/member_script_review_20261006/README.md">reproduction recipe</a> distinguish code inspection, arithmetic counterexamples and executed deterministic transcriptions. Gaussian noise was disabled; no native MATLAB replay, corrected-sensor test or new model qualification was performed. Only two downsampled robot traces were saved.</p>
+<p>Source SHA256: <code>332aa45edd7fd97fb3f596180e3209b49640250d4072825a1405af92d0b9675f</code>.</p></main></body></html>

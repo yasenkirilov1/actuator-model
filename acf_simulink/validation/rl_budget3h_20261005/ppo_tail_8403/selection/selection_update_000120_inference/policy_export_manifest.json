@@ -1,0 +1,28 @@
+{
+  "status": "exported_unqualified",
+  "config": {
+    "obs_dim": 40,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dt": 0.0001,
+    "min_memory_s": 0.0003,
+    "max_memory_s": 0.3,
+    "physics_init_force_gain": 0.1,
+    "detach_critic_trunk": true,
+    "center_context": true,
+    "paired_filter_init": true,
+    "initial_log_std": [
+      -4.501711368560791,
+      -1.4992198944091797
+    ]
+  },
+  "parameter_count": 8101,
+  "files": {
+    "policy_weights.npz": "2ad21711a666cfc0c2caf4b71c28a16eefd385fe11b1f04817bea5be32701876",
+    "policy_weights.f32": "3a5af9381328cdece5d58b0c65cce4799d942d421103f0e9b400162e5cb5df61",
+    "policy_weights.json": "43a3fedf171c702d9f74e91bbaa7d56567d8476c9f93529bbacd91da9eec1ba5",
+    "policy_inference.h": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+    "policy_inference.c": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+    "policy_checkpoint.pt": "61bf9f72a15e24d5fde8c82a37ba037466d815f082245e85aab394a7ff567435"
+  }
+}

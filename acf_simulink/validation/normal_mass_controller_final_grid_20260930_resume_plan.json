@@ -1,0 +1,42 @@
+{
+  "status": "prepared_for_root_review_not_launched",
+  "r1ValidatedRows": 1060,
+  "remainingUniqueNativeCases": 2440,
+  "totalPlannedUniqueIdentities": 3500,
+  "parts": [
+    {
+      "part": 1,
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "sha256": "b67061381f1e6cef9a6bd366b2454ab5bd4295701c4ced789d470aa329242ace",
+      "validatedRows": 275,
+      "remainingCases": 600
+    },
+    {
+      "part": 2,
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "sha256": "1cce0f53028417549dea63b166dcab5af3f897603d4c2d27bb176b0db8259027",
+      "validatedRows": 263,
+      "remainingCases": 612
+    },
+    {
+      "part": 3,
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "sha256": "c0c732874882f3baa5b11be139b3083b7d27fcbd6245110dbf4b7e8c2ebeaf42",
+      "validatedRows": 254,
+      "remainingCases": 621
+    },
+    {
+      "part": 4,
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "sha256": "ca6b4a22b1213f32e7efb819ba1af449b9693cd5b552f5e46e70d4d718bb2bcb",
+      "validatedRows": 268,
+      "remainingCases": 607
+    }
+  ],
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "originalRecipeSha256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+  "executionChange": "Only temporary SDI storage moves to per-process owned /dev/shm directories. Native physics, helpers, control, acquisition, integration, native logs and metrics remain fixed.",
+  "parityProof": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+  "prepareRecipeSha256": "1c33d770e78948a0d5d219f723f118b5f31806e4140762e417d269736986748f"
+}

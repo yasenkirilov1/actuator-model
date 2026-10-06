@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/final_evaluate.py", line 730, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/final_evaluate.py", line 579, in main
+    frozen,scenarios,indices,metadata,contract=freeze_inputs(args,folder)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/final_evaluate.py", line 147, in freeze_inputs
+    raise ValueError(f'native seal mismatch: {name}')
+ValueError: native seal mismatch: libacf_native.so

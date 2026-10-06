@@ -1,0 +1,56 @@
+{
+  "scope": "Read-only native reconstruction of programmed guide predictor around second bump apex; filtering robot-issued acceleration at10kHz to match saved native diagram, no truth into controller. Full native firstorder filter and delay are reconstructed offline, zero crossings use interpolation only for diagnostic time.",
+  "cases": [
+    {
+      "case": 2,
+      "filter_s": 0.0001,
+      "transport_s": 0.0001,
+      "guidePrediction_s": 0.0004,
+      "guideSignUp_s": [
+        3.2495935189127465
+      ],
+      "physicalCoilSignUp_s": [
+        3.249764001708681
+      ],
+      "physicalHeadSignUp_s": [
+        3.2497740683759395
+      ],
+      "peakFrictionMismatchInCenterWindow_N": 0.3248686083179451,
+      "time_s": 3.2496
+    },
+    {
+      "case": 12,
+      "filter_s": 0.0001,
+      "transport_s": 0,
+      "guidePrediction_s": 0.0004,
+      "guideSignUp_s": [
+        3.2494967969449458
+      ],
+      "physicalCoilSignUp_s": [
+        3.2498111680033444
+      ],
+      "physicalHeadSignUp_s": [
+        3.249807261969138
+      ],
+      "peakFrictionMismatchInCenterWindow_N": 0.381834168874963,
+      "time_s": 3.2496
+    },
+    {
+      "case": 22,
+      "filter_s": 0.00015,
+      "transport_s": 0,
+      "guidePrediction_s": 0.0004,
+      "guideSignUp_s": [
+        3.2494982224156135
+      ],
+      "physicalCoilSignUp_s": [
+        3.2497705931528245
+      ],
+      "physicalHeadSignUp_s": [
+        3.2497740503570363
+      ],
+      "peakFrictionMismatchInCenterWindow_N": 0.37096024033741437,
+      "time_s": 3.2496
+    }
+  ]
+}

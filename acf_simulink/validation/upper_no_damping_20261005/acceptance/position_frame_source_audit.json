@@ -1,0 +1,106 @@
+{
+  "status": "saved_v3_position_sign_frame_verified",
+  "createdEpisodes": 0,
+  "audits": [
+    {
+      "design": "upper_20k_lower_cell_undamped",
+      "savedGraphSha256": "2e6e8dd7a8b42b4b504c54e394c671d7ddf86831e5e815607cc25d8561776679",
+      "sameSignedFramedMeasurementForPredictionAndCorrection": true,
+      "signGain": "-1",
+      "framePathEdges": [
+        {
+          "source": "Measured head coordinate deviation",
+          "sourcePort": "out:1",
+          "destination": "Head gap coordinate sign",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Head gap coordinate sign",
+          "sourcePort": "out:1",
+          "destination": "Position common AA and EMA",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position common AA and EMA",
+          "sourcePort": "out:1",
+          "destination": "Position acquisition frame",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position acquisition frame",
+          "sourcePort": "out:1",
+          "destination": "Position ADC delivery pipeline",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position ADC delivery pipeline",
+          "sourcePort": "out:1",
+          "destination": "Fresh 10 kHz position frame",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Fresh 10 kHz position frame",
+          "sourcePort": "out:1",
+          "destination": "Causal motion measurements",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Fresh 10 kHz position frame",
+          "sourcePort": "out:1",
+          "destination": "Position correction gain",
+          "destinationPort": "in:1"
+        }
+      ]
+    },
+    {
+      "design": "upper_20k_lower_19746_undamped",
+      "savedGraphSha256": "0da046285fa8bcfec859e5a82561e73efca141a33568c83db03c60ec5bee224c",
+      "sameSignedFramedMeasurementForPredictionAndCorrection": true,
+      "signGain": "-1",
+      "framePathEdges": [
+        {
+          "source": "Measured head coordinate deviation",
+          "sourcePort": "out:1",
+          "destination": "Head gap coordinate sign",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Head gap coordinate sign",
+          "sourcePort": "out:1",
+          "destination": "Position common AA and EMA",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position common AA and EMA",
+          "sourcePort": "out:1",
+          "destination": "Position acquisition frame",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position acquisition frame",
+          "sourcePort": "out:1",
+          "destination": "Position ADC delivery pipeline",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Position ADC delivery pipeline",
+          "sourcePort": "out:1",
+          "destination": "Fresh 10 kHz position frame",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Fresh 10 kHz position frame",
+          "sourcePort": "out:1",
+          "destination": "Causal motion measurements",
+          "destinationPort": "in:1"
+        },
+        {
+          "source": "Fresh 10 kHz position frame",
+          "sourcePort": "out:1",
+          "destination": "Position correction gain",
+          "destinationPort": "in:1"
+        }
+      ]
+    }
+  ]
+}

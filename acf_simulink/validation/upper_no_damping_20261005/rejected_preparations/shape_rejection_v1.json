@@ -1,0 +1,9 @@
+{
+  "status": "software_preparation_rejected_no_episodes",
+  "createdEpisodes": 0,
+  "reason": "Numerical expm roundoff emitted mathematically zero B(1:2,3) around1e-20 for A=.4 but exact zeros for A=1.5, changing native computed sparse coefficient count. Corrected in v2 by setting exact structural zeros. Four-state no-lead friction alignment also fixed before any scored upper run.",
+  "sourceFolderNames": [
+    "banks_upper_20k_lower_cell_undamped_v1",
+    "native_upper_20k_lower_cell_undamped_v1"
+  ]
+}

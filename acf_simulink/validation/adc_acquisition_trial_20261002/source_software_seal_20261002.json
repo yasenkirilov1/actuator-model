@@ -1,0 +1,65 @@
+{
+  "status": "complete_source_and_software_checks_only",
+  "sourceFolder": "acf_simulink/validation/adc_acquisition_trial_20261002",
+  "sourceManifest": "helper_manifest.json",
+  "softwareNativeRuns": 2,
+  "softwareScope": "0.25s native SAR smoke plus0.1s noise-free SINC3 constant-input/clock/tare proof. No full-bump ADC qualification.",
+  "canonicalModelSha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "files": [
+    {
+      "file": "acquisition_contract.json",
+      "bytes": 89694,
+      "sha256": "ba2c79c33902d632caf3c143b5d09c186b576a78ea01630f7f0b4e47c53649e3"
+    },
+    {
+      "file": "helper_manifest.json",
+      "bytes": 2900,
+      "sha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48"
+    },
+    {
+      "file": "adc_trial_candidate.mat",
+      "bytes": 11307,
+      "sha256": "1afe7ee7650360ecb4fb2b1e11a69381332bc5d29cbfda0eb2632449d486ff25"
+    },
+    {
+      "file": "baseline_candidate.mat",
+      "bytes": 7161,
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "file": "acf_force_control_adc_trial.slx",
+      "bytes": 716875,
+      "sha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5"
+    },
+    {
+      "file": "build_adc_acquisition_trial_20261002.m",
+      "bytes": 25297,
+      "sha256": "9b51fb7d2aa1f6c6e18e3a8670e27fb6fdcbdeed194217c7dedb37ebac93bf85"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6285,
+      "sha256": "f5b1c9e705472c899fdd104704f114f3566b26e9fa1583342cc930d5d1f745aa"
+    },
+    {
+      "file": "software_check_sinc3_20261002.m",
+      "bytes": 5340,
+      "sha256": "040b126938ab47bfb532a8a6394ac132d674ddeaa3acef0412b1289de60cba36"
+    },
+    {
+      "file": "software_sinc3_check_20261002/results.json",
+      "bytes": 125695,
+      "sha256": "afb3af6e6a5cecb83db2632a7b11fee877e6fbef2e8cace31373c2ca604e184f"
+    },
+    {
+      "file": "software_sinc3_check_20261002/native_output.mat",
+      "bytes": 1889245,
+      "sha256": "0d263b544799ee7565528e22b3cc36e3fdf3f5ae9c0145ed1960002dc0290040"
+    },
+    {
+      "file": "smoke_native_trace.mat",
+      "bytes": 14081024,
+      "sha256": "d0745b3608dd55844e5516858805eee4eb337cd721ae62169042202bea2cf988"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "createdUtc": "2026-10-05T19:13:06.141509+00:00",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "authoredRevision": 1,
+  "mainReportWordCount": 2298,
+  "figures": 3,
+  "evidenceInputs": {
+    "path": "acf_simulink/validation/upper_no_damping_20261005/report/report_inputs_compact_final.json",
+    "sha256": "b7519335e64555d7ef2ed6772f9c81a708ca520072185c24f14338a1fa51abc8"
+  },
+  "buildManifest": {
+    "path": "/home/tommie/Projects/actuator-model/reports/prototype-design-20260930/dist/data-app-build.json",
+    "sha256": "0c3be10fec5e0a455e82a4d5ef2492b548f2c6af831892e976b35640285a482d"
+  },
+  "files": [
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-upper-spring-20261005.md",
+      "target": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+      "sha256": "0c1ef39725731afe142c58d80498594f875f8856d3bc455d689004307c80ef3f",
+      "bytes": 15517
+    },
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/prototype-design-20260930/.data-app-offline/exports/active-contact-flange-fixed-upper-final.html",
+      "target": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-upper-spring-20261005.html",
+      "sha256": "147c16f154b4221c655802478027cf578b271d89ee418537bc2f8c8c64a2fbeb",
+      "bytes": 39767849
+    },
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/prototype-design-20260930/.data-app-offline/exports/active-contact-flange-fixed-upper-final.html",
+      "target": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.html",
+      "sha256": "147c16f154b4221c655802478027cf578b271d89ee418537bc2f8c8c64a2fbeb",
+      "bytes": 39767849
+    },
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/figures/fixed-upper-rigid-lower-20261005.svg",
+      "target": "/home/tommie/Documents/Notes Remote/S7 Project/figures/fixed-upper-rigid-lower-20261005.svg",
+      "sha256": "2111608bee3e85538177ff39d256ef80fc3c8e5972fbe03d28809b35311c46dc",
+      "bytes": 6274
+    },
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/figures/fixed-mechanics-force-limit-20261005.svg",
+      "target": "/home/tommie/Documents/Notes Remote/S7 Project/figures/fixed-mechanics-force-limit-20261005.svg",
+      "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+      "bytes": 196584
+    },
+    {
+      "source": "/home/tommie/Projects/actuator-model/reports/figures/adc-rate-evidence-compact-20261005.svg",
+      "target": "/home/tommie/Documents/Notes Remote/S7 Project/figures/adc-rate-evidence-compact-20261005.svg",
+      "sha256": "16dc54d932b9f338c9f87bd7d0eab9fb57abb3bbc086c642fb2506671a2e568a",
+      "bytes": 11043
+    }
+  ],
+  "scope": "Concise main report and complete offline HTML. Older reference reports/packages and pre-edit snapshots preserved. Results describe finite simulation evidence, not prototype validation."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "reviewed_complete",
+  "reviewedDate": "2026-10-06",
+  "newNativeRuns": 0,
+  "reviewedEvidence": "acf_simulink/validation/report_readability_20261006/actuator/actuator_evidence_reviewed.json",
+  "reviewedEvidenceSha256": "3598ebae64968e8b074bc9ebb8aaaccae744825a8b4feb866bca71fa2b1ec2cf",
+  "files": [
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/actuator_evidence.json",
+      "sha256": "56d57d36f6083a4371930e8cca4a0d7372cb5ac5500d717439677f18d1b08daa",
+      "bytes": 37135
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/actuator_evidence_reviewed.json",
+      "sha256": "3598ebae64968e8b074bc9ebb8aaaccae744825a8b4feb866bca71fa2b1ec2cf",
+      "bytes": 49812
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/coil_static_current_heating.csv",
+      "sha256": "118f71c36c78844433d374df13e14c1e6d97f9e551d57b7d221839500948d5ad",
+      "bytes": 602
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/findings.md",
+      "sha256": "a5ea7d0ae54ba8bb9031af9b909697c83283abec9e38ea20c1f926ff005032da",
+      "bytes": 7090
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.png",
+      "sha256": "2268208b3e0c63ac7e7ba6728896517e6c18fa165f617ba7895cdf725dc9e13f",
+      "bytes": 219360
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.svg",
+      "sha256": "761bf5e48ed1ebc3b803c50937ff243abdcf19c78fd835b7a874376760cf9911",
+      "bytes": 266708
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed_voltage_pair_metrics.csv",
+      "sha256": "23305656c83dea275d3675ef74b5fb76576f4418109371c4a6b6cc23010ecad8",
+      "bytes": 725
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed_voltage_trace_display.csv",
+      "sha256": "2dc520e6c1f2781837f25aa2068475e0c1d20a75e0d921b0d2828c921e8a91f0",
+      "bytes": 1127445
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.png",
+      "sha256": "b6d62f4d322b4fc1a95b77612824844e305827dbb2a74c0a734394bcb02ab016",
+      "bytes": 106063
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.svg",
+      "sha256": "b7c3817c5abd1b6cb4753eeb350219d4d802b49a8aa49b9700429b3d58871258",
+      "bytes": 15210
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/historical_matched_actuator_results.csv",
+      "sha256": "a7a6b62953a9105de007e9c5a788cb948b0050fc7d37addefd2e3475e5a73b0c",
+      "bytes": 678
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.png",
+      "sha256": "27f3170739f6ec5dbbfb3a25501d3d8c9e12be5cc78b206986128bdfd8eb199c",
+      "bytes": 115343
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.svg",
+      "sha256": "da8147ebd8b97333bafed8faa96e986174bcdaaef231fa8ac5ca0d4f8ef72b22",
+      "bytes": 22128
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/primary_sources_review_20261006.json",
+      "sha256": "ec346ab2c1361f7b22fa533fbd8b63e1f6c97c1174e028a9f8bfcd1406e54919",
+      "bytes": 5428
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/screw_pitch_tradeoff.csv",
+      "sha256": "ff627f7321793121df4f9c8d1526ec290a3fb8626d7001f102fd3c64b3b2fab2",
+      "bytes": 1009
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.png",
+      "sha256": "bb9d469aad03bdfe1878bfb2eda35d41f650374078fa68fb3747b303e5b4cb48",
+      "bytes": 121544
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.svg",
+      "sha256": "338640d65c5cd8f1ce6e2099bb2f1cd19f360a9c0493201108f358f276cce2b6",
+      "bytes": 24387
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp_bump_kinematics.csv",
+      "sha256": "ae827e942810c57577f05e7cb3b8c8b86a4c7d2fbef143b75565e58998114e0b",
+      "bytes": 884118
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.pdf",
+      "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+      "bytes": 48578
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.png",
+      "sha256": "e2155582fd990a1cfab63c3df1b8b86e84e433fc59ad836e26855b73f7295a09",
+      "bytes": 182353
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/actuator/voice_coil_parameter_targets.csv",
+      "sha256": "8274090783e0a1308daf8d7160c351caa20d978fae924f02b92f6d7c7c22d3a3",
+      "bytes": 2513
+    }
+  ],
+  "scope": "Only new owned actuator evidence, CSVs, source PDF/render and fourSVG candidates. Frozen sources/histories are referenced and hash-checked, not copied or modified."
+}

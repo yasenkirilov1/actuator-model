@@ -1,0 +1,16 @@
+{
+  "status": "launched_not_yet_returned",
+  "nativeReruns": 1,
+  "integrationStep_s": 5e-06,
+  "globalCaseIndex": 3489,
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "recipeSha256": "8695b6684d35f1f93cf78aa3d328298951a4d570bff7b5f039a60e3f1f6effc0",
+  "session": 99688,
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-rerun-20260930/batch.log",
+  "previousNativeAuditReject": "normal_mass_controller_final_grid_20260930_solver_refinement_step5000_attempt01_postrun_reject.json",
+  "previousWrapperReject": "normal_mass_controller_final_grid_20260930_solver_refinement_step5000_attempt02_wrapper_reject.json",
+  "nativeExecutionAccounting": "1 previous returned-but-unqualified native run; wrapper attempt02 executed no native cases. This is one justified rerun of identical5us physical settings.",
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "MLintStandalone": "passed with no output"
+}

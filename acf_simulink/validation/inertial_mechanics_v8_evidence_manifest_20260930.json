@@ -1,0 +1,46 @@
+{
+  "status": "reviewed_v8_actual_sensitivity_plus_20mm_analytical_geometry_target",
+  "sourceModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "nativeDesignPoints": 72,
+  "additionalParityExecutions": 2,
+  "analyticalRescoreNewForceExecutions": 0,
+  "final20mmMetadataNativeIdentity": "Integrator/prototype revision proof pending",
+  "artifacts": [
+    {
+      "file": "inertial_mechanics_v8_summary_20260930.md",
+      "sha256": "dcc729141d36e289bfc37bb7420a5180dfcf43a8f85cb205ea8adef3c665e9ed"
+    },
+    {
+      "file": "inertial_mechanics_lower_spring_actual_sensitivity_20260930_v8_pm20_acc_results.json",
+      "sha256": "3e72f0a8ab6f8a12687b6d0109a5a672861065ac2c75079cd6a08930e042672e"
+    },
+    {
+      "file": "inertial_mechanics_lower_spring_actual_parity_20260930_v8_pm20_results.json",
+      "sha256": "a4de04e14546df1a98076474303d80a5cd56588ea18df5a674bde77f7a24ec7b"
+    },
+    {
+      "file": "inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+      "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f"
+    },
+    {
+      "file": "inertial_mechanics_rescore_packing_20260930.py",
+      "sha256": "ba02ca476aa9123be150bebb4e11402840feaf03a726b897eacd0f73a0228c91"
+    },
+    {
+      "file": "inertial_mechanics_make_v8_tolerance_figure_20260930.py",
+      "sha256": "ef740a3bb8db89314bd8097a4959aa2cf66eda9b859394f9878f4e28ec414b3f"
+    },
+    {
+      "file": "inertial_mechanics_v8_tolerance_figure_manifest_20260930.json",
+      "sha256": "259048a7dc4a7164c143e0d4e8f1f26a4a03c7fbad3b8b86b767821d85971d50"
+    },
+    {
+      "file": "inertial_mechanics_v8_actual_tolerance_20260930.svg",
+      "sha256": "b51d51e3e4330e15bef19b886cfa9098a981159748cf6dce482bf46c148f6c7f"
+    },
+    {
+      "file": "inertial_mechanics_v8_actual_tolerance_20260930.png",
+      "sha256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee"
+    }
+  ]
+}

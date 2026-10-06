@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "queries": [
+    {
+      "id": "ml_force_training",
+      "file": "acf_simulink/validation/ml_report_20261005/force_training_reviewed.json",
+      "sourceFiles": [
+        "acf_simulink/validation/ml_force_20261005/training.json",
+        "acf_simulink/validation/ml_force_20261005/selected_gain.json"
+      ],
+      "label": "Force-network training and independent gain selection",
+      "kind": "reviewed_native_experiment",
+      "caveats": [
+        "180-epoch supervised approximate-current teacher fit. Whole-trajectory training/selection split. Teacher fit is not closed-loop force qualification."
+      ]
+    },
+    {
+      "id": "ml_force_test",
+      "file": "acf_simulink/validation/ml_report_20261005/force_holdout_reviewed.json",
+      "sourceFiles": [
+        "acf_simulink/validation/ml_force_20261005/summary.json",
+        "acf_simulink/validation/ml_force_20261005/final_checks.json"
+      ],
+      "label": "Force-network paired native holdout and implementation checks",
+      "kind": "reviewed_native_experiment",
+      "caveats": [
+        "Twelve untouched paired native trajectories; whole-history normal-force scores including startup. Finite nominal and selected calibration/mechanics tests; not hardware or full-grid qualification."
+      ]
+    },
+    {
+      "id": "ml_robot_training",
+      "file": "acf_simulink/validation/ml_report_20261005/robot_training_reviewed.json",
+      "sourceFiles": [
+        "acf_simulink/validation/ml_robot_20261005_training/training_summary.json"
+      ],
+      "label": "Robot-network trajectory-level training and selection",
+      "kind": "reviewed_native_experiment",
+      "caveats": [
+        "Native logged recenter-law imitation with eight training and four selection trajectories. Raw-network teacher reproduction checked separately from the hard envelope. No test trajectories used for fitting."
+      ]
+    },
+    {
+      "id": "ml_robot_test",
+      "file": "acf_simulink/validation/ml_report_20261005/robot_holdout_reviewed.json",
+      "sourceFiles": [
+        "acf_simulink/validation/ml_robot_20261005_figures_final/summary.json",
+        "acf_simulink/validation/ml_robot_20261005_heldout/results.json"
+      ],
+      "label": "Robot-network paired native holdout",
+      "kind": "reviewed_native_experiment",
+      "caveats": [
+        "Eleven untouched robot-policy pairs, with unchanged deterministic fast force control and hard safety constraints. Eight nominal six-second pairs and three selected eight-second stress pairs; no full-grid or hardware qualification."
+      ]
+    },
+    {
+      "id": "ml_combined_test",
+      "file": "acf_simulink/validation/ml_report_20261005/combined_holdout_reviewed.json",
+      "sourceFiles": [
+        "acf_simulink/validation/ml_combined_20261005_figures/summary.json",
+        "acf_simulink/validation/ml_combined_20261005/results.json"
+      ],
+      "label": "Two fixed learned policies in the same native closed loop",
+      "kind": "reviewed_native_experiment",
+      "caveats": [
+        "Four new predeclared eight-second pairs. Fixed independently trained networks and force gain 1. Both actions active; no joint/end-to-end training, retuning, full uncertainty-box or physical qualification."
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "file": "figures/ml_force_training.svg",
+      "queryId": "ml_force_training",
+      "sourceFile": "acf_simulink/validation/ml_force_20261005/figures/ml_force_training.svg",
+      "sourceSha256": "3146f4470f454e1cbafd7a82dc9b95ef8125394f443a4119db1beb65a5835d06"
+    },
+    {
+      "file": "figures/ml_force_holdout_peaks.svg",
+      "queryId": "ml_force_test",
+      "sourceFile": "acf_simulink/validation/ml_force_20261005/figures/ml_force_holdout_peaks.svg",
+      "sourceSha256": "8dd5bb55f62360eb1edc335638f30d311361aa0c054f11934cf08ba33c5fa17f"
+    },
+    {
+      "file": "figures/ml_force_worst_bump.svg",
+      "queryId": "ml_force_test",
+      "sourceFile": "acf_simulink/validation/ml_force_20261005/figures/ml_force_worst_bump.svg",
+      "sourceSha256": "d6baed05fb41ce8a3b29438a92e1c528b5377820206a34a211074635e64f7824"
+    },
+    {
+      "file": "figures/ml_robot_learned_policy.svg",
+      "queryId": "ml_robot_training",
+      "sourceFile": "acf_simulink/validation/ml_robot_20261005_figures_final/ml_robot_learned_policy.svg",
+      "sourceSha256": "710bc699992c152288547e04f8b8f44e2ee7d516b89a4671daf730aa53e594be"
+    },
+    {
+      "file": "figures/ml_robot_paired_results.svg",
+      "queryId": "ml_robot_test",
+      "sourceFile": "acf_simulink/validation/ml_robot_20261005_figures_final/ml_robot_paired_results.svg",
+      "sourceSha256": "366ff4ee5ea81202e00be3e90aee48e9223c5a8271fa6eb4aeb88cf14f434ee0"
+    },
+    {
+      "file": "figures/ml_robot_active_trajectory.svg",
+      "queryId": "ml_robot_test",
+      "sourceFile": "acf_simulink/validation/ml_robot_20261005_figures_final/ml_robot_active_trajectory.svg",
+      "sourceSha256": "41d2b11b5bdebfc3ce768d3366381b343c80016c35ff7d53b6d7a673b0a7cd3e"
+    },
+    {
+      "file": "figures/ml_combined_paired_results.svg",
+      "queryId": "ml_combined_test",
+      "sourceFile": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_paired_results.svg",
+      "sourceSha256": "858fcc80473a26d65ffb78938605c5c715dde336ad13ca60fc17e401d74b7a20"
+    },
+    {
+      "file": "figures/ml_combined_worst_trajectory.svg",
+      "queryId": "ml_combined_test",
+      "sourceFile": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_worst_trajectory.svg",
+      "sourceSha256": "c9fb4896ecd701529e2f2452406b4b44c70c30fc30c8b33834461c76d99fa838"
+    }
+  ]
+}

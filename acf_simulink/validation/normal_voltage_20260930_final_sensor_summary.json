@@ -1,0 +1,229 @@
+{
+  "date": "2026-09-30",
+  "scope": "Final V8 physical sensor-acquisition and final100 us current-response/20 mm spring-target candidate. True normal-force target50 N, full0\u20134 s, S=2 kg, B=0.6 kg,90 degrees,mu=0.3,seeds7 and1729, original1 mm/10 mm/100 mm/s sharp bump. Bounded electrical diagnostic; no claim of complete mass/force/orientation or physical-hardware qualification.",
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "recipeSha256": "6b1368cdedf659f9a538c542d97866cd84af3b56666ed37ec48f74527817e8cb",
+  "nativeSimulations": 16,
+  "uniqueConditions": 15,
+  "nativePasses": 12,
+  "uniquePasses": 11,
+  "expectedFailedUniqueConditions": 4,
+  "normalAcceleratorProof": "Rows1/2 share the final generic24V case and must be bitwise identical across all72 native channels. Remaining cases useAccelerator after this proof.",
+  "preparationRejects": 0,
+  "exceptionsAfterNativeAttempt": 0,
+  "nativeIntegration_us": 10,
+  "currentResponse_us": 100,
+  "elapsedSeconds": 151.648141,
+  "scoring": "All400001 native samples0\u20134 s, loaded initial conditions included; true surface-normal force, tolerance\u00b10.5 N.",
+  "groups": [
+    {
+      "family": "nominal_voltage",
+      "uniqueConditions": 4,
+      "passed": 4,
+      "peakNormalError_N": 0.3023830317785752,
+      "peakCurrent_A": 2.9125451859678244,
+      "peakRequestedVoltage_V": 19.548871181776704,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "real_coil",
+      "uniqueConditions": 4,
+      "passed": 4,
+      "peakNormalError_N": 0.3023830317787386,
+      "peakCurrent_A": 2.387332119645768,
+      "peakRequestedVoltage_V": 28.472994382609762,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "real_coil_amp_drop",
+      "uniqueConditions": 7,
+      "passed": 3,
+      "peakNormalError_N": 5.715665500991037,
+      "peakCurrent_A": 2.387332119645768,
+      "peakRequestedVoltage_V": 77.85526177099028,
+      "maximumVoltageSaturationFraction": 0.45179887050282375
+    }
+  ],
+  "equalityEvidence": {
+    "normalVsAccelerator": "Rows1 and2 are bitwise identical across all72 logged channels on their exact native time grids.",
+    "generic48Vs24": "Rows4/5 are bitwise identical across72 channels to corresponding24 V references1/3; zero voltage or effort clipping.",
+    "realHot31Vs36": "Rows10/11 are bitwise identical across72 channels to corresponding36 V hot-coil references8/9; zero voltage or effort clipping.",
+    "realHot32Vs36": "Row12 is bitwise identical across72 channels to36 V hot reference9; zero voltage or effort clipping.",
+    "referenceNaming": "Legacy baseline24V and DifferenceFrom24V field names refer to24 V for generic coil,36 V for real-coil rows. referenceVoltage_V is authoritative."
+  },
+  "realHotIdealPeakRequestedVoltage_V": 28.472994382609762,
+  "realHot31VAvailableMargin_V": 2.5270056173902375,
+  "loadedInitialStateScope": "InitialN is50 N; initial current uses nominal identifiedKf. This study does not include an unmodeledKf change. Allstartup samples are retained and scored.",
+  "realMotorScope": "Separate real_coil family uses known constantKf24.4N/A,R6.4ohm,L4mH,100us identified current response,A1.5kg,B0.6kg,S2kg,conservative25mm travel; hypothetical identified hot resistance1.39 times cold represents an assumed100degC copper-winding temperature rise. Supplier continuous-force/power ratings have distinct stated conditions. No constant-force claim is made over travel: force-versus-position variation and physical thermal response remain unqualified.",
+  "linearAmpHeadroomScope": "Final subset explicitly compares realcold/hot ideal36V with hot31/32V available terminal output from a36V supply and hot19/20V available output from a24V supply. The4/5Vstage-loss allowance is a conservative envelope, not a TA11524Voutput specification. All other controller and acquisition parameters stay fixed.",
+  "realHoldHeatingEstimate": [
+    {
+      "supplyVoltage_V": 24,
+      "holdingCurrent_A": 2.0491803278688527,
+      "coldCoil_W": 26.874496103198073,
+      "hotCoil_W": 37.35554958344532,
+      "coldLinearStage_W": 22.305831765654393,
+      "hotLinearStage_W": 11.824778285407149
+    },
+    {
+      "supplyVoltage_V": 36,
+      "holdingCurrent_A": 2.0491803278688527,
+      "coldCoil_W": 26.874496103198073,
+      "hotCoil_W": 37.35554958344532,
+      "coldLinearStage_W": 46.89599570008063,
+      "hotLinearStage_W": 36.414942219833385
+    },
+    {
+      "supplyVoltage_V": 48,
+      "holdingCurrent_A": 2.0491803278688527,
+      "coldCoil_W": 26.874496103198073,
+      "hotCoil_W": 37.35554958344532,
+      "coldLinearStage_W": 71.48615963450686,
+      "hotLinearStage_W": 61.005106154259614
+    }
+  ],
+  "thermalScope": "Steady50 N horizontal load, zero backEMF; current2.04918 A. Linear-stage dissipation arithmetic excludes electronic losses and does not assert a supplier operating-temperature rating. HotRfactor1.39 assumes100 degreesC copper-winding temperature rise; safe winding temperature andKf(x) remain unqualified.",
+  "conclusions": {
+    "generic": "Ideal24 V already delivers unclipped demand;48 V does not alter response. Peak generic requested voltage19.5488712 V, current2.9125452 A.",
+    "realMotor": "At36 V cold/hot and31 V effective hot output, alltested cases pass. Peak hot request28.4729944 V leaves2.5270056 V margin at31 V effective output.48 V is not needed for these operating points.",
+    "linearStageHeadroom": "For the same hot coil at a physical24 V supply with hypothetical4/5 V linear-stage loss, effective20/19 V cases fail: worst true-normal errors2.8823858/5.7156655 N.36 V with verified31 V effective output is the supported prototype envelope. This does not claim aTA11524 V output specification."
+  },
+  "provenanceFiles": [
+    "normal_voltage_20260930_final_sensor_subset.json",
+    "normal_voltage_20260930_final_sensor_subset.csv",
+    "normal_voltage_20260930_final_sensor_subset_traces.mat",
+    "normal_voltage_20260930_final_sensor_source/source_manifest.json"
+  ],
+  "selectedTraceFiles": [
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_001_original_001.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_002_original_002.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_003_original_003.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_005_original_005.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_007_original_007.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_009_original_009.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_011_original_011.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_012_original_012.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_014_original_014.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_sensor_subset_individual_traces/case_016_original_016.mat"
+  ],
+  "failedConditions": [
+    {
+      "id": 13,
+      "seed": 7,
+      "Vlimit_V": 19,
+      "completed": true,
+      "reason": "normal force error",
+      "startupNormalError_N": 0.1453397545279742,
+      "prebumpNormalError_N": 0.14047537167760993,
+      "bumpNormalError_N": 5.706821345620867,
+      "recoveryNormalError_N": 1.6975540102841293,
+      "voltageSaturationFraction": 0.45179887050282375,
+      "effortSaturationFraction": 0.007274981812545468,
+      "holdVoltageActual_V": 18.229508196721312,
+      "lostContact": false,
+      "strokeStopHit": false
+    },
+    {
+      "id": 14,
+      "seed": 1729,
+      "Vlimit_V": 19,
+      "completed": true,
+      "reason": "normal force error",
+      "startupNormalError_N": 0.09953486406033818,
+      "prebumpNormalError_N": 0.1507888700994897,
+      "bumpNormalError_N": 5.715665500991037,
+      "recoveryNormalError_N": 1.705365948813295,
+      "voltageSaturationFraction": 0.4498138754653113,
+      "effortSaturationFraction": 0.007249981875045312,
+      "holdVoltageActual_V": 18.229508196721312,
+      "lostContact": false,
+      "strokeStopHit": false
+    },
+    {
+      "id": 15,
+      "seed": 7,
+      "Vlimit_V": 20,
+      "completed": true,
+      "reason": "normal force error",
+      "startupNormalError_N": 0.09832080391276321,
+      "prebumpNormalError_N": 0.1038968401647864,
+      "bumpNormalError_N": 2.8062275034070225,
+      "recoveryNormalError_N": 0.7623008676584746,
+      "voltageSaturationFraction": 0.17872955317611705,
+      "effortSaturationFraction": 0.00027499931250171873,
+      "holdVoltageActual_V": 18.229508196721312,
+      "lostContact": false,
+      "strokeStopHit": false
+    },
+    {
+      "id": 16,
+      "seed": 1729,
+      "Vlimit_V": 20,
+      "completed": true,
+      "reason": "normal force error",
+      "startupNormalError_N": 0.06498365306233467,
+      "prebumpNormalError_N": 0.10025639306253709,
+      "bumpNormalError_N": 2.8823858490039598,
+      "recoveryNormalError_N": 0.7408277120745339,
+      "voltageSaturationFraction": 0.17799455501361247,
+      "effortSaturationFraction": 0.00047499881250296874,
+      "holdVoltageActual_V": 18.229508196721312,
+      "lostContact": false,
+      "strokeStopHit": false
+    }
+  ],
+  "failureInterpretation": "All four19/20 V hot-coil envelope failures complete0\u20134 s with contact maintained and no travel-stop hit. Startup and pre-bump force errors stay below0.151 N; failures occur during the sharp bump. The hot steady holding voltage is18.2295 V, leaving insufficient dynamic current-regulation headroom.",
+  "measurementNoiseScope": {
+    "forceConditionedRMS_N": 0.02,
+    "accelerationConditionedRMS_m_s2": 0.014,
+    "definition": "Stationary RMS after nominal anti-alias response at5100 Hz and EMA50 us, before post-response ADC quantization and final sampling. Raw100 kHz noise uses a fixed nominal-density normalization; actual filter tolerance does not renormalize it. Force noise is bounded uniform; acceleration is Gaussian.",
+    "nominalRawNoiseGain": 3.96705064104797,
+    "nominalImpulseEnergy": 0.06354253123515088,
+    "source": "Frozen V8 native acquisition helper and source-author confirmation."
+  },
+  "genericToRealHotVoltageMap": {
+    "equation": "VrealHotRequested = alpha*VgenericRequested + beta*Igeneric + gamma*vGap",
+    "alpha": 1.092896174863388,
+    "beta_ohm": 2.920218579234973,
+    "gamma_V_s_m": 2.542076502732236,
+    "genericKnownKf_N_A": 20,
+    "realKnownKf_N_A": 24.4,
+    "realHotR_ohm": 8.896,
+    "realL_H": 0.004,
+    "currentResponse_us": 100,
+    "scope": "Analytical requested-voltage map at the same force trajectory when current-unit controller gains/inverseKf are normalized to the identified motor, inner resistance/inductance compensation matches actual winding, neither source clips, and constantKf is valid. It does not substitute for actual-motor/controller qualification.",
+    "subsetConservativePeakAbsoluteBound_V": 29.968103902297447,
+    "subsetBoundAt31VReserve_V": 1.0318960977025533
+  },
+  "bumpDefinition": {
+    "height_m": 0.001,
+    "width_m": 0.01,
+    "scanSpeed_m_s": 0.1,
+    "duration_s": 0.1,
+    "normalizedHeight": "64*xi^3*(1-xi)^3 for0<=xi<=1;0 otherwise",
+    "nativeNormalizedPolynomial": [
+      -64,
+      192,
+      -192,
+      64,
+      0,
+      0,
+      0
+    ],
+    "continuity": "C2 at entry and exit; jerk has finite endpoint jumps",
+    "peakAbsAcceleration_m_s2": 2.4,
+    "peakAbsJerk_m_s3": 384,
+    "logged10usPeakFiniteDifferenceJerk_m_s3": 383.76963839807854,
+    "peakAbsToolInertialForce_N_atS2": 4.8,
+    "source": "Frozen V8 SLX simulink/systems/system_287.xml; read-only confirmation by physics reviewer and native grid diagnostics."
+  },
+  "smallDelayEstimate": {
+    "equation": "deltaF\u2248massS*surfaceJerk*deltaTime",
+    "massS_kg": 2,
+    "peakJerk_m_s3": 384,
+    "deltaTime_s": 5e-05,
+    "localForceDifferenceEstimate_N": 0.038400000000000004,
+    "scope": "Local first-order estimate for delayed inertial compensation, used to explain the scale of current-response improvement. It ignores complete-loop coupling, geometry, damping and noise; native results are authoritative."
+  }
+}

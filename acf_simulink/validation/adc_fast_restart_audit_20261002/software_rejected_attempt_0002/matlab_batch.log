@@ -1,0 +1,14 @@
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+{Attempt to add "out" to a static workspace.
+
+Error in audit_adc_fast_restart_20261002 (line 89)
+  lastwarn('');timer=tic;transcript=evalc('out=sim(mdl);');elapsed=toc(timer);
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+} 

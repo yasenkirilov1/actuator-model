@@ -1,0 +1,16 @@
+{
+  "status": "emitted_native_measured_cell_source_live_with_current_ff_acceleration_lead",
+  "physicalEpisodes": 0,
+  "nativeCFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+  "nativeCSha256": "87847f6a060c82f7de887a38709c0c06bd13bead03bb27f6207958017cd455a4",
+  "localRawDeviationAssignment": "rtb_Currentlimits = (acf_rl_native_P.Requestedforce_Value -\n                           acf_rl_native_B.Sensorsampledelay) *\n        acf_rl_native_P.Cellerrortodeviation_Gain;",
+  "selectedObserverDeviationAssignment": "acf_rl_native_B.Cellforcedeviationfromequilibri = rtb_Currentlimits +\n        acf_rl_native_P.Cellforcedeviationfromequilibri;",
+  "cellErrorToDeviationGain": -1,
+  "additionalSelectedBias_N": 0,
+  "nativeAccelerationLeadBlockPresent": true,
+  "existingPreparedCoefficientsIncludingObserverUnchanged": true,
+  "measurementFrameUnchanged": true,
+  "guardFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/local_cell_source_guard.json",
+  "guardSha256": "cd812fa981110c712d866d4d87d4800aa0dd0d3dd28d2be3cd817f2d448a5af4",
+  "scope": "Live source plus native lead presence; saved-copy audit proves its current-FF-only connections. No force qualification inferred."
+}

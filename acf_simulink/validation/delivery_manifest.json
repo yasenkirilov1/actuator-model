@@ -1,0 +1,1891 @@
+{
+  "date": "2026-09-30",
+  "status": "complete",
+  "matlabReleaseUsed": "R2026b",
+  "authoritativePhysicalModel": "acf_simulink/generated/acf_force_control_simple.slx",
+  "activeTopLevelHelpers": 16,
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "qualification": {
+    "cases": 350,
+    "passed": 350,
+    "worstAxialError_N": 0.42634744327320107,
+    "margin_N": 0.07365255672679893,
+    "assumptions": "Calibrated B-S force / S-A position and drive models; not joint uncertainty or physical normal-force qualification."
+  },
+  "canonicalVersusFrozen": "Current diagram, presets and generic unused screw-speed diagnostic differ from the archived input. Independent native regression exactly matched all 35 signals and observer states with the retained worst-case parameters. All 34 physical/control coil channels were unaffected by retuning unused screw defaults.",
+  "excluded": "Private SDI/cache directories, user desktop state, unrelated project metadata, and superseded active physics implementations.",
+  "files": [
+    {
+      "path": "acf_simulink/GETTING_STARTED.md",
+      "bytes": 15456,
+      "sha256": "24b4514765d0055b3a47798c035603f452388941b58b9ee478aec55e5423f88a"
+    },
+    {
+      "path": "acf_simulink/MODEL_NOTES.md",
+      "bytes": 24770,
+      "sha256": "006f238fcfcacc8e6fc083161b80fb2e1eb1b7753801862ca0412b1096b277b0"
+    },
+    {
+      "path": "acf_simulink/README.md",
+      "bytes": 13691,
+      "sha256": "bb18b39028613d33c56e557688f64ecf7c73f6334785641337a77ac4487797e8"
+    },
+    {
+      "path": "acf_simulink/REPRODUCING_RESULTS.md",
+      "bytes": 3804,
+      "sha256": "a437115716b16fd2e324519d71d10aa36b7b4e00add253488fabc3760f8c0d75"
+    },
+    {
+      "path": "acf_simulink/VALIDATION.md",
+      "bytes": 7680,
+      "sha256": "7329d70a0dc31ef9202fbb826972e8a5eb3dbc94e24c0a7e062d1d4064096646"
+    },
+    {
+      "path": "acf_simulink/VISUALIZER_README.md",
+      "bytes": 8550,
+      "sha256": "5fcc1ce8de16a2da7d7ef7a63fa84738849291e9c9f30910da767ad98ebac42f"
+    },
+    {
+      "path": "acf_simulink/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "acf_simulink/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "acf_simulink/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "acf_simulink/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "acf_simulink/acf_parameters.m",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "acf_simulink/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "acf_simulink/acf_prepare.m",
+      "bytes": 20139,
+      "sha256": "f087c24d37d8c5cf501794e6210de5919be8c96c1cddf716e94012c5cd35d0d8"
+    },
+    {
+      "path": "acf_simulink/acf_run.m",
+      "bytes": 2625,
+      "sha256": "3f5aaaaf6a0dd6093deda065dcf20002114681eb6713073ec388bb45e06f7014"
+    },
+    {
+      "path": "acf_simulink/acf_select_actuator.m",
+      "bytes": 3635,
+      "sha256": "832674387040ac3300ee43876a5cc46125db3c8b1dfdb990c7cf5df713ba48a6"
+    },
+    {
+      "path": "acf_simulink/acf_select_controller.m",
+      "bytes": 674,
+      "sha256": "18e6fdc85998dff6fe992ccb0f52112388f7372410d0724803725ffe702848f9"
+    },
+    {
+      "path": "acf_simulink/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "acf_simulink/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "acf_simulink/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "acf_simulink/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "acf_simulink/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "acf_simulink/acf_visualize.m",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "acf_simulink/experiments/build_prototype_report.py",
+      "bytes": 18240,
+      "sha256": "541def17498ffd2b667567260e8c689558077fecf55c16fea7826f8510f64e00"
+    },
+    {
+      "path": "acf_simulink/experiments/compare_force_controllers.m",
+      "bytes": 68394,
+      "sha256": "8cc6b4d92e748e3bba1e41e4f28d83f60c0c12d7ec3537cc1744bad2f0715cd9"
+    },
+    {
+      "path": "acf_simulink/experiments/plot_final_report.py",
+      "bytes": 4456,
+      "sha256": "ed1603ad3d1e02ba6e566b1d5339d438246d5281036271499d84d5c409210492"
+    },
+    {
+      "path": "acf_simulink/experiments/plot_mechanical_study.py",
+      "bytes": 20414,
+      "sha256": "599a475c4f710e318a74f59d3ed3bbe9ed0f1672dfce973cc9b650d5b2929865"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_actuators.m",
+      "bytes": 42164,
+      "sha256": "673774c1b1fc88a9dcdd208fd7a2e2779ba4152744f318315e2f151c107aca14"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_final_robot_gate.m",
+      "bytes": 3143,
+      "sha256": "6a47a7364965f1b4da6cd3289b8a145acdc1c2e31f55bb487c874fa2a906c546"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_mechanics_high.m",
+      "bytes": 23055,
+      "sha256": "b8295c03554412d4b8dfc5f10cd28980de4257c48ed27b33fcf1d3c7e18408fa"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_mechanics_low.m",
+      "bytes": 20478,
+      "sha256": "7fca4aafbbb5cccd0c84162861a9a7026412f7d3e0a59a788d0d19d7024d5bbd"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_rigid_sensors.m",
+      "bytes": 52517,
+      "sha256": "de632a1f592566bbc6687f85c60a3956f32cdf119a0481f31b7cc2d0f6d4473b"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_robot_gate.m",
+      "bytes": 2640,
+      "sha256": "282d2b8bd5e8d793a379ef27f149d5ba534c79bb8ae5b9461fc0f6d6d3dcc6ff"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_robot_predictor.m",
+      "bytes": 55841,
+      "sha256": "e6919b140d67b6bec713a75c6767751e57d0461bffaef01afac20b1159081dab"
+    },
+    {
+      "path": "acf_simulink/experiments/qualify_saved_model.m",
+      "bytes": 8153,
+      "sha256": "b36a65555c8e6e6483398b07c39e582f172f61de6f02da33dcea91f6536577be"
+    },
+    {
+      "path": "acf_simulink/experiments/spring_catalog.json",
+      "bytes": 1191,
+      "sha256": "cd027b5dd04d283f8734f946e34007111cfb10625a8b517f9ed6072d7328083c"
+    },
+    {
+      "path": "acf_simulink/experiments/sweep_springs.m",
+      "bytes": 6683,
+      "sha256": "4fe2e128cb120f578b4a4d8797be1298f01c4381139a8f6337de530daf9266ea"
+    },
+    {
+      "path": "acf_simulink/experiments/verify_native_package.m",
+      "bytes": 782,
+      "sha256": "ec5907de2e9bc8ff2e658a45ffa8c49c1b5ba03fd08b04d9f66dd7c201216979"
+    },
+    {
+      "path": "acf_simulink/generated/acf_force_control_simple.slx",
+      "bytes": 442386,
+      "sha256": "10cc418f26b2fa2cb96366fad209408835284c95757649cb6f433141fc036ea6"
+    },
+    {
+      "path": "acf_simulink/generated/prototype_design_report.html",
+      "bytes": 36142916,
+      "sha256": "46a4dfed39dd4bb3282c2501ee5f3df1b2685958e9fb5cc9458a6fa8e13b6f84"
+    },
+    {
+      "path": "acf_simulink/generated/sharp_bump_and_spring_sweep.html",
+      "bytes": 76471612,
+      "sha256": "e280123d0f5c1b00ed7dbf3bb5653c0a7bef8a1ad868c3b4af7f4663864f86ef"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration.csv",
+      "bytes": 18752,
+      "sha256": "cdb9f9bdd0225e5eb91473352484b2d759546568893c388cee5c9d4b9d4578fc"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration.json",
+      "bytes": 92392,
+      "sha256": "590a397a6bf370480b99fc958a6696742ec0f8276188f2397470b3ed1869ca8c"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration.m",
+      "bytes": 12741,
+      "sha256": "2aa6586fa942d2974b2d065e2dc9188eb0ee1eb2300c8f2f6b8746d5c254145c"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration_plot.py",
+      "bytes": 5311,
+      "sha256": "a58e800ca355d7dc26322a1f5f9480d811ba0d5740ba7a6252a4621a515f5738"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration_precision.png",
+      "bytes": 201010,
+      "sha256": "377dec84c4e884185efd93e302f1296af940463235f34fae4110479a2787e3a0"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration_precision.svg",
+      "bytes": 134899,
+      "sha256": "42d489b07daf0c046a53b40a7b921cac93256dfa5832b9ec9647832de17a0488"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration_summary.json",
+      "bytes": 4398,
+      "sha256": "0773a1e44d613a46ef58d10379acd3ee5691b65b9d2efac57f651584d7d40df8"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_matrix.png",
+      "bytes": 216481,
+      "sha256": "2431c5ad954f3c2bf75ee8cdec4c3059b30b55f96eff203857a9176c49b0bc5b"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_matrix.svg",
+      "bytes": 166141,
+      "sha256": "5d4f2037bd08192563473b61903507600a192e3da5d694434f031098cda4e9a0"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_plots.py",
+      "bytes": 9553,
+      "sha256": "5ab34953ba77a0a772bfb49cf689aeff1fb40c720b1457662495828d2677bc0f"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_selected.png",
+      "bytes": 206976,
+      "sha256": "d388b41d6d6cb11fee6e525b79141285dda39e7c4eb366d41b2826a8ad928029"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_selected.svg",
+      "bytes": 134238,
+      "sha256": "34777228e4e87e601c901d581ea2c35958d4d42ac106bc351bca735b0b3cc9e6"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_summary.json",
+      "bytes": 6014,
+      "sha256": "cfedaa410e263f8dc1a6c869a716424109fff76ee35af16fb6af9a4d171bc894"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_Kf_minus10_unknown.csv",
+      "bytes": 8840585,
+      "sha256": "a364b91216e9cac8de8a1eeaa55c273611e77545f32141fb59323d8ddc9ea585"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_joint_winding.csv",
+      "bytes": 8884101,
+      "sha256": "11fc0b109b4cf2b02de0531c94acbb64c64131f781885914f969d77d364ef8da"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_metadata.json",
+      "bytes": 2472,
+      "sha256": "d821c2b48d22bdc6f2503328f7c0d8b4200178cc3ceee343f695291df5d3cfb1"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_nominal.csv",
+      "bytes": 10741525,
+      "sha256": "242c11a473ffc77a385dacf7afb7564f138772305e8b2e47deeee726fea04b83"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_plot.py",
+      "bytes": 5267,
+      "sha256": "7394c4634b41f6ae1c5bb07df533224aebe5947c69f4edbb1ec827b9aa89595e"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_trace_tau_plus25_unknown.csv",
+      "bytes": 10741754,
+      "sha256": "173b1626bdd88e8535d32c9e8ef39ea45a5115da7683a9d4272b4b8f08a5f7a9"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_traces.png",
+      "bytes": 306551,
+      "sha256": "10f01623a67a79cde0f23de31bf39efc024b50b06a14702c6d2558a001c179e5"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_traces.svg",
+      "bytes": 1136238,
+      "sha256": "ff29e02f9e214533f7af088f056a6f3a15ecaf3483c7e992af316072f0dee7d4"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_winding.csv",
+      "bytes": 110245,
+      "sha256": "bbfa5b05efde502db7be6add757f6be563722b446d332c2694f4886a2364bbf2"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_winding.json",
+      "bytes": 467414,
+      "sha256": "82e59fd2bea2a400140d6c17a2e713c169ffff30be8a1ac110e3aa342e0b7359"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_actual_sensor_winding.m",
+      "bytes": 12118,
+      "sha256": "76a46091a4c3654d552e97d2545916c27fbe814054b29e8006087f6d32743f1b"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_coil.csv",
+      "bytes": 78052,
+      "sha256": "308acba6545bac22d2eff69c67e8ceae0eb0cd94e5519f3d8b94ffd3eb00a759"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_coil.json",
+      "bytes": 374117,
+      "sha256": "9b4d81b93b16064d69cba8f5e52d9c10893ade4031d9df65e6469d4a922b0f4b"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_coil_sensitivity.png",
+      "bytes": 231852,
+      "sha256": "706fb54c0fa1430a0b2b35d6aec3decf0fee439fc912a5902bfc784aca4d5511"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_coil_sensitivity.svg",
+      "bytes": 77338,
+      "sha256": "6b704b218905ea8970bcd24024a89dc6ea87dd43872484775c86566c82e4975d"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_comparison_plot.py",
+      "bytes": 3428,
+      "sha256": "26ecdbb17dd535c0b7f89ef0e68cc8ae0deab3a8357ca4fbd1315e252a1a1eee"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_control_comparison.png",
+      "bytes": 164957,
+      "sha256": "19b3b193d1c9b83c1633eed9663dff88ed96b03b7b3cf67a0c7d5c61d3465adb"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_control_comparison.svg",
+      "bytes": 123445,
+      "sha256": "a5cd6a5174cf3bbffa654196f0c269386452c6254660a58d8a42f93473c09739"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_electrical_budget.json",
+      "bytes": 5342,
+      "sha256": "e81c58870879b8cc413a188dc2a6aa669186d5a50547e9cd3c67d9884f011099"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_electrical_budget_actual_sensor.json",
+      "bytes": 3413,
+      "sha256": "7e3dd1ec2db08f3e5f6e5526b72ef7d1e23a64cba6674106bf89d5da39ba4c0e"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_Kf_minus10.csv",
+      "bytes": 9449753,
+      "sha256": "e2b22a4184b4820137d98d236a3458eef1cc29c03b69952f0465dbbf46063b44"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_joint_winding.csv",
+      "bytes": 9572486,
+      "sha256": "22f71d988fa1ac26172191c059a83b090c1e2b21e2c818c2732a5d708f889cf6"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_metadata.json",
+      "bytes": 48392,
+      "sha256": "fbaa633db13af6f393f54f6c4f5353ebc6b77a46c9a5fb4e40ecc0bb37e5cdc2"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_nominal.csv",
+      "bytes": 9323768,
+      "sha256": "1bba851a6406488bd458d62bf3a8a0fc366398d1dc3394d9aea73eeb0e94b511"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_plot.py",
+      "bytes": 3230,
+      "sha256": "a9007293d21f64c87dab744f755053ab6c51360ef6e56039f10276e520c25335"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_reference.png",
+      "bytes": 545337,
+      "sha256": "99187562dadac4a06f5c171d8c7f56b3fa8d246bb4eff368738a3aaf8a04d8d9"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_trace_reference.svg",
+      "bytes": 1171326,
+      "sha256": "aefdb0117763b9e5bed1d1116bfe4c661ccac589897f09478aaa24ac8a532e5d"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_winding.csv",
+      "bytes": 115817,
+      "sha256": "e091cc33478cdfc22cdf23c7bd045f520f10f2205518508346990b5b6c3d5fe9"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_winding.json",
+      "bytes": 532500,
+      "sha256": "f0dcaef97f5e515fdc18548493a1ebfe7e1158aeab63b86262023e33d177e8d3"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_winding_matrix.png",
+      "bytes": 226436,
+      "sha256": "996cdaeccc1ad4696d2fb5d406d0c06d9074011227aa2fbb5c97e37807a98732"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_winding_matrix.svg",
+      "bytes": 160208,
+      "sha256": "d6342ae1933145e05fd300928f8924b8e74627133a574f8b641778a71de13113"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_final_winding_plot.py",
+      "bytes": 3342,
+      "sha256": "2b2c41aa48f12f88062d1b1c915163a148056c5b6baa8c22dc426403b6357060"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew.csv",
+      "bytes": 56350,
+      "sha256": "8693000c502364620b25abbc67563fb670049c77679575224c3ac19a8e35ed36"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew.json",
+      "bytes": 246514,
+      "sha256": "014797048da68c35fe1ce1767b7cbd6c1ee193731ae47dedfbecc72c81f10473"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew_high_gain.csv",
+      "bytes": 98978,
+      "sha256": "6aca4dca7f0ed9f0b8e4de2d1c23c4b09df8e78dbc51c598b8d5ccf3307c0f5f"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew_high_gain.json",
+      "bytes": 405340,
+      "sha256": "ec66cbd6db1a5437d7b303b4e52d14d80d05e54fd3f5aadbc8988120b9f7cff7"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew_refined.csv",
+      "bytes": 130049,
+      "sha256": "340bfd53a5e7f69160a99adb614e3654e429ec4a5ea08d871735765ed65c2633"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_leadscrew_refined.json",
+      "bytes": 565016,
+      "sha256": "51f37fa5dd0ed45a9cdee2b14fa95bef307597d97ce8740ae0f7e17500cbcae3"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_plots.py",
+      "bytes": 3553,
+      "sha256": "1d378305ee1c307c14b7df7f3a97f3afbaa7655e773fd19d0dfa59e8781e9c56"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_summary.csv",
+      "bytes": 2975,
+      "sha256": "58dda73cb53037378f1074648cc4dbd88a436957d774527f45da52813559362f"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_summary.json",
+      "bytes": 9625,
+      "sha256": "292bd10da7e21e7b254e5b422189a1af04fff46dbf7b9d1e2ac799678b00075e"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_driver.csv",
+      "bytes": 7763,
+      "sha256": "ce4e222179b63848f3feac43229e72a619f99ac607e31fb1ca8b2573625ebbb7"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_driver.json",
+      "bytes": 45501,
+      "sha256": "a75165196503bcc118bdc3a157ebbfd8a059559453a84f339da41cae0bd61a83"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_driver.m",
+      "bytes": 10001,
+      "sha256": "81dc9457f3ed229ead9f3281b142bd57786bd0f330665141e1bb1a2ee2001b1e"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_driver_comparison.png",
+      "bytes": 142771,
+      "sha256": "eaf25598e6f66de421600b7f7ee4c22670d873ff6b5862e7846e08d31816f046"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_driver_comparison.svg",
+      "bytes": 107602,
+      "sha256": "b1baff70783ee3a0e24f47c71eebae9c214a642498f781109d4786d76fa1d0f2"
+    },
+    {
+      "path": "acf_simulink/validation/actuator_qualification_uncalibrated_plot.py",
+      "bytes": 2905,
+      "sha256": "6598058b9d97fcc7b4a6092c3ba8032befec1161a60d92a3ef6364588f46d807"
+    },
+    {
+      "path": "acf_simulink/validation/control_guide_results.json",
+      "bytes": 242,
+      "sha256": "8fb6fb8d2c0244c7ebb41369374c0194212e9dc4b9c993e748c29e35b3b8c20a"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison.png",
+      "bytes": 89197,
+      "sha256": "413b9b9ff658a7decb36dae4ed14760efe161ec3b28ed32f7046be6f937aed11"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison.svg",
+      "bytes": 70894,
+      "sha256": "98dc43846a4a7ca1890fc693f44383af5aa77b6c2b60c20c5f851a987531b1bd"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_compliant_simple_refine.csv",
+      "bytes": 65395,
+      "sha256": "e3ebedd861b328f1f2ed83da0ec600c8351ad4fada44c4e307319bef16a49198"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_compliant_simple_refine.json",
+      "bytes": 316796,
+      "sha256": "b87cbaa9ea1c2cc420875a7d600f6eb1a046b2a3cc5618561898e2d7baab8c66"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_current_limit_3p5.csv",
+      "bytes": 12527,
+      "sha256": "4a543e8960336076bad2b268f7d179c8d4bd27127f5042eae75a8ef7181b6fde"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_current_limit_3p5.json",
+      "bytes": 117224,
+      "sha256": "0c4f25676325657d7cbab4e3b239c2ee77582ddf6cb8414b7586411831ff3fdf"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_final_clean_corners.csv",
+      "bytes": 1558,
+      "sha256": "0edbdcc2948ebf294a5742d99a902166a414187bb01a9dc29e90310ee501e18b"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_final_clean_corners.json",
+      "bytes": 6302,
+      "sha256": "a2048bf799a6f7e5bf8748d264a2bb31b1f56d039a76ca98ed56aa1cfd742385"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_final_summary.json",
+      "bytes": 117885,
+      "sha256": "0c6e1ce635be13dc99a0b4b0add05e0fd6d8556ef0b3e91b275d7b7700866ee6"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_observer.csv",
+      "bytes": 17106,
+      "sha256": "c9e760c2d2b916a00c4a96094b893e587ec69c9f0660a9bbd7bcb5bc8f5e425f"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_observer.json",
+      "bytes": 110728,
+      "sha256": "9131fc03e75bee168db74f3b68ccbfc6fbc52a8e0e37ddf08f0fe21097b2d72f"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_observer_shortlist.csv",
+      "bytes": 17244,
+      "sha256": "8805e3037c5ee76b5a68c8d606634e867fb60a58b9ab5d1d9b40dfda554527ee"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_observer_shortlist.json",
+      "bytes": 107086,
+      "sha256": "12dc92b8467ab45ab36ae4be86e3477546734075a8fa9e09831ce2fe594719d8"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_pi_pid.csv",
+      "bytes": 71132,
+      "sha256": "580745e434e0d3f14a5428b4beb1a3cba47f1e5b0f51be1011c8b0c0da582881"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_pi_pid.json",
+      "bytes": 369746,
+      "sha256": "c7d4b453654a9bbdfd15aca94fcb123f99c12c3647bff116e8603a5eb91edbc1"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_rigid_refine.csv",
+      "bytes": 16649,
+      "sha256": "43c4fb191a53e03e7472746680bf83507e126f68a6a61be2d503a9da4312a0f9"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_rigid_refine.json",
+      "bytes": 109131,
+      "sha256": "4926e9ae99b1efb882a3da07ba90bbe2d8b0ab4ad6dd081c8f74f28a28318ec0"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_robust_reselect.csv",
+      "bytes": 63094,
+      "sha256": "ff7242d6b95f19dc9a91b9bf9b84aa3bdff28ef4df6eb8fd4fa9068fd5433b41"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_robust_reselect.json",
+      "bytes": 428931,
+      "sha256": "9d6c374f8c8ed908b595c400de1da423dbc33522d274632d580b44d0e2144821"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_shortlist.csv",
+      "bytes": 82239,
+      "sha256": "40cede12160fc309e383013f921b2048b8d4a749550341184c2299f88ace763c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_shortlist.json",
+      "bytes": 420420,
+      "sha256": "a676032f96923e787df3d8e5839f4353504d0345c433e9fa4b107d0051f5d2bf"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_simple_refine.csv",
+      "bytes": 27362,
+      "sha256": "930c34e7dfcafd4e769ceddef5ce01a747a7ca849d50b574157447fdbc323c3c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_simple_refine.json",
+      "bytes": 162987,
+      "sha256": "4929f0f9caa19324a9b63402b55b05aca504d0d6e9968a1f20fb1a7d458a51b9"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_summary.csv",
+      "bytes": 2950,
+      "sha256": "ad4c6aad830a40759729e2b70797e089644ecff9dff61862967c35b5629c733c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_summary.json",
+      "bytes": 18345,
+      "sha256": "3e4e7531926ab141aae12bf86fa2416243b9bd80fbeb20130bfde5818305477f"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upper_rigid.csv",
+      "bytes": 21483,
+      "sha256": "98dab525be18989dea1c80ce5eedb32d520f42e1e803aefe552873296af65840"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upper_rigid.json",
+      "bytes": 123597,
+      "sha256": "b14b833e263a7fda806a0f2b5d58d5c5b838da2b31c521600d073a7a14f835ff"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upper_rigid_pi_pid.csv",
+      "bytes": 38856,
+      "sha256": "cd1d388f65e0e8ebdf0a9698e435de5936b095d100279b85d0caf80c8f59250c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upper_rigid_pi_pid.json",
+      "bytes": 203567,
+      "sha256": "e63fb7a900e103ec09f199061b83d619e3de3c7950a59054d8e2c70614773a46"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_calibrated_costs.csv",
+      "bytes": 51506,
+      "sha256": "bd1d9a7d6fc86a6d9b5affb29497dc76f8fabee888bc58ca1e2a194fa6c05337"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_calibrated_costs.json",
+      "bytes": 257452,
+      "sha256": "2a987f1668139a6997b4404c70419bf3670bec591cee84b7f91525309781da4d"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_gap.png",
+      "bytes": 285957,
+      "sha256": "c419dcf701eb2dc856ddcb67ad279696e3cb5eb850c023064bdc769667192b3e"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_gap.svg",
+      "bytes": 202707,
+      "sha256": "ab3c45a1a9b2715c9ade9b2cdc1b4860bfeb75febfce55a2942c22c03aed22c0"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_gap_plot_data.json",
+      "bytes": 915148,
+      "sha256": "4e0ceadccba20b5e705151473e2e41d9706cdf628df7e80f37154e1270262678"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_gap_precision.csv",
+      "bytes": 17064,
+      "sha256": "9faca7778df8365dc8a8d13cbfb414e28b1570629b61a9381d4ecad2ea8444a1"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_gap_precision.json",
+      "bytes": 103579,
+      "sha256": "cc7357b9facfb4f0fca3024f2f48d61f90707083706e7f8f1133f31a1f03166a"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid.csv",
+      "bytes": 2993,
+      "sha256": "aa88c6e001c808836fb5cbded24a9d51dfa18636a2ce15bc97723c4299251770"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid.json",
+      "bytes": 40653,
+      "sha256": "7d6bff48ccf79731f32b96d8bfa8b301892d5a9e00ddb52ff59fa571069cd485"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid.png",
+      "bytes": 147229,
+      "sha256": "08ddf132edb3473a15aa5caf1674dd151df02e0e8e8d1327eb1e16172a10ea64"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid.svg",
+      "bytes": 136873,
+      "sha256": "7517e60dd4a1e84f54397eabdc2df37d90cb8e827deef78ce606466a8798c679"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid_measurement_analysis.csv",
+      "bytes": 2370,
+      "sha256": "c50b12af8577f55e898355db4caa217fdf0e1d904888c7edaa36ea4c95c57c2b"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid_measurement_analysis.json",
+      "bytes": 8015,
+      "sha256": "c74f3bbc489906ba90f1c3ab05e96f497ab9eec34893d4dc91feccca91c2212c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_pid_plot_data.json",
+      "bytes": 304148,
+      "sha256": "4cd26c81bc32f567d6dba7933df0d4df42e6c8538c5054c222499ec103febe00"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid.png",
+      "bytes": 425120,
+      "sha256": "29b0ad7177a70e396a2ed47cecec992f805c73aa411726297f5da08f6817fc71"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid.svg",
+      "bytes": 489023,
+      "sha256": "8f632cb78fbe48da49a51c9508a3bd2e41ec773beab2ada662b362895024ab81"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_calibration_bounds.csv",
+      "bytes": 12807,
+      "sha256": "2ff5052a3b94017e95c0b5ceae44352af67317a350eb95ddfa9604f9e9f6b891"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_calibration_bounds.json",
+      "bytes": 119014,
+      "sha256": "59aa3f734e4abf6c29dc48e4a108d34bd5f4c73d3516a0cc001e9cc6c2e03fdd"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_calibration_bounds_interruption.json",
+      "bytes": 480,
+      "sha256": "1e06526e648dc257b970005402a3e164c6182edd8477552f4397271bbec4af96"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate.csv",
+      "bytes": 8625,
+      "sha256": "6efdb3e004abfb2a5b9394a078815c4df6a7ff38ab33ad4e9e496beb184d0466"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate.json",
+      "bytes": 95816,
+      "sha256": "5662f1eec2756caf431d8a21ce752166dc3da35892eaff3815911aa0007c753c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_coulomb.csv",
+      "bytes": 2545,
+      "sha256": "491c4856af8d43c10e5130f0ca8189e874033015dfd3ef9c0e2e9271e9853bb1"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_coulomb.json",
+      "bytes": 36122,
+      "sha256": "ea5b08845185231b54c0ab4d3376cc83af0d00579bd29887b9cdfb179d27c44d"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_plot_data.json",
+      "bytes": 357675,
+      "sha256": "4dcb217b131583e68e53c993e2562d9788954fd3fcf5b50e6ce345a3b61522bd"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_qualify.csv",
+      "bytes": 8368,
+      "sha256": "2fff7520849663370d7e6c9eb18d2bcb91090e8cd0f89427d15ccef22f2a814f"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_qualify.json",
+      "bytes": 93297,
+      "sha256": "5b5cc40f3b77cf71af00d4dd2ad6370265ba9731f929484107c77273dad0404a"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_timing_bias.csv",
+      "bytes": 18256,
+      "sha256": "b9ec3522b77707906a64da6e0fb4dcbe0dde7742fefbb0940fe75bfb8da72be8"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_timing_bias.json",
+      "bytes": 164055,
+      "sha256": "2f66fd34607a2d39d119289d7aa28282bc610181b6995f40f60efd49e98e5fa2"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_summary.json",
+      "bytes": 104963,
+      "sha256": "e710e8f5149cad93eb2ac3fc39f5da051b7dc750f58eab030539176036909013"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_verify.csv",
+      "bytes": 5518,
+      "sha256": "400c60bfb5bb0ab1caafeb71e85e77d3d3b399feeb4e3fe051e3bc6b97a9d4c2"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_verify.json",
+      "bytes": 83301,
+      "sha256": "d6cd26635cac04dd1d68a31228a0a09295b7869f05d7994030268ebf6eda8377"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_weights.csv",
+      "bytes": 52433,
+      "sha256": "9336ec882dfcbc90636769accc7bb994fa55519715ecfe6d446b79981847089e"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_weights.json",
+      "bytes": 277467,
+      "sha256": "f18678dcce2b1a485b837f1a0e28380c76b143183e963e4060c83588fad43852"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_verify.csv",
+      "bytes": 8291,
+      "sha256": "834aa2e85552b3183cb1a977eda01e4837531e4fa16068676c7b734d0d3de50c"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_verify.json",
+      "bytes": 190344,
+      "sha256": "fe7c13602143243f1a78d5973357f42c611b606cb71593e5eaf03a0b5e200432"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty.png",
+      "bytes": 122740,
+      "sha256": "cfcd712e8f5b24f882d7dc2e1d0780e0a03ba56ff592502388f531c725399137"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty.svg",
+      "bytes": 92562,
+      "sha256": "594a0992a45cd7e41a0bc07eca805e61532e9f11e74a970642faaf931b88f253"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_current_model_noise.csv",
+      "bytes": 7119,
+      "sha256": "8144ec5abf9bb8e68a734711e0cf0142e2d43431d580e72abea4299281d9ce1a"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_current_model_noise.json",
+      "bytes": 47454,
+      "sha256": "3d0c75f618f8819fca2829739958f7ffe110c822fe7b10a36ded97a6b54bd988"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_force_bias_state.csv",
+      "bytes": 3616,
+      "sha256": "020cd4d76fea1ff0c8ca3ec5c886b20bf3af6e858da254176133a7283575b822"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_force_bias_state.json",
+      "bytes": 30531,
+      "sha256": "73d18bdc5f2d78e49a7552035c14ad944aad3c665e7d9fadf5e87a02a1d84a78"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_plot_data.json",
+      "bytes": 1657,
+      "sha256": "32d8331a119423486d93c7328ded8d66a57fa31dd5717272525a04629444ad1d"
+    },
+    {
+      "path": "acf_simulink/validation/controller_current_uncertainty_summary.json",
+      "bytes": 26679,
+      "sha256": "1baa7d0cd30106c068b5b17c4ae64ef5833f01718c77a59cc97dc70dd7196791"
+    },
+    {
+      "path": "acf_simulink/validation/final_diagram_cleanup_results.json",
+      "bytes": 3558,
+      "sha256": "eabb27652924b67e27947a5bc6a6204766e9ff8e0ea5845f1cd759a726a8ba3e"
+    },
+    {
+      "path": "acf_simulink/validation/final_gate_100ms_corners.json",
+      "bytes": 19137,
+      "sha256": "2f2ab6a5b40bf18a31aa695cf05c388219c780cf8ce64576d2dc3d2dc2752fa8"
+    },
+    {
+      "path": "acf_simulink/validation/final_html_browser_checks.json",
+      "bytes": 1900,
+      "sha256": "dc56b694e9dad48f813977cd8aa2d07ecbd1d33c105837f8ee75938c676da2e1"
+    },
+    {
+      "path": "acf_simulink/validation/final_model_controller.png",
+      "bytes": 548447,
+      "sha256": "6fc1cb62d55fdf8d9f73e239cd24df83c05222648f04b6df580f6aaf435927db"
+    },
+    {
+      "path": "acf_simulink/validation/final_model_mechanics.png",
+      "bytes": 587686,
+      "sha256": "958ef7d2c672fe702798af884c0fc52c07f8f1b9e67b28d9299b88851a5aa414"
+    },
+    {
+      "path": "acf_simulink/validation/final_model_pi.png",
+      "bytes": 272753,
+      "sha256": "a672cb1cfa722d38e8b5de821f1a98e6f9b4145f1d773ff6211a6e4a303d644f"
+    },
+    {
+      "path": "acf_simulink/validation/final_model_top.png",
+      "bytes": 602503,
+      "sha256": "cc182d0a0f8bf00f9d510f2c9ffce1985cf4c63df7b67348f0b4a1424b374db7"
+    },
+    {
+      "path": "acf_simulink/validation/final_offline_report.png",
+      "bytes": 246534,
+      "sha256": "fce1d17baca9260da40dac75646d82cf04f30a33c982e526b162820c4054928a"
+    },
+    {
+      "path": "acf_simulink/validation/final_replay_desktop.png",
+      "bytes": 265538,
+      "sha256": "7be0d75c28a2a3bf970022209ea5f0fc4c9a0fe00eb378e0cf99e21cefafc400"
+    },
+    {
+      "path": "acf_simulink/validation/final_replay_mobile.png",
+      "bytes": 171049,
+      "sha256": "ccbafb279935fe35b13a722d2eab0276e686171bbd38d8a860a0ec7557625be7"
+    },
+    {
+      "path": "acf_simulink/validation/final_report_desktop.png",
+      "bytes": 269964,
+      "sha256": "27a90ef43370e2bc11eb7e4ac8c4e62d105907aef1da13886c8c6e419d0d3558"
+    },
+    {
+      "path": "acf_simulink/validation/final_report_graph.png",
+      "bytes": 197681,
+      "sha256": "2859676aed389d469f45f6b4aa68a9d22d9f5a7c5aa657242cc69bf04e72720a"
+    },
+    {
+      "path": "acf_simulink/validation/final_report_mobile.png",
+      "bytes": 101608,
+      "sha256": "37fa5747a41e2c70ee55c408c99094963fe7a8907046434928a9e98c653263a0"
+    },
+    {
+      "path": "acf_simulink/validation/final_robot_gate_plot_data.json",
+      "bytes": 3733398,
+      "sha256": "cea326bcef004e5f4b71661d13f3a904622555167788e21ec13aa2ce38e006b4"
+    },
+    {
+      "path": "acf_simulink/validation/final_robot_gate_plot_data.mat",
+      "bytes": 573123,
+      "sha256": "dd6e19913856d8d85482c668825baf3cb3d6a6c192ed839e8439431c969788ac"
+    },
+    {
+      "path": "acf_simulink/validation/final_robot_gate_response.png",
+      "bytes": 438255,
+      "sha256": "f722aed4e47ebf417391f8007758208de4a99db70f53945f98f041d75d73de82"
+    },
+    {
+      "path": "acf_simulink/validation/final_robot_gate_response.svg",
+      "bytes": 300076,
+      "sha256": "22ab8554015788740afc8378b8e98472c2bb0337faa7729e236c6ebcfe424a4a"
+    },
+    {
+      "path": "acf_simulink/validation/final_robot_gate_results.json",
+      "bytes": 17913,
+      "sha256": "eb6e89d710dbc56d1812d22e98d76f6b8dc1c77c4fed7821ed3c536f45f45753"
+    },
+    {
+      "path": "acf_simulink/validation/final_save_reopen_results.json",
+      "bytes": 15416,
+      "sha256": "10645f40d2437d6fc6e678aa9e58964c04b528289004a9e989e8178722cef38c"
+    },
+    {
+      "path": "acf_simulink/validation/final_saved_model_results.json",
+      "bytes": 25538,
+      "sha256": "1955942f20efbe230fd97478defc291eb29ecfd8ad77a90a53b0d3d2b370e327"
+    },
+    {
+      "path": "acf_simulink/validation/final_two_sensor_candidate.mat",
+      "bytes": 3617,
+      "sha256": "1080561655683e355d4d3e43bf43c25a2581bcf4986e928b2fe35870d7a952b9"
+    },
+    {
+      "path": "acf_simulink/validation/final_two_sensor_physics_review.json",
+      "bytes": 10834,
+      "sha256": "895e0cd1591becabb44c31171948a06bbece9575811e3812956d1a403b985465"
+    },
+    {
+      "path": "acf_simulink/validation/final_two_sensor_physics_review.md",
+      "bytes": 9826,
+      "sha256": "1e1681a8a296fb2c5e9bbf7eab588df48e07680d1aff0598036cc5fc5f7edb37"
+    },
+    {
+      "path": "acf_simulink/validation/force_axis_geometry.png",
+      "bytes": 178676,
+      "sha256": "079480f3b086312cb18d6d4ab9b408dc6efbeda3c3f2be0be6c02cd939dd7d18"
+    },
+    {
+      "path": "acf_simulink/validation/force_axis_geometry.svg",
+      "bytes": 79029,
+      "sha256": "65831e3ca16608537e4b7cd4d1c11e941575989776b3c2441d00c966fdc4a334"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_high_cases.csv",
+      "bytes": 316653,
+      "sha256": "cc035fd482b90b1d4e348f125ce9dd02dbe69a5673d4046964de33aacd9cd725"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_high_designs.csv",
+      "bytes": 49663,
+      "sha256": "55349c9406eb869fcc1974724d81ef55b108fdd02af8775bedb5df84df7d5da8"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_high_results.json",
+      "bytes": 9685451,
+      "sha256": "1948b2a831c276b313997bf8e09a2e455c67fcd0682f2e739d4fefdd6b25a55e"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_high_stress_cases.csv",
+      "bytes": 40701,
+      "sha256": "accef43dee952703a803ad07de3b1f1beef94347bc58893f5702dbf39c8eed59"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_low_nominal_summary.json",
+      "bytes": 1617973,
+      "sha256": "ee9ace6ae89eabccdd9cfdd89feb6e4b80cf4df193db0e13255819548fd90b0c"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_low_progress.json",
+      "bytes": 1508485,
+      "sha256": "fb7bbc30699723cab77aa5dd65f2babcb5c6692eda67fb67fa718e93acaf558b"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_low_provenance.json",
+      "bytes": 4697,
+      "sha256": "21c2d1e1fb478ab700f123159a965c79c20fa28ade382aec7a41d8f8f93c7930"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_low_results.csv",
+      "bytes": 631910,
+      "sha256": "22455b89b3517ee0c7b1b614054aa2e84942f5f8dcda16699e0a4d64a6434aba"
+    },
+    {
+      "path": "acf_simulink/validation/full_range_mechanics_low_results.json",
+      "bytes": 4158512,
+      "sha256": "978cb184faa8726a16911a8fb2b170d8aebfc7cfd2e27ca6406c1de9a7fedbfc"
+    },
+    {
+      "path": "acf_simulink/validation/gate_filter_replay.json",
+      "bytes": 11665,
+      "sha256": "0fa27a81191093e5478980878d0a61a94e3605544a3da85e454f568dc59c6162"
+    },
+    {
+      "path": "acf_simulink/validation/layout_results.json",
+      "bytes": 4747,
+      "sha256": "b9878bffa0a04ad4b14414c7043fb8b2ca995f9e44b37145fb3645a23c34eecf"
+    },
+    {
+      "path": "acf_simulink/validation/long_robot_gate_results.json",
+      "bytes": 36568,
+      "sha256": "3fce6443fc95c2494969c86be86d9a5e72a5a6458e7cf30c1ccb117674d32893"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_clean_minimum_matrix.png",
+      "bytes": 205016,
+      "sha256": "4984dc75a580e66f707b74e66ce515453356a786bf193c9094c21a0940f784ef"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_clean_minimum_matrix.svg",
+      "bytes": 32534,
+      "sha256": "36d5280d28f78ff9a281b80ff12af521b3eceb042aecd0e935609b7183105350"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_combined.json",
+      "bytes": 1157996,
+      "sha256": "5425bd44ca74c9b1b3ae5ab9a3c18e73a5cacd35a4e5a9beaba27bd725874292"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_feasibility_matrix.png",
+      "bytes": 230964,
+      "sha256": "8a1619ed0c1456685f151f9fb150a7e85e5eda4021f6df511026a3561fba3573"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_feasibility_matrix.svg",
+      "bytes": 32652,
+      "sha256": "94068d30de429da9867ba66dc546d3e5b70f060763a61d07ca670a455be65d33"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_spring_lengths.png",
+      "bytes": 110453,
+      "sha256": "c59a9485dee046305438385bc2b5d1727d6627bd14487d621af0e7229d97ab4a"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_spring_lengths.svg",
+      "bytes": 12037,
+      "sha256": "79296c8576848154039a95f8b788f3ee9171e266222feb3bd985645be78928c3"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_ss_damping_stress.png",
+      "bytes": 165065,
+      "sha256": "e5221ae9ebd70eb151326938e51d9a8ec2216366471bd07404a33e2584bc5b11"
+    },
+    {
+      "path": "acf_simulink/validation/mechanical_study_ss_damping_stress.svg",
+      "bytes": 32892,
+      "sha256": "8566869fa3568e6d647d9098772b27dca8710d585b2df99d88fedb8b6786d6d5"
+    },
+    {
+      "path": "acf_simulink/validation/model_primary_results.json",
+      "bytes": 2767,
+      "sha256": "cb667fba282dce3656efb7e75fb6fc5587f5857d2768ad90ae4a09360344442f"
+    },
+    {
+      "path": "acf_simulink/validation/native_results.json",
+      "bytes": 5810,
+      "sha256": "c42ac65926a73dbc24c28356a7c559059421a53eedf1f02a0270dc6a04db36e9"
+    },
+    {
+      "path": "acf_simulink/validation/reference_check.py",
+      "bytes": 11525,
+      "sha256": "03ef66eb6ae79eca25a5070d1a006c3352d01b9d89128dbdbed5bb5e8324f220"
+    },
+    {
+      "path": "acf_simulink/validation/reference_results.json",
+      "bytes": 3810,
+      "sha256": "5edaec328c8ce2409eb7522d641d3297969897806012730346f0dc43b06c0bae"
+    },
+    {
+      "path": "acf_simulink/validation/riccati_solver_regression_results.json",
+      "bytes": 1047,
+      "sha256": "cdf9592947654f765224448dafafcfd58fcbc2f8638e138d8c402b9c1b7d1c34"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_links_and_robot_gate_results.json",
+      "bytes": 89637,
+      "sha256": "b7b55363b9fe4051c684da06add531086eeec2b49c12d242ffca7b9f29f395ea"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_calibration.csv",
+      "bytes": 67009,
+      "sha256": "22c452897a6642eb096d726b82f5cd58b91ca7e902ffa2797bd10f753f0b564c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_calibration.json",
+      "bytes": 369819,
+      "sha256": "7a2277bff6d5c876aac424c59c760b263e034dfd9ca07b8a8a87a969ab176c12"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense.csv",
+      "bytes": 143427,
+      "sha256": "9aa1c2a466f99c5487af309cc3afb8619b58817064a08f069032ba419b83ac2c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense.json",
+      "bytes": 775715,
+      "sha256": "6d44e0f8706a0ce6be82120b741d9828b8103f65c09a13088825237a4ce67d44"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_gate_trace_summary.json",
+      "bytes": 9131,
+      "sha256": "25ddbf8b53f6c0f512f010c3b811ebf057cca682a78ae99351440b7bf61aca9f"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_plot_metrics.json",
+      "bytes": 405,
+      "sha256": "519b3c4136ca17b793a350101df16abceb7561afdd9e50d3a4a6cae2306e3c56"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_range.png",
+      "bytes": 294804,
+      "sha256": "3971ef97daa9840652c0cb9c069d4c5da861fb3187fc8dc02b7a232b3a68cba6"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_range.svg",
+      "bytes": 202803,
+      "sha256": "ee685d1cf9a2fbcfd466b5f9d3feb6a1c41617e708c6f28dd492f43ca9c96eaf"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_worst_trace.png",
+      "bytes": 352169,
+      "sha256": "c80599b0647a802daa9bc7165375f68819607ff3243b1887d2e7dd9fd1e023a9"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_dense_worst_trace.svg",
+      "bytes": 395689,
+      "sha256": "8e7dec4c35875e462a792fa4981de9d7e968b2ccb2a73be7ab7cb56d1e758dbe"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_mass_calibration.png",
+      "bytes": 131891,
+      "sha256": "c2794372a621a7e512e51e56e5052ed1e488f41de55e72b0142793a86234ac22"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_mass_calibration.svg",
+      "bytes": 105617,
+      "sha256": "bf9bde013b46801a97ed2679b64013a0e5bca3e25b3141264de80f6771066dd1"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_mass_tight.csv",
+      "bytes": 28015,
+      "sha256": "4f8e37413f7e022a7456b09160560a7e5e40536366e9df0962ca386cb636bd2e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_actual_rigid_mass_tight.json",
+      "bytes": 166181,
+      "sha256": "57e9da9b34efba2d4c2b7a133171018db1e9ef71b1a09b7408a15a7fcf9976be"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_checks.json",
+      "bytes": 1365,
+      "sha256": "5c07ed4406072670769df7cf13f27f0363b3832d782e8e040473635789cd2bd0"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_corners.csv",
+      "bytes": 75182,
+      "sha256": "71b49b601fa69e3c0aa102dd2468d4035850e55e9aabd9773eb55267d2557fd9"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_corners.json",
+      "bytes": 329893,
+      "sha256": "8154106fc61fd84964103e4582e9266c8556cc4a3b0b66c1815af5dfb197619d"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_measured_travel.csv",
+      "bytes": 127572,
+      "sha256": "391884eb953f9749b7142d69c237017b0222ccb9560a783118a83058c7a37e32"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_measured_travel.json",
+      "bytes": 644045,
+      "sha256": "1bab1ef218694be7e3427ac5ea6971ed0e4f8c26678a8ab2db949767cd756766"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_measured_travel_3p5A.csv",
+      "bytes": 130017,
+      "sha256": "b09276082f84cb81c616c2fac1b045bb6998b5f499ccc6664b08cef42aa476b8"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_measured_travel_3p5A.json",
+      "bytes": 646470,
+      "sha256": "e0a2123fea57b6979a1cd1f440c2f01c8d519349985449ce181b358cef3e98c8"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_range.png",
+      "bytes": 299809,
+      "sha256": "4c196e6629105be44aaecc81d564a5975f8e799636a17e0cf7dc08d8467a5020"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_range.svg",
+      "bytes": 200295,
+      "sha256": "57e3a53243e980c0796fc123b0d4e7074f556fb1600f75ab28dff69be3be1998"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_selected.csv",
+      "bytes": 112970,
+      "sha256": "bd4b1914c2a15c174d8139dc32a8f1ea2719a7429c2705103093d9efb1ef340a"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_dense_selected.json",
+      "bytes": 548740,
+      "sha256": "4d48d76cb3f078ce9f00dd17dd37d6583fbd5f3c29371b173d8868e511c3f02b"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense.csv",
+      "bytes": 175630,
+      "sha256": "6069ba380e03ec791d4096c2979fe25e210178b6dc24fd9054a80ab93d4c6122"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense.json",
+      "bytes": 902884,
+      "sha256": "37685157b3c5dc2743d0aa59ee3851c8948333eb9b3b08635910adc830e5be56"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_gate_stats.json",
+      "bytes": 1052,
+      "sha256": "ef0734b955599a0a4b7293a7279d07f6a6424f8d8746139d10876f7a32f59935"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_gate_trace.png",
+      "bytes": 390960,
+      "sha256": "847892b58f0b43c70fcbdd2dffe402347c4de4ae47f399da1d8686f7246001b5"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_gate_trace.svg",
+      "bytes": 587568,
+      "sha256": "6f872404de0b13354f7163531664714b1550de189fbe403e4f4b525b472e1cbf"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_plot_metrics.json",
+      "bytes": 419,
+      "sha256": "c484d958d7af6899bd410811e29591cf646435592933353e2501f0e6315b1e44"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_range.png",
+      "bytes": 294016,
+      "sha256": "8d43cf67939e247a9801624e2ad12c8f7783fd590e65bfd6ee9fef0012819897"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_range.svg",
+      "bytes": 201416,
+      "sha256": "a1eb7b689268b4320e656acd24a09ff0d567291bcb8286c5f851f75e4d38d87e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_rejected_ui_mask.csv",
+      "bytes": 202406,
+      "sha256": "9f7abb26d92984a0defcd15abfd234e9cf22c473bc0cbfcb272a1b0a3366a08e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_rejected_ui_mask.json",
+      "bytes": 924772,
+      "sha256": "f2c9c6123c7c873d47de550f62728f62439256a1dda798a10334c8de158fe5a4"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_source_manifest.json",
+      "bytes": 2585,
+      "sha256": "a4a4724511b59a989e06a812e2288239f33611f15410bb8dc4bc7a8fd55ba500"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_traces.mat",
+      "bytes": 49254693,
+      "sha256": "b660b3434506b2defd6d1c1cc4e5e176b3e30d3b863c818ec708aa8c839d9b9c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_worst_trace.png",
+      "bytes": 349354,
+      "sha256": "ec82c58d5f7482f1be08566fba848d9771ef26d92dcf5f959c3291968cba2c4b"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_rigid_dense_worst_trace.svg",
+      "bytes": 394477,
+      "sha256": "01f72224474f2edfb71f143080a747ea0e08adfa241db753c1b57f26451c6477"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_steps_3p5A.csv",
+      "bytes": 1324,
+      "sha256": "55ac5dcbd1602f79bb40279b609bb44de1a32da486a3bca852867c4ddfb448c7"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_final_steps_3p5A.json",
+      "bytes": 5193,
+      "sha256": "d4dbfd770345f8adc5e7473eeb7306766b01c7ac70cd18692f75abb6439143c9"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_latency_noise.png",
+      "bytes": 142008,
+      "sha256": "70f2395afb5ff86f97ca6ce5aae4abb9d496e1bb019c4ea6d8ba82c56ba9b08e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_latency_noise.svg",
+      "bytes": 113442,
+      "sha256": "d7a99352ff7fb8e313444e5b6db7008bf31b033642901eca452bf21c9155e0a9"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_measured_travel_comparison.json",
+      "bytes": 2398,
+      "sha256": "423e92838f39d8087af7439b837079f7f220ce93932c75128835f9290cd9c11a"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_diagnostics.png",
+      "bytes": 347539,
+      "sha256": "e2b8da24a0b54dd0da349424a51c6bcb34cead5b184f1e15b9f65a08bde9aff2"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_diagnostics.svg",
+      "bytes": 289085,
+      "sha256": "e78701170429729a80df28d32c0aa40db53e9bdd3f50171f8f5733f48ac4d0c6"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_optimum.csv",
+      "bytes": 19656,
+      "sha256": "3eefeadf1fc57f079b54be20cd296bef4822bd76bc1f760823f0dfca628d87ba"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_optimum.json",
+      "bytes": 120248,
+      "sha256": "6f25353341cc75f94316162de9812c1afa493f5ff978ded272e792709bea1a36"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_optimum_rejected_step.csv",
+      "bytes": 15709,
+      "sha256": "0090e6c446cc60724439fbb422f786217b520488f9ca3287a374458fbe4c3d02"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_optimum_rejected_step.json",
+      "bytes": 100495,
+      "sha256": "cdd795c79cadf1281e40c02a904b9c540a2897995d76feeecd825324898ddb85"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA.csv",
+      "bytes": 27901,
+      "sha256": "5a27f334c84ea61bed83f9ffd8a71bad27ca46e8b1627dd69e5bc1c12d21bdc2"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA.json",
+      "bytes": 168506,
+      "sha256": "9f2554531067f026fdeca675ba2a64a0433d8117c858960efb547ddf76795b00"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_precision.csv",
+      "bytes": 9830,
+      "sha256": "f2b3755f6eba2439c56fa0edd4a579d691a8d57d4ce04ccf927c71b07058268b"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_precision.json",
+      "bytes": 75744,
+      "sha256": "faf7dd76da3ee0c8f35a8983e6ea91b1624ef6629eac15595f01fa05d947a882"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_rejected_coordinates.csv",
+      "bytes": 21438,
+      "sha256": "e20ba186b843e1a8ee8200273627d27df3b7789347807d564766f89777f5eb9d"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_rejected_coordinates.json",
+      "bytes": 122956,
+      "sha256": "558f75202b938dc8e4ff11d1b8f24680b123adcee8a92e3bc0f888567638798c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_placement.csv",
+      "bytes": 11754,
+      "sha256": "abd66d754c286c8bd721406e8a7e378319c32100e4e088e5fe8814d854357827"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_placement.json",
+      "bytes": 69388,
+      "sha256": "743dfa8871560d1f451f1d2d383560796b1a2f02e13ab6e58044f6784391770d"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_placement_selected.csv",
+      "bytes": 11772,
+      "sha256": "abbd779c213bee93f4f07cf970ecbad30273a88c656cecc1a274b8a6bd4eb691"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_placement_selected.json",
+      "bytes": 65223,
+      "sha256": "0f4bdd5c1b2ff21998b40b6f7fc7d2ed42594116e4d3cbff6bf669864f539e8c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_reference_3p5A_range.png",
+      "bytes": 294916,
+      "sha256": "cc9bff93f00b68a7ac375c44e8fa8815767ce3dc1e6e68281b63ab0ae7400795"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_reference_3p5A_range.svg",
+      "bytes": 194856,
+      "sha256": "0440f4c8bf2b4cfb6572127c59eae11415c0fdd3fac7a0fd1cea7f7f8ba840ba"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_reference_3p5A_worst_trace.png",
+      "bytes": 290839,
+      "sha256": "baf571481ffec1b750100a5c092f734d23be481b75d641ec53a485fa8b41859e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_reference_3p5A_worst_trace.svg",
+      "bytes": 144242,
+      "sha256": "05b75f3d23367c9544bf63b9e744d08bb50260a98911d1ac5ecb01d2d581596c"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_selected_robust.csv",
+      "bytes": 38359,
+      "sha256": "ac7fe19b0fde673bc446c935beee7138911fce5d5e4ee3d5965028d5a3f9d667"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_selected_robust.json",
+      "bytes": 185845,
+      "sha256": "6063c98e7ee007e063509f5e6f36c14ba75b6efd1f865e64bae0cc380afd4cc4"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_selected_sensor_placement.png",
+      "bytes": 289641,
+      "sha256": "cb9f4bfa70a3c68458f21821f6707771292478c5075a5ceec1d90d4e07f05c5a"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_selected_sensor_placement.svg",
+      "bytes": 177460,
+      "sha256": "5bc9a8fb97c708f419ac67661d3520e87e9f700f39117319464ee3b1acaf47c6"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_sensing.csv",
+      "bytes": 37538,
+      "sha256": "faa09f1bfffb29cb007e2a0d9a12b88e4646ad020dfd869ee42155936255352f"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_sensing.json",
+      "bytes": 197499,
+      "sha256": "057b1dceaab52429f8c135d8328610e97d46c09c5b878840cde2dd095b80ba54"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_sensor_placement.png",
+      "bytes": 193192,
+      "sha256": "62ece9771f8ed165cec2c58cf7b75628a912b2384163c1746ee6d6775fc944dd"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_sensor_placement.svg",
+      "bytes": 214929,
+      "sha256": "82b9fa81353f32533727f89e8b06e1435de1ec393167fd5f135a91b1cb3d5bc6"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_single_link_robust.csv",
+      "bytes": 38370,
+      "sha256": "adb8bbec0f3a803faf86259fca1445907930503cff54513b2324b10973fde916"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_single_link_robust.json",
+      "bytes": 185260,
+      "sha256": "b8b26233e4a18cac044dc2ffc214dbd4b402744c5776e66a064b4f57d091bd9e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_summary.json",
+      "bytes": 20411,
+      "sha256": "fa63bc65727e815b3d964237751e09c4bb1885d690114369c672660c4701526e"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_toolA_flat_initialization.json",
+      "bytes": 346,
+      "sha256": "253e043617d383407be21f2c16c23d27ab61b921a13ac9d232ccaa78235e6ab7"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_toolA_observer_diagnostics.json",
+      "bytes": 793,
+      "sha256": "26a78ff549bf6b3f444337716189aa9b4ff21c0da1f81b2fdaacc2bf71dac5d7"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_worst_trace.png",
+      "bytes": 285630,
+      "sha256": "5158d26ba071d7d27fe83c2d9e627b5c013f0695a72ac65ce857cf3a732428ad"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_worst_trace.svg",
+      "bytes": 140672,
+      "sha256": "a16fadce43262e7cf41aef60882328c919dff1106e8595c3f76ca68b6afafe4e"
+    },
+    {
+      "path": "acf_simulink/validation/robot_gate_response.png",
+      "bytes": 144201,
+      "sha256": "cacc7ec14226a9e2483deefb9c3533f389f7d54ed5639e9e34f102a218dc74a9"
+    },
+    {
+      "path": "acf_simulink/validation/robot_gate_response.svg",
+      "bytes": 543592,
+      "sha256": "b5cf0c7e65ed3eceac680ee73afe67ae4a719f4a680a3c16e9e57bbf5ccca211"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_all_rows.csv",
+      "bytes": 420345,
+      "sha256": "e34dbe90bc6a89523bfb12a6dc489a92431a3632559f1c9cadcdb8799405e9c7"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_bandwidth.csv",
+      "bytes": 37454,
+      "sha256": "314b2ef62f2a46efeb39bb540a36aa2716fbeb5880584bbb146f0d8843f411cb"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_bandwidth.json",
+      "bytes": 195350,
+      "sha256": "9e035bfbea595ed6b5d5abfab6aff47e24bf37bec6adccea4f5ddc8a00e26feb"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_current_readback_negative.png",
+      "bytes": 435239,
+      "sha256": "b3419c7c8a15faabc6737e3a8de519eefdb6d52dae77bd535afb5bfdd9252e3a"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_current_readback_negative.svg",
+      "bytes": 212961,
+      "sha256": "7704bdfd53ffda27a031686cdf292555746890401e8bf7a14b2ff9bb6ee3918d"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_experiment_summary.csv",
+      "bytes": 6126,
+      "sha256": "8f592038d07991328253ddc511858cc5307cf0b5f74f57da27ff9b440bff9ab8"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_experiment_summary.json",
+      "bytes": 25070,
+      "sha256": "948626eaf16fcfec1a62f306f1abe02652c0369b5b9e27c17e37d85a8d4b579c"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_figures_sources.json",
+      "bytes": 624,
+      "sha256": "747550c5aa23a960ac2eb21aa3e8da9a9bc8ff49470b79a74992b156d00ae01c"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_finalize.py",
+      "bytes": 6779,
+      "sha256": "9bbadd9c4f9c76aa92f1a095c880c1795c9eb2b0edf07037ed3bcbf2417055c3"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_plot_evidence.py",
+      "bytes": 6723,
+      "sha256": "4d3f2d70162c5de42492a7a53585bb48a64fe8d67815182172addd76a5d559d1"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_precision.csv",
+      "bytes": 39384,
+      "sha256": "9438d53fcdc76b61eeb68c0b40069e77e49ac7cc399e6d70f58f2a07b7b5ead4"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_precision.json",
+      "bytes": 216819,
+      "sha256": "d4f5f84f7bb76a899bcd01cffa9e77d1088f41607a79ab5a0d3db9c656cef93e"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_precision_matched.csv",
+      "bytes": 23414,
+      "sha256": "0fd9d78228dd3df186669c6df767a153d2796c808d7ce97809dcd762f265d83c"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_precision_matched.json",
+      "bytes": 125054,
+      "sha256": "06b03d4f484c96c4f868497819b506e772932c0d56b3435396e9ef88ff0a5705"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_range.csv",
+      "bytes": 128660,
+      "sha256": "fd40fe67b7272dbe7f32c4836520f8fbc26c3af4afb85db0384fdf1b11b3f53b"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_range.json",
+      "bytes": 691611,
+      "sha256": "82b8bfd283ada07bba8d88935c8589391cea2ec1c5949f30ac317c3aa7cbfb30"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_range_bounded.csv",
+      "bytes": 42959,
+      "sha256": "de4dfcd003ac5093e1e13476be4622345cddbfdd399bb3a7ff8541ac8c140989"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_range_bounded.json",
+      "bytes": 248249,
+      "sha256": "a91604ae6a12654e98c37f76ef3041de974dd45716213382df19a8643651b1b1"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_smoke.csv",
+      "bytes": 5365,
+      "sha256": "1f1f6d2909da836ff8fb4a8aa47b3ddd88898195e37352d962c20c9767a91c2b"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_smoke.json",
+      "bytes": 40190,
+      "sha256": "fdb619cd165ec5d2dbf71222f97f4186fa14f8ff4adb7b64c4c48dc99c16f301"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_timing_bounded.csv",
+      "bytes": 46855,
+      "sha256": "04b8099dab2449ae63fc861f9f520bb6e3b09c38d8de7c1bf40f5308e4fb57ba"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_timing_bounded.json",
+      "bytes": 244289,
+      "sha256": "eab4bc687f3c1d0d33e08202fd7215b0746d67bb8cec5549e81bee113460d40e"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_timing_comparison.png",
+      "bytes": 216742,
+      "sha256": "5553c51611a1d17ecd15b92a3f775bf7ae95e8bdc3aadb9245bc707348c556f4"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_timing_comparison.svg",
+      "bytes": 139872,
+      "sha256": "3e68be9564dc62da7a95908d5dfecd9484a142567ab9cb53174f0a1ecd8d0d8f"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_cost.csv",
+      "bytes": 12390,
+      "sha256": "b833d6df63a742881bec5729b55f09f44470f5ff7091476e5f01872031364a04"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_cost.json",
+      "bytes": 77640,
+      "sha256": "d1e9b00dfec3b1163d8791e126e294a14fadc2eb523fecb702d1a703a4cd2940"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_current.csv",
+      "bytes": 7888,
+      "sha256": "95e2c43e2c6a3dc85e57d4f5e5a905e9b0d3f551b321927a530dec4121a5869d"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_current.json",
+      "bytes": 53658,
+      "sha256": "5b452fda890a1f7140f31f5ca5df4e596007b5e200d4b155412a6cad2b5bc569"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_current_sanity.csv",
+      "bytes": 1800,
+      "sha256": "9db4a9a6dd5d20ee6e112aa8618aa9ee908dbf44bd19993553e997fe9087e8cd"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_current_sanity.json",
+      "bytes": 22601,
+      "sha256": "e147bb078b63652058e941b7f3831bd61f91494b49cfd95c7228d918d38b3321"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_ideal.csv",
+      "bytes": 6643,
+      "sha256": "049d7ed8fb63350c48b8e81d9f44e37ab3e343ec910df4287290dd28a35e2628"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_ideal.json",
+      "bytes": 47271,
+      "sha256": "d48caa05d9246fb8765ca172675d1033ec7e3e3ed97cc0abdef8fc021f42e7df"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_noise.csv",
+      "bytes": 18047,
+      "sha256": "19200050de305bd5729032cb88b5f2fb617c210338b379857ef7de8b14211f43"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_noise.json",
+      "bytes": 105774,
+      "sha256": "be1bca52633e73e54dfef549508bad192ecbe0096cd1c04ff930b1587c99c635"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_sanity.csv",
+      "bytes": 1561,
+      "sha256": "bcc8528bd040d6565a7cf8b64dc69b87903fc89460568e110012e58e78231a8c"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_tool_jerk_sanity.json",
+      "bytes": 20206,
+      "sha256": "2d72c71b265630de99fcef4edbb96edd65c21fa6ea96479442788fa074b2dc0e"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_upstream_jerk_diagnostics.png",
+      "bytes": 626967,
+      "sha256": "7af1eac67cca829822e7642dc1d17f5c7e4eaaa824dc2ff0605413456a40c5a3"
+    },
+    {
+      "path": "acf_simulink/validation/robot_prediction_upstream_jerk_diagnostics.svg",
+      "bytes": 390166,
+      "sha256": "1c4766f54c1e2bdf3ad4f552ac81daf0de914e288be4240605d0c66fc6925e65"
+    },
+    {
+      "path": "acf_simulink/validation/selected_robot_gate_response.png",
+      "bytes": 156583,
+      "sha256": "7326d7be24d34fead9b191598114e2beb0b21097203ebdab4334c7036d1804ee"
+    },
+    {
+      "path": "acf_simulink/validation/selected_robot_gate_response.svg",
+      "bytes": 543167,
+      "sha256": "7855cb97f2630e43022e57d1eaed7bbab5fa495b80e211888581fc7500b06186"
+    },
+    {
+      "path": "acf_simulink/validation/selected_robot_gate_results.json",
+      "bytes": 17560,
+      "sha256": "9a656809c4e0a2dffd2b21984520560cfb7d1070c92a101e41185f95eecac3e6"
+    },
+    {
+      "path": "acf_simulink/validation/sharp_bump_control.png",
+      "bytes": 187647,
+      "sha256": "d97a169ca40a1c6b8dc0edbbcbb89b834daacebc79453ca20f83fb76dc550817"
+    },
+    {
+      "path": "acf_simulink/validation/sharp_bump_control.svg",
+      "bytes": 126017,
+      "sha256": "b879090ec573e7d14f146d7d337d4b8a60df9f8d054775fcafd4413eabf94d6e"
+    },
+    {
+      "path": "acf_simulink/validation/sharp_bump_control_results.json",
+      "bytes": 30369,
+      "sha256": "bd974e4b8148ac575f5290ebf7bc93df4a33b13b3ac43fdcf5295281900b02dd"
+    },
+    {
+      "path": "acf_simulink/validation/simple_results.json",
+      "bytes": 58117,
+      "sha256": "e87aeef955a91baf919903621dc624e6f0e00ef5e2893f647b37db042b499709"
+    },
+    {
+      "path": "acf_simulink/validation/spring_damper_sweep_results.csv",
+      "bytes": 49660,
+      "sha256": "2c23e80733efc49084527abcad0dae12ec94c5d6507e2953577ee3905f2a1f96"
+    },
+    {
+      "path": "acf_simulink/validation/spring_damper_sweep_results.json",
+      "bytes": 195514,
+      "sha256": "759136058f07b7d32ac1229378a5b9cc357ae6a11f252999505643a81618567e"
+    },
+    {
+      "path": "acf_simulink/validation/upstream_physics_review.json",
+      "bytes": 37429,
+      "sha256": "a8a4656194802da7cc410fef323f478d1d4d57f6f85c2c654b0299a23af3c915"
+    },
+    {
+      "path": "acf_simulink/validation/upstream_physics_review.md",
+      "bytes": 11259,
+      "sha256": "58ebb835f45e5701bb35505bf4cb5d3fa6252390652c61e19ba8a8b919ea2bef"
+    },
+    {
+      "path": "acf_simulink/validation/upstream_physics_review.py",
+      "bytes": 10479,
+      "sha256": "341035fa4de480f87c70a203150f096dfa58f1496324501c0a16ef85dcf86bc9"
+    },
+    {
+      "path": "acf_simulink/viewer/acf_viewer_template.html",
+      "bytes": 52565,
+      "sha256": "21bce910450f643df9cabb236a0e1aebce805c28140537b6d947bb0e630794fa"
+    }
+  ],
+  "frozenInputs": [
+    {
+      "archivePath": "reproducibility/frozen-source/acf_force_control_simple.slx",
+      "bytes": 434818,
+      "sha256": "c994da32f5293a0c5ddb8fba2af0789427641e413ba2627a3370e9d88f14345c"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_parameters.m",
+      "bytes": 1547,
+      "sha256": "60f0cdc6e6fa55fdd6a073c0ea36cc875ef0994561034ab5734f0db46aa7c1e2"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_prepare.m",
+      "bytes": 20139,
+      "sha256": "f087c24d37d8c5cf501794e6210de5919be8c96c1cddf716e94012c5cd35d0d8"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_run.m",
+      "bytes": 2625,
+      "sha256": "3f5aaaaf6a0dd6093deda065dcf20002114681eb6713073ec388bb45e06f7014"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_select_actuator.m",
+      "bytes": 3474,
+      "sha256": "b7f0bc8bb216b946335c3d0bdb2cb86bb85e2657667a03c8e0ca44235ae53740"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_select_controller.m",
+      "bytes": 605,
+      "sha256": "4cd39b103e7d8a0abe4da3f48e7c1a26f79b0202661f8c2be364f77518485bcc"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "archivePath": "reproducibility/frozen-source/helpers/acf_visualize.m",
+      "bytes": 6017,
+      "sha256": "d5a35b070c05072b9c0e6b0cac961a6ef1908e676c8c13203298665590df48f9"
+    }
+  ]
+}

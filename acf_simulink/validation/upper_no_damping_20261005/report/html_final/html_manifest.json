@@ -1,0 +1,1525 @@
+{
+  "status": "complete",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "authoredRevision": 1,
+  "preservedOriginalQueries": 71,
+  "markdown": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-upper-spring-20261005.md",
+  "markdownSha256": "0c1ef39725731afe142c58d80498594f875f8856d3bc455d689004307c80ef3f",
+  "inputsSha256": "b7519335e64555d7ef2ed6772f9c81a708ca520072185c24f14338a1fa51abc8",
+  "previousDataSha256": "b6506e9a40865cc17c8e7dcb71668f5dc731d8662f57c61db486ad4167e99450",
+  "queries": {
+    "bump_motion": {
+      "rowCount": 1001,
+      "source": {
+        "label": "Specified polynomial bump: analytical motion and inertia",
+        "files": [
+          "acf_simulink/validation/inertial_bump_calculation.json"
+        ],
+        "sha256": "a9425546df11a016e29d9358ce5fb1ff54cc3dfec661ea9427753cbc142eb8b4",
+        "kind": "analytical_calculation",
+        "caveats": [
+          "Required motion, not native controller qualification."
+        ]
+      }
+    },
+    "reference_PI_gains": {
+      "rowCount": 72,
+      "source": {
+        "label": "72 completed native rigid-reference PI gain cases",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json"
+        ],
+        "sha256": "ebff7b32e22a068588a37f0e8cf0c232de18bd569d38e79c9fd15c4ed5b7ab07",
+        "kind": "native_simulation",
+        "caveats": [
+          "Rigid attachments; not finite load-cell stiffness qualification."
+        ]
+      }
+    },
+    "reference_strategies": {
+      "rowCount": 56,
+      "source": {
+        "label": "56 completed native equal-sensing controller cases",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json"
+        ],
+        "sha256": "3d81e89f862dcd8141b9991f2f0048786936f6c259a28540b90a3707caadae50",
+        "kind": "native_simulation",
+        "caveats": [
+          "Rigid attachments; equal eight-case cohorts, no surface preview."
+        ]
+      }
+    },
+    "force_position_parts": {
+      "rowCount": 14,
+      "source": {
+        "label": "Primary manufacturer force, position and acquisition references",
+        "files": [
+          "acf_simulink/validation/realistic_force_position_sensors.json"
+        ],
+        "sha256": "e975bf49330d76ddbf9be869ef8696fcce76af7c4a87021ed8244ed1a19c511b",
+        "kind": "manufacturer_document_review",
+        "caveats": [
+          "No prototype accuracy or controller qualification established by catalog data."
+        ]
+      }
+    },
+    "coil_parts": {
+      "rowCount": 6,
+      "source": {
+        "label": "Primary voice-coil examples and continuous-force specifications",
+        "files": [
+          "acf_simulink/validation/realistic_voice_coil_examples.json"
+        ],
+        "sha256": "8f240405786f6747be94c3510289c86be4b7fcfc5b8aa65935fe8acd7e47bdf7",
+        "kind": "manufacturer_document_review",
+        "caveats": [
+          "Manufacturer ratings; final native real-coil check is separately source-bound."
+        ]
+      }
+    },
+    "cell_stiffness": {
+      "rowCount": 78,
+      "source": {
+        "label": "78 retained native load-cell stiffness recordings",
+        "files": [
+          "acf_simulink/validation/inertial_report_structural_summary.json"
+        ],
+        "sha256": "5ffd23828a0130f45dacf4bb2b2bc5fbfcc0fc146f46b8bfab5812f4b319a589",
+        "kind": "native_simulation",
+        "caveats": [
+          "72 common unshaped cases; six filtered-feedforward cases only at 110 MN/m. No new simulations in this report view."
+        ]
+      }
+    },
+    "force_error_balance": {
+      "rowCount": 5,
+      "source": {
+        "label": "Exact diagnostic balance of five retained native controller histories",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_v7_drive_shape_analysis_20260930.json"
+        ],
+        "sha256": "b358d898721f6b78909d98b3c7a86b0cf95995bdc82f08b69992d520f30d323f",
+        "kind": "native_trace_analysis",
+        "caveats": [
+          "Different worst-case peak times and seeds; physical truth is diagnostic only."
+        ]
+      }
+    },
+    "lower_spring_search": {
+      "rowCount": 168,
+      "source": {
+        "label": "168 completed native lower spring/damper tuning recordings",
+        "files": [
+          "acf_simulink/validation/inertial_mechanics_spring_chart_data_20260930.json"
+        ],
+        "sha256": "8621d86a454739c69d129b27223863567cb7d0732c22c31dfd1003e3bc9af9ec",
+        "kind": "native_simulation",
+        "caveats": [
+          "Best complete clean/noisy tuning per family; not equal gains. Search packing uses a feasible-preload interval."
+        ]
+      }
+    },
+    "lower_series_repeated_reference": {
+      "rowCount": 3,
+      "source": {
+        "label": "Three native ten-second repeated-heavy reference recordings",
+        "files": [
+          "acf_simulink/validation/inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json"
+        ],
+        "sha256": "dbfff16f8f5fd1ac306b170cb61ddf262668657897717b4a40166d20d7d1b4fe",
+        "kind": "native_simulation",
+        "caveats": [
+          "Reference response envelopes; final actual acquisition and force gate qualified separately."
+        ]
+      }
+    },
+    "screw_pitch_sizing": {
+      "rowCount": 3,
+      "source": {
+        "label": "Analytical screw-pitch inertia and holding-current sizing",
+        "files": [
+          "acf_simulink/validation/inertial_actuators_chart_data_v7.json"
+        ],
+        "sha256": "13867b3f3d5c81289da503a2d334de8087c68b71866ccbe18577ea6eb92b4640",
+        "kind": "analytical_calculation",
+        "caveats": [
+          "Current alone does not establish continuous motor torque. Dynamic controller qualification is separate."
+        ]
+      }
+    },
+    "actuator_pair_reference": {
+      "rowCount": 8,
+      "source": {
+        "label": "Eight completed native lower-series actuator comparison recordings",
+        "files": [
+          "acf_simulink/validation/inertial_actuators_lower_series_v1_reviewed_comparison.json"
+        ],
+        "sha256": "81add0605fd00841068f69ac0fba91fef5b0aecbc93debb70662effb452336a6",
+        "kind": "native_simulation",
+        "caveats": [
+          "Four matched conditions, one bump per ten-second recording, source reference sensing; continuous motor sizing separate."
+        ]
+      }
+    },
+    "electrical_reference": {
+      "rowCount": 7,
+      "source": {
+        "label": "92 distinct lower-series winding and supply configurations",
+        "files": [
+          "acf_simulink/validation/normal_voltage_20260930_core_summary.json"
+        ],
+        "sha256": "643654871fcbacb8eee2513b360a6013950649ca9b4f1319eaa719818f9bff18",
+        "kind": "native_simulation",
+        "caveats": [
+          "95 durable executions including three repeats; identified reference response envelopes, not final acquisition."
+        ]
+      }
+    },
+    "lower_series_force_balance": {
+      "rowCount": 1,
+      "source": {
+        "label": "Exact native force balance at the selected lower-series worst endpoint",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930.json"
+        ],
+        "sha256": "3ff306905ce8cb29fd48a04facc458d58a85ec9c0c42997735a9a801d53782d2",
+        "kind": "native_trace_analysis",
+        "caveats": [
+          "One retained worst reference trace; signed components interact and are not separate uncertainty budgets."
+        ]
+      }
+    },
+    "actual_mechanics_tolerance": {
+      "rowCount": 72,
+      "source": {
+        "label": "72 executed actual-stiffness/damper force histories and analytical20mm packing",
+        "files": [
+          "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json"
+        ],
+        "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f",
+        "kind": "native_simulation_and_analytical_geometry_rescore",
+        "caveats": [
+          "Force histories are unchanged;20mm geometry rescore adds zero force simulations."
+        ]
+      }
+    },
+    "final_sensing_OAT": {
+      "rowCount": 42,
+      "source": {
+        "label": "42 final-acquisition native sensing calibration records",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_engineered_sensing/inertial_uncertainty_engineered_sensing_20260930_results.json"
+        ],
+        "sha256": "a7e931117af9de95b0f0735b12ff283fe39bccbec1cb5e0378eab3d06f839ebc",
+        "kind": "native_simulation",
+        "caveats": [
+          "One-at-a-time channel changes; not an independently additive allowance."
+        ]
+      }
+    },
+    "final_robot_OAT": {
+      "rowCount": 14,
+      "source": {
+        "label": "14 final-acquisition native robot response mismatch records",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_robot_fine_delay/inertial_uncertainty_robot_fine_delay_20260930_results.json"
+        ],
+        "sha256": "a2610b8951f3dd82f883afe387d5229b8f91f0c0e972967654de8a1dce91900f",
+        "kind": "native_simulation",
+        "caveats": [
+          "Fixed timing mismatch is distinct from random jitter or changing loaded dynamics."
+        ]
+      }
+    },
+    "final_joint_budget": {
+      "rowCount": 60,
+      "source": {
+        "label": "60 native simultaneous26-dimensional calibration-error samples",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.json"
+        ],
+        "sha256": "2cfaa5e372a72df1c7003b33d1f4a2dec3ab0dd6ec4c7d1c563d85c5149ad8ed",
+        "kind": "native_simulation",
+        "caveats": [
+          "Two endpoints, three seeds, ten deterministic corners; not full-range joint uncertainty or exhaustive hypercube."
+        ]
+      }
+    },
+    "final_current_response": {
+      "rowCount": 12,
+      "source": {
+        "label": "12 native repeated-heavy current-response and ideal-voltage alternatives",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json"
+        ],
+        "sha256": "6ae6636e1097b5fc4c797eb2dd185da9b3df37ed5b2405746127bda5de9f61ae",
+        "kind": "native_simulation",
+        "caveats": [
+          "Seven bumps in10s, two seeds;100us selected,50/150us bounded options; prior18.1mm metadata retained in these force-identical dynamics."
+        ]
+      }
+    },
+    "final_electrical": {
+      "rowCount": 16,
+      "source": {
+        "label": "16 final-source native electrical records over15distinct conditions",
+        "files": [
+          "acf_simulink/validation/normal_voltage_20260930_final_sensor_subset.json"
+        ],
+        "sha256": "d272e3b7cef0b8a5cdcd3e1cceec2f7c925d3996b69936fcd4d32a55b1c2cb8b",
+        "kind": "native_simulation",
+        "caveats": [
+          "Includes one parity duplicate; cold/hot/headroom test is a bounded heavy endpoint study, not full-grid real-coil qualification."
+        ]
+      }
+    },
+    "joint_budget_plan": {
+      "rowCount": 10,
+      "source": {
+        "label": "Declared26-dimensional residuals for executed60 native joint cases",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_joint_budget_plan.json"
+        ],
+        "sha256": "14648b6a1b23bd67d2bafe77897b8fdc32dd479e4ad6e0380e981cf6f707ecef",
+        "kind": "executed_experiment_design",
+        "caveats": [
+          "Ten sampled sign patterns; no exhaustive26-dimensional bound."
+        ]
+      }
+    },
+    "final_acquisition_endpoints": {
+      "rowCount": 9,
+      "source": {
+        "label": "Nine full10s native final-acquisition endpoint recordings",
+        "files": [
+          "acf_simulink/validation/normal_contact_trial_inertial_v8_manifest.json"
+        ],
+        "sha256": "89b0b7d60edff5d6723256a36e33534b662dc55fa5362efda155ad82781470c2",
+        "kind": "native_simulation",
+        "caveats": [
+          "One clean heavy and8noisy endpoints; final3500 range is separately scored."
+        ]
+      }
+    },
+    "selected_settings": {
+      "rowCount": 33,
+      "source": {
+        "label": "Frozen final mechanism and controller parameters",
+        "files": [
+          "acf_simulink/validation/inertial_report_selected_settings.json"
+        ],
+        "sha256": "c3b98e99b0c98d3cefa5cc0473d32e5abccd952ae6a72aac0901609a48705f9c",
+        "kind": "native_model_parameter_review",
+        "caveats": [
+          "Parameter values are source-bound; native qualification and real-coil variants are separately recorded."
+        ]
+      }
+    },
+    "acceleration_and_drive_parts": {
+      "rowCount": 3,
+      "source": {
+        "label": "Primary ADXL1002, AD7606C-18 and TA115 specifications",
+        "files": [
+          "acf_simulink/validation/inertial_report_acceleration_drive_parts.json"
+        ],
+        "sha256": "725a16d445385d69ca51195c688a79a4e3e748a9ce464dcda44bffda24740f82",
+        "kind": "manufacturer_document_review",
+        "caveats": [
+          "Noise, calibration, hot load, timing and safe operating area remain assembled prototype requirements."
+        ]
+      }
+    },
+    "qualified_range": {
+      "rowCount": 3500,
+      "source": {
+        "label": "3500 audited full-history final-acquisition nominal cases",
+        "files": [
+          "acf_simulink/validation/inertial_report_final_grid_rows_20260930.json"
+        ],
+        "sha256": "f75bd5c1bc927083d16952cb390cfb18923f07891da700936b5569038fbc40b7",
+        "kind": "native_simulation",
+        "caveats": [
+          "All400001 native samples per recording, including startup. Five knownS masses, tenforce targets, sevenfixed angles, twodrag ratios and fiveclean/noisy conditions; finite nominal qualification.",
+          "Original CSV and coverage audit are SHA-bound. Display id is globalCaseId; partitionCaseId and rawAngle_deg preserve original fields.",
+          "Two execution recipes differ only in owned temporary SDI storage; 122 earlier recovery histories are excluded from3500 unique identities."
+        ]
+      }
+    },
+    "final_worst_excerpt": {
+      "rowCount": 22001,
+      "source": {
+        "label": "Every native10us sample in the retained worst-case bump window",
+        "files": [
+          "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json"
+        ],
+        "sha256": "dc72f67504a0bb3ff9d07c3bcc814e8c4c62a0a308173ffd85e62da42765c10e",
+        "kind": "native_simulation_excerpt",
+        "caveats": [
+          "22001 consecutive native samples in the displayed window; metric computed from all400001 original samples. No new simulation.",
+          "Force is actual workpiece-normal reaction; gate trace held from native100Hz decisions. Full original trace and aggregate are SHA-bound."
+        ]
+      }
+    },
+    "mixed_mechanics_identification": {
+      "rowCount": 6,
+      "source": {
+        "label": "Assembled lower-mechanics identification: three paired stress seeds",
+        "files": [
+          "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930_chart_data.json"
+        ],
+        "sha256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660",
+        "kind": "native_simulation",
+        "caveats": [
+          "Six complete4s native histories at one heavy combined corner; actual k+20%/c−20%; exactly known actual k/c supplied in the mitigation.",
+          "A narrow paired comparison, not a k/c calibration-error allowance or full joint parameter box."
+        ]
+      }
+    },
+    "final_actuator_comparison": {
+      "rowCount": 9,
+      "source": {
+        "label": "Final actual-acquisition coil/screw native acceptance",
+        "files": [
+          "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json"
+        ],
+        "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+        "kind": "native_simulation",
+        "caveats": [
+          "Four matched4s/one-bump pairs plus one5µs screw refinement; all nine full histories scored.",
+          "Screw has no complete range/joint calibration qualification and the RE25 continuous catalog rating fails."
+        ]
+      }
+    },
+    "full_grid_hot_headroom": {
+      "rowCount": 5,
+      "source": {
+        "label": "Conditional hot-winding headroom across all3500 nominal identities",
+        "files": [
+          "acf_simulink/validation/normal_voltage_final_grid_hot_mapping_20260930.json"
+        ],
+        "sha256": "e917319f0009e0073d1f257c1becd502f6c1eb4e809442780fe804d79ab5c54e",
+        "kind": "read_only_analysis",
+        "caveats": [
+          "3498 sufficient conservative algebraic bounds plus two explicit native exception identities support31V under stated nominal constant-Kf/matched100µs assumptions.",
+          "Not3500 real-winding simulations, thermal/stroke qualification, unknown hot Kf or full joint uncertainty headroom."
+        ]
+      }
+    },
+    "native_headroom_exception": {
+      "rowCount": 2,
+      "source": {
+        "label": "Native hot31V proof for the previously uncovered bound exception",
+        "files": [
+          "acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof.json"
+        ],
+        "sha256": "e0e0b4ed3c949efae9c81f115974e12087518076d6b55ddd8f3e43970042f9ef",
+        "kind": "native_simulation",
+        "caveats": [
+          "Exactly two new4s native histories: generic reference matching global3492 and normalized known real-hot coil31V.",
+          "Combined final electrical count18 native/17 unique; these two are additional to the original16-run figure."
+        ]
+      }
+    },
+    "final_solver_refinement": {
+      "rowCount": 3,
+      "source": {
+        "label": "Final global-worst numerical refinement",
+        "files": [
+          "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json"
+        ],
+        "sha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35",
+        "kind": "native_simulation",
+        "caveats": [
+          "Original global3489 10µs history and two qualified5/2.5µs full-native reruns; four gate channels remain100Hz.",
+          "One extra unqualified native audit-return and wrapper-only rejection remain separately preserved."
+        ]
+      }
+    },
+    "final_long_joint_budget": {
+      "rowCount": 4,
+      "source": {
+        "label": "Four original30s simultaneous-error stress repeats",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.json"
+        ],
+        "sha256": "7900999f5090b2e9c1e1ca3f2a6b359359a9c494d7ec8518b4b1aeeb00a3a23e",
+        "kind": "native_simulation",
+        "caveats": [
+          "Four30s/24-bump histories, heavy corner8 seeds7/29/1729 and light corner3 seed29; every3,000,001 native samples scored.",
+          "Worst0.490396N leaves only0.009604N stress reserve; finite corner scope, not a practical safety margin or full continuous error box."
+        ]
+      }
+    },
+    "final_static_calibration_long": {
+      "rowCount": 4,
+      "source": {
+        "label": "Tighter static calibration: four paired30s repeats",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.json"
+        ],
+        "sha256": "34386cf4796359563a3e98955ae4eb0cdf82577bd11a7fcb5919a01204f13711",
+        "kind": "native_simulation",
+        "caveats": [
+          "Exactly sixteen static bias/gain/frame/identified residuals halved; noise, AA/pipeline/robot residuals, actual mechanics and100µs current response unchanged.",
+          "Four finite corner repeats,24 bumps each, every3,000,001 native samples scored; worst0.415310748N. No full tighter hyperbox or full-grid joint qualification.",
+          "Targets require assembled warm calibration; catalog specifications alone do not guarantee them."
+        ]
+      }
+    },
+    "static_calibration_comparison": {
+      "rowCount": 4,
+      "source": {
+        "label": "Paired original/tighter static calibration30s histories",
+        "files": [
+          "acf_simulink/validation/inertial_uncertainty_v8_calibration_refinement.json"
+        ],
+        "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e",
+        "kind": "native_simulation",
+        "caveats": [
+          "Eight full native histories in four exact paired conditions;16 static residual halves only, same noise/timing/robot/mechanics/current.",
+          "Original worst0.490396N and calibrated-static worst0.415311N; all3,000,001 samples per history determine metrics.",
+          "Figure history uses all-native min/max bins. Prototype targets require assembled verification; no complete refined hyperbox claim."
+        ]
+      }
+    },
+    "mixed_static_calibration": {
+      "rowCount": 6,
+      "source": {
+        "label": "Static calibration at known assembled mechanical stress corner",
+        "files": [
+          "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json"
+        ],
+        "sha256": "d848e6290bda98baf244aa7863106fa7b5920c7c5c36438e225d112aa7d15666",
+        "kind": "native_simulation",
+        "caveats": [
+          "Three new4s native cases plus three reused known-actual k/c baselines; every400001 sample scored.",
+          "Exactly16 static residuals halved; all mechanics, identified k/c, noise, acquisition/robot timing and PI/current response unchanged.",
+          "One heavy combined mechanical corner/three seeds; no complete calibrated mechanical hyperbox."
+        ]
+      }
+    },
+    "paired_static_peak_diagnostic": {
+      "rowCount": 2,
+      "source": {
+        "label": "Paired quiet-force offset and worst transient diagnosis",
+        "files": [
+          "acf_simulink/validation/inertial_report_paired_calibration_diagnostic_20260930.json"
+        ],
+        "sha256": "037867622785b34af6e4b5627a1baf84ac3476aae2c014f7c19efeaf98d47ffa",
+        "kind": "read_only_analysis",
+        "caveats": [
+          "Worst entry shifts10us across a10kHz current-command update; individual balance terms at the two peaks must not be compared as isolated bottlenecks. Quiet windows are explicitly defined in the source diagnostic.",
+          "Derived from two retained native-worst diagnostics; zero additional simulations."
+        ]
+      }
+    },
+    "calibrated_hot_headroom": {
+      "rowCount": 7,
+      "source": {
+        "label": "Pointwise hot-winding demand of seven calibrated native histories",
+        "files": [
+          "acf_simulink/validation/normal_voltage_calibrated_static_headroom_20260930.json"
+        ],
+        "sha256": "9f15e7dc080d058d77bd3766ccaeff87eb90f9a7fc925d5f2f2ba9ed85c240b1",
+        "kind": "read_only_analysis",
+        "caveats": [
+          "Four existing30s and three existing4s native histories;13,200,007 samples examined, zero new real-coil simulations. Residual Kf identification is preserved under uniform current-domain rescaling.",
+          "Maximum31.107069V occurs for one10us sample;32V usable output has0.892931V minimum demand reserve under constant winding and matched100us response assumptions.",
+          "This is an algebraic unclipped-trajectory screen, not a native31V failure, native32V force qualification, dropout specification or thermal/hardware qualification."
+        ]
+      }
+    },
+    "budget_adc_screen": {
+      "rowCount": 42,
+      "source": {
+        "label": "168 native ADC bandwidth/rate recordings",
+        "files": [
+          "acf_simulink/validation/budget_adc_screen_summary_20261002.json"
+        ],
+        "sha256": "1f11d4426fa219e6a8b6d0e7cffc36a893da1b5f86c559c6e84cc920cc250712",
+        "kind": "native_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_adc_long": {
+      "rowCount": 4,
+      "source": {
+        "label": "Repeated-bump calibration comparisons",
+        "files": [
+          "acf_simulink/validation/budget_adc_long_summary_20261002.json"
+        ],
+        "sha256": "f08d9bfe33039170b0bc6ef2ab32fbe952332846540e28d57b775ed923593dbc",
+        "kind": "native_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_accelerometer_screen": {
+      "rowCount": 11,
+      "source": {
+        "label": "36 native required sensor-response envelope recordings",
+        "files": [
+          "acf_simulink/validation/budget_accelerometer_screen_summary_20261002.json"
+        ],
+        "sha256": "82fa2daba3321b3166f076e8075872e4d0638bb61e9b21c92b7b04e04e7e3d0f",
+        "kind": "native_response_envelope_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_adc_parts": {
+      "rowCount": 7,
+      "source": {
+        "label": "Primary ADC contracts and indicative component prices",
+        "files": [
+          "acf_simulink/validation/adc_cost_component_review_20261002.json"
+        ],
+        "sha256": "8ca1de208dea39dc3de782851346c9b9b9569fbacd6d04700e3583821d15ffd2",
+        "kind": "manufacturer_document_review",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_adc_electrical": {
+      "rowCount": 22,
+      "source": {
+        "label": "Noise, range and readout calculations",
+        "files": [
+          "acf_simulink/validation/adc_cost_component_review_20261002.json"
+        ],
+        "sha256": "8ca1de208dea39dc3de782851346c9b9b9569fbacd6d04700e3583821d15ffd2",
+        "kind": "analytical_calculation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_accelerometer_parts": {
+      "rowCount": 5,
+      "source": {
+        "label": "Primary accelerometer contracts and indicative prices",
+        "files": [
+          "acf_simulink/validation/accelerometer_cost_component_review_20261002.json"
+        ],
+        "sha256": "4ce60370978e5a1dcb5de886481807eb491b5d6aa85cdbc4d9f9b496b9fab845",
+        "kind": "manufacturer_document_review",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_adc_range": {
+      "rowCount": 700,
+      "source": {
+        "label": "700 native lower-cost acquisition grid recordings",
+        "files": [
+          "acf_simulink/validation/budget_adc_range_grid_20261002.json"
+        ],
+        "sha256": "d9652fb7ff8e4de9667efe461e0caef0ea52b1ad222d4e2adc02c06530eb3ae3",
+        "kind": "native_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_sensing_robustness": {
+      "rowCount": 11,
+      "source": {
+        "label": "Executed noise, timing and solver followups",
+        "files": [
+          "acf_simulink/validation/budget_sensing_robustness_20261002.json"
+        ],
+        "sha256": "b49ebc4ca9053a057ae5455261bfc685d491cfd7bb58940c9a332f0ff2ef56f6",
+        "kind": "native_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_accelerometer_stress": {
+      "rowCount": 7,
+      "source": {
+        "label": "49 native sensor/calibration/drive envelope comparisons",
+        "files": [
+          "acf_simulink/validation/budget_accelerometer_stress_summary_20261002.json"
+        ],
+        "sha256": "4486f1f02a1c3108024d82b13ce9a293eead1558d6e71bff88337db5ec1bee55",
+        "kind": "native_response_envelope_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_dynamic_matching": {
+      "rowCount": 1,
+      "source": {
+        "label": "Seven native tighter dynamic-matching comparisons",
+        "files": [
+          "acf_simulink/validation/budget_dynamic_matching_summary_20261002.json"
+        ],
+        "sha256": "275e54f949e9c152c0d9623b6b98285172f8ea348d913ec7e8480baefeb8e8ef",
+        "kind": "native_response_envelope_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_adc_hot_coil": {
+      "rowCount": 1,
+      "source": {
+        "label": "Seven native selected-acquisition hot-winding comparisons",
+        "files": [
+          "acf_simulink/validation/budget_adc_hot_coil_summary_20261002.json"
+        ],
+        "sha256": "0af83dfc3ad3516198dfca5aa877af1fdcc61f99bea35324fb02470ab4099c72",
+        "kind": "native_simulation",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "budget_sensing_execution": {
+      "rowCount": 26,
+      "source": {
+        "label": "Complete 999-recording sensing-cost execution ledger",
+        "files": [
+          "acf_simulink/validation/budget_sensing_execution_ledger_20261002.json"
+        ],
+        "sha256": "d1e8ea985a6ea9eaf4f74c21841f858c4ab853280c9ca4830378f949d8d7dad0",
+        "kind": "native_execution_audit",
+        "caveats": [
+          "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+        ]
+      }
+    },
+    "report_model_schematics": {
+      "rowCount": 4,
+      "source": {
+        "label": "Documented model and acquisition schematic contracts",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/diagram_contract.json"
+        ],
+        "sha256": "d4c38282445797d5c57709c7a2cd512d7ec1861b48da82239fc9f8d4991fedca",
+        "kind": "explanatory_configuration_not_new_force_qualification",
+        "caveats": [
+          "The conceptual layouts are not dimensional drawings or new experiments.",
+          "The acquisition cutoff is a complete-response envelope, not an unqualified sensor specification.",
+          "Delay sums are low-frequency calculations; native filters and clocks retain their full behavior."
+        ]
+      }
+    },
+    "ml_force_training": {
+      "rowCount": 37,
+      "source": {
+        "label": "Force-network training and independent gain selection",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/force_training_reviewed.json",
+          "acf_simulink/validation/ml_force_20261005/training.json",
+          "acf_simulink/validation/ml_force_20261005/selected_gain.json"
+        ],
+        "sha256": "0e8ebf718d0d387443361d0ca2ac2ed38afa0e43ae5f9482790f1813439e20af",
+        "sourceFileSha256": {
+          "acf_simulink/validation/ml_force_20261005/training.json": "c4cb919beaefa2f9a6eed6712b27cce9a89914f8e22b39c3755296e53f0ba87f",
+          "acf_simulink/validation/ml_force_20261005/selected_gain.json": "97fa5f19beda0ceb9e2f97d5fea017fa0cae321daa10bb81ca8ff3b3f9153532"
+        },
+        "kind": "reviewed_native_experiment",
+        "caveats": [
+          "180-epoch supervised approximate-current teacher fit. Whole-trajectory training/selection split. Teacher fit is not closed-loop force qualification."
+        ]
+      }
+    },
+    "ml_force_test": {
+      "rowCount": 12,
+      "source": {
+        "label": "Force-network paired native holdout and implementation checks",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/force_holdout_reviewed.json",
+          "acf_simulink/validation/ml_force_20261005/summary.json",
+          "acf_simulink/validation/ml_force_20261005/final_checks.json"
+        ],
+        "sha256": "f12dbbdef905e5ac9c855961b60b26f2de3f5e19286e91cf6337df6bd30d6264",
+        "sourceFileSha256": {
+          "acf_simulink/validation/ml_force_20261005/summary.json": "ae14f7451b791621e787d5c8110a145e107368cb08a6bdf452ed79117d2f3687",
+          "acf_simulink/validation/ml_force_20261005/final_checks.json": "caeb79b71e28cab5c870115cf049e2e6959803bb2a58a2f9ed5d48de228bed91"
+        },
+        "kind": "reviewed_native_experiment",
+        "caveats": [
+          "Twelve untouched paired native trajectories; whole-history normal-force scores including startup. Finite nominal and selected calibration/mechanics tests; not hardware or full-grid qualification."
+        ]
+      }
+    },
+    "ml_robot_training": {
+      "rowCount": 12,
+      "source": {
+        "label": "Robot-network trajectory-level training and selection",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/robot_training_reviewed.json",
+          "acf_simulink/validation/ml_robot_20261005_training/training_summary.json"
+        ],
+        "sha256": "17f050a1524a27bc6b663933b0a8bc3b9ee6902aa6c539a7b669cdc1eb8e1230",
+        "sourceFileSha256": {
+          "acf_simulink/validation/ml_robot_20261005_training/training_summary.json": "bc16cc449aa169e186948fc958fa046f93b5ebfd2fe75a29d2f31295605a148b"
+        },
+        "kind": "reviewed_native_experiment",
+        "caveats": [
+          "Native logged recenter-law imitation with eight training and four selection trajectories. Raw-network teacher reproduction checked separately from the hard envelope. No test trajectories used for fitting."
+        ]
+      }
+    },
+    "ml_robot_test": {
+      "rowCount": 11,
+      "source": {
+        "label": "Robot-network paired native holdout",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/robot_holdout_reviewed.json",
+          "acf_simulink/validation/ml_robot_20261005_figures_final/summary.json",
+          "acf_simulink/validation/ml_robot_20261005_heldout/results.json"
+        ],
+        "sha256": "da62517936c57c2671b43a97d395a00f2301bf331419abcaba1560d88f4bc0b1",
+        "sourceFileSha256": {
+          "acf_simulink/validation/ml_robot_20261005_figures_final/summary.json": "14f818b08a8009f817e93f596c49d45eeb0cffd321bd866f75152ac27730b55e",
+          "acf_simulink/validation/ml_robot_20261005_heldout/results.json": "f4e6f966c60b4bc059bfcd60e4d69fef7db857de1b64ce298620360f875b044d"
+        },
+        "kind": "reviewed_native_experiment",
+        "caveats": [
+          "Eleven untouched robot-policy pairs, with unchanged deterministic fast force control and hard safety constraints. Eight nominal six-second pairs and three selected eight-second stress pairs; no full-grid or hardware qualification."
+        ]
+      }
+    },
+    "ml_combined_test": {
+      "rowCount": 4,
+      "source": {
+        "label": "Two fixed learned policies in the same native closed loop",
+        "files": [
+          "acf_simulink/validation/ml_report_20261005/combined_holdout_reviewed.json",
+          "acf_simulink/validation/ml_combined_20261005_figures/summary.json",
+          "acf_simulink/validation/ml_combined_20261005/results.json"
+        ],
+        "sha256": "b62aef982c05dd2cd9db534a7b1e0f5511e2bda3b91cf9637d030a11977c5f59",
+        "sourceFileSha256": {
+          "acf_simulink/validation/ml_combined_20261005_figures/summary.json": "c139bcc20b3cae11aec187c448c4a6cc9c115410cb85c06bb1972562875fd2cb",
+          "acf_simulink/validation/ml_combined_20261005/results.json": "64b879f7d216837fd39bb974e89bace407706353577fe164203488634995a129"
+        },
+        "kind": "reviewed_native_experiment",
+        "caveats": [
+          "Four new predeclared eight-second pairs. Fixed independently trained networks and force gain 1. Both actions active; no joint/end-to-end training, retuning, full uncertainty-box or physical qualification."
+        ]
+      }
+    },
+    "rl_method_contract": {
+      "rowCount": 10,
+      "source": {
+        "label": "Approved task and locked recurrent-policy methodology",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_method_contract.json",
+          "acf_simulink/validation/rl_budget3h_20261005/study_contract.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selection_contract_band_v2.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+        ],
+        "sha256": "0cd1256d13a65e69ba6af5e79a4872d178fb3467c41d0c609a3108283c7fbd50",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/study_contract.json": "51783197a333ea813fc85a08fc8636889e659b1fd960136a3f4d56fbb58d1d60",
+          "acf_simulink/validation/rl_budget3h_20261005/selection_contract_band_v2.json": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+        },
+        "kind": "method_and_user_constraints",
+        "caveats": []
+      }
+    },
+    "rl_budget_parts": {
+      "rowCount": 1,
+      "source": {
+        "label": "Live quantity-one chip prices and primary ADXL354C/M08 specifications",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_budget_parts.json",
+          "acf_simulink/validation/rl_budget3h_20261005/budget_parts_review_20261005.json"
+        ],
+        "sha256": "8042d76252893ffbe4999acc7dcd459896d41ae044f514130a793c51efa274e0",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/budget_parts_review_20261005.json": "86fa106b813b962ab7cdfbe763cd905d630d68f1d4fd85a0a4a95e5b48197329"
+        },
+        "kind": "manufacturer_and_distributor_review",
+        "caveats": [
+          "Chips for the user's PCB; amplifier, board, clock, assembly and shipping costs are additional.",
+          "The 1.9 kHz matched response is a declared model envelope, not a complete measured ADXL354 transfer."
+        ]
+      }
+    },
+    "rl_budget_sensing_contract": {
+      "rowCount": 1,
+      "source": {
+        "label": "Budget sensing, noise, ADC scaling and 50 µs current-response inputs",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_budget_sensing_contract.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/preparation_acceptance.json"
+        ],
+        "sha256": "80637db7a292c8e99211c5322d960a943b2d5b63fab6c7f3fcd555184a12502e",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/preparation_acceptance.json": "f2526a960da6b7ea96bd3fe06e5cf8177ca1247c2d46c5949e5e3a9ddf7cc82b"
+        },
+        "kind": "frozen_model_assumptions",
+        "caveats": [
+          "This record binds preparation; only completed final results establish finite simulation outcomes."
+        ]
+      }
+    },
+    "rl_ppo_training": {
+      "rowCount": 11,
+      "source": {
+        "label": "Executed PPO runs and preserved rejections",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_ppo_training.json",
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/ppo_final_ledger_v1/ledger.json"
+        ],
+        "sha256": "0801e91b3df0343daa8814a905bd58b975521ec5b40380bb8afe8762e2515142",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/ppo_final_ledger_v1/ledger.json": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946"
+        },
+        "kind": "optimizer_training",
+        "caveats": [
+          "Decisions used by completed updates and the 98,304 post-collection rejected decisions are separate.",
+          "Different warm starts, seeds, reward functions and development banks are explicit; this is not a one-factor causal comparison."
+        ]
+      }
+    },
+    "rl_reward_search": {
+      "rowCount": 1,
+      "source": {
+        "label": "Audited episodic reward-search counts and checkpoint ancestry",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_reward_search.json",
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json"
+        ],
+        "sha256": "904d2c794443ba9afee2ee07c2a8ae990bdda9f68217a29a3fcdcc0880a6a36c",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f"
+        },
+        "kind": "reward_search_execution",
+        "caveats": [
+          "Evolved directions differ from total stored neural parameters; read the ancestry and completed-stage counts.",
+          "Recovery replays and unscored interrupted work are not new training generations."
+        ]
+      }
+    },
+    "rl_initialization_probes": {
+      "rowCount": 1,
+      "source": {
+        "label": "Separate physics-initialization comparisons and implementation audits",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_initialization_probes.json",
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_auxiliary_ledger.json"
+        ],
+        "sha256": "0fe51bafad79199c02b96dc6ace73482de476d8ee9b34c7dc2dd989131dd0ff5",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_auxiliary_ledger.json": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6"
+        },
+        "kind": "development_initialization",
+        "caveats": [
+          "These are separate episode evaluations, not additional evolutionary generations or fresh qualification."
+        ]
+      }
+    },
+    "rl_budget_reward_search": {
+      "rowCount": 1,
+      "source": {
+        "label": "Separate budget-chain screen, history attenuation and constrained search",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_budget_reward_search.json",
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_ledger.json"
+        ],
+        "sha256": "1b436ba8582c2f1c2bcca5e6a453d3c5b34b9d2b4094709251d48ea349d58c73",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_ledger.json": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4"
+        },
+        "kind": "budget_policy_execution",
+        "caveats": [
+          "The final winner retains previously evolved weights with reward-selected history attenuation; the short budget CMA continuation did not outrank it.",
+          "Winner development coverage is its own 20-case training screen and 28-case selection, not the alternate policy's 84-case audit."
+        ]
+      }
+    },
+    "rl_selected_candidate": {
+      "rowCount": 1,
+      "source": {
+        "label": "Selection-only review and selected weight identity",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_selected_candidate.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/00_rl_budget3h_20261005_selection_contract_band_v2.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/01_rl_budget3h_20261005_study_contract.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/02_rl_budget3h_20261005_reward_search_completed_ledger.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/04_ppo_final_ledger_v1_ledger.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/06_reward_search_budget_bootstrap_8210_results.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/07_reward_search_budget_8211_selection.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/08_rl_budget3h_20261005_reward_search_budget_ledger.json"
+        ],
+        "sha256": "9f8e071e16c32d8e388ff0ccdc1bc885490217a6ca2c9b5b3f2799ca2cb2571c",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/00_rl_budget3h_20261005_selection_contract_band_v2.json": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/01_rl_budget3h_20261005_study_contract.json": "775bfef98290d159b60d8d131c709cb79658f51e007f23344e48a7393c585934",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/02_rl_budget3h_20261005_reward_search_completed_ledger.json": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/04_ppo_final_ledger_v1_ledger.json": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/06_reward_search_budget_bootstrap_8210_results.json": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/07_reward_search_budget_8211_selection.json": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/08_rl_budget3h_20261005_reward_search_budget_ledger.json": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4"
+        },
+        "kind": "candidate_selection",
+        "caveats": [
+          "Weights are selected using development evidence only, before final outcomes."
+        ]
+      }
+    },
+    "rl_implementation_checks": {
+      "rowCount": 4,
+      "source": {
+        "label": "GPU benchmark, replay guard and native evaluation acceptance",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_implementation_checks.json",
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json",
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/inverse_replay_v1/results.json",
+          "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/acceptance_results.json",
+          "acf_simulink/validation/final_driver_checks/final_budget_selected_acceptance/results.json"
+        ],
+        "sha256": "161fb42a1f89d11bca7659ff60ea40b040548ff4b19e6a51498480e9b22ef190",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json": "bd904fed5412d7fc92cb56de316bea0955396190dfe9e841236d499542770cb3",
+          "acf_simulink/validation/rl_budget3h_20261005/runner_checks/inverse_replay_v1/results.json": "d9b66129ddef9cc7351a7fd653be40720c4f571a11cbb3662c8de2305bff89ae",
+          "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/acceptance_results.json": "35f8e589cba5629a7c4b2d9322734cc58955933ee18bfe09706279235d737be2",
+          "acf_simulink/validation/final_driver_checks/final_budget_selected_acceptance/results.json": "6f835a9242e971706a00d28a1b20cbfc41c4a8ecc79aa386d1a229a0cf9a5ad3"
+        },
+        "kind": "software_verification",
+        "caveats": [
+          "Desktop timing is not a microcontroller deadline measurement; high-gain C and PyTorch arithmetic are not interchangeable."
+        ]
+      }
+    },
+    "rl_fresh_tests": {
+      "rowCount": 64,
+      "source": {
+        "label": "Fresh 4–6 s paired tests",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_fresh_tests.json",
+          "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+        ],
+        "sha256": "71b66b7784ec988f1dbccf2340c3f1c8d954060caf62a15423ad5fa76cba7932",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/results.json": "b01be11df8801e88766d611b3159e201bc5555cffaaee33eb3c3f4bdaeb36b7c",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+        },
+        "kind": "locked_native_evaluation",
+        "caveats": [
+          "Every native force sample is scored, including startup and endpoint.",
+          "The ±7.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+          "Finite simulated cases and noise seeds do not establish physical sanding performance."
+        ]
+      }
+    },
+    "rl_nominal_grid": {
+      "rowCount": 1400,
+      "source": {
+        "label": "Fresh-seed nominal hot-coil grid",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_nominal_grid.json",
+          "acf_simulink/validation/rl_budget3h_20261005/final_nominal700/results.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+        ],
+        "sha256": "a382ff8c4ff61ac3dd3b8154ece4e7d11ab2eba638e3df7daf1e5a082db780e9",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/final_nominal700/results.json": "d5ee803966e314d1ba33d31562fce5a9cad46f552e4e4dc3a55b240f8649a3ed",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+        },
+        "kind": "locked_native_evaluation",
+        "caveats": [
+          "Every native force sample is scored, including startup and endpoint.",
+          "The ±7.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+          "Finite simulated cases and noise seeds do not establish physical sanding performance."
+        ]
+      }
+    },
+    "rl_long_tests": {
+      "rowCount": 8,
+      "source": {
+        "label": "Fresh 30 s repeated-bump recordings",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_long_tests.json",
+          "acf_simulink/validation/rl_budget3h_20261005/final_long4/results.json",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json"
+        ],
+        "sha256": "f7945d12b42b2519b9b48e866f912b53c451d58c310bbcc2e977392b24ce9c99",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/final_long4/results.json": "362a4840786b8f99968281d61a062c185e6f0612a9f97f7340f3f1e9eed3aa55",
+          "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+        },
+        "kind": "locked_native_evaluation",
+        "caveats": [
+          "Every native force sample is scored, including startup and endpoint.",
+          "The ±7.5 mm travel allowance is a separate soft objective; contact loss and travel stops fail a run.",
+          "Finite simulated cases and noise seeds do not establish physical sanding performance."
+        ]
+      }
+    },
+    "rl_actuator_response": {
+      "rowCount": 124,
+      "source": {
+        "label": "Fixed earlier checkpoint: voltage and current-response development tests",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_actuator_response.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/summary.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/summary.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/metric_semantics_overlay.json"
+        ],
+        "sha256": "5aabfb0f45620dae5f51dc6384ea6900923b7d002afb1de87c2d83110b8f3219",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/summary.json": "43ab7dcd2a2adbfc6f87f9a40bbd57dfb12a1b35ec358002bb282dd58713eb69",
+          "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/summary.json": "2aa9f2106cc6bd56a07a6173d90820f3fcc0ac60ea85fc2f6773a01cc914b1e5",
+          "acf_simulink/validation/rl_budget3h_20261005/native_current50_results/metric_semantics_overlay.json": "21eb200db67d1882f70a7ac8e0319d0d29b8abece2f921b4c4a1cf5112c8564e"
+        },
+        "kind": "development_counterfactual",
+        "caveats": [
+          "These tests use frozen gen5 checkpoint 48618b8d, not necessarily the final winning weights.",
+          "50 µs changes current-loop tuning and matching identified response; voltage-only pairs retain 100 µs tuning.",
+          "Ignore the inherited historical recenterPassed flag; use native band excess and actual travel metrics."
+        ]
+      }
+    },
+    "rl_budget_response_limits": {
+      "rowCount": 1,
+      "source": {
+        "label": "Locked budget policy: current response and added sensing delay",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_budget_response_limits.json",
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/comparison.json"
+        ],
+        "sha256": "6f924f53f5842b7c7c098ec647fab36aa671829b40689257b57b4b2d3cbabba5",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/comparison.json": "0a389b32277a3a5146049441c5376868b653ced8f309cae1ebc2bf732179c9d0"
+        },
+        "kind": "development_sensitivity",
+        "caveats": [
+          "112 new paired development recordings, no retuning; primary references are reused.",
+          "Known matched latency is still harmful; a filter cutoff does not establish its complete transfer function."
+        ]
+      }
+    },
+    "rl_memory_reliance": {
+      "rowCount": 4,
+      "source": {
+        "label": "Four development cases: same weights with and without carried memory",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_memory_reliance.json",
+          "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/results.json"
+        ],
+        "sha256": "b1a44f881cfa2aa7cac516e09e238d35402f4765e4c61d3c1f216abc67383549",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/results.json": "dae179ddab2d1ecfd03b3b19e1655f16f3aaaa77ae36c677be2ab78400204685"
+        },
+        "kind": "development_ablation",
+        "caveats": [
+          "Resetting memory each frame is an intervention in this controller, not an independently optimized memoryless baseline.",
+          "This recorded ablation uses the earlier gen5 checkpoint; final-winner results must be separately identified."
+        ]
+      }
+    },
+    "rl_gate_tradeoff": {
+      "rowCount": 1,
+      "source": {
+        "label": "Stronger inverse force response can block robot commands and exhaust travel",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_gate_tradeoff.json",
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_gate_figure/data_sources.json"
+        ],
+        "sha256": "4e39957a8d8f9dcbc614e290c0988fc0bcb140f7895196bbaa6275bd76f5acef",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_gate_figure/data_sources.json": "435708c6da4fafc94400ec1e2311e2ecd42b7cdbaf3e021605e6ff346e25ceef"
+        },
+        "kind": "development_failure_comparison",
+        "caveats": [
+          "Full and partial inverse initialization in the same development case; not the final winning checkpoint."
+        ]
+      }
+    },
+    "rl_final_native_replay": {
+      "rowCount": 5,
+      "source": {
+        "label": "Independent MATLAB replay of the locked neural worst and active robot cases",
+        "files": [
+          "acf_simulink/validation/rl_report_20261005/final/rl_final_native_replay.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/input_binding.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_parity/native_replay.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/active_robot_parity/native_replay.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_recorded_actions_600k/recorded_action_refinement.json",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/summary.json"
+        ],
+        "sha256": "654a9be48b38bc464544d26f8ca5842c1cb07c64ff8583b586fe68ec029f7a41",
+        "sourceFileSha256": {
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/input_binding.json": "576bd61e89747ecb61234820034c1deb9a8b3011c55104cf7adf18239d400311",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_parity/native_replay.json": "a993fc11d17814f2bb648ea7e1c80c19f519112379d0f042deb9a32587bc319a",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/active_robot_parity/native_replay.json": "c1492766232d23047c9a6ea81c17dc379a8dc5e0e061a6cd96fb2bfd8f7783a2",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/worst_recorded_actions_600k/recorded_action_refinement.json": "a20f62eb49b7f5e917547f0c9b41448c2da852f709da426304a0e29f30a65f08",
+          "acf_simulink/validation/rl_budget3h_20261005/native_final_budget_verification/summary.json": "f3046e7bf715f7108bc6a6ceceb7485b2a42dcdc0d0f6efb46de70a2e652a38f"
+        },
+        "kind": "native_model_implementation_verification",
+        "caveats": [
+          "Recorded-action normal MATLAB plant/sensor/gate replays; neural inference remains the frozen C implementation.",
+          "The worst case remains a force-specification failure.",
+          "The finer-step result replays frozen requests; it is not closed-loop neural refinement."
+        ]
+      }
+    },
+    "fixed_mechanics_contract": {
+      "rowCount": 4,
+      "source": {
+        "label": "Prescribed upper spring, rigid lower connection and approved causal sensing",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_mechanics_contract.json"
+        ],
+        "sha256": "f2713f60856c2d0623d9856f5ee3940af9b92183846964851da0a51485145c47",
+        "sourceFileSha256": {},
+        "kind": "user_constraints_and_declared_model",
+        "caveats": [
+          "This contract states approved requirements and model assumptions; it is not an executed performance claim."
+        ]
+      }
+    },
+    "fixed_development_results": {
+      "rowCount": 12,
+      "source": {
+        "label": "Executed accepted fixed-mechanics control development",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_development_results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/measured_force_endpoint_development_v3/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/measured_force_endpoint_development_v3/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/corrected_current_endpoint_development_v5/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/corrected_current_endpoint_development_v5/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/guide_ff_endpoint_development_v6/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/guide_ff_endpoint_development_v6/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_case7_development_v4/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_case7_development_v4/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_lead_two_endpoints_v5/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_lead_two_endpoints_v5/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/force_observer_guide_v7_three_endpoints/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/force_observer_guide_v7_three_endpoints/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_lead_v7_four_endpoints/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_lead_v7_four_endpoints/input_lock.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11/results.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11/input_lock.json"
+        ],
+        "sha256": "4b629a1558f66707c37b76d1bf7de613a901482eece2a579720f65c8da25c5ea",
+        "sourceFileSha256": {
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/measured_force_endpoint_development_v3/results.json": "f1d95d5fbc3377f15ae0d9b0f17b87d4adf50975ad1097dbfd9f04700270808b",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/measured_force_endpoint_development_v3/input_lock.json": "83036c71e7c2008bb134c7013e4b983d89d94d42ce8e0117d7d9de01f21ceaa8",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/corrected_current_endpoint_development_v5/results.json": "af656c7eb0dcc456eb94e988fcfa9801768a7459c8a846d7a8fed72cf51cc4e4",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/corrected_current_endpoint_development_v5/input_lock.json": "bf0a029f521416f686410bba8c00a915f8290bb2e15a0d3aff26895ac745a8a3",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/guide_ff_endpoint_development_v6/results.json": "529686d6e2abae7233ac929187253866911a33cbf6586e5b58992d4e3a814a12",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/guide_ff_endpoint_development_v6/input_lock.json": "558daa435642e946c077254768896999cb99344e718cda4a8e83c1a646068e13",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_case7_development_v4/results.json": "028946bfec6327dea5934d059f98b2189c079f8e675234ec8cecf72e130a2ec1",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_case7_development_v4/input_lock.json": "b76e3b7f624a7595bf60f80515a108937caf72e1cf7430b14f22f1f5c32637a4",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/results.json": "5138e0f929eb10ba4e272338a7f1f3f9361e644446c7df0981e4c4c5d60128be",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/input_lock.json": "c024468ff3ca0ccfcb9d2d6753aec685182fe601edded0a83aaa6b2e4a71b17d",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_lead_two_endpoints_v5/results.json": "70999d9572b6da39935ecc7144dbadfb46f0aec493d3099d4dbabb8d485ed1f3",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_lead_two_endpoints_v5/input_lock.json": "a37b18b273bc8cf352de84caecba85b370491fa9e1cc05e57b5b4a1eae21b123",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/force_observer_guide_v7_three_endpoints/results.json": "2eef2fac7467c18bb10182865899bbab36d50337130c04f0c3e92982f98243d9",
+          "acf_simulink/validation/upper_no_damping_20261005/evaluation/force_observer_guide_v7_three_endpoints/input_lock.json": "b64bc0349e6bf91993b00eaa1e70c7cf2adfa502c2529bc12f91b292733a72f5",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints/results.json": "b55fe59254382acbc67dd3448f132d36ab0cc778dd0c5091816f32194be6ed3d",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints/input_lock.json": "fa606268e40939a8e5a7e99e429b0dc88daa254c3e8c9998c2c6b66a0055b31a",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints/results.json": "de09923d37878f9166d756d4e68a73af9f6c76d81eb84a1540758e8ef98596e1",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints/input_lock.json": "fb9a7c5eb0a5d0eae230e1ee462aa1ad56e7088cd9ead9c95420971cffbfb13d",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining/results.json": "d077a9a0f5019e26d4074734f57fa27dee59d293005ca92cfc2afafe37ce9253",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining/input_lock.json": "d93b839d45d32b0dba27a4d5f1de119365e08db5a0b9cdfce4f1e549368ba1d5",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_lead_v7_four_endpoints/results.json": "4ba4748f6cc93151ca1bc0ff9f0b531cbdb6f54cc10c95d18cd6569cf84506e7",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_lead_v7_four_endpoints/input_lock.json": "331bc017608f0d8e6dc9cd1c72fb0dc2124a02a5a701e1e734974e93f0eb0006",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11/results.json": "529067bc382584222b35e77c248849fac2b1205dcfa7632dd04a92da02006dbe",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11/input_lock.json": "6b760c2114a77e23abfbf593f45fa8790311ae8a822e95c9996be9e413dda108"
+        },
+        "kind": "accepted_native_fixed_mechanics_development",
+        "caveats": [
+          "Accepted executed development configurations only; tuning cases do not establish fresh-test or physical qualification."
+        ]
+      }
+    },
+    "fixed_control_waveform": {
+      "rowCount": 2,
+      "source": {
+        "label": "Native development waveform and cell-mode spectral analysis",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_control_waveform.json",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retention_replay.json",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/result.json",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retained_native_history.npz",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/native_history.npz"
+        ],
+        "sha256": "7de6996442522b0b87af90d55f9afb356bf4707502c8c11a5a97fa1bd58e942b",
+        "sourceFileSha256": {
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retention_replay.json": "e00c5ce6632570667c406e051189a3d1b0829fde5ccfe1375853811adaa4163a",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/result.json": "ea67f6df89023536ce8310841db5be6b7cb381e315828f5659496e85d5003abd",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/cell_modal_v6_two_endpoints/case_0370/retained_native_history.npz": "c97f013186f18eee45ee2872abbe8615f000b790b16c382cc0e8aa137f872602",
+          "acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/native_history.npz": "e5355fc537739841b120a31c2e9623c6cbebc9167423ebc8d82e2b3cefc1a72e"
+        },
+        "kind": "paired_native_controller_waveform_and_spectral_analysis",
+        "caveats": [
+          "Matched development case and seed; controller comparison is not whole-range or hardware qualification"
+        ]
+      }
+    },
+    "fixed_acquisition_reference": {
+      "rowCount": 3,
+      "source": {
+        "label": "Earlier native ADC-rate comparison; different reference mechanics",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_acquisition_reference.json",
+          "acf_simulink/validation/budget_adc_long_summary_20261002.json"
+        ],
+        "sha256": "2a81356c1d294ce7f5a18e99b22a631160fa4e992b8bf3987fffa64605461d21",
+        "sourceFileSha256": {
+          "acf_simulink/validation/budget_adc_long_summary_20261002.json": "f08d9bfe33039170b0bc6ef2ab32fbe952332846540e28d57b775ed923593dbc"
+        },
+        "kind": "historical_native_acquisition_comparison",
+        "caveats": [
+          "Explains acquisition tradeoffs; does not qualify the newly fixed upper-spring/rigid-lower design"
+        ]
+      }
+    },
+    "fixed_qualification_results": {
+      "rowCount": 3,
+      "source": {
+        "label": "Locked candidate: new-seed fixed-mechanics force and physical tests",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_qualification_results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/results.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/input_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/metadata.json"
+        ],
+        "sha256": "c18847d39b0b05ff6064982da68cd5ef41ad811748a89d8fa24ac61e30c0ac75",
+        "sourceFileSha256": {
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json": "f1cccf9fe7a356c8a7b39415b457d731d5a28eb52598ca0585b313455c4e4b7b",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/input_lock.json": "3038d8110cbcdaf2500cf4646cf75c67c7a81ad87cde8db31523d22c1733aea5",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/results.json": "9b530268ac4212da06df6ae8488b206b3d31863b3df738ebded938d66eb0d151",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/input_lock.json": "507499d9991dddcd9a044cf23f5ff0f96664b7e51314be815613263e9f1f91d9",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/results.json": "cc63465565a6411483f470074b4fab7ccd3dc377a7eeb951b3c0adfc63728717",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/input_lock.json": "3d91db835b1c0e95441a5541fc9b6eecc4f3ae399de10ded3190765f596f1fb8",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/metadata.json": "b14d91254e52fc7c79aeea8fa521062e9d0b759542e4b0ddce0065032b5783f2"
+        },
+        "kind": "locked_new_seed_fixed_mechanics_native_qualification",
+        "caveats": [
+          "One candidate locked before these new-seed outcomes. Full native force/physical histories scored; finite tested grid and selected residual/schedule cases, not installed hardware qualification. No retuning on these results."
+        ]
+      }
+    },
+    "fixed_voltage_diagnostics": {
+      "rowCount": 4,
+      "source": {
+        "label": "Independent unchanged-controller MATLAB voltage pairs",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_voltage_diagnostics.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/paired_voltage_check.json",
+          "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx",
+          "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_48V_native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/paired_voltage_check.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_32V_native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_48V_native_recording.mat"
+        ],
+        "sha256": "9d9fb1d2695e54dbfc4b1a4934c837a16832aff50f470f8c8b17a450bf6b274d",
+        "sourceFileSha256": {
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/paired_voltage_check.json": "4e0c2c8175c5d3afb26836b1fa4efea3bce87ce92d425e0d31763fc82b55b506",
+          "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx": "c801331c16deb6d5dd5513c394edcbc4a4ee34cf7f28d39ca1476b2d9f9e6557",
+          "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat": "c05549f23a4ede5dde2977dbf9a96209019912ebfe5dfd00275fa755e746f1ee",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_48V_native_recording.mat": "b08f790af095d817dbd18ef7e9cf57b190601b11956bfef721820a54a7d309a9",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/paired_voltage_check.json": "b78c2495514fe061ed0db141ae418ccd25d6cf9a9567f0b8899d7b4e856a87fc",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_32V_native_recording.mat": "5956605deab560e0976adf34242375c5be3254b7285f7b44bbdeb07a58950e3a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_48V_native_recording.mat": "fb2f5e445d6d691d599c965c470b816698d561e9781a1b087cbbcfe124bed7c6"
+        },
+        "kind": "paired_independent_matlab_voltage_diagnostics",
+        "caveats": [
+          "Two unchanged-controller 32/48 V pairs. The stress pair was requested after final outcomes; neither pair is qualification or controller selection evidence."
+        ]
+      }
+    },
+    "fixed_controller_contract": {
+      "rowCount": 4,
+      "source": {
+        "label": "Locked executing normal PI, modal feedback and observer design",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_controller_contract.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_adc_prepare.m"
+        ],
+        "sha256": "7362c2300d99e9b6d5879f49fca200ba16e995d9705c315657e4204b0dbf9e68",
+        "sourceFileSha256": {
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json": "f61df543c4edf48754c04599023fc003bec2e498b67e7db8abbebe1ab82024bd",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_adc_prepare.m": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+        },
+        "kind": "locked_executing_controller_parameters",
+        "caveats": [
+          "Selected live parameter fields and independent modal identification. Observer coefficients depend on known mass; inherited source-build case0 metadata does not identify the selected controller."
+        ]
+      }
+    },
+    "fixed_native_verification": {
+      "rowCount": 7,
+      "source": {
+        "label": "Independent MATLAB histories, solver refinement and native-model delivery checks",
+        "files": [
+          "acf_simulink/validation/upper_no_damping_20261005/report/fixed_native_verification.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_replay.json",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/controller_gain_v9_A15_dev11/case_0170/retained_native_history.npz",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/selected_development_worst_170.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_replay.json",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_nominal700/case_0673/native_history.npz",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_673.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_replay.json",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_fresh32/case_0728/native_history.npz",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_728.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_recording.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/solver_refinement/selected_development_worst_170/deterministic_refinement.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_final_acceptance/delivery_acceptance.json",
+          "acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model_acceptance/acceptance.json",
+          "acf_simulink/generated/fixed_upper_20261005/bundle_manifest.json",
+          "acf_simulink/generated/fixed_upper_20261005/GETTING_STARTED_FIXED.md",
+          "acf_simulink/generated/fixed_upper_20261005/delivery_acceptance.json",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_force_controller.png",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_root.png",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_upper_observer.png",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_adc_prepare.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_apply.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_baseline_v8.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_cell_modal.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_upper_observer.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_actuator.m",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_controller.m",
+          "acf_simulink/experiments/upper_no_damping_20261005/qualification_v8/GETTING_STARTED_FIXED.md",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/post_review_numerical_assessment_v1.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.mat",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/native_parameter_bank.c",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/libacf_native.so",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json",
+          "acf_simulink/experiments/upper_no_damping_20261005/replay_mechanical_native.m"
+        ],
+        "sha256": "5d52e6581b4890161b0e592ed495bb38f3abc753b9a35ac5035be39558463e16",
+        "sourceFileSha256": {
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_replay.json": "22bfa2ddb2a9fb82cd6fa8a7ef3110a0ccfbff0c29827979e70dd526ce900f89",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/controller_gain_v9_A15_dev11/case_0170/retained_native_history.npz": "f17171b87a8b5171548b21738d29864b61713d8dc4a3c58101acb467ac993621",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/selected_development_worst_170.mat": "9a57de9ee8049565a9cbe9be2941c56d7962edebb6d125e2431d2a8229505c65",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_recording.mat": "8b72d1421a3c07c99d3074e5cb8541f96d610a1781a6258a1073825f12978846",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_replay.json": "b11a2147c552e9367e009dd302c3f15aad026755b276ffa7f23a8c7dc958c7bb",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_nominal700/case_0673/native_history.npz": "8d87e503b946a4858e85aeb3ac039ec5a32dbc45161c2659e72921d6aa5baa45",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_673.mat": "aa8fa98ddbf8210897f0a99efaba054ba9967e0748e97848b16584d47f8f25f2",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_recording.mat": "b11a233c06679ee2da7974ab6388b7eeed5dcf7541f1c5c25a3629fac8fec56a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_replay.json": "2cdb6cb7dbf2d443e925133222343dc6b825b5aeed48363c3e7529f541cfcc2b",
+          "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_fresh32/case_0728/native_history.npz": "c420e3819832c8c24c82937511d0472f421f2eb9752fe92d0884fec3c66174ff",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_728.mat": "9e1d7e0c969554d5f2e2b36cc272563878ab84f772865b0f2a4714738b1a62d2",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_recording.mat": "4e060ca96f439dd5832aa1e20bed13f3d86105be99dc8bc4ceb923fed9bf6d5a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/solver_refinement/selected_development_worst_170/deterministic_refinement.json": "7690678eb4c20c363706b2bf3b3aab17f52389d4a8de0fece32659be314eeb02",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_final_acceptance/delivery_acceptance.json": "cbe6cda3a0355752501913b7dfa9eec03eb762bae26a7c167617057818a1bf14",
+          "acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model_acceptance/acceptance.json": "a9d49955df7929435a7dc70379fa351a80f8b7ea35e591238db616ddd3666ff3",
+          "acf_simulink/generated/fixed_upper_20261005/bundle_manifest.json": "96f9619a3c904109e1b9faaaa09832de5c1631977910c4d16b69e714c30d4490",
+          "acf_simulink/generated/fixed_upper_20261005/GETTING_STARTED_FIXED.md": "85a30b8ec16a60fda4ac8f8cd6e00aa9245e57d45c22d4f3ef01854aaf6add8a",
+          "acf_simulink/generated/fixed_upper_20261005/delivery_acceptance.json": "cbe6cda3a0355752501913b7dfa9eec03eb762bae26a7c167617057818a1bf14",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_force_controller.png": "b707c9408c08937cdf5652002b5e8cd542781b1c01143a4d93f6118688093064",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_root.png": "d47950f8e81ab27f3540492acae1331af3151204b9021c95d1fa51dd9e7a22e0",
+          "acf_simulink/generated/fixed_upper_20261005/diagram_upper_observer.png": "761a2bbad2032b9941170c5be2f50cdbb158df99372f3e7bcfc383b676ec7237",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_adc_prepare.m": "1824aa920349ce3411aaa5decdc15cbad14784f347884dc81c37b60b7d1d86bc",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_apply.m": "9b24217528d0a4b9e53b042f6afac19eeede3b30022f546fc222bdfa4c5e00c7",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare.m": "b8eedbc32a214bb7871a5aa3283267f919febbc935523f183f83a1cd9b2f9acb",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_baseline_v8.m": "5ba68f2ead88f35c6e1c30a59036a256570bd10b11ae611fe4eaa0e98213d5ce",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_cell_modal.m": "77386214c5059efd023ef9bbf960643517e3082202e9dc130f49f8387486d6df",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_upper_observer.m": "fc16f7a5dc1cd19be32c55d57e295c7841dfd1b64bf7cbabe92fcf5498ba3a15",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_actuator.m": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6",
+          "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_controller.m": "ac031acc9203d6d35605b58e120cf180be64fddd1577f1a8f587d3d490f9d55c",
+          "acf_simulink/experiments/upper_no_damping_20261005/qualification_v8/GETTING_STARTED_FIXED.md": "85a30b8ec16a60fda4ac8f8cd6e00aa9245e57d45c22d4f3ef01854aaf6add8a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/post_review_numerical_assessment_v1.json": "5de29c48ef16a4674d5ae2bcd9388d133878c70c02ee927396c5a66a60ed90d2",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.json": "9f1efd2b6fc2ad1141ae5388c05a8de569312ffcb3532ebf09ecd527f041a4ad",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.mat": "e9bc8263b3ca4081c3bde1afcd8a695ad058e315244fa87bd4c31ddfd73a6b6c",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/native_parameter_bank.c": "2f19884f9e8d07399737f05b65d6732f41d6082dc8bf8d87de2adbdde7d2e48a",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/code/acf_rl_native_grt_rtw/acf_rl_native.c": "92d4282acd7e7df537c67ce521f217996568eb1ee07bfe4a6c30588809e8bc06",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/libacf_native.so": "fbfe637c4787e1fa316f90d79d602dc9f17bfb9a56cb291d86f8defb3a78cf3e",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+          "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json": "f61df543c4edf48754c04599023fc003bec2e498b67e7db8abbebe1ab82024bd",
+          "acf_simulink/experiments/upper_no_damping_20261005/replay_mechanical_native.m": "429d33de20ed26c315dfcaf7051f61522d9a4dc8e6799889d2be960ed0689419"
+        },
+        "kind": "independent_native_and_delivery_checks",
+        "caveats": [
+          "Completed independent native replay checks retain their original strict guard results, including two failures. Engineering waveform differences, one solver refinement and standalone model acceptance are separate. These checks do not turn failed force cases into passes or establish hardware performance."
+        ]
+      }
+    }
+  },
+  "figures": [
+    {
+      "file": "reports/figures/fixed-upper-rigid-lower-20261005.svg",
+      "sha256": "2111608bee3e85538177ff39d256ef80fc3c8e5972fbe03d28809b35311c46dc",
+      "queryId": "fixed_mechanics_contract"
+    },
+    {
+      "file": "reports/figures/adc-rate-evidence-compact-20261005.svg",
+      "sha256": "16dc54d932b9f338c9f87bd7d0eab9fb57abb3bbc086c642fb2506671a2e568a",
+      "queryId": "fixed_acquisition_reference"
+    },
+    {
+      "file": "reports/figures/fixed-mechanics-force-limit-20261005.svg",
+      "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+      "queryId": "fixed_control_waveform"
+    }
+  ],
+  "topLevelBlocks": [
+    "Intro",
+    "Question",
+    "Results",
+    "Recommendation"
+  ],
+  "componentBlocks": [
+    "Mechanics: load path, springs and guides",
+    "Actuator and electrical drive",
+    "Force and position measurement",
+    "Acceleration measurement",
+    "Acquisition electronics: amplifier, ADC and timing",
+    "Fast force controller",
+    "Robot commands and recentering",
+    "Learned control policy",
+    "Calibration, model qualification and prototype validation"
+  ]
+}

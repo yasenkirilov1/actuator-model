@@ -1,0 +1,98 @@
+{
+  "folder": "/home/tommie/.local/state/actuator-model/inertial-actuators-frozen-guarded-screw-extension-v7-20260930",
+  "modelSHA256": "c76e34b679215250b6cc3a09046ed6994d736a429df3d0178e5a6fc26f7672a9",
+  "sourceV7SHA256": "84fb8960b9c679341f6f1f290d2162f6c14db1b0aa8a100899df1f8e36984d56",
+  "files": [
+    {
+      "path": "acf_force_control_normal_trial.slx",
+      "sha256": "c76e34b679215250b6cc3a09046ed6994d736a429df3d0178e5a6fc26f7672a9"
+    },
+    {
+      "path": "helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "helpers/acf_prepare.m",
+      "sha256": "1d7fa3e99f20c79c2556653cfd4ce49e81fa7931972afbee536fa0f6ec292ae9"
+    },
+    {
+      "path": "helpers/acf_run.m",
+      "sha256": "2d3d5836cd3817364ae019cf7421c5a344ac860da050bfb9d1b6b5a81b842505"
+    },
+    {
+      "path": "helpers/acf_select_actuator.m",
+      "sha256": "70fb6b9ae81423d76a039bfea99f0cef0f4c24f551327b469f71772ee5b16cec"
+    },
+    {
+      "path": "helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "path": "helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "inertial_actuators_selected_screw_minimax_v6.json",
+      "sha256": "d2604be0cdd7dce1ff65a2a3bd3d122f32afca42c5ff5da867fae7361a77b91a"
+    },
+    {
+      "path": "inertial_actuators_selected_screw_minimax_v7.mat",
+      "sha256": "c71af8ad3be7b203a10b408f341392426440fbdc04c6f3e8f0b70ddf776642e8"
+    },
+    {
+      "path": "input_candidate.mat",
+      "sha256": "71b3365b0e65dd0bbcf04a5a5cb59172042b4d6a0ae2f9f06eddcc39dae44437"
+    },
+    {
+      "path": "recipe_snapshot.m",
+      "sha256": "ecf36ab6ab3ff2fc3590d9b928fcaf0d11f51892506ec00e920cfaa56e388366"
+    }
+  ],
+  "proofReport": "inertial_actuators_preservation_proof_v7_20260930.json",
+  "proofNativeExecutions": 4,
+  "forceQualificationPasses": 2,
+  "physicalBalanceChecks": "All four runs satisfy normal/free-body and applicable rotor identities; zero loops. Compliant-A force control fails with current estimator, retained explicitly.",
+  "selectedParametersMAT": "inertial_actuators_selected_screw_minimax_v7.mat",
+  "guard": "Rigid-A moving B inertia Gain=p.mechanics.mB*double(p.mechanics.upperRigid); all upperRigid histories unchanged, compliant-A weighted-load plant preserved.",
+  "status": "corrected guarded private source ready for integrator; coil baseline unqualified; screw full endpoint and save/reopen checks pending"
+}

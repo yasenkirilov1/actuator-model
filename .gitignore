@@ -1,0 +1,54 @@
+# Generated experiment recordings stay outside Git snapshots.
+/acf_simulink/validation/**/*.mat
+/acf_simulink/validation/**/*.npz
+/acf_simulink/validation/**/*.npy
+/acf_simulink/validation/**/*.dmr
+/acf_simulink/validation/**/*.slxc
+/acf_simulink/validation/**/cache/
+/acf_simulink/validation/**/sdi/
+/acf_simulink/validation/**/slprj/
+/slprj/
+/acf_simulink/generated/*.zip
+
+# Rebuildable report bundles; source reports and figures remain visible.
+/reports/prototype-design-20260930/dist/
+/reports/prototype-design-20260930/.data-app-offline/
+__pycache__/
+*.pyc
+
+# Local MATLAB preferences can contain licensing credentials.
+/acf_simulink/validation/**/*prefs*/
+/acf_simulink/validation/**/*preferences*/
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+
+# Rebuildable native binaries, simulation build trees and installers.
+*.so
+*.o
+*.a
+*.mex*
+*.slxc
+*.dmr
+*.asv
+*_rtw/
+/acf_simulink/validation/**/code/
+/acf_simulink/validation/rl_native_probe_20261005_install/mpm
+node_modules/
+/.playwright-cli/
+
+# Host-only SATA aliases; portable compact copies are published separately.
+/acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_family17_dev11_remaining
+/acf_simulink/validation/upper_force_observer_20261005/evaluation/controller_gain_v9_A15_dev11
+/acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_lead_v7_four_endpoints
+/acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_remaining_endpoints
+/acf_simulink/validation/upper_force_observer_20261005/evaluation/cell_modal_v6_two_endpoints
+/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700
+/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32
+/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4
+/acf_simulink/validation/upper_no_damping_20261005/evaluation/force_observer_guide_v7_three_endpoints
+/acf_simulink/validation/report_readability_20261006/adc/private

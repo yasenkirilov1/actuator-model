@@ -1,0 +1,199 @@
+{
+  "sourceTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_finite_provisional/inertial_uncertainty_repeated_screen_20260930_native_traces/case_0001.mat",
+  "sourceTraceSha256": "e34f05924c3c2679827f82480262b87f233501a8527bcc16cb54ceaa29965b42",
+  "analysisScript": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_repeated_error_decomposition_20260930_analysis.py",
+  "analysisSha256": "eb27cce7e3e89e6137bcafedbc965de67ddf2bb1eaaa3f3de78aa8422ee4d079",
+  "scope": "Independent exact decomposition of one finite-cell ten-second repeated-bump diagnostic. No additional Simulink cases; no uncertainty injected. Physical truth channels are used for diagnosis only.",
+  "nativeSamples": 1000001,
+  "step_s": 1e-05,
+  "controllerSampleTime_s": 0.0001,
+  "peakError_N": 0.5443954709035665,
+  "peakTime_s": 6.8506100000000005,
+  "componentsAtPeak_N": {
+    "currentTracking_N": -0.04716877546783022,
+    "totalCurrentNotch_N": 0.08669899905621202,
+    "accelerationFeedforwardLag_N": -0.004393304452030313,
+    "normalProjectionFeedforward_N": -0.061584738368053886,
+    "instantaneousGuideFeedforward_N": 0.001043677182963989,
+    "PIcorrection_N": 0.14787995512436328,
+    "finiteCellInertia_N": 0.4219196578279368
+  },
+  "issuedCurrentReconstructionResidual_A": 2.220446049250313e-15,
+  "normalForceDecompositionResidual_N": 3.375077994860476e-14,
+  "localCellBandDominantPeriodogramFrequency_Hz": 1640.3280656131224,
+  "frequencyInterpretation": "Finite local periodogram near the failing bump, not flat-background PSD or an exact pole identification.",
+  "peakPhase": "Fifth bump center/descending side, approximately one loaded-cell natural period after guide reversal; bump maxima are nonmonotonic.",
+  "voltageClipFraction": 0.0,
+  "effortClipFraction": 0.0,
+  "forceReference_N": 50,
+  "massS_kg": 2,
+  "cellStiffness_N_m": 64000000,
+  "cellDamping_Ns_m": 0,
+  "guidePrediction_s": 0.0004,
+  "guideCoulombForce_N": 0.2,
+  "guideFrictionTransitionVelocity_m_s": 0.0002,
+  "bumps": [
+    {
+      "number": 1,
+      "startTime_s": 2.0,
+      "peakTime_s": 2.02264,
+      "signedError_N": -0.36314580797044016,
+      "peakAbsError_N": 0.36314580797044016,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.0041888594448691195,
+        "totalCurrentNotch_N": -0.029055506015932774,
+        "accelerationFeedforwardLag_N": -0.10464325408101266,
+        "normalProjectionFeedforward_N": 0.03690145276985641,
+        "instantaneousGuideFeedforward_N": -0.00048520517626495294,
+        "PIcorrection_N": -0.013336670361802631,
+        "finiteCellInertia_N": -0.24833776566041277
+      },
+      "actualGuideRisingZero_s": [
+        2.0487835844795073
+      ],
+      "predictedGuideRisingZero_s": [
+        2.0486
+      ],
+      "predictionLeadAtCenter_us": 183.58447950728163
+    },
+    {
+      "number": 2,
+      "startTime_s": 3.2,
+      "peakTime_s": 3.3004000000000002,
+      "signedError_N": 0.4967042963879109,
+      "peakAbsError_N": 0.4967042963879109,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.10128152838192683,
+        "totalCurrentNotch_N": 0.07574128102400657,
+        "accelerationFeedforwardLag_N": -0.012168,
+        "normalProjectionFeedforward_N": -0.005917921392246228,
+        "instantaneousGuideFeedforward_N": -0.00046176320433377605,
+        "PIcorrection_N": 0.15181638054237567,
+        "finiteCellInertia_N": 0.3889758478000328
+      },
+      "actualGuideRisingZero_s": [
+        3.249840522867443
+      ],
+      "predictedGuideRisingZero_s": [
+        3.2497000000000003
+      ],
+      "predictionLeadAtCenter_us": 140.52286744270504
+    },
+    {
+      "number": 3,
+      "startTime_s": 4.4,
+      "peakTime_s": 4.50039,
+      "signedError_N": 0.5260774814167775,
+      "peakAbsError_N": 0.5260774814167775,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.009661911671425827,
+        "totalCurrentNotch_N": -0.025760860416594866,
+        "accelerationFeedforwardLag_N": -0.036504,
+        "normalProjectionFeedforward_N": -0.012622148953070678,
+        "instantaneousGuideFeedforward_N": -0.014374726199977955,
+        "PIcorrection_N": 0.2516362075457937,
+        "finiteCellInertia_N": 0.3733649211120561
+      },
+      "actualGuideRisingZero_s": [
+        4.449840339755846
+      ],
+      "predictedGuideRisingZero_s": [
+        4.4497
+      ],
+      "predictionLeadAtCenter_us": 140.33975584570868
+    },
+    {
+      "number": 4,
+      "startTime_s": 5.6000000000000005,
+      "peakTime_s": 5.654240000000001,
+      "signedError_N": 0.4384882699239512,
+      "peakAbsError_N": 0.4384882699239512,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.016325203807118577,
+        "totalCurrentNotch_N": 0.008863330086493431,
+        "accelerationFeedforwardLag_N": 0.013927688668720144,
+        "normalProjectionFeedforward_N": -0.040672922584019895,
+        "instantaneousGuideFeedforward_N": 0.0009333695780277588,
+        "PIcorrection_N": 0.11870846632306868,
+        "finiteCellInertia_N": 0.35305354165877145
+      },
+      "actualGuideRisingZero_s": [
+        5.649943521279677
+      ],
+      "predictedGuideRisingZero_s": [
+        5.649800000000001
+      ],
+      "predictionLeadAtCenter_us": 143.52127967587336
+    },
+    {
+      "number": 5,
+      "startTime_s": 6.800000000000001,
+      "peakTime_s": 6.8506100000000005,
+      "signedError_N": 0.5443954709035665,
+      "peakAbsError_N": 0.5443954709035665,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.04716877546783022,
+        "totalCurrentNotch_N": 0.08669899905621202,
+        "accelerationFeedforwardLag_N": -0.004393304452030313,
+        "normalProjectionFeedforward_N": -0.061584738368053886,
+        "instantaneousGuideFeedforward_N": 0.001043677182963989,
+        "PIcorrection_N": 0.14787995512436328,
+        "finiteCellInertia_N": 0.4219196578279368
+      },
+      "actualGuideRisingZero_s": [
+        6.849981625161919
+      ],
+      "predictedGuideRisingZero_s": [
+        6.849800000000001
+      ],
+      "predictionLeadAtCenter_us": 181.62516191821965
+    },
+    {
+      "number": 6,
+      "startTime_s": 8.0,
+      "peakTime_s": 8.09779,
+      "signedError_N": -0.4614637248153244,
+      "peakAbsError_N": 0.4614637248153244,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.05788093223608189,
+        "totalCurrentNotch_N": 0.027356910929949473,
+        "accelerationFeedforwardLag_N": -0.22861219125629273,
+        "normalProjectionFeedforward_N": 0.01780425679219719,
+        "instantaneousGuideFeedforward_N": -0.000906125428257002,
+        "PIcorrection_N": 0.07561253731435442,
+        "finiteCellInertia_N": -0.29483818093118985
+      },
+      "actualGuideRisingZero_s": [
+        8.049993411354396
+      ],
+      "predictedGuideRisingZero_s": [
+        8.049800000000001
+      ],
+      "predictionLeadAtCenter_us": 193.4113543953231
+    },
+    {
+      "number": 7,
+      "startTime_s": 9.200000000000001,
+      "peakTime_s": 9.29903,
+      "signedError_N": -0.47830483760197495,
+      "peakAbsError_N": 0.47830483760197495,
+      "componentsAtPeak_N": {
+        "currentTracking_N": -0.05760338581960247,
+        "totalCurrentNotch_N": -0.04843813187579259,
+        "accelerationFeedforwardLag_N": -0.18203428167852673,
+        "normalProjectionFeedforward_N": 0.0008897588516933559,
+        "instantaneousGuideFeedforward_N": -0.1330572105554477,
+        "PIcorrection_N": 0.2019354005126508,
+        "finiteCellInertia_N": -0.2599969870369533
+      },
+      "actualGuideRisingZero_s": [
+        9.249998860275223
+      ],
+      "predictedGuideRisingZero_s": [
+        9.2498
+      ],
+      "predictionLeadAtCenter_us": 198.8602752227564
+    }
+  ],
+  "interpretation": "At the failing peak, finite B-S cell inertia dominates; the instantaneous guide mismatch has already subsided. Guide reversals and PI/noise can excite the undamped loaded-cell mode. These observations motivate feedback rolloff and separately measured structural damping; they do not establish a uniquely identified causal source or a hardware qualification."
+}

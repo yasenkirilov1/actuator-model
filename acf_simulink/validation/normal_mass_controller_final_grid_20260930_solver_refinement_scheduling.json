@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_executed",
+  "recipeSha256": "f523bb63c6a1f7ad06a5a8387b27f1dcd3dd9f61aa844f0988684f902ac2c0ad",
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "rootScheduling": "After full3500 audit, execute5us only first;2.5us separately after smaller actuator/mixed jobs exit. Optional fifthargument steps selects one integration step with distinct output stem, so no case is duplicated.",
+  "originalPlan": "normal_mass_controller_final_grid_20260930_solver_refinement_plan.json",
+  "scientificSourceSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+}

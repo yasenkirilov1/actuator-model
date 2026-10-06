@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-02",
+  "purpose": "Disjoint parallel execution of seven frozen joint-stress groups",
+  "sequentialSupervisorGroups": [
+    1,
+    2,
+    7
+  ],
+  "parallelWorker1Groups": [
+    3,
+    4
+  ],
+  "parallelWorker2Groups": [
+    5,
+    6
+  ],
+  "existingOutputGuard": "The original sequential supervisor will stop at the existing-output assertion when it reaches group3 already reserved by parallel worker1. This is a coordinator handoff, not an unvalidated physical run. Its transcript is preserved.",
+  "expectedUniqueNativeRecordings": 49,
+  "inputManifest": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/manifest.json",
+  "createdUTC": "2026-10-02T18:21:03.015089+00:00"
+}

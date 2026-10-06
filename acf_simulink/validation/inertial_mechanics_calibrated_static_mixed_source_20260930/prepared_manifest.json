@@ -1,0 +1,96 @@
+{
+  "status": "prepared_not_executed",
+  "baseV8NativeModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "calibratedDonor": "/home/tommie/.local/state/actuator-model/tpba1927d1_c384_4398_a279_c8cfe77fab78",
+  "calibratedModelSHA256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "jointConfigurationsSource": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.mat",
+  "jointConfigurationsSHA256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2",
+  "configurationIndicesOneBased": [
+    8,
+    18,
+    28
+  ],
+  "seeds": [
+    7,
+    29,
+    1729
+  ],
+  "plannedCases": 3,
+  "executedCases": 0,
+  "actualLowerStiffness_N_m": 23695.2,
+  "actualLowerDamping_Ns_m": 48,
+  "identifiedLowerStiffness_N_m": 19746,
+  "identifiedLowerDamping_Ns_m": 60,
+  "actualPerSpringRate_N_m": 11847.6,
+  "freeLengthPerSpring_m": 0.02,
+  "fixedCommonPreloadPerSpring_N": 33.6,
+  "contract": "Exact final joint corner8 residuals with actualk+20% and c\u221220%; identified inverse remains fixed. Hold until final mesh and RAM frees.",
+  "recipe": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_run_mixed_corner_20260930.m",
+  "recipeSHA256": "8016ed9f0438ef3af084cef42b41fdef69f4cc1e8f805d95d172d97d90a99f99"
+}

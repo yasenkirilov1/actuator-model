@@ -1,0 +1,244 @@
+{
+  "scope": "Read-only spectral diagnosis of one provisional10 s repeated native failure. Bandpass is postprocessing only and never a controller input.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_finite_provisional/inertial_uncertainty_repeated_screen_20260930_native_traces/case_0001.mat",
+  "sampleRate_Hz": 99999.99999989998,
+  "modalDiagnosticBand_Hz": [
+    1200,
+    2100
+  ],
+  "windows": [
+    {
+      "start_s": 0.25,
+      "stop_s": 0.75,
+      "peakForceError_N": 0.17109947925262503,
+      "forceErrorRms_N": 0.04757632890227707,
+      "modalBandRms_N": 0.018086534080026775,
+      "modalBandPeak_N": 0.08030124675891517,
+      "BaccelerationRms_m_s2": 0.040958023217324724
+    },
+    {
+      "start_s": 0.75,
+      "stop_s": 1.25,
+      "peakForceError_N": 0.18866566663228923,
+      "forceErrorRms_N": 0.04556072468748553,
+      "modalBandRms_N": 0.018676040798458995,
+      "modalBandPeak_N": 0.07873986947291192,
+      "BaccelerationRms_m_s2": 0.04206830204300321
+    },
+    {
+      "start_s": 1.25,
+      "stop_s": 1.75,
+      "peakForceError_N": 0.17386236170224834,
+      "forceErrorRms_N": 0.04306497768097679,
+      "modalBandRms_N": 0.02233150261436187,
+      "modalBandPeak_N": 0.09569650948262048,
+      "BaccelerationRms_m_s2": 0.04340784898918839
+    },
+    {
+      "start_s": 1.75,
+      "stop_s": 2.25,
+      "peakForceError_N": 0.36314580797044016,
+      "forceErrorRms_N": 0.07463715974631212,
+      "modalBandRms_N": 0.05878847908996355,
+      "modalBandPeak_N": 0.2461223679628407,
+      "BaccelerationRms_m_s2": 0.6908456333628317
+    },
+    {
+      "start_s": 2.25,
+      "stop_s": 2.75,
+      "peakForceError_N": 0.17420921522443678,
+      "forceErrorRms_N": 0.04567635488839536,
+      "modalBandRms_N": 0.026293629217244645,
+      "modalBandPeak_N": 0.1166840212529368,
+      "BaccelerationRms_m_s2": 0.04915263663209741
+    },
+    {
+      "start_s": 2.75,
+      "stop_s": 3.25,
+      "peakForceError_N": 0.35495940481777666,
+      "forceErrorRms_N": 0.04865496154044281,
+      "modalBandRms_N": 0.023798977749857658,
+      "modalBandPeak_N": 0.14426875765994174,
+      "BaccelerationRms_m_s2": 0.4852960997878033
+    },
+    {
+      "start_s": 3.25,
+      "stop_s": 3.75,
+      "peakForceError_N": 0.4967042963879109,
+      "forceErrorRms_N": 0.13465667889363317,
+      "modalBandRms_N": 0.12811868957007735,
+      "modalBandPeak_N": 0.38544859471616166,
+      "BaccelerationRms_m_s2": 0.5302999860821435
+    },
+    {
+      "start_s": 3.75,
+      "stop_s": 4.25,
+      "peakForceError_N": 0.15019292284913632,
+      "forceErrorRms_N": 0.0434893232662673,
+      "modalBandRms_N": 0.02244701430881736,
+      "modalBandPeak_N": 0.09057162933509286,
+      "BaccelerationRms_m_s2": 0.0433895622874286
+    },
+    {
+      "start_s": 4.25,
+      "stop_s": 4.75,
+      "peakForceError_N": 0.5260774814167775,
+      "forceErrorRms_N": 0.08565537503794567,
+      "modalBandRms_N": 0.07202193625756655,
+      "modalBandPeak_N": 0.3428596691056352,
+      "BaccelerationRms_m_s2": 0.6952396903202185
+    },
+    {
+      "start_s": 4.75,
+      "stop_s": 5.25,
+      "peakForceError_N": 0.17420299142981577,
+      "forceErrorRms_N": 0.04525192676055264,
+      "modalBandRms_N": 0.021141089949267205,
+      "modalBandPeak_N": 0.07948959500539624,
+      "BaccelerationRms_m_s2": 0.04308485152078096
+    },
+    {
+      "start_s": 5.25,
+      "stop_s": 5.75,
+      "peakForceError_N": 0.4384882699239512,
+      "forceErrorRms_N": 0.08212525224397373,
+      "modalBandRms_N": 0.06586657718741534,
+      "modalBandPeak_N": 0.324902505806348,
+      "BaccelerationRms_m_s2": 0.6937462209027401
+    },
+    {
+      "start_s": 5.75,
+      "stop_s": 6.25,
+      "peakForceError_N": 0.17763993407913148,
+      "forceErrorRms_N": 0.046144287851960314,
+      "modalBandRms_N": 0.018737319905466655,
+      "modalBandPeak_N": 0.07525348456335877,
+      "BaccelerationRms_m_s2": 0.0416601736969544
+    },
+    {
+      "start_s": 6.25,
+      "stop_s": 6.75,
+      "peakForceError_N": 0.15999727485218784,
+      "forceErrorRms_N": 0.04801575783752166,
+      "modalBandRms_N": 0.018145096309723587,
+      "modalBandPeak_N": 0.06621595135682833,
+      "BaccelerationRms_m_s2": 0.04169458593474733
+    },
+    {
+      "start_s": 6.75,
+      "stop_s": 7.25,
+      "peakForceError_N": 0.5443954709035665,
+      "forceErrorRms_N": 0.08961388721173436,
+      "modalBandRms_N": 0.07316822494605599,
+      "modalBandPeak_N": 0.39964297697603685,
+      "BaccelerationRms_m_s2": 0.6958841092134715
+    },
+    {
+      "start_s": 7.25,
+      "stop_s": 7.75,
+      "peakForceError_N": 0.1642539016178617,
+      "forceErrorRms_N": 0.04675573545252681,
+      "modalBandRms_N": 0.01830289059026013,
+      "modalBandPeak_N": 0.06753418946600304,
+      "BaccelerationRms_m_s2": 0.04142240672214058
+    },
+    {
+      "start_s": 7.75,
+      "stop_s": 8.25,
+      "peakForceError_N": 0.4614637248153244,
+      "forceErrorRms_N": 0.08402217464468319,
+      "modalBandRms_N": 0.06581956350028742,
+      "modalBandPeak_N": 0.3515098027892193,
+      "BaccelerationRms_m_s2": 0.6936684462919799
+    },
+    {
+      "start_s": 8.25,
+      "stop_s": 8.75,
+      "peakForceError_N": 0.16031223409667206,
+      "forceErrorRms_N": 0.048225535895224374,
+      "modalBandRms_N": 0.0180324554112815,
+      "modalBandPeak_N": 0.06252971477918622,
+      "BaccelerationRms_m_s2": 0.04212036154094738
+    },
+    {
+      "start_s": 8.75,
+      "stop_s": 9.25,
+      "peakForceError_N": 0.3394619533345917,
+      "forceErrorRms_N": 0.05046625961382804,
+      "modalBandRms_N": 0.018998752536249986,
+      "modalBandPeak_N": 0.11671180070365407,
+      "BaccelerationRms_m_s2": 0.48536789027020133
+    },
+    {
+      "start_s": 9.25,
+      "stop_s": 9.75,
+      "peakForceError_N": 0.47830483760197495,
+      "forceErrorRms_N": 0.0796010066303481,
+      "modalBandRms_N": 0.06420599308887348,
+      "modalBandPeak_N": 0.3621690966735033,
+      "BaccelerationRms_m_s2": 0.49687839237225323
+    }
+  ],
+  "bumps": [
+    {
+      "start_s": 2.0,
+      "peakForceError_N": 0.36314580797044016,
+      "peakTime_s": 2.02264,
+      "modalRms_N": 0.120886288097475
+    },
+    {
+      "start_s": 3.2,
+      "peakForceError_N": 0.4704698520944177,
+      "peakTime_s": 3.2970200000000003,
+      "modalRms_N": 0.15238672297753195
+    },
+    {
+      "start_s": 4.4,
+      "peakForceError_N": 0.4691138609330139,
+      "peakTime_s": 4.450480000000001,
+      "modalRms_N": 0.14394069175980337
+    },
+    {
+      "start_s": 5.6000000000000005,
+      "peakForceError_N": 0.4384882699239512,
+      "peakTime_s": 5.654240000000001,
+      "modalRms_N": 0.14182843585170568
+    },
+    {
+      "start_s": 6.800000000000001,
+      "peakForceError_N": 0.5443954709035665,
+      "peakTime_s": 6.8506100000000005,
+      "modalRms_N": 0.15882793334463416
+    },
+    {
+      "start_s": 8.0,
+      "peakForceError_N": 0.4614637248153244,
+      "peakTime_s": 8.09779,
+      "modalRms_N": 0.14160095905476355
+    },
+    {
+      "start_s": 9.200000000000001,
+      "peakForceError_N": 0.47830483760197495,
+      "peakTime_s": 9.29903,
+      "modalRms_N": 0.1394061692847203
+    }
+  ],
+  "psdSummary": [
+    {
+      "window": [
+        0.25,
+        0.85
+      ],
+      "modalPeak_Hz": 1219.99999999878,
+      "peakPsd_N2_Hz": 2.9359037522120545e-06
+    },
+    {
+      "window": [
+        8.25,
+        8.85
+      ],
+      "modalPeak_Hz": 1219.99999999878,
+      "peakPsd_N2_Hz": 3.9208609074637e-06
+    }
+  ]
+}

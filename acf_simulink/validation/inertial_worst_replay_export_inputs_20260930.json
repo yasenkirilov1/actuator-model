@@ -1,0 +1,27 @@
+{
+  "status": "complete_read_only_export_inputs_verified",
+  "newSimulations": 0,
+  "sources": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/export_inertial_worst_replay.m",
+      "sha256": "afeadb6b7a51d873b1a0d13d8c55ee5c4162ca62a526bc9bdcefd85fdded5215"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/acf_visualize.m",
+      "sha256": "0c5f4302fcf20068681805fc776ea6cb5a9b171b068ca1ce5303e4a2ef55540c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/acf_metrics.m",
+      "sha256": "cb1eb5796251cebe079f0cef21a1fd1cbaa02beca318908811485afedd719117"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/acf_signals.m",
+      "sha256": "3219911890249aa00cca36e323827d5203038c24a432b1fc88de6eec3deb4e0b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/viewer/acf_viewer_template.html",
+      "sha256": "9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d"
+    }
+  ],
+  "matlabExitCode": 0
+}

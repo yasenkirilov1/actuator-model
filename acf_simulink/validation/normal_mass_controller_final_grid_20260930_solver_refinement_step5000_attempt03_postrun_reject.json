@@ -1,0 +1,14 @@
+{
+  "status": "native_return_saved_then_original_gate_grid_audit_rejected",
+  "nativeCasesAttempted": 1,
+  "nativeCasesReturned": 1,
+  "originalReportedExitCode": 1,
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_step_5000ns_native.mat",
+  "nativeTraceSha256": "338d565e6b9167b7be5cbf212de3e6a5282a8ddb78436e54b72b45fa3aff5ca2",
+  "reason": "Robot gate logs its4 channels on the unchanged10ms grid, not the fine physical5us grid. The original gate.time==r.time assertion was invalid. All68 native physical/fast log grids had already passed before that assertion. The preserved native trace was audited and scored offline without rerunning.",
+  "offlineRecoveryAudit": "normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+  "qualifiedAfterOfflineAudit": true,
+  "collectorExecutedNativeCases": 0,
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-rerun-20260930/batch.log",
+  "caseAccounting": "Two5us native returns total: attempt01 unqualified with no durable fine trace, attempt03 retained and qualified by offline audit. Attempt02 wrapper executed no native cases."
+}

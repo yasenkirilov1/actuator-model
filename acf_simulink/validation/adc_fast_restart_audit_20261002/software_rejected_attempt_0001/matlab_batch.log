@@ -1,0 +1,6 @@
+{Subscripted assignment between dissimilar structures.
+
+Error in audit_adc_fast_restart_20261002 (line 50)
+ configs(k)=struct('name',names{k},'mode',mode{k},'p',q); %#ok<AGROW>
+ ^^^^^^^^^^
+} 

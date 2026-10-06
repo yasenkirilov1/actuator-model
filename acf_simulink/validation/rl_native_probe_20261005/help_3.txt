@@ -1,0 +1,20 @@
+ <strong>Simulink.BlockDiagram.buildRapidAcceleratorTarget</strong> - Build Rapid Accelerator target for model and return run-time parameter set
+
+    <strong>Syntax</strong>
+      rtp = Simulink.BlockDiagram.buildRapidAcceleratorTarget(mdl)
+
+    <strong>Input Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.blockdiagram.buildrapidacceleratortarget.html#mw_f95d125f-c2d9-4eb9-ae0f-acbd919a18ec">mdl</a> - Simulink model name
+        string
+
+    <strong>Output Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.blockdiagram.buildrapidacceleratortarget.html#mw_bce15b4c-a5b8-4f72-9a76-3fcbd5d429fa">rtp</a> - Run-time parameter
+        string
+
+    <strong>Examples</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.blockdiagram.buildrapidacceleratortarget.html#mw_52272020-0c33-437c-b691-41e192a49bce">Build Rapid Accelerator Target for Model</a>
+
+    Introduced in Simulink in R2012b
+    <a href="matlab:doc Simulink.BlockDiagram.buildRapidAcceleratorTarget">Documentation for Simulink.BlockDiagram.buildRapidAcceleratorTarget</a>
+
+

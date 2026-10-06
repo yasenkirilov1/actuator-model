@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "visualReviewDate": "2026-10-06",
+  "unchangedFrozenSourceHashCount": 9,
+  "sourceHashesVerified": true,
+  "figuresXmlParsed": true,
+  "figuresVisuallyReviewed": [
+    "force_axes_and_inertia.svg",
+    "single_axis_native_diagnostic.svg",
+    "single_axis_error_by_force.svg",
+    "single_axis_force_ambiguity.svg"
+  ],
+  "visualRepairs": "Moved captions below x labels and moved native legend clear of the high force curve. Plots and diagram reviewed as 1100 pixel PNGs. Final reexecution changed only SVG creation timestamps; calculations and chart marks are identical.",
+  "newClosedLoopExperiments": 0,
+  "qualifiesOneAxisController": false,
+  "nativeMetricPoints": 600001,
+  "acquiredDiagnosticPoints": 20001,
+  "capacityRecordings": 736,
+  "plotsDoNotEstablishHardwarePerformance": true,
+  "files": [
+    {
+      "path": "acf_simulink/experiments/report_readability_20261006/loadcell/README.md",
+      "bytes": 12885,
+      "sha256": "89a506ccf5928b143221f544d08c0964921900767fef6cbcd4f7c71bef96999d"
+    },
+    {
+      "path": "acf_simulink/experiments/report_readability_20261006/loadcell/analyze_loadcell.py",
+      "bytes": 19006,
+      "sha256": "07c1bd8069e6083dd122b5142f8482d9fd032c22aad1e4c55319cd14b7b6c93b"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/acquired_axis_postprocessing_metrics.csv",
+      "bytes": 1580,
+      "sha256": "df93ca0e5246060e0a8b3dac39f7a69b4d9e7bcb5af5f22f564b7677fdc906ab"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/analytical_axis_error.csv",
+      "bytes": 2228,
+      "sha256": "0b105430c4d73558fa4d1407970e8c0b71fda96cf71bb7186d3bc193a6f48c19"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/force_axes_and_inertia.svg",
+      "bytes": 4308,
+      "sha256": "d26699f129c6d76620eeedb193e3b59df9cc3c40a31de4a3f25a95c47b399a33"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/force_axes_and_inertia_review.png",
+      "bytes": 61036,
+      "sha256": "6502ed090cf899e0f1ac8f77f1f08d4b2f6c836aa31df1ff98eba8c93edec3f7"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/loadcell_evidence.json",
+      "bytes": 17664,
+      "sha256": "8c375963c1afce52e3e9c9701fdd9c10d5581281bf8d1ee8c49c0db5635b9622"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/locked_recording_capacity.csv",
+      "bytes": 490,
+      "sha256": "e7994f95fa45756b2a73d653fb2a33f7521cc8a0b392ed0419f525763cc945f9"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/manufacturer_sources.json",
+      "bytes": 8095,
+      "sha256": "3d1ee05b72551d7b1ed859008db980785266d4a555a30e2d8d20c2b6ecd9b37e"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/native_axis_figure_rows.csv",
+      "bytes": 615662,
+      "sha256": "612614bc8e20fe51855f31b0a28a88842ed476c1be97ca6487bbe9fe3a8407fa"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/native_axis_postprocessing_metrics.csv",
+      "bytes": 1177,
+      "sha256": "0b8c4aa44f7433d708fbbff95303aed354c58df4992c4c77fe0056d465350ee0"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/same_axial_reading_ambiguity.csv",
+      "bytes": 117919,
+      "sha256": "08549a958b1e01a425ff39afde11c269050c8b6ad3183878694538727458be2f"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_error_by_force.svg",
+      "bytes": 12516,
+      "sha256": "f6fda14f29c213fa1ff8bfef74bfa5b0ddd2874370c60fec55f595f15fb55c9d"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_error_by_force_review.png",
+      "bytes": 51207,
+      "sha256": "0bf07a12a7e0e6811cb4a8609893aa73fc22290a45abaec630a2ab9063a38f8c"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_force_ambiguity.svg",
+      "bytes": 63752,
+      "sha256": "f67ba1ad82462ad965badc615962c9852fd61d94a47ef883f6743d8d0776ac5c"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_force_ambiguity_review.png",
+      "bytes": 63481,
+      "sha256": "016ed6b3409365a051c067398c9830579b73275be19ff9a6549912989877a5b6"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_native_diagnostic.svg",
+      "bytes": 110064,
+      "sha256": "971d46ad475cc3e90f083a0cea54f41800cebbcf4e17e9f9b5890de053ac84b9"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_native_diagnostic_review.png",
+      "bytes": 108776,
+      "sha256": "aa015adbcc9b1aeaf56725020a65392bb4f4df36df900b6a2460f0d084c6a6b6"
+    }
+  ]
+}

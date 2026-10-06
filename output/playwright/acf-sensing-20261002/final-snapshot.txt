@@ -1,0 +1,1860 @@
+### Page
+- Page URL: http://127.0.0.1:8772/?view=1
+- Page Title: Active contact flange: control and prototype design
+### Snapshot
+```yaml
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - strong [ref=f1e7]: "Active contact flange: control and prototype design"
+        - generic [ref=f1e8]:
+          - text: As of
+          - time [ref=f1e9]: Oct 2, 2026
+      - generic [ref=f1e11]:
+        - button "More" [ref=f1e14] [cursor=pointer]
+        - button "Edit text and layout" [ref=f1e18] [cursor=pointer]
+        - button "Ask ChatGPT" [ref=f1e21] [cursor=pointer]
+        - button "Publish" [ref=f1e27] [cursor=pointer]
+  - region [aria-hidden] [ref=f1e29]:
+    - generic [ref=f1e31]:
+      - heading [level=2] [ref=f1e32]: Theme
+      - generic [ref=f1e33]:
+        - button [ref=f1e35] [cursor=pointer]:
+          - generic [ref=f1e37]: System
+        - button [ref=f1e39] [cursor=pointer]
+    - generic [ref=f1e41]:
+      - button [pressed] [ref=f1e42] [cursor=pointer]:
+        - generic [ref=f1e44]:
+          - strong [ref=f1e45]: Aa
+          - generic [ref=f1e46]: Sans serif
+        - generic [ref=f1e55]: Classic
+      - button [ref=f1e56] [cursor=pointer]:
+        - generic [ref=f1e58]:
+          - strong [ref=f1e59]: Aa
+          - generic [ref=f1e60]: Serif
+        - generic [ref=f1e69]: Neutral
+      - button [ref=f1e70] [cursor=pointer]:
+        - generic [ref=f1e72]:
+          - strong [ref=f1e73]: Aa
+          - generic [ref=f1e74]: Monospace
+        - generic [ref=f1e83]: Dark pixel
+      - button [ref=f1e84] [cursor=pointer]:
+        - generic [ref=f1e86]:
+          - strong [ref=f1e87]: Aa
+          - generic [ref=f1e88]: Monospace
+        - generic [ref=f1e97]: Scientific blue
+      - button [ref=f1e98] [cursor=pointer]:
+        - generic [ref=f1e100]:
+          - strong [ref=f1e101]: Aa
+          - generic [ref=f1e102]: Rounded sans
+        - generic [ref=f1e111]: Sticker pop
+  - main [ref=f1e112]:
+    - article "Active contact flange measured-acceleration study" [ref=f1e113]:
+      - 'heading "Active contact flange: control and prototype design" [level=1] [ref=f1e115]'
+      - generic [ref=f1e116]:
+        - button "Our goal actions" [ref=f1e119] [cursor=pointer]
+        - generic [ref=f1e122]:
+          - heading "Our goal" [level=2] [ref=f1e123]
+          - paragraph [ref=f1e124]:
+            - text: We want a compact active flange that keeps the
+            - strong [ref=f1e125]: normal pressing force experienced by the workpiece within ±0.5 N of a 5–50 N target
+            - text: ", including while crossing a"
+            - strong [ref=f1e126]: 1 mm high, 10 mm wide bump at 100 mm/s
+            - text: . It should work with fixed flange orientations from
+            - strong [ref=f1e127]: 0° to 90°
+            - text: and interchangeable tool masses
+            - strong [ref=f1e128]: S = 0.1–2 kg
+            - text: . The assumed moving holder B is 0.6 kg, giving
+            - strong [ref=f1e129]: 0.7–2.6 kg total tool-side mass
+            - text: ". Robot-side body A is budgeted separately: 0.4 kg in the generic baseline, approximately 1.5 kg for the real coil example evaluated below."
+          - paragraph [ref=f1e130]:
+            - text: The controller may use a multi-axis load cell between B and S, tool position relative to A, an accelerometer mounted on S, known tool weight or a gravity tare, and a causal prediction of robot commands already issued. It receives no bump profile or surface preview. We want understandable native Simulink blocks, a measured performance margin, reasonable spring and damper values, and a practical actuator and sensing recommendation. Any springs must fit within
+            - strong [ref=f1e131]: 100 mm combined free length and 100 mm combined maximum installed length
+            - text: . Removed springs are replaced by rigid connections.
+          - paragraph [ref=f1e132]:
+            - strong [ref=f1e133]: "Scientific-reference result:"
+            - text: all 3,500 nominal sharp-bump cases pass, worst error
+            - strong [ref=f1e134]: 0.315811 N
+            - text: . Four repeated 30 s stress cases with the selected static calibration pass at
+            - strong [ref=f1e135]: 0.415311 N
+            - text: worst. The recommended prototype uses a voice coil, measured-inertia feedforward PI, a synchronized multi-axis load cell and S-mounted accelerometers, with assembled calibration and dynamic verification.
+          - paragraph [ref=f1e136]:
+            - strong [ref=f1e137]: "Lower-cost sensing update, 2 October:"
+            - text: the ADS131M08 at 30 ksample/s with a matched 8 kHz complete-response envelope passes all
+            - strong [ref=f1e138]: 700 new nominal conditions
+            - text: ", worst"
+            - strong [ref=f1e139]: 0.292804 N
+            - text: . Seven selected hot-coil long/mixed cases pass at
+            - strong [ref=f1e140]: 0.438821 N
+            - text: worst. The 999-recording cost study supports reducing ADC cost while retaining the reference acceleration sensors; the cheaper sensor envelopes consume substantial margin or fail. These results have their own source, noise seeds and qualification scope.
+      - generic [ref=f1e143]:
+        - heading "How the mechanism works" [level=2] [ref=f1e144]
+        - paragraph [ref=f1e145]: "The robot supplies the slow gross motion. A short-stroke actuator between A and B supplies the fast correction. S is the sanding tool downstream of the load cell. Either connection around the actuator can be compliant or rigid:"
+        - code [ref=f1e147]: "Robot R ─ upper attachment ─ A ─ actuator ─ B ─ lower attachment ─ load cell ─ S ─ surface position sensor: S relative to A accelerometer: mounted on S"
+        - paragraph [ref=f1e148]: "An attachment spring is an opposed, guided pair: both springs stay in compression while their difference supplies a signed net force. A damper acts across the same relative motion. A rigid attachment removes that motion while retaining the connection and its reaction force. Zero spring stiffness without a replacement connection would leave a free body, so that is a different physical system."
+        - paragraph [ref=f1e149]:
+          - text: Positions are positive away from the workpiece. The actuator gap is
+          - code [ref=f1e150]: u = xA − xB
+          - text: "; actual travel is its configured midpoint plus u. R is the prescribed robot-side boundary. A/B/S masses follow Newton's law. With both attachments compliant:"
+        - code [ref=f1e152]: q1 = q10 + k1 (xS − xB) + c1 (vS − vB) q2 = q20 + k2 (xA − xR) + c2 (vA − vR) mA aA = Fa − q2 − mA g_axis mB aB = q1 − Fa − mB g_axis mS aS = Rz − q1 − mS g_axis
+        - paragraph [ref=f1e153]:
+          - code [ref=f1e154]: q1
+          - text: is the lower connection force,
+          - code [ref=f1e155]: q2
+          - text: the upper connection force,
+          - code [ref=f1e156]: Fa
+          - text: the actuator's net axial force after actual guide friction, and
+          - code [ref=f1e157]: Rz
+          - text: the axial component of workpiece reaction. The coil's electromagnetic force is
+          - code [ref=f1e158]: Kf I
+          - text: ; subtract guide friction to obtain Fa in these motion balances.
+          - code [ref=f1e159]: g_axis = g cos(theta)
+          - text: represents gravity along the flange axis. The orientation changes the operating load, rather than changing the mass or stiffness.
+        - paragraph [ref=f1e160]: "For rigid attachments the model enforces the corresponding constraints and calculates their reaction forces. It does not approximate a rigid connection with an enormous numerical spring. If both attachments are rigid, A follows the robot and B follows S, so:"
+        - code [ref=f1e162]: Rz = Fa + (mB + mS) (g_axis + aS)
+        - paragraph [ref=f1e163]: "This arrangement still moves: the actuator changes A–B separation. Removing the external springs removes additional compliant joints; it does not lock the actuator at one position."
+        - paragraph [ref=f1e164]:
+          - text: The selected candidate makes the
+          - strong [ref=f1e165]: upper attachment rigid
+          - text: and puts an
+          - strong [ref=f1e166]: opposed spring pair and a parallel damper in the lower attachment
+          - text: . All of that attachment's load passes through the multi-axis cell before reaching S. A spring or guide that transfers axial load directly to S around the sensing element would invalidate the force reconstruction. The spring/damper joining frame is treated as massless in this model; its real inertia is an important prototype check.
+        - paragraph [ref=f1e167]:
+          - text: Each recording starts at its own loaded equilibrium for the selected force and orientation. The reference link loads are
+          - code [ref=f1e168]: q10 = Fref − mS g_axis
+          - text: and
+          - code [ref=f1e169]: q20 = Fref − (mA+mB+mS) g_axis
+          - text: ; the starting actuator load is
+          - code [ref=f1e170]: Fa0 = Fref − (mB+mS) g_axis
+          - text: . An opposing spring pair's common preload is a separate quantity. The fixed-orientation recordings do not establish the transient behavior of changing force target or rotating a loaded tool.
+      - generic [ref=f1e171]:
+        - button "Contact, surface force and the sharp bump actions" [ref=f1e174] [cursor=pointer]
+        - generic [ref=f1e177]:
+          - heading "Contact, surface force and the sharp bump" [level=2] [ref=f1e178]
+          - paragraph [ref=f1e179]: "The contact model represents a tool following a prescribed smooth surface while sliding tangentially. For local slope s, the unit normal and tangent in the scanning plane are:"
+          - code [ref=f1e181]: n = (−s, 1) / sqrt(1+s²) t = ( 1, s) / sqrt(1+s²) R = N n − mu N t N = n · R
+          - paragraph [ref=f1e182]:
+            - text: N is the normal pressing force we score. The sliding drag is represented by
+            - code [ref=f1e183]: mu
+            - text: "; the plant may use a specified value, but the controller does not receive it. It measures the lateral force component instead. For positive scanning:"
+          - code [ref=f1e185]: N = Rz sqrt(1+s²) / (1−mu s) Rx = −N (s+mu) / sqrt(1+s²) N = (Rz − s Rx) / sqrt(1+s²)
+          - paragraph [ref=f1e186]: The lateral reaction is carried by the guides and robot boundary. The current model includes that force in contact reconstruction but does not simulate lateral guide deflection or robot structural bending.
+          - paragraph [ref=f1e187]:
+            - text: The bump is a smooth polynomial over its width. With H=1 mm, transit time T=0.1 s and normalized progress
+            - code [ref=f1e188]: q=(t−t_bump)/T
+            - text: ", its height is"
+            - code [ref=f1e189]: h=64 H q³(1−q)³
+            - text: for 0≤q≤1, and zero outside. Height, velocity and acceleration join continuously at entry/exit. This gives a reproducible demanding disturbance without a mathematically instantaneous displacement step.
+          - paragraph [ref=f1e190]:
+            - text: The peak downward surface acceleration is
+            - strong [ref=f1e191]: 2.4 m/s²
+            - text: ", the peak axial speed is approximately"
+            - strong [ref=f1e192]: 34.3 mm/s
+            - text: ", and the peak jerk is approximately"
+            - strong [ref=f1e193]: 384 m/s³
+            - text: . Thus a 2 kg downstream tool can contribute
+            - strong [ref=f1e194]: 4.8 N
+            - text: of dynamic inertia to the difference between the cell reading and contact reaction. With a 0.1 kg tool the same effect is only
+            - strong [ref=f1e195]: 0.24 N
+            - text: . The entire moving B+S mass also affects actuator effort, independently of how much mass lies beyond the load cell.
+        - generic [ref=f1e196]:
+          - generic [ref=f1e197]:
+            - heading "Specified bump motion and required tool-inertia compensation" [level=2] [ref=f1e198]
+            - button "Specified bump motion and required tool-inertia compensation actions" [ref=f1e201] [cursor=pointer]
+          - figure [ref=f1e203]:
+            - img "Specified bump motion and required tool-inertia compensation"
+            - paragraph [ref=f1e206]: Calculated from the specified surface polynomial; this figure shows required motion and inertial force, rather than a controller qualification.
+        - paragraph [ref=f1e209]: Contact is maintained only while its calculated required normal reaction is nonnegative. The first contact loss or travel-stop hit stops the recording and marks it failed. This chosen model does not continue into free flight, hard-stop impact, or re-contact.
+      - generic [ref=f1e212]:
+        - heading "Why the load cell and accelerometer work together" [level=2] [ref=f1e213]
+        - paragraph [ref=f1e214]: The cell is between B and S, so it carries the entire downstream tool. Its reading includes the forces needed to support and accelerate S. Static tare can remove known gravity; it cannot remove changing acceleration.
+        - paragraph [ref=f1e215]:
+          - text: An accelerometer measures
+          - strong [ref=f1e216]: specific acceleration
+          - text: ","
+          - code [ref=f1e217]: f = aS − g_vector
+          - text: ". At rest it reports the support acceleration opposing gravity. With the cell sign defined as positive workpiece reaction, Newton's law gives the exact translational relationship:"
+        - code [ref=f1e219]: R = Lraw + mS f
+        - paragraph [ref=f1e220]: "With consistent static gravity tare on both channels, the same reconstruction becomes:"
+        - code [ref=f1e222]: Rhat = Ltared + mS adynamic_measured Nhat = nhat · Rhat
+        - paragraph [ref=f1e223]: This explains why adding an accelerometer is useful. The contact-force estimate comes from two physical measurements and the known downstream mass; it does not need to infer acceleration from the coil's force constant or pretend that the B–S cell directly measures contact force. Taring the cell and then adding the accelerometer's unmodified gravity reading would double-count gravity. Both channels use one consistent convention.
+        - paragraph [ref=f1e224]:
+          - text: Force and acceleration must describe the same instant and frame. If the cell transfer is
+          - code [ref=f1e225]: HL
+          - text: and the acceleration transfer is
+          - code [ref=f1e226]: Ha
+          - text: ", the reconstructed vector is:"
+        - code [ref=f1e228]: Rhat = HL R + mS (Ha − HL) f
+        - paragraph [ref=f1e229]:
+          - text: Matched complete filtering and delay cancel the inertia term; equal sample rates alone do not. At S=2 kg and jerk 384 m/s³, 100 µs differential latency can introduce about
+          - strong [ref=f1e230]: 0.0768 N
+          - text: of inertia error. Matching the faster channel to an identified common response is usually preferable to stacking both sensor filters and adding unnecessary delay.
+        - paragraph [ref=f1e231]: The normal-direction estimate also needs the measurement's effective timestamp. A delayed reaction vector contains delayed sanding drag; projecting it onto a present normal can produce an apparent normal-force error. The controller can keep a matched direction for measurement reconstruction and a separate causal prediction for its actuator command.
+        - paragraph [ref=f1e232]: The controller estimates local normal direction from tool motion without receiving the bump geometry. Relative S–A position constrains gap and velocity, measured S acceleration supplies the fast motion information, and the issued-command robot predictor supplies the expected A motion. A small position-corrected velocity observer provides the estimate; dividing normal tool velocity by tangential scan velocity gives local slope under the model's maintained-contact assumption. The known actual surface trajectory remains a plant input and a validation reference only.
+      - generic [ref=f1e235]:
+        - heading "Control and robot recentering" [level=2] [ref=f1e236]
+        - paragraph [ref=f1e237]: The fast loop regulates reconstructed normal force. A PI/PID correction combines with gravity compensation, measured-acceleration feedforward and a measured correction for surface slope and sanding drag. The two-state motion observer estimates S–A separation and velocity from relative position, measured S acceleration and the causal robot-motion predictor. With upper A rigidly attached to the prescribed robot boundary, these give an estimate of the tool's axial velocity and therefore local surface slope. An upper compliant attachment needs an additional estimate of A's motion before this reconstruction can be qualified.
+        - paragraph [ref=f1e238]: "The geometry feedforward uses an estimated ratio of tangential drag to pressing force. From the reconstructed reaction vector and estimated slope:"
+        - code [ref=f1e240]: mu_hat_raw = −(Rx_hat + s_hat Rz_hat) / (Rz_hat − s_hat Rx_hat) Rz_request = Nref (1 − mu_hat s_hat) / sqrt(1+s_hat²)
+        - paragraph [ref=f1e241]: The ratio is accepted only while estimated pressing force and the denominator exceed 1 N, is bounded to [−1,1], and is smoothed with a 5 ms EMA. It starts at zero and holds its previous value when invalid. This supplies measured drag compensation without assuming that the controller knows the plant's friction coefficient. A radial fluctuation of reaction force cancels in the ratio, which helps avoid turning geometry feedforward into an additional high-frequency force-feedback path. Force reconstruction itself still uses the measured vector projected onto the estimated normal.
+        - paragraph [ref=f1e242]:
+          - text: For an identified coil force constant Kf and positive error
+          - code [ref=f1e243]: e = Nhat − Nref
+          - text: ", the main current request is:"
+        - code [ref=f1e245]: Irequest = Ih_hold + (Rz_request − Nref)/Kf − (mB_identified + mS_identified) aS_FF/Kf + friction_estimate(vgap_hat)/Kf + lower_inverse_current + feedback_filter(−Kp e − Ki integral(e) − Kd derivative_filtered(e))
+        - paragraph [ref=f1e246]: The measured-acceleration term corrects the disturbance after it is observed. It supplies no future surface information. A separate optional causal derivative lead and feedforward filter trade transient delay against amplification of accelerometer noise. The identified masses and force constant determine these commands; the physical plant retains its actual masses, winding and force constant. Saturation and antiwindup keep the integrator consistent with available current. PI gains are expressed explicitly in A/N and A/(N·s); changing Kf does not silently change user gains.
+        - paragraph [ref=f1e247]: "The coil's own current regulator retains winding resistance, inductance, back EMF and supply clipping. Actual current follows its physical winding state, rather than jumping instantly to the request. The force loop and current loop are separate: a fast software update does not establish either loop's physical bandwidth."
+        - paragraph [ref=f1e248]: Fast feedback and feedforward have different filtering needs. Feedback must avoid exciting delayed structural modes; feedforward needs to follow the tool's measured acceleration promptly. Filtering the entire current request can stabilize a mode while also delaying the useful acceleration correction. The structural controller search therefore examines both total-current mode suppression and filtering of the feedback correction alone, with the same physical sensor inputs. Every selected filter must be tested with repeated bumps and changed structural frequency, rather than accepted from one quiet trace.
+        - paragraph [ref=f1e249]: "The robot loop recenters actuator travel slowly. Its output should not chase a 0.1 s bump through a delayed industrial robot. The existing gate checks reconstructed force error within ±0.2 N, filtered trend within 2 N/s and a 100 ms stable interval. A second detector evaluates force variation at every 10 kHz force sample: a 100 ms error mean, 20 ms fluctuation-variance filter and an 0.08 N RMS threshold. Every failing fast sample resets the stable dwell, including threshold crossings between robot ticks. Robot commands are issued at 100 Hz only after the dwell is complete. These thresholds are explicit control settings, rather than a promise that filtered force alone bounds the true workpiece force."
+        - paragraph [ref=f1e250]: The requested recenter gain is bounded using expected robot delay, response time and gate timing. For the modeled 80 ms command delay, 60 ms response and two 100 ms gate intervals, an 0.8/s request is capped at approximately 0.735/s. A physical robot still needs a measured loaded response before accepting this gain.
+        - paragraph [ref=f1e251]: Closing the gate suppresses new correction commands. It cannot cancel commands already in a delay queue. The command predictor therefore models already-issued motion; it is not a preview of future bumps. The selected recordings test that distinction explicitly.
+        - paragraph [ref=f1e252]: The prescribed-motion robot model is suitable for studying command delay and stroke management. It does not yet represent force-induced robot compliance, joint dynamics or a controller that changes its own behavior under load. Those properties require measurements of the actual robot and a low-gain prototype recenter test before increasing correction gain.
+      - generic [ref=f1e253]:
+        - generic [ref=f1e255]:
+          - heading "Why the compliant candidate needs an additional feedforward term" [level=2] [ref=f1e256]
+          - paragraph [ref=f1e257]: A lower spring/damper gives B and S different accelerations. Compensating only the measured S acceleration as though B always moved with S leaves a substantial error. Increasing PI gain or adding derivative action did not recover the required margin in the tested compliant designs.
+          - paragraph [ref=f1e258]:
+            - text: Let
+            - code [ref=f1e259]: q
+            - text: be the change in S–B separation from its loaded equilibrium, and let
+            - code [ref=f1e260]: deltaL
+            - text: be the
+            - strong [ref=f1e261]: actual
+            - text: lower-link load change. The physical constitutive law and force balance use that actual motion. Separately, the controller forms
+            - code [ref=f1e262]: deltaL_desired
+            - text: "from measured S acceleration and the requested axial contact reaction:"
+          - code [ref=f1e264]: deltaL_desired = (Rz_request − Nref) − mS_identified aS_measured deltaL = k1 q + c1 dq/dt aB = aS − d²q/dt² Fa_net = Rz − (mB+mS)(g_axis+aS) + mB d²q/dt² Fcoil = Fa_net + guide_friction
+          - paragraph [ref=f1e265]: "The last acceleration term is the missing B–S relative-motion correction. The selected native branch converts measured desired load into an extra current:"
+          - code [ref=f1e267]: I_lower_inverse(s) = (mB_identified / Kf_identified) × s² / (k1_identified + c1_identified s) × LP2(s, 1500 Hz, damping 0.707) × deltaL_desired(s)
+          - paragraph [ref=f1e268]: The two-pole low-pass makes this a proper, causal transfer rather than an unbounded ideal differentiation. It is implemented with ordinary Sum, Gain and Discrete Transfer Fcn blocks. The controller uses recorded sensor inputs and known mechanism parameters; it receives neither the true tool acceleration nor the bump trajectory. The filter and identified coefficients are prepared before simulation, while the physical force and motion still run in native blocks.
+          - paragraph [ref=f1e269]:
+            - text: This correction helps the actuator accelerate B differently from S while the lower compliance carries the requested load. In the retained worst repeated-bump trace it reaches about
+            - strong [ref=f1e270]: 0.50 A
+            - text: ", equivalent to"
+            - strong [ref=f1e271]: 9.94 N
+            - text: for the generic 20 N/A coil. It changes the required current waveform appreciably even though the short bump itself is only 1 mm high.
+        - generic [ref=f1e272]:
+          - generic [ref=f1e273]:
+            - heading "Selected mechanism and controller settings" [level=2] [ref=f1e274]
+            - button "Selected mechanism and controller settings actions" [ref=f1e277] [cursor=pointer]
+          - table "Selected mechanism and controller settings" [ref=f1e280]:
+            - rowgroup [ref=f1e281]:
+              - row [ref=f1e282]:
+                - columnheader "Selected core setting" [ref=f1e283]
+                - columnheader "Value" [ref=f1e284]
+                - columnheader "Meaning" [ref=f1e285]
+            - rowgroup [ref=f1e286]:
+              - row [ref=f1e287]:
+                - cell "Upper connection" [ref=f1e288]
+                - cell "Rigid" [ref=f1e289]
+                - cell "A follows the modeled robot boundary" [ref=f1e290]
+              - row [ref=f1e291]:
+                - cell "Lower opposed-pair net stiffness" [ref=f1e292]
+                - cell "19,746 N/m" [ref=f1e293]
+                - cell "Two approximately 9.873 N/mm springs" [ref=f1e294]
+              - row [ref=f1e295]:
+                - cell "Lower parallel damping" [ref=f1e296]
+                - cell "60 N·s/m" [ref=f1e297]
+                - cell "About 2 N peak damping force in the retained repeated test" [ref=f1e298]
+              - row [ref=f1e299]:
+                - cell "Common preload" [ref=f1e300]
+                - cell "33.6 N per spring" [ref=f1e301]
+                - cell "Both springs remain seated throughout the tested motion" [ref=f1e302]
+              - row [ref=f1e303]:
+                - cell "Proportional / integral gain" [ref=f1e304]
+                - cell "0.30 A/N / 20 A/(N·s)" [ref=f1e305]
+                - cell "Moderate force correction around the feedforward command" [ref=f1e306]
+              - row [ref=f1e307]:
+                - cell "Derivative gain" [ref=f1e308]
+                - cell "0" [ref=f1e309]
+                - cell "No derivative term in the selected PI preset" [ref=f1e310]
+              - row [ref=f1e311]:
+                - cell "Feedback-only filter" [ref=f1e312]
+                - cell "1 kHz, two poles, damping 0.707" [ref=f1e313]
+                - cell "Limits force-feedback noise without filtering every feedforward term" [ref=f1e314]
+              - row [ref=f1e315]:
+                - cell "Lower-link inverse filter" [ref=f1e316]
+                - cell "1.5 kHz, two poles, damping 0.707" [ref=f1e317]
+                - cell "Limits derivative effort in the causal mechanism inverse" [ref=f1e318]
+              - row [ref=f1e319]:
+                - cell "Guide-velocity prediction" [ref=f1e320]
+                - cell "400 µs" [ref=f1e321]
+                - cell "A measured-motion timing correction, not surface preview" [ref=f1e322]
+              - row [ref=f1e323]:
+                - cell "Measured drag-ratio filter" [ref=f1e324]
+                - cell "5 ms" [ref=f1e325]
+                - cell "Smooths the inferred tangential/normal force ratio" [ref=f1e326]
+              - row [ref=f1e327]:
+                - cell "Force/current control update" [ref=f1e328]
+                - cell "10 kHz" [ref=f1e329]
+                - cell "Distinct from the actuator's actual current bandwidth" [ref=f1e330]
+              - row [ref=f1e331]:
+                - cell "Physical integration step" [ref=f1e332]
+                - cell "10 µs" [ref=f1e333]
+                - cell "Reference mechanics checked against 5 and 2.5 µs; final acquisition refinement reported with its own source" [ref=f1e334]
+        - paragraph [ref=f1e337]: These are coefficients for the stated masses, generic coil and selected sensing model. The known tool mass, holder mass, force constant and lower-link coefficients must be updated together. Deliberate calibration-error tests retain a distinction between actual plant parameters and the controller's identified values.
+      - generic [ref=f1e338]:
+        - button "Realistic acceleration sensing actions" [ref=f1e341] [cursor=pointer]
+        - generic [ref=f1e344]:
+          - heading "Realistic acceleration sensing" [level=2] [ref=f1e345]
+          - paragraph [ref=f1e346]:
+            - text: The analog
+            - strong [ref=f1e347]: ADXL1002
+            - text: "is the faster acquisition reference: ±50 g and 25 µg/√Hz, with sufficient bandwidth to characterize the load-cell mode. It is single-axis; use two orthogonal units for the present scanning plane and three for a general spatial system. External antialias filtering, offset/gain calibration and matched timing are necessary. Its 11 kHz response specification is not an 11 kHz first-order low-pass corner."
+            - link "Manufacturer datasheet" [ref=f1e348] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/data-sheets/adxl1001-1002.pdf
+            - text: .
+          - paragraph [ref=f1e349]:
+            - text: The original scientific reference uses a simultaneous-sampling
+            - strong [ref=f1e350]: AD7606C-18
+            - text: ", which provides eight 18-bit analog channels. Budget about 0.65 µs conversion provision without oversampling, then include its input filter, readout and computation in the complete timing measurement. A force interface exposing six amplified and conditioned bridge channels plus the two acceleration axes fits one converter for the planar model; the ATI calibration matrix converts those bridge values into force and torque. A full XYZ accelerometer arrangement requires nine channels: use two common-trigger converters, characterize inter-device timing, and latch the position encoder at the same epoch."
+            - link "ADC datasheet" [ref=f1e351] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf
+            - text: ","
+            - link "ATI TWE interface manual" [ref=f1e352] [cursor=pointer]:
+              - /url: https://www.ati-ia.com/app_content/documents/9620-05-TWE.pdf
+            - text: .
+          - paragraph [ref=f1e353]:
+            - text: The ADXL1002's typical response is within 5% out to 4.7 kHz, while its mechanical resonance is around 21 kHz. This makes it a useful reference for a faster acquisition design around the cell's kilohertz modes. An illustrative 10 kΩ/10 nF output pole gives approximately 100 µs, consistent with the datasheet's capacitive-load provisions. At that dominant response, theoretical white acceleration noise is approximately
+            - strong [ref=f1e354]: 0.01226 m/s² RMS
+            - text: . A 40 mV/g sensitivity and the ADC's 0–5 V range give a
+            - strong [ref=f1e355]: 0.00468 m/s² quantum
+            - text: ; including ideal quantization gives about 0.01234 m/s² RMS, or
+            - strong [ref=f1e356]: 0.0247 N RMS at S=2 kg
+            - text: .
+          - paragraph [ref=f1e357]: "That calculation is a starting budget. A single 100 µs RC sampled directly at 10 kHz is not a complete antialias design. Acquire faster, provide adequate out-of-band analog rejection, then decimate to the controller rate; count the complete filter and decimator delay. ATI's DAQ interface includes a published two-pole 5.1 kHz analog filter; a TWE bridge interface needs designed conditioning and filtering instead. Match the installed complex force/acceleration responses over the relevant band, rather than treating either sensor as an ideal first-order part. The AD7606C-18 also contributes input-filter phase: its low-bandwidth mode specifies a typical 25 kHz bandwidth and about 6.8 µs phase delay. The stated acceleration quantum is ideal resolution, rather than the ADC's complete noise or calibrated accuracy."
+          - paragraph [ref=f1e358]:
+            - text: The scientific-reference acquisition uses a
+            - strong [ref=f1e359]: 100 ksample/s simultaneous raw clock
+            - text: ", matched two-pole approximately 5.1 kHz analog responses, a"
+            - strong [ref=f1e360]: 50 µs EMA at that raw clock
+            - text: ", and a fresh-sample latch into the"
+            - strong [ref=f1e361]: 10 kHz force controller
+            - text: . The native nominal low-frequency delay of the filter pair is
+            - strong [ref=f1e362]: 88.92 µs
+            - text: ", before the selected 20 µs acquisition/computation allowance. The accelerometer white-noise budget is approximately"
+            - strong [ref=f1e363]: 0.014 m/s² RMS
+            - text: "after nominal conditioning, before quantization and final sampling. The ideal acceleration quantum adds about 0.00135 m/s² RMS quantization noise. The 0.014 m/s² conditioned value is a measurement-chain acceptance target, rather than a guaranteed assembled specification: ADC, amplifier and reference noise consume that allowance and must be measured. Exact ATI filter damping, installed sensor response and total timing still need identification; a nominal Butterworth response is an engineering envelope, not a claim about an unspecified manufacturer filter shape. This acquisition graph is used by the scientific-reference qualification below. The dated lower-cost study later in this report separately evaluates replacement converters with their own filters, quantization, noise and timing."
+          - paragraph [ref=f1e364]:
+            - text: The three-axis
+            - strong [ref=f1e365]: ADXL354C
+            - text: remains a useful lower-bandwidth comparison. Its ±8 g noise budget is about 0.0117 m/s² RMS with a 200 µs dominant response, but its internal response around the cell's kilohertz mode needs particular care. It cannot be substituted for a faster sensor by copying only the RMS-noise value.
+            - link "Manufacturer datasheet" [ref=f1e366] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf
+            - text: .
+          - paragraph [ref=f1e367]: The accelerometer must measure S's rigid-body acceleration near its centre of mass, or rotation and sensor lever arm must be compensated. Mounting on a flexible circuit-board corner can measure board vibration instead. Before selecting range, run the real sander on an instrumented fixture and check clipping, rectified bias and temperature drift; low white-noise density alone does not establish accurate DC force during sanding.
+          - paragraph [ref=f1e368]:
+            - text: The ADXL1002 output zero and sensitivity are ratiometric to its supply. The outer ±0.01 m/s² bias stress corresponds to
+            - strong [ref=f1e369]: 40.8 µV
+            - text: at its nominal 40 mV/g output; the selected
+            - strong [ref=f1e370]: ±0.005 m/s² target is only 20.4 µV
+            - text: . With an independent ADC reference, approximately
+            - strong [ref=f1e371]: 40.8 µV of uncompensated supply change
+            - text: ", or"
+            - strong [ref=f1e372]: 8 ppm at 5 V
+            - text: ", uses the tighter zero-error allowance. Use a stable, calibrated sensor/reference ratio or measured supply correction, warm up and tare at operating temperature, and verify drift through a powered sanding run. Initial tare alone does not establish that performance over time."
+            - link "Accelerometer datasheet" [ref=f1e373] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/data-sheets/adxl1001-1002.pdf
+            - text: .
+          - paragraph [ref=f1e374]: "The identified downstream mass includes everything on S's side of the sensing element: tool, pad, brackets, sensor carrier, cable portion and fasteners that move with it. The assembly's centre of mass and any rotation must be measured consistently with the force/acceleration frames. The actuator's stationary body still moves with the robot; its mass is robot payload even when it does not contribute to the fast B+S inertia."
+      - generic [ref=f1e375]:
+        - button "Practical force, position and drive components actions" [ref=f1e378] [cursor=pointer]
+        - generic [ref=f1e381]:
+          - heading "Practical force, position and drive components" [level=2] [ref=f1e382]
+          - paragraph [ref=f1e383]: These parts ground the engineering assumptions. They are representative prototype choices rather than a purchasing list or a claim that catalog values prove the assembled force accuracy.
+        - generic [ref=f1e384]:
+          - generic [ref=f1e385]:
+            - heading "Representative sensing and drive components" [level=2] [ref=f1e386]
+            - button "Representative sensing and drive components actions" [ref=f1e389] [cursor=pointer]
+          - table "Representative sensing and drive components" [ref=f1e392]:
+            - rowgroup [ref=f1e393]:
+              - row [ref=f1e394]:
+                - columnheader "Component class" [ref=f1e395]
+                - columnheader "Representative example" [ref=f1e396]
+                - columnheader "Useful published properties" [ref=f1e397]
+                - columnheader "What still needs verification" [ref=f1e398]
+            - rowgroup [ref=f1e399]:
+              - row [ref=f1e400]:
+                - cell "Compact multi-axis cell" [ref=f1e401]
+                - cell "ATI Mini27 Titanium SI-80-4" [ref=f1e402]
+                - cell "±80 N transverse, ±160 N axial; effective resolution 0.03/0.06 N; 33.4 g; calculated axial stiffness 64 MN/m" [ref=f1e403]
+                - cell "Combined-load residual calibration, temperature drift, loaded mechanical response and complete channel timing" [ref=f1e404]
+              - row [ref=f1e405]:
+                - cell "Higher-stiffness cell" [ref=f1e406]
+                - cell "ATI Nano25 SI-125-3" [ref=f1e407]
+                - cell "±125/±500 N; effective resolution about 0.021/0.0625 N; axial stiffness 110 MN/m" [ref=f1e408]
+                - cell "Broad axial range does not itself improve accuracy; calibration and mounted response remain necessary" [ref=f1e409]
+              - row [ref=f1e410]:
+                - cell "S–A position" [ref=f1e411]
+                - cell "Protected Renishaw TONiC with RELM scale" [ref=f1e412]
+                - cell "0.1 µm counter interface is available; certified scale accuracy approximately ±1 µm at 20°C" [ref=f1e413]
+                - cell "Bracket deflection, dust protection, magnetic reference/limit behavior, encoder latency and lost-count detection" [ref=f1e414]
+              - row [ref=f1e415]:
+                - cell "Low-noise current drive" [ref=f1e416]
+                - cell "Trust Automation TA115 class" [ref=f1e417]
+                - cell "24–48 V, current mode, published 5 kHz bandwidth into 2.5 mH, forced-air cooling" [ref=f1e418]
+                - cell "Actual 3–4 mH hot-coil response, output headroom, residual current noise and thermal safe operating area" [ref=f1e419]
+        - generic [ref=f1e421]:
+          - paragraph [ref=f1e422]:
+            - text: "Sources:"
+            - link "ATI Mini27" [ref=f1e423] [cursor=pointer]:
+              - /url: https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini27+Titanium
+            - text: ","
+            - link "ATI Nano25" [ref=f1e424] [cursor=pointer]:
+              - /url: https://www.ati-ia.com/products/ft/ft_models.aspx?id=Nano25
+            - text: ","
+            - link "TONiC/RELM documentation" [ref=f1e425] [cursor=pointer]:
+              - /url: https://www.renishaw.com/media/pdf/en/fa9b5d5f3056478c8031f7c3e8091102.pdf
+            - text: ","
+            - link "TA115 datasheet" [ref=f1e426] [cursor=pointer]:
+              - /url: https://trustautomation.com/datasheets/TA115DataSheet.pdf
+            - text: .
+          - paragraph [ref=f1e427]:
+            - text: The load cell must accommodate
+            - strong [ref=f1e428]: raw force before gravity tare
+            - text: . A 2 kg tool contributes up to 19.6 N laterally at a 90° orientation; sanding drag and sloped contact add to that load. A tare changes the reported zero, not hardware capacity. Moments and combined-axis ratings also need checking for the real tool's lever arm.
+          - paragraph [ref=f1e429]:
+            - text: Rigidly fastening the sensor does not make it infinitely stiff. In the stiff lower-connection reference, the specified Mini27 axial stiffness and B=0.6 kg produce a maintained-contact B-side mode near
+            - strong [ref=f1e430]: 1.64 kHz
+            - text: . The selected external spring/damper instead gives a
+            - strong [ref=f1e431]: passive B-stage frequency near 28.9 Hz in maintained contact
+            - text: ", with damping ratio about 0.28. That is the open mechanical frequency; the closed-loop response also contains force control, acquisition, current dynamics and filtering. Its native plant uses"
+            - strong [ref=f1e432]: k1=19,746 N/m and c1=60 N·s/m directly
+            - text: ", with a massless joining frame and no independent cell state. It neglects the representative 64 MN/m cell's approximately"
+            - strong [ref=f1e433]: 0.031% static series-compliance correction
+            - text: . The stiff no-springs reference retains the finite cell.
+          - paragraph [ref=f1e434]:
+            - text: A real joining plate between the spring pair and cell introduces another degree of freedom. Illustrative 50–200 g plate masses with a 64 MN/m cell give high modes around
+            - strong [ref=f1e435]: 5.7–2.85 kHz
+            - text: ", rather than removing every structural mode. These are analytical estimates, not native force qualification of a built fixture. Keep the joining assembly light and stiff, measure its modes under load, and include any material mode in the identified controller model before accepting the prototype's margin."
+          - paragraph [ref=f1e436]: "Partition the assembled masses by that load path. S inertia reconstruction uses only mass downstream of the sensing element; the inverse's B mass is actuator-side mass above the spring. An intervening frame is a separate mass: at low frequency its inertia loads the spring together with S, but it is not sensed as downstream tool inertia. Split any frame mass out of the nominal holder budget and include its measured dynamics, rather than entering the same total mass into every compensation gain."
+          - paragraph [ref=f1e437]:
+            - text: "Published force resolution is not calibrated accuracy. Current Mini27 factory accuracy is stated as 0.75–1.25% of full scale, depending on axis: that does not establish a 0.05–0.1 N residual. The assembled system needs independent known-load checks after any offset, gain, axis-matrix and temperature corrections. Sensor calibration limits belong beside the control results, rather than being hidden inside a low-noise assumption."
+            - link "Current manufacturer specification" [ref=f1e438] [cursor=pointer]:
+              - /url: https://ati.novanta.com/product/mini27-titanium-force-torque-sensor/
+            - text: .
+          - paragraph [ref=f1e439]: "A linear current amplifier is useful for the first precise-force prototype because it avoids introducing PWM current ripple into the averaged-voltage model. This carries a cooling cost. With 20 N/A and 4 Ω, a 50 N horizontal hold needs 2.5 A: the coil dissipates 25 W, and an idealized 24 V linear output stage dissipates another 35 W. Raising the supply to 48 V raises that driver loss to 95 W at the same operating point. These are electrical heat calculations; actual voltage drops and thermal mounting must be checked against the driver's safe operating area."
+          - paragraph [ref=f1e440]: A switched amplifier can be more efficient, but its current ripple needs measurement and, where necessary, filtering or a qualified mechanical attenuation path. A current-loop bandwidth number alone does not bound instantaneous force ripple. Keep the bulky driver and cooling on the robot or in its cabinet, rather than counting them inside the 0.6 kg moving holder allowance.
+          - paragraph [ref=f1e441]:
+            - text: A compact crossed-roller guide is a plausible low-friction starting point. THK quotes a rolling friction coefficient of 0.001–0.0025 for its crossed-roller guides. For an explicitly assumed 50–100 N equivalent bearing/preload load, that corresponds to 0.05–0.25 N of rolling drag. The modeled 0.2 N Coulomb term is therefore a reasonable target to investigate, rather than a measured assembled value. Seal drag, preload, contamination and moving cables require their own checks; the 2 N·s/m viscous term and the smooth reversal transition are engineering assumptions.
+            - link "THK guide specification" [ref=f1e442] [cursor=pointer]:
+              - /url: https://tech.thk.com/es/products/pdf/en_b00_015.pdf
+            - text: .
+          - paragraph [ref=f1e443]:
+            - text: The
+            - strong [ref=f1e444]: Moticont LVCM-070-051-01
+            - text: "is a useful real voice-coil reference: 25.4 mm stroke, 24.4 N/A force constant, 6.4 Ω resistance, 4 mH inductance and a 240 g moving coil. Its published continuous force is 64.7 N near the centre, falling to approximately 52 N near the ends in the manufacturer's curve. The stationary body weighs 1.24 kg, so it requires roughly 1.5 kg of robot-side A allowance rather than the generic 0.4 kg baseline. The moving-coil mass fits inside B=0.6 kg, leaving about 360 g for the holder, guides, sensor attachments and cables."
+            - link "Product specification" [ref=f1e445] [cursor=pointer]:
+              - /url: https://www.moticont.com/lvcm-070-051-01.htm
+            - text: ","
+            - link "manufacturer drawing and force curve" [ref=f1e446] [cursor=pointer]:
+              - /url: https://www.moticont.com/pdf/lvcm-070-051-01.pdf
+            - text: .
+          - paragraph [ref=f1e447]: At a 50 N horizontal hold this coil needs approximately 2.05 A and dissipates 26.9 W at its nominal resistance. A 39% resistance increase raises the hold voltage from 13.1 V to 18.2 V and coil heat to 37.4 W. That makes hot-coil amplifier output headroom a more meaningful voltage question than simply comparing nominal 24 V and 48 V supplies. The continuous-force curve, thermal mounting, usable position range and actual current response still need checking together.
+      - generic [ref=f1e448]:
+        - button "Experiments and results actions" [ref=f1e451] [cursor=pointer]
+        - generic [ref=f1e454]:
+          - heading "Experiments and results" [level=2] [ref=f1e455]
+          - paragraph [ref=f1e456]:
+            - text: The first controller screen uses the same physical measurements and force reconstruction for every strategy. It contains
+            - strong [ref=f1e457]: 72 gain-search recordings and 56 strategy recordings
+            - text: ", each scored from its full native history. These recordings use rigid attachments as a reference while the finite-sensor structural controller is being qualified."
+        - generic [ref=f1e458]:
+          - generic [ref=f1e459]:
+            - heading "Common-cohort reference controller comparison" [level=2] [ref=f1e460]
+            - button "Common-cohort reference controller comparison actions" [ref=f1e463] [cursor=pointer]
+          - table "Common-cohort reference controller comparison" [ref=f1e466]:
+            - rowgroup [ref=f1e467]:
+              - row [ref=f1e468]:
+                - columnheader "Rigid-reference strategy, equal eight-case cohort" [ref=f1e469]
+                - columnheader "Worst normal-force error" [ref=f1e470]
+                - columnheader "Cases passing ±0.5 N" [ref=f1e471]
+            - rowgroup [ref=f1e472]:
+              - row [ref=f1e473]:
+                - cell "PI with measured-acceleration, geometry and guide-friction feedforward" [ref=f1e474]
+                - cell "0.374 N" [ref=f1e475]
+                - cell "8/8" [ref=f1e476]
+              - row [ref=f1e477]:
+                - cell "Same, with small filtered derivative action" [ref=f1e478]
+                - cell "0.378 N" [ref=f1e479]
+                - cell "8/8" [ref=f1e480]
+              - row [ref=f1e481]:
+                - cell "Same, with half guide-friction feedforward" [ref=f1e482]
+                - cell "0.380 N" [ref=f1e483]
+                - cell "8/8" [ref=f1e484]
+              - row [ref=f1e485]:
+                - cell "Same, with guide-friction feedforward removed" [ref=f1e486]
+                - cell "0.385 N" [ref=f1e487]
+                - cell "8/8" [ref=f1e488]
+              - row [ref=f1e489]:
+                - cell "Geometry/friction feedforward, without acceleration feedforward" [ref=f1e490]
+                - cell "1.667 N" [ref=f1e491]
+                - cell "0/8" [ref=f1e492]
+              - row [ref=f1e493]:
+                - cell "PI with static holding current only" [ref=f1e494]
+                - cell "1.840 N" [ref=f1e495]
+                - cell "0/8" [ref=f1e496]
+        - paragraph [ref=f1e499]: The cohort includes the light and heavy tool endpoints, a clean run and three noise seeds at each. Increasing proportional or integral gain increased the worst seeded error. This supports a moderate PI correction with measured feedforward; derivative action is not automatically an improvement. The selected mechanism and its measured-acquisition results are evaluated separately below; the rigid-reference comparison is used to explain the control choice.
+        - generic [ref=f1e500]:
+          - generic [ref=f1e501]:
+            - heading "Measured acceleration improves the equal-cohort controller comparison" [level=2] [ref=f1e502]
+            - button "Measured acceleration improves the equal-cohort controller comparison actions" [ref=f1e505] [cursor=pointer]
+          - figure [ref=f1e507]:
+            - img "Measured acceleration improves the equal-cohort controller comparison"
+            - paragraph [ref=f1e510]: 56 completed native recordings, with the same reconstructed normal-force measurement for every strategy. This reference uses rigid connections; the real finite-cell design is qualified separately.
+        - generic [ref=f1e511]:
+          - generic [ref=f1e512]:
+            - heading "PI gain sweep for the rigid reference" [level=2] [ref=f1e513]
+            - button "PI gain sweep for the rigid reference actions" [ref=f1e516] [cursor=pointer]
+          - figure [ref=f1e518]:
+            - img "PI gain sweep for the rigid reference"
+            - paragraph [ref=f1e521]: 72 completed native recordings, eight common cases per gain pair. Every cell reports the worst full-history normal-force error, including startup.
+        - generic [ref=f1e523]:
+          - paragraph [ref=f1e524]:
+            - text: The finite load-cell study changes the structural problem substantially. In 72 recordings over six cell stiffnesses, the same measured-drag geometry strategy retains contact without voltage or current clipping. With Kp=0.06 A/N, Ki=20 A/(N·s) and a feedback-only two-pole 1 kHz filter with damping 1.5,
+            - strong [ref=f1e525]: 35 of 36 cases
+            - text: meet the force band. The 64 MN/m cohort's worst error is
+            - strong [ref=f1e526]: 0.492 N
+            - text: ", leaving only 0.008 N reserve; the 110 MN/m cohort has a 0.570 N noise-sensitive failure. Thus short nominal passes alone are insufficient for a practical recommendation."
+          - paragraph [ref=f1e527]:
+            - text: A separate six-case 110 MN/m study applies a 1 ms acceleration-feedforward filter and causal derivative prediction. All six pass, with
+            - strong [ref=f1e528]: 0.471 N
+            - text: worst error. The corresponding eight-case 64 MN/m cohort reaches
+            - strong [ref=f1e529]: 0.493 N
+            - text: ": smoothing reduces stationary structural noise but consumes transient margin. These are comparative structural results; the final full-range timing and calibration qualification is reported separately below."
+        - generic [ref=f1e530]:
+          - generic [ref=f1e531]:
+            - heading "Load-cell stiffness and controller sensitivity" [level=2] [ref=f1e532]
+            - button "Load-cell stiffness and controller sensitivity actions" [ref=f1e535] [cursor=pointer]
+          - figure [ref=f1e537]:
+            - img "Load-cell stiffness and controller sensitivity"
+            - paragraph [ref=f1e540]: 72 native stiffness/controller recordings plus six filtered-feedforward recordings at 110 MN/m. Every point is a common cohort's worst full-history error. The star is a separately tested controller setting, rather than an interpolated filtered-controller curve.
+        - paragraph [ref=f1e543]:
+          - text: The lower-compliance search contains
+          - strong [ref=f1e544]: 168 native recordings
+          - text: across PI, filtered PID and inverse-assisted control, using equal clean/seed-1729 pairs at each compared tuning. The net pair stiffnesses are 12.826 and 19.746 N/mm, with 0, 15 and 60 N·s/m damping. No tested plain PI or PID setting meets ±0.5 N on both recordings while also satisfying spring packing. With the causal lower-link inverse, the 19.746 N/mm pair passes with either 15 or 60 N·s/m damping. The selected 60 N·s/m setting gives better mechanical damping and is the setting tested repeatedly and across the broader operating range.
+        - generic [ref=f1e545]:
+          - generic [ref=f1e546]:
+            - heading "Controller, lower spring rate and damper search" [level=2] [ref=f1e547]
+            - button "Controller, lower spring rate and damper search actions" [ref=f1e550] [cursor=pointer]
+          - figure [ref=f1e552]:
+            - img "Controller, lower spring rate and damper search"
+            - paragraph [ref=f1e555]: 168 native recordings. Each cell shows the best complete clean/noisy tuning pair within that family, so this is a tuning search rather than an equal-gain comparison. Hatched cells fail spring working range even where force tracking passes; contact-loss cases are not shown as successful low errors.
+        - generic [ref=f1e557]:
+          - paragraph [ref=f1e558]: The softer 12.826 N/mm pair can meet force tracking with inverse assistance, but its recorded excursions do not fit the selected spring working envelope. Zero external damping is also tested; it does not provide a qualified alternative in this search. Completely removed springs retain rigid connections and the load cell's own finite stiffness, as in the structural reference above. Removing damping does not remove the actuator's modeled guide friction.
+          - paragraph [ref=f1e559]:
+            - text: The selected core candidate then passes
+            - strong [ref=f1e560]: 32 short endpoint recordings
+            - text: and
+            - strong [ref=f1e561]: three 10 s repeated-bump recordings
+            - text: with a heavy 2 kg S, 50 N, 90°, drag ratio 0.3, and noise seeds 7, 29 and 1729. The repeated recordings cross seven sharp bumps each. The worst error is
+            - strong [ref=f1e562]: 0.37263 N
+            - text: ", leaving"
+            - strong [ref=f1e563]: 0.12737 N
+            - text: of nominal force reserve; there are no current/voltage clips, contact losses or travel-stop hits. These recordings use the matched 100 µs response-envelope reference. Final acquisition, calibration and full-grid results are reported separately so they are not confused with this core controller test.
+        - generic [ref=f1e564]:
+          - generic [ref=f1e565]:
+            - heading "Native repeated sharp-bump force, current and spring motion" [level=2] [ref=f1e566]
+            - button "Native repeated sharp-bump force, current and spring motion actions" [ref=f1e569] [cursor=pointer]
+          - figure [ref=f1e571]:
+            - img "Native repeated sharp-bump force, current and spring motion"
+            - paragraph [ref=f1e574]: Retained seed-29 heavy-tool recording, scored at every original 10 µs sample. The display uses min/max envelopes to preserve peaks. Current limits are ±3.5 A; the force band is ±0.5 N.
+        - generic [ref=f1e576]:
+          - paragraph [ref=f1e577]:
+            - text: The repeated cohort admits a common preload interval of approximately
+            - strong [ref=f1e578]: 30.38–36.86 N per spring
+            - text: ", and the configured 33.6 N lies inside it. With 18.1 mm nominal spring free length and ±0.49 mm length tolerance, the conservative total free length is"
+            - strong [ref=f1e579]: 37.18 mm
+            - text: and total maximum installed length is
+            - strong [ref=f1e580]: 30.37 mm
+            - text: . In the worst repeated trace, individual spring force spans about
+            - strong [ref=f1e581]: 5.70–61.50 N
+            - text: and compression
+            - strong [ref=f1e582]: 0.58–6.23 mm
+            - text: . The parallel damper reaches about
+            - strong [ref=f1e583]: 33.2 mm/s
+            - text: ","
+            - strong [ref=f1e584]: 1.99 N
+            - text: and
+            - strong [ref=f1e585]: 0.066 W instantaneous dissipation
+            - text: ; the modeled 10 s mean dissipation is only 1.48 mW. Stiction, seal force and frequency-dependent damping still need characterization.
+          - paragraph [ref=f1e586]:
+            - text: An additional
+            - strong [ref=f1e587]: 18 native recordings
+            - text: vary the controller's identified stiffness and damping independently by ±20% while holding the actual selected mechanics fixed. Both clean and noisy heavy-tool cases pass all nine combinations; the worst is
+            - strong [ref=f1e588]: 0.36166 N
+            - text: . This establishes tolerance to those particular identification errors. It does not establish the behavior of a physically changed spring or damper, which is a separate test.
+          - paragraph [ref=f1e589]:
+            - text: Six solver-refinement recordings at 10, 5 and 2.5 µs all pass. The maximum peak-error difference is approximately
+            - strong [ref=f1e590]: 11.9 µN
+            - text: for the noisy trace and
+            - strong [ref=f1e591]: 1.1 µN
+            - text: for the clean trace. Thus the candidate's roughly 0.13 N repeated-test margin is much larger than this measured time-step sensitivity.
+      - generic [ref=f1e592]:
+        - button "Final acquisition qualification and mechanical tolerance actions" [ref=f1e595] [cursor=pointer]
+        - generic [ref=f1e598]:
+          - heading "Final acquisition qualification and mechanical tolerance" [level=2] [ref=f1e599]
+          - paragraph [ref=f1e600]:
+            - text: The selected final system retains the soft lower link and causal inverse, and uses the explicit 100 ksample/s matched acquisition graph, the 10 kHz controller and the fast force-variation gate. Nine complete 10 s endpoint recordings pass, including a clean heavy-tool reference and noisy light/heavy endpoints. Their worst normal-force error is
+            - strong [ref=f1e601]: 0.32242 N
+            - text: . A separate two-seed repeated-heavy drive study, discussed below, reaches
+            - strong [ref=f1e602]: 0.34532 N
+            - text: at the same selected 100 µs current response. Noise seeds and test cohorts differ; each quoted maximum belongs to its recorded cohort.
+          - paragraph [ref=f1e603]:
+            - text: The broad nominal grid covers five S masses (0.1, 0.5, 1, 1.4 and 2 kg), ten force targets (5–50 N in 5 N increments), seven fixed orientations (0–90° in 15° increments), two physical drag ratios (0 and 0.3), and one clean plus four noisy conditions.
+            - strong [ref=f1e604]: All 3,500 unique four-second cases pass
+            - text: ", with all"
+            - strong [ref=f1e605]: 400,001 native samples per case
+            - text: "scored, including startup:"
+            - strong [ref=f1e606]: 1,400,003,500 force samples in total
+            - text: . The coverage audit finds no missing or duplicate identities and verifies all 700 common five-seed groups. The worst error is
+            - strong [ref=f1e607]: 0.315811 N
+            - text: ", leaving"
+            - strong [ref=f1e608]: 0.184189 N
+            - text: inside the ±0.5 N band. It occurs with S=2 kg, 50 N, 75°, drag ratio 0.3 and seed 97, at 2.00063 s. This qualifies the specified finite nominal grid; the calibration and physical-parameter screens have their own narrower scopes.
+          - paragraph [ref=f1e609]:
+            - text: The worst errors at S=0.1, 0.5, 1, 1.4 and 2 kg are respectively
+            - strong [ref=f1e610]: 0.1033, 0.1096, 0.1719, 0.2295 and 0.3158 N
+            - text: . Across the grid, the generic winding reaches
+            - strong [ref=f1e611]: 2.9466 A and 19.5489 V
+            - text: ", without current/voltage clipping, contact loss or a travel stop. The fixed 33.6 N preload passes every case, with a common feasible interval of"
+            - strong [ref=f1e612]: 30.374–40.637 N per spring
+            - text: ", 40.98 mm conservative combined free length and 34.174 mm combined installed length. The largest normal-force balance residual is 2.84×10⁻¹⁴ N."
+          - paragraph [ref=f1e613]:
+            - text: "The four interleaved partitions use one immutable scientific model, candidate and helper set. Their two execution recipes differ only in temporary simulation-data storage: 1,060 validated disk-backed recordings are reused once, and 2,440 remaining identities use private RAM-backed storage after a full-channel parity proof. The 122 earlier recovery recordings remain separate from the 3,500 unique cases. The case CSV, complete coverage audit and retained worst native history are in"
+            - code [ref=f1e614]: validation/normal_mass_controller_final_grid_20260930_*
+            - text: .
+        - generic [ref=f1e615]:
+          - generic [ref=f1e616]:
+            - heading "Full nominal force, orientation and tool-mass qualification" [level=2] [ref=f1e617]
+            - button "Full nominal force, orientation and tool-mass qualification actions" [ref=f1e620] [cursor=pointer]
+          - figure [ref=f1e622]:
+            - img "Full nominal force, orientation and tool-mass qualification"
+            - paragraph [ref=f1e625]: 3,500 completed native recordings. Each cell shows the worst complete-history error over both drag ratios and all five clean/noisy conditions. All masses have 700 recordings; the common color scale ends at the ±0.5 N limit.
+        - generic [ref=f1e626]:
+          - generic [ref=f1e627]:
+            - heading "Native worst case from the complete nominal grid" [level=2] [ref=f1e628]
+            - button "Native worst case from the complete nominal grid actions" [ref=f1e631] [cursor=pointer]
+          - figure [ref=f1e633]:
+            - img "Native worst case from the complete nominal grid"
+            - paragraph [ref=f1e636]: "The retained global worst recording: S=2 kg, 50 N, 75°, drag ratio 0.3, seed 97. Every 10 µs sample in the plotted window is shown; all 400,001 samples determine the metric. The 100 Hz robot gate remains ready here because its filtered stability criteria remain satisfied."
+        - generic [ref=f1e638]:
+          - paragraph [ref=f1e639]:
+            - text: Rerunning this exact worst identity at
+            - strong [ref=f1e640]: 5 and 2.5 µs
+            - text: gives peak errors of
+            - strong [ref=f1e641]: 0.315822976 and 0.315825399 N
+            - text: ", compared with 0.315810929 N at 10 µs. The finer difference is only"
+            - strong [ref=f1e642]: 2.42 µN
+            - text: ", and the total change from the working step is"
+            - strong [ref=f1e643]: 14.47 µN
+            - text: . Both refined histories pass force, spring packing, contact and travel checks without clipping. All 72 physical/control channels are compared on their own sample grids; the four robot-gate channels remain at their actual 100 Hz rate. Raw acquisition, controller periods, noise and physical inputs are unchanged. This supports the 10 µs working step for this final candidate and worst nominal case.
+          - paragraph [ref=f1e644]:
+            - text: Physical spring and damper tolerance receives a separate test.
+            - strong [ref=f1e645]: 72 native recordings
+            - text: vary actual lower stiffness and damping independently by
+            - strong [ref=f1e646]: ±20%
+            - text: ", while the controller continues to use the nominal identified 19,746 N/m and 60 N·s/m. Each of the nine mechanical combinations has eight common cases: the light/heavy tool endpoints, a clean condition and noise seeds 7, 29 and 1729 at 50 N/90° and drag ratio 0.3. All 72 meet the force requirement; the worst is"
+            - strong [ref=f1e647]: 0.37437 N
+            - text: ", without drive clipping, contact loss or a travel stop. This is physical-parameter variation, rather than merely changing the controller's coefficients."
+          - paragraph [ref=f1e648]:
+            - text: The approximate spring target is
+            - strong [ref=f1e649]: 20 mm nominal free length per spring
+            - text: ", ±0.49 mm length tolerance, 9.873 N/mm nominal rate, at least the modeled 68.54 N individual force envelope and 3.18 mm cyclic working stroke. Keep the pair guided and use"
+            - strong [ref=f1e650]: 33.6 N common preload per spring
+            - text: . The original shorter 18.1 mm geometry leaves insufficient compression room for the softest ±20% specimens at this fixed preload. Increasing the approximate free length to 20 mm changes packing, not the native force dynamics. Analytical rescoring of the same 72 complete histories makes
+            - strong [ref=f1e651]: all 72 packing checks pass
+            - text: ", with no invented additional force simulations."
+          - paragraph [ref=f1e652]:
+            - text: Across those physical variations, a shared feasible preload interval is approximately
+            - strong [ref=f1e653]: 30.91–38.89 N per spring
+            - text: . Individual spring force spans
+            - strong [ref=f1e654]: 5.65–61.55 N
+            - text: ", compression"
+            - strong [ref=f1e655]: 0.477–7.790 mm
+            - text: ", and the smallest tolerance-inclusive installed spring length is"
+            - strong [ref=f1e656]: 11.72 mm
+            - text: ", above the 11.05 mm minimum working length plus clearance. The conservative cyclic-motion bound is at most"
+            - strong [ref=f1e657]: 1.09 mm
+            - text: ", below the 3.18 mm provision. Combined free spring length is"
+            - strong [ref=f1e658]: 40.98 mm
+            - text: ; maximum combined installed length is
+            - strong [ref=f1e659]: 35.31 mm
+            - text: across stiffness tolerance. Both remain well below the 100 mm spring-only limits. These are approximate working-envelope targets, not a claim that a specific catalog spring has already been qualified.
+        - generic [ref=f1e660]:
+          - generic [ref=f1e661]:
+            - heading "Actual spring and damper tolerance with fixed nominal controller" [level=2] [ref=f1e662]
+            - button "Actual spring and damper tolerance with fixed nominal controller actions" [ref=f1e665] [cursor=pointer]
+          - figure [ref=f1e667]:
+            - img "Actual spring and damper tolerance with fixed nominal controller"
+            - paragraph [ref=f1e670]: 72 native force histories, eight per mechanical combination. Force values use every sample. The packing panel is an analytical 20 mm geometry rescore of those histories; it does not add force experiments.
+        - generic [ref=f1e672]:
+          - paragraph [ref=f1e673]:
+            - text: The lower pair shapes relative dynamics and keeps the sensing load path attached; its common internal preload does
+            - strong [ref=f1e674]: not
+            - text: offload static pressing force to the robot. At 50 N and 90°, the generic 20 N/A, 4 Ω coil still holds 2.5 A and dissipates 25 W. The real coil's holding heat is evaluated separately below.
+          - paragraph [ref=f1e675]:
+            - text: A separate
+            - strong [ref=f1e676]: six-record combined stress comparison
+            - text: adds actual stiffness +20% and damping −20% to the heavy simultaneous-calibration corner, using three common noise seeds. With the inverse still using nominal k/c, all three pass but the worst reaches
+            - strong [ref=f1e677]: 0.489996 N
+            - text: ", leaving only"
+            - strong [ref=f1e678]: 0.010004 N
+            - text: reserve. Changing only the inverse's identified stiffness/damping to the known actual
+            - strong [ref=f1e679]: 23,695.2 N/m and 48 N·s/m
+            - text: lowers the worst to
+            - strong [ref=f1e680]: 0.453026 N
+            - text: ", recovering"
+            - strong [ref=f1e681]: 0.036970 N
+            - text: and leaving
+            - strong [ref=f1e682]: 0.046974 N
+            - text: reserve. Peak current and voltage rise to 3.0045 A and 21.3319 V, without clipping; packing still passes.
+        - generic [ref=f1e683]:
+          - generic [ref=f1e684]:
+            - heading "Assembled mechanical identification improves the combined stress corner" [level=2] [ref=f1e685]
+            - button "Assembled mechanical identification improves the combined stress corner actions" [ref=f1e688] [cursor=pointer]
+          - figure [ref=f1e690]:
+            - img "Assembled mechanical identification improves the combined stress corner"
+            - paragraph [ref=f1e693]: Three paired seeds at one heavy combined corner, six complete four-second native histories. The bars score all samples and the entry traces show every sample in the displayed window. Known actual k/c are supplied exactly in the second group; this does not establish a residual k/c calibration allowance or a complete combined-tolerance region.
+        - generic [ref=f1e695]:
+          - paragraph [ref=f1e696]: This makes assembled mechanical identification part of the prototype recommendation. Measure the spring pair's loaded stiffness and damper response and enter those values in the inverse. It does not justify assuming that identifying k/c also removes unrelated sensor or robot-timing errors.
+          - paragraph [ref=f1e697]:
+            - text: The tighter static calibration targets described below are also tested at this same mechanical corner. Three further four-second records preserve the known actual k/c, physical inputs, noise and timing, and halve only the same sixteen static residuals. All pass, with peaks
+            - strong [ref=f1e698]: 0.373044, 0.376938 and 0.357305 N
+            - text: . The worst reserve is
+            - strong [ref=f1e699]: 0.123062 N
+            - text: ", compared with 0.046974 N before that calibration refinement. Peak current/voltage are"
+            - strong [ref=f1e700]: 2.9987 A / 21.9529 V
+            - text: ", without clipping or stops; spring packing still passes. This is a second narrow paired check of the proposed calibration targets, not a full combined mechanical/calibration grid."
+        - generic [ref=f1e701]:
+          - generic [ref=f1e702]:
+            - heading "Static calibration at the assembled mechanical stress corner" [level=2] [ref=f1e703]
+            - button "Static calibration at the assembled mechanical stress corner actions" [ref=f1e706] [cursor=pointer]
+          - figure [ref=f1e708]:
+            - img "Static calibration at the assembled mechanical stress corner"
+            - paragraph [ref=f1e711]: Three new four-second histories paired with three reused known-k/c baselines. Every 400,001 native sample determines each metric; the entry detail retains all native samples. Physical and identified k/c are fixed while only sixteen static calibration residuals halve.
+        - generic [ref=f1e712]:
+          - generic [ref=f1e713]:
+            - heading "Inspect the qualification recordings" [level=2] [ref=f1e714]
+            - button "Inspect the qualification recordings actions" [ref=f1e717] [cursor=pointer]
+          - generic [ref=f1e719]:
+            - textbox "Search data" [ref=f1e722]
+            - generic [ref=f1e723]:
+              - generic [ref=f1e724]:
+                - text: Tool S
+                - combobox "Tool S" [ref=f1e725]:
+                  - option "All masses" [selected]
+                  - option "0.1 kg"
+                  - option "0.5 kg"
+                  - option "1 kg"
+                  - option "1.4 kg"
+                  - option "2 kg"
+              - generic [ref=f1e726]:
+                - text: Target
+                - combobox "Target" [ref=f1e727]:
+                  - option "All forces" [selected]
+                  - option "5 N"
+                  - option "10 N"
+                  - option "15 N"
+                  - option "20 N"
+                  - option "25 N"
+                  - option "30 N"
+                  - option "35 N"
+                  - option "40 N"
+                  - option "45 N"
+                  - option "50 N"
+          - region "Native full-history qualification table" [ref=f1e728]:
+            - table [ref=f1e729]:
+              - caption [ref=f1e730]: Native full-history qualification
+              - rowgroup [ref=f1e731]:
+                - row [ref=f1e732]:
+                  - columnheader [ref=f1e733]:
+                    - button "S (kg)" [ref=f1e734] [cursor=pointer]
+                  - columnheader [ref=f1e735]:
+                    - button "Target (N)" [ref=f1e736] [cursor=pointer]
+                  - columnheader [ref=f1e737]:
+                    - button "Angle (°)" [ref=f1e738] [cursor=pointer]
+                  - columnheader [ref=f1e739]:
+                    - button "Friction" [ref=f1e740] [cursor=pointer]
+                  - columnheader [ref=f1e741]:
+                    - button "Noise seed" [ref=f1e742] [cursor=pointer]
+                  - columnheader [ref=f1e743]:
+                    - button "Peak error (N)" [ref=f1e744] [cursor=pointer]
+                  - columnheader [ref=f1e745]:
+                    - button "Current (A)" [ref=f1e746] [cursor=pointer]
+                  - columnheader [ref=f1e747]:
+                    - button "Voltage (V)" [ref=f1e748] [cursor=pointer]
+                  - columnheader [ref=f1e749]:
+                    - button "Pass" [ref=f1e750] [cursor=pointer]
+              - rowgroup [ref=f1e751]:
+                - row [ref=f1e752]:
+                  - cell "0.10" [ref=f1e753]
+                  - cell "5" [ref=f1e754]
+                  - cell "0" [ref=f1e755]
+                  - cell "0" [ref=f1e756]
+                  - cell "0" [ref=f1e757]
+                  - cell "0.041" [ref=f1e758]
+                  - cell "0.174" [ref=f1e759]
+                  - cell "1.162" [ref=f1e760]
+                  - cell "true" [ref=f1e761]
+                - row [ref=f1e762]:
+                  - cell "0.10" [ref=f1e763]
+                  - cell "5" [ref=f1e764]
+                  - cell "0" [ref=f1e765]
+                  - cell "0" [ref=f1e766]
+                  - cell "7" [ref=f1e767]
+                  - cell "0.043" [ref=f1e768]
+                  - cell "0.181" [ref=f1e769]
+                  - cell "1.485" [ref=f1e770]
+                  - cell "true" [ref=f1e771]
+                - row [ref=f1e772]:
+                  - cell "0.10" [ref=f1e773]
+                  - cell "5" [ref=f1e774]
+                  - cell "0" [ref=f1e775]
+                  - cell "0" [ref=f1e776]
+                  - cell "29" [ref=f1e777]
+                  - cell "0.044" [ref=f1e778]
+                  - cell "0.181" [ref=f1e779]
+                  - cell "1.535" [ref=f1e780]
+                  - cell "true" [ref=f1e781]
+                - row [ref=f1e782]:
+                  - cell "0.10" [ref=f1e783]
+                  - cell "5" [ref=f1e784]
+                  - cell "0" [ref=f1e785]
+                  - cell "0" [ref=f1e786]
+                  - cell "97" [ref=f1e787]
+                  - cell "0.036" [ref=f1e788]
+                  - cell "0.180" [ref=f1e789]
+                  - cell "1.417" [ref=f1e790]
+                  - cell "true" [ref=f1e791]
+                - row [ref=f1e792]:
+                  - cell "0.10" [ref=f1e793]
+                  - cell "5" [ref=f1e794]
+                  - cell "0" [ref=f1e795]
+                  - cell "0" [ref=f1e796]
+                  - cell "1,729" [ref=f1e797]
+                  - cell "0.047" [ref=f1e798]
+                  - cell "0.182" [ref=f1e799]
+                  - cell "1.466" [ref=f1e800]
+                  - cell "true" [ref=f1e801]
+                - row [ref=f1e802]:
+                  - cell "0.10" [ref=f1e803]
+                  - cell "5" [ref=f1e804]
+                  - cell "0" [ref=f1e805]
+                  - cell "0.30" [ref=f1e806]
+                  - cell "0" [ref=f1e807]
+                  - cell "0.042" [ref=f1e808]
+                  - cell "0.188" [ref=f1e809]
+                  - cell "1.261" [ref=f1e810]
+                  - cell "true" [ref=f1e811]
+                - row [ref=f1e812]:
+                  - cell "0.10" [ref=f1e813]
+                  - cell "5" [ref=f1e814]
+                  - cell "0" [ref=f1e815]
+                  - cell "0.30" [ref=f1e816]
+                  - cell "7" [ref=f1e817]
+                  - cell "0.045" [ref=f1e818]
+                  - cell "0.195" [ref=f1e819]
+                  - cell "1.588" [ref=f1e820]
+                  - cell "true" [ref=f1e821]
+                - row [ref=f1e822]:
+                  - cell "0.10" [ref=f1e823]
+                  - cell "5" [ref=f1e824]
+                  - cell "0" [ref=f1e825]
+                  - cell "0.30" [ref=f1e826]
+                  - cell "29" [ref=f1e827]
+                  - cell "0.043" [ref=f1e828]
+                  - cell "0.196" [ref=f1e829]
+                  - cell "1.630" [ref=f1e830]
+                  - cell "true" [ref=f1e831]
+          - generic [ref=f1e832]:
+            - generic [ref=f1e833]: 1–8 of 3500 results
+            - generic [ref=f1e834]:
+              - generic [ref=f1e835]: Page 1 of 438
+              - button "Previous page" [disabled] [ref=f1e836] [cursor=pointer]
+              - button "Next page" [ref=f1e838] [cursor=pointer]
+      - generic [ref=f1e840]:
+        - button "Required sensing, calibration and timing actions" [ref=f1e843] [cursor=pointer]
+        - generic [ref=f1e846]:
+          - heading "Required sensing, calibration and timing" [level=2] [ref=f1e847]
+          - paragraph [ref=f1e848]:
+            - text: The sensor requirement is a calibrated, synchronized measurement chain. ADC bit count, catalog resolution and sample rate are only parts of that chain. The completed final-source calibration work includes
+            - strong [ref=f1e849]: 42 sensing one-at-a-time recordings
+            - text: ","
+            - strong [ref=f1e850]: 14 robot-response recordings
+            - text: ", and"
+            - strong [ref=f1e851]: 60 simultaneous-error recordings
+            - text: . All 116 meet the force band in their declared cohorts. Six separate native endpoint/parity records verify that the instrumentation and Accelerator runner preserve the complete 72 logged channels bitwise; they are software proofs rather than extra uncertainty cases.
+          - paragraph [ref=f1e852]:
+            - text: "The joint sample uses two operating endpoints: S=2 kg, 50 N, 90°, and S=0.1 kg, 5 N, 0°. Each has three noise seeds and ten deterministic sign corners. Twenty-six declared residual errors change together. Each recording lasts four seconds. The worst is"
+            - strong [ref=f1e853]: 0.44809 N
+            - text: ", leaving"
+            - strong [ref=f1e854]: 0.05191 N
+            - text: to the limit, at the heavy endpoint with seed 7 and corner 8. All recordings complete without clipping, contact loss or a travel stop, and the actual 33.6 N preload passes their 20 mm spring packing checks. This finite corner sample does not prove every combination inside a 26-dimensional error box or every mass/force/orientation under those simultaneous errors.
+          - paragraph [ref=f1e855]:
+            - text: Four
+            - strong [ref=f1e856]: 30 s repeats
+            - text: ", each crossing"
+            - strong [ref=f1e857]: 24 sharp bumps
+            - text: ", extend the difficult joint corners: three heavy corner-8 seeds and one light corner-3 seed. All four pass every one of their"
+            - strong [ref=f1e858]: 3,000,001 native samples
+            - text: ", including startup, without clipping or physical stops. Heavy worst errors are"
+            - strong [ref=f1e859]: 0.488090, 0.487071 and 0.490396 N
+            - text: ; the light case reaches
+            - strong [ref=f1e860]: 0.086891 N
+            - text: . The heavy seed-1729 maximum occurs
+            - strong [ref=f1e861]: 0.690 ms into the tenth bump
+            - text: ", at 12.80069 s. It leaves only"
+            - strong [ref=f1e862]: 0.009604 N
+            - text: reserve, despite the substantial nominal-grid margin.
+          - paragraph [ref=f1e863]:
+            - text: The heavy repeats also show a sustained true-force offset of approximately
+            - strong [ref=f1e864]: +0.147–0.148 N
+            - text: while the feedback holds its own reconstructed force near target. Calibration errors therefore consume substantial reserve before the sharp transient arrives. The values below are tested outer stress limits, rather than a desirable routine operating point. A tare removes zero/gravity offset but cannot by itself correct load gain, cross-axis coupling or response mismatch.
+        - generic [ref=f1e865]:
+          - generic [ref=f1e866]:
+            - heading "Calibration and timing targets" [level=2] [ref=f1e867]
+            - button "Calibration and timing targets actions" [ref=f1e870] [cursor=pointer]
+          - table "Calibration and timing targets" [ref=f1e873]:
+            - rowgroup [ref=f1e874]:
+              - row [ref=f1e875]:
+                - columnheader "Measurement or identified quantity" [ref=f1e876]
+                - columnheader "Tested outer stress budget" [ref=f1e877]
+                - columnheader "Selected calibration/noise target" [ref=f1e878]
+                - columnheader "Design meaning" [ref=f1e879]
+            - rowgroup [ref=f1e880]:
+              - row [ref=f1e881]:
+                - cell "Force, each used axis" [ref=f1e882]
+                - cell "±0.02 N zero, ±0.1% reading gain" [ref=f1e883]
+                - cell [ref=f1e884]:
+                  - strong [ref=f1e885]: ±0.01 N zero, ±0.05% gain
+                  - text: ; same 0.02 N conditioned RMS noise
+                - cell "Calibrate the operating force range and gravity tare; factory full-scale accuracy alone is insufficient" [ref=f1e886]
+              - row [ref=f1e887]:
+                - cell "Force cross-axis coupling" [ref=f1e888]
+                - cell "±0.1% residual per tested direction" [ref=f1e889]
+                - cell [ref=f1e890]:
+                  - strong [ref=f1e891]: ±0.05%
+                - cell "Calibrate the matrix under representative axial/lateral loads" [ref=f1e892]
+              - row [ref=f1e893]:
+                - cell "Force and accelerometer frame" [ref=f1e894]
+                - cell "±0.1° residual alignment each" [ref=f1e895]
+                - cell [ref=f1e896]:
+                  - strong [ref=f1e897]: ±0.05° each
+                - cell "Align sensor axes to flange coordinates and confirm tare consistency" [ref=f1e898]
+              - row [ref=f1e899]:
+                - cell "S acceleration" [ref=f1e900]
+                - cell "±0.01 m/s² bias, ±0.5% scale" [ref=f1e901]
+                - cell [ref=f1e902]:
+                  - strong [ref=f1e903]: ±0.005 m/s² bias, ±0.25% scale
+                  - text: ; same 0.014 m/s² conditioned RMS
+                - cell "About 0.51 mg bias; verify thermal drift and powered-tool vibration" [ref=f1e904]
+              - row [ref=f1e905]:
+                - cell "Known downstream S mass" [ref=f1e906]
+                - cell "±0.5% identified residual" [ref=f1e907]
+                - cell [ref=f1e908]:
+                  - strong [ref=f1e909]: ±0.25%
+                  - text: ", about ±5 g at S=2 kg"
+                - cell "Include everything beyond the cell and use tool-specific identification" [ref=f1e910]
+              - row [ref=f1e911]:
+                - cell "Holder B and force constant" [ref=f1e912]
+                - cell "±0.5% identified residual each" [ref=f1e913]
+                - cell [ref=f1e914]:
+                  - strong [ref=f1e915]: ±0.25% each
+                - cell "Partition moving masses and map calibrated Kf over the used stroke/temperature" [ref=f1e916]
+              - row [ref=f1e917]:
+                - cell "S-relative-A position" [ref=f1e918]
+                - cell "±0.1% scale residual" [ref=f1e919]
+                - cell [ref=f1e920]:
+                  - strong [ref=f1e921]: ±0.05% scale
+                  - text: ; same 1 µm conditioned RMS
+                - cell "Synchronize the relative sensor; count size is not complete accuracy" [ref=f1e922]
+              - row [ref=f1e923]:
+                - cell "Commanded scan speed" [ref=f1e924]
+                - cell "±0.1% identified residual" [ref=f1e925]
+                - cell [ref=f1e926]:
+                  - strong [ref=f1e927]: ±0.05%
+                - cell "Use actual issued tangential motion and its timestamp" [ref=f1e928]
+              - row [ref=f1e929]:
+                - cell "Analog response matching" [ref=f1e930]
+                - cell "Common cutoff ±5%; other axes ±5% relative to force" [ref=f1e931]
+                - cell "Same tested mismatch; identify complex response" [ref=f1e932]
+                - cell "Pairwise cutoff difference can reach 10% of common cutoff; this was unchanged in the refinement" [ref=f1e933]
+              - row [ref=f1e934]:
+                - cell "Acquisition timing" [ref=f1e935]
+                - cell "Common 20 µs pipeline ±10 µs; other used channels ±10 µs relative" [ref=f1e936]
+                - cell "Same tested mismatch, common clock" [ref=f1e937]
+                - cell "Actual delays span 0–40 µs; this was unchanged in the refinement" [ref=f1e938]
+              - row [ref=f1e939]:
+                - cell "Robot prediction" [ref=f1e940]
+                - cell "Actual 80 ms delay ±5 ms and 60 ms response ±5 ms" [ref=f1e941]
+                - cell [ref=f1e942]:
+                  - text: Same
+                  - strong [ref=f1e943]: ±5 ms
+                  - text: residual targets
+                - cell "Identify loaded response, retain pending commands and check timing" [ref=f1e944]
+        - generic [ref=f1e946]:
+          - paragraph [ref=f1e947]:
+            - text: These budgets are
+            - strong [ref=f1e948]: residuals after calibration
+            - text: ", not guaranteed out-of-box specifications or interchangeable independent allowances. The joint test holds mechanical k/c nominal; the ±20% physical mechanical study is separate. A fixed delay mismatch is also different from random latency jitter. Known actual k/c does not remove the persistent sensor-calibration offset in these nominal-mechanics repeats."
+          - paragraph [ref=f1e949]:
+            - text: The selected static targets receive a direct
+            - strong [ref=f1e950]: four-record, 30 s paired refinement
+            - text: . Only sixteen bias, gain, alignment and identification residuals are halved; noise, analog/pipeline mismatch, robot delay/response, actual mechanics, current response and PI settings remain unchanged. All four new records pass their full native histories. The heavy three peaks become
+            - strong [ref=f1e951]: 0.411872, 0.411243 and 0.415311 N
+            - text: ", and the light peak"
+            - strong [ref=f1e952]: 0.075628 N
+            - text: . The worst reserve increases from
+            - strong [ref=f1e953]: 0.009604 to 0.084689 N
+            - text: ", recovering"
+            - strong [ref=f1e954]: 0.075085 N
+            - text: . Sustained heavy force offset falls to approximately
+            - strong [ref=f1e955]: +0.073–0.074 N
+            - text: .
+          - paragraph [ref=f1e956]: This is evidence that static calibration can recover useful reserve without a faster or noisier controller. It qualifies those four declared repeats, rather than the whole tighter error box or every nominal grid point with simultaneous residuals. The tighter targets need warm known-load/axis-matrix calibration, accurate mass measurements and tool-specific Kf identification; they are requirements to verify on assembled hardware. The manufacturer examples are plausible measurement-chain starting points, rather than guarantees of those residuals.
+        - generic [ref=f1e957]:
+          - generic [ref=f1e958]:
+            - heading "Tighter calibration recovers margin through repeated sharp bumps" [level=2] [ref=f1e959]
+            - button "Tighter calibration recovers margin through repeated sharp bumps actions" [ref=f1e962] [cursor=pointer]
+          - figure [ref=f1e964]:
+            - img "Tighter calibration recovers margin through repeated sharp bumps"
+            - paragraph [ref=f1e967]: The same four 30 s corner cases before and after sixteen static residuals are halved. Every 3,000,001-sample history determines its metric; the lower histories use all-native min/max bins. Noise, analog response, pipeline, robot timing, actual mechanics and current response remain unchanged.
+        - generic [ref=f1e968]:
+          - generic [ref=f1e969]:
+            - heading "Final sensing and robot-response sensitivity" [level=2] [ref=f1e970]
+            - button "Final sensing and robot-response sensitivity actions" [ref=f1e973] [cursor=pointer]
+          - figure [ref=f1e975]:
+            - img "Final sensing and robot-response sensitivity"
+            - paragraph [ref=f1e978]: 42 native sensing records. Each entry reports its own tested worst full-history force error; it is not an independently additive budget.
+        - generic [ref=f1e979]:
+          - generic [ref=f1e980]:
+            - heading "Simultaneous calibration errors at the two declared endpoints" [level=2] [ref=f1e981]
+            - button "Simultaneous calibration errors at the two declared endpoints actions" [ref=f1e984] [cursor=pointer]
+          - figure [ref=f1e986]:
+            - img "Simultaneous calibration errors at the two declared endpoints"
+            - paragraph [ref=f1e989]: 60 native records, ten deterministic 26-dimensional corners, three seeds at each endpoint. The full ±0.5 N band includes startup and every bump sample.
+        - generic [ref=f1e991]:
+          - paragraph [ref=f1e992]: The ATI Mini27-class cell's published force resolution and full-scale accuracy do not establish the required 0.02 N conditioned noise or selected ±0.01 N residual zero. A TWE/raw bridge interface with calibrated conditioning is the reference route for controlling the complete chain; a turnkey low-rate digital interface is not automatically an equivalent substitution. Use two appropriately aligned ADXL1002-class analog acceleration axes on S, a simultaneous ADC/clock for force and acceleration, and timestamp the relative-position counter to that same frame. If all six raw bridge channels and two acceleration axes are acquired, an eight-channel simultaneous ADC fits that analog count; the position counter is separate.
+          - paragraph [ref=f1e993]: Mount the accelerometer on the rigid downstream assembly so it represents the modeled mass acceleration. Tool rotation, pad flexure or an orbital mechanism can make acceleration at the sensor differ from the assembly center-of-mass acceleration; this model does not supply that correction. Test the powered sanding tool under real vibration, with the complete antialias chain. A white-noise pass is not a vibration or aliasing guarantee.
+          - paragraph [ref=f1e994]: "A useful physical validation separates three measurements: static force calibration over the intended force/orientation range, a dynamic response/phase measurement of force versus acceleration, and an independent contact-force reference while running the bump. Verify current-loop response under the hot winding, low-friction motion, assembled mounting modes and loaded robot response before claiming the simulated margin on hardware."
+      - generic [ref=f1e995]:
+        - button "What limits performance actions" [ref=f1e998] [cursor=pointer]
+        - generic [ref=f1e1001]:
+          - heading "What limits performance" [level=2] [ref=f1e1002]
+          - paragraph [ref=f1e1003]:
+            - text: In the selected lower-series reference, the worst 80-case endpoint reaches
+            - strong [ref=f1e1004]: 0.33570 N
+            - text: at about
+            - strong [ref=f1e1005]: 0.77 ms after bump entry
+            - text: ". Its exact native force balance shows +6.695 N of B-side relative inertia and −6.717 N from the causal lower-link inverse: the combined residual is only −0.022 N. Other simultaneous contributions are +0.848 N current tracking, +0.211 N acceleration timing, +0.406 N guide-friction estimation, +0.008 N geometry and −1.114 N filtered PI correction. They sum to the actual normal-force error within 3.3×10⁻¹⁴ N. The terms interact and partly cancel; their individual peaks must not be treated as independent error allowances."
+          - paragraph [ref=f1e1006]: The guide-friction residual has a clear mechanical cause. The position/acceleration observer supplies S–A motion, while guide friction acts on B–A motion. These velocities differ when the lower spring moves. Estimating that difference from measured link load is possible, but differentiation also amplifies load-cell noise near a Coulomb-friction reversal. The delivered qualified controller keeps the tested approximation; a new guide observer needs its own native qualification. More voltage does not correct a wrong motion estimate.
+          - paragraph [ref=f1e1007]:
+            - text: For comparison, the stiff finite-cell baseline reaches its 0.492 N peak about 0.44 ms after bump entry. An exact reconstruction from its retained native signals attributes approximately
+            - strong [ref=f1e1008]: 0.095 N to current tracking, 0.184 N to acceleration timing and 0.216 N to B–S relative inertia
+            - text: ", with smaller geometry/friction terms and about −0.009 N PI correction. Physical acceleration is used for these diagnostic balances only; the controller receives measured acceleration."
+          - paragraph [ref=f1e1009]:
+            - text: "The loaded cell mode is visible near 1.6 kHz. Halving the current-response target from 100 to 50 µs does not solve it: the three equal eight-case cohorts have worst errors of"
+            - strong [ref=f1e1010]: 0.526, 0.594 and 0.510 N
+            - text: ", depending on feedforward shaping. All retain contact, and none clip voltage or current. The faster drive more strongly excites the cell through measurement noise. A supply increase cannot cure a force error caused by unsaturated sensor delay and structural noise; voltage helps when the winding actually runs out of voltage for the required slew."
+        - generic [ref=f1e1011]:
+          - generic [ref=f1e1012]:
+            - heading "Native force-error balance and the faster-drive tradeoff" [level=2] [ref=f1e1013]
+            - button "Native force-error balance and the faster-drive tradeoff actions" [ref=f1e1016] [cursor=pointer]
+          - figure [ref=f1e1018]:
+            - img "Native force-error balance and the faster-drive tradeoff"
+            - paragraph [ref=f1e1021]: The upper panel uses every retained 10 µs sample around the first bump entry. The lower panel decomposes each setting's worst retained endpoint trace; its peak time and noise seed can differ. This is a balance analysis of five existing recordings, rather than an additional experiment.
+        - generic [ref=f1e1023]:
+          - paragraph [ref=f1e1024]: These stiff-cell results motivated synchronized low-latency analog acquisition, response matching and separate feedback/feedforward shaping. More proportional gain, more prediction or a faster current loop are not universal improvements. The current-response comparison for the selected compliant mechanism is separate from this earlier stiff-cell result.
+          - paragraph [ref=f1e1025]:
+            - text: The robot predictor is another practical limit. In the core 96-case calibration screen,
+            - strong [ref=f1e1026]: 91 cases pass and five fail
+            - text: ", all caused by actual robot command delay differing from the assumed 80 ms. With a 120 ms actual delay, one heavy-tool trace reaches"
+            - strong [ref=f1e1027]: 0.777 N after the bump has ended
+            - text: ", without clipping, a stop or packing failure. At that instant the actual robot velocity is about +2.14 mm/s while the prediction is −2.20 mm/s; the observer infers an apparent slope on a flat surface. The force gate can see a stable reconstructed force even while the true surface force is wrong. Therefore the gate and predictor must be used together with an identified loaded robot response. The final sensor version's joint calibration tests determine the acceptable timing allowance."
+          - paragraph [ref=f1e1028]:
+            - text: For the
+            - strong [ref=f1e1029]: selected compliant mechanism and final acquisition
+            - text: ", twelve complete 10 s native recordings compare 50, 100 and 150 µs current-response targets at 24 and 36 V, using two repeated-heavy noise seeds. Each recording crosses seven bumps. All twelve pass. Worst force errors are"
+            - strong [ref=f1e1030]: 0.31271, 0.34532 and 0.37230 N
+            - text: ", respectively; the corresponding nominal margins are"
+            - strong [ref=f1e1031]: 0.18729, 0.15468 and 0.12770 N
+            - text: .
+        - generic [ref=f1e1032]:
+          - generic [ref=f1e1033]:
+            - heading "Current-response speed and voltage headroom in the selected mechanism" [level=2] [ref=f1e1034]
+            - button "Current-response speed and voltage headroom in the selected mechanism actions" [ref=f1e1037] [cursor=pointer]
+          - figure [ref=f1e1039]:
+            - img "Current-response speed and voltage headroom in the selected mechanism"
+            - paragraph [ref=f1e1042]: 12 native repeated-heavy recordings. The 24/36 V comparison changes available voltage separately from current-response tuning; all original samples are scored.
+        - generic [ref=f1e1044]:
+          - paragraph [ref=f1e1045]:
+            - text: The faster 50 µs response improves this sampled worst by only
+            - strong [ref=f1e1046]: 0.03261 N
+            - text: compared with 100 µs, while doubling the modeled first-order bandwidth from about 1.59 to 3.18 kHz and raising requested voltage to
+            - strong [ref=f1e1047]: 28.05 V
+            - text: . At 24 V it clips for 42–43 native 10 µs samples, about 0.42–0.43 ms total over 10 s. A 36 V ideal bus removes that clipping and changes the waveform, but leaves the cohort's peak force error equal to about 10⁻¹² N. At 100 and 150 µs, all 72 logged channels in each matched 24/36 V recording pair are bitwise identical because neither bus clips. Faster current response slightly increases flat/noise RMS while reducing the sharp transient peak. The selected
+            - strong [ref=f1e1048]: 100 µs
+            - text: target gives useful nominal margin with lower required bandwidth; 50 µs is a separately tested development option, not the full-grid or joint-calibration target. A useful local timing estimate is
+            - code [ref=f1e1049]: S × peak jerk × time mismatch
+            - text: ": at S=2 kg, 384 m/s³ and 50 µs, this is about"
+            - strong [ref=f1e1050]: 0.0384 N
+            - text: of tool-inertia mismatch. It explains why tens of microseconds matter, while remaining an engineering sensitivity estimate rather than a prediction of the complete closed-loop improvement.
+          - paragraph [ref=f1e1051]:
+            - text: The selected current-loop study has settled-flat peaks around
+            - strong [ref=f1e1052]: 0.084–0.091 N
+            - text: ", while its global maxima occur during bump entry/recovery. The worst four-second joint-calibration trace likewise peaks at"
+            - strong [ref=f1e1053]: 0.58 ms after entry
+            - text: ": true normal force is 50.448 N while its estimate is 50.267 N, and actual versus measured S acceleration is 0.215 versus 0.126 m/s². At that instant the actual/predicted robot speed differs by only 0.081 µm/s, so this peak primarily exposes sensing/drive timing. The exact balance is +0.633 N current tracking, −7.268 N command/feedforward and +7.083 N B-relative inertia, summing within 2.1×10⁻¹⁴ N. The lower inverse deliberately cancels the large relative-inertia contribution; it is not a standalone unavoidable 7 N error."
+          - paragraph [ref=f1e1054]: The next useful performance work is to measure and match installed sensor/driver phase, reduce friction and calibrate the lower inverse under the real mount. Raising supply voltage beyond the verified usable headroom leaves those errors unchanged. A faster current loop can provide a modest improvement once its noise, hot-load stability and wider calibration envelope are demonstrated.
+          - paragraph [ref=f1e1055]: "The longer repeats show why calibration deserves priority: the original static residuals consume about 0.15 N as sustained offset, and halving them recovers about 0.075 N of worst error without changing drive bandwidth or timing. This is a larger observed improvement in its paired cohort than the 0.033 N nominal benefit from doubling current bandwidth in the separate drive study. Those are different cohorts, so the benefits are not additive. Lower tool mass also reduces inertia and timing sensitivity directly; keep S light where the sanding task allows it."
+          - paragraph [ref=f1e1056]:
+            - text: The paired long-worst diagnosis makes that distinction explicit. On the same quiet flat interval, true-force offset falls from
+            - strong [ref=f1e1057]: 0.148810 to 0.074255 N
+            - text: ", while peak error falls from 0.490396 to 0.415311 N. Subtracting that offset leaves nearly unchanged transient excess:"
+            - strong [ref=f1e1058]: 0.341586 versus 0.341055 N
+            - text: . The robot is essentially stationary at both late peaks, and both gates are ready. Calibration removes a hidden steady pressing offset; it does not materially improve transient tracking or reduce noise in this comparison.
+      - generic [ref=f1e1059]:
+        - button "Voice coil, leadscrew and other actuator choices actions" [ref=f1e1062] [cursor=pointer]
+        - generic [ref=f1e1065]:
+          - heading "Voice coil, leadscrew and other actuator choices" [level=2] [ref=f1e1066]
+          - paragraph [ref=f1e1067]: A voice coil converts signed current directly into signed force and avoids screw backlash and rotating inertia. It is a strong first-prototype choice, but it needs continuous holding current, adequate cooling, a low-friction guide, calibrated force constant over the used stroke and a clean current regulator. A large catalogue peak force does not establish continuous 50 N sanding performance.
+          - paragraph [ref=f1e1068]: "The lower spring/damper and correct carrier inverse also make a leadscrew dynamically viable. Four equal-condition pairs using the earlier reference sensing chain all pass:"
+        - generic [ref=f1e1069]:
+          - generic [ref=f1e1070]:
+            - heading "Paired actuator results, with recorded acquisition and duration" [level=2] [ref=f1e1071]
+            - button "Paired actuator results, with recorded acquisition and duration actions" [ref=f1e1074] [cursor=pointer]
+          - table "Paired actuator results, with recorded acquisition and duration" [ref=f1e1077]:
+            - rowgroup [ref=f1e1078]:
+              - row [ref=f1e1079]:
+                - columnheader "Ten-second native recording, one bump" [ref=f1e1080]
+                - columnheader "Voice-coil peak error" [ref=f1e1081]
+                - columnheader "Leadscrew peak error" [ref=f1e1082]
+            - rowgroup [ref=f1e1083]:
+              - row [ref=f1e1084]:
+                - cell "S=2 kg, 50 N, 90°, clean" [ref=f1e1085]
+                - cell "0.3264 N" [ref=f1e1086]
+                - cell "0.3337 N" [ref=f1e1087]
+              - row [ref=f1e1088]:
+                - cell "S=2 kg, 50 N, 90°, seed 1729" [ref=f1e1089]
+                - cell "0.3281 N" [ref=f1e1090]
+                - cell "0.3313 N" [ref=f1e1091]
+              - row [ref=f1e1092]:
+                - cell "S=2 kg, 5 N, 0°, seed 1729" [ref=f1e1093]
+                - cell "0.3214 N" [ref=f1e1094]
+                - cell "0.3229 N" [ref=f1e1095]
+              - row [ref=f1e1096]:
+                - cell "S=0.1 kg, 50 N, 90°, seed 1729" [ref=f1e1097]
+                - cell "0.0940 N" [ref=f1e1098]
+                - cell "0.2162 N" [ref=f1e1099]
+        - generic [ref=f1e1101]:
+          - paragraph [ref=f1e1102]:
+            - text: The coil reaches approximately
+            - strong [ref=f1e1103]: 2.90 A / 17.48 V
+            - text: in this cohort, and the screw
+            - strong [ref=f1e1104]: 4.08 A / 10.04 V
+            - text: ", without clipping. These eight recordings are a bounded actuator comparison, not full-grid qualification of the screw or the final acquisition chain."
+          - paragraph [ref=f1e1105]:
+            - text: The final combined native diagram receives its own
+            - strong [ref=f1e1106]: four matched pairs with the selected actual acquisition graph
+            - text: ", plus one screw refinement. All"
+            - strong [ref=f1e1107]: nine recordings pass
+            - text: . These recordings last
+            - strong [ref=f1e1108]: four seconds with one bump
+            - text: ", and are separate from the ten-second reference table above."
+        - generic [ref=f1e1109]:
+          - generic [ref=f1e1110]:
+            - heading "Paired actuator results, with recorded acquisition and duration" [level=2] [ref=f1e1111]
+            - button "Paired actuator results, with recorded acquisition and duration actions" [ref=f1e1114] [cursor=pointer]
+          - table "Paired actuator results, with recorded acquisition and duration" [ref=f1e1117]:
+            - rowgroup [ref=f1e1118]:
+              - row [ref=f1e1119]:
+                - columnheader "Final four-second native recording" [ref=f1e1120]
+                - columnheader "Voice-coil peak error" [ref=f1e1121]
+                - columnheader "Leadscrew peak error" [ref=f1e1122]
+            - rowgroup [ref=f1e1123]:
+              - row [ref=f1e1124]:
+                - cell "S=2 kg, 50 N, 90°, clean" [ref=f1e1125]
+                - cell "0.293260 N" [ref=f1e1126]
+                - cell "0.301007 N" [ref=f1e1127]
+              - row [ref=f1e1128]:
+                - cell "S=2 kg, 50 N, 90°, seed 1729" [ref=f1e1129]
+                - cell "0.283522 N" [ref=f1e1130]
+                - cell "0.292191 N" [ref=f1e1131]
+              - row [ref=f1e1132]:
+                - cell "S=2 kg, 5 N, 0°, seed 1729" [ref=f1e1133]
+                - cell "0.274796 N" [ref=f1e1134]
+                - cell "0.282736 N" [ref=f1e1135]
+              - row [ref=f1e1136]:
+                - cell "S=0.1 kg, 50 N, 90°, seed 1729" [ref=f1e1137]
+                - cell "0.100459 N" [ref=f1e1138]
+                - cell "0.219436 N" [ref=f1e1139]
+        - paragraph [ref=f1e1142]:
+          - text: The final coil cases reach
+          - strong [ref=f1e1143]: 2.8992 A / 18.4449 V
+          - text: ", and the screw"
+          - strong [ref=f1e1144]: 4.1554 A / 10.3831 V
+          - text: . All avoid clipping, contact loss and travel stops, pass spring packing, and satisfy independent normal/axial force balances within 2.85×10⁻¹⁴ N. The heavy noisy screw repeat at 5 µs changes its peak by only
+          - strong [ref=f1e1145]: 1.49×10⁻⁸ N
+          - text: . This is useful native branch acceptance; it remains four operating conditions, rather than the coil's complete grid or combined calibration qualification for the screw.
+        - generic [ref=f1e1146]:
+          - generic [ref=f1e1147]:
+            - heading "Final matched native voice-coil and leadscrew results" [level=2] [ref=f1e1148]
+            - button "Final matched native voice-coil and leadscrew results actions" [ref=f1e1151] [cursor=pointer]
+          - figure [ref=f1e1153]:
+            - img "Final matched native voice-coil and leadscrew results"
+            - paragraph [ref=f1e1156]: Four final-acquisition pairs, all eight base recordings passing. Peaks use every original sample; the ninth recording is the separate 5 µs screw refinement.
+        - generic [ref=f1e1157]:
+          - generic [ref=f1e1158]:
+            - heading "Final heavy-tool bump with the two actuators" [level=2] [ref=f1e1159]
+            - button "Final heavy-tool bump with the two actuators actions" [ref=f1e1162] [cursor=pointer]
+          - figure [ref=f1e1164]:
+            - img "Final heavy-tool bump with the two actuators"
+            - paragraph [ref=f1e1167]: Heavy S=2 kg, 50 N, 90°, seed 1729. Display histories are reduced to approximately 1 ms with native global extrema retained; qualification uses every 10 µs sample. Travel is actuator B–A travel, distinct from the measured S–A position.
+        - generic [ref=f1e1169]:
+          - paragraph [ref=f1e1170]:
+            - text: The screw model retains motor current/inductance, shaft friction, lead and rotor inertia. With
+            - code [ref=f1e1171]: ell=lead/(2 pi)
+            - text: ", the reflected rotational inertia is"
+            - code [ref=f1e1172]: Jax=Jrot/ell²
+            - text: . The motor must accelerate that inertia as well as B. For the compliant lower link, its inverse uses
+            - strong [ref=f1e1173]: mB+Jax
+            - text: ", and issued robot acceleration contributes a separate correction. It does not treat shaft torque divided by lead as contact force under every accelerating condition."
+          - paragraph [ref=f1e1174]:
+            - text: The representative motor is a 24 V
+            - strong [ref=f1e1175]: maxon RE25 302005
+            - text: ", with Kt≈0.0234 N·m/A, R≈2.32 Ω, rotor inertia 1.08×10⁻⁶ kg·m² and continuous torque approximately 26.3 mN·m. Adding an assumed 0.5×10⁻⁶ kg·m² screw inertia gives"
+            - strong [ref=f1e1176]: 0.624 kg reflected inertia at 10 mm/revolution
+            - text: . The same assembly gives 2.50 kg at 5 mm/revolution and 6.93 kg at 3 mm/revolution. A smaller lead increases force per ampere but substantially increases the fast inertial load.
+            - link "Manufacturer motor data" [ref=f1e1177] [cursor=pointer]:
+              - /url: https://www.maxongroup.com/maxon/view/product/302005
+            - text: .
+        - generic [ref=f1e1178]:
+          - generic [ref=f1e1179]:
+            - heading "Screw lead, reflected inertia and continuous holding current" [level=2] [ref=f1e1180]
+            - button "Screw lead, reflected inertia and continuous holding current actions" [ref=f1e1183] [cursor=pointer]
+          - figure [ref=f1e1185]:
+            - img "Screw lead, reflected inertia and continuous holding current"
+            - paragraph [ref=f1e1188]: Analytical sizing for the reference motor and assumed screw inertia. The 90% efficiency curve is a conservative holding calculation, not an efficiency model used to claim a dynamic pass. Motor torque and temperature also limit continuous operation.
+        - generic [ref=f1e1190]:
+          - paragraph [ref=f1e1191]:
+            - text: At 10 mm/revolution, an ideal 50 N horizontal hold requires
+            - strong [ref=f1e1192]: 3.40 A and 26.8 W winding heat
+            - text: ", far above the motor's 1.16 A continuous-current rating. Its ideal continuous axial force is only about 16.5 N before transmission losses. Reducing lead to 3 mm/revolution approaches the continuous-current limit, but 90% efficiency leaves only about 49.6 N from the stated torque rating, before friction, while adding nearly 7 kg of reflected inertia. This particular motor is not suitable for the whole requested envelope even though the peak simulations pass."
+          - paragraph [ref=f1e1193]:
+            - text: A larger servo and low-backlash screw could be a credible alternative. At 10 mm/revolution and 90% efficiency, 50 N alone requires roughly
+            - strong [ref=f1e1194]: 0.088 N·m continuous shaft torque
+            - text: . A practical design needs additional continuous and transient reserve, low total rotor/screw inertia, an encoder/commutation solution, measured stiction and a carrier inverse calibrated to the actual mechanism. The larger maxon EC-i30 539489 is a static sizing reference with approximately 103 mN·m continuous torque; it is not dynamically qualified here.
+            - link "Manufacturer motor data" [ref=f1e1195] [cursor=pointer]:
+              - /url: https://www.maxongroup.com/maxon/view/product/539489
+            - text: .
+          - paragraph [ref=f1e1196]: Pneumatic or other servo actuators could also work with their own identified dynamics. This study does not qualify their pressure dynamics, valve delay, seal friction or backlash. For the first precise-force prototype, the voice coil provides the most direct implementation of the tested current-to-force controller. The screw results show that the control/mechanical concept is transferable; they do not show that every screw actuator or motor will satisfy it.
+      - generic [ref=f1e1197]:
+        - button "Voltage, current capacity and heat actions" [ref=f1e1200] [cursor=pointer]
+        - generic [ref=f1e1203]:
+          - heading "Voltage, current capacity and heat" [level=2] [ref=f1e1204]
+          - paragraph [ref=f1e1205]:
+            - text: The retained lower-series electrical study contains
+            - strong [ref=f1e1206]: 92 distinct configurations from 95 durable native runs
+            - text: ", including explicit parity/reference repeats."
+            - strong [ref=f1e1207]: 80 pass and 12 fail
+            - text: . Higher generic bus voltage at the configured 100 µs current response leaves the unclipped recordings unchanged, including the native force/current histories. Increasing the peak-current limit from 3 A to 5 A likewise makes no difference where the largest current request remains about 2.99 A. Additional supply or current capacity helps only when it removes a real limit or supports a separately qualified faster current regulator.
+          - paragraph [ref=f1e1208]: Force-constant uncertainty is tested separately. Unknown ±5% changes pass the sampled cases, with approximately 0.428 N worst error. Unknown ±10% causes startup-transient failures up to about 0.927 N; after 50 ms those traces are within approximately 0.348 N. They still fail the report's full-recording requirement. Increasing voltage does not correct that calibration problem. Establish the operating holding current and force constant before starting the qualified disturbance test, and map any meaningful position/temperature dependence.
+          - paragraph [ref=f1e1209]:
+            - text: The real Moticont winding is more demanding electrically than the generic 4 Ω/3 mH example. All sampled ideal 24, 36 and 48 V cold/hot cases pass with the matched controller gains and inverse force constant. However, at an assumed 100°C resistance rise, its
+            - strong [ref=f1e1210]: requested voltage reaches about 27 V
+            - text: . Ideal 24 V clips briefly; the contact-force effect in those sampled recordings is small. An effective
+            - strong [ref=f1e1211]: 19–20 V output
+            - text: from a nominal 24 V linear amplifier fails the four tested hot cases, with worst errors about
+            - strong [ref=f1e1212]: 5.71 N at 19 V and 2.81 N at 20 V
+            - text: . The 4–5 V amplifier-loss envelope is an explicit conservative assumption, rather than a measured dropout specification at 24 V.
+          - paragraph [ref=f1e1213]:
+            - text: The final acquisition candidate receives an initial
+            - strong [ref=f1e1214]: 16-run electrical check over 15 distinct conditions
+            - text: ", extended by two native records below to"
+            - strong [ref=f1e1215]: 18 runs / 17 distinct conditions
+            - text: . Its generic 24/48 V references are bitwise equal across all 72 channels. The real cold/hot coil at ideal 36 V passes, and the hot coil with
+            - strong [ref=f1e1216]: 31 V usable output
+            - text: is bitwise equal to its ideal 36 V reference for both seeds, without clipping. The actual hot-coil request reaches
+            - strong [ref=f1e1217]: 28.473 V
+            - text: ", leaving"
+            - strong [ref=f1e1218]: 2.527 V
+            - text: at that conservative 31 V output envelope. Hot 19 and 20 V outputs fail all four sampled low-headroom conditions, with worst errors
+            - strong [ref=f1e1219]: 5.716 and 2.882 N
+            - text: ; contact remains closed and each recording completes. Their pre-bump error remains at most 0.151 N, locating the failure in dynamic voltage headroom rather than startup.
+          - paragraph [ref=f1e1220]:
+            - text: This subset supports 31 V usable bipolar output for the representative real coil; the broader calibrated-mechanics check below raises the selected output requirement to
+            - strong [ref=f1e1221]: 32 V
+            - text: . The 4–5 V stage-loss envelope remains an explicit conservative allowance, not a verified TA115 dropout specification. A 48 V supply does not improve the unclipped response at unchanged tuning and increases a linear driver's heat. Voltage demand includes noisy current regulation as well as static IR and back EMF; checking only the 18.23 V hot holding drop would miss the transient requirement.
+        - generic [ref=f1e1222]:
+          - generic [ref=f1e1223]:
+            - heading "Real-coil usable voltage, tracking and steady holding heat" [level=2] [ref=f1e1224]
+            - button "Real-coil usable voltage, tracking and steady holding heat actions" [ref=f1e1227] [cursor=pointer]
+          - figure [ref=f1e1229]:
+            - img "Real-coil usable voltage, tracking and steady holding heat"
+            - paragraph [ref=f1e1232]: 16 completed native recordings, including one duplicate software parity reference. The heat panel is a separate steady-load calculation from the stated winding resistance and supply, not a thermal simulation.
+        - generic [ref=f1e1234]:
+          - paragraph [ref=f1e1235]:
+            - text: The hot-winding headroom check also covers
+            - strong [ref=f1e1236]: all 3,500 nominal grid identities
+            - text: ", using"
+            - strong [ref=f1e1237]: 3,498 sufficient conservative voltage bounds and two directly executed exception identities
+            - text: . With known Kf=24.4 N/A, Rhot=8.896 Ω, L=4 mH and unchanged 100 µs current response, scale current-domain control by 20/24.4. The generic native regulator permits the exact mapping
+            - code [ref=f1e1238]: Vhot = 1.22 Vgeneric + 2.411803 I − 3.813115 (Icommand − I)
+            - text: . A triangle bound from each recorded peak proves 31 V sufficient for 3,498 cases. Two conservative bounds exceed it because their separate peaks need not occur together. Their actual hot31V native runs request at most
+            - strong [ref=f1e1239]: 28.473 V
+            - text: and pass without clipping; the additional generic reference matches its archived grid identity exactly.
+          - paragraph [ref=f1e1240]:
+            - text: This closes the conditional finite-grid electrical screen with two extra native runs, rather than claiming 3,500 real-winding simulations. It depends on the identified constant force constant, matched hot R/L compensation, upper-rigid kinematics, normalized controller and the recorded nominal mechanics/sensors. It does not qualify unknown hot force constant, thermal behavior, the full joint-error budget or continuous force over stroke. The complete derivation and exact parameter/waveform audits are in
+            - link "the headroom evidence" [ref=f1e1241] [cursor=pointer]:
+              - /url: ../acf_simulink/validation/normal_voltage_final_grid_hot_mapping_20260930.md
+            - text: .
+          - paragraph [ref=f1e1242]:
+            - text: A further
+            - strong [ref=f1e1243]: pointwise algebraic hot-winding check
+            - text: uses all native samples of the four tighter-static 30 s histories and three tighter-static known-k/c mixed histories. It preserves their residual Kf identification while uniformly rescaling all current-domain control by 20/24.4. The long cases request at most
+            - strong [ref=f1e1244]: 29.5915 V
+            - text: . One mixed case requests
+            - strong [ref=f1e1245]: 31.1071 V for one 10 µs sample
+            - text: ", so a 31 V envelope does not reproduce every inspected trajectory without clipping. This is not an observed force failure."
+            - strong [ref=f1e1246]: 32 V usable terminal output
+            - text: covers all seven checked histories with at least
+            - strong [ref=f1e1247]: 0.8929 V
+            - text: reserve. The mapping adds zero real-coil simulations and retains constant identified winding/current-response assumptions.
+          - paragraph [ref=f1e1248]:
+            - text: Therefore specify a
+            - strong [ref=f1e1249]: 36 V supply with measured usable bipolar output of at least 32 V
+            - text: if the selected driver can provide it under hot load. Do not assume a 5 V stage loss and still call that envelope sufficient. If the actual amplifier cannot provide the required terminal output, choose a suitable lower-drop driver, revise the winding or qualify a higher supply with its thermal consequences. Increasing voltage beyond the verified unclipped envelope does not improve the selected response.
+          - paragraph [ref=f1e1250]:
+            - text: At 50 N and 90°, the real coil holds about
+            - strong [ref=f1e1251]: 2.05 A
+            - text: ", dissipating"
+            - strong [ref=f1e1252]: 26.9 W cold or 37.4 W at the assumed hot resistance
+            - text: ". Representative RMS current is almost the same as the hold current: holding load dominates coil heat. An ideal linear stage at 36 V then dissipates approximately"
+            - strong [ref=f1e1253]: 46.9 W cold or 36.4 W hot
+            - text: ", independently of cabinet/control electronics. The TA115-class amplifier requires an adequate heatsink/airflow and safe-operating-area check at its actual case temperature. Its published 50 W allowance at a 70°C heatsink leaves little reserve above the calculated 46.9 W cold holding loss. Keep the heatsink cooler or select a stage with adequate operating margin; the generic 20 N/A, 4 Ω winding would require 65 W driver dissipation at 36 V. The Moticont drawing states its winding values at 25°C and inductance at 1 kHz; hot resistance, frequency-dependent inductance, force-constant drift and the published continuous-force curve must be considered together."
+            - link "Driver datasheet" [ref=f1e1254] [cursor=pointer]:
+              - /url: https://trustautomation.com/datasheets/TA115DataSheet.pdf
+            - text: ","
+            - link "coil drawing" [ref=f1e1255] [cursor=pointer]:
+              - /url: https://www.moticont.com/pdf/lvcm-070-051-01.pdf
+            - text: .
+      - generic [ref=f1e1256]:
+        - button "Why a cheaper ADC can be enough actions" [ref=f1e1259] [cursor=pointer]
+        - generic [ref=f1e1262]:
+          - heading "Why a cheaper ADC can be enough" [level=2] [ref=f1e1263]
+          - paragraph [ref=f1e1264]: The ADC's bit count does not determine its useful force resolution by itself. An instrumentation amplifier maps the load cell's useful range into the converter's voltage range. The important quantities are input-referred noise, quantization after that gain, matched channel response, and the age of the sample when the controller uses it.
+          - paragraph [ref=f1e1265]:
+            - text: Indicative single-IC prices retrieved on 2 October 2026 are
+            - strong [ref=f1e1266]: €63.86 for AD7606C-18
+            - text: ","
+            - strong [ref=f1e1267]: €19.13 for ADS8588S
+            - text: ", and"
+            - strong [ref=f1e1268]: €9.25 for ADS131M08
+            - text: ", excluding VAT and shipping. These are documented regional price observations; they are not checked shopping carts. The ADC-only savings are approximately 70% and 86%. Instrumentation amplifiers, references, filtering and calibration remain part of the electronics."
+            - link "Price/specification review" [ref=f1e1269] [cursor=pointer]:
+              - /url: ../acf_simulink/validation/adc_cost_component_review_20261002.md
+            - text: .
+        - generic [ref=f1e1270]:
+          - generic [ref=f1e1271]:
+            - heading "ADC range, resolution and response" [level=2] [ref=f1e1272]
+            - button "ADC range, resolution and response actions" [ref=f1e1275] [cursor=pointer]
+          - table "ADC range, resolution and response" [ref=f1e1278]:
+            - rowgroup [ref=f1e1279]:
+              - row [ref=f1e1280]:
+                - columnheader "Converter" [ref=f1e1281]
+                - columnheader "Tested practical setting" [ref=f1e1282]
+                - columnheader "Force quantum at effective ±160 N" [ref=f1e1283]
+                - columnheader "ADC acceleration quantum with reference analog conditioning" [ref=f1e1284]
+                - columnheader "Intrinsic ADC response" [ref=f1e1285]
+            - rowgroup [ref=f1e1286]:
+              - row [ref=f1e1287]:
+                - cell "ADS8588S, 16-bit simultaneous SAR" [ref=f1e1288]
+                - cell "50 ksample/s per channel, ±5 V" [ref=f1e1289]
+                - cell "0.004883 N" [ref=f1e1290]
+                - cell "0.018705 m/s², ADXL1002 centered gain 2" [ref=f1e1291]
+                - cell "Third-order 16 kHz analog filter, about 19.9 µs DC delay" [ref=f1e1292]
+              - row [ref=f1e1293]:
+                - cell "ADS131M08, 24-bit simultaneous delta-sigma" [ref=f1e1294]
+                - cell "30 ksample/s per channel, PGA1" [ref=f1e1295]
+                - cell "0.0000191 N" [ref=f1e1296]
+                - cell "0.0000701 m/s², ADXL1002 gain 0.5" [ref=f1e1297]
+                - cell "Sinc³, OSR128 at 3.84 MHz modulator, 49.6 µs group delay" [ref=f1e1298]
+        - generic [ref=f1e1300]:
+          - paragraph [ref=f1e1301]:
+            - text: Acceleration resolution is the step between adjacent codes; it is not the RMS noise or calibration accuracy. The SNR-equivalent ADC acceleration noise in these two configurations is approximately
+            - strong [ref=f1e1302]: 0.01236 m/s²
+            - text: for the SAR's datasheet-minimum-SNR-derived model noise and
+            - strong [ref=f1e1303]: 0.01045 m/s²
+            - text: for the delta-sigma typical OSR128 noise. The SAR minimum is specified at 200 ksample/s; it is a modeling provision rather than a verified noise bound at the tested 50 ksample/s. The M08 figure is typical, rather than a guaranteed maximum at the selected clock. The experiment injects ADC noise separately from physical sensor noise and avoids counting ideal quantization variance twice. Separate M08 probes double its typical noise and add 200 µs output-noise correlation. Measure both converters' assembled noise at the chosen rate.
+            - link "TI SAR datasheet" [ref=f1e1304] [cursor=pointer]:
+              - /url: https://www.ti.com/lit/ds/symlink/ads8588s.pdf
+            - text: ","
+            - link "TI delta-sigma datasheet" [ref=f1e1305] [cursor=pointer]:
+              - /url: https://www.ti.com/lit/ds/symlink/ads131m08.pdf
+            - text: .
+          - paragraph [ref=f1e1306]:
+            - text: The M08 uses a
+            - strong [ref=f1e1307]: 7.68 MHz master clock
+            - text: ", a 3.84 MHz modulator and OSR128 to produce 30 ksample/s. Reading status, eight channels and CRC requires 240 SPI bits:"
+            - strong [ref=f1e1308]: 15.625 µs at 15.36 MHz SPI
+            - text: . The modeled
+            - strong [ref=f1e1309]: 20 µs total post-conversion pipeline includes that readout
+            - text: ", leaving about 4.375 µs for the MCU path; it is not another 20 µs added to readout. The SAR's worst conversion plus a 128-bit read at 16 MHz is about 11.9 µs within the same total allowance. Verify those budgets on the chosen MCU."
+          - paragraph [ref=f1e1310]:
+            - text: With an analog accelerometer,
+            - strong [ref=f1e1311]: yes, the external ADC measures acceleration as well as force
+            - text: . Two acceleration axes plus six raw bridge channels fit an eight-channel ADC in the current planar arrangement. A digital accelerometer uses its own internal ADC and a timestamped SPI interface; it does not consume an external ADC channel. A spatial arrangement with six bridges and three analog acceleration axes needs nine channels. Position has its own encoder interface. The bridge calibration matrix must establish the effective force-axis noise and range; raw channel specifications alone do not establish them.
+      - generic [ref=f1e1312]:
+        - button "Native experiments justify the bandwidth and sample rate actions" [ref=f1e1315] [cursor=pointer]
+        - generic [ref=f1e1318]:
+          - heading "Native experiments justify the bandwidth and sample rate" [level=2] [ref=f1e1319]
+          - paragraph [ref=f1e1320]:
+            - text: The new private native Simulink model includes a continuous instrumentation response
+            - strong [ref=f1e1321]: before sampling
+            - text: ", the SAR's analog response or a genuine Sinc³ decimator, converter noise, range/quantization, an EMA with a 50 µs time-constant setting at the converter-output clock, the readout pipeline and fresh 10 kHz controller latching. Physical sensor noise density stays fixed when sample rate changes. Qualification uses every physical normal-force sample, including startup; plots are reduced only afterward. The force and acceleration response envelopes are matched, and position has a separate encoder with an aligned measurement frame."
+          - paragraph [ref=f1e1322]:
+            - text: The screen executes
+            - strong [ref=f1e1323]: 168 recordings
+            - text: ", with two heavy/light physical endpoints and clean/seed-7 noise variants at each setting. The instrumented physical plant, estimator and controller are frozen. A separate nine-recording audit checks warm/cold compilation parity across seed, mass/force/orientation and response changes; all physical and ADC samples in the tested pairs match exactly."
+        - generic [ref=f1e1324]:
+          - generic [ref=f1e1325]:
+            - heading "Native ADC bandwidth and rate sweep" [level=2] [ref=f1e1326]
+            - button "Native ADC bandwidth and rate sweep actions" [ref=f1e1329] [cursor=pointer]
+          - figure [ref=f1e1331]:
+            - img "Native ADC bandwidth and rate sweep" [ref=f1e1332]
+            - paragraph [ref=f1e1335]: The numbers are worst complete-recording errors, in N, across four recordings per cell. Values above 0.500 N fail. The 0.450 N design threshold reserves 0.050 N for the physical requirement. This is a finite endpoint screen, not a continuous bandwidth proof.
+        - generic [ref=f1e1337]:
+          - paragraph [ref=f1e1338]: The low-bandwidth failures are substantial. With a 500 Hz matched response, the best rate still gives roughly 0.608 N error for the SAR and 0.672 N for the delta-sigma chain. A 1 kHz response is only a nominal pass at some settings. The familiar 10 Hz bump transit does not capture the controller's need to recover downstream inertia and react at bump entry/exit; the executed waveform resolves the faster dynamics.
+          - paragraph [ref=f1e1339]:
+            - text: Rate matters even with the same analog cutoff. At 8 kHz response, the delta-sigma group delay increases from about
+            - strong [ref=f1e1340]: 49.6 µs at 30 ksample/s
+            - text: ", to"
+            - strong [ref=f1e1341]: 99.6 µs at 15 ksample/s
+            - text: ", to"
+            - strong [ref=f1e1342]: 199.6 µs at 7.5 ksample/s
+            - text: . Lower rates also age the samples more before each controller latch. The controller rate remains 10 kHz in all these comparisons.
+          - paragraph [ref=f1e1343]:
+            - text: The four retained
+            - strong [ref=f1e1344]: 30 s repeated-bump calibration cases
+            - text: "preserve the selected tighter static residuals, channel-response mismatches and robot timing errors. They expose the trade more sharply:"
+        - generic [ref=f1e1345]:
+          - generic [ref=f1e1346]:
+            - heading "Native repeated-bump acquisition comparisons" [level=2] [ref=f1e1347]
+            - button "Native repeated-bump acquisition comparisons actions" [ref=f1e1350] [cursor=pointer]
+          - table "Native repeated-bump acquisition comparisons" [ref=f1e1353]:
+            - rowgroup [ref=f1e1354]:
+              - row [ref=f1e1355]:
+                - columnheader "Converter and setting" [ref=f1e1356]
+                - columnheader "Completed / passed" [ref=f1e1357]
+                - columnheader "Worst normal-force error" [ref=f1e1358]
+                - columnheader "Remaining reserve to 0.5 N" [ref=f1e1359]
+            - rowgroup [ref=f1e1360]:
+              - row [ref=f1e1361]:
+                - cell "ADS131M08, 15 ksample/s, 8 kHz matched response" [ref=f1e1362]
+                - cell "4 / 4" [ref=f1e1363]
+                - cell "0.494316 N" [ref=f1e1364]
+                - cell "0.005684 N" [ref=f1e1365]
+              - row [ref=f1e1366]:
+                - cell "ADS131M08, 30 ksample/s, 5.1 kHz matched response" [ref=f1e1367]
+                - cell "4 / 4" [ref=f1e1368]
+                - cell "0.451330 N" [ref=f1e1369]
+                - cell "0.048670 N" [ref=f1e1370]
+              - row [ref=f1e1371]:
+                - cell "ADS131M08, 30 ksample/s, 8 kHz matched response" [ref=f1e1372]
+                - cell "4 / 4" [ref=f1e1373]
+                - cell "0.438821 N" [ref=f1e1374]
+                - cell "0.061179 N" [ref=f1e1375]
+              - row [ref=f1e1376]:
+                - cell "ADS8588S, 50 ksample/s, 5.1 kHz matched response" [ref=f1e1377]
+                - cell "4 / 4" [ref=f1e1378]
+                - cell "0.404214 N" [ref=f1e1379]
+                - cell "0.095786 N" [ref=f1e1380]
+        - generic [ref=f1e1382]:
+          - paragraph [ref=f1e1383]:
+            - text: Thus 15 ksample/s is a numerical pass in these four cases, but does not retain a useful design margin. Keeping
+            - strong [ref=f1e1384]: 30 ksample/s
+            - text: has an experimental justification. The selected
+            - strong [ref=f1e1385]: 8 kHz
+            - text: "response retains over 0.05 N reserve in these cases; 5.1 kHz narrowly misses that preferred reserve. This establishes a tested choice, rather than proving that 8 kHz is the minimum possible cutoff. The value describes a complete engineered response target: include the accelerometer's own amplitude/phase rather than assigning it an arbitrary filter corner."
+          - paragraph [ref=f1e1386]:
+            - text: For orientation, a nominal two-pole 8 kHz response contributes
+            - strong [ref=f1e1387]: 28.1 µs low-frequency delay
+            - text: ", Sinc³ adds"
+            - strong [ref=f1e1388]: 49.6 µs
+            - text: ", and the sampled EMA contributes"
+            - strong [ref=f1e1389]: 35.2 µs
+            - text: at 30 ksample/s. Including the nominal pipeline gives about
+            - strong [ref=f1e1390]: 132.9 µs before sample-age and controller-latch effects
+            - text: . These are component delay calculations, not a single frequency-independent phase model. Native execution retains the full filters and clocked behavior. At 15 ksample/s, the decimator alone doubles its delay despite the unchanged 8 kHz analog response; the measured force-error increase above verifies that timing matters.
+        - generic [ref=f1e1391]:
+          - generic [ref=f1e1392]:
+            - heading "Native long-test force waveforms" [level=2] [ref=f1e1393]
+            - button "Native long-test force waveforms actions" [ref=f1e1396] [cursor=pointer]
+          - figure [ref=f1e1398]:
+            - img "Native long-test force waveforms" [ref=f1e1399]
+            - paragraph [ref=f1e1402]: Each curve shows the bump containing the full-recording worst sample in that setting's worst 30 s recording. The cases retain calibration error and seeded noise. Dashed lines are the force requirement; dotted lines reserve 0.05 N.
+        - paragraph [ref=f1e1405]:
+          - text: The selected M08 chain also completes a
+          - strong [ref=f1e1406]: 700-case nominal grid
+          - text: ": five S masses, ten force targets, seven orientations, two physical drag ratios and"
+          - strong [ref=f1e1407]: one noise seed, 29, per condition
+          - text: . All 700 unique cases pass; worst complete-history error is
+          - strong [ref=f1e1408]: 0.292803986 N
+          - text: ", leaving"
+          - strong [ref=f1e1409]: 0.207196014 N
+          - text: reserve. Every one of the 1,200,001 native force samples in each four-second recording is scored. This is 700 new noise realizations, not the historical five-seed 3,500-case qualification. Preparation hashes, condition identities and disjoint partition coverage are recorded in
+          - link "the grid audit" [ref=f1e1410] [cursor=pointer]:
+            - /url: ../acf_simulink/validation/budget_adc_range_grid_20261002.json
+          - text: .
+        - generic [ref=f1e1411]:
+          - generic [ref=f1e1412]:
+            - heading "ADC noise and timing robustness probes" [level=2] [ref=f1e1413]
+            - button "ADC noise and timing robustness probes actions" [ref=f1e1416] [cursor=pointer]
+          - figure [ref=f1e1418]:
+            - img "ADC noise and timing robustness probes" [ref=f1e1419]
+            - paragraph [ref=f1e1422]: Two heavy-tool recordings per probe, seeds 7/29. Each changes one acquisition property. These nominal probes are separate from the simultaneous calibration-error cases.
+        - generic [ref=f1e1424]:
+          - paragraph [ref=f1e1425]:
+            - text: Doubling the ADC's typical noise gives
+            - strong [ref=f1e1426]: 0.339688 N
+            - text: worst error; introducing a 200 µs correlation time gives
+            - strong [ref=f1e1427]: 0.332057 N
+            - text: . An extra acceleration-only skew of 20 µs gives
+            - strong [ref=f1e1428]: 0.358505 N
+            - text: ", and 50 µs gives"
+            - strong [ref=f1e1429]: 0.381665 N
+            - text: . The tested nominal cases pass, but timing consumes appreciably more margin than doubling converter noise. Keep the specified common clock and tested relative timestamp residuals rather than treating those probes as permission for arbitrary skew. Halving the physical solver step with unchanged acquisition clocks changes the paired peak by only
+            - strong [ref=f1e1430]: 0.000000304 N
+            - text: . Six additional quiet sensor-tone probes at 19, 49 and 99 kHz are retained separately; they do not constitute a measured sanding-vibration spectrum.
+          - paragraph [ref=f1e1431]:
+            - text: The selected
+            - strong [ref=f1e1432]: 30 ksample/s / 8 kHz chain is also executed with the hot real-winding parameters
+            - text: ": Kf=24.4 N/A, R=8.896 Ω, L=4 mH, 32 V usable bipolar output and the unchanged"
+            - strong [ref=f1e1433]: 100 µs
+            - text: current target. Current-domain gains are rescaled by 20/24.4 while their identified Kf residuals remain. All seven retained long/mixed cases pass, worst
+            - strong [ref=f1e1434]: 0.438821 N
+            - text: ", with"
+            - strong [ref=f1e1435]: zero voltage clipping
+            - text: . Maximum requested voltage is
+            - strong [ref=f1e1436]: 31.738466 V
+            - text: ", leaving only"
+            - strong [ref=f1e1437]: 0.261534 V
+            - text: below the modeled output limit; peak current is
+            - strong [ref=f1e1438]: 2.455697 A
+            - text: . This is a new native electrical check, not reuse of the older pointwise voltage screen. At least 32 V usable output remains supported on these cases, but driver dropout and hot winding tolerances need an assembled headroom measurement. The fixed hot resistance does not simulate evolving temperature.
+            - link "Selected hot-coil evidence" [ref=f1e1439] [cursor=pointer]:
+              - /url: ../acf_simulink/validation/budget_adc_hot_coil_summary_20261002.json
+            - text: .
+      - generic [ref=f1e1440]:
+        - button "Cheaper accelerometers are limited mainly by response actions" [ref=f1e1443] [cursor=pointer]
+        - generic [ref=f1e1446]:
+          - heading "Cheaper accelerometers are limited mainly by response" [level=2] [ref=f1e1447]
+          - paragraph [ref=f1e1448]:
+            - text: Two reference single-axis ADXL1002s cost approximately
+            - strong [ref=f1e1449]: €129.76
+            - text: at the observed quantity-one prices. One three-axis
+            - strong [ref=f1e1450]: ADXL354C is about €60.44
+            - text: ", while an"
+            - strong [ref=f1e1451]: ICM-42688-P is about €5.33
+            - text: and
+            - strong [ref=f1e1452]: IIS3DWB about €19.90
+            - text: . Those are sensor IC comparisons, not complete board costs. The analog ADXL354 still uses the external ADC; the digital candidates have their own conversion.
+            - link "Component and price review" [ref=f1e1453] [cursor=pointer]:
+              - /url: ../acf_simulink/validation/accelerometer_cost_component_review_20261002.md
+            - text: .
+          - paragraph [ref=f1e1454]:
+            - text: ADXL354C's ±8 g setting has an approximately 33.75 µg/√Hz noise-density target and 100 mV/g sensitivity. A centered buffered input into the M08 gives roughly
+            - strong [ref=f1e1455]: 0.0000140 m/s² per ADC code
+            - text: and
+            - strong [ref=f1e1456]: 0.00209 m/s² typical ADC noise
+            - text: . Its higher sensor noise is larger than the ADC contribution. That resolution is sufficient for investigating the force objective; it does not establish bias, scale, temperature drift or vibration rectification.
+          - paragraph [ref=f1e1457]:
+            - text: The
+            - strong [ref=f1e1458]: published 1.9 kHz overall 3 dB bandwidth is not a complete transfer function
+            - text: . The ADXL354 has an internal sinc-shaped response and a 2.4 kHz mechanical mode. Current manufacturer documentation does not supply the full coefficients or phase. The following simulations therefore test clearly identified
+            - strong [ref=f1e1459]: required matched response envelopes
+            - text: with the part's noise and range; they do not claim that the part implements a two-pole Butterworth filter.
+            - link "ADI datasheet" [ref=f1e1460] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf
+            - text: ","
+            - link "response review" [ref=f1e1461] [cursor=pointer]:
+              - /url: ../acf_simulink/validation/budget_accelerometer_response_review_20261002.md
+            - text: .
+        - generic [ref=f1e1462]:
+          - generic [ref=f1e1463]:
+            - heading "Cheaper accelerometer response and noise experiments" [level=2] [ref=f1e1464]
+            - button "Cheaper accelerometer response and noise experiments actions" [ref=f1e1467] [cursor=pointer]
+          - figure [ref=f1e1469]:
+            - img "Cheaper accelerometer response and noise experiments"
+            - paragraph [ref=f1e1472]: 36 completed native nominal recordings. Analog cases cover both physical endpoints and seeds 7/29; the digital envelope cases cover the heavy endpoint. Counterfactual 3/5.1 kHz ADXL354 bandwidths are retained in the source but excluded from this practical comparison. Extra common delay is known to the estimator and matched across measurements.
+        - generic [ref=f1e1474]:
+          - paragraph [ref=f1e1475]:
+            - text: At the existing 100 µs current target, the ADXL354-like 1.9 kHz envelope gives
+            - strong [ref=f1e1476]: 0.405691 N
+            - text: worst error with no additional common latency. An extra 50 µs raises it to
+            - strong [ref=f1e1477]: 0.457041 N
+            - text: ; 100 µs raises it to
+            - strong [ref=f1e1478]: 0.484946 N
+            - text: . Noise alone is therefore not the deciding obstacle. These delay increments are sensitivity cases; published bandwidth cannot prove that they bracket the real part's phase.
+          - paragraph [ref=f1e1479]:
+            - text: A separately tested
+            - strong [ref=f1e1480]: 50 µs current target at ideal 36 V
+            - text: improves the same envelope to
+            - strong [ref=f1e1481]: 0.378082 N
+            - text: ", or"
+            - strong [ref=f1e1482]: 0.429852 N
+            - text: with the extra 50 µs. This changes current-loop bandwidth as well as drive provision. It is not evidence that increasing voltage alone improves an unclipped 100 µs loop. The joint calibration and real-hot-winding tests are needed before choosing that trade.
+          - paragraph [ref=f1e1483]:
+            - text: The low-cost digital envelope at 70 µg/√Hz and an additional common 80 µs gives
+            - strong [ref=f1e1484]: 0.434807 N
+            - text: in its nominal heavy endpoint. With 120 µs it reaches
+            - strong [ref=f1e1485]: 0.477704 N
+            - text: . The ICM's own documented decimation, selectable filters, clock and DRDY/readout timestamps still need to establish the required complete response. Its published delay combines configured filters and clocks; it cannot be replaced by an arbitrary RC pole. The native digital cases use a labeled common response/latency envelope, not an implementation of the ICM's undocumented complete transfer. Calling its output rate its sensing bandwidth would be incorrect.
+          - paragraph [ref=f1e1486]:
+            - text: The stock ADXL354 evaluation board also includes 0.1 µF output capacitance. With the documented 32 kΩ output impedance, that adds a
+            - strong [ref=f1e1487]: 3.2 ms RC
+            - text: ", about 49.7 Hz. Such a configuration is far slower than the studied envelope. A fast prototype needs intentionally selected output capacitance and buffering."
+            - link "ADI evaluation guide" [ref=f1e1488] [cursor=pointer]:
+              - /url: https://www.analog.com/media/en/technical-documentation/user-guides/eval-adxl354-355-ug-1030.pdf
+            - text: .
+          - paragraph [ref=f1e1489]:
+            - text: The decisive followup preserves
+            - strong [ref=f1e1490]: four 30 s calibration-error recordings and three four-second known-k/c mixed-mechanics recordings
+            - text: for each of seven sensing/drive combinations. The controller uses the same mechanics and causal measurements. Actual and identified sensor/mass/robot residuals stay separate.
+        - generic [ref=f1e1491]:
+          - generic [ref=f1e1492]:
+            - heading "Sensor response and drive stress comparisons" [level=2] [ref=f1e1493]
+            - button "Sensor response and drive stress comparisons actions" [ref=f1e1496] [cursor=pointer]
+          - table "Sensor response and drive stress comparisons" [ref=f1e1499]:
+            - rowgroup [ref=f1e1500]:
+              - row [ref=f1e1501]:
+                - columnheader "Required acceleration-response envelope and drive" [ref=f1e1502]
+                - columnheader "Passed / executed" [ref=f1e1503]
+                - columnheader "Worst error" [ref=f1e1504]
+                - columnheader "Reserve to 0.5 N" [ref=f1e1505]
+            - rowgroup [ref=f1e1506]:
+              - row [ref=f1e1507]:
+                - cell "Reference density, matched 8 kHz, 100 µs current, scientific 24 V coil" [ref=f1e1508]
+                - cell "7 / 7" [ref=f1e1509]
+                - cell "0.438821 N" [ref=f1e1510]
+                - cell "0.061179 N" [ref=f1e1511]
+              - row [ref=f1e1512]:
+                - cell "ADXL354-like 1.9 kHz, no extra delay, 100 µs current, scientific 24 V coil" [ref=f1e1513]
+                - cell "5 / 7" [ref=f1e1514]
+                - cell "0.516806 N" [ref=f1e1515]
+                - cell "−0.016806 N" [ref=f1e1516]
+              - row [ref=f1e1517]:
+                - cell "ADXL354-like 1.9 kHz, no extra delay, 50 µs current, ideal 36 V coil" [ref=f1e1518]
+                - cell "7 / 7" [ref=f1e1519]
+                - cell "0.482489 N" [ref=f1e1520]
+                - cell "0.017511 N" [ref=f1e1521]
+              - row [ref=f1e1522]:
+                - cell "ADXL354-like 1.9 kHz, extra 50 µs, 50 µs current, ideal 36 V coil" [ref=f1e1523]
+                - cell "4 / 7" [ref=f1e1524]
+                - cell "0.530965 N" [ref=f1e1525]
+                - cell "−0.030965 N" [ref=f1e1526]
+              - row [ref=f1e1527]:
+                - cell "Digital 70 µg/√Hz, matched 5.1 kHz + 80 µs, 100 µs current" [ref=f1e1528]
+                - cell "3 / 7" [ref=f1e1529]
+                - cell "0.581260 N" [ref=f1e1530]
+                - cell "−0.081260 N" [ref=f1e1531]
+              - row [ref=f1e1532]:
+                - cell "Digital 70 µg/√Hz, matched 5.1 kHz + 80 µs, 50 µs current" [ref=f1e1533]
+                - cell "3 / 7" [ref=f1e1534]
+                - cell "0.559963 N" [ref=f1e1535]
+                - cell "−0.059963 N" [ref=f1e1536]
+              - row [ref=f1e1537]:
+                - cell "ADXL354-like 1.9 kHz, no extra delay, 50 µs current, hot real-coil 32 V output" [ref=f1e1538]
+                - cell "7 / 7" [ref=f1e1539]
+                - cell "0.482489 N" [ref=f1e1540]
+                - cell "0.017511 N" [ref=f1e1541]
+        - generic [ref=f1e1542]:
+          - generic [ref=f1e1543]:
+            - heading "Cheaper sensing under calibration and drive stress" [level=2] [ref=f1e1544]
+            - button "Cheaper sensing under calibration and drive stress actions" [ref=f1e1547] [cursor=pointer]
+          - figure [ref=f1e1549]:
+            - img "Cheaper sensing under calibration and drive stress"
+            - paragraph [ref=f1e1552]: 49 executed native recordings; failures are retained. Each row is a declared sensor response envelope, not a supplier-certified accelerometer transfer. The 0.45 N design threshold retains 0.05 N reserve.
+        - generic [ref=f1e1554]:
+          - paragraph [ref=f1e1555]:
+            - text: The faster ADXL354-like case passes these seven inputs, but its remaining reserve is less than one third of the reference envelope's. Its hot-coil variant uses Kf=24.4 N/A, fixed R=8.896 Ω, L=4 mH and 32 V usable terminal output; brief voltage clipping occurs, and the recorded worst error stays essentially the same. This is a real-winding native simulation with a
+            - strong [ref=f1e1556]: deliberately faster 50 µs current target
+            - text: ", not a claim that voltage alone fixes sensing delay. Adding 50 µs common sensing latency still produces failures. The digital response envelopes fail four of seven cases even with the faster current loop."
+          - paragraph [ref=f1e1557]:
+            - text: A final
+            - strong [ref=f1e1558]: seven-case tighter dynamic-matching experiment
+            - text: reduces analog-response and EMA residuals from ±10% to ±1% and relative channel offsets from ±10 µs to ±2 µs, while preserving static calibration, common pipeline uncertainty, robot timing, mechanics, noise and drive. Common and per-channel response factors both remain, so their combined maximum is approximately 2.01%. The no-extra-delay ADXL354-like envelope passes at
+            - strong [ref=f1e1559]: 0.489946 N worst
+            - text: ", only"
+            - strong [ref=f1e1560]: 0.010054 N reserve
+            - text: . Tighter matching did not recover the desired margin; the peak need not improve monotonically because it combines deterministic error and seeded noise. Seven extra-delay matching inputs were prepared but
+            - strong [ref=f1e1561]: not executed
+            - text: ", and are excluded from the experiment count."
+          - paragraph [ref=f1e1562]:
+            - text: Therefore a cheap accelerometer is
+            - strong [ref=f1e1563]: not yet supported as a low-loss replacement
+            - text: . ADXL354C is an attractive analog cost target for a later measured-transfer study, but the executed envelope results do not justify recommending it for this force specification. The digital part's large chip saving does not compensate for the observed failures. Keep two ADXL1002-class analog axes in this planar prototype; use three axes and sufficient simultaneous ADC channels for spatial reconstruction. Their own resonance and assembled phase still require measurement.
+      - generic [ref=f1e1564]:
+        - button "Acceptance of the lower-cost sensing chain actions" [ref=f1e1567] [cursor=pointer]
+        - generic [ref=f1e1570]:
+          - heading "Acceptance of the lower-cost sensing chain" [level=2] [ref=f1e1571]
+          - paragraph [ref=f1e1572]:
+            - text: "Use these experiments to choose acquisition hardware and a measured response target. Characterize the assembled acceleration and force chains together: complex response, effective timestamp, axis matching, ADC/MCU timing, hot scale/bias and powered-tool vibration. Match the force, acceleration and estimated-normal frames before reconstructing workpiece force. The tighter calibration targets remain"
+            - strong [ref=f1e1573]: ±0.01 N force zero, ±0.005 m/s² acceleration bias
+            - text: ", and the other residuals in the main report. At S=2 kg, 0.005 m/s² acceleration bias already corresponds to 0.01 N of inertia error."
+          - paragraph [ref=f1e1574]:
+            - text: The required physical acceptance remains
+            - strong [ref=f1e1575]: maximum independent reference-force error plus its applicable uncertainty ≤0.45 N
+            - text: over the full loaded bump recording, including startup and powered sanding. The bandwidth/cost study is a finite simulation result; it does not provide powered-tool vibration or prototype accuracy measurements.
+          - paragraph [ref=f1e1576]:
+            - text: The native acquisition variant, its helper/parameter hashes, all executed cohort receipts and selected full histories are retained under
+            - code [ref=f1e1577]: acf_simulink/validation/
+            - text: . The public desktop model still contains the scientific reference chain, so its older results remain reproducible. Use
+            - link "the lower-cost study recipe" [ref=f1e1578] [cursor=pointer]:
+              - /url: ../acf_simulink/experiments/README_budget_sensing_20261002.md
+            - text: to run the frozen variant in a private batch process. Replacing hardware response assumptions requires a new recorded comparison.
+          - paragraph [ref=f1e1579]:
+            - strong [ref=f1e1580]: "Concrete recommendation:"
+            - text: build the guided voice-coil/measured-inertia PI prototype with the selected lower spring pair and 60 N·s/m damping, a synchronized multi-axis B–S cell, S–A position measurement and the reference S-mounted acceleration sensors. Reduce acquisition cost with
+            - strong [ref=f1e1581]: ADS131M08 at 30 ksample/s per channel
+            - text: ", a measured matched"
+            - strong [ref=f1e1582]: 8 kHz complete response
+            - text: ", 50 µs EMA setting,"
+            - strong [ref=f1e1583]: 20 µs total readout/MCU pipeline
+            - text: and fresh
+            - strong [ref=f1e1584]: 10 kHz control
+            - text: . Retain the
+            - strong [ref=f1e1585]: 100 µs current target and at least 32 V usable bipolar output
+            - text: from a nominal 36 V supply. Keep ADS8588S at 50 ksample/s/5.1 kHz as the approximately €19 converter alternative if its stronger observed four-case margin or simpler response is preferred. Choose a cheaper accelerometer only after its measured transfer and full loaded tests recover at least 0.05 N reserve; the current experiments do not show that.
+      - generic [ref=f1e1588]:
+        - heading "Running, changing and reproducing the model" [level=2] [ref=f1e1589]
+        - paragraph [ref=f1e1590]:
+          - text: Open the saved diagram with
+          - code [ref=f1e1591]: addpath('acf_simulink'); mdl = acf_open;
+          - text: from the project folder in MATLAB. The root
+          - strong [ref=f1e1592]: Actuator selection
+          - text: chooses coil or leadscrew;
+          - strong [ref=f1e1593]: Force controller selection
+          - text: chooses Feedforward PI, PI or PID. The green Run button uses structure
+          - strong [ref=f1e1594]: p in the Model Workspace
+          - text: ", so the physical diagram remains the leading model. The"
+          - link "getting-started guide" [ref=f1e1595] [cursor=pointer]:
+            - /url: ../acf_simulink/GETTING_STARTED.md
+          - text: shows the parameter editor, controller gain fields, removed-spring preset and the exact slow-bump example with B+S=2 kg. That slow example completes with
+          - strong [ref=f1e1596]: 0.07328 N
+          - text: worst force error. The
+          - link "13-page native diagram PDF" [ref=f1e1597] [cursor=pointer]:
+            - /url: ../acf_simulink/generated/active_flange_native_model_pages_20260930.pdf
+          - text: lets you inspect the blocks without opening MATLAB.
+        - paragraph [ref=f1e1598]: The delivered model uses ordinary native blocks and shallow subsystems, with separate physical drive, force reconstruction, motion observer, fast controller and delayed robot paths. Private acceptance checks establish source-history parity, direct Run after parameter edits, both physical failure stops and save/reopen behavior. The public diagram removes 33 unused wire stubs while preserving all connected edges and parameter values. Preserve any unsaved edits before reopening a model already loaded in the desktop.
+        - paragraph [ref=f1e1599]:
+          - text: "For repeated studies, use Accelerator mode, reuse valid compilation and clear simulation-data history after scoring each case. Temporary SDI logging was a substantial bottleneck. A paired four-case pilot compared private disk and RAM-backed SDI storage with bitwise equality across all 72 channels: median warm ten-second execution fell from"
+          - strong [ref=f1e1600]: 39.78 to 6.81 s
+          - text: ", about"
+          - strong [ref=f1e1601]: 5.84×
+          - text: under the recorded concurrent load. Final workers typically completed a four-second simulation in roughly
+          - strong [ref=f1e1602]: 2–2.8 s warm
+          - text: . These are host/load-specific timings, not cold-start or UI timings. The physical model and 10 µs working step stayed unchanged.
+        - paragraph [ref=f1e1603]:
+          - text: The
+          - link "reproduction guide" [ref=f1e1604] [cursor=pointer]:
+            - /url: ../acf_simulink/REPRODUCING_RESULTS.md
+          - text: identifies the immutable scientific source, candidate, two exact grid recipes, calibration/actuator studies, execution checks and portable input snapshots. Metrics always use full native histories before plot reduction. The offline HTML report supports source inspection and filtering of all 3,500 cases; the separate replay preserves the worst native force sample. Historical studies and interrupted/software-rejected attempts remain recorded separately from completed physical cases.
+      - generic [ref=f1e1607]:
+        - heading "What the model does and does not establish" [level=2] [ref=f1e1608]
+        - paragraph [ref=f1e1609]: The model calculates force balances, explicit rigid constraints, spring/damper loads, stroke, actuator current and voltage, sensor filtering/noise/delay, causal estimation, fast force control and slow delayed robot recentering. It can reject a proposed spring pack for its working travel and combined length, and it can identify whether a recording fails because of force error, contact loss, travel exhaustion, current limit or drive voltage.
+        - paragraph [ref=f1e1610]: It represents translational point contact in a scanning plane. A real sanding pad distributes pressure over an area and deforms. Local surface shape, pad compliance, rotations, moments, abrasive removal and spatially varying friction can change the relationship between tool motion and the local surface normal. The guides and robot must carry lateral force and moments without introducing unmodeled motion. Tool vibration and accelerometer vibration rectification are not supplied by the bump waveform.
+        - paragraph [ref=f1e1611]:
+          - text: The qualified bump is the specified
+          - strong [ref=f1e1612]: C² polynomial profile
+          - text: ": height, velocity and acceleration are continuous, with finite jerk jumps at entry and exit. Height, width and speed alone do not specify disturbance severity. As an analytical comparison, a half-cosine bump of the same dimensions has an approximately"
+          - strong [ref=f1e1613]: 1.974 m/s² acceleration jump
+          - text: at entry, equivalent to
+          - strong [ref=f1e1614]: 3.95 N of S inertia at 2 kg
+          - text: . A continuous spring/damper force and finite current response cannot instantly cancel an unpreviewed jump. This comparison adds no simulation qualification; sharper edges need their own tests and realistic pad/contact compliance. Extra voltage does not remove the causal limitation.
+        - paragraph [ref=f1e1615]: Electrical winding dynamics and voltage clipping are retained, but winding temperature is a separately calculated operating constraint until thermal dynamics and force-constant drift are measured. Coil geometry, position dependence, cable forces, bearing stiction, backlash and whole-flange packaging require prototype characterization. A 100 mm spring allowance is not a 100 mm envelope for the actuator, guides, sensor and sanding head together.
+        - paragraph [ref=f1e1616]: Each run starts at a loaded equilibrium with known or calibrated tool mass and fixed orientation. A finite parameter/noise grid establishes performance on its recorded cases; it does not prove every possible disturbance, every noise realization or a continuously rotating operating trajectory. Numerical qualification is evidence for choosing and testing a prototype, rather than a substitute for testing one.
+      - generic [ref=f1e1617]:
+        - button "Concrete recommendation actions" [ref=f1e1620] [cursor=pointer]
+        - generic [ref=f1e1623]:
+          - heading "Concrete recommendation" [level=2] [ref=f1e1624]
+          - paragraph [ref=f1e1625]:
+            - text: Build the first prototype around a
+            - strong [ref=f1e1626]: guided voice coil, an upper rigid attachment, one lower opposed spring pair and a 60 N·s/m parallel damper
+            - text: ", using the"
+            - strong [ref=f1e1627]: measured-inertia Feedforward PI
+            - text: controller. Keep the B–S multi-axis cell in the complete lower load path, mount synchronized acceleration sensing on S and measure S relative to A. Identify the assembled spring/damper values for the inverse, rather than relying on catalog rates. Use the issued-command robot predictor with the force-stability/variation gate and delay-aware recentering gain cap.
+        - generic [ref=f1e1628]:
+          - generic [ref=f1e1629]:
+            - heading "Prototype starting specification" [level=2] [ref=f1e1630]
+            - button "Prototype starting specification actions" [ref=f1e1633] [cursor=pointer]
+          - table "Prototype starting specification" [ref=f1e1636]:
+            - rowgroup [ref=f1e1637]:
+              - row [ref=f1e1638]:
+                - columnheader "Subsystem" [ref=f1e1639]
+                - columnheader "Concrete starting specification" [ref=f1e1640]
+            - rowgroup [ref=f1e1641]:
+              - row [ref=f1e1642]:
+                - cell "Lower spring pair" [ref=f1e1643]
+                - cell "Net 19.746 N/mm, approximately 9.873 N/mm each, about 20 mm free length each, 33.6 N preload each" [ref=f1e1644]
+              - row [ref=f1e1645]:
+                - cell "Spring working envelope" [ref=f1e1646]
+                - cell "At least the modeled 68.54 N individual force envelope and 3.18 mm cyclic stroke; guided, no cell bypass" [ref=f1e1647]
+              - row [ref=f1e1648]:
+                - cell "Parallel damping" [ref=f1e1649]
+                - cell "Approximately 60 N·s/m with low stiction; characterize at roughly 0–35 mm/s" [ref=f1e1650]
+              - row [ref=f1e1651]:
+                - cell "Moving mass" [ref=f1e1652]
+                - cell "B budget 0.6 kg, interchangeable S=0.1–2 kg; include cell/tool-side attachments in the correct mass" [ref=f1e1653]
+              - row [ref=f1e1654]:
+                - cell "Coil" [ref=f1e1655]
+                - cell [ref=f1e1656]:
+                  - text: Approximately 20–25 N/A, preferably at least 65–70 N continuous
+                  - strong [ref=f1e1657]: over the used stroke and at operating temperature
+                  - text: ", 25 mm travel, bipolar drive"
+              - row [ref=f1e1658]:
+                - cell "Electrical drive" [ref=f1e1659]
+                - cell "Start around R=4–6.4 Ω, L=3–4 mH; 3.5 A or more peak provision, continuous current sized from hot holding load" [ref=f1e1660]
+              - row [ref=f1e1661]:
+                - cell "Supply" [ref=f1e1662]
+                - cell [ref=f1e1663]:
+                  - text: 36 V if the driver provides
+                  - strong [ref=f1e1664]: at least 32 V usable bipolar output
+                  - text: under load; verify dropout, phase and heatsinking
+              - row [ref=f1e1665]:
+                - cell "Inner current loop" [ref=f1e1666]
+                - cell "Identified 100 µs response target under the actual hot load; verify phase, ripple and current readback" [ref=f1e1667]
+              - row [ref=f1e1668]:
+                - cell "Fast force control" [ref=f1e1669]
+                - cell "10 kHz; P=0.3 A/N and I=20 A/(N·s) for the 20 N/A generic coil; rescale/identify for another Kf" [ref=f1e1670]
+              - row [ref=f1e1671]:
+                - cell "Dynamic compensation" [ref=f1e1672]
+                - cell "Measured S acceleration, measured drag/geometry, guide-friction feedforward; lower-load inverse at 1.5 kHz using measured assembled k/c" [ref=f1e1673]
+              - row [ref=f1e1674]:
+                - cell "Acquisition" [ref=f1e1675]
+                - cell "ADS131M08, 30 ksample/s per simultaneous channel, measured matched ~8 kHz complete response, 50 µs EMA setting, 20 µs total readout/MCU pipeline" [ref=f1e1676]
+              - row [ref=f1e1677]:
+                - cell "Acceleration sensors" [ref=f1e1678]
+                - cell "Retain two ADXL1002-class analog axes for the planar prototype; three for spatial reconstruction, with enough simultaneous ADC channels" [ref=f1e1679]
+              - row [ref=f1e1680]:
+                - cell "Position and calibration" [ref=f1e1681]
+                - cell "~1 µm conditioned position noise; use the tighter static targets above, including ±0.01 N force zero and ±0.005 m/s² acceleration bias" [ref=f1e1682]
+              - row [ref=f1e1683]:
+                - cell "Robot" [ref=f1e1684]
+                - cell "Identify loaded delay/response, target ±5 ms residuals, retain queued commands and gate new recentering commands" [ref=f1e1685]
+        - generic [ref=f1e1687]:
+          - paragraph [ref=f1e1688]:
+            - text: The lower-cost acquisition is the new prototype starting point; the public desktop model retains the frozen scientific-reference chain. Seven new native hot-winding cases with the selected M08 chain pass at 0.438821 N worst, but request up to
+            - strong [ref=f1e1689]: 31.738466 V
+            - text: ", leaving only"
+            - strong [ref=f1e1690]: 0.261534 V
+            - text: at a 32 V usable-output limit. Measure real driver dropout and hot-coil headroom. The approximately €9 converter reduces ADC cost; the tested cheaper accelerometers do not preserve the preferred 0.05 N force reserve.
+          - paragraph [ref=f1e1691]: "A Moticont LVCM-070-051-01-class coil demonstrates plausible force/stroke/electrical values, but it is not a blanket purchase recommendation: its continuous-force curve near stroke ends, hot force constant and cooling must satisfy the required operating region. Budget approximately 1.5 kg total for A in this example, including its 1.24 kg stationary body; its moving coil uses about 0.24 kg of B. Check the robot payload and whole mechanical package. The spring length limit alone does not bound that package."
+          - paragraph [ref=f1e1692]:
+            - text: Use the tighter static-calibration column as the starting acceptance specification, with measured assembled k/c and verified sensor/driver phase. A proposed physical bench criterion is
+            - strong [ref=f1e1693]: maximum absolute independent reference-force error plus its applicable measurement uncertainty ≤0.45 N
+            - text: through the complete loaded test. Prefer a reference with approximately 0.02 N or better applicable uncertainty. This preserves at least 0.05 N against the ±0.5 N requirement if the criterion is achieved; it is a prototype test target, not an already observed hardware pass. Confirm it at operating temperature and with the sanding tool powered.
+          - paragraph [ref=f1e1694]: A larger low-backlash screw servo remains a credible alternative if it supplies at least roughly 0.088 N·m continuous torque at 10 mm/revolution plus reserve, while keeping rotor/screw inertia and friction low. The tested RE25 reference is thermally undersized for continuous 50 N. For the first prototype, choose the coil because it implements the tested force/current path with fewer transmission uncertainties. Validate the complete sensor, drive, guide, spring/damper, mount and robot chain against an independent surface-force reference before claiming ±0.5 N on the powered sanding tool.
+```

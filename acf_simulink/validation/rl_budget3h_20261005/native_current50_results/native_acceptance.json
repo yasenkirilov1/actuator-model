@@ -1,0 +1,90 @@
+{
+  "status": "counterfactual_native_acceptance_passed",
+  "emittedNumericalCodeIdenticalAfterGenerationTimestampRemoved": true,
+  "normalizedNumericalCodeSha256": "f3a133bed7c002ba2af457d1369641bffbae7eadaea44925d208e1229debe165",
+  "parameterMappingIdentical": true,
+  "parameterFieldCount": 549,
+  "all549CounterfactualCase61CoefficientsIdenticalToIndependentlyReplayedProbeCase3": true,
+  "fullCounterfactualLearnedCase61ArraysBitIdenticalToIndependentMatlabReplayedProbe": {
+    "time": true,
+    "inputs": true,
+    "truth": true
+  },
+  "matchedNativeSamples": 600001,
+  "independentMatlabReplay": "native_actuator_probe_parity_double_seed/native_replay.json",
+  "scope": "NumericalCidentity+preparedparamidentity+all600001input/truth/timepointidentitylinksnew50usbankcase61toalreadycompletedindependentnativeRun. Other27cases arefullnativegeneratedCcounterfactualrecordings.",
+  "fullStudyRecordingCount": 112,
+  "fullStudyNativeSamples": 111600112,
+  "fullStudyGroups": [
+    {
+      "mode": "baseline",
+      "currentResponse_us": 100,
+      "recordings": 28,
+      "passed": 28,
+      "physicalFailures": 0,
+      "nativeSamples": 27900028,
+      "worstNormalForceError_N": 0.42861773999591435,
+      "meanRmsNormalForceError_N": 0.022874275639507637,
+      "voltageClipSamples": 3,
+      "currentLimitSamples": 0,
+      "worstFinalBandExcess_m": 0,
+      "peakCurrent_A": 2.4682001540477168,
+      "peakVoltage_V": 32.0
+    },
+    {
+      "mode": "learned",
+      "currentResponse_us": 100,
+      "recordings": 28,
+      "passed": 28,
+      "physicalFailures": 0,
+      "nativeSamples": 27900028,
+      "worstNormalForceError_N": 0.41872787035814696,
+      "meanRmsNormalForceError_N": 0.04249871139679257,
+      "voltageClipSamples": 104,
+      "currentLimitSamples": 0,
+      "worstFinalBandExcess_m": 0,
+      "peakCurrent_A": 2.589425027233868,
+      "peakVoltage_V": 32.0
+    },
+    {
+      "mode": "baseline",
+      "currentResponse_us": 50,
+      "recordings": 28,
+      "passed": 28,
+      "physicalFailures": 0,
+      "nativeSamples": 27900028,
+      "worstNormalForceError_N": 0.3971160400993412,
+      "meanRmsNormalForceError_N": 0.023243349090809936,
+      "voltageClipSamples": 2198,
+      "currentLimitSamples": 0,
+      "worstFinalBandExcess_m": 0,
+      "peakCurrent_A": 2.495585958395734,
+      "peakVoltage_V": 32.0
+    },
+    {
+      "mode": "learned",
+      "currentResponse_us": 50,
+      "recordings": 28,
+      "passed": 28,
+      "physicalFailures": 0,
+      "nativeSamples": 27900028,
+      "worstNormalForceError_N": 0.37349915089378527,
+      "meanRmsNormalForceError_N": 0.039658134956847724,
+      "voltageClipSamples": 27176,
+      "currentLimitSamples": 0,
+      "worstFinalBandExcess_m": 0,
+      "peakCurrent_A": 2.6006960382408324,
+      "peakVoltage_V": 32.0
+    }
+  ],
+  "fixedCheckpointSha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+  "counterfactual50LibrarySha256": "5bab6881ca55184db692ff87733bb3d6b9c02a129f32a452ce5860f87ae5584c",
+  "source100LibrarySha256": "98a02c1aa5d490b99e8e4d0815cd7418a84b24ef035de039b3e0fde1ce420cc8",
+  "peakImprovementCounts": {
+    "baseline": 23,
+    "learned": 26
+  },
+  "heldOutEpisodesExecuted": 0,
+  "retainedFullNativeHistories": 112,
+  "schema24PhysicalMetricsUnchanged": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "historical_objective_retained",
+  "new_user_requirement": "Robot recentering may remain within +/-7.5mm from center without significant punishment.",
+  "withdrawn": "Baseline-relative50%recenter-progress design screen and continuous center-to-zero penalty.",
+  "interpretation": "Zero robot commands are acceptable inside the band. Candidategen15 is not rejected merely for inactivity. New edge/drift cases assess required robot action outside the band.",
+  "next_study": "Versioned reward_search_band lane; all existing source snapshots and scores retained."
+}

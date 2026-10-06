@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "date": "2026-10-02",
+  "frozenAcquisitionModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "metric": "maximum absolute true workpiece-normal force error over every native sample including startup",
+  "physicalRequirement_N": 0.5,
+  "preferredDesignThreshold_N": 0.45,
+  "sources": [
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/results.json",
+      "sha256": "dca9c15f34bc4474c7cadc3a04eef3137e4c278bbbcf7cc1b0aa969b5825f843",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "budget_dynamic_matching_L0_20261002",
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "recordings": 7,
+      "passes": 7,
+      "designMarginPasses": 3,
+      "peakError_N": 0.48994557803434446,
+      "reserve_N": 0.010054421965655536,
+      "nativeSamples": 39600007.0,
+      "worstCaseId": 3,
+      "worstSeed": 1729,
+      "worstMassS_kg": 2,
+      "worstForce_N": 50,
+      "worstAngle_deg": 90,
+      "converter": "sinc3",
+      "rate_Hz": 30000,
+      "cutoff_Hz": 1900,
+      "converterGroupDelay_us": 49.609375,
+      "peakVoltage_V": 31.936256054131,
+      "peakCurrent_A": 3.10089174869555,
+      "anyClipping": false,
+      "maximumVoltageClipFraction": 0,
+      "scope": "Native private acquisition experiment; full normal-force history including startup. Finite cases, no physical sanding validation.",
+      "source": {
+        "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/results.json",
+        "sha256": "dca9c15f34bc4474c7cadc3a04eef3137e4c278bbbcf7cc1b0aa969b5825f843",
+        "recordings": 7,
+        "nativeSamples": 39600007.0
+      }
+    }
+  ],
+  "caveat": "Seven executed L0 cases. L50 inputs were prepared but not executed. Ten dynamic-matching residuals shrink; static residuals, common pipeline, robot,mechanics,noise and drive remain unchanged."
+}

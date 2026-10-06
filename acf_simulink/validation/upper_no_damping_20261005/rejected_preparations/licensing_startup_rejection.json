@@ -1,0 +1,9 @@
+{
+  "status": "startup_rejected_no_preparation_or_episodes",
+  "createdEpisodes": 0,
+  "exitCode": 137,
+  "time": "2026-10-05T18:41:54+02:00",
+  "diagnostic": "Segmentation violation in MATLAB startup licensing component libmwlmgrimpl.so lc_new_job before any task preparation.",
+  "resolvedBy": "Private preferences and established -licmode onlinelicensing startup flag.",
+  "originalCrashDump": "/home/tommie/matlab_crash_dump.534274-1"
+}

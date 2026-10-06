@@ -1,0 +1,22 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "qualificationEpisodes": 0,
+  "design": "upper_20k_lower_cell_active_modal_damping_v6",
+  "caseCount": 396,
+  "cellModalFamilyCount": 18,
+  "selectedParentObserverProfileIDs": [
+    24,
+    33
+  ],
+  "nativeBankCase0MatchesCoder": true,
+  "scientificParity": {
+    "allExistingPhysicalSensorControllerSectionsUnchanged": true,
+    "allExistingPreparedCoefficientsIncludingUpperObserverUnchanged": true,
+    "forceReconstructionAndObserverMeasurementFrameUnchanged": true,
+    "soleNewFunction": "Bounded phase-shaped active cell-mode current feedback",
+    "createdQualificationEpisodes": 0
+  },
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "a9f9ffc1732deaec9464bb4390fe6a577d922635ae466c0451b41d7fe0a5549c",
+  "sharedLibrarySha256": "6d41094b0e9ea536482da0d7805da7dc74066df175a2ce0a8baabf842d2bb1dd"
+}

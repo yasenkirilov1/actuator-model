@@ -1,0 +1,69 @@
+{
+  "status": "rejected_inactive_pi_gain_bank_not_scored",
+  "qualificationEpisodes": 0,
+  "cause": "The bank varied coil.forceKp/Ki and inactive d.forceKp/Ki, while selected normal force controller reads inertial.forceKp/Ki. Reported PI variation did not reach live feedback. Existing V6 parent recordings are unaffected.",
+  "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v8/configs.mat",
+  "configsSha256": "54bee40a599557a41e87c9dfdc4d0026eb3ddfa9d5d82e881290631a12b9cb9a",
+  "sourceAuditMapping": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v8/parameter_mapping.json",
+  "sourceAuditMappingSha256": "9f1efd2b6fc2ad1141ae5388c05a8de569312ffcb3532ebf09ecd527f041a4ad",
+  "nativeCFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v8/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+  "nativeCSha256": "e82b8985b5e757c3fd94eabef518210da59852eed2d6df5b130e36b3d319b009",
+  "rejectedRecipeFiles": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/audit_native_controller_gain_v8.py",
+      "sha256": "c3415608b89f534d451eee1326dad0d3dd68442adc0c09ee59251e7f200f5058"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/build_upper_force_native_controller_gain_v8.m",
+      "sha256": "6be0d090c426272560635cf8a27ecb02f3f9698e3a5289825c1d6819c46b8e29"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/helpers/acf_prepare.m",
+      "sha256": "213df34746c2831a652b13601a653c6b1991ac40f938277f97b45b14295754db"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/helpers/acf_prepare_cell_modal.m",
+      "sha256": "9a49cd2b03bdd17a70b22247fffc7664d5c9088aa07e5f5ca51e1aa4e9f65570"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/install_cell_modal_v6.m",
+      "sha256": "1827a38e4e46ec413a8f10cde55d605c6e844cf29ef352816cddf765a8383af4"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/install_upper_force_observer_cellsource_v2.m",
+      "sha256": "e36d4126fe54b6d74882e6cf2fe7f1fcce2f80009f1fb8896cb2f8792266f2b8"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/native_api.py",
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/native_bridge.c",
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/prepare_and_build.m",
+      "sha256": "01c7fd16b3d22571f106d8b89c90a9ea5eff85d339c9565b0d112e105085e5b3"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/prepare_controller_gain_bank.m",
+      "sha256": "93ffe88a3c5de2ff9c91d0c4d2e66a7ea8492c3911e89c18db1bd9f38e00a17a"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/seal_native_controller_gain_v8.py",
+      "sha256": "5233b3908606bb73d40022e314002e23e2e147ec59ba3432abe663d8eed2ca18"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/verify_controller_gain_graph.m",
+      "sha256": "354b4dbd6a1448f0cf7985720b4c034dc63cd764733cb888e5e0afdbf14ed317"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/verify_modal_cell_source_v6.m",
+      "sha256": "c7bec2cd185e72b26708b33ad76a11126b78012367a4d88460036535537c9fc7"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/controller_gain_v8/verify_modal_positive_damping_v8.m",
+      "sha256": "c3f3a1ac965dbe5d939543730b41b31433563d4b93b16af9e4ac7d0f6583860f"
+    }
+  ]
+}

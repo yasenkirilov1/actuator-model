@@ -1,0 +1,73 @@
+{
+  "status": "complete_original_evidence_sealed",
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "metric": "Full native normal force, every startup-inclusive sample;4\u00d730s,all pass,0.4903960465866817 N worst.",
+  "files": [
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_worst_native_trace.mat",
+      "sha256": "6a000dc33a9c4f4f3cbe3ede99a7644ca33d54e448ac28c483c7fd0c39d2fd84",
+      "bytes": 684040931
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.mat",
+      "sha256": "ea022dfd4e9028a3d1e4683788a75926cd0105e92233d56c6d48a2551e09f2a7",
+      "bytes": 57854
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_plot_traces.mat",
+      "sha256": "9fc709acb99911f9b7bd5efcb7052f71169a2dc10e3c91b3885514c5e98f6936",
+      "bytes": 5192034
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0001.mat",
+      "sha256": "74434e2aac8c8d36193d6d381d010470d40feebc6a84c783a0dda217b41cb665",
+      "bytes": 684262290
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0002.mat",
+      "sha256": "647bce3be166f365d7571e8da3916c611f4639dd20933b4adc4c30d7441537f1",
+      "bytes": 685755272
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0003.mat",
+      "sha256": "5067d095e3dd83ff8ccbb289642ff56fbdfe65af198ce915a941aff0b7bd2fdb",
+      "bytes": 684010398
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0004.mat",
+      "sha256": "2e8939993f75fa6b8a192f601d52ddc06ac5517e1b307a76609d924d05874740",
+      "bytes": 686275448
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "sha256": "7900999f5090b2e9c1e1ca3f2a6b359359a9c494d7ec8518b4b1aeeb00a3a23e",
+      "bytes": 88193
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_storage_cleanup.json",
+      "sha256": "dc823a4eba37343bdc7ef643f19aabfaf964170c6683fcd5c8121a3f711bfa35",
+      "bytes": 219
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_rows.csv",
+      "sha256": "57206fcf2fe9b1cd185b42eee0ecca9adeba897f7c9362e8e13a3dbb0ad30a36",
+      "bytes": 7455
+    },
+    {
+      "file": "inertial_uncertainty_v8_original_long.svg",
+      "sha256": "20b93734345ad56572cb31d9ec7805549f92b6c5129cfae108d2ba55d1952640",
+      "bytes": 2131801
+    },
+    {
+      "file": "inertial_uncertainty_v8_original_long.png",
+      "sha256": "d645daf3610e095bd2c3a6e0972f7bda1332091209deae2fd50f1b98b1610a58",
+      "bytes": 428785
+    },
+    {
+      "file": "inertial_uncertainty_v8_joint_long_batch.log",
+      "sha256": "a1214d01568b6c0d358d38d040751efde2001ee24bdd19345f6971b107a15102",
+      "bytes": 9986
+    }
+  ]
+}

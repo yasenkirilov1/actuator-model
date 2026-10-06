@@ -1,0 +1,59 @@
+{
+  "scope": "Read-only exact finite-cell force decomposition. Full native true normal force history is scored. Calibration injections, if any, are defined in the source run, not this diagnostic.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_core/inertial_uncertainty_core_sensitivity_20260930_native_traces/case_0037.mat",
+  "nativeTraceSha256": "049abea978bb5a7eea7cb27b3814fb6cb05abac21124e7c88b587eb77116c732",
+  "nativeSamples": 400001,
+  "step_s": 1.0000000000065512e-05,
+  "endTime_s": 4.0,
+  "parameters": {
+    "massB_kg": 0.6,
+    "massS_kg": 2.0,
+    "Kf_N_A": 20.0,
+    "seed": 7,
+    "k1_N_m": 19746.0,
+    "c1_N_s_m": 60.0
+  },
+  "peak": {
+    "time_s": 2.1263,
+    "signedNormalForceError_N": 0.777478699710322,
+    "normalForce_N": 50.77747869971032,
+    "estimatedNormalForce_N": 50.01971556208644,
+    "trueSlope": 0.0,
+    "estimatedSlope": -0.045336482193999404,
+    "current_A": 2.540690797357428,
+    "currentCommand_A": 2.468043561009059,
+    "idealRigidCurrent_A": 2.5103137001403755,
+    "actualCoilGapVelocity_m_s": 0.0031370014037594143,
+    "actualHeadGapVelocity_m_s": 0.0021384618704920833,
+    "measuredObserverHeadGapVelocity_m_s": 0.00234579300687714,
+    "actualAccelerationS_m_s2": 0.0,
+    "measuredAccelerationS_m_s2": -0.00468,
+    "actualAccelerationB_m_s2": 0.28322792561545107,
+    "actualRobotVelocity_m_s": 0.002138461870492292,
+    "predictedRobotVelocity_m_s": -0.0021991543821252174,
+    "robotGateReady": true,
+    "currentTrackingNormalError_N": 1.4529447269673845,
+    "commandAndFeedforwardNormalError_N": -0.84540278262633,
+    "finiteCellBInertiaNormalError_N": 0.16993675536927064
+  },
+  "decompositionIdentityResidual_N": 2.4202861936828413e-14,
+  "peakWindow_s": [
+    2.0963000000000003,
+    2.1563000000000003
+  ],
+  "peakWindowDominantForceFrequencyIn1000To2200Hz_Hz": 1033.1611398032633,
+  "diagnosticRingingBand_Hz": [
+    1000,
+    2200
+  ],
+  "diagnosticBandAmplitudeWithin3ms_N": 0.018288906669209123,
+  "diagnosticBandPeakToPeakWithin3ms_N": 0.030699429785457352,
+  "diagnosticBandConvention": "Zero-phase offline 4th-order bandpass; diagnostic only, never a controller input or qualification score.",
+  "bumps": [
+    {
+      "start_s": 2.0,
+      "peak_s": 2.10067,
+      "peakError_N": 0.5786787342596611
+    }
+  ]
+}

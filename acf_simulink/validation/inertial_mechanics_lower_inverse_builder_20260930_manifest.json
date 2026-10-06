@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-30",
+  "status": "private_native_inverse_source_prepared_no_experiments",
+  "sourceFolder": "/home/tommie/.local/state/actuator-model/tpb1bb1fc1_3ede_4cbf_b9e9_96c7d63c43d2",
+  "sourceModelSHA256": "0f57a1e9faacc397ed1f5175fd60a6253c2c8c83f8765bf08238423cba52c283",
+  "originalModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v6-20260930/frozen-inertial-v6/acf_force_control_normal_trial.slx",
+  "originalModelSHA256": "72bed757d52763f197e208bc2e9aa210f8d6d3c07394f1b36aefe56114b7a149",
+  "sourceCandidateSHA256": "40a986a272a3a2bdc7a3fbdcaebe99f409759844f8b013350007d7237999663b",
+  "candidateSHA256": "8a00b865e8332d359d1534b9f58ecf04a39dd03343b6990a0fa7b55006a494d3",
+  "builderRecipeSHA256": "00d5c0ab51d76b3333cde99845b0ce204c8cf1ebd0e59ef1d54a633ce9cbde17",
+  "acfRunSHA256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+  "physicalDialogStructureUnchanged": true,
+  "algebraicLoops": 0,
+  "defaultInverseEnabled": false,
+  "nativeExecutedCases": 0,
+  "contract": "Extra current = (identified mB/Kf)*s^2/(identified k1+identified c1*s) times [desired Rz deviation-known S*measured az], with proper two-pole rolloff and optional zero scale. Desired force comes from the native measured-drag geometry. No future motion or true contact geometry is connected.",
+  "logSchema": [
+    "desired_Rz_deviation_N",
+    "identified_S_inertia_N",
+    "desired_lower_load_deviation_N",
+    "inverse_current_A"
+  ]
+}

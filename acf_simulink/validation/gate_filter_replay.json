@@ -1,0 +1,363 @@
+{
+  "scope": "Gate-only counterfactual replay over the archived worst noisy native observer trajectory. Existing closed-loop trajectory is fixed; this is not a new native or active-recenter qualification.",
+  "source": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate_histories.mat",
+    "sha256": "fb9a49a84cc35702a5a7c93145ee0f10e25aed2d23709e022ea3b013b667c3a2",
+    "run": "qualifiedRuns{1}",
+    "forceReference_N": 50,
+    "angle_deg": 90.0,
+    "forceNoiseRms_N": 0.02,
+    "positionNoiseRms_m": 1e-06,
+    "seed": 1729
+  },
+  "gate": {
+    "input": "Reconstructed contact-force error from corrected observer and estimated Coulomb friction only.",
+    "sampleTime_s": 0.01,
+    "errorBand_N": 0.2,
+    "maxFilteredForceRate_N_s": 2,
+    "dwellTime_s": 0.1,
+    "requiredConsecutiveStableSamples": 11,
+    "elapsedTimeBetweenFirstAndEleventhStableSamples_s": 0.1,
+    "filterConvention": "Native Discrete Transfer Fcn has one-sample strictly proper numerator: trend[k]=alpha*trend[k-1]+(1-alpha)*error[k-1]. Near-target test uses current sampled error."
+  },
+  "nativeReproduction": {
+    "maximumNativeTrendResidual_N": 7.500562670958999e-13,
+    "readySamplesExactlyMatchNative": true
+  },
+  "rows": [
+    {
+      "filterTime_s": 0.02,
+      "filterAlpha": 0.6065306597126334,
+      "readySampleFraction": 0.0,
+      "readySampleCount": 0,
+      "stableNowSampleFraction": 0.22942643391521197,
+      "firstReady_s": null,
+      "readyWindowCount": 0,
+      "totalReadyWindowDuration_s": 0.0,
+      "shortestReadyWindow_s": 0,
+      "longestReadyWindow_s": 0,
+      "medianReadyWindow_s": 0,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 13.753586514747568,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 10.595462392738922,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": null,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": null,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": null,
+      "readyWindows": [],
+      "filterLowFrequencyGroupDelay_s": 0.025414940825367983
+    },
+    {
+      "filterTime_s": 0.04,
+      "filterAlpha": 0.7788007830714049,
+      "readySampleFraction": 0.0,
+      "readySampleCount": 0,
+      "stableNowSampleFraction": 0.4339152119700748,
+      "firstReady_s": null,
+      "readyWindowCount": 0,
+      "totalReadyWindowDuration_s": 0.0,
+      "shortestReadyWindow_s": 0,
+      "longestReadyWindow_s": 0,
+      "medianReadyWindow_s": 0,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 8.256709883853542,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 5.701490458350919,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": null,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": null,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": null,
+      "readyWindows": [],
+      "filterLowFrequencyGroupDelay_s": 0.04520811664187799
+    },
+    {
+      "filterTime_s": 0.06,
+      "filterAlpha": 0.846481724890614,
+      "readySampleFraction": 0.004987531172069825,
+      "readySampleCount": 2,
+      "stableNowSampleFraction": 0.5960099750623441,
+      "firstReady_s": 2.32,
+      "readyWindowCount": 1,
+      "totalReadyWindowDuration_s": 0.02,
+      "shortestReadyWindow_s": 0.02,
+      "longestReadyWindow_s": 0.02,
+      "medianReadyWindow_s": 0.02,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 5.865388637509101,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 3.9925972766037523,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": 0.1677838350933652,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": 1.0429846530900895,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": 11,
+      "readyWindows": [
+        {
+          "start_s": 2.32,
+          "endExclusive_s": 2.34,
+          "duration_s": 0.02
+        }
+      ],
+      "filterLowFrequencyGroupDelay_s": 0.06513882463097456
+    },
+    {
+      "filterTime_s": 0.1,
+      "filterAlpha": 0.9048374180359596,
+      "readySampleFraction": 0.2144638403990025,
+      "readySampleCount": 86,
+      "stableNowSampleFraction": 0.8054862842892768,
+      "firstReady_s": 0.23,
+      "readyWindowCount": 12,
+      "totalReadyWindowDuration_s": 0.8600000000000001,
+      "shortestReadyWindow_s": 0.01,
+      "longestReadyWindow_s": 0.18,
+      "medianReadyWindow_s": 0.045,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 3.685129862260222,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 2.3842299079930207,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": 0.19104447257972812,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": 1.9767626555482545,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": 11,
+      "readyWindows": [
+        {
+          "start_s": 0.23,
+          "endExclusive_s": 0.26,
+          "duration_s": 0.03
+        },
+        {
+          "start_s": 0.43,
+          "endExclusive_s": 0.45,
+          "duration_s": 0.02
+        },
+        {
+          "start_s": 0.98,
+          "endExclusive_s": 1.01,
+          "duration_s": 0.03
+        },
+        {
+          "start_s": 1.16,
+          "endExclusive_s": 1.21,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 1.33,
+          "endExclusive_s": 1.42,
+          "duration_s": 0.09
+        },
+        {
+          "start_s": 1.72,
+          "endExclusive_s": 1.76,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 1.97,
+          "endExclusive_s": 2.0100000000000002,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 2.32,
+          "endExclusive_s": 2.42,
+          "duration_s": 0.1
+        },
+        {
+          "start_s": 2.58,
+          "endExclusive_s": 2.73,
+          "duration_s": 0.15
+        },
+        {
+          "start_s": 2.84,
+          "endExclusive_s": 2.96,
+          "duration_s": 0.12
+        },
+        {
+          "start_s": 3.34,
+          "endExclusive_s": 3.52,
+          "duration_s": 0.18
+        },
+        {
+          "start_s": 3.64,
+          "endExclusive_s": 3.65,
+          "duration_s": 0.01
+        }
+      ],
+      "filterLowFrequencyGroupDelay_s": 0.10508331944775055
+    },
+    {
+      "filterTime_s": 0.15,
+      "filterAlpha": 0.9355069850316178,
+      "readySampleFraction": 0.256857855361596,
+      "readySampleCount": 103,
+      "stableNowSampleFraction": 0.885286783042394,
+      "firstReady_s": 0.1,
+      "readyWindowCount": 13,
+      "totalReadyWindowDuration_s": 1.03,
+      "shortestReadyWindow_s": 0.01,
+      "longestReadyWindow_s": 0.18,
+      "medianReadyWindow_s": 0.05,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 2.515768714309704,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 1.5936790708413395,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": 0.19104447257972812,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": 1.3186466300142174,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": 11,
+      "readyWindows": [
+        {
+          "start_s": 0.1,
+          "endExclusive_s": 0.11,
+          "duration_s": 0.01
+        },
+        {
+          "start_s": 0.22,
+          "endExclusive_s": 0.26,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 0.42,
+          "endExclusive_s": 0.45,
+          "duration_s": 0.03
+        },
+        {
+          "start_s": 0.97,
+          "endExclusive_s": 1.01,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 1.16,
+          "endExclusive_s": 1.21,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 1.32,
+          "endExclusive_s": 1.42,
+          "duration_s": 0.1
+        },
+        {
+          "start_s": 1.71,
+          "endExclusive_s": 1.76,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 1.96,
+          "endExclusive_s": 2.0100000000000002,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 2.24,
+          "endExclusive_s": 2.42,
+          "duration_s": 0.18
+        },
+        {
+          "start_s": 2.57,
+          "endExclusive_s": 2.73,
+          "duration_s": 0.16
+        },
+        {
+          "start_s": 2.84,
+          "endExclusive_s": 2.96,
+          "duration_s": 0.12
+        },
+        {
+          "start_s": 3.34,
+          "endExclusive_s": 3.52,
+          "duration_s": 0.18
+        },
+        {
+          "start_s": 3.63,
+          "endExclusive_s": 3.65,
+          "duration_s": 0.02
+        }
+      ],
+      "filterLowFrequencyGroupDelay_s": 0.15505555144076474
+    },
+    {
+      "filterTime_s": 0.2,
+      "filterAlpha": 0.951229424500714,
+      "readySampleFraction": 0.2593516209476309,
+      "readySampleCount": 104,
+      "stableNowSampleFraction": 0.8902743142144638,
+      "firstReady_s": 0.1,
+      "readyWindowCount": 13,
+      "totalReadyWindowDuration_s": 1.04,
+      "shortestReadyWindow_s": 0.01,
+      "longestReadyWindow_s": 0.18,
+      "medianReadyWindow_s": 0.05,
+      "allSamplesPeakAbsoluteFilteredForceRate_N_s": 1.9142760463503057,
+      "allSamples95thPercentileAbsoluteFilteredForceRate_N_s": 1.1924320620914954,
+      "readySamplesPeakAbsoluteEstimatedContactError_N": 0.19104447257972812,
+      "readySamplesPeakAbsoluteFilteredForceRate_N_s": 0.9890054193532385,
+      "requiredStableSampleCount": 11,
+      "minStableCountAtReady": 11,
+      "readyWindows": [
+        {
+          "start_s": 0.1,
+          "endExclusive_s": 0.11,
+          "duration_s": 0.01
+        },
+        {
+          "start_s": 0.22,
+          "endExclusive_s": 0.26,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 0.42,
+          "endExclusive_s": 0.45,
+          "duration_s": 0.03
+        },
+        {
+          "start_s": 0.97,
+          "endExclusive_s": 1.01,
+          "duration_s": 0.04
+        },
+        {
+          "start_s": 1.1500000000000001,
+          "endExclusive_s": 1.21,
+          "duration_s": 0.06
+        },
+        {
+          "start_s": 1.32,
+          "endExclusive_s": 1.42,
+          "duration_s": 0.1
+        },
+        {
+          "start_s": 1.71,
+          "endExclusive_s": 1.76,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 1.96,
+          "endExclusive_s": 2.0100000000000002,
+          "duration_s": 0.05
+        },
+        {
+          "start_s": 2.24,
+          "endExclusive_s": 2.42,
+          "duration_s": 0.18
+        },
+        {
+          "start_s": 2.57,
+          "endExclusive_s": 2.73,
+          "duration_s": 0.16
+        },
+        {
+          "start_s": 2.84,
+          "endExclusive_s": 2.96,
+          "duration_s": 0.12
+        },
+        {
+          "start_s": 3.34,
+          "endExclusive_s": 3.52,
+          "duration_s": 0.18
+        },
+        {
+          "start_s": 3.63,
+          "endExclusive_s": 3.65,
+          "duration_s": 0.02
+        }
+      ],
+      "filterLowFrequencyGroupDelay_s": 0.20504166493065892
+    }
+  ],
+  "selection": {
+    "filterTime_s": 0.1,
+    "reason": "Smallest tested filter with repeated usable ready windows: twelve windows totaling 0.86 s. 0.04 s never opens; 0.06 s gives only one 20 ms window. Longer 0.15/0.2 s filters add lag for modest extra readiness.",
+    "qualificationRequired": "Test actual recenter and force tracking natively after changing the filter. These fixed-trace windows will change when recenter is enabled.",
+    "rateCriterionUnchanged": true,
+    "dwellCriterionUnchanged": true,
+    "uncertaintyLimit": "The criterion uses filtered estimated force, not instantaneous true-contact force or a prediction of future disturbances.",
+    "filterLowFrequencyGroupDelay_s": 0.10508331944775055
+  }
+}

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>ACF · 2D replay</title>
 <style>
 :root{color-scheme:light;--bg:#eef2f5;--paper:#fff;--ink:#182d40;--muted:#586c7b;--line:#d9e2e8;--teal:#087e82;--tealsoft:#e4f4ef;--slate:#425d72;--amber:#ad5915;--ambersoft:#fff1df;--purple:#6b5d9b;--red:#b73536;--redsoft:#fbecec}
@@ -13,6 +14,8 @@
 @media(max-width:1020px){.workspace{grid-template-columns:minmax(0,1.6fr) minmax(290px,1fr)}.app{padding:14px}.readout{padding:14px}.value{font-size:34px}.electrical strong{font-size:24px}.reference{font-size:12px}.remaining{font-size:11px}.mechanism-head{padding:16px 14px 4px}.mechanism-head .sub{display:none}.robot-row{font-size:12px}.param{font-size:12px}}
 @media(max-width:760px){.workspace{grid-template-columns:1fr}.readouts{grid-template-columns:1fr 1fr;grid-template-rows:auto}.readouts .readout:last-child{grid-column:1/-1}.plots{grid-template-columns:1fr}.header{align-items:start}h1{font-size:21px}.header-right .sub{max-width:160px;font-size:11px}.brand{gap:9px}.logo{width:34px;height:34px;font-size:23px}.toolbar{gap:10px}.toolbar select{max-width:240px}.summary{display:block}.summary span{display:block}.mechanism-svg{min-height:0}.clock{min-width:120px}.playback{gap:7px}.playback select{max-width:76px}}
 @media(max-width:440px){.readouts{grid-template-columns:1fr}.readouts .readout:last-child{grid-column:auto}.header-right .badge{font-size:10px}.header-right .sub{display:none}.toolbar select{max-width:210px}.param{flex:1 1 38%}.timeline{flex-basis:60%;order:2}.clock{order:3}.playback .optional{display:none}}
+.mechanics-summary{display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:18px;margin-top:18px}.mechanics-summary .panel{padding:16px 18px}.mechanics-summary h2{margin-bottom:10px}.mechanics-summary p{font-size:13px;line-height:1.8}.mechanics-summary strong{font-weight:600}.mechanics-summary .badge{margin-top:6px}.mechanics-note{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6}@media(max-width:760px){.mechanics-summary{grid-template-columns:1fr}.mechanics-summary .panel{padding:14px}}
+.sweep-panel{padding:18px 20px;margin-top:18px}.sweep-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}.sweep-controls{display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-size:13px}.sweep-controls label{display:flex;gap:8px;align-items:center}.sweep-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;margin-top:16px}.sweep-grid{display:grid;gap:4px}.sweep-cell{padding:13px 5px;border-radius:7px;border:1px solid transparent;display:grid;gap:4px;justify-items:center;font-size:13px}.sweep-cell strong{font-size:18px}.sweep-cell span{font-size:10px}.sweep-cell.selected{border:2px solid var(--ink)}.sweep-cell:hover{border-color:var(--ink)}.sweep-axis{display:grid;place-items:center;text-align:center;font-size:12px;color:var(--muted);padding:8px 2px}.sweep-detail{font-size:14px;line-height:1.9}.sweep-detail h3{margin:0 0 8px;font-size:17px}.sweep-detail dl{display:grid;grid-template-columns:1fr auto;gap:2px 18px;margin:12px 0}.sweep-detail dt{color:var(--muted)}.sweep-detail dd{margin:0;font-weight:600}.sweep-scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-top:12px}.sweep-scale i{width:170px;height:10px;background:linear-gradient(90deg,#e9f2f8,#99beda,#356b92);border-radius:4px}.sweep-description{font-size:13px;color:var(--muted);line-height:1.7;margin-top:14px}@media(max-width:760px){.sweep-layout{grid-template-columns:1fr}.sweep-panel{padding:14px}.sweep-controls{gap:10px}.sweep-cell strong{font-size:16px}}
 </style>
 </head>
 <body>
@@ -25,15 +28,26 @@
     <section class="workspace">
       <div class="panel"><div class="mechanism-head"><h2 id="mechanism-title">MECHANISM</h2><span class="sub">Axial motion · schematic geometry</span></div><svg id="mechanism" class="mechanism-svg" viewBox="24 218 910 564" role="img" aria-label="Robot, active flange and tool over the workpiece"></svg><p class="mechanism-foot">R, A, B and S show their own positions; stroke is the relative A–B motion.</p></div>
       <aside class="readouts">
-        <section class="panel readout"><div class="card-head"><h2>CONTACT FORCE</h2><span id="force-state" class="badge good">IN BAND</span></div><div class="big-row"><div class="value"><span id="force-value">—</span><span class="unit">N</span></div><div class="reference">Target <span id="force-target">—</span> N<br>Measured <span id="force-measured">—</span> N</div></div><div class="error-row"><strong id="force-error">Error —</strong><span class="muted" id="force-tolerance">—</span></div><div class="meter"><div id="force-band" class="meter-band"></div><div class="meter-mid" style="left:50%"></div><div id="force-dot" class="meter-dot"></div></div><div class="meter-labels"><span id="force-low">—</span><span>0</span><span id="force-high">—</span></div></section>
+        <section class="panel readout"><div class="card-head"><h2>CONTACT FORCE</h2><span id="force-state" class="badge good">IN BAND</span></div><div class="big-row"><div class="value"><span id="force-value">—</span><span class="unit">N</span></div><div class="reference">Target <span id="force-target">—</span> N<br><span id="force-measured-label">Measured</span> <span id="force-measured">—</span> N<span id="estimated-readout" hidden><br>Estimated contact <span id="force-estimated">—</span> N</span></div></div><div class="error-row"><strong id="force-error">Error —</strong><span class="muted" id="force-tolerance">—</span></div><div class="meter"><div id="force-band" class="meter-band"></div><div class="meter-mid" style="left:50%"></div><div id="force-dot" class="meter-dot"></div></div><div class="meter-labels"><span id="force-low">—</span><span>0</span><span id="force-high">—</span></div></section>
         <section class="panel readout"><div class="card-head"><h2>ACTUATOR TRAVEL</h2><span id="centre-state" class="badge">RECENTERING</span></div><div class="big-row"><div class="value travel-value"><span id="travel-value">—</span><span class="unit">mm</span></div><span id="centre-error" class="muted" style="font-size:12px;text-align:right">—</span></div><div class="meter"><div id="travel-fill" class="meter-band" style="background:#f0edf7"></div><div id="travel-mid" class="meter-mid" style="background:#6b5d9b"></div><div class="meter-stop" style="left:0"></div><div class="meter-stop" style="left:100%"></div><div id="travel-dot" class="meter-dot" style="background:#6b5d9b"></div></div><div class="meter-labels"><span id="travel-low">—</span><span id="travel-centre">—</span><span id="travel-high">—</span></div><div class="remaining"><span id="remaining-low">—</span><span id="remaining-high">—</span></div></section>
         <section class="panel readout"><div class="card-head"><h2>DRIVE & ROBOT RESPONSE</h2></div><div class="electrical"><div><strong id="drive-left" style="color:var(--amber)">—</strong><p class="sub" id="drive-left-limit">—</p></div><div><strong id="drive-right">—</strong><p class="sub" id="drive-right-limit">—</p></div></div><div class="robot-rows"><div class="robot-row"><span>Robot command delay</span><strong id="robot-delay">—</strong></div><div class="robot-row"><span>Requested robot speed</span><strong id="robot-request">—</strong></div><div class="robot-row"><span>After command delay</span><strong id="robot-delayed">—</strong></div><div class="robot-row"><span>Actual robot speed</span><strong id="robot-actual">—</strong></div></div><div id="flags" class="flags" aria-live="off"></div></section>
       </aside>
     </section>
-    <section class="plots"><div class="plot-card"><div class="plot-heading"><h2>CONTACT-FORCE ERROR</h2><span class="sub">actual − target · N</span><label class="legend"><input id="measured-toggle" type="checkbox"> Measured</label></div><svg id="force-plot" class="plot" role="img" aria-label="Contact-force error over time; select a time to seek"></svg></div><div class="plot-card"><div class="plot-heading"><h2>AXIAL DISPLACEMENT</h2><div class="legend"><span><i class="swatch" style="background:var(--teal)"></i>surface</span><span><i class="swatch" style="background:var(--slate)"></i>robot</span></div></div><svg id="motion-plot" class="plot" role="img" aria-label="Surface and robot displacement over time; select a time to seek"></svg></div></section>
+    <section class="mechanics-summary" aria-label="Springs, dampers and length envelope">
+      <div class="panel"><h2>LOWER LINK · B–S</h2><p>Stiffness <strong id="k1">—</strong><br>Damping <strong id="c1">—</strong><br><span id="lower-length" class="muted">—</span></p></div>
+      <div class="panel"><h2>UPPER LINK · R–A</h2><p>Stiffness <strong id="k2">—</strong><br>Damping <strong id="c2">—</strong><br><span id="upper-length" class="muted">—</span></p></div>
+      <div class="panel"><h2>COMBINED SPRING LENGTH</h2><p id="spring-lengths">Dimensions not specified.</p><span id="spring-sizing-status" class="badge">—</span><p class="mechanics-note" id="spring-sizing-note">The drawing is schematic.</p></div>
+    </section>
+    <section class="plots"><div class="plot-card"><div class="plot-heading"><h2>CONTACT-FORCE ERROR</h2><span class="sub">actual − target · N</span><label class="legend"><input id="measured-toggle" type="checkbox"> Cell reading</label><label id="estimated-toggle-label" class="legend" hidden><input id="estimated-toggle" type="checkbox" checked> Estimated contact</label></div><svg id="force-plot" class="plot" role="img" aria-label="Contact-force error over time; select a time to seek"></svg></div><div class="plot-card"><div class="plot-heading"><h2>AXIAL DISPLACEMENT</h2><div class="legend"><span><i class="swatch" style="background:var(--teal)"></i>surface</span><span><i class="swatch" style="background:var(--slate)"></i>robot</span></div></div><svg id="motion-plot" class="plot" role="img" aria-label="Surface and robot displacement over time; select a time to seek"></svg></div></section>
     <nav class="playback" aria-label="Playback"><button id="play" class="primary" aria-label="Play" title="Space: play or pause">▶ Play</button><button id="previous" aria-label="Previous frame" title="Left arrow: previous frame">◀</button><button id="next" aria-label="Next frame" title="Right arrow: next frame">▶</button><select id="speed" aria-label="Playback speed"><option value="0.1">0.1×</option><option value="0.25" selected>0.25×</option><option value="0.5">0.5×</option><option value="1">1×</option><option value="2">2×</option><option value="5">5×</option></select><input id="timeline" class="timeline" type="range" aria-label="Replay time" min="0" max="1" step="any" value="0"><span id="clock" class="clock">0.000 / 0.000 s</span><button id="worst" title="Jump to largest logged absolute force error">Worst error</button><button id="next-event" class="optional" title="Jump to the next limit or contact event">Next event</button></nav>
     <div id="event-info" class="event-info" role="status"></div>
-    <footer class="summary"><span id="summary">—</span><span id="frame-info">—</span><span>1D model · 2D view · all samples retained</span></footer>
+    <footer class="summary"><span id="summary">—</span><span id="frame-info">—</span><span id="record-info">Recorded model · 2D view</span></footer>
+    <section id="spring-sweep" class="panel sweep-panel" hidden aria-label="Recorded spring and damper sweep">
+      <div class="sweep-head"><h2>RECORDED SPRING / DAMPER SWEEP</h2><span id="sweep-count" class="sub"></span></div>
+      <div class="sweep-controls"><label>Lower damping <select id="sweep-c1" aria-label="Lower damper coefficient"></select></label><label>Upper damping <select id="sweep-c2" aria-label="Upper damper coefficient"></select></label><button id="sweep-best">Selected design</button><button id="sweep-download">Download all values</button></div>
+      <div class="sweep-layout"><div><div id="sweep-grid" class="sweep-grid" aria-label="Worst force error by lower and upper stiffness"></div><div class="sweep-scale"><span>0 N</span><i aria-hidden="true"></i><span>0.7 N or more</span></div><p class="mechanics-note">Rows: upper stiffness. Columns: lower stiffness. Cell value is the larger peak error from the two tests; limit ±0.5 N.</p></div><div id="sweep-detail" class="sweep-detail" aria-live="polite"></div></div>
+      <p class="sweep-description">Each configuration was simulated with clean force feedback, then with 0.02 N RMS force noise and an extra 0.2 ms force delay. Both tests use magnet-position noise of 1 µm RMS. All four springs must fit within 100 mm, including free-length tolerances, and remain inside their working envelope. The replay selector contains the recorded comparison runs.</p>
+    </section>
   </div>
 </main>
 <script id="acf-data" type="application/json">__ACF_DATA_JSON__</script>
@@ -71,6 +85,8 @@ function validate(bundle){
   if(!['voice_coil','leadscrew','ideal_position'].includes(p.actuator.kind))throw Error('Unsupported actuator type: '+p.actuator.kind);
   const drive=p[p.actuator.kind==='voice_coil'?'coil':p.actuator.kind==='leadscrew'?'screw':'ideal'];
   if(!drive||(p.actuator.kind!=='ideal_position'&&(!Number.isFinite(drive.peakCurrent)||drive.peakCurrent<=0||!Number.isFinite(drive.voltage)||drive.voltage<=0)))throw Error('Missing drive limits in run '+(index+1)+'.');
+  if(r.robotGate){for(const key of ['time','ready','filteredError_N','forceRate_N_s','stableNow']){if(!Array.isArray(r.robotGate[key]))r.robotGate[key]=[r.robotGate[key]];if(r.robotGate[key].some(v=>!Number.isFinite(v)))throw Error('Invalid robot settling diagnostics.');}if(r.robotGate.time.some((t,k)=>k&&t<=r.robotGate.time[k-1])||['ready','filteredError_N','forceRate_N_s','stableNow'].some(key=>r.robotGate[key].length!==r.robotGate.time.length))throw Error('Mismatched robot settling diagnostics.');}
+  if(r.contactEstimate){const estimate=r.contactEstimate;if(!Array.isArray(estimate.time)||!Array.isArray(estimate.force_N)||estimate.time.length<2||estimate.time.length!==estimate.force_N.length||estimate.time.some((t,k)=>!Number.isFinite(t)||(k&&t<=estimate.time[k-1]))||estimate.force_N.some(v=>!Number.isFinite(v)))throw Error('Invalid recorded contact-force estimate.');}
   r._index=Object.fromEntries(r.names.map((n,i)=>[n,i]));r.label=String(r.label||p.actuator.kind+' / '+p.surface.kind);r.source=String(r.source||'Recorded ACF result');
   return r;
  });
@@ -79,7 +95,7 @@ function analyze(r){
  const ix=r._index,p=r.parameters,tol=p.force.tolerance,drive=p.actuator.kind==='voice_coil'?p.coil:p.screw;
  const limit=p.actuator.kind==='ideal_position'?Infinity:drive.peakCurrent;
  let peak=0,worst=0,outside=0,passed=true,contact=true,stops=false,impacts=0,over=false;
- const events=[];let previous={};const from=Number.isFinite(p.sim.evaluateFrom)?p.sim.evaluateFrom:r.time[0];
+ const events=[];let previous={};const from=r.forceComponent==='surface_normal'?r.time[0]:(Number.isFinite(p.sim.evaluateFrom)?p.sim.evaluateFrom:r.time[0]);
  worst=Math.max(0,r.time.findIndex(t=>t>=from));
  for(let k=0;k<r.time.length;k++){
   const a=r.data[k],e=Math.abs(a[ix.Fc_N]-a[ix.requestedForce_N]);
@@ -91,19 +107,89 @@ function analyze(r){
   if(e>tol&&k+1<r.time.length)outside+=r.time[k+1]-r.time[k];
   contact=contact&&!flags['Contact lost'];stops=stops||flags['Stroke stop reached'];impacts+=flags['Rigid impact']?1:0;over=over||flags['Current above limit'];
  }
- passed=peak<=tol&&contact&&!stops&&!impacts&&!over;
- return {peak,worst,outside,passed,events,impacts,from,contact,stops,over};
+ let complete=!Number.isFinite(p.sim.stopTime)||r.time.at(-1)>=p.sim.stopTime-(p.sim.step||0)/2;
+ let sizing=springSizing(r);
+ passed=peak<=tol&&contact&&!stops&&!impacts&&!over&&complete&&(!sizing||sizing.passed);
+ if(r.display&&r.display.originalSamples>r.time.length){
+  const m=r.metrics;if(!m||!Number.isFinite(m.peakAbsForceError_N)||!Number.isFinite(m.timeOutsideTolerance_s)||typeof m.passed!=='boolean')throw Error('Reduced display requires complete native metrics.');
+  peak=m.peakAbsForceError_N;outside=m.timeOutsideTolerance_s;passed=m.passed;complete=m.completed;contact=!m.lostContact;stops=m.strokeStopHit;over=m.overCurrent;impacts=m.impactCount;worst=sampleIndex(r.display.nativeWorstTime_s,r);
+  if(m.springSizing)sizing={passed:m.springSizing.passed,free:m.springSizing.combinedFreeLengthMax_mm,installed:m.springSizing.combinedInstalledLengthMax_mm,limit:m.springSizing.limit_mm};
+ }
+ return {peak,worst,outside,passed,events,impacts,from,contact,stops,over,complete,sizing};
+}
+function springSizing(r){
+ const p=r.parameters,pack=p.springs;if(!pack)return null;
+ const ix=r._index,m=p.mechanics,g=m.gravity*Math.cos(m.angle);
+ const offsets=[p.force.reference-m.mS*g,p.force.reference-(m.mA+m.mB+m.mS)*g];
+ const links=['lower','upper'],rates=[m.k1,m.k2];let free=0,installed=0,passed=true;
+ for(let j=0;j<2;j++){
+  if(j===0?m.lowerRigid:m.upperRigid)continue;
+  const s=pack[links[j]],common=pack.commonPreload_N/s.rate_N_m,bias=offsets[j]/rates[j];
+  let lo=Infinity,hi=-Infinity,dlo=Infinity,dhi=-Infinity;
+  for(const a of r.data){
+   const d=j===0?a[ix.xS_m]-a[ix.xB_m]:a[ix.xA_m]-a[ix.robotPosition_m];
+   lo=Math.min(lo,common+bias+d,common-bias-d);hi=Math.max(hi,common+bias+d,common-bias-d);
+   dlo=Math.min(dlo,d);dhi=Math.max(dhi,d);
+  }
+  passed=passed&&lo>=pack.unseatingClearance_m&&s.freeLength_m-s.freeLengthTolerance_m-hi>=s.minWorkingLength_m+pack.workingClearance_m&&dhi-dlo<=s.maxCyclicStroke_m&&s.rate_N_m*hi<=s.forceEnvelope_N;
+  free+=2000*(s.freeLength_m+s.freeLengthTolerance_m);installed+=2000*(s.freeLength_m+s.freeLengthTolerance_m-common);
+ }
+ passed=passed&&free<=pack.maxCombinedLength_m*1000+1e-9&&installed<=pack.maxCombinedLength_m*1000+1e-9;
+ return {passed,free,installed,limit:pack.maxCombinedLength_m*1000};
 }
 function load(bundle){
  const validated=validate(bundle);pause();runs=validated;
  $('run-select').replaceChildren(...runs.map((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+'. '+r.label;return o;}));
- $('alert').hidden=true;$('empty').hidden=true;$('viewer').hidden=false;selectRun(0);
+ $('alert').hidden=true;$('empty').hidden=true;$('viewer').hidden=false;selectRun(0);loadSweep(bundle.springSweep);
 }
+let sweep=null,sweepSelection=null;
+function loadSweep(data){
+ sweep=data||null;$('spring-sweep').hidden=!sweep;if(!sweep)return;
+ if(!Array.isArray(sweep.rows)||!sweep.rows.length||!sweep.selected)throw Error('The spring sweep summary is incomplete.');
+ for(const id of ['sweep-c1','sweep-c2']){
+  const key=id==='sweep-c1'?'c1_Ns_m':'c2_Ns_m';
+  const values=[...new Set(sweep.rows.map(r=>r[key]))].sort((a,b)=>a-b);
+  $(id).replaceChildren(...values.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=fmt(v,0)+' N·s/m';return o;}));
+  $(id).value=sweep.selected[key];
+ }
+ set('sweep-count',sweep.passedConfigurations+' / '+sweep.configurations+' configurations pass both tests');
+ sweepSelection=sweep.selected;renderSweep();
+}
+function renderSweep(){
+ if(!sweep)return;
+ const rows=sweep.rows.filter(r=>r.c1_Ns_m===Number($('sweep-c1').value)&&r.c2_Ns_m===Number($('sweep-c2').value));
+ if(!rows.some(r=>r.id===sweepSelection?.id))sweepSelection=rows.reduce((a,b)=>a.worstError_N<b.worstError_N?a:b);
+ const k1=[...new Set(rows.map(r=>r.k1_N_m))].sort((a,b)=>a-b),k2=[...new Set(rows.map(r=>r.k2_N_m))].sort((a,b)=>a-b);
+ const grid=$('sweep-grid');grid.style.gridTemplateColumns='68px repeat('+k1.length+', minmax(0, 1fr))';grid.replaceChildren();
+ const axis=text=>{const el=document.createElement('div');el.className='sweep-axis';el.textContent=text;grid.append(el);};
+ axis('k₂ ↓ / k₁ → N/mm');for(const k of k1)axis(fmt(k/1000,2));
+ for(const upper of k2){
+  axis(fmt(upper/1000,2));
+  for(const lower of k1){
+   const row=rows.find(r=>r.k1_N_m===lower&&r.k2_N_m===upper),b=document.createElement('button');
+   const f=clamp(row.worstError_N/.7,0,1),start=[233,242,248],end=[53,107,146];
+   b.className='sweep-cell'+(row.id===sweepSelection?.id?' selected':'');b.style.background='rgb('+start.map((s,j)=>Math.round(lerp(s,end[j],f))).join(',')+')';b.style.color=f>.65?'#fff':C.ink;
+   const value=document.createElement('strong'),state=document.createElement('span');value.textContent=fmt(row.worstError_N,3);state.textContent=row.passed?'PASS':'FAIL';b.append(value,state);
+   b.setAttribute('aria-label','Lower '+fmt(lower/1000,3)+' N/mm, upper '+fmt(upper/1000,3)+' N/mm: '+fmt(row.worstError_N,4)+' N, '+state.textContent);
+   const choose=()=>{sweepSelection=row;showSweepDetail(row);for(const el of grid.querySelectorAll('button'))el.classList.toggle('selected',el===b);};
+   b.addEventListener('click',choose);b.addEventListener('focus',choose);b.addEventListener('pointerenter',choose);grid.append(b);
+  }
+ }
+ showSweepDetail(sweepSelection);
+}
+function showSweepDetail(r){
+ const items=[['Lower / upper stiffness',fmt(r.k1_N_m/1000,3)+' / '+fmt(r.k2_N_m/1000,3)+' N/mm'],['Lower / upper damping',r.c1_Ns_m+' / '+r.c2_Ns_m+' N·s/m'],['Clean force error',fmt(r.nominalError_N,4)+' N'],['Noisy / delayed force error',fmt(r.stressError_N,4)+' N'],['Worst-case force margin',fmt(r.margin_N,4)+' N'],['Combined free length incl. tolerance',fmt(r.freeLengthMax_mm,1)+' mm'],['Combined installed length upper bound',fmt(r.installedLengthMax_mm,1)+' mm'],['Peak current across tests',fmt(r.peakCurrent_A,3)+' A'],['Peak damper force across tests',fmt(r.peakDamperForce_N,3)+' N']];
+ $('sweep-detail').innerHTML='<h3>Configuration '+r.id+'</h3><span class="badge '+(r.passed?'good':'bad')+'">'+(r.passed?'BOTH TESTS PASS':'TEST / ENVELOPE FAILS')+'</span><dl>'+items.map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>').join('')+'</dl>'+(r.passed?'':'<p class="mechanics-note">Clean: '+esc(r.nominalReason)+'; stress: '+esc(r.stressReason)+'</p>');
+}
+$('sweep-c1').addEventListener('change',renderSweep);$('sweep-c2').addEventListener('change',renderSweep);
+$('sweep-best').addEventListener('click',()=>{if(!sweep)return;sweepSelection=sweep.selected;$('sweep-c1').value=sweepSelection.c1_Ns_m;$('sweep-c2').value=sweepSelection.c2_Ns_m;renderSweep();});
+$('sweep-download').addEventListener('click',()=>{if(!sweep)return;const keys=Object.keys(sweep.rows[0]),quote=v=>'"'+String(v).replaceAll('"','""')+'"';const csv=[keys.map(quote).join(','),...sweep.rows.map(r=>keys.map(k=>quote(r[k])).join(','))].join('\r\n');const u=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='spring_damper_sweep.csv';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);});
 function selectRun(index){
  pause();run=runs[index];ci=run._index;run.analysis=analyze(run);frame=0;playTime=run.time[0];$('run-select').value=index;
  const p=run.parameters,m=p.mechanics;
  set('height',fmt(p.surface.height*1000,2)+' mm');set('width',fmt(p.surface.width*1000,1)+' mm');set('scan',fmt(p.surface.scanSpeed*1000,1)+' mm/s');
  set('source',run.source);set('mechanism-title',p.actuator.kind.replaceAll('_',' ').toUpperCase()+' · MECHANISM');
+ set('record-info',run.display?'Peaks/events retained · metrics from '+run.display.originalSamples.toLocaleString()+' native samples':'All recorded samples retained');
  badge('run-status',run.analysis.passed?'RUN PASSES':'RUN FAILS',run.analysis.passed?'good':'bad');
  $('run-status').title='Based on the complete recorded evaluation interval, not only the displayed frame.';
  $('timeline').min=run.time[0];$('timeline').max=run.time.at(-1);
@@ -112,6 +198,23 @@ function selectRun(index){
  $('travel-mid').style.left=100*(m.midTravel-m.travelMin)/(m.travelMax-m.travelMin)+'%';
  $('next-event').disabled=!run.analysis.events.length;
  set('event-info','');
+ set('k1',m.lowerRigid?'Rigid attachment':fmt(m.k1/1000,2)+' N/mm');set('k2',m.upperRigid?'Rigid attachment':fmt(m.k2/1000,2)+' N/mm');
+ set('c1',m.lowerRigid?'No relative motion':fmt(m.c1,1)+' N·s/m');set('c2',m.upperRigid?'No relative motion':fmt(m.c2,1)+' N·s/m');
+ const sizing=run.analysis.sizing;
+ if(sizing){
+  set('lower-length',m.lowerRigid?'No lower springs':'Two springs, '+fmt(p.springs.lower.freeLength_m*1000,1)+' mm free length each');
+  set('upper-length',m.upperRigid?'No upper springs':'Two springs, '+fmt(p.springs.upper.freeLength_m*1000,1)+' mm free length each');
+  set('spring-lengths','Free ≤ '+fmt(sizing.free,1)+' mm · Installed ≤ '+fmt(sizing.installed,1)+' mm · Limit '+fmt(sizing.limit,0)+' mm');
+  badge('spring-sizing-status',sizing.passed?'LENGTH / TRAVEL SCREEN PASSES':'SPRING ENVELOPE FAILS',sizing.passed?'good':'bad');
+  set('spring-sizing-note',((m.lowerRigid?0:2)+(m.upperRigid?0:2))+' guided, opposed, preloaded springs. Tolerances included. Housing, actuator and damper lengths are additional. Fatigue and real damping need hardware verification.');
+ }else{
+  set('lower-length','Spring dimensions not specified');set('upper-length','Spring dimensions not specified');
+  set('spring-lengths','Dimensions not specified.');badge('spring-sizing-status','LENGTH NOT CHECKED');
+  set('spring-sizing-note','The drawing is schematic; stiffness alone does not determine spring length.');
+ }
+ $('force-measured-label').textContent=run.forceComponent==='surface_normal'?'Tared axial B–S cell':(p.sensor?.distalMass_kg>0?'Tared B–S cell':'Measured');
+ $('estimated-readout').hidden=!run.contactEstimate;$('estimated-toggle-label').hidden=!run.contactEstimate;
+ run._estimateError=run.contactEstimate?run.time.map(t=>run.contactEstimate.force_N[sampleIndex(t,run.contactEstimate)]-p.force.reference):null;
  set('summary','Peak force error '+fmt(run.analysis.peak,3)+' N · Outside tolerance '+fmt(run.analysis.outside,3)+' s'+(run.analysis.impacts?' · '+run.analysis.impacts+' rigid impact(s); peak force is not finite':''));
  $('summary').title='Evaluation starts at '+fmt(run.analysis.from,3)+' s. Heating is not evaluated.';
  makeCharts();render();
@@ -139,7 +242,7 @@ function drawMechanism(){
  $('mechanism').setAttribute('viewBox',`24 ${top} 910 ${bottom-top}`);
  let out=defs+rect(42,top+6,874,bottom-top-14,'url(#dots)',8)+line(501,top+5,501,bottom-12,C.line,1,'4 7');
  out+=shape('g',{'data-body':'R','data-position':val('robotPosition_m')},rect(474,R-29,54,29,C.steel,5,C.slate)+rect(371,R-12,260,24,C.slate,5));
- out+=tag(R,'R','Robot flange','delayed recentering motion')+spring(466,R+12,A-12)+damper(536,R+12,A-12)+txt(578,(R+A)/2,'k₂, c₂',14,C.muted);
+ out+=tag(R,'R','Robot flange','delayed recentering motion')+(m.upperRigid?line(501,R+12,501,A-12,C.slate,5)+txt(578,(R+A)/2,'Rigid',14,C.muted):spring(466,R+12,A-12)+damper(536,R+12,A-12)+txt(578,(R+A)/2,'k₂, c₂',14,C.muted));
  const rv=val('robotVelocity_m_s');if(Math.abs(rv)>1e-7)out+=line(674,R+(rv>0?14:-23),674,R+(rv>0?-23:14),C.slate,2,'','slate-arrow')+txt(691,R-8,rv>0?'moving up':'moving down',13,C.muted);
  let upper=rect(371,A-12,260,24,C.steel,5,C.slate)+rect(391,A+12,7,high-A+24,C.steel,3)+rect(604,A+12,7,high-A+24,C.steel,3);
  if(kind==='voice_coil')upper+=rect(425,A+12,21,124,C.slate,4)+rect(556,A+12,21,124,C.slate,4)+rect(445,A+12,112,16,C.slate,2);
@@ -161,14 +264,13 @@ function drawMechanism(){
  out+=txt(90,B-65,actTitle,17,C.amber,600)+txt(90,B-44,actSub,kind==='ideal_position'?11:13,C.muted)+line(287,B-61,422,B-61);
  if(Math.abs(fa)>1e-9){const s=Math.sign(fa);out+=line(669,A+32+s*27,669,A+32-s*27,C.amber,2.4,'','amber-arrow')+line(669,B-32-s*27,669,B-32+s*27,C.amber,2.4,'','amber-arrow');}
  out+=txt(690,(A+B)/2-2,'Fa '+fmt(fa,2)+' N',16,C.amber,600)+txt(690,(A+B)/2+18,'opposite on A / B',12,C.muted);
- out+=spring(466,B+12,S-12)+damper(536,B+12,S-12)+txt(578,(B+S)/2,'k₁, c₁',14,C.muted)+txt(90,(B+S)/2,'Lower compliance',16,C.muted)+line(287,(B+S)/2-4,440,(B+S)/2-4);
+ out+=(m.lowerRigid?line(501,B+12,501,S-12,C.slate,5)+txt(578,(B+S)/2,'Rigid',14,C.muted):spring(466,B+12,S-12)+damper(536,B+12,S-12)+txt(578,(B+S)/2,'k₁, c₁',14,C.muted))+txt(90,(B+S)/2,m.lowerRigid?'Rigid tool attachment':'Lower compliance',16,C.muted)+line(287,(B+S)/2-4,440,(B+S)/2-4);
  out+=shape('g',{'data-body':'S','data-position':val('xS_m')},rect(432,S-12,138,24,touch?C.tealsoft:'#fbecec',5,touch?C.teal:C.red)+rect(474,S+12,54,22,C.steel,3,C.slate)+path(`M 474 ${S+34} H 528 L 501 ${tip} Z`,C.slate,1.3,C.steel));
  out+=tag(S,'S','Tool head',touch?'contact with workpiece':'free motion · no contact',touch?C.teal:C.red,432);
  out+=line(807,low,807,high,C.line,3)+txt(822,low-17,'STROKE',12,C.muted,600)+txt(822,low+5,fmt(m.travelMin*1000,1)+' mm',13,C.muted)+txt(822,high+5,fmt(m.travelMax*1000,1)+' mm',13,C.muted);
  for(let j=0;j<=5;j++)out+=line(801,low+(high-low)*j/5,813,low+(high-low)*j/5,C.muted,1);
  out+=line(638,mid,813,mid,C.purple,1,'4 4')+txt(822,mid+5,fmt(m.midTravel*1000,2),13,C.purple)+txt(822,mid+22,'centre',12,C.muted)+path(`M 784 ${B-6} L 796 ${B} L 784 ${B+6} Z`,C.purple,1,C.purple)+circle(807,B,4,C.purple);
- const travelLabelY=Math.abs(B-mid)<27?B-19:B-9;
- out+=txt(822,travelLabelY,fmt(travel*1000,2)+' mm',16,C.purple,600);
+ out+=txt(784,B-14,fmt(travel*1000,2)+' mm',16,C.purple,600,'end');
  const profileScale=390/Math.max(.001,p.surface.width||.06),speed=p.surface.scanSpeed;
  let pts=[];for(let j=0;j<=145;j++){const xx=44+870*j/145,tt=speed>0?run.time[frame]+(xx-501)/(profileScale*speed):run.time[frame],yy=groundHome-valueAt(tt,ci.surfaceHeight_m)*scale;pts.push([xx,yy]);}
  const poly='M '+pts.map(q=>q.join(',')).join(' L '),base=Math.max(...pts.map(q=>q[1]),tip)+44;
@@ -182,7 +284,7 @@ function drawMechanism(){
 function render(){
  if(!run)return;
  const p=run.parameters,m=p.mechanics,fc=val('Fc_N'),target=val('requestedForce_N'),e=fc-target,tol=p.force.tolerance,travel=val('travel_m'),span=m.travelMax-m.travelMin,touch=val('contact')>.5,impact=val('impactImpulse_Ns')>1e-10;
- set('force-value',fmt(fc,2));set('force-target',fmt(target,2));set('force-measured',fmt(val('measuredForce_N'),2));set('force-error','Error '+signed(e,3)+' N');set('force-tolerance','±'+fmt(tol,2)+' N limit');
+ set('force-value',fmt(fc,2));set('force-target',fmt(target,2));set('force-measured',fmt(val('measuredForce_N'),2));if(run.contactEstimate)set('force-estimated',fmt(run.contactEstimate.force_N[sampleIndex(run.time[frame],run.contactEstimate)],2));set('force-error','Error '+signed(e,3)+' N');set('force-tolerance','±'+fmt(tol,2)+' N limit');
  $('force-error').className=Math.abs(e)>tol?'bad':'';
  badge('force-state',impact?'IMPACT':!touch?'NO CONTACT':Math.abs(e)<=tol?'IN BAND':'OUTSIDE BAND',(impact||!touch||Math.abs(e)>tol)?'bad':'good');
  const forceRange=Math.max(tol*1.2,Math.abs(e)*1.1,1e-6);
@@ -201,6 +303,7 @@ function render(){
  }
  set('robot-request',signed(val('robotVelocityRequest_m_s')*1000,3)+' mm/s');set('robot-delayed',signed(val('robotVelocityDelayed_m_s')*1000,3)+' mm/s');set('robot-actual',signed(val('robotVelocity_m_s')*1000,3)+' mm/s');
  const warnings=[];
+ if(run.robotGate&&p.robot.forceGate?.enabled){const k=sampleIndex(run.time[frame],run.robotGate);if(run.robotGate.ready[k]<.5)warnings.push(['Robot correction held · force settling','warn']);}
  if(impact)warnings.push(['Rigid impact · '+fmt(val('impactImpulse_Ns'),5)+' N·s','bad']);
  if(!touch)warnings.push(['Contact lost','bad']);if(stop)warnings.push(['Stroke stop reached','bad']);
  if(val('effortSaturated')>.5)warnings.push(['Effort limit active','warn']);if(val('voltageSaturated')>.5)warnings.push(['Voltage limit active','warn']);
@@ -233,7 +336,7 @@ function chart(id,series,domain,unit,band=0){
 }
 function makeCharts(){
  if(!run)return;const p=run.parameters,err=run.data.map(a=>a[ci.Fc_N]-a[ci.requestedForce_N]),measured=run.data.map(a=>a[ci.measuredForce_N]-a[ci.requestedForce_N]);
- const series=[{values:err,color:C.teal}];if($('measured-toggle').checked)series.push({values:measured,color:C.amber,dashed:true});
+ const series=[{values:err,color:C.teal}];if(run.contactEstimate&&$('estimated-toggle').checked)series.push({values:run._estimateError,color:C.purple,dashed:true});if($('measured-toggle').checked)series.push({values:measured,color:C.amber,dashed:true});
  let lo=-p.force.tolerance,hi=p.force.tolerance;for(const s of series){const [a,b]=extents(s.values);lo=Math.min(lo,a);hi=Math.max(hi,b);}const pad=Math.max(.02,(hi-lo)*.12);
  const surface=run.data.map(a=>a[ci.surfaceHeight_m]*1000),robot=run.data.map(a=>a[ci.robotPosition_m]*1000),[slo,shi]=extents(surface),[rlo,rhi]=extents(robot);const ml=Math.min(slo,rlo),mh=Math.max(shi,rhi),mp=Math.max(.05,(mh-ml)*.1);
  charts=[chart('force-plot',series,[lo-pad,hi+pad],'N',p.force.tolerance),chart('motion-plot',[{values:surface,color:C.teal},{values:robot,color:C.slate}],[ml-mp,mh+mp],'mm')];
@@ -249,6 +352,7 @@ $('play').addEventListener('click',toggle);$('previous').addEventListener('click
 $('timeline').addEventListener('input',()=>{if(!run)return;pause();seek(Number($('timeline').value));set('event-info','');});
 $('run-select').addEventListener('change',()=>selectRun(Number($('run-select').value)));
 $('measured-toggle').addEventListener('change',makeCharts);
+$('estimated-toggle').addEventListener('change',makeCharts);
 $('worst').addEventListener('click',()=>{if(!run)return;pause();seek(run.time[run.analysis.worst]);set('event-info','Largest logged absolute force error in the evaluation interval. Rigid impact impulses are separate.');});
 $('next-event').addEventListener('click',()=>{if(!run||!run.analysis.events.length)return;pause();const e=run.analysis.events.find(e=>e.index>frame)||run.analysis.events[0];seek(run.time[e.index]);set('event-info',e.label+' at '+fmt(run.time[e.index],4)+' s');});
 for(const id of ['force-plot','motion-plot'])$(id).addEventListener('pointerdown',e=>{if(!run)return;pause();const c=charts.find(c=>c.el.id===id),bounds=c.el.getBoundingClientRect(),x=(e.clientX-bounds.left)*c.width/bounds.width,f=clamp((x-c.box.x)/c.box.w,0,1);seek(lerp(run.time[0],run.time.at(-1),f));});

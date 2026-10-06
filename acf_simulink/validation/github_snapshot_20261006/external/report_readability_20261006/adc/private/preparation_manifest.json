@@ -1,0 +1,64 @@
+{
+  "status": "private_adc_diagnostic_banks_prepared_not_executed",
+  "date": "2026-10-06",
+  "sourceModel": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx",
+  "sourceModelSha256": "c801331c16deb6d5dd5513c394edcbc4a4ee34cf7f28d39ca1476b2d9f9e6557",
+  "sourceConfigs": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat",
+  "sourceConfigsSha256": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+  "candidateLockFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json",
+  "candidateLockSha256": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+  "selectedSourceScenarios": [
+    165,
+    166,
+    168,
+    169,
+    170,
+    171,
+    172
+  ],
+  "plannedDiagnosticRecordings": 42,
+  "qualificationRecordings": 0,
+  "controllerRetuned": false,
+  "exports": [
+    {
+      "group": "sinc3_30000",
+      "casesPrepared": 28,
+      "rate_Hz": 30000,
+      "bits": [
+        24,
+        16,
+        14,
+        12
+      ],
+      "folder": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_30000",
+      "modelSha256": "53f5c1eff9fa9a33be38577bf8d152b585a9d8db37be06011b2a748531a35134",
+      "configsSha256": "f21577e901f21715976e2cb2b214e080ac033b5ac2089f43790708fea350f1f6",
+      "algebraicLoopCount": 0,
+      "nativeExportElapsed_s": 15.402763
+    },
+    {
+      "group": "sinc3_15000",
+      "casesPrepared": 7,
+      "rate_Hz": 15000,
+      "bits": 24,
+      "folder": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_15000",
+      "modelSha256": "bd309d57878f8846c194f984adf297ccc0b33be40ce20a5a55fbeb9efa9751c9",
+      "configsSha256": "d82709c54a4105b8ef490c48d32710fdbd47c0661b6f0c3527babeb1c62bfde0",
+      "algebraicLoopCount": 0,
+      "nativeExportElapsed_s": 10.411731
+    },
+    {
+      "group": "sinc3_7500",
+      "casesPrepared": 7,
+      "rate_Hz": 7500,
+      "bits": 24,
+      "folder": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500",
+      "modelSha256": "20c20df6d478356802d7e13e84cc450c6a21b466f75214bedb7c5c82cee41a26",
+      "configsSha256": "cbbe6a0d6bcf98fc233ba6314f499b66647b03317918049c85529470d6e8a50c",
+      "algebraicLoopCount": 0,
+      "nativeExportElapsed_s": 10.289792
+    }
+  ],
+  "sourceInputsPreserved": true,
+  "recipeSha256": "a727f5507db7da7aa80c1a7bf0dbf2a9dbe83b5dd298a1f6c2b5ed04e433e1d1"
+}

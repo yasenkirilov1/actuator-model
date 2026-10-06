@@ -1,0 +1,89 @@
+{
+  "scope": "Read-only exact finite-cell force decomposition. Full native true normal force history is scored. Calibration injections, if any, are defined in the source run, not this diagnostic.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v6_ratio_provisional/inertial_uncertainty_repeated_screen_seeds_20260930_native_traces/case_0003.mat",
+  "nativeTraceSha256": "b0fbab06690d0431e7bf64dc32d7d63b854b9d061b680fa57c51f09643ffdd98",
+  "nativeSamples": 1000001,
+  "step_s": 1.0000000000010001e-05,
+  "endTime_s": 10.0,
+  "parameters": {
+    "massB_kg": 0.6,
+    "massS_kg": 2.0,
+    "Kf_N_A": 20.0,
+    "seed": 1729,
+    "k1_N_m": 64000000.0,
+    "c1_N_s_m": 0.0
+  },
+  "peak": {
+    "time_s": 6.800400000000001,
+    "signedNormalForceError_N": 0.5091379770420161,
+    "normalForce_N": 50.509137977042016,
+    "estimatedNormalForce_N": 50.36480556340449,
+    "trueSlope": 0.00030230933667966566,
+    "estimatedSlope": -0.00026177698551756493,
+    "current_A": 2.4996498080992176,
+    "currentCommand_A": 2.488430646519698,
+    "idealRigidCurrent_A": 2.4803190647956517,
+    "actualCoilGapVelocity_m_s": 7.55842248742994e-07,
+    "actualHeadGapVelocity_m_s": 1.2098785095108094e-05,
+    "measuredObserverHeadGapVelocity_m_s": 6.851332947469067e-05,
+    "actualAccelerationS_m_s2": 0.14993812684830876,
+    "measuredAccelerationS_m_s2": 0.08892,
+    "actualAccelerationB_m_s2": 0.35406631444542275,
+    "actualRobotVelocity_m_s": 4.2329718763619147e-05,
+    "predictedRobotVelocity_m_s": 4.2329718763619147e-05,
+    "robotGateReady": true,
+    "currentTrackingNormalError_N": 0.2244035936341511,
+    "commandAndFeedforwardNormalError_N": 0.16224635647069616,
+    "finiteCellBInertiaNormalError_N": 0.12248802693716042
+  },
+  "decompositionIdentityResidual_N": 2.721434189112415e-14,
+  "peakWindow_s": [
+    6.7704,
+    6.830400000000001
+  ],
+  "peakWindowDominantForceFrequencyIn1000To2200Hz_Hz": 1649.7250458240458,
+  "diagnosticRingingBand_Hz": [
+    1000,
+    2200
+  ],
+  "diagnosticBandAmplitudeWithin3ms_N": 0.11999908532843591,
+  "diagnosticBandPeakToPeakWithin3ms_N": 0.2207480821410182,
+  "diagnosticBandConvention": "Zero-phase offline 4th-order bandpass; diagnostic only, never a controller input or qualification score.",
+  "bumps": [
+    {
+      "start_s": 2.0,
+      "peak_s": 2.00043,
+      "peakError_N": 0.4854467198234289
+    },
+    {
+      "start_s": 3.2,
+      "peak_s": 3.20046,
+      "peakError_N": 0.36236381208185975
+    },
+    {
+      "start_s": 4.4,
+      "peak_s": 4.40041,
+      "peakError_N": 0.42623850980584166
+    },
+    {
+      "start_s": 5.6000000000000005,
+      "peak_s": 5.600490000000001,
+      "peakError_N": 0.3125700792073616
+    },
+    {
+      "start_s": 6.800000000000001,
+      "peak_s": 6.800400000000001,
+      "peakError_N": 0.5091379770420161
+    },
+    {
+      "start_s": 8.0,
+      "peak_s": 8.0004,
+      "peakError_N": 0.41418158939402616
+    },
+    {
+      "start_s": 9.200000000000001,
+      "peak_s": 9.200470000000001,
+      "peakError_N": 0.36495208010220637
+    }
+  ]
+}

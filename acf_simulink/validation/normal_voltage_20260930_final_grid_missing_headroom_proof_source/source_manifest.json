@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-30",
+  "scope": "Freeze before exactly two authorized missing-identity native simulations. Known winding/control normalization only; no bus/current tuning, no profile truth, no shared model/helper modification.",
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "recipeSha256": "e1c9fc5a34134293d7410b0aad9bdd3ead53995168938d546d7a208ee9dc3b62",
+  "genericGridCase": 3492,
+  "gridCSV": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_rows.csv",
+  "gridCSVSha256": "59d53a66a3528663f761abbbaa82dac31f00bedb113d6a7596f147e947bd94f5",
+  "gridConfigurationFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_configuration.mat",
+  "gridConfigurationSha256": "268241052b7154ef1d72355b47ebade1ff02d0b72eae53812db4824257d7ef9b",
+  "gridLocalCase": 873,
+  "gridPartition": 4,
+  "cases": [
+    {
+      "family": "generic",
+      "Kf_N_A": 20,
+      "R_ohm": 4,
+      "L_H": 0.003,
+      "availableVoltage_V": 24,
+      "physicalSupply_V": 24,
+      "PI_A_N": 0.3,
+      "PI_A_N_s": 20,
+      "inverseIdentifiedKf_N_A": 20,
+      "massA_kg": 0.4
+    },
+    {
+      "family": "identified_real_hot",
+      "Kf_N_A": 24.4,
+      "R_ohm": 8.896,
+      "L_H": 0.004,
+      "availableVoltage_V": 31,
+      "physicalSupply_V": 36,
+      "PI_A_N": 0.24590163934426232,
+      "PI_A_N_s": 16.393442622950822,
+      "inverseIdentifiedKf_N_A": 24.4,
+      "massA_kg": 1.5
+    }
+  ],
+  "common": {
+    "massS_kg": 2,
+    "massB_kg": 0.6,
+    "reference_N": 50,
+    "angle_deg": 90,
+    "mu": 0,
+    "seed": 7,
+    "currentResponse_s": 0.0001,
+    "currentLimit_A": 3.5,
+    "integrationStep_s": 1e-05,
+    "stopTime_s": 4,
+    "evaluateFrom_s": 0,
+    "upperRigid": true,
+    "kLower_N_m": 19746,
+    "cLower_N_s_m": 60,
+    "springPreload_N": 33.6,
+    "sourceAcquisitionAndRobotGateUnchanged": true,
+    "loadedStartupIncluded": true
+  },
+  "files": [
+    {
+      "file": "acf_force_control_normal_trial.slx",
+      "sha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+      "sizeBytes": 597741,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/acf_force_control_normal_trial.slx"
+    },
+    {
+      "file": "candidate.mat",
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+      "sizeBytes": 7161,
+      "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_final_candidate_20260930.mat"
+    },
+    {
+      "file": "qualify_normal_voltage.m",
+      "sha256": "e1c9fc5a34134293d7410b0aad9bdd3ead53995168938d546d7a208ee9dc3b62",
+      "sizeBytes": 42999,
+      "source": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_normal_voltage.m"
+    },
+    {
+      "file": "helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "sizeBytes": 288,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_desktop_available.m"
+    },
+    {
+      "file": "helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "sizeBytes": 1114,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_experiment.m"
+    },
+    {
+      "file": "helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "sizeBytes": 6455,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_metrics.m"
+    },
+    {
+      "file": "helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "sizeBytes": 526,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_open.m"
+    },
+    {
+      "file": "helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "sizeBytes": 1963,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_parameters.m"
+    },
+    {
+      "file": "helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "sizeBytes": 1448,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_plot.m"
+    },
+    {
+      "file": "helpers/acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65",
+      "sizeBytes": 28886,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_prepare.m"
+    },
+    {
+      "file": "helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "sizeBytes": 4276,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_run.m"
+    },
+    {
+      "file": "helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "sizeBytes": 2746,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_select_actuator.m"
+    },
+    {
+      "file": "helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "sizeBytes": 646,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_select_controller.m"
+    },
+    {
+      "file": "helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "sizeBytes": 732,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_signals.m"
+    },
+    {
+      "file": "helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "sizeBytes": 530,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_start.m"
+    },
+    {
+      "file": "helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "sizeBytes": 1311,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_start_visualizer.m"
+    },
+    {
+      "file": "helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "sizeBytes": 3332,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_sweep.m"
+    },
+    {
+      "file": "helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "sizeBytes": 2298,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_viewer_selftest.m"
+    },
+    {
+      "file": "helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "sizeBytes": 6907,
+      "source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_visualize.m"
+    }
+  ]
+}

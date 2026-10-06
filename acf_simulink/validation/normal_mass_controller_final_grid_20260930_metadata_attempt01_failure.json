@@ -1,0 +1,12 @@
+{
+  "status": "failed_before_model_load_or_save",
+  "processExitCode": 1,
+  "newNativeSimulations": 0,
+  "attemptedRecipeSha256": "80f2f18d32250d470ec4c9f273035b4eb0329a45ae4bff95ffab8128aaae3935",
+  "log": "/home/tommie/.local/state/actuator-model/final-grid-part1-metadata-only-20260930/batch.log",
+  "logSha256": "17c5e22b396f3affd7b5312ea38d1e0e5c533e978f97b6e3162f5e389e543b61",
+  "failure": "Java MessageDigest hash helper has no Java runtime in headless MATLAB; line10 hashing the prepreserved original.",
+  "targetModelSha256AfterExit": "4fe56e2505f10e9adef86b29a7615583ec2b6dc6be37f1cf051d3a753fef0a44",
+  "targetRemainsReviewed4fe56e": true,
+  "nextAction": "Prototype owns checksum fix and queued metadata/layout cleanup in the freed slot; no further bandwidth-lane MATLAB until coordinated."
+}

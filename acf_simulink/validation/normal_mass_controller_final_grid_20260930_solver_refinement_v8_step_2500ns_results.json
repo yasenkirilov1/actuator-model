@@ -1,0 +1,1388 @@
+{
+  "status": "complete",
+  "date": "2026-09-30",
+  "plannedNativeReruns": 1,
+  "integrationSteps_s": 2.5E-6,
+  "scope": "Integration refinement of the selected finite-grid worst only, with the actual final V8 acquisition/control unchanged. Numerical convergence evidence, not an uncertainty or hardware qualification.",
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/acf_force_control_normal_trial.slx",
+  "privateModel": "/home/tommie/.local/state/actuator-model/tp6093ab71_7aa8_4901_834d_90629e243b0f/acf_force_control_normal_trial.slx",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "experimentSnapshot": "/home/tommie/.local/state/actuator-model/tp6093ab71_7aa8_4901_834d_90629e243b0f/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "experimentSha256": "ca01722162a58878490184fbc1423a67878d1db9d174ecc3b184e57f15eceaba",
+  "baselineTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_worst_native_trace.mat",
+  "baselineTraceSha256": "c9483c087549910f011480f696cb5d1fa3f24555e354e2b35559d54d538c6bb1",
+  "baselineRow": {
+    "id": 873,
+    "scenario": "known_mass_full_force_angle_grid",
+    "massS_kg": 2,
+    "massB_kg": 0.6,
+    "totalBS_kg": 2.6,
+    "lowerRigid": false,
+    "upperRigid": true,
+    "externalLowerSpringPair": true,
+    "lowerLinkStiffness_N_m": 19746,
+    "lowerLinkDamping_Ns_m": 60,
+    "cellStiffness_N_m": 6.4E+7,
+    "cellDamping_Ns_m": null,
+    "cellStiffnessInterpretation": "Cell stiffness is a separate catalog reference in the massless series approximation; lowerLink stiffness/damping describe the modeled spring-and-damper connection. No separate high-frequency cell state is modeled.",
+    "cellSeparateNativeState": false,
+    "lowerPairIndividualSpringRate_N_m": 9873,
+    "lowerInverseEnabled": true,
+    "lowerInverseScale": 1,
+    "lowerInverseCutoff_Hz": 1500,
+    "lowerInverseFilterDamping": 0.70710678118654746,
+    "lowerInverseIdentifiedStiffness_N_m": 19746,
+    "lowerInverseIdentifiedDamping_Ns_m": 60,
+    "lowerInverseIdentifiedMassB_kg": 0.6,
+    "lowerInverseIdentifiedForceConstant_N_A": 20,
+    "guideViscous_Ns_m": 2,
+    "guideCoulomb_N": 0.2,
+    "guideFrictionSpeed_m_s": 0.0002,
+    "actuatorParallelDamperAdded_Ns_m": 0,
+    "actuatorParallelDamperInterpretation": "Any added damping above intrinsic2Ns/m is an external A-B viscous element, not a force-cell bypass.",
+    "reference_N": 50,
+    "angle_deg": 75.000000000000014,
+    "requestedStopTime_s": 4,
+    "surfaceKind": "sharp_bump",
+    "mu": 0.3,
+    "seed": 97,
+    "seedRequested": 97,
+    "geometryMode": "measured_drag_ratio",
+    "dragRatioFilter_s": 0.005,
+    "dragRatioMinForce_N": 1,
+    "forceNoiseRms_N": 0.02,
+    "positionNoiseRms_m": 1E-6,
+    "lateralNoiseRms_N": 0.02,
+    "accelNoiseRms_m_s2": 0.014,
+    "forceFilterTime_s": 0.0001,
+    "forceDelay_s": 2E-5,
+    "positionDelay_s": 2E-5,
+    "accelFilterTime_s": 0.0001,
+    "accelDelay_s": 2E-5,
+    "accelQuantum_m_s2": 0.00468,
+    "accelRange_g": 50,
+    "currentResponse_s": 0.0001,
+    "simulationStep_s": 1E-5,
+    "forceKp_A_N": 0.3,
+    "forceKi_A_Ns": 20,
+    "forceKd_A_s_N": 0,
+    "derivativeFilter_s": 0.001,
+    "accelerationFeedforwardScale": 1,
+    "geometryFeedforwardScale": 1,
+    "guideFrictionFeedforwardScale": 1,
+    "guideVelocityPrediction_s": 0.0004,
+    "accelerationPrediction_s": 0,
+    "accelerationDerivativeFilter_s": 0.0003,
+    "accelerationFeedforwardFilter_s": 0,
+    "currentNotchEnabled": false,
+    "currentNotchFrequency_Hz": 1643.7451841639995,
+    "currentNotchZeroDamping": 0.001,
+    "currentNotchPoleDamping": 1,
+    "feedbackFilterEnabled": true,
+    "feedbackFilterCutoff_Hz": 1000,
+    "feedbackFilterDamping": 0.70710678118654746,
+    "positionBandwidth_Hz": 40,
+    "voltageLimit_V": 24,
+    "currentLimit_A": 3.5,
+    "executed": true,
+    "passed": true,
+    "completed": true,
+    "lostContact": false,
+    "strokeStop": false,
+    "runtime_s": 1.974654,
+    "endTime_s": 4,
+    "nativeSamples": 400001,
+    "peakNormalForceError_N": 0.31581092906575492,
+    "rmsNormalForceError_N": 0.023376750813906663,
+    "peakNormalForceErrorTime_s": 2.00063,
+    "peakBeforeBumpError_N": 0.097855519367257671,
+    "peakDuringBumpError_N": 0.31581092906575492,
+    "peakAfterBumpError_N": 0.2376652646290367,
+    "peakStartupError_N": 0.072041528698370882,
+    "peakSettledFlatError_N": 0.097855519367257671,
+    "peakBumpPlusRecoveryError_N": 0.31581092906575492,
+    "peakNormalEstimateTrackingError_N": 0.3204802638348454,
+    "peakNormalEstimateError_N": 0.17234614169715456,
+    "rmsNormalEstimateError_N": 0.03963840667813056,
+    "peakSlopeEstimateError": 0.0050338617908075589,
+    "peakReconstructedAxialError_N": 0.20437118831110723,
+    "peakReconstructedLateralError_N": 0.31542637046970157,
+    "peakMeasuredAzError_m_s2": 0.11715316253185773,
+    "rmsMeasuredAzError_m_s2": 0.014738618939630629,
+    "peakMeasuredAxError_m_s2": 0.065519999999999357,
+    "peakPhysicalAz_m_s2": 2.3999999999999964,
+    "peakPhysicalAx_m_s2": 0,
+    "peakPredictedFFAzError_m_s2": 0.11715316253185773,
+    "flatPredictedFFAzRms_m_s2": 0.014349498999600628,
+    "peakFilteredFFAzError_m_s2": null,
+    "flatFilteredFFAzRms_m_s2": null,
+    "peakSurfaceAcceleration_m_s2": 2.3999999999999964,
+    "peakFiniteDifferenceSurfaceJerk_m_s3": 383.76963839807854,
+    "peakAxialDiagnosticError_N": 7.6613833821889585,
+    "peakCurrent_A": 2.6089315838868261,
+    "rmsCurrent_A": 2.1712462465589417,
+    "peakRequestedCurrent_A": 2.671786060607384,
+    "peakAppliedCurrentCommand_A": 2.671786060607384,
+    "peakCurrentTrackingError_A": 0.29940785658855074,
+    "rmsCurrentTrackingError_A": 0.050678739056358627,
+    "currentTrackingAxialForceAtNormalPeak_N": 2.5570568563350982,
+    "rawAcquisitionEnabled": true,
+    "rawAcquisitionPeriod_s": 1E-5,
+    "rawAntiAliasCutoff_Hz": 5100,
+    "rawAntiAliasDamping": 0.70710678118654746,
+    "rawAcquisitionEMA_s": 5E-5,
+    "rawAcquisitionPipeline_s": 2E-5,
+    "identifiedAcquisitionAntiAliasCutoff_Hz": 5100,
+    "identifiedAcquisitionEMA_s": 5E-5,
+    "identifiedAcquisitionPipeline_s": 2E-5,
+    "forceControllerPeriod_s": 0.0001,
+    "forceVarianceGateEnabled": true,
+    "forceVarianceGateRmsLimit_N": 0.08,
+    "peakVoltage_V": 16.789315205718204,
+    "voltageClipFraction": 0,
+    "effortClipFraction": 0,
+    "minTravel_mm": 10.56234568812968,
+    "maxTravel_mm": 16.107677811999785,
+    "gateReadyFraction": 0.97506234413965087,
+    "peakAddedDamperForce_N": 0,
+    "peakAddedDamperPower_W": 0,
+    "meanAddedDamperPower_W": 0,
+    "addedDamperEnergy_J": 0,
+    "normalBalanceResidual_N": 2.8421709430404007E-14,
+    "lateralBalanceResidual_N": 1.4210854715202004E-14,
+    "rigidAxialBalanceResidual_N": null,
+    "generalAxialBalanceResidual_N": 5.5511151231257827E-15,
+    "contactConstrainedBalanceSamples": 400001,
+    "terminalMomentumResidual_N": -3.3306690738754696E-15,
+    "nativeActuatorForceResidual_N": 7.1054273576010019E-15,
+    "springPackingPassed": true,
+    "minimumCommonSpringPreload_N": 27.834046205564764,
+    "commonSpringPreload_N": 33.6,
+    "maximumCommonSpringPreload_N": 43.177203794435236,
+    "combinedFreeSpringLength_mm": 40.980000000000004,
+    "combinedInstalledSpringLength_mm": 34.17355818900031,
+    "peakLowerInverseCurrent_A": 0.39773765962927154,
+    "lowerInverseInputIdentityResidual_N": 8.8817841970012523E-16,
+    "measuredDragNormalRequestResidual_N": 0,
+    "axialDiagnosticReason": "force error",
+    "reason": "pass",
+    "nativeReturned": true
+  },
+  "baselineParameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 1E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 2,
+      "k1": 19746,
+      "k2": 19746,
+      "c1": 60,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.3089969389957472,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": false,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25,
+        "variation": {
+          "enabled": true,
+          "meanTime": 0.1,
+          "varianceTime": 0.02,
+          "rmsLimit_N": 0.08
+        }
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 1E-5,
+      "filterTime": 0.0001,
+      "delay": 2E-5,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 97,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 2E-5,
+      "distalMass_kg": 2,
+      "distalMass_model_kg": 2,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1,
+      "distalMassCalibrationScale": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "pi",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 2.5390148324557287,
+      "keq": 19746,
+      "ell": 0.00079577471545947678,
+      "q10": 44.921970335088545,
+      "q20": 42.382955502632811,
+      "holdForce": 43.398561435615107,
+      "r0": -0.00050643168236604887,
+      "u0": -0.00050643168236604887,
+      "z0": -0.00020257267294641955,
+      "forceTicks": 10,
+      "sensorTicks": 1,
+      "robotTicks": 1000,
+      "sensorDelaySamples": 2,
+      "robotDelaySamples": 800,
+      "strokeDelaySamples": 2,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.69070955755554464,
+      "coilHoldCurrent": 2.1699280717807552,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.1699280717807552,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.99983601981629322,
+            0.00994962606684383,
+            0,
+            0,
+            0,
+            -1.6608952061835572E-6,
+            0.00012216885187392549,
+            4.9832397327772883E-5,
+            -5.5388328105197047E-9,
+            0,
+            -0.00580792033883517,
+            0,
+            -0.0044933336608378961
+          ],
+          [
+            -0.03273875337986,
+            0.9898880546446559,
+            0,
+            0,
+            0,
+            -0.00033159883905459328,
+            0.020942998718141231,
+            0.0099496260668439779,
+            -1.6599720673575417E-6,
+            0,
+            -0.14128954549804951,
+            0,
+            -0.25398826075261827
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.000163980183706439,
+            -5.0373933156021E-5,
+            0,
+            0,
+            1,
+            0.00999833910479382,
+            0.00012216885187318086,
+            -1.6760267230121767E-7,
+            4.9966694959471659E-5,
+            0,
+            -0.0051042625240713723,
+            0,
+            0.21331912992406699
+          ],
+          [
+            -0.03273875337986,
+            -0.010111945355344237,
+            0,
+            0,
+            0,
+            0.99966840116094535,
+            0.020942998718141231,
+            -5.0373933156021876E-5,
+            0.0099900113223005751,
+            0,
+            -0.13068152817024306,
+            0,
+            1.5162142453527232
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            0,
+            -1.7706602627361629E-15,
+            0,
+            1.4100005583196885E-15
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -0.076907770422447244,
+            0,
+            -7.196160791768123
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            0,
+            -3.1607348231869663E-6,
+            0,
+            4.5469958766432682E-5
+          ],
+          [
+            12.4818525546287,
+            3.7927233529713464,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            -0.89712380712883733,
+            0,
+            -0.90994655418440273
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -0.82414656090094451,
+            0,
+            -0.50019090245101916
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.000601422871882298,
+            0,
+            -0.20047024883820089
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.000506878389442257,
+            1,
+            -0.18384765472525536
+          ]
+        ],
+        "B": [
+          [
+            0.00580792033883517,
+            4.4933336608378971,
+            4.3920668745198235E-5,
+            -8.3044760309177843E-6,
+            -5.5411422145008788E-10
+          ],
+          [
+            0.14128954549804953,
+            253.98826075261826,
+            0.012216885187318087,
+            -0.0016579941952729663,
+            -1.6608952061828625E-7
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.0051042625240713723,
+            -213.319129924067,
+            4.3920668745110367E-5,
+            -8.3044760309145622E-6,
+            4.9994458857788589E-6
+          ],
+          [
+            0.13068152817024306,
+            -1516.2142453527233,
+            0.012216885187318087,
+            -0.0016579941952729665,
+            0.00099983391047938188
+          ],
+          [
+            1.7706602627361629E-15,
+            -1.4100005583196885E-12,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.076907770422447244,
+            7196.1607917681231,
+            0,
+            0,
+            0
+          ],
+          [
+            3.1607348231869663E-6,
+            -0.045469958766432686,
+            0,
+            0,
+            0
+          ],
+          [
+            0.89712380712883721,
+            909.94655418440277,
+            0,
+            0,
+            0
+          ],
+          [
+            0.82414656090094451,
+            500.19090245101916,
+            0,
+            0,
+            0
+          ],
+          [
+            0.000601422871882298,
+            200.47024883820089,
+            0,
+            0,
+            0
+          ],
+          [
+            0.000506878389442257,
+            183.84765472525535,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -4.3906945193515274E-6,
+            0,
+            -2.3036421714480584E-6
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.014214936843097051,
+            0,
+            -0.018382118011397976
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -3.7892716474692296E-6,
+            0,
+            0.00019816660666675286
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            -0.013231039717368623,
+            0,
+            0.1514419262994966
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -4.81315361657023E-15,
+            0,
+            3.8327788957975172E-15
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            -0.76907770422447241,
+            0,
+            -71.961607917681235
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -3.1660071069082766E-5,
+            0,
+            0.00045545805218863379
+          ]
+        ],
+        "D": [
+          [
+            4.3906945193515274E-6,
+            0.0023036421714480583,
+            0,
+            0,
+            0
+          ],
+          [
+            0.014214936843097051,
+            18.382118011397974,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3.7892716474692296E-6,
+            -0.19816660666675284,
+            0,
+            0,
+            0
+          ],
+          [
+            0.013231039717368623,
+            -151.4419262994966,
+            0,
+            0,
+            0
+          ],
+          [
+            4.81315361657023E-15,
+            -3.8327788957975173E-12,
+            0,
+            0,
+            0
+          ],
+          [
+            0.76907770422447241,
+            71961.607917681235,
+            0,
+            0,
+            0
+          ],
+          [
+            3.1660071069082766E-5,
+            -0.45545805218863378,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -46562.608801276416,
+          -155.07387290287346,
+          -0,
+          -0,
+          0,
+          0,
+          -0.44828315927828971,
+          -4.9044328728226994,
+          0
+        ],
+        "integralGain": 38.672484789521853,
+        "force": [
+          19746,
+          60,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.01300643168236605,
+      "positionMeasurementInitial": 0.01300643168236605,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.049639086431114081,
+            5E-9,
+            -5E-9
+          ],
+          [
+            6.1600972542890231,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.95097692329431482,
+            0
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.1600972542890231,
+            0,
+            0
+          ]
+        ]
+      },
+      "currentNotch": {
+        "numerator": [
+          1,
+          0,
+          0
+        ],
+        "denominator": [
+          1,
+          0,
+          0
+        ],
+        "initialStates": [
+          2.1699280717807552,
+          2.1699280717807552
+        ]
+      },
+      "feedbackFilter": {
+        "numerator": [
+          0.0674552738890719,
+          0.13491054777814379,
+          0.0674552738890719
+        ],
+        "denominator": [
+          1,
+          -1.1429805025399011,
+          0.41280159809618877
+        ],
+        "initialStates": [
+          0,
+          0
+        ]
+      },
+      "variationGate": {
+        "meanNumerator": [
+          0.000999500166624978,
+          0
+        ],
+        "meanDenominator": [
+          1,
+          -0.999000499833375
+        ],
+        "varianceNumerator": [
+          0.00498752080731768,
+          0
+        ],
+        "varianceDenominator": [
+          1,
+          -0.99501247919268232
+        ],
+        "dwellSamples": 1001
+      },
+      "accelerationPrediction": {
+        "derivativeNumerator": [
+          2834.6868942621081,
+          -2834.6868942621081
+        ],
+        "derivativeDenominator": [
+          1,
+          -0.71653131057378916
+        ]
+      },
+      "dragRatio": {
+        "memoryWeight": 0.98019867330675525,
+        "inputWeight": 0.019801326693244747
+      },
+      "positionSampleTime": 1E-5,
+      "acquisition": {
+        "numerator": [
+          0.0037732411180121318,
+          0.0075464822360242637,
+          0.0037732411180121318,
+          0
+        ],
+        "denominator": [
+          1,
+          -2.3711533491570069,
+          1.9067014037261649,
+          -0.52045509009710911
+        ],
+        "steadyStatePerUnitInput": [
+          66.25603617181568,
+          66.25603617181568,
+          66.25603617181568
+        ],
+        "impulseEnergy": 0.063542531235150884,
+        "noiseInputScale": 3.96705064104797,
+        "rawSampleTime_s": 1E-5,
+        "nominalLowFrequencyDelay_s": 8.8921415482424721E-5,
+        "responses": {
+          "force": {
+            "numerator": [
+              0.0037732411180121318,
+              0.0075464822360242637,
+              0.0037732411180121318,
+              0
+            ],
+            "denominator": [
+              1,
+              -2.3711533491570069,
+              1.9067014037261649,
+              -0.52045509009710911
+            ],
+            "steadyStatePerUnitInput": [
+              66.25603617181568,
+              66.25603617181568,
+              66.25603617181568
+            ],
+            "cutoff_Hz": 5100,
+            "emaTime_s": 5E-5
+          },
+          "lateral": {
+            "numerator": [
+              0.0037732411180121318,
+              0.0075464822360242637,
+              0.0037732411180121318,
+              0
+            ],
+            "denominator": [
+              1,
+              -2.3711533491570069,
+              1.9067014037261649,
+              -0.52045509009710911
+            ],
+            "steadyStatePerUnitInput": [
+              66.25603617181568,
+              66.25603617181568,
+              66.25603617181568
+            ],
+            "cutoff_Hz": 5100,
+            "emaTime_s": 5E-5
+          },
+          "acceleration": {
+            "numerator": [
+              0.0037732411180121318,
+              0.0075464822360242637,
+              0.0037732411180121318,
+              0
+            ],
+            "denominator": [
+              1,
+              -2.3711533491570069,
+              1.9067014037261649,
+              -0.52045509009710911
+            ],
+            "steadyStatePerUnitInput": [
+              66.25603617181568,
+              66.25603617181568,
+              66.25603617181568
+            ],
+            "cutoff_Hz": 5100,
+            "emaTime_s": 5E-5
+          },
+          "position": {
+            "numerator": [
+              0.0037732411180121318,
+              0.0075464822360242637,
+              0.0037732411180121318,
+              0
+            ],
+            "denominator": [
+              1,
+              -2.3711533491570069,
+              1.9067014037261649,
+              -0.52045509009710911
+            ],
+            "steadyStatePerUnitInput": [
+              66.25603617181568,
+              66.25603617181568,
+              66.25603617181568
+            ],
+            "cutoff_Hz": 5100,
+            "emaTime_s": 5E-5
+          },
+          "frame": {
+            "numerator": [
+              0.0037732411180121318,
+              0.0075464822360242637,
+              0.0037732411180121318,
+              0
+            ],
+            "denominator": [
+              1,
+              -2.3711533491570069,
+              1.9067014037261649,
+              -0.52045509009710911
+            ],
+            "steadyStatePerUnitInput": [
+              66.25603617181568,
+              66.25603617181568,
+              66.25603617181568
+            ],
+            "cutoff_Hz": 5100,
+            "emaTime_s": 5E-5
+          }
+        },
+        "noiseReferenceImpulseEnergy": 0.063542531235150884,
+        "frameDelaySamples": 2,
+        "accelerationNoiseInputScale": 3.96705064104797,
+        "positionNoiseInputScale": 3.96705064104797
+      },
+      "actualRobotTransportSampleTime_s": 0.0001
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0.3,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 2,
+      "geometryMode": "measured_drag_ratio",
+      "dragRatioFilter_s": 0.005,
+      "dragRatioMinForce_N": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0001,
+      "delay": 2E-5,
+      "noiseRms": 0.014,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 50,
+      "quantum": 0.00468,
+      "delaySamples": 2,
+      "nominalNoiseRms": 0.014
+    },
+    "inertial": {
+      "forceKp": 0.3,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.001,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1,
+      "guideVelocityPrediction_s": 0.0004,
+      "currentNotch": {
+        "enabled": false,
+        "frequency_Hz": 1643.7451841639995,
+        "zeroDamping": 0.001,
+        "poleDamping": 1
+      },
+      "feedbackFilter": {
+        "enabled": true,
+        "cutoff_Hz": 1000,
+        "damping": 0.70710678118654746
+      },
+      "accelerationPrediction_s": 0,
+      "accelerationDerivativeFilter_s": 0.0003,
+      "lowerLoadInverse": {
+        "enabled": true,
+        "scale": 1,
+        "cutoff_Hz": 1500,
+        "filterDamping": 0.70710678118654746,
+        "identifiedStiffness_N_m": 19746,
+        "identifiedDamping_Ns_m": 60,
+        "identifiedMassB_kg": 0.6,
+        "numerator": [
+          1.2898400806393393,
+          -1.2898400806393393,
+          -1.2898400806393393,
+          1.2898400806393393
+        ],
+        "denominator": [
+          1,
+          -1.7154119456215446,
+          0.99579277199563487,
+          -0.263401371552554
+        ],
+        "identifiedForceConstant_N_A": 20
+      }
+    },
+    "sensorDesign": {
+      "accelerometer": "Two orthogonal ADXL1002 analog axes",
+      "noiseDensity_ug_sqrtHz": 25,
+      "assumedENBW_Hz": 2500,
+      "derivedRMS_m_s2": 0.0122625,
+      "modeledRMS_m_s2": 0.0123,
+      "ADCbits": 18,
+      "ADCvoltageRange_V": [
+        0,
+        5
+      ],
+      "sensitivity_V_g": 0.04,
+      "derivedQuantum_m_s2": 0.004678,
+      "modeledQuantum_m_s2": 0.00468,
+      "commonResponse_s": 0.0001,
+      "commonAcquisitionDelay_s": 0.0001,
+      "forceConditioning": "ATI analog conditioning: intrinsic second-order5.1kHz anti-alias response must be identified and matched, not removed.",
+      "interpretation": "Plausible designed+identified common-response acceptance envelope. Real phase, noise, synchronization and calibration remain prototype acceptance measurements."
+    },
+    "springs": {
+      "lower": {
+        "part": "Approximate guided spring target; confirm working envelope",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.02,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "Approximate guided spring target; confirm working envelope",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.02,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "commonPreload_N": 33.6,
+      "maxCombinedLength_m": 0.1,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "sensingCell": {
+        "stiffness_N_m": 6.4E+7,
+        "separateNativeState": false,
+        "masslessSeriesApproximation": true,
+        "structuralDampingQualified": false,
+        "loadPath": "B -> opposed guided spring pair parallel with damper -> joining frame -> multi-axis B-S load cell -> S",
+        "loadCellBypass": false,
+        "prototypeMountModeQualificationRequired": true
+      }
+    },
+    "acquisition": {
+      "enabled": true,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "antiAliasDamping": 0.70710678118654746,
+      "emaTime_s": 5E-5,
+      "pipelineDelay_s": 2E-5,
+      "forceDelayOffset_s": 0,
+      "lateralDelayOffset_s": 0,
+      "accelerationDelayOffset_s": 0,
+      "positionDelayOffset_s": 0,
+      "requireFastVariationGate": true,
+      "identifiedAntiAliasCutoff_Hz": 5100,
+      "identifiedEmaTime_s": 5E-5,
+      "identifiedPipelineDelay_s": 2E-5,
+      "forceAntiAliasScale": 1,
+      "lateralAntiAliasScale": 1,
+      "accelerationAntiAliasScale": 1,
+      "positionAntiAliasScale": 1
+    }
+  },
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "rows": {
+    "integrationStep_s": 2.5E-6,
+    "nativeSamples": 1.600001E+6,
+    "runtime_s": 18.325902,
+    "peakNormalForceError_N": 0.31582539932465181,
+    "normalPeakTime_s": 2.0006275000000002,
+    "peakScoreDifferenceFrom10us_N": 1.4470258896892574E-5,
+    "rmsNormalForceError_N": 0.023376776018303024,
+    "peakNormalEstimationError_N": 0.17457355888067383,
+    "peakCurrent_A": 2.6089316629445767,
+    "peakVoltage_V": 16.789314141321409,
+    "voltageClipFraction": 0,
+    "currentClipFraction": 0,
+    "lostContact": false,
+    "strokeStop": false,
+    "springPackingPassed": true,
+    "minimumCommonSpringPreload_N": 27.834046282638308,
+    "maximumCommonSpringPreload_N": 43.1772037173617,
+    "combinedFreeSpringLength_mm": 40.980000000000004,
+    "combinedInstalledSpringLength_mm": 34.17355818900031,
+    "coarseGridChannelDifferences": {
+      "originalPhysicalAndControl": 4.2102398136734109E-6,
+      "normalContact": 5.2949566509141732E-8,
+      "accelerometer": 2.1372379421791265E-8,
+      "motionObserver": 2.9733160378242474E-15,
+      "measuredDrag": 7.3085981711074055E-13,
+      "forceVariation": 2.4838863327270033E-9,
+      "accelerationFeedforward": 0,
+      "commandPrediction": 3.744183782461441E-15,
+      "lowerInverse": 8.3844042819691822E-13,
+      "robotGate": {
+        "ready": 0,
+        "filteredError_N": 3.7744775018173915E-9,
+        "forceRate_N_s": 1.2940014937345978E-7,
+        "stableNow": 0
+      }
+    },
+    "nativeChannelsCompared": 72,
+    "passed": true,
+    "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_step_2500ns_native.mat",
+    "nativeTraceSha256": "e0bb181e34b0a5b6f9c2ae61c3f7922ae41170c4f369dc89024256a4fbf8e87d"
+  },
+  "executedNativeReruns": 1,
+  "elapsedSeconds": 19.589336,
+  "sourceModelUnchanged": true,
+  "privateModelUnchanged": true
+}

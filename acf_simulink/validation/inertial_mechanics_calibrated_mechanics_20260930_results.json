@@ -1,0 +1,333 @@
+{
+  "status": "complete",
+  "date": "2026-09-30",
+  "scope": "Three paired mitigation histories at the original mixed corner8 actualk+20%/c-20%; only inverse identified k/c and its derived coefficients are updated to the known actual values. PI/current/sensor/robot calibration residuals and native physics unchanged. A finite mitigation cohort, not a replacement for the nominal3500 or full tolerance qualification.",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/inertial-mechanics-mixed-corner8-20260930/frozen-calibrated-source/acf_force_control_normal_trial.slx",
+  "sourceModelSHA256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b",
+  "baseV8NativeModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "configurationSHA256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2",
+  "configurationIndicesOneBased": [
+    8,
+    18,
+    28
+  ],
+  "recipeSHA256": "3d65820839be917e2c7ab9e2f5501e69d09840cd8011fb0c7359331e1ca40924",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "privateWorkerFolder": "/home/tommie/.local/state/actuator-model/tp4582b88b_11e6_49a2_b0d6_7018c665dcd2",
+  "simulationMode": "normal",
+  "plannedCases": 3,
+  "executedCases": 3,
+  "preparationRejects": 0,
+  "passedCases": 3,
+  "rows": [
+    {
+      "caseIndex": 1,
+      "sourceConfigurationIndex": 8,
+      "seed": 7,
+      "executed": true,
+      "completed": true,
+      "peakNormalForceError_N": 0.44892323367530196,
+      "forcePassed": true,
+      "packingPassed": true,
+      "passed": true,
+      "actualLowerStiffness_N_m": 23695.2,
+      "actualLowerDamping_Ns_m": 48,
+      "identifiedLowerStiffness_N_m": 23695.2,
+      "identifiedLowerDamping_Ns_m": 48,
+      "identifiedMassB_kg": 0.60299999999999987,
+      "identifiedForceConstant_N_A": 20.099999999999998,
+      "identifiedMassS_kg": 1.99,
+      "feasibleCommonPreloadMin_N": 30.963330006224087,
+      "feasibleCommonPreloadMax_N": 40.541569993775916,
+      "configuredCommonPreload_N": 33.6,
+      "combinedFreeSpringLength_mm": 40.980000000000004,
+      "combinedInstalledSpringLength_mm": 35.307965157500263,
+      "individualSpringForceMin_N": 5.5985699937759108,
+      "individualSpringForceMax_N": 61.601430006224092,
+      "maximumCurrent_A": 2.9430492065073013,
+      "maximumVoltage_V": 21.331895867690818,
+      "forceBalanceMaxResidual_N": 4.9960036108132044E-15,
+      "lowerForceBalanceMaxResidual_N": 3.5527136788005009E-15,
+      "normalProjectionMaxResidual_N": 2.8421709430404007E-14,
+      "uncertainty": {
+        "forceScaleZ": -0.001,
+        "forceScaleX": -0.001,
+        "positionScale": 0.001,
+        "forceFrameAngle_rad": 0.0017453292519943296,
+        "accelFrameAngle_rad": 0.0017453292519943296,
+        "forceCrossZFromX": 0.001,
+        "forceCrossXFromZ": 0.001,
+        "accelBiasX_m_s2": -0.01,
+        "massB_model_kg": 0.60299999999999987,
+        "forceConstant_model_N_A": 20.099999999999998,
+        "recenterGain": 0.73529411764705876,
+        "jointCorner": 8,
+        "jointSigns": [
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      "runtimeSeconds": 15.593672,
+      "nativeTraceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_01_native.mat",
+      "nativeTraceSHA256": "9de3a47f9f91ffe8bf16524b0bebe75beabfd567636ac6f2eb8a6cfb5a44949f"
+    },
+    {
+      "caseIndex": 2,
+      "sourceConfigurationIndex": 18,
+      "seed": 29,
+      "executed": true,
+      "completed": true,
+      "peakNormalForceError_N": 0.45302575961365932,
+      "forcePassed": true,
+      "packingPassed": true,
+      "passed": true,
+      "actualLowerStiffness_N_m": 23695.2,
+      "actualLowerDamping_Ns_m": 48,
+      "identifiedLowerStiffness_N_m": 23695.2,
+      "identifiedLowerDamping_Ns_m": 48,
+      "identifiedMassB_kg": 0.60299999999999987,
+      "identifiedForceConstant_N_A": 20.099999999999998,
+      "identifiedMassS_kg": 1.99,
+      "feasibleCommonPreloadMin_N": 30.966876087463334,
+      "feasibleCommonPreloadMax_N": 40.538023912536673,
+      "configuredCommonPreload_N": 33.6,
+      "combinedFreeSpringLength_mm": 40.980000000000004,
+      "combinedInstalledSpringLength_mm": 35.307965157500263,
+      "individualSpringForceMin_N": 5.5950239125366679,
+      "individualSpringForceMax_N": 61.604976087463335,
+      "maximumCurrent_A": 3.0044736620494734,
+      "maximumVoltage_V": 19.83261791008055,
+      "forceBalanceMaxResidual_N": 4.4408920985006262E-15,
+      "lowerForceBalanceMaxResidual_N": 3.5527136788005009E-15,
+      "normalProjectionMaxResidual_N": 2.8421709430404007E-14,
+      "uncertainty": {
+        "forceScaleZ": -0.001,
+        "forceScaleX": -0.001,
+        "positionScale": 0.001,
+        "forceFrameAngle_rad": 0.0017453292519943296,
+        "accelFrameAngle_rad": 0.0017453292519943296,
+        "forceCrossZFromX": 0.001,
+        "forceCrossXFromZ": 0.001,
+        "accelBiasX_m_s2": -0.01,
+        "massB_model_kg": 0.60299999999999987,
+        "forceConstant_model_N_A": 20.099999999999998,
+        "recenterGain": 0.73529411764705876,
+        "jointCorner": 8,
+        "jointSigns": [
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      "runtimeSeconds": 13.827627,
+      "nativeTraceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_02_native.mat",
+      "nativeTraceSHA256": "a975d3b872b594f84de6b16c969b4012e8f3d725477a30410502fa1293cf0fa6"
+    },
+    {
+      "caseIndex": 3,
+      "sourceConfigurationIndex": 28,
+      "seed": 1729,
+      "executed": true,
+      "completed": true,
+      "peakNormalForceError_N": 0.43430006301830559,
+      "forcePassed": true,
+      "packingPassed": true,
+      "passed": true,
+      "actualLowerStiffness_N_m": 23695.2,
+      "actualLowerDamping_Ns_m": 48,
+      "identifiedLowerStiffness_N_m": 23695.2,
+      "identifiedLowerDamping_Ns_m": 48,
+      "identifiedMassB_kg": 0.60299999999999987,
+      "identifiedForceConstant_N_A": 20.099999999999998,
+      "identifiedMassS_kg": 1.99,
+      "feasibleCommonPreloadMin_N": 30.978294394561853,
+      "feasibleCommonPreloadMax_N": 40.526605605438156,
+      "configuredCommonPreload_N": 33.6,
+      "combinedFreeSpringLength_mm": 40.980000000000004,
+      "combinedInstalledSpringLength_mm": 35.307965157500263,
+      "individualSpringForceMin_N": 5.5836056054381515,
+      "individualSpringForceMax_N": 61.616394394561851,
+      "maximumCurrent_A": 2.9548402201908952,
+      "maximumVoltage_V": 21.04749195769606,
+      "forceBalanceMaxResidual_N": 4.4408920985006262E-15,
+      "lowerForceBalanceMaxResidual_N": 3.5527136788005009E-15,
+      "normalProjectionMaxResidual_N": 2.8421709430404007E-14,
+      "uncertainty": {
+        "forceScaleZ": -0.001,
+        "forceScaleX": -0.001,
+        "positionScale": 0.001,
+        "forceFrameAngle_rad": 0.0017453292519943296,
+        "accelFrameAngle_rad": 0.0017453292519943296,
+        "forceCrossZFromX": 0.001,
+        "forceCrossXFromZ": 0.001,
+        "accelBiasX_m_s2": -0.01,
+        "massB_model_kg": 0.60299999999999987,
+        "forceConstant_model_N_A": 20.099999999999998,
+        "recenterGain": 0.73529411764705876,
+        "jointCorner": 8,
+        "jointSigns": [
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      "runtimeSeconds": 13.637745,
+      "nativeTraceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_03_native.mat",
+      "nativeTraceSHA256": "0a5e7ed68caf0677d5b96b8b3f619126c6e4c184f8c6e8b753e67332e0e788a9"
+    }
+  ],
+  "preparedConfigurationFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_configuration.mat",
+  "preparedConfigurationSHA256": "3ecea65676d370258032e928327ef0a4262975e6eea0a048e976f4d37a12848c",
+  "baselineNativeFiles": [
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_01_native.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_02_native.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_case_03_native.mat"
+  ],
+  "baselineNativeSHA256": [
+    "4b24929ed7faaee8623d0df360746902aed91bda86f979cb90a2cf09d392600a",
+    "d350da20af77133b99d2598716e267ea66a9d99852a08ed1c8ca517b77ce4925",
+    "e800ee5b1354ed4316b68a259dbd0a37604194a95e03f5b0a2932eff07117c03"
+  ],
+  "onlyIdentifiedInverseChangesVerified": true,
+  "elapsedSeconds": 49.701376,
+  "worstNormalForceError_N": 0.45302575961365932,
+  "commonPreloadIntersection_N": [
+    30.978294394561853,
+    40.526605605438156
+  ]
+}

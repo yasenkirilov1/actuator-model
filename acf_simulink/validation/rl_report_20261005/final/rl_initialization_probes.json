@@ -1,0 +1,212 @@
+{
+  "status": "complete",
+  "kind": "development_initialization",
+  "rows": [
+    {
+      "ledger": {
+        "status": "audited_executed_auxiliary_work",
+        "comparisons": [
+          {
+            "run": "reward_search_inverse_probe_8206",
+            "trainingComparison": {
+              "episodes": 48,
+              "actorDecisions": 960000,
+              "nativeScoringSamples": 28800000,
+              "physicalFailures": 0
+            },
+            "selectionComparison": {
+              "episodes": 0,
+              "actorDecisions": 0,
+              "nativeScoringSamples": 0,
+              "physicalFailures": 0
+            },
+            "optimizerUpdates": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_probe_8206/results.json",
+            "sourceSha256": "291dbdf49e95aef565275374f58a0a432fd5311202d0fa8a933facb6bafdea3b",
+            "scope": "Deterministic mechanics initialization chosen by complete native episode rewards."
+          },
+          {
+            "run": "reward_search_inverse_followup_8206",
+            "trainingComparison": {
+              "episodes": 40,
+              "actorDecisions": 1474460,
+              "nativeScoringSamples": 44233770,
+              "physicalFailures": 2
+            },
+            "selectionComparison": {
+              "episodes": 56,
+              "actorDecisions": 1860000,
+              "nativeScoringSamples": 55800000,
+              "physicalFailures": 0
+            },
+            "optimizerUpdates": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/results.json",
+            "sourceSha256": "c82a32aaf8363b1259af5478f68bda9ab8da9d8584827dae281cb1cbcdfc3096",
+            "scope": "Deterministic mechanics initialization chosen by complete native episode rewards."
+          },
+          {
+            "run": "reward_search_rolloff_probe_8208",
+            "trainingComparison": {
+              "episodes": 140,
+              "actorDecisions": 5320000,
+              "nativeScoringSamples": 159600000,
+              "physicalFailures": 0
+            },
+            "selectionComparison": {
+              "episodes": 56,
+              "actorDecisions": 1860000,
+              "nativeScoringSamples": 55800000,
+              "physicalFailures": 0
+            },
+            "optimizerUpdates": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_rolloff_probe_8208/results.json",
+            "sourceSha256": "d40dc22056bab2036cc09b51f3c5c4274e4d878c2ac1dccaa7834847c04b7351",
+            "scope": "Deterministic mechanics initialization chosen by complete native episode rewards."
+          },
+          {
+            "run": "reward_search_inverse_selection_8206",
+            "trainingComparison": {
+              "episodes": 0,
+              "actorDecisions": 0,
+              "nativeScoringSamples": 0,
+              "physicalFailures": 0
+            },
+            "selectionComparison": {
+              "episodes": 28,
+              "actorDecisions": 900929,
+              "nativeScoringSamples": 27027870,
+              "physicalFailures": 1
+            },
+            "optimizerUpdates": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_selection_8206/initial.json",
+            "sourceSha256": "26bb3dfd28eee56b360b5e1508b4e1bb6fdbe7f9e0670e0c6ad9cddd3d29d130",
+            "scope": "Rejected full-inverse selection comparison."
+          }
+        ],
+        "trainingComparisonEpisodes": 228,
+        "selectionComparisonEpisodes": 140,
+        "comparisonActorDecisions": 12375389,
+        "comparisonPhysicalFailures": 3,
+        "verification": [
+          {
+            "run": "reward_search_benchmark",
+            "episodes": 6,
+            "actorDecisions": 48000,
+            "nativeScoringSamples": 1440000,
+            "physicalFailures": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_benchmark/initial.json",
+            "sourceSha256": "646b957eb290a8f6645e1f151a3c8e8278612a034b561cb513cabc48421df3ac"
+          },
+          {
+            "run": "reward_search_direct_dev12_g5",
+            "episodes": 12,
+            "actorDecisions": 480000,
+            "nativeScoringSamples": 14400000,
+            "physicalFailures": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_direct_dev12_g5/initial.json",
+            "sourceSha256": "147455b52fae285434ac100aef33fededb32cb7b94c79fc780659b8f32009ea8"
+          },
+          {
+            "run": "reward_search_band_smoke",
+            "episodes": 4,
+            "actorDecisions": 210000,
+            "nativeScoringSamples": 6300000,
+            "physicalFailures": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_smoke/initial.json",
+            "sourceSha256": "b975fc669af7f87a78f4168832446a30f844554b149d495db7057667b8a4886a"
+          },
+          {
+            "run": "reward_search_band_proxy_check",
+            "episodes": 1,
+            "actorDecisions": 60000,
+            "nativeScoringSamples": 1800001,
+            "physicalFailures": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_proxy_check/results.json",
+            "sourceSha256": "eece357ca77012fcaa7215181850ced350e0fa5a14105e6f828389144b45c2bc"
+          },
+          {
+            "run": "reward_search_band_proxy_positive",
+            "episodes": 1,
+            "actorDecisions": 40000,
+            "nativeScoringSamples": 1200001,
+            "physicalFailures": 0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_proxy_positive/results.json",
+            "sourceSha256": "32c1ead8672ab96620e5f4449a5d71b6296181b3dbd6ca299f35e91674234953"
+          },
+          {
+            "run": "reward_search_parity",
+            "episodes": 2,
+            "actorDecisions": 16000,
+            "fullNativeHistoryPoints": 480002,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_parity/results.json",
+            "sourceSha256": "d90fb91cdd923c07f0ad2f013c22e0af154a2800ec077e81edda2162a8274b7f",
+            "scope": "Both C and Python-loop trajectories counted separately; this is implementation verification."
+          },
+          {
+            "run": "reward_search_v1_parity_fixed",
+            "episodes": 4,
+            "actorDecisions": 32000,
+            "fullNativeHistoryPoints": 960004,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_v1_parity_fixed/results.json",
+            "sourceSha256": "6c229aeb9e755de3bb960412407221ef280d14f3c00ac6ed80bab121817802e8",
+            "scope": "Both C and Python-loop trajectories counted separately; this is implementation verification."
+          },
+          {
+            "run": "reward_search_parallel_audit_check",
+            "episodes": 8,
+            "actorDecisions": 280000.0,
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_parallel_audit_check/results.json",
+            "sourceSha256": "b8bf150c436606fe811bccba9a92fb754770b8b38adb8b0bc4c4156265a6607c",
+            "scope": "Serial-versus-threaded complete-episode statistics; no optimizer update."
+          }
+        ],
+        "verificationEpisodes": 38,
+        "verificationActorDecisions": 1166000.0,
+        "nativeRecoveryAndFigureAudits": [
+          {
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_selection_8206/failed_native/replay.json",
+            "episodes": 1,
+            "actorDecisions": 10929,
+            "nativeScoringSamples": 327870,
+            "physicalFailures": 1,
+            "sourceSha256": "30d55e6035b77ae256c509c83ffd2fc4cd2a419825978814cd1096b2d3d1f461",
+            "includedInComparisonCounts": false
+          },
+          {
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/inverse_0p6/train_failed_native/metrics.json",
+            "episodes": 1,
+            "actorDecisions": 24013,
+            "nativeScoringSamples": 720379,
+            "physicalFailures": 1,
+            "sourceSha256": "a87dd467155c2299ea678849cf52e0531509d90aeb2c63b2f4744d731880d36a",
+            "includedInComparisonCounts": false
+          },
+          {
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_followup_8206/inverse_0p3/sustained_gate_replay/replay.json",
+            "episodes": 1,
+            "actorDecisions": 40000,
+            "nativeScoringSamples": 1200001,
+            "physicalFailures": 0,
+            "sourceSha256": "e5c23b936ad172490b996c85f68b4d0b810f86af37776c0c2188546ab6a04108",
+            "includedInComparisonCounts": false
+          }
+        ],
+        "nativeRecoveryAndFigureEpisodes": 3,
+        "softwareRejections": [
+          {
+            "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_v1_parity/software_rejection.json",
+            "status": "software_rejection",
+            "reason": "New native_api requires repeat_batch symbol absent in frozen priorbank; source/native inputs unchanged. Rerun uses accepted old API against old library."
+          }
+        ],
+        "scope": "Additional to the CMA ledger. No final holdout cases; no optimizer updates are claimed for these comparisons. Counts represent retained executed records, not planned work. Native interval counters and full-history endpoint counts are named separately."
+      }
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/rl_budget3h_20261005/reward_search_auxiliary_ledger.json": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6"
+  },
+  "caveats": [
+    "These are separate episode evaluations, not additional evolutionary generations or fresh qualification."
+  ]
+}

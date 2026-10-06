@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-02",
+  "status": "frozen_prepared_inputs_not_executed",
+  "cases": 7,
+  "executedNativeCases": 0,
+  "files": [
+    {
+      "file": "ADXL1002_8000_M08_30k_current100_hot32V_configs.mat",
+      "bytes": 311069,
+      "sha256": "31ff22ba5ccb7fbbf20b4d4777275ecbc0028085437eafe6180fc005b06dd202"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2444,
+      "sha256": "6ba5734130351864b2a99d703d84f45cc871bda24fe27ed6acf1d41de7b73cc3"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 23581,
+      "sha256": "e3b49f7e5fab4a2faa771e94dfdf681bf69c0e9bbebcfa1806ce28347b99e28f"
+    },
+    {
+      "file": "prepare_budget_adc_hot_coil_20261002.m",
+      "bytes": 7268,
+      "sha256": "0ded8e179a2331049e0e8750882b1a07004bed81f4667c06dee687c7cd7d5995"
+    }
+  ]
+}

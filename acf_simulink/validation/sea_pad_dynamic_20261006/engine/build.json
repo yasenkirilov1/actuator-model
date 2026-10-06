@@ -1,0 +1,19 @@
+{
+  "source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+  "compiler_command": [
+    "gcc",
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fPIC",
+    "-shared",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/sea_pad_dynamic_20261006/engine.c",
+    "-lm",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/sea_pad_dynamic_20261006/engine/engine_be43185291e39e63.so"
+  ],
+  "binary_sha256": "1d9457436bb2ddb2b8e308b76aaabe8352fe19f9076934c662363799d687093a",
+  "flags": "No fast-math; double precision."
+}

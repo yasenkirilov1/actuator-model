@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe",
+  "note": "Training cases only; short-horizon fixtures alter truncation bookkeeping, not the physical graph.",
+  "featuresMaxResidual": 0.0,
+  "bootstrapMaxResidual": 0.0,
+  "truncationsChecked": 2,
+  "bootstrapReferenceNonzero": 128,
+  "exactResumeRolloutPassed": true,
+  "retainedPhysicalFailures": 2,
+  "representativeNativeReplayPassed": true,
+  "behaviorReplayMeanMaxResidual": 5.820766091346741e-11,
+  "behaviorReplayLogProbMaxResidual": 4.76837158203125e-07
+}

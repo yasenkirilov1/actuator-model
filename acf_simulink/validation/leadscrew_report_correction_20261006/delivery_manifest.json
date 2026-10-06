@@ -1,0 +1,112 @@
+{
+  "status": "markdown_delivered_and_byte_verified",
+  "sourceMarkdown": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-design-explained-20261006.md",
+  "sourceMarkdownSha256": "40e87212f26ebd5d144194011fef07efb0cb425654a654293eefa283ee2f5008",
+  "deliveredFiles": [
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+      "sha256": "40e87212f26ebd5d144194011fef07efb0cb425654a654293eefa283ee2f5008",
+      "bytes": 24633
+    },
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/series-elastic-leadscrew-tradeoff-20261006.svg",
+      "sha256": "f19a2b97b85cb0672026891a9342204e1244f0f17b49a4d3aebcc6db0faec683",
+      "bytes": 11067
+    }
+  ],
+  "reviewedEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/leadscrew_report_correction_20261006/comparison_evidence.json",
+  "reviewedEvidenceSha256": "f6a49b5ded48c61ee1e760436de8b953a7146fab9620eee7dfab52dcc7685928",
+  "priorVersions": "/home/tommie/Projects/actuator-model/acf_simulink/validation/leadscrew_report_correction_20261006/previous_delivery.json",
+  "priorVersionsSha256": "106e2f81b61332fa5c9e44197c3e26bf8638c78fd3d1f39a0e606d1a30d84010",
+  "wordsExcludingLinkTargets": 3501,
+  "newSimulationRecordings": 0,
+  "newMatNpzBytes": 0,
+  "seriesElasticDynamicQualification": false,
+  "htmlChanged": false,
+  "authoringAppChanged": false,
+  "reason": "User requested no HTML work.",
+  "preservedIndependentNoteEdit": "Removed cell-mode figure caption remains removed.",
+  "checks": {
+    "sixFigureLinksExist": true,
+    "localEvidenceLinksExist": true,
+    "onlyActuatorSectionAndSystemRecommendationChangedBeyondPreservedUserEdit": true,
+    "mainMarkdownAndNotesByteIdentical": true,
+    "frozenModelFilesUnchanged": [
+      {
+        "file": "GETTING_STARTED_FIXED.md",
+        "sha256": "85a30b8ec16a60fda4ac8f8cd6e00aa9245e57d45c22d4f3ef01854aaf6add8a",
+        "unchanged": true
+      },
+      {
+        "file": "acf_force_control_fixed_upper_20261005.slx",
+        "sha256": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6",
+        "unchanged": true
+      },
+      {
+        "file": "delivery_acceptance.json",
+        "sha256": "cbe6cda3a0355752501913b7dfa9eec03eb762bae26a7c167617057818a1bf14",
+        "unchanged": true
+      },
+      {
+        "file": "diagram_force_controller.png",
+        "sha256": "b707c9408c08937cdf5652002b5e8cd542781b1c01143a4d93f6118688093064",
+        "unchanged": true
+      },
+      {
+        "file": "diagram_root.png",
+        "sha256": "d47950f8e81ab27f3540492acae1331af3151204b9021c95d1fa51dd9e7a22e0",
+        "unchanged": true
+      },
+      {
+        "file": "diagram_upper_observer.png",
+        "sha256": "761a2bbad2032b9941170c5be2f50cdbb158df99372f3e7bcfc383b676ec7237",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_adc_prepare.m",
+        "sha256": "1824aa920349ce3411aaa5decdc15cbad14784f347884dc81c37b60b7d1d86bc",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_apply.m",
+        "sha256": "9b24217528d0a4b9e53b042f6afac19eeede3b30022f546fc222bdfa4c5e00c7",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_prepare.m",
+        "sha256": "b8eedbc32a214bb7871a5aa3283267f919febbc935523f183f83a1cd9b2f9acb",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_prepare_baseline_v8.m",
+        "sha256": "5ba68f2ead88f35c6e1c30a59036a256570bd10b11ae611fe4eaa0e98213d5ce",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_prepare_cell_modal.m",
+        "sha256": "77386214c5059efd023ef9bbf960643517e3082202e9dc130f49f8387486d6df",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_prepare_upper_observer.m",
+        "sha256": "fc16f7a5dc1cd19be32c55d57e295c7841dfd1b64bf7cbabe92fcf5498ba3a15",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_select_actuator.m",
+        "sha256": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6",
+        "unchanged": true
+      },
+      {
+        "file": "helpers/acf_fixed_select_controller.m",
+        "sha256": "ac031acc9203d6d35605b58e120cf180be64fddd1577f1a8f587d3d490f9d55c",
+        "unchanged": true
+      }
+    ]
+  },
+  "changedGuide": {
+    "file": "/home/tommie/Projects/actuator-model/acf_simulink/GETTING_STARTED.md",
+    "sha256": "9a7a91511b0a980aca268eec0343ff5155737617a87a286361989b19bb596fed"
+  },
+  "storageForecast": "/home/tommie/Projects/actuator-model/acf_simulink/validation/leadscrew_report_correction_20261006/forecast.json"
+}

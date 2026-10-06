@@ -1,0 +1,125 @@
+{
+  "status": "retained_native_flat_and_observer_diagnostic",
+  "newPhysicalEpisodes": 0,
+  "observationSnapshots_Hz": 100,
+  "forcePSDSource": "Every300kHz nativeforce sample .2-.9s, Welch16384samples",
+  "latencyCaveat": "Normal/axial differences compare delayed estimated frame to presenttruth, so include timing as well asnoise. Physicalflat Svelocity is zero; slopeerror doesnot needforceframe correction.",
+  "records": [
+    {
+      "scenario": 2,
+      "peakErrorTime_s": 1.0411233333333334,
+      "peakError_N": 1.0379535670813738,
+      "flatForceRms_N": 0.28170596322009583,
+      "flatEstimatedSvelocityRmsError_m_s": 0.00041247534701507156,
+      "flatEstimatedNormalRmsVersusTrue_N": 0.3510610409732469,
+      "flatEstimatedAxialRmsVersusTrue_N": 0.3176938688258123,
+      "flatSlopePeak": 0.008648193688094653,
+      "flatSaccelMeasuredRms_m_s2": 0.01372884358532745,
+      "flatBodyVelocityRms_m_s": 0.00015921027920621765,
+      "PSDTop_Hz": [
+        622.55859375,
+        677.490234375,
+        714.111328125,
+        659.1796875,
+        732.421875,
+        695.80078125
+      ],
+      "PSDTop_N2_Hz": [
+        0.00012775204200168421,
+        0.00012200758374853235,
+        0.00011991618650709409,
+        0.00011730738244561104,
+        0.00011341062419422077,
+        0.000110911727022785
+      ],
+      "forceVarianceCellBand1300to1900_fraction": 0.1376256665894716
+    },
+    {
+      "scenario": 7,
+      "peakErrorTime_s": 0.8384433333333333,
+      "peakError_N": 0.944334732513326,
+      "flatForceRms_N": 0.2894220921708986,
+      "flatEstimatedSvelocityRmsError_m_s": 0.000397140390269688,
+      "flatEstimatedNormalRmsVersusTrue_N": 0.3811307939856826,
+      "flatEstimatedAxialRmsVersusTrue_N": 0.3460687946252567,
+      "flatSlopePeak": 0.009446658663918743,
+      "flatSaccelMeasuredRms_m_s2": 0.013478252437260462,
+      "flatBodyVelocityRms_m_s": 0.0001724404557229004,
+      "PSDTop_Hz": [
+        677.490234375,
+        805.6640625,
+        567.626953125,
+        714.111328125,
+        695.80078125,
+        823.974609375
+      ],
+      "PSDTop_N2_Hz": [
+        0.00014842480434125007,
+        0.00014379221709539083,
+        0.0001428532192152661,
+        0.00013759191546036754,
+        0.00012503271264642786,
+        0.00012400023176866815
+      ],
+      "forceVarianceCellBand1300to1900_fraction": 0.13133066087816536
+    },
+    {
+      "scenario": 13,
+      "peakErrorTime_s": 1.041,
+      "peakError_N": 1.1057406943600512,
+      "flatForceRms_N": 0.310721939910563,
+      "flatEstimatedSvelocityRmsError_m_s": 0.0005646695266259272,
+      "flatEstimatedNormalRmsVersusTrue_N": 0.34580340861364295,
+      "flatEstimatedAxialRmsVersusTrue_N": 0.2988887542945117,
+      "flatSlopePeak": 0.015803136385345997,
+      "flatSaccelMeasuredRms_m_s2": 0.01372884358532745,
+      "flatBodyVelocityRms_m_s": 7.782857079395476e-05,
+      "PSDTop_Hz": [
+        476.07421875,
+        494.384765625,
+        457.763671875,
+        512.6953125,
+        622.55859375,
+        567.626953125
+      ],
+      "PSDTop_N2_Hz": [
+        0.00021886624979029846,
+        0.00020558564828826207,
+        0.0001945020420086365,
+        0.0001784896623940697,
+        0.0001551973194940275,
+        0.00014804093831806612
+      ],
+      "forceVarianceCellBand1300to1900_fraction": 0.06004627579010093
+    },
+    {
+      "scenario": 18,
+      "peakErrorTime_s": 1.1326066666666668,
+      "peakError_N": 1.2578043500158245,
+      "flatForceRms_N": 0.32011368876388624,
+      "flatEstimatedSvelocityRmsError_m_s": 0.0005498552891573616,
+      "flatEstimatedNormalRmsVersusTrue_N": 0.37777350478546284,
+      "flatEstimatedAxialRmsVersusTrue_N": 0.33115561675037775,
+      "flatSlopePeak": 0.013659477577942824,
+      "flatSaccelMeasuredRms_m_s2": 0.013478252437260462,
+      "flatBodyVelocityRms_m_s": 0.0001011491551917541,
+      "PSDTop_Hz": [
+        567.626953125,
+        457.763671875,
+        512.6953125,
+        494.384765625,
+        439.453125,
+        476.07421875
+      ],
+      "PSDTop_N2_Hz": [
+        0.00022050696886110138,
+        0.00020757087452055148,
+        0.00019892822380878524,
+        0.00019852217821558454,
+        0.00017547450923154323,
+        0.00017375510356515745
+      ],
+      "forceVarianceCellBand1300to1900_fraction": 0.06492719904415774
+    }
+  ]
+}

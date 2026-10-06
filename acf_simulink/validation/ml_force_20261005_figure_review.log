@@ -1,0 +1,11 @@
+{
+  "outcome": "does_not_support_replacing_deterministic_controller",
+  "executedNativeRecordings": 48,
+  "nativeSamplesScored": 88800048.0,
+  "baselineHoldoutPasses": 12,
+  "learnedHoldoutPasses": 12,
+  "baselineHoldoutWorstError_N": 0.4474682556940408,
+  "learnedHoldoutWorstError_N": 0.46865027455967834,
+  "pairedPeakImproved": 2,
+  "pairedPeakWorsened": 10
+}

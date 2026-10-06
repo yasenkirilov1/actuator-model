@@ -1,0 +1,56 @@
+RL_UPDATE seed=7103 update=1/48 transitions=8192 errorRms=1.26383N peak=9.68584N fails=1 collect=4.45s learn=0.21s
+RL_UPDATE seed=7103 update=2/48 transitions=16384 errorRms=0.827709N peak=4.9801N fails=0 collect=3.91s learn=0.03s
+RL_UPDATE seed=7103 update=3/48 transitions=24576 errorRms=1.19435N peak=7.69918N fails=0 collect=3.89s learn=0.03s
+RL_UPDATE seed=7103 update=4/48 transitions=32768 errorRms=1.17923N peak=7.7847N fails=2 collect=4.83s learn=0.03s
+RL_UPDATE seed=7103 update=5/48 transitions=40960 errorRms=0.916059N peak=7.8142N fails=0 collect=3.90s learn=0.04s
+RL_UPDATE seed=7103 update=6/48 transitions=49152 errorRms=1.24441N peak=7.66962N fails=2 collect=4.92s learn=0.12s
+RL_SELECTION seed=7103 update=6 pass=0/8 peak=10.3138N fails=1
+RL_UPDATE seed=7103 update=7/48 transitions=57344 errorRms=1.12197N peak=8.24735N fails=1 collect=4.33s learn=0.03s
+RL_UPDATE seed=7103 update=8/48 transitions=65536 errorRms=1.22425N peak=9.9596N fails=0 collect=3.84s learn=0.11s
+RL_UPDATE seed=7103 update=9/48 transitions=73728 errorRms=1.19489N peak=9.31764N fails=1 collect=4.32s learn=0.12s
+RL_UPDATE seed=7103 update=10/48 transitions=81920 errorRms=0.882913N peak=6.69066N fails=0 collect=3.87s learn=0.07s
+RL_UPDATE seed=7103 update=11/48 transitions=90112 errorRms=1.12162N peak=7.49884N fails=2 collect=4.85s learn=0.07s
+RL_UPDATE seed=7103 update=12/48 transitions=98304 errorRms=1.07131N peak=9.97281N fails=0 collect=3.87s learn=0.06s
+RL_SELECTION seed=7103 update=12 pass=0/8 peak=10.1294N fails=1
+RL_UPDATE seed=7103 update=13/48 transitions=106496 errorRms=1.12731N peak=9.8964N fails=0 collect=3.85s learn=0.04s
+RL_UPDATE seed=7103 update=14/48 transitions=114688 errorRms=1.21622N peak=7.41721N fails=0 collect=3.91s learn=0.11s
+RL_UPDATE seed=7103 update=15/48 transitions=122880 errorRms=1.17402N peak=9.99846N fails=0 collect=3.86s learn=0.07s
+RL_UPDATE seed=7103 update=16/48 transitions=131072 errorRms=1.08798N peak=9.9199N fails=1 collect=4.36s learn=0.03s
+RL_UPDATE seed=7103 update=17/48 transitions=139264 errorRms=1.1726N peak=9.96798N fails=1 collect=4.34s learn=0.03s
+RL_UPDATE seed=7103 update=18/48 transitions=147456 errorRms=1.00739N peak=9.23159N fails=2 collect=4.85s learn=0.10s
+RL_SELECTION seed=7103 update=18 pass=0/8 peak=10.1153N fails=1
+RL_UPDATE seed=7103 update=19/48 transitions=155648 errorRms=1.06469N peak=6.55591N fails=0 collect=3.85s learn=0.09s
+RL_UPDATE seed=7103 update=20/48 transitions=163840 errorRms=1.25236N peak=9.17972N fails=0 collect=3.87s learn=0.07s
+RL_UPDATE seed=7103 update=21/48 transitions=172032 errorRms=1.05167N peak=9.81454N fails=1 collect=4.36s learn=0.11s
+RL_UPDATE seed=7103 update=22/48 transitions=180224 errorRms=1.25189N peak=9.31634N fails=0 collect=3.87s learn=0.03s
+RL_UPDATE seed=7103 update=23/48 transitions=188416 errorRms=1.05911N peak=10.0622N fails=2 collect=4.85s learn=0.04s
+RL_UPDATE seed=7103 update=24/48 transitions=196608 errorRms=1.05117N peak=9.31934N fails=0 collect=3.86s learn=0.03s
+RL_SELECTION seed=7103 update=24 pass=0/8 peak=10.1341N fails=1
+RL_UPDATE seed=7103 update=25/48 transitions=204800 errorRms=1.08941N peak=9.99783N fails=0 collect=3.88s learn=0.03s
+RL_UPDATE seed=7103 update=26/48 transitions=212992 errorRms=0.976856N peak=7.42817N fails=0 collect=3.84s learn=0.10s
+RL_UPDATE seed=7103 update=27/48 transitions=221184 errorRms=1.14718N peak=9.15752N fails=0 collect=3.86s learn=0.03s
+RL_UPDATE seed=7103 update=28/48 transitions=229376 errorRms=1.19369N peak=9.08182N fails=0 collect=3.85s learn=0.03s
+RL_UPDATE seed=7103 update=29/48 transitions=237568 errorRms=1.31788N peak=9.9499N fails=1 collect=4.39s learn=0.06s
+RL_UPDATE seed=7103 update=30/48 transitions=245760 errorRms=1.02934N peak=7.52907N fails=0 collect=3.93s learn=0.07s
+RL_SELECTION seed=7103 update=30 pass=0/8 peak=10.2105N fails=1
+RL_UPDATE seed=7103 update=31/48 transitions=253952 errorRms=0.977824N peak=7.6323N fails=0 collect=3.93s learn=0.04s
+RL_UPDATE seed=7103 update=32/48 transitions=262144 errorRms=1.13277N peak=10.0466N fails=0 collect=3.92s learn=0.12s
+RL_UPDATE seed=7103 update=33/48 transitions=270336 errorRms=1.04398N peak=7.5911N fails=1 collect=4.47s learn=0.03s
+RL_UPDATE seed=7103 update=34/48 transitions=278528 errorRms=1.23244N peak=7.54722N fails=2 collect=5.01s learn=0.03s
+RL_UPDATE seed=7103 update=35/48 transitions=286720 errorRms=0.853996N peak=6.20082N fails=0 collect=3.86s learn=0.12s
+RL_UPDATE seed=7103 update=36/48 transitions=294912 errorRms=0.880981N peak=7.64328N fails=1 collect=4.40s learn=0.11s
+RL_SELECTION seed=7103 update=36 pass=0/8 peak=10.2021N fails=1
+RL_UPDATE seed=7103 update=37/48 transitions=303104 errorRms=1.02298N peak=9.30348N fails=1 collect=4.38s learn=0.06s
+RL_UPDATE seed=7103 update=38/48 transitions=311296 errorRms=1.4031N peak=10.0784N fails=1 collect=4.38s learn=0.06s
+RL_UPDATE seed=7103 update=39/48 transitions=319488 errorRms=1.0253N peak=9.21166N fails=0 collect=3.87s learn=0.06s
+RL_UPDATE seed=7103 update=40/48 transitions=327680 errorRms=1.14524N peak=7.63508N fails=0 collect=3.85s learn=0.03s
+RL_UPDATE seed=7103 update=41/48 transitions=335872 errorRms=1.18038N peak=9.15628N fails=2 collect=4.89s learn=0.03s
+RL_UPDATE seed=7103 update=42/48 transitions=344064 errorRms=0.85448N peak=6.15835N fails=0 collect=3.87s learn=0.03s
+RL_SELECTION seed=7103 update=42 pass=0/8 peak=10.1837N fails=1
+RL_UPDATE seed=7103 update=43/48 transitions=352256 errorRms=0.890352N peak=6.52532N fails=0 collect=3.86s learn=0.06s
+RL_UPDATE seed=7103 update=44/48 transitions=360448 errorRms=1.09855N peak=9.99356N fails=0 collect=3.87s learn=0.03s
+RL_UPDATE seed=7103 update=45/48 transitions=368640 errorRms=0.882828N peak=9.89434N fails=0 collect=3.86s learn=0.03s
+RL_UPDATE seed=7103 update=46/48 transitions=376832 errorRms=1.43953N peak=9.82032N fails=1 collect=4.46s learn=0.03s
+RL_UPDATE seed=7103 update=47/48 transitions=385024 errorRms=1.03707N peak=9.91646N fails=0 collect=3.91s learn=0.04s
+RL_UPDATE seed=7103 update=48/48 transitions=393216 errorRms=1.25591N peak=9.12057N fails=0 collect=3.91s learn=0.03s
+RL_SELECTION seed=7103 update=48 pass=0/8 peak=9.9568N fails=1

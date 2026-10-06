@@ -1,0 +1,3913 @@
+{
+  "status": "complete",
+  "date": "2026-10-02",
+  "scope": "Software cold/warm execution parity audit; full native histories including startup.",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateLoggingModelSha256": "b115fc719148cd4f9dbe8818882bd2acc67bc0d8a1067aa2e3180d053a56e484",
+  "helperManifestSha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48",
+  "recipeSha256": "c0adf3ab91d911e700427ba5697e78259fc2be50478b6d240f3dad1dfee933d6",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "simulationMode": "accelerator",
+  "controllerSampleTime_s": 0.0001,
+  "fineClock_s": 3.3333333333333333E-6,
+  "adcOutputRate_Hz": 30000,
+  "compactColumns": [
+    "Rz_N",
+    "travel_m",
+    "I_A",
+    "V_V",
+    "contact",
+    "stop",
+    "effortClip",
+    "voltageClip",
+    "impactImpulse_Ns",
+    "xB_m",
+    "xS_m",
+    "Fa_N",
+    "aB_m_s2",
+    "lowerForce_N",
+    "N_N",
+    "Nestimate_N",
+    "Rx_N",
+    "slope",
+    "aS_m_s2"
+  ],
+  "seedBlocks": [
+    {
+      "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+2594",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+2808",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed+197",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed+1",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+3540",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+336",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+3542",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+239",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    }
+  ],
+  "plannedRuns": 9,
+  "rows": [
+    {
+      "name": "heavy7_first_short",
+      "mode": "first",
+      "seed": 7,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 75001,
+      "adcOutputFrames": 7501,
+      "endTime_s": 0.25,
+      "elapsed_s": 8.712949,
+      "peakNormalForceError_N": 0.067709987624319012,
+      "peakTime_s": 0.23043333333333332,
+      "startupPeak_N": 0.067709987624319012,
+      "projectionResidual_N": 0,
+      "axialResidual_N": 1.6454677198136161E-15,
+      "lowerResidual_N": 1.2013785099635535E-15,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "heavy7_first_short_transcript.txt",
+      "traceFile": "heavy7_first_short_native.mat",
+      "traceSha256": "32a09d5b539ff750fa1939bd64a2e8e1c8423120e59944771ac55549e1bc8511",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2601
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 7
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2815
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 204
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 8
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3547
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 343
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3549
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 246
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy29_warm_short",
+      "mode": "warm",
+      "seed": 29,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 75001,
+      "adcOutputFrames": 7501,
+      "endTime_s": 0.25,
+      "elapsed_s": 0.83012,
+      "peakNormalForceError_N": 0.11090766862304235,
+      "peakTime_s": 0.21272333333333332,
+      "startupPeak_N": 0.11090766862304235,
+      "projectionResidual_N": 0,
+      "axialResidual_N": 1.6454677198136161E-15,
+      "lowerResidual_N": 1.2013785099635535E-15,
+      "lastWarningId": "Simulink:Engine:NonTunableVarChangedMaxWarnings",
+      "lastWarningMessage": "Additional variables used in nontunable parameters were changed but were not reported to limit the number of warning messages",
+      "transcriptFile": "heavy29_warm_short_transcript.txt",
+      "traceFile": "heavy29_warm_short_native.mat",
+      "traceSha256": "f629ed2790c537f92d25274835036afb269e765a5d9dfe4c8294a7a448c3ae2e",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2623
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 29
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2837
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 226
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 30
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3569
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 365
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3571
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 268
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy29_cold_short",
+      "mode": "cold",
+      "seed": 29,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 75001,
+      "adcOutputFrames": 7501,
+      "endTime_s": 0.25,
+      "elapsed_s": 1.193272,
+      "peakNormalForceError_N": 0.11090766862304235,
+      "peakTime_s": 0.21272333333333332,
+      "startupPeak_N": 0.11090766862304235,
+      "projectionResidual_N": 0,
+      "axialResidual_N": 1.6454677198136161E-15,
+      "lowerResidual_N": 1.2013785099635535E-15,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "heavy29_cold_short_transcript.txt",
+      "traceFile": "heavy29_cold_short_native.mat",
+      "traceSha256": "99848b0716b5bc21439f58cfc1496f66ed714587a0a161fc95b4a71cce1db38f",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy7_cold_long",
+      "mode": "cold",
+      "seed": 7,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 6.043682,
+      "peakNormalForceError_N": 0.34823797844119042,
+      "peakTime_s": 2.0005833333333332,
+      "startupPeak_N": 0.067709987624319012,
+      "projectionResidual_N": 2.8421709430404007E-14,
+      "axialResidual_N": 4.4408920985006262E-15,
+      "lowerResidual_N": 3.5527136788005009E-15,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "heavy7_cold_long_transcript.txt",
+      "traceFile": "heavy7_cold_long_native.mat",
+      "traceSha256": "9b9f95257cd6c6edb5e261d4a869df5e14da516b8e7888f74c23149e170bfb87",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy7_first_long",
+      "mode": "first",
+      "seed": 7,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 6.231042,
+      "peakNormalForceError_N": 0.34823797844119042,
+      "peakTime_s": 2.0005833333333332,
+      "startupPeak_N": 0.067709987624319012,
+      "projectionResidual_N": 2.8421709430404007E-14,
+      "axialResidual_N": 4.4408920985006262E-15,
+      "lowerResidual_N": 3.5527136788005009E-15,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "heavy7_first_long_transcript.txt",
+      "traceFile": "heavy7_first_long_native.mat",
+      "traceSha256": "8fcb8e79f6eb6a89ce581e1032ed365b3e8cdd9c5022800d1ee0c46096770daf",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2601
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 7
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2815
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 204
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 8
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3547
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 343
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3549
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 246
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "light7_warm_long",
+      "mode": "warm",
+      "seed": 7,
+      "massS_kg": 0.1,
+      "reference_N": 5,
+      "angle_deg": 0,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 5.845651,
+      "peakNormalForceError_N": 0.050106040351720615,
+      "peakTime_s": 2.0046966666666668,
+      "startupPeak_N": 0.014167366559050265,
+      "projectionResidual_N": 2.6645352591003757E-15,
+      "axialResidual_N": 2.6645352591003757E-15,
+      "lowerResidual_N": 4.4408920985006262E-16,
+      "lastWarningId": "Simulink:Engine:NonTunableVarChangedMaxWarnings",
+      "lastWarningMessage": "Additional variables used in nontunable parameters were changed but were not reported to limit the number of warning messages",
+      "transcriptFile": "light7_warm_long_transcript.txt",
+      "traceFile": "light7_warm_long_native.mat",
+      "traceSha256": "09f52bb29044df6031fdbdec31a6b626772ee2136f5faf1967a4e15dbe3aa0d6",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2601
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 7
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2815
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 204
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 8
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3547
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 343
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3549
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 246
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "light7_cold_long",
+      "mode": "cold",
+      "seed": 7,
+      "massS_kg": 0.1,
+      "reference_N": 5,
+      "angle_deg": 0,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 5.976508,
+      "peakNormalForceError_N": 0.050106040351720615,
+      "peakTime_s": 2.0046966666666668,
+      "startupPeak_N": 0.014167366559050265,
+      "projectionResidual_N": 2.6645352591003757E-15,
+      "axialResidual_N": 2.6645352591003757E-15,
+      "lowerResidual_N": 4.4408920985006262E-16,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "light7_cold_long_transcript.txt",
+      "traceFile": "light7_cold_long_native.mat",
+      "traceSha256": "421b539e9417ee31b789710df2981235371728b547f2ffeeba0599d86069224b",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": false,
+          "dialogRuntimeParameters": [],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy7_fc500_first_long",
+      "mode": "first",
+      "seed": 7,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 500,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 6.020297,
+      "peakNormalForceError_N": 0.67183031950526129,
+      "peakTime_s": 2.00125,
+      "startupPeak_N": 0.053769382369473817,
+      "projectionResidual_N": 2.8421709430404007E-14,
+      "axialResidual_N": 4.4408920985006262E-15,
+      "lowerResidual_N": 3.5527136788005009E-15,
+      "lastWarningId": "",
+      "lastWarningMessage": "",
+      "transcriptFile": "heavy7_fc500_first_long_transcript.txt",
+      "traceFile": "heavy7_fc500_first_long_native.mat",
+      "traceSha256": "67d0371b606676b35c0cd587679e0eae920e2c064df3e728ebcb11d032e8c333",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2601
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 7
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2815
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 204
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 8
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3547
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 343
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3549
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 246
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    },
+    {
+      "name": "heavy7_fc5100_warm_long",
+      "mode": "warm",
+      "seed": 7,
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90,
+      "cutoff_Hz": 5100,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "endTime_s": 4,
+      "elapsed_s": 5.75645,
+      "peakNormalForceError_N": 0.34823797844119042,
+      "peakTime_s": 2.0005833333333332,
+      "startupPeak_N": 0.067709987624319012,
+      "projectionResidual_N": 2.8421709430404007E-14,
+      "axialResidual_N": 4.4408920985006262E-15,
+      "lowerResidual_N": 3.5527136788005009E-15,
+      "lastWarningId": "Simulink:Engine:NonTunableVarChangedMaxWarnings",
+      "lastWarningMessage": "Additional variables used in nontunable parameters were changed but were not reported to limit the number of warning messages",
+      "transcriptFile": "heavy7_fc5100_warm_long_transcript.txt",
+      "traceFile": "heavy7_fc5100_warm_long_native.mat",
+      "traceSha256": "b8c66ff1257833734b61c9ec64f25afdb05e5d2347c0d604c865641cdb6465e0",
+      "seedRuntimeMetadata": [
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2594",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2601
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 7
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+2808",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 2815
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+197",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 204
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+          "blockType": "UniformRandomNumber",
+          "seedExpression": "p.sensor.seed+1",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Minimum",
+              "data": -1.7320508075688772
+            },
+            {
+              "index": 2,
+              "name": "Maximum",
+              "data": 1.7320508075688772
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 8
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3540",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3547
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+336",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 343
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+3542",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 3549
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333335E-5
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        },
+        {
+          "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+          "blockType": "RandomNumber",
+          "seedExpression": "p.sensor.seed+239",
+          "seedAttributes": [
+            "read-write",
+            "not-accel",
+            "link-instance",
+            "run-to-run-tunable"
+          ],
+          "runtimeAvailable": true,
+          "dialogRuntimeParameters": [
+            {
+              "index": 1,
+              "name": "Mean",
+              "data": 0
+            },
+            {
+              "index": 2,
+              "name": "Variance",
+              "data": 1
+            },
+            {
+              "index": 3,
+              "name": "Seed",
+              "data": 246
+            },
+            {
+              "index": 4,
+              "name": "SampleTime",
+              "data": 3.3333333333333333E-6
+            },
+            {
+              "index": 5,
+              "name": "",
+              "data": []
+            },
+            {
+              "index": 6,
+              "name": "",
+              "data": []
+            }
+          ],
+          "runtimeInspectionMessage": ""
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "seed_warm29_vs_cold29",
+      "first": "heavy29_warm_short",
+      "second": "heavy29_cold_short",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": true,
+      "exactAdcValues": true,
+      "nativeSamples": 75001,
+      "adcOutputFrames": 7501,
+      "maximumAbsNativeDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": true,
+      "firstNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": []
+    },
+    {
+      "name": "seed7_vs_cold29_contrast",
+      "first": "heavy7_first_short",
+      "second": "heavy29_cold_short",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": false,
+      "exactAdcValues": false,
+      "nativeSamples": 75001,
+      "adcOutputFrames": 7501,
+      "maximumAbsNativeDifferenceByColumn": [
+        0.11049617907800524,
+        1.6943064336562286E-6,
+        0.29171771668171287,
+        13.22183033781544,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1.6941402453707059E-6,
+        0,
+        5.7836852505471725,
+        9.7073019282835915,
+        0.11049617907800524,
+        0.11049617907800524,
+        0.21583978508088109,
+        0.033148853723401928,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        74970,
+        74970,
+        74970,
+        74971,
+        0,
+        0,
+        0,
+        0,
+        0,
+        74970,
+        0,
+        74970,
+        74970,
+        74970,
+        74970,
+        74971,
+        74970,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0.1513983303725297,
+        0.13593649984377443,
+        0.12354948614460695,
+        0.12152854190549434,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        7501,
+        7501,
+        7501,
+        7501,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": false,
+      "firstNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": [
+        "p.sensor.seed"
+      ]
+    },
+    {
+      "name": "physical_warmLight_vs_coldLight",
+      "first": "light7_warm_long",
+      "second": "light7_cold_long",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": true,
+      "exactAdcValues": true,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "maximumAbsNativeDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": true,
+      "firstNativeData": [
+        5,
+        0.011993568317633952,
+        -0.09335,
+        -0.3734,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1.867,
+        0,
+        4.019,
+        5,
+        5,
+        -1.5,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        5,
+        0.011993568317633952,
+        -0.09335,
+        -0.3734,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1.867,
+        0,
+        4.019,
+        5,
+        5,
+        -1.5,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": []
+    },
+    {
+      "name": "heavy_first_vs_cold_repeat",
+      "first": "heavy7_first_long",
+      "second": "heavy7_cold_long",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": true,
+      "exactAdcValues": true,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "maximumAbsNativeDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": true,
+      "firstNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": []
+    },
+    {
+      "name": "cutoff_warm5100_vs_cold5100",
+      "first": "heavy7_fc5100_warm_long",
+      "second": "heavy7_cold_long",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": true,
+      "exactAdcValues": true,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "maximumAbsNativeDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": true,
+      "firstNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": []
+    },
+    {
+      "name": "cutoff500_vs_cold5100_contrast",
+      "first": "heavy7_fc500_first_long",
+      "second": "heavy7_cold_long",
+      "exactNativeTimes": true,
+      "exactAdcTimes": true,
+      "exactNativeValues": false,
+      "exactAdcValues": false,
+      "nativeSamples": 1.200001E+6,
+      "adcOutputFrames": 120001,
+      "maximumAbsNativeDifferenceByColumn": [
+        0.42272137278271771,
+        5.8309550567806068E-5,
+        0.34942727139165575,
+        9.6005093782446043,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7.1946259464545327E-6,
+        0,
+        6.9847632470297256,
+        11.453522182411684,
+        0.42272137278271771,
+        0.42272137278271771,
+        0.53374315200266409,
+        0.12681641183481673,
+        0,
+        0
+      ],
+      "changedNativeSamplesByColumn": [
+        1.19997E+6,
+        1.19997E+6,
+        1.19997E+6,
+        1.199971E+6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1.19997E+6,
+        0,
+        1.19997E+6,
+        1.19997E+6,
+        1.19997E+6,
+        1.19997E+6,
+        1.199971E+6,
+        1.19997E+6,
+        0,
+        0
+      ],
+      "maximumAbsAdcDifferenceByColumn": [
+        0.801050234613804,
+        0.55452193242015291,
+        0.1834418670064096,
+        0.07621185870426217,
+        0,
+        0,
+        0,
+        0
+      ],
+      "changedAdcFramesByColumn": [
+        120000,
+        120000,
+        120000,
+        120000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exactNativeStartupValues": false,
+      "firstNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "secondNativeData": [
+        50,
+        0.011993568317633952,
+        2.5,
+        10,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        -6.0068925498177676E-16,
+        50,
+        50,
+        50,
+        -15,
+        0,
+        0
+      ],
+      "requestedParameterDifferences": [
+        "p.adcStudy.analogCutoff_Hz",
+        "p.adcStudy.d.channels.acceleration.analogA",
+        "p.adcStudy.d.channels.acceleration.analogB",
+        "p.adcStudy.d.channels.acceleration.analogDCGroupDelay_s",
+        "p.adcStudy.d.channels.acceleration.cutoff_Hz",
+        "p.adcStudy.d.channels.force.analogA",
+        "p.adcStudy.d.channels.force.analogB",
+        "p.adcStudy.d.channels.force.analogDCGroupDelay_s",
+        "p.adcStudy.d.channels.force.cutoff_Hz",
+        "p.adcStudy.d.channels.frame.analogA",
+        "p.adcStudy.d.channels.frame.analogB",
+        "p.adcStudy.d.channels.frame.analogDCGroupDelay_s",
+        "p.adcStudy.d.channels.frame.cutoff_Hz",
+        "p.adcStudy.d.channels.lateral.analogA",
+        "p.adcStudy.d.channels.lateral.analogB",
+        "p.adcStudy.d.channels.lateral.analogDCGroupDelay_s",
+        "p.adcStudy.d.channels.lateral.cutoff_Hz",
+        "p.adcStudy.d.channels.position.analogA",
+        "p.adcStudy.d.channels.position.analogB",
+        "p.adcStudy.d.channels.position.analogDCGroupDelay_s",
+        "p.adcStudy.d.channels.position.cutoff_Hz",
+        "p.adcStudy.identifiedAnalogCutoff_Hz"
+      ]
+    }
+  ],
+  "executedRuns": 9,
+  "elapsed_s": 58.65684,
+  "preferencesRestored": true
+}

@@ -1,0 +1,222 @@
+{
+  "generatedUtc": "2026-10-05T15:17:31.477505+00:00",
+  "scope": "Common 28-case development selection only; separate warm starts, no final-test outcomes.",
+  "sources": [
+    {
+      "run": "reward_search_sustained_8204",
+      "label": "Joint current + robot refinement",
+      "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_sustained_8204/selection.json",
+      "sha256": "6b19712efe1e4aec6f642454e77e5789c07145b3de665c04b03572502be8ce7b",
+      "points": [
+        {
+          "generation": 0,
+          "trainingEpisodes": 0,
+          "selectedWorstForce_N": 0.41872787035814696,
+          "selectedScore": 0.9338798572447795,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 1,
+          "trainingEpisodes": 144,
+          "selectedWorstForce_N": 0.41777138536365044,
+          "selectedScore": 0.9307210475037024,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 5,
+          "trainingEpisodes": 720,
+          "selectedWorstForce_N": 0.4172893857690525,
+          "selectedScore": 0.9287841335594857,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 10,
+          "trainingEpisodes": 1440,
+          "selectedWorstForce_N": 0.41721053948298703,
+          "selectedScore": 0.9229765023323748,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 15,
+          "trainingEpisodes": 2160,
+          "selectedWorstForce_N": 0.41721053948298703,
+          "selectedScore": 0.9229765023323748,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 20,
+          "trainingEpisodes": 2880,
+          "selectedWorstForce_N": 0.4156933735277377,
+          "selectedScore": 0.916485682369593,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 3600,
+          "selectedWorstForce_N": 0.41497265335794964,
+          "selectedScore": 0.9136341284907399,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 4176,
+          "selectedWorstForce_N": 0.41497265335794964,
+          "selectedScore": 0.9136341284907399,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        }
+      ]
+    },
+    {
+      "run": "reward_search_inverse_8207",
+      "label": "Partial inverse, 37 learned directions",
+      "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_8207/selection.json",
+      "sha256": "ef274a1da1cda68ce846f83fb370c0192d2aee3721aa5cb474d9adcfe7d99da4",
+      "points": [
+        {
+          "generation": 0,
+          "trainingEpisodes": 0,
+          "selectedWorstForce_N": 0.39790512557298285,
+          "selectedScore": 0.8604231710744565,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 1,
+          "trainingEpisodes": 144,
+          "selectedWorstForce_N": 0.3995511630122337,
+          "selectedScore": 0.8493457638991275,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 5,
+          "trainingEpisodes": 720,
+          "selectedWorstForce_N": 0.3951376249956553,
+          "selectedScore": 0.8332955626616393,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 10,
+          "trainingEpisodes": 1440,
+          "selectedWorstForce_N": 0.3853951630412027,
+          "selectedScore": 0.7959323285530734,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 15,
+          "trainingEpisodes": 2160,
+          "selectedWorstForce_N": 0.3853951630412027,
+          "selectedScore": 0.7959323285530734,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 20,
+          "trainingEpisodes": 2880,
+          "selectedWorstForce_N": 0.3843123455477411,
+          "selectedScore": 0.7891256008143661,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 3600,
+          "selectedWorstForce_N": 0.3720875886100643,
+          "selectedScore": 0.7438725269905103,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 4176,
+          "selectedWorstForce_N": 0.3720875886100643,
+          "selectedScore": 0.7438725269905103,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        }
+      ]
+    },
+    {
+      "run": "reward_search_inverse_seed_8209",
+      "label": "700 Hz inverse, second search seed",
+      "source": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_seed_8209/selection.json",
+      "sha256": "927c92a69534eb11e65b6336a19d7947a8160706a568a317d5753b599aaac2a5",
+      "points": [
+        {
+          "generation": 0,
+          "trainingEpisodes": 0,
+          "selectedWorstForce_N": 0.38778614748917306,
+          "selectedScore": 0.8065305055235085,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 1,
+          "trainingEpisodes": 144,
+          "selectedWorstForce_N": 0.38778614748917306,
+          "selectedScore": 0.8065305055235085,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 5,
+          "trainingEpisodes": 720,
+          "selectedWorstForce_N": 0.38778614748917306,
+          "selectedScore": 0.8065305055235085,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 10,
+          "trainingEpisodes": 1440,
+          "selectedWorstForce_N": 0.38492258636826193,
+          "selectedScore": 0.7956041232452787,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 15,
+          "trainingEpisodes": 2160,
+          "selectedWorstForce_N": 0.38492258636826193,
+          "selectedScore": 0.7956041232452787,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 20,
+          "trainingEpisodes": 2880,
+          "selectedWorstForce_N": 0.38492258636826193,
+          "selectedScore": 0.7956041232452787,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 3600,
+          "selectedWorstForce_N": 0.3797850554676927,
+          "selectedScore": 0.772660589767882,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        },
+        {
+          "generation": 25,
+          "trainingEpisodes": 3744,
+          "selectedWorstForce_N": 0.3797850554676927,
+          "selectedScore": 0.772660589767882,
+          "selectedPhysicalFailures": 0,
+          "selectedForcePasses": 28
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "scope": "Read-only exact force decomposition using actual B-S relative inertia. Full native true normal force history is scored. Calibration injections, if any, are defined in the source run, not this diagnostic.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_worst_native_trace.mat",
+  "nativeTraceSha256": "ec1f31b504151a1509a5a713fe2b8c2f3007e9ed62e56ef68348c1f8378bb842",
+  "nativeSamples": 400001,
+  "step_s": 1.0000000000065512e-05,
+  "endTime_s": 4.0,
+  "parameters": {
+    "massB_kg": 0.6,
+    "massS_kg": 2.0,
+    "Kf_N_A": 20.0,
+    "seed": 7,
+    "k1_N_m": 19746.0,
+    "c1_N_s_m": 60.0
+  },
+  "peak": {
+    "time_s": 2.0005800000000002,
+    "signedNormalForceError_N": 0.44808545355336804,
+    "normalForce_N": 50.44808545355337,
+    "estimatedNormalForce_N": 50.26655278347944,
+    "trueSlope": 0.0006310117847211322,
+    "estimatedSlope": -0.0002822045875738324,
+    "current_A": 2.1499734361459173,
+    "currentCommand_A": 2.1183190463058983,
+    "idealRigidCurrent_A": 2.481675054371906,
+    "actualCoilGapVelocity_m_s": 0.0010508343896230652,
+    "actualHeadGapVelocity_m_s": 0.0032319201044681074,
+    "measuredObserverHeadGapVelocity_m_s": 0.0033235784005256758,
+    "actualAccelerationS_m_s2": 0.21504404973136518,
+    "measuredAccelerationS_m_s2": 0.12572,
+    "actualAccelerationB_m_s2": 12.018432224266594,
+    "actualRobotVelocity_m_s": 0.0032950212829402593,
+    "predictedRobotVelocity_m_s": 0.0032949402638262197,
+    "robotGateReady": true,
+    "currentTrackingNormalError_N": 0.6332077913140594,
+    "commandAndFeedforwardNormalError_N": -7.268497560401318,
+    "finiteCellBInertiaNormalError_N": 7.0833752226406395,
+    "BRelativeInertiaNormalError_N": 7.0833752226406395,
+    "nativeLowerInverseExtraCurrent_A": -0.34776208558429067,
+    "nativeDesiredLowerLoadDeviation_N": -0.24590757595798146
+  },
+  "decompositionIdentityResidual_N": 2.0872192862952943e-14,
+  "peakWindow_s": [
+    1.9705800000000002,
+    2.03058
+  ],
+  "peakWindowDominantForceFrequencyIn1000To2200Hz_Hz": 1016.4972504515977,
+  "diagnosticRingingBand_Hz": [
+    1000,
+    2200
+  ],
+  "diagnosticBandAmplitudeWithin3ms_N": 0.03437010669694214,
+  "diagnosticBandPeakToPeakWithin3ms_N": 0.06268295612519043,
+  "diagnosticBandConvention": "Zero-phase offline 4th-order bandpass; diagnostic only, never a controller input or qualification score.",
+  "BRelativeInertiaConvention": "B*(aB-aS) measures holder inertia relative to S. In a lower-series spring candidate it is the external compliant-link contribution; the legacy finiteCellBInertia key is retained for compatibility. The proper inverse intentionally commands extra current to counteract this term, so the individual term is not an independent unavoidable error.",
+  "bumps": [
+    {
+      "start_s": 2.0,
+      "peak_s": 2.0005800000000002,
+      "peakError_N": 0.44808545355336804
+    }
+  ],
+  "peakWindowDominantFrequencyIn20To500Hz_Hz": 83.31944675832767,
+  "finiteWindowFrequencyResolution_Hz": 16.663889351665535
+}

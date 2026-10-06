@@ -1,0 +1,9 @@
+{
+  "status": "software_codegen_rejected_no_episodes",
+  "createdEpisodes": 0,
+  "reason": "The vector Discrete State-Space block declares feedthrough whenever position-correction D is nonzero. This conservatively creates a friction/force loop despite exact zero force-input D. V3 separates strict state prediction (C=I,D=0) and ordinary gain/sum measurement correction without changing equations or adding delay.",
+  "sourceFolderNames": [
+    "banks_upper_20k_lower_cell_undamped_v2",
+    "native_upper_20k_lower_cell_undamped_v2"
+  ]
+}

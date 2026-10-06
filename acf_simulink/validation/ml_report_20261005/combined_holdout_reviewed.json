@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "kind": "reviewed_native_study_excerpt",
+  "scope": "Four new predeclared eight-second pairs. Fixed independently trained networks and force gain 1. Both actions active; no joint/end-to-end training, retuning, full uncertainty-box or physical qualification.",
+  "rows": [
+    {
+      "identity": "combined_new_01",
+      "baseline_peak_N": 0.026881933990059892,
+      "combined_peak_N": 0.043450398471634344,
+      "change_N": 0.016568464481574452,
+      "baseline_rms_N": 0.0044642250521614805,
+      "combined_rms_N": 0.005943348180761931,
+      "baseline_passed": true,
+      "combined_passed": true,
+      "baseline_final_travel_error_mm": -0.5011774919660098,
+      "combined_final_travel_error_mm": -0.5010446923572488,
+      "combined_peak_learned_current_A": 0.01956069447931838,
+      "combined_nonzero_current_frames": 80001,
+      "combined_nonzero_robot_frames": 791,
+      "combined_gate_closures": 0,
+      "combined_pending_request_samples": 0
+    },
+    {
+      "identity": "combined_new_02",
+      "baseline_peak_N": 0.34811838764765923,
+      "combined_peak_N": 0.35511342778823973,
+      "change_N": 0.0069950401405805,
+      "baseline_rms_N": 0.020898205796212887,
+      "combined_rms_N": 0.019748980899380462,
+      "baseline_passed": true,
+      "combined_passed": true,
+      "baseline_final_travel_error_mm": 0.5017744869237444,
+      "combined_final_travel_error_mm": 0.5022314908465879,
+      "combined_peak_learned_current_A": 0.04244586365246096,
+      "combined_nonzero_current_frames": 80001,
+      "combined_nonzero_robot_frames": 769,
+      "combined_gate_closures": 1,
+      "combined_pending_request_samples": 23999
+    },
+    {
+      "identity": "combined_new_03",
+      "baseline_peak_N": 0.17537094497608763,
+      "combined_peak_N": 0.18550031925681054,
+      "change_N": 0.010129374280722914,
+      "baseline_rms_N": 0.01084834298221311,
+      "combined_rms_N": 0.011254981551481517,
+      "baseline_passed": true,
+      "combined_passed": true,
+      "baseline_final_travel_error_mm": 0.5008224174730056,
+      "combined_final_travel_error_mm": 0.5008566779391919,
+      "combined_peak_learned_current_A": 0.025115946888913616,
+      "combined_nonzero_current_frames": 80001,
+      "combined_nonzero_robot_frames": 784,
+      "combined_gate_closures": 0,
+      "combined_pending_request_samples": 0
+    },
+    {
+      "identity": "combined_new_04",
+      "baseline_peak_N": 0.45269247194219986,
+      "combined_peak_N": 0.44978076571519665,
+      "change_N": -0.002911706227003208,
+      "baseline_rms_N": 0.07618742531494385,
+      "combined_rms_N": 0.07686224570436193,
+      "baseline_passed": true,
+      "combined_passed": true,
+      "baseline_final_travel_error_mm": -0.5165036782904062,
+      "combined_final_travel_error_mm": -0.5251975083825026,
+      "combined_peak_learned_current_A": 0.040684164512525406,
+      "combined_nonzero_current_frames": 80001,
+      "combined_nonzero_robot_frames": 665,
+      "combined_gate_closures": 5,
+      "combined_pending_request_samples": 158998
+    }
+  ],
+  "sources": [
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005_figures/summary.json",
+      "sha256": "c139bcc20b3cae11aec187c448c4a6cc9c115410cb85c06bb1972562875fd2cb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005/results.json",
+      "sha256": "64b879f7d216837fd39bb974e89bace407706353577fe164203488634995a129"
+    }
+  ]
+}

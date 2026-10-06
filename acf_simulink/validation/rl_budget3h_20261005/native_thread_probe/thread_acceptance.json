@@ -1,0 +1,75 @@
+{
+  "serial_parallel_bit_identical": true,
+  "paired_contexts": 16,
+  "action_steps_per_context": 6000,
+  "native_samples": 2880016,
+  "all_returned_channels": 72,
+  "serial_s": 3.7762285759672523,
+  "parallel4_s": 1.735141979996115,
+  "trials": [
+    {
+      "threads": 1,
+      "contexts": 16,
+      "transitions": 40000,
+      "elapsed_s": 1.485137168026995,
+      "transitions_s": 26933.539110828402
+    },
+    {
+      "threads": 2,
+      "contexts": 16,
+      "transitions": 40000,
+      "elapsed_s": 1.2459293350111693,
+      "transitions_s": 32104.54949248098
+    },
+    {
+      "threads": 4,
+      "contexts": 16,
+      "transitions": 40000,
+      "elapsed_s": 0.6796067939721979,
+      "transitions_s": 58857.56345401744
+    },
+    {
+      "threads": 8,
+      "contexts": 16,
+      "transitions": 40000,
+      "elapsed_s": 0.35475005296757445,
+      "transitions_s": 112755.4447572025
+    }
+  ],
+  "prior_bridge_bit_identical": true,
+  "prior_bridge_contexts": 4,
+  "prior_bridge_native_samples": 480004,
+  "hashes": {
+    "emitted_c_sha256": "33610f6d34e7761bd915a4b73f8108c81de37c7f006b4de0d0eb84a04f14c55e",
+    "adapted_c_sha256": "f972d6fddc41c8cf4c6d714e5cfb2149906109980abae32615e783a549513351",
+    "bridge_sha256": "fde53806055025c47aab1142aa532c0baec4f3af10f06b21a7107165743d94ed",
+    "parameter_bank_sha256": "631268da442fef361609068ffd1cdd765cf6ef29219d23a2722a50b0b3206314",
+    "shared_library_sha256": "d6b7e7eafe150b580d428485c5892645903dac477ed1f7e3599257705d00ee10",
+    "native_computation_recovered_exactly": true,
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-fopenmp",
+      "-march=native",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/code/acf_rl_native_grt_rtw",
+      "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe",
+      "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+      "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+      "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_bridge.c",
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/native_parameter_bank.c",
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "-lm",
+      "-pthread",
+      "-o",
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_thread_probe/libacf_native.so"
+    ],
+    "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+  }
+}

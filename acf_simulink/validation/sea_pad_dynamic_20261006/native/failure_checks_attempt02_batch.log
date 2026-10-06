@@ -1,0 +1,27 @@
+WARNING: package sun.security.action not in java.base
+WARNING: package sun.security.action not in java.base
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.mathworks.jmi.Matlab in an unnamed module (file:/home/tommie/.local/opt/MATLAB/R2026b/java/jar/jmi.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+NATIVE_FAILURE_PROBE {"identity":"whole_contact_loss","status":"deliberate_native_failure_probe_executed","forceQualified":false,"runMarkedFailed":true,"expectedFailureObserved":true,"requestedEnd_s":0.2,"actualEnd_s":0.0028425000000000004,"nativeOutputPoints":1138,"minimumTotalForce_N":0,"maximumAbsoluteFlangeTravel_m":0.000350078125,"maximumPadCompression_m":0.0001,"maximumSeriesDeflection_m":0.000350078125,"configuredTravelLimit_m":0.0125,"configuredSpringLimit_m":0.017,"configuredPadCompressionLimit_m":0.0025}
+NATIVE_FAILURE_PROBE {"identity":"configured_flange_travel_stop","status":"deliberate_native_failure_probe_executed","forceQualified":false,"runMarkedFailed":true,"expectedFailureObserved":true,"requestedEnd_s":0.2,"actualEnd_s":0.0094600000000000014,"nativeOutputPoints":3785,"minimumTotalForce_N":5,"maximumAbsoluteFlangeTravel_m":0.0030000381981837676,"maximumPadCompression_m":0.0010418466964440549,"maximumSeriesDeflection_m":0.0030000381981837676,"configuredTravelLimit_m":0.003,"configuredSpringLimit_m":0.017,"configuredPadCompressionLimit_m":0.0025}
+NATIVE_FAILURE_PROBE {"identity":"configured_series_spring_working_stop","status":"deliberate_native_failure_probe_executed","forceQualified":false,"runMarkedFailed":true,"expectedFailureObserved":true,"requestedEnd_s":0.2,"actualEnd_s":0.0021200000000000004,"nativeOutputPoints":849,"minimumTotalForce_N":19.997255435470443,"maximumAbsoluteFlangeTravel_m":0.0014051463172388738,"maximumPadCompression_m":0.0004,"maximumSeriesDeflection_m":0.0041001037773878042,"configuredTravelLimit_m":0.0125,"configuredSpringLimit_m":0.0041,"configuredPadCompressionLimit_m":0.0025}
+NATIVE_FAILURE_PROBE {"identity":"configured_pad_compression_stop","status":"deliberate_native_failure_probe_executed","forceQualified":false,"runMarkedFailed":true,"expectedFailureObserved":true,"requestedEnd_s":0.2,"actualEnd_s":0.0011425,"nativeOutputPoints":458,"minimumTotalForce_N":5,"maximumAbsoluteFlangeTravel_m":0.00037850824380543038,"maximumPadCompression_m":0.00011002584389244647,"maximumSeriesDeflection_m":0.00037850824380543038,"configuredTravelLimit_m":0.0125,"configuredSpringLimit_m":0.017,"configuredPadCompressionLimit_m":0.00011}
+[Warning: Removed
+'/home/tommie/Projects/actuator-model/acf_simulink/validation/sea_pad_dynamic_20261006/native/owned_failure_temporary/cache'
+from the MATLAB path for this MATLAB session.
+	See 'doc path' for more information.] 
+[> In run_native_failure_checks>finish (line 58)
+In run_native_failure_checks>@()finish(storage,record,temp,mdl) (line 12)
+In onCleanup/delete (line 33)
+In run_native_failure_checks (line 54)] 
+[Warning: Removed
+'/home/tommie/Projects/actuator-model/acf_simulink/validation/sea_pad_dynamic_20261006/native/owned_failure_temporary/code'
+from the MATLAB path for this MATLAB session.
+	See 'doc path' for more information.] 
+[> In run_native_failure_checks>finish (line 58)
+In run_native_failure_checks>@()finish(storage,record,temp,mdl) (line 12)
+In onCleanup/delete (line 33)
+In run_native_failure_checks (line 54)] 

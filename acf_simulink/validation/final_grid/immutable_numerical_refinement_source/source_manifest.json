@@ -1,0 +1,28 @@
+{
+  "status": "immutable_numerical_source_and_input_binding",
+  "scientificInputArchive": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source",
+  "scientificInputArchiveManifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/source_manifest.json",
+  "scientificInputArchiveManifestSha256": "3747761258b37c37dccd47ae84da55e6a46a6bb6c2a53936aec8f617f0b4b361",
+  "scientificModel": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/acf_force_control_normal_trial.slx",
+  "scientificModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "scientificCandidate": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/inertial_final_candidate_20260930.mat",
+  "scientificCandidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/qualified_recipe/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "sha256": "ca01722162a58878490184fbc1423a67878d1db9d174ecc3b184e57f15eceaba",
+      "bytes": 10122
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/original_native_5us/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "sha256": "8695b6684d35f1f93cf78aa3d328298951a4d570bff7b5f039a60e3f1f6effc0",
+      "bytes": 10104
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/offline_5us_collector/normal_mass_controller_final_grid_20260930_collect_retained_refinement.py",
+      "sha256": "e3c26ecca300a334ca1a74ff025784f80ee50ccb40de2932a96f6760257e618a",
+      "bytes": 8526
+    }
+  ],
+  "note": "The exact model,candidate,and16helpers are already archived in the immutable scientific input archive. These three additional files preserve the actual2.5us/current qualified recipe, original5us native snapshot and its offline recovery collector. The collector\u2019s original private paths document audited input locations; the JSON below independently binds their archived equivalents. No physics input changes."
+}

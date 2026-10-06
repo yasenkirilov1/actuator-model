@@ -1,0 +1,54 @@
+[
+  {
+    "name": "coil_point20k_c0",
+    "status": "observation_only_instrumentation_replay_no_retuning",
+    "original_evaluation_source": "coil_point20k_c0.json",
+    "source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+    "count": 54,
+    "force_pass_count": 0,
+    "sensor_rating_pass_count": 54,
+    "actuator_rating_pass_count": 54,
+    "maximum_peak_replay_difference_N": 0.0,
+    "cell_abs_peak_N": 75.56686754528474,
+    "specific_acceleration_peak_m_s2": 25.900031447557147
+  },
+  {
+    "name": "coil_point20k_c80",
+    "status": "observation_only_instrumentation_replay_no_retuning",
+    "original_evaluation_source": "coil_point20k_c80.json",
+    "source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+    "count": 54,
+    "force_pass_count": 54,
+    "sensor_rating_pass_count": 54,
+    "actuator_rating_pass_count": 54,
+    "maximum_peak_replay_difference_N": 0.0,
+    "cell_abs_peak_N": 79.15955812792808,
+    "specific_acceleration_peak_m_s2": 30.51076011037076
+  },
+  {
+    "name": "sea_v2_point20k_c0_5k_l10",
+    "status": "observation_only_instrumentation_replay_no_retuning",
+    "original_evaluation_source": "sea_v2_point20k_c0_5k_l10.json",
+    "source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+    "count": 54,
+    "force_pass_count": 0,
+    "sensor_rating_pass_count": 54,
+    "actuator_rating_pass_count": 54,
+    "maximum_peak_replay_difference_N": 0.0,
+    "cell_abs_peak_N": 53.32300754395946,
+    "specific_acceleration_peak_m_s2": 14.082337603663534
+  },
+  {
+    "name": "sea_v2_point20k_c80_5k_l10",
+    "status": "observation_only_instrumentation_replay_no_retuning",
+    "original_evaluation_source": "sea_v2_point20k_c80_5k_l10.json",
+    "source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+    "count": 54,
+    "force_pass_count": 0,
+    "sensor_rating_pass_count": 54,
+    "actuator_rating_pass_count": 54,
+    "maximum_peak_replay_difference_N": 0.0,
+    "cell_abs_peak_N": 54.46205295489559,
+    "specific_acceleration_peak_m_s2": 13.0959574020501
+  }
+]

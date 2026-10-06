@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/final_evaluate.py", line 730, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/final_evaluate.py", line 588, in main
+    if saved.get('features')!=features:raise ValueError('checkpoint feature names differ from frozen env')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: checkpoint feature names differ from frozen env

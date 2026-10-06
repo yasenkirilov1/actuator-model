@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-09-30",
+  "owner": "actuators",
+  "evidence_type": "bounded_primary_manufacturer_review",
+  "native_simulations_executed_for_this_review": 0,
+  "prototype_measurements_executed": 0,
+  "comparison_target": {
+    "continuous_force_N": 60,
+    "peak_force_N_min": 70,
+    "useful_stroke_mm": 25,
+    "motor_constant_N_per_sqrtW_approx_min": 10,
+    "holder_total_B_kg": 0.6,
+    "original_robot_side_A_kg": 0.4,
+    "preferred_motor_moving_mass_kg": [
+      0.25,
+      0.3
+    ]
+  },
+  "result": "One lighter moving-coil example close to target found. No fully qualified exactpart; no matching moving-magnet example established in bounded check.",
+  "sources": {
+    "moticont_product": {
+      "url": "https://www.moticont.com/lvcm-070-051-01.htm",
+      "title": "Moticont LVCM-070-051-01 product",
+      "version": null
+    },
+    "moticont_drawing": {
+      "url": "https://www.moticont.com/pdf/lvcm-070-051-01.pdf",
+      "title": "Moticont LVCM-070-051-01 drawing",
+      "version": "Rev 1, sheet 1 of 1",
+      "inspection": "Visual reading of rendered official PDF; PDF has no searchable text.",
+      "download_sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe"
+    },
+    "sensata_product": {
+      "url": "https://www.sensata.com/products/motors-actuators/cylindrical-housed-linear-vca-integrated-sensor-las28-53-000a-p01-12i",
+      "title": "Sensata LAS28-53 product",
+      "version": null
+    },
+    "sensata_drawing": {
+      "url": "https://www.sensata.com/sites/default/files/a/sensata-linear-actuator-sensor-LAS-28-53-drawing.pdf?cb=e13e7ccb",
+      "title": "Sensata LAS28-53-000A-P01-DASH drawing",
+      "version": "X2, 2 sheets, date 05/31/19",
+      "inspection": "Manufacturer PDF text and product specification table."
+    },
+    "h2w_negative": {
+      "url": "https://www.h2wtech.com/product/voice-coil-actuators/NCM10-14-028-2BX",
+      "title": "H2W NCM10-14-028-2BX product",
+      "version": null
+    },
+    "h2w_architecture": {
+      "url": "https://www.h2wtech.com/category/voice-coil-actuators",
+      "title": "H2W voice-coil architecture and integration",
+      "version": null
+    }
+  },
+  "examples": [
+    {
+      "name": "Moticont LVCM-070-051-01",
+      "architecture": "moving coil",
+      "source_keys": [
+        "moticont_product",
+        "moticont_drawing"
+      ],
+      "stroke_mm": 25.4,
+      "continuous_force_reference_N": 64.7,
+      "continuous_force_reference_position": "center peak of published continuous-force vs stroke plot",
+      "intermittent_force_N": 204.3,
+      "intermittent_duty_fraction": 0.1,
+      "peak_duration_s": null,
+      "nominal_Kf_N_per_A": 24.4,
+      "nominal_Ke_V_per_m_per_s": 24.4,
+      "resistance_ohm": 6.4,
+      "inductance_H": 0.004,
+      "inductance_measurement_Hz": 1000,
+      "motor_constant_calculated_N_per_sqrtW": 9.644946863513557,
+      "electrical_time_constant_calculated_s": 0.000625,
+      "stated_continuous_power_max_W": 45,
+      "stated_conditions": "All values at 25°C; installed thermal boundary and hot ratings not established by retrieved sheet.",
+      "moving_coil_mass_kg": 0.24,
+      "stationary_body_mass_kg": 1.24,
+      "total_mass_sum_kg": 1.48,
+      "remaining_B_mass_after_motor_kg": 0.36,
+      "stationary_mass_exceeds_original_A_kg": 0.84,
+      "dimensions_mm": {
+        "body_diameter": 69.9,
+        "housing_length": 50.8,
+        "overall_length_at_midstroke_approx": 76.2
+      },
+      "graph_reading": {
+        "quantity": "continuous force vs stroke",
+        "endpoint_force_N_approx": 52,
+        "reading_precision": "rough, from plotted curve",
+        "exact_Kf_vs_position": null,
+        "thermal_model_from_curve": null
+      },
+      "cold_center_calculations": [
+        {
+          "force_N": 60,
+          "current_A": 2.459016393442623,
+          "copper_W": 38.69927438860522,
+          "resistive_voltage_V": 15.737704918032788
+        },
+        {
+          "force_N": 70,
+          "current_A": 2.8688524590163937,
+          "copper_W": 52.67401236226822,
+          "resistive_voltage_V": 18.36065573770492
+        }
+      ],
+      "resistive_only_voltage_headroom_at70N_with24V_V": 5.639344262295079,
+      "status": "Closer moving-mass reference; 0.24 kg fits within 0.6 kg provision leaving 0.36 kg; continuous 60 N over full stroke not proven, A must increase, drive/thermal qualification required."
+    },
+    {
+      "name": "Sensata LAS28-53-000A-P01",
+      "architecture": "moving coil/shaft",
+      "source_keys": [
+        "sensata_product",
+        "sensata_drawing"
+      ],
+      "stroke_mm": 25,
+      "continuous_stall_force_N": 60.1,
+      "peak_force_N": 266.9,
+      "peak_duration_s": 10,
+      "nominal_Kf_N_per_A": 20.28,
+      "resistance_ohm": 2.4,
+      "inductance_H": 0.00315,
+      "inductance_measurement_Hz": 1000,
+      "motor_constant_calculated_N_per_sqrtW": 13.09068371018107,
+      "motor_constant_published_N_per_sqrtW": 13.09,
+      "force_constant_tolerance_fraction": 0.1,
+      "resistance_tolerance_fraction": 0.125,
+      "inductance_tolerance_fraction": 0.3,
+      "winding_constants_reference": "midstroke, 25°C ambient",
+      "force_rating_conditions": "25°C ambient / 155°C coil; peak 10 seconds.",
+      "moving_coil_assembly_mass_kg": 0.755,
+      "total_mass_kg": 2.4,
+      "moving_mass_exceeds_total_B_kg": 0.15500000000000003,
+      "status": "Fails B=0.6 kg moving assembly provision; efficiency reference only. Integrated position specification does not qualify 1 um sensing."
+    }
+  ],
+  "moving_magnet_negative_reference": {
+    "name": "H2W NCM10-14-028-2BX",
+    "source_keys": [
+      "h2w_negative"
+    ],
+    "stroke_mm": 25.4,
+    "moving_mass_kg": 0.106,
+    "total_mass_kg": 0.375,
+    "continuous_force_N": 12.5,
+    "intermittent_force_N": 37.4,
+    "intermittent_duty_fraction": 0.1,
+    "published_motor_constant_N_per_sqrtW": 4.6,
+    "status": "Light and correct stroke but force/efficiency targets fail; does not establish absence of any custom moving-magnet solution."
+  },
+  "inference_contract": {
+    "motor_constant": "Kf/sqrt(R) calculated from nominal values; not continuous force guarantee.",
+    "copper_heating": "(F/Kf)^2*R at stated center/cold reference; hot R/Kf, cooling and duty must be included.",
+    "rail_headroom": "Vbus - I*R; excludes back EMF, Ldi/dt, amplifier losses and hot resistance.",
+    "continuous_force_curve": "Report labeled continuous force plot only. No exact Kf(x), temperature map or endpoint duration inferred.",
+    "current_response": "L/R is winding passive time constant, not controlled current loop response; peak force does not prove 100 us response.",
+    "mass_partition": "Motor moving mass is part of B; stationary body + mount is part of A/robot payload; do not silently leave A=0.4 kg."
+  },
+  "next_native_checks": [
+    "Integrator-owned real winding simulation with Kf24.4, R6.4, L4mH, A including 1.24kg stationary body + mount, B0.6, S2; 24/36/48V cold/hot.",
+    "Separate matched winding/controller identification from unknown Kf/R/L/response mismatch.",
+    "Inspect actual voltage/current clipping and waveform changes; higher V does not solve continuous I²R heating.",
+    "Characterize usable-stroke force/current/temperature relation, cooling, cable force, guides and sensor assembly mass before prototype qualification."
+  ],
+  "recommendation": "Use approximate envelope in prototype recommendation, with Moticont 240g moving coil as real reference; do not claim a fully qualified catalog motor or exact full-stroke 60N capability."
+}

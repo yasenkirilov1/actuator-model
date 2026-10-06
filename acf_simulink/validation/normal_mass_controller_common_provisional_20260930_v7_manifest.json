@@ -1,0 +1,836 @@
+{
+  "status": "provisional_not_qualified",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/acf_force_control_normal_trial.slx",
+  "modelSha256": "84fb8960b9c679341f6f1f290d2162f6c14db1b0aa8a100899df1f8e36984d56",
+  "sourcePrepare": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_prepare.m",
+  "sourcePrepareSha256": "e927c450dc4d0e1efc74088cf6e78d9e81709153879567fcac71921e09785656",
+  "inputCandidate": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_band_limited_acceleration_feedforward_20260930_v7_finite_candidate.mat",
+  "inputSha256": "b5bb0824fbe55f5e5881223ff9e95dcb171aad6317fd06994591d1e5bae1969a",
+  "candidateFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_common_provisional_20260930_v7_candidate.mat",
+  "parameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 1E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 20,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 1.4,
+      "k1": 6.4E+7,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 0,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": false,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25,
+        "variation": {
+          "enabled": false,
+          "meanTime": 0.1,
+          "varianceTime": 0.02,
+          "rmsLimit_N": 0.08
+        }
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0001,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 29,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 1.4,
+      "distalMass_model_kg": 1.4,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "pi",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 9.81,
+      "keq": 6.4E+7,
+      "ell": 0.00079577471545947678,
+      "q10": 6.266,
+      "q20": -3.5440000000000005,
+      "holdForce": 0.379999999999999,
+      "r0": -1.5625E-7,
+      "u0": -1.5625E-7,
+      "z0": -6.250000000000001E-8,
+      "forceTicks": 10,
+      "sensorTicks": 10,
+      "robotTicks": 1000,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.0060478878374920072,
+      "coilHoldCurrent": 0.018999999999999951,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 0.018999999999999951,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.51247337644537427,
+            0.00831480227248201,
+            0,
+            0,
+            0,
+            -1.5235206986082052E-6,
+            0.00011078140666307597,
+            4.571088720114463E-5,
+            -5.2640097376083586E-9,
+            -9.2164338908850413E-6,
+            -0.0011819640670843565
+          ],
+          [
+            -88.674973352356318,
+            0.512473376445374,
+            0,
+            0,
+            0,
+            -0.00027710929172611353,
+            0.016632788506303738,
+            0.008314802272482014,
+            -1.5226433636527525E-6,
+            0.0033818355642995148,
+            -0.051557269556522789
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.48752662355462617,
+            -0.0016851977275179884,
+            0,
+            0,
+            1,
+            0.0099984764793013946,
+            0.00011078140666307612,
+            -4.2891127988553163E-6,
+            4.996696978270173E-5,
+            5.3687842322416938E-6,
+            0.19920265273353413
+          ],
+          [
+            -88.67497335235629,
+            -0.48752662355462595,
+            0,
+            0,
+            0,
+            0.99972289070827391,
+            0.016632788506303738,
+            -0.0016851977275179866,
+            0.0099901486510042738,
+            0.0036212343530083778,
+            1.6452592124785732
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -1.4499211656188388E-16,
+            4.74642874033023E-15
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.0018924278086261711,
+            -7.184983241560567
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            -7.669040885810174E-8,
+            4.5961702590749207E-5
+          ],
+          [
+            40455.715765027686,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1.3322385792922189,
+            -20.547344446862166
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1.2285847789817761E-5,
+            -0.18377570344170793
+          ]
+        ],
+        "B": [
+          [
+            9.2164338908850413E-6,
+            1.1819640670843563,
+            4.1570663197744548E-5,
+            -7.6176034930410256E-6,
+            -5.2662428984551251E-10
+          ],
+          [
+            -0.0033818355642995148,
+            51.55726955652279,
+            0.011078140666307607,
+            -0.0013855464586305676,
+            -1.5235206986104689E-7
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -5.3687842322416938E-6,
+            -199.20265273353411,
+            4.1570663197744548E-5,
+            -7.6176034930410324E-6,
+            4.9994733757101514E-6
+          ],
+          [
+            -0.0036212343530083778,
+            -1645.2592124785733,
+            0.011078140666307607,
+            -0.0013855464586305672,
+            0.000999847647930139
+          ],
+          [
+            1.4499211656188388E-16,
+            -4.7464287403302292E-12,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.0018924278086261711,
+            7184.983241560567,
+            0,
+            0,
+            0
+          ],
+          [
+            7.669040885810174E-8,
+            -0.045961702590749207,
+            0,
+            0,
+            0
+          ],
+          [
+            1.7001180204636612,
+            20547.344446862167,
+            0,
+            0,
+            0
+          ],
+          [
+            1.2285847789817761E-5,
+            183.77570344170792,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -3.2932579817389735E-8,
+            -5.0786017956071687E-7
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9.3193999225267782E-5,
+            -0.00710660180391671
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            -2.0646732027571975E-8,
+            0.00018326784326214721
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00011524152704188106,
+            0.15539001715800704
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -3.9412943571998473E-16,
+            1.2902130994915419E-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -0.018924278086261712,
+            -71.849832415605675
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -7.6818332779854676E-7,
+            0.00046038369299577554
+          ]
+        ],
+        "D": [
+          [
+            3.2932579817389735E-8,
+            0.00050786017956071683,
+            0,
+            0,
+            0
+          ],
+          [
+            -9.3193999225267782E-5,
+            7.10660180391671,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2.0646732027571975E-8,
+            -0.18326784326214721,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00011524152704188106,
+            -155.39001715800703,
+            0,
+            0,
+            0
+          ],
+          [
+            3.9412943571998473E-16,
+            -1.2902130994915419E-11,
+            0,
+            0,
+            0
+          ],
+          [
+            0.018924278086261712,
+            71849.832415605662,
+            0,
+            0,
+            0
+          ],
+          [
+            7.6818332779854676E-7,
+            -0.46038369299577553,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -58185.304459381194,
+          -821.55923466823992,
+          -0,
+          -0,
+          0,
+          0,
+          -1.6391354168142316,
+          -0.26518634521647211,
+          0
+        ],
+        "integralGain": 2.1188688753700995,
+        "force": [
+          6.4E+7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1.4,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.01250015625,
+      "positionMeasurementInitial": 0.01250015625,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.049639086431114081,
+            5E-9,
+            -5E-9
+          ],
+          [
+            6.1600972542890231,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.95097692329431482,
+            0
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.1600972542890231,
+            0,
+            0
+          ]
+        ]
+      },
+      "currentNotch": {
+        "numerator": [
+          1,
+          0,
+          0
+        ],
+        "denominator": [
+          1,
+          0,
+          0
+        ],
+        "initialStates": [
+          0.018999999999999951,
+          0.018999999999999951
+        ]
+      },
+      "feedbackFilter": {
+        "numerator": [
+          0.050748060497877945,
+          0.10149612099575589,
+          0.050748060497877945
+        ],
+        "denominator": [
+          1,
+          -0.85988893598113159,
+          0.06288117797264331
+        ],
+        "initialStates": [
+          0,
+          0
+        ]
+      },
+      "variationGate": {
+        "meanNumerator": [
+          0.000999500166624978,
+          0
+        ],
+        "meanDenominator": [
+          1,
+          -0.999000499833375
+        ],
+        "varianceNumerator": [
+          0.00498752080731768,
+          0
+        ],
+        "varianceDenominator": [
+          1,
+          -0.99501247919268232
+        ],
+        "dwellSamples": 1001
+      },
+      "accelerationPrediction": {
+        "derivativeNumerator": [
+          2834.6868942621081,
+          -2834.6868942621081
+        ],
+        "derivativeDenominator": [
+          1,
+          -0.71653131057378916
+        ]
+      },
+      "dragRatio": {
+        "memoryWeight": 0.98019867330675525,
+        "inputWeight": 0.019801326693244747
+      },
+      "accelerationFeedforwardFilter": {
+        "numerator": [
+          0.095162581964040482,
+          0
+        ],
+        "denominator": [
+          1,
+          -0.90483741803595952
+        ],
+        "dcGroupDelay_s": 0.00095083319447750441
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 1,
+      "geometryMode": "measured_drag_ratio",
+      "dragRatioFilter_s": 0.005,
+      "dragRatioMinForce_N": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0001,
+      "delay": 0.0001,
+      "noiseRms": 0.0123,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 50,
+      "quantum": 0.00468,
+      "delaySamples": 1,
+      "nominalNoiseRms": 0.0123
+    },
+    "inertial": {
+      "forceKp": 0.06,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1,
+      "guideVelocityPrediction_s": 0.0004,
+      "currentNotch": {
+        "enabled": false,
+        "frequency_Hz": 1643.7451841639995,
+        "zeroDamping": 0.001,
+        "poleDamping": 1
+      },
+      "feedbackFilter": {
+        "enabled": true,
+        "cutoff_Hz": 1000,
+        "damping": 1.5
+      },
+      "accelerationPrediction_s": 0.0012590308651644368,
+      "accelerationDerivativeFilter_s": 0.0003,
+      "accelerationFeedforwardFilter_s": 0.001
+    },
+    "sensorDesign": {
+      "accelerometer": "Two orthogonal ADXL1002 analog axes",
+      "noiseDensity_ug_sqrtHz": 25,
+      "assumedENBW_Hz": 2500,
+      "derivedRMS_m_s2": 0.0122625,
+      "modeledRMS_m_s2": 0.0123,
+      "ADCbits": 18,
+      "ADCvoltageRange_V": [
+        0,
+        5
+      ],
+      "sensitivity_V_g": 0.04,
+      "derivedQuantum_m_s2": 0.004678,
+      "modeledQuantum_m_s2": 0.00468,
+      "commonResponse_s": 0.0001,
+      "commonAcquisitionDelay_s": 0.0001,
+      "forceConditioning": "ATI analog conditioning: intrinsic second-order5.1kHz anti-alias response must be identified and matched, not removed.",
+      "interpretation": "Plausible designed+identified common-response acceptance envelope. Real phase, noise, synchronization and calibration remain prototype acceptance measurements."
+    }
+  },
+  "reason": "Common acceleration-FF shaping preserves nominal64MN/m endpoint passes and improves the independently tested110MN/m endpoint cohort. Full mass/force/orientation grid, long-run, calibration, phase and physical validation remain required.",
+  "endpointEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_band_limited_acceleration_feedforward_20260930_v7_finite_results.json",
+  "structuralEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_structural_cell_rate_pilot_20260930_v7_110M_FF1ms_results.json",
+  "physicalQualification": false,
+  "knownToolMassRequiresPrepare": true,
+  "candidateSha256": "4d71a53144d8224da9686e044ff02cb8feb85826356d4d69e8d99e968948886f",
+  "preparationScriptSha256": "a1fb6ff867045409b7115c3b88d3353a5e18ad8b66f2a274e8faaac5271ca9c2"
+}

@@ -1,0 +1,135 @@
+{
+  "scope": "Runner implementation checks and isolated smoke experiments; these are not final held-out flange qualification recordings.",
+  "checks": {
+    "acceptance_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/acceptance_v1/results.json",
+      "sha256": "a9d21ceebfbdc3f2918b07690e03dc6fb49b77ca5cf62f19a69eaf5596f1e1f4"
+    },
+    "fast_acceptance_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/fast_acceptance_v1/results.json",
+      "sha256": "c218e8c1003e93ebddacdee847f3d27e146613b0d5311c5b8e12f9afd04bb182"
+    },
+    "smoke_v3": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/smoke_v3/results.json",
+      "sha256": "9cde92867ad532e4ee8178bd78b656fc1197ef65d7853a7fee8ec48a0bd0a151"
+    },
+    "es_warmstart_v2": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/es_warmstart_v2/results.json",
+      "sha256": "a88493806f435dd8c5de1e5cf73580f28491e463691317689dc8dcd502171369"
+    },
+    "resume_v3": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/resume_v3/results.json",
+      "sha256": "fa35d677ddbdec3624f123b80fb06b68fc260dc964685bd288aa1ee79e01f4ed"
+    },
+    "cpu_cuda_benchmark_v1": {
+      "status": "complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json",
+      "sha256": "bd904fed5412d7fc92cb56de316bea0955396190dfe9e841236d499542770cb3"
+    },
+    "deadline_v1": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/deadline_v1/results.json",
+      "sha256": "d902b18e0e2c9afde7710941302110608842eda1636b7dd4df070510c18d6510"
+    },
+    "repeat10_v1": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/repeat10_v1/results.json",
+      "sha256": "2648c9d21daebadb3da4586e9b5b1b7a9eadf1c24d7a9d695de8ef5ef8cc829d"
+    },
+    "centering_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/centering_v1/results.json",
+      "sha256": "be5962c3f8b6c581f3fb69f43159664f61cc1dade3b1d92980cd17ceec4aac8b"
+    },
+    "multiscale_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/multiscale_v1/results.json",
+      "sha256": "7c2effdb0c08913c837e81405079e18fe3752b1f3a93932050e1ed6aca920913"
+    },
+    "multiscale_runner_v1": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/multiscale_runner_v1/results.json",
+      "sha256": "4e361556dfb32b6ef058d72bc4585c8bcd92ec84077f8e0f98a78913b55bbf2b"
+    },
+    "band_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/band_v1/results.json",
+      "sha256": "ad3e6278af3dbecff5aa4b4cc401b24ee06291b02dc66b9397d90494ed5625a4"
+    },
+    "band_runner_v1": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/band_runner_v1/results.json",
+      "sha256": "517cf136874b8f284033ff554423f020619d043ce3d11ea341e93c075367020d"
+    },
+    "band_resume_v1": {
+      "status": "training_complete",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/band_resume_v1/results.json",
+      "sha256": "ebb38ab985a026b416d4a8df76a9714ab9ba2606fbac327c9ff616cda6656498"
+    },
+    "running_peak_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/running_peak_v1/results.json",
+      "sha256": "28d670b747b175bacbbe0586a07ddb71b87966cbbb27da4bc325fa8ad4f028eb"
+    },
+    "running_peak_extra_v1": {
+      "status": "passed",
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/running_peak_v1/results_extra.json",
+      "sha256": "68c8d69fcee621db101a90756c0d39e9b3b995966c6f774b9462649f5bd77fb9"
+    }
+  },
+  "currentOwnedSourceHashes": {
+    "train.py": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c",
+    "env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+    "ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940"
+  },
+  "retainedPreparationRejections": [
+    "smoke_v1",
+    "resume_v2"
+  ],
+  "diagnostics": {
+    "credit_diagnostics_v1": {
+      "scope": "Read-only retained training/selection analysis; no additional physical simulation and no held-out records accessed.",
+      "files": {
+        "credit_diagnostics_v1/analyze.py": "602b0d1667e250540f3272e968faf0e1a006a40774a0abc659175e00ca280ad1",
+        "credit_diagnostics_v1/current_innovation_credit.png": "616754d1fd7203cc8e58e5d8ae74bebc9035515b0d0258456cebd50d74a30aee",
+        "credit_diagnostics_v1/current_innovation_credit.svg": "da52071e471152131b0e7b4c8baede5d52018b22bfa2b84c8cdb2f5b0abd6ba1",
+        "credit_diagnostics_v1/plot.py": "b3c2208fa1dad68d0dea6391ff5f851a1c004df18d35e176e76eb365eb3f105b",
+        "credit_diagnostics_v1/results.json": "72d70d7b192620da29d91ead635fea19814098ef46006e1228040b05b05019fd"
+      }
+    },
+    "ppo_diagnostics_v1": {
+      "scope": "Read-only retained training/selection analysis; no additional physical simulation and no held-out records accessed.",
+      "files": {
+        "ppo_diagnostics_v1/README.md": "536d2d3c5c188edfcd6f27505c06dbbebac2b58880a705e1e720765375386f13",
+        "ppo_diagnostics_v1/analyze.py": "e1d5feb53d04ecc648419d535398857cf1b4240adb83d327f5ba41d0388c170f",
+        "ppo_diagnostics_v1/ppo_selection_change.png": "bd6ef0c567d2caa11e0a192df5f67dd1ba4e483d9a4ecd2c7ab63e34313edec4",
+        "ppo_diagnostics_v1/ppo_selection_change.svg": "57cfdd9ef4617a5ca82db0d312650d27a44564b1cc00110dad7caba394af88f2",
+        "ppo_diagnostics_v1/results.json": "4a05b7322a5befa24400f4c3e12bb7b170817edce93a46f9e0012af7508941b3"
+      }
+    },
+    "inverse_replay_v1": {
+      "scope": "Read-only numerical diagnosis of rejected 8404 rollout; 98,304 decisions, zero optimizer updates.",
+      "files": {
+        "inverse_replay_v1/README.md": "f5c17ee84076ebef849bd3c9389d17e7e0856f1df427e93e58264e6bafbebe73",
+        "inverse_replay_v1/analyze.py": "a854828dfd50b39cef855bdb9f3163232d8b75c640f52b8d0422d861e8434ed9",
+        "inverse_replay_v1/results.json": "d9b66129ddef9cc7351a7fd653be40720c4f571a11cbb3662c8de2305bff89ae"
+      }
+    },
+    "ppo_final_ledger_v1": {
+      "scope": "Audited final root PPO attempt counts and repeated selection outcomes; excludes acceptance checks, ES and held-out qualification.",
+      "files": {
+        "ppo_final_ledger_v1/README.md": "850cdfe153a9d53327c7a3b717f05f5d0f5800ef3d5031ef4ec7be4be7a02acc",
+        "ppo_final_ledger_v1/build_ledger.py": "50a032bce3190439837165bdd5af1345a5b12a69956fd160e67e480f99bd333e",
+        "ppo_final_ledger_v1/ledger.json": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946",
+        "ppo_final_ledger_v1/plot.py": "a4f0f05745bbba08db4ce90ca41543d4716f3253b8e7ff804b6750707e16a31c",
+        "ppo_final_ledger_v1/ppo_final_selection_change.png": "25a6159a809576eec676edef81e30c8f1b0beb201587481ad8b526a1c5633db0",
+        "ppo_final_ledger_v1/ppo_final_selection_change.svg": "220ac1c2076bb3aee7d77ff9d699026c5b5506d1ea1abfa97493204c7b91de28"
+      }
+    }
+  }
+}

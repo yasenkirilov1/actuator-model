@@ -1,0 +1,73 @@
+{
+  "status": "reviewed_lower_series_v1_baseline_evidence_pending_final_v8_source",
+  "date": "2026-09-30",
+  "sourceModelSHA256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "qualificationScope": "Baseline nominal-source spring/controller studies, repeated10s/refinement/identified inverse sensitivity. No finalV8 acquisition, actualk/c sensitivity or full-range mesh execution claimed.",
+  "figureVisualReview": "All3PNGfigures inspected; heatmapcaptionandnativeenvelope visibility corrected, outputhashesupdated.",
+  "artifacts": [
+    {
+      "file": "inertial_mechanics_lower_series_summary_20260930.md",
+      "sha256": "f442626b402c7b8ab2a1d0d2adc20e12591f0ebd3f0c7f141d376f6eb5b70c64"
+    },
+    {
+      "file": "inertial_mechanics_lower_series_v1_manifest_20260930.json",
+      "sha256": "aa709c90c038392da7259f45c790da31a8ae9256aaeafcc43a660c0d941c6881"
+    },
+    {
+      "file": "inertial_mechanics_lower_series_v1_candidate_20260930.mat",
+      "sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738"
+    },
+    {
+      "file": "inertial_mechanics_spring_chart_data_20260930.json",
+      "sha256": "8621d86a454739c69d129b27223863567cb7d0732c22c31dfd1003e3bc9af9ec"
+    },
+    {
+      "file": "inertial_mechanics_figure_manifest_20260930.json",
+      "sha256": "63c1ea21fff0b0f71e70deddeb7f7f6eee394abd5020c4982a8496522b589ce9"
+    },
+    {
+      "file": "inertial_mechanics_selected_trace_review_20260930.json",
+      "sha256": "e0df59de9b6e74f25e1f980f46d6d48586e07a4db06d561f6837aace5a864642"
+    },
+    {
+      "file": "inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json",
+      "sha256": "dbfff16f8f5fd1ac306b170cb61ddf262668657897717b4a40166d20d7d1b4fe"
+    },
+    {
+      "file": "inertial_mechanics_lower_spring_refinement_20260930_lower_series_v1_results.json",
+      "sha256": "4d2683947e975c25d32ea278a753947748699ac8b39511c1b8e382c2fbfb1039"
+    },
+    {
+      "file": "inertial_mechanics_lower_spring_identified_sensitivity_20260930_lower_series_v1_pm20_results.json",
+      "sha256": "8170dc850e8d7466a962cd631bdbafbeca26c976cdb15afa3aa2c245986e91a6"
+    },
+    {
+      "file": "inertial_mechanics_actual_sensitivity_plan_20260930.json",
+      "sha256": "33fb710d2fee0a201e29692cda29f68b1cff6b0a4c68c62a8b083f89ae632d0d"
+    },
+    {
+      "file": "inertial_mechanics_spring_tuning_20260930.svg",
+      "sha256": "b9b5f2a556a5121e67bc1713ee2c8df8b1c1f5b9dffe6b041febab8f4ec788eb"
+    },
+    {
+      "file": "inertial_mechanics_spring_tuning_20260930.png",
+      "sha256": "bb7211b61b522abd12f107035f11c908e49af8af333efc4bdbc0161d5e1504c5"
+    },
+    {
+      "file": "inertial_mechanics_selected_repeated_20260930.svg",
+      "sha256": "a2a099cb0748f0dc5362b66d05bf8b93f8a85509b95d72cd4ffa5050019a5251"
+    },
+    {
+      "file": "inertial_mechanics_selected_repeated_20260930.png",
+      "sha256": "a3d4f6ead9ef89168dff1ddd709d7c166b1cb04517be990d64c14df6115ede59"
+    },
+    {
+      "file": "inertial_mechanics_selected_bump_overlay_20260930.svg",
+      "sha256": "3f9983f5d854fb035bdfa91baa843db07ebfd2d60679b8069c7a7f1540e731a2"
+    },
+    {
+      "file": "inertial_mechanics_selected_bump_overlay_20260930.png",
+      "sha256": "15180c3b565c96a80724b7b503525954679ee687fde260b0d366da5ecd9abb47"
+    }
+  ]
+}

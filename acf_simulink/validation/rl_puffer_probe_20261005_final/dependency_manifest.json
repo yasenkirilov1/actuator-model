@@ -1,0 +1,20 @@
+{
+  "puffer_models_path": "/home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/pufferlib/models.py",
+  "puffer_models_sha256": "def01bf10ce48eabe9743a9dfb4d5ad635c214e14b07219e5c929b6ae61afd59",
+  "puffer_distribution": "4.0.0",
+  "direct_url": {
+    "url": "https://github.com/PufferAI/PufferLib.git",
+    "vcs_info": {
+      "vcs": "git",
+      "commit_id": "c5d3c637446047a6efbcaa74c039c5295d201ab0",
+      "requested_revision": "c5d3c637446047a6efbcaa74c039c5295d201ab0"
+    }
+  },
+  "source_hashes": {
+    "policy.py": "f6da6f88c683e2fd7e8949e9747bdbd8522830549fb131cbf65af437ed06743e",
+    "ppo.py": "6cf05950ce40b6d9b5667499b2ba999a9eaf8fd4c85de45b21e05302b2b5075f",
+    "policy_export.py": "2e12dbfc45fa1a4a56f66f888bf7afdd6c8f6fe4483f13d251ba7692f081965d",
+    "policy_checks.py": "5a0cb9d42a8355a1c4ae78f8a069d2d4d9405ae35e4ba45e747599ce0d318643"
+  },
+  "scope": "synthetic architecture and portable-inference checks only; no native physical qualification"
+}

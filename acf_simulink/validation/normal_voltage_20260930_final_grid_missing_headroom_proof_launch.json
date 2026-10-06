@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "script": "/tmp/normal_voltage_missing_headroom_proof_20260930.m",
+  "scriptSha256": "e160b10a69ce1c1b5b042dd5a690e49d08e670b4af97dcc7235438e24f27a8a0",
+  "MATLAB_PREFDIR": "/tmp/acf_missing_headroom_prefs_9dojhknj",
+  "logFile": "/tmp/normal_voltage_missing_headroom_proof_20260930.log",
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_normal_voltage.m",
+  "recipeSha256": "e1c9fc5a34134293d7410b0aad9bdd3ead53995168938d546d7a208ee9dc3b62",
+  "sourceManifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof_source/source_manifest.json",
+  "sourceManifestSha256": "9ecd4d81b7dfa5b944e74dfd341668952e39bc754428a03128d3c24cdd652440",
+  "nativePlanned": 2,
+  "priorGridOrElectricalEvidenceOverwritten": false,
+  "rootAuthorization": "Exact missing global3492 proof: generic24V and identified real-hot31V; full4s native10us; only two cases.",
+  "RAMCoordination": "BW confirms about12GiB available and only one small5us refinement process; uncertainty notified. This lane has one2-thread process only.",
+  "matlabExitCode": 0,
+  "nativeSimulations": 2,
+  "passed": 2,
+  "resultJsonSha256": "e0e0b4ed3c949efae9c81f115974e12087518076d6b55ddd8f3e43970042f9ef",
+  "resultCSVsha256": "a8e417cb77bdd5f444d1c42d793e0cedbb473088b51686a23465c013ae6ccfe4",
+  "auditFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof_summary.json",
+  "auditSha256": "4d034936215a1f72f618c3f8aa12cfed5f8cec3b65e89776af72b137f40ad95d",
+  "cleanup": {
+    "matlabExitCode": 0,
+    "SDILocationAndRecordPreferenceRestored": true,
+    "warning": "MATLAB rejected restoring its preexisting process-local file-generation CacheFolder=/tmp because the system temporary folder is a subfolder. SDI restoration happened first. The isolated process exited; no shared model/cache/preferences changed."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "metric_semantics_overlay_preserves_raw_rows",
+  "fullHistoryFields": [
+    "peakNormalForceError_N",
+    "rmsNormalForceError_N",
+    "nativeSamples",
+    "peakForceTime_s",
+    "signedPeakForceError_N",
+    "voltageClipSamples",
+    "currentLimitSamples",
+    "fullNativePeakCurrent_A",
+    "fullNativePeakVoltage_V"
+  ],
+  "bandAssessmentFields": [
+    "finalBandExcess_m",
+    "bandExcessIntegralUpper_m2_s",
+    "maxAbsoluteTravelError_m",
+    "timeOutsideBandUpper_s"
+  ],
+  "obsoleteHistoricalField": "recenterPassed is the frozen EpisodeEvaluator legacy10percentprogressboolean and is NOTused in thisstudy acceptance. User7.5mmband is assessedwithfinalBandExcess_m andnativeintervalbandexcessmetrics.",
+  "intervalField": "mseNormalForceError_N2 is raw interval n-weighted Cmetric; reportedfullrecordRMSrecomputedoverallNPZnativepointsincludingstartupandterminalsample.",
+  "finalBandExcessAllZero": true,
+  "legacyRecenterFalseRows": 44,
+  "rawEvidenceUnchanged": true
+}

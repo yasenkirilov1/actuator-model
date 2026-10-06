@@ -1,0 +1,23 @@
+{
+  "status": "emitted_cell_sources_live_selected_modal_and_executing_normal_PI_confirmed",
+  "qualificationEpisodes": 0,
+  "nativeCSha256": "92d4282acd7e7df537c67ce521f217996568eb1ee07bfe4a6c30588809e8bc06",
+  "localRawDeviationAssignment": "rtb_Cellerrortodeviation = (acf_rl_native_P.Requestedforce_Value -\n        acf_rl_native_B.Sensorsampledelay) *\n        acf_rl_native_P.Cellerrortodeviation_Gain;",
+  "upperDeviationAssignment": "acf_rl_native_B.Cellforcedeviationfromequilibri = rtb_Cellerrortodeviation\n        + acf_rl_native_P.Cellforcedeviationfromequilibri;",
+  "modalDirectFeedthroughAssignment": "rtb_Currentlimits += acf_rl_native_P.Cellmodalfilter_D*\n          rtb_Cellerrortodeviation;",
+  "modalStateInputCount": 2,
+  "modalAuxiliaryBoundBeforeTotalCurrentLimit": true,
+  "antiwindupUsesTotalPrelimitCurrent": true,
+  "executingNormalForceGains": {
+    "forceKp_A_N": 0.02459016393442623,
+    "forceKi_A_N_s": 16.393442622950822,
+    "forceKd_A_s_N": 0.0,
+    "parameterSource": "p.inertial.forceKp/Ki/Kd"
+  },
+  "localSourceGuardSha256": "82961d538cc2c6d378395ce17fbe65e81309da43c1b2f581e8a8a14aaa6ac7c1",
+  "parentPositiveDampingGuard": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/modal_positive_damping_guard.json",
+    "sha256": "e43a4de83c521af4532d93dad4497cac05106a59f52469c43c5029a00519241e"
+  },
+  "scope": "New emitted-source/graph check plus three source harnesses. Selected coefficients preserve the parent phase guard; no new carrier or force-qualification run inferred."
+}

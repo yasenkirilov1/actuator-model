@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "kind": "frozen_model_assumptions",
+  "rows": [
+    {
+      "preparation": {
+        "status": "native_budget_prepared_no_episodes",
+        "createdContexts": 0,
+        "episodesExecuted": 0,
+        "scenarios": 144,
+        "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+        "configsSha256": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae",
+        "librarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+        "bankCaseZeroMatchesEmittedParameters": true,
+        "parameterFields": 549,
+        "budgetContract": {
+          "referenceRecipe": "acf_simulink/experiments/prepare_budget_sensor_stress_20261002.m",
+          "sensor": "ADXL354C-like\u00b18g",
+          "density_ug_sqrtHz": 33.75,
+          "sensitivity_V_g": 0.1,
+          "fixedReferenceENBW_Hz": 3177.1265617575177,
+          "referenceConditionedAccelerationNoiseRms_m_s2": 0.018655706922592906,
+          "accelerationQuantum_m_s2": 1.4028525352478024e-05,
+          "accelerationAdcNoiseRms_m_s2": 0.0020897931911799373,
+          "sensorRange_g": 8,
+          "adcRange_g": 11.999999999999998,
+          "nominalActualAndIdentifiedCompleteResponseCutoff_Hz": 1900,
+          "extraKnownMatchedCommonLatency_s": 0,
+          "currentResponse_s": 5e-05,
+          "coilKf_N_A": 24.4,
+          "coilR_ohm": 8.896,
+          "coilL_H": 0.004,
+          "usableVoltage_V": 32,
+          "rawNoiseClock_Hz": 300000,
+          "adcRate_Hz": 30000,
+          "controllerRate_Hz": 10000,
+          "qualification": "Parameter/sourcepreparationonly;noepisodesorqualificationexecuted. Exactoldresponse/noise/range/quantizationmodelcontract,includingnativeactualcalibration/timingresiduals. CompleteADXL354internalmechanical/filterphaseisnotrepresentedexactly andassembledchainmustmeetthe1900Hzmatchedresponseenvelope. No waveformfuture/previewinputs."
+        },
+        "splits": {
+          "holdout": 32,
+          "selection": 28,
+          "train": 84
+        }
+      }
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/preparation_acceptance.json": "f2526a960da6b7ea96bd3fe06e5cf8177ca1247c2d46c5949e5e3a9ddf7cc82b"
+  },
+  "caveats": [
+    "This record binds preparation; only completed final results establish finite simulation outcomes."
+  ]
+}

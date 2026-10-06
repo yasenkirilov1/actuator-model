@@ -1,0 +1,6 @@
+### Result
+Network is now offline
+### Ran Playwright code
+```js
+await page.context().setOffline(true);
+```

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "study": "pad5mm_user_geometry_extension",
+  "status": "declared_before_extension_runs",
+  "base_contract": "acf_simulink/experiments/sea_pad_dynamic_20261006/study_contract.json",
+  "base_contract_sha256": "c2077261ffff69e10682ea524577eb669d2f47641e02154358043ba3dc3e26b6",
+  "user_geometry": {
+    "source_url": "https://www.mirka.com/nl-nl/p/Interface-77---6-GRIP/?variant=94118",
+    "verified_alternate_official_url": "https://www.mirka.com/cs-CZ/p/Interface-77---6-GRIP/?variant=94118",
+    "manufacturer_product_family": "Interface77mm6holesGrip",
+    "diameter_m": 0.077,
+    "thickness_m": 0.005,
+    "verified_description": "Manufacturer describes77mm interface5mmthick; no stiffness/damping specification is claimed."
+  },
+  "pad": {
+    "nominal_whole_pad_k_N_m": 50000,
+    "material_damping_N_s_m": 0,
+    "stiffness_status": "representative unmeasured engineering target; not a Mirka specification",
+    "working_compression_limit_m": 0.0025,
+    "guard_status": "50% thickness linear-material validity assumption, not manufacturer bottoming threshold",
+    "footprint": "61 area-weighted strips, ideal full circular support; no resolved extraction holes",
+    "low_stiffness_diagnostic_k_N_m": 20000
+  },
+  "controllers": "Freeze prior conservative coil/SEA gain values; change pad properties without retuning; no preview or future motion; sensing unchanged.",
+  "planned_cases": {
+    "nominal_grid_per_actuator": 54,
+    "nominal_axes": {
+      "S_kg": [
+        0.1,
+        1.4,
+        2
+      ],
+      "force_N": [
+        5,
+        20,
+        50
+      ],
+      "orientation_deg": [
+        0,
+        45,
+        90
+      ],
+      "fresh_noise_seeds": [
+        260651,
+        260652
+      ]
+    },
+    "point_matched_corner_runs_per_actuator": 8,
+    "low_stiffness_guard_corners_per_actuator": 4,
+    "native_selected_replays": 2
+  },
+  "scope": "Same reduced axial total-force scope;2s loaded-equilibrium robot-fixed diagnostics. No local pressure metrics; no new full normal-force qualification.",
+  "preservation": "All10mm results remain separately versioned. Original contract/models/helpers remain frozen.",
+  "storage_forecast": "acf_simulink/validation/sea_pad_dynamic_20261006/storage_forecast.json",
+  "storage_forecast_sha256": "5a12862669d01b78fe07f061dddc014baebccfcdabaaac379145d66c92a8e017",
+  "storage": "Same32MiB retained studycap:16MiBengine10MiBnative6MiBroot/assumptions. Compact streamedmetrics, two compressed1kHz selectedtraces, native500Hz traces; no bulk arrays."
+}

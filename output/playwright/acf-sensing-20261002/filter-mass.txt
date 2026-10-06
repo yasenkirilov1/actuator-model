@@ -1,0 +1,9 @@
+### Ran Playwright code
+```js
+await page.getByLabel('Tool S All masses0.1 kg0.5').selectOption('2');
+```
+### Page
+- Page URL: http://127.0.0.1:8772/?view=1
+- Page Title: Active contact flange: control and prototype design
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-10-02T19-06-38-031Z.yml)

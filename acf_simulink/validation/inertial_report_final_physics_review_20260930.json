@@ -1,0 +1,19 @@
+{
+  "status": "pass_final_read_only_review",
+  "reviewer": "normal_force_physics",
+  "report": "reports/active-contact-flange-report.md",
+  "reportSha256": "f05566c2f80e36934ceb89d048fb6a4954af930e1197cf15d7109dc258a3678e",
+  "scope": "Completed finite nominal qualification, paired calibration and mechanics, seven-history conditional voltage mapping, realistic sensing and concrete recommendation. The stale Working sentence was replaced after review with the supported results.",
+  "checks": {
+    "fortyMixedArtifactHashes": true,
+    "sevenVoltageHistoriesAndRecipeHashes": true,
+    "sixteenStaticResidualGuards": true,
+    "quietOffsetAndTransientInterpretation": true,
+    "figuresReadableAndSourceBound": true,
+    "conditional32VScope": true,
+    "assembledMeasurementTargets": true,
+    "physicalPrototypeLimitations": true,
+    "referenceUncertaintyIncludedInBenchTarget": true,
+    "noFullContinuousBoxClaim": true
+  }
+}

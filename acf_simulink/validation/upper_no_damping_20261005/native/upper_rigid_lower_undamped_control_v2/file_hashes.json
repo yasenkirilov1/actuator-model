@@ -1,0 +1,204 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "createdEpisodes": 0,
+  "design": "upper_rigid_lower_undamped",
+  "caseCount": 132,
+  "nativeBankCase0MatchesCoder": true,
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "433a9f7911d76dc316197a6363405581c71965c41f40ce3d200b995fe83fda4d",
+  "sharedLibrarySha256": "3e20dcc1306bd53a286df91457878841e57c5a562f63c81e4f817b7892856cbf",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/acf_rl_native.slx",
+      "sha256": "a3150e062eeafde0f9705f6e33531e1c06909a0de69915e90a1ae43a1deca361"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/metadata.json",
+      "sha256": "06d8d4e91097c74af0e56ceb2edde0966be6e795d67a31ec4c0518b3232eaa95"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/prepared_configs.mat",
+      "sha256": "943ee33bb9ad724fce58288f414a2be2820cca62013e7cd4c0966ed2d5860f97"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/native_parameter_bank.c",
+      "sha256": "bf19dafe86fa938d9fd2c15cd208fc5e113d1cf97a19a35462d13d40ca6e4cc6"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/parameter_mapping.json",
+      "sha256": "594a86edffe3add411ccb8ca43002b6da57c4ddd78ab4be02fd03f1e49b9dae7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/parameter_mapping.mat",
+      "sha256": "580c61b073c1bc0d64c731d2e565882846bf5a258bec8a1f8b29c7b0c8c869a8"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/scenarios.json",
+      "sha256": "c528f380c6a1c287f002693e4f85876653849c2eb0430441fa6754195c8eb108"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/libacf_native.so",
+      "sha256": "3e20dcc1306bd53a286df91457878841e57c5a562f63c81e4f817b7892856cbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/bridge_build.json",
+      "sha256": "3a63424b487fcc51c3d3be71f90245a101187083b1983ac663bfdc2344fc483e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/acf_rl_native_context.c",
+      "sha256": "5adafe42eb78b1387d75f0c5e6eafff9ae82cc3e213fb608a99c9c178dcdb316"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/native_bank_aux.h",
+      "sha256": "9ca3f1ebd45ad84000ba3425db5ee030c7a7a84bf3eec44b7a6adf0ec545ca62"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/upper_rigid_lower_undamped_control_v2/configs.mat",
+      "sha256": "433a9f7911d76dc316197a6363405581c71965c41f40ce3d200b995fe83fda4d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/upper_rigid_lower_undamped_control_v2/manifest.json",
+      "sha256": "7c907145bf38a7d24cedbdf1e03e79fb8f1ab663a02c4a0fa9a25cb81f117408"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_prepare.m",
+      "sha256": "add113a661f85b7024b362021da53dfcadefd4a18168fffc14dc2936e51ef56e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_prepare_upper_observer.m",
+      "sha256": "859ca117afef6aa09ef0623722b1b96cd2bc93e443fef4a875601cc2f6c0b36c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "1128f86438793a2febebc5ec3a0a912bdb62db7949a667dec3f88cdb685b28ca"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "sha256": "b655d659400c5d45ca6eb56714bcf849faed68b19cbf354257bc12582ae8c961"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "sha256": "15cd442eec9586c5558214149d04ce20625e28a030b33a6163d1485f4c0956fb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "sha256": "b9514e947e8a7e4dcb9f94ccf6062cde9f50a1d6073370a8e9e53668302c3eaa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "sha256": "8a58cab9dc0c36468d645b355972da98fff4069d5174100cc422d4a6d439b149"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "sha256": "026f8e26c10bf523dba63143125e1f9fd597a074116d9d19527a16bda620ad56"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "sha256": "dad31a2650aa4ff86f8d62ca741062d44564985987dee786a776a42be99ce819"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "sha256": "dc88c581af3d708f6c772abeb00e6ea09b812fcbc71ce9695cce57ae1b1940de"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "sha256": "50ab027b5f7b9c41037a82bce868af12d04695e8519aa9a633e0ae683d6aa6dc"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "sha256": "ae9001d34f8352085bea28148eeb65ffbdcba51257baceca691c5fe86d4fd723"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "sha256": "ee52a84e3c1ee4aa6fe4dacdddde08354a7512ec10869b3b012ecfb5ad88ff85"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "sha256": "dc3d4c70540d7da0dbd04905eed05b21884eec9c1fa7c42288ec4174ae9459c6"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_api.py",
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_bridge.c",
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/build_native.m",
+      "sha256": "c7ef352790e72e1f73f195dd13f263618229413b97b6c1550f9ccc525b1e09da"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/install_upper_observer_v3.m",
+      "sha256": "78b17c3f40a45ee39ec350432568b6c3497fc2847cdf8fee33c546d93c966943"
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "status": "completed_post_review_assessment_strict_replay_guards_remain_failed",
+  "completed": true,
+  "scope": "Read-only source/coefficient audit and post-processing of retained independent MATLAB replays for qualification cases 673 and 728. This assessment adds no simulations, qualification episodes or controller tuning.",
+  "controllerRetuned": false,
+  "qualificationEpisodesAdded": 0,
+  "originalStrictResultFlagsModified": false,
+  "originalStrictReplayGuard": {
+    "recipePath": "acf_simulink/experiments/upper_no_damping_20261005/replay_mechanical_native.m",
+    "recipeSha256": "429d33de20ed26c315dfcaf7051f61522d9a4dc8e6799889d2be960ed0689419",
+    "predicate": "sameSampleCount && maximumTimeDifference_s < 1e-12 && allTruthMaximumDifference < 1e-8 && algebraicLoopCount == 0",
+    "thresholdChanged": false,
+    "strictNumericalReplayPassed": false,
+    "bothOriginalResultsRemainFailed": true,
+    "allTruthDifferenceIncludesMixedPhysicalUnits": true,
+    "allTruthDifferenceIsNotAForceError_N": true
+  },
+  "provenance": {
+    "configsPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat",
+    "configsSha256": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+    "nativeModelPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx",
+    "nativeModelSha256": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+    "sourceAndParameterBindings": [
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.json",
+        "sha256": "9f1efd2b6fc2ad1141ae5388c05a8de569312ffcb3532ebf09ecd527f041a4ad"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.mat",
+        "sha256": "e9bc8263b3ca4081c3bde1afcd8a695ad058e315244fa87bd4c31ddfd73a6b6c"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/native_parameter_bank.c",
+        "sha256": "2f19884f9e8d07399737f05b65d6732f41d6082dc8bf8d87de2adbdde7d2e48a"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+        "sha256": "92d4282acd7e7df537c67ce521f217996568eb1ee07bfe4a6c30588809e8bc06"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/libacf_native.so",
+        "sha256": "fbfe637c4787e1fa316f90d79d602dc9f17bfb9a56cb291d86f8defb3a78cf3e"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json",
+        "sha256": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json",
+        "sha256": "f61df543c4edf48754c04599023fc003bec2e498b67e7db8abbebe1ab82024bd"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_replay.json",
+        "sha256": "22bfa2ddb2a9fb82cd6fa8a7ef3110a0ccfbff0c29827979e70dd526ce900f89"
+      },
+      {
+        "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/solver_refinement/selected_development_worst_170/deterministic_refinement.json",
+        "sha256": "7690678eb4c20c363706b2bf3b3aab17f52389d4a8de0fece32659be314eeb02"
+      },
+      {
+        "path": "acf_simulink/experiments/upper_no_damping_20261005/replay_mechanical_native.m",
+        "sha256": "429d33de20ed26c315dfcaf7051f61522d9a4dc8e6799889d2be960ed0689419"
+      }
+    ],
+    "qualificationSourceScenario": 172,
+    "selectedFamily": 8,
+    "executingNormalForceControllerFields": [
+      "p.inertial.forceKp",
+      "p.inertial.forceKi",
+      "p.inertial.forceKd"
+    ],
+    "executingNormalForceControllerGains": {
+      "forceKp_A_N": 0.02459016393442623,
+      "forceKi_A_N_s": 16.393442622950822,
+      "forceKd_A_s_N": 0
+    },
+    "frozenNativeBytesModified": false,
+    "inheritedMetadataDescriptorCorrectionPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json",
+    "descriptorCorrectionDoesNotChangeExecutingParameters": true
+  },
+  "independentReadOnlyReview": {
+    "reviewer": "/root/upper_spring_native_contract",
+    "reviewDate": "2026-10-05",
+    "result": "No concrete source, selection, preparation or parameter-mapping mismatch found. Strict replay failures remain failures; their numerical cause is unresolved.",
+    "reviewScopeZeroBasedCases": [
+      0,
+      673,
+      728
+    ],
+    "independentlyEvaluatedEmittedExpressionsPerCase": 576,
+    "exactPreparedExpressionToExportedCoefficientMatchesPerCase": 576,
+    "exactExportedCoefficientToEmittedCMatchesPerCase": 576,
+    "scalarAndArrayCountsMatch": true,
+    "sparseIndexArraysChecked": 78,
+    "sparseIndexArraysIdenticalToCompiledCase0": true,
+    "compressedDiscreteStateSpaceNonzeroMasksChecked": 19,
+    "compressedDiscreteStateSpaceNonzeroMasksIdenticalToCompiledCase0": true,
+    "adaptedCComputationMatchesOriginalEmittedCExactlyAfterRemovingPrivateStorageBindingsAndOutputHook": true,
+    "adaptedCPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native_context.c",
+    "adaptedCSha256": "5eb92796bcaa226e89f17d51636cbbc8854366d96a9f9517a67b29c1101c76dc",
+    "solver": "ode4",
+    "nativeBankAuxiliarySeedsMatchReplaySeeds": true,
+    "replaySeedOverrideDelta": 0,
+    "originalRecordedExternalInputBaselineSelectorExactlyOneThroughoutBothRecordings": true,
+    "activeMappingFieldsMATandJSONMatch": true,
+    "savedSLXHashesAllIdentical": true,
+    "bankAndReplaySeedsMatch": {
+      "scenario673": 730673,
+      "scenario728": 740028
+    },
+    "solverStep_s": 0.0000033333333333333333,
+    "controlSampleTime_s": 0.0001,
+    "liveNormalForceKp_A_N": 0.02459016393442623,
+    "liveNormalForceKi_A_N_s": 16.393442622950822,
+    "emittedNormalForceGainsHaveExpectedNegativeSign": true,
+    "emittedAntiWindupCoefficient": -1.8299999999999998,
+    "selectedModalABCDandInitialStateExactAcrossAllThreeCases": true,
+    "filesMutatedByReviewer": false,
+    "simulationsRunByReviewer": 0,
+    "numericalCauseEstablished": false,
+    "auditDelivery": "Reviewer findings were delivered as a read-only collaboration message and persisted here; the reviewer did not write to the owned evidence directory."
+  },
+  "numericalReassessment": {
+    "method": "SciPy loaded the retained C-input MAT and independent MATLAB full-history MAT. NumPy recomputed every point and all 27 channel maxima, asserting exact equality with each original strict-result JSON and exact timestamp equality. Hashes bind both histories and unchanged original failed result files.",
+    "results": [
+      {
+        "scenario": 673,
+        "independentInputSha256": "aa8fa98ddbf8210897f0a99efaba054ba9967e0748e97848b16584d47f8f25f2",
+        "matlabFullHistorySha256": "b11a233c06679ee2da7974ab6388b7eeed5dcf7541f1c5c25a3629fac8fec56a",
+        "originalStrictResultSha256": "b11a2147c552e9367e009dd302c3f15aad026755b276ffa7f23a8c7dc958c7bb",
+        "sourceRecordingSha256": "8d87e503b946a4858e85aeb3ac039ec5a32dbc45161c2659e72921d6aa5baa45",
+        "sampleCount": 600001,
+        "exactTimes": true,
+        "all27PerChannelMaximumDifference": [
+          0.000016659169766342075,
+          0.000016659169766342075,
+          4.1170106733490197e-10,
+          4.8865285076984954e-8,
+          0.0001152506068073933,
+          4.117144749719902e-10,
+          2.6029952766668665e-13,
+          0,
+          4.718261681986753e-8,
+          3.2371922306018077e-9,
+          0,
+          0.0000308642431861017,
+          0.00008892722976661105,
+          0.000046676693413516546,
+          0.0000010252844734326416,
+          0.00009152939569467833,
+          0,
+          0.00006140592824621649,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.000016659169769894788,
+          0.000008266822160596377,
+          0
+        ],
+        "maximumNormalForceWaveformDifference_N": 0.000016659169766342075,
+        "normalWaveformMaximumDifferenceTime_s": 1.6915033333333334,
+        "all27MaximumDifference": 0.0001152506068073933,
+        "all27MaximumDifferenceChannelOneBased": 5,
+        "normalPeakSignedDifference_N": -5.870114136996563e-7,
+        "cPeakTime_s": 1.00051,
+        "matlabPeakTime_s": 1.00051,
+        "originalStrictResultPassed": false,
+        "forceQualificationPassC": false,
+        "forceQualificationPassMATLAB": false,
+        "firstNormalDifferenceOverThreshold_s": {
+          "1e-12": 0.3183533333333333,
+          "1e-10": 0.49844333333333335,
+          "1e-08": 0.6768433333333334,
+          "1e-06": 0.6913333333333334,
+          "1e-05": 1.36518
+        },
+        "windows": [
+          {
+            "start_s": 0,
+            "end_s": 0.01,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 7.105427357601002e-15,
+            "maxAll27Difference": 8.298917109073045e-15
+          },
+          {
+            "start_s": 0.01,
+            "end_s": 0.1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 1.4210854715202004e-14,
+            "maxAll27Difference": 3.4638958368304884e-14
+          },
+          {
+            "start_s": 0.1,
+            "end_s": 0.5,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 1.0870593314393773e-10,
+            "maxAll27Difference": 1.487405372480044e-10
+          },
+          {
+            "start_s": 0.5,
+            "end_s": 1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000006394649453511647,
+            "maxAll27Difference": 0.00002062747926934172
+          },
+          {
+            "start_s": 1,
+            "end_s": 1.01,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00000365608370600512,
+            "maxAll27Difference": 0.000018406040986462813
+          },
+          {
+            "start_s": 1.01,
+            "end_s": 1.1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.0000062631631720933,
+            "maxAll27Difference": 0.00002372538327932716
+          },
+          {
+            "start_s": 1.1,
+            "end_s": 1.2,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000006756591311329885,
+            "maxAll27Difference": 0.000042906559480471174
+          },
+          {
+            "start_s": 1.2,
+            "end_s": 1.5,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000011565169536709163,
+            "maxAll27Difference": 0.00007351976090497203
+          },
+          {
+            "start_s": 1.5,
+            "end_s": 2,
+            "endInclusive": true,
+            "maxNormalForceDifference_N": 0.000016659169766342075,
+            "maxAll27Difference": 0.0001152506068073933
+          }
+        ],
+        "originalStrictResultPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_replay.json",
+        "independentInputPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_673.mat",
+        "matlabFullHistoryPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_673/native_recording.mat",
+        "nativeSourceRecordingPath": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_nominal700/case_0673/native_history.npz",
+        "seed": 730673,
+        "nativeNormalPeak_N": 0.5804660734935752,
+        "cNormalPeak_N": 0.5804666605049889,
+        "maximumTimeDifference_s": 0,
+        "algebraicLoopCount": 0,
+        "nativeContactLost": false,
+        "nativeTravelStop": false,
+        "strictNumericalReplayPassed": false,
+        "forceFailureIndependentlyReproduced": true
+      },
+      {
+        "scenario": 728,
+        "independentInputSha256": "9e1d7e0c969554d5f2e2b36cc272563878ab84f772865b0f2a4714738b1a62d2",
+        "matlabFullHistorySha256": "4e060ca96f439dd5832aa1e20bed13f3d86105be99dc8bc4ceb923fed9bf6d5a",
+        "originalStrictResultSha256": "2cdb6cb7dbf2d443e925133222343dc6b825b5aeed48363c3e7529f541cfcc2b",
+        "sourceRecordingSha256": "c420e3819832c8c24c82937511d0472f421f2eb9752fe92d0884fec3c66174ff",
+        "sampleCount": 1800001,
+        "exactTimes": true,
+        "all27PerChannelMaximumDifference": [
+          0.000030501870440957646,
+          0.00003021869917319009,
+          4.030970487955976e-10,
+          4.5547212459973174e-8,
+          0.00011131670860464737,
+          4.0302695165569946e-10,
+          4.72167174675746e-13,
+          0,
+          4.486666810299411e-8,
+          4.461924421519242e-9,
+          0,
+          0.000028706036680148372,
+          0.00008629457251885242,
+          0.000042901302990117074,
+          9.682313484304927e-7,
+          0.00008550951777763771,
+          0,
+          0.00005723631522869255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.00003021869917319009,
+          0.000008107451044736536,
+          0
+        ],
+        "maximumNormalForceWaveformDifference_N": 0.000030501870440957646,
+        "normalWaveformMaximumDifferenceTime_s": 1.3992833333333334,
+        "all27MaximumDifference": 0.00011131670860464737,
+        "all27MaximumDifferenceChannelOneBased": 5,
+        "normalPeakSignedDifference_N": -0.000003103750998434407,
+        "cPeakTime_s": 5.048713333333334,
+        "matlabPeakTime_s": 5.048713333333334,
+        "originalStrictResultPassed": false,
+        "forceQualificationPassC": false,
+        "forceQualificationPassMATLAB": false,
+        "firstNormalDifferenceOverThreshold_s": {
+          "1e-12": 0.14153,
+          "1e-10": 0.22744666666666666,
+          "1e-08": 0.31139,
+          "1e-06": 0.31277666666666665,
+          "1e-05": 1.39863
+        },
+        "windows": [
+          {
+            "start_s": 0,
+            "end_s": 0.01,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 7.105427357601002e-15,
+            "maxAll27Difference": 3.316791286067655e-14
+          },
+          {
+            "start_s": 0.01,
+            "end_s": 0.1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 2.1316282072803006e-13,
+            "maxAll27Difference": 3.481659405224491e-13
+          },
+          {
+            "start_s": 0.1,
+            "end_s": 0.5,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000006996287183369532,
+            "maxAll27Difference": 0.00001557526271156462
+          },
+          {
+            "start_s": 0.5,
+            "end_s": 1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00000766020828280034,
+            "maxAll27Difference": 0.00002008014543930514
+          },
+          {
+            "start_s": 1,
+            "end_s": 1.01,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00000430033891518633,
+            "maxAll27Difference": 0.00001528877056886785
+          },
+          {
+            "start_s": 1.01,
+            "end_s": 1.1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000005164038753946443,
+            "maxAll27Difference": 0.00002354536914661587
+          },
+          {
+            "start_s": 1.1,
+            "end_s": 1.2,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000007258184304248516,
+            "maxAll27Difference": 0.000037674674977061784
+          },
+          {
+            "start_s": 1.2,
+            "end_s": 1.5,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000030501870440957646,
+            "maxAll27Difference": 0.00007910814591838289
+          },
+          {
+            "start_s": 1.5,
+            "end_s": 2,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00001837834030737895,
+            "maxAll27Difference": 0.00011131670860464737
+          },
+          {
+            "start_s": 2,
+            "end_s": 3,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00001521052521979982,
+            "maxAll27Difference": 0.00010514319269461225
+          },
+          {
+            "start_s": 3,
+            "end_s": 4,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000012380815014978452,
+            "maxAll27Difference": 0.00005756902881870474
+          },
+          {
+            "start_s": 4,
+            "end_s": 5,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.000008603872373669219,
+            "maxAll27Difference": 0.00006744775991762708
+          },
+          {
+            "start_s": 5,
+            "end_s": 5.1,
+            "endInclusive": false,
+            "maxNormalForceDifference_N": 0.00000655643713542986,
+            "maxAll27Difference": 0.000051705516568745225
+          },
+          {
+            "start_s": 5.1,
+            "end_s": 6,
+            "endInclusive": true,
+            "maxNormalForceDifference_N": 0.000008501229153523582,
+            "maxAll27Difference": 0.00005215706746497517
+          }
+        ],
+        "originalStrictResultPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_replay.json",
+        "independentInputPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/independent_inputs/qualification_worst_728.mat",
+        "matlabFullHistoryPath": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/qualification_worst_728/native_recording.mat",
+        "nativeSourceRecordingPath": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_fresh32/case_0728/native_history.npz",
+        "seed": 740028,
+        "nativeNormalPeak_N": 3.948368885727689,
+        "cNormalPeak_N": 3.9483719894786873,
+        "maximumTimeDifference_s": 0,
+        "algebraicLoopCount": 0,
+        "nativeContactLost": false,
+        "nativeTravelStop": false,
+        "strictNumericalReplayPassed": false,
+        "forceFailureIndependentlyReproduced": true
+      }
+    ],
+    "maximumNormalForceWaveformDifferenceAcrossCases_N": 0.000030501870440957646,
+    "normalForceFailuresReproducedInBothCases": true,
+    "forcePeakTimesExactlyEqualInBothCases": true,
+    "fullStrictNumericalParityEstablished": false,
+    "observedOnset": "Initial force differences are at rounding scale. Differences exceed 1e-8 N before the first bump in both recordings; case 673 at 0.6768433333333334 s and case 728 at 0.31139 s.",
+    "hypothesis": {
+      "description": "Small floating-point trajectory differences interacting with quantization or sampled feedback may explain the later microscopic differences.",
+      "status": "Inference only. No targeted isolation experiment established this numerical cause.",
+      "sourceOrParameterMismatchFound": false
+    }
+  },
+  "separateRetainedVerification": {
+    "selectedDevelopmentWorstStrictReplay": {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/matlab_parity/selected_development_worst_170/native_replay.json",
+      "sha256": "22bfa2ddb2a9fb82cd6fa8a7ef3110a0ccfbff0c29827979e70dd526ce900f89",
+      "zeroBasedSourceScenario": 170,
+      "originalStrictGuardPassed": true,
+      "all27MaximumDifference": 6.247296013839332e-10,
+      "relevance": "One selected development recording passes the original strict replay guard. This does not override the two failed fresh-worst replay guards."
+    },
+    "selectedDevelopmentWorstSolverRefinement": {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/solver_refinement/selected_development_worst_170/deterministic_refinement.json",
+      "sha256": "7690678eb4c20c363706b2bf3b3aab17f52389d4a8de0fece32659be314eeb02",
+      "refinedPhysicalStep_s": 0.0000016666666666666667,
+      "noiseAndAcquisitionAndControlClocksUnchanged": true,
+      "coarseNormalPeak_N": 0.495250233524442,
+      "refinedNormalPeak_N": 0.49526683204249267,
+      "relevance": "Solver refinement is separate evidence for the selected development recording, not a strict-parity pass for cases 673 or 728."
+    }
+  },
+  "conclusion": {
+    "sourceAndParameterAuditPassed": true,
+    "numericalCauseResolved": false,
+    "strictNumericalReplayPassed": false,
+    "normalForceEngineeringFailuresIndependentlyReproduced": true,
+    "forceAgreementDescription": "Both independent MATLAB recordings reproduce the corresponding force failure and force-peak time; the largest pointwise force waveform difference is 30.501870440957646 microNewtons.",
+    "qualificationCohortResultsChanged": false,
+    "qualificationCohortResultsPath": "acf_simulink/validation/upper_no_damping_20261005/report/fixed_qualification_results.json",
+    "limit": "Full strict MATLAB/C numerical equivalence is not established for the two worst qualification replays. Preserve the failed checks and do not turn this post-review assessment into a qualification pass."
+  }
+}

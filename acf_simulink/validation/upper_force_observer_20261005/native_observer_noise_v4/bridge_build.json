@@ -1,0 +1,33 @@
+{
+  "emitted_c_sha256": "3da840cd469d851696c031e6a571956f1ae8a3580678ebc67d885eda1e1e66ae",
+  "adapted_c_sha256": "46b5fe48a4e0410d99a2dc45bea73a3c7341b02090b0df4386ee749fbdd8c848",
+  "bridge_sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+  "parameter_bank_sha256": "2d4a79e3fde6a8b563e42aec766d68a9e7d2560730ef609020f6dc3a01a04233",
+  "shared_library_sha256": "60959c5093423bbbb6495c9bf2dcba678ab62e583eab4a13a995c347b4ac2f70",
+  "native_computation_recovered_exactly": true,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fopenmp",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/code/acf_rl_native_grt_rtw",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/native_bridge.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/native_parameter_bank.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+    "-lm",
+    "-pthread",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/libacf_native.so"
+  ],
+  "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+}

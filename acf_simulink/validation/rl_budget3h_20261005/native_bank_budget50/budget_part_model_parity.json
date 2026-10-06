@@ -1,0 +1,195 @@
+{
+  "status": "budget_part_model_parity_passed",
+  "records": [
+    {
+      "newScenario": 60,
+      "retainedHotCaseIndex": 3,
+      "fields": {
+        "accel.range_g": true,
+        "accel.noiseRms": true,
+        "accel.nominalNoiseRms": true,
+        "accel.quantum": true,
+        "adcStudy.fineClock_s": true,
+        "adcStudy.outputRate_Hz": true,
+        "adcStudy.converter": true,
+        "adcStudy.modulatorRate_Hz": true,
+        "adcStudy.analogCutoff_Hz": true,
+        "adcStudy.identifiedAnalogCutoff_Hz": true,
+        "adcStudy.converterAnalogOrder": true,
+        "adcStudy.emaTime_s": true,
+        "adcStudy.identifiedEmaTime_s": true,
+        "adcStudy.pipelineDelay_s": true,
+        "adcStudy.identifiedPipelineDelay_s": true,
+        "adcStudy.forceQuantum_N": true,
+        "adcStudy.accelerationQuantum_m_s2": true,
+        "adcStudy.forceAdcNoiseRms_N": true,
+        "adcStudy.accelerationAdcNoiseRms_m_s2": true,
+        "adcStudy.forceAdcRange_N": true,
+        "adcStudy.accelerationAdcRange_g": true,
+        "adcStudy.adcNoiseCorrelationTime_s": true,
+        "adcStudy.accelerationExtraDelay_s": true
+      }
+    },
+    {
+      "newScenario": 61,
+      "retainedHotCaseIndex": 5,
+      "fields": {
+        "accel.range_g": true,
+        "accel.noiseRms": true,
+        "accel.nominalNoiseRms": true,
+        "accel.quantum": true,
+        "adcStudy.fineClock_s": true,
+        "adcStudy.outputRate_Hz": true,
+        "adcStudy.converter": true,
+        "adcStudy.modulatorRate_Hz": true,
+        "adcStudy.analogCutoff_Hz": true,
+        "adcStudy.identifiedAnalogCutoff_Hz": true,
+        "adcStudy.converterAnalogOrder": true,
+        "adcStudy.emaTime_s": true,
+        "adcStudy.identifiedEmaTime_s": true,
+        "adcStudy.pipelineDelay_s": true,
+        "adcStudy.identifiedPipelineDelay_s": true,
+        "adcStudy.forceQuantum_N": true,
+        "adcStudy.accelerationQuantum_m_s2": true,
+        "adcStudy.forceAdcNoiseRms_N": true,
+        "adcStudy.accelerationAdcNoiseRms_m_s2": true,
+        "adcStudy.forceAdcRange_N": true,
+        "adcStudy.accelerationAdcRange_g": true,
+        "adcStudy.adcNoiseCorrelationTime_s": true,
+        "adcStudy.accelerationExtraDelay_s": true
+      }
+    },
+    {
+      "newScenario": 62,
+      "retainedHotCaseIndex": 7,
+      "fields": {
+        "accel.range_g": true,
+        "accel.noiseRms": true,
+        "accel.nominalNoiseRms": true,
+        "accel.quantum": true,
+        "adcStudy.fineClock_s": true,
+        "adcStudy.outputRate_Hz": true,
+        "adcStudy.converter": true,
+        "adcStudy.modulatorRate_Hz": true,
+        "adcStudy.analogCutoff_Hz": true,
+        "adcStudy.identifiedAnalogCutoff_Hz": true,
+        "adcStudy.converterAnalogOrder": true,
+        "adcStudy.emaTime_s": true,
+        "adcStudy.identifiedEmaTime_s": true,
+        "adcStudy.pipelineDelay_s": true,
+        "adcStudy.identifiedPipelineDelay_s": true,
+        "adcStudy.forceQuantum_N": true,
+        "adcStudy.accelerationQuantum_m_s2": true,
+        "adcStudy.forceAdcNoiseRms_N": true,
+        "adcStudy.accelerationAdcNoiseRms_m_s2": true,
+        "adcStudy.forceAdcRange_N": true,
+        "adcStudy.accelerationAdcRange_g": true,
+        "adcStudy.adcNoiseCorrelationTime_s": true,
+        "adcStudy.accelerationExtraDelay_s": true
+      }
+    },
+    {
+      "newScenario": 63,
+      "retainedHotCaseIndex": 2,
+      "fields": {
+        "accel.range_g": true,
+        "accel.noiseRms": true,
+        "accel.nominalNoiseRms": true,
+        "accel.quantum": true,
+        "adcStudy.fineClock_s": true,
+        "adcStudy.outputRate_Hz": true,
+        "adcStudy.converter": true,
+        "adcStudy.modulatorRate_Hz": true,
+        "adcStudy.analogCutoff_Hz": true,
+        "adcStudy.identifiedAnalogCutoff_Hz": true,
+        "adcStudy.converterAnalogOrder": true,
+        "adcStudy.emaTime_s": true,
+        "adcStudy.identifiedEmaTime_s": true,
+        "adcStudy.pipelineDelay_s": true,
+        "adcStudy.identifiedPipelineDelay_s": true,
+        "adcStudy.forceQuantum_N": true,
+        "adcStudy.accelerationQuantum_m_s2": true,
+        "adcStudy.forceAdcNoiseRms_N": true,
+        "adcStudy.accelerationAdcNoiseRms_m_s2": true,
+        "adcStudy.forceAdcRange_N": true,
+        "adcStudy.accelerationAdcRange_g": true,
+        "adcStudy.adcNoiseCorrelationTime_s": true,
+        "adcStudy.accelerationExtraDelay_s": true
+      }
+    }
+  ],
+  "nativeADCQuantizers": [
+    {
+      "type": "real_T",
+      "name": "Actualconverterquantization_Int",
+      "count": 1,
+      "kind": "plain",
+      "expression": "max(p.adcStudy.accelerationQuantum_m_s2,1e-15)",
+      "block": ""
+    },
+    {
+      "type": "real_T",
+      "name": "Actualconverterquantization_I_f",
+      "count": 1,
+      "kind": "plain",
+      "expression": "max(p.adcStudy.accelerationQuantum_m_s2,1e-15)",
+      "block": ""
+    }
+  ],
+  "nativeADCNoiseGains": [
+    {
+      "type": "real_T",
+      "name": "ConverteroutputnoiseRMS_Gain",
+      "count": 1,
+      "kind": "plain",
+      "expression": "p.adcStudy.accelerationAdcNoiseRms_m_s2",
+      "block": ""
+    },
+    {
+      "type": "real_T",
+      "name": "ConverteroutputnoiseRMS_Gain_f",
+      "count": 1,
+      "kind": "plain",
+      "expression": "p.adcStudy.accelerationAdcNoiseRms_m_s2",
+      "block": ""
+    }
+  ],
+  "nativeSensorNoiseGains": [
+    {
+      "type": "real_T",
+      "name": "XrawnoiseRMS_Gain",
+      "count": 1,
+      "kind": "plain",
+      "expression": "p.adcStudy.d.accelerationNoiseInputRms_m_s2",
+      "block": ""
+    },
+    {
+      "type": "real_T",
+      "name": "ZrawnoiseRMS_Gain",
+      "count": 1,
+      "kind": "plain",
+      "expression": "p.adcStudy.d.accelerationNoiseInputRms_m_s2",
+      "block": ""
+    }
+  ],
+  "legacyAccelQuantumReferencesOnlyStaticTareRounding": [
+    {
+      "type": "real_T",
+      "name": "Xknownstatictare_Value",
+      "count": 1,
+      "kind": "plain",
+      "expression": "round((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))/p.accel.quantum)*p.accel.quantum",
+      "block": ""
+    },
+    {
+      "type": "real_T",
+      "name": "Zknownstatictare_Value",
+      "count": 1,
+      "kind": "plain",
+      "expression": "round((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))/p.accel.quantum)*p.accel.quantum",
+      "block": ""
+    }
+  ],
+  "appliedOnce": "Onefine-clockGaussiansensor-noiseinjection,oneADCoutputnoisegain andoneADCQuantizer peraxis. p.accel.quantum otherreferencesonlyroundknownstaticgravitytare;nofurtherdynamicquantization/noiseapplied.",
+  "scope": "ExactretainedADXL354-like1900Hzhot50usmatched-envelopeinputcontract,notmanufacturertotalphase. Noepisodes. Earlier auditmappingtypo(60pairedwithold4ratherthanold3)andnamefiltertypo werecorrectedwithoutchanginganynativeplantinput/output."
+}

@@ -1,0 +1,83 @@
+{
+  "status": "v6_guideff_only_candidate_frozen_with_source_and_scope_evidence",
+  "preparedConfigurations": 132,
+  "physicalQualificationEpisodesCreatedByPreparation": 0,
+  "wiringHarnessRuns": 3,
+  "wiringHarnessDurationEach_s": 0.0003,
+  "referencePIProfile": 1,
+  "guideProfiles": [
+    {
+      "gainID": 1,
+      "coulombScale": 0,
+      "smoothingSpeed_mm_s": 0.2
+    },
+    {
+      "gainID": 2,
+      "coulombScale": 1,
+      "smoothingSpeed_mm_s": 1
+    },
+    {
+      "gainID": 3,
+      "coulombScale": 1,
+      "smoothingSpeed_mm_s": 2
+    },
+    {
+      "gainID": 4,
+      "coulombScale": 1,
+      "smoothingSpeed_mm_s": 5
+    },
+    {
+      "gainID": 5,
+      "coulombScale": 0.5,
+      "smoothingSpeed_mm_s": 1
+    },
+    {
+      "gainID": 6,
+      "coulombScale": 0.5,
+      "smoothingSpeed_mm_s": 2
+    }
+  ],
+  "physicalFriction": {
+    "coulomb_N": 0.2,
+    "viscous_N_s_m": 2,
+    "smoothingSpeed_m_s": 0.0002
+  },
+  "physicalAndObserverFrictionUnchanged": true,
+  "upperLengthUnconstrained": true,
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "516f47e24bbe4010aad0e4ef6cd6fe953ff26076ed52c65016a22106655f98f1",
+  "configsSha256": "d292bbf999b2d7e6b81a95c83285a7cbc0df6010fc36a4d6b5d1685de0db8695",
+  "sharedLibrarySha256": "9ed3c3ef3d2f7dca7b173bde8a18bdbafcbd69bead170746142e7f248301bb9f",
+  "actualCurrentInputOperand": "acf_rl_native_B.Currentlimits",
+  "auditedAMasses_kg": [
+    0.4,
+    1.5
+  ],
+  "algebraicLoopCounts": [
+    0,
+    0
+  ],
+  "evidence": [
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/file_hashes.json",
+      "sha256": "25eeb1a9e6bc9634993cf5214f2f9750ab1616d97aab514b24e0f3f5730c1def"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/live_issued_command_guard.json",
+      "sha256": "608d03e284446e7804476ac87e78c713cfa506a3a73649587339ff04ffb3e218"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/emitted_current_input_guard.json",
+      "sha256": "1e945e5b5a8b8e82a6d7e810b8569a0b71012550007ddd321e8ba47be07cfd06"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/guideff_only_scope.json",
+      "sha256": "eb65da2c40c6749a0c7d3461644859a0996ae0d2a29ec07f4b3b9c93471a3ce9"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/acceptance/acceptance.json",
+      "sha256": "c8fcf4d975776cf1403b87450ff7010fe4018f1ee9203cae104c306109d17cc1"
+    }
+  ],
+  "note": "Parent owns all physical force evaluation. Prepared inputs and tiny source harnesses are not force qualification. Both links fixed; internal actuator friction remains physical, only compensation varies."
+}

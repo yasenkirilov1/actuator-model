@@ -1,0 +1,16 @@
+{
+  "status": "emitted_native_measured_cell_source_live",
+  "physicalEpisodes": 0,
+  "nativeCFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+  "nativeCSha256": "309397b5f74a131ca7cdb5127863cb74c26ff7ec047645d971690995a6ff6f9c",
+  "acquiredCellTerm": "acf_rl_native_B.Sensorsampledelay, fresh10kHz force frame",
+  "localRawDeviationAssignment": "rtb_Currentlimits = (acf_rl_native_P.Requestedforce_Value -\n                           acf_rl_native_B.Sensorsampledelay) *\n        acf_rl_native_P.Cellerrortodeviation_Gain;",
+  "selectedObserverDeviationAssignment": "acf_rl_native_B.Cellforcedeviationfromequilibri = rtb_Currentlimits +\n        acf_rl_native_P.Cellforcedeviationfromequilibri;",
+  "cellErrorToDeviationGain": -1,
+  "additionalSelectedBias_N": 0,
+  "measurementDirection": "selected deltaL = acquired gravity-tared axial cell - Fref",
+  "sourceSelectedIntoProperDerivativeAndNetForceBalance": true,
+  "guardFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/local_cell_source_guard.json",
+  "guardSha256": "cd812fa981110c712d866d4d87d4800aa0dd0d3dd28d2be3cd817f2d448a5af4",
+  "scope": "Source computation and numerical local-wire sign proof. No force pass inferred."
+}

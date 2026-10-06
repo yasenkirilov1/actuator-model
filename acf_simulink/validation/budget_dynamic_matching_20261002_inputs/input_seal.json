@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-02",
+  "status": "frozen_prepared_inputs_not_executed",
+  "plannedCases": 14,
+  "executedNativeCases": 0,
+  "files": [
+    {
+      "file": "ADXL354C_1900_L0_current50_36V_dynamic_match_configs.mat",
+      "bytes": 311729,
+      "sha256": "d36a1478ad4a54108deca2709ec6c7e0b3288b4da58beac6b625b09282388f59"
+    },
+    {
+      "file": "ADXL354C_1900_L50_current50_36V_dynamic_match_configs.mat",
+      "bytes": 311742,
+      "sha256": "ebd8bde376ff55a726059d2ea943ea50bada6378df120f62def8236438eee362"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2821,
+      "sha256": "f02639f49141f46056a2a9f9e8192f8c2234465ae2cc70122704106506acd595"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 53130,
+      "sha256": "b630f15e5ba199cbda3d257d8e2d49a10172c8c7cf6b5509cd1f45f4f91b2b21"
+    },
+    {
+      "file": "preparation_rejection_001.json",
+      "bytes": 494,
+      "sha256": "bebc943cc605409e0a5e6cfe1273feb7d2fb7432128f95efaa0097e45f4ce0fd"
+    },
+    {
+      "file": "prepare_budget_dynamic_matching_20261002.m",
+      "bytes": 7986,
+      "sha256": "66d789deae1fb02f6290c1f4a34eb8966254cf19eac816a906a429959eb57750"
+    }
+  ]
+}

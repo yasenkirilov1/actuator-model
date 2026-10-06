@@ -1,0 +1,142 @@
+{
+  "status": "complete_retained_final_actuator_evidence",
+  "nativeRecordingsExecuted": 9,
+  "nativeRecordingsPassed": 9,
+  "matlabExitCode": 0,
+  "scope": "Four4s paired nominal conditions plus one4s screw solver refinement; not a complete leadscrew grid or physical/thermal qualification. Every native trace retained.",
+  "sourceModelSHA256": "7fa60a844f8d7d0b0b1d15d4afcdc901c6d7cbe26a463e41cb2e0b78e8d8e0f8",
+  "candidateSHA256": "65b97e2e4703b69f2a47a8d8d819fc22f82c94daf115e24d75f1dd84156b305f",
+  "executedRecipeSHA256": "3e6471e63e00f792b5a000f6fdc7ff5403596b9c7ed8a1f9ef70492d12e66c34",
+  "artifacts": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930.json",
+      "sizeBytes": 33639,
+      "sha256": "1b4a3bcbdd84cc954da6653dcccf7fbd5a40435e32a486bcc5416e1b84e7a569"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_cases.csv",
+      "sizeBytes": 7183,
+      "sha256": "ff39f859fe7169a3bdfd881ff437317d34f0090d358eb6639ab4ef48e4d95295"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_checkpoint.mat",
+      "sizeBytes": 74510,
+      "sha256": "294060ab9eb3a4d9ab5c1f369744317e065ba7015c54be3b50a2cde4aa29468c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_configurations.mat",
+      "sizeBytes": 60480,
+      "sha256": "7dfb0449931197da9cf59c08550c7a9b25a9305bbe434f4c510f8d859de72969"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_heavy_bump.png",
+      "sizeBytes": 305412,
+      "sha256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_heavy_bump.svg",
+      "sizeBytes": 60839,
+      "sha256": "3bfd0c168ef9a3d117bcb299ef1085e702f53bf53a42bd42bfa97d491cc0c51d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_launch.log",
+      "sizeBytes": 1199,
+      "sha256": "81ecee35b085ac305801630235eacab35a0d3f71965cbb284b483019f821206b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_mesh_bridge.json",
+      "sizeBytes": 1280,
+      "sha256": "ac93169b8b3ed2b56a48e37ef123b263a434d31a658a4feaa1f52f60899be8e7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0001.mat",
+      "sizeBytes": 86256630,
+      "sha256": "53afdc6ae1c94dcca09b2f68e96ac91cc13a02b59781981c6017136cce89c834"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0002.mat",
+      "sizeBytes": 102549746,
+      "sha256": "aa50990f178aaebc4f267ef3dc2a9cb82dcb50f039176652fa29c3f2c3187d24"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0003.mat",
+      "sizeBytes": 103238960,
+      "sha256": "17a474e313d536f98777e030cc493c03458ff84ca75edce0fbc3211c181eda46"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0004.mat",
+      "sizeBytes": 101047188,
+      "sha256": "fba59f9ba6b34b49f9140bdd127187ad3ffc5cc01044292d4ebab7bd35a5c725"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0005.mat",
+      "sizeBytes": 88690866,
+      "sha256": "57296f8a8d8d570ef72af90d727b1f8551b89daa363ed308e5c97e04c1ce0015"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0006.mat",
+      "sizeBytes": 105421534,
+      "sha256": "2b1464e4980f6e51f4d6e7169801326e0bd4a94d0a86c38dd45b390c60de5143"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0007.mat",
+      "sizeBytes": 106154487,
+      "sha256": "6cf283143c55e63fc4aaa211e44f9693988600f2bb0982938b1e9ab3294fd348"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0008.mat",
+      "sizeBytes": 103578361,
+      "sha256": "b10bc514b1afeceafa179053045e9794ad357cf9925883815c291c5d7dfcfe58"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0009.mat",
+      "sizeBytes": 201184270,
+      "sha256": "c3290d2d24663730ae70de49ab2d61284bf0458d3d55ce2aa0c684b9bfb6389a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_notes.md",
+      "sizeBytes": 12841,
+      "sha256": "e49861cf86d8fdf2805f5a0788e500888b859f27734b1c89526f81bbfbdede7a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_peak_errors.png",
+      "sizeBytes": 70107,
+      "sha256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_peak_errors.svg",
+      "sizeBytes": 13196,
+      "sha256": "8fcb9ad239dfecd8f002f57438f31506e524e1366ca1e860d794d02f8e41ba6f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_replay.json",
+      "sizeBytes": 6456981,
+      "sha256": "7ffcbe20f23ec24264e6cb99eff167f1dd817b44c4a5e401d6c83ed0d4eeb246"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+      "sizeBytes": 29531,
+      "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_launch_final_v8.m",
+      "sizeBytes": 1084,
+      "sha256": "b1acade05753fca7f45585c374a7a09c70e9102ee6d83a5884a177755a261fbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_export_final_v8.m",
+      "sizeBytes": 3112,
+      "sha256": "b80c1769d111e5f31f052f936b146a4a1dbd82ed2799a898df2fc639a8fff8bb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_plot_final_v8.py",
+      "sizeBytes": 5067,
+      "sha256": "0295d8c10422df09c868c969109239e4abcc4506cf800b3ea84daf4824cc8848"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_inertial_actuators_final.m",
+      "sizeBytes": 16162,
+      "sha256": "3e6471e63e00f792b5a000f6fdc7ff5403596b9c7ed8a1f9ef70492d12e66c34"
+    }
+  ]
+}

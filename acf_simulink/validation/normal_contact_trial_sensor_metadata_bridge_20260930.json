@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "newNativeSimulations": 0,
+  "sourceModelSHA256": "4fe56e2505f10e9adef86b29a7615583ec2b6dc6be37f1cf051d3a753fef0a44",
+  "variables": [
+    {
+      "variable": "p",
+      "modeledNoiseRMS_m_s2": 0.014,
+      "nominalNoiseRMS_m_s2": 0.014,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "EMA_s": 5E-5,
+      "responseGroupDelay_s": 8.8921415482424721E-5,
+      "pipeline_s": 2E-5
+    },
+    {
+      "variable": "pRecommended",
+      "modeledNoiseRMS_m_s2": 0.014,
+      "nominalNoiseRMS_m_s2": 0.014,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "EMA_s": 5E-5,
+      "responseGroupDelay_s": 8.8921415482424721E-5,
+      "pipeline_s": 2E-5
+    },
+    {
+      "variable": "pNoSprings",
+      "modeledNoiseRMS_m_s2": 0.014,
+      "nominalNoiseRMS_m_s2": 0.014,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "EMA_s": 5E-5,
+      "responseGroupDelay_s": 8.8921415482424721E-5,
+      "pipeline_s": 2E-5
+    },
+    {
+      "variable": "pCompliant",
+      "modeledNoiseRMS_m_s2": 0.014,
+      "nominalNoiseRMS_m_s2": 0.014,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "EMA_s": 5E-5,
+      "responseGroupDelay_s": 8.8921415482424721E-5,
+      "pipeline_s": 2E-5
+    },
+    {
+      "variable": "pNearContact",
+      "modeledNoiseRMS_m_s2": 0.014,
+      "nominalNoiseRMS_m_s2": 0.014,
+      "rawSampleTime_s": 1E-5,
+      "antiAliasCutoff_Hz": 5100,
+      "EMA_s": 5E-5,
+      "responseGroupDelay_s": 8.8921415482424721E-5,
+      "pipeline_s": 2E-5
+    }
+  ],
+  "allParametersExceptSensorDesignIdentical": true,
+  "xmlComparisonFolder": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/tp26c1b7e0_1962_4700_a4f4_37993cfeb8a9",
+  "nativeSystemXMLIdentical": true,
+  "nativeSystemXMLCount": 42,
+  "modelSHA256": "f50e4742dcaa674b223089262c7bfd2f5fb53923cd9a3b2c7db52dbaffd2ecb4",
+  "candidateSHA256": "212210dd362c411e27af067ae0008fbc0fc3641975da5dd73d03733964281186",
+  "preparationSHA256": "7b9f288acf1770cf8e36c8edd5ce2d98e03a9051a3cf0d4f5127aa04a90cbf18"
+}

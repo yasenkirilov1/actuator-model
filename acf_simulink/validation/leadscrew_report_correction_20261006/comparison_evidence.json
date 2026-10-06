@@ -1,0 +1,240 @@
+{
+  "status": "complete",
+  "kind": "comparison_scope_correction_and_static_spring_arithmetic",
+  "rows": [
+    {
+      "proposedActuator": "Screw-position/velocity-controlled nut plus independent nut-to-B series spring",
+      "springLocation": "Actuator-internal, between nut and B; upper R-A20k and finite-cell B-S preserved",
+      "historicalComparison": "Four matched cases per actuator, current-controlled screw, compliant lower link, rigid upper; does not qualify proposed SEA",
+      "withdrawnInference": "Tool bump motion imposed directly on rotor is not general for a spring-decoupled nut",
+      "performanceWinnerEstablished": false,
+      "prototypeRecommendation": "Voice coil is provisional because its model/controller have more tests, not demonstrated superiority to a properly controlled SEA screw",
+      "springRows": [
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 102.50078125,
+            "nut_position_min_mm": -42.755171582812494,
+            "nut_position_span_mm": 145.2559528328125,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": false,
+          "nut_position_max_mm_with_zero_preload": 102.50078125,
+          "nut_position_min_mm_with_zero_preload": -42.755171582812494,
+          "nut_position_span_mm": 145.2559528328125,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 100.0,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -40.99458,
+          "nut_to_B_spring_deflection_span_mm": 140.99457999999998,
+          "spring_force_change_for_0_1mm_lag_N": 0.05,
+          "spring_rate_N_per_m": 500.0,
+          "spring_rate_N_per_mm": 0.5
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 52.50078125,
+            "nut_position_min_mm": -22.2578815828125,
+            "nut_position_span_mm": 74.7586628328125,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": false,
+          "nut_position_max_mm_with_zero_preload": 52.50078125,
+          "nut_position_min_mm_with_zero_preload": -22.2578815828125,
+          "nut_position_span_mm": 74.7586628328125,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 50.0,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -20.49729,
+          "nut_to_B_spring_deflection_span_mm": 70.49728999999999,
+          "spring_force_change_for_0_1mm_lag_N": 0.1,
+          "spring_rate_N_per_m": 1000.0,
+          "spring_rate_N_per_mm": 1.0
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 27.500781250000003,
+            "nut_position_min_mm": -12.009236582812498,
+            "nut_position_span_mm": 39.5100178328125,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": false,
+          "nut_position_max_mm_with_zero_preload": 27.500781250000003,
+          "nut_position_min_mm_with_zero_preload": -12.009236582812498,
+          "nut_position_span_mm": 39.5100178328125,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 25.0,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -10.248645,
+          "nut_to_B_spring_deflection_span_mm": 35.248644999999996,
+          "spring_force_change_for_0_1mm_lag_N": 0.2,
+          "spring_rate_N_per_m": 2000.0,
+          "spring_rate_N_per_mm": 2.0
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 16.786495535714284,
+            "nut_position_min_mm": -7.616960154241071,
+            "nut_position_span_mm": 24.403455689955354,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": true,
+          "nut_position_max_mm_with_zero_preload": 16.786495535714288,
+          "nut_position_min_mm_with_zero_preload": -7.616960154241071,
+          "nut_position_span_mm": 24.403455689955358,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 14.285714285714286,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -5.856368571428571,
+          "nut_to_B_spring_deflection_span_mm": 20.142082857142857,
+          "spring_force_change_for_0_1mm_lag_N": 0.35000000000000003,
+          "spring_rate_N_per_m": 3500.0,
+          "spring_rate_N_per_mm": 3.5
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 12.500781250000001,
+            "nut_position_min_mm": -5.8600495828125005,
+            "nut_position_span_mm": 18.3608308328125,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": true,
+          "nut_position_max_mm_with_zero_preload": 12.500781250000001,
+          "nut_position_min_mm_with_zero_preload": -5.8600495828125005,
+          "nut_position_span_mm": 18.3608308328125,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 10.0,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -4.099458,
+          "nut_to_B_spring_deflection_span_mm": 14.099457999999998,
+          "spring_force_change_for_0_1mm_lag_N": 0.5,
+          "spring_rate_N_per_m": 5000.0,
+          "spring_rate_N_per_mm": 5.0
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 7.500781249999999,
+            "nut_position_min_mm": -3.8103205828125,
+            "nut_position_span_mm": 11.3111018328125,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": true,
+          "nut_position_max_mm_with_zero_preload": 7.500781249999999,
+          "nut_position_min_mm_with_zero_preload": -3.8103205828125,
+          "nut_position_span_mm": 11.3111018328125,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 5.0,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -2.049729,
+          "nut_to_B_spring_deflection_span_mm": 7.049728999999999,
+          "spring_force_change_for_0_1mm_lag_N": 1.0,
+          "spring_rate_N_per_m": 10000.0,
+          "spring_rate_N_per_mm": 10.0
+        },
+        {
+          "dense_grid_coordinate_check": {
+            "nut_position_max_mm": 5.00078125,
+            "nut_position_min_mm": -2.7854560828125,
+            "nut_position_span_mm": 7.786237332812499,
+            "one_max_point": {
+              "S_kg": 0.1,
+              "force_N": 50.0,
+              "theta_deg": 90.0
+            },
+            "one_min_point": {
+              "S_kg": 2.0,
+              "force_N": 5.0,
+              "theta_deg": 0.0
+            },
+            "points": 642369
+          },
+          "fits_static_25mm_reference_envelope_with_adjustable_zero": true,
+          "nut_position_max_mm_with_zero_preload": 5.00078125,
+          "nut_position_min_mm_with_zero_preload": -2.7854560828125,
+          "nut_position_span_mm": 7.786237332812499,
+          "nut_to_B_spring_deflection_max_mm_with_zero_preload": 2.5,
+          "nut_to_B_spring_deflection_min_mm_with_zero_preload": -1.0248645,
+          "nut_to_B_spring_deflection_span_mm": 3.5248644999999996,
+          "spring_force_change_for_0_1mm_lag_N": 2.0,
+          "spring_rate_N_per_m": 20000.0,
+          "spring_rate_N_per_mm": 20.0
+        }
+      ],
+      "springArithmeticScope": [
+        "Quasi-static normal contact with flange axis aligned to surface normal; theta changes gravity projection, not sanding drag.",
+        "The added spring is inside the actuator, between nut and B; it does not replace the upper spring or the finite B-S cell.",
+        "Spring is an ideal bidirectional linear element. Negative force endpoints require a suitable tension/compression or opposed/preloaded implementation; no part feasibility is established.",
+        "Robot and tool positions are held fixed for the envelope; recentering, a longer screw, or manually reset preload changes the required position envelope.",
+        "25 mm is a comparison reference, not a universal limit on leadscrew travel. Static span fitting it leaves unspecified dynamic reserve.",
+        "Nut inertia and motor friction/backlash are not assigned to B; their separate state and coupling must be modeled in a future dynamic candidate.",
+        "No bump waveform, tool inertia, finite-cell vibration, control timing, motor torque/current/voltage, spring packaging, friction or contact stop is simulated here.",
+        "Tool inertia and finite-cell modes remain relevant in a dynamic spring-coupled design. Softness alone does not establish +/-0.5 N contact performance.",
+        "Existing direct-drive screw recordings remain historical reference evidence; these calculations do not rerank actuator controllers by force qualification."
+      ],
+      "dynamicSeriesElasticRecordings": 0
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/series_elastic_comparison_20261006/static_tradeoff.json": "6c561941611c6aa259ba203ea8a19f1a2cc64da55043645f6433c2d9d667cb27",
+    "acf_simulink/experiments/series_elastic_comparison_20261006/build_tradeoff.py": "ebc266ff3f43e56600219bd2bc6850587dc1deffca0e5e5cb918ac2040d7312b",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+    "acf_simulink/experiments/qualify_inertial_actuators_final.m": "3e6471e63e00f792b5a000f6fdc7ff5403596b9c7ed8a1f9ef70492d12e66c34",
+    "acf_simulink/experiments/report_readability_20261006/actuator/build_actuator_evidence.py": "c753c650b21b2c984c43b425679b60ad916b6d520004c2418d2935af49d19555",
+    "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_actuator.m": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6"
+  },
+  "primaryReference": {
+    "title": "Pratt and Williamson, Series Elastic Actuators (1995)",
+    "url": "https://fab.cba.mit.edu/classes/865.15/people/rebecca.kleinberger/assets/papers/SEA_Pratt.pdf",
+    "usedFor": "Series spring converts relative displacement into force and trades isolation against actuator bandwidth; no flange-specific performance claim."
+  },
+  "userInstruction": "Leadscrew should translate motion through a spring to force; correction applies to our flange model, not group member script.",
+  "html": "Not revised, at user request.",
+  "newArraysBytes": 0
+}

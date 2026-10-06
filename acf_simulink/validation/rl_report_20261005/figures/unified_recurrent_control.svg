@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="1040" viewBox="0 0 1340 1040" role="img" aria-labelledby="title desc">
+  <title id="title">One causal recurrent controller for flange current and robot recentering</title>
+  <desc id="desc">Measured sensors, identified parameters and previously issued robot commands feed one shared two-layer 32-state Puffer minGRU. Its current output drives the current servo with physical limits. Its robot output passes the force-stability gate, 100 hertz clock and delay-aware bounds into the retained command queue. The single native Simulink plant closes the measurement loop. Actual normal-force truth feeds reward and PPO only during training, shown with purple dashed arrows.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,1 L8,5 L0,9" fill="none" stroke="#287497" stroke-width="1.8"/></marker>
+    <marker id="trainingArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L8,5 L0,9" fill="none" stroke="#9259a6" stroke-width="1.8"/></marker>
+    <style>
+      text {font-family:Inter,Arial,sans-serif; fill:#183245;}
+      .heading {font-size:34px; font-weight:700;}
+      .subtitle {font-size:21px; fill:#516b7a;}
+      .cardtitle {font-size:25px; font-weight:700;}
+      .body {font-size:21px;}
+      .small {font-size:18px; fill:#516b7a;}
+      .white {fill:#fff;}
+      .flow {fill:none; stroke:#287497; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow);}
+      .training {fill:none; stroke:#9259a6; stroke-width:3; stroke-dasharray:8 7; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#trainingArrow);}
+      .card {fill:#f0f7fa; stroke:#b4cedb; stroke-width:1.5;}
+    </style>
+  </defs>
+  <rect width="1340" height="1040" rx="20" fill="#fcfdfd"/>
+  <text x="56" y="55" class="heading">One recurrent controller, two coordinated requests</text>
+  <text x="56" y="91" class="subtitle">Causal measurements and carried memory; hard safety rules remain outside the network.</text>
+
+  <rect x="56" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="80" y="178" class="cardtitle">Causal sensor frame</text>
+  <text x="80" y="215" class="body">Multi-axis load cell on B–S</text>
+  <text x="80" y="247" class="body">S acceleration and S–A position</text>
+  <text x="80" y="280" class="small">Timestamp-aligned observer outputs</text>
+  <text x="80" y="302" class="small">Fresh 10 kHz controller measurements</text>
+
+  <rect x="444" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="468" y="178" class="cardtitle">Identified parameters</text>
+  <text x="468" y="215" class="body">Tool mass and force target</text>
+  <text x="468" y="247" class="body">Mechanics, coil and orientation</text>
+  <text x="468" y="280" class="small">Sensor and driver response estimates</text>
+  <text x="468" y="302" class="small">Fixed scaling; current command phase</text>
+
+  <rect x="832" y="137" width="348" height="181" rx="14" class="card"/>
+  <text x="856" y="178" class="cardtitle">Commands already issued</text>
+  <text x="856" y="215" class="body">Issued current and robot commands</text>
+  <text x="856" y="247" class="body">Causal robot-motion prediction</text>
+  <text x="856" y="280" class="small">Pending motion is retained after gating</text>
+  <text x="856" y="302" class="small">No surface preview enters the policy</text>
+
+  <path d="M230,318 V350 H495 V375" class="flow"/>
+  <path d="M618,318 V375" class="flow"/>
+  <path d="M1006,318 V350 H845 V375" class="flow"/>
+
+  <rect x="340" y="375" width="650" height="174" rx="18" fill="#1a536f"/>
+  <text x="665" y="417" text-anchor="middle" class="cardtitle white">One shared Puffer minGRU: 32 states × 2 layers</text>
+  <text x="665" y="454" text-anchor="middle" class="body white">One recurrent trunk → current mean + robot mean</text>
+  <text x="665" y="488" text-anchor="middle" class="body white">Update every 100 µs; carry state across training chunks</text>
+  <text x="665" y="524" text-anchor="middle" class="small" style="fill:#d1e6ee">Reset memory only at a new physical episode</text>
+  <path d="M340,425 H297 V505 H340" class="flow"/>
+  <text x="283" y="468" transform="rotate(-90 283 468)" text-anchor="middle" class="small">carried state</text>
+
+  <path d="M490,549 V576 H364 V606" class="flow"/>
+  <path d="M840,549 V576 H976 V606" class="flow"/>
+
+  <rect x="128" y="606" width="472" height="162" rx="14" class="card"/>
+  <text x="152" y="646" class="cardtitle">Full current request · 10 kHz</text>
+  <text x="152" y="684" class="body">Static equilibrium + learned current</text>
+  <text x="152" y="719" class="body">Current servo, current and voltage limits</text>
+  <text x="152" y="751" class="small">Actuator protection stays in the native graph</text>
+
+  <rect x="740" y="606" width="472" height="162" rx="14" class="card"/>
+  <text x="764" y="646" class="cardtitle">Robot correction request · 100 Hz</text>
+  <text x="764" y="684" class="body">Force-stability gate + delay-aware bounds</text>
+  <text x="764" y="719" class="body">Sampled commands → delay queue → robot</text>
+  <text x="764" y="751" class="small">Closing the gate preserves commands in flight</text>
+
+  <path d="M364,768 V797 H490 V829" class="flow"/>
+  <path d="M976,768 V797 H840 V829" class="flow"/>
+  <rect x="340" y="829" width="650" height="124" rx="16" fill="#eef8f3" stroke="#a9cbb8" stroke-width="1.5"/>
+  <text x="665" y="868" text-anchor="middle" class="cardtitle">One native Simulink physical model</text>
+  <text x="665" y="903" text-anchor="middle" class="body">Coil, flange mechanics, contact and robot response</text>
+  <text x="665" y="936" text-anchor="middle" class="small">Stop at contact loss or a travel limit</text>
+
+  <path d="M340,896 H24 V232 H56" class="flow"/>
+  <text x="48" y="539" transform="rotate(-90 48 539)" text-anchor="middle" class="small">Measured response and causal observer feedback</text>
+
+  <rect x="1045" y="829" width="260" height="124" rx="14" fill="#faf2fc" stroke="#c6a2d2" stroke-width="1.5"/>
+  <text x="1066" y="864" class="cardtitle" style="fill:#77408c">Training only</text>
+  <text x="1066" y="899" class="body" style="fill:#77408c">Normal-force truth</text>
+  <text x="1066" y="934" class="body" style="fill:#77408c">Reward → PPO update</text>
+  <path d="M990,896 H1045" class="training"/>
+  <path d="M1305,890 H1320 V463 H990" class="training"/>
+  <text x="1154" y="441" text-anchor="middle" class="small" style="fill:#77408c">Weight updates</text>
+  <text x="56" y="1001" class="small">Blue: physical closed loop. Purple dashed: reward and weight updates during simulation training.</text>
+</svg>

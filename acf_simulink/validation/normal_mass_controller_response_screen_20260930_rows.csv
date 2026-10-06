@@ -1,0 +1,16 @@
+id,scenario,massS_kg,massB_kg,totalBS_kg,reference_N,angle_deg,mu,seed,forceNoiseRms_N,positionNoiseRms_m,lateralNoiseRms_N,forceFilterTime_s,forceDelay_s,positionDelay_s,currentResponse_s,simulationStep_s,forceScale_N,surfaceJerkPower,normalIntegralScale,geometryFeedforwardScale,voltageLimit_V,currentLimit_A,executed,passed,completed,lostContact,strokeStop,runtime_s,endTime_s,nativeSamples,peakNormalForceError_N,rmsNormalForceError_N,peakNormalForceErrorTime_s,peakBeforeBumpError_N,peakDuringBumpError_N,peakAfterBumpError_N,peakNormalEstimateTrackingError_N,peakNormalEstimateError_N,rmsNormalEstimateError_N,peakSlopeEstimateError,peakAxialDiagnosticError_N,peakCurrent_A,rmsCurrent_A,peakVoltage_V,voltageClipFraction,effortClipFraction,minTravel_mm,maxTravel_mm,gateReadyFraction,normalBalanceResidual_N,lateralBalanceResidual_N,rigidAxialBalanceResidual_N,axialDiagnosticReason,reason,nativeReturned
+1,identified_current_response_noise_screen,0.1,0.6,0.7,5,0,0.3,29,0,0,0,0.0001,0.0001,0.0001,4.9999999999999996e-05,2.5e-05,0.5,70,1,1,24,3.5,False,False,False,False,False,0.024523,,0,,,,,,,,,,,,,,,,,,,,,,,,"Error using assert
+Reduce sim.step to resolve drive dynamics.
+
+Error in acf_prepare (line 161)
+assert(p.sim.step <= min([p.screw.currentResponse,p.coil.currentResponse, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in acf_select_actuator (line 26)
+p.actuator.kind=kinds{index}; p=acf_prepare(p); assignin(mw,'p',p);
+                                ^^^^^^^^^^^^^^
+Error in acf_run (line 17)
+        p=acf_select_actuator(mdl,p.actuator.kind);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in qualify_normal_mass_controller (line 162)
+  quiet=evalc('r=acf_run(mdl,q,false);'); %#ok<NASGU>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",False

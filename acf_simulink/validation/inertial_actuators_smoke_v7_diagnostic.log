@@ -1,0 +1,56 @@
+                         lead: 0.0050
+                 rotorInertia: 1.5800e-06
+               torqueConstant: 0.0234
+              backEmfConstant: 0.0234
+                   resistance: 2.3200
+                   inductance: 2.3800e-04
+                  peakCurrent: 3.5000
+                      voltage: 24
+              currentResponse: 1.0000e-04
+                coulombTorque: 1.0000e-03
+                viscousTorque: 1.0000e-06
+                frictionSpeed: 1
+               speedBandwidth: 1000
+                 speedDamping: 0.9000
+              speedAntiWindup: 1000
+        maxLinearSpeedRequest: 0.1000
+                      forceKp: 5.0000e-04
+                      forceKi: 0.0050
+                      forceKd: 0
+               motorReference: 'maxon RE25 302005 (NRND): winding reference only'
+      motorRotorInertia_kg_m2: 1.0800e-06
+    screwCouplerInertia_kg_m2: 5.0000e-07
+                 motorMass_kg: 0.1300
+          continuousCurrent_A: 1.1600
+          continuousTorque_Nm: 0.0263
+             sizingEfficiency: 0.9000
+      currentDerivativeFilter: 3.0000e-04
+                 currentNotch: [1×1 struct]
+              controlStrategy: 'current'
+     velocityFeedforwardScale: 0
+               currentForceKp: 0.0204
+               currentForceKi: 13.6030
+               currentForceKd: 0
+
+    0.6000
+
+    1.0000         0  207.9197
+
+  Columns 1 through 7
+
+   50.0000         0   16.1549   -0.0000   67.1784    9.6929    1.7004
+
+  Columns 8 through 12
+
+    0.0398         0   50.0000    9.6929         0
+
+    2.4950         0   50.0000
+
+  Columns 1 through 7
+
+   50.0000         0   16.1549   -0.0000   67.1784    9.6929    1.7004
+
+  Columns 8 through 12
+
+    0.0398         0   50.0000    9.6929         0
+

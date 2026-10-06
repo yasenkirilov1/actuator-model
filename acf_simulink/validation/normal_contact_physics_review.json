@@ -1,0 +1,1823 @@
+{
+  "review_utc": "2026-09-30T07:01:37.009895+00:00",
+  "kind": "analytical_physics_and_observability_review",
+  "native_qualification_runs_in_this_review": 0,
+  "inputs": {
+    "mA_kg": 0.4,
+    "mB_kg": 0.6,
+    "mS_range_kg": [
+      0.1,
+      2.0
+    ],
+    "normal_target_range_N": [
+      5,
+      50
+    ],
+    "normal_tolerance_N": 0.5,
+    "bump_height_m": 0.001,
+    "bump_width_m": 0.01,
+    "scan_speed_m_s": 0.1,
+    "gravity_m_s2": 9.81,
+    "coil_force_constant_N_A": 20.0,
+    "coil_resistance_ohm": 4.0,
+    "guide_friction_in_analytical_effort_sizing": false,
+    "analytical_peak_phase_step": 1e-05
+  },
+  "contact_equations": {
+    "normal": "[-s,1]/sqrt(1+s^2)",
+    "tangent": "[1,s]/sqrt(1+s^2)",
+    "reaction_x": "-N*(s+mu)/sqrt(1+s^2)",
+    "reaction_z": "N*(1-mu*s)/sqrt(1+s^2)",
+    "normal_projection": "(Rz-s*Rx)/sqrt(1+s^2)",
+    "tared_vector_cell": "R-mS*aS",
+    "rigid_reaction_z": "Fa+(mB+mS)*(g_axis+aSz)",
+    "rigid_tared_cell_z": "Fa+(mB+mS)*g_axis+mB*aSz",
+    "reaction_from_tared_cell": "(M/mB)*L_tared_z-(mS/mB)*(Fa+M*g_axis)"
+  },
+  "analytical_identity_checks": {
+    "phase_points": 2001,
+    "normal_projection_max_abs_error_N": 2.1316282072803006e-14,
+    "cell_inversion_max_abs_error_N": 1.4210854715202004e-13,
+    "passive_contact_power_max_abs_error_W": 2.6645352591003757e-15
+  },
+  "profile_results": {
+    "duration_s": 0.1,
+    "maximum_slope": 0.34346004134396757,
+    "maximum_normal_tilt_deg": 18.95554872969664,
+    "maximum_vertical_speed_m_s": 0.03434600413439676,
+    "maximum_downward_acceleration_m_s2": -2.4,
+    "maximum_absolute_slope_rate_s_inverse": 24.0
+  },
+  "mass_sizing": [
+    {
+      "mS_kg": 0.1,
+      "B_plus_S_kg": 0.7,
+      "force_measurement_conditioning_factor": 1.1666666666666667,
+      "actuator_force_conditioning_factor": 0.16666666666666669,
+      "maximum_distal_inertial_term_N": 0.24,
+      "50N_horizontal_hold_current_A": 2.5,
+      "5N_gravity_aligned_hold_current_A": -0.09335,
+      "50N_horizontal_crest_current_A_ignoring_friction": 2.584,
+      "acceleration_error_for_separate_0p1N_allocation_m_s2": 1.0
+    },
+    {
+      "mS_kg": 0.5,
+      "B_plus_S_kg": 1.1,
+      "force_measurement_conditioning_factor": 1.8333333333333335,
+      "actuator_force_conditioning_factor": 0.8333333333333334,
+      "maximum_distal_inertial_term_N": 1.2,
+      "50N_horizontal_hold_current_A": 2.5,
+      "5N_gravity_aligned_hold_current_A": -0.2895500000000001,
+      "50N_horizontal_crest_current_A_ignoring_friction": 2.632,
+      "acceleration_error_for_separate_0p1N_allocation_m_s2": 0.2
+    },
+    {
+      "mS_kg": 1.0,
+      "B_plus_S_kg": 1.6,
+      "force_measurement_conditioning_factor": 2.666666666666667,
+      "actuator_force_conditioning_factor": 1.6666666666666667,
+      "maximum_distal_inertial_term_N": 2.4,
+      "50N_horizontal_hold_current_A": 2.5,
+      "5N_gravity_aligned_hold_current_A": -0.5348,
+      "50N_horizontal_crest_current_A_ignoring_friction": 2.692,
+      "acceleration_error_for_separate_0p1N_allocation_m_s2": 0.1
+    },
+    {
+      "mS_kg": 1.4,
+      "B_plus_S_kg": 2.0,
+      "force_measurement_conditioning_factor": 3.3333333333333335,
+      "actuator_force_conditioning_factor": 2.3333333333333335,
+      "maximum_distal_inertial_term_N": 3.36,
+      "50N_horizontal_hold_current_A": 2.5,
+      "5N_gravity_aligned_hold_current_A": -0.7310000000000001,
+      "50N_horizontal_crest_current_A_ignoring_friction": 2.7399999999999998,
+      "acceleration_error_for_separate_0p1N_allocation_m_s2": 0.07142857142857144
+    },
+    {
+      "mS_kg": 2.0,
+      "B_plus_S_kg": 2.6,
+      "force_measurement_conditioning_factor": 4.333333333333334,
+      "actuator_force_conditioning_factor": 3.3333333333333335,
+      "maximum_distal_inertial_term_N": 4.8,
+      "50N_horizontal_hold_current_A": 2.5,
+      "5N_gravity_aligned_hold_current_A": -1.0253,
+      "50N_horizontal_crest_current_A_ignoring_friction": 2.8120000000000003,
+      "acceleration_error_for_separate_0p1N_allocation_m_s2": 0.05
+    }
+  ],
+  "normal50_projection_at_max_slope": [
+    {
+      "tangential_ratio": 0.0,
+      "rising_Rz_N": 47.28854368199029,
+      "falling_Rz_N": 47.28854368199029,
+      "rising_Rx_N": -16.241725168112403,
+      "falling_Rx_N": 16.241725168112403,
+      "normal_angle_error_for_separate_0p1N_allocation_deg_first_order": null
+    },
+    {
+      "tangential_ratio": 0.1,
+      "rising_Rz_N": 45.66437116517905,
+      "falling_Rz_N": 48.91271619880154,
+      "rising_Rx_N": -20.970579536311433,
+      "falling_Rx_N": 11.512870799913374,
+      "normal_angle_error_for_separate_0p1N_allocation_deg_first_order": 1.1459155902616465
+    },
+    {
+      "tangential_ratio": 0.3,
+      "rising_Rz_N": 42.41602613155658,
+      "falling_Rz_N": 52.16106123242401,
+      "rising_Rx_N": -30.428288272709487,
+      "falling_Rx_N": 2.0551620635153154,
+      "normal_angle_error_for_separate_0p1N_allocation_deg_first_order": 0.38197186342054884
+    },
+    {
+      "tangential_ratio": 0.5,
+      "rising_Rz_N": 39.16768109793409,
+      "falling_Rz_N": 55.409406266046496,
+      "rising_Rx_N": -39.88599700910755,
+      "falling_Rx_N": -7.402546672882744,
+      "normal_angle_error_for_separate_0p1N_allocation_deg_first_order": 0.2291831180523293
+    },
+    {
+      "tangential_ratio": 1.0,
+      "rising_Rz_N": 31.046818513877895,
+      "falling_Rz_N": 63.5302688501027,
+      "rising_Rx_N": -63.5302688501027,
+      "falling_Rx_N": -31.046818513877895,
+      "normal_angle_error_for_separate_0p1N_allocation_deg_first_order": 0.11459155902616465
+    }
+  ],
+  "normal50_horizontal_peak_effort_analytical": [
+    {
+      "mS_kg": 0.1,
+      "tangential_ratio": 0.0,
+      "max_axial_effort_N": 51.68,
+      "coil_current_A_at_20N_A": 2.584,
+      "profile_phase_at_max": 0.5
+    },
+    {
+      "mS_kg": 0.1,
+      "tangential_ratio": 0.1,
+      "max_axial_effort_N": 51.874244614627166,
+      "coil_current_A_at_20N_A": 2.5937122307313585,
+      "profile_phase_at_max": 0.53257
+    },
+    {
+      "mS_kg": 0.1,
+      "tangential_ratio": 0.3,
+      "max_axial_effort_N": 53.35083949174392,
+      "coil_current_A_at_20N_A": 2.6675419745871958,
+      "profile_phase_at_max": 0.59721
+    },
+    {
+      "mS_kg": 0.1,
+      "tangential_ratio": 0.5,
+      "max_axial_effort_N": 55.89951207139562,
+      "coil_current_A_at_20N_A": 2.794975603569781,
+      "profile_phase_at_max": 0.65158
+    },
+    {
+      "mS_kg": 0.1,
+      "tangential_ratio": 1.0,
+      "max_axial_effort_N": 63.67945944667208,
+      "coil_current_A_at_20N_A": 3.1839729723336037,
+      "profile_phase_at_max": 0.69901
+    },
+    {
+      "mS_kg": 1.4,
+      "tangential_ratio": 0.0,
+      "max_axial_effort_N": 54.8,
+      "coil_current_A_at_20N_A": 2.7399999999999998,
+      "profile_phase_at_max": 0.5
+    },
+    {
+      "mS_kg": 1.4,
+      "tangential_ratio": 0.1,
+      "max_axial_effort_N": 54.938223985769994,
+      "coil_current_A_at_20N_A": 2.7469111992885,
+      "profile_phase_at_max": 0.52306
+    },
+    {
+      "mS_kg": 1.4,
+      "tangential_ratio": 0.3,
+      "max_axial_effort_N": 55.99869544836268,
+      "coil_current_A_at_20N_A": 2.7999347724181343,
+      "profile_phase_at_max": 0.56705
+    },
+    {
+      "mS_kg": 1.4,
+      "tangential_ratio": 0.5,
+      "max_axial_effort_N": 57.91134909282533,
+      "coil_current_A_at_20N_A": 2.8955674546412666,
+      "profile_phase_at_max": 0.60481
+    },
+    {
+      "mS_kg": 1.4,
+      "tangential_ratio": 1.0,
+      "max_axial_effort_N": 64.64768724144461,
+      "coil_current_A_at_20N_A": 3.2323843620722306,
+      "profile_phase_at_max": 0.66167
+    },
+    {
+      "mS_kg": 2.0,
+      "tangential_ratio": 0.0,
+      "max_axial_effort_N": 56.239999999999995,
+      "coil_current_A_at_20N_A": 2.812,
+      "profile_phase_at_max": 0.5
+    },
+    {
+      "mS_kg": 2.0,
+      "tangential_ratio": 0.1,
+      "max_axial_effort_N": 56.36203599128155,
+      "coil_current_A_at_20N_A": 2.8181017995640776,
+      "profile_phase_at_max": 0.52035
+    },
+    {
+      "mS_kg": 2.0,
+      "tangential_ratio": 0.3,
+      "max_axial_effort_N": 57.303416319165194,
+      "coil_current_A_at_20N_A": 2.8651708159582596,
+      "profile_phase_at_max": 0.55919
+    },
+    {
+      "mS_kg": 2.0,
+      "tangential_ratio": 0.5,
+      "max_axial_effort_N": 59.02570364782389,
+      "coil_current_A_at_20N_A": 2.9512851823911945,
+      "profile_phase_at_max": 0.593
+    },
+    {
+      "mS_kg": 2.0,
+      "tangential_ratio": 1.0,
+      "max_axial_effort_N": 65.32458290711344,
+      "coil_current_A_at_20N_A": 3.266229145355672,
+      "profile_phase_at_max": 0.64849
+    }
+  ],
+  "control_inputs_allowed": [
+    "sampled filtered delayed physical B-S force measurement",
+    "sampled delayed S-relative-A position",
+    "issued current request",
+    "issued robot velocity command",
+    "issued scan velocity command",
+    "known installed tool mass and gravity/tare"
+  ],
+  "vector_cell_decision": "Requires user/model input choice; no assumption that the existing axial cell is already multi-axis",
+  "prediction_audit": {
+    "native_predictor_system": "Issued-command robot predictor",
+    "native_output": "[predicted_position,predicted_velocity,predicted_acceleration]",
+    "current_root_selector_index": 3,
+    "additional_available_velocity_index": 2,
+    "observer_residual_state_index": 9,
+    "residual_state_quantity": "robot acceleration",
+    "velocity_mismatch_treatment_needed": "residual velocity dynamics or controlled integration with initialization"
+  },
+  "online_gain_calibration": {
+    "status": "physical proposal only, not implemented or qualified",
+    "steady_relation": "Kf_est=(L_tared_z-M*g_axis+friction_hat)/i",
+    "effective_request_mapping": "i_physical=(Kf_nominal/Kf_est)*i_effective",
+    "observer_and_antiwindup_input": "i_effective_issued=(Kf_est/Kf_nominal)*i_physical_clipped",
+    "limitations": [
+      "single static point cannot separate unknown force bias and static guide friction from Kf",
+      "requires settled regulated current and current away from zero",
+      "slow adaptation does not protect initial fast observer transients",
+      "rapid gain adaptation adds unmodeled effective-current dynamics",
+      "calibrate stroke and temperature and run native uncertainty tests"
+    ]
+  },
+  "source_hashes_at_review": {
+    "acf_simulink/acf_prepare.m": "f087c24d37d8c5cf501794e6210de5919be8c96c1cddf716e94012c5cd35d0d8",
+    "acf_simulink/generated/acf_force_control_simple.slx": "10cc418f26b2fa2cb96366fad209408835284c95757649cb6f433141fc036ea6",
+    "acf_simulink/MODEL_NOTES.md": "006f238fcfcacc8e6fc083161b80fb2e1eb1b7753801862ca0412b1096b277b0"
+  },
+  "scope": [
+    "effective point contact on stationary 2D profile",
+    "prescribed tangential scan and maintained contact",
+    "guided axial actuator",
+    "fixed orientation per run",
+    "no finite pad pressure field or rotational dynamics",
+    "no native execution in analytical review"
+  ],
+  "selected_lower_series_v1_physics_review": {
+    "scope": "Read-only physics/native-source audit plus analytical sensitivity. No newnative simulations, no plant/controller modifications, no fullqualificationclaim.",
+    "selected_source": {
+      "folder": "/home/tommie/.local/state/actuator-model/inertial-mechanics-selected-lower-series-20260930/lower_series_v1",
+      "model_sha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+      "candidate_file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_lower_series_v1_candidate_20260930.mat",
+      "candidate_sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+      "acf_prepare_sha256": "acc1ca47e8659964ee08b38ebd1d340c3680668e7f33269534901ca023604636",
+      "actual_control_fields": [
+        "enabled",
+        "scale",
+        "cutoff_Hz",
+        "filterDamping",
+        "identifiedStiffness_N_m",
+        "identifiedDamping_Ns_m",
+        "identifiedMassB_kg",
+        "numerator",
+        "denominator",
+        "identifiedForceConstant_N_A"
+      ],
+      "preload_per_spring_N": 33.6
+    },
+    "mass_and_load_path": "A prescribedrobotflange, B upstreamactuatorstage.6kg, parallelopposedspringpair/damperinserieswithmulti-axisloadcellthenS.1\u20132kg. All distalforces passcell. Nonzerojoiningframe/proximalcellmass isadditionalmodeorrequires splittingknownupstreammass; notimplicitlydownstreamS.",
+    "equations": {
+      "q": "q=zS\u2212zB, qdot=vS\u2212vB; aboutloadedequilibrium\u03b4q used",
+      "lower_load": "Lraw=Rz\u2212mS*(g+aS);Ltared=Rz\u2212mS*aS",
+      "constitutive": "(k+c*s)q=Lraw (masslessseries approximation)",
+      "net_actuator_force": "Fa=Rz\u2212(mB+mS)*(g+aS)+mB*qdd, whereFa=Kf*i\u2212actualguidefriction",
+      "ideal_current": "i=[Rzref\u2212(mB+mS)*(g+ameas)+guideFF + mB*s\u00b2/(k+c*s)*(\u03b4Rzref\u2212mS*ameas)]/Kf",
+      "proper_inverse": "(mB/Kf)*s\u00b2/(k+c*s) * w\u00b2/(s\u00b2+2\u03b6w*s+w\u00b2), wprewarpedfornative1500Hzcorner",
+      "finite_cell_massless_impedance": "Zeff=kc*(k+c*s)/(kc+k+c*s), qB=L/(k+c*s)+L/kc",
+      "joiningframe_dynamics": "mC*qCdd=Fspring\u2212Lcell+mC*(g+aS), qC=zS\u2212zC, Lcell=kc*qC; Fspring=(k+c*s)*(qB\u2212qC)",
+      "q_measured_estimator": "\u03b4qhat=1/(k+c*s)*(Ltared\u2212Rz_equilibrium); addknownq0=(Rz_equilibrium\u2212mS*g)/k forabsolute springdeflection",
+      "B_gap_estimator": "gapB=(zA\u2212zS)+qhat; guidevelocity=vA\u2212vB=(vA\u2212vS)+qhatdot",
+      "qdot_estimator": "qhatdot=(\u03b4Lmeas\u2212k*\u03b4qhat)/c, sameacquisitionframeasheadvelocity. ExtraLPmaylimitguideCoulombnoisesensitivity.",
+      "mismatch_differential": "\u0394E=mb*s\u00b2*(mbIdentScale*Zactual/Zidentified\u22121)*Rroll/[mb*s\u00b2+bguide*s+(1+C_PI)*Zactual] relative toamatchedinversewithsameactualmechanics. Idealsensor/current sizingonly; notfullerrororpeakqualification."
+    },
+    "lowmode_and_series_cell": {
+      "spring_k_N_m": 19746,
+      "damper_c_N_s_m": 60,
+      "upstream_mass_B_kg": 0.6,
+      "cell_k_N_m": 64000000.0,
+      "low_natural_frequency_Hz": 28.872478910154808,
+      "low_damping_ratio_spring_damper_only": 0.27561703930437126,
+      "low_damping_ratio_with_guide2": 0.2848042739478503,
+      "cell_static_series_k_N_m": 19739.90962100974,
+      "cell_static_relative_stiffness_reduction": 0.00030843608782827724,
+      "cell_lowfrequency_effective_c_N_s_m": 59.962993377429825,
+      "cell_massless_relaxation_time_s": 9.37210841167661e-07,
+      "cell_series_complex_correction_fraction_at29Hz": 0.00035230148582437526,
+      "cell_series_complex_correction_fraction_at1500Hz": 0.00884111443600472
+    },
+    "massless_cell_poles": {
+      "poles_per_s": [
+        {
+          "real": -1066895.8186726558,
+          "imag": 0.0,
+          "frequency_Hz": 0.0
+        },
+        {
+          "real": -51.64066367222705,
+          "imag": 173.88551785166274,
+          "frequency_Hz": 27.674739698186134
+        },
+        {
+          "real": -51.64066367222705,
+          "imag": -173.88551785166274,
+          "frequency_Hz": 27.674739698186134
+        }
+      ],
+      "physical_interpretation": "Masslessjoiningframe+finitecellcompliance addsafastrealKelvin-Voigtrelaxationpole,notan independent1.64kHzoscillator. Nonzerofixturemassaddsaseparateoscillatorymode."
+    },
+    "joiningframe_mode_sensitivity": [
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.005,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 18006.326323142122,
+        "approx_high_damping_ratio_with_c60": 0.053033008588991064,
+        "modes": [
+          {
+            "frequency_Hz": 27.67473969967046,
+            "natural_frequency_Hz": 28.869378070441883,
+            "growth_per_s": -51.64066359854756,
+            "damping_ratio": 0.28469151140701204
+          },
+          {
+            "frequency_Hz": 17982.923649929067,
+            "natural_frequency_Hz": 18008.260370062435,
+            "growth_per_s": -6000.02600306812,
+            "damping_ratio": 0.0530275427745211
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.01,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 12732.395447351628,
+        "approx_high_damping_ratio_with_c60": 0.0375,
+        "modes": [
+          {
+            "frequency_Hz": 27.674739701154422,
+            "natural_frequency_Hz": 28.869378068526036,
+            "growth_per_s": -51.64066352486859,
+            "damping_ratio": 0.2846915110197177
+          },
+          {
+            "frequency_Hz": 12724.80821797651,
+            "natural_frequency_Hz": 12733.763025889031,
+            "growth_per_s": -3000.026003141791,
+            "damping_ratio": 0.03749629758567795
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.025,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 8052.673936717926,
+        "approx_high_damping_ratio_with_c60": 0.023717082451262844,
+        "modes": [
+          {
+            "frequency_Hz": 27.674739705607507,
+            "natural_frequency_Hz": 28.869378062779568,
+            "growth_per_s": -51.640663303829875,
+            "damping_ratio": 0.2846915098578141
+          },
+          {
+            "frequency_Hz": 8051.273882975142,
+            "natural_frequency_Hz": 8053.538870932511,
+            "growth_per_s": -1200.0260033628372,
+            "damping_ratio": 0.023715049164702476
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.05,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 5694.100347337417,
+        "approx_high_damping_ratio_with_c60": 0.016770509831248424,
+        "modes": [
+          {
+            "frequency_Hz": 27.6747397130298,
+            "natural_frequency_Hz": 28.86937805320231,
+            "growth_per_s": -51.64066293542573,
+            "damping_ratio": 0.2846915079212716
+          },
+          {
+            "frequency_Hz": 5693.911177509149,
+            "natural_frequency_Hz": 5694.711950075018,
+            "growth_per_s": -600.0260037312391,
+            "damping_ratio": 0.01676943545428048
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.1,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 4026.336968358963,
+        "approx_high_damping_ratio_with_c60": 0.011858541225631422,
+        "modes": [
+          {
+            "frequency_Hz": 27.674739727877288,
+            "natural_frequency_Hz": 28.869378034049593,
+            "growth_per_s": -51.64066219859596,
+            "damping_ratio": 0.28469150404805055
+          },
+          {
+            "frequency_Hz": 4026.486309030333,
+            "natural_frequency_Hz": 4026.7694394735736,
+            "growth_per_s": -300.0260044680704,
+            "damping_ratio": 0.01185829543631557
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.2,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 2847.0501736687083,
+        "approx_high_damping_ratio_with_c60": 0.008385254915624212,
+        "modes": [
+          {
+            "frequency_Hz": 27.674739757584266,
+            "natural_frequency_Hz": 28.869377995751698,
+            "growth_per_s": -51.640660724848686,
+            "damping_ratio": 0.28469149630105034
+          },
+          {
+            "frequency_Hz": 2847.2558633802387,
+            "natural_frequency_Hz": 2847.355980703805,
+            "growth_per_s": -150.02600594181797,
+            "damping_ratio": 0.008385807956500197
+          }
+        ]
+      },
+      {
+        "joiningframe_proximal_cell_mass_kg": 0.6,
+        "additional_mass_vs_B_baseline": true,
+        "approx_high_frequency_Hz": 1643.7451841639995,
+        "approx_high_damping_ratio_with_c60": 0.004841229182759271,
+        "modes": [
+          {
+            "frequency_Hz": 27.674739876568932,
+            "natural_frequency_Hz": 28.869377842657602,
+            "growth_per_s": -51.640654828694494,
+            "damping_ratio": 0.28469146530566475
+          },
+          {
+            "frequency_Hz": 1643.9024699273823,
+            "natural_frequency_Hz": 1643.9217506557359,
+            "growth_per_s": -50.02601183797208,
+            "damping_ratio": 0.004843227522241281
+          }
+        ]
+      }
+    ],
+    "native_inverse_coefficient_residuals": {
+      "numerator": 0.0,
+      "denominator": 0.0,
+      "zeroDC_numerator_sum": 0.0,
+      "max_filter_pole_radius": 0.9676227673630409
+    },
+    "native_inverse_signal_audit": {
+      "native_inverse_input_residual_N": 0.0,
+      "native_inverse_replay_residual_A": 3.765876499528531e-13,
+      "spring_plus_damper_force_residual_N": 0.0,
+      "lower_load_downstream_balance_residual_N": 7.105427357601002e-15,
+      "native_measured_tared_cell_noise_includes_transfer": "r.data32 is measured after sensorresponse so not compared directlytotruth",
+      "B_force_balance_residual_N": 0.0,
+      "peak_B_vs_S_relative_velocity_m_s": 0.03305832165151682,
+      "S_mass_kg": 2,
+      "B_mass_kg": 0.6,
+      "native_inverse_filter_poles_radius": [
+        0.9676227673630409,
+        0.5217422140530781,
+        0.5217422140530781
+      ],
+      "inverse_input_peak_lower_load_deviation_N": 8.784675697184074,
+      "inverse_extra_current_peak_A": 0.46217335329086373,
+      "B_balance_actuator_definition": "RecordedactuatorAxialForce_N isnetKfcurrentminusguidefriction",
+      "coil_force_minus_guide_balance_residual_N": 7.105427357601002e-15
+    },
+    "lowmode_pole_grid": {
+      "actual_k_scale": [
+        0.8,
+        0.9,
+        1,
+        1.1,
+        1.2
+      ],
+      "actual_c_N_s_m": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        75,
+        90
+      ],
+      "guide_tangent_N_s_m": [
+        2,
+        50,
+        200,
+        1002
+      ],
+      "slopes": [
+        0,
+        0.34346004134,
+        -0.34346004134
+      ],
+      "mu": [
+        0.3,
+        0.5
+      ],
+      "points": 840,
+      "summaries": [
+        {
+          "damper_c_N_s_m": 0,
+          "stable_points": 60,
+          "points": 120,
+          "worst_growth_per_s": 101.14076308689718,
+          "worst_parameters": {
+            "k_N_m": 23695.2,
+            "friction_tangent_N_s_m": 2,
+            "cell_damping_N_s_m": 0,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": 0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 15,
+          "stable_points": 114,
+          "points": 120,
+          "worst_growth_per_s": 4.637130573447072,
+          "worst_parameters": {
+            "k_N_m": 23695.2,
+            "friction_tangent_N_s_m": 2,
+            "cell_damping_N_s_m": 15,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 30,
+          "stable_points": 120,
+          "points": 120,
+          "worst_growth_per_s": -48.54806701180247,
+          "worst_parameters": {
+            "k_N_m": 15796.800000000001,
+            "friction_tangent_N_s_m": 1002,
+            "cell_damping_N_s_m": 30,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 45,
+          "stable_points": 120,
+          "points": 120,
+          "worst_growth_per_s": -46.97933004867932,
+          "worst_parameters": {
+            "k_N_m": 15796.800000000001,
+            "friction_tangent_N_s_m": 1002,
+            "cell_damping_N_s_m": 45,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 60,
+          "stable_points": 120,
+          "points": 120,
+          "worst_growth_per_s": -45.641231069864695,
+          "worst_parameters": {
+            "k_N_m": 15796.800000000001,
+            "friction_tangent_N_s_m": 1002,
+            "cell_damping_N_s_m": 60,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 75,
+          "stable_points": 120,
+          "points": 120,
+          "worst_growth_per_s": -44.48562999463988,
+          "worst_parameters": {
+            "k_N_m": 15796.800000000001,
+            "friction_tangent_N_s_m": 1002,
+            "cell_damping_N_s_m": 75,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        },
+        {
+          "damper_c_N_s_m": 90,
+          "stable_points": 120,
+          "points": 120,
+          "worst_growth_per_s": -43.477070342141474,
+          "worst_parameters": {
+            "k_N_m": 15796.800000000001,
+            "friction_tangent_N_s_m": 1002,
+            "cell_damping_N_s_m": 90,
+            "kp_A_N": 0.3,
+            "ki_A_N_s": 20,
+            "kd_A_s_N": 0,
+            "feedback_lp": [
+              1000,
+              0.7071067811865475
+            ],
+            "total_current_notch": null,
+            "slope": -0.34346004134,
+            "mu": 0.5,
+            "direct_geometry_force_loop": false
+          }
+        }
+      ]
+    },
+    "inverse_identification_sensitivity": {
+      "engineering_bounds_not_manufacturer_tolerance": true,
+      "actual_k_scale": [
+        0.9,
+        1,
+        1.1
+      ],
+      "actual_c_scale": [
+        0.8,
+        1,
+        1.2
+      ],
+      "identified_inverse_mB_scale": [
+        0.9,
+        1,
+        1.1
+      ],
+      "frequency_band_Hz": [
+        5,
+        100
+      ],
+      "current_and_sensor_delay": "Omittedonlyfromthisdifferentialidealresponsesizing; nativepoles retainactual100usresponseandtransport",
+      "no_surface_preview": "Truefrequencyinputs arediagnosticwaveform/sizingonly andnotcontrollerinputs",
+      "rows": [
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.28132506267858914,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.014309020970346127,
+          "differential_error_ratio_at30Hz": 0.03679141181353823,
+          "differential_error_ratio_at50Hz": 0.11828655412553336
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.19572820114953618,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.008258307044507626,
+          "differential_error_ratio_at30Hz": 0.022500814038599812,
+          "differential_error_ratio_at50Hz": 0.07773911149334259
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.1137138086452639,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.003078144336064356,
+          "differential_error_ratio_at30Hz": 0.010277486290353794,
+          "differential_error_ratio_at50Hz": 0.04147591336768915
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.11012432420583435,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.01234372888102351,
+          "differential_error_ratio_at30Hz": 0.02743869625711391,
+          "differential_error_ratio_at50Hz": 0.06433536109115466
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.04209512004469528,
+          "peak_frequency_Hz": 84.68,
+          "differential_error_ratio_at20Hz": 0.006369348623813077,
+          "differential_error_ratio_at30Hz": 0.013826828971737976,
+          "differential_error_ratio_at50Hz": 0.030256579740855678
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.0781645499827092,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.0025140954393585544,
+          "differential_error_ratio_at30Hz": 0.008039262055740206,
+          "differential_error_ratio_at50Hz": 0.029041013469163362
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.08429828708986178,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.011837555924398835,
+          "differential_error_ratio_at30Hz": 0.02511880474646423,
+          "differential_error_ratio_at50Hz": 0.05296950526399985
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.13649246233014356,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.007739909596424261,
+          "differential_error_ratio_at30Hz": 0.019542691030765988,
+          "differential_error_ratio_at50Hz": 0.055750410049358795
+        },
+        {
+          "actual_k_scale": 0.9,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.21129151750567918,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.007541336924695799,
+          "differential_error_ratio_at30Hz": 0.023590574036595688,
+          "differential_error_ratio_at50Hz": 0.0790600767987765
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.27798253612374146,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.00867656884799096,
+          "differential_error_ratio_at30Hz": 0.0253643141497921,
+          "differential_error_ratio_at50Hz": 0.09600530415155363
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.19517347351244632,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.004526264157236028,
+          "differential_error_ratio_at30Hz": 0.015373532355825144,
+          "differential_error_ratio_at50Hz": 0.06422737526575492
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.12777321616491252,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.00651947386068844,
+          "differential_error_ratio_at30Hz": 0.0162848284282144,
+          "differential_error_ratio_at50Hz": 0.05115436688678062
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.08993430661386423,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.006190154852507638,
+          "differential_error_ratio_at30Hz": 0.014617104194997229,
+          "differential_error_ratio_at50Hz": 0.039787352638703484
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.08993430661386444,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.006190154852507631,
+          "differential_error_ratio_at30Hz": 0.014617104194997264,
+          "differential_error_ratio_at50Hz": 0.03978735263870362
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.06405230790627212,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.005874530478267799,
+          "differential_error_ratio_at30Hz": 0.013110466396567317,
+          "differential_error_ratio_at50Hz": 0.03136351234834151
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.13397071785031717,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.004290548410547686,
+          "differential_error_ratio_at30Hz": 0.013653272197297452,
+          "differential_error_ratio_at50Hz": 0.047589112111571144
+        },
+        {
+          "actual_k_scale": 1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.21720558447542326,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.008870808414789773,
+          "differential_error_ratio_at30Hz": 0.024885191363538107,
+          "differential_error_ratio_at50Hz": 0.08011870272656081
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.2810128204253589,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.005797360220243976,
+          "differential_error_ratio_at30Hz": 0.019690850634570385,
+          "differential_error_ratio_at50Hz": 0.08374455710046742
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.20745642199668596,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.006793099218945109,
+          "differential_error_ratio_at30Hz": 0.01863395653959232,
+          "differential_error_ratio_at50Hz": 0.06747893538278185
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 0.8,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.1633441103977965,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.011604268239884516,
+          "differential_error_ratio_at30Hz": 0.027077414100413276,
+          "differential_error_ratio_at50Hz": 0.07489539079375
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.08125810770464538,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.002087787401062671,
+          "differential_error_ratio_at30Hz": 0.006794472690601852,
+          "differential_error_ratio_at50Hz": 0.02618279223447822
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.04311596032291337,
+          "peak_frequency_Hz": 90.0,
+          "differential_error_ratio_at20Hz": 0.005289316229444977,
+          "differential_error_ratio_at30Hz": 0.011685899923988345,
+          "differential_error_ratio_at50Hz": 0.027278722277441905
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.12062964014823259,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.011289688543194796,
+          "differential_error_ratio_at30Hz": 0.0254367841931838,
+          "differential_error_ratio_at50Hz": 0.06292618565580627
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 0.9,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.05440221609765693,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.001659332193235439,
+          "differential_error_ratio_at30Hz": 0.005196184702208832,
+          "differential_error_ratio_at50Hz": 0.018432373297573176
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.14029187425811732,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.006495672541049172,
+          "differential_error_ratio_at30Hz": 0.016847368477432203,
+          "differential_error_ratio_at50Hz": 0.05157899863350795
+        },
+        {
+          "actual_k_scale": 1.1,
+          "actual_c_scale": 1.2,
+          "identified_inverse_mB_scale": 1.1,
+          "peak_differential_force_error_ratio_5_to_100Hz": 0.22961371508281414,
+          "peak_frequency_Hz": 100.0,
+          "differential_error_ratio_at20Hz": 0.0125427266682803,
+          "differential_error_ratio_at30Hz": 0.030882182580225542,
+          "differential_error_ratio_at50Hz": 0.08871397466273562
+        }
+      ],
+      "worst": {
+        "actual_k_scale": 0.9,
+        "actual_c_scale": 0.8,
+        "identified_inverse_mB_scale": 0.9,
+        "peak_differential_force_error_ratio_5_to_100Hz": 0.28132506267858914,
+        "peak_frequency_Hz": 100.0,
+        "differential_error_ratio_at20Hz": 0.014309020970346127,
+        "differential_error_ratio_at30Hz": 0.03679141181353823,
+        "differential_error_ratio_at50Hz": 0.11828655412553336
+      }
+    },
+    "causal_B_velocity_estimator_noise_sizing": [
+      {
+        "extra_qdot_LP_cutoff_Hz": null,
+        "qdot_noise_rms_m_s": 0.00033062422168469963,
+        "linear_Coulomb_slope_force_rms_N_at_zero_if_Fc0p2_vscale0p0002": 0.3306242216846996,
+        "viscous_guide2_force_noise_rms_N": 0.0006612484433693993
+      },
+      {
+        "extra_qdot_LP_cutoff_Hz": 50,
+        "qdot_noise_rms_m_s": 2.919399971411512e-05,
+        "linear_Coulomb_slope_force_rms_N_at_zero_if_Fc0p2_vscale0p0002": 0.02919399971411512,
+        "viscous_guide2_force_noise_rms_N": 5.838799942823024e-05
+      },
+      {
+        "extra_qdot_LP_cutoff_Hz": 100,
+        "qdot_noise_rms_m_s": 4.785162891221875e-05,
+        "linear_Coulomb_slope_force_rms_N_at_zero_if_Fc0p2_vscale0p0002": 0.04785162891221875,
+        "viscous_guide2_force_noise_rms_N": 9.57032578244375e-05
+      },
+      {
+        "extra_qdot_LP_cutoff_Hz": 200,
+        "qdot_noise_rms_m_s": 7.432129199117911e-05,
+        "linear_Coulomb_slope_force_rms_N_at_zero_if_Fc0p2_vscale0p0002": 0.07432129199117911,
+        "viscous_guide2_force_noise_rms_N": 0.00014864258398235823
+      }
+    ],
+    "spring_preload_and_length": {
+      "selected_actual_preload_N": 33.6,
+      "shared32case_feasible_preload_interval_N": [
+        30.36861742866233,
+        36.866512571337665
+      ],
+      "combined_free_length_max_m": 0.03718,
+      "combined_installed_length_max_at_midpoint_m": 0.03037,
+      "pair_rate_N_m": 19746,
+      "single_spring_rate_N_m": 9873.0,
+      "all32cases_short_endpoint_joint_pass": true,
+      "short_endpoint_peak_force_error_N": 0.3280794993164733,
+      "qualified_repeats_and_uncertainty": "Ownedbymechanics/uncertainty;notinferredfromthis32caseaudit"
+    },
+    "limitations": [
+      "MeasuredS acceleration reconstructsactualcell-distalcontactreactionregardlessofsoftlowerlink, providedallforcespassthroughcellandsensortransfer/mass/normaldirection arecorrect.",
+      "Softlink lowers modeledBmode butdoesnotprove installedcell/fixture/pad modesabsent.",
+      "Cellproximal/joiningframe mass,Coulomb/seal/friction forces,damper frequency/temperature dependence andspringrate/preloadtolerancesrequireidentification/appropriateplantstress.",
+      "Causalqdot estimatoraddsmeasurement-noise sensitivebranch;donotchangecontrollersolelybasedonthisderivation. Nativeguideerror/strokecornersshouldjustifyit.",
+      "Springcataloguegeometryfeasibilityisnot supplierfatiguequalification;providedpairfits100mmspringlengthbudget.",
+      "InverseassumeslinearKelvin-Voigtloading,dampedlinkc>0,knownmass,properrolloff,current/voltagebandwidth;commandclipping andstopsremainnativefailures."
+    ],
+    "calculation_source": "exec(open('/tmp/acf-structural-control-review.py').read().split('strategies=')[0])\nfrom scipy.io import loadmat\nfrom scipy.signal import lfilter\nfrom hashlib import sha256\nfolder=Path('/home/tommie/.local/state/actuator-model/inertial-mechanics-selected-lower-series-20260930/lower_series_v1')\ncandidatePath=Path('/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_lower_series_v1_candidate_20260930.mat');p=loadmat(candidatePath,simplify_cells=True)['p'];mechanics=p['mechanics'];ki=20;kp=.3;k=mechanics['k1'];c=mechanics['c1'];mb=mechanics['mB'];kc=64e6;bguide=2.;wn=np.sqrt(k/mb)\nstatic={'spring_k_N_m':k,'damper_c_N_s_m':c,'upstream_mass_B_kg':mb,'cell_k_N_m':kc,'low_natural_frequency_Hz':float(wn/(2*np.pi)),'low_damping_ratio_spring_damper_only':float(c/(2*np.sqrt(k*mb))),'low_damping_ratio_with_guide2':float((c+bguide)/(2*np.sqrt(k*mb))),'cell_static_series_k_N_m':float(k*kc/(k+kc)),'cell_static_relative_stiffness_reduction':float(k/(k+kc)),'cell_lowfrequency_effective_c_N_s_m':float(c*kc*kc/(k+kc)**2),'cell_massless_relaxation_time_s':float(c/(k+kc)),'cell_series_complex_correction_fraction_at29Hz':float(abs(k+1j*c*wn)/kc),'cell_series_complex_correction_fraction_at1500Hz':float(abs(k+2j*np.pi*1500*c)/kc)}\nprint('Staticlowmode',static)\n# Actual mechanical sensitivity changes only physical k/c; feedforward identification remains fixed.\nrows=[]\nfor kval in [k*.8,k*.9,k,k*1.1,k*1.2]:\n for cval in [0,15,30,45,60,75,90]:\n  for bval in [2,50,200,1002]:\n   for slope in [0,.34346004134,-.34346004134]:\n    for mu in [.3,.5]:\n     row,_=closed(k=kval,cellc=cval,friction=bval,kp=kp,ki=ki,lp=(1000,1/np.sqrt(2)),slope=slope,mu=mu,geometry_loop=False);rows.append(row)\nsummary=[]\nfor cval in [0,15,30,45,60,75,90]:\n rr=[r for r in rows if r['parameters']['cell_damping_N_s_m']==cval];worst=max(rr,key=lambda r:r['largest_growth_rate_per_s']);summary.append({'damper_c_N_s_m':cval,'stable_points':sum(r['stable'] for r in rr),'points':len(rr),'worst_growth_per_s':worst['largest_growth_rate_per_s'],'worst_parameters':worst['parameters']});print('c sensitivity',summary[-1])\n# Masslesscell series mechanics with three states normalized toNunits.\nAmassless=np.array([[0,wn,0],[0,-bguide/mb,-wn],[kc/c,kc*wn/k,-(kc+k)/c]]);emassless=np.linalg.eigvals(Amassless)\ncellMassless={'poles_per_s':[{'real':float(v.real),'imag':float(v.imag),'frequency_Hz':float(abs(v.imag)/(2*np.pi))} for v in emassless],'physical_interpretation':'Masslessjoiningframe+finitecellcompliance addsafastrealKelvin-Voigtrelaxationpole,notan independent1.64kHzoscillator. Nonzerofixturemassaddsaseparateoscillatorymode.'}\n# Nonzero joiningframe masses preserve B=.6 asadditionalupstreammass; these are sensitivities.\nfixture=[]\nfor mc in [.005,.01,.025,.05,.1,.2,.6]:\n A=np.array([[0,1,0,0],[-k/mb,-(c+bguide)/mb,k/mb,c/mb],[0,0,0,1],[k/mc,c/mc,-(k+kc)/mc,-c/mc]])\n vals=np.linalg.eigvals(A);pos=vals[vals.imag>0];pos=sorted(pos,key=lambda v:v.imag)\n rr={'joiningframe_proximal_cell_mass_kg':mc,'additional_mass_vs_B_baseline':True,'approx_high_frequency_Hz':float(np.sqrt(kc/mc)/(2*np.pi)),'approx_high_damping_ratio_with_c60':float(c/(2*np.sqrt(kc*mc))),'modes':[{'frequency_Hz':float(v.imag/(2*np.pi)),'natural_frequency_Hz':float(abs(v)/(2*np.pi)),'growth_per_s':float(v.real),'damping_ratio':float(-v.real/abs(v))} for v in pos]};fixture.append(rr);print('Fixturemode',rr)\n# Nativeinverse coefficients independently reproduced.\na=2/Ts;rollw=a*np.tan(np.pi*1500*Ts);zeta=1/np.sqrt(2);quad=np.array([a*a+2*zeta*rollw*a+rollw*rollw,2*(rollw*rollw-a*a),a*a-2*zeta*rollw*a+rollw*rollw]);bn=np.polymul(mb/p['coil']['forceConstant']*rollw*rollw*a*a*np.array([1,-2,1]),[1,1]);an=np.polymul([c*a+k,k-c*a],quad);bn/=an[0];an/=an[0];inv=p['inertial']['lowerLoadInverse'];coefResidual={'numerator':float(np.max(abs(bn-inv['numerator']))),'denominator':float(np.max(abs(an-inv['denominator']))),'zeroDC_numerator_sum':float(sum(bn)),'max_filter_pole_radius':float(max(abs(np.roots(an))))};print('Coeffresiduals',coefResidual)\n# Ideal-response differential sensitivity isolates inverse parameter error from baselinecurrent/sensorlag.\nmismatch=[];CPI=lambda s:20*(kp+ki/s);freqgrid=np.linspace(5,100,9501)\nfor kscale in [.9,1,1.1]:\n for cscale in [.8,1,1.2]:\n  for mbscale in [.9,1,1.1]:\n   if kscale==cscale==mbscale==1:continue\n   s=2j*np.pi*freqgrid;Za=k*kscale+c*cscale*s;Zi=k+c*s;roll=rollw*rollw/(s*s+2*zeta*rollw*s+rollw*rollw);C=CPI(s);den=mb*s*s+bguide*s+(1+C)*Za\n   delta_error=mb*s*s*(mbscale*Za/Zi-1)*roll/den\n   j=int(np.argmax(abs(delta_error)));i20=int(np.argmin(abs(freqgrid-20)));i30=int(np.argmin(abs(freqgrid-30)));i50=int(np.argmin(abs(freqgrid-50)))\n   mismatch.append({'actual_k_scale':kscale,'actual_c_scale':cscale,'identified_inverse_mB_scale':mbscale,'peak_differential_force_error_ratio_5_to_100Hz':float(abs(delta_error[j])),'peak_frequency_Hz':float(freqgrid[j]),'differential_error_ratio_at20Hz':float(abs(delta_error[i20])),'differential_error_ratio_at30Hz':float(abs(delta_error[i30])),'differential_error_ratio_at50Hz':float(abs(delta_error[i50]))})\nworst=max(mismatch,key=lambda r:r['peak_differential_force_error_ratio_5_to_100Hz']);print('Worstidealparametererror',worst)\n# Causalqdot estimator: oneconstitutivefirstorderstate, rawcellnoise.02 afterexistingresponse.\nNfreq=65536;z=np.exp(1j*(np.arange(Nfreq)+.5)*np.pi/Nfreq);Hqd=a*(z-1)/((c*a+k)*z+(k-c*a));qnoise=[]\nfor fcLP in [None,50,100,200]:\n H=Hqd\n if fcLP:\n  al=np.exp(-2*np.pi*fcLP*Ts);H=H*((1-al)*z/(z-al))\n sig=float(.02*np.sqrt(np.mean(abs(H)**2)));qnoise.append({'extra_qdot_LP_cutoff_Hz':fcLP,'qdot_noise_rms_m_s':sig,'linear_Coulomb_slope_force_rms_N_at_zero_if_Fc0p2_vscale0p0002':float(1000*sig),'viscous_guide2_force_noise_rms_N':float(2*sig)})\nprint('Qdotnoisesizing',qnoise)\n# Auditexistingnativecase; sourceforoldrecipe dynamics isunchangedafterselectedfreeze.\naudit=json.loads(Path('/tmp/acf-lower-series-native-inverse-audit-results.json').read_text());endpoint=json.loads(Path('/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_lower_spring_selected_20260930_inverse_rate19p746_d60_results.json').read_text());endpointRows=endpoint['rows'];preMin=max(r['feasibleCommonPreloadMin_N'] for r in endpointRows);preMax=min(r['feasibleCommonPreloadMax_N'] for r in endpointRows)\n",
+    "recorded_causal_input_identification_sensitivity": {
+      "scope": "Read-only linear incremental sensitivity driven by a retained causalnative desired-lower-load record; not newnative simulation or nonlinear forcequalification.",
+      "source_trace": "acf_simulink/validation/inertial_mechanics_lower_spring_selected_20260930_inverse_rate19p746_d60_worst_native_trace.mat",
+      "source_trace_key": "worst",
+      "source_S_mass_kg": 2,
+      "source_force_N": 50,
+      "source_orientation_deg": 90,
+      "source_seed": 1729,
+      "actual_mechanics_nominal": {
+        "k_N_m": 19746,
+        "c_N_s_m": 60,
+        "mB_kg": 0.6,
+        "guide_tangent_N_s_m": 2
+      },
+      "controller": {
+        "Kp_A_N": 0.3,
+        "Ki_A_N_s": 20,
+        "feedback_LP_Hz": 1000,
+        "feedback_LP_damping": 0.7071067811865475,
+        "sensor_EMA_time_s": 0.0001,
+        "sensor_transport_s": 0.0001,
+        "current_time_s": 0.0001
+      },
+      "method": "Recomputepropernativeinversecoefficientsforidentifiedparametererrorsonly,applythemtoexisting100uscausalloadinput; subtractbaselinecurrent; propagateincrement through exactsamplednominalclosedloop. Frozen\u00b1.343/flatgeometryprojection. Originalrobotcommands/contactpath/guideCoulombtrajectory/reference/noise inputs are held, soincrement is not a newpeakerror result.",
+      "rows": [
+        {
+          "label": "identified_k90",
+          "identified_stiffness_scale": 0.9,
+          "identified_damping_scale": 1,
+          "identified_inverse_massB_scale": 1,
+          "peak_inverse_current_change_A": 0.013757624541506974,
+          "worst_incremental_force_N": 0.047151926590679155,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.045677926519232914,
+              "signed_increment_at_peak_N": -0.045677926519232914,
+              "time_at_peak_s": 2.0041,
+              "rms_increment_N": 0.00295537785470066
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.047151926590679155,
+              "signed_increment_at_peak_N": -0.047151926590679155,
+              "time_at_peak_s": 2.0039000000000002,
+              "rms_increment_N": 0.0029765822956363346
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.045237297848560745,
+              "signed_increment_at_peak_N": -0.045237297848560745,
+              "time_at_peak_s": 2.0042,
+              "rms_increment_N": 0.002949165361581353
+            }
+          ]
+        },
+        {
+          "label": "identified_k110",
+          "identified_stiffness_scale": 1.1,
+          "identified_damping_scale": 1,
+          "identified_inverse_massB_scale": 1,
+          "peak_inverse_current_change_A": 0.012481718804398412,
+          "worst_incremental_force_N": 0.04322440157216052,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.041675209886017875,
+              "signed_increment_at_peak_N": 0.041675209886017875,
+              "time_at_peak_s": 2.004,
+              "rms_increment_N": 0.002568562059649792
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.04322440157216052,
+              "signed_increment_at_peak_N": 0.04322440157216052,
+              "time_at_peak_s": 2.0037000000000003,
+              "rms_increment_N": 0.002589156797306976
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.041245909925469976,
+              "signed_increment_at_peak_N": 0.041245909925469976,
+              "time_at_peak_s": 2.004,
+              "rms_increment_N": 0.002562591820419869
+            }
+          ]
+        },
+        {
+          "label": "identified_c80",
+          "identified_stiffness_scale": 1,
+          "identified_damping_scale": 0.8,
+          "identified_inverse_massB_scale": 1,
+          "peak_inverse_current_change_A": 0.107434059775878,
+          "worst_incremental_force_N": 0.1775235078259692,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.16313017447764694,
+              "signed_increment_at_peak_N": -0.16313017447764694,
+              "time_at_peak_s": 2.1024000000000003,
+              "rms_increment_N": 0.007358644678105613
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.1775235078259692,
+              "signed_increment_at_peak_N": -0.1775235078259692,
+              "time_at_peak_s": 2.1023,
+              "rms_increment_N": 0.0081702702449456
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.15916831145689073,
+              "signed_increment_at_peak_N": -0.15916831145689073,
+              "time_at_peak_s": 2.1024000000000003,
+              "rms_increment_N": 0.00717305871272345
+            }
+          ]
+        },
+        {
+          "label": "identified_c120",
+          "identified_stiffness_scale": 1,
+          "identified_damping_scale": 1.2,
+          "identified_inverse_massB_scale": 1,
+          "peak_inverse_current_change_A": 0.07337154925561562,
+          "worst_incremental_force_N": 0.1324921817364518,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.12088002854086739,
+              "signed_increment_at_peak_N": 0.12088002854086739,
+              "time_at_peak_s": 2.1024000000000003,
+              "rms_increment_N": 0.005400794211465079
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.1324921817364518,
+              "signed_increment_at_peak_N": 0.1324921817364518,
+              "time_at_peak_s": 2.1024000000000003,
+              "rms_increment_N": 0.005910302788460197
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.1177524599587596,
+              "signed_increment_at_peak_N": 0.1177524599587596,
+              "time_at_peak_s": 2.1025,
+              "rms_increment_N": 0.005284484144794513
+            }
+          ]
+        },
+        {
+          "label": "identified_mB90",
+          "identified_stiffness_scale": 1,
+          "identified_damping_scale": 1,
+          "identified_inverse_massB_scale": 0.9,
+          "peak_inverse_current_change_A": 0.046217335329086284,
+          "worst_incremental_force_N": 0.08855845846639113,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.08140236904466548,
+              "signed_increment_at_peak_N": 0.08140236904466548,
+              "time_at_peak_s": 2.0025,
+              "rms_increment_N": 0.004151451998085393
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.08855845846639113,
+              "signed_increment_at_peak_N": 0.08855845846639113,
+              "time_at_peak_s": 2.0020000000000002,
+              "rms_increment_N": 0.004404961404424596
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.07986734541649693,
+              "signed_increment_at_peak_N": 0.07986734541649693,
+              "time_at_peak_s": 2.0025,
+              "rms_increment_N": 0.004093842541667471
+            }
+          ]
+        },
+        {
+          "label": "identified_mB110",
+          "identified_stiffness_scale": 1,
+          "identified_damping_scale": 1,
+          "identified_inverse_massB_scale": 1.1,
+          "peak_inverse_current_change_A": 0.046217335329086284,
+          "worst_incremental_force_N": 0.08855845846638967,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.08140236904466241,
+              "signed_increment_at_peak_N": -0.08140236904466241,
+              "time_at_peak_s": 2.0025,
+              "rms_increment_N": 0.00415145199808529
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.08855845846638967,
+              "signed_increment_at_peak_N": -0.08855845846638967,
+              "time_at_peak_s": 2.0020000000000002,
+              "rms_increment_N": 0.004404961404424477
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.07986734541649398,
+              "signed_increment_at_peak_N": -0.07986734541649398,
+              "time_at_peak_s": 2.0025,
+              "rms_increment_N": 0.004093842541667375
+            }
+          ]
+        },
+        {
+          "label": "identified_k90_c80_mB110",
+          "identified_stiffness_scale": 0.9,
+          "identified_damping_scale": 0.8,
+          "identified_inverse_massB_scale": 1.1,
+          "peak_inverse_current_change_A": 0.16883467439615069,
+          "worst_incremental_force_N": 0.29394377557838086,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.2624410063049203,
+              "signed_increment_at_peak_N": -0.2624410063049203,
+              "time_at_peak_s": 2.0019,
+              "rms_increment_N": 0.012983867399105236
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.29394377557838086,
+              "signed_increment_at_peak_N": -0.29394377557838086,
+              "time_at_peak_s": 2.0019,
+              "rms_increment_N": 0.014066888575996887
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.2550254224850738,
+              "signed_increment_at_peak_N": -0.2550254224850738,
+              "time_at_peak_s": 2.0020000000000002,
+              "rms_increment_N": 0.012737681654375863
+            }
+          ]
+        },
+        {
+          "label": "identified_k110_c120_mB90",
+          "identified_stiffness_scale": 1.1,
+          "identified_damping_scale": 1.2,
+          "identified_inverse_massB_scale": 0.9,
+          "peak_inverse_current_change_A": 0.11390216276694387,
+          "worst_incremental_force_N": 0.20681471692075282,
+          "frozen_slope_results": [
+            {
+              "frozen_slope": 0,
+              "peak_incremental_true_normal_force_N": 0.18526627261225873,
+              "signed_increment_at_peak_N": 0.18526627261225873,
+              "time_at_peak_s": 2.0020000000000002,
+              "rms_increment_N": 0.009308284863287046
+            },
+            {
+              "frozen_slope": 0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.20681471692075282,
+              "signed_increment_at_peak_N": 0.20681471692075282,
+              "time_at_peak_s": 2.0019,
+              "rms_increment_N": 0.009994774823449386
+            },
+            {
+              "frozen_slope": -0.34346004134,
+              "peak_incremental_true_normal_force_N": 0.1810748931290691,
+              "signed_increment_at_peak_N": 0.1810748931290691,
+              "time_at_peak_s": 2.0025,
+              "rms_increment_N": 0.009152293954504415
+            }
+          ]
+        }
+      ],
+      "limits": [
+        "Actualspring/damperparameterchangesnotresimulatedhere; see frozenpolegrid and nativeuncertaintyworkers",
+        "Coulomb nonlinearguide changes, time-varyingnormaldirection/\u00b5observer, robotgate/commands and clipped actuator effects omitted",
+        "Only100us incrementgrid; nointersamplepeakclaim",
+        "Nativefullrun \u00b1.5Nqualification cannotbe inferred byaddingthesevalues to the nominalmaximum"
+      ],
+      "calculation_source": "exec(open('/tmp/acf-structural-control-review.py').read().split('strategies=')[0])\nfrom scipy.io import loadmat\nfrom scipy.signal import lfilter\nr=loadmat('/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_lower_spring_selected_20260930_inverse_rate19p746_d60_worst_native_trace.mat',simplify_cells=True)['worst'];q=r['parameters'];k=q['mechanics']['k1'];c=q['mechanics']['c1'];mb=q['mechanics']['mB'];inp=r['lowerInverse']['data'][::10,2];t=r['time'][::10];old=q['inertial']['lowerLoadInverse'];base=lfilter(old['numerator'],old['denominator'],inp);a=2/Ts;w=a*np.tan(np.pi*1500*Ts);zeta=1/np.sqrt(2);quadratic=np.array([a*a+2*zeta*w*a+w*w,2*(w*w-a*a),a*a-2*zeta*w*a+w*w]);cases=[('identified_k90',.9,1,1),('identified_k110',1.1,1,1),('identified_c80',1,.8,1),('identified_c120',1,1.2,1),('identified_mB90',1,1,.9),('identified_mB110',1,1,1.1),('identified_k90_c80_mB110',.9,.8,1.1),('identified_k110_c120_mB90',1.1,1.2,.9)];rows=[]\nfor label,ks,cs,mbs in cases:\n bn=np.polymul(mb*mbs/Kf*w*w*a*a*np.array([1,-2,1]),[1,1]);an=np.polymul([c*cs*a+k*ks,k*ks-c*cs*a],quadratic);bn/=an[0];an/=an[0];delta=lfilter(bn,an,inp)-base\n sub=[]\n for slope in [0,.34346004134,-.34346004134]:\n  row,(Ap,Bp,Cp,bc,ac,AA)=closed(k=k,cellc=c,friction=2,kp=.3,ki=20,lp=(1000,zeta),slope=slope,mu=.3,geometry_loop=False)\n  BB=np.zeros((len(AA),1));BB[:3]=Bp;Cout=np.zeros((1,len(AA)));Cout[:,:3]=Cp\n  state=np.zeros(len(AA));N=np.zeros(len(inp))\n  for j,u in enumerate(delta*Kf):N[j]=(Cout@state).item();state=AA@state+BB[:,0]*u\n  mask=(t>=.25);idx=np.argmax(abs(N[mask]));tt=t[mask][idx];err=N[mask][idx];sub.append({'frozen_slope':slope,'peak_incremental_true_normal_force_N':float(abs(err)),'signed_increment_at_peak_N':float(err),'time_at_peak_s':float(tt),'rms_increment_N':float(np.sqrt(np.mean(N[mask]**2)))})\n worst=max(sub,key=lambda v:v['peak_incremental_true_normal_force_N']);out={'label':label,'identified_stiffness_scale':ks,'identified_damping_scale':cs,'identified_inverse_massB_scale':mbs,'peak_inverse_current_change_A':float(max(abs(delta))),'worst_incremental_force_N':worst['peak_incremental_true_normal_force_N'],'frozen_slope_results':sub};rows.append(out);print(out)\n"
+    },
+    "retained_native_damper_sizing": {
+      "peak_relative_speed_m_s": 0.03305832165151682,
+      "peak_damper_force_N": 1.9834992990910092,
+      "peak_damper_power_W": 0.06557115782490876,
+      "damper_energy_whole4s_J": 0.0021347149672691964,
+      "source_is_retained_native_not_new_experiment": true
+    }
+  },
+  "report_draft_physics_sensor_review_20260930": {
+    "scope": "Independent read-only review of current root Markdown draft; final selected-v1 tables were knowingly still pending. No root report/model modifications or new native runs.",
+    "report_path": "reports/active-contact-flange-report.md",
+    "report_sha256_at_read": "99dd9aaa68fb4edc3edcd7d90183be6dd8cc655cb5e32febb0ea0a42479c7b05",
+    "checked_equations": [
+      "A/B/S translational balances and both-rigid Rz = Fa + (mB+mS)*(g_axis+aS) are consistent when Fa is net of actual guide friction.",
+      "Reaction vector R=N*n-mu*N*t, N=(Rz-s*Rx)/sqrt(1+s*s), and measured friction ratio signs are consistent for positive scanning.",
+      "Raw reaction reconstruction R=Lraw+mS*(aS-g_vec), or consistently tared R=Ltared+mS*aS, remains correct with the compliant upstream series link.",
+      "Matched force/acceleration transfer equation Rhat=HL*R+mS*(Ha-HL)*f is correct; a synchronized ADC alone does not equalize complete transfer.",
+      "Selected inverse needs positive mB/Kf*s*s/(k+c*s) applied to requested axial-load deviation minus identified S inertia, with proper rolloff."
+    ],
+    "required_draft_updates": [
+      {
+        "draft_line_at_review": 176,
+        "change": "Label the 1.64 kHz mode as the rigid-lower finite-cell comparison. State selected lower pair open mode 28.8725 Hz; ideal massless series cell stiffness correction 0.03084%; real proximal fixture modes remain unqualified."
+      },
+      {
+        "draft_line_at_review": 124,
+        "change": "Add +lower_inverse_current to the final selected-v1 current equation, and give its identified-parameter load-inverse formula separately."
+      },
+      {
+        "draft_line_at_review": 16,
+        "change": "Show B -> parallel opposed spring pair/damper -> joining frame -> multi-axis cell -> S. All distal support forces must pass the cell."
+      },
+      {
+        "draft_line_at_review": 148,
+        "change": "Describe six amplified/conditioned bridge channels, followed by ATI calibration matrix. TWE needs custom conditioning; the published 5.1 kHz analog response belongs to DAQ F/T."
+      },
+      {
+        "draft_line_at_review": 148,
+        "change": "Avoid unverified typ/max column attribution for the approximately 0.65 us conversion provision. Include ADC analog input-filter phase and total measured processing latency."
+      },
+      {
+        "draft_line_at_review": 150,
+        "change": "Keep the ideal quantum/noise calculation a starting budget; ADC analog/conversion/reference noise, drift, installed sensor phase and vibration are separate contributions."
+      },
+      {
+        "draft_line_at_review": 126,
+        "change": "With the compliant link, S-relative-A velocity differs from actual actuator B-relative-A velocity by qdot. Do not describe the existing guide estimate as an exact B velocity; a causal measured-load constitutive observer is available if native errors justify adding it."
+      }
+    ],
+    "selected_low_and_fixture_modes": {
+      "selected_pair_open_mode_Hz": 28.87247889101866,
+      "rigid_lower_reference_cell_mode_Hz": 1643.745184,
+      "joining_fixture_mass_g": [
+        50,
+        100,
+        200
+      ],
+      "approximate_fixture_modes_Hz": [
+        5694.1,
+        4026.3,
+        2847.1
+      ],
+      "meaning": "Analytical assembly sensitivities for 64 MN/m cell and additional proximal mass; not identified modes or a completed native high-mode qualification."
+    },
+    "primary_sensor_sources": [
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf",
+        "revision": "A",
+        "checked": "25 ug/sqrt(Hz) typical ADXL1002, +/-50 g, 40 mV/g at 5 V, 4.7 kHz 5% band, 11 kHz response gain-rise definition, 21 kHz mechanical resonance; external band limiting and installed mounting are required."
+      },
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf",
+        "revision": "B",
+        "checked": "Eight simultaneous channels, 0-5 V supported. Analog input filter 25 kHz with 6.8 us phase delay in low-bandwidth mode; 220 kHz/1.1 us general high-bandwidth, 150 kHz/1.5 us in 0-5 V. Oversampling adds conversion/filter latency. Table3 tCONV extracted values 0.5 and 0.65 us; typ/max column attribution not relied upon here."
+      },
+      {
+        "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+        "checked": "DAQ six bridge outputs are amplified and conditioned, then matrix-converted after digitizing; DAQ anti-alias is two-pole 5.1 kHz. TWE supplies no built-in conditioning/AA and requires customer electronics. Tooling affects sensor mechanical response."
+      }
+    ],
+    "report_ready_mechanical_sentence": "The selected opposed spring pair and parallel damper form a compliant link above the B-S cell. This gives a modeled holder mode near 29 Hz. The much stiffer cell changes that low-frequency stiffness by only about 0.03%, but the real joining frame, cell and mounts can add higher modes that must be identified on the loaded assembly.",
+    "report_ready_sensor_sentence": "Use synchronized conditioned force and tool-acceleration channels, a common coordinate frame, calibrated downstream mass, and an identified common amplitude/phase response. The ADC conversion time and ideal bit quantum do not by themselves specify the full acquisition latency, noise or force accuracy."
+  },
+  "final_V8_report_review_20260930": {
+    "scope": "Fresh read-only review of public guides, current final-evidence report, V8 native bump, physical contracts and practical measurement/drive claims. No model/helper/report mutations and no native simulations.",
+    "as_of": "2026-09-30",
+    "source_model_SHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+    "final_candidate_SHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+    "reviewed_documents": {
+      "reports/active-contact-flange-report.md": "9d13f2cdf145d748276f56169c16873a870aba8275d6b0de6ad48a16272b11b6",
+      "acf_simulink/README.md": "881ef6fb0ad71a0eb754a98f7457501b4da08f91f37a0000f5f061a0011d14b0",
+      "acf_simulink/GETTING_STARTED.md": "ccf4c5daaeb068c8295a7d79f69d412a1735ae0a9fc181e8786b536022c18b9d",
+      "acf_simulink/MODEL_NOTES.md": "93faaba1fe022846438dd8c21b2be1844c2228a3664f62dc4e15761c9f7978cc",
+      "acf_simulink/REPRODUCING_RESULTS.md": "b4725e7ea46f95a975b22845aa12d218f58c4e2da87fec2ab89981157b105f5e"
+    },
+    "source_evidence": {
+      "joint": {
+        "path": "acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.json",
+        "sha256": "2cfaa5e372a72df1c7003b33d1f4a2dec3ab0dd6ec4c7d1c563d85c5149ad8ed"
+      },
+      "joint_plan": {
+        "path": "acf_simulink/validation/inertial_uncertainty_v8_joint_budget_plan.json",
+        "sha256": "14648b6a1b23bd67d2bafe77897b8fdc32dd479e4ad6e0380e981cf6f707ecef"
+      },
+      "current_response": {
+        "path": "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json",
+        "sha256": "6ae6636e1097b5fc4c797eb2dd185da9b3df37ed5b2405746127bda5de9f61ae"
+      },
+      "electrical": {
+        "path": "acf_simulink/validation/normal_voltage_20260930_final_sensor_subset.json",
+        "sha256": "d272e3b7cef0b8a5cdcd3e1cceec2f7c925d3996b69936fcd4d32a55b1c2cb8b"
+      },
+      "mechanical_packing": {
+        "path": "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+        "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f"
+      }
+    },
+    "native_bump": {
+      "native_XML": "simulink/systems/system_287.xml",
+      "polyval_coefficients": {
+        "Bump component 1": "[-64 192 -192 64 0 0 0]",
+        "Bump component 2": "[-384 960 -768 192 0 0]",
+        "Bump component 3": "[-1920 3840 -2304 384 0]"
+      },
+      "height_expression": "64*H*xi**3*(1-xi)**3 within0<=xi<=1, zero outside",
+      "T_s": 0.1,
+      "H_m": 0.001,
+      "continuity": "C2 but not C3 at entry/exit; position, velocity, acceleration vanish continuously, jerk has finite endpoint jumps.",
+      "peak_abs_acceleration_m_s2": 2.4,
+      "apex_acceleration_m_s2": -2.4,
+      "peak_abs_jerk_m_s3": 384,
+      "jerk_10us_forward_difference_m_s3": 383.7696
+    },
+    "verified_evidence_counts": {
+      "joint_native": 60,
+      "joint_passed": 60,
+      "joint_peak_error_N": 0.44808545355336804,
+      "joint_margin_N": 0.05191454644663196,
+      "actual_mechanical_native": 72,
+      "20mm_packing_passed": 72,
+      "new_geometry_force_simulations": 0,
+      "current_response_native": 12,
+      "current_response_all_passed": true,
+      "electrical_native": 16,
+      "electrical_distinct": 15,
+      "electrical_passed_native": 12,
+      "electrical_failed_native": 4
+    },
+    "current_groups": [
+      {
+        "currentResponse_us": 50,
+        "cases": 4,
+        "passed": 4,
+        "worstPeakNormalForceError_N": 0.312707820016648,
+        "minimumMargin_N": 0.18729217998335201,
+        "maximumPeakCurrent_A": 2.97231693730427,
+        "maximumPeakVoltage_V": 28.052590010968295
+      },
+      {
+        "currentResponse_us": 100,
+        "cases": 4,
+        "passed": 4,
+        "worstPeakNormalForceError_N": 0.34532248705080804,
+        "minimumMargin_N": 0.15467751294919196,
+        "maximumPeakCurrent_A": 2.9412585920714474,
+        "maximumPeakVoltage_V": 19.548172044297765
+      },
+      {
+        "currentResponse_us": 150,
+        "cases": 4,
+        "passed": 4,
+        "worstPeakNormalForceError_N": 0.3723022166086878,
+        "minimumMargin_N": 0.12769778339131221,
+        "maximumPeakCurrent_A": 2.9107989267784418,
+        "maximumPeakVoltage_V": 16.374940054148443
+      }
+    ],
+    "mechanical_packing_summary": {
+      "originalNativeForceExecutions": 72,
+      "newForceExecutions": 0,
+      "original18p1mmPackingPasses": 48,
+      "original18p1mmPackingRejects": 24,
+      "new20mmPackingPasses": 72,
+      "new20mmPackingRejects": 0,
+      "fullNativeRawTracesIndependentlyRechecked": 24,
+      "commonPreloadIntersectionMin_N": 30.910779283512525,
+      "commonPreloadIntersectionMax_N": 38.889731250881496,
+      "configuredCommonPreloadPerSpring_N": 33.6,
+      "combinedFreeLengthMax_mm": 40.980000000000004,
+      "combinedInstalledLengthMax_mm": 35.30796515750026,
+      "minIndividualSpringForce_N": 5.65112071648748,
+      "maxIndividualSpringForce_N": 61.54887928351252,
+      "minIndividualCompression_mm": 0.47698442861739754,
+      "maxIndividualCompression_mm": 7.790278125837954,
+      "minIndividualInstalledLength_mm": 11.719721874162046,
+      "maximumRequiredNominalFreeLength_mm": 19.330278125837957,
+      "cyclicStrokeConservativeUpperBound_mm": 1.0889587157775988,
+      "worstOriginalNormalForceError_N": 0.37437048801977113
+    },
+    "electrical_and_thermal_check": {
+      "current_A": 2.0491803278688527,
+      "coil_cold_W": 26.874496103198073,
+      "coil_hot_W": 37.355549583445324,
+      "driver36_cold_W": 46.89599570008063,
+      "driver36_hot_W": 36.41494221983338,
+      "generic20N_A4ohm_driver36_W": 65.0,
+      "TA115_chart_dissipation_at70C_W": 50,
+      "cold_real_hold_margin_to50W_W": 3.1040042999193673,
+      "real_hot_nominal31V_reserve_V": 2.5270056173902375
+    },
+    "selected_cell_contract": "Selected native k1=19746N/m,c1=60Ns/m directly; joining frame is massless. Representative64MN/m cell series correction~.03084% static is neglected; there is no independent selected cell state. Stiff no-springs reference retains finite-cell dynamics.",
+    "closed_mode_labels": {
+      "passive_open_mechanical_frequency_Hz": 28.872478910154808,
+      "ideal_P_only_closed_frequency_Hz": 76.38939893022682,
+      "ideal_P_only_closed_damping_without_guide": 0.729214143091281,
+      "scope": "Flat maintained contact and instantaneous P-only loop; excludes Ki, acquisition/current/feedback filters and robot. Not a measured native pole."
+    },
+    "findings": [
+      {
+        "priority": "required precision",
+        "location": "report224;MODEL_NOTES mechanics",
+        "finding": "State direct selected native k1 and explicitly neglected tiny series-cell correction, rather than implying an independently simulated cell or exact effective series impedance."
+      },
+      {
+        "priority": "physical definition",
+        "location": "report151-155",
+        "finding": "deltaL in the constitutive equation is actual loaded-equilibrium load deviation; deltaL_desired is separately formed controller request. q is deviation of B-S separation from the loaded equilibrium."
+      },
+      {
+        "priority": "measurement contract",
+        "location": "report201/320/448",
+        "finding": "Keep0.014m/s2 as a complete conditioned acceptance target, except the separately modeled ideal final quantum. ADXL density calculation does not include ADC/PGA/reference/conditioning noise; measure the complete chain PSD/RMS and phase."
+      },
+      {
+        "priority": "measurement implementation",
+        "location": "report195-207/320",
+        "finding": "ADXL1002 output/zero are ratiometric. Share a calibrated ratiometric reference or correct supply drift, warm up/tare at operating temperature, and verify installed drift over the powered tool run."
+      },
+      {
+        "priority": "drive qualification",
+        "location": "report218/420",
+        "finding": "Qualify3-4mH hot load, not just generic3mH. TA1155kHz is stated into2.5mH; SOA50W at70C leaves only~3.1W above the real-coil36V cold holding-stage dissipation. Generic20N/A4ohm at36V dissipates65W in the ideal linear stage."
+      },
+      {
+        "priority": "wording",
+        "location": "report369",
+        "finding": "Say all72 logged channels in each paired history, rather than72 histories; the current-response cohort has12 native runs."
+      },
+      {
+        "priority": "interpretation",
+        "location": "report224",
+        "finding": "Call28.9Hz passive/open mechanical frequency; do not confuse it with closed native poles or imply all fixture modes vanish."
+      }
+    ],
+    "ratiometric_bias_calculation": {
+      "bias_target_m_s2": 0.01,
+      "ADXL_sensitivity_V_g": 0.04,
+      "equivalent_output_drift_V": 4.077471967380224e-05,
+      "uncompensated_midscale_supply_drift_V": 8.154943934760448e-05,
+      "uncompensated_midscale_supply_drift_ppm_at5V": 16.309887869520896,
+      "interpretation": "Simple datasheet transfer sensitivity; not a new native run or manufacturer drift guarantee. Fixed initial tare does not remove later supply/temperature changes."
+    },
+    "accepted_claims": [
+      "Force-vector projection, raw/tared S-inertia reconstruction and proper positive carrier inverse remain consistent.",
+      "Calibration bounds are explicitly residual after calibration and tied to sampled26dimensional corners at two endpoints, not an exhaustive box guarantee.",
+      "The72 actual k/c variations and20mm packing rescore are properly separated from identified-coefficient errors and new force executions.",
+      "The31V usable output recommendation follows the28.473V hot request in its bounded final electrical cohort;36V supply is a provision requiring measured stage dropout and cooling.",
+      "Continuous65-70N over used stroke/temperature is a requirement, not a guarantee from Moticont64.7N nominal or from peak current alone.",
+      "The50us current alternative improves the stated cohort by.03261N; voltage effects and retuning effects are separated.",
+      "Full grid, longer joint repeats, mixed mechanics/calibration and final diagram acceptance remain separate until completed."
+    ],
+    "primary_hardware_evidence": [
+      {
+        "path": "acf_simulink/validation/normal_voltage_linear_TA115_datasheet.pdf",
+        "sha256": "35952061c7fd7aafb9aadf35145afd96d5faa7d37857241687101c73886ac848",
+        "url": "https://trustautomation.com/datasheets/TA115DataSheet.pdf",
+        "checked": "24-48V,5kHz into2.5mH,SOA100W25C/50W70C; actual coil/timing/dropout not guaranteed by these ratings."
+      },
+      {
+        "path": "acf_simulink/validation/normal_voltage_real_coil_moticont_drawing.pdf",
+        "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+        "url": "https://www.moticont.com/pdf/lvcm-070-051-01.pdf",
+        "checked": "64.7N nominalcontinuous force,52N near strokeends,24.4N/A,6.4ohm,4mH at1kHz,240g movingcoil,1.24kg body,45W maxcontinuouspower; drawing says all values25C."
+      },
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf",
+        "checked": "25ug/sqrtHz typical,40mV/g at5V, ratiometric output andzero, external band limiting and mount identification."
+      },
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf",
+        "checked": "Eight simultaneous18bit channels; internal inputfilter phase and non-quantization errors are separate from bitquantum/conversion."
+      }
+    ]
+  },
+  "final_3500_public_promotion_review_20260930": {
+    "status": "complete_read_only_review",
+    "reviewedUTC": "2026-09-30T12:51:56.792442+00:00",
+    "newNativeSimulations": 0,
+    "reportSnapshot": {
+      "file": "reports/active-contact-flange-report.md",
+      "sha256": "432beb72a5e216b96e6d76ea431359f9db684fe0fc2d6460f97af19f52c81a6e",
+      "scope": "Completed nominal grid and promoted public model; subsequent long/refinement/electrical report integration reviewed separately."
+    },
+    "nominalGrid": {
+      "uniqueCases": 3500,
+      "allPassed": true,
+      "nativeSamplesPerCase": 400001,
+      "nativeSamplesScored": 1400003500,
+      "commonFiveSeedGroups": 700,
+      "groupSeeds": [
+        0,
+        7,
+        29,
+        97,
+        1729
+      ],
+      "noMissingUnexpectedOrDuplicateIdentities": true,
+      "allShards875RowsComplete": true,
+      "reusedImmutableDiskRows": 1060,
+      "newTmpfsRows": 2440,
+      "additionalRecoveryRowsExcluded": 122,
+      "allFourShardsAndPredecessorSourceHashesVerified": true,
+      "all27ArchivedScientificInputsVerified": true,
+      "allNineFinalAggregateManifestFilesVerified": true,
+      "scientificModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+      "candidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+      "worstError_N": 0.3158109290657549,
+      "minimumMargin_N": 0.18418907093424508,
+      "worstIdentity": {
+        "globalCaseId": 3489,
+        "massS_kg": 2,
+        "reference_N": 50,
+        "angle_deg": 75.00000000000001,
+        "mu": 0.3,
+        "seedRequested": 97
+      },
+      "scope": "Finite nominal known-mass, loaded-equilibrium, fixed-orientation grid; no continuous uncertainty or hardware guarantee."
+    },
+    "retainedWorstTrace": {
+      "wholeHistoryMetricIndependentlyRecomputed": true,
+      "nativeSamples": 400001,
+      "peakTime_s": 2.00063,
+      "peakNormalError_N": 0.3158109290657549,
+      "peakEstimatedNormalError_N": 0.27306317469419383,
+      "excerptSamples": 22001,
+      "allExcerptForceTimeValuesExactlyMatch": true,
+      "excerptIndicesConsecutive": true,
+      "nativeRobotGateHeldTraceExactlyMatches": true,
+      "slowGateAtPeak": {
+        "ready": true,
+        "filteredError_N": 0.0020580505824564325,
+        "forceRate_N_s": 0.16612049894489983
+      },
+      "fastVariationAtPeak": {
+        "ready": true,
+        "rmsDeviation_N": 0.056891709302860756
+      },
+      "fastVariationMaximumInShownWindow_N": 0.07804270772102903,
+      "fastVariationThreshold_N": 0.08,
+      "normalProjectionResidual_N": 2.842170943040401e-14,
+      "axialBalanceResidual_N": 7.105427357601002e-15,
+      "interpretedLimit": "Filtered stability criteria can remain ready through a short bounded force transient. Ready is permission for a new recentering command, not proof that actual instantaneous contact error is zero."
+    },
+    "publicPromotion": {
+      "modelSHA256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+      "currentCanonicalAndAllFourOwnedHelperHashesMatch": true,
+      "bothCandidateHashesMatch": true,
+      "allFivePromotionEvidenceHashesMatch": true,
+      "nativeSourceParity": {
+        "10sEndpointComparisons": 3,
+        "maximumDiagnosticDifference": 3.019806626980426e-14,
+        "normalSensorMotionDragInverseAndGateDifferences": 0
+      },
+      "lineCleanupIndependentReadOnlyRecheck": {
+        "connectedEdges": 1092,
+        "nativeBlocks": 1161,
+        "nativeSystems": 42,
+        "connectedEdgesBlockAndSystemParametersWorkspaceIdentical": true,
+        "unconnectedStubsBefore": 33,
+        "unconnectedStubsAfter": 0
+      },
+      "scope": "Public native graph source fidelity established by retained native comparisons and invariant metadata/layout bridges; no 3500-case rerun of the visual public graph was required or claimed."
+    },
+    "reportFigures": {
+      "coverageAndWorstPNGsVisuallyReviewed": true,
+      "heatmapCellMaximaAndMassBarMaximaConsistent": true,
+      "all3500ReportRowsPreserveOriginalMetrics": true,
+      "displayIdentityOnlyChanges": "id is globalCaseId; partitionCaseId and rawAngle_deg retain archived values; angle rounded only for display/group identity",
+      "figureSourceMetadataAndReportConversionHashesMatch": true,
+      "gateCaptionMatchesBothSlowAndFastNativeStates": true
+    },
+    "mixedMechanicalCalibrationSensitivity": {
+      "originalCases": 3,
+      "knownActualInverseCases": 3,
+      "allForceAndPackingPass": true,
+      "originalWorst_N": 0.48999572475288744,
+      "knownActualInverseWorst_N": 0.4530257596136593,
+      "originalMargin_N": 0.01000427524711256,
+      "knownActualInverseMargin_N": 0.04697424038634068,
+      "actualAndUpdatedIdentified_k_N_m": 23695.2,
+      "actualAndUpdatedIdentified_c_Ns_m": 48,
+      "preservedIdentifiedB_kg": 0.603,
+      "preservedIdentifiedS_kg": 1.99,
+      "preservedIdentifiedKf_N_A": 20.1,
+      "scope": "One heavy combined calibration corner, seeds7/29/1729, four seconds per recording. Exact-known k/c supplied only to the inverse; not a k/c identification error allowance, full combined tolerance mesh, or replacement main candidate."
+    },
+    "hotVoltageMappingReview": {
+      "algebraIndependentlyCorrect": true,
+      "realCurrentScale": "20/24.4",
+      "genericDemand": "Vg=30*(u-i)+4*i+20*v",
+      "realHotDemand": "Vr=(20/24.4)*(40*(u-i)+8.896*i)+24.4*v",
+      "speedEliminatedMap": "Vr=1.22*Vg+2.411803278688525*i-3.813114754098365*(u-i)",
+      "triangleBound": "1.22*peak_abs_Vg+2.411803278688525*peak_abs_i+3.813114754098365*peak_abs_u_minus_i",
+      "necessaryAssumptions": [
+        "Same mechanical trajectory and current-response target",
+        "All current-command branches rescaled, including proper lower inverse",
+        "Generic Vg is the unclipped requested voltage and u is the native limited current reference",
+        "Real output remains unclipped when claiming identical force trajectories",
+        "Identified Kf/current feedback and actual amplifier phase/ripple verified separately"
+      ],
+      "scope": "Algebraic counterfactual headroom bound and retained matched trajectory verification; does not itself add physical or native simulations."
+    },
+    "findings": {
+      "substantiveUnsupportedClaimsInReviewedNewSections": [],
+      "handoffDrift": "AGENTS.md active handoff still described grid/promotion as pending at initial read; root notified to refresh."
+    },
+    "evidence": [
+      {
+        "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+        "sha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf"
+      },
+      {
+        "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_coverage.json",
+        "sha256": "73216ee2164009d08cc62fd95f1038fcc57a1fd3abef62f16c72bd2e58ad77a7"
+      },
+      {
+        "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_final_manifest.json",
+        "sha256": "a9e91d0163d1918bdaa8b8a8e6cce6f9d1d57e3a22a159f748f06791f723b9e7"
+      },
+      {
+        "file": "acf_simulink/validation/inertial_report_final_grid_rows_20260930.json",
+        "sha256": "f75bd5c1bc927083d16952cb390cfb18923f07891da700936b5569038fbc40b7"
+      },
+      {
+        "file": "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json",
+        "sha256": "dc72f67504a0bb3ff9d07c3bcc814e8c4c62a0a308173ffd85e62da42765c10e"
+      },
+      {
+        "file": "acf_simulink/validation/normal_contact_trial_delivery_manifest_v8_20260930.json",
+        "sha256": "58bb3a49c1c71f1bc8890830c27f967820ab9b6bca9f34b38ebfeee8393cf92b"
+      },
+      {
+        "file": "acf_simulink/validation/normal_contact_trial_line_cleanup_bridge_20260930.json",
+        "sha256": "350aca2d8d0cc20f138762f1a3b96b7b380562ba025b99884d92d8f74f9fa660"
+      },
+      {
+        "file": "acf_simulink/validation/inertial_mechanics_mixed_worst_corner_20260930_results.json",
+        "sha256": "8b09dafb79ad4d467f28cc05375c2001c741f5508a07f0fba9761167018a524f"
+      },
+      {
+        "file": "acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_results.json",
+        "sha256": "21f48187ecbf22bdb1ff0fec9a962da13454fe1fafa4638d91e58711db09d950"
+      }
+    ]
+  }
+}

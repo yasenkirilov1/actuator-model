@@ -1,0 +1,90 @@
+{
+  "status": "reviewed complete pilot and source-backed analytical sizing; endpoint chart is supplied separately once its actual cohort finishes",
+  "metric": "Maximum absolute true normal-force error over every native timestamp of 10 s, including startup; no downsampled metric",
+  "forceThreshold_N": 0.5,
+  "sensorContract": "matched_100us_50g",
+  "sources": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_matched100us_prediction_v7_20260930.json",
+      "sha256": "a782c0bf3d7e206703541356822936c7e9e9bf3db12f8eb9b9a242a524305fc3"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_provision.json",
+      "sha256": "8287ab5e9d09cb7b5ea08ee4a3499ea54c6a2cbd089e5c135dd6a6ac89ac06fd"
+    }
+  ],
+  "pilot100us": {
+    "question": "Does causal acceleration prediction recover force margin for the selected screw?",
+    "chartForm": "line or grouped bars, numeric prediction-us axis and peak-error-N axis; clean and one fixed noisy seed are separate series",
+    "scope": "S2kg/B.6kg/F50N/90deg, sharp 1mm x10mm at100mm/s, finite64MN/m cell, no external damping",
+    "points": [
+      {
+        "prediction_us": 0.0,
+        "stochasticNoiseOff_N": 0.5179686153687229,
+        "noiseSeed1729_N": 0.5546117050616743,
+        "pairedWorst_N": 0.5546117050616743,
+        "cleanNativeCaseIndex": 1,
+        "noisyNativeCaseIndex": 2,
+        "noiseOffRetainsQuantization": true
+      },
+      {
+        "prediction_us": 100.0,
+        "stochasticNoiseOff_N": 0.4800064262641115,
+        "noiseSeed1729_N": 0.5247112421326605,
+        "pairedWorst_N": 0.5247112421326605,
+        "cleanNativeCaseIndex": 3,
+        "noisyNativeCaseIndex": 4,
+        "noiseOffRetainsQuantization": true
+      },
+      {
+        "prediction_us": 200.0,
+        "stochasticNoiseOff_N": 0.45026670338633323,
+        "noiseSeed1729_N": 0.5323108680193727,
+        "pairedWorst_N": 0.5323108680193727,
+        "cleanNativeCaseIndex": 5,
+        "noisyNativeCaseIndex": 6,
+        "noiseOffRetainsQuantization": true
+      }
+    ],
+    "caveat": "One noisy seed is not a confidence interval or an all-seed qualification. Both prediction100us and200us pass individually with stochastic noise off; neither paired condition passes."
+  },
+  "pitchSizing": {
+    "question": "How does pitch trade static heating against reflected rotating inertia?",
+    "chartForm": "separate single-unit charts for reflected-mass kg and current A; show catalog current as its own reference, do not use a dual axis",
+    "scope": "Analytical RE25 winding sizing, total rotating J1.58e-6kgm2,50N, no guide losses;90percent efficiency only a conservative sizing bound",
+    "points": [
+      {
+        "forceConstant_N_A": 49.00884539600077,
+        "reflectedRotatingMass_kg": 6.930655534987193,
+        "holdingForce_N": 50,
+        "coldHoldingCurrent_A": 1.0202239941788163,
+        "coldHoldingCopperLoss_W": 2.414788236051771,
+        "holdingCurrent90percentSizing_A": 1.1335822157542403,
+        "lead_mm_rev": 3.0,
+        "catalogContinuousCurrent_A": 1.16
+      },
+      {
+        "forceConstant_N_A": 29.40530723760046,
+        "reflectedRotatingMass_kg": 2.495035992595389,
+        "holdingForce_N": 50,
+        "coldHoldingCurrent_A": 1.7003733236313605,
+        "coldHoldingCopperLoss_W": 6.70774510014381,
+        "holdingCurrent90percentSizing_A": 1.889303692923734,
+        "lead_mm_rev": 5.0,
+        "catalogContinuousCurrent_A": 1.16
+      },
+      {
+        "forceConstant_N_A": 14.70265361880023,
+        "reflectedRotatingMass_kg": 0.6237589981488473,
+        "holdingForce_N": 50,
+        "coldHoldingCurrent_A": 3.400746647262721,
+        "coldHoldingCopperLoss_W": 26.83098040057524,
+        "holdingCurrent90percentSizing_A": 3.778607385847468,
+        "lead_mm_rev": 10.0,
+        "catalogContinuousCurrent_A": 1.16
+      }
+    ],
+    "caveat": "RE25 26.3mNm at 3mm lead and 90% motoring sizing gives 49.574597 N before guide loss; passing continuous current alone does not establish 50N continuous."
+  },
+  "sampleUncertaintyNote": "Reported stochastic RMS does not establish bias, scale accuracy, synchronization, phase or temperature allowance."
+}

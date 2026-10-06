@@ -1,0 +1,21 @@
+{
+  "status": "emitted_native_cell_source_modal_plus_joint_pi_gain_live",
+  "qualificationEpisodes": 0,
+  "nativeCFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+  "nativeCSha256": "6864f58c239aaa4b96a5ad8a8b66e4bf4b2a2c592ef4665bf619ef39d3583c19",
+  "localRawDeviationAssignment": "rtb_Cellerrortodeviation = (acf_rl_native_P.Requestedforce_Value -\n        acf_rl_native_B.Sensorsampledelay) *\n        acf_rl_native_P.Cellerrortodeviation_Gain;",
+  "upperObserverDeviationAssignment": "acf_rl_native_B.Cellforcedeviationfromequilibri = rtb_Cellerrortodeviation\n        + acf_rl_native_P.Cellforcedeviationfromequilibri;",
+  "modalDirectFeedthroughAssignment": "rtb_Currentlimits += acf_rl_native_P.Cellmodalfilter_D*\n          rtb_Cellerrortodeviation;",
+  "modalStateInputCount": 2,
+  "modalAuxiliaryBoundBeforeTotalCurrentLimit": true,
+  "antiwindupUsesTotalPrelimitCurrent": true,
+  "existingUpperObserverSourceUnchanged": true,
+  "noAccelerationLead": true,
+  "selectedNormalPIUsesLiveInertialGains": true,
+  "antiwindupUsesLiveIntegralGain": true,
+  "modalUsesExplicitIdentifiedCurrentResponse": true,
+  "diagnosticWindingCurrentIsNotControllerInput": true,
+  "localSourceGuardSha256": "04d829772954f9607559d71d22e927985c748dc7dd5224ad92a4cffa7c67db82",
+  "nativePositiveDampingGuardSha256": "e43a4de83c521af4532d93dad4497cac05106a59f52469c43c5029a00519241e",
+  "scope": "Emitted-code source and placement acceptance plus numerical sign/phase guards; no force pass inferred."
+}

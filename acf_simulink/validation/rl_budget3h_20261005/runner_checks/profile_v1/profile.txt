@@ -1,0 +1,33 @@
+         763072 function calls in 0.833 seconds
+
+   Ordered by: cumulative time
+   List reduced from 274 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.151    0.151    0.834    0.834 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/train.py:311(collect)
+     1024    0.001    0.000    0.247    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/train.py:62(advance)
+     1024    0.012    0.000    0.246    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_api.py:161(step_batch)
+     1024    0.164    0.000    0.181    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_api.py:167(step_batch_arrays)
+     1024    0.002    0.000    0.146    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/env.py:182(sample)
+     1025    0.058    0.000    0.077    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/env.py:168(infer)
+        1    0.000    0.000    0.075    0.075 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/train.py:214(save_last_rollout)
+        1    0.000    0.000    0.073    0.073 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py:681(savez_compressed)
+        1    0.000    0.000    0.073    0.073 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py:756(_savez)
+    16384    0.060    0.000    0.072    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/train.py:68(reward_value)
+       14    0.000    0.000    0.072    0.005 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/lib/_format_impl.py:702(write_array)
+       28    0.000    0.000    0.071    0.003 /home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/zipfile/__init__.py:1221(write)
+       28    0.069    0.002    0.069    0.002 {method 'compress' of 'zlib.Compress' objects}
+     1024    0.013    0.000    0.067    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/policy_export.py:57(numpy_sample)
+    16384    0.045    0.000    0.052    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_api.py:239(_result)
+     1024    0.026    0.000    0.047    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/policy_export.py:40(numpy_evaluate_latent)
+   376832    0.035    0.000    0.035    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_api.py:39(__getattr__)
+     1025    0.022    0.000    0.031    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/env.py:83(encode)
+        1    0.001    0.001    0.017    0.017 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/policy.py:264(sequence)
+     5125    0.007    0.000    0.017    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/env.py:164(pointer)
+     3073    0.003    0.000    0.014    0.000 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2245(clip)
+    11270    0.004    0.000    0.014    0.000 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/_core/_internal.py:279(data_as)
+     5120    0.006    0.000    0.014    0.000 /home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/native_api.py:237(_pointer)
+     5122    0.003    0.000    0.014    0.000 /home/tommie/Pesten/puffer4-native/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:48(_wrapfunc)
+     4099    0.002    0.000    0.012    0.000 {method 'sum' of 'numpy.ndarray' objects}
+
+

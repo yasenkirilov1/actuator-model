@@ -1,0 +1,640 @@
+{
+  "status": "complete",
+  "date": "2026-10-05",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "notesMarkdown": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+  "notesHtml": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.html",
+  "versionedHtml": "reports/active-contact-flange-report-20261005.html",
+  "scope": "New nested report and finite small-policy native learning studies. Historical packages retained. No physical sanding or full learned-policy grid qualification.",
+  "learnedPoliciesPromoted": false,
+  "pairedHeldoutNativeRecordings": 54,
+  "unchangedPublicModelSha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "preservedOriginalFigures": [
+    {
+      "file": "figures/bump_motion_and_inertia.png",
+      "sha256": "793187bbecf03f68246a40e13519f27926b942ba8f4bf106f50c0f289f632cbe"
+    },
+    {
+      "file": "figures/bump_motion_and_inertia.svg",
+      "sha256": "4162c5e1262562b91a568f6af624c3abd87e9dad8b38b22fb6655ba2b0a1fcb0"
+    },
+    {
+      "file": "figures/inertial_controller_reference_comparison.png",
+      "sha256": "51457b96f1c57d1db708a1877e9f8868dc44ccad9ebeb4c565f0896fb229623c"
+    },
+    {
+      "file": "figures/inertial_controller_reference_comparison.svg",
+      "sha256": "f11befc482d9f517f481c0aba32c474c12d1415c64de2acf9861fd216c7875ba"
+    },
+    {
+      "file": "figures/inertial_PI_reference_gain_search.png",
+      "sha256": "2216c7b16ae90fe44ee1caa4bbedc8350d91c837f7722ca115161dcaafac005c"
+    },
+    {
+      "file": "figures/inertial_PI_reference_gain_search.svg",
+      "sha256": "e3719c93b1041a601e210209efac52640165e473c8507f773e21cbaa31e77917"
+    },
+    {
+      "file": "figures/inertial_cell_stiffness_sensitivity.png",
+      "sha256": "945a25c1799fd159a0ab30b60b05a1c9c79e5b5faba4d9ae1dc6cc10494f3e14"
+    },
+    {
+      "file": "figures/inertial_cell_stiffness_sensitivity.svg",
+      "sha256": "aa1ee2608aa788e3e4fc4b6f63620542cbb767e46261ffc94e5482231c144f51"
+    },
+    {
+      "file": "figures/inertial_performance_limit_decomposition.png",
+      "sha256": "943a0c21cd4d2d6e3397c0b71ef26486b72069b4d7142a1e673abcd287fa03d4"
+    },
+    {
+      "file": "figures/inertial_performance_limit_decomposition.svg",
+      "sha256": "6e56c06cd589a486a569a6a0c2f2e7c9fb23c81c1694b7bda136142aec1dc62d"
+    },
+    {
+      "file": "figures/screw_pitch_inertia_and_heating.png",
+      "sha256": "2630c47af1f10a6557d9b0b3008716a7c12f4b6afaa7b8945b48901b2be68bf9"
+    },
+    {
+      "file": "figures/screw_pitch_inertia_and_heating.svg",
+      "sha256": "618a97cc455d9f35a6ee8cc91b6d0417def326c454760270e9ff415c6d4e676f"
+    },
+    {
+      "file": "figures/inertial_mechanics_spring_tuning.png",
+      "sha256": "bb7211b61b522abd12f107035f11c908e49af8af333efc4bdbc0161d5e1504c5"
+    },
+    {
+      "file": "figures/inertial_mechanics_spring_tuning.svg",
+      "sha256": "b9b5f2a556a5121e67bc1713ee2c8df8b1c1f5b9dffe6b041febab8f4ec788eb"
+    },
+    {
+      "file": "figures/inertial_mechanics_selected_repeated.png",
+      "sha256": "a3d4f6ead9ef89168dff1ddd709d7c166b1cb04517be990d64c14df6115ede59"
+    },
+    {
+      "file": "figures/inertial_mechanics_selected_repeated.svg",
+      "sha256": "a2a099cb0748f0dc5362b66d05bf8b93f8a85509b95d72cd4ffa5050019a5251"
+    },
+    {
+      "file": "figures/inertial_mechanics_selected_bump_overlay.png",
+      "sha256": "15180c3b565c96a80724b7b503525954679ee687fde260b0d366da5ecd9abb47"
+    },
+    {
+      "file": "figures/inertial_mechanics_selected_bump_overlay.svg",
+      "sha256": "3f9983f5d854fb035bdfa91baa843db07ebfd2d60679b8069c7a7f1540e731a2"
+    },
+    {
+      "file": "figures/inertial_final_current_response.png",
+      "sha256": "b8f6557210125669860e2da3826e4c71a1b26f46b95a585907029f6976cfc1d6"
+    },
+    {
+      "file": "figures/inertial_final_current_response.svg",
+      "sha256": "c5168818127a7c2673c462d7fb2d09ed81eb5a496445f53db2fe62bb0bba5819"
+    },
+    {
+      "file": "figures/inertial_mechanics_v8_actual_tolerance.png",
+      "sha256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee"
+    },
+    {
+      "file": "figures/inertial_mechanics_v8_actual_tolerance.svg",
+      "sha256": "b51d51e3e4330e15bef19b886cfa9098a981159748cf6dce482bf46c148f6c7f"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_sensing.png",
+      "sha256": "d2cde5a865f99f77a19f05eeb9d78212f69d0f04007b0d4f4fe28caeef365f7f"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_sensing.svg",
+      "sha256": "d2847b8d8e184d129e27d033a0bfac9bc13295407316ec0ee4a22fa2a05c25ff"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_joint.png",
+      "sha256": "c06aea4d854bc04371add73eadd680ad978483b91a8ab1ab32fda81626f52363"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_joint.svg",
+      "sha256": "81ee080112d2f806cfff7fc82a0b5a5023dcf0820efb705cb009c80dfc2280b4"
+    },
+    {
+      "file": "figures/inertial_final_voltage_headroom.png",
+      "sha256": "efd8df9ebc9b5436354ab45c5bdb682e6b95cec397fee2e8a72c3d91fdc35f09"
+    },
+    {
+      "file": "figures/inertial_final_voltage_headroom.svg",
+      "sha256": "36f3bc64c6619c48a89697e6e84a3b08d49387c77b381118dea9c6ac1b3c88f0"
+    },
+    {
+      "file": "figures/inertial_final_range_coverage.png",
+      "sha256": "fec3b2f07664d0f103bb17fc1e5b8ff6ade51c9a34b9559e66a8f3d13a21b06b"
+    },
+    {
+      "file": "figures/inertial_final_range_coverage.svg",
+      "sha256": "757563eb2c29ccd45959bf90254b9d4ef5770863b0830ed098c9d7c36c9537a0"
+    },
+    {
+      "file": "figures/inertial_final_worst_native.png",
+      "sha256": "166b0e793cd8aa6575e82fef8dfb1d22701f04ba1b244ea1dff7c0a82c4053d5"
+    },
+    {
+      "file": "figures/inertial_final_worst_native.svg",
+      "sha256": "46aa7e976258a5acfca9e54d5bad0b04f6476f2fe043f481da2860cfc388da4d"
+    },
+    {
+      "file": "figures/inertial_mechanics_mixed_comparison.png",
+      "sha256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62"
+    },
+    {
+      "file": "figures/inertial_mechanics_mixed_comparison.svg",
+      "sha256": "b3fdcc8536479c017d23c8140345ef962d9d83f0e3617fee6c109f50e68064b2"
+    },
+    {
+      "file": "figures/inertial_final_actuator_peak_errors.png",
+      "sha256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5"
+    },
+    {
+      "file": "figures/inertial_final_actuator_peak_errors.svg",
+      "sha256": "8fcb9ad239dfecd8f002f57438f31506e524e1366ca1e860d794d02f8e41ba6f"
+    },
+    {
+      "file": "figures/inertial_final_actuator_heavy_bump.png",
+      "sha256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818"
+    },
+    {
+      "file": "figures/inertial_final_actuator_heavy_bump.svg",
+      "sha256": "3bfd0c168ef9a3d117bcb299ef1085e702f53bf53a42bd42bfa97d491cc0c51d"
+    },
+    {
+      "file": "figures/inertial_calibration_refinement.png",
+      "sha256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36"
+    },
+    {
+      "file": "figures/inertial_calibration_refinement.svg",
+      "sha256": "ef0c70db9b4913df41a706146da2de479fc269181556004a5ce95841fdf5b35c"
+    },
+    {
+      "file": "figures/inertial_mixed_static_calibration.png",
+      "sha256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8"
+    },
+    {
+      "file": "figures/inertial_mixed_static_calibration.svg",
+      "sha256": "96c4c605625c3c0e7dca7c23a90862d33f9feff55c458f1711bcc8c0c429a3e5"
+    },
+    {
+      "file": "figures/budget_adc_bandwidth_rate.png",
+      "sha256": "3c8fc640a14d1a72ad166c6ed2c4aabdc42632fe3dc865e5e0366551d4397dd0"
+    },
+    {
+      "file": "figures/budget_adc_bandwidth_rate.svg",
+      "sha256": "61be2766e33e643474631a6e1112e6d7de1412e94784d508fc64219611957563"
+    },
+    {
+      "file": "figures/budget_accelerometer_envelopes.png",
+      "sha256": "35cb778682fa9d8e05b9037a1aa078e221a0c6f966c1b2fa99af714d6a8abd1c"
+    },
+    {
+      "file": "figures/budget_accelerometer_envelopes.svg",
+      "sha256": "ced9333783577ea8681febe76dd4062acd1a582087f4e4c5110d7f451ee7b6b2"
+    },
+    {
+      "file": "figures/budget_adc_long_waveforms.png",
+      "sha256": "09b501c2e0478e2f5531e2d3989ac2163fac9b329cd8b2e559a2fccb367518c8"
+    },
+    {
+      "file": "figures/budget_adc_long_waveforms.svg",
+      "sha256": "413e2a6c4c316246b11e945935103985a6d449adba826e2a77d755510fd1ed0d"
+    },
+    {
+      "file": "figures/budget_sensor_calibration_stress.png",
+      "sha256": "de265512d117a157928f63b78db62d077ef10d43ac8714a8de286a1a1733e10a"
+    },
+    {
+      "file": "figures/budget_sensor_calibration_stress.svg",
+      "sha256": "6b57da4a5b5a665bbae0b04bf3aa8f75e9a1c1eca2d34e8c5aa34ade8c0517e0"
+    },
+    {
+      "file": "figures/budget_sensing_response_noise.png",
+      "sha256": "21a0939d3eaeb886b77dec59e694ed199f64c8a1cf9b149a77218d6ace033b6a"
+    },
+    {
+      "file": "figures/budget_sensing_response_noise.svg",
+      "sha256": "3a0ddb25d856a36cea065db9559bd8f81725685f04e003ac35fa5b2a0a481510"
+    }
+  ],
+  "browserChecks": {
+    "desktopDomInspection": "passed: 9 nested components, 37 decoded SVGs, no horizontal page overflow, one main landmark, final progress status cleared",
+    "toolMassFilter": "passed: selecting S=2 kg produced only 2 kg rows; final reload resets filters",
+    "newSvgVisualReview": "passed: four explanatory diagrams and eight learned-study plots rendered and inspected locally",
+    "sourceMetadataBindings": "passed: source rows and original file hashes audited",
+    "screenshotCapture": "unavailable: collaborative browser snapshot failed",
+    "mobileResize": "unavailable: collaborative browser resize timed out",
+    "sourceInspectorUi": "not completed: requestAnimationFrame callbacks did not run; later browser host unavailable",
+    "offlineExport": "passed: verified split build exported with complete dataset; single-file browser opening not separately tested",
+    "currentPreviewUrl": "http://localhost:8772/?view=1"
+  },
+  "files": [
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.html",
+      "sha256": "0ac75838c47830277d63284da3051978bcf92fa617265daf32685472d30e7a1d",
+      "bytes": 53535315
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+      "sha256": "10aa9ac6a975b3af463b866e09b1ec8b36c7eed14f728760727196c62e751493",
+      "bytes": 139159
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/acf_acquisition_timing.svg",
+      "sha256": "53e5db2b5b2b9c8a03f924b0d643706dbf657dae7d2e0a2e388c6eaf35f97311",
+      "bytes": 13368
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/acf_causal_control_loops.svg",
+      "sha256": "8bce3b8badab9dcc58f7a3b4a2b5b6f8711a10ad08479246b09398c7e9cc933c",
+      "bytes": 16617
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/acf_force_reconstruction.svg",
+      "sha256": "e0e31e273e64ee4a0559a2d6955e940e8da70712dc51844e7f49b00a6522ceca",
+      "bytes": 9611
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/acf_mechanism_and_sensors.svg",
+      "sha256": "0e81896d88bc2a8db43f7ac7791268d2858dc3f55432c724b71280962c013696",
+      "bytes": 12843
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/budget_accelerometer_envelopes.svg",
+      "sha256": "ced9333783577ea8681febe76dd4062acd1a582087f4e4c5110d7f451ee7b6b2",
+      "bytes": 76044
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/budget_adc_bandwidth_rate.svg",
+      "sha256": "61be2766e33e643474631a6e1112e6d7de1412e94784d508fc64219611957563",
+      "bytes": 92669
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/budget_adc_long_waveforms.svg",
+      "sha256": "413e2a6c4c316246b11e945935103985a6d449adba826e2a77d755510fd1ed0d",
+      "bytes": 230123
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/budget_sensing_response_noise.svg",
+      "sha256": "3a0ddb25d856a36cea065db9559bd8f81725685f04e003ac35fa5b2a0a481510",
+      "bytes": 43252
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/budget_sensor_calibration_stress.svg",
+      "sha256": "6b57da4a5b5a665bbae0b04bf3aa8f75e9a1c1eca2d34e8c5aa34ade8c0517e0",
+      "bytes": 80302
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/bump_motion_and_inertia.svg",
+      "sha256": "4162c5e1262562b91a568f6af624c3abd87e9dad8b38b22fb6655ba2b0a1fcb0",
+      "bytes": 64205
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_PI_reference_gain_search.svg",
+      "sha256": "e3719c93b1041a601e210209efac52640165e473c8507f773e21cbaa31e77917",
+      "bytes": 48155
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_calibration_refinement.svg",
+      "sha256": "ef0c70db9b4913df41a706146da2de479fc269181556004a5ce95841fdf5b35c",
+      "bytes": 1105743
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_cell_stiffness_sensitivity.svg",
+      "sha256": "aa1ee2608aa788e3e4fc4b6f63620542cbb767e46261ffc94e5482231c144f51",
+      "bytes": 58614
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_controller_reference_comparison.svg",
+      "sha256": "f11befc482d9f517f481c0aba32c474c12d1415c64de2acf9861fd216c7875ba",
+      "bytes": 68095
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_actuator_heavy_bump.svg",
+      "sha256": "3bfd0c168ef9a3d117bcb299ef1085e702f53bf53a42bd42bfa97d491cc0c51d",
+      "bytes": 60839
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_actuator_peak_errors.svg",
+      "sha256": "8fcb9ad239dfecd8f002f57438f31506e524e1366ca1e860d794d02f8e41ba6f",
+      "bytes": 13196
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_current_response.svg",
+      "sha256": "c5168818127a7c2673c462d7fb2d09ed81eb5a496445f53db2fe62bb0bba5819",
+      "bytes": 59573
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_range_coverage.svg",
+      "sha256": "757563eb2c29ccd45959bf90254b9d4ef5770863b0830ed098c9d7c36c9537a0",
+      "bytes": 303080
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_voltage_headroom.svg",
+      "sha256": "36f3bc64c6619c48a89697e6e84a3b08d49387c77b381118dea9c6ac1b3c88f0",
+      "bytes": 33245
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_final_worst_native.svg",
+      "sha256": "46aa7e976258a5acfca9e54d5bad0b04f6476f2fe043f481da2860cfc388da4d",
+      "bytes": 466554
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_mechanics_mixed_comparison.svg",
+      "sha256": "b3fdcc8536479c017d23c8140345ef962d9d83f0e3617fee6c109f50e68064b2",
+      "bytes": 33722
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_mechanics_selected_repeated.svg",
+      "sha256": "a2a099cb0748f0dc5362b66d05bf8b93f8a85509b95d72cd4ffa5050019a5251",
+      "bytes": 6969809
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_mechanics_spring_tuning.svg",
+      "sha256": "b9b5f2a556a5121e67bc1713ee2c8df8b1c1f5b9dffe6b041febab8f4ec788eb",
+      "bytes": 30243
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_mechanics_v8_actual_tolerance.svg",
+      "sha256": "b51d51e3e4330e15bef19b886cfa9098a981159748cf6dce482bf46c148f6c7f",
+      "bytes": 27201
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_mixed_static_calibration.svg",
+      "sha256": "96c4c605625c3c0e7dca7c23a90862d33f9feff55c458f1711bcc8c0c429a3e5",
+      "bytes": 34186
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_performance_limit_decomposition.svg",
+      "sha256": "6e56c06cd589a486a569a6a0c2f2e7c9fb23c81c1694b7bda136142aec1dc62d",
+      "bytes": 102588
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_uncertainty_v8_joint.svg",
+      "sha256": "81ee080112d2f806cfff7fc82a0b5a5023dcf0820efb705cb009c80dfc2280b4",
+      "bytes": 62250
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/inertial_uncertainty_v8_sensing.svg",
+      "sha256": "d2847b8d8e184d129e27d033a0bfac9bc13295407316ec0ee4a22fa2a05c25ff",
+      "bytes": 76469
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_combined_paired_results.svg",
+      "sha256": "858fcc80473a26d65ffb78938605c5c715dde336ad13ca60fc17e401d74b7a20",
+      "bytes": 13836
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_combined_worst_trajectory.svg",
+      "sha256": "c9fb4896ecd701529e2f2452406b4b44c70c30fc30c8b33834461c76d99fa838",
+      "bytes": 1252151
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_force_holdout_peaks.svg",
+      "sha256": "8dd5bb55f62360eb1edc335638f30d311361aa0c054f11934cf08ba33c5fa17f",
+      "bytes": 16275
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_force_training.svg",
+      "sha256": "3146f4470f454e1cbafd7a82dc9b95ef8125394f443a4119db1beb65a5835d06",
+      "bytes": 10933
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_force_worst_bump.svg",
+      "sha256": "d6baed05fb41ce8a3b29438a92e1c528b5377820206a34a211074635e64f7824",
+      "bytes": 209691
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_robot_active_trajectory.svg",
+      "sha256": "41d2b11b5bdebfc3ce768d3366381b343c80016c35ff7d53b6d7a673b0a7cd3e",
+      "bytes": 1839288
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_robot_learned_policy.svg",
+      "sha256": "710bc699992c152288547e04f8b8f44e2ee7d516b89a4671daf730aa53e594be",
+      "bytes": 719165
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/ml_robot_paired_results.svg",
+      "sha256": "366ff4ee5ea81202e00be3e90aee48e9223c5a8271fa6eb4aeb88cf14f434ee0",
+      "bytes": 17936
+    },
+    {
+      "file": "/home/tommie/Documents/Notes Remote/S7 Project/figures/screw_pitch_inertia_and_heating.svg",
+      "sha256": "618a97cc455d9f35a6ee8cc91b6d0417def326c454760270e9ff415c6d4e676f",
+      "bytes": 63523
+    },
+    {
+      "file": "acf_simulink/experiments/build_nested_ml_report_20261005.py",
+      "sha256": "b81335f398bf76d353b5907ac667f1b7720f7c0ebeb04cfd46628c855669a68f",
+      "bytes": 17604
+    },
+    {
+      "file": "acf_simulink/experiments/ml_combined_20261005_README.md",
+      "sha256": "ca97e2e4bd3deae81f9e51e37364d314cff918bef39286e480f3d21a6936c470",
+      "bytes": 4329
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_README.md",
+      "sha256": "3d250a147289c297dfbdca902dae98c4ef523bc8e3e66cb564b49175899b655c",
+      "bytes": 8880
+    },
+    {
+      "file": "acf_simulink/experiments/ml_robot_20261005_README.md",
+      "sha256": "d72c1af3b3afe16b33ba6d139d3aec5e75c9d6af7c03e483e02f0c7362983c2f",
+      "bytes": 9201
+    },
+    {
+      "file": "acf_simulink/experiments/prepare_ml_report_inputs_20261005.py",
+      "sha256": "edb99958c2d07128474944c107d922617026d9712fb769a3f4ce1fbe5088d68f",
+      "bytes": 8021
+    },
+    {
+      "file": "acf_simulink/experiments/verify_ml_report_20261005.py",
+      "sha256": "066b0c93b9b0f58f645c930af75eba60d64db88875d26804097ac985b7e02373",
+      "bytes": 3564
+    },
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005/results.json",
+      "sha256": "64b879f7d216837fd39bb974e89bace407706353577fe164203488634995a129",
+      "bytes": 26778
+    },
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005_figures/evidence_checks.json",
+      "sha256": "3fab9879e0851914b2c68c0c5b04dfdbe397fd2505f19fb6df7f543e8a5345c6",
+      "bytes": 576
+    },
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005_figures/evidence_manifest.json",
+      "sha256": "fe558e05ee051190af61e8e591f298ff8585df76eed9191213976f9dab6678d0",
+      "bytes": 12165
+    },
+    {
+      "file": "acf_simulink/validation/ml_combined_20261005_figures/summary.json",
+      "sha256": "c139bcc20b3cae11aec187c448c4a6cc9c115410cb85c06bb1972562875fd2cb",
+      "bytes": 4766
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/file_hash_manifest.json",
+      "sha256": "460da9803d2460efd8705852beb1b5930202bd0abe12fc42f402461d226bf775",
+      "bytes": 35495
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/final_checks.json",
+      "sha256": "caeb79b71e28cab5c870115cf049e2e6959803bb2a58a2f9ed5d48de228bed91",
+      "bytes": 2668
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/summary.json",
+      "sha256": "ae14f7451b791621e787d5c8110a145e107368cb08a6bdf452ed79117d2f3687",
+      "bytes": 42111
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/trained_weights.mat",
+      "sha256": "e21982cf35ed2790e831bab0cdd45f76271bfb90b872195c9493bce094fc8b05",
+      "bytes": 1552
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/training.json",
+      "sha256": "c4cb919beaefa2f9a6eed6712b27cce9a89914f8e22b39c3755296e53f0ba87f",
+      "bytes": 11122
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/active-contact-flange-report.md",
+      "sha256": "10aa9ac6a975b3af463b866e09b1ec8b36c7eed14f728760727196c62e751493",
+      "bytes": 139159
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/combined_holdout_reviewed.json",
+      "sha256": "b62aef982c05dd2cd9db534a7b1e0f5511e2bda3b91cf9637d030a11977c5f59",
+      "bytes": 3444
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/diagram_contract.json",
+      "sha256": "d4c38282445797d5c57709c7a2cd512d7ec1861b48da82239fc9f8d4991fedca",
+      "bytes": 2823
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/force_holdout_reviewed.json",
+      "sha256": "f12dbbdef905e5ac9c855961b60b26f2de3f5e19286e91cf6337df6bd30d6264",
+      "bytes": 9023
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/force_training_reviewed.json",
+      "sha256": "0e8ebf718d0d387443361d0ca2ac2ed38afa0e43ae5f9482790f1813439e20af",
+      "bytes": 5221
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/html_manifest.json",
+      "sha256": "26fc2f445b21159be2cf96420b6802cb8d3f7ce880c30ce7c48a32542fa868b2",
+      "bytes": 45893
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/ml-component.md",
+      "sha256": "1d4ad913b5ba75d22dbe85a9ed78e46d4a72ac907fe7d572f08e5956c4466f8c",
+      "bytes": 15163
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/ml_report_inputs.json",
+      "sha256": "586938125137581de1113bc676dbf2013705bb553e4be62742763dd0110ba179",
+      "bytes": 5649
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/original-figure-hashes.json",
+      "sha256": "c2ab888fadba9656467406fa29911385ab62afaacbd1a367fa2767c908e32883",
+      "bytes": 6144
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/report-nested-draft.md",
+      "sha256": "10aa9ac6a975b3af463b866e09b1ec8b36c7eed14f728760727196c62e751493",
+      "bytes": 139159
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/report-with-svgs.md",
+      "sha256": "2d335307b9ebc5feb05f9c01252548b3a2b090cac5e8eb69abc5523183d810b1",
+      "bytes": 109431
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/report_before_restructure.md",
+      "sha256": "2d335307b9ebc5feb05f9c01252548b3a2b090cac5e8eb69abc5523183d810b1",
+      "bytes": 109431
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/restructure-audit.json",
+      "sha256": "047b9c82c314b1a88b8e2139b66531a70432ab2a5311228070225122c174ce24",
+      "bytes": 2062
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/restructure_report.py",
+      "sha256": "1c59ada5d2731c9dc3c8c92c75e61693eebdfaf3b4d43339327604ef8eee46c9",
+      "bytes": 21522
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/robot_holdout_reviewed.json",
+      "sha256": "da62517936c57c2671b43a97d395a00f2301bf331419abcaba1560d88f4bc0b1",
+      "bytes": 6842
+    },
+    {
+      "file": "acf_simulink/validation/ml_report_20261005/robot_training_reviewed.json",
+      "sha256": "17f050a1524a27bc6b663933b0a8bc3b9ee6902aa6c539a7b669cdc1eb8e1230",
+      "bytes": 5270
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_figures_final/evidence_checks.json",
+      "sha256": "48f8c6f44996c23a526c540109b7e7677eae7f1b379056a6017f5913c322bac7",
+      "bytes": 111
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_figures_final/evidence_manifest.json",
+      "sha256": "75f59ea3247f2acf8304d5eac6288d98ff543d5e6cd45f539ad8a69bf2fa8e48",
+      "bytes": 36214
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_figures_final/summary.json",
+      "sha256": "14f818b08a8009f817e93f596c49d45eeb0cffd321bd866f75152ac27730b55e",
+      "bytes": 8570
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_heldout/results.json",
+      "sha256": "f4e6f966c60b4bc059bfcd60e4d69fef7db857de1b64ce298620360f875b044d",
+      "bytes": 57967
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_training/network_weights.mat",
+      "sha256": "1fc08b808bc43986bd927532d60edf27a930bcfe6ef5a5ff4f545f391406e52e",
+      "bytes": 373
+    },
+    {
+      "file": "acf_simulink/validation/ml_robot_20261005_training/training_summary.json",
+      "sha256": "bc16cc449aa169e186948fc958fa046f93b5ebfd2fe75a29d2f31295605a148b",
+      "bytes": 9935
+    },
+    {
+      "file": "reports/active-contact-flange-report-20261005.html",
+      "sha256": "0ac75838c47830277d63284da3051978bcf92fa617265daf32685472d30e7a1d",
+      "bytes": 53535315
+    },
+    {
+      "file": "reports/prototype-design-20260930/dist/data-app-build.json",
+      "sha256": "84e452067539860a800d202535c6597fc4fc048d7eb637396537d4803787983a",
+      "bytes": 596
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/content/report/ReportContent.jsx",
+      "sha256": "a673f4b06bc387cc50ebe12ebf8023f63bf2f0d958c17040ac403cb94ea9b9ec",
+      "bytes": 219554
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/content/report/report.css",
+      "sha256": "b7b26c0629871f549b481cfe6bb39c0145298fb25c1e1a602bc7cf9e4d165c78",
+      "bytes": 11703
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/data.json",
+      "sha256": "6900419567ba2ac02bc193628be6e1e917474952bf27510aaba02594651d6a61",
+      "bytes": 31322381
+    }
+  ]
+}

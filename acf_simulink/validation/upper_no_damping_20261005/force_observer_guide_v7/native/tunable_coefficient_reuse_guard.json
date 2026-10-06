@@ -1,0 +1,12 @@
+{
+  "status": "all_reused_native_coefficients_equal_except_two_declared_controller_gains",
+  "preparedRows": 265,
+  "exactNonOverrideFieldComparisons": 150257,
+  "originalCoderCase0AllFieldsExactlyEqual": true,
+  "allowedOverrideFields": [
+    "Guidefrictionvelocityscale_Gain",
+    "GuideCoulombfrictioncurrent_Gai"
+  ],
+  "parentParameterMappingSha256": "90c4f3d6a9ea0785e46c31c12cc72e8c51540be223b38150bffe71d7911c143d",
+  "contract": "Source row is explicit perconfig. Every scalar/array/sparse C field exactly equals frozen source values, except two controller Coulomb compensation Gains. Sentinel row equals every originalCoderCase0 field, with no tolerance. Physical/observer friction and all mechanics/ADC/controller matrices unchanged."
+}

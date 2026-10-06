@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "task": "One shared two-layer32state minGRU,40causal+8derived inputs,fullcurrent and robot requests",
+      "force_Hz": 10000,
+      "robot_Hz": 100,
+      "travel_band_radius_m": 0.0075,
+      "physical_travel_m": [
+        0,
+        0.025
+      ],
+      "checkpoint": "39d403289ca2b7b081c9e2fec7f7ced070ea5e8bdcbc93abefc58b23d407d474"
+    }
+  ],
+  "sourceSha256": "c707427b6c19084229eccb458169efc00573e6b90ecf8bd42b9b7e17fba85ffb"
+}

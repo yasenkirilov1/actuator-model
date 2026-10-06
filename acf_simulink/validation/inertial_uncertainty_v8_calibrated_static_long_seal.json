@@ -1,0 +1,132 @@
+{
+  "status": "sealed",
+  "createdUtc": "2026-09-30T13:47:51.157260+00:00",
+  "scope": "Sixteen static residuals are halved from the exact four executed original30s cases. Noise, actual/identified timing and AA, robot, mechanics and100us current response are unchanged. Assembled calibration targets, not manufacturer noise improvements or full-grid qualification.",
+  "executed": 4,
+  "passed": 4,
+  "failed": 0,
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "privateModelSha256": "a6e461f018c9c1d5c784db2ae43781dddfa5b0fe8082caf42c49bb8d270c5009",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "exactExecutedRecipeSha256": "247d12963558899afe255fd5a7c8f24eb74e50b50234495839e53299de5dec0e",
+  "preparedConfigurationsSha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a",
+  "allFourStaticGuardsPassed": true,
+  "all64ExactHalfResidualValuesIndependentlyVerified": true,
+  "fullHistoriesRetained": true,
+  "allHistoriesIncludeStartup": true,
+  "actualPhysicalEquilibriumUnchanged": true,
+  "processExitCode": 0,
+  "finalFigureVisuallyReviewed": true,
+  "files": [
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "sha256": "34386cf4796359563a3e98955ae4eb0cdf82577bd11a7fcb5919a01204f13711",
+      "bytes": 98051
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.mat",
+      "sha256": "7c5f313dba81cbfd07bdd018ef8021e01fab0721cd6a8f5ef7651726cbc5c354",
+      "bytes": 63568
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_rows.csv",
+      "sha256": "5b2a392b78d2a1f2da22ce2614e429a8c2c7f49bf731f23e199a8264cc7b75be",
+      "bytes": 7624
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_plot_traces.mat",
+      "sha256": "2882a3e65434e9a73e6cfc0ebca5d6c3118bbd08f8db33b2660f621511866115",
+      "bytes": 5199313
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_prepared_configs.mat",
+      "sha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a",
+      "bytes": 37765
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_storage_cleanup.json",
+      "sha256": "49df0a610bf751266b4968567b8ba9c850edc6bf80b873421a0ba2cca148be49",
+      "bytes": 219
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_worst_native_trace.mat",
+      "sha256": "a319a8d816369e9f845b7627048ba9855d8136cd03967ba57c8fed9fff81fdd8",
+      "bytes": 684537665
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0001.mat",
+      "sha256": "60b5d76749c4243df570c6cf905142f06a8aeb9699483d44d6d2074e9489126e",
+      "bytes": 686279702
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0002.mat",
+      "sha256": "d812aee0a216dd5a8085e81a7893fc83ec7bc7cbd54348ec1ac9e315a27fe304",
+      "bytes": 686264922
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0003.mat",
+      "sha256": "cb1e296328a718146a9ab0cfafa3a96ef03c5dc0593e91b5bdb17c0995b6579c",
+      "bytes": 684505146
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0004.mat",
+      "sha256": "c7195ca02800435f7d4998831e40b4ed8c06e8a3c1d297c3b268e760954286d7",
+      "bytes": 686265699
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long_batch.log",
+      "sha256": "d461398ac42289816d15abc87e17d67f7ca715ae04a057920efbb9794baec44c",
+      "bytes": 10029
+    },
+    {
+      "file": "inertial_uncertainty_v8_static_pair_guards.json",
+      "sha256": "96a524e8a91dd526e5621c9a95bd7897f6dfe209949ad24711dc2ab165e86f10",
+      "bytes": 15908
+    },
+    {
+      "file": "inertial_uncertainty_v8_portable_checks.json",
+      "sha256": "10a136029e964dad33d4b789ec0362faa9c6d5794e78a60385297e5e01907bf1",
+      "bytes": 5235
+    },
+    {
+      "file": "inertial_uncertainty_v8_portable_inputs/manifest.json",
+      "sha256": "39d5e6c0ff55a9a687eb8d286275b6d0cd167428b24e0494fc8fc16a67693e21",
+      "bytes": 16676
+    },
+    {
+      "file": "inertial_uncertainty_v8_original_long_seal.json",
+      "sha256": "d5e926c2f3ecdd1e9802e9a24b0ea3d9403ab0060b92b27e044506533f110fda",
+      "bytes": 3290
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement.json",
+      "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e",
+      "bytes": 17420
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement.csv",
+      "sha256": "47303f6c5e4ae236ac7b75982b2e394756068ae77dc0732efd178c5fd17923b5",
+      "bytes": 920
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement.svg",
+      "sha256": "ef0c70db9b4913df41a706146da2de479fc269181556004a5ce95841fdf5b35c",
+      "bytes": 1105743
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement.png",
+      "sha256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36",
+      "bytes": 262398
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement_original_worst_envelope.csv",
+      "sha256": "4798fb4923b5224a5bc2a532eb9c36c18d0aa153769ce0b05a270f90f6bb03a5",
+      "bytes": 750165
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibration_refinement_calibrated_static_worst_envelope.csv",
+      "sha256": "4b1564d653afefab7ddb1f0d9880fa815c707c08edebc879a3b711a620114d85",
+      "bytes": 750415
+    }
+  ]
+}

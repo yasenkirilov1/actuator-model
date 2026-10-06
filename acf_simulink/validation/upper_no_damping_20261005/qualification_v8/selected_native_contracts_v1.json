@@ -1,0 +1,501 @@
+{
+  "status": "versioned_selected_contract_clarification_frozen_native_bytes_unchanged",
+  "configsSha256": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+  "nativeSealSha256": "942b11e6953f722db3dddf8e9344fa260fd963c225fe0a3d929501048256918e",
+  "candidateLockSha256": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+  "inheritedMetadataSubfields": {
+    "jointPIGainContract": "Source build family1 descriptor; not the selected case coefficient contract.",
+    "cellModalContract": "Source build family1 descriptor; not the selected case coefficient contract.",
+    "upperObserverContract": "Source build case0 descriptor; use this nominal-case0 example and each prepared configuration for observer coefficients."
+  },
+  "selectedJointPIGainContract": {
+    "multiplier": 1,
+    "executingGainFields": [
+      "p.inertial.forceKp",
+      "p.inertial.forceKi",
+      "p.inertial.forceKd"
+    ],
+    "forceKp_A_N": 0.02459016393442623,
+    "forceKi_A_N_s": 16.393442622950822,
+    "forceKd_A_s_N": 0
+  },
+  "selectedCellModalContract": {
+    "parameters": {
+      "enabled": 1,
+      "carrier_Hz": 1643.7451841639995,
+      "filterDamping": 0.2,
+      "virtualDamping_Ns_m": 1500,
+      "currentBound_A": 0.05,
+      "acquiredTransferReal": -0.5839616579029474,
+      "acquiredTransferImag": -0.39363203922951734,
+      "phaseSourceSha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2",
+      "contract": "Zero-DC proper causal resonant cell feedback, after current notch before current limits; full measurement frame/noise/physical mechanics preserved.",
+      "identifiedCurrentResponse_s": 5e-05
+    },
+    "frozenIndependentIdentification": {
+      "identifiedMassB_kg": 0.6,
+      "identifiedStiffness_N_m": 64000000,
+      "identifiedForceConstant_N_A": 24.4,
+      "identifiedCurrentResponse_s": 5e-05,
+      "acquiredTransferReal": -0.5839616579029474,
+      "acquiredTransferImag": -0.39363203922951734,
+      "frozenPreparedCoefficients": {
+        "A": [
+          [
+            0.5720441822888509,
+            0.7038483148834003
+          ],
+          [
+            -0.7038483148834005,
+            0.29050485633549084
+          ]
+        ],
+        "B": [
+          0.17118232708445963,
+          0.2815393259533602
+        ],
+        "C": [
+          -0.00821610410579294,
+          -0.016745407176157932
+        ],
+        "D": 0.0032864416423171766,
+        "initialState": [
+          0,
+          0
+        ],
+        "carrier_Hz": 1643.7451841639995,
+        "filterDamping": 0.2,
+        "virtualDamping_Ns_m": 1500,
+        "basisBandpassTransferReal": 0.8126686858752235,
+        "basisBandpassTransferImag": -0.5034576051145809,
+        "basisProperDerivativeTransferReal": 0.5454045164647321,
+        "basisProperDerivativeTransferImag": 1.0341504635230683,
+        "basisCoefficientsForce": [
+          -0.3283987590257144,
+          0.20047294018134773
+        ],
+        "basisCondition": 1.2374759002082905,
+        "acquiredTransferReal": -0.5839616579029474,
+        "acquiredTransferImag": -0.39363203922951734,
+        "commandToCoilForceTransferReal": 0.46395516352820687,
+        "commandToCoilForceTransferImag": -0.7116825212697324,
+        "desiredActualForcePerTrueCellReal": 0,
+        "desiredActualForcePerTrueCellImag": -0.24206145913796356,
+        "normalizedPositiveDampingReal": 1.0000000000000002,
+        "normalizedPositiveDampingImag": 0,
+        "dcCurrentGain": 8.673617379884035e-19,
+        "maximumPoleMagnitude": 0.8133781797894374,
+        "currentBound_A": 0.05,
+        "identifiedMassB_kg": 0.6,
+        "identifiedStiffness_N_m": 64000000,
+        "identifiedForceConstant_N_A": 24.4,
+        "stateNames": [
+          "normalized_resonant_integral_N",
+          "resonant_bandpass_N"
+        ]
+      }
+    },
+    "preparedCoefficients": {
+      "A": [
+        [
+          0.5720441822888509,
+          0.7038483148834003
+        ],
+        [
+          -0.7038483148834005,
+          0.29050485633549084
+        ]
+      ],
+      "B": [
+        0.17118232708445963,
+        0.2815393259533602
+      ],
+      "C": [
+        -0.00821610410579294,
+        -0.016745407176157932
+      ],
+      "D": 0.0032864416423171766,
+      "initialState": [
+        0,
+        0
+      ],
+      "carrier_Hz": 1643.7451841639995,
+      "filterDamping": 0.2,
+      "virtualDamping_Ns_m": 1500,
+      "basisBandpassTransferReal": 0.8126686858752235,
+      "basisBandpassTransferImag": -0.5034576051145809,
+      "basisProperDerivativeTransferReal": 0.5454045164647321,
+      "basisProperDerivativeTransferImag": 1.0341504635230683,
+      "basisCoefficientsForce": [
+        -0.3283987590257144,
+        0.20047294018134773
+      ],
+      "basisCondition": 1.2374759002082905,
+      "acquiredTransferReal": -0.5839616579029474,
+      "acquiredTransferImag": -0.39363203922951734,
+      "commandToCoilForceTransferReal": 0.46395516352820687,
+      "commandToCoilForceTransferImag": -0.7116825212697324,
+      "desiredActualForcePerTrueCellReal": 0,
+      "desiredActualForcePerTrueCellImag": -0.24206145913796356,
+      "normalizedPositiveDampingReal": 1.0000000000000002,
+      "normalizedPositiveDampingImag": 0,
+      "dcCurrentGain": 8.673617379884035e-19,
+      "maximumPoleMagnitude": 0.8133781797894374,
+      "currentBound_A": 0.05,
+      "identifiedMassB_kg": 0.6,
+      "identifiedStiffness_N_m": 64000000,
+      "identifiedForceConstant_N_A": 24.4,
+      "stateNames": [
+        "normalized_resonant_integral_N",
+        "resonant_bandpass_N"
+      ]
+    }
+  },
+  "nominalQualificationCase0ObserverExample": {
+    "scope": "Case0 only: A1.5, B.6, S.1, force5, angle0. Per-case static bias/tare and mass-dependent prepared coefficients remain in frozen configs.",
+    "design": {
+      "enabled": 1,
+      "identifiedMassA_kg": 1.5,
+      "identifiedStiffness_N_m": 20000,
+      "identifiedDamping_Ns_m": 0,
+      "identifiedCurrentResponse_s": 5e-05,
+      "forceProcessDensity_N_sqrtHz": 0.0005,
+      "accelerationProcessDensity_m_s2_sqrtHz": 0.0004,
+      "positionMeasurementRms_m": 5e-06,
+      "contract": "Four-state causal upper observer driven by the explicit local matched acquired axial cell deviation, identified holder inertia and a proper critically damped cell derivative. Only observer Q/R design weights and derivative cutoff vary; actual sensor noise/timing, physical mechanics and PI/notch remain unchanged.",
+      "forceEstimator": "local_matched_cell_and_holder_force_balance",
+      "forceDerivativeCutoff_Hz": 150
+    },
+    "preparedCoefficients": {
+      "A": [
+        [
+          0.9999333340740708,
+          9.999777779259255e-05,
+          -0.0016371643162907711,
+          0.0
+        ],
+        [
+          -1.333303703901234,
+          0.9999333340740708,
+          -0.6350098168329412,
+          0.0
+        ],
+        [
+          -6.66659259292181e-05,
+          -2.2222074074567904e-09,
+          0.983011936189558,
+          0.0001
+        ],
+        [
+          -1.333303703901234,
+          -6.66659259292181e-05,
+          -1.42840146579157,
+          1.0
+        ]
+      ],
+      "B": [
+        [
+          0.0016371643162907711,
+          3.333296296460905e-09,
+          -4.999944444691357e-09,
+          0.0
+        ],
+        [
+          0.6350098168329412,
+          6.666518519506169e-05,
+          -9.999777779259254e-05,
+          0.0
+        ],
+        [
+          0.016988063810442135,
+          3.333296296460905e-09,
+          5.555530864279836e-14,
+          -5.000000000000001e-09
+        ],
+        [
+          1.42840146579157,
+          6.666518519506169e-05,
+          2.2222074074567904e-09,
+          -0.0001
+        ]
+      ],
+      "C": [
+        [
+          1.0,
+          0.0,
+          -0.001573555602655952,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.6371503205623332,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9831548840680886,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.430541969520962,
+          1.0
+        ]
+      ],
+      "D": [
+        [
+          0.001573555602655952,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6371503205623332,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.01684511593191145,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.430541969520962,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "gain": [
+        0.001573555602655952,
+        0.6371503205623332,
+        0.01684511593191145,
+        1.430541969520962
+      ],
+      "continuousF": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -13333.333333333334,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -13333.333333333334,
+          -0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "continuousG": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6666666666666666,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6666666666666666,
+          0.0,
+          -1.0
+        ]
+      ],
+      "measurementC": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "discreteF": [
+        [
+          0.9999333340740708,
+          9.999777779259255e-05,
+          0.0,
+          0.0
+        ],
+        [
+          -1.333303703901234,
+          0.9999333340740708,
+          0.0,
+          0.0
+        ],
+        [
+          -6.66659259292181e-05,
+          -2.2222074074567904e-09,
+          1.0,
+          0.0001
+        ],
+        [
+          -1.333303703901234,
+          -6.66659259292181e-05,
+          0.0,
+          1.0
+        ]
+      ],
+      "discreteG": [
+        [
+          3.333296296460905e-09,
+          -4.999944444691357e-09,
+          0.0
+        ],
+        [
+          6.666518519506169e-05,
+          -9.999777779259254e-05,
+          0.0
+        ],
+        [
+          3.333296296460905e-09,
+          5.555530864279836e-14,
+          -5.000000000000001e-09
+        ],
+        [
+          6.666518519506169e-05,
+          2.2222074074567904e-09,
+          -0.0001
+        ]
+      ],
+      "processCovariance": [
+        [
+          3.703604939519882e-20,
+          5.555308646364841e-16,
+          3.703604939519881e-20,
+          5.555308646364842e-16
+        ],
+        [
+          5.555308646364841e-16,
+          1.1110617297119172e-11,
+          5.555308646364841e-16,
+          1.1110617297119172e-11
+        ],
+        [
+          3.703604939519881e-20,
+          5.555308646364841e-16,
+          9.036938272853213e-20,
+          1.3555308646364838e-15
+        ],
+        [
+          5.555308646364842e-16,
+          1.1110617297119172e-11,
+          1.3555308646364838e-15,
+          2.7110617297119167e-11
+        ]
+      ],
+      "measurementVariance": 2.5000000000000004e-11,
+      "posteriorCovariance": [
+        [
+          2.0133344726761441e-13,
+          2.8613454085686736e-13,
+          3.9341143877954574e-14,
+          -9.375896405157861e-12
+        ],
+        [
+          2.8613454085686736e-13,
+          2.9329758635449447e-09,
+          1.5928873017817014e-11,
+          3.2454344016239803e-09
+        ],
+        [
+          3.9341143877954574e-14,
+          1.5928873017817014e-11,
+          4.2112947657533326e-13,
+          3.576356383928668e-11
+        ],
+        [
+          -9.375896405157861e-12,
+          3.2454344016239803e-09,
+          3.576356383928668e-11,
+          6.630444791846777e-09
+        ]
+      ],
+      "estimatorPolesReal": [
+        0.9973491747793508,
+        0.9973491747793508,
+        0.9940901273895002,
+        0.9940901273895002
+      ],
+      "estimatorPolesImag": [
+        0.011540990589103644,
+        -0.011540990589103644,
+        0.006365092644868794,
+        -0.006365092644868794
+      ],
+      "maximumPoleMagnitude": 0.9974159467829005,
+      "observabilityRank": 4,
+      "scaledObservabilityCondition": 6708819.121780336,
+      "riccatiIterations": 1492,
+      "stateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "inputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "forcePredictionA": -20000,
+      "forcePredictionB": 20000,
+      "forcePredictionC": 1,
+      "forcePredictionD": 0,
+      "accelerationFromStateGain": [
+        -13333.333333333334,
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "accelerationFromForceGain": 0.6666666666666666,
+      "forcePredictionInitial_A": -0.07651639344262295,
+      "measuredForceDerivativeA": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -888264.3960980421,
+          -1884.9555921538758
+        ]
+      ],
+      "measuredForceDerivativeB": [
+        0.0,
+        888264.3960980421
+      ],
+      "measuredForceDerivativeC": [
+        -888264.3960980421,
+        -1884.9555921538758
+      ],
+      "measuredForceDerivativeD": 888264.3960980421,
+      "measuredForceDerivativeScale": 9.375e-09,
+      "identifiedHolderMass_kg": 0.6,
+      "identifiedCellStiffness_N_m": 64000000
+    }
+  },
+  "qualificationEpisodes": 0,
+  "implementationChanged": false
+}

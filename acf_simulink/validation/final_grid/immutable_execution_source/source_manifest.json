@@ -1,0 +1,207 @@
+{
+  "status": "immutable_complete_grid_execution_source",
+  "date": "2026-09-30",
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "recipeSha256s": [
+    "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+    "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f"
+  ],
+  "files": [
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/acf_force_control_normal_trial.slx",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/acf_force_control_normal_trial.slx",
+      "archiveRelativePath": "scientific_source/acf_force_control_normal_trial.slx",
+      "sha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+      "bytes": 597741
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_final_candidate_20260930.mat",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/inertial_final_candidate_20260930.mat",
+      "archiveRelativePath": "scientific_source/inertial_final_candidate_20260930.mat",
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+      "bytes": 7161
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_desktop_available.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_desktop_available.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_experiment.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_experiment.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_metrics.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_metrics.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "bytes": 6455
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_open.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_open.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_parameters.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_parameters.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "bytes": 1963
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_plot.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_plot.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "bytes": 1448
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_prepare.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_prepare.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65",
+      "bytes": 28886
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_run.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_run.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "bytes": 4276
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_select_actuator.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_actuator.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "bytes": 2746
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_select_controller.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_controller.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "bytes": 646
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_signals.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_signals.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "bytes": 732
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_start.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_start_visualizer.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start_visualizer.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_sweep.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_sweep.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "bytes": 3332
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_viewer_selftest.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_viewer_selftest.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/helpers/acf_visualize.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_visualize.m",
+      "archiveRelativePath": "scientific_source/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "bytes": 6907
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/tp80dc2708_7e9b_4734_ad83_2f39f574baf7/qualify_inertial_mass_controller.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "archiveRelativePath": "recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "sha256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+      "bytes": 65047
+    },
+    {
+      "sourceFile": "/home/tommie/.local/state/actuator-model/tpcddd806a_ee07_40e8_bc50_53000d02fed9/qualify_inertial_mass_controller.m",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "archiveRelativePath": "recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "archiveRelativePath": "audit_recipes/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "sha256": "497a674890dc644d26c84ea07caec7fb6f6e9a7ee6101bba874fe3539815a554",
+      "bytes": 24402
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "archiveRelativePath": "audit_recipes/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "sha256": "1c33d770e78948a0d5d219f723f118b5f31806e4140762e417d269736986748f",
+      "bytes": 9077
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "archiveRelativePath": "audit_recipes/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "sha256": "7eb64c0b7a2a0ad73d3bb1bc662146adb8a30ca02bc7760397badbd3f9cdb782",
+      "bytes": 2154
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "archiveRelativePath": "predecessor_audits/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "sha256": "b67061381f1e6cef9a6bd366b2454ab5bd4295701c4ced789d470aa329242ace",
+      "bytes": 11571
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "archiveRelativePath": "predecessor_audits/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "sha256": "1cce0f53028417549dea63b166dcab5af3f897603d4c2d27bb176b0db8259027",
+      "bytes": 11691
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "archiveRelativePath": "predecessor_audits/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "sha256": "c0c732874882f3baa5b11be139b3083b7d27fcbd6245110dbf4b7e8c2ebeaf42",
+      "bytes": 11779
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "archiveFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "archiveRelativePath": "predecessor_audits/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "sha256": "ca6b4a22b1213f32e7efb819ba1af449b9693cd5b552f5e46e70d4d718bb2bcb",
+      "bytes": 11815
+    }
+  ],
+  "readme": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/README.md",
+  "readmeSha256": "27453780b4a1c7d6db65cf9b9a92ffa8f350b31f853f5bebc50485ac787fcd24",
+  "validatedUniqueNativeCases": 3500,
+  "reusedR1Cases": 1060,
+  "newR2Cases": 2440,
+  "scope": "Exact reproducible scientific inputs and execution recipes, separate from public display/metadata refresh. Original r1/r2 reports, JSONL append logs, configurations and selected full native traces remain in their owned shard folders."
+}

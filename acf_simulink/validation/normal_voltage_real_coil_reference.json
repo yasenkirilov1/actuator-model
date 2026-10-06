@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-30",
+  "scope": "Primary motor specification used for a separate bounded native normal-voltage family; approximate actuator choice, not a part list.",
+  "manufacturer": "Moticont",
+  "model": "LVCM-070-051-01",
+  "productUrl": "https://www.moticont.com/lvcm-070-051-01.htm",
+  "drawingUrl": "https://www.moticont.com/pdf/lvcm-070-051-01.pdf",
+  "drawingRevision": 1,
+  "sourceInspection": "Parent actuator reviewer and this electrical-study worker visually inspected the primary one-page drawing. All table values are specified at25degC; inductance is measured at1000Hz.",
+  "drawingArchive": {
+    "path": "acf_simulink/validation/normal_voltage_real_coil_moticont_drawing.pdf",
+    "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+    "bytes": 48578
+  },
+  "specifications": {
+    "Kf_N_A": 24.4,
+    "Ke_V_s_m": 24.4,
+    "resistance_ohm": 6.4,
+    "inductance_H_at1000Hz": 0.004,
+    "stroke_m": 0.0254,
+    "continuousForceCenter_N": 64.7,
+    "intermittentForce_N_at10pctDuty": 204.3,
+    "movingCoilMass_kg": 0.24,
+    "stationaryBodyMass_kg": 1.24,
+    "maxContinuousPower_W": 45,
+    "housingDiameter_m": 0.0699,
+    "bodyLength_m": 0.0508
+  },
+  "curveLimit": "Drawing shows continuous force falling toward about52N at one travel end. The native real_coil family uses constant24.4N/A and25mm conservative travel; it does not qualify the force-vs-position curve or temperature-dependentKf.",
+  "physicalIntegration": "Motor does not provide its own mechanical guidance; external bearing/flexure/slide is required. B0.6kg can include0.240kg moving coil plus holder; A1.5kg can include1.24kg motor body plus mount, while S2kg remains tool-side.",
+  "nativeFamily": {
+    "B_kg": 0.6,
+    "S_kg": 2,
+    "A_kg": 1.5,
+    "normalForce_N": 50,
+    "mu": 0.3,
+    "angles_deg": [
+      0,
+      90
+    ],
+    "noiseSeeds": [
+      7,
+      1729
+    ],
+    "supply_V": [
+      24,
+      36,
+      48
+    ],
+    "resistanceFactors": [
+      1,
+      1.39
+    ],
+    "currentResponse_us": 100,
+    "currentLimit_A": 3.5,
+    "trialCount": 24,
+    "integrationStep_us": 10
+  },
+  "hotWindingScope": "Rfactor1.39 represents an assumed100degC copper-winding temperature rise using a0.0039/degC coefficient. This is a hypothetical identified operating condition with inner resistance compensation updated, not a thermal model, safe-temperature qualification or manufacturer hot-force guarantee. Supplier continuous-force/power ratings have distinct stated conditions; force-vs-position remains unqualified.",
+  "derivedHorizontalHold": {
+    "formula": "Ihold=50/Kf; windingV=Ihold*R; coilHeat=Ihold^2*R; linearDriverHeat=Ihold*(Vbus-windingV), zero back EMF/electronics power excluded. Analytical calculation.",
+    "current_A": 2.0491803278688527,
+    "coldWindingVoltage_V": 13.114754098360658,
+    "hotWindingVoltage_V": 18.229508196721312,
+    "coldCoilPower_W": 26.874496103198073,
+    "hotCoilPower_W": 37.35554958344532,
+    "linearDriver": [
+      {
+        "bus_V": 24,
+        "R_ohm": 6.4,
+        "driverHeat_W": 22.305831765654393
+      },
+      {
+        "bus_V": 36,
+        "R_ohm": 6.4,
+        "driverHeat_W": 46.895995700080626
+      },
+      {
+        "bus_V": 48,
+        "R_ohm": 6.4,
+        "driverHeat_W": 71.48615963450686
+      },
+      {
+        "bus_V": 24,
+        "R_ohm": 8.895999999999999,
+        "driverHeat_W": 11.824778285407149
+      },
+      {
+        "bus_V": 36,
+        "R_ohm": 8.895999999999999,
+        "driverHeat_W": 36.41494221983338
+      },
+      {
+        "bus_V": 48,
+        "R_ohm": 8.895999999999999,
+        "driverHeat_W": 61.005106154259614
+      }
+    ]
+  },
+  "amplifierHeadroomScope": "TA115 up to+/-43V motor voltage on48V supply suggests a possible several-volt drop but does not guarantee24V performance. Study records requested-voltage margin against19/20V effective24V output and conditionally runs atmost4 native real-coil hotcases with those terminal caps. These are explicit conservative envelopes.",
+  "qualificationLimit": "Native averaged current-loop response and voltage clipping can be tested with these values. Mechanical guidance, actuator force map, winding cooling, actual amplifier voltage/current/noise/command delay and real contact mechanics still need measurements."
+}

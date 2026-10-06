@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "scope": "synthetic architecture,gradient,PPO and portable inference acceptance; no physical force qualification",
+  "files": {
+    "results.json": "b553e099a9e96edb06a04dd678860c4b7072b8435bc2b9fce0d6f0c8a3d0427e",
+    "portable_initial_policy/policy_weights.npz": "eb7afe1947cb30aa9d5b86876cdec56390087825edb4419d4743e2988db0ef47",
+    "portable_initial_policy/policy_weights.f32": "5214e33bf232e1340fa4327eff2ec28e52dbdf90bfc49e0fb8c67b6d59c91586",
+    "portable_initial_policy/policy_weights.json": "fcba4620590ba0719434db39d6dff9c823c22906873e0909f473aa43e0030bce",
+    "portable_initial_policy/policy_inference.h": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+    "portable_initial_policy/policy_inference.c": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+    "portable_initial_policy/policy_checkpoint.pt": "668999728d50c58a70961a1c658ae0089cec52c9e604e4c4d5ffa4d26a15f853",
+    "portable_initial_policy/policy_export_manifest.json": "4b9a08d89b89ed4f991c16bf180376761da31ab03bb2b8111398b0b424e062b8",
+    "portable_initial_policy/policy_inference.so": "504f0b4a04d6ea19e0add6a19641fe8965591dee08d653ce421e985d5d97616a",
+    "frozen_sources/policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1",
+    "frozen_sources/ppo.py": "19890f3bfa8ad3b9592847cd3b11972f4cb13260639030582ba810d920fa8f17",
+    "frozen_sources/policy_export.py": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735",
+    "frozen_sources/policy_checks.py": "3ee07c86684a38dc8300c72578b99ca76715e60436bd7f3394a2f49e7bffee23"
+  }
+}

@@ -1,0 +1,68 @@
+MATLAB: WebWindowManagerInitPlugin.cpp:112: std::shared_ptr<cef::transport::CEFTransportServer> {anonymous}::makeBinaryChannelServerAndListen(fl::ustring, std::shared_ptr<cef::transport::CEFServerTransportSession>&, std::shared_ptr<webwindow_util::ConnectionLifetimes>): Assertion `MATLAB cannot start because the TEMPDIR name is too long.' failed.
+
+--------------------------------------------------------------------------------
+                Assertion detected at 2026-10-06 10:54:55 +0200
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Desktop Environment      : KDE
+  GNU C Library            : 2.44 stable
+  MATLAB Architecture      : glnxa64
+  MATLAB Root              : /home/tommie/.local/opt/MATLAB/R2026b
+  MATLAB Version           : 26.2.0.3386108 (R2026b)
+  Operating System         : "CachyOS"
+  Process ID               : 671309
+  Processor ID             : x86 Family 25 Model 33 Stepping 2, AuthenticAMD
+
+Fault Count: 1
+
+
+Assertion in std::shared_ptr<cef::transport::CEFTransportServer> {anonymous}::makeBinaryChannelServerAndListen(fl::ustring, std::shared_ptr<cef::transport::CEFServerTransportSession>&, std::shared_ptr<webwindow_util::ConnectionLifetimes>) at WebWindowManagerInitPlugin.cpp line 112:
+MATLAB cannot start because the TEMPDIR name is too long.
+
+Current Thread: 'MCR Main thread' id 140365740988096
+
+Register State (captured):
+  RAX = 0000000000000000  RBX = 00007fa97a1fe288
+  RCX = 0000000000000000  RDX = 00007fa97a5fbb28
+  RSP = 00007fa9722023c0  RBP = 00007fa9722027a0
+  RSI = 00007fa97a1671ec  RDI = 00007fa9722023d0
+
+   R8 = 0000000000000001   R9 = 00007fa9722026b0
+  R10 = 0000000000000000  R11 = 0000000000000000
+  R12 = 00007fa97a1671ec  R13 = 00007fa972202810
+  R14 = 00007fa95c4482f8  R15 = 00007fa97a1ee208
+
+  RIP = 00007fa97a17511f  EFL = 0000000000000000
+
+   CS = 0000   FS = 0000   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007fa97a16ec93 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00461971
+[  1] 0x00007fa97a16eecc /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00462540 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x00007fa97a1715f6 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00472566
+[  3] 0x00007fa97a171839 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00473145
+[  4] 0x00007fa97a170fc0 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00470976
+[  5] 0x00007fa97a17219e /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwfl.so+00475550
+[  6] 0x00007fa95c44e69f /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/cefclient/mwwebwindowmanager_init_plugin.so+00108191
+[  7] 0x00007fa95c44cbc8 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/matlab_startup_plugins/cefclient/mwwebwindowmanager_init_plugin.so+00101320
+[  8] 0x00007fa95e29e0b9 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwstartup_plugin_initializer.so+00471225
+[  9] 0x00007fa95e2ae98a /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwstartup_plugin_initializer.so+00539018
+[ 10] 0x00007fa95e2b6984 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwstartup_plugin_initializer.so+00571780 _ZN15startup_plugins11initializer10initializeERKNS_14RuntimeOptionsE+00001044
+[ 11] 0x00007fa95cbcaeb1 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwMVMLocal.so+00618161
+[ 12] 0x00007fa979b7c1f3 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmvm.so+03654131 _ZN3mvm6detail11SessionImpl4initEv+00000387
+[ 13] 0x00007fa95cbca2e4 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwMVMLocal.so+00615140
+[ 14] 0x00007fa979b7b237 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmvm.so+03650103
+[ 15] 0x00007fa95c94c7b5 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwmcr.so+00788405
+[ 16] 0x00007fa9797ed140 /home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/libmwboost_thread.so.1.85.0+00049472
+[ 17] 0x00007fa97a2aca9f                                 /usr/lib/libc.so.6+00707231
+[ 18] 0x00007fa97a34f3dc                                 /usr/lib/libc.so.6+01373148
+
+** This crash report has been saved to disk as /home/tommie/matlab_crash_dump.671309-1 **
+
+
+
+MATLAB is exiting because of fatal error

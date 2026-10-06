@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-06",
+  "userInstruction": "Ah I see now, put that in the document as an open problem that needs a multi axis sensor, drag. But it's fine to ignore for now! We are already slightly out of scope anyway!",
+  "prototypeAssumption": "One-axis B-S load sensing and S acceleration; neglect axial sanding-drag coupling for now.",
+  "openProblem": "Distinguishing normal pressing force from unknown tangent drag on slopes requires multi-axis force sensing.",
+  "frozenEvidence": "Recorded multi-axis studies remain reference evidence and do not qualify the new single-axis architecture.",
+  "thisRevision": "Documentation and figures only; no new simulation, training or model changes."
+}

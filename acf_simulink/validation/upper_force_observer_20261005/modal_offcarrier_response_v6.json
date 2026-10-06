@@ -1,0 +1,86 @@
+{
+  "status": "linear_three_measured_tone_diagnostic_not_broadband_stability",
+  "qualificationEpisodes": 0,
+  "phaseHarnessFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/cell_modal_phase_v6/acquisition_phase.json",
+  "phaseHarnessSha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2",
+  "frozenBankManifestFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_v6/manifest.json",
+  "frozenBankManifestSha256": "7f2660de48b6fdc08b9a2026b97d0e9ec33338b2ef296baa4a127f5d471b3846",
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/check_modal_offcarrier_v6.py",
+  "recipeSha256": "090ae77c2bdbcfbb0c3f3c24f2c4b5cd8c3f36d0f212cdb1d2e2a875e55fe8ab",
+  "rows": [
+    {
+      "familyID": 1,
+      "filterDamping": 0.05,
+      "frequency_Hz": 1300,
+      "normalizedDampingReal": -0.16188659265990765,
+      "normalizedDampingImag": 0.21971030989797666,
+      "positiveDampingSignAtThisTone": false
+    },
+    {
+      "familyID": 1,
+      "filterDamping": 0.05,
+      "frequency_Hz": 1643.7451841639995,
+      "normalizedDampingReal": 0.9999999999999994,
+      "normalizedDampingImag": -7.739775512908665e-16,
+      "positiveDampingSignAtThisTone": true
+    },
+    {
+      "familyID": 1,
+      "filterDamping": 0.05,
+      "frequency_Hz": 1900,
+      "normalizedDampingReal": -0.06315841856086127,
+      "normalizedDampingImag": -0.2495313085202873,
+      "positiveDampingSignAtThisTone": false
+    },
+    {
+      "familyID": 4,
+      "filterDamping": 0.1,
+      "frequency_Hz": 1300,
+      "normalizedDampingReal": -0.22276922787226655,
+      "normalizedDampingImag": 0.46443021606317836,
+      "positiveDampingSignAtThisTone": false
+    },
+    {
+      "familyID": 4,
+      "filterDamping": 0.1,
+      "frequency_Hz": 1643.7451841639995,
+      "normalizedDampingReal": 1.0000000000000004,
+      "normalizedDampingImag": 1.7199501139797033e-16,
+      "positiveDampingSignAtThisTone": true
+    },
+    {
+      "familyID": 4,
+      "filterDamping": 0.1,
+      "frequency_Hz": 1900,
+      "normalizedDampingReal": 0.009239671051736278,
+      "normalizedDampingImag": -0.44792211274793614,
+      "positiveDampingSignAtThisTone": true
+    },
+    {
+      "familyID": 7,
+      "filterDamping": 0.2,
+      "frequency_Hz": 1300,
+      "normalizedDampingReal": -0.13061002653963705,
+      "normalizedDampingImag": 0.8483921373001256,
+      "positiveDampingSignAtThisTone": false
+    },
+    {
+      "familyID": 7,
+      "filterDamping": 0.2,
+      "frequency_Hz": 1643.7451841639995,
+      "normalizedDampingReal": 1.0,
+      "normalizedDampingImag": 0.0,
+      "positiveDampingSignAtThisTone": true
+    },
+    {
+      "familyID": 7,
+      "filterDamping": 0.2,
+      "frequency_Hz": 1900,
+      "normalizedDampingReal": 0.22169507177677772,
+      "normalizedDampingImag": -0.5981431817110818,
+      "positiveDampingSignAtThisTone": true
+    }
+  ],
+  "interpretation": "All three widths give desired positive damping at the identified carrier. At1300Hz their linear action has negative damping sign;1900Hz depends on width. Resonant selectivity and auxiliary saturation bound action, but do not prove stability. Endpoint/whole-record experiments and physical transfer validation remain necessary.",
+  "scope": "Exact native controller coefficients combined with already measured native acquisition tones,50us current-response model and10k command hold. No new sine or plant runs; no physical qualification claim."
+}

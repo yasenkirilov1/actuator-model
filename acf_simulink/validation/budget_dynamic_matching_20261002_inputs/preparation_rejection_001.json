@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-02",
+  "status": "software_preparation_rejection",
+  "native_simulations_executed": 0,
+  "error": "An exact equality assertion compared a 50e-6 literal against a previously computed 50*1e-6 parameter; their binary rounding differs.",
+  "correction": "Use an absolute 1e-15 second tolerance for the input identity assertion. The retained currentResponse value is never modified.",
+  "frozen_native_source_changed": false,
+  "scientific_force_qualification_claimed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checkedFileBindings": 81,
+  "nestedComponents": 9,
+  "svgFigures": 37,
+  "unchangedSourceQueries": 48,
+  "originalEquationsPreserved": 11,
+  "pairedHeldoutNativeRecordings": 54,
+  "publicModelUnchanged": true,
+  "browserChecks": {
+    "desktopDomInspection": "passed: 9 nested components, 37 decoded SVGs, no horizontal page overflow, one main landmark, final progress status cleared",
+    "toolMassFilter": "passed: selecting S=2 kg produced only 2 kg rows; final reload resets filters",
+    "newSvgVisualReview": "passed: four explanatory diagrams and eight learned-study plots rendered and inspected locally",
+    "sourceMetadataBindings": "passed: source rows and original file hashes audited",
+    "screenshotCapture": "unavailable: collaborative browser snapshot failed",
+    "mobileResize": "unavailable: collaborative browser resize timed out",
+    "sourceInspectorUi": "not completed: requestAnimationFrame callbacks did not run; later browser host unavailable",
+    "offlineExport": "passed: verified split build exported with complete dataset; single-file browser opening not separately tested",
+    "currentPreviewUrl": "http://localhost:8772/?view=1"
+  }
+}

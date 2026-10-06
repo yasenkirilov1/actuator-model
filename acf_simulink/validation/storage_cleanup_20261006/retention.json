@@ -1,0 +1,31 @@
+{
+  "status": "verified",
+  "preservedArrayBytes": 4346766625,
+  "compactAfter": {
+    "files": 14399,
+    "bytes": 2194274668,
+    "statFingerprint": "90600691fb74e726012311efdc4462ad30e21fd558d82e32247c23bc30ad954d"
+  },
+  "compactUnchanged": true,
+  "preservedArraysUnchanged": true,
+  "recordingsIntentionallyRemoved": 3778,
+  "brokenOutputLinksRemoved": 557,
+  "historicalManifestPolicy": "Recorded hashes and outcomes are historical; deleted traces require regeneration. Original delivery ZIPs are unchanged.",
+  "selectedTraceRecovery": {
+    "status": "restored_original_bytes",
+    "cause": "Selected kept path was an archive symlink; first keep list omitted its resolved target.",
+    "scenario": 722,
+    "nativeSamples": 600001,
+    "peakNormalForceError_N": 1.0736152681478117,
+    "allOriginalArrayHashesMatch": true,
+    "originalNPZSha256Matches": true,
+    "sha256": "e5355fc537739841b120a31c2e9623c6cbebc9167423ebc8d82e2b3cefc1a72e",
+    "target": "/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/native_history.npz",
+    "alias": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/evaluation/observer_noise_promising_endpoints_v4/case_0722/native_history.npz",
+    "bytes": 73939944,
+    "serializationPython": "3.12.12 (main, Jan 27 2026, 23:58:14) [Clang 21.1.4 ]",
+    "serializationNumpy": "2.5.1",
+    "serializationZlib": "1.3.1",
+    "compressionLevel": 1
+  }
+}

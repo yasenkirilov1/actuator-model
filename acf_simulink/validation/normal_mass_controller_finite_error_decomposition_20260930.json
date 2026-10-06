@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-30",
+  "source": "acf_simulink/validation/normal_mass_controller_inertial_fast_sensor_candidate_20260930_finite_provisional_worst_native_trace.mat",
+  "sourceSha256": "606576b049ab103a54f441e265e6e8348bee7ccbd5afb29bd4d18b5a8e569f13",
+  "scope": "Independent truth-based diagnostic decomposition of the full native4s provisional finite-cell worst trace. These truth channels are never controller inputs. This does not establish longer-run stability.",
+  "massS_kg": 2,
+  "reference_N": 50,
+  "seed": 1729,
+  "nativeSamples": 400001,
+  "normalErrorPeakTime_s": 2.00041,
+  "normalErrorAtPeak_N": 0.4041992653252535,
+  "forceErrorComponentsAtSamePeak_N": {
+    "currentTracking_N": 0.13137416403693936,
+    "commandAndFeedforwardMismatch_N": 0.157335015806023,
+    "finiteCellInertia_N": 0.1154900854823032
+  },
+  "sumResidualMaximum_N": 2.3397950243975174e-14,
+  "coilPhysicalForceFormulaResidual_N": 7.105427357601002e-15,
+  "peakAbsoluteComponentAcrossRun_N": {
+    "currentTracking_N": 0.2830699386833856,
+    "commandAndFeedforwardMismatch_N": 0.36668385742004633,
+    "finiteCellInertia_N": 0.26583236874062727
+  },
+  "valuesAtErrorPeak": {
+    "actualAz_m_s2": 0.15359338740939665,
+    "measuredAz_m_s2": 0.09828,
+    "actualBAcceleration_m_s2": 0.3460585202734965,
+    "actualCurrent_A": 2.5045276315060785,
+    "issuedCurrent_A": 2.4979595492770232,
+    "estimatedNormalForce_N": 50.30055487544636,
+    "trueSlope": 0.0003174859500168518,
+    "estimatedSlope": 0.00022920090322536835,
+    "actualGapVelocity_m_s": 0.0029892896839982864,
+    "estimatedToolGapVelocity_m_s": 0.0030106693024206654
+  },
+  "equations": {
+    "geometryFactor": "sqrt(1+s^2)/(1-mu*s)",
+    "currentTracking": "geometryFactor*Kf*(I-I_command)",
+    "commandAndFeedforwardMismatch": "geometryFactor*(Kf*I_command + (B+S)*(g+aS) - Rz_target - guideFriction(vGap))",
+    "finiteCellInertia": "geometryFactor*B*(aB-aS)",
+    "identity": "actualNormalError = currentTracking + commandAndFeedforwardMismatch + finiteCellInertia"
+  },
+  "voltageInterpretation": "No voltage/current clipping in the source run. Larger supply alone cannot change its configured current-loop pole; changing bandwidth separately can change cell stability."
+}

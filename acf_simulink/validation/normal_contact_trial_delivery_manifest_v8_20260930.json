@@ -1,0 +1,141 @@
+{
+  "status": "promoted",
+  "UTC": "2026-09-30T12:32:36.480129+00:00",
+  "model": "generated/acf_force_control_simple.slx",
+  "modelSHA256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "ownedHelpers": {
+    "acf_prepare.m": "7b9f288acf1770cf8e36c8edd5ce2d98e03a9051a3cf0d4f5127aa04a90cbf18",
+    "acf_select_actuator.m": "e47ceffba24dfc93c05aab9fd680e09da3b5013ff093d5528da39712611c3ad4",
+    "acf_select_controller.m": "51aed40a78c75737db9e4f107407a432742c4ccd4e13b108b7e0caa3325e6b73",
+    "acf_parameters.m": "4470fdf842dfb75c514f645a057b35b1a31f6852e9e47f7f9b1cd0b08c93be24"
+  },
+  "untouchedRootFiles": {
+    "acf_metrics.m": "cb1eb5796251cebe079f0cef21a1fd1cbaa02beca318908811485afedd719117",
+    "acf_plot.m": "47b930c35dae8d0359d499b4c4f0d975ebc966994d63fad7088637d7a71d304a",
+    "acf_run.m": "67263fd09979ed2dc28f9ac8c411ea21dce2692e91dc510df0ad226e16bdd6b6",
+    "acf_signals.m": "3219911890249aa00cca36e323827d5203038c24a432b1fc88de6eec3deb4e0b",
+    "acf_start.m": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+    "acf_start_visualizer.m": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+    "acf_sweep.m": "af852ccce2cd71cac8ca37519c310c1ea1c296ae8f7fa745b995b58ae4a6aa03",
+    "acf_viewer_selftest.m": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+    "acf_visualize.m": "0c5f4302fcf20068681805fc776ea6cb5a9b171b068ca1ce5303e4a2ef55540c",
+    "acf_experiment.m": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+    "acf_open.m": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+    "acf_desktop_available.m": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+    "MODEL_NOTES.md": "93faaba1fe022846438dd8c21b2be1844c2228a3664f62dc4e15761c9f7978cc",
+    "README.md": "881ef6fb0ad71a0eb754a98f7457501b4da08f91f37a0000f5f061a0011d14b0",
+    "VISUALIZER_README.md": "26913e70f20feaca259fde428c37e198286aa60b0fbf5d2c7b9cb48e01dfce7b",
+    "GETTING_STARTED.md": "938ee643c616e09c3b2aa51a86aa881b9a0ddc90097106071e4d0d1252f51982",
+    "VALIDATION.md": "7275d3b5b2369bf0aaaa9475a8c6e6cccb8481804dacf31c2f342bcd816273e4",
+    "REPRODUCING_RESULTS.md": "758cabbb8b2e04f259c445b713e733ce7cbe6cf8d342672dc33aa14d4cf53f3c"
+  },
+  "previousCanonicalBackup": "validation/normal_contact_trial_delivery_previous_20260930",
+  "previousCanonicalFiles": {
+    "acf_force_control_simple.slx": "10cc418f26b2fa2cb96366fad209408835284c95757649cb6f433141fc036ea6",
+    "acf_prepare.m": "f087c24d37d8c5cf501794e6210de5919be8c96c1cddf716e94012c5cd35d0d8",
+    "acf_select_actuator.m": "832674387040ac3300ee43876a5cc46125db3c8b1dfdb990c7cf5df713ba48a6",
+    "acf_select_controller.m": "18e6fdc85998dff6fe992ccb0f52112388f7372410d0724803725ffe702848f9",
+    "acf_parameters.m": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+  },
+  "reviewedOriginalModel": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/generated/acf_force_control_simple_before_sensor_metadata.slx",
+  "reviewedOriginalHelpers": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/before_sensor_metadata_helpers",
+  "metadataOnlyOriginal": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/generated/acf_force_control_simple_before_line_cleanup.slx",
+  "privateDeliveryWorkspace": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930",
+  "scientificSourceModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "scientificFinalCandidate": "validation/inertial_final_candidate_20260930.mat",
+  "scientificFinalCandidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "publicPreparedCandidate": "validation/normal_contact_trial_delivery_candidate_v8_20260930.mat",
+  "publicPreparedCandidateSHA256": "212210dd362c411e27af067ae0008fbc0fc3641975da5dd73d03733964281186",
+  "evidence": {
+    "delivery_verification.json": {
+      "file": "validation/normal_contact_trial_delivery_verification_20260930.json",
+      "SHA256": "d11a62bd606d4fea8ac60c3f2388526e3c3e3cd292bb3fb220d21f272584b47a"
+    },
+    "delivery_defaults_verification.json": {
+      "file": "validation/normal_contact_trial_delivery_defaults_verification_20260930.json",
+      "SHA256": "885cb0bdc522637676ce1f6aff4492bece57759af7c3c146ee5b656cb6009de0"
+    },
+    "delivery_acceptance.json": {
+      "file": "validation/normal_contact_trial_delivery_acceptance_20260930.json",
+      "SHA256": "39aa4bc3c23b2f9161f99c84b9383e632e6a189e41ac49c115dcea4b4dcdfbcb"
+    },
+    "sensor_metadata_bridge.json": {
+      "file": "validation/normal_contact_trial_sensor_metadata_bridge_20260930.json",
+      "SHA256": "77b51818805b330c4271c75edd0b6200980b6c7df2071a16e5e119858aa3ded8"
+    },
+    "line_cleanup_bridge.json": {
+      "file": "validation/normal_contact_trial_line_cleanup_bridge_20260930.json",
+      "SHA256": "350aca2d8d0cc20f138762f1a3b96b7b380562ba025b99884d92d8f74f9fa660"
+    }
+  },
+  "nativeTraces": [
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_contact_probe_no_loss_replay.mat",
+      "bytes": 6810441,
+      "SHA256": "d4df211d4562c8099085c8a0dee3b63024bf03e1a84f1785d01a1681d2fa133e"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_contact_stop.mat",
+      "bytes": 1192720,
+      "SHA256": "77c2f12e6cd12dc0fb0f3d7cf07eaf77c0803b1c01478400c920883850270d5f"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_direct_native_run.mat",
+      "bytes": 2888561,
+      "SHA256": "ce9d66436112a10220694c0dc30fd110ffb445e982f2ffc9f18f1fafe5193d9a"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_final_source_bridge.mat",
+      "bytes": 488499892,
+      "SHA256": "573cc6d4ebbbd5e738647631fbb253abd7a5a8636f80429a3aa458b53ee7e7a8"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_guide_slow_2kg.mat",
+      "bytes": 211467141,
+      "SHA256": "b7dde3bf59f1f8f165f4302964dabfa94c9a1f50678bf26a8f4a96b4ce3f8104"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_no_springs_smoke.mat",
+      "bytes": 4263971,
+      "SHA256": "893e205b6801960e3fbf1c09292ec4c2f79c8e17740f5494bee649d99f0c1245"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/traces/delivery_travel_stop.mat",
+      "bytes": 2221226,
+      "SHA256": "d5d0166aad2bbd1b028888b57e991c58e38467ccda66388738816fdebedccae5"
+    }
+  ],
+  "diagrams": {
+    "manifest": "validation/normal_contact_trial_delivery_diagrams_20260930.json",
+    "SHA256": "3e4b377b50784014345302f919c7a014e45d75b627841f50c5d6a73391a706e8",
+    "PDF": "generated/active_flange_native_model_pages_20260930.pdf",
+    "PDFSHA256": "e37dc0a3a9d775c1989c078b348ae1b2813461518d0891489fa2e3b2ca06f633"
+  },
+  "nativeSourceBridge": {
+    "duration_s": 10,
+    "nativeSamples": 1000001.0,
+    "physical35Difference": 3.019806626980426e-14,
+    "maximumDifference": 3.019806626980426e-14,
+    "peakNormalError_N": 0.32241548730002023,
+    "normalContactDifference": 0,
+    "accelerometerDifference": 0,
+    "motionObserverDifference": 0,
+    "commandPredictionDifference": 0,
+    "forceVariationDifference": 0,
+    "measuredDragDifference": 0,
+    "accelerationFeedforwardDifference": 0,
+    "lowerInverseDifference": 0,
+    "robotGateDifference": 0,
+    "finalSpringFreeLength_m": 0.02
+  },
+  "visualReview": "Root reviewed all13 final pages and re-reviewed cleanup pages04/07/13 before authorizing promotion.",
+  "newNativeSimulationsDuringMetadataCleanupAndPromotion": 0,
+  "desktopModel": "No desktop model or window was altered; reopen the saved canonical graph before using the new helpers.",
+  "recipe": "validation/normal_contact_trial_delivery_promote.py",
+  "frozenPublicSourceArchive": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930",
+  "frozenPublicSourceManifestSHA256": "48c9ce5116ccc1b6d1d9a188ec341abbde89aadf8bef19ae181f14d538a3b412",
+  "scientificSourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/acf_force_control_normal_trial.slx",
+  "recipeSHA256": "0b72ef1ac7410c912dcc03ed0ed27c9aa90b111a97c89a20fdd10bcdb9ffbe5b",
+  "diagramRecipe": "validation/normal_contact_trial_delivery_diagrams.py",
+  "diagramRecipeSHA256": "daddcd3d4a1dc633010258395a5071d88b0b0f6f5a61d5fcd93d05aeffb45082"
+}

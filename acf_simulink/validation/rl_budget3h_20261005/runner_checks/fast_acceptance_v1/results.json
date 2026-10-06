@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "scope": "Equivalent collector transport and vectorized scoring on same native graph; training identities only.",
+  "parity": {
+    "observations": 0.0,
+    "latent_actions": 0.0,
+    "log_probs": 0.0,
+    "values": 0.0,
+    "rewards": 0.0,
+    "terminated": 0.0,
+    "truncated": 0.0,
+    "next_values": 0.0,
+    "reset_before": 0.0,
+    "action_mask": 0.0,
+    "initial_state": 0.0,
+    "state_inputs": 0.0,
+    "log_probs_by_action": 0.0
+  },
+  "nativeMetricsBitIdentical": true,
+  "exactResumePassed": true,
+  "retainedFailureCount": 2,
+  "nativeFailureReplayPassed": true,
+  "timing": {
+    "objects": {
+      "elapsed_s": 1.21888136502821,
+      "decisions": 32768,
+      "decisionsPerSecond": 26883.666401152677
+    },
+    "arrays": {
+      "elapsed_s": 0.8695844570174813,
+      "decisions": 32768,
+      "decisionsPerSecond": 37682.36625616373
+    }
+  },
+  "speedRatio": 1.401682556756769
+}

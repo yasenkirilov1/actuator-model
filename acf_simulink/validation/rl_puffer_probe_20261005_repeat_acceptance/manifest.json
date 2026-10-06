@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "source_sha256": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+  "files": {
+    "direct_failure_native.npz": "8b9b81fd30773a8e9e66a86be109e2e5ae03d2480d6709d8bbaf7f247894c732",
+    "direct_held_native.npz": "b67e923a49a050196c25797d6dd2d4b8b5b5e8257677ced0f159abd588ecb4b7",
+    "native_repeat.py": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+    "repeat10_native.npz": "b67e923a49a050196c25797d6dd2d4b8b5b5e8257677ced0f159abd588ecb4b7",
+    "repeat20_failure_native.npz": "8b9b81fd30773a8e9e66a86be109e2e5ae03d2480d6709d8bbaf7f247894c732",
+    "results.json": "1a22b1c4fae3d1ed6c8be8232196cf66c1209aa1b93e078952d56fd554c7f870"
+  },
+  "native_inputs": {
+    "acf_simulink/validation/rl_native_probe_20261005_bank/libacf_native.so": "4c6b005a4056e38b3b446fed2345657cd3210828a52fb2f45bb3244d66172fa4",
+    "acf_simulink/validation/rl_native_probe_20261005_bank/bridge_build.json": "8ce80bfb2d9f4a59b58d5df2e1f9ffd3915cd0cda4baa36eeb96c2c014ac4874",
+    "acf_simulink/validation/rl_native_probe_20261005_bank/scenarios.json": "4f9690705fe20f8ca4a59f5e32c067674aa1531e500a5741d939a9e5352d5cc1",
+    "acf_simulink/validation/rl_native_probe_20261005_bank/metadata.json": "8528a1c0530e7cf7c1c51bfb415739a0f0b6d7f8ca3fb7993525ca20713b6c5a"
+  },
+  "scope": "held-request/measurement aggregation acceptance only; training identity only"
+}

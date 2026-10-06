@@ -1,0 +1,56 @@
+{
+  "checkpointSha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+  "physicalActionScales": {
+    "currentOffset_A": 2.0,
+    "robotRequest_m_s": 0.01
+  },
+  "externalFeatureCount": 40,
+  "architecture": {
+    "obs_dim": 40,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dt": 0.0001,
+    "min_memory_s": 0.0003,
+    "max_memory_s": 0.3,
+    "physics_init_force_gain": 0.1,
+    "detach_critic_trunk": true,
+    "center_context": true,
+    "paired_filter_init": true,
+    "initial_log_std": [
+      -4.5,
+      -1.5
+    ]
+  },
+  "storedTrainableParameters": 8101,
+  "recurrentActionReadout": {
+    "current": {
+      "nonzeroParameters": 30,
+      "l2Norm": 0.783828616142273,
+      "maxAbs": 0.23832663893699646
+    },
+    "robot": {
+      "nonzeroParameters": 10,
+      "l2Norm": 4.284618377685547,
+      "maxAbs": 3.008695125579834
+    }
+  },
+  "checkpointProvenance": {
+    "optimizer": "reward_only_antithetic_CMA",
+    "generation": 5,
+    "selectionRank": [
+      0,
+      -24,
+      0.9070853580759995,
+      0.41872787035814696,
+      0.0429191657830551
+    ],
+    "noTeacher": true,
+    "physicalActionScales": {
+      "currentOffset_A": 2.0,
+      "robotRequest_m_s": 0.01
+    },
+    "acceptedRecenterBand_m": 0.0075
+  },
+  "fixtureResetStateEveryStep": true,
+  "sameActionMappingForAllComparisonActors": true
+}

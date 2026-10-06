@@ -1,0 +1,333 @@
+{
+  "status": "trained_not_closed_loop_qualified",
+  "date": "2026-10-05",
+  "seed": 20261005,
+  "architecture": "10-8-1 ReLU, fixed normalization, feature clipping +/-6, current clipping +/-0.05 A",
+  "parameterCount": 97,
+  "epochs": 180,
+  "batchSize": 2048,
+  "optimizer": "Adam",
+  "objective": "MSE imitation of approximate PI/total-mass inertia sensor-lag correction, not optimal-action or reward optimization",
+  "target": "clip(Kp*(N_est-N_true)-(B_id+S_id)/Kf_id*(aS_true-aS_ff_pred), +/-0.05) A; omits a changed lower-link inverse response",
+  "trajectorySplit": {
+    "train": 8,
+    "selection": 4,
+    "finalTestUsedForTraining": 0
+  },
+  "trainingNativeFrames": 320008,
+  "trainingFramesUsed": 36528,
+  "selectionNativeFrames": 160004,
+  "selectionFramesUsed": 18264,
+  "bestSelectionMse_A2": 2.2891200702439533e-05,
+  "history": [
+    {
+      "epoch": 1,
+      "trainMse_A2": 7.227452600292417e-05,
+      "selectionMse_A2": 7.984882690109312e-05
+    },
+    {
+      "epoch": 6,
+      "trainMse_A2": 2.4224115913099225e-05,
+      "selectionMse_A2": 3.068612041581675e-05
+    },
+    {
+      "epoch": 11,
+      "trainMse_A2": 2.25952573813437e-05,
+      "selectionMse_A2": 2.846111223267127e-05
+    },
+    {
+      "epoch": 16,
+      "trainMse_A2": 2.1814062131327523e-05,
+      "selectionMse_A2": 2.747581260124345e-05
+    },
+    {
+      "epoch": 21,
+      "trainMse_A2": 2.1425240040604258e-05,
+      "selectionMse_A2": 2.6780783158400697e-05
+    },
+    {
+      "epoch": 26,
+      "trainMse_A2": 2.1215577874291583e-05,
+      "selectionMse_A2": 2.6643360736278704e-05
+    },
+    {
+      "epoch": 31,
+      "trainMse_A2": 2.100420800741804e-05,
+      "selectionMse_A2": 2.635988410690166e-05
+    },
+    {
+      "epoch": 36,
+      "trainMse_A2": 2.083201641631452e-05,
+      "selectionMse_A2": 2.6002458235054884e-05
+    },
+    {
+      "epoch": 41,
+      "trainMse_A2": 2.0640193444859885e-05,
+      "selectionMse_A2": 2.5895241495714988e-05
+    },
+    {
+      "epoch": 46,
+      "trainMse_A2": 2.0447174222529974e-05,
+      "selectionMse_A2": 2.5728541627385583e-05
+    },
+    {
+      "epoch": 51,
+      "trainMse_A2": 2.0260487933130927e-05,
+      "selectionMse_A2": 2.5531221514388863e-05
+    },
+    {
+      "epoch": 56,
+      "trainMse_A2": 2.009979487381193e-05,
+      "selectionMse_A2": 2.5358286933195435e-05
+    },
+    {
+      "epoch": 61,
+      "trainMse_A2": 1.9895761132247153e-05,
+      "selectionMse_A2": 2.4881145013479456e-05
+    },
+    {
+      "epoch": 66,
+      "trainMse_A2": 1.9732586770374348e-05,
+      "selectionMse_A2": 2.4750001319802573e-05
+    },
+    {
+      "epoch": 71,
+      "trainMse_A2": 1.952122902664125e-05,
+      "selectionMse_A2": 2.431084269618958e-05
+    },
+    {
+      "epoch": 76,
+      "trainMse_A2": 1.9294544111251232e-05,
+      "selectionMse_A2": 2.3901079994393817e-05
+    },
+    {
+      "epoch": 81,
+      "trainMse_A2": 1.92004610338064e-05,
+      "selectionMse_A2": 2.366102315777653e-05
+    },
+    {
+      "epoch": 86,
+      "trainMse_A2": 1.9108378801547462e-05,
+      "selectionMse_A2": 2.364241710341172e-05
+    },
+    {
+      "epoch": 91,
+      "trainMse_A2": 1.9069853675799565e-05,
+      "selectionMse_A2": 2.3484748049958407e-05
+    },
+    {
+      "epoch": 96,
+      "trainMse_A2": 1.899098445593334e-05,
+      "selectionMse_A2": 2.350319155137891e-05
+    },
+    {
+      "epoch": 101,
+      "trainMse_A2": 1.8948661715750732e-05,
+      "selectionMse_A2": 2.362196516871976e-05
+    },
+    {
+      "epoch": 106,
+      "trainMse_A2": 1.8900654127874898e-05,
+      "selectionMse_A2": 2.3406708078397774e-05
+    },
+    {
+      "epoch": 111,
+      "trainMse_A2": 1.8832115739823397e-05,
+      "selectionMse_A2": 2.3505815434514738e-05
+    },
+    {
+      "epoch": 116,
+      "trainMse_A2": 1.88228151856822e-05,
+      "selectionMse_A2": 2.346303956233659e-05
+    },
+    {
+      "epoch": 121,
+      "trainMse_A2": 1.8804526833962284e-05,
+      "selectionMse_A2": 2.3105044116347375e-05
+    },
+    {
+      "epoch": 126,
+      "trainMse_A2": 1.8680549787228632e-05,
+      "selectionMse_A2": 2.3170118496294103e-05
+    },
+    {
+      "epoch": 131,
+      "trainMse_A2": 1.863522207263376e-05,
+      "selectionMse_A2": 2.3135212308482838e-05
+    },
+    {
+      "epoch": 136,
+      "trainMse_A2": 1.861168175727327e-05,
+      "selectionMse_A2": 2.3125778943968636e-05
+    },
+    {
+      "epoch": 141,
+      "trainMse_A2": 1.8596404329458145e-05,
+      "selectionMse_A2": 2.3071658709748385e-05
+    },
+    {
+      "epoch": 146,
+      "trainMse_A2": 1.8567194713752863e-05,
+      "selectionMse_A2": 2.302875526378343e-05
+    },
+    {
+      "epoch": 151,
+      "trainMse_A2": 1.8545709922857723e-05,
+      "selectionMse_A2": 2.3148690396587423e-05
+    },
+    {
+      "epoch": 156,
+      "trainMse_A2": 1.85336063069528e-05,
+      "selectionMse_A2": 2.3174531647049764e-05
+    },
+    {
+      "epoch": 161,
+      "trainMse_A2": 1.8514724535150842e-05,
+      "selectionMse_A2": 2.2891200702439533e-05
+    },
+    {
+      "epoch": 166,
+      "trainMse_A2": 1.846811894061641e-05,
+      "selectionMse_A2": 2.301104926009483e-05
+    },
+    {
+      "epoch": 171,
+      "trainMse_A2": 1.8451699846863644e-05,
+      "selectionMse_A2": 2.2954533324801864e-05
+    },
+    {
+      "epoch": 176,
+      "trainMse_A2": 1.8439522275940568e-05,
+      "selectionMse_A2": 2.3094225279766622e-05
+    },
+    {
+      "epoch": 180,
+      "trainMse_A2": 1.8405550895612606e-05,
+      "selectionMse_A2": 2.2981579373476694e-05
+    }
+  ],
+  "recordings": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_001_features.mat",
+      "group": "train",
+      "sha256": "008bd73d22bd802ecff098aefdf1906eb095cd802a5312c92e7f4ed8d9feba93",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.005188736227911019,
+      "predictionResidualRms_A": 0.0016129154356592994,
+      "predictionPeakAbs_A": 0.019444806452179057
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_002_features.mat",
+      "group": "train",
+      "sha256": "8c1c708b54e949a59acc341bbd55b87c100f70c7ae0eac374c07eadd66db9e44",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.005315901542316976,
+      "predictionResidualRms_A": 0.0020322691395257674,
+      "predictionPeakAbs_A": 0.016797426838150876
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_003_features.mat",
+      "group": "train",
+      "sha256": "30edcb292c1f01e2a89ce4f15380844436884b4cd90d509796785d6917906048",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.005819487599703219,
+      "predictionResidualRms_A": 0.002187534013703446,
+      "predictionPeakAbs_A": 0.019726083267790868
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_004_features.mat",
+      "group": "train",
+      "sha256": "d515a45f2e6658b9254c19caa55175905c74edc7c81dbce6089151482d97013f",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.0058111649839399536,
+      "predictionResidualRms_A": 0.0021590975554286796,
+      "predictionPeakAbs_A": 0.02035583978310335
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_005_features.mat",
+      "group": "train",
+      "sha256": "dca04796df2ffe5834670132b1eed34f89231ede6775b6c6a8b0a7bd2339b795",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.0073582779806043806,
+      "predictionResidualRms_A": 0.0032845834842394834,
+      "predictionPeakAbs_A": 0.02431735575159709
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_006_features.mat",
+      "group": "train",
+      "sha256": "96fc284255927ba538290ebb3b50f8f12520e7778eec76251d0b6f30e173ab41",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.00880664699019288,
+      "predictionResidualRms_A": 0.00414077361157506,
+      "predictionPeakAbs_A": 0.028973477750088926
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_007_features.mat",
+      "group": "train",
+      "sha256": "a9765c9981346d1231101856e287ff303696b561edfff8b192426c39a12b6273",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.011317753210770326,
+      "predictionResidualRms_A": 0.0056617380043559986,
+      "predictionPeakAbs_A": 0.035877222182219455
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_008_features.mat",
+      "group": "train",
+      "sha256": "586fb3c27bfd7da6e7ef975e1e5745d2626facf630ad03546c4d0a31ad071934",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.011297267242037544,
+      "predictionResidualRms_A": 0.00557271949279405,
+      "predictionPeakAbs_A": 0.03749664740566453
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_009_features.mat",
+      "group": "selection",
+      "sha256": "fedd280fc44384ef419d10466c3b538227ec6734482bf28bcc267179ff8e64f9",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.005199247405373295,
+      "predictionResidualRms_A": 0.0017296369009950317,
+      "predictionPeakAbs_A": 0.019987410519935366
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_010_features.mat",
+      "group": "selection",
+      "sha256": "855f66633143752ff666628c9aa4eafac7574e0cf177881d0d46e3278f9bc703",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.007343691381572029,
+      "predictionResidualRms_A": 0.003165054680912864,
+      "predictionPeakAbs_A": 0.026502059435278582
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_011_features.mat",
+      "group": "selection",
+      "sha256": "b0e3b32fbbd10c6184e4a90e7fdf0fe07a843c9b215ae40a6d8c3e5c29d70e46",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.011403937147005086,
+      "predictionResidualRms_A": 0.005804504296824898,
+      "predictionPeakAbs_A": 0.03247653312248307
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/ml_force_20261005/collect/case_012_features.mat",
+      "group": "selection",
+      "sha256": "e7eae46029f1d330f624b74628b0e4517dc3c8ffc64507f361e4fe27d1b3e960",
+      "frames": 40001,
+      "trainingSubsetFrames": 4566,
+      "targetRms_A": 0.008889148895510459,
+      "predictionResidualRms_A": 0.004287672500461598,
+      "predictionPeakAbs_A": 0.032895888989089954
+    }
+  ],
+  "weightsSha256": "e21982cf35ed2790e831bab0cdd45f76271bfb90b872195c9493bce094fc8b05",
+  "recipeSha256": "25a5ddfd668966e3ea7d1b49c38887cb6902a6dd04c1281ec9be336bf68b9a61"
+}

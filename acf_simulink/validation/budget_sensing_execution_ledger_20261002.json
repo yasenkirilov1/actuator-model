@@ -1,0 +1,408 @@
+{
+  "status": "complete",
+  "date": "2026-10-02",
+  "frozenAcquisitionModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "metric": "maximum absolute true workpiece-normal force error over every native sample including startup",
+  "physicalRequirement_N": 0.5,
+  "preferredDesignThreshold_N": 0.45,
+  "sources": [
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/results.json",
+      "sha256": "e9c589f45b0043f1a62734266ba5d77a92cf802f70b6a77b379b913da267a0f5",
+      "recordings": 96,
+      "nativeSamples": 38400096.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/results.json",
+      "sha256": "e6f9c92dcd76bbc5c072811689d9c3304cab4cb8fb7aeec49b4be1ae1ead522c",
+      "recordings": 72,
+      "nativeSamples": 86400072.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensors_screen_20261002/results.json",
+      "sha256": "851b5c9d07ef36db6b2d15835651f423cd029258bea55d497ed8162198e0c5af",
+      "recordings": 36,
+      "nativeSamples": 43200036.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/results.json",
+      "sha256": "f965cdb9f62ecbadcb67d7d0fd96173849ca3f3bc3d8e132126af15c472e0618",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/results.json",
+      "sha256": "6ddf03ca05687b24365a7ff314c45c7beaa74dced986db17e775f8e3ecb173a2",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/results.json",
+      "sha256": "97c391e5fd6f419561efe4c648e2f38b782bd4559d0b9015f58318d9a3cf3ece",
+      "recordings": 4,
+      "nativeSamples": 36000004.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/results.json",
+      "sha256": "8223a5f44fd47971aeeb82393fe07b7b3a590baa94cf0bdf8de5d840524dc58d",
+      "recordings": 4,
+      "nativeSamples": 12000004.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/results.json",
+      "sha256": "dca9c15f34bc4474c7cadc3a04eef3137e4c278bbbcf7cc1b0aa969b5825f843",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/results.json",
+      "sha256": "fb321979a4dca87bfc4ca1d2719f95a558a851a563d7fceafec00b1957485924",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/results.json",
+      "sha256": "8260b0497bb608983049ced8f60e809452433a1b607faef6803d81f8541f7cb2",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/results.json",
+      "sha256": "37e3ba5ac72a008fb4359e50d194b7b2abffd814bcd8c49b10ffd52a6b576369",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/results.json",
+      "sha256": "23f13377c2ec2d3d2407751102421aa5c6744569dc1495bda058a271e90177b4",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/results.json",
+      "sha256": "15d517d4d85b2d21444aa5f3ed619bffa3a1d0ff76b5bfba52426d02020bdc0f",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/results.json",
+      "sha256": "5bdbcd24f0501da4379fee40dd703f26742e1eb5450091d833e9a89f68438129",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/results.json",
+      "sha256": "0c3fd7796535365e9feb1a6dd20249dd94ab9a48c231c92b5bfe217201da4036",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/results.json",
+      "sha256": "2ac4e8d2091b9a0b0f771de696c36ce3677f2a12cbeb018cfded400c0d5f8f2b",
+      "recordings": 7,
+      "nativeSamples": 39600007.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise2x_20261002/results.json",
+      "sha256": "a6e086fb4ffe925c38f76e6ab4528e3fa6eaf15b70b87f65fe9a3d8a9482a2e8",
+      "recordings": 2,
+      "nativeSamples": 2400002.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/results.json",
+      "sha256": "ae83e695009a441413ce46cc14d0e15083aac34e9b1d6c5f3d656934797aa52a",
+      "recordings": 2,
+      "nativeSamples": 2400002.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/results.json",
+      "sha256": "ff02bfc146505a745c2ed890373f985a422a0195d96b8050034889b14989e1e8",
+      "recordings": 2,
+      "nativeSamples": 2400002.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/results.json",
+      "sha256": "5160a762d3c084bde78099b20ae753c74f62182145628e959d83a236ee45a647",
+      "recordings": 2,
+      "nativeSamples": 2400002.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_refine_20261002/results.json",
+      "sha256": "529971e91e05f38825de6c07db09d36665509f60321b259f6b49505d67d23902",
+      "recordings": 2,
+      "nativeSamples": 4800002.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_alias_probe_20261002/results.json",
+      "sha256": "9ffb48a276c573673ad002645c326c2e5dec04f976f2df2c9f03a97b80bb012c",
+      "recordings": 3,
+      "nativeSamples": 1800003.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_alias_probe_20261002/results.json",
+      "sha256": "4c338cecd687e09d2f4f45ed038a49048ad69c8c1e943ef2214f59b48d69b01c",
+      "recordings": 3,
+      "nativeSamples": 1800003.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/results.json",
+      "sha256": "ce28651215c22b84f4d2f64579b371dd6033676109ddb004e70772de6600c6bc",
+      "recordings": 234,
+      "nativeSamples": 280800234.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part2/results.json",
+      "sha256": "35ec047e1d83bf2a413c40472bd415252dd8c1ffbbb36fe8d5b8e418b5b42f7e",
+      "recordings": 233,
+      "nativeSamples": 279600233.0
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part3/results.json",
+      "sha256": "3260b95a1f6d1fb0253b903957a55fa7bc7a0d4966ae4dc9d00abacfd81dcbd9",
+      "recordings": 233,
+      "nativeSamples": 279600233.0
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "adc_sar_screen_20261002",
+      "recordings": 96,
+      "passes": 88,
+      "preferredMarginPasses": 83,
+      "nativeSamples": 38400096.0,
+      "peakError_N": 0.6485001097046208,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_screen_20261002",
+      "recordings": 72,
+      "passes": 59,
+      "preferredMarginPasses": 52,
+      "nativeSamples": 86400072.0,
+      "peakError_N": 0.8038582987041778,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensors_screen_20261002",
+      "recordings": 36,
+      "passes": 36,
+      "preferredMarginPasses": 32,
+      "nativeSamples": 43200036.0,
+      "peakError_N": 0.48494647809094715,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_long5100_20261002",
+      "recordings": 4,
+      "passes": 4,
+      "preferredMarginPasses": 3,
+      "nativeSamples": 36000004.0,
+      "peakError_N": 0.4513297997943013,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_long8000_20261002",
+      "recordings": 4,
+      "passes": 4,
+      "preferredMarginPasses": 4,
+      "nativeSamples": 36000004.0,
+      "peakError_N": 0.43882082755963836,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_long15000_20261002",
+      "recordings": 4,
+      "passes": 4,
+      "preferredMarginPasses": 1,
+      "nativeSamples": 36000004.0,
+      "peakError_N": 0.4943162231423912,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sar_long5100_20261002",
+      "recordings": 4,
+      "passes": 4,
+      "preferredMarginPasses": 4,
+      "nativeSamples": 12000004.0,
+      "peakError_N": 0.40421430007220494,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_dynamic_matching_L0_20261002",
+      "recordings": 7,
+      "passes": 7,
+      "preferredMarginPasses": 3,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.48994557803434446,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_adc_hot_coil_20261002",
+      "recordings": 7,
+      "passes": 7,
+      "preferredMarginPasses": 7,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.4388208275612797,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V",
+      "recordings": 7,
+      "passes": 5,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.5168057657709824,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V",
+      "recordings": 7,
+      "passes": 7,
+      "preferredMarginPasses": 4,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.48248904536801973,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V",
+      "recordings": 7,
+      "passes": 4,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.5309652789559607,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_digital70_5100_L80_current100_24V",
+      "recordings": 7,
+      "passes": 3,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.5812603233998601,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_digital70_5100_L80_current50_36V",
+      "recordings": 7,
+      "passes": 3,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.5599632364577545,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V",
+      "recordings": 7,
+      "passes": 7,
+      "preferredMarginPasses": 7,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.4388208275620755,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V",
+      "recordings": 7,
+      "passes": 7,
+      "preferredMarginPasses": 4,
+      "nativeSamples": 39600007.0,
+      "peakError_N": 0.4824891790466168,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_noise2x_20261002",
+      "recordings": 2,
+      "passes": 2,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 2400002.0,
+      "peakError_N": 0.33968803386933644,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_noise_corr200us_20261002",
+      "recordings": 2,
+      "passes": 2,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 2400002.0,
+      "peakError_N": 0.33205666331369343,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_acc_skew20us_20261002",
+      "recordings": 2,
+      "passes": 2,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 2400002.0,
+      "peakError_N": 0.35850493225163405,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_acc_skew50us_20261002",
+      "recordings": 2,
+      "passes": 2,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 2400002.0,
+      "peakError_N": 0.3816650578299914,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_refine_20261002",
+      "recordings": 2,
+      "passes": 2,
+      "preferredMarginPasses": 2,
+      "nativeSamples": 4800002.0,
+      "peakError_N": 0.3381808301517779,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_sinc_alias_probe_20261002",
+      "recordings": 3,
+      "passes": 3,
+      "preferredMarginPasses": 3,
+      "nativeSamples": 1800003.0,
+      "peakError_N": 0.009821456754906421,
+      "kind": "quiet_synthetic_tone"
+    },
+    {
+      "cohort": "adc_sar_alias_probe_20261002",
+      "recordings": 3,
+      "passes": 3,
+      "preferredMarginPasses": 3,
+      "nativeSamples": 1800003.0,
+      "peakError_N": 0.033977430840366196,
+      "kind": "quiet_synthetic_tone"
+    },
+    {
+      "cohort": "adc_budget_range_20261002_part1",
+      "recordings": 234,
+      "passes": 234,
+      "preferredMarginPasses": 234,
+      "nativeSamples": 280800234.0,
+      "peakError_N": 0.2927956377616354,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_budget_range_20261002_part2",
+      "recordings": 233,
+      "passes": 233,
+      "preferredMarginPasses": 233,
+      "nativeSamples": 279600233.0,
+      "peakError_N": 0.29280398556987564,
+      "kind": "bump_recordings"
+    },
+    {
+      "cohort": "adc_budget_range_20261002_part3",
+      "recordings": 233,
+      "passes": 233,
+      "preferredMarginPasses": 233,
+      "nativeSamples": 279600233.0,
+      "peakError_N": 0.292801482700348,
+      "kind": "bump_recordings"
+    }
+  ],
+  "executedRecordings": 999,
+  "bumpRecordings": 993,
+  "quietToneRecordings": 6,
+  "nativeForceSamples": 1502400999.0,
+  "parityAuditRecordings": 9,
+  "caveat": "Recording count includes deliberately paired repeats; not 999 unique parameter identities. Pilot/software/source checks are separate; no prepared-only L50 matching cases are counted."
+}

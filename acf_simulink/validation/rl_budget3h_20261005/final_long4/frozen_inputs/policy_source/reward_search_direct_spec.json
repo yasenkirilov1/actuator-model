@@ -1,0 +1,7 @@
+[
+  {"name":"actor_skip.weight","indices":[0],"scale":0.1},
+  {"name":"actor_skip.weight","indices":[6,13],"scale":0.1},
+  {"name":"actor_skip.weight","indices":[57],"scale":1.0},
+  {"name":"actor_aux.weight","indices":[0,1,2,3,4,5,7],"scale":1.0},
+  {"name":"actor.bias","indices":[0],"scale":0.02}
+]

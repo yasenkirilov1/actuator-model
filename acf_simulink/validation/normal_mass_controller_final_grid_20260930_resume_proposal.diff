@@ -1,0 +1,258 @@
+--- acf_simulink/experiments/qualify_inertial_mass_controller.m
++++ /home/tommie/.local/state/actuator-model/final-grid-resume-proposal-20260930/qualify_inertial_mass_controller.m
+@@ -28,6 +28,7 @@
+  'performanceOrdinaryReferenceTrace','', ...
+  'forceValues_N',5:5:50,'angleValues_deg',0:15:90,'muValues',[0 .3], ...
+  'partitionIndex',1,'partitionCount',1,'keepNativeWorstInMemory',true, ...
++ 'resumeReportFile','','resumeAuditFile','','sdiStorageParent','','maximumNewCases',inf, ...
+  'clearSDIEvery',8,'retainPlotExcerpts',true, ...
+  'allowFiniteCell',false,'simulationMode','normal','checkpointEvery',1,'tag',''));
+ sourceModel=fullfile(sourceFolder,'acf_force_control_normal_trial.slx');
+@@ -86,10 +87,16 @@
+ previousRecord=Simulink.sdi.getRecordData;
+ Simulink.fileGenControl('set','CacheFolder',fullfile(workerFolder,'cache'), ...
+  'CodeGenFolder',fullfile(workerFolder,'code'),'createDir',true);
+-ownedStorage=fullfile(workerFolder,'sdi');Simulink.sdi.setStorageLocation(ownedStorage);
+-Simulink.sdi.setRecordData(true);
+-mdl='acf_force_control_normal_trial';assert(~bdIsLoaded(mdl));load_system(modelFile);
+-cleanup=onCleanup(@()finish(mdl,previousStorage,previousRecord,ownedStorage)); %#ok<NASGU>
++ownedStorage=fullfile(workerFolder,'sdi');tmpfsStorage=false;
++if ~isempty(options.sdiStorageParent)
++ assert(strcmp(options.sdiStorageParent,'/dev/shm'),'Only private /dev/shm SDI storage is supported.');
++ ownedStorage=tempname(options.sdiStorageParent);mkdir(ownedStorage);tmpfsStorage=true;
++ fid=fopen(fullfile(ownedStorage,'owned_acf_sdi_storage'),'w');assert(fid~=-1);
++ fprintf(fid,'Owned transient SDI only; frozen native grid.\n');fclose(fid);
++end
++mdl='acf_force_control_normal_trial';assert(~bdIsLoaded(mdl));
++cleanup=onCleanup(@()finish(mdl,previousStorage,previousRecord,ownedStorage,tmpfsStorage)); %#ok<NASGU>
++Simulink.sdi.setStorageLocation(ownedStorage);Simulink.sdi.setRecordData(true);load_system(modelFile);
+ assert(ismember(options.simulationMode,{'normal','accelerator'}));
+ set_param(mdl,'SimulationMode',options.simulationMode);
+ sharedMeasurement=getSimulinkBlockHandle([mdl '/Contact force measurement'])~=-1;
+@@ -373,6 +380,16 @@
+ assert(options.clearSDIEvery>=1 && options.clearSDIEvery==round(options.clearSDIEvery));
+ configurationFile=fullfile(outputFolder,[stem '_configuration.mat']);
+ save(configurationFile,'configs','options','unpartitionedCaseIndices','-v7');
++resume=[];resumeCount=0;resumeAudit=[];
++if ~isempty(options.resumeReportFile)
++ assert(strcmp(phase,'full_range_mass') && ~options.keepNativeWorstInMemory, ...
++  'Continuation is bounded to the existing full native grid with released worst histories.');
++ [resume,resumeAudit]=validated_resume(options.resumeReportFile,configs,unpartitionedCaseIndices, ...
++  modelHash,candidateHash,sources,options);
++ resumeCount=numel(resume.rows);assert(resumeCount<numel(configs),'This shard already has every identity.');
++end
++assert(options.maximumNewCases>=1 && (isinf(options.maximumNewCases) || ...
++ options.maximumNewCases==round(options.maximumNewCases)));
+ rows=struct([]);ranking=struct([]);plotTraces=struct([]);
+ started=tic;lastCompileKey=[];worst=[];worstRow=[];worstParameters=[];worstError=-inf;
+ worstHistoryFile=fullfile(outputFolder,[stem '_worst_native_trace.mat']);
+@@ -381,7 +398,7 @@
+ ordinarySourceParity=[];
+ groupKeys={};groupWorst=[];groupTraceFiles={};
+ report=struct('date','2026-09-30','status','running','phase',phase, ...
+- 'recipeVersion','native_inertial_normal_mass_v7_partitioned_failed_history_retention','options',options, ...
++ 'recipeVersion','native_inertial_normal_mass_v8_segmented_tmpfs_continuation','options',options, ...
+  'scope','Surface-normal pressing force within +/-0.5 N on every native sample, including startup, through each case-specific full recording;1mm high10mm wide bumps at100mm/s. Conditional finite simulation, not physical qualification.', ...
+  'recordingStopTimes_s',unique(arrayfun(@(c)c.p.sim.stopTime,configs)), ...
+  'sourceModel',sourceModel,'modelSha256',modelHash,'privateModel',modelFile, ...
+@@ -402,7 +419,50 @@
+  'qualificationLimit','Sampled nominal mechanics/contact/known-mass/sensor model; no complete calibration, changing orientation/friction, sanding vibration or compliant robot/contact qualification.', ...
+  'metrics','All scores use full native samples. Earlier35-channel axial tracking scores are separate diagnostics;250us excerpts are for plotting only.', ...
+  'nativeTraceRetention','Full worst recording per controller and worker, first recording, and requested selected plot excerpts. Other full native histories are scored and released, with every case retained in metrics.');
+-for j=1:numel(configs)
++report.ownedSDIStorage=ownedStorage;report.SDIStorageBackend='disk';
++if tmpfsStorage,report.SDIStorageBackend='tmpfs';end
++segments=struct('firstLocalCase',1,'lastLocalCase',numel(configs), ...
++ 'executedLastLocalCase',0,'recipeSha256',report.experimentSha256, ...
++ 'reportFile',resultFile,'recipeSnapshot',recipeSnapshot,'privateModel',modelFile, ...
++ 'reportSha256','','rowsFile',fullfile(outputFolder,[stem '_rows.jsonl']), ...
++ 'rowsSha256','','auditFile','','auditSha256','', ...
++ 'storageBackend',report.SDIStorageBackend,'status','running');
++if resumeCount>0
++ rows=reshape(resume.rows,1,[]);[worstError,which]=max([rows.peakNormalForceError_N]);
++ worstRow=rows(which);worstParameters=acf_prepare(configs(worstRow.id).p);
++ oldStem=erase(resume.configurationFile,'_configuration.mat');
++ previousWorst=[oldStem '_worst_native_trace.mat'];assert(isfile(previousWorst));
++ copyfile(previousWorst,worstHistoryFile);
++ groupKeys=resume.controllerTraceKeys;
++ assert(numel(groupKeys)==1,'The reviewed common-controller grid has one fixed strategy.');
++ groupWorst=worstError;groupTraceFiles={fullfile(traceFolder,'controller_01_worst_native.mat')};
++ copyfile(resume.controllerWorstNativeTraces{1},groupTraceFiles{1});
++ failedNativeTraces=resume.failedNativeTraces;
++ priorSegment=segments;priorSegment.lastLocalCase=resumeCount;
++ priorSegment.executedLastLocalCase=resumeCount;priorSegment.recipeSha256=resume.experimentSha256;
++ priorSegment.reportFile=options.resumeReportFile;priorSegment.recipeSnapshot=resume.experimentSnapshot;
++ priorSegment.privateModel=resume.privateModel;priorSegment.storageBackend='disk';priorSegment.status=resume.status;
++ priorSegment.reportSha256=sha256(options.resumeReportFile);
++ priorSegment.rowsFile=resumeAudit.rowsFile;priorSegment.rowsSha256=resumeAudit.rowsSha256;
++ priorSegment.auditFile=options.resumeAuditFile;priorSegment.auditSha256=sha256(options.resumeAuditFile);
++ segments.firstLocalCase=resumeCount+1;segments.executedLastLocalCase=resumeCount;
++ segments=[priorSegment segments];
++ report.predecessorReportFile=options.resumeReportFile;
++ report.predecessorReportSha256=sha256(options.resumeReportFile);
++ report.predecessorValidatedNativeHistories=resumeCount;
++ report.predecessorAudit=resumeAudit;
++ report.predecessorAuditFile=options.resumeAuditFile;
++ report.predecessorAuditSha256=sha256(options.resumeAuditFile);
++ report.predecessorReusedReportFile=fullfile(outputFolder,[stem '_predecessor_reused_results.mat']);
++ predecessor=resume;save(report.predecessorReusedReportFile,'predecessor','resumeAudit','-v7');
++ report.predecessorReusedReportSha256=sha256(report.predecessorReusedReportFile);
++ fid=fopen(fullfile(outputFolder,[stem '_predecessor_reused_results.json']),'w');assert(fid~=-1);
++ fprintf(fid,'%s',jsonencode(predecessor,PrettyPrint=true));fclose(fid);clear predecessor;
++ report.firstNativeTrace=[oldStem '_first_native_trace.mat'];
++ report.continuationScope='Old rows and full traces are reused with their original recipe provenance; only remaining ordered identities execute. Native model, candidate, helpers, control, solver and every scored signal remain fixed. Transient SDI storage alone changes to the proved tmpfs path.';
++end
++report.executionSegments=segments;
++for j=resumeCount+1:numel(configs)
+  config=configs(j);q=config.p;
+  compileKey=[q.sim.step,q.force.sampleTime,q.sensor.sampleTime,q.sensor.delay, ...
+   q.sensor.strokeDelay,q.accel.delay,q.coil.currentResponse, ...
+@@ -533,6 +593,9 @@
+   if ~isempty(worst),save(worstHistoryFile,'worst','worstRow','report','-v7');end
+   checkpoint('stopped_by_coordinator');fprintf('INERTIAL_STOPPED_AFTER_CASE %d.\n',j);return;
+  end
++ if j-resumeCount>=options.maximumNewCases && j<numel(configs)
++  checkpoint('stopped_after_bounded_native_cases');fprintf('INERTIAL_BOUNDED_SEGMENT_STOP %d.\n',j);return;
++ end
+ end
+ ranking=rank_controllers(rows);report.controllerRanking=ranking;
+ springRows=rows([rows.externalLowerSpringPair] & [rows.executed]);
+@@ -603,6 +666,11 @@
+   report.status=status;report.rows=rows;report.executed=sum([rows.executed]);
+   report.validatedNativeHistories=report.executed;report.nativeReturned=sum([rows.nativeReturned]);
+   report.attempts=numel(rows);report.failedBeforeNativeReturn=sum(~[rows.nativeReturned]);
++  report.predecessorValidatedNativeHistories=resumeCount;
++  report.newNativeAttempts=max(0,numel(rows)-resumeCount);
++  report.newValidatedNativeHistories=max(0,report.validatedNativeHistories-resumeCount);
++  report.executionSegments(end).executedLastLocalCase=numel(rows);
++  report.executionSegments(end).status=status;
+   report.passed=sum([rows.passed]);report.rejectedBeforeMetrics=sum(~[rows.executed]);
+   report.elapsedSeconds=toc(started);report.worstNormalForceError_N=max([rows.peakNormalForceError_N]);
+   report.controllerTraceKeys=groupKeys;report.controllerWorstNativeTraces=groupTraceFiles;
+@@ -1102,6 +1170,109 @@
+ if isfield(s,name),value=s.(name);else,value=fallback;end
+ end
+ 
++function [prior,audit]=validated_resume(file,configs,globalIndices,modelHash,candidateHash,sources,options)
++% Reuse only the reviewed, immutable r1 prefix. Complete JSONL records are
++% written after native timing/force-balance validation, before checkpoints.
++% A separately audited interruption may therefore recover a complete tail;
++% it never turns a partial or rejected history into a validated result.
++assert(endsWith(file,'_results.mat') && isfile(file));
++assert(~isempty(options.resumeAuditFile) && isfile(options.resumeAuditFile));
++audit=jsondecode(fileread(options.resumeAuditFile));
++assert(strcmp(audit.status,'audited_immutable_r1_prefix'));
++assert(strcmp(audit.reportMatFile,file) && strcmp(audit.reportMatSha256,sha256(file)));
++assert(strcmp(audit.checkpointSha256,sha256(audit.checkpointFile)));
++assert(strcmp(audit.rowsSha256,sha256(audit.rowsFile)));
++saved=load(file,'report');prior=saved.report;
++originalCount=numel(prior.rows);
++assert(strcmp(prior.phase,'full_range_mass') && prior.plannedCases==875 && ...
++ prior.unpartitionedPlannedCases==3500 && originalCount==audit.checkpointRows);
++assert(strcmp(prior.experimentSha256, ...
++ '04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db'));
++assert(strcmp(prior.experimentSha256,sha256(prior.experimentSnapshot)));
++assert(strcmp(prior.modelSha256,modelHash) && strcmp(sha256(prior.privateModel),modelHash));
++assert(strcmp(sha256(prior.sourceModel),modelHash));
++assert(strcmp(prior.candidateSha256,candidateHash) && strcmp(sha256(prior.candidateFile),candidateHash));
++assert(strcmp(sha256(fullfile(fileparts(prior.privateModel),'candidate.mat')),candidateHash));
++assert(isequaln(prior.helperSources,sources));
++for k=1:numel(sources)
++ helper=fullfile(fileparts(prior.privateModel),'helpers',sources(k).file);
++ assert(strcmp(sha256(helper),sources(k).sha256));
++end
++assert(strcmp(sha256(prior.configurationFile),audit.configurationSha256));
++previous=load(prior.configurationFile,'configs','options','unpartitionedCaseIndices');
++assert(isequaln(previous.configs,configs) && ...
++ isequaln(previous.unpartitionedCaseIndices,globalIndices) && ...
++ isequaln(prior.unpartitionedCaseIndices,globalIndices), ...
++ 'Every original parameter, known-mass coefficient and ordered identity must match.');
++optionFields=fieldnames(previous.options);
++for k=1:numel(optionFields)
++ name=optionFields{k};
++ if strcmp(name,'tag'),continue;end
++ assert(isfield(options,name) && isequaln(options.(name),previous.options.(name)), ...
++  'Only the output tag and added continuation/storage metadata may change.');
++end
++assert(strcmp(prior.simulationMode,'accelerator') && options.clearSDIEvery==1);
++checkpoint=jsondecode(fileread(audit.checkpointFile));
++assert(numel(checkpoint.rows)==originalCount && strcmp(checkpoint.status,prior.status));
++contents=fileread(audit.rowsFile);
++assert(~isempty(contents) && contents(end)==char(10),'A complete append log must end at a record boundary.');
++lines=regexp(contents,'\r?\n','split');lines(end)=[];
++assert(numel(lines)==audit.validatedRows && numel(lines)>=originalCount && numel(lines)<numel(configs));
++recovered=reshape(prior.rows,1,[]);template=recovered(1);
++for k=1:numel(lines)
++ row=restored_json_row(jsondecode(lines{k}),template);
++ if k<=originalCount
++  assert(isequaln(row,recovered(k)), 'Checkpoint and append-log prefix differ.');
++  assert(isequaln(restored_json_row(checkpoint.rows(k),template),recovered(k)));
++ else
++  recovered=append(recovered,row);
++ end
++ q=configs(k).p;
++ assert(row.id==k && row.massS_kg==q.mechanics.mS && row.reference_N==q.force.reference && ...
++  row.angle_deg==q.mechanics.angle*180/pi && row.mu==q.contact.mu && ...
++  row.seedRequested==configs(k).seedRequested && globalIndices(k)==options.partitionIndex+4*(k-1));
++ assert(row.executed && row.nativeReturned && row.completed && row.passed && ...
++  ~row.lostContact && ~row.strokeStop && row.springPackingPassed && ...
++  row.nativeSamples==400001 && row.endTime_s==4 && row.peakNormalForceError_N<=.5 && strcmp(row.reason,'pass'));
++end
++if numel(lines)>originalCount
++ assert(strcmp(prior.status,'running') && audit.recoveredCompleteTailRows==numel(lines)-originalCount);
++ assert(strcmp(audit.interruptionClassification,'process_exit_143_no_graceful_stop_marker'));
++ prior.originalCheckpointStatus=prior.status;prior.status='recovered_interrupted_complete_jsonl_prefix';
++else
++ assert(strcmp(prior.status,'stopped_by_coordinator') && audit.recoveredCompleteTailRows==0);
++end
++prior.rows=recovered;prior.attempts=numel(recovered);prior.executed=numel(recovered);
++prior.validatedNativeHistories=numel(recovered);prior.nativeReturned=numel(recovered);prior.passed=numel(recovered);
++prior.failedBeforeNativeReturn=0;prior.rejectedBeforeMetrics=0;
++prior.reusedPrefixProvenance=audit;
++assert(isempty(prior.failedNativeTraces));
++[peak,which]=max([recovered.peakNormalForceError_N]);prior.worstNormalForceError_N=peak;
++oldStem=erase(prior.configurationFile,'_configuration.mat');
++trace=load([oldStem '_worst_native_trace.mat'],'worstRow');
++assert(isequaln(trace.worstRow,recovered(which)), 'The recovered global worst must retain its full native trace.');
++assert(numel(prior.controllerWorstNativeTraces)==1);
++trace=load(prior.controllerWorstNativeTraces{1},'row');
++assert(isequaln(trace.row,recovered(which)));
++trace=load([oldStem '_first_native_trace.mat'],'row');assert(isequaln(trace.row,recovered(1)));
++assert(strcmp(sha256([oldStem '_worst_native_trace.mat']),audit.worstNativeTraceSha256));
++assert(strcmp(sha256(prior.controllerWorstNativeTraces{1}),audit.controllerWorstNativeTraceSha256));
++assert(strcmp(sha256([oldStem '_first_native_trace.mat']),audit.firstNativeTraceSha256));
++end
++
++function row=restored_json_row(decoded,template)
++assert(isequal(sort(fieldnames(decoded)),sort(fieldnames(template))));
++row=orderfields(decoded,template);names=fieldnames(template);
++for k=1:numel(names)
++ name=names{k};example=template.(name);
++ if isnumeric(example) && isscalar(example) && isempty(row.(name))
++  % jsonencode represents nonfinite scalar diagnostics as null. Keep the
++  % original MATLAB NaN rather than changing scalar fields to empty arrays.
++  row.(name)=NaN;
++ end
++end
++end
++
+ function result=sha256(file)
+ if ~isfile(file),file=[file '.m'];end
+ assert(isfile(file),'Hash input missing.');single=char(39);
+@@ -1110,8 +1281,14 @@
+ result=regexp(output,'[0-9a-f]{64}','match','once');assert(~isempty(result));
+ end
+ 
+-function finish(mdl,previousStorage,previousRecord,ownedStorage)
++function finish(mdl,previousStorage,previousRecord,ownedStorage,tmpfsStorage)
+ if bdIsLoaded(mdl),set_param(mdl,'FastRestart','off');close_system(mdl,0);end
+ if strcmp(Simulink.sdi.getStorageLocation,ownedStorage),Simulink.sdi.clear;end
+ Simulink.sdi.setStorageLocation(previousStorage);Simulink.sdi.setRecordData(previousRecord);
+-end
++if tmpfsStorage
++ assert(startsWith(ownedStorage,'/dev/shm/') && ...
++  isfile(fullfile(ownedStorage,'owned_acf_sdi_storage')), ...
++  'Remove only this isolated process-owned transient SDI directory.');
++ rmdir(ownedStorage,'s');
++end
++end

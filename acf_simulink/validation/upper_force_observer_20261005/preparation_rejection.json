@@ -1,0 +1,7 @@
+{
+  "status": "code_generation_succeeded_parameter_export_rejected",
+  "physicalEpisodes": 0,
+  "algebraicLoopCount": 0,
+  "reason": "Generated parameter-name truncation for a long new State-Space block name hid its ABCD suffix from the existing native-bank parser. Rename only the private native filter block to Cell second derivative; physics and frozen case inputs unchanged.",
+  "preservedDirectory": "acf_simulink/validation/upper_force_observer_20261005/rejected_native_long_block_name"
+}

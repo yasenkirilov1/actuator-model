@@ -1,0 +1,58 @@
+ <strong>slbuild</strong> - Generate and compile standalone or model reference code from model
+
+    <strong>Syntax</strong>
+      slbuild(mdl)
+      slbuild(mdl,buildSpec)
+      slbuild(mdl,Name=Value)
+      blockHandle = slbuild(subsystem)
+      blockHandle = slbuild(subsystem,Mode="ExportFunctionCalls")
+      blockHandle = slbuild(subsystem,Name=Value)
+
+    <strong>Input Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#btvn60i-model">mdl</a> - Specifies model for the build process
+        handle | string array | character vector |
+        cell array of handles or character vectors
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_3df55a9d-246c-40de-b944-c8263a1f156c">subsystem</a> - Subsystem name
+        handle | string array | character vector |
+        cell array of handles or character vectors
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#btvn60i-mdlreftarget">buildSpec</a> - Specifies the code generation action for the build process
+        "StandaloneCoderTarget" | "ModelReferenceCoderTarget" |
+        "ModelReferenceSimTarget" | "CleanTopModel"
+
+    <strong>Name-Value Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_3c6c8acd-0c3d-493f-96bd-d77e19276baa">BuildOutputType</a> - Build output type
+        "Auto" (default) | "Executable" | "StaticLibrary" | "SharedLibrary"
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#d127e585249">ForceTopModelBuild</a> - Force build of top model of model hierarchy
+        false (default) | true
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_acdf9f11-274e-4cfb-ae78-4c5c812ab015">GenerateCodeOnly</a> - Generate code only
+        false | true
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_39fdbffb-a9fe-4c31-b07e-663ed5ed8fb0">Mode</a> - Export function calls (for subsystem builds only)
+        "ExportFunctionCalls" | "Normal"
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_419c2cf0-7c6d-42d7-b397-12d2399df942">ExportFunctionFileName</a> - Function name
+        string | character vector
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_be18895c-a9f6-4520-a5d8-56bc7ad0084a">ExportFunctionInitializeFunctionName</a> - Function name
+        string | character vector
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#d127e585439">OpenBuildStatusAutomatically</a> - Display build information
+        false (default) | true
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_f6528494-78b6-4e9e-8945-d1151f72f575">ObfuscateCode</a> - Generate obfuscated C code
+        false (default) | true
+
+    <strong>Output Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_5c12ef71-5b67-4909-bd35-7f1ce132e84e">blockHandle</a> - Block handle
+        handle
+
+    <strong>Examples</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#bu1rrnw-2">Generate Code and Create Executable File for Model</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_f2462fe1-a6a1-40b6-b0fe-e2081373b6a9">Build Multiple Models</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#bu1rsx6-1">Force Top Model Build</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_77fcae51-4107-476c-9e61-17f2ae7ad87d">Generate Code and Create Executable File for Subsystem</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_eb2e52d6-c31b-4df2-aebc-3287a118dadd">Build Subsystem for Exporting Code to External Application</a>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/slbuild.html#mw_b555bec9-b2c7-4297-8439-ceee1ecd5445">Create Model Block for SIL Testing</a>
+
+    <strong>See also</strong> <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/rtw/ref/codebuild.html">codebuild</a>, <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/rtw/ref/rtwrebuild.html">rtwrebuild</a>, <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/rtw/ref/coder.buildstatus.open.html">coder.buildstatus.open</a>,
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/rtw/ref/coder.buildstatus.close.html">coder.buildstatus.close</a>
+
+    Introduced in Simulink before R2006a
+    <a href="matlab:doc slbuild">Documentation for slbuild</a>
+
+

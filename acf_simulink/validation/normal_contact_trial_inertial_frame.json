@@ -1,0 +1,18 @@
+{
+  "version": "inertial-v2",
+  "trace": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-audit-20260930/normal_contact_trial_inertial_audit_01.mat",
+  "timeAlignedForceReconstructionRms_N": [
+    0.03148224207041968,
+    0.030960314799445002
+  ],
+  "idealMatchedDirectionGeometryError_N": 0.0007322690310971325,
+  "estimatedSlopeErrorVersusMatchedTrueSlope": 0.001214271733799037,
+  "estimatedSlopeErrorVersusPresentTrueSlope": 0.007612704342825228,
+  "normalDifferenceDueEstimatedRatherThanMatchedDirection_N": 0.018101011353962804,
+  "normalReconstructionRmsQuiet_N": 0.03196137357797496,
+  "sensorNoiseRms_m_s2": [
+    0.01214109455594004,
+    0.011853801236908967
+  ],
+  "comments": "Plant truth used only for offline timestamp/geometry diagnostics, never connected to controller."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "launched_not_yet_returned",
+  "date": "2026-09-30",
+  "integrationStep_s": 5e-06,
+  "nativeReruns": 1,
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "recipeSha256": "f523bb63c6a1f7ad06a5a8387b27f1dcd3dd9f61aa844f0988684f902ac2c0ad",
+  "scientificModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "baselineGlobalCaseIndex": 3489,
+  "baselineTrace": "final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_worst_native_trace.mat",
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-20260930/batch.log",
+  "session": 95706,
+  "rootAuthorization": "Refine final complete-grid worst at5us first;2.5us after smaller batches exit. No physics/controller/acquisition/noise change."
+}

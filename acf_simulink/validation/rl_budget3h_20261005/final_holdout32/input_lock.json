@@ -1,0 +1,305 @@
+{
+  "status": "weights_and_inputs_locked_before_evaluation",
+  "lockedAtUtc": "2026-10-05T15:30:17.553228+00:00",
+  "contract": {
+    "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/policy_checkpoint.pt",
+    "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+    "initialCheckpoint": null,
+    "initialCheckpointSha256": null,
+    "policySourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source",
+    "nativeBuildDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50",
+    "bank": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+    "bankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+    "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+    "nativeLibrarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+    "preparedConfigsSha256": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae",
+    "selectionReviewSha256": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e",
+    "trainingBankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+    "parameterBankTransfer": false,
+    "cases": [
+      {
+        "scenario": 64,
+        "identity": "holdout_nominal_01",
+        "seed": 91001,
+        "split": "holdout"
+      },
+      {
+        "scenario": 65,
+        "identity": "holdout_nominal_02",
+        "seed": 91002,
+        "split": "holdout"
+      },
+      {
+        "scenario": 66,
+        "identity": "holdout_nominal_03",
+        "seed": 91003,
+        "split": "holdout"
+      },
+      {
+        "scenario": 67,
+        "identity": "holdout_nominal_04",
+        "seed": 91004,
+        "split": "holdout"
+      },
+      {
+        "scenario": 68,
+        "identity": "holdout_nominal_05",
+        "seed": 91005,
+        "split": "holdout"
+      },
+      {
+        "scenario": 69,
+        "identity": "holdout_nominal_06",
+        "seed": 91006,
+        "split": "holdout"
+      },
+      {
+        "scenario": 70,
+        "identity": "holdout_nominal_07",
+        "seed": 91007,
+        "split": "holdout"
+      },
+      {
+        "scenario": 71,
+        "identity": "holdout_nominal_08",
+        "seed": 91008,
+        "split": "holdout"
+      },
+      {
+        "scenario": 72,
+        "identity": "holdout_nominal_09",
+        "seed": 91009,
+        "split": "holdout"
+      },
+      {
+        "scenario": 73,
+        "identity": "holdout_nominal_10",
+        "seed": 91010,
+        "split": "holdout"
+      },
+      {
+        "scenario": 74,
+        "identity": "holdout_nominal_11",
+        "seed": 91011,
+        "split": "holdout"
+      },
+      {
+        "scenario": 75,
+        "identity": "holdout_nominal_12",
+        "seed": 91012,
+        "split": "holdout"
+      },
+      {
+        "scenario": 76,
+        "identity": "holdout_nominal_13",
+        "seed": 91013,
+        "split": "holdout"
+      },
+      {
+        "scenario": 77,
+        "identity": "holdout_nominal_14",
+        "seed": 91014,
+        "split": "holdout"
+      },
+      {
+        "scenario": 78,
+        "identity": "holdout_nominal_15",
+        "seed": 91015,
+        "split": "holdout"
+      },
+      {
+        "scenario": 79,
+        "identity": "holdout_nominal_16",
+        "seed": 91016,
+        "split": "holdout"
+      },
+      {
+        "scenario": 80,
+        "identity": "holdout_nominal_17",
+        "seed": 91017,
+        "split": "holdout"
+      },
+      {
+        "scenario": 81,
+        "identity": "holdout_nominal_18",
+        "seed": 91018,
+        "split": "holdout"
+      },
+      {
+        "scenario": 82,
+        "identity": "holdout_nominal_19",
+        "seed": 91019,
+        "split": "holdout"
+      },
+      {
+        "scenario": 83,
+        "identity": "holdout_nominal_20",
+        "seed": 91020,
+        "split": "holdout"
+      },
+      {
+        "scenario": 84,
+        "identity": "holdout_nominal_21",
+        "seed": 91021,
+        "split": "holdout"
+      },
+      {
+        "scenario": 85,
+        "identity": "holdout_nominal_22",
+        "seed": 91022,
+        "split": "holdout"
+      },
+      {
+        "scenario": 86,
+        "identity": "holdout_nominal_23",
+        "seed": 91023,
+        "split": "holdout"
+      },
+      {
+        "scenario": 87,
+        "identity": "holdout_nominal_24",
+        "seed": 91024,
+        "split": "holdout"
+      },
+      {
+        "scenario": 88,
+        "identity": "holdout_stress_01",
+        "seed": 92001,
+        "split": "holdout"
+      },
+      {
+        "scenario": 89,
+        "identity": "holdout_stress_02",
+        "seed": 92002,
+        "split": "holdout"
+      },
+      {
+        "scenario": 90,
+        "identity": "holdout_stress_03",
+        "seed": 92003,
+        "split": "holdout"
+      },
+      {
+        "scenario": 91,
+        "identity": "holdout_stress_04",
+        "seed": 92004,
+        "split": "holdout"
+      },
+      {
+        "scenario": 92,
+        "identity": "holdout_stress_05",
+        "seed": 92005,
+        "split": "holdout"
+      },
+      {
+        "scenario": 93,
+        "identity": "holdout_stress_06",
+        "seed": 92006,
+        "split": "holdout"
+      },
+      {
+        "scenario": 94,
+        "identity": "holdout_stress_07",
+        "seed": 92007,
+        "split": "holdout"
+      },
+      {
+        "scenario": 95,
+        "identity": "holdout_stress_08",
+        "seed": 92008,
+        "split": "holdout"
+      }
+    ],
+    "phases": [
+      "selected",
+      "baseline"
+    ],
+    "fixtureOnly": false,
+    "fixtureDuration_s": null,
+    "travelBandRadius_m": 0.0075,
+    "evaluationSplit": "holdout",
+    "aggregateOnly": false,
+    "workers": 2,
+    "fixtureResetStateEveryStep": false,
+    "selectionBankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+    "frozenFiles": {
+      "bank.json": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+      "configs.mat": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae",
+      "consumed_scenarios.json": "529b4c6bef10cfc0fe39c26e5b30aeea21f4b7d4f4121ee35afe5cfdd29b5bb2",
+      "final_evaluate.py": "03bb4501aeadac7849bdf94dc40f680fd09ee58947f384ba3afcdd300158fd81",
+      "native/acf_rl_native.slx": "54c782727d79ad66ed0cc761ea02de12934f9c31f1ffa0821b6d6eb5559f4848",
+      "native/acf_rl_native_context.c": "796b4ac1144641a72f54e64767c74549cbf26864d7c6ec4a8cd9a41a7a732e8e",
+      "native/bridge_build.json": "4d7ace1f89dfd53c682fc0064140c4ce09f2fee82e2a6ee8d704d0ffa9c9eaf7",
+      "native/generated_code/acf_rl_native.c": "d1c488201b25cacba577eccae915252304d16cc9959f92324c9c46f32e05da69",
+      "native/generated_code/acf_rl_native.h": "53d5faab41f9a9834effa4bcd119d3ca5c8bbb55f9b634425e5149832777c9c2",
+      "native/generated_code/acf_rl_native_data.c": "109f88aef6cd7e508a74fc4895867c164bdb824820b03ad6727196e675ba7f9c",
+      "native/generated_code/acf_rl_native_private.h": "8c1584aaf463fd915eee87a6381a95f7dd69fb76aeb8857cea4894e04917bb25",
+      "native/generated_code/acf_rl_native_types.h": "fc7e125bc0fc2fc27e9e7a3e61b8e941e23a8846e1910c53f58b1bfe61f60e46",
+      "native/generated_code/multiword_types.h": "fa852b03e3a3e3bed37b2dc0aa01e40fbbbaf5110774c60f39c65c782632e354",
+      "native/generated_code/rtGetNaN.c": "fb783386c451ed71612545bdb737b1e98af6bb792564d0698c3cd9d10bf6370e",
+      "native/generated_code/rtGetNaN.h": "171c6ce5a97857df9913922e59cba22bad34ffc027c3639d61a4eec221f0ec18",
+      "native/generated_code/rt_nonfinite.c": "4352ed6e845d3c457b8d758051ba9f90e78a3ce139661929674769ae99d1dabb",
+      "native/generated_code/rt_nonfinite.h": "0aa0c6b2217339744c2dd289a26d10a0159d9229d882ca9fd5ce3e9a0bf0e65e",
+      "native/generated_code/rtmodel.h": "6a0d45eb2890e509e99994424f68b1e94c5cc80e063d47e4cdbf47a4e8fbae78",
+      "native/generated_code/rtwtypes.h": "cc493c03a699adc2e633030ec4c8416934df7cd928285682c248834f4ab31f1c",
+      "native/libacf_native.so": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+      "native/metadata.json": "f0f13ad885fe9a673f4d8c8cdee1146c728133bb63c7c468966d132c08f837f5",
+      "native/native_bank_aux.h": "a0e658d3d6c225889e68eb0407074bea8efd5f24d418df5e44b65b4803790354",
+      "native/native_parameter_bank.c": "68b7db9a1d384f4d1bbe55fe446e2b4eef2ca3859db24c3ae3c7126c2a059607",
+      "native/parameter_mapping.json": "594a86edffe3add411ccb8ca43002b6da57c4ddd78ab4be02fd03f1e49b9dae7",
+      "native/scenarios.json": "22cc51053b22e342039a7aaca3e9b0c5ee9a5174235754e57d32fb4af9cf3815",
+      "policy_source/env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+      "policy_source/final_evaluate.py": "03bb4501aeadac7849bdf94dc40f680fd09ee58947f384ba3afcdd300158fd81",
+      "policy_source/frozen_source_manifest.json": "0f7df82c5f1adfeeace145d8f067e3bc02adddef210fb9def73fc032787f5221",
+      "policy_source/legacy_pilot.py": "16b42e2e8f52d698969d9885200971b4b21d085cd6d1e469fc3f79a8c4fbaa78",
+      "policy_source/native_api.py": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488",
+      "policy_source/native_bridge.c": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+      "policy_source/native_repeat.py": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+      "policy_source/policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1",
+      "policy_source/policy_checks.py": "3ee07c86684a38dc8300c72578b99ca76715e60436bd7f3394a2f49e7bffee23",
+      "policy_source/policy_export.py": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735",
+      "policy_source/ppo.py": "19890f3bfa8ad3b9592847cd3b11972f4cb13260639030582ba810d920fa8f17",
+      "policy_source/ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940",
+      "policy_source/qualify.py": "ff023b84e41df7fa4180b59f5eb575fcfd3d86625e8bd20e54608358b6272e5d",
+      "policy_source/reward_search.py": "bee11ab000b46d917001637dde60acb4dc3b4a7a1bde6bb2131322cc2d2b38b7",
+      "policy_source/reward_search_auxiliary_ledger.py": "f722748a57413ad22d9a2ce08febbbbd827919a7890180890046bee73b925fc0",
+      "policy_source/reward_search_band_spec.json": "2fb8730355378770a77c12eea0af7e74e1979e8cea1d0cffd4cfc7bbb225b3fb",
+      "policy_source/reward_search_budget_screen.py": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803",
+      "policy_source/reward_search_current_spec.json": "1cd811f286ada4866afd5e7eb129819a5c2e33e203d152b09c383be736606b19",
+      "policy_source/reward_search_direct_spec.json": "5dc7d3c138f287b44ef1df4e909d75dda0e19b4f5e689ea7a3153d0457d14c0c",
+      "policy_source/reward_search_finalize.py": "f7006e52d0dac128690c046b19e8e9cefc1f57ecc31e79f1e66f11bcc0511646",
+      "policy_source/reward_search_gate_plot.py": "c5242cd4f1faf92f84f42707d7ea42545e60f21f45660e90404be5e05f8a357a",
+      "policy_source/reward_search_inverse_followup.py": "5e8d28980b7a7ca059bd1edc91d74f04d11e2a89ff48fdbc7dd686c8fef1ff99",
+      "policy_source/reward_search_inverse_probe.py": "fac30108aea8e525a0ae375ebbf7ab421a55a4e8790249038e41e28eafd3afc0",
+      "policy_source/reward_search_inverse_spec.json": "43e9acb4937e57cc6c2e065ffffcb0f4c245b1eae2ad03a3454ae2d1ea263665",
+      "policy_source/reward_search_ledger.py": "0b07eaf386d548195e16f897653d145182a57692e3bbabde91d8fd557024de47",
+      "policy_source/reward_search_native.c": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+      "policy_source/reward_search_progress_plot.py": "93c310d953c7d8982db2ece316af5bf287035076236dcc4ee13cb16e3ba2d900",
+      "policy_source/reward_search_recurrent_spec.json": "4bb9e08c9675280cf81a86a1ad53d398edc85632626ddeccc79ebe0156dd8d47",
+      "policy_source/reward_search_rolloff_probe.py": "db6371536aacee5b04f266fe88960d4849acefd7bbf09fa850d838fc36f48f15",
+      "policy_source/train.py": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c",
+      "selected_checkpoint.pt": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+      "selection_evidence/000_00_rl_budget3h_20261005_selection_contract_band_v2.json": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+      "selection_evidence/001_01_rl_budget3h_20261005_study_contract.json": "775bfef98290d159b60d8d131c709cb79658f51e007f23344e48a7393c585934",
+      "selection_evidence/002_02_rl_budget3h_20261005_reward_search_completed_ledger.json": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f",
+      "selection_evidence/003_03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6",
+      "selection_evidence/004_04_ppo_final_ledger_v1_ledger.json": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946",
+      "selection_evidence/005_05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+      "selection_evidence/006_06_reward_search_budget_bootstrap_8210_results.json": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+      "selection_evidence/007_07_reward_search_budget_8211_selection.json": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+      "selection_evidence/008_08_rl_budget3h_20261005_reward_search_budget_ledger.json": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4",
+      "selection_review.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+    },
+    "physicalActionScales": {
+      "currentOffset_A": 2.0,
+      "robotRequest_m_s": 0.01
+    }
+  },
+  "metric": "Full-native actual workpiece-normal force incl time0/final; no retuning.",
+  "nativeStep_s": 3.3333333333333333e-06,
+  "nativeActionStep_s": 0.0001,
+  "robotStep_s": 0.01,
+  "maximumContextsInChunk": 8,
+  "actorContractSha256": "0f5ec33f2989774b226836f0f91e7146669ea15ccbcb72d56f304bfe7b65c971",
+  "actorArchitectureResolvedBeforeEvaluation": true
+}

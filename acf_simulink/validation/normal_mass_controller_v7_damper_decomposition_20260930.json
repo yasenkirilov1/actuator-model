@@ -1,0 +1,57 @@
+{
+  "status": "complete_read_only_analysis",
+  "analysisScript": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_v7_damper_decomposition_20260930.py",
+  "analysisSha256": "01165380945e1bd555c07eb209222c83b22289fcb66e14a167bff7d2ea6600bd",
+  "scope": "Two paired native ten-second histories, sameS2/F50/90deg/friction.3/seed1729. Physical truth is diagnostic only; zero new simulations.",
+  "rows": [
+    {
+      "label": "intrinsic_b2",
+      "sourceTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_repeated_bump_confirmation_20260930_v7_common_provisional_worst_native_trace.mat",
+      "sourceTraceSha256": "1af1800bcc5037ad3fe8a213f68f7f93adaad03fad4ff556b4cc4c875480fa0d",
+      "massS_kg": 2,
+      "seed": 1729,
+      "totalViscous_Ns_m": 2,
+      "nativeSamples": 1000001,
+      "normalPeakError_N": 0.5555794233924232,
+      "peakTime_s": 6.800470000000001,
+      "termsAtPeak_N": {
+        "currentTracking_N": 0.0913680393703464,
+        "accelerationFeedforwardError_N": 0.32181105998518933,
+        "normalProjectionFeedforward_N": 0.010176497840238495,
+        "guideFeedforwardError_N": 0.04331043325213238,
+        "filteredPIcorrection_N": -0.031810472941994794,
+        "finiteCellInertia_N": 0.12072386588651773
+      },
+      "settledFlatRmsError_N": 0.054709548865394406,
+      "settledFlatRmsCellInertia_N": 0.028032460061953476,
+      "commandResidual_A": 8.881784197001252e-16,
+      "normalDecompositionResidual_N": 3.296668493746324e-14,
+      "excerpt": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_v7_damper_decomposition_20260930_intrinsic_b2.csv"
+    },
+    {
+      "label": "external_added118_total120",
+      "sourceTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_parallel_actuator_damper_20260930_v7_100us_transport_traces/controller_04_worst_native.mat",
+      "sourceTraceSha256": "95aa83978d8b0dbfd87ee48dce4bc96f973631c3c194896fe7ed86c9a65110ff",
+      "massS_kg": 2,
+      "seed": 1729,
+      "totalViscous_Ns_m": 120,
+      "nativeSamples": 1000001,
+      "normalPeakError_N": 0.5586173013945839,
+      "peakTime_s": 6.800470000000001,
+      "termsAtPeak_N": {
+        "currentTracking_N": 0.09361088287232332,
+        "accelerationFeedforwardError_N": 0.32181105998518933,
+        "normalProjectionFeedforward_N": 0.010176497821001699,
+        "guideFeedforwardError_N": 0.04828872641829304,
+        "filteredPIcorrection_N": -0.03450428266646536,
+        "finiteCellInertia_N": 0.1192344169642444
+      },
+      "settledFlatRmsError_N": 0.05490412592469801,
+      "settledFlatRmsCellInertia_N": 0.02686109607974947,
+      "commandResidual_A": 8.881784197001252e-16,
+      "normalDecompositionResidual_N": 3.3958946765721976e-14,
+      "excerpt": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_v7_damper_decomposition_20260930_external_added118_total120.csv"
+    }
+  ],
+  "interpretation": "Reasonable matched externalA-Bdamping reduces flat modal noise slightly but does not remove the submillisecond bump-entry acceleration/current phase error. This is distinct from seriesB-Sjoint damping or physically changing the measured acquisition response."
+}

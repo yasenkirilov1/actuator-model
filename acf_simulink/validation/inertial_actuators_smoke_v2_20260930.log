@@ -1,0 +1,9 @@
+{Error using copyfile
+No matching files named
+'/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_inertial_actuators'
+were found.
+
+Error in qualify_inertial_actuators (line 30)
+copyfile(mfilename('fullpath'),fullfile(workerFolder,'recipe_snapshot.m'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

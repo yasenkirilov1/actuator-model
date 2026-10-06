@@ -1,0 +1,149 @@
+{
+  "date": "2026-09-30",
+  "scope": "Primary-source examples of linear current amplifiers for a clean force-control prototype. Illustrative capability, not a part list or hardware qualification.",
+  "preferredRepresentative": {
+    "publisher": "Trust Automation",
+    "model": "TA115",
+    "productUrl": "https://trustautomation.com/products/linear-drives/ta115-linear-drive/",
+    "datasheetUrl": "https://trustautomation.com/datasheets/TA115DataSheet.pdf",
+    "datasheetDate": "December2014; linked by current manufacturer product page on2026-09-30",
+    "artifact": {
+      "path": "acf_simulink/validation/normal_voltage_linear_TA115_datasheet.pdf",
+      "sha256": "35952061c7fd7aafb9aadf35145afd96d5faa7d37857241687101c73886ac848",
+      "bytes": 673261
+    },
+    "driveType": "Linear brushed/voice-coil current (torque) or voltage (velocity) amplifier",
+    "supply_V": [
+      24,
+      48
+    ],
+    "peakCurrent_A": 8,
+    "command_V": [
+      -10,
+      10
+    ],
+    "torqueGain_A_per_V": [
+      0.2,
+      0.8
+    ],
+    "publishedBandwidth_Hz": 5000,
+    "bandwidthLoadInductance_H": 0.0025,
+    "bandwidthDefinitionLimit": "Datasheet does not label the5kHz value as a specific3dB/phase criterion and does not specify the test resistance, bus, amplitude or bias. It does not establish response on our3mH/4ohm coil at24V.",
+    "outputVoltageStatement": "Up to +/-43V equivalent motor voltage, dependent on motor load. Actual24V delivered output/headroom is not tabulated.",
+    "cooling": "Integrated forced-air fan",
+    "maximumHeatsink_C": 75,
+    "normalAmbient_C": [
+      0,
+      40
+    ],
+    "SOA_visualInspection": {
+      "page": 2,
+      "xAxis": "Drive voltage = supply voltage - winding voltage",
+      "yAxis": "Supply current",
+      "powerDissipation_W_at25C": 100,
+      "powerDissipation_W_at70C": 50,
+      "peakCurrent_A": 8
+    },
+    "inference": "The24V static50N/20N-per-A,4ohm point is2.5A and35W driver heat, within the shown50W and100W curves. The published5kHz value into2.5mH makes a measured1-2kHz current loop plausible; no achieved prototype bandwidth or noise is claimed.",
+    "unpublishedLimit": "No quantitative output-current ripple/noise specification was found in the linked datasheet."
+  },
+  "alternativeRepresentative": {
+    "publisher": "H2W Technologies",
+    "model": "LCAM5/15",
+    "productUrl": "https://www.h2wtech.com/page/linear-servo-brush-type-amplifier",
+    "datasheetUrl": "https://www.h2wtech.com/pdf/LCAM%205-15%20Linear%20Servo%20Brush%20Amplifier%20Specifications%208-1-2021.pdf",
+    "datasheetRevision": "8/1/21",
+    "artifact": {
+      "path": "acf_simulink/validation/normal_voltage_linear_LCAM_datasheet.pdf",
+      "sha256": "ef03b0af40b9a37ff285322a73b9425ef76c6d5a7ba0b47f443a96664ac3d3e7",
+      "bytes": 1439951
+    },
+    "manualUrl": "https://www.h2wtech.com/pdf/LCAM%205-15%20Operation%20%26%20Service%20Manual.pdf",
+    "driveType": "Single-supply H-bridge linear amplifier with bipolar current command",
+    "current_A_continuous": 5,
+    "current_A_peak": 15,
+    "currentProductSupply_V": [
+      24,
+      70
+    ],
+    "datasheetModuleSupply_V": [
+      24,
+      75
+    ],
+    "command_V": [
+      -10,
+      10
+    ],
+    "publishedCurrentProductBandwidth_Hz": 6500,
+    "productBandwidthCriterion": "90degree phase shift",
+    "publishedDatasheetBandwidth_Hz": 10000,
+    "datasheetBandwidthCriterion": "Nominal current-loop bandwidth, varies with motor inductance",
+    "cooling": "Module requires external forced air",
+    "tablePowerDissipation_W_at25C": 250,
+    "manualCurrentMonitor_V_per_A": 0.5,
+    "documentCaution": "Current product page and2021 PDF use different voltage and bandwidth descriptions; use current product24-70V range. Datasheet page2 also contains SMA5005 names apparently retained from another source; LCAM5/15 table onpage1 and manualp6 independently identify250W. Neither establishes bandwidth or current-noise performance with our exact coil.",
+    "unpublishedLimit": "No quantitative output-current ripple/noise specification was found in the primary sources reviewed."
+  },
+  "derivedStaticThermalExamples": {
+    "assumptions": "50N horizontal normal hold, Kf20N/A,2.5A constant, zero back EMF, ideal linear H-bridge loss approximation. Electronics/fan power excluded. These are analytical calculations, not a thermal simulation.",
+    "formulaCoil": "Pcoil=I^2*R",
+    "formulaDriver": "Pdriver=abs(I)*(Vbus-abs(I*R))",
+    "cases": [
+      {
+        "bus_V": 24,
+        "R_ohm": 4,
+        "I_A": 2.5,
+        "coilHeat_W": 25.0,
+        "driverHeat_W": 35.0,
+        "busPower_W": 60.0
+      },
+      {
+        "bus_V": 36,
+        "R_ohm": 4,
+        "I_A": 2.5,
+        "coilHeat_W": 25.0,
+        "driverHeat_W": 65.0,
+        "busPower_W": 90.0
+      },
+      {
+        "bus_V": 48,
+        "R_ohm": 4,
+        "I_A": 2.5,
+        "coilHeat_W": 25.0,
+        "driverHeat_W": 95.0,
+        "busPower_W": 120.0
+      },
+      {
+        "bus_V": 24,
+        "R_ohm": 5.56,
+        "I_A": 2.5,
+        "coilHeat_W": 34.75,
+        "driverHeat_W": 25.250000000000004,
+        "busPower_W": 60.0
+      },
+      {
+        "bus_V": 36,
+        "R_ohm": 5.56,
+        "I_A": 2.5,
+        "coilHeat_W": 34.75,
+        "driverHeat_W": 55.25,
+        "busPower_W": 90.0
+      },
+      {
+        "bus_V": 48,
+        "R_ohm": 5.56,
+        "I_A": 2.5,
+        "coilHeat_W": 34.75,
+        "driverHeat_W": 85.25,
+        "busPower_W": 120.0
+      }
+    ]
+  },
+  "prototypeRequirements": {
+    "drive": "Bipolar current command and output; >=3.5A capability;24V bus; measured low current ripple; stable tuned current loop with real4ohm/3mH cold/hot winding.",
+    "tau100usFirstOrderEquivalentBandwidth_Hz": 1591.5494309189535,
+    "bandwidthQualification": "Measure step/Bode response around2.5A bias with small perturbations; identify amplitude-dependent slew/voltage clipping, current noise, command delay, jitter and gain. Fit actual response, do not substitute drive update/carrier frequency for closed-loop bandwidth.",
+    "noiseBudgetIllustration": "For Kf20N/A and rigid high-frequency force transfer, a0.15N peak residual force budget corresponds to7.5mA peak current error; a0.10N budget corresponds to5mA. Actual allowable ripple depends on measured mechanics and chosen controller margin.",
+    "scopeLimit": "Native voltage comparisons use averaged voltage and omit PWM ripple, finite force-cell structural resonance and amplifier current-noise spectra. A linear amp reduces switching ripple but its numerical noise performance remains unqualified."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-30",
+  "physicalExperiments": 0,
+  "preparationRejections": [
+    {
+      "stage": "inertial-v2 first native compile",
+      "message": "Variant choice input-port names did not match the parent variant interface.",
+      "resolution": "Renamed native input ports to error_N and measured_travel_m; subsequent proof executed.",
+      "physicalSimulationExecuted": false
+    },
+    {
+      "stage": "inertial-v3 notch helper preparation",
+      "message": "MATLAB text replacement expanded a string array, creating an invalid repeated helper body (illegal else keyword).",
+      "resolution": "Joined the replacement into one scalar string; native bypass recompile and four exact paired cases executed.",
+      "physicalSimulationExecuted": false
+    }
+  ],
+  "log": "/home/tommie/.local/state/actuator-model/normal-contact-trial-20260930/worker_diary.txt"
+}

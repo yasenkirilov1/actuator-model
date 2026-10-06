@@ -1,0 +1,15 @@
+{
+  "status": "launched_not_yet_returned",
+  "nativeReruns": 1,
+  "integrationStep_s": 2.5e-06,
+  "globalCaseIndex": 3489,
+  "recipeFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "recipeSha256": "ca01722162a58878490184fbc1423a67878d1db9d174ecc3b184e57f15eceaba",
+  "session": 88259,
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-2p5us-20260930/batch.log",
+  "rootAuthorization": "After5us qualification and both small batches exited, refine2.5us before long uncertainty jobs. No physical/controller/acquisition change.",
+  "prerequisite5usAudit": "normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "otherPrivateBatches": "Voltage and mechanics explicitly confirmed exited; uncertainty held until this process exits."
+}

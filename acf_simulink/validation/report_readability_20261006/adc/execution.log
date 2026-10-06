@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/adc/run_adc_diagnostics.py", line 125, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/adc/run_adc_diagnostics.py", line 62, in main
+    assert any(abs(float(v)-1/export['rate_Hz'])<1e-9 for v in schedule),schedule
+           ^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/adc/run_adc_diagnostics.py", line 62, in <genexpr>
+    assert any(abs(float(v)-1/export['rate_Hz'])<1e-9 for v in schedule),schedule
+                   ~~~~~^^^
+ValueError: could not convert string to float: '3.33333e-05s'

@@ -1,0 +1,18 @@
+{
+  "engine_source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+  "engine_binary_path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/sea_pad_dynamic_20261006/engine/engine_be43185291e39e63.so",
+  "rigid_point_mode": "pad_k=0, pointonly, S=h imposed; axialFc=L+mS*(aS+g)",
+  "encoder": "quantizedq0 initialization,14bit/rev at10k, causal1kHzLP derivative speed",
+  "target_velocity_feedforward_modes": {
+    "0": "disabled",
+    ".5": "halfqtargetvelocity",
+    "1": "qtargetvelocity",
+    "2": "filteredmeasuredB-Avelocityonly"
+  },
+  "acquisition": "matched1900Hztwopolefrontends;30kADCoutputEMA50us;puretransport49.6usADCgroupdelay+20uspipeline,notexactSINC3frequencyresponse",
+  "rating_checks": "allsteps rawcell\u00b1100N,axialspecificacc\u00b18g,current3.5A,SEArotor12000rpm; independentforceandratingsflags",
+  "newfinalevaluation_seeds": [
+    260611,
+    260612
+  ]
+}

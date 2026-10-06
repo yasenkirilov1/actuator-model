@@ -1,0 +1,46 @@
+function contract=install_cell_modal_v6(mdl,p)
+% Bounded ordinary native modal feedback, after notch and before current limit.
+assert(p.cellModal.enabled&&p.mechanics.k1==64e6&&p.mechanics.c1==0);
+recon=[mdl '/Contact force measurement/Contact force reconstruction'];
+tag='cell_modal_acquired_deltaL_N';
+add_block('simulink/Signal Routing/Goto',[recon '/Send acquired cell for modal control'], ...
+ 'GotoTag',tag,'TagVisibility','global','Position',[1300 540 1650 570]);
+add_line(recon,'Cell error to deviation/1','Send acquired cell for modal control/1','autorouting','on');
+sys=[mdl '/Force controller/Coil PI and PID'];sub=[sys '/Cell mode damping'];
+add_block('simulink/Ports & Subsystems/Subsystem',sub,'Position',[1890 720 2200 880]);
+Simulink.SubSystem.deleteContents(sub);
+add_block('simulink/Signal Routing/From',[sub '/Acquired axial cell deviation'], ...
+ 'GotoTag',tag,'Position',[25 90 260 120]);
+add_block('simulink/Discrete/Discrete State-Space',[sub '/Cell modal filter'], ...
+ 'A','p.d.cellModal.A','B','p.d.cellModal.B','C','p.d.cellModal.C','D','p.d.cellModal.D', ...
+ 'InitialCondition','zeros(2,1)','SampleTime','p.force.sampleTime','Position',[330 70 630 145]);
+add_block('simulink/Discontinuities/Saturation',[sub '/Damping current bound'], ...
+ 'UpperLimit','p.cellModal.currentBound_A','LowerLimit','-p.cellModal.currentBound_A','Position',[710 70 950 145]);
+add_block('simulink/Ports & Subsystems/Out1',[sub '/Damping current'],'Port','1','Position',[1020 95 1050 120]);
+add_line(sub,'Acquired axial cell deviation/1','Cell modal filter/1');
+add_line(sub,'Cell modal filter/1','Damping current bound/1');
+add_line(sub,'Damping current bound/1','Damping current/1');
+target=get_param([sys '/Current limits'],'PortHandles');source=get_param(get_param(target.Inport(1),'Line'),'SrcPortHandle');
+assert(strcmp(get_param(get_param(source,'Parent'),'Name'),'Optional structural-mode current notch'));
+delete_line(sys,source,target.Inport(1));
+add_block('simulink/Math Operations/Sum',[sys '/Notched command plus modal damping'],'Inputs','++','Position',[2270 485 2520 690]);
+ports=get_param([sys '/Notched command plus modal damping'],'PortHandles');
+add_line(sys,source,ports.Inport(1),'autorouting','on');
+add_line(sys,'Cell mode damping/1','Notched command plus modal damping/2','autorouting','on');
+add_line(sys,ports.Outport(1),target.Inport(1),'autorouting','on');
+% Anti-windup must see total requested current, rather than treating the
+% unsaturated modal correction itself as a clipping residual.
+aw=get_param([sys '/Current saturation error'],'PortHandles');old=get_param(get_param(aw.Inport(2),'Line'),'SrcPortHandle');
+assert(strcmp(get_param(get_param(old,'Parent'),'Name'),'Optional structural-mode current notch'));
+delete_line(sys,old,aw.Inport(2));add_line(sys,ports.Outport(1),aw.Inport(2),'autorouting','on');
+contract=struct('enabled',true,'nativeBlocksOnly',true,'source','Actual acquired local axial cell deltaL; unique explicitly GLOBAL tag from Cell error to deviation', ...
+ 'measurementFrameUnchanged',true,'currentPlacement','After baseline notch, before original current limit', ...
+ 'antiwindupReference','Total notched baseline plus modal current before limit', ...
+ 'auxiliaryCurrentBound_A',p.cellModal.currentBound_A,'carrier_Hz',p.d.cellModal.carrier_Hz, ...
+ 'virtualDamping_Ns_m',p.cellModal.virtualDamping_Ns_m,'filterDamping',p.cellModal.filterDamping, ...
+ 'maximumControllerPoleMagnitude',p.d.cellModal.maximumPoleMagnitude,'dcCurrentGain',p.d.cellModal.dcCurrentGain, ...
+ 'positiveDampingAtCarrier',p.d.cellModal.normalizedPositiveDampingReal, ...
+ 'phaseDesign','Exact-ZOH resonant bandpass and proper derivative basis, solved at identified carrier using native sine-measured acquisition transfer,50uscurrentlag and10kcommandhold', ...
+ 'causality','Two stable native discrete states driven by existing acquired cell history only. No measured physical current, plant truth, surface profile, future command, extra sensor or retimed reconstruction.', ...
+ 'scope','Controller creates active virtual damping; physical external damping, stiffness, friction and all sensor noise remain unchanged. Carrier phase matching is a finite identified model design, not broadband/hardware robustness proof.');
+end

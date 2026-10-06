@@ -1,0 +1,2676 @@
+{
+  "status": "reviewed_frozen_configuration_inputs_for_git",
+  "policy": "Named configuration/candidate/input MAT files below95MiB, outside preferences/builds, without top-level history/result variable names; reviewed with MAT variable tables or HDF5 root metadata. Raw recordings remainignored. Files remain at original locations.",
+  "files": [
+    {
+      "path": "acf_simulink/validation/adc_acquisition_trial_20261002/adc_trial_candidate.mat",
+      "bytes": 11307,
+      "variables": [
+        "p"
+      ],
+      "sha256": "1afe7ee7650360ecb4fb2b1e11a69381332bc5d29cbfda0eb2632449d486ff25"
+    },
+    {
+      "path": "acf_simulink/validation/adc_acquisition_trial_20261002/baseline_candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part1/input_configs.mat",
+      "bytes": 1727344,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "6b4075f774c5669db72dd27cd1ab45b3e1f669947fd16ea7999691ea44c0a2e6"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part2/input_configs.mat",
+      "bytes": 1719965,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "694aff7e7acceb29794aa82e7c4649a1c47e03b0b8640b2f4b5073fc8ce701a1"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part3/input_configs.mat",
+      "bytes": 1719863,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "81c15c5ea9cadf7b496aece462ab32de0a6f7e87d4de699851a54d06984a4a22"
+    },
+    {
+      "path": "acf_simulink/validation/adc_fast_restart_audit_20261002/private_worker/baseline_candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/adc_root_pilot2_20261002/input_configs.mat",
+      "bytes": 8255,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "6050751bf39de4130d1da5d69619e93d7170ca2c5c11aa2b2573411aedc60aa2"
+    },
+    {
+      "path": "acf_simulink/validation/adc_root_pilot3_20261002/input_configs.mat",
+      "bytes": 8255,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "a3c31673fc75c1c7d78198e33ebede8295f7172c467efdd62bf6009efc395b93"
+    },
+    {
+      "path": "acf_simulink/validation/adc_root_pilot_20261002/input_configs.mat",
+      "bytes": 8111,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "e9c20a20b33e6afe3458f3c32957ced95d247e290d9dfdfc1e74f1e8a59428df"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_alias_probe_20261002/input_configs.mat",
+      "bytes": 23123,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "0be4659d50d336d8c010ee5a48d82406e4eb225f4ce6efbc1b0334741919e319"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_long5100_20261002/input_configs.mat",
+      "bytes": 32713,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "335e1bd9dfc4ad807c2a8f385d25b17722cbf20acc4dcba6cfc03a18539ad392"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_screen_20261002/input_configs.mat",
+      "bytes": 705161,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "3e237ca4ade0c01320a3e5db06ec652c371b9a72f241785fc7af673fbeb3328a"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/input_configs.mat",
+      "bytes": 15707,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "8382fb9e6c97811b4717ff7c1d4e1cbe054903092a37ca6def22664ae5cdf408"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/input_configs.mat",
+      "bytes": 15705,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "167ff2a6342147656e3756cc5ec4ca11ec6a67c6d3d3ae91856215ef9d65f5c3"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_alias_probe_20261002/input_configs.mat",
+      "bytes": 23121,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "ff3df78b6b2d6e818f7445de253641836b0647eeb227fa38c68ccf7f2070cdcc"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long15000_20261002/input_configs.mat",
+      "bytes": 32780,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "f5480f7674f7c174a43aba8320dd26aa07c0596c140cb648660452a54d096617"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long5100_20261002/input_configs.mat",
+      "bytes": 32773,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "e27da1bb04412d665c4d3be143b590dcbf3c5359626da016816397ba18073730"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long8000_20261002/input_configs.mat",
+      "bytes": 32777,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "8745d25e857e20b8ab227fb61873d8c1f00663f57bfccd8a3fb8a4ec6dd13d76"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_noise2x_20261002/input_configs.mat",
+      "bytes": 15676,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "a51198a04688ea7354545cfaffc52705b04cb40a4fe44fbe8eff9f711312fceb"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/input_configs.mat",
+      "bytes": 15708,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "0e8f1009eecc132ab9b9db36276321e35af7e0387014765ae95598a34b8eadda"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_refine_20261002/input_configs.mat",
+      "bytes": 15685,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "dbcb742ffb822be04319d983da44e9f398cdfa5962db07ad081ab6fa9e4f4da4"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_screen_20261002/input_configs.mat",
+      "bytes": 529753,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "7afd6bbc5b354a0553471a4f43baebfb708cb274de8ae965befcbc413dd5fa39"
+    },
+    {
+      "path": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/configs.mat",
+      "bytes": 1577047,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "0b17973c3079ef903414676527278499f4db5c60a0c9cf1f0cc89dff7527e697"
+    },
+    {
+      "path": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/optional_adxl355_configs.mat",
+      "bytes": 175818,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "222db138b5ae10df28204cc5d2a920684ce23a20d986500a11804e00a2c5464f"
+    },
+    {
+      "path": "acf_simulink/validation/budget_adc_hot_coil_20261002/input_configs.mat",
+      "bytes": 311904,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "fa73e3be8883db7e1533c9ec5de4ed63ed8d7e6da2891e5bdb2adbeac56470de"
+    },
+    {
+      "path": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/ADXL1002_8000_M08_30k_current100_hot32V_configs.mat",
+      "bytes": 311069,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "31ff22ba5ccb7fbbf20b4d4777275ecbc0028085437eafe6180fc005b06dd202"
+    },
+    {
+      "path": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L0_current50_36V_dynamic_match_configs.mat",
+      "bytes": 311729,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "d36a1478ad4a54108deca2709ec6c7e0b3288b4da58beac6b625b09282388f59"
+    },
+    {
+      "path": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L50_current50_36V_dynamic_match_configs.mat",
+      "bytes": 311742,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ebd8bde376ff55a726059d2ea943ea50bada6378df120f62def8236438eee362"
+    },
+    {
+      "path": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/input_configs.mat",
+      "bytes": 312565,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "3471e90ba91528ac4d5e60ae2bad92e07d4b2a12a80883a0ac2d37834378f68a"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/input_configs.mat",
+      "bytes": 311647,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "e3a2d015e7362813d9446b39d84edb4e89a875a73fec46152ef252f63bc6bcbd"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/input_configs.mat",
+      "bytes": 312032,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "e0c6d77e6597555a221e73aee61aef52701121ad29542d3f7806bb0bfc4fccb2"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/input_configs.mat",
+      "bytes": 312520,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "e1ba3a1e89dbca8017805dbb6a16d952c877eb1f1753c35b77cfaa556c71e34c"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/input_configs.mat",
+      "bytes": 313702,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "5370af06538298903e585f32eb0debe57578967182f203a5d55f2a5d7e9356f9"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/input_configs.mat",
+      "bytes": 312493,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "f3fdead44c935bc0f9202ae6975050b4ab1120d45d35f025e157a9814cdad4a8"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/input_configs.mat",
+      "bytes": 311705,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "175fb7ec9f36497cb1c20564ca7b4b77ae79ec391d236e44049a11af3ee5294b"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/input_configs.mat",
+      "bytes": 312285,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "849cfeead63cec2a83afaad61786e642c941cba5e5220b2cf8976c2a40c37c37"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL1002_reference_8000_L0_current100_24V_configs.mat",
+      "bytes": 310812,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "23339a9fcefb2829aaf8252cf97b9de3aa8e1c3907d04b8128dabf9d361d7eb7"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current100_24V_configs.mat",
+      "bytes": 311201,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "2add6ef922bca33303035b1b75d7343225f802e378360c73bcbde815db9f3f25"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "bytes": 311688,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_hot32V_configs.mat",
+      "bytes": 312869,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "e9b0c1cfdc524dda7e0c2ae08ba0d35b122b21305c442d2ebd9267aac9561153"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "bytes": 311661,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/digital70_5100_L80_current100_24V_configs.mat",
+      "bytes": 310876,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "e3844b8aea85f83ca51e2d88a6ba357b9b64b83fb82d0fcf4f60bbff4a560263"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/digital70_5100_L80_current50_36V_configs.mat",
+      "bytes": 311456,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "dd87a288d7f49fa57ae9fb6d51d125e4070de8b175043da481ff157c86949f3a"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensors_screen_20261002/input_configs.mat",
+      "bytes": 1577883,
+      "variables": [
+        "options",
+        "configs",
+        "ids"
+      ],
+      "sha256": "0ded584c88ba664c68b4216be069dd6331c4a8013974d6f50129c3f6c1cb710a"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_candidate.mat",
+      "bytes": 3645,
+      "variables": [
+        "p"
+      ],
+      "sha256": "e9fdc0050d53bf87f45888be528c2e5842092eb124dc7587804c7627375e6bb6"
+    },
+    {
+      "path": "acf_simulink/validation/controller_comparison_upstream_rigid_corrected_gate_candidate.mat",
+      "bytes": 3645,
+      "variables": [
+        "p"
+      ],
+      "sha256": "5a22c5fdacdfca92addea329623aa031a44bbcd47227575a60cbe5a1e64db4ed"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/inertial_final_candidate_20260930.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_configuration.mat",
+      "bytes": 6201204,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "f1a218e830e63c348da10ab87022fe95518e276e3205c219b1e9cf2fd4b4518b"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_configuration.mat",
+      "bytes": 6201209,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "d9fd8e465b5578a62211903ab4e2ee0d8c1b54334e2df45eeb50ab6791be7367"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_configuration.mat",
+      "bytes": 6201422,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "f6c2e5688adeb17022a4536b6d1932e0bd6360119754c69e4a16d3a73e46da8e"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_configuration.mat",
+      "bytes": 6197307,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "07c0cab937e0c949202db6774bc10e29a6faeba6970bacc9f25f02abb0033cae"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_configuration.mat",
+      "bytes": 6197519,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "6bf4d5ee02fc6b99b2248c816d52665d75dd766e10f7215026c082d2104d7143"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_configuration.mat",
+      "bytes": 6200744,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "f842c2ee3629f43d4c8001784960406066c6d934a20632cc43805bff0e30ee33"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_configuration.mat",
+      "bytes": 6200955,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "782d60a78de31a776b84bbbf457835b18b092b5637a9369c16bba66887a3c2fb"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part3/r1_source_archive/candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part3/r2_source_archive/candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_configuration.mat",
+      "bytes": 6197482,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "12d0d2b1d6f30f5d985dd131ac69931b114e02e0a5a81be8b7bd0d1b3b853c82"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_configuration.mat",
+      "bytes": 6197490,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "7ef74a472ec629d3a772cae725676dd508c943fc7aa1cd1a54047f8ed9f8d2ab"
+    },
+    {
+      "path": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_configuration.mat",
+      "bytes": 6197701,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "268241052b7154ef1d72355b47ebade1ff02d0b72eae53812db4824257d7ef9b"
+    },
+    {
+      "path": "acf_simulink/validation/final_two_sensor_candidate.mat",
+      "bytes": 3617,
+      "variables": [
+        "p"
+      ],
+      "sha256": "1080561655683e355d4d3e43bf43c25a2581bcf4986e928b2fe35870d7a952b9"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_configurations.mat",
+      "bytes": 60480,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "7dfb0449931197da9cf59c08550c7a9b25a9305bbe434f4c510f8d859de72969"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_final_candidate_20260930.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_configuration.mat",
+      "bytes": 23685,
+      "variables": [
+        "configs",
+        "baselineFiles",
+        "baselineHashes"
+      ],
+      "sha256": "3ecea65676d370258032e928327ef0a4262975e6eea0a048e976f4d37a12848c"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_20260930_configuration.mat",
+      "bytes": 25304,
+      "variables": [
+        "configs",
+        "baselineFiles",
+        "baselineHashes",
+        "staticGuards"
+      ],
+      "sha256": "fe2376a79b1084096c3b808bf6cdda4aa68431671cb5dac1b3ab35d9c359726c"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_source_20260930/joint_configs.mat",
+      "bytes": 533559,
+      "variables": [
+        "report",
+        "configs"
+      ],
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_source_20260930/prepared_static_configurations.mat",
+      "bytes": 25304,
+      "variables": [
+        "configs",
+        "baselineFiles",
+        "baselineHashes",
+        "staticGuards"
+      ],
+      "sha256": "fe2376a79b1084096c3b808bf6cdda4aa68431671cb5dac1b3ab35d9c359726c"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_candidate_20260930.mat",
+      "bytes": 22905,
+      "variables": [
+        "p",
+        "provenance"
+      ],
+      "sha256": "ac3c4ca4a86c42ee9989a0739e3e1436bdca0fad4f0b2acc2ec98e4370f8eed6"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_feedback_candidate_20260930.mat",
+      "bytes": 4872,
+      "variables": [
+        "p",
+        "provenance"
+      ],
+      "sha256": "def793a96188b97b8c35f9da4f904d4613e626f4e70375ad239142d5afa7b009"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_lower_series_v1_candidate_20260930.mat",
+      "bytes": 6390,
+      "variables": [
+        "p",
+        "selected"
+      ],
+      "sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_mechanics_mixed_source_20260930/joint_configs.mat",
+      "bytes": 533559,
+      "variables": [
+        "report",
+        "configs"
+      ],
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v6_ratio_provisional_candidate.mat",
+      "bytes": 4870,
+      "variables": [
+        "p",
+        "provenance"
+      ],
+      "sha256": "7e9dbe3f7b7b476a5103cb08869c1a9dc016e6cd009bfcf98eb0fb9aa7028f43"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v7_timing200_exact_enbw_target_candidate.mat",
+      "bytes": 5971,
+      "variables": [
+        "p",
+        "provenance"
+      ],
+      "sha256": "96de4f5569d435d18f65780588dae14ac8fec0395d6bfadc8987b6241d8a179c"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v7_timing200_screened_candidate.mat",
+      "bytes": 5958,
+      "variables": [
+        "p",
+        "provenance"
+      ],
+      "sha256": "92223cdcaa4939a8cd2404a81922f8d482794fc4676c86bc0405b523ba6b1358"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_prepared_configs.mat",
+      "bytes": 37765,
+      "variables": [
+        "configs",
+        "refinementGuards",
+        "sourceBinding"
+      ],
+      "sha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v8_portable_inputs/data/inertial_uncertainty_calibrated_static_long_20260930_prepared_configs.mat",
+      "bytes": 37765,
+      "variables": [
+        "configs",
+        "refinementGuards",
+        "sourceBinding"
+      ],
+      "sha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a"
+    },
+    {
+      "path": "acf_simulink/validation/inertial_uncertainty_v8_portable_inputs/source/normal_contact_trial_candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/input_configs.mat",
+      "bytes": 134448,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "931fea5c4f0f21105ce3a5fe05ac83fba763b4fa6bc9fbe487c4ad10c09cff8f"
+    },
+    {
+      "path": "acf_simulink/validation/ml_force_20261005/collect/configs.mat",
+      "bytes": 520134,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "1b06f0ed728cd1c8d80db7b562318adb8ee275d3036feeb9e6423b4cdf743e41"
+    },
+    {
+      "path": "acf_simulink/validation/ml_force_20261005/refine/configs.mat",
+      "bytes": 87066,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "623d2b04d5ef70345e24da30391e66e1ccc6111f496d3050d9c6536c4eebc96c"
+    },
+    {
+      "path": "acf_simulink/validation/ml_force_20261005/select/configs.mat",
+      "bytes": 520156,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "6d4065fc4c577e0a3323becf738851dee33fb2d95b5dac87a8e3afd557ee0b8a"
+    },
+    {
+      "path": "acf_simulink/validation/ml_force_20261005/test/configs.mat",
+      "bytes": 1047676,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "51ae03ef2dde49f46cf8ff7a408035fa19320d368ee001b618b478fde6b58b1b"
+    },
+    {
+      "path": "acf_simulink/validation/ml_robot_20261005_collect/input_configs.mat",
+      "bytes": 524063,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "4337c9fc27cc3994f691f6cd6fb3620f6cd400024a6c72f5b8030edfaaa8f41a"
+    },
+    {
+      "path": "acf_simulink/validation/ml_robot_20261005_heldout/input_configs.mat",
+      "bytes": 966760,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "d2dc077007b2c739b8c5bf87f68f8c60bcd1532eda5f7d9cf2f3f71051230bce"
+    },
+    {
+      "path": "acf_simulink/validation/ml_robot_20261005_pilot/input_configs.mat",
+      "bytes": 87699,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "a225e15f28f71549677de91e529e96e7b036172319c66e048f6376a02f73dded"
+    },
+    {
+      "path": "acf_simulink/validation/ml_robot_20261005_pilot_attempt2/input_configs.mat",
+      "bytes": 87699,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "23b80ee9af434e234ac978fad745a6b5489575d32d2b830dbf0051df20d6f23c"
+    },
+    {
+      "path": "acf_simulink/validation/normal_contact_trial_current50_candidate.mat",
+      "bytes": 4344,
+      "variables": [
+        "selected"
+      ],
+      "sha256": "b54095ddb7f6f1a648e3e7fef8c0b623d4fcf0b6c93acad3d713594f9eee6aee"
+    },
+    {
+      "path": "acf_simulink/validation/normal_contact_trial_delivery_candidate_v8_20260930.mat",
+      "bytes": 6677,
+      "variables": [
+        "p"
+      ],
+      "sha256": "212210dd362c411e27af067ae0008fbc0fc3641975da5dd73d03733964281186"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_common_provisional_20260930_v7_candidate.mat",
+      "bytes": 11758,
+      "variables": [
+        "evidence",
+        "p"
+      ],
+      "sha256": "4d71a53144d8224da9686e044ff02cb8feb85826356d4d69e8d99e968948886f"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_acceleration_command_prediction_20260930_broad_v5_finite_candidate.mat",
+      "bytes": 5707,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "03adcecad109910f4eb38124cb6ed0d81fd9dfc01dabe00828be1253c4b4767f"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_acceleration_command_prediction_20260930_broad_v5_finite_configuration.mat",
+      "bytes": 166852,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "142f87ebdc95604be1e9c62c9ea539653e5651a7516b09a4c7d86c2dacc52ff2"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_acceleration_command_prediction_20260930_broad_v5_finite_selected_candidate.mat",
+      "bytes": 5718,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "dd4fd929ba94a75b1eb37d604330421c2a6bdda3f8c6039b5353989b2bf503fa"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_band_limited_acceleration_feedforward_20260930_v7_finite_candidate.mat",
+      "bytes": 5973,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "b5bb0824fbe55f5e5881223ff9e95dcb171aad6317fd06994591d1e5bae1969a"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_band_limited_acceleration_feedforward_20260930_v7_finite_configuration.mat",
+      "bytes": 260180,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "6f957c91e18c1f8c9a11743c589dad7efe34c600546e180ef209eb2be1649a58"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_band_limited_acceleration_feedforward_20260930_v7_finite_selected_candidate.mat",
+      "bytes": 5981,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "ba3ed59c5ff3db087ff85187a05192e56cde59f0e53914424ad9de25a14333e8"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_broad_current_notch_20260930_v4_finite_candidate.mat",
+      "bytes": 5358,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "7b4b106eed83a4cebb716d0bbab0e4bb96cace8d6b73f0fd766fc678b97473fb"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_broad_current_notch_20260930_v4_finite_configuration.mat",
+      "bytes": 118532,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "7759bc48e00dcbfbbacd0b91b27e396335f641e392c343ffe7537ccdcc516f49"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_broad_current_notch_20260930_v4_finite_selected_candidate.mat",
+      "bytes": 5356,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "7a82996f187119596fc59bf8264008d6f4f483ba05e54504be2ab94c59764b38"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_endpoint_confirmation_20260930_lower_series_v1_configuration.mat",
+      "bytes": 490193,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "499ee1e0d4c39f01dd3e09bc9b12ab7787944ae97537e594db200b40f44ac0b7"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_fast_sensor_candidate_20260930_finite_provisional_candidate.mat",
+      "bytes": 5161,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "94d8e3f856fed26fab478356c8a15fc043b4d4d969ac6d889b908ca6b1dc4fdb"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_fast_sensor_candidate_20260930_finite_provisional_configuration.mat",
+      "bytes": 38620,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "8605ef4c82e66a7eadb8e8461178467f48c75ac241d138160f457da4a6399a55"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_fast_sensor_candidate_20260930_finite_provisional_selected_candidate.mat",
+      "bytes": 5162,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "0a5f0c4915a91f96d9c928935aef464b1fc1dce0f084d66590b4258a227e85ff"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_feedback_rolloff_20260930_v4_finite_configuration.mat",
+      "bytes": 157885,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "9d187981ae483b3a8a212f3f7c0db23ce33645c1cd24ea938367e64060f1f169"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_feedback_rolloff_20260930_v4_finite_event_validation_candidate.mat",
+      "bytes": 5361,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "6691891a3af5ca5ff100dfabb6274742eefbd664210ff73b4ea7498efe0e9f66"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_feedback_rolloff_20260930_v4_finite_event_validation_configuration.mat",
+      "bytes": 157899,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "b0ece97fbe82e7137d8419d14d326cc0b0d374b9b5caa4c87dfaff854c546517"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_feedback_rolloff_20260930_v4_finite_event_validation_selected_candidate.mat",
+      "bytes": 5358,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "4e9b1a48ac1712a046f2ee78ebc930da72a9191a9521885d32c64e866ebe238e"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_final_performance_limits_20260930_v8_configuration.mat",
+      "bytes": 86422,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "fd74b19317f1762fe04e0d83f832bcc00b38bbd38a18b69914f27d8a28616e4b"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_full_range_mass_20260930_lower_series_v1_partition_smoke_configuration.mat",
+      "bytes": 7151,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "a13f10e44c9c68113e7877181610d393ddb46b92fff2d9135c079fb2afa5750a"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_guide_velocity_lead_20260930_helpers1_candidate.mat",
+      "bytes": 4644,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "ac56affb754659fefa7516230afc61dc73170dd001f143a1574d85d7c0ffa52b"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_guide_velocity_lead_20260930_helpers1_selected_candidate.mat",
+      "bytes": 4646,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "7facdc11932a7856b95127ec96ea888fa412d1f6a1ad4ceea2c942fa1723e784"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_drive_noise_tradeoff_20260930_v7_finite_candidate.mat",
+      "bytes": 5971,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "75003684bc5a9ce25357289b091f97c759c74265ce57f3cd9ab0d0caac6b165c"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_drive_noise_tradeoff_20260930_v7_finite_configuration.mat",
+      "bytes": 130271,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "bfa0c0f2160599a7fce1e52a50f9cb78cb9a26cda918a29223992c17f32bd0fb"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_drive_noise_tradeoff_20260930_v7_finite_selected_candidate.mat",
+      "bytes": 5980,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "329bbb8530d99b0ed608ccd28a05ca2cc12b9d5a15891a27e399873ba3940f37"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_fast_drive_20260930_v7_finite_candidate.mat",
+      "bytes": 6032,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "13039ccde948578982ff07ec180842eeb1100b1ae180c605425d9da834f7ff68"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_fast_drive_20260930_v7_finite_configuration.mat",
+      "bytes": 130292,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "3d5b7597a3a0d098733a47949a35ebc02523279715858b463894548130866090"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_identified_fast_drive_20260930_v7_finite_selected_candidate.mat",
+      "bytes": 6041,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "3d5ae22da4c5d2077867cb22cb78f2ca1b33bbb4260cb78ea6eb34d1884f2983"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_feedback_20260930_v6_finite_candidate.mat",
+      "bytes": 5913,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "40a986a272a3a2bdc7a3fbdcaebe99f409759844f8b013350007d7237999663b"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_feedback_20260930_v6_finite_configuration.mat",
+      "bytes": 127988,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "ca5f44c1d8180e37bcb6ca37d70beb2c0a4d6bee3cb293f1d75bb7d100ddca1e"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_feedback_20260930_v6_finite_selected_candidate.mat",
+      "bytes": 5923,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "b81fca7988e7f38bf2e44cdb92c5ad400036d920058b7d9251900867eb70a6a5"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_prediction_20260930_lp1000_v6_finite_candidate.mat",
+      "bytes": 5928,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "9aa4c66b3512686d6e61ace6e0c1a59db6633e74988bd014c34bc71da4f349ae"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_prediction_20260930_lp1000_v6_finite_configuration.mat",
+      "bytes": 171399,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "0b5b4a2a1be161161ea77e82ac1f49e9e1da9ce4c21ae62a76c43f0722b9707a"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_measured_drag_ratio_prediction_20260930_lp1000_v6_finite_selected_candidate.mat",
+      "bytes": 5937,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "5d9c5f77bf133410004bcce577cc6d3ff4b288001a484b5ef4aecd2b17bcfb6c"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_parallel_actuator_damper_20260930_v7_100us_transport_candidate.mat",
+      "bytes": 6331,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "7ac0c14cd6797f1a6293d64abc39eb10de7b29d7333cc5897e18b2070fb3762c"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_parallel_actuator_damper_20260930_v7_100us_transport_configuration.mat",
+      "bytes": 181705,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "87d63c6abfd69d5fac0dae2cf09e03865eadc24223a56bfcd3be3b0efdf689fb"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_parallel_actuator_damper_20260930_v7_100us_transport_selected_candidate.mat",
+      "bytes": 6338,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "2736cc594d2bc1dcc2318f0071c0c04e7c1004fd3af57061aed60a87c40bc4c6"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_candidate.mat",
+      "bytes": 4448,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "123a9ae295a0614380c31621889a68452603b6b5aeaa43f56664b9894b8feba3"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_selected_candidate.mat",
+      "bytes": 4456,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "c82dc899b5634ab31a88c78bff72e955f446cd24149090fa00d705c680024093"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_repeated_bump_confirmation_20260930_v7_common_provisional_configuration.mat",
+      "bytes": 44018,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "084681ae6aafb03401b59f07d722adf9fc671b27b26635e73f08bd8ca2a28d9b"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_repeated_bump_pilot_20260930_broad_v4_finite_configuration.mat",
+      "bytes": 15319,
+      "variables": [
+        "options",
+        "configs"
+      ],
+      "sha256": "f2483d293623dc952071f3dcae05adcfd44a31bd300373ff91025d31bee2ecbf"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_repeated_bump_pilot_20260930_v8_ordinary_reference_configuration.mat",
+      "bytes": 8326,
+      "variables": [
+        "options",
+        "configs",
+        "unpartitionedCaseIndices"
+      ],
+      "sha256": "a264c2648fc76747b548656982d9163cb7399314d4c594e9a2aabc536531f369"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_candidate.mat",
+      "bytes": 4448,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "ef76b10570a675ebfc9c755325d0215aa28032cf4c158d6fb29d6a0120989165"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_selected_candidate.mat",
+      "bytes": 4456,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "09970c9e78229e2aa596c33f468b90bc2db1e81ef945b7d943b65fa279ad42d9"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_response_screen_v2_20260930_candidate.mat",
+      "bytes": 3957,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "469fa3275621d4cce71e7887ba2e751ca55453458c39cad823f74e2584dc4779"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_screen_20260930_candidate.mat",
+      "bytes": 3954,
+      "variables": [
+        "p",
+        "chosen"
+      ],
+      "sha256": "28caf1db0b50c4253164312163544ef6177d2fd5f07515e5da327a1b8f54717e"
+    },
+    {
+      "path": "acf_simulink/validation/normal_mass_controller_screen_20260930_selected_candidate.mat",
+      "bytes": 3966,
+      "variables": [
+        "chosen",
+        "pSelected"
+      ],
+      "sha256": "61323b7bea98cf375d5874ea7fa487ed3b11be342423dfd185d75a3fc07fcc6a"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_baseline_source/normal_contact_trial_candidate.mat",
+      "bytes": 3705,
+      "variables": [
+        "p"
+      ],
+      "sha256": "c81a9871aa97448dc38193e53871089e67f9789fe01250fca4b302032e9d7a2f"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_continuation_source/selected_candidate.mat",
+      "bytes": 6390,
+      "variables": [
+        "p",
+        "selected"
+      ],
+      "sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof_source/candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_final_sensor_source/inertial_final_candidate_20260930.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_interrupted_source/selected_candidate.mat",
+      "bytes": 6390,
+      "variables": [
+        "p",
+        "selected"
+      ],
+      "sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_private_tp51ac5518_a0b9_4b1c_979f_dcd003969734/selected_candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_private_tpbd9d0ded_bbc8_4f5a_ae39_97f35fb20dd9/selected_candidate.mat",
+      "bytes": 6390,
+      "variables": [
+        "p",
+        "selected"
+      ],
+      "sha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738"
+    },
+    {
+      "path": "acf_simulink/validation/normal_voltage_20260930_private_tpc6e37c30_9dac_430e_8a11_9566dd388746/selected_candidate.mat",
+      "bytes": 7161,
+      "variables": [
+        "p"
+      ],
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_candidate_upper.mat",
+      "bytes": 4057,
+      "variables": [
+        "p"
+      ],
+      "sha256": "adaeb8befc0917f95f3ed23e4897e06b397e3b9df837304658e4e59e0453bc68"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_candidate_upper_3p5A.mat",
+      "bytes": 4065,
+      "variables": [
+        "p"
+      ],
+      "sha256": "c501b45d3bcef5bcf7761dc3bccba172c166925cd83aa155bbaf215523034614"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_optimum_candidate.mat",
+      "bytes": 3581,
+      "variables": [
+        "p"
+      ],
+      "sha256": "b67352b7ad6db8fe86e50fa56994068b29fd13b4236d06082e02868154576e15"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_candidate.mat",
+      "bytes": 3657,
+      "variables": [
+        "p"
+      ],
+      "sha256": "11024c1961d8dafb0b7716e22f8254099af305a9c35f73282f631155abb992b1"
+    },
+    {
+      "path": "acf_simulink/validation/rigid_sensor_qualification_physical_sensor_toolA_precision_candidate.mat",
+      "bytes": 3603,
+      "variables": [
+        "p"
+      ],
+      "sha256": "620a361325b0758132c87554ca9e8badb01a26f6a865585a30727bfe44baff55"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/final_holdout32/frozen_inputs/configs.mat",
+      "bytes": 6314021,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/final_long4/frozen_inputs/configs.mat",
+      "bytes": 177488,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "1a20935b8aa6c76ca01fb3a6d84f2612093a9fe83a0e82a3e2fad7e7afb0576d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/configs.mat",
+      "bytes": 177300,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "74fabd7171abfc88e83a829b1c5b40b52eb3a58acecb0ca12461063717252c23"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank_budget/configs.mat",
+      "bytes": 177488,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "1a20935b8aa6c76ca01fb3a6d84f2612093a9fe83a0e82a3e2fad7e7afb0576d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe/parameter_mapping.mat",
+      "bytes": 33631,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "3495e49dc98000644f594b2540e22d8b0f1637a0246589b0309ecc27485e5883"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe/prepared_configs.mat",
+      "bytes": 310162,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "4ff6d8b7ce8c3c8831e3f72885d69b2ded2bf993a94f03ee080a5ac9588f2a3c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_bank/configs.mat",
+      "bytes": 265939,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "32ab0ad01b87acae2ef599310ec5b1412a18ecca6cd0af30bf8e8ce477ee179e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank/parameter_mapping.mat",
+      "bytes": 105023,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "a82afbba3355a27b616e62e74c14b7ef6ed4562b0dfd8051fb491bb104595259"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank/prepared_configs.mat",
+      "bytes": 4224395,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "7417c60f40bc99343c224fd30eb957e6a46cf95f32186f8174ebc483a57b54c3"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_band/parameter_mapping.mat",
+      "bytes": 126873,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "39f2314ff3e030e7a57d5fbf6a0403f9f76856a591cc03275cbcef38a8b9e08e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_band/prepared_configs.mat",
+      "bytes": 5611603,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "9e5caea7d955ec36c32290835cf0b8be6d802c54065c79a65046b743ad23d781"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget100/parameter_mapping.mat",
+      "bytes": 136835,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "32c22194fc3faa1a9facdb6828b1b6a0b0eaf308abc57543d9faea1f711ca37c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget100/prepared_configs.mat",
+      "bytes": 6358151,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "3f535fc763434406ac2d695767a68974a5f29554eb15d2046c05f69add4b25dc"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/parameter_mapping.mat",
+      "bytes": 136836,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "cae9f92a11c7bd6e3f13d44a6456ba67f86758e59c3b236f79290e40543ab78c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/prepared_configs.mat",
+      "bytes": 6358278,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "f9cac4d2340b50f11f69b1dcce3d205d4829538a642a247043e4f2ce4035821d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50_latency50/parameter_mapping.mat",
+      "bytes": 136938,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "b5834032c9192cf079a5b3d9b9aa7a2af0843f92754d0b49e2dd79bd9e1e81c7"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50_latency50/prepared_configs.mat",
+      "bytes": 6359945,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "0efcdab002b2263b8ad5b1f46099c1d599599ab7afbce4d6d1d7dd9898df8836"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_current50/parameter_mapping.mat",
+      "bytes": 136754,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "b219d08d029e085f5b3d522532f29eae3a89705e450251bfdcafbebe53e164b6"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_current50/prepared_configs.mat",
+      "bytes": 6305154,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "040aefd20f3d22f2ea84db2e1fd5063778468890d7d2982edff0d50c4d44a3d5"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained/parameter_mapping.mat",
+      "bytes": 137069,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "e1b0d090b0e5ca0148d640319f44adcddde656c6ab118b9ea8b417f9166952b2"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained/prepared_configs.mat",
+      "bytes": 6305114,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "f0c9bc61dd58b15b0a4ba92a50946a18e8df3b3a28a74aea74422cfbec57e048"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/parameter_mapping.mat",
+      "bytes": 32162,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "61be8a0dd0ad49ebe237926dc08dd24d0426f5aebae31ffe3adf0872dd3b2b7f"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/prepared_configs.mat",
+      "bytes": 221601,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "c9a24e1f80bb522a18f1f777f66ab042f1e6e1519f278d5c16c94f5f1568540e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/parameter_mapping.mat",
+      "bytes": 32169,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "a415e7b62ade2ae562f3839df657f9089f447cf9beb16d83ef0d035683de672c"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget/prepared_configs.mat",
+      "bytes": 221819,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "243a083c58ccb96eb694b3a400426aeec4424cefd36ba59e90c5a5cd031c21eb"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_qualification_700/parameter_mapping.mat",
+      "bytes": 478763,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "4e07e7297b87580d2f3bae2297d28a05d408f6cd59ff3fb4aaa08991509f188f"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_qualification_budget700/parameter_mapping.mat",
+      "bytes": 479089,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "0316b17f64361ee0f8f54866e1f7d100dd10c0daf3b85debb551b66358ac8356"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank/configs.mat",
+      "bytes": 4180854,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "c4c54ee599b33be028d47c2f4b23e1740ae7d339a73e3ce07ad2bb5db561f29f"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_band/configs.mat",
+      "bytes": 5568086,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ed2b5596c3eaf04be62bf64685a067277e359ba01900d9353b99d80b624415b4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget100/configs.mat",
+      "bytes": 6313917,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "7b1f6d0cf3d76039d82d6dcf44970a1d6b23bbab4bb01efb0c47088f7ce05c9d"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/configs.mat",
+      "bytes": 6314021,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "f8e8fd09f898b87a95f957b0d7595b6c16a89be321e47f6553e0cfcc792dc3ae"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50_latency50/configs.mat",
+      "bytes": 6316079,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "2fc6e17c5eeb4716ca75cda0e6ed088971d285caee81cb7a6050d64d1e00c179"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_current50/configs.mat",
+      "bytes": 6261743,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "80b33deabcd1677b9cc3b249a43ed87e91114ab13b8419e47b8d3b2e09239aa1"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/scenario_bank_sustained/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_native_probe_20261005_bank/parameter_mapping.mat",
+      "bytes": 62867,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "9f50bcb3d113fd4c4a855c3b1ea094b0cd18411ddf9252d72d1a0caa858b7a7a"
+    },
+    {
+      "path": "acf_simulink/validation/rl_native_probe_20261005_bank/prepared_configs.mat",
+      "bytes": 1954547,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "63d588e06c00b9ff0d140bad73ac402aaac41a919f3c8313e752873f1de36c0e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_native_probe_20261005_export/prepared_configs.mat",
+      "bytes": 355447,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "2c48570585617e62852d575ebe93c2d2077016031d98b3d6f8dbc3a7c20eddb6"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/aggregate_serial2s/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/aggregate_workers4_2s/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/guard_bad_action_scale/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/guard_bad_feature/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/aggregate_fixture_v3/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/band_fixture_v1/frozen_inputs/configs.mat",
+      "bytes": 5568086,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ed2b5596c3eaf04be62bf64685a067277e359ba01900d9353b99d80b624415b4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/band_fixture_v2/frozen_inputs/configs.mat",
+      "bytes": 5568086,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ed2b5596c3eaf04be62bf64685a067277e359ba01900d9353b99d80b624415b4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/full_train_v1/frozen_inputs/configs.mat",
+      "bytes": 5568086,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "ed2b5596c3eaf04be62bf64685a067277e359ba01900d9353b99d80b624415b4"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/carried/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/memory_ablation_gen5/reset/frozen_inputs/configs.mat",
+      "bytes": 6261682,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "84cd83461b38141dadf9eb2a5f5864c69f995448509d5c153182f018b24d0879"
+    },
+    {
+      "path": "acf_simulink/validation/rl_unified_20261005/scenario_bank/configs.mat",
+      "bytes": 1910718,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "459d08be23ed8a2398249b9e169de5a5fc7b15e40b154ddc7ad070e175e1f69d"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank/configs.mat",
+      "bytes": 6078279,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "9032dddb995ff8994990ee79df24620052504f190c6b391d37cac0c6975fd1ab"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_lead_v7/configs.mat",
+      "bytes": 16735561,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "3c634873fff8862a600cdf75dc399384e015a53456dcd7f0b27cf0c240d89927"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_v6/configs.mat",
+      "bytes": 18671805,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "a9f9ffc1732deaec9464bb4390fe6a577d922635ae466c0451b41d7fe0a5549c"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_cellsource_v2/configs.mat",
+      "bytes": 6084591,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "1e66bdf5a6d32e1a70b9cecbede75495fc349886da5355d8127f129ad0264ad3"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v8/configs.mat",
+      "bytes": 12511741,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "54bee40a599557a41e87c9dfdc4d0026eb3ddfa9d5d82e881290631a12b9cb9a"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat",
+      "bytes": 12511494,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_lower_damped_v2/configs.mat",
+      "bytes": 3042911,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "f932bfe2cbb45dcca6912586d5ef89a9794f87f43341c3890cd61ccef1ce9b05"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_observer_lead_v5/configs.mat",
+      "bytes": 16318181,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "488e7f3fcfc07a7724d3701f53e82a5c3bdc26bb9b7ce8ee6193b465c7f1ab6a"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native/parameter_mapping.mat",
+      "bytes": 117282,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "5637a9f57b60cb32630daea67d892a6628d0d5b0af4c71dba809d87ca6036cd1"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native/prepared_configs.mat",
+      "bytes": 6124273,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "15156ec5e76a2345d9c3e0e1c4c72ca53f5f22e2bc9c2b1020a32ecd416c1086"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/parameter_mapping.mat",
+      "bytes": 258559,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "bc694f56531b9c15e7de73dd69f9877e9b9960a4ee27236f2b2692ee0b1bbd57"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/prepared_configs.mat",
+      "bytes": 16782566,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "a41f4b68762592e0a209ea3684430fa95b6c63b4a249edf4c2dce445af6c09f8"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/parameter_mapping.mat",
+      "bytes": 285467,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "78d60f16ccdd22a3988d0e05ad153593030030f774fdd46bc8d52a4ff9046bba"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/prepared_configs.mat",
+      "bytes": 18718845,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "f955bb8fc89055941e0152b4f636c88e5d0dcc2b3b5e4cb60af5a203a330690e"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/parameter_mapping.mat",
+      "bytes": 117243,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "bf884fe347c6142b1b1d19dfa87b79d383796bd18daba9fa145c0e868f785ff4"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/prepared_configs.mat",
+      "bytes": 6130239,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "95b53c2886fc9028223dcd9c6a9573284c3e60aa6bff51ed25caf14a990cc664"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v8/parameter_mapping.mat",
+      "bytes": 201546,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "21218630b96663e5c78a7774e48a9811f8052f23e4ec7181bf7de691ed6603a1"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v8/prepared_configs.mat",
+      "bytes": 12558836,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "26a810cb70b1435f4537e522da930b1ac8c5fedfda6b72025c27a59d42fac1ce"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/parameter_mapping.mat",
+      "bytes": 201643,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "5863a207ae74bf5433fbfd8e8091483ebac82df8a8d108f6524b3b4c09d982b6"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/prepared_configs.mat",
+      "bytes": 12558625,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "e865ace190cda43c23b5a57cbe17721dde15afe7c735858bb776365a88269230"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/parameter_mapping.mat",
+      "bytes": 256290,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "cd5bf1679b85835d7f273f303f148a3140c1346f70f3e9aa25d327fd48af94a4"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/prepared_configs.mat",
+      "bytes": 16364963,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "6379a6067ab71403f154f9ef06b50e4bd85ad8bc5c0097f7cf6be98a604ccd8b"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/parameter_mapping.mat",
+      "bytes": 583371,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "90c4f3d6a9ea0785e46c31c12cc72e8c51540be223b38150bffe71d7911c143d"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/rejected_native_long_block_name/prepared_configs.mat",
+      "bytes": 6124273,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "7544e715e766cf7ec2098581fa258664b6efb02e52c03bf111ee850f4fb5392f"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/baseline_upper_rigid_lower_damped/configs.mat",
+      "bytes": 494574,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "c08a5838c6c9546bd36eaf15ad15a0f2a9c8203dda87cc0249bfb9afc07bb3a2"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent/configs.mat",
+      "bytes": 2917216,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "e3349508253f0d8291c13eb7717dd4a1d1d3c58150435c9da37146373aa3589b"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent_accel_lead_v1/configs.mat",
+      "bytes": 2933460,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "545851d3b5f6a2f6413192d4585a19e2825d2cc69e44fce7f1cb5fc562d4784e"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent_control_v2/configs.mat",
+      "bytes": 2921150,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "9848a29d938ad41f7114759c1e66fead0b9ac0af37dd74b96b7bdfb785ac508b"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/upper_20k_lower_19746_undamped/configs.mat",
+      "bytes": 3053236,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "f743b55cff8c22d7e7d5a96bc270b92ae3996ae348326521a7c94d805b3dde75"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/upper_20k_lower_cell_undamped/configs.mat",
+      "bytes": 6035179,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "8deb93131870e4ac05c85ac6852f589c24e6273e8dd3d5253891c4979a6dc6d0"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/upper_rigid_lower_undamped/configs.mat",
+      "bytes": 1478320,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "7a8599de0f6d72ed8c19c913a34fb952ee4ff64363b486310c00efb474394e08"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/banks/upper_rigid_lower_undamped_control_v2/configs.mat",
+      "bytes": 5913314,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "433a9f7911d76dc316197a6363405581c71965c41f40ce3d200b995fe83fda4d"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/bank/configs.mat",
+      "bytes": 6046337,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/parameter_mapping.mat",
+      "bytes": 123187,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "60b51c9b32b7d85e82829e9de97c108dc644849d34d742bff1809f600fafaba1"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/prepared_configs.mat",
+      "bytes": 6092028,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "d43454d49c51bef2c5a1b8496834b071c2603936348fb51be8f25c81ef2c59fb"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/bank/configs.mat",
+      "bytes": 6065465,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "d292bbf999b2d7e6b81a95c83285a7cbc0df6010fc36a4d6b5d1685de0db8695"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/parameter_mapping.mat",
+      "bytes": 122555,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "fe638cb7ca9ef453231488543bd89caf8ddfbf8b08c7954dc7ac56399baea487"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v6/native/prepared_configs.mat",
+      "bytes": 6111333,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "92f11ca853c8108e7df295ddfa81c2ccb931109a2b7afcd395352586d06b3d35"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/bank/configs.mat",
+      "bytes": 12254320,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "949a7de4752a9054afa7217c0e3ebda875bcc02b70020aedc6d14595c43472bf"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/native/parameter_mapping.mat",
+      "bytes": 200154,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "26631d4c0c79ca456023922921cc173de3dabea86cd22bdb4fef58e7b7c074fa"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/native/prepared_configs.mat",
+      "bytes": 12300610,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "958b487cdef23a0f73ebf0fe4445ef263223deabb2c41ab9506fcd59fb8d742d"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/baseline_upper_rigid_lower_damped/parameter_mapping.mat",
+      "bytes": 38184,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "9447d19419589276bf07c0bc82cc4056287050ce027f5c3233117b4a93f7d50f"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/baseline_upper_rigid_lower_damped/prepared_configs.mat",
+      "bytes": 539469,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "61606faea2e7133dd32ccf205d29e7ccb33abdabcbbbf8539efd65b5831f64ea"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent/parameter_mapping.mat",
+      "bytes": 72029,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "f553c27bc6dcba847afbeeb648e62184ac2810dd2f614c66d790b0222e7f3a01"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent/prepared_configs.mat",
+      "bytes": 2960998,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "d83a5380b0f4c6376109371fde67f9dce1bdca67a62833952b203b634f0d5a4c"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_accel_lead_v1/parameter_mapping.mat",
+      "bytes": 72546,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "3753ebc7c4dca81d563aa0a4feff959a70b2bc6106a96a7d9a3f24dd4fa9c758"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_accel_lead_v1/prepared_configs.mat",
+      "bytes": 2977732,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "01ac887eebcd1d584a73e3f085e45972e5d845b5dbdc58a170e549a9fc0f7c7d"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/parameter_mapping.mat",
+      "bytes": 71785,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "678c8b16d29c434d2ef41b9229c737ff09caa3607beb91b3a0a003c3dce43503"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/prepared_configs.mat",
+      "bytes": 2965342,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "cf36c56c1aff7ff8117ce352bffdb2ac6b6c2b6141d4fc2d697b1925f658341a"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/parameter_mapping.mat",
+      "bytes": 79124,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "4270a1f26818fece420771546b6274eec09bcef693421d79984f85c27717110e"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/prepared_configs.mat",
+      "bytes": 3099316,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "7f8bb3d164b9e4caf21bcb3ae96f7b6ffcbdc8b4110814206c2a31b158ed53df"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_cell_undamped/parameter_mapping.mat",
+      "bytes": 123174,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "f2f55fe286cfaa1f09da93aa54dda4217217df46e8d1c4cad96a46cbcc39b794"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_cell_undamped/prepared_configs.mat",
+      "bytes": 6081166,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "ae7c843d3c3e1635b861d8227ddb25557ff1f2fba1adab4dc9a4b51fa8e0dbd5"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped/parameter_mapping.mat",
+      "bytes": 51951,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "65776b5b7b07bef59791cacc4896554d3c87b67a6d5d75519548e495bf9573ba"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped/prepared_configs.mat",
+      "bytes": 1523228,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "69010cc1d74b77541905993d2f37a57c3b20d00e76522b190b54998472189d6f"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/parameter_mapping.mat",
+      "bytes": 111331,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "580c61b073c1bc0d64c731d2e565882846bf5a258bec8a1f8b29c7b0c8c869a8"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/native/upper_rigid_lower_undamped_control_v2/prepared_configs.mat",
+      "bytes": 5958075,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "943ee33bb9ad724fce58288f414a2be2820cca62013e7cd4c0966ed2d5860f97"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/parameter_mapping.mat",
+      "bytes": 541780,
+      "variables": [
+        "map",
+        "values"
+      ],
+      "sha256": "e9bc8263b3ca4081c3bde1afcd8a695ad058e315244fa87bd4c31ddfd73a6b6c"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/prepared_configs.mat",
+      "bytes": 48071,
+      "variables": [
+        "p"
+      ],
+      "sha256": "c1886f8f5c46d748ae3e2bfc979d9e972dcdf5b847ff5fa48795e5e4a5a2062e"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/rejected_preparations/banks_upper_20k_lower_cell_undamped_v1/configs.mat",
+      "bytes": 6036349,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "704bb103f33becac2dd53cfb9182c03f4d4111b74f4c8c170faae82ea64886de"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/rejected_preparations/banks_upper_20k_lower_cell_undamped_v2/configs.mat",
+      "bytes": 6035179,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "39fadb787e6eb3f6e61000c3e15c35446c03cbd7a1a859df734de4114e8a93ea"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/rejected_preparations/native_upper_20k_lower_cell_undamped_v1/prepared_configs.mat",
+      "bytes": 6082356,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "52408315b99f022d8338bdc7746ddcbdbd445765020ac8ee65ce98bfb8cc8fe9"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/rejected_preparations/native_upper_20k_lower_cell_undamped_v2/prepared_configs.mat",
+      "bytes": 6081166,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "7facc3cb2784e90f1ef1c4590177f85c44457f1c32743a3186386301c46e0aa8"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/final_nominal700/frozen_inputs/configs.mat",
+      "bytes": 30622548,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "b52262dd8f03c03526dfbc1f56867a73f1f0c2f8d037975b08cb1c2598c34c34"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_qualification_700/prepared_configs.mat",
+      "bytes": 30369033,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "6e5e778576f5b100db1f94aaa2d763da215cca4d3ae46a7c3c3156c1962a4744"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_qualification_budget700/prepared_configs.mat",
+      "bytes": 30666225,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "b48d00867482c4ca88a20bf48bb9ded7406da7b08c9f0dc06c890df49bb177b9"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/qualification_bank_700/configs.mat",
+      "bytes": 30325896,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "1d8a46862ce58eee5ac2d985de04a0c1950ca79509ce9f3f40ef26d8b8bd295e"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/qualification_bank_budget700/configs.mat",
+      "bytes": 30622548,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "b52262dd8f03c03526dfbc1f56867a73f1f0c2f8d037975b08cb1c2598c34c34"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/bank_observer_noise_v4/configs.mat",
+      "bytes": 40567455,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "65410863e6b3fd3a2e388e896237708c932ec8811e8c9acfc1d33c59e9f39c1c"
+    },
+    {
+      "path": "acf_simulink/validation/upper_force_observer_20261005/native_observer_noise_v4/prepared_configs.mat",
+      "bytes": 40613801,
+      "variables": [
+        "loaded",
+        "p"
+      ],
+      "sha256": "7e83619d442d80c77438cf80266d980093912a4e83293c995531811b0889e74c"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat",
+      "bytes": 35531497,
+      "variables": [
+        "configs"
+      ],
+      "sha256": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part1/prepared_configs.mat",
+      "bytes": 73017344,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "ee8eac1298405afc378e12fb6f83d55a1c84cba2d4b09437239154732583dfc9"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part2/prepared_configs.mat",
+      "bytes": 72706536,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "d1e08c66ed7a579f7722029eb67406f60e214b8594afda6bbfba512b8fdd9f62"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part3/prepared_configs.mat",
+      "bytes": 72706536,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "7c4025bae43e3ca6dc007737990f57e2f57d5da25427d7adfa1de5262507a41b"
+    },
+    {
+      "path": "acf_simulink/validation/adc_fast_restart_audit_20261002/prepared_configs.mat",
+      "bytes": 2817264,
+      "variables": [
+        "configs"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "f430a32200fff9d93ac8923b5d7e563817cc0b5eed85e608b7861e095d7e8ce7"
+    },
+    {
+      "path": "acf_simulink/validation/adc_fast_restart_audit_20261002/software_rejected_attempt_0002/prepared_configs.mat",
+      "bytes": 2817264,
+      "variables": [
+        "configs"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "fec3ba883e4e4e25cedf7d08abf8c9c3b3cea470f6442c4f5a62d324bd0a3838"
+    },
+    {
+      "path": "acf_simulink/validation/adc_root_pilot3_20261002/prepared_configs.mat",
+      "bytes": 316464,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "c575537bdf0ea2fb08e74826eee26ed759db680d81bb9aec6c51786f0e39b811"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_alias_probe_20261002/prepared_configs.mat",
+      "bytes": 938832,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "a01d312f56cae11ecd33993e88910901261e45754e46d55ba6b44a3a027020a4"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_long5100_20261002/prepared_configs.mat",
+      "bytes": 1256096,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "e3ad5eba478d19ae2fd8b2b2df0ba9ce69c360c02a6604bb273d1899f4053f5c"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sar_screen_20261002/prepared_configs.mat",
+      "bytes": 29863336,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "e7dcf2ca657b7f2da686838de094cb1df862b3e1d45cd26feb991e86a83ad65d"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/prepared_configs.mat",
+      "bytes": 626784,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "4c503a503b49f062b21a38361525fe88139fb68a0c3b0447f11a5db2fb5a5d77"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/prepared_configs.mat",
+      "bytes": 626784,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "8eb1546fca4f2a7eb0f3831de2b273f385f774665ec55c29846bcf806d4eb3c1"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_alias_probe_20261002/prepared_configs.mat",
+      "bytes": 940608,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "b6431033bd448ab81364d008ff84887bbaaa4d11b30233710eea2d041ff03a35"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long15000_20261002/prepared_configs.mat",
+      "bytes": 1261344,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "30a637ff3c7e0395370fd8493ff8d5e39a9b62ca83ff09a0d392e067cfc2dd6f"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long5100_20261002/prepared_configs.mat",
+      "bytes": 1258464,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "98b87cb547f2b819681ef012902408d302615005b826fcc8321846760afae4d3"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_long8000_20261002/prepared_configs.mat",
+      "bytes": 1258464,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "b77361794328dfc552fe5cf8215d1efa7d529eec67d76afcbd76acfb841d3a7e"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_noise2x_20261002/prepared_configs.mat",
+      "bytes": 626784,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "241e272cbbef07dfb5f1e4a4175e4f1ce17792cd0bd014e07a3743425d310237"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/prepared_configs.mat",
+      "bytes": 626784,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "7c6f69282dd2e541ff88cc2c15e582968ad6c7901c9e706924baa6cb3012ff38"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_refine_20261002/prepared_configs.mat",
+      "bytes": 626784,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "9531f4b9fe92d48d61e1f81d911440c3145fa769f7172e4df375b8de0982586f"
+    },
+    {
+      "path": "acf_simulink/validation/adc_sinc_screen_20261002/prepared_configs.mat",
+      "bytes": 22495768,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "567908347f6c58d7fc9f36201d9ecf65614d7b9d59608dbc8771943dc205929b"
+    },
+    {
+      "path": "acf_simulink/validation/budget_adc_hot_coil_20261002/prepared_configs.mat",
+      "bytes": 2242592,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "8ef3039c113f1a47979c0c0f1732731e413512df7510011771cbd6a9d41fc97f"
+    },
+    {
+      "path": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/prepared_configs.mat",
+      "bytes": 2243880,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "97c9080e1587494b0ea5931e4763b33fe20b55b579e01739e1ca43d97100caf3"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/prepared_configs.mat",
+      "bytes": 2242592,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "1fbfe05e1ca3d580f5886c1486c91ba92710417a588ed7aeabd3669c87e8b08f"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/prepared_configs.mat",
+      "bytes": 2242928,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "c306732c5757c3e0512faea9d0c54a503bd2dd550008ddf27be1cf4c3aa574a3"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/prepared_configs.mat",
+      "bytes": 2243880,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "c9b6a239d858881ac9b93dff2a351061f58aa1a503b8552ec446be08d0ff0c85"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/prepared_configs.mat",
+      "bytes": 2251832,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "bae0ad6a6f30df0a200e1d767bf6e81b275af9e8e4bc665ab5d1ae797aebffcc"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/prepared_configs.mat",
+      "bytes": 2243880,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "f5498d147bccad41eff577592b62b151f82ac42f9c8c5c7125f0cd62f96d0bac"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/prepared_configs.mat",
+      "bytes": 2242592,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "8d477c2e6748b04a9ee159d1155856263d87c1f7fb14d3c94a77705e203732d0"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/prepared_configs.mat",
+      "bytes": 2243544,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "4e1e24f2b49e97f4af420b1cb55b0b0506dce096fab6904b83dda5aacb0cedf2"
+    },
+    {
+      "path": "acf_simulink/validation/budget_sensors_screen_20261002/prepared_configs.mat",
+      "bytes": 11428352,
+      "variables": [
+        "prepared"
+      ],
+      "format_review": "MATLAB7.3HDF5 root variable names",
+      "sha256": "c259ee5f1e0bffa21ffcd4532f29c1812c2fd2379b0160044fbd0c88d758bd55"
+    }
+  ],
+  "excluded_review_candidates": [
+    {
+      "path": "acf_simulink/validation/rl_native_probe_20261005_bank/failure_contact_replay_input.mat",
+      "reason": "contains-output-variable",
+      "names": [
+        "time",
+        "inputs",
+        "truth",
+        "scenario",
+        "seed",
+        "sourceRecording",
+        "sourceRecordingSha256",
+        "lowerTravelLimit_m"
+      ],
+      "variables": [
+        "time",
+        "inputs",
+        "truth",
+        "scenario",
+        "seed",
+        "sourceRecording",
+        "sourceRecordingSha256",
+        "lowerTravelLimit_m"
+      ],
+      "bytes": 71552
+    },
+    {
+      "path": "acf_simulink/validation/rl_native_probe_20261005_bank/failure_travel_replay_input.mat",
+      "reason": "contains-output-variable",
+      "names": [
+        "time",
+        "inputs",
+        "truth",
+        "scenario",
+        "seed",
+        "sourceRecording",
+        "sourceRecordingSha256",
+        "lowerTravelLimit_m"
+      ],
+      "variables": [
+        "time",
+        "inputs",
+        "truth",
+        "scenario",
+        "seed",
+        "sourceRecording",
+        "sourceRecordingSha256",
+        "lowerTravelLimit_m"
+      ],
+      "bytes": 10792
+    }
+  ]
+}

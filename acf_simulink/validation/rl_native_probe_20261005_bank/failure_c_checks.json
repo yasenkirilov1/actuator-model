@@ -1,0 +1,28 @@
+[
+  {
+    "fixture": "contact",
+    "lowerTravelLimit_m": null,
+    "endTime_s": 0.0009466666666666666,
+    "samples": 285,
+    "contactLoss": true,
+    "travelStop": false,
+    "terminated": true,
+    "lastTrueNormal_N": 0.0,
+    "lastTravel_m": 0.010972550184185241,
+    "nativeParametersModified": []
+  },
+  {
+    "fixture": "travel",
+    "lowerTravelLimit_m": 0.010999900000000002,
+    "endTime_s": 0.00013,
+    "samples": 40,
+    "contactLoss": false,
+    "travelStop": true,
+    "terminated": true,
+    "lastTrueNormal_N": 4.853725632910465,
+    "lastTravel_m": 0.010999893537546466,
+    "nativeParametersModified": [
+      "Minimumtravel_Value"
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "scope": "repeat measurement adapter acceptance; training scenarios only",
+  "source_sha256": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+  "fixtures": {
+    "status": "passed",
+    "inner_call_contexts": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3
+      ]
+    ],
+    "sample_counts": [
+      37,
+      63,
+      30,
+      120
+    ],
+    "repeat1_exact_delegation": true,
+    "uneven_sample_weighting": true,
+    "terminal_contact_travel_nonfinite_or": true,
+    "cumulative_counters_not_summed": true
+  },
+  "native": {
+    "status": "passed",
+    "scenario": 0,
+    "identity": "train_01",
+    "seed": 813001,
+    "split": "train",
+    "blocks": 12,
+    "repeat": 10,
+    "native_record_samples": 3601,
+    "native_record_bit_identical": true,
+    "errors": {
+      "obs": 0.0,
+      "truth": 0.0,
+      "comparator": 0.0,
+      "metrics": 1.734723475976807e-18
+    },
+    "real_failure": {
+      "terminated": true,
+      "contact_loss": true,
+      "travel_stop": false,
+      "repeat_requested": 20,
+      "inner_intervals": 10,
+      "later_intervals_skipped": 10,
+      "native_samples": 285,
+      "record_samples": 285
+    }
+  },
+  "files": {
+    "direct_held_native.npz": "b67e923a49a050196c25797d6dd2d4b8b5b5e8257677ced0f159abd588ecb4b7",
+    "repeat10_native.npz": "b67e923a49a050196c25797d6dd2d4b8b5b5e8257677ced0f159abd588ecb4b7",
+    "direct_failure_native.npz": "8b9b81fd30773a8e9e66a86be109e2e5ae03d2480d6709d8bbaf7f247894c732",
+    "repeat20_failure_native.npz": "8b9b81fd30773a8e9e66a86be109e2e5ae03d2480d6709d8bbaf7f247894c732"
+  }
+}

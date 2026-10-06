@@ -1,0 +1,21 @@
+{
+  "status": "dom_checks_complete",
+  "result": {
+    "brokenImages": 0,
+    "checkpointPresent": true,
+    "componentCount": 9,
+    "documentOverflow": false,
+    "hasBudget": true,
+    "hasFinalRefinement": true,
+    "hasUpdating": false,
+    "images": 42,
+    "tableCount": 15,
+    "title": "Active contact flange: control and prototype design",
+    "url": "http://localhost:8772/?study=rl3h&final=complete&view=1"
+  },
+  "limitations": [
+    "Native preview screenshot and focused click tools failed on the attached client.",
+    "Source menu and sidebar opened through DOM events, but source data remained loading; full sidebar behavior is unverified.",
+    "SVG figure PNG renders were visually reviewed separately."
+  ]
+}

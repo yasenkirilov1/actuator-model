@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "plotScriptSha256": "7b2d12a464c3ddcea5aa2c7d0aadbb5b01f6f16eafd86670e719873a4e59f869",
+  "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "caseIdentity": "qualification_long_02",
+  "scenario": 1,
+  "seed": 980002,
+  "cohortRecordings": 8,
+  "cohortNativeSamples": 68739290,
+  "plottedRecordings": 2,
+  "plottedNativeSamples": 14739284,
+  "metrics": {
+    "baseline": {
+      "nativeSamples": 9000001,
+      "peakNormalForceError_N": 0.4893305085823769,
+      "maxAbsTravelError_m": 0.009028433822488278,
+      "forceOutsideSamples": 0,
+      "travelOutsideBandSamples": 7846291,
+      "contactLoss": false,
+      "travelStop": false,
+      "rmsNormalForceError_N": 0.07947324834057908,
+      "endTime_s": 30.0,
+      "travelWithinBandFraction": 0.1281899857566683
+    },
+    "selected": {
+      "nativeSamples": 5739283,
+      "peakNormalForceError_N": 0.48966640645971893,
+      "maxAbsTravelError_m": 0.012500007422544885,
+      "forceOutsideSamples": 0,
+      "travelOutsideBandSamples": 4879445,
+      "contactLoss": false,
+      "travelStop": true,
+      "rmsNormalForceError_N": 0.07751317578407213,
+      "endTime_s": 19.13094,
+      "travelWithinBandFraction": 0.14981627495978156
+    }
+  },
+  "sourceHashes": {
+    "acf_simulink/validation/rl_budget3h_20261005/final_long4/results.json": "362a4840786b8f99968281d61a062c185e6f0612a9f97f7340f3f1e9eed3aa55",
+    "acf_simulink/validation/rl_budget3h_20261005/final_long4/input_lock.json": "a7d15ffd650480d0431ee476c18073e71289d8c3ad3235ed70d1673e5e1cc33f",
+    "acf_simulink/validation/rl_budget3h_20261005/final_long4/frozen_inputs/consumed_scenarios.json": "577ef83461a975deac489806b181034c52f3f04cdefdb48b13e050f3ecef9ab7",
+    "acf_simulink/validation/rl_budget3h_20261005/final_long4/retained_replays/baseline/case_001/native.npz": "4d13dd25d75dea39858ca8a816df81dc1c0953e41fe43c22bbfe8c8cd203e24b",
+    "acf_simulink/validation/rl_budget3h_20261005/final_long4/retained_replays/selected/case_001/native.npz": "e757dfdf0db3f4fa449e671438ff6c9824ce820f208cff2b8d058e6933a521ea"
+  },
+  "files": {
+    "rl_3h_long_stop.svg": "739b5b9fc53fbdde44455b1b44bd531c347e89b61a4301b355c40e20203d8e1c",
+    "rl_3h_long_stop.png": "32e29dea0648de25b83c53306878ac3f940cb16608d2634ab8865776b8603bcf"
+  },
+  "display": "At most1800 min/max bins per history; full-native metrics recomputed independently.",
+  "failureSemantics": "Physical travel stop fails the selected run; neither free flight nor subsequent impacts are simulated.",
+  "newPlantEpisodesExecuted": 0
+}

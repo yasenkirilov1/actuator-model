@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-09-30",
+  "owner": "actuators",
+  "evidence_type": "manufacturer_document_review",
+  "native_simulations_executed_for_this_review": 0,
+  "prototype_measurements_executed": 0,
+  "qualification_status": "No reviewed exact force sensor proves the requested assembled accuracy/noise/delay; representative architecture remains conditional.",
+  "task_contract": {
+    "controlled_quantity": "true surface-normal contact force",
+    "force_N": [
+      5,
+      50
+    ],
+    "tool_mass_S_kg": [
+      0.1,
+      2
+    ],
+    "holder_B_kg": 0.6,
+    "orientation_deg": [
+      0,
+      90
+    ],
+    "force_cell_location": "B–S; all S downstream",
+    "position": "S relative to A",
+    "sample_rate_target_Hz": 10000,
+    "force_noise_target_per_axis_N_rms": 0.02,
+    "position_noise_target_m_rms": 0.000001,
+    "proposed_force_calibration_residual_abs_N": [
+      0.05,
+      0.1
+    ],
+    "identified_delay_target_s": 0.0001
+  },
+  "sources": {
+    "ati_mini27": {
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini27+Titanium",
+      "title": "ATI Mini27 Titanium specifications",
+      "version": null,
+      "sections": [
+        "SI-80-4 calibration",
+        "calculated stiffness",
+        "physical specifications"
+      ]
+    },
+    "ati_mini27_current": {
+      "url": "https://ati.novanta.com/product/mini27-titanium-force-torque-sensor/",
+      "title": "Novanta/ATI Mini27 Titanium current product page",
+      "version": null,
+      "sections": [
+        "specifications"
+      ],
+      "note": "Main force ranges and resolution agree with legacy page; lower calibration table conflicts and is excluded."
+    },
+    "ati_mini40": {
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini40",
+      "title": "ATI Mini40 specifications",
+      "version": null
+    },
+    "ati_nano25": {
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Nano25",
+      "title": "ATI Nano25 specifications",
+      "version": null
+    },
+    "ati_nano43": {
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Nano43",
+      "title": "ATI Nano43 specifications",
+      "version": null
+    },
+    "ati_faq": {
+      "url": "https://www.ati-ia.com/zh-CN/library/documents/FT_FAQ.pdf",
+      "title": "ATI force/torque FAQ",
+      "version": "Published March 30, 2020",
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    "ati_interfaces": {
+      "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+      "title": "ATI force/torque system interfaces",
+      "version": null
+    },
+    "ati_twe": {
+      "url": "https://www.ati-ia.com/app_content/documents/9620-05-TWE.pdf",
+      "title": "ATI TWE manual",
+      "version": "9620-05-TWE-17",
+      "pages": [
+        12,
+        13,
+        14,
+        15,
+        18,
+        22
+      ]
+    },
+    "me_k3d60": {
+      "url": "https://www.me-systeme.de/de/pdf/2521/K3D60a_100N",
+      "title": "ME K3D60a100N datasheet",
+      "version": "2026-09-12",
+      "pages": [
+        1,
+        4,
+        5,
+        6
+      ]
+    },
+    "me_family": {
+      "url": "https://www.me-systeme.de/de/k3d-3-achsen-kraftsensor",
+      "title": "ME three-axis force sensor family",
+      "version": null
+    },
+    "futek": {
+      "url": "https://media.futek.com/content/futek/files/pdf/productdrawings/mta400.pdf",
+      "title": "FUTEK MTA400 datasheet",
+      "version": "FI1468-A",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    "tonic": {
+      "url": "https://www.renishaw.com/media/pdf/en/2a02c0b218ec491084e6cf95f3965146.pdf",
+      "title": "Renishaw TONiC system datasheet",
+      "version": "L-9517-9337-08-A; issued 07.2024",
+      "pages": [
+        1,
+        4,
+        7,
+        8
+      ]
+    },
+    "relm": {
+      "url": "https://www.renishaw.com/media/pdf/en/fa9b5d5f3056478c8031f7c3e8091102.pdf",
+      "title": "Renishaw RELM scale datasheet",
+      "version": "L-9517-9219-08-A; issued 01.2025",
+      "pages": [
+        2,
+        4,
+        8
+      ]
+    },
+    "tonic_install": {
+      "url": "https://www.renishaw.com/media/pdf/en/a15686d384634a2f95b819e44cd7a8e9.pdf",
+      "title": "TONiC RELM/RSLM installation guide",
+      "version": "M-9653-9225-06-A; issued 01.2026",
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    }
+  },
+  "force_candidates": [
+    {
+      "name": "ATI Mini27 Titanium",
+      "calibration": "SI-80-4",
+      "source_keys": [
+        "ati_mini27",
+        "ati_mini27_current"
+      ],
+      "raw_force_range_abs_N": [
+        80,
+        80,
+        160
+      ],
+      "raw_torque_range_abs_Nm": [
+        4,
+        4,
+        2
+      ],
+      "published_effective_force_resolution_N": [
+        0.03,
+        0.03,
+        0.06
+      ],
+      "resolution_conditions": "Typical16-bitDAQ/Net/TWE-class interfaces; four noise counts discarded; not RMS noise.",
+      "manufacturer_calculated_stiffness_N_per_m": [
+        31000000,
+        31000000,
+        64000000
+      ],
+      "unloaded_resonance_Hz": [
+        4900,
+        5000
+      ],
+      "dimensions_mm": {
+        "diameter": 27,
+        "height": 18.2
+      },
+      "mass_kg": 0.0334,
+      "factory_accuracy_percent_FS_interval": [
+        0.75,
+        1.25
+      ],
+      "factory_accuracy_abs_axis_interval_N": [
+        [
+          0.6,
+          1
+        ],
+        [
+          0.6,
+          1
+        ],
+        [
+          1.2,
+          2
+        ]
+      ],
+      "accuracy_note": "Axis-specific certificate required. This is not a corrected residual. Current site gives IP20 and inconsistent lower calibration table; do not use conflicting table.",
+      "stiffness_only_attached_2kg_resonance_Hz": [
+        626.5936375467428,
+        626.5936375467428,
+        900.3163161571061
+      ],
+      "status": "Representative compact high-stiffness candidate; calibration/noise/phase not qualified."
+    },
+    {
+      "name": "ATI Mini40",
+      "calibration": "SI-80-4",
+      "source_keys": [
+        "ati_mini40"
+      ],
+      "raw_force_range_abs_N": [
+        80,
+        80,
+        240
+      ],
+      "raw_torque_range_abs_Nm": [
+        4,
+        4,
+        4
+      ],
+      "published_effective_force_resolution_N": [
+        0.02,
+        0.02,
+        0.04
+      ],
+      "manufacturer_calculated_stiffness_N_per_m": [
+        11000000,
+        11000000,
+        20000000
+      ],
+      "dimensions_mm": {
+        "diameter": 40,
+        "height": 12.2
+      },
+      "mass_kg": 0.0499,
+      "factory_accuracy_percent_FS": null,
+      "accuracy_note": "Legacy page asks user to obtain axis/calibration-specific accuracy; no .05N residual proven.",
+      "stiffness_only_attached_2kg_resonance_Hz": [
+        373.2514266660135,
+        373.2514266660135,
+        503.2921210448704
+      ],
+      "status": "Alternative finer effective resolution, lower stiffness. SI-40-2 transverse40N insufficient for provisional high-load bound."
+    },
+    {
+      "name": "ATI Nano25",
+      "calibration": "SI-125-3",
+      "source_keys": [
+        "ati_nano25"
+      ],
+      "raw_force_range_abs_N": [
+        125,
+        125,
+        500
+      ],
+      "raw_torque_range_abs_Nm": [
+        3,
+        3,
+        3
+      ],
+      "published_effective_force_resolution_N": [
+        0.020833333333333332,
+        0.020833333333333332,
+        0.0625
+      ],
+      "manufacturer_calculated_stiffness_N_per_m": [
+        53000000,
+        53000000,
+        110000000
+      ],
+      "dimensions_mm": {
+        "diameter": 25,
+        "height": 21.6
+      },
+      "mass_kg": 0.0634,
+      "factory_accuracy_percent_FS": null,
+      "stiffness_only_attached_2kg_resonance_Hz": [
+        819.3002145919943,
+        819.3002145919943,
+        1180.3246481719107
+      ],
+      "status": "More transverse headroom and high stiffness; broad axial range; calibrated residual not proven."
+    },
+    {
+      "name": "ATI Nano43",
+      "calibration": "SI-36-0.5",
+      "source_keys": [
+        "ati_nano43"
+      ],
+      "raw_force_range_abs_N": [
+        36,
+        36,
+        36
+      ],
+      "status": "Rejected for high-force raw loads. No Nano43 SI70 manufacturer calibration found."
+    },
+    {
+      "name": "ME K3D60a100N",
+      "calibration": "compensation matrix s",
+      "source_keys": [
+        "me_k3d60"
+      ],
+      "raw_force_range_abs_N": [
+        100,
+        100,
+        100
+      ],
+      "dimensions_mm": {
+        "length": 60,
+        "width": 60,
+        "height": 25
+      },
+      "nominal_deflection_m": 0.0001,
+      "sensitivity_mV_per_V_per_FS": 0.5,
+      "linearity_percent_FS": 0.2,
+      "linearity_abs_N": 0.2,
+      "crosstalk_after_matrix_percent_FS_upper_bound": 1,
+      "crosstalk_after_matrix_abs_N_upper_bound": 1,
+      "thermal_zero_percent_FS_per_K": 0.02,
+      "thermal_zero_N_per_K": 0.02,
+      "thermal_span_percent_reading_per_K": 0.02,
+      "force_noise_at_10kHz_N_rms": null,
+      "inferred_nominal_stiffness_N_per_m": 1000000,
+      "inferred_stiffness_caveat": "Load/nominal deflection estimate; deflection entry does not specify all directional stiffnesses.",
+      "stiffness_only_attached_2kg_resonance_Hz": 112.53953951963827,
+      "calculated_signal_V_per_N_at_5V": 0.000025,
+      "input_equivalent_noise_target_V_rms_for_0p02N": 5e-7,
+      "status": "Range feasible, catalog linearity/crosstalk above residual target; much lower inferred stiffness.",
+      "legacy_caveat": "Current K3D40 family2–50N, despite older catalogs listing100N."
+    },
+    {
+      "name": "FUTEK MTA400",
+      "source_keys": [
+        "futek"
+      ],
+      "raw_force_range_abs_N": [
+        1112.055403815125,
+        1112.055403815125,
+        2224.11080763025
+      ],
+      "mass_kg": 0.907,
+      "linearity_percent_RO": 0.25,
+      "hysteresis_percent_RO": 0.25,
+      "crosstalk_percent_RO_upper_bound": 3,
+      "linearity_abs_axis_N": [
+        2.7801385095378124,
+        2.7801385095378124,
+        5.560277019075625
+      ],
+      "status": "Rejected as mass/range/accuracy reference for this task."
+    }
+  ],
+  "loaded_frequency_estimate_contract": {
+    "formula": "sqrt(k/S)/(2*pi)",
+    "S_kg": 2,
+    "inference": true,
+    "is_measured_bandwidth": false,
+    "excluded": "effective sensor mass, distributed tool flexure, rotations, damping, coupled modes",
+    "consequence": "Include finite sensor/assembly compliance or prove negligible over closed-loop bandwidth; unloaded resonance alone insufficient."
+  },
+  "provisional_raw_load_budget": {
+    "source": "Root integrator's current campaign estimates, not independently simulated in this review.",
+    "S_kg": 2,
+    "maximum_gravity_component_N": 19.62,
+    "transverse_example_N_by_sanding_friction_mu": {
+      "0.3": 50,
+      "0.6": 64
+    },
+    "use": "Choose raw range before tare; check all forces/moments and manufacturer's complex-loading graph."
+  },
+  "acquisition": {
+    "source_keys": [
+      "ati_interfaces",
+      "ati_twe"
+    ],
+    "force_gauge_analog_channels": 6,
+    "accelerometer_analog_axes": 3,
+    "total_analog_channels_minimum": 9,
+    "proposed_architecture": "Two simultaneous ADCs with common clock/trigger plus latched encoder hardware counter; characterize skew and phase.",
+    "daq_conditioning_filter": {
+      "order": 2,
+      "corner_Hz": 5100,
+      "shape_not_verified": true
+    },
+    "daq_analog_latency": "few microseconds; ADC/filter/host delivery separately identified",
+    "twe_anti_alias_filter": "customer designed",
+    "legacy_net_RDT": {
+      "maximum_output_Hz": 7000,
+      "latency_s": 0.000288,
+      "user_network_delay_included": false
+    },
+    "legacy_EtherCAT": {
+      "maximum_output_Hz": 1000,
+      "latency_upper_s": 0.001
+    },
+    "noise_and_calibration_status": "Unqualified; actual gauge gains/excitation/calibration matrix/ADC noise required. Hardware sample epoch differs from packet delivery."
+  },
+  "position_candidate": {
+    "name": "Renishaw TONiC T101x + RELM20 +0.1um digital Ti interface",
+    "source_keys": [
+      "tonic",
+      "relm",
+      "tonic_install"
+    ],
+    "mode": "incremental optical encoder; reference/homing required",
+    "travel_target_mm": 25,
+    "suggested_scale_length_mm_without_limits": 40,
+    "available_measuring_length_without_limits_mm": 30,
+    "suggested_scale_length_mm_with10mm_limit_magnets": 50,
+    "available_measuring_length_with_limits_mm": 25,
+    "scale_accuracy_abs_m_at20C_up_to1m": 0.000001,
+    "published_best_jitter_m_rms": 5e-10,
+    "published_typical_subdivision_error_abs_m": 3e-8,
+    "proposed_digital_increment_m": 1e-7,
+    "uniform_quantization_noise_m_rms": 2.886751345948129e-8,
+    "readhead_mass_kg": 0.01,
+    "readhead_dimensions_mm": [
+      35,
+      13.5,
+      10
+    ],
+    "readhead_IP": "IP40",
+    "Ti_TD_interface_IP": "IP20",
+    "external_field_reference_limit_warning_threshold_T": 0.006,
+    "verified_measurement_to_controller_delay_s": null,
+    "status": "Plausible noise/stroke reference; assembled mounting, dust protection, magnetic limit/reference caveat, lost counts and latency must be qualified."
+  },
+  "acceptance_tests": [
+    "Measure raw vector forces and moments with S2kg, orientations0–90, sharp bump and sanding drag before hardware tare; verify calibration and complex-loading limits.",
+    "Assembled combined-force/moment loading and unloading calibration at temperatures from cold start through continuous-coil heat; retain independent check loads.",
+    "Test residual bias/gain/crosstalk in native qualification separately from sample RMS noise; proposed .05–.1N residual not a manufacturer guarantee.",
+    "Measure force/accelerometer/position transfer functions, mechanical modes, sample skew, filter group delay and computation delay with mounted tool.",
+    "Measure reconstructed force-axis RMS noise at actual bandwidth with motor PWM, cables and tool vibration active; verify no ADC saturation.",
+    "S–A position calibration across25mm, orientation and temperature, with motor active; measure bracket strain and B–S compliance, handle homing/encoder alarm/lost counts.",
+    "Validate true normal force using independent workpiece reference load cell; manufacturer resolution alone cannot qualify ±.5N."
+  ],
+  "recommendation": "Prototype Mini27 Titanium SI80-4 class six-axis analog force acquisition with synchronized S acceleration and protected TONiC/RELM S–A encoder; conditional on measured raw loading, residual calibration and assembled dynamics."
+}

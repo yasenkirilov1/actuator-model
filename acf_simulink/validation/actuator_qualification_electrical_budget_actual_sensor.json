@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-30",
+  "scope": "Actual B/S force cell with1.4kg distal tool, exact gravity tare, measured S-A position. Frozen both-rigid controller. This is20ms robot-force-gate reference, not parent later100ms gate runtime.",
+  "campaigns": [
+    {
+      "source": "acf_simulink/validation/actuator_qualification_actual_sensor_winding.json",
+      "nativeCases": 320,
+      "status": "complete"
+    },
+    {
+      "source": "acf_simulink/validation/actuator_qualification_actual_sensor_calibration.json",
+      "nativeCases": 48,
+      "status": "complete"
+    }
+  ],
+  "sourceSnapshotManifestFiles": [
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/actuators/actual_sensor_worker/source_snapshot.json",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/actuators/actual_sensor_calibration_worker/source_snapshot.json"
+  ],
+  "conditionalActuatorStartingTarget": {
+    "forceConstant_N_A": 20,
+    "coldResistance_ohm": 4,
+    "inductance_mH": 3,
+    "bidirectionalCurrentLimit_A": 3.5,
+    "busVoltage_V": 24,
+    "identifiedCurrentResponse_us": 100,
+    "equivalentFirstOrderBandwidth_Hz": 1591.5494309189535,
+    "continuousForceAtWorstCorner_N": 50,
+    "nominalHoldCurrent_A": 2.5,
+    "nominalHoldCopperLoss_W": 25,
+    "nominalPeakCurrent_A": 2.7526585744168464,
+    "nominalPeakVoltage_V": 11.825937192838879
+  },
+  "identifiedJointHardwareProof": {
+    "forceConstant_N_A": 18,
+    "resistance_ohm": 5.2,
+    "inductance_mH": 3.9,
+    "identifiedCurrentResponse_us": 125,
+    "fullCornersSeedsCases": 16,
+    "allPassed": true,
+    "worstTrueForceError_N": 0.44764356051454257,
+    "worstMargin_N": 0.05235643948545743,
+    "currentReserve_A": 0.44235891357793644,
+    "voltageReserve_V": 7.225995014350971,
+    "peakCurrent_A": 3.0576410864220636,
+    "peakVoltage_V": 16.77400498564903,
+    "holdCurrentAt50N90_A": 2.7777777777777777,
+    "holdCopperLossAt50N90_W": 40.123456790123456,
+    "equivalentFirstOrderBandwidth_Hz": 1273.2395447351626
+  },
+  "calibrationConclusion": "Every tested unknown Kf plus/minus0.1/0.5 percent case failed at50N90,four seeds. No acceptable Kf identification band established. Unknown tau plus/minus1/5 percent passed at highforcecorner only. Larger Kf-10/tau+25 mismatch and joint winding fail full-corner tests. Characterized hardware capacity is separate from estimator robustness and physical prototype qualification.",
+  "currentDriver": "Inner drive requires accurateDC current regulation. Native modeled P loop has actualR/backEMF feedforward cancellation and unityDCgain; no integral current regulation/PWM/ADC/crossovers/thermal modeled. UnknownR feedforward error deliberately failed earlier direct-force reference; do not copy nativeP-onlydrive blindly into hardware.",
+  "measurementAssumptions": {
+    "forceNoiseRms_N": 0.02,
+    "positionNoiseRms_um": 1,
+    "sensorDelay_us": 100,
+    "forceFilterTimeConstant_us": 100,
+    "controllerSampleRate_Hz": 10000,
+    "actualCurrentReadbackIntoOuterController": false,
+    "distalMassExactKnown_kg": 1.4,
+    "forceSensorBias_N": 0
+  },
+  "limitations": "Coilforcecapacity/tolerance sweeps use independently modifiedKf/R/L,notreal winding catalogue. No thermaltransient orKf variationwithstroke/temperature. Force measurement calibration androbotmodel errors arequalifiedseparately. Gatechanges andcontinuousfull-range combinationsnotprovenbythese368cases."
+}

@@ -1,0 +1,45 @@
+{
+  "time": 1790767108.411708,
+  "rows": [
+    {
+      "pid": 2960348,
+      "io": "rchar: 6921513346\nwchar: 6892005462\nsyscr: 1726183\nsyscw: 919693\nread_bytes: 3261259776\nwrite_bytes: 36864\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -desktop "
+    },
+    {
+      "pid": 2960581,
+      "io": "rchar: 3647191814\nwchar: 6716982604\nsyscr: 19155473\nsyscw: 2059645\nread_bytes: 37713518592\nwrite_bytes: 6668288\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -mpasessionid=a4fb253e-8e1c-4752-9dac-d328bb3d9026 -catapultTransport -LaunchConnectPolicy serverStarts"
+    },
+    {
+      "pid": 3397083,
+      "io": "rchar: 41913032721\nwchar: 23290927271\nsyscr: 10245121\nsyscw: 5328917\nread_bytes: 25445281792\nwrite_bytes: 23842766848\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -batch run('/home/tommie/.local/state/actuator-model/final-grid-part2-20260930"
+    },
+    {
+      "pid": 3397486,
+      "io": "rchar: 44147463433\nwchar: 23993569625\nsyscr: 10790195\nsyscw: 5570744\nread_bytes: 26951954432\nwrite_bytes: 24671850496\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -batch run('/home/tommie/Projects/actuator-model/acf_simulink/validation/final"
+    },
+    {
+      "pid": 3398262,
+      "io": "rchar: 36690002361\nwchar: 21021735942\nsyscr: 8969004\nsyscw: 4707126\nread_bytes: 23581683712\nwrite_bytes: 21582282752\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -batch addpath('/home/tommie/Projects/actuator-model/acf_simulink/experiments'"
+    },
+    {
+      "pid": 3398641,
+      "io": "rchar: 36033432257\nwchar: 20406952620\nsyscr: 8808312\nsyscw: 4587599\nread_bytes: 22767960064\nwrite_bytes: 20901801984\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -logfile /tmp/final-grid-part3-r1-20260930.log -batch addpath('acf_simulink/ex"
+    },
+    {
+      "pid": 3402053,
+      "io": "rchar: 26015028\nwchar: 799696\nsyscr: 8326\nsyscw: 3115\nread_bytes: 2496733184\nwrite_bytes: 872448\ncancelled_write_bytes: 0\n",
+      "description": "/home/tommie/.local/opt/MATLAB/R2026b/bin/glnxa64/MATLAB -licmode onlinelicensing -batch run('/tmp/acf_normal_worker.m') "
+    },
+    {
+      "pid": 3403202,
+      "io": "rchar: 31932\nwchar: 1\nsyscr: 32\nsyscw: 1\nread_bytes: 18665472\nwrite_bytes: 0\ncancelled_write_bytes: 0\n",
+      "description": "/usr/bin/bash -c python - <<'PY'\nfrom pathlib import Path\nimport json,time\nrows=[]\nfor p in Path('/proc').iterdir():\n if p.name.isdigit():\n  try:\n   c=(p/'cmdli"
+    }
+  ]
+}

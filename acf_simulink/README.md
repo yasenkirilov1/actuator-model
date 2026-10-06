@@ -1,160 +1,65 @@
-# Active Contact Flange — Simulink model package
+# Active contact flange — native Simulink model
 
-Unzip this folder, make it your **MATLAB Current Folder**, then run:
+The physical model is [acf_force_control_simple.slx](generated/acf_force_control_simple.slx). Its mechanics, sensors, controllers and robot response execute native Simulink blocks. Editable parameters `p` and named presets are saved in the **Model Workspace**. MATLAB helpers open the diagram, prepare coefficients, run it and inspect results. There is no separate MATLAB plant integrator.
 
-```matlab
-acf_start
-```
+Start with [GETTING_STARTED.md](GETTING_STARTED.md). The comprehensive [design report](../reports/active-contact-flange-report.md) explains the design choices, experiments, component targets and prototype limitations. [MODEL_NOTES.md](MODEL_NOTES.md) describes the equations; [REPRODUCING_RESULTS.md](REPRODUCING_RESULTS.md) describes the retained studies. MATLAB and Simulink R2026b were used; Simscape and Stateflow are unnecessary.
 
-This builds and opens `generated/acf_force_control.slx`, runs the leadscrew
-bump example, and plots the results. Existing models are preserved by giving
-new builds a numeric suffix. Keep the `.m` files available on the MATLAB path
-when reopening the generated model. `acf_start` adds this folder automatically.
-
-**Needs MATLAB and Simulink.** Simscape, Stateflow and a C compiler are not
-needed. Use normal simulation mode; this is a design simulation, not deployable
-real-time controller code.
-
-The package contains the model builder and its source files. **No precompiled
-SLX is included because MATLAB/Simulink was unavailable during authoring.**
-MATLAB source was checked with MISS_HIT. Equations and numerical behaviour were
-checked in an independent Python implementation; see `VALIDATION.md`. The
-builder compiles the diagram in your Simulink before saving it.
-
-## What is included
-
-- Fast sampled force PI, with output limits and anti-windup.
-- Leadscrew, voice-coil and ideal-position actuator options.
-- The R–A–B–S mechanism: upper and lower springs/dampers, separate moving
-  masses, gravity and preload, with equal/opposite actuator reactions.
-- **Rigid contact between S and the workpiece. No contact spring or damper.**
-- A slower mid-stroke recentering loop requesting robot motion.
-- Robot command delay, finite velocity response, speed and acceleration limits.
-- Force sampling, filtering, delay, bias and repeatable noise.
-- Smooth bumps, sharp finite-width bumps, ramps, repeated bumps, and robot
-  positioning disturbances.
-- True-force tolerance checks, motion/effort logs, plots and parameter sweeps.
-
-The actuator and mechanics are integrated together inside one subsystem. This
-preserves their load coupling. Their equations are in ordinary, editable
-MATLAB files rather than an unexplained transfer function.
-
-## Change a scenario or actuator
+From the project folder in MATLAB:
 
 ```matlab
-[r, mdl, p] = acf_start('leadscrew', 'bump');
-
-% Reuse this model with different parameters:
-p.surface.width = 0.01;      % 10 mm along the scan direction
-p.surface.height = 0.001;    % 1 mm high
-p.surface.scanSpeed = 0.1;   % 100 mm/s scanning speed
-p.robot.delay = 0.15;        % 150 ms robot command delay
-r = acf_run(mdl, p);
-
-% Swap the actuator and use its corresponding controller tuning:
-p = acf_parameters('voice_coil', 'sharp_bump');
-r = acf_run(mdl, p);
+addpath('acf_simulink')
+mdl = acf_open;
+p = acf_parameters('voice_coil','sharp_bump','recommended');
+p.sim.stopTime = 4;
+r = acf_run(mdl,p);
+acf_visualize(r)
 ```
 
-Actuators: `leadscrew`, `voice_coil`, `ideal_position`.
+The root **Actuator selection** dropdown chooses voice coil, leadscrew or the ideal-position reference. **Force controller selection** chooses **Feedforward PI**, **PI** or **PID**. The green Run button uses the Model Workspace. Calling `acf_run(mdl,p)` applies the supplied parameter copy, runs the same blocks and returns plots and pass/fail metrics.
 
-Scenarios: `flat`, `bump`, `sharp_bump`, `ramp`, `repeated`, `robot_error`.
+## Design target
 
-Use `acf_parameters(kind,scenario)` when selecting a named preset: it sets both
-the shape and its example dimensions. All masses, stiffnesses, motor constants,
-limits and controller gains in this file are **illustrative assumptions**.
+Regulate the **normal pressing force experienced by the workpiece** to within **±0.5 N throughout the recording**. The sharp test is **1 mm high × 10 mm wide at 100 mm/s**, with force targets **5–50 N**, fixed orientations **0–90°** and tool mass **S = 0.1–2 kg**. Holder B is provisionally 0.6 kg, so B+S spans 0.7–2.6 kg. A is additional robot-side structure.
 
-## Most useful parameters
+The B–S multi-axis cell has all of S beyond it. A matched, synchronized accelerometer on S removes dynamic tool inertia from the cell reading. Position measures S relative to A. A two-state motion observer and a causal prediction from robot commands already issued estimate the local surface normal. No bump preview enters the controller.
 
-| Parameter | Meaning |
+## Selected design
+
+| Item | Selected value |
 |---|---|
-| `force.reference`, `force.tolerance` | Desired contact force and allowed error, N |
-| `force.sampleTime` | Force-controller period, s |
-| `surface.height`, `surface.width`, `surface.scanSpeed` | Bump/ramp geometry and scanning speed |
-| `robot.initialExcessForce` | Extra static force if the flange were locked at mid-stroke, N |
-| `robot.delay`, `robot.maxAcceleration`, `robot.maxSpeed` | Coarse robot response limits |
-| `robot.recenterGain`, `robot.deadband` | How strongly the flange asks to recenter |
-| `mechanics.travelMin`, `travelMax`, `midTravel` | Travel limits and preferred location, m |
-| `mechanics.mA`, `mB`, `mS`, `k1`, `k2`, `c1`, `c2` | Masses and elastic links |
-| `screw.lead`, `rotorInertia`, `peakCurrent`, `voltage` | Leadscrew transmission and motor constraints |
-| `coil.forceConstant`, `peakCurrent`, `voltage` | Coil force and drive constraints |
-| `ideal.maxAcceleration`, `ideal.maxAxialForce` | Generic sizing limits for the ideal-position variant |
-| `sensor.bias`, `noiseRms`, `delay`, `filterTime` | Measurement imperfections |
-| `sim.step` | Numerical integration step, not the controller period |
+| R–A attachment | Rigid |
+| B–S compliant link | Opposed guided spring pair, net 19,746 N/m |
+| Each spring | Approximately 9.873 N/mm, 20 mm free length |
+| Common preload | 33.6 N per spring |
+| Parallel damper | 60 N·s/m |
+| Conservative combined free length | 40.98 mm including ±0.49 mm per spring |
+| Force controller | Feedforward PI; P = 0.3 A/N, I = 20 A/(N·s), D = 0 |
+| Feedback filter / lower-link inverse roll-off | 1 kHz / 1.5 kHz |
+| Current-response target | 100 µs |
+| Raw acquisition / control / robot command rates | 100 kHz / 10 kHz / 100 Hz |
+| Analog response envelope / raw-clock EMA | Matched two-pole 5.1 kHz / 50 µs |
+| Common pipeline provision | 20 µs |
+| Conditioned force / acceleration / position noise | 0.02 N per axis / 0.014 m/s² / 1 µm RMS |
 
-Default controller/sensor sampling is 1 kHz, robot commands 100 Hz, and
-integration 5 kHz. To investigate 100 Hz force control, set
-`p.force.sampleTime = 0.01`; change the sensor period too if appropriate.
-Controller update rate and closed-loop bandwidth are different quantities.
-Periods must be integer multiples of `sim.step`, and delays integer multiples
-of their respective sampling periods. Halve `sim.step` to check convergence
-before treating a near-boundary result as a pass.
+The compliant-link inverse is a proper causal filter made from native blocks; it compensates the holder/tool acceleration difference. The slow robot loop requires stable force, low force variation and a 100 ms dwell before sending new recentering commands. It also caps gain for the identified robot delay. Commands already queued still act after the gate closes.
 
-## Find required capability
+The generic qualification drive is 20 N/A, 4 Ω, 3 mH, bipolar 3.5 A/24 V with 25 mm travel. For a realistic 24.4 N/A, 6.4 Ω, 4 mH coil, the report recommends a **36 V supply with at least 32 V usable bipolar output**, subject to hot winding, driver and continuous-force checks. Higher voltage alone does not improve an unclipped response. Catalog data and simulation passes do not establish prototype accuracy; inspect the report's calibration and mounting requirements before building.
 
-Start with a chosen scenario envelope and controller tuning. Then sweep limits.
-For a generic force/acceleration budget:
+## Recorded results and delivery
 
-```matlab
-cases = {acf_parameters('ideal_position','bump'), ...
-         acf_parameters('ideal_position','ramp')};
-[T, detail] = acf_sweep(cases, ...
-    'ideal.maxAxialForce', [13 15 20 30], ...
-    'ideal.maxAcceleration', [0.05 0.1 0.5 2]);
-T(T.allPassed,:)
-writetable(T, 'capability_sweep.csv');
-```
+All **3,500 nominal sharp-bump cases passed**, covering the declared force, orientation, mass, drag and five clean/noisy conditions. The worst native error is **0.315811 N**. Four paired 30 s repeats with the selected tighter static calibration also pass, worst **0.415311 N**; three calibrated mechanical stress cases pass at **0.376938 N** worst. These are finite simulated cohorts. The tighter targets require assembled warm calibration and measured spring/damper identification; they are not catalog guarantees.
 
-For an actual leadscrew model:
+Open the [offline HTML report](../reports/active-contact-flange-report.html) for graphs, source inspection and the full searchable nominal grid. The [actual worst 2D replay](generated/active_contact_flange_inertial_worst_20260930.html) seeks its exact native peak. The [13-page native diagram](generated/active_flange_native_model_pages_20260930.pdf) makes the saved blocks inspectable without MATLAB. The [dated delivery ZIP](generated/active_contact_flange_inertial_20260930.zip) includes the model, guides, reports, selected native traces and reproducible frozen inputs; its manifest identifies the retained scope.
 
-```matlab
-cases = {acf_parameters('leadscrew','bump'), ...
-         acf_parameters('leadscrew','sharp_bump')};
-[T, detail] = acf_sweep(cases, ...
-    'screw.peakCurrent', [0.3 0.5 1 2 3], ...
-    'robot.delay', [0 0.08 0.2]);
-```
+## Saved alternatives
 
-`allPassed` means every supplied case passed. It identifies **tested passing
-configurations**, not a universal minimum. Gains remain fixed during a sweep;
-a force error can come from controller lag even when the actuator has ample
-force. Look at saturation fractions and motion traces before buying a larger
-actuator. Faster gains also need stability checks.
+| Preset | Purpose |
+|---|---|
+| `recommended` | Selected lower pair/damper, upper rigid, measured-inertia feedforward PI |
+| `no_springs` | Rigid mechanical couplers with finite B–S cell stiffness; no external damping |
+| `compliant` | Explicit alternative with both compliant attachments |
+| `near_contact_reference` | Historical mechanical comparison preset; inspect its parameters before use |
 
-For the ideal variant, acceleration limits shape the requested motion; force
-limits then determine whether that acceleration is physically achievable.
-An external load can drive actual acceleration beyond the requested limit if
-the actuator cannot oppose it. The default ideal force budget is unlimited.
+Only the selected configuration has the final qualification scope described in the report. Presets are experiments, not equivalent guarantees. Selecting a leadscrew preserves the chosen mechanics; it uses its own motor current controller and reflected-inertia feedforward. The small reference motor can pass short dynamic tests while failing continuous thermal sizing.
 
-## Results and verification
-
-`r.time`, `r.data`, `r.names` contain all logged signals; `r.metrics` contains
-peak/RMS force error, travel, speed, acceleration, axial force, current and
-motor torque, plus saturation and contact flags. `acf_signals.m` defines units.
-The initial state is a loaded equilibrium, so evaluation starts at time zero.
-`finalRecoveryTime_s` is an absolute simulation time;
-`recoveryAfterDisturbance_s` measures recovery after the last surface event
-ends. `NaN` means recovery was not observed or the event had not finished.
-
-```matlab
-r.metrics
-signals = array2table([r.time,r.data], ...
-    'VariableNames',[{'time_s'},r.names]);
-writetable(signals,'acf_signals.csv');
-acf_selftest(mdl,p)   % physics checks and a short Simulink/reference comparison
-```
-
-Loss of contact, an impact, a stroke stop, or overcurrent fails the run even if
-the sampled finite force otherwise looks acceptable. Ideal rigid impacts have
-an impulse, not a finite force peak: `peakForceIncludingImpacts_N` is `Inf` if
-one occurs. The model therefore cannot certify an impact force waveform to
-±0.5 N without adding real tool/workpiece compliance in a later model.
-
-RMS current/torque are thermal-sizing inputs, not continuous ratings. No motor
-thermal model, backlash, screw self-locking, robot structural modes, or raw
-load-cell placement model is included. The sensor block represents an already
-compensated contact-force estimate with residual error. See `MODEL_NOTES.md`
-for the exact mechanics and numerical assumptions.
-
-You can also run `acf_reference(p)` in MATLAB without Simulink; it calls the
-same component functions and returns the same result structure.
+The [slow-bump experiment](acf_experiment.m) uses a voice coil and **B+S = 2 kg** (S = 1.4 kg with the 0.6 kg holder), a 1 mm × 60 mm bump at 20 mm/s and 20 N. Save the SLX to keep workspace parameters and blocks together. Preserve any unsaved desktop edits before closing an older already-loaded model.

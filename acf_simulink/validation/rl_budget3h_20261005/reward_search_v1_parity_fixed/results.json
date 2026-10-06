@@ -1,0 +1,29 @@
+{
+  "cases": 2,
+  "nativeSamples": 480002,
+  "accepted": true,
+  "rows": [
+    {
+      "identity": "train_05",
+      "nativeSamples": 240001,
+      "sameTimes": true,
+      "maxTruthDifference": 3.531269967904649e-05,
+      "maxInputDifference": 8.791685104370117e-07,
+      "maxActionDifference": 1.8209218978881836e-05,
+      "cPeak": 1.1692520099496946,
+      "pythonPeak": 1.1692520012696974,
+      "accepted": true
+    },
+    {
+      "identity": "train_23",
+      "nativeSamples": 240001,
+      "sameTimes": true,
+      "maxTruthDifference": 3.6763091255664904e-05,
+      "maxInputDifference": 9.201467037200928e-07,
+      "maxActionDifference": 1.856684684753418e-05,
+      "cPeak": 0.8093832073067802,
+      "pythonPeak": 0.8093831931310049,
+      "accepted": true
+    }
+  ]
+}

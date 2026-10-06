@@ -1,0 +1,108 @@
+usage: train.py [-h] --native-build NATIVE_BUILD --bank BANK --output OUTPUT
+                [--seed SEED] [--updates UPDATES]
+                [--environments ENVIRONMENTS] [--rollout ROLLOUT]
+                [--eval-every EVAL_EVERY] [--decision-repeat DECISION_REPEAT]
+                [--current-log-std CURRENT_LOG_STD]
+                [--robot-log-std ROBOT_LOG_STD] [--hidden-size HIDDEN_SIZE]
+                [--layers LAYERS] [--min-memory-s MIN_MEMORY_S]
+                [--max-memory-s MAX_MEMORY_S]
+                [--physics-init-force-gain PHYSICS_INIT_FORCE_GAIN]
+                [--detach-critic-trunk | --no-detach-critic-trunk]
+                [--learning-rate LEARNING_RATE]
+                [--actor-learning-rate ACTOR_LEARNING_RATE]
+                [--critic-learning-rate CRITIC_LEARNING_RATE]
+                [--log-std-learning-rate LOG_STD_LEARNING_RATE]
+                [--value-coef VALUE_COEF] [--value-clip VALUE_CLIP]
+                [--entropy-coef ENTROPY_COEF] [--clip-coef CLIP_COEF]
+                [--target-kl TARGET_KL] [--max-grad-norm MAX_GRAD_NORM]
+                [--epochs EPOCHS] [--minibatch-sequences MINIBATCH_SEQUENCES]
+                [--gamma-time-s GAMMA_TIME_S] [--lambda-time-s LAMBDA_TIME_S]
+                [--chunk-length CHUNK_LENGTH] [--burnin-steps BURNIN_STEPS]
+                [--train-ids TRAIN_IDS] [--selection-ids SELECTION_IDS]
+                [--device DEVICE] [--torch-threads TORCH_THREADS]
+                [--native-threads NATIVE_THREADS] [--no-selection]
+                [--selection-initial]
+                [--save-rollout-every SAVE_ROLLOUT_EVERY]
+                [--checkpoint-every CHECKPOINT_EVERY]
+                [--failure-native-limit FAILURE_NATIVE_LIMIT]
+                [--max-seconds MAX_SECONDS] [--deadline-utc DEADLINE_UTC]
+                [--deadline-reserve-s DEADLINE_RESERVE_S] [--resume RESUME]
+                [--resume-policy RESUME_POLICY] [--resume-reset-optimizer]
+                [--reward-scale REWARD_SCALE]
+                [--force-error-scale-N FORCE_ERROR_SCALE_N]
+                [--force-mse-weight FORCE_MSE_WEIGHT]
+                [--force-excess-weight FORCE_EXCESS_WEIGHT]
+                [--recenter-weight RECENTER_WEIGHT]
+                [--recenter-scale-m RECENTER_SCALE_M]
+                [--effort-weight EFFORT_WEIGHT]
+                [--effort-scale-A EFFORT_SCALE_A]
+                [--current-change-weight CURRENT_CHANGE_WEIGHT]
+                [--current-change-scale-A CURRENT_CHANGE_SCALE_A]
+                [--robot-change-weight ROBOT_CHANGE_WEIGHT]
+                [--robot-change-scale-m-s ROBOT_CHANGE_SCALE_M_S]
+                [--physical-failure-penalty PHYSICAL_FAILURE_PENALTY]
+
+options:
+  -h, --help            show this help message and exit
+  --native-build NATIVE_BUILD
+  --bank BANK
+  --output OUTPUT
+  --seed SEED
+  --updates UPDATES
+  --environments ENVIRONMENTS
+  --rollout ROLLOUT
+  --eval-every EVAL_EVERY
+  --decision-repeat DECISION_REPEAT
+  --current-log-std CURRENT_LOG_STD
+  --robot-log-std ROBOT_LOG_STD
+  --hidden-size HIDDEN_SIZE
+  --layers LAYERS
+  --min-memory-s MIN_MEMORY_S
+  --max-memory-s MAX_MEMORY_S
+  --physics-init-force-gain PHYSICS_INIT_FORCE_GAIN
+  --detach-critic-trunk, --no-detach-critic-trunk
+  --learning-rate LEARNING_RATE
+  --actor-learning-rate ACTOR_LEARNING_RATE
+  --critic-learning-rate CRITIC_LEARNING_RATE
+  --log-std-learning-rate LOG_STD_LEARNING_RATE
+  --value-coef VALUE_COEF
+  --value-clip VALUE_CLIP
+  --entropy-coef ENTROPY_COEF
+  --clip-coef CLIP_COEF
+  --target-kl TARGET_KL
+  --max-grad-norm MAX_GRAD_NORM
+  --epochs EPOCHS
+  --minibatch-sequences MINIBATCH_SEQUENCES
+  --gamma-time-s GAMMA_TIME_S
+  --lambda-time-s LAMBDA_TIME_S
+  --chunk-length CHUNK_LENGTH
+  --burnin-steps BURNIN_STEPS
+  --train-ids TRAIN_IDS
+  --selection-ids SELECTION_IDS
+  --device DEVICE
+  --torch-threads TORCH_THREADS
+  --native-threads NATIVE_THREADS
+  --no-selection
+  --selection-initial
+  --save-rollout-every SAVE_ROLLOUT_EVERY
+  --checkpoint-every CHECKPOINT_EVERY
+  --failure-native-limit FAILURE_NATIVE_LIMIT
+  --max-seconds MAX_SECONDS
+  --deadline-utc DEADLINE_UTC
+  --deadline-reserve-s DEADLINE_RESERVE_S
+  --resume RESUME
+  --resume-policy RESUME_POLICY
+  --resume-reset-optimizer
+  --reward-scale REWARD_SCALE
+  --force-error-scale-N FORCE_ERROR_SCALE_N
+  --force-mse-weight FORCE_MSE_WEIGHT
+  --force-excess-weight FORCE_EXCESS_WEIGHT
+  --recenter-weight RECENTER_WEIGHT
+  --recenter-scale-m RECENTER_SCALE_M
+  --effort-weight EFFORT_WEIGHT
+  --effort-scale-A EFFORT_SCALE_A
+  --current-change-weight CURRENT_CHANGE_WEIGHT
+  --current-change-scale-A CURRENT_CHANGE_SCALE_A
+  --robot-change-weight ROBOT_CHANGE_WEIGHT
+  --robot-change-scale-m-s ROBOT_CHANGE_SCALE_M_S
+  --physical-failure-penalty PHYSICAL_FAILURE_PENALTY

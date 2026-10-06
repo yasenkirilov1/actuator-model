@@ -1,0 +1,28 @@
+{
+  "command": [
+    "cc",
+    "-std=c99",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/selected_policy",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/executor/final_episode.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/selected_policy/policy_inference.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/frozen_inputs/native/libacf_native.so",
+    "-Wl,-rpath,/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/frozen_inputs/native",
+    "-lm",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/latest_finite_fixture_v4/executor/final_episode.so"
+  ],
+  "episodeSourceSha256": "2be6e2fd0456930949d6a782a7885d3e5ec73cfd0a3deba1f0e61b64c8a9589f",
+  "acceptedEpisodeSourceSha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+  "policyCSourceSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+  "nativeLibrarySha256": "98a02c1aa5d490b99e8e4d0815cd7418a84b24ef035de039b3e0fde1ce420cc8",
+  "compiledExecutorSha256": "c5e34e84754b3f05e3e767a41c7ca674732ba6482561e399d1f6e12b4c060619",
+  "onlyAdapterChanges": [
+    "Skip NN inference in native baseline mode."
+  ],
+  "physicalGraphUnchanged": true
+}

@@ -1,0 +1,8 @@
+WARNING: package sun.security.action not in java.base
+WARNING: package sun.security.action not in java.base
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.mathworks.jmi.Matlab in an unnamed module (file:/home/tommie/.local/opt/MATLAB/R2026b/java/jar/jmi.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+QUALIFICATION_V8_PARAMETERS_FROZEN 736 cases,noepisodes,6.894s

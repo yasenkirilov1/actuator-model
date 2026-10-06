@@ -1,0 +1,376 @@
+{
+  "status": "frozen",
+  "scope": "Paired four30s stress-corner records,24 bumps per record; not a full-range refined uncertainty grid or continuous tolerance box.",
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "exactExecutedRecipeHashes": {
+    "original": "e67b32194ed572269e7c5cbeaf48a5c6e756bfdba1de6de5c7f0967958a9ded6",
+    "calibratedStatic": "247d12963558899afe255fd5a7c8f24eb74e50b50234495839e53299de5dec0e"
+  },
+  "files": [
+    {
+      "file": "source/acf_force_control_normal_trial.slx",
+      "role": "Uninstrumented native source used by both exact recipes",
+      "bytes": 597741,
+      "sha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643"
+    },
+    {
+      "file": "source/normal_contact_trial_candidate.mat",
+      "role": "Explicit final selected nominal candidate",
+      "bytes": 7161,
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "file": "source/helpers/acf_desktop_available.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "source/helpers/acf_experiment.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "source/helpers/acf_metrics.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "source/helpers/acf_open.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "source/helpers/acf_parameters.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "source/helpers/acf_plot.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "source/helpers/acf_prepare.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 28886,
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "source/helpers/acf_run.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "source/helpers/acf_select_actuator.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "source/helpers/acf_select_controller.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "source/helpers/acf_signals.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "source/helpers/acf_start.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "source/helpers/acf_start_visualizer.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "source/helpers/acf_sweep.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "source/helpers/acf_viewer_selftest.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "source/helpers/acf_visualize.m",
+      "role": "Frozen native preparation/run/metric helper",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "models/original_long_instrumented.slx",
+      "role": "Executed instrumented native diagram; inspection only",
+      "bytes": 609169,
+      "sha256": "6f31addc513b9c299b73870896d151d98527b43b93234fae27e076773b8f4922"
+    },
+    {
+      "file": "original/experiments/qualify_inertial_uncertainty.m",
+      "role": "Exact executed recipe snapshot",
+      "bytes": 65365,
+      "sha256": "e67b32194ed572269e7c5cbeaf48a5c6e756bfdba1de6de5c7f0967958a9ded6"
+    },
+    {
+      "file": "original/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "role": "Required storage-only bitwise proof for tmpfs execution",
+      "bytes": 32155,
+      "sha256": "ca940ffc53256d4774f195b37496793d4bd6c294e8b0720363930a50035969f2"
+    },
+    {
+      "file": "models/calibrated_long_instrumented.slx",
+      "role": "Executed instrumented native diagram; inspection only",
+      "bytes": 609169,
+      "sha256": "a6e461f018c9c1d5c784db2ae43781dddfa5b0fe8082caf42c49bb8d270c5009"
+    },
+    {
+      "file": "calibrated/experiments/qualify_inertial_uncertainty.m",
+      "role": "Exact executed recipe snapshot",
+      "bytes": 70497,
+      "sha256": "247d12963558899afe255fd5a7c8f24eb74e50b50234495839e53299de5dec0e"
+    },
+    {
+      "file": "calibrated/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "role": "Required storage-only bitwise proof for tmpfs execution",
+      "bytes": 32155,
+      "sha256": "ca940ffc53256d4774f195b37496793d4bd6c294e8b0720363930a50035969f2"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_results.mat",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 57854,
+      "sha256": "ea022dfd4e9028a3d1e4683788a75926cd0105e92233d56c6d48a2551e09f2a7"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 88193,
+      "sha256": "7900999f5090b2e9c1e1ca3f2a6b359359a9c494d7ec8518b4b1aeeb00a3a23e"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_rows.csv",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 7455,
+      "sha256": "57206fcf2fe9b1cd185b42eee0ecca9adeba897f7c9362e8e13a3dbb0ad30a36"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_plot_traces.mat",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 5192034,
+      "sha256": "9fc709acb99911f9b7bd5efcb7052f71169a2dc10e3c91b3885514c5e98f6936"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_storage_cleanup.json",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 219,
+      "sha256": "dc823a4eba37343bdc7ef643f19aabfaf964170c6683fcd5c8121a3f711bfa35"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_results.mat",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 63568,
+      "sha256": "7c5f313dba81cbfd07bdd018ef8021e01fab0721cd6a8f5ef7651726cbc5c354"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 98051,
+      "sha256": "34386cf4796359563a3e98955ae4eb0cdf82577bd11a7fcb5919a01204f13711"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_rows.csv",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 7624,
+      "sha256": "5b2a392b78d2a1f2da22ce2614e429a8c2c7f49bf731f23e199a8264cc7b75be"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_plot_traces.mat",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 5199313,
+      "sha256": "2882a3e65434e9a73e6cfc0ebca5d6c3118bbd08f8db33b2660f621511866115"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_storage_cleanup.json",
+      "role": "Recorded configurations, scalar metrics or complete-force plot envelope",
+      "bytes": 219,
+      "sha256": "49df0a610bf751266b4968567b8ba9c850edc6bf80b873421a0ba2cca148be49"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_results.mat",
+      "role": "Prior executed60-corner inputs from which the original4 worst cases were selected",
+      "bytes": 533559,
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_results.json",
+      "role": "Prior executed60-corner inputs from which the original4 worst cases were selected",
+      "bytes": 364277,
+      "sha256": "2cfaa5e372a72df1c7003b33d1f4a2dec3ab0dd6ec4c7d1c563d85c5149ad8ed"
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_rows.csv",
+      "role": "Prior executed60-corner inputs from which the original4 worst cases were selected",
+      "bytes": 67104,
+      "sha256": "e30764732781f5e9b4a19da68cb2958cffb5b1a8a01e239207f6e7376e83d0bb"
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_prepared_configs.mat",
+      "role": "Four prepared tighter-static configurations frozen before first native simulation",
+      "bytes": 37765,
+      "sha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.json",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 17420,
+      "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.csv",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 920,
+      "sha256": "47303f6c5e4ae236ac7b75982b2e394756068ae77dc0732efd178c5fd17923b5"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.svg",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 1105743,
+      "sha256": "ef0c70db9b4913df41a706146da2de479fc269181556004a5ce95841fdf5b35c"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.png",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 262398,
+      "sha256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement_original_worst_envelope.csv",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 750165,
+      "sha256": "4798fb4923b5224a5bc2a532eb9c36c18d0aa153769ce0b05a270f90f6bb03a5"
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement_calibrated_static_worst_envelope.csv",
+      "role": "Paired source-backed chart, scalar data or complete-force envelope",
+      "bytes": 750415,
+      "sha256": "4b1564d653afefab7ddb1f0d9880fa815c707c08edebc879a3b711a620114d85"
+    },
+    {
+      "file": "run_original_long.m",
+      "role": "Relative-path launch wrapper; invokes unchanged exact recipe",
+      "bytes": 896,
+      "sha256": "4f1995d601097561cdbdbb35d82dfa18975423fe3cf2756ff644fdf0fa5bfdd7"
+    },
+    {
+      "file": "run_calibrated_long.m",
+      "role": "Relative-path launch wrapper; invokes unchanged exact recipe",
+      "bytes": 912,
+      "sha256": "f1042bc9feb06f6db31614323e442eea6e0c85da2e5ac78092d930e9e165ed98"
+    },
+    {
+      "file": "README.md",
+      "role": "Portable relative-path rerun instructions and qualification scope",
+      "bytes": 2742,
+      "sha256": "f1fa7b922828bec12cb7b699bf5b96045bd24af30ed40f01d83bdd4bec0ce6cb"
+    }
+  ],
+  "representativeFullNativeTraceReferences": [
+    {
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_worst_native_trace.mat",
+      "bytes": 684040931,
+      "sha256": "6a000dc33a9c4f4f3cbe3ede99a7644ca33d54e448ac28c483c7fd0c39d2fd84"
+    },
+    {
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_worst_native_trace.mat",
+      "bytes": 684537665,
+      "sha256": "a319a8d816369e9f845b7627048ba9855d8136cd03967ba57c8fed9fff81fdd8"
+    }
+  ],
+  "allRetainedFullNativeTraceReferences": [
+    {
+      "cohort": "original",
+      "caseId": 1,
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0001.mat",
+      "bytes": 684262290,
+      "sha256": "74434e2aac8c8d36193d6d381d010470d40feebc6a84c783a0dda217b41cb665"
+    },
+    {
+      "cohort": "calibrated_static",
+      "caseId": 1,
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0001.mat",
+      "bytes": 686279702,
+      "sha256": "60b5d76749c4243df570c6cf905142f06a8aeb9699483d44d6d2074e9489126e"
+    },
+    {
+      "cohort": "original",
+      "caseId": 2,
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0002.mat",
+      "bytes": 685755272,
+      "sha256": "647bce3be166f365d7571e8da3916c611f4639dd20933b4adc4c30d7441537f1"
+    },
+    {
+      "cohort": "calibrated_static",
+      "caseId": 2,
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0002.mat",
+      "bytes": 686264922,
+      "sha256": "d812aee0a216dd5a8085e81a7893fc83ec7bc7cbd54348ec1ac9e315a27fe304"
+    },
+    {
+      "cohort": "original",
+      "caseId": 3,
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0003.mat",
+      "bytes": 684010398,
+      "sha256": "5067d095e3dd83ff8ccbb289642ff56fbdfe65af198ce915a941aff0b7bd2fdb"
+    },
+    {
+      "cohort": "calibrated_static",
+      "caseId": 3,
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0003.mat",
+      "bytes": 684505146,
+      "sha256": "cb1e296328a718146a9ab0cfafa3a96ef03c5dc0593e91b5bdb17c0995b6579c"
+    },
+    {
+      "cohort": "original",
+      "caseId": 4,
+      "file": "inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_native_traces/case_0004.mat",
+      "bytes": 686275448,
+      "sha256": "2e8939993f75fa6b8a192f601d52ddc06ac5517e1b307a76609d924d05874740"
+    },
+    {
+      "cohort": "calibrated_static",
+      "caseId": 4,
+      "file": "inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_native_traces/case_0004.mat",
+      "bytes": 686265699,
+      "sha256": "c7195ca02800435f7d4998831e40b4ed8c06e8a3c1d297c3b268e760954286d7"
+    }
+  ],
+  "sourceBoundComparison": "inertial_uncertainty_v8_calibration_refinement.json",
+  "launchSemantics": {
+    "simulationMode": "accelerator",
+    "storageMode": "tmpfs",
+    "maxNumCompThreads": 2,
+    "process": "Isolated matlab -batch; private Model Workspace,cache/code/SDI and explicit selected candidate.",
+    "originalPhase": "budget_repeated",
+    "calibratedPhase": "calibrated_static_long",
+    "guard": "Exactly16 static primitives and their declared identified-controller coefficients; all other prepared d fields identical."
+  },
+  "visualReview": "Opaque white top legend prevents the requirement line crossing legend text; scientific data unchanged.",
+  "relativePathPreflight": "Each wrapper creates its private worker parent directory if missing before invoking the exact unchanged recipe."
+}

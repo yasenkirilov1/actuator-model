@@ -1,0 +1,43 @@
+{
+  "boundary": "Only new files in the assigned experiment/validation directories and the assigned new SVG were written. Frozen models, prior evidence, current report, authoring app, and unrelated edits were preserved.",
+  "files": [
+    {
+      "bytes": 22029,
+      "path": "acf_simulink/experiments/series_elastic_comparison_20261006/build_tradeoff.py",
+      "sha256": "ebc266ff3f43e56600219bd2bc6850587dc1deffca0e5e5cb918ac2040d7312b"
+    },
+    {
+      "bytes": 3854,
+      "path": "acf_simulink/experiments/series_elastic_comparison_20261006/README.md",
+      "sha256": "cba30a25d2201fa7f3a4bbbd2228ace8d6182edaea33177dac4c19608bb311b7"
+    },
+    {
+      "bytes": 648,
+      "path": "acf_simulink/validation/series_elastic_comparison_20261006/storage_forecast.json",
+      "sha256": "b2165cee0f7be8868e33c8e1814e98a429de967d083f0b1883d7b320ceb4dfb8"
+    },
+    {
+      "bytes": 12087,
+      "path": "acf_simulink/validation/series_elastic_comparison_20261006/static_tradeoff.json",
+      "sha256": "6c561941611c6aa259ba203ea8a19f1a2cc64da55043645f6433c2d9d667cb27"
+    },
+    {
+      "bytes": 11067,
+      "path": "reports/figures/series-elastic-leadscrew-tradeoff-20261006.svg",
+      "sha256": "f19a2b97b85cb0672026891a9342204e1244f0f17b49a4d3aebcc6db0faec683"
+    }
+  ],
+  "new_array_bytes": 0,
+  "numerical_check": "4,496,583 scalar coordinate-grid points confirm endpoint extrema, with static force balance at each point. No dynamic model, simulation, training or controller tuning.",
+  "retained_bytes_excluding_this_manifest": 49685,
+  "status": "STATIC_ARITHMETIC_AND_SVG_REVIEW_COMPLETE",
+  "storage_forecast_retained_bytes": 250000,
+  "temporary_files_released": [
+    "/tmp/series-elastic-leadscrew-tradeoff-20261006.png"
+  ],
+  "visual_review": {
+    "observed": "Schematic, equations, two labeled axes, seven rates, 25 mm reference and static-arithmetic scope all readable; no overlaps or clipping observed.",
+    "renderer": "rsvg-convert",
+    "width_px": 900
+  }
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">Pressing force is perpendicular to the surface; the cell also senses tool inertia</title>
+  <desc id="desc">A sanding contact on a sloped surface has separate normal pressing and tangential drag forces. The flange-axis force contains contributions from both. A cell between holder B and tool S supports the whole tool, so gravity tare and measured tool acceleration are needed before projecting its measured force vector onto the surface normal.</desc>
+  <defs>
+    <marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#245c96"/></marker>
+    <marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#c56a23"/></marker>
+    <marker id="grey" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f5964"/></marker>
+  </defs>
+  <rect width="1100" height="560" fill="#fff"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#25313e">
+    <text x="35" y="37" font-size="23" font-weight="bold">What does the load cell actually measure?</text>
+    <text x="35" y="65" font-size="15">Normal pressing, sanding drag and tool inertia are different quantities.</text>
+    <line x1="560" y1="100" x2="560" y2="494" stroke="#d4d9df"/>
+    <text x="35" y="119" font-size="18" font-weight="bold">1. A slope mixes pressing and drag</text>
+    <path d="M65 440 L498 291 L498 476 L65 476 Z" fill="#eff1f4"/>
+    <line x1="65" y1="440" x2="498" y2="291" stroke="#4f5964" stroke-width="2"/>
+    <circle cx="330" cy="349" r="5" fill="#25313e"/>
+    <line x1="330" y1="349" x2="281" y2="207" stroke="#245c96" stroke-width="4" marker-end="url(#blue)"/>
+    <text x="95" y="199" font-size="16" fill="#245c96">Normal pressing N</text>
+    <text x="95" y="222" font-size="14">perpendicular to surface</text>
+    <line x1="330" y1="349" x2="278" y2="367" stroke="#c56a23" stroke-width="4" marker-end="url(#orange)"/>
+    <text x="72" y="318" font-size="16" fill="#c56a23">Sanding drag T</text>
+    <text x="72" y="341" font-size="14">along surface</text>
+    <line x1="330" y1="349" x2="330" y2="167" stroke="#4f5964" stroke-width="2" marker-end="url(#grey)"/>
+    <text x="342" y="176" font-size="15">z: flange axis</text>
+    <line x1="330" y1="349" x2="500" y2="349" stroke="#4f5964" stroke-width="2" marker-end="url(#grey)"/>
+    <text x="379" y="378" font-size="15">x: scan direction</text>
+    <text x="35" y="510" font-size="15">One axial reading: Rz = (N − sT) / √(1 + s²)</text>
+    <text x="35" y="536" font-size="14">Two unknown forces need two measured components.</text>
+    <text x="590" y="119" font-size="18" font-weight="bold">2. The cell carries the whole tool S</text>
+    <rect x="661" y="153" width="175" height="55" fill="#eff1f4" stroke="#4f5964"/>
+    <text x="687" y="187" font-size="18">Holder B</text>
+    <rect x="684" y="223" width="129" height="42" fill="#e3edf7" stroke="#245c96"/>
+    <text x="696" y="250" font-size="16" fill="#245c96">Load cell</text>
+    <line x1="748" y1="208" x2="748" y2="223" stroke="#4f5964" stroke-width="2"/>
+    <line x1="748" y1="265" x2="748" y2="283" stroke="#4f5964" stroke-width="2"/>
+    <rect x="661" y="283" width="175" height="79" fill="#eff1f4" stroke="#4f5964"/>
+    <text x="685" y="315" font-size="18">Whole tool S</text>
+    <text x="685" y="340" font-size="14">0.1–2 kg</text>
+    <circle cx="823" cy="305" r="11" fill="#c56a23"/>
+    <text x="851" y="302" font-size="15">S accelerometer</text>
+    <line x1="627" y1="326" x2="627" y2="408" stroke="#4f5964" stroke-width="2" marker-end="url(#grey)"/>
+    <text x="589" y="430" font-size="14">Known weight</text>
+    <line x1="748" y1="446" x2="748" y2="373" stroke="#245c96" stroke-width="3" marker-end="url(#blue)"/>
+    <text x="776" y="406" font-size="15" fill="#245c96">Contact force vector R</text>
+    <text x="590" y="478" font-size="15">Tare gravity, then add tool inertia:</text>
+    <text x="590" y="507" font-size="19" fill="#245c96">R = Ltared + mS aS</text>
+    <text x="590" y="536" font-size="14">Then project R onto the estimated surface normal.</text>
+  </g>
+</svg>

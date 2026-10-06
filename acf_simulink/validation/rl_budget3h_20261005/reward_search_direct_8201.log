@@ -1,0 +1,42 @@
+INITIAL {"recordings": 8, "passed": 3, "physicalFailures": 0, "worstNormalForceError_N": 1.1692520099496946, "meanRmsNormalForceError_N": 0.1036115446446578, "nativeSamples": 1920000.0, "controllerDecisions": 64000.0, "eligibleRobotDecisions": 365.0, "issuedRobotFrames": 27720.0, "elapsed_s": 2.545807219983544}
+GEN 1 best=0.27584197 current=0.27584197 sigma=0.15098 peak=0.727054 failures=0 seconds=18.030
+SELECT {"recordings": 8, "passed": 5, "physicalFailures": 0, "worstNormalForceError_N": 0.7049579629534497, "meanRmsNormalForceError_N": 0.06787891424459463, "nativeSamples": 2160000.0, "controllerDecisions": 72000.0, "eligibleRobotDecisions": 450.0, "issuedRobotFrames": 39105.0, "generation": 1, "trainingBestGeneration": 1, "rank": [0, -5, 0.7049579629534497, 0.06787891424459463]}
+GEN 2 best=0.22789133 current=0.22789133 sigma=0.16484 peak=0.669449 failures=0 seconds=36.568
+GEN 3 best=0.17112215 current=0.17112215 sigma=0.19311 peak=0.571867 failures=0 seconds=52.150
+GEN 4 best=0.12660994 current=0.12660994 sigma=0.21989 peak=0.495897 failures=0 seconds=67.834
+GEN 5 best=0.10545321 current=0.10545321 sigma=0.2532 peak=0.452113 failures=0 seconds=83.505
+SELECT {"recordings": 8, "passed": 8, "physicalFailures": 0, "worstNormalForceError_N": 0.4168308059474368, "meanRmsNormalForceError_N": 0.03815581672042932, "nativeSamples": 2160000.0, "controllerDecisions": 72000.0, "eligibleRobotDecisions": 478.0, "issuedRobotFrames": 41184.0, "generation": 5, "trainingBestGeneration": 5, "rank": [0, -8, 0.4168308059474368, 0.03815581672042932]}
+GEN 6 best=0.079457963 current=0.079457963 sigma=0.31351 peak=0.391164 failures=0 seconds=102.041
+GEN 7 best=0.069535998 current=0.069535998 sigma=0.39668 peak=0.359972 failures=0 seconds=117.580
+GEN 8 best=0.054286589 current=0.054286589 sigma=0.4954 peak=0.314232 failures=0 seconds=133.042
+GEN 9 best=0.052639204 current=0.052639204 sigma=0.58463 peak=0.314144 failures=0 seconds=148.498
+GEN 10 best=0.050092798 current=0.050092798 sigma=0.65351 peak=0.306979 failures=0 seconds=164.042
+SELECT {"recordings": 8, "passed": 8, "physicalFailures": 0, "worstNormalForceError_N": 0.2680102150965462, "meanRmsNormalForceError_N": 0.03367426139914283, "nativeSamples": 2160000.0, "controllerDecisions": 72000.0, "eligibleRobotDecisions": 606.0, "issuedRobotFrames": 50985.0, "generation": 10, "trainingBestGeneration": 10, "rank": [0, -8, 0.2680102150965462, 0.03367426139914283]}
+GEN 11 best=0.045985942 current=0.045985942 sigma=0.7327 peak=0.282224 failures=0 seconds=182.596
+GEN 12 best=0.045985942 current=0.049204605 sigma=0.73409 peak=0.293698 failures=0 seconds=198.056
+GEN 13 best=0.045985942 current=0.046263901 sigma=0.68765 peak=0.286429 failures=0 seconds=213.541
+GEN 14 best=0.043897856 current=0.043897856 sigma=0.64706 peak=0.26608 failures=0 seconds=229.380
+GEN 15 best=0.040422848 current=0.040422848 sigma=0.64807 peak=0.264191 failures=0 seconds=245.126
+SELECT {"recordings": 8, "passed": 8, "physicalFailures": 0, "worstNormalForceError_N": 0.22615146497176397, "meanRmsNormalForceError_N": 0.03761840226579446, "nativeSamples": 2160000.0, "controllerDecisions": 72000.0, "eligibleRobotDecisions": 629.0, "issuedRobotFrames": 0.0, "generation": 15, "trainingBestGeneration": 15, "rank": [0, -8, 0.22615146497176397, 0.03761840226579446]}
+GEN 16 best=0.040162127 current=0.040162127 sigma=0.62636 peak=0.266325 failures=0 seconds=264.106
+GEN 17 best=0.040162127 current=0.040406444 sigma=0.60864 peak=0.26567 failures=0 seconds=279.875
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search.py", line 318, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search.py", line 280, in main
+    returns=pool.map(worker_eval,[(w,indices,0) for w in vectors])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/pool.py", line 768, in get
+    self.wait(timeout)
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/pool.py", line 765, in wait
+    self._event.wait(timeout)
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt

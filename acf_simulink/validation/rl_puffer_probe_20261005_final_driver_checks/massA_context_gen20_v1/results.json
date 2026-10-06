@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "checkpointSha256": "9e603ffa37027142089615366ae49bd55a73f02c1a68fbf2ced005fd092f4bb2",
+  "featureColumn": 21,
+  "featureMeaning": "known_robot_side_massA_over_2kg",
+  "observedStudyMassA_kg": 0.4,
+  "proposedPhysicalMassA_kg": 1.5,
+  "weightColumns": {
+    "encoder_input_massA": {
+      "nonzero": 0,
+      "maxAbs": 0.0,
+      "l2Norm": 0.0
+    },
+    "actor_skip_massA": {
+      "nonzero": 0,
+      "maxAbs": 0.0,
+      "l2Norm": 0.0
+    }
+  },
+  "derivedFeaturesUseMassA": false,
+  "plantEpisodesExecuted": 0,
+  "qualificationScope": "No new massA physical qualification. Actor input independence is a source/weight property only."
+}

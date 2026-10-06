@@ -1,0 +1,406 @@
+{
+  "status": "complete",
+  "kind": "load_cell_axis_identifiability_and_native_postprocessing",
+  "generatedAtUtc": "2026-10-06T08:55:37.208304+00:00",
+  "controllerRetuned": false,
+  "newClosedLoopEpisodes": 0,
+  "geometry": {
+    "height_m": 0.001,
+    "width_m": 0.01,
+    "scanSpeed_m_s": 0.1,
+    "bumpDuration_s": 0.09999999999999999,
+    "polynomial": "h(q)=64 H q^3 (1-q)^3",
+    "maximumAbsSlope": 0.3434600413439677,
+    "maximumSlopeAngle_deg": 18.95554872969665,
+    "slopeMaximumProgress": 0.27639320225002106,
+    "actualNominalMu": 0.3,
+    "gravityOrientationIsSeparateFromLocalBumpSlope": true
+  },
+  "equations": {
+    "surfaceNormal": "n=(-s,1)/sqrt(1+s^2)",
+    "scanTangent": "t=(1,s)/sqrt(1+s^2)",
+    "contactForceOnTool": "R=N*n-T*t; T=mu*N in the retained plant",
+    "singleAxisObservation": "Rz=(N-s*T)/sqrt(1+s^2)",
+    "perfectKnownFrictionOracle": "N=Rz*sqrt(1+s^2)/(1-mu*s)",
+    "twoForceAxisReconstruction": "N=(Rz-s*Rx)/sqrt(1+s^2)",
+    "loadCellSignConvention": "Lraw is minus support force on S: Lraw=R+mS*gVector-mS*aS",
+    "gravityTaredReconstruction": "Ltared=Lraw-mS*gVector; R=Ltared+mS*aS",
+    "nativeAxialConvention": "Lraw_z=Rz-mS*(gPositiveAlongFlange+aS_z), where gPositiveAlongFlange=9.81*cos(angle)",
+    "knownFrictionMismatch": "Nhat/N=(1-mu*s)/(1-muhat*s)"
+  },
+  "analyticalRows": [
+    {
+      "target_N": 5.0,
+      "method": "axial_equals_normal",
+      "maximumAbsoluteError_N": 0.758397385764412,
+      "signedErrorAtPeak_N": -0.758397385764412,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 5.0,
+      "method": "known_slope_ignores_drag",
+      "maximumAbsoluteError_N": 0.5151900614207863,
+      "signedErrorAtPeak_N": -0.5151900614207863,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 5.0,
+      "method": "known_slope_known_mu_oracle",
+      "maximumAbsoluteError_N": 1.7763568394002505e-15,
+      "signedErrorAtPeak_N": -1.7763568394002505e-15,
+      "bumpProgressAtPeak": 0.14196666666666669,
+      "slopeAtPeak": 0.20400263484496117,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 5.0,
+      "method": "known_slope_mu_0p2",
+      "maximumAbsoluteError_N": 0.18439659273162068,
+      "signedErrorAtPeak_N": -0.18439659273162068,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 5.0,
+      "method": "known_slope_mu_0p25",
+      "maximumAbsoluteError_N": 0.09393033982764454,
+      "signedErrorAtPeak_N": -0.09393033982764454,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 5.0,
+      "method": "known_slope_mu_0p4",
+      "maximumAbsoluteError_N": 0.1990804990103472,
+      "signedErrorAtPeak_N": 0.1990804990103472,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "axial_equals_normal",
+      "maximumAbsoluteError_N": 3.033589543057648,
+      "signedErrorAtPeak_N": -3.033589543057648,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "known_slope_ignores_drag",
+      "maximumAbsoluteError_N": 2.060760245683145,
+      "signedErrorAtPeak_N": -2.060760245683145,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "known_slope_known_mu_oracle",
+      "maximumAbsoluteError_N": 7.105427357601002e-15,
+      "signedErrorAtPeak_N": -7.105427357601002e-15,
+      "bumpProgressAtPeak": 0.14196666666666669,
+      "slopeAtPeak": 0.20400263484496117,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "known_slope_mu_0p2",
+      "maximumAbsoluteError_N": 0.7375863709264827,
+      "signedErrorAtPeak_N": -0.7375863709264827,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "known_slope_mu_0p25",
+      "maximumAbsoluteError_N": 0.37572135931057815,
+      "signedErrorAtPeak_N": -0.37572135931057815,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 20.0,
+      "method": "known_slope_mu_0p4",
+      "maximumAbsoluteError_N": 0.7963219960413888,
+      "signedErrorAtPeak_N": 0.7963219960413888,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "axial_equals_normal",
+      "maximumAbsoluteError_N": 7.583973857644118,
+      "signedErrorAtPeak_N": -7.583973857644118,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "known_slope_ignores_drag",
+      "maximumAbsoluteError_N": 5.151900614207861,
+      "signedErrorAtPeak_N": -5.151900614207861,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "known_slope_known_mu_oracle",
+      "maximumAbsoluteError_N": 1.4210854715202004e-14,
+      "signedErrorAtPeak_N": -1.4210854715202004e-14,
+      "bumpProgressAtPeak": 0.07516666666666667,
+      "slopeAtPeak": 0.07883650110117407,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "known_slope_mu_0p2",
+      "maximumAbsoluteError_N": 1.843965927316205,
+      "signedErrorAtPeak_N": -1.843965927316205,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "known_slope_mu_0p25",
+      "maximumAbsoluteError_N": 0.9393033982764436,
+      "signedErrorAtPeak_N": -0.9393033982764436,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    },
+    {
+      "target_N": 50.0,
+      "method": "known_slope_mu_0p4",
+      "maximumAbsoluteError_N": 1.9908049901034701,
+      "signedErrorAtPeak_N": 1.9908049901034701,
+      "bumpProgressAtPeak": 0.27640000000000003,
+      "slopeAtPeak": 0.34346004094719057,
+      "trueMu": 0.3,
+      "perfectSlopeAndAxialInertiaCorrection": true
+    }
+  ],
+  "nativePostprocessingRows": [
+    {
+      "method": "axial_equals_normal",
+      "peakReconstructionError_N": 7.578244409726537,
+      "signedReconstructionErrorAtPeak_N": -7.578244409726537,
+      "peakTime_s": 1.02823,
+      "peakErrorAgainstTarget_N": 7.700640431865288,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    },
+    {
+      "method": "known_slope_ignores_drag",
+      "peakReconstructionError_N": 5.160538510486319,
+      "signedReconstructionErrorAtPeak_N": 5.160538510486319,
+      "peakTime_s": 1.0721433333333332,
+      "peakErrorAgainstTarget_N": 5.294359855847517,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    },
+    {
+      "method": "known_slope_known_mu_oracle",
+      "peakReconstructionError_N": 0.0,
+      "signedReconstructionErrorAtPeak_N": 0.0,
+      "peakTime_s": 0.0,
+      "peakErrorAgainstTarget_N": 0.4585258602570548,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    },
+    {
+      "method": "known_slope_mu_0p2",
+      "peakReconstructionError_N": 1.8428312373947122,
+      "signedReconstructionErrorAtPeak_N": -1.8428312373947122,
+      "peakTime_s": 1.0282366666666667,
+      "peakErrorAgainstTarget_N": 2.0113813194845562,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    },
+    {
+      "method": "known_slope_mu_0p4",
+      "peakReconstructionError_N": 1.9894294724741997,
+      "signedReconstructionErrorAtPeak_N": 1.9894294724741997,
+      "peakTime_s": 1.0282333333333333,
+      "peakErrorAgainstTarget_N": 2.041759530958771,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    },
+    {
+      "method": "two_force_axes_perfect_measurements",
+      "peakReconstructionError_N": 2.842170943040401e-14,
+      "signedReconstructionErrorAtPeak_N": -2.842170943040401e-14,
+      "peakTime_s": 1.00358,
+      "peakErrorAgainstTarget_N": 0.45852586025704767,
+      "scope": "Offline perfect-sensor/truth-geometry diagnostic on unchanged native controller record"
+    }
+  ],
+  "acquiredPostprocessingRows": [
+    {
+      "method": "executing_acquired_normal_estimate",
+      "acquiredObservationPoints": 20001,
+      "maximumDifferenceFromPresentTrueNormal_N": 0.6531834037569197,
+      "signedDifferenceAtPeak_N": -0.6531834037569197,
+      "peakTime_s": 1.6113000000000002,
+      "rmsDifferenceFromPresentTrueNormal_N": 0.09527229883584203,
+      "scope": "Recorded acquired signals compared with present-time truth at exact output timestamps; includes modeled noise, response, delay and slope-estimation error. This is not a calibrated bias, individual ADC error or closed-loop force metric."
+    },
+    {
+      "method": "acquired_axial_known_estimated_slope_ignores_drag",
+      "acquiredObservationPoints": 20001,
+      "maximumDifferenceFromPresentTrueNormal_N": 5.305503925554561,
+      "signedDifferenceAtPeak_N": 5.305503925554561,
+      "peakTime_s": 1.074,
+      "rmsDifferenceFromPresentTrueNormal_N": 0.7792554998421559,
+      "scope": "Recorded acquired signals compared with present-time truth at exact output timestamps; includes modeled noise, response, delay and slope-estimation error. This is not a calibrated bias, individual ADC error or closed-loop force metric."
+    },
+    {
+      "method": "acquired_axial_known_mu_oracle",
+      "acquiredObservationPoints": 20001,
+      "maximumDifferenceFromPresentTrueNormal_N": 0.6531811313807836,
+      "signedDifferenceAtPeak_N": -0.6531811313807836,
+      "peakTime_s": 1.6113000000000002,
+      "rmsDifferenceFromPresentTrueNormal_N": 0.09531942169505264,
+      "scope": "Recorded acquired signals compared with present-time truth at exact output timestamps; includes modeled noise, response, delay and slope-estimation error. This is not a calibrated bias, individual ADC error or closed-loop force metric."
+    },
+    {
+      "method": "acquired_two_force_axes_projection",
+      "acquiredObservationPoints": 20001,
+      "maximumDifferenceFromPresentTrueNormal_N": 0.6531834037569197,
+      "signedDifferenceAtPeak_N": -0.6531834037569197,
+      "peakTime_s": 1.6113000000000002,
+      "rmsDifferenceFromPresentTrueNormal_N": 0.09527229883584203,
+      "scope": "Recorded acquired signals compared with present-time truth at exact output timestamps; includes modeled noise, response, delay and slope-estimation error. This is not a calibrated bias, individual ADC error or closed-loop force metric."
+    }
+  ],
+  "nativeGuards": {
+    "nativePoints": 600001,
+    "surfaceSlopeAgainstAnalyticalMaximumDifference": 1.2074027758504635e-14,
+    "axialGeometryMaximumResidual_N": 7.105427357601002e-15,
+    "cellForceBalanceMaximumResidual_N": 6.394884621840902e-14,
+    "twoAxesProjectionMaximumResidual_N": 2.842170943040401e-14,
+    "trueNormalForcePeakError_N": 0.4585258602570548,
+    "minimumRawAxialCell_N": 41.09068254814908,
+    "maximumRawAxialCell_N": 56.16294119698546,
+    "peakToolInertiaCorrection_N": 4.800000000000001,
+    "executingEstimatorVersusAcquiredProjectionMaximumDifference_N": 0.0
+  },
+  "nativeScenario": {
+    "scenario": 172,
+    "massA_kg": 1.5,
+    "massB_kg": 0.6,
+    "massS_kg": 2.0,
+    "force_N": 50.0,
+    "orientation_rad": 1.5707963267948966,
+    "seed": 991007,
+    "scope": "Frozen 32V unchanged-controller development voltage replay"
+  },
+  "nativeCapacityRows": [
+    {
+      "cohort": "nominal700",
+      "recordings": 700,
+      "minimumRawAxialCell_N": -18.88507646548481,
+      "minimumScenario": 630,
+      "maximumRawAxialCell_N": 56.21157040692211,
+      "maximumScenario": 699,
+      "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+    },
+    {
+      "cohort": "fresh32",
+      "recordings": 32,
+      "minimumRawAxialCell_N": -18.879709301126894,
+      "minimumScenario": 707,
+      "maximumRawAxialCell_N": 59.80337633997574,
+      "maximumScenario": 728,
+      "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+    },
+    {
+      "cohort": "long4",
+      "recordings": 4,
+      "minimumRawAxialCell_N": 2.956784891440972,
+      "minimumScenario": 735,
+      "maximumRawAxialCell_N": 56.441170525811614,
+      "maximumScenario": 732,
+      "scope": "Actual native cell loads, pre-tare; stops truncate physical histories"
+    }
+  ],
+  "capacityTargets": {
+    "axialMeasurementRangeDevelopmentTarget_N": 100,
+    "existingAdcBipolarHalfRange_N": 160,
+    "transverseDevelopmentTarget_N": 100,
+    "planarConservativeRawSideForceBoundAtN50Mu0p3Mass2_N": 50.0482882727095,
+    "rawSideBoundIncludesPossibleGravityAdditionNotQualificationMaximum": true,
+    "momentExampleForce_N": 50,
+    "momentExampleLeverArm_m": 0.1,
+    "momentExample_Nm": 5,
+    "qualificationIsNotCollisionSizing": true,
+    "mechanicalCombinedLoadEnvelopeRequired": true
+  },
+  "calibrationTargets": {
+    "residualForceZeroPerAxis_N": 0.01,
+    "residualGainFraction": 0.0005,
+    "residualCrossAxisFraction": 0.0005,
+    "relativeAlignment_deg": 0.05,
+    "residualAccelerationBias_m_s2": 0.005,
+    "relativeTimingResidual_s": 2e-06,
+    "approximateNormalBiasFromTwoForceAxesAtMaximumSlope_N": 0.01270605377002054,
+    "normalErrorAt50N_mu0p3_directionError0p05deg_N": 0.013109006316055962,
+    "wholeRequirementIsNotSensorErrorBudget": true,
+    "targetsAreNotCatalogGuaranteesOrNewQualification": true
+  },
+  "sourceHashes": {
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat": "c05549f23a4ede5dde2977dbf9a96209019912ebfe5dfd00275fa755e746f1ee",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json": "f1cccf9fe7a356c8a7b39415b457d731d5a28eb52598ca0585b313455c4e4b7b",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/results.json": "9b530268ac4212da06df6ae8488b206b3d31863b3df738ebded938d66eb0d151",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/results.json": "cc63465565a6411483f470074b4fab7ccd3dc377a7eeb951b3c0adfc63728717",
+    "acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6",
+    "acf_simulink/experiments/build_normal_contact_trial.m": "c9680ba37c10b6c6e9cdbc13af7bfc4550c55761fc6d19fdef2c3dd97f91dfe5",
+    "acf_simulink/experiments/build_normal_contact_trial_v3.m": "591bf6db2e2e55ac86b3c6f62c768ca61a88d8208528dfb7a5549f79242171ea",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json": "f61df543c4edf48754c04599023fc003bec2e498b67e7db8abbebe1ab82024bd",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa"
+  },
+  "sourceNotes": "Current saved graph and builder sources verify equation/sign/log contracts. Main figure uses all original native samples for metrics and a min/max-preserving display subset. The friction oracle and true normal are diagnostic only and never controller inputs.",
+  "figures": [
+    {
+      "file": "acf_simulink/validation/report_readability_20261006/loadcell/force_axes_and_inertia.svg",
+      "sha256": "d26699f129c6d76620eeedb193e3b59df9cc3c40a31de4a3f25a95c47b399a33"
+    },
+    {
+      "file": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_native_diagnostic.svg",
+      "sha256": "971d46ad475cc3e90f083a0cea54f41800cebbcf4e17e9f9b5890de053ac84b9"
+    },
+    {
+      "file": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_error_by_force.svg",
+      "sha256": "f6fda14f29c213fa1ff8bfef74bfa5b0ddd2874370c60fec55f595f15fb55c9d"
+    },
+    {
+      "file": "acf_simulink/validation/report_readability_20261006/loadcell/single_axis_force_ambiguity.svg",
+      "sha256": "f67ba1ad82462ad965badc615962c9852fd61d94a47ef883f6743d8d0776ac5c"
+    }
+  ]
+}

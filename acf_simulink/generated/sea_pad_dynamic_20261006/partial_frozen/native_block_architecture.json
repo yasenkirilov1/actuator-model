@@ -1,0 +1,87 @@
+{
+  "model_sha256": "c26145517741b3bbb76272a5abbf30931258e9036cdd3004dc9151e1b09310ec",
+  "ordinary_native_block_counts": {
+    "Inport": 18,
+    "Constant": 27,
+    "Switch": 9,
+    "Sum": 34,
+    "Integrator": 9,
+    "Gain": 43,
+    "Mux": 9,
+    "Demux": 10,
+    "Outport": 15,
+    "Saturate": 5,
+    "Product": 10,
+    "DataTypeConversion": 1,
+    "Reference": 1,
+    "Sqrt": 1,
+    "MinMax": 2,
+    "Abs": 3,
+    "Logic": 4,
+    "RelationalOperator": 5,
+    "From": 17,
+    "Trigonometry": 2,
+    "SubSystem": 6,
+    "Goto": 9,
+    "ZeroOrderHold": 1,
+    "Stop": 1,
+    "Clock": 1
+  },
+  "systems": [
+    {
+      "file": "simulink/systems/system_11.xml",
+      "block_count": 39
+    },
+    {
+      "file": "simulink/systems/system_5.xml",
+      "block_count": 22
+    },
+    {
+      "file": "simulink/systems/system_14.xml",
+      "block_count": 67
+    },
+    {
+      "file": "simulink/systems/system_17.xml",
+      "block_count": 28
+    },
+    {
+      "file": "simulink/systems/system_20.xml",
+      "block_count": 11
+    },
+    {
+      "file": "simulink/systems/system_8.xml",
+      "block_count": 47
+    },
+    {
+      "file": "simulink/systems/system_root.xml",
+      "block_count": 29
+    }
+  ],
+  "root_subsystems": [
+    {
+      "name": "A B and S dynamics",
+      "type": "SubSystem"
+    },
+    {
+      "name": "Electrical drive",
+      "type": "SubSystem"
+    },
+    {
+      "name": "Pad total force",
+      "type": "SubSystem"
+    },
+    {
+      "name": "Physical stops",
+      "type": "SubSystem"
+    },
+    {
+      "name": "Replay output channels",
+      "type": "SubSystem"
+    },
+    {
+      "name": "Spring and independent screw nut",
+      "type": "SubSystem"
+    }
+  ],
+  "vector_diagram": "native-block-diagram.svg"
+}

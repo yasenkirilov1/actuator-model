@@ -1,0 +1,1730 @@
+{
+  "date": "2026-09-30",
+  "status": "complete",
+  "phase": "smoke",
+  "recipeVersion": "native_inertial_uncertainty_v1",
+  "plannedCases": 1,
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/acf_force_control_normal_trial.slx",
+  "sourceModelSha256": "3f502c5b5a3c80f20d95cbcce39a00fe5d9bb1bc2e9d0177fa58d66c972c597a",
+  "privateModel": "/home/tommie/.local/state/actuator-model/tp5ba471e3_762c_4f2d_bc4f_60d5dacd762c/acf_force_control_normal_trial.slx",
+  "privateModelSha256": "06fb97eebeec48c4aaf95b46f6643686a57118394be1df1091dab2b80031e823",
+  "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/normal_contact_trial_candidate.mat",
+  "candidateSha256": "1118dba1c517971418e7025367fd1ec42bfa838be21f35aaa8a26b21efa09914",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "26e7c50cd8bf4c76dae58ecd6945cea39a57abaee71bd3b865f58c238a173c51"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "7e56f1cf321aa2ad47c7870a42897cc192c2a5c76434dd5bdd545ae09a89055e"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "95abf2364460a3fbef718e98f348c3a6a8399c7e28914d4237b65a4bf6997b30"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "18e6fdc85998dff6fe992ccb0f52112388f7372410d0724803725ffe702848f9"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "experimentSnapshot": "/home/tommie/.local/state/actuator-model/tp5ba471e3_762c_4f2d_bc4f_60d5dacd762c/qualify_inertial_uncertainty.m",
+  "experimentSha256": "0b85333a851d9287ef687b35cc96ad6d1aa29983565358d62af1bf83fa577e3f",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "baseParameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 5E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 1.4,
+      "k1": 0,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.5707963267948966,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": true,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 29,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 1.4,
+      "distalMass_model_kg": 1.4,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "observer",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 6.0068925498177676E-16,
+      "keq": null,
+      "ell": 0.00079577471545947678,
+      "q10": 50,
+      "q20": 50,
+      "holdForce": 50,
+      "r0": 0,
+      "u0": 0,
+      "z0": 0,
+      "forceTicks": 2,
+      "sensorTicks": 2,
+      "robotTicks": 200,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.79577471545947664,
+      "coilHoldCurrent": 2.5,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.5,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.1516679275331093E-14,
+            -3.2950987628679425E-9
+          ],
+          [
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.01,
+            0,
+            -5.0000000000000009E-5,
+            4.9972233792439362E-5,
+            0.00010685087054838787,
+            0.030770463482978565
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.01,
+            0.00999167129436793,
+            0.0068795972429090109,
+            0.045376629591045506
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -7.2494913590520927E-13,
+            6.4030000841999364E-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.22658504839104882,
+            0.0025190762906428335
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            -4.6970722990518662E-8,
+            0.0077481977442080841
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.078693868057473318,
+            7.8693868057473315,
+            2.3608160417242,
+            0,
+            -0.35734719647214358,
+            -0.0011559650818584928
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -4.9384148143125737E-5,
+            -0.030316962500105533
+          ]
+        ],
+        "B": [
+          [
+            -4.1516679275331093E-14,
+            3.2950987628679423E-6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00010685087054838787,
+            -30.77046348297856,
+            0,
+            0,
+            5E-6
+          ],
+          [
+            -0.0068795972429090109,
+            -45.376629591045514,
+            0,
+            0,
+            0.001
+          ],
+          [
+            7.2494913590520927E-13,
+            -6.4030000841999357E-11,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.22658504839104882,
+            -2.5190762906428334,
+            0,
+            0,
+            0
+          ],
+          [
+            4.6970722990518662E-8,
+            -7.7481977442080847,
+            0,
+            0,
+            0
+          ],
+          [
+            0.963877856184777,
+            1.1559650818584926,
+            0,
+            -0.39346934028736658,
+            0
+          ],
+          [
+            4.9384148143125737E-5,
+            30.316962500105532,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.5883026550169879E-17,
+            -3.6416473249086951E-12
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            4.9384148189008766E-8,
+            3.0316958858458208E-5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00046137472290973936,
+            0.0045324273772309083
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.9706160626882172E-12,
+            1.7405158776502423E-13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -2.265850483910488,
+            0.025190762906428334
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -4.7049072802209403E-7,
+            0.077611221744818937
+          ]
+        ],
+        "D": [
+          [
+            -4.5883026550169879E-17,
+            3.6416473249086951E-9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -4.9384148189008766E-8,
+            -0.030316958858458209,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00046137472290973936,
+            -4.5324273772309089,
+            0,
+            0,
+            0
+          ],
+          [
+            1.9706160626882172E-12,
+            -1.7405158776502422E-10,
+            0,
+            0,
+            0
+          ],
+          [
+            2.265850483910488,
+            -25.190762906428333,
+            0,
+            0,
+            0
+          ],
+          [
+            4.7049072802209403E-7,
+            -77.611221744818934,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -0,
+          -0,
+          -0,
+          -0,
+          0,
+          0,
+          -0.58413293311658288,
+          -0.15841329331165829,
+          0
+        ],
+        "integralGain": 1.2641098067025676,
+        "force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          20,
+          2,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.0125,
+      "positionMeasurementInitial": 0.0125,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.049639086431114081,
+            5E-9,
+            -5E-9
+          ],
+          [
+            6.1600972542890231,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.95097692329431482,
+            0
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.1600972542890231,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "springs": {
+      "maxCombinedLength_m": 0.1,
+      "commonPreload_N": 32,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "lower": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "noiseRms": 0.012,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 8,
+      "quantum": 0.00187038,
+      "delaySamples": 1
+    },
+    "inertial": {
+      "forceKp": 0.03,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1
+    },
+    "uncertainty": {
+      "forceScaleZ": 0,
+      "forceScaleX": 0,
+      "positionScale": 0,
+      "accelBiasX_m_s2": 0,
+      "massB_model_kg": 0.6,
+      "forceConstant_model_N_A": 20,
+      "recenterGain": 0.73529411764705876
+    }
+  },
+  "controllerFromTags": [
+    "command_based_robot_acceleration",
+    "command_based_robot_velocity",
+    "measured_S_acceleration_x",
+    "measured_S_acceleration_z",
+    "measured_lateral_contact_N",
+    "inertial_robot_velocity_aligned"
+  ],
+  "rows": {
+    "id": 1,
+    "scenario": "baseline",
+    "parameter": "none",
+    "value": 0,
+    "massS_actual_kg": 2,
+    "massS_identified_kg": 2,
+    "massB_actual_kg": 0.6,
+    "massB_identified_kg": 0.6,
+    "reference_N": 50,
+    "angle_deg": 90,
+    "mu": 0.3,
+    "seed": 1729,
+    "forceKp_A_N": 0.03,
+    "forceKi_A_Ns": 20,
+    "forceKd_A_s_N": 0,
+    "forceBiasZ_N": 0,
+    "forceBiasX_N": 0,
+    "forceScaleZ": 0,
+    "forceScaleX": 0,
+    "forceNoiseRms_N": 0.02,
+    "forceFilterTime_s": 0.0002,
+    "forceDelay_s": 0.0001,
+    "accelBiasZ_m_s2": 0,
+    "accelBiasX_m_s2": 0,
+    "accelScaleError": 0,
+    "accelNoiseRms_m_s2": 0.012,
+    "accelFilterTime_s": 0.0002,
+    "accelDelay_s": 0.0001,
+    "positionNoiseRms_m": 1E-6,
+    "positionScale": 0,
+    "positionDelay_s": 0.0001,
+    "robotDelay_actual_s": 0.08,
+    "robotResponse_actual_s": 0.06,
+    "robotDelay_identified_s": 0.08,
+    "robotResponse_identified_s": 0.06,
+    "recenterGain_per_s": 0.73529411764705876,
+    "surfaceKind": "sharp_bump",
+    "stopTime_s": 4,
+    "simulationStep_s": 5E-5,
+    "executed": true,
+    "nativeReturned": true,
+    "passed": true,
+    "completed": true,
+    "lostContact": false,
+    "strokeStop": false,
+    "runtime_s": 4.156435,
+    "endTime_s": 4,
+    "nativeSamples": 80001,
+    "peakNormalForceError_N": 0.34992276535191991,
+    "rmsNormalForceError_N": 0.038591110832432572,
+    "peakNormalForceErrorTime_s": 2.0045,
+    "peakBeforeBumpError_N": 0.1805562851802307,
+    "peakDuringBumpError_N": 0.34992276535191991,
+    "peakAfterBumpError_N": 0.16005479248771337,
+    "meanSettledNormalError_N": -0.00071158365760379922,
+    "peakNormalEstimateError_N": 0.38744033808460188,
+    "rmsNormalEstimateError_N": 0.055998879032619089,
+    "peakSlopeEstimateError": 0.0076127043428252279,
+    "peakCurrent_A": 2.8833111397864286,
+    "rmsCurrent_A": 2.5003786052011239,
+    "peakVoltage_V": 12.040197347484151,
+    "voltageClipFraction": 0,
+    "effortClipFraction": 0,
+    "minTravel_mm": 10.70101451936268,
+    "maxTravel_mm": 16.408674020364998,
+    "gateReadyFraction": 0.97506234413965087,
+    "gateClosures": 0,
+    "postGateQueuedRobotSpeedPeak_m_s": 0,
+    "normalBalanceResidual_N": 2.1316282072803006E-14,
+    "rigidAxialBalanceResidual_N": 7.1054273576010019E-15,
+    "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_smoke_20260930_native_traces/case_0001.mat",
+    "reason": "pass",
+    "axialDiagnosticReason": "force error"
+  },
+  "scope": "Actual normal pressing force +/-0.5 N over every native sample including startup, sharp 1 mm x10 mm bump at100 mm/s. Finite calibration/timing test grid.",
+  "sensing": "B-S multiaxis force plus S accelerometer plus S-A position; known static tare and issued robot commands only. Finite noise/filter/delay/ADC model, not perfect accelerometry.",
+  "actualVsIdentified": "Physical S stays unchanged for identified mass tests; identified S is used in inertia reconstruction, acceleration FF and holding-current FF. Physical current starts at its actual equilibrium. Robot predictor and recenter gain remain fixed at the baseline identified robot settings when actual delay/response change.",
+  "residualCalibration": "Force scale acts on calibrated, tared absolute cell signals before sampling/filtering, with consistent initial states; bias is drift after tare. Position scale acts around its calibrated initial zero. Acceleration gravity tare is recalibrated before each fixed-orientation run, retaining dynamic scale error and residual drift.",
+  "qualificationLimit": "One-factor sensitivities are not combined tolerances. Joint corner cases and repeated runs have their own explicit scope. No changing orientation, tool rotation, unknown surface preview, sanding vibration, pad pressure distribution or actual robot impedance is qualified.",
+  "attempts": 1,
+  "executed": 1,
+  "validatedNativeHistories": 1,
+  "nativeReturned": 1,
+  "failedBeforeNativeReturn": 0,
+  "passed": 1,
+  "failedNative": 0,
+  "rejectedBeforeMetrics": 0,
+  "elapsedSeconds": 5.045836,
+  "worstNormalForceError_N": 0.34992276535191991,
+  "sourceStillMatches": true,
+  "privateSourceUnmodified": true,
+  "scenarioRanking": {
+    "scenario": "baseline",
+    "attempts": 1,
+    "nativeHistories": 1,
+    "passedCases": 1,
+    "worstNormalForceError_N": 0.34992276535191991,
+    "minimumForceMargin_N": 0.15007723464808009,
+    "rowIds": 1
+  },
+  "worstCaseRow": {
+    "id": 1,
+    "scenario": "baseline",
+    "parameter": "none",
+    "value": 0,
+    "massS_actual_kg": 2,
+    "massS_identified_kg": 2,
+    "massB_actual_kg": 0.6,
+    "massB_identified_kg": 0.6,
+    "reference_N": 50,
+    "angle_deg": 90,
+    "mu": 0.3,
+    "seed": 1729,
+    "forceKp_A_N": 0.03,
+    "forceKi_A_Ns": 20,
+    "forceKd_A_s_N": 0,
+    "forceBiasZ_N": 0,
+    "forceBiasX_N": 0,
+    "forceScaleZ": 0,
+    "forceScaleX": 0,
+    "forceNoiseRms_N": 0.02,
+    "forceFilterTime_s": 0.0002,
+    "forceDelay_s": 0.0001,
+    "accelBiasZ_m_s2": 0,
+    "accelBiasX_m_s2": 0,
+    "accelScaleError": 0,
+    "accelNoiseRms_m_s2": 0.012,
+    "accelFilterTime_s": 0.0002,
+    "accelDelay_s": 0.0001,
+    "positionNoiseRms_m": 1E-6,
+    "positionScale": 0,
+    "positionDelay_s": 0.0001,
+    "robotDelay_actual_s": 0.08,
+    "robotResponse_actual_s": 0.06,
+    "robotDelay_identified_s": 0.08,
+    "robotResponse_identified_s": 0.06,
+    "recenterGain_per_s": 0.73529411764705876,
+    "surfaceKind": "sharp_bump",
+    "stopTime_s": 4,
+    "simulationStep_s": 5E-5,
+    "executed": true,
+    "nativeReturned": true,
+    "passed": true,
+    "completed": true,
+    "lostContact": false,
+    "strokeStop": false,
+    "runtime_s": 4.156435,
+    "endTime_s": 4,
+    "nativeSamples": 80001,
+    "peakNormalForceError_N": 0.34992276535191991,
+    "rmsNormalForceError_N": 0.038591110832432572,
+    "peakNormalForceErrorTime_s": 2.0045,
+    "peakBeforeBumpError_N": 0.1805562851802307,
+    "peakDuringBumpError_N": 0.34992276535191991,
+    "peakAfterBumpError_N": 0.16005479248771337,
+    "meanSettledNormalError_N": -0.00071158365760379922,
+    "peakNormalEstimateError_N": 0.38744033808460188,
+    "rmsNormalEstimateError_N": 0.055998879032619089,
+    "peakSlopeEstimateError": 0.0076127043428252279,
+    "peakCurrent_A": 2.8833111397864286,
+    "rmsCurrent_A": 2.5003786052011239,
+    "peakVoltage_V": 12.040197347484151,
+    "voltageClipFraction": 0,
+    "effortClipFraction": 0,
+    "minTravel_mm": 10.70101451936268,
+    "maxTravel_mm": 16.408674020364998,
+    "gateReadyFraction": 0.97506234413965087,
+    "gateClosures": 0,
+    "postGateQueuedRobotSpeedPeak_m_s": 0,
+    "normalBalanceResidual_N": 2.1316282072803006E-14,
+    "rigidAxialBalanceResidual_N": 7.1054273576010019E-15,
+    "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_smoke_20260930_native_traces/case_0001.mat",
+    "reason": "pass",
+    "axialDiagnosticReason": "force error"
+  },
+  "worstCaseParameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 5E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 2,
+      "k1": 0,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.5707963267948966,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": true,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 1729,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 2,
+      "distalMass_model_kg": 2,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "observer",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 6.0068925498177676E-16,
+      "keq": null,
+      "ell": 0.00079577471545947678,
+      "q10": 50,
+      "q20": 50,
+      "holdForce": 50,
+      "r0": 0,
+      "u0": 0,
+      "z0": 0,
+      "forceTicks": 2,
+      "sensorTicks": 2,
+      "robotTicks": 200,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.79577471545947664,
+      "coilHoldCurrent": 2.5,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.5,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.1516679275331093E-14,
+            -3.2950987628679425E-9
+          ],
+          [
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.01,
+            0,
+            -5.0000000000000009E-5,
+            4.9972233792439362E-5,
+            0.00010685087054838787,
+            0.030770463482978565
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.01,
+            0.00999167129436793,
+            0.0068795972429090109,
+            0.045376629591045506
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -7.2494913590520927E-13,
+            6.4030000841999364E-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.22658504839104882,
+            0.0025190762906428335
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            -4.6970722990518662E-8,
+            0.0077481977442080841
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.078693868057473318,
+            7.8693868057473315,
+            2.3608160417242,
+            0,
+            -0.35734719647214358,
+            -0.0011559650818584928
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -4.9384148143125737E-5,
+            -0.030316962500105533
+          ]
+        ],
+        "B": [
+          [
+            -4.1516679275331093E-14,
+            3.2950987628679423E-6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00010685087054838787,
+            -30.77046348297856,
+            0,
+            0,
+            5E-6
+          ],
+          [
+            -0.0068795972429090109,
+            -45.376629591045514,
+            0,
+            0,
+            0.001
+          ],
+          [
+            7.2494913590520927E-13,
+            -6.4030000841999357E-11,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.22658504839104882,
+            -2.5190762906428334,
+            0,
+            0,
+            0
+          ],
+          [
+            4.6970722990518662E-8,
+            -7.7481977442080847,
+            0,
+            0,
+            0
+          ],
+          [
+            0.963877856184777,
+            1.1559650818584926,
+            0,
+            -0.39346934028736658,
+            0
+          ],
+          [
+            4.9384148143125737E-5,
+            30.316962500105532,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.5883026550169879E-17,
+            -3.6416473249086951E-12
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            4.9384148189008766E-8,
+            3.0316958858458208E-5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00046137472290973936,
+            0.0045324273772309083
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.9706160626882172E-12,
+            1.7405158776502423E-13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -2.265850483910488,
+            0.025190762906428334
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -4.7049072802209403E-7,
+            0.077611221744818937
+          ]
+        ],
+        "D": [
+          [
+            -4.5883026550169879E-17,
+            3.6416473249086951E-9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -4.9384148189008766E-8,
+            -0.030316958858458209,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00046137472290973936,
+            -4.5324273772309089,
+            0,
+            0,
+            0
+          ],
+          [
+            1.9706160626882172E-12,
+            -1.7405158776502422E-10,
+            0,
+            0,
+            0
+          ],
+          [
+            2.265850483910488,
+            -25.190762906428333,
+            0,
+            0,
+            0
+          ],
+          [
+            4.7049072802209403E-7,
+            -77.611221744818934,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -0,
+          -0,
+          -0,
+          -0,
+          0,
+          0,
+          -0.58413293311658288,
+          -0.20593728130515576,
+          0
+        ],
+        "integralGain": 1.2641098067025676,
+        "force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          20,
+          2.6,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.0125,
+      "positionMeasurementInitial": 0.0125,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.049639086431114081,
+            5E-9,
+            -5E-9
+          ],
+          [
+            6.1600972542890231,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.95097692329431482,
+            0
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.1600972542890231,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "springs": {
+      "maxCombinedLength_m": 0.1,
+      "commonPreload_N": 32,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "lower": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0.3,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "noiseRms": 0.012,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 8,
+      "quantum": 0.00187038,
+      "delaySamples": 1
+    },
+    "inertial": {
+      "forceKp": 0.03,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1
+    },
+    "uncertainty": {
+      "forceScaleZ": 0,
+      "forceScaleX": 0,
+      "positionScale": 0,
+      "accelBiasX_m_s2": 0,
+      "massB_model_kg": 0.6,
+      "forceConstant_model_N_A": 20,
+      "recenterGain": 0.73529411764705876
+    }
+  }
+}

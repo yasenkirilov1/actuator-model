@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "kind": "executed_diagnostics_not_qualification",
+  "rows": [
+    {
+      "rate_Hz": 30000,
+      "quantizationBits": 24,
+      "cases": 7,
+      "passes": 7,
+      "worstTotalPeakError_N": 0.495250233524442,
+      "worstScenario": 170,
+      "largestPairedWaveformDifference_N": 0.0,
+      "largestPairedPeakErrorIncrease_N": 0.0,
+      "physicalFailures": 0,
+      "nativeSamples": 4200007
+    },
+    {
+      "rate_Hz": 30000,
+      "quantizationBits": 16,
+      "cases": 7,
+      "passes": 7,
+      "worstTotalPeakError_N": 0.49180635073480783,
+      "worstScenario": 170,
+      "largestPairedWaveformDifference_N": 0.08247306855941083,
+      "largestPairedPeakErrorIncrease_N": 0.0023105984467264307,
+      "physicalFailures": 0,
+      "nativeSamples": 4200007
+    },
+    {
+      "rate_Hz": 30000,
+      "quantizationBits": 14,
+      "cases": 7,
+      "passes": 6,
+      "worstTotalPeakError_N": 0.5019710266695192,
+      "worstScenario": 170,
+      "largestPairedWaveformDifference_N": 0.2882260559423857,
+      "largestPairedPeakErrorIncrease_N": 0.012820397057764055,
+      "physicalFailures": 0,
+      "nativeSamples": 4200007
+    },
+    {
+      "rate_Hz": 30000,
+      "quantizationBits": 12,
+      "cases": 7,
+      "passes": 4,
+      "worstTotalPeakError_N": 0.5533617648796465,
+      "worstScenario": 171,
+      "largestPairedWaveformDifference_N": 0.6108320418160256,
+      "largestPairedPeakErrorIncrease_N": 0.11848442417100102,
+      "physicalFailures": 0,
+      "nativeSamples": 4200007
+    },
+    {
+      "rate_Hz": 15000,
+      "quantizationBits": 24,
+      "cases": 7,
+      "passes": 6,
+      "worstTotalPeakError_N": 0.5386025274827517,
+      "worstScenario": 170,
+      "largestPairedWaveformDifference_N": 0.5151143541638206,
+      "largestPairedPeakErrorIncrease_N": 0.09292096181697751,
+      "physicalFailures": 0,
+      "nativeSamples": 4200007
+    },
+    {
+      "rate_Hz": 7500,
+      "quantizationBits": 24,
+      "cases": 7,
+      "passes": 0,
+      "worstTotalPeakError_N": 52.21765329565828,
+      "worstScenario": 171,
+      "largestPairedWaveformDifference_N": 52.17739670782393,
+      "largestPairedPeakErrorIncrease_N": 51.782775954949635,
+      "physicalFailures": 7,
+      "nativeSamples": 291532
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/report_readability_20261006/adc/executed_results_compact.json": "8d29cd95d1a303af4b51069c23646b058d711ea0f6436492db5b137201dbf550",
+    "acf_simulink/validation/report_readability_20261006/adc/reference_native_parity.json": "61780a500c565e32abf5fb6c1c8bc70916e898839f65a378056cac3039350db6",
+    "acf_simulink/validation/report_readability_20261006/adc/matlab_replay.log": "d6a68cd86bd00a65dda7062985a2f90eaf50f5b7202093ab1be3a14ab582e544"
+  },
+  "nativeSamples": 21291567,
+  "scope": "Seven selected known development corners, fixed PI/observer/modal design. Rate cases change actual sinc3 OSR/noise/output hits and causal acquisition frame. Bit cases change only code spacing at original M08 noise/timing. No ADC chip or complete controller is qualified by this subset.",
+  "controllerRetuned": false,
+  "independentMatlabRateReplay": "No completed independent rate replay: the retained log shows a MATLAB startup fatal error before simulation execution."
+}

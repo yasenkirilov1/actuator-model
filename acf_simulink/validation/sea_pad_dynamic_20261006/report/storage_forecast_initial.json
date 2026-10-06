@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "recorded_before_launch": true,
+  "shared_array_budget_bytes": 5368709120,
+  "audited_existing_array_bytes": 4428882103,
+  "remaining_array_bytes": 939827017,
+  "filesystem_free_bytes": 388220481536,
+  "ram_available_GiB": 22,
+  "retained_total_limit_bytes": 33554432,
+  "retained_array_limit_bytes": 10485760,
+  "temporary_array_limit_bytes": 314572800,
+  "allocations": {
+    "engine": {"retained_bytes": 12582912, "temporary_bytes": 134217728},
+    "native": {"retained_bytes": 10485760, "temporary_bytes": 629145600, "temporary_array_bytes": 314572800},
+    "root_report_assumptions": {"retained_bytes": 10485760, "temporary_bytes": 10485760}
+  },
+  "policy": "Score all integration samples in RAM; no bulk MAT/NPZ histories. Retain compact metrics and selected decimated CSV command/force traces. One native MATLAB process; private SDI/cache. Shared retained and temporary arrays fit current5GiB allowance. Audit actual usage at completion."
+}

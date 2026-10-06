@@ -1,0 +1,2 @@
+RL_UPDATE seed=7100 update=1/2 transitions=32768 errorRms=0.114055N peak=2.80076N fails=0 collect=2.59s learn=0.45s
+RL_UPDATE seed=7100 update=2/2 transitions=65536 errorRms=1.47144N peak=10.1152N fails=1 collect=3.23s learn=0.29s

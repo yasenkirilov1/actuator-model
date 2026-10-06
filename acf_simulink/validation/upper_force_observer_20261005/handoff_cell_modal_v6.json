@@ -1,0 +1,104 @@
+{
+  "status": "bounded_cell_modal_v6_ready_for_development_endpoint_scoring",
+  "createdQualificationEpisodes": 0,
+  "candidatePromoted": false,
+  "frozenNativeDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6",
+  "frozenBankDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_v6",
+  "configsSha256": "a9f9ffc1732deaec9464bb4390fe6a577d922635ae466c0451b41d7fe0a5549c",
+  "sharedLibrarySha256": "6d41094b0e9ea536482da0d7805da7dc74066df175a2ce0a8baabf842d2bb1dd",
+  "privateNativeSlxSha256": "6a56c6d45af0491388297889de0a2f60f2f9f3494c21054de62f854afd22e871",
+  "nativeCSha256": "0ddc3a794859dd70f2781c54be8178373a17afc88ad309509a3ed43f474026be",
+  "fileSeal": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/file_hashes.json",
+    "sha256": "1f0d7e4aeb78014d0d2e631425f3ec873cf62a7bb1dcda7886fbdea0df559507"
+  },
+  "savedCopyAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/graph_acceptance_cell_modal_v6/acceptance.json",
+    "sha256": "7fac94de0c300d4fae895729032d7eb37462121a7a39978806bffbfb073299b0"
+  },
+  "liveSourceAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/generated_cell_source_audit.json",
+    "sha256": "585a3475cdbb89e857c78b43a81a678c7f15dfa4985e3e8be2d52c036d605533"
+  },
+  "localSourceSignGuard": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/local_cell_source_guard.json",
+    "sha256": "04d829772954f9607559d71d22e927985c748dc7dd5224ad92a4cffa7c67db82"
+  },
+  "positiveDampingGuard": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/modal_positive_damping_guard.json",
+    "sha256": "ee4e6c537ee26e5299ccd0018b40d8555ee9ee9a6b26c2890a8715f2fd27d118"
+  },
+  "actualCellAcquisitionPhaseHarness": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/cell_modal_phase_v6/acquisition_phase.json",
+    "sha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2"
+  },
+  "recipeExplanation": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/CELL_MODAL_V6.md",
+    "sha256": "93f48b6882fc9b9f7c7646053c6ced0b83697b58141a8b32e423b8b0d07b2bcf"
+  },
+  "scenarioCount": 396,
+  "modalFamilyCount": 18,
+  "selectedParentObserverProfileIDs": [
+    24,
+    33
+  ],
+  "actualSensorNoiseAndTimingUnchanged": true,
+  "physicalGuideFrictionAndExternalDampingUnchanged": true,
+  "piControlBaseGainID": 1,
+  "guideCompensationUnchanged": true,
+  "accelerationLeadMerged": false,
+  "filterDampingWidths": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "virtualDampingTargets_Ns_m": [
+    500,
+    1500,
+    3000
+  ],
+  "auxiliaryCurrentBound_A": 0.05,
+  "indexContract": "zero-based scenario =198*observerIndex0 +22*(modalLocalFamilyID1-1)+11*massAIndex0+caseID0; observer0/1=parent24/33. localFamilyID1=3*(widthID1-1)+dampingID1; gainID=globalfamily1=9*observerIndex0+localfamily1.",
+  "initialHeavyAHighForceCase7Indices": [
+    18,
+    40,
+    62,
+    84,
+    106,
+    128,
+    150,
+    172,
+    194,
+    216,
+    238,
+    260,
+    282,
+    304,
+    326,
+    348,
+    370,
+    392
+  ],
+  "initialLightAHighForceCase7Indices": [
+    7,
+    29,
+    51,
+    73,
+    95,
+    117,
+    139,
+    161,
+    183,
+    205,
+    227,
+    249,
+    271,
+    293,
+    315,
+    337,
+    359,
+    381
+  ],
+  "dataContracts": "All existing p sections and all existing d coefficients including the upper observer exactly equal selected v4 parents. The sole new native two-state DSS consumes actual acquired axial cell deviation, zero DC, bounded \u00b1.05 A after baseline notch before total current limits; total prelimit antiwindup. Existing reconstruction and normal/observer frame untouched. Actual current is diagnostic logging only in the sign harness, absent from controller input.",
+  "scope": "Frozen preparation and numerical source/carrier-phase acceptance, with independent saved-copy compilation of 12 observer/mass/width combinations and zero loops. These checks create no force qualification episodes or hardware claims. Root owns development scoring and full-native histories."
+}

@@ -1,0 +1,175 @@
+{
+  "status": "source_backed_figures_generated",
+  "figures": [
+    {
+      "figure": "reports/figures/soft-pad-total-force-effects-20261006.svg",
+      "sha256": "8d30a543320dd1c4c93c79ec86eb2db222e7eac7b30e6150fe95684ae82afdf7",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/paired_coil_factors.json",
+          "sha256": "c5b34e8e1de49c574099d2b199595c7468aca69ad677512f78f2313fdcf0432c"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_replay_results.json",
+          "sha256": "4ea40abf4ad5e3048d2a2bee164abbca0dec3c4fcbc965a8f41d162227326ce7"
+        }
+      ],
+      "trace_sources": [
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_point_native_500Hz.csv",
+          "sha256": "aa9601e0ed7a5e7b3d2a44fb021c50fd6c7d0fd6cc06b5619294a1f2a02f8478",
+          "case": "pilot_sea_point",
+          "native_all_step_peak_N": 6.408993781431251
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_77mm_native_500Hz.csv",
+          "sha256": "3a0af55093c11564216187a634931bc06cd616f96d58ebcb4cdb415f5d284e83",
+          "case": "pilot_sea_77mm",
+          "native_all_step_peak_N": 0.1979598296897045
+        }
+      ],
+      "paired_rows": [
+        {
+          "label": "20 N/mm \u00b7 point \u00b7 c=80",
+          "worst_error_N": 0.26033771176664633,
+          "passes": 4,
+          "stops": 0,
+          "count": 4
+        },
+        {
+          "label": "20 N/mm \u00b7 77 mm \u00b7 c=80",
+          "worst_error_N": 0.22006710830521214,
+          "passes": 4,
+          "stops": 0,
+          "count": 4
+        },
+        {
+          "label": "50 N/mm \u00b7 point \u00b7 c=80",
+          "worst_error_N": 2.2708815642968547,
+          "passes": 2,
+          "stops": 0,
+          "count": 4
+        },
+        {
+          "label": "100 N/mm \u00b7 point \u00b7 c=80",
+          "worst_error_N": 7.741833786387126,
+          "passes": 2,
+          "stops": 1,
+          "count": 4
+        },
+        {
+          "label": "20 N/mm \u00b7 point \u00b7 c=0",
+          "worst_error_N": 46.792425173950875,
+          "passes": 0,
+          "stops": 2,
+          "count": 4
+        },
+        {
+          "label": "20 N/mm \u00b7 77 mm \u00b7 c=0",
+          "worst_error_N": 46.79242517395088,
+          "passes": 0,
+          "stops": 2,
+          "count": 4
+        }
+      ],
+      "scope": "Total axial force. Fixed-gain comparisons do not establish optimal performance for the stiffer or undamped pads."
+    },
+    {
+      "figure": "reports/figures/series-elastic-pad-actuator-results-20261006.svg",
+      "sha256": "112240a491b113bc2e221a71b2cb4c7a28690b7d9a13522864bf6b77a1e15f3d",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c0.json",
+          "sha256": "6d85b536f84e4996e5c9f44b4968d57921d69bf365357b969fe05d352d3acc6c"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_wide20k_c0_width_transfer.json",
+          "sha256": "be14f06aa4035e4173db958eb7285b41b444142774e213cfb3e14f6ec2721145"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_point20k_c80.json",
+          "sha256": "69f2a64e4af682ab401eccc2c08063f1d17c0a5a8919aff29760b2ee5e1224a9"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/coil_wide20k_c80_width_transfer.json",
+          "sha256": "c657e01730de642a8774e92771481555ca25669632005bfbc6a4efabbda107d6"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c0_5k_l10.json",
+          "sha256": "681e85d12dc7f54e8a68aeeac91b5d5c1171dd24a78f704ed7f182e4f357106a"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_wide20k_c0_5k_l10_width_transfer.json",
+          "sha256": "e0c97f38cbe33afe06a42bceea453e7ddebee9b27f8e7bb103a843319147d7e6"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_point20k_c80_5k_l10.json",
+          "sha256": "7ad4e57d7afe08dd4a72e8296175cdc4802b22fcbfce97506b99f0b821789d06"
+        },
+        {
+          "path": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/sea_v2_wide20k_c80_5k_l10_width_transfer.json",
+          "sha256": "5a408a5863eef6e005794f89332982400f1656f18246101e06f5e04df1b043dc"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Coil \u00b7 c=0",
+          "color": "#197b9b",
+          "point_peak_N": 1.040164779533999,
+          "wide_peak_N": 0.07758958918251757,
+          "point_passes": 0,
+          "wide_passes": 54,
+          "point_stops": 0,
+          "wide_stops": 0,
+          "max_wide_average_copper_loss_W": 37.35634130479448,
+          "max_wide_current_rms_A": 2.0492020431325253,
+          "wide_motor_rms_rating_failures": 0,
+          "count_per_group": 54
+        },
+        {
+          "label": "Coil \u00b7 c=80",
+          "color": "#197b9b",
+          "point_peak_N": 0.33797895471288086,
+          "wide_peak_N": 0.2110631710517552,
+          "point_passes": 54,
+          "wide_passes": 54,
+          "point_stops": 0,
+          "wide_stops": 0,
+          "max_wide_average_copper_loss_W": 37.411110924688295,
+          "max_wide_current_rms_A": 2.050703701291593,
+          "wide_motor_rms_rating_failures": 0,
+          "count_per_group": 54
+        },
+        {
+          "label": "Screw + spring \u00b7 c=0",
+          "color": "#a16a29",
+          "point_peak_N": 9.137294013891015,
+          "wide_peak_N": 0.11537187391940762,
+          "point_passes": 0,
+          "wide_passes": 54,
+          "point_stops": 12,
+          "wide_stops": 0,
+          "max_wide_average_copper_loss_W": 7.432558255357272,
+          "max_wide_current_rms_A": 1.06890432483907,
+          "wide_motor_rms_rating_failures": 0,
+          "count_per_group": 54
+        },
+        {
+          "label": "Screw + spring \u00b7 c=80",
+          "color": "#a16a29",
+          "point_peak_N": 1.730460462468666,
+          "wide_peak_N": 0.04705052181863323,
+          "point_passes": 0,
+          "wide_passes": 54,
+          "point_stops": 0,
+          "wide_stops": 0,
+          "max_wide_average_copper_loss_W": 15.641608766335425,
+          "max_wide_current_rms_A": 1.5506378579326074,
+          "wide_motor_rms_rating_failures": 2,
+          "count_per_group": 54
+        }
+      ],
+      "scope": "Short axial total-force diagnostics. Finite nominal grid; no full normal-force, thermal or robot qualification."
+    }
+  ]
+}

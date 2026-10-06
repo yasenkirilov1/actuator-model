@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "authoredRevision": 1,
+  "preservedQueries": 79,
+  "totalQueries": 86,
+  "markdown": "reports/active-contact-flange-report-design-explained-20261006.md",
+  "markdownSha256": "3e48f09316d8fccc2e62b2c078b774cc25b42c6ffbdb69d8f14f97eec3365e58",
+  "inputs": "acf_simulink/validation/report_readability_20261006/report/report_inputs_design_explained.json",
+  "inputsSha256": "51e07a7eeda1d0519527116fec9e16c09f9ba4bf087aeb80a7f871ec62951128",
+  "figures": [
+    {
+      "file": "reports/figures/fixed-force-operating-grid-20261006.svg",
+      "sha256": "ce1932bdf6f692beb3b6ef3f9fc34b9a28ec56e03db91952fe313703a6f993a0",
+      "queryId": "explained_nominal_grid"
+    },
+    {
+      "file": "reports/figures/prototype-mechanics-single-axis-20261006.svg",
+      "sha256": "5c672256a5ccb3587242f77c6cf337f24b292e27e1ef3c56e611a67d922363db",
+      "queryId": "single_axis_prototype_scope"
+    },
+    {
+      "file": "reports/figures/load-cell-mode-explained-20261006.svg",
+      "sha256": "44b4738c661f9792fe56175d95e3bb3fa72c823e6a463df9462779880819af28",
+      "queryId": "explained_cell_mode"
+    },
+    {
+      "file": "reports/figures/leadscrew-pitch-inertia-current-20261006.svg",
+      "sha256": "da8147ebd8b97333bafed8faa96e986174bcdaaef231fa8ac5ca0d4f8ef72b22",
+      "queryId": "actuator_sizing_reviewed"
+    },
+    {
+      "file": "reports/figures/adc-fixed-diagnostics-20261006.svg",
+      "sha256": "23f8da9ecb374a48625104b07d5942f44f3c267177646845023413c0bf678c89",
+      "queryId": "adc_native_diagnostics"
+    },
+    {
+      "file": "reports/figures/fixed-mechanics-force-limit-20261005.svg",
+      "sha256": "84e632d74685f7635939bf59ddc7cd6689ee79c762d7d65eb122571e4837f308",
+      "queryId": "fixed_control_waveform"
+    }
+  ],
+  "componentBlocks": [
+    "Mechanics: load path, springs and guides",
+    "Actuator and electrical drive",
+    "Force and position measurement",
+    "Acceleration measurement",
+    "Acquisition electronics: amplifier, ADC and timing",
+    "Fast force controller",
+    "Robot commands and recentering",
+    "Learned control policy",
+    "Calibration, model qualification and prototype validation"
+  ]
+}

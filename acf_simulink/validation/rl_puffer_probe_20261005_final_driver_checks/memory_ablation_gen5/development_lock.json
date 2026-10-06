@@ -1,0 +1,59 @@
+{
+  "status": "fixed_before_development_outcomes",
+  "checkpointSha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+  "bankSha256": "01341cf1f22bf9d8c9d78685f4a1947411e7f698d5631795298b6014c31089e4",
+  "nativeLibrarySha256": "98a02c1aa5d490b99e8e4d0815cd7418a84b24ef035de039b3e0fde1ce420cc8",
+  "driverSha256": "53e4ecbf735aea4f5914f7d1c11a354f2e63753ec4420a7bb2daf803696fbb98",
+  "policySourceHashes": {
+    "env.py": "08d7d1ba973e03fd2e05e52b26312f348822bd9dcbf42c25b8c2d458909b26df",
+    "train.py": "8da22a065bfc733667c0ae5f1e2ed2a794d2ad557e551cd3bdab420b842b5a94",
+    "native_repeat.py": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+    "qualify.py": "ff023b84e41df7fa4180b59f5eb575fcfd3d86625e8bd20e54608358b6272e5d",
+    "reward_search_native.c": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+    "legacy_pilot.py": "16b42e2e8f52d698969d9885200971b4b21d085cd6d1e469fc3f79a8c4fbaa78",
+    "native_bridge.c": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+    "native_api.py": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488",
+    "prepare_bank.m": "1638adcb88ab19856c1723cd051e2929fbbb0308991556aa57ce499ef4fb0b11",
+    "build_native.m": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234",
+    "policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1",
+    "ppo.py": "19890f3bfa8ad3b9592847cd3b11972f4cb13260639030582ba810d920fa8f17",
+    "policy_export.py": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735",
+    "policy_checks.py": "3ee07c86684a38dc8300c72578b99ca76715e60436bd7f3394a2f49e7bffee23",
+    "reward_search.py": "b724c880a9ffa24abedea6d99b8a563d08f4371f5f026a098b47d83569ba0bbe",
+    "README.md": "1087ade2e4feaf45f5c3d036434f19289a84d06b9f74b15511e026706eef87c8",
+    "reward_search_methods.md": "4910ed155d5b37bdc0a3b5786f5d6ae3d4c0b2fe425668ef4292022d4538f66b",
+    "ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940",
+    "prepare_bank_band.m": "6ef4c6149919a4df49b75abb0768d32334c10ca86f07e43f2a6df2f218baf38d",
+    "final_evaluate.py": "ef229525db5b727cab5cd6bc5fb2596302f60c4975438c7430b4ce10a54555c2",
+    "frozen_source_manifest.json": "ebec0723c8271ef5f2107b25e9ec0915823e5979a7062f9bb1feef4db9d0e3e4"
+  },
+  "cases": [
+    {
+      "scenario": 0,
+      "identity": "train_curriculum_01",
+      "seed": 71001,
+      "duration_s": 2
+    },
+    {
+      "scenario": 40,
+      "identity": "train_stress_01",
+      "seed": 73001,
+      "duration_s": 2
+    },
+    {
+      "scenario": 96,
+      "identity": "train_band_01",
+      "seed": 111001,
+      "duration_s": 5
+    },
+    {
+      "scenario": 139,
+      "identity": "train_sustained_12",
+      "seed": 131012,
+      "duration_s": 4
+    }
+  ],
+  "interpretation": "Development memory-reliance test. Same weights/causal sensors/observer/plant/queues; only learned64-state carry resets every100us in counterfactual. Not optimized memoryless baseline or final qualification.",
+  "freshHoldoutEpisodesExecuted": 0,
+  "qualification700EpisodesExecuted": 0
+}

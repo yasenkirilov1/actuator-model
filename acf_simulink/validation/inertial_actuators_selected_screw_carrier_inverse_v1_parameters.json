@@ -1,0 +1,72 @@
+{
+  "screw": {
+    "lead": 0.01,
+    "rotorInertia": 1.5800000000000001E-6,
+    "torqueConstant": 0.0234,
+    "backEmfConstant": 0.0234,
+    "resistance": 2.32,
+    "inductance": 0.000238,
+    "peakCurrent": 5,
+    "voltage": 24,
+    "currentResponse": 0.0001,
+    "coulombTorque": 0.001,
+    "viscousTorque": 1E-6,
+    "frictionSpeed": 1,
+    "speedBandwidth": 1000,
+    "speedDamping": 0.9,
+    "speedAntiWindup": 1000,
+    "maxLinearSpeedRequest": 0.1,
+    "forceKp": 0.0005,
+    "forceKi": 0.005,
+    "forceKd": 0,
+    "motorReference": "maxon RE25 302005 (NRND): winding reference only",
+    "motorRotorInertia_kg_m2": 1.08E-6,
+    "screwCouplerInertia_kg_m2": 5E-7,
+    "motorMass_kg": 0.13,
+    "continuousCurrent_A": 1.16,
+    "continuousTorque_Nm": 0.0263,
+    "sizingEfficiency": 0.9,
+    "currentDerivativeFilter": 0.0003,
+    "currentNotch": {
+      "enabled": false,
+      "frequency_Hz": 20.216769005134147,
+      "zeroDamping": 0.01,
+      "poleDamping": 0.3
+    },
+    "feedbackFilter": {
+      "kind": "common",
+      "zeroDamping": 0.01,
+      "poleDamping": 0.3
+    },
+    "accelerationPrediction_s": 0,
+    "accelerationDerivativeFilter_s": 0.0003,
+    "accelerationFeedforwardFilter_s": 0,
+    "controlStrategy": "current",
+    "velocityFeedforwardScale": 0,
+    "currentForceKp": 0.40808959767152658,
+    "currentForceKi": 27.205973178101772,
+    "currentForceKd": 0
+  },
+  "screwLowerLoadInverse": {
+    "enabled": true,
+    "scale": 1,
+    "cutoff_Hz": 1500,
+    "filterDamping": 0.70710678118654746,
+    "identifiedStiffness_N_m": 19746,
+    "identifiedDamping_Ns_m": 60,
+    "identifiedMassB_kg": 1.2237589981488473,
+    "numerator": [
+      3.5786134162816774,
+      -3.5786134162816774,
+      -3.5786134162816774,
+      3.5786134162816774
+    ],
+    "denominator": [
+      1,
+      -1.7154119456215446,
+      0.99579277199563487,
+      -0.263401371552554
+    ],
+    "identifiedForceConstant_N_A": 14.70265361880023
+  }
+}

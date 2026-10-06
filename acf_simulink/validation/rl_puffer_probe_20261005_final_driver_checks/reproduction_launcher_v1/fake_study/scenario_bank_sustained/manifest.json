@@ -1,0 +1,581 @@
+{
+  "sourceModelSha256": "model_hash",
+  "cases": [
+    {
+      "split": "train",
+      "scenario": 0
+    },
+    {
+      "split": "train",
+      "scenario": 1
+    },
+    {
+      "split": "train",
+      "scenario": 2
+    },
+    {
+      "split": "train",
+      "scenario": 3
+    },
+    {
+      "split": "train",
+      "scenario": 4
+    },
+    {
+      "split": "train",
+      "scenario": 5
+    },
+    {
+      "split": "train",
+      "scenario": 6
+    },
+    {
+      "split": "train",
+      "scenario": 7
+    },
+    {
+      "split": "train",
+      "scenario": 8
+    },
+    {
+      "split": "train",
+      "scenario": 9
+    },
+    {
+      "split": "train",
+      "scenario": 10
+    },
+    {
+      "split": "train",
+      "scenario": 11
+    },
+    {
+      "split": "train",
+      "scenario": 12
+    },
+    {
+      "split": "train",
+      "scenario": 13
+    },
+    {
+      "split": "train",
+      "scenario": 14
+    },
+    {
+      "split": "train",
+      "scenario": 15
+    },
+    {
+      "split": "train",
+      "scenario": 16
+    },
+    {
+      "split": "train",
+      "scenario": 17
+    },
+    {
+      "split": "train",
+      "scenario": 18
+    },
+    {
+      "split": "train",
+      "scenario": 19
+    },
+    {
+      "split": "train",
+      "scenario": 20
+    },
+    {
+      "split": "train",
+      "scenario": 21
+    },
+    {
+      "split": "train",
+      "scenario": 22
+    },
+    {
+      "split": "train",
+      "scenario": 23
+    },
+    {
+      "split": "train",
+      "scenario": 24
+    },
+    {
+      "split": "train",
+      "scenario": 25
+    },
+    {
+      "split": "train",
+      "scenario": 26
+    },
+    {
+      "split": "train",
+      "scenario": 27
+    },
+    {
+      "split": "train",
+      "scenario": 28
+    },
+    {
+      "split": "train",
+      "scenario": 29
+    },
+    {
+      "split": "train",
+      "scenario": 30
+    },
+    {
+      "split": "train",
+      "scenario": 31
+    },
+    {
+      "split": "train",
+      "scenario": 32
+    },
+    {
+      "split": "train",
+      "scenario": 33
+    },
+    {
+      "split": "train",
+      "scenario": 34
+    },
+    {
+      "split": "train",
+      "scenario": 35
+    },
+    {
+      "split": "train",
+      "scenario": 36
+    },
+    {
+      "split": "train",
+      "scenario": 37
+    },
+    {
+      "split": "train",
+      "scenario": 38
+    },
+    {
+      "split": "train",
+      "scenario": 39
+    },
+    {
+      "split": "train",
+      "scenario": 40
+    },
+    {
+      "split": "train",
+      "scenario": 41
+    },
+    {
+      "split": "train",
+      "scenario": 42
+    },
+    {
+      "split": "train",
+      "scenario": 43
+    },
+    {
+      "split": "train",
+      "scenario": 44
+    },
+    {
+      "split": "train",
+      "scenario": 45
+    },
+    {
+      "split": "train",
+      "scenario": 46
+    },
+    {
+      "split": "train",
+      "scenario": 47
+    },
+    {
+      "split": "selection",
+      "scenario": 48
+    },
+    {
+      "split": "selection",
+      "scenario": 49
+    },
+    {
+      "split": "selection",
+      "scenario": 50
+    },
+    {
+      "split": "selection",
+      "scenario": 51
+    },
+    {
+      "split": "selection",
+      "scenario": 52
+    },
+    {
+      "split": "selection",
+      "scenario": 53
+    },
+    {
+      "split": "selection",
+      "scenario": 54
+    },
+    {
+      "split": "selection",
+      "scenario": 55
+    },
+    {
+      "split": "selection",
+      "scenario": 56
+    },
+    {
+      "split": "selection",
+      "scenario": 57
+    },
+    {
+      "split": "selection",
+      "scenario": 58
+    },
+    {
+      "split": "selection",
+      "scenario": 59
+    },
+    {
+      "split": "selection",
+      "scenario": 60
+    },
+    {
+      "split": "selection",
+      "scenario": 61
+    },
+    {
+      "split": "selection",
+      "scenario": 62
+    },
+    {
+      "split": "selection",
+      "scenario": 63
+    },
+    {
+      "split": "holdout",
+      "scenario": 64
+    },
+    {
+      "split": "holdout",
+      "scenario": 65
+    },
+    {
+      "split": "holdout",
+      "scenario": 66
+    },
+    {
+      "split": "holdout",
+      "scenario": 67
+    },
+    {
+      "split": "holdout",
+      "scenario": 68
+    },
+    {
+      "split": "holdout",
+      "scenario": 69
+    },
+    {
+      "split": "holdout",
+      "scenario": 70
+    },
+    {
+      "split": "holdout",
+      "scenario": 71
+    },
+    {
+      "split": "holdout",
+      "scenario": 72
+    },
+    {
+      "split": "holdout",
+      "scenario": 73
+    },
+    {
+      "split": "holdout",
+      "scenario": 74
+    },
+    {
+      "split": "holdout",
+      "scenario": 75
+    },
+    {
+      "split": "holdout",
+      "scenario": 76
+    },
+    {
+      "split": "holdout",
+      "scenario": 77
+    },
+    {
+      "split": "holdout",
+      "scenario": 78
+    },
+    {
+      "split": "holdout",
+      "scenario": 79
+    },
+    {
+      "split": "holdout",
+      "scenario": 80
+    },
+    {
+      "split": "holdout",
+      "scenario": 81
+    },
+    {
+      "split": "holdout",
+      "scenario": 82
+    },
+    {
+      "split": "holdout",
+      "scenario": 83
+    },
+    {
+      "split": "holdout",
+      "scenario": 84
+    },
+    {
+      "split": "holdout",
+      "scenario": 85
+    },
+    {
+      "split": "holdout",
+      "scenario": 86
+    },
+    {
+      "split": "holdout",
+      "scenario": 87
+    },
+    {
+      "split": "holdout",
+      "scenario": 88
+    },
+    {
+      "split": "holdout",
+      "scenario": 89
+    },
+    {
+      "split": "holdout",
+      "scenario": 90
+    },
+    {
+      "split": "holdout",
+      "scenario": 91
+    },
+    {
+      "split": "holdout",
+      "scenario": 92
+    },
+    {
+      "split": "holdout",
+      "scenario": 93
+    },
+    {
+      "split": "holdout",
+      "scenario": 94
+    },
+    {
+      "split": "holdout",
+      "scenario": 95
+    },
+    {
+      "split": "train",
+      "scenario": 96
+    },
+    {
+      "split": "train",
+      "scenario": 97
+    },
+    {
+      "split": "train",
+      "scenario": 98
+    },
+    {
+      "split": "train",
+      "scenario": 99
+    },
+    {
+      "split": "train",
+      "scenario": 100
+    },
+    {
+      "split": "train",
+      "scenario": 101
+    },
+    {
+      "split": "train",
+      "scenario": 102
+    },
+    {
+      "split": "train",
+      "scenario": 103
+    },
+    {
+      "split": "train",
+      "scenario": 104
+    },
+    {
+      "split": "train",
+      "scenario": 105
+    },
+    {
+      "split": "train",
+      "scenario": 106
+    },
+    {
+      "split": "train",
+      "scenario": 107
+    },
+    {
+      "split": "train",
+      "scenario": 108
+    },
+    {
+      "split": "train",
+      "scenario": 109
+    },
+    {
+      "split": "train",
+      "scenario": 110
+    },
+    {
+      "split": "train",
+      "scenario": 111
+    },
+    {
+      "split": "train",
+      "scenario": 112
+    },
+    {
+      "split": "train",
+      "scenario": 113
+    },
+    {
+      "split": "train",
+      "scenario": 114
+    },
+    {
+      "split": "train",
+      "scenario": 115
+    },
+    {
+      "split": "train",
+      "scenario": 116
+    },
+    {
+      "split": "train",
+      "scenario": 117
+    },
+    {
+      "split": "train",
+      "scenario": 118
+    },
+    {
+      "split": "train",
+      "scenario": 119
+    },
+    {
+      "split": "selection",
+      "scenario": 120
+    },
+    {
+      "split": "selection",
+      "scenario": 121
+    },
+    {
+      "split": "selection",
+      "scenario": 122
+    },
+    {
+      "split": "selection",
+      "scenario": 123
+    },
+    {
+      "split": "selection",
+      "scenario": 124
+    },
+    {
+      "split": "selection",
+      "scenario": 125
+    },
+    {
+      "split": "selection",
+      "scenario": 126
+    },
+    {
+      "split": "selection",
+      "scenario": 127
+    },
+    {
+      "split": "train",
+      "scenario": 128
+    },
+    {
+      "split": "train",
+      "scenario": 129
+    },
+    {
+      "split": "train",
+      "scenario": 130
+    },
+    {
+      "split": "train",
+      "scenario": 131
+    },
+    {
+      "split": "train",
+      "scenario": 132
+    },
+    {
+      "split": "train",
+      "scenario": 133
+    },
+    {
+      "split": "train",
+      "scenario": 134
+    },
+    {
+      "split": "train",
+      "scenario": 135
+    },
+    {
+      "split": "train",
+      "scenario": 136
+    },
+    {
+      "split": "train",
+      "scenario": 137
+    },
+    {
+      "split": "train",
+      "scenario": 138
+    },
+    {
+      "split": "train",
+      "scenario": 139
+    },
+    {
+      "split": "selection",
+      "scenario": 140
+    },
+    {
+      "split": "selection",
+      "scenario": 141
+    },
+    {
+      "split": "selection",
+      "scenario": 142
+    },
+    {
+      "split": "selection",
+      "scenario": 143
+    }
+  ]
+}

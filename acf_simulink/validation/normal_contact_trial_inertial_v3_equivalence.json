@@ -1,0 +1,67 @@
+{
+  "version": "inertial-v3",
+  "v2Source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2",
+  "v3Source": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930",
+  "rows": [
+    {
+      "caseIndex": 1,
+      "massS_kg": 2,
+      "force_N": 50,
+      "angle_deg": 90,
+      "mu": 0.3,
+      "seed": 1729,
+      "samples": 80001,
+      "v2NormalError_N": 0.34992276535191991,
+      "v3NormalError_N": 0.34992276535191991,
+      "maxOriginal35Difference": 0,
+      "maxNormal8Difference": 0,
+      "maxAccelerometer6Difference": 0,
+      "maxMotion2Difference": 0
+    },
+    {
+      "caseIndex": 2,
+      "massS_kg": 0.1,
+      "force_N": 50,
+      "angle_deg": 90,
+      "mu": 0.3,
+      "seed": 29,
+      "samples": 80001,
+      "v2NormalError_N": 0.36831082634149936,
+      "v3NormalError_N": 0.36831082634149936,
+      "maxOriginal35Difference": 0,
+      "maxNormal8Difference": 0,
+      "maxAccelerometer6Difference": 0,
+      "maxMotion2Difference": 0
+    },
+    {
+      "caseIndex": 3,
+      "massS_kg": 0.1,
+      "force_N": 5,
+      "angle_deg": 0,
+      "mu": 0,
+      "seed": 7,
+      "samples": 80001,
+      "v2NormalError_N": 0.32989924593286268,
+      "v3NormalError_N": 0.32989924593286268,
+      "maxOriginal35Difference": 0,
+      "maxNormal8Difference": 0,
+      "maxAccelerometer6Difference": 0,
+      "maxMotion2Difference": 0
+    },
+    {
+      "caseIndex": 4,
+      "massS_kg": 2,
+      "force_N": 5,
+      "angle_deg": 0,
+      "mu": 0.3,
+      "seed": 1729,
+      "samples": 80001,
+      "v2NormalError_N": 0.32045621877001729,
+      "v3NormalError_N": 0.32045621877001729,
+      "maxOriginal35Difference": 0,
+      "maxNormal8Difference": 0,
+      "maxAccelerometer6Difference": 0,
+      "maxMotion2Difference": 0
+    }
+  ]
+}

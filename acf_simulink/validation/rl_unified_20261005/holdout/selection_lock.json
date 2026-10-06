@@ -1,0 +1,56 @@
+{
+  "status": "frozen_before_holdout",
+  "candidates": [
+    {
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7101_fixed",
+      "seed": 7101,
+      "rank": [
+        0,
+        0,
+        11.888588152918238,
+        1.5273064799452527
+      ],
+      "update": 50,
+      "transitions": 2621440
+    },
+    {
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7102_fixed",
+      "seed": 7102,
+      "rank": [
+        1,
+        0,
+        10.763202599412018,
+        1.206252484834228
+      ],
+      "update": 10,
+      "transitions": 2621440
+    },
+    {
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7103_1khz",
+      "seed": 7103,
+      "rank": [
+        1,
+        0,
+        9.95679848516302,
+        1.0652342592642454
+      ],
+      "update": 48,
+      "transitions": 393216
+    }
+  ],
+  "selected": {
+    "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_unified_20261005/train_7101_fixed",
+    "seed": 7101,
+    "rank": [
+      0,
+      0,
+      11.888588152918238,
+      1.5273064799452527
+    ],
+    "update": 50,
+    "transitions": 2621440
+  },
+  "selectedCheckpointSha256": "183f32c7ce5c62348323ada5217befe4fc2039993896b0d7ed9496ccf1a557e3",
+  "ranking": "Fewest physical failures, most full-episode\u00b10.5N passes, lowest worst peak error, lowest mean RMS; selection episodes only.",
+  "heldoutRetuning": false
+}

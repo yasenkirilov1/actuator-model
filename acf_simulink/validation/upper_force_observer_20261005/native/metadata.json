@@ -1,0 +1,105 @@
+{
+  "status": "generated_native_c",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "upperObserverContract": {
+    "enabled": true,
+    "nativeBlocksOnly": true,
+    "stateNames": [
+      "A_minus_R_m",
+      "vA_minus_vR_m_s",
+      "A_minus_S_m",
+      "vA_minus_vS_m_s"
+    ],
+    "inputNames": [
+      "measured_A_minus_S_m",
+      "aligned_delta_actuator_force_N",
+      "aligned_robot_acceleration_m_s2",
+      "measured_S_acceleration_m_s2"
+    ],
+    "observabilityRank": 4,
+    "maximumPoleMagnitude": 0.99274823075756857,
+    "gain": [
+      -2.649416480396642,
+      756.57601789628416,
+      0.40903835428480428,
+      1064.0721512669245
+    ],
+    "measuredForceSource": "Gravity-tared axial B-S cell, existing measured_force_N tag minus Fref",
+    "forceBalance": "deltaFa = deltaL - identified_mB*aS + identified_mB/identified_k1 * [s^2/(1+s/wc)^2]deltaL",
+    "derivativeCutoff_Hz": 1500,
+    "derivativeDamping": 1,
+    "derivativeHighFrequencyCorrectionGain": 0.83274787134191441,
+    "causality": "Only existing matched axial cell, S acceleration, S-A position and already-issued robot prediction. No actual A/current/actuator-force/surface truth. No extra force acquisition/pipeline, equilibrium holding-force subtraction or guide-friction subtraction.",
+    "predictorLimitation": "Force-balance differentiation is properly regularized; it amplifies acquired cell noise and is approximate above the regularization band. It estimates net physical actuator force including actual drive clipping and guide friction."
+  },
+  "mechanicalDesign": "upper_20k_lower_cell_measured_force_observer",
+  "modelName": "acf_rl_native",
+  "modelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native/acf_rl_native.slx",
+  "step_s": 3.3333333333333333E-6,
+  "actionStep_s": 0.0001,
+  "physicalTicksPerAction": 30,
+  "robotStep_s": 0.01,
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "installedProducts": [
+    {
+      "Name": "MATLAB",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "MATLAB Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    }
+  ],
+  "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank/configs.mat",
+  "configsSha256": "9032dddb995ff8994990ee79df24620052504f190c6b391d37cac0c6975fd1ab",
+  "observationNames": [
+    "estimated_normal_N",
+    "inertial_axial_N",
+    "inertial_lateral_N",
+    "measured_acceleration_z_m_s2",
+    "measured_acceleration_x_m_s2",
+    "relative_position_m",
+    "estimated_relative_velocity_m_s",
+    "estimated_actuator_travel_m",
+    "estimated_slope",
+    "issued_command_robot_velocity_m_s",
+    "issued_command_robot_acceleration_m_s2",
+    "aligned_issued_command_robot_velocity_m_s",
+    "aligned_issued_command_robot_acceleration_m_s2",
+    "issued_current_request_A",
+    "issued_robot_velocity_request_m_s",
+    "issued_robot_correction_m_s",
+    "force_gate_ready",
+    "recenter_error_m"
+  ],
+  "scoringNames": [
+    "true_normal_N",
+    "plant_log_25",
+    "true_surface_slope"
+  ],
+  "comparatorNames": [
+    "baseline_current_request_A",
+    "baseline_robot_correction_m_s",
+    "known_loaded_equilibrium_current_A"
+  ],
+  "causalContract": "Observations use measured/estimated signals and actual already-issued commands only. Truth and disconnected baseline actions are separate scoring/comparator outputs. Actor current replaces all dynamic PI/FF actuation before current notch/limit; actor robot correction is 100Hz held and passes original gate and teacher sign/amplitude envelope.",
+  "algebraicLoopCount": 0,
+  "buildElapsed_s": 15.485441,
+  "privateModelSha256": "2a21bd723b5f0a6f2875f4a9201d4df416fcd78c21f322ae3592f01e9c48f82c"
+}

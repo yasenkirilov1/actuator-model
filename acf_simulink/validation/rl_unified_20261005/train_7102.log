@@ -1,0 +1,42 @@
+RL_UPDATE seed=7102 update=1/80 transitions=32768 errorRms=0.487069N peak=8.23619N fails=0 collect=2.67s learn=0.29s
+RL_UPDATE seed=7102 update=2/80 transitions=65536 errorRms=1.3817N peak=9.7726N fails=1 collect=3.13s learn=0.09s
+RL_UPDATE seed=7102 update=3/80 transitions=98304 errorRms=1.55719N peak=6.79249N fails=0 collect=2.68s learn=0.11s
+RL_UPDATE seed=7102 update=4/80 transitions=131072 errorRms=0.485142N peak=3.92645N fails=0 collect=2.73s learn=0.15s
+RL_UPDATE seed=7102 update=5/80 transitions=163840 errorRms=0.829864N peak=7.80317N fails=0 collect=2.65s learn=0.18s
+RL_UPDATE seed=7102 update=6/80 transitions=196608 errorRms=1.81854N peak=10.5336N fails=2 collect=3.65s learn=0.09s
+RL_UPDATE seed=7102 update=7/80 transitions=229376 errorRms=1.47583N peak=6.97259N fails=0 collect=2.63s learn=0.09s
+RL_UPDATE seed=7102 update=8/80 transitions=262144 errorRms=0.735919N peak=6.98321N fails=0 collect=2.65s learn=0.09s
+RL_UPDATE seed=7102 update=9/80 transitions=294912 errorRms=0.811802N peak=7.0864N fails=0 collect=2.63s learn=0.24s
+RL_UPDATE seed=7102 update=10/80 transitions=327680 errorRms=1.25842N peak=6.92323N fails=0 collect=2.64s learn=0.12s
+Traceback (most recent call last):
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/train.py", line 362, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/train.py", line 335, in main
+    selected=evaluate(plant,scenarios,selection_ids,policy,directory/"selection",
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/train.py", line 149, in evaluate
+    write_json(directory/f"{name}.json",report)
+  File "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_unified_20261005/train.py", line 29, in write_json
+    Path(path).write_text(json.dumps(value, indent=2, allow_nan=False)+"\n")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/tommie/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

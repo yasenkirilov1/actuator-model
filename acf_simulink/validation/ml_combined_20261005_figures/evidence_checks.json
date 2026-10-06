@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "status": "passed",
+  "checked_files": 56,
+  "all_hashes_and_sizes_match": true,
+  "selected_complete_native_history_audit": [
+    {
+      "recording": 7,
+      "samples": 2400001,
+      "exact_peak_N": 0.45269247194219986,
+      "matches_row_exactly": true,
+      "maximum_projection_balance_residual_N": 2.842170943040401e-14
+    },
+    {
+      "recording": 8,
+      "samples": 2400001,
+      "exact_peak_N": 0.44978076571519665,
+      "matches_row_exactly": true,
+      "maximum_projection_balance_residual_N": 2.842170943040401e-14
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "kind": "manufacturer_specifications_and_recorded_prices",
+  "rows": [
+    {
+      "part": "ADS131M08IPBSR",
+      "manufacturer": "Texas Instruments",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/texas-instruments/ADS131M08IPBSR/11502308",
+      "unit_price_excluding_vat_eur": 9.45,
+      "unit_price_including_vat_eur": 11.4345,
+      "displayed_stock": 4,
+      "channels": 8,
+      "simultaneous": true,
+      "nominal_code_bits": 24,
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ads131m08.pdf",
+      "datasheet_revision": "B, February 2021",
+      "technical_basis": "Tables 7-1/7-2 and Digital Filter section. Eight simultaneous differential inputs. Maximum specified rate 32 ks/s per channel. Gain-one RMS noise at OSR128 is 21.31 microvolts. At external 7.68MHz clock, modulator 3.84MHz, OSR128 gives 30ks/s. Use the OSR128 noise value without claiming improvement from the clock reduction.",
+      "role": "Conditional default when six raw bridge channels and two acceleration axes must be acquired together."
+    },
+    {
+      "part": "ADS131M04IPWR",
+      "manufacturer": "Texas Instruments",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/texas-instruments/ADS131M04IPWR/10448283",
+      "unit_price_excluding_vat_eur": 5.91,
+      "unit_price_including_vat_eur": 7.1511,
+      "channels": 4,
+      "simultaneous": true,
+      "nominal_code_bits": 24,
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ads131m04.pdf",
+      "datasheet_revision": "D",
+      "technical_basis": "Table 7-1 OSR128 gain-one noise is also 21.31 microvolts RMS; same sinc3 topology at that OSR. Its higher advertised 64ks/s setting has higher noise and is not this comparison.",
+      "role": "Lower-cost plausible planar four-channel route: two independent force channels plus two acceleration axes. Assumes the chosen load cell actually exposes only the necessary independent channels. No complete hardware chain has been qualified."
+    },
+    {
+      "part": "ADS131M06IPBSR",
+      "manufacturer": "Texas Instruments",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/texas-instruments/ADS131M06IPBSR/12165155",
+      "unit_price_excluding_vat_eur": 8.39,
+      "unit_price_including_vat_eur": 10.1519,
+      "channels": 6,
+      "simultaneous": true,
+      "nominal_code_bits": 24,
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ads131m06.pdf",
+      "technical_basis": "Table 7-1 also lists 21.31 microvolts RMS at OSR128 gain1. Six simultaneous differential channels.",
+      "role": "Conditional six-channel route, for example three independent force channels plus three acceleration axes. Three-dimensional force estimation is outside the present planar qualification model."
+    },
+    {
+      "part": "ADS131M02IPWR",
+      "manufacturer": "Texas Instruments",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/texas-instruments/ADS131M02IPWR/15857267",
+      "unit_price_excluding_vat_eur": 3.96,
+      "unit_price_including_vat_eur": 4.7916,
+      "channels": 2,
+      "simultaneous": true,
+      "nominal_code_bits": 24,
+      "role": "Two channels alone cannot accommodate the present two-force plus two-acceleration planar chain. Two M02 chips cost more than one M04 and need shared clock/reset and verified inter-device timing. The M02 full transfer/noise sheet was not reviewed for this study; no equivalence claim is made."
+    },
+    {
+      "part": "MCP3208-CI/SL",
+      "manufacturer": "Microchip",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/microchip-technology/MCP3208-CI-SL/305929",
+      "unit_price_excluding_vat_eur": 2.44,
+      "unit_price_including_vat_eur": 2.9524,
+      "channels": 8,
+      "simultaneous": false,
+      "adc_cores": 1,
+      "nominal_code_bits": 12,
+      "datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/21298e.pdf",
+      "datasheet_revision": "DS21298E",
+      "technical_basis": "100ks/s maximum aggregate at 5V, 50ks/s at 2.7V. One multiplexed SAR. With eight channels, at most 12.5ks/s each at the 5V aggregate limit, and readings are time-separated. MCP3208-C INL up to +/-2LSB, offset +/-3LSB, gain +/-5LSB; these are not removed by simple averaging.",
+      "role": "Cheap single-channel or slow acquisition part. The present diagnostic's 12-bit quantization-only envelope does not qualify this chip: its timing, mux settling, input range, INL and channel skew differ."
+    },
+    {
+      "part": "STM32G431CBU6 internal ADC",
+      "manufacturer": "STMicroelectronics",
+      "seller": "DigiKey Netherlands",
+      "url": "https://www.digikey.nl/en/products/detail/stmicroelectronics/STM32G431CBU6/10231569",
+      "mcu_unit_price_excluding_vat_eur": 5.34,
+      "mcu_unit_price_including_vat_eur": 6.4614,
+      "displayed_stock": 0,
+      "incremental_adc_chip_price_eur_if_mcu_already_used": 0,
+      "adc_cores": 2,
+      "nominal_code_bits": 12,
+      "datasheet": "https://www.st.com/resource/en/datasheet/stm32g431cb.pdf",
+      "datasheet_revision": "DS12589 Rev6",
+      "technical_basis": "Two native 12-bit SAR ADC cores, up to 4Msps at full resolution. Table63 maximum-speed single-ADC characterization lists approximately 10.6bits typical single-ended ENOB (10bits minimum), and about 10.9 differential. Those values apply to stated high-rate conditions, not a guarantee for an oversampled implementation.",
+      "role": "Potentially no extra ADC chip. Needs its own complete synchronization, oversampling/filter, reference, input settling and measured noise/INL qualification. The ideal 12-bit spacing test is not an STM32 ADC test."
+    },
+    {
+      "part": "ADS1115",
+      "manufacturer": "Texas Instruments",
+      "datasheet": "https://www.ti.com/product/ADS1115",
+      "channels": 4,
+      "simultaneous": false,
+      "maximum_aggregate_samples_per_second": 860,
+      "role": "Popular low-cost 16-bit part whose rate/filter cannot support the present 10kHz/controller and 1.64kHz cell correction. No simulation or price comparison is needed to identify this incompatibility."
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/report_readability_20261006/adc/parts_review_20261006.json": "d6149bd15d160b01eca451bc0683197bee7851aa5c59957c1acb27b69b0d05dd"
+  },
+  "pricesObservedAt": "2026-10-06T08:46:00Z/2026-10-06T08:49:00Z"
+}

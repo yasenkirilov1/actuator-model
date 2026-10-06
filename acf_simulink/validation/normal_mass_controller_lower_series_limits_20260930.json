@@ -1,0 +1,45 @@
+{
+  "status": "complete_read_only_analysis",
+  "analysisScript": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930.py",
+  "analysisSha256": "f5bc354b319f1b49aebfc6a4b9b6381872bbf77d793872592c0934b7faea9e51",
+  "scope": "Retained full native histories for the external lower spring/damper and causal proper inverse feedforward candidate. Zero new simulations; physical truth appears only in this diagnostic decomposition.",
+  "cellInterpretation": "The soft lower link represents the spring/damper assembly. Catalog cell stiffness is a massless series reference; no separately resolved high-frequency cell/mount mode is qualified.",
+  "rows": [
+    {
+      "sourceTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_endpoint_confirmation_20260930_lower_series_v1_worst_native_trace.mat",
+      "sourceTraceSha256": "4f09c9b6d829f01141804add8d9e64c9def154abff0e9489d4f754bd21f69205",
+      "massS_kg": 2,
+      "reference_N": 50,
+      "angle_deg": 90.0,
+      "mu": 0.3,
+      "seed": 97,
+      "nativeSamples": 400001,
+      "nativeStep_s": 1e-05,
+      "lowerLinkStiffness_N_m": 19746,
+      "lowerLinkDamping_Ns_m": 60,
+      "normalPeakErrorSigned_N": 0.33570390418683616,
+      "peakTime_s": 2.00077,
+      "peakOccursDuringBumpOrRecovery": true,
+      "termsAtPeak_N": {
+        "currentTracking_N": 0.847515663417497,
+        "accelerationFeedforwardError_N": 0.21055080615103486,
+        "normalProjectionFeedforward_N": 0.007831664679813546,
+        "guideFeedforwardError_N": 0.4062843404163823,
+        "filteredPIcorrection_N": -1.1143334147280661,
+        "lowerLinkBInertia_N": 6.694827634455351,
+        "lowerLinkInverseFeedforward_N": -6.7169727902051735
+      },
+      "combinedLowerLinkAndInverseAtPeak_N": -0.022145155749822898,
+      "settledFlatRmsError_N": 0.019414176387868885,
+      "settledFlatPeakError_N": 0.08228711182125892,
+      "peakEstimatedNormalError_N": 0.1754855852284649,
+      "peakCurrent_A": 2.868571513089612,
+      "peakVoltage_V": 16.8217990389035,
+      "voltageClipFraction": 0.0,
+      "effortClipFraction": 0.0,
+      "commandResidual_A": 8.881784197001252e-16,
+      "normalDecompositionResidual_N": 3.241851231905457e-14,
+      "excerpt": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930_trace_01.csv"
+    }
+  ]
+}

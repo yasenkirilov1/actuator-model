@@ -1,0 +1,9 @@
+### Result
+{
+  "sourceRows": 8,
+  "consoleSource": "Data source for Native ADC bandwidth and rate sweep"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({sourceRows:document.querySelector("aside table")?.querySelectorAll("tbody tr").length, consoleSource:document.querySelector("aside")?.getAttribute("aria-label")})');
+```

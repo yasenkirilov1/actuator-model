@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "sourceParityPassed": true,
+  "massEditPassed": true,
+  "nativeStructurePassed": true,
+  "saveReopenPassed": true,
+  "parityRows": [
+    {
+      "duration_s": 10,
+      "nativeSamples": 1.000001E+6,
+      "physical35Difference": 3.0198066269804258E-14,
+      "maximumDifference": 3.0198066269804258E-14,
+      "normalContactDifference": 0,
+      "accelerometerDifference": 0,
+      "motionObserverDifference": 0,
+      "commandPredictionDifference": 0,
+      "forceVariationDifference": 0,
+      "measuredDragDifference": 0,
+      "accelerationFeedforwardDifference": 0,
+      "lowerInverseDifference": 0,
+      "peakNormalError_N": 0.32241548730002023,
+      "caseIndex": 2
+    },
+    {
+      "duration_s": 10,
+      "nativeSamples": 1.000001E+6,
+      "physical35Difference": 3.0198066269804258E-14,
+      "maximumDifference": 3.0198066269804258E-14,
+      "normalContactDifference": 0,
+      "accelerometerDifference": 0,
+      "motionObserverDifference": 0,
+      "commandPredictionDifference": 0,
+      "forceVariationDifference": 0,
+      "measuredDragDifference": 0,
+      "accelerationFeedforwardDifference": 0,
+      "lowerInverseDifference": 0,
+      "peakNormalError_N": 0.10709589799857611,
+      "caseIndex": 6
+    },
+    {
+      "duration_s": 10,
+      "nativeSamples": 1.000001E+6,
+      "physical35Difference": 5.5511151231257827E-15,
+      "maximumDifference": 5.5511151231257827E-15,
+      "normalContactDifference": 0,
+      "accelerometerDifference": 0,
+      "motionObserverDifference": 0,
+      "commandPredictionDifference": 0,
+      "forceVariationDifference": 0,
+      "measuredDragDifference": 0,
+      "accelerationFeedforwardDifference": 0,
+      "lowerInverseDifference": 0,
+      "peakNormalError_N": 0.04278673046749315,
+      "caseIndex": 9
+    }
+  ]
+}

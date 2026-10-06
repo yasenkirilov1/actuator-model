@@ -1,0 +1,72 @@
+{
+  "status": "generated_native_c",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "modelName": "acf_rl_native",
+  "modelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget100/acf_rl_native.slx",
+  "step_s": 3.3333333333333333E-6,
+  "actionStep_s": 0.0001,
+  "physicalTicksPerAction": 30,
+  "robotStep_s": 0.01,
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "installedProducts": [
+    {
+      "Name": "MATLAB",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "MATLAB Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    }
+  ],
+  "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget100/configs.mat",
+  "configsSha256": "7b1f6d0cf3d76039d82d6dcf44970a1d6b23bbab4bb01efb0c47088f7ce05c9d",
+  "observationNames": [
+    "estimated_normal_N",
+    "inertial_axial_N",
+    "inertial_lateral_N",
+    "measured_acceleration_z_m_s2",
+    "measured_acceleration_x_m_s2",
+    "relative_position_m",
+    "estimated_relative_velocity_m_s",
+    "estimated_actuator_travel_m",
+    "estimated_slope",
+    "issued_command_robot_velocity_m_s",
+    "issued_command_robot_acceleration_m_s2",
+    "aligned_issued_command_robot_velocity_m_s",
+    "aligned_issued_command_robot_acceleration_m_s2",
+    "issued_current_request_A",
+    "issued_robot_velocity_request_m_s",
+    "issued_robot_correction_m_s",
+    "force_gate_ready",
+    "recenter_error_m"
+  ],
+  "scoringNames": [
+    "true_normal_N",
+    "plant_log_25",
+    "true_surface_slope"
+  ],
+  "comparatorNames": [
+    "baseline_current_request_A",
+    "baseline_robot_correction_m_s",
+    "known_loaded_equilibrium_current_A"
+  ],
+  "causalContract": "Observations use measured/estimated signals and actual already-issued commands only. Truth and disconnected baseline actions are separate scoring/comparator outputs. Actor current replaces all dynamic PI/FF actuation before current notch/limit; actor robot correction is 100Hz held and passes original gate and teacher sign/amplitude envelope.",
+  "buildElapsed_s": 9.849411,
+  "privateModelSha256": "8d325e4d7e482f83c5634b4a2f8326c259bc6e95c57c127a077ba086c443678e"
+}

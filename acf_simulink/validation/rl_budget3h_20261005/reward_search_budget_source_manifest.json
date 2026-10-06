@@ -1,0 +1,801 @@
+{
+  "status": "budget_sources_and_evidence_bound",
+  "groups": [
+    {
+      "name": "reward_search_budget_screen_8210",
+      "files": [
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/compile.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/compile_manifest.json",
+          "bytes": 1241,
+          "sha256": "b33971b6f88f62296f72c48144efa7b7bd385ea4cec82ddca56fa4e4d4a4336c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/consumed_scenarios.json",
+          "bytes": 218711,
+          "sha256": "fc99972ca45e5626c846d7e9ccecb8292059d69848bdd0340f39fc8f876e6686"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/failed_native/frozen_learned_policy/travel_stop/replay.json",
+          "bytes": 2298,
+          "sha256": "fd7488a8e124984392e6c9f3b55512ef441fb99d551b590daa615470b261e32a"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_actions.npz",
+          "bytes": 2178292,
+          "sha256": "85e3c77e558b5ae8a581ac8115d6357ef5e3086c7e08582333eb761e74f83c2d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_native.npz",
+          "bytes": 87640240,
+          "sha256": "9f342ecfb91455b832c1cecedfdea3f470282e37f877e327c37d3f0ca33cfe35"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_checkpoint.pt",
+          "bytes": 40584,
+          "sha256": "a90edbd6dc932aeedb8127b8ac652b17ada0d41ca9fe72af22f658675532e762"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "0fc209bc53b19f698a9406ce790c025789614b96abb1789a593d07b46971ab9b"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "c5b8534632d622a72e2c71812b91819ed9744a9ace20e14a3d2397809932a70c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_weights.json",
+          "bytes": 117726,
+          "sha256": "f2a153fa1ccd95702891c950693842b5a9bb113e1e6ccbd62db1ed40850fefce"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/frozen_policy/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "684cb1fc1a6b4c691c4a354719d70bee3b4b607984b1110a2dac8a743d9bd6fc"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/partial_results.json",
+          "bytes": 99089,
+          "sha256": "706b846085831b857fe3189798998fc91d0d2c6751c44d3d01aeae888e9651bf"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/results.json",
+          "bytes": 100271,
+          "sha256": "87708b906a4cd8e72b678f2837cdd8b018de67f6ed93888baf4c964f62ae5714"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/reward_search_budget_screen.py",
+          "bytes": 4150,
+          "sha256": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/reward_search_native.so",
+          "bytes": 24672,
+          "sha256": "49adfa8c2091eb62b97bb9c74bd8a1935d18633cf8c21d131b79397e6f558105"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_screen_8210/run_configuration.json",
+          "bytes": 978,
+          "sha256": "b6cc7be4310e8812a355ee322240445d6d28faa60ba5a03ed6566b95d3a560c8"
+        }
+      ]
+    },
+    {
+      "name": "reward_search_budget_bootstrap_8210",
+      "files": [
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/compile.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/compile_manifest.json",
+          "bytes": 1285,
+          "sha256": "848aa99bfbd0157f5be24365a88f1514fd3d465c8c46a456d3f63ec648af8d3b"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/initialization.json",
+          "bytes": 1464,
+          "sha256": "a0f58e999ece4dac95548d62c613333c4bf7ae30c733ad1dc146c64dd9b402f2"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_checkpoint.pt",
+          "bytes": 40840,
+          "sha256": "23070fac00d3ae0da8a8444e471e3a37e90eee7f720f2103efd030108aa37b8e"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "d31e96f5311ccc2425861554cae1d5e73b9473055f7d95f27e435a84e27e48ff"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "c6ac8fa6e4b2d09a07e2a4f94b7cc7a362d1ece0ad01adeff8a4719ca6883681"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_weights.json",
+          "bytes": 117884,
+          "sha256": "e313067aaa4732f32f8f580e836b7ad119c1eb626b670046bc509c8d127e45ac"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "2aa21d937c4f13b74478b36238b5bd932284c13ac841da80827a5d21f354233d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/initialization.json",
+          "bytes": 1455,
+          "sha256": "fb73de554d7ca97ed83cd20bdd4a7bd8f91842de0192cf3183168de46cd0b5e7"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_checkpoint.pt",
+          "bytes": 40840,
+          "sha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "dd0c221f8a0e4b6f0e8cabad87c3ea2184ce0245ca48e57e129ad8fe2257c296"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_weights.json",
+          "bytes": 117882,
+          "sha256": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/initialization.json",
+          "bytes": 1466,
+          "sha256": "523f0718cc52080a0b5275624fc863eee893c25fa16d98d517b98d401ff984fe"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_checkpoint.pt",
+          "bytes": 40840,
+          "sha256": "335466f858459a711557a11522254f325dd0f22dcac3dc0db555e6ac703eb704"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "27e64f0edcebea7f8ac863965e56f436c6462f6c7a4742e6ce023a76a42a85a8"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "04e1d99f39291e38873df4da765bd613629fcc501671730fe39405fb73efd514"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_weights.json",
+          "bytes": 117882,
+          "sha256": "0b539b95e58be78f5b1326c4c7c1217bb9e0b0632832be67ad3f186df0a11670"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "24b89815521553084155bd8374366377916eee2126e3aec3e17ce50decb75b2f"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/train_failed_native/replay.json",
+          "bytes": 2240,
+          "sha256": "173fcaa2fbec44f3a25538b4c469e2b4a5a4ad15a114c0c6abb202533e1697a4"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/train_failed_native/train_sustained_03_actions.npz",
+          "bytes": 2526443,
+          "sha256": "4bc379c72abadd0e6ed7cf2be69f8d0c854fd2d4eadb619358d3c7574ba84245"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p75/train_failed_native/train_sustained_03_native.npz",
+          "bytes": 108942895,
+          "sha256": "d7d0cc041a92ea8d752a9cc0263f302762f6b5d774247909319aee6da8a19437"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/initialization.json",
+          "bytes": 1334,
+          "sha256": "8855421439898d1b94b7d83b27dd6d24f62dc440cb092a2c8e054a6a059d85e4"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_checkpoint.pt",
+          "bytes": 40840,
+          "sha256": "94afb47b387eee4184f3abca23e0b84b0de62ee6e475d49d9de6e59fcf8ba525"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "ce73fbe6b10edf30880be1b1188adc443ee526b0308f197b5461961f143b3e86"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "c5b8534632d622a72e2c71812b91819ed9744a9ace20e14a3d2397809932a70c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_weights.json",
+          "bytes": 117884,
+          "sha256": "3350e60e6b466f2c094afa8c8597ba448e2a4b7902362a85b8f8af436314fa89"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "684cb1fc1a6b4c691c4a354719d70bee3b4b607984b1110a2dac8a743d9bd6fc"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/train_failed_native/replay.json",
+          "bytes": 2235,
+          "sha256": "21c842adb8977ba9b9a9f3928e15190e7b92cc0cf46421e02ae48dccc8fdebc0"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/train_failed_native/train_sustained_03_actions.npz",
+          "bytes": 1383751,
+          "sha256": "7fae2b9fe00d40b81bb0a92be69f2b76d18d5535a8c4e1c56f0cd2873d1bb1f3"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_1/train_failed_native/train_sustained_03_native.npz",
+          "bytes": 59179658,
+          "sha256": "ffd4eceb5b5e8cf1857e4d7162f24ba8a5264544df707118f20822df7c1f9332"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+          "bytes": 243836,
+          "sha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/reward_search_budget_bootstrap.py",
+          "bytes": 5192,
+          "sha256": "14ab4e681908079b0d5b897046758263becdc4bbdab691c734c0901a29edc873"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/reward_search_native.so",
+          "bytes": 24672,
+          "sha256": "49adfa8c2091eb62b97bb9c74bd8a1935d18633cf8c21d131b79397e6f558105"
+        }
+      ]
+    },
+    {
+      "name": "reward_search_budget_8211",
+      "files": [
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/best_flat_weights.npy",
+          "bytes": 32852,
+          "sha256": "406471488605c9907a2274cd5d168c9137a84a07c960a6807259897c35e34632"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_checkpoint.pt",
+          "bytes": 40648,
+          "sha256": "946727c2b60872e6be58a0b4dbdd34ca7e9755ed759021bb758bd38f20a79ce3"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "5645975235bb7c67f361e7ba7eb2006e7b7b1bb81659ae532900e542e3519f31"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "c6ac8fa6e4b2d09a07e2a4f94b7cc7a362d1ece0ad01adeff8a4719ca6883681"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_weights.json",
+          "bytes": 117798,
+          "sha256": "e301623e45b41a5e68b8e06f2ea0369772eba1d402de2d0061e06b91e01f6b35"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0000/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "2aa21d937c4f13b74478b36238b5bd932284c13ac841da80827a5d21f354233d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_checkpoint.pt",
+          "bytes": 40584,
+          "sha256": "e1c98ad22edeca8f528f7d5e3d293060a1f207797b331acf1ca1e13f5790778d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "a9304e1b8ecd94ae8ba1d0bd0f6598a6cca22b87b1fba1d9e0625b2da57ff14d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "ead2c5c03b37f34d37025cedf1619e7a65c9a2af823b1d99a9a3f59caca86847"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_weights.json",
+          "bytes": 117721,
+          "sha256": "c0ed417e4559607abde2149ddf1a6ccf3bd594f1620b2c910c99463e96d0a893"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "31d9fb073a021e9bcf44f869aa0d5806c1f8292b1207635e148378af2dbbdeaa"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/compile.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/compile_manifest.json",
+          "bytes": 1241,
+          "sha256": "a1900993d63a364de5ca3d94d8b2b205dabca6dc8b22732c0337705e8fa3d113"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/consumed_scenarios.json",
+          "bytes": 218711,
+          "sha256": "fc99972ca45e5626c846d7e9ccecb8292059d69848bdd0340f39fc8f876e6686"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/feature_parity.json",
+          "bytes": 68,
+          "sha256": "cd2650169f519bf92df73f9bf523d005959f722adcaa582049a412b5d3efd25f"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/frozen_sources/reward_search.py",
+          "bytes": 34133,
+          "sha256": "bee11ab000b46d917001637dde60acb4dc3b4a7a1bde6bb2131322cc2d2b38b7"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/frozen_sources/reward_search_native.c",
+          "bytes": 5055,
+          "sha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/full_training_final.json",
+          "bytes": 129241,
+          "sha256": "64604a702f243213ffb2155836c082c06893b15ca3b26d794c66e290c0db2141"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/generation_0001.npz",
+          "bytes": 13875,
+          "sha256": "168ec2ff8f92e7e35a1a7b5c4997ef3146a561b4f2e952a248cac70bafaaf696"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/generations.jsonl",
+          "bytes": 203054,
+          "sha256": "6b0941ecf55a9b564d5d5bec85f4965b26a310b243773154530ea6f051f4d144"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial.json",
+          "bytes": 129287,
+          "sha256": "b43d41e6a99001d6930eecf1b5d38511dc082c410bbd967d42c7b8620255f994"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_checkpoint.pt",
+          "bytes": 40456,
+          "sha256": "07d448bce6981ba660ae311a784fe713ff412736895db5d2c96cf23932ec7bb7"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "698dc70c8b7c89a513defcb0c9a34a01ce030608e100fac927d5de1c35f919be"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "c6ac8fa6e4b2d09a07e2a4f94b7cc7a362d1ece0ad01adeff8a4719ca6883681"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_weights.json",
+          "bytes": 117558,
+          "sha256": "1e22323cc93a90755b7e6f02f233752a4e5cb0dfb470e9aebe5731aa2c821c21"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/initial_policy/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "2aa21d937c4f13b74478b36238b5bd932284c13ac841da80827a5d21f354233d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/latest_selected_checkpoint.json",
+          "bytes": 373,
+          "sha256": "3dd95387738dfe8c6f55252b1c43c70526f78bb01c77b5ca0a1a1c23d2626483"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/parameter_spec.json",
+          "bytes": 7564,
+          "sha256": "43e9acb4937e57cc6c2e065ffffcb0f4c245b1eae2ad03a3454ae2d1ea263665"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/results.json",
+          "bytes": 530269,
+          "sha256": "ebd9a03e2bffb026b65d8b62fa168238ce482426e9a26ea00490b8f38a64cda5"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/reward_search_native.so",
+          "bytes": 24672,
+          "sha256": "49adfa8c2091eb62b97bb9c74bd8a1935d18633cf8c21d131b79397e6f558105"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/run_configuration.json",
+          "bytes": 1845,
+          "sha256": "74a91f9e8233b00a1c63aeab7671fabd4be56251d17066c0bbd921276e507bcf"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_flat_weights.npy",
+          "bytes": 32852,
+          "sha256": "406471488605c9907a2274cd5d168c9137a84a07c960a6807259897c35e34632"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_checkpoint.pt",
+          "bytes": 40776,
+          "sha256": "4989cb4ce56367efa41caed03fbb3531d3202894f4fb63f5a5de932de5d91006"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_export_manifest.json",
+          "bytes": 986,
+          "sha256": "8ca9aba3917f4152ed815c7d9ef1b6add1e0609e3ed55d29d3c2e711925bb665"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_inference.c",
+          "bytes": 3424,
+          "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_inference.h",
+          "bytes": 886,
+          "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_weights.f32",
+          "bytes": 32724,
+          "sha256": "ead2c5c03b37f34d37025cedf1619e7a65c9a2af823b1d99a9a3f59caca86847"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_weights.json",
+          "bytes": 118786,
+          "sha256": "5b76fddd5a2ca12571ed9f357a8d7a0a9e65f65cbc6c0be825b3884fe1fe7199"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selected_policy/policy_weights.npz",
+          "bytes": 36624,
+          "sha256": "31d9fb073a021e9bcf44f869aa0d5806c1f8292b1207635e148378af2dbbdeaa"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selection.json",
+          "bytes": 198200,
+          "sha256": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f"
+        }
+      ]
+    },
+    {
+      "name": "executors/v7_budget",
+      "files": [
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/README.md",
+          "bytes": 5144,
+          "sha256": "147c3960a50f31a6fc1b9cd9f1441d2dd3bb839593d09dfa1cf410aa7599a4df"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/build_native.m",
+          "bytes": 19035,
+          "sha256": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/env.py",
+          "bytes": 12497,
+          "sha256": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/final_evaluate.py",
+          "bytes": 48700,
+          "sha256": "03bb4501aeadac7849bdf94dc40f680fd09ee58947f384ba3afcdd300158fd81"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/frozen_source_manifest.json",
+          "bytes": 4089,
+          "sha256": "0f7df82c5f1adfeeace145d8f067e3bc02adddef210fb9def73fc032787f5221"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/legacy_pilot.py",
+          "bytes": 1425,
+          "sha256": "16b42e2e8f52d698969d9885200971b4b21d085cd6d1e469fc3f79a8c4fbaa78"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/native_api.py",
+          "bytes": 14727,
+          "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/native_bridge.c",
+          "bytes": 13166,
+          "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/native_repeat.py",
+          "bytes": 14982,
+          "sha256": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/policy.py",
+          "bytes": 16315,
+          "sha256": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/policy_checks.py",
+          "bytes": 21890,
+          "sha256": "3ee07c86684a38dc8300c72578b99ca76715e60436bd7f3394a2f49e7bffee23"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/policy_export.py",
+          "bytes": 14593,
+          "sha256": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/ppo.py",
+          "bytes": 18168,
+          "sha256": "19890f3bfa8ad3b9592847cd3b11972f4cb13260639030582ba810d920fa8f17"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/ppo_multiscale.py",
+          "bytes": 14001,
+          "sha256": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_actuator_probe.m",
+          "bytes": 2836,
+          "sha256": "0718695cbcbdc1c6e59ef5c183e55cd5d8912f398559eec84eff0d2fd0ad53aa"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_bank.m",
+          "bytes": 9479,
+          "sha256": "1638adcb88ab19856c1723cd051e2929fbbb0308991556aa57ce499ef4fb0b11"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_bank_band.m",
+          "bytes": 5997,
+          "sha256": "6ef4c6149919a4df49b75abb0768d32334c10ca86f07e43f2a6df2f218baf38d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_bank_current50.m",
+          "bytes": 3197,
+          "sha256": "77fa227af04ec8ec7d216a057e0864325deb9dde96a49e49889c4988cf5b4b2b"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_bank_sustained.m",
+          "bytes": 6037,
+          "sha256": "6ea7b3e2f6a060f62f1079f114c0428c13ffcf25e0f97a169c32dad6469f099a"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_long_qualification.m",
+          "bytes": 5456,
+          "sha256": "7c756b0712cdee7be77427362e0525f2bd75131eb1a2a8c0da1aa5b51e1b5c92"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/prepare_qualification_700.m",
+          "bytes": 5094,
+          "sha256": "e09c097df3ee04d2af31e169ed04b7f6e3fba0c761bcb5d2bcd5cb812b24677f"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/qualify.py",
+          "bytes": 4365,
+          "sha256": "ff023b84e41df7fa4180b59f5eb575fcfd3d86625e8bd20e54608358b6272e5d"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/replay_native.m",
+          "bytes": 5188,
+          "sha256": "c4ac204cee0c3cc2b358ee0367b7a4fb71d411799ab6ba0c0f0c916eb7ef44fa"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search.py",
+          "bytes": 34133,
+          "sha256": "bee11ab000b46d917001637dde60acb4dc3b4a7a1bde6bb2131322cc2d2b38b7"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_auxiliary_ledger.py",
+          "bytes": 5097,
+          "sha256": "f722748a57413ad22d9a2ce08febbbbd827919a7890180890046bee73b925fc0"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_band_spec.json",
+          "bytes": 7890,
+          "sha256": "2fb8730355378770a77c12eea0af7e74e1979e8cea1d0cffd4cfc7bbb225b3fb"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_budget_screen.py",
+          "bytes": 4150,
+          "sha256": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_current_spec.json",
+          "bytes": 5638,
+          "sha256": "1cd811f286ada4866afd5e7eb129819a5c2e33e203d152b09c383be736606b19"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_direct_spec.json",
+          "bytes": 302,
+          "sha256": "5dc7d3c138f287b44ef1df4e909d75dda0e19b4f5e689ea7a3153d0457d14c0c"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_finalize.py",
+          "bytes": 5454,
+          "sha256": "f7006e52d0dac128690c046b19e8e9cefc1f57ecc31e79f1e66f11bcc0511646"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_gate_plot.py",
+          "bytes": 5264,
+          "sha256": "c5242cd4f1faf92f84f42707d7ea42545e60f21f45660e90404be5e05f8a357a"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_inverse_followup.py",
+          "bytes": 3324,
+          "sha256": "5e8d28980b7a7ca059bd1edc91d74f04d11e2a89ff48fdbc7dd686c8fef1ff99"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_inverse_probe.py",
+          "bytes": 7066,
+          "sha256": "fac30108aea8e525a0ae375ebbf7ab421a55a4e8790249038e41e28eafd3afc0"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_inverse_spec.json",
+          "bytes": 7564,
+          "sha256": "43e9acb4937e57cc6c2e065ffffcb0f4c245b1eae2ad03a3454ae2d1ea263665"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_ledger.py",
+          "bytes": 13589,
+          "sha256": "0b07eaf386d548195e16f897653d145182a57692e3bbabde91d8fd557024de47"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_methods.md",
+          "bytes": 14650,
+          "sha256": "096e1e0f1127b2931b1fce700c88e873201ada5e26952194bdf11a7f1b1bed24"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_native.c",
+          "bytes": 5055,
+          "sha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_progress_plot.py",
+          "bytes": 4414,
+          "sha256": "93c310d953c7d8982db2ece316af5bf287035076236dcc4ee13cb16e3ba2d900"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_recurrent_spec.json",
+          "bytes": 2694,
+          "sha256": "4bb9e08c9675280cf81a86a1ad53d398edc85632626ddeccc79ebe0156dd8d47"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/reward_search_rolloff_probe.py",
+          "bytes": 6418,
+          "sha256": "db6371536aacee5b04f266fe88960d4849acefd7bbf09fa850d838fc36f48f15"
+        },
+        {
+          "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget/train.py",
+          "bytes": 65690,
+          "sha256": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c"
+        }
+      ]
+    }
+  ],
+  "selectedCheckpoint": {
+    "name": "history_0p5",
+    "method": "Reward-selected linearized-DC-preserving history attenuation of previously evolved weights; no new CMA update.",
+    "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5",
+    "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_checkpoint.pt",
+    "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+    "flatWeightsSha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+    "rank": [
+      0,
+      -28,
+      1.1018482864130625,
+      0.4540594764313681,
+      0.047018795619866396
+    ],
+    "selectionRecordings": 28,
+    "selectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+    "selectionEvidenceSha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+    "selectionEntry": {
+      "name": "history_0p5",
+      "split": "selection"
+    },
+    "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget"
+  },
+  "ledgerSha256": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4",
+  "registrySha256": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+  "fastStageManifestSha256": "a52bee9aa51637e4f752a93f727c7326668678992960798a1850d84210ddd5ca",
+  "ledgerHelpers": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search_budget_finalize.py",
+      "sha256": "aef9e50f15700502308d619bec91ccb3e24f6421520a5a0d17cd99772f0cfcb6"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search_ledger.py",
+      "sha256": "0b07eaf386d548195e16f897653d145182a57692e3bbabde91d8fd557024de47"
+    }
+  ]
+}

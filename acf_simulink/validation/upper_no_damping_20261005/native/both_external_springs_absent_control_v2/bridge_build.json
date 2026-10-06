@@ -1,0 +1,33 @@
+{
+  "emitted_c_sha256": "17f400a9cfe8de5974fb95a9d63910a4a7d0e8000b4e977dc5118a121b3ba964",
+  "adapted_c_sha256": "efc8754459cde74d64d61ba09b779781abc38ab160ee50e7992ce2c5c3bbeb1f",
+  "bridge_sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+  "parameter_bank_sha256": "a6a9fccd5055b5064c63edc22a52b5de28df6b0d380e36e95adc1a8c9e655978",
+  "shared_library_sha256": "475f63fb1742b42183c405c2a467058b0a42dda722fcf120244644f9d9a1e1a0",
+  "native_computation_recovered_exactly": true,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fopenmp",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/native_bridge.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/native_parameter_bank.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+    "-lm",
+    "-pthread",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_control_v2/libacf_native.so"
+  ],
+  "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+}

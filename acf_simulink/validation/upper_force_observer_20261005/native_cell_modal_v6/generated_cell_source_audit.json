@@ -1,0 +1,17 @@
+{
+  "status": "emitted_native_both_cell_sources_live_modal_after_notch_before_limit",
+  "qualificationEpisodes": 0,
+  "nativeCFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+  "nativeCSha256": "0ddc3a794859dd70f2781c54be8178373a17afc88ad309509a3ed43f474026be",
+  "localRawDeviationAssignment": "rtb_Cellerrortodeviation = (acf_rl_native_P.Requestedforce_Value -\n        acf_rl_native_B.Sensorsampledelay) *\n        acf_rl_native_P.Cellerrortodeviation_Gain;",
+  "upperObserverDeviationAssignment": "acf_rl_native_B.Cellforcedeviationfromequilibri = rtb_Cellerrortodeviation\n        + acf_rl_native_P.Cellforcedeviationfromequilibri;",
+  "modalDirectFeedthroughAssignment": "rtb_Currentlimits += acf_rl_native_P.Cellmodalfilter_D*\n          rtb_Cellerrortodeviation;",
+  "modalStateInputCount": 2,
+  "modalAuxiliaryBoundBeforeTotalCurrentLimit": true,
+  "antiwindupUsesTotalPrelimitCurrent": true,
+  "existingUpperObserverSourceUnchanged": true,
+  "diagnosticWindingCurrentIsNotControllerInput": true,
+  "localSourceGuardSha256": "04d829772954f9607559d71d22e927985c748dc7dd5224ad92a4cffa7c67db82",
+  "nativePositiveDampingGuardSha256": "ee4e6c537ee26e5299ccd0018b40d8555ee9ee9a6b26c2890a8715f2fd27d118",
+  "scope": "Emitted-code source and placement acceptance plus numerical sign/phase guards; no force pass inferred."
+}

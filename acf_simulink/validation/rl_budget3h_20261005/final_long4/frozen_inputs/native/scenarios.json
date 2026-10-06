@@ -1,0 +1,62 @@
+[
+  {
+    "scenario": 0,
+    "identity": "qualification_long_01",
+    "identifiedMassB_kg": 0.60149999999999992,
+    "knownEquilibriumCurrent_A": 2.0440701524876337,
+    "identifiedRobotDelay_s": 0.08,
+    "identifiedRobotResponseTime_s": 0.06,
+    "currentResponse_s": 5E-5,
+    "identifiedAntiAliasCutoff_Hz": 1900,
+    "identifiedEmaTime_s": 4.9999999999999996E-5,
+    "identifiedPipelineDelay_s": 2E-5,
+    "actualRobotDelaySamples": 750,
+    "identifiedRobotDelaySamples": 8,
+    "seed": 980001
+  },
+  {
+    "scenario": 1,
+    "identity": "qualification_long_02",
+    "identifiedMassB_kg": 0.60149999999999992,
+    "knownEquilibriumCurrent_A": 2.0440701524876337,
+    "identifiedRobotDelay_s": 0.08,
+    "identifiedRobotResponseTime_s": 0.06,
+    "currentResponse_s": 5E-5,
+    "identifiedAntiAliasCutoff_Hz": 1900,
+    "identifiedEmaTime_s": 4.9999999999999996E-5,
+    "identifiedPipelineDelay_s": 2E-5,
+    "actualRobotDelaySamples": 750,
+    "identifiedRobotDelaySamples": 8,
+    "seed": 980002
+  },
+  {
+    "scenario": 2,
+    "identity": "qualification_long_03",
+    "identifiedMassB_kg": 0.60149999999999992,
+    "knownEquilibriumCurrent_A": 2.0440701524876337,
+    "identifiedRobotDelay_s": 0.08,
+    "identifiedRobotResponseTime_s": 0.06,
+    "currentResponse_s": 5E-5,
+    "identifiedAntiAliasCutoff_Hz": 1900,
+    "identifiedEmaTime_s": 4.9999999999999996E-5,
+    "identifiedPipelineDelay_s": 2E-5,
+    "actualRobotDelaySamples": 750,
+    "identifiedRobotDelaySamples": 8,
+    "seed": 980003
+  },
+  {
+    "scenario": 3,
+    "identity": "qualification_long_04",
+    "identifiedMassB_kg": 0.60149999999999992,
+    "knownEquilibriumCurrent_A": -0.077211984880233356,
+    "identifiedRobotDelay_s": 0.08,
+    "identifiedRobotResponseTime_s": 0.06,
+    "currentResponse_s": 5E-5,
+    "identifiedAntiAliasCutoff_Hz": 1900,
+    "identifiedEmaTime_s": 4.9999999999999996E-5,
+    "identifiedPipelineDelay_s": 2E-5,
+    "actualRobotDelaySamples": 750,
+    "identifiedRobotDelaySamples": 8,
+    "seed": 980004
+  }
+]

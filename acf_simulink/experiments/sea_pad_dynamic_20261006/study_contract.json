@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "study": "sea_pad_dynamic_20261006",
+  "status": "development_diagnostic_contract_before_execution",
+  "scope": "New one-axis, no-drag total axial pressing-force development study; not qualification of the long-term surface-normal sanding requirement.",
+  "force_metric": "max(abs(sum of all unilateral pad axial forces - force_target)) over every executed integration step, including startup",
+  "local_pressure_metrics": false,
+  "coordinates": {
+    "positive_z": "away from the surface",
+    "states": ["zA", "vA", "zB", "vB", "zS", "vS", "q", "vq", "i"],
+    "q": "zA-zNut; independent screw extension, not zA-zB",
+    "u": "zA-zB",
+    "cell_force": "L=kcell*(zS-zB)",
+    "tared_cell": "L+mS*g_axis",
+    "reconstructed_axial_contact": "measured_tared_cell+identified_mS*measured_aS",
+    "guide_force": "Fguide=0.2*tanh((vA-vB)/0.001)+2*(vA-vB), positive opposing increasing u",
+    "coil_balance": ["aA=(Fa-Fguide-kupper*(zA-zRobot))/mA-g_axis", "aB=(L-Fa+Fguide)/mB-g_axis", "aS=(Fpad-L)/mS-g_axis"],
+    "sea_balance": {
+      "mass_matrix_A_q": [["mA+mNut", "-mNut"], ["-mNut", "mNut+Jrot/ell^2"]],
+      "rhs_A_q": ["Fa-Fguide-kupper*(zA-zRobot)-(mA+mNut)*g_axis", "Fm-Fa+mNut*g_axis"],
+      "Fa": "kSEA*(q-u), zero added SEA damping",
+      "Fm": "(Kt*i-shaft_friction(vq/ell))/ell",
+      "aB": "(L-Fa+Fguide)/mB-g_axis",
+      "aS": "(Fpad-L)/mS-g_axis"
+    }
+  },
+  "mechanics": {
+    "mA_kg": 1.5, "mB_kg": 0.6, "mS_range_kg": [0.1, 2.0],
+    "gravity_m_s2": 9.80665,
+    "upper_stiffness_N_m": 20000, "upper_damping_N_s_m": 0,
+    "upper_travel_unlimited": true,
+    "external_B_S_spring": "rigid mounting, finite cell retained",
+    "cell_stiffness_N_m": 64000000, "cell_damping_N_s_m": 0,
+    "guide_coulomb_N": 0.2, "guide_viscous_N_s_m": 2, "guide_smoothing_m_s": 0.001,
+    "flange_u_hard_limit_m": 0.0125,
+    "flange_u_soft_band_m": 0.0075,
+    "nut_q_hard_limit_m": 0.05,
+    "nut_translation_mass_kg": 0.075,
+    "sea_stiffness_N_m": [3500, 5000, 10000],
+    "sea_damping_N_s_m": 0,
+    "sea_signed_deflection_limit_m": 0.017,
+    "sea_spring_geometry_assumption": "Captured opposed pair: 50 mm free each, 25 mm installed at zero net force, individual rate half the net rate, installed working length 8-42 mm. Approximate packing guard, not a purchased-part specification."
+  },
+  "coil": {
+    "Kf_N_A": 24.4, "Ke_V_s_m": 24.4,
+    "R_cold_ohm": 6.4, "R_hot_ohm": 8.896, "L_H": 0.004,
+    "usable_voltage_V": 32, "peak_current_A": 3.5, "current_response_s": 0.00005,
+    "continuous_current": "not established by short diagnostic simulations; report RMS current and hot copper loss separately"
+  },
+  "screw_motor": {
+    "reference": "maxon RE35 273757, brushed DC reference; adequate static continuous torque, NRND example, not a purchase recommendation",
+    "source": "https://www.maxongroup.com/maxon/view/product/273757",
+    "Kt_Nm_A": 0.0758, "Ke_V_s_rad": 0.0758,
+    "R_cold_ohm": 4.68, "R_hot_ohm": 6.5052, "L_H": 0.00129,
+    "rotor_inertia_kg_m2": 0.00000654,
+    "assumed_screw_coupler_inertia_kg_m2": 0.0000005,
+    "motor_mass_included_in_A_kg": 0.34,
+    "catalog_continuous_current_A": 1.42,
+    "catalog_continuous_torque_Nm": 0.104,
+    "catalog_max_speed_rpm": 12000,
+    "lead_m_rev": [0.005, 0.01],
+    "usable_voltage_V": 32, "peak_current_A": 3.5, "current_response_s": 0.00005,
+    "shaft_coulomb_Nm": 0.001, "shaft_viscous_Nm_s_rad": 0.000001,
+    "shaft_smoothing_rad_s": 1,
+    "shaft_friction_status": "assumed smooth reversible transmission loss, not measured efficiency/backlash",
+    "backlash_m": 0,
+    "temperature_assumption": "100 K winding rise, copper coefficient 0.0039/K; short runs do not qualify thermal performance"
+  },
+  "surface": {
+    "shape": "h/H=64*r^3*(1-r)^3 for 0<r<1, zero elsewhere",
+    "height_m": 0.001, "width_m": 0.01, "scan_speed_m_s": 0.1,
+    "ridge": "full width across the pad; same original longitudinal profile in every comparison",
+    "point_bump_start_s": 0.8,
+    "duration_s": 2,
+    "controller_preview": false
+  },
+  "pad": {
+    "model": "Vertical Kelvin-Voigt Winkler foundation; surrogate total axial-force model, no drag or local pressure scoring",
+    "contact_equation": "delta_j=h(t+xi_j/vscan)-zS; F_j=delta_j>0 ? max(0,w_j*(kpad*delta_j+cpad*(vscan*hprime_j-vS))) : 0; Fpad=sum(F_j)",
+    "weights": "Circular chord strip area weights with sum=1, holding total flat-contact k,c constant",
+    "diameter_m": [0, 0.077],
+    "strips": 61, "refinement_strips": 121,
+    "stiffness_N_m": [20000, 50000, 100000, 1000000],
+    "damping_N_s_m": [0, 40, 80, 150],
+    "thickness_for_20k_m": 0.01,
+    "thickness_for_50k_100k_m": 0.005,
+    "stiff_1MN_reference": "Small-compliance contact surrogate, not the original imposed-contact native model; no foam working-compression claim",
+    "working_compression_fraction": 0.5,
+    "stiffness_status": "Representative whole-pad secant/tangent surrogate, plausibility bounded using published foam compression data; not measured sanding-pad dynamics",
+    "damping_status": "Unmeasured sensitivity, including zero damping"
+  },
+  "acquisition": {
+    "force_axis_count": 1,
+    "accelerometer_location": "S",
+    "position": "S relative to A",
+    "screw_additional_measurement": "independent nut/rotor encoder, inherent to motor position servo",
+    "adc_rate_Hz": 30000, "controller_rate_Hz": 10000,
+    "matched_two_pole_cutoff_Hz": 1900,
+    "adc_group_delay_s": 0.0000496,
+    "adc_output_ema_s": 0.00005,
+    "pipeline_s": 0.00002,
+    "conditioned_noise_at_reference_ENBW": {"force_N_RMS": 0.02, "acceleration_m_s2_RMS": 0.014, "position_m_RMS": 0.000001},
+    "noise_reference_ENBW_Hz": 3177.13,
+    "force_noise_distribution": "bounded uniform",
+    "acceleration_noise_distribution": "Gaussian",
+    "position_noise_distribution": "Gaussian",
+    "force_ADC_range_N": [-160, 160],
+    "acceleration_ADC_range_m_s2": [-117.6798, 117.6798],
+    "quantization_bits": 24,
+    "calibration": "Known nominal mass and gravity tare initially; separate perturbation diagnostics, not a robust residual box",
+    "old_fixed_cell_mode_feedback": "disabled; dynamic S changes the cell mode, so its old fixed carrier is ineligible without retuning"
+  },
+  "controller_contract": {
+    "inputs": ["acquired tared cell", "acquired S acceleration", "acquired S-A position", "already-issued robot commands", "screw encoder for SEA"],
+    "forbidden_inputs": ["surface height/slope/profile", "future robot motion", "true plant force/acceleration/body velocity"],
+    "coil": "Force PI plus separately rolled-off measured-inertia feedforward and optional leaky integrated measured S velocity; force request converted to current",
+    "SEA": "Force PI request to identified spring deflection; causal B-A estimate from S-A position and finite cell compliance; independently measured nut encoder; damped nut-position servo plus holding torque feedforward",
+    "tuning": "Separate per identified actuator/pad configuration on designated development cases, then freeze before matched fresh-seed evaluation; retain all failed candidates",
+    "robot_in_main_short_study": "Held fixed, zRobot=0, matched in both actuators; isolate fast actuator/pad comparison. These records do not qualify delayed recentering or long operation.",
+    "equilibrium_initialization": "Loaded static equilibrium at requested force, gravity, pad compression, cell extension, upper deflection and motor current. Includes every noisy startup sample; not an acquisition/startup-at-zero-force qualification."
+  },
+  "numerics": {
+    "integrator": "fixed-step RK4",
+    "base_step_s": 0.0000025,
+    "refinement_step_s": 0.00000125,
+    "sample_event_alignment": "Explicit scheduled ADC/controller/pipeline timestamps; do not silently pretend 30 kHz is integer multiple of base clock",
+    "native_check": "Independent native Simulink physical-plant replay of recorded sampled controller commands and robot position; no claim this replay independently qualifies controller implementation"
+  },
+  "failure_rules": {
+    "force_failure": "any executed sample error >0.5 N",
+    "physical_stops": ["total contact force<=0", "abs(u)>12.5mm", "SEA abs(q)>50mm", "SEA abs(q-u)>17mm", "pad compression outside declared working range"],
+    "partial_contact": "allowed; do not stop for an individual unloaded strip",
+    "preparation_rejection": "invalid loaded initial equilibrium or exceeded working compression; kept separately from executed outcomes"
+  },
+  "intended_evaluation": {
+    "mS_kg": [0.1, 1.4, 2.0], "force_N": [5, 20, 50], "orientation_deg": [0, 45, 90],
+    "new_noise_seeds": [260601, 260602],
+    "comment": "54 matched short records per selected configuration, actual executed coverage recorded by engine. No inference that this finite grid replaces frozen700-case normal-force qualification."
+  }
+}

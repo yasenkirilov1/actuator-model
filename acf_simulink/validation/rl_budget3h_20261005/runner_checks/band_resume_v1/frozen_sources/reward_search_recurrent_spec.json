@@ -1,0 +1,204 @@
+[
+  {
+    "name": "actor.weight",
+    "groups": [
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          2,
+          3
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          4,
+          5
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          6,
+          7
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          8,
+          9
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          10,
+          11
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          12,
+          13
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          14,
+          15
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          16,
+          17
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          18,
+          19
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          20,
+          21
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          22,
+          23
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          24,
+          25
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          26,
+          27
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          28,
+          29
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          30,
+          31
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 2.0
+  },
+  {
+    "name": "actor_skip.weight",
+    "indices": [
+      0,
+      6,
+      13
+    ],
+    "scale": 0.03
+  },
+  {
+    "name": "actor_skip.weight",
+    "indices": [
+      57
+    ],
+    "scale": 0.3
+  },
+  {
+    "name": "actor_aux.weight",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "scale": 0.2
+  },
+  {
+    "name": "actor.bias",
+    "indices": [
+      0
+    ],
+    "scale": 0.003
+  }
+]

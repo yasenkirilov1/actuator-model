@@ -1,0 +1,791 @@
+{
+  "date": "2026-09-30",
+  "status": "complete; no cohort qualified",
+  "purpose": "Bounded test of whether uncertainty in the existing predicted-current state, or an additional estimated actuator-force state, rescues the actual two-sensor controller from a +/-0.1% unknown coil force-constant error.",
+  "nativeSimulations": 54,
+  "allRunsCompleted": true,
+  "individualPassed": 18,
+  "cohortsTested": 9,
+  "cohortsQualified": 0,
+  "additionalQualificationRuns": 0,
+  "winningCandidateCreated": false,
+  "baselineScope": {
+    "mechanics": "Both passive links replaced with rigid connections; no passive springs or dampers. Active voice-coil motion remains.",
+    "toolAndHolderMass_kg": 2,
+    "distalLoadCellMass_kg": 1.4,
+    "forceReference_N": 50,
+    "orientation_deg": 90,
+    "bumpHeight_m": 0.001,
+    "bumpWidth_m": 0.01,
+    "tangentialSpeed_m_s": 0.1,
+    "actualForceNoiseRms_N": 0.02,
+    "actualSminusAPositionNoiseRms_m": 1e-06,
+    "configuredForceDelay_s": 0.0001,
+    "configuredPositionDelay_s": 0.0001,
+    "forceFilter_s": 0.0001,
+    "controllerRate_Hz": 10000,
+    "nativePlantSolver": "ode4, fixed step 50 us",
+    "runDuration_s": 4,
+    "forceStabilityGateFilter_s": 0.1,
+    "observerKf_N_A": 20,
+    "actualKf_N_A": [
+      20,
+      20.02,
+      19.98
+    ],
+    "R_ohm": 4,
+    "L_H": 0.003,
+    "currentResponse_s": 0.0001,
+    "peakCurrentLimit_A": 3.5,
+    "busVoltage_V": 24,
+    "noiseSeeds": [
+      7,
+      1729
+    ],
+    "evaluation": "Entire equilibrium-start run, with true physical contact force within reference +/-0.5 N, no contact loss or travel stop."
+  },
+  "inputAudit": {
+    "physicalMeasurements": [
+      "Tared upstream B/S load-cell force",
+      "Direct physical S-A tool position"
+    ],
+    "otherAllowedInputs": [
+      "Issued current request",
+      "Estimated Coulomb friction computed from estimated gap velocity",
+      "Causal expected robot acceleration predicted from issued robot commands",
+      "Reference and known static load"
+    ],
+    "actualCurrentTelemetryUsed": false,
+    "actualSurfaceOrRobotTruthUsedByController": false,
+    "surfacePreviewUsed": false,
+    "slowRecenterFeedback": "Estimated gap and reconstructed contact force, using the frozen audited 100 ms gate model."
+  },
+  "experimentDistinction": {
+    "current_model_noise": "Add continuous Qc(7,7) process-noise power in A^2/s to the existing current-deviation state. Its current-response dynamics, fixed controller cost weights and nominal force constant remain unchanged.",
+    "force_bias_state": "Add a tenth random-walk state Fb in N, with continuous Qc(10,10) power in N^2/s. Fb enters both predicted B/S force and reconstructed contact force with positive sign, plus a fixed equilibrium-compensation feedback coefficient -(1-currentFeedback)/Kf = approximately -0.07920665 A/N. This is an estimated physical actuator-force discrepancy, not a new measurement."
+  },
+  "physicalMismatchSeparation": "Only native coil-force and back-EMF gains use the actual Kf factor. The observer and holding-current initialization retain nominal Kf = 20 N/A.",
+  "fixedOuterControlWeights": {
+    "forceScale_N": 0.32,
+    "integralScale_Ns": 0.02,
+    "velocityScale_m_s": 0.1,
+    "currentScale_A": 1,
+    "surfaceJerkPower": 70,
+    "robotJerkPower": 0.2,
+    "forceNoise_N": 0.02,
+    "strokeNoise_m": 1e-06,
+    "frictionPower": 0.0009,
+    "currentModelNoisePower_A2_s": 0,
+    "forceBiasEnabled": false,
+    "forceBiasNoisePower_N2_s": 0
+  },
+  "cohorts": [
+    {
+      "kind": "current_model_noise",
+      "noisePower": 1e-05,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.8833969611963326,
+      "peakCurrent_A": 2.761514220963556,
+      "peakVoltage_V": 12.370260729906985,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 2,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4197403937048634
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8032246615662757
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8833969611963326
+        }
+      ],
+      "worstCase": {
+        "id": 5,
+        "kind": "current_model_noise",
+        "power": 1e-05,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 1e-05,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.8833969611963326,
+        "peakCurrent_A": 2.7608985467228653,
+        "peakVoltage_V": 12.338464237942677,
+        "gateReadyFraction": 0.3341645885286783,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.20698254364089774,
+        0.33915211970074816
+      ]
+    },
+    {
+      "kind": "current_model_noise",
+      "noisePower": 0.0001,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.8834610919702683,
+      "peakCurrent_A": 2.761512600466957,
+      "peakVoltage_V": 12.370021062149196,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 2,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4198514317884374
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8034533147911418
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8834610919702683
+        }
+      ],
+      "worstCase": {
+        "id": 11,
+        "kind": "current_model_noise",
+        "power": 0.0001,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0.0001,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.8834610919702683,
+        "peakCurrent_A": 2.760897757469823,
+        "peakVoltage_V": 12.33818260306671,
+        "gateReadyFraction": 0.3341645885286783,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.20698254364089774,
+        0.33915211970074816
+      ]
+    },
+    {
+      "kind": "current_model_noise",
+      "noisePower": 0.001,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.8840060212422003,
+      "peakCurrent_A": 2.7614941088363563,
+      "peakVoltage_V": 12.367643805743272,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 2,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4209066704199529
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.805599707336512
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8840060212422003
+        }
+      ],
+      "worstCase": {
+        "id": 17,
+        "kind": "current_model_noise",
+        "power": 0.001,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0.001,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.8840060212422003,
+        "peakCurrent_A": 2.7608898957939454,
+        "peakVoltage_V": 12.33532065844592,
+        "gateReadyFraction": 0.3341645885286783,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.20947630922693267,
+        0.33915211970074816
+      ]
+    },
+    {
+      "kind": "current_model_noise",
+      "noisePower": 0.01,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.8827329217066904,
+      "peakCurrent_A": 2.7611303445455575,
+      "peakVoltage_V": 12.34554769012843,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 2,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4276480535430167
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8174151575711406
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8827329217066904
+        }
+      ],
+      "worstCase": {
+        "id": 23,
+        "kind": "current_model_noise",
+        "power": 0.01,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0.01,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.8827329217066904,
+        "peakCurrent_A": 2.7608140699215733,
+        "peakVoltage_V": 12.303985366068535,
+        "gateReadyFraction": 0.33665835411471323,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.2169576059850374,
+        0.33915211970074816
+      ]
+    },
+    {
+      "kind": "current_model_noise",
+      "noisePower": 0.1,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.8640929333943248,
+      "peakCurrent_A": 2.760225007853398,
+      "peakVoltage_V": 12.037017869362717,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 1,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.5132782360598824
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.8640929333943248
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.7048984459124625
+        }
+      ],
+      "worstCase": {
+        "id": 28,
+        "kind": "current_model_noise",
+        "power": 0.1,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 20.019999999999996,
+        "observerKf_N_A": 20,
+        "seed": 1729,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0.1,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.8640929333943248,
+        "peakCurrent_A": 2.752985813890254,
+        "peakVoltage_V": 12.037017869362717,
+        "gateReadyFraction": 0.4688279301745636,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.4688279301745636,
+        0.5685785536159601
+      ]
+    },
+    {
+      "kind": "current_model_noise",
+      "noisePower": 1,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.5934305857158151,
+      "peakCurrent_A": 2.757653635776619,
+      "peakVoltage_V": 11.697542709391183,
+      "noisePowerUnits": "A^2/s",
+      "individualPassed": 1,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.5086510624476333
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.5723008746016873
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.5934305857158151
+        }
+      ],
+      "worstCase": {
+        "id": 35,
+        "kind": "current_model_noise",
+        "power": 1,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 1,
+        "forceBiasStateEnabled": false,
+        "forceBiasNoisePower_N2_s": 0,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.5934305857158151,
+        "peakCurrent_A": 2.757653635776619,
+        "peakVoltage_V": 11.481709696328426,
+        "gateReadyFraction": 0.7755610972568578,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.773067331670823,
+        0.8628428927680798
+      ]
+    },
+    {
+      "kind": "force_bias_state",
+      "noisePower": 0.01,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.5165667408848478,
+      "peakCurrent_A": 2.7545321868628365,
+      "peakVoltage_V": 11.843290501072438,
+      "noisePowerUnits": "N^2/s",
+      "individualPassed": 5,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4971337607863049
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 2,
+          "worstPeakError_N": 0.4777668963086299
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.5165667408848478
+        }
+      ],
+      "worstCase": {
+        "id": 6,
+        "kind": "force_bias_state",
+        "power": 0.01,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 1729,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0,
+        "forceBiasStateEnabled": true,
+        "forceBiasNoisePower_N2_s": 0.01,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.5165667408848478,
+        "peakCurrent_A": 2.7545321868628365,
+        "peakVoltage_V": 11.759356750570333,
+        "gateReadyFraction": 0.22693266832917705,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.22443890274314215,
+        0.33665835411471323
+      ]
+    },
+    {
+      "kind": "force_bias_state",
+      "noisePower": 0.1,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.5976858074910609,
+      "peakCurrent_A": 2.754378148254972,
+      "peakVoltage_V": 11.997106291394704,
+      "noisePowerUnits": "N^2/s",
+      "individualPassed": 3,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.592473032985211
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.5872165182842721
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 1,
+          "worstPeakError_N": 0.5976858074910609
+        }
+      ],
+      "worstCase": {
+        "id": 11,
+        "kind": "force_bias_state",
+        "power": 0.1,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 7,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0,
+        "forceBiasStateEnabled": true,
+        "forceBiasNoisePower_N2_s": 0.1,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.5976858074910609,
+        "peakCurrent_A": 2.754191940273954,
+        "peakVoltage_V": 11.997106291394704,
+        "gateReadyFraction": 0.23192019950124687,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.22194513715710723,
+        0.23192019950124687
+      ]
+    },
+    {
+      "kind": "force_bias_state",
+      "noisePower": 1,
+      "executedCases": 6,
+      "allPassed": false,
+      "allCompleted": true,
+      "worstPeakError_N": 0.613890401467259,
+      "peakCurrent_A": 2.7575254851670383,
+      "peakVoltage_V": 11.814545990466934,
+      "noisePowerUnits": "N^2/s",
+      "individualPassed": 0,
+      "perGain": [
+        {
+          "actualKf_N_A": 20,
+          "gainError_percent": 0.0,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.6137587126390613
+        },
+        {
+          "actualKf_N_A": 20.02,
+          "gainError_percent": 0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.613626963940888
+        },
+        {
+          "actualKf_N_A": 19.98,
+          "gainError_percent": -0.1,
+          "runs": 2,
+          "passed": 0,
+          "worstPeakError_N": 0.613890401467259
+        }
+      ],
+      "worstCase": {
+        "id": 18,
+        "kind": "force_bias_state",
+        "power": 1,
+        "study": "gain_uncertainty_screen",
+        "actualKf_N_A": 19.98,
+        "observerKf_N_A": 20,
+        "seed": 1729,
+        "forceReference_N": 50,
+        "angle_deg": 90,
+        "actualForceBias_N": 0,
+        "observerDistalMass_kg": 1.4,
+        "controllerSampleTime_s": 0.0001,
+        "forceKnownDelay_s": 0.0001,
+        "currentModelNoisePower_A2_s": 0,
+        "forceBiasStateEnabled": true,
+        "forceBiasNoisePower_N2_s": 1,
+        "executed": true,
+        "completed": true,
+        "passed": false,
+        "peakForceError_N": 0.613890401467259,
+        "peakCurrent_A": 2.753456193745162,
+        "peakVoltage_V": 11.812131581921822,
+        "gateReadyFraction": 0.20947630922693267,
+        "lostContact": false,
+        "strokeStopHit": false,
+        "reason": "force error"
+      },
+      "gateReadyFractionRange": [
+        0.20947630922693267,
+        0.22194513715710723
+      ]
+    }
+  ],
+  "bestAcrossTestedCohorts": {
+    "kind": "force_bias_state",
+    "noisePower": 0.01,
+    "executedCases": 6,
+    "allPassed": false,
+    "allCompleted": true,
+    "worstPeakError_N": 0.5165667408848478,
+    "peakCurrent_A": 2.7545321868628365,
+    "peakVoltage_V": 11.843290501072438,
+    "noisePowerUnits": "N^2/s",
+    "individualPassed": 5,
+    "perGain": [
+      {
+        "actualKf_N_A": 20,
+        "gainError_percent": 0.0,
+        "runs": 2,
+        "passed": 2,
+        "worstPeakError_N": 0.4971337607863049
+      },
+      {
+        "actualKf_N_A": 20.02,
+        "gainError_percent": 0.1,
+        "runs": 2,
+        "passed": 2,
+        "worstPeakError_N": 0.4777668963086299
+      },
+      {
+        "actualKf_N_A": 19.98,
+        "gainError_percent": -0.1,
+        "runs": 2,
+        "passed": 1,
+        "worstPeakError_N": 0.5165667408848478
+      }
+    ],
+    "worstCase": {
+      "id": 6,
+      "kind": "force_bias_state",
+      "power": 0.01,
+      "study": "gain_uncertainty_screen",
+      "actualKf_N_A": 19.98,
+      "observerKf_N_A": 20,
+      "seed": 1729,
+      "forceReference_N": 50,
+      "angle_deg": 90,
+      "actualForceBias_N": 0,
+      "observerDistalMass_kg": 1.4,
+      "controllerSampleTime_s": 0.0001,
+      "forceKnownDelay_s": 0.0001,
+      "currentModelNoisePower_A2_s": 0,
+      "forceBiasStateEnabled": true,
+      "forceBiasNoisePower_N2_s": 0.01,
+      "executed": true,
+      "completed": true,
+      "passed": false,
+      "peakForceError_N": 0.5165667408848478,
+      "peakCurrent_A": 2.7545321868628365,
+      "peakVoltage_V": 11.759356750570333,
+      "gateReadyFraction": 0.22693266832917705,
+      "lostContact": false,
+      "strokeStopHit": false,
+      "reason": "force error"
+    },
+    "gateReadyFractionRange": [
+      0.22443890274314215,
+      0.33665835411471323
+    ]
+  },
+  "gateReadyFractionRange": [
+    0.20698254364089774,
+    0.8628428927680798
+  ],
+  "peakCurrent_A": 2.761514220963556,
+  "peakVoltage_V": 12.370260729906985,
+  "nativeFollowupLimits": "These 54 bounded screens used the 50 N / 90 degree case and two finite noise seeds at 50 us native solver step. No cohort passed all six cases, so no extra corners, seeds, or fine-step qualification was run for a new uncertainty controller. Failure is specific to these remedies and fixed costs, not a proof that all controllers fail.",
+  "conclusion": "No qualified nonzero coil-gain tolerance was established. The best tested additional force-state power was 0.01 N^2/s: five of six cases passed, but the 19.98 N/A / seed1729 case reached 0.5165667408848478 N, above the 0.5 N limit. Keep the calibrated nine-state nominal result separate from a physical-prototype robustness claim.",
+  "artifacts": {
+    "sourceJSON": [
+      {
+        "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_current_uncertainty_current_model_noise.json",
+        "sha256": "3d0c75f618f8819fca2829739958f7ffe110c822fe7b10a36ded97a6b54bd988"
+      },
+      {
+        "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_current_uncertainty_force_bias_state.json",
+        "sha256": "73d18bdc5f2d78e49a7552035c14ad944aad3c665e7d9fadf5e87a02a1d84a78"
+      }
+    ],
+    "privateHelper": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/helpers/acf_prepare.m",
+    "nativeSourceModel": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/acf_force_control_simple.slx",
+    "nativeSourceModelSHA256": "c994da32f5293a0c5ddb8fba2af0789427641e413ba2627a3370e9d88f14345c",
+    "frozenAuthorship": "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/controller_authorship.m",
+    "frozenAuthorshipSHA256": "8cc6b4d92e748e3bba1e41e4f28d83f60c0c12d7ec3537cc1744bad2f0715cd9",
+    "traceFiles": [
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power1e-05.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power0.0001.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power0.001.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power0.01.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power0.1.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/current_model_noise_power1.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/force_bias_state_power0.01.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/force_bias_state_power0.1.mat",
+      "/home/tommie/.local/state/actuator-model/qualification-20260930/controller_current_uncertainty_worker/traces/force_bias_state_power1.mat"
+    ],
+    "nativeModelReproduction": "The saved private SLX remains the copied nine-state source (same SHA256 as root-final-two-sensor-100ms). No winner was saved. The exact frozen authorship dynamically changes native observer dimensions to ten, restores acceleration state9, and expands the estimated-gap selector width for the force-bias study; paired private helper and saved traces reproduce those negative tests."
+  }
+}

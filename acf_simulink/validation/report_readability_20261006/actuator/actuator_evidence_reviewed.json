@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed_complete_bounded_actuator_evidence",
+  "reviewedDate": "2026-10-06",
+  "owner": "voicecoil_report_evidence",
+  "newNativeExperiments": 0,
+  "prototypeMeasurements": 0,
+  "question": "Which voice-coil parameters matter, and why prefer direct drive to the studied leadscrew?",
+  "bumpDemand": {
+    "evidenceType": "analytical_exact_native_profile",
+    "height_m": 0.001,
+    "width_m": 0.01,
+    "scanSpeed_m_s": 0.1,
+    "bumpDuration_s": 0.09999999999999999,
+    "polynomialDescending": [
+      -64.0,
+      192.0,
+      -192.0,
+      64.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "equation": "h/H = 64 q^3 (1-q)^3; q=(t-t0)/(W/scanSpeed)",
+    "peakToolSpeed_m_s": 0.03434600413439693,
+    "minimumToolAcceleration_m_s2": -2.4,
+    "maximumToolAcceleration_m_s2": 1.920000000000004,
+    "peakToolAcceleration_m_s2": 2.4,
+    "peakToolJerk_m_s3": 384.0000000000001,
+    "toolOnlyInertiaAtS2kg_N": 4.8,
+    "holderPlusToolInertiaIfCoMovingB06S2_N": 6.24,
+    "limits": "Tool motion under maintained contact, not a complete force controller or bound on relative actuator motion; upper A is mobile. No simulation was added."
+  },
+  "screwPitchTradeoff": {
+    "evidenceType": "analytical_sizing_bound_separate_from_native_transmission",
+    "rows": [
+      {
+        "lead_mm_rev": 3.0,
+        "reflectedRotaryMass_kg": 6.930655534987194,
+        "idealForceConstant_N_A": 49.00884539600077,
+        "ideal50NHoldingCurrent_A": 1.0202239941788163,
+        "holdingCurrent90percentEfficiency_A": 1.1335822157542403,
+        "catalogContinuousCurrent_A": 1.16,
+        "catalogContinuousTorque_mNm": 26.3,
+        "catalogTorque50N90percentPassBeforeGuideLoss": false,
+        "idealCold50NCopperLoss_W": 2.414788236051771,
+        "profileRotorSpeed_rpm": 686.9200826879386,
+        "profileRotorAcceleration_rad_s2": 5026.548245743669,
+        "rotaryInertiaPeakTorque_mNm": 7.941946228274998,
+        "rotaryInertiaPeakCurrent_A": 0.3393994114647435,
+        "rotaryInertiaEquivalentAxialForce_N": 16.633573283969266
+      },
+      {
+        "lead_mm_rev": 5.0,
+        "reflectedRotaryMass_kg": 2.4950359925953896,
+        "idealForceConstant_N_A": 29.40530723760046,
+        "ideal50NHoldingCurrent_A": 1.7003733236313605,
+        "holdingCurrent90percentEfficiency_A": 1.8893036929237337,
+        "catalogContinuousCurrent_A": 1.16,
+        "catalogContinuousTorque_mNm": 26.3,
+        "catalogTorque50N90percentPassBeforeGuideLoss": false,
+        "idealCold50NCopperLoss_W": 6.70774510014381,
+        "profileRotorSpeed_rpm": 412.15204961276316,
+        "profileRotorAcceleration_rad_s2": 3015.928947446201,
+        "rotaryInertiaPeakTorque_mNm": 4.765167736964998,
+        "rotaryInertiaPeakCurrent_A": 0.2036396468788461,
+        "rotaryInertiaEquivalentAxialForce_N": 5.988086382228935
+      },
+      {
+        "lead_mm_rev": 10.0,
+        "reflectedRotaryMass_kg": 0.6237589981488474,
+        "idealForceConstant_N_A": 14.70265361880023,
+        "ideal50NHoldingCurrent_A": 3.400746647262721,
+        "holdingCurrent90percentEfficiency_A": 3.7786073858474674,
+        "catalogContinuousCurrent_A": 1.16,
+        "catalogContinuousTorque_mNm": 26.3,
+        "catalogTorque50N90percentPassBeforeGuideLoss": false,
+        "idealCold50NCopperLoss_W": 26.83098040057524,
+        "profileRotorSpeed_rpm": 206.07602480638158,
+        "profileRotorAcceleration_rad_s2": 1507.9644737231006,
+        "rotaryInertiaPeakTorque_mNm": 2.382583868482499,
+        "rotaryInertiaPeakCurrent_A": 0.10181982343942304,
+        "rotaryInertiaEquivalentAxialForce_N": 1.4970215955572337
+      }
+    ],
+    "motor": {
+      "example": "maxon RE25 302005 (NRND)",
+      "url": "https://www.maxongroup.com/maxon/view/product/302005",
+      "voltage_V": 24,
+      "torqueConstant_Nm_A": 0.0234,
+      "resistance_ohm": 2.32,
+      "inductance_H": 0.000238,
+      "rotorInertia_kg_m2": 1.08e-06,
+      "mass_kg": 0.13,
+      "maxContinuousCurrent_A": 1.16,
+      "maxContinuousTorque_Nm": 0.0263,
+      "maxWindingTemperature_degC": 125,
+      "thermalResistanceHousingAmbient_K_W": 14,
+      "thermalResistanceWindingHousing_K_W": 3.1,
+      "windingThermalTimeConstant_s": 12.5
+    },
+    "rotorInertia_kg_m2": 1.08e-06,
+    "assumedScrewCouplerInertia_kg_m2": 5e-07,
+    "formulas": {
+      "ell": "lead/(2*pi)",
+      "reflectedMass": "J/ell^2",
+      "idealHoldingCurrent": "F*ell/Kt",
+      "90percentHoldingCurrent": "F*ell/(0.9*Kt)",
+      "rotorAcceleration": "a/ell",
+      "rotaryInertiaTorque": "J*a/ell"
+    },
+    "kinematicSizingAssumption": "Motor body stationary, moving assembly follows the tool profile. This assumption is not the current mobile-A controller simulation.",
+    "nativeTransmission": "Ideal reversible pitch conversion plus explicit Coulomb/viscous torque; no scalar efficiency multiplier is inserted into its force balance.",
+    "limitations": [
+      "90% efficiency is engineering sizing, not a measured transmission efficiency.",
+      "The assumed screw/coupler inertia is not a purchased part specification.",
+      "3 mm lead is near but below 50 N continuous torque at 90% efficiency (49.57 N before guide friction).",
+      "A larger motor or different winding/screw remains a valid alternative; this does not show all leadscrews fail."
+    ],
+    "largerMotorStaticCounterexample": {
+      "manufacturer": "maxon",
+      "model": "EC-i 30 539489",
+      "source": "https://www.maxongroup.com/maxon/view/product/539489",
+      "status": "primary-source static feasibility reference, not simulated",
+      "nominalVoltage_V": 48,
+      "continuousTorque_Nm": 0.103,
+      "continuousCurrent_A": 1.82,
+      "torqueConstant_Nm_A": 0.0554,
+      "rotorInertia_kg_m2": 1.55e-06,
+      "motorMass_kg": 0.242,
+      "lead_m": 0.01,
+      "assumedScrewCouplerInertia_kg_m2": 5e-07,
+      "idealContinuousAxialForce_N": 64.71680866394973,
+      "continuousAxialForce90PercentSizing_N": 58.24512779755475,
+      "reflectedInertia_kg": 0.8093075608893272,
+      "caveat": "Three-phase commutation, bus/phase/current conventions, cogging/ripple, screw losses/backlash, current-model identification and thermal validation are not implemented or qualified. Do not treat this source as an executed motor model."
+    }
+  },
+  "historicalComparison": {
+    "evidenceType": "historical_matched_native_experiments_different_mechanics",
+    "rows": [
+      {
+        "condition": "S=2 kg, F=50 N, 90\u00b0, noise off",
+        "coilPeakNormalError_N": 0.29325969727796064,
+        "screwPeakNormalError_N": 0.30100661641908744,
+        "coilPeakCurrent_A": 2.8044636162951333,
+        "screwPeakCurrent_A": 3.9004801282939225,
+        "coilPassed": true,
+        "screwPassed": true,
+        "screwContinuousStaticCatalogPassed": false
+      },
+      {
+        "condition": "S=2 kg, F=50 N, 90\u00b0, one noisy seed",
+        "coilPeakNormalError_N": 0.28352182307020257,
+        "screwPeakNormalError_N": 0.2921908188681286,
+        "coilPeakCurrent_A": 2.8992333366500778,
+        "screwPeakCurrent_A": 4.155382715925964,
+        "coilPassed": true,
+        "screwPassed": true,
+        "screwContinuousStaticCatalogPassed": false
+      },
+      {
+        "condition": "S=2 kg, F=5 N, 0\u00b0, one noisy seed",
+        "coilPeakNormalError_N": 0.27479613369848277,
+        "screwPeakNormalError_N": 0.2827360769332756,
+        "coilPeakCurrent_A": 1.4707389524669212,
+        "screwPeakCurrent_A": 2.5204614425031524,
+        "coilPassed": true,
+        "screwPassed": true,
+        "screwContinuousStaticCatalogPassed": false
+      },
+      {
+        "condition": "S=0.1 kg, F=50 N, 90\u00b0, one noisy seed",
+        "coilPeakNormalError_N": 0.10045915137901318,
+        "screwPeakNormalError_N": 0.21943624062798506,
+        "coilPeakCurrent_A": 2.6545107355112636,
+        "screwPeakCurrent_A": 3.672960370939108,
+        "coilPassed": true,
+        "screwPassed": true,
+        "screwContinuousStaticCatalogPassed": false
+      }
+    ],
+    "recordingDuration_s": 4,
+    "nativeBaseRecordings": 8,
+    "nativeRefinements": 1,
+    "passedTransientRecordings": 9,
+    "fullHistoriesRechecked": 8,
+    "mechanics": {
+      "upperRigid": true,
+      "lowerStiffness_N_m": 19746,
+      "lowerDamping_N_s_m": 60,
+      "A_kg": 0.4,
+      "B_kg": 0.6
+    },
+    "catalogContinuousCurrent_A": 1.16,
+    "50NStaticCurrent_A": 3.400746647262721,
+    "50NColdCopperLoss_W": 26.83098040057524,
+    "screwPeakCurrentLimit_A": 5,
+    "currentLoopResponseTarget_s": 0.0001,
+    "sourceModelSHA256": "7fa60a844f8d7d0b0b1d15d4afcdc901c6d7cbe26a463e41cb2e0b78e8d8e0f8",
+    "candidateSHA256": "65b97e2e4703b69f2a47a8d8d819fc22f82c94daf115e24d75f1dd84156b305f",
+    "scope": "A selected matched controller for each actuator, four conditions and one noisy seed; not all actuators, fixed mechanics, full-grid or installed thermal qualification."
+  },
+  "fixedVoltageDiagnostics": {
+    "evidenceType": "paired_independent_matlab_counterfactual_diagnostics",
+    "rows": [
+      {
+        "usableVoltage_V": 32,
+        "nativeWall_s": 42.826976,
+        "sampleCount": 600001,
+        "normalForcePeakError_N": 0.4585258602570548,
+        "peakTime_s": 1.0005633333333332,
+        "peakCurrent_A": 2.3689001464995894,
+        "peakVoltage_V": 23.762442594783323,
+        "voltageClipSamples": 0,
+        "currentLimitSamples": 0,
+        "contactLost": false,
+        "travelStop": false,
+        "algebraicLoopCount": 0,
+        "historyFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat",
+        "historySha256": "c05549f23a4ede5dde2977dbf9a96209019912ebfe5dfd00275fa755e746f1ee",
+        "stage": "unclipped development example",
+        "scenario": 172,
+        "seed": 991007,
+        "controllerRetuned": false,
+        "actualAndIdentifiedCurrentResponse_s": 5e-05,
+        "waveformsExactlyEqualAcrossVoltages": true,
+        "coilForcePeak_N": 57.80116357458998,
+        "coilRmsCurrent_A": 2.0473249042790407,
+        "coilAverageCopperLoss_W": 37.28793328970781,
+        "voltageClipRecordedTime_s": 0.0
+      },
+      {
+        "usableVoltage_V": 48,
+        "nativeWall_s": 41.142753,
+        "sampleCount": 600001,
+        "normalForcePeakError_N": 0.4585258602570548,
+        "peakTime_s": 1.0005633333333332,
+        "peakCurrent_A": 2.3689001464995894,
+        "peakVoltage_V": 23.762442594783323,
+        "voltageClipSamples": 0,
+        "currentLimitSamples": 0,
+        "contactLost": false,
+        "travelStop": false,
+        "algebraicLoopCount": 0,
+        "historyFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_48V_native_recording.mat",
+        "historySha256": "b08f790af095d817dbd18ef7e9cf57b190601b11956bfef721820a54a7d309a9",
+        "stage": "unclipped development example",
+        "scenario": 172,
+        "seed": 991007,
+        "controllerRetuned": false,
+        "actualAndIdentifiedCurrentResponse_s": 5e-05,
+        "waveformsExactlyEqualAcrossVoltages": true,
+        "coilForcePeak_N": 57.80116357458998,
+        "coilRmsCurrent_A": 2.0473249042790407,
+        "coilAverageCopperLoss_W": 37.28793328970781,
+        "voltageClipRecordedTime_s": 0.0
+      },
+      {
+        "usableVoltage_V": 32,
+        "nativeWall_s": 117.505221,
+        "sampleCount": 1800001.0,
+        "normalForcePeakError_N": 2.7481831148409483,
+        "peakTime_s": 5.040233333333333,
+        "peakCurrent_A": 2.419140102200083,
+        "peakVoltage_V": 32,
+        "voltageClipSamples": 2386,
+        "currentLimitSamples": 0,
+        "contactLost": false,
+        "travelStop": false,
+        "algebraicLoopCount": 0,
+        "historyFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_32V_native_recording.mat",
+        "historySha256": "5956605deab560e0976adf34242375c5be3254b7285f7b44bbdeb07a58950e3a",
+        "stage": "post-outcome clipped stress diagnostic",
+        "scenario": 725,
+        "seed": 740025,
+        "controllerRetuned": false,
+        "actualAndIdentifiedCurrentResponse_s": 5e-05,
+        "waveformsExactlyEqualAcrossVoltages": false,
+        "coilForcePeak_N": 59.02701849368202,
+        "coilRmsCurrent_A": 2.0481349872814785,
+        "coilAverageCopperLoss_W": 37.31744721482137,
+        "voltageClipRecordedTime_s": 0.007953333333385437
+      },
+      {
+        "usableVoltage_V": 48,
+        "nativeWall_s": 113.154132,
+        "sampleCount": 1800001.0,
+        "normalForcePeakError_N": 0.650463017145043,
+        "peakTime_s": 4.99274,
+        "peakCurrent_A": 2.3812811433055723,
+        "peakVoltage_V": 33.02137405648465,
+        "voltageClipSamples": 0,
+        "currentLimitSamples": 0,
+        "contactLost": false,
+        "travelStop": false,
+        "algebraicLoopCount": 0,
+        "historyFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_48V_native_recording.mat",
+        "historySha256": "fb2f5e445d6d691d599c965c470b816698d561e9781a1b087cbbcfe124bed7c6",
+        "stage": "post-outcome clipped stress diagnostic",
+        "scenario": 725,
+        "seed": 740025,
+        "controllerRetuned": false,
+        "actualAndIdentifiedCurrentResponse_s": 5e-05,
+        "waveformsExactlyEqualAcrossVoltages": false,
+        "coilForcePeak_N": 58.10325989665596,
+        "coilRmsCurrent_A": 2.04812671451832,
+        "coilAverageCopperLoss_W": 37.31714575248522,
+        "voltageClipRecordedTime_s": 0.0
+      }
+    ],
+    "qualificationEpisodes": 0,
+    "newRuns": 0,
+    "controllerRetuned": false,
+    "identicalUnclippedNativeArrays": true,
+    "matchedStressTimeArrays": true,
+    "actualAndIdentifiedCurrentResponse_s": 5e-05,
+    "displayReduction": "All metrics use every native point; plotted traces retain minima/maxima in each contiguous bin within4.91\u20135.12s.",
+    "scope": "Two unchanged-controller 32/48 V pairs. The stress pair was requested after final outcomes; neither pair is qualification or controller selection evidence."
+  },
+  "voiceCoilTargets": {
+    "evidenceType": "engineering_targets_with_primary_part_reference",
+    "targets": [
+      {
+        "parameter": "Useful actuator stroke",
+        "target": "25 mm, with controller kept near its central15 mm band",
+        "reason": "Travel allowance includes bump, upper-body motion and delayed recentering; stroke alone does not establish recentering success."
+      },
+      {
+        "parameter": "Continuous force",
+        "target": "At least55\u201360 N at hot operating temperature and every used stroke position",
+        "reason": "50 N pressing plus reserve; continuous thermal rating is separate from catalog peak force and must cover the actual mounting/cooling."
+      },
+      {
+        "parameter": "Peak force at our driver current",
+        "target": "Approximately85 N at a3.5 A bipolar current limit",
+        "reason": "Kf24.4\u00d73.5=85.4 N; the manufacturer's204.3 N intermittent rating requires8.37 A and is not available from this driver."
+      },
+      {
+        "parameter": "Force constant Kf",
+        "target": "Approximately24.4\u201325 N/A or an equally capable current/thermal combination",
+        "reason": "50 N requires2.05 A at24.4 N/A. Kf alone is not efficiency; inspect Kf\u00b2/R and force variation across position and temperature."
+      },
+      {
+        "parameter": "Motor constant",
+        "target": "Prefer about10 N/\u221aW or better at operating temperature",
+        "reason": "Copper loss is(F/Km)\u00b2. The studied reference is9.64 cold and8.18 in the hot-resistance model; hot50 N already needs37.36 W."
+      },
+      {
+        "parameter": "Winding resistance and inductance",
+        "target": "Start with R25C\u22486.4 \u03a9, Rhot\u22488.9 \u03a9, L\u22484 mH; lower loss/slew demand is desirable",
+        "reason": "These are reference values, not universal minimums. Driver voltage must coverIR + L\u00b7di/dt + back EMF + losses."
+      },
+      {
+        "parameter": "Moving mass",
+        "target": "Prefer roughly0.24 kg actuator moving assembly inside the total B=0.6 kg budget",
+        "reason": "The reference leaves0.36 kg for holder, guides/cables and hardware. Extra moving mass changes control and cell response."
+      },
+      {
+        "parameter": "Stationary mass",
+        "target": "Account for\u22481.24 kg reference body plus mount inside A; current tests use A=1.5 kg",
+        "reason": "Stationary coil/magnet mass still moves on the prescribed upper spring; it cannot be omitted from A."
+      },
+      {
+        "parameter": "Guidance and force smoothness",
+        "target": "Low drag/cable force, negligible transmission backlash, identified force-position map",
+        "reason": "A bare voice coil needs external guidance; direct drive removes screw backlash but not guide stiction or mounting modes."
+      },
+      {
+        "parameter": "Driver usable output",
+        "target": "Adjustable48 V-rated bipolar driver; aim for\u226536 V usable development headroom",
+        "reason": "The stress48 V diagnostic needed33.02 V and still failed.48 V rating is component capability;36 V usable is a design target, not a newly qualified controller."
+      },
+      {
+        "parameter": "Driver current control",
+        "target": "Bipolar3.5 A and separately measured50 \u00b5s current-response target",
+        "reason": "The model's first-order response target is not the winding's passiveL/R response or a guarantee from peak-force specification. Separate fast current sensing is required."
+      }
+    ],
+    "staticCalculations": [
+      {
+        "force_N": 5,
+        "current_A": 0.20491803278688525,
+        "copperLoss25C_W": 0.2687449610319807,
+        "copperLossHotModel_W": 0.37355549583445313,
+        "resistiveVoltageHotModel_V": 1.8229508196721314,
+        "headroomAt32VIgnoringEmfSlew_V": 30.17704918032787
+      },
+      {
+        "force_N": 50,
+        "current_A": 2.0491803278688527,
+        "copperLoss25C_W": 26.874496103198073,
+        "copperLossHotModel_W": 37.355549583445324,
+        "resistiveVoltageHotModel_V": 18.229508196721316,
+        "headroomAt32VIgnoringEmfSlew_V": 13.770491803278684
+      },
+      {
+        "force_N": 55,
+        "current_A": 2.2540983606557377,
+        "copperLoss25C_W": 32.51814028486966,
+        "copperLossHotModel_W": 45.20021499596883,
+        "resistiveVoltageHotModel_V": 20.052459016393446,
+        "headroomAt32VIgnoringEmfSlew_V": 11.947540983606554
+      },
+      {
+        "force_N": 60,
+        "current_A": 2.459016393442623,
+        "copperLoss25C_W": 38.69927438860522,
+        "copperLossHotModel_W": 53.79199140016125,
+        "resistiveVoltageHotModel_V": 21.875409836065575,
+        "headroomAt32VIgnoringEmfSlew_V": 10.124590163934425
+      },
+      {
+        "force_N": 85,
+        "current_A": 3.4836065573770494,
+        "copperLoss25C_W": 77.66729373824242,
+        "copperLossHotModel_W": 107.95753829615697,
+        "resistiveVoltageHotModel_V": 30.990163934426235,
+        "headroomAt32VIgnoringEmfSlew_V": 1.009836065573765
+      }
+    ],
+    "reference": {
+      "name": "Moticont LVCM-070-051-01",
+      "architecture": "moving coil",
+      "source_keys": [
+        "moticont_product",
+        "moticont_drawing"
+      ],
+      "stroke_mm": 25.4,
+      "continuous_force_reference_N": 64.7,
+      "continuous_force_reference_position": "center peak of published continuous-force vs stroke plot",
+      "intermittent_force_N": 204.3,
+      "intermittent_duty_fraction": 0.1,
+      "peak_duration_s": null,
+      "nominal_Kf_N_per_A": 24.4,
+      "nominal_Ke_V_per_m_per_s": 24.4,
+      "resistance_ohm": 6.4,
+      "inductance_H": 0.004,
+      "inductance_measurement_Hz": 1000,
+      "motor_constant_calculated_N_per_sqrtW": 9.644946863513557,
+      "electrical_time_constant_calculated_s": 0.000625,
+      "stated_continuous_power_max_W": 45,
+      "stated_conditions": "All values at 25\u00b0C; installed thermal boundary and hot ratings not established by retrieved sheet.",
+      "moving_coil_mass_kg": 0.24,
+      "stationary_body_mass_kg": 1.24,
+      "total_mass_sum_kg": 1.48,
+      "remaining_B_mass_after_motor_kg": 0.36,
+      "stationary_mass_exceeds_original_A_kg": 0.84,
+      "dimensions_mm": {
+        "body_diameter": 69.9,
+        "housing_length": 50.8,
+        "overall_length_at_midstroke_approx": 76.2
+      },
+      "graph_reading": {
+        "quantity": "continuous force vs stroke",
+        "endpoint_force_N_approx": 52,
+        "reading_precision": "rough, from plotted curve",
+        "exact_Kf_vs_position": null,
+        "thermal_model_from_curve": null
+      },
+      "cold_center_calculations": [
+        {
+          "force_N": 60,
+          "current_A": 2.459016393442623,
+          "copper_W": 38.69927438860522,
+          "resistive_voltage_V": 15.737704918032788
+        },
+        {
+          "force_N": 70,
+          "current_A": 2.8688524590163937,
+          "copper_W": 52.67401236226822,
+          "resistive_voltage_V": 18.36065573770492
+        }
+      ],
+      "resistive_only_voltage_headroom_at70N_with24V_V": 5.639344262295079,
+      "status": "Closer moving-mass reference; 0.24 kg fits within 0.6 kg provision leaving 0.36 kg; continuous 60 N over full stroke not proven, A must increase, drive/thermal qualification required."
+    },
+    "hotResistanceAssumption": "8.896\u03a9 =6.4\u03a9\u00d7(1+0.0039\u00d7100\u00b0C); model assumption, not manufacturer measured hot rating.",
+    "passiveTimeConstant25C_s": 0.000625,
+    "passiveTimeConstantHot_s": 0.00044964028776978414,
+    "coldMotorConstant_N_sqrtW": 9.644946863513557,
+    "hotModelMotorConstant_N_sqrtW": 8.180737156983756,
+    "driverLimitedPeakForce_N": 85.39999999999999,
+    "catalogIntermittentForceCurrent_A": 8.372950819672132,
+    "thermalWarning": "The drawing's45 W maximum continuous power and64.7 N reference are at25\u00b0C; a55\u201360 N guaranteed hot target is not established by that drawing. Model hot60 N copper loss is53.79 W. Extra bus voltage does not reduceI\u00b2R heat at the same force/current."
+  },
+  "primarySourcesReviewed": [
+    {
+      "id": "moticont_product",
+      "url": "https://www.moticont.com/lvcm-070-051-01.htm",
+      "title": "Moticont LVCM-070-051-01 product page",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer page with web tool; followed linked manufacturer drawing.",
+      "facts": {
+        "stroke_mm": 25.4,
+        "continuousForceCatalog_N": 64.7,
+        "intermittentForceCatalog_N": 204.3,
+        "intermittentDutyFraction": 0.1
+      },
+      "scope": "Direct drive with force approximately proportional to current; external guidance is required. The part page does not establish the installed hot force, our current servo, or full-stroke precision."
+    },
+    {
+      "id": "moticont_drawing",
+      "url": "https://www.moticont.com/pdf/lvcm-070-051-01.pdf",
+      "title": "Moticont LVCM-070-051-01 drawing Rev1",
+      "readDate": "2026-10-06",
+      "method": "Downloaded official PDF, rendered it locally and visually read the single sheet; it has no searchable specification text.",
+      "file": "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.pdf",
+      "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+      "facts": {
+        "forceConstant_N_A": 24.4,
+        "backEmfConstant_V_s_m": 24.4,
+        "R_25C_ohm": 6.4,
+        "L_1kHz_H": 0.004,
+        "movingCoilMass_kg": 0.24,
+        "stationaryBodyMass_kg": 1.24,
+        "maximumContinuousPowerCatalog_W": 45,
+        "bodyDiameter_mm": 69.9,
+        "housingLength_mm": 50.8,
+        "overallMidStrokeLength_mm": 76.2
+      },
+      "continuousForceCurve": {
+        "center_N": 64.7,
+        "nearEnd_N_approx": 52,
+        "readingPrecision": "Approximately, from the plotted force curve; do not infer an exact Kf(position) map."
+      },
+      "ratingConditions": "The sheet states all values at25\u00b0C. No installed hot-rating/cooling boundary is established.",
+      "importantDistinction": "Rhot8.896\u03a9 in the native plant is an engineering100\u00b0C-rise resistance assumption, not a manufacturer measured rating. The catalog204.3N intermittent force would need8.37A at nominalKf, more than our3.5A driver."
+    },
+    {
+      "id": "maxon_re25_302005",
+      "url": "https://www.maxongroup.com/maxon/view/product/302005",
+      "title": "maxon RE25 302005 product page",
+      "readDate": "2026-10-06",
+      "method": "Read part-specific manufacturer specifications with web tool.",
+      "facts": {
+        "voltage_V": 24,
+        "torqueConstant_Nm_A": 0.0234,
+        "resistance_ohm": 2.32,
+        "inductance_H": 0.000238,
+        "motorRotorInertia_kg_m2": 1.08e-06,
+        "mass_kg": 0.13,
+        "maximumContinuousCurrent_A": 1.16,
+        "maximumContinuousTorque_Nm": 0.0263,
+        "maximumWindingTemperature_degC": 125,
+        "housingAmbientThermalResistance_K_W": 14,
+        "windingHousingThermalResistance_K_W": 3.1,
+        "windingThermalTimeConstant_s": 12.5
+      },
+      "sourceCaution": "The product's Catalog page link now opens a2025 replacement-family page containing339xxx parts, not302005. Its replacement specifications were not substituted for the simulated302005 winding. The302005 product is marked NRND.",
+      "modelAssumptions": "Total modeled rotating inertia adds5e-7kgm\u00b2 assumed screw/coupler inertia. Native transmission is ideal reversible lead conversion plus explicit friction;90% efficiency is a separate analytical sizing scenario."
+    },
+    {
+      "id": "maxon_eci30_539489",
+      "url": "https://www.maxongroup.com/maxon/view/product/539489",
+      "title": "maxon EC-i30 539489 product page",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer page; static counterexample only, not a simulated candidate.",
+      "facts": {
+        "nominalVoltage_V": 48,
+        "continuousTorque_Nm": 0.103,
+        "continuousCurrent_A": 1.82,
+        "torqueConstant_Nm_A": 0.0554,
+        "rotorInertia_kg_m2": 1.55e-06,
+        "motorMass_kg": 0.242
+      },
+      "analyticalStaticInference": "With10mm lead and90% assumed motoring efficiency,0.103Nm supports58.25N before guide loss. This illustrates that a better-sized screw motor may be viable; commutation, backlash/ripple, mounted dynamics and current control remain untested."
+    },
+    {
+      "id": "sensata_las28_53",
+      "url": "https://www.sensata.com/sites/default/files/a/sensata-linear-actuator-sensor-LAS-28-53-drawing.pdf?cb=e13e7ccb",
+      "title": "Sensata LAS28-53-000A-P01 drawing X2",
+      "readDate": "2026-10-06",
+      "method": "Read manufacturer product and linked two-page drawing with web tool.",
+      "facts": {
+        "stroke_mm": 25,
+        "continuousStallForce_N": 60.1,
+        "peakForce_N": 266.9,
+        "peakDuration_s": 10,
+        "Kf_N_A": 20.28,
+        "R_25C_ohm": 2.4,
+        "L_1kHz_H": 0.00315,
+        "movingAssemblyMass_kg": 0.755,
+        "totalMass_kg": 2.4,
+        "motorConstant_N_sqrtW": 13.09
+      },
+      "ratingConditions": "Continuous force is at25\u00b0C ambient/155\u00b0C coil. Winding constants are at midstroke/25\u00b0C; peak is limited to10s under stated temperatures.",
+      "scope": "Efficiency/thermal reference, not recommended as-is: its0.755kg moving assembly already exceeds the entire modeledB=0.6kg budget. Integrated position specifications do not establish our1\u00b5m sensor target."
+    }
+  ],
+  "currentQualificationTotals": {
+    "recordings": 736,
+    "passed": 705,
+    "hardFailures": 1,
+    "nativeSamples": 496558539,
+    "designMarginPassed": 652,
+    "travelBandExcursions": 2,
+    "worstNormalForceError_N": 3.9483719894786873
+  },
+  "currentQualificationScope": "One candidate locked before these new-seed outcomes. Full native force/physical histories scored; finite tested grid and selected residual/schedule cases, not installed hardware qualification. No retuning on these results.",
+  "interpretation": [
+    "A voice coil makes force approximately proportional to current and removes rotary transmission inertia/backlash. Real guides/cables and force-position variation remain.",
+    "The exact bump lasts100 ms; its peak tool acceleration is2.4 m/s\u00b2, not an instantaneous step.",
+    "A screw trades holding-current advantage against rotary inertia. The selected RE25's10mm lead has good transient results on different mechanics but fails continuous holding current.",
+    "No existing matched screw qualification has been established on the current fixed undamped upper mechanics. Merely switching its inactive actuator branch would not match the observer or cell feedback phase.",
+    "Higher usable voltage changes a clipped current waveform but not an unclipped one. It does not fix the remaining force failure or thermal loss.",
+    "Choose a voice coil for the development prototype; do not treat these results as proof it is perfect or every screw is unsuitable."
+  ],
+  "figures": [
+    {
+      "id": "sharp-bump-motion-demand",
+      "artifacts": [
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.svg",
+          "sha256": "338640d65c5cd8f1ce6e2099bb2f1cd19f360a9c0493201108f358f276cce2b6"
+        },
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.png",
+          "sha256": "bb9d469aad03bdfe1878bfb2eda35d41f650374078fa68fb3747b303e5b4cb48"
+        }
+      ],
+      "visuallyReviewed": true,
+      "reviewScope": "Static paired SVG/PNG figures; labels, axes, units, limits, native metrics and visible source qualifications reviewed."
+    },
+    {
+      "id": "leadscrew-pitch-inertia-current",
+      "artifacts": [
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.svg",
+          "sha256": "da8147ebd8b97333bafed8faa96e986174bcdaaef231fa8ac5ca0d4f8ef72b22"
+        },
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.png",
+          "sha256": "27f3170739f6ec5dbbfb3a25501d3d8c9e12be5cc78b206986128bdfd8eb199c"
+        }
+      ],
+      "visuallyReviewed": true,
+      "reviewScope": "Static paired SVG/PNG figures; labels, axes, units, limits, native metrics and visible source qualifications reviewed."
+    },
+    {
+      "id": "historical-voicecoil-leadscrew-errors",
+      "artifacts": [
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.svg",
+          "sha256": "b7c3817c5abd1b6cb4753eeb350219d4d802b49a8aa49b9700429b3d58871258"
+        },
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.png",
+          "sha256": "b6d62f4d322b4fc1a95b77612824844e305827dbb2a74c0a734394bcb02ab016"
+        }
+      ],
+      "visuallyReviewed": true,
+      "reviewScope": "Static paired SVG/PNG figures; labels, axes, units, limits, native metrics and visible source qualifications reviewed."
+    },
+    {
+      "id": "fixed-mechanics-voltage-headroom",
+      "artifacts": [
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.svg",
+          "sha256": "761bf5e48ed1ebc3b803c50937ff243abdcf19c78fd835b7a874376760cf9911"
+        },
+        {
+          "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.png",
+          "sha256": "2268208b3e0c63ac7e7ba6728896517e6c18fa165f617ba7895cdf725dc9e13f"
+        }
+      ],
+      "visuallyReviewed": true,
+      "reviewScope": "Static paired SVG/PNG figures; labels, axes, units, limits, native metrics and visible source qualifications reviewed."
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/native_parameter_bank.c": "2f19884f9e8d07399737f05b65d6732f41d6082dc8bf8d87de2adbdde7d2e48a",
+    "acf_simulink/validation/inertial_actuators_provision.json": "8287ab5e9d09cb7b5ea08ee4a3499ea54c6a2cbd089e5c135dd6a6ac89ac06fd",
+    "acf_simulink/validation/inertial_actuators_selected_screw_carrier_inverse_v1_parameters.json": "2d9f611f9e036de144967aa301e66f02740393d88c87789b439821f45571609c",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930.json": "1b4a3bcbdd84cc954da6653dcccf7fbd5a40435e32a486bcc5416e1b84e7a569",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_replay.json": "7ffcbe20f23ec24264e6cb99eff167f1dd817b44c4a5e401d6c83ed0d4eeb246",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0001.mat": "53afdc6ae1c94dcca09b2f68e96ac91cc13a02b59781981c6017136cce89c834",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0002.mat": "aa50990f178aaebc4f267ef3dc2a9cb82dcb50f039176652fa29c3f2c3187d24",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0003.mat": "17a474e313d536f98777e030cc493c03458ff84ca75edce0fbc3211c181eda46",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0004.mat": "fba59f9ba6b34b49f9140bdd127187ad3ffc5cc01044292d4ebab7bd35a5c725",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0005.mat": "57296f8a8d8d570ef72af90d727b1f8551b89daa363ed308e5c97e04c1ce0015",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0006.mat": "2b1464e4980f6e51f4d6e7169801326e0bd4a94d0a86c38dd45b390c60de5143",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0007.mat": "6cf283143c55e63fc4aaa211e44f9693988600f2bb0982938b1e9ab3294fd348",
+    "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0008.mat": "b10bc514b1afeceafa179053045e9794ad357cf9925883815c291c5d7dfcfe58",
+    "acf_simulink/validation/upper_no_damping_20261005/report/fixed_voltage_diagnostics.json": "9d9fb1d2695e54dbfc4b1a4934c837a16832aff50f470f8c8b17a450bf6b274d",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/paired_voltage_check.json": "4e0c2c8175c5d3afb26836b1fa4efea3bce87ce92d425e0d31763fc82b55b506",
+    "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx": "c801331c16deb6d5dd5513c394edcbc4a4ee34cf7f28d39ca1476b2d9f9e6557",
+    "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat": "c05549f23a4ede5dde2977dbf9a96209019912ebfe5dfd00275fa755e746f1ee",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_48V_native_recording.mat": "b08f790af095d817dbd18ef7e9cf57b190601b11956bfef721820a54a7d309a9",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/paired_voltage_check.json": "b78c2495514fe061ed0db141ae418ccd25d6cf9a9567f0b8899d7b4e856a87fc",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_32V_native_recording.mat": "5956605deab560e0976adf34242375c5be3254b7285f7b44bbdeb07a58950e3a",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_48V_native_recording.mat": "fb2f5e445d6d691d599c965c470b816698d561e9781a1b087cbbcfe124bed7c6",
+    "acf_simulink/validation/realistic_voice_coil_examples.json": "8f240405786f6747be94c3510289c86be4b7fcfc5b8aa65935fe8acd7e47bdf7",
+    "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.pdf": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+    "acf_simulink/validation/upper_no_damping_20261005/report/fixed_controller_contract.json": "7362c2300d99e9b6d5879f49fca200ba16e995d9705c315657e4204b0dbf9e68",
+    "acf_simulink/validation/report_readability_20261006/actuator/primary_sources_review_20261006.json": "ec346ab2c1361f7b22fa533fbd8b63e1f6c97c1174e028a9f8bfcd1406e54919",
+    "acf_simulink/validation/upper_no_damping_20261005/report/fixed_qualification_results.json": "c18847d39b0b05ff6064982da68cd5ef41ad811748a89d8fa24ac61e30c0ac75"
+  },
+  "reproduction": "uv run --with numpy --with scipy --with matplotlib python acf_simulink/experiments/report_readability_20261006/actuator/build_actuator_evidence.py",
+  "reviewNotes": "The exact current four static renders were inspected. Initial rating-label and footnote overlaps were corrected and re-rendered. No new simulation or plant modification occurred. Browser interactions/mobile layout are outside this static evidence package.",
+  "reviewer": "/root/voicecoil_report_evidence",
+  "rawBuildFile": "acf_simulink/validation/report_readability_20261006/actuator/actuator_evidence.json",
+  "rawBuildSha256": "56d57d36f6083a4371930e8cca4a0d7372cb5ac5500d717439677f18d1b08daa",
+  "builderFile": "acf_simulink/experiments/report_readability_20261006/actuator/build_actuator_evidence.py",
+  "builderSha256": "c753c650b21b2c984c43b425679b60ad916b6d520004c2418d2935af49d19555",
+  "checks": {
+    "sourceHashes": {
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/native_parameter_bank.c": {
+        "sha256": "2f19884f9e8d07399737f05b65d6732f41d6082dc8bf8d87de2adbdde7d2e48a",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_provision.json": {
+        "sha256": "8287ab5e9d09cb7b5ea08ee4a3499ea54c6a2cbd089e5c135dd6a6ac89ac06fd",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_selected_screw_carrier_inverse_v1_parameters.json": {
+        "sha256": "2d9f611f9e036de144967aa301e66f02740393d88c87789b439821f45571609c",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json": {
+        "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930.json": {
+        "sha256": "1b4a3bcbdd84cc954da6653dcccf7fbd5a40435e32a486bcc5416e1b84e7a569",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_replay.json": {
+        "sha256": "7ffcbe20f23ec24264e6cb99eff167f1dd817b44c4a5e401d6c83ed0d4eeb246",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0001.mat": {
+        "sha256": "53afdc6ae1c94dcca09b2f68e96ac91cc13a02b59781981c6017136cce89c834",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0002.mat": {
+        "sha256": "aa50990f178aaebc4f267ef3dc2a9cb82dcb50f039176652fa29c3f2c3187d24",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0003.mat": {
+        "sha256": "17a474e313d536f98777e030cc493c03458ff84ca75edce0fbc3211c181eda46",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0004.mat": {
+        "sha256": "fba59f9ba6b34b49f9140bdd127187ad3ffc5cc01044292d4ebab7bd35a5c725",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0005.mat": {
+        "sha256": "57296f8a8d8d570ef72af90d727b1f8551b89daa363ed308e5c97e04c1ce0015",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0006.mat": {
+        "sha256": "2b1464e4980f6e51f4d6e7169801326e0bd4a94d0a86c38dd45b390c60de5143",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0007.mat": {
+        "sha256": "6cf283143c55e63fc4aaa211e44f9693988600f2bb0982938b1e9ab3294fd348",
+        "passed": true
+      },
+      "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_native_0008.mat": {
+        "sha256": "b10bc514b1afeceafa179053045e9794ad357cf9925883815c291c5d7dfcfe58",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/report/fixed_voltage_diagnostics.json": {
+        "sha256": "9d9fb1d2695e54dbfc4b1a4934c837a16832aff50f470f8c8b17a450bf6b274d",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/paired_voltage_check.json": {
+        "sha256": "4e0c2c8175c5d3afb26836b1fa4efea3bce87ce92d425e0d31763fc82b55b506",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/acf_rl_native.slx": {
+        "sha256": "c801331c16deb6d5dd5513c394edcbc4a4ee34cf7f28d39ca1476b2d9f9e6557",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_force_observer_20261005/bank_controller_gain_v9/configs.mat": {
+        "sha256": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_32V_native_recording.mat": {
+        "sha256": "c05549f23a4ede5dde2977dbf9a96209019912ebfe5dfd00275fa755e746f1ee",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_matlab/usable_48V_native_recording.mat": {
+        "sha256": "b08f790af095d817dbd18ef7e9cf57b190601b11956bfef721820a54a7d309a9",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/paired_voltage_check.json": {
+        "sha256": "b78c2495514fe061ed0db141ae418ccd25d6cf9a9567f0b8899d7b4e856a87fc",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx": {
+        "sha256": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat": {
+        "sha256": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_32V_native_recording.mat": {
+        "sha256": "5956605deab560e0976adf34242375c5be3254b7285f7b44bbdeb07a58950e3a",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/paired_voltage_stress_725/usable_48V_native_recording.mat": {
+        "sha256": "fb2f5e445d6d691d599c965c470b816698d561e9781a1b087cbbcfe124bed7c6",
+        "passed": true
+      },
+      "acf_simulink/validation/realistic_voice_coil_examples.json": {
+        "sha256": "8f240405786f6747be94c3510289c86be4b7fcfc5b8aa65935fe8acd7e47bdf7",
+        "passed": true
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/sources/moticont-lvcm-070-051-01-20261006.pdf": {
+        "sha256": "db2d0b783c228f4dc5f56634ce6f876da505685835eea9a8b9556bd242dce7fe",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/report/fixed_controller_contract.json": {
+        "sha256": "7362c2300d99e9b6d5879f49fca200ba16e995d9705c315657e4204b0dbf9e68",
+        "passed": true
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/primary_sources_review_20261006.json": {
+        "sha256": "ec346ab2c1361f7b22fa533fbd8b63e1f6c97c1174e028a9f8bfcd1406e54919",
+        "passed": true
+      },
+      "acf_simulink/validation/upper_no_damping_20261005/report/fixed_qualification_results.json": {
+        "sha256": "c18847d39b0b05ff6064982da68cd5ef41ad811748a89d8fa24ac61e30c0ac75",
+        "passed": true
+      }
+    },
+    "figures": {
+      "sharp-bump-motion-demand": {
+        "passed": true,
+        "visibleLabelsAndUnits": true,
+        "observedOverlapsCorrected": true,
+        "colorIndependentEncoding": "Direct values/axis labels; solid versus hatched historical bars and solid versus dashed voltage traces.",
+        "artifacts": [
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.svg",
+            "sha256": "338640d65c5cd8f1ce6e2099bb2f1cd19f360a9c0493201108f358f276cce2b6"
+          },
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/sharp-bump-motion-demand.png",
+            "sha256": "bb9d469aad03bdfe1878bfb2eda35d41f650374078fa68fb3747b303e5b4cb48"
+          }
+        ]
+      },
+      "leadscrew-pitch-inertia-current": {
+        "passed": true,
+        "visibleLabelsAndUnits": true,
+        "observedOverlapsCorrected": true,
+        "colorIndependentEncoding": "Direct values/axis labels; solid versus hatched historical bars and solid versus dashed voltage traces.",
+        "artifacts": [
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.svg",
+            "sha256": "da8147ebd8b97333bafed8faa96e986174bcdaaef231fa8ac5ca0d4f8ef72b22"
+          },
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/leadscrew-pitch-inertia-current.png",
+            "sha256": "27f3170739f6ec5dbbfb3a25501d3d8c9e12be5cc78b206986128bdfd8eb199c"
+          }
+        ]
+      },
+      "historical-voicecoil-leadscrew-errors": {
+        "passed": true,
+        "visibleLabelsAndUnits": true,
+        "observedOverlapsCorrected": true,
+        "colorIndependentEncoding": "Direct values/axis labels; solid versus hatched historical bars and solid versus dashed voltage traces.",
+        "artifacts": [
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.svg",
+            "sha256": "b7c3817c5abd1b6cb4753eeb350219d4d802b49a8aa49b9700429b3d58871258"
+          },
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/historical-voicecoil-leadscrew-errors.png",
+            "sha256": "b6d62f4d322b4fc1a95b77612824844e305827dbb2a74c0a734394bcb02ab016"
+          }
+        ]
+      },
+      "fixed-mechanics-voltage-headroom": {
+        "passed": true,
+        "visibleLabelsAndUnits": true,
+        "observedOverlapsCorrected": true,
+        "colorIndependentEncoding": "Direct values/axis labels; solid versus hatched historical bars and solid versus dashed voltage traces.",
+        "artifacts": [
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.svg",
+            "sha256": "761bf5e48ed1ebc3b803c50937ff243abdcf19c78fd835b7a874376760cf9911"
+          },
+          {
+            "path": "acf_simulink/validation/report_readability_20261006/actuator/fixed-mechanics-voltage-headroom.png",
+            "sha256": "2268208b3e0c63ac7e7ba6728896517e6c18fa165f617ba7895cdf725dc9e13f"
+          }
+        ]
+      }
+    },
+    "csvRows": {
+      "acf_simulink/validation/report_readability_20261006/actuator/coil_static_current_heating.csv": {
+        "rows": 5,
+        "sha256": "118f71c36c78844433d374df13e14c1e6d97f9e551d57b7d221839500948d5ad"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/fixed_voltage_pair_metrics.csv": {
+        "rows": 4,
+        "sha256": "23305656c83dea275d3675ef74b5fb76576f4418109371c4a6b6cc23010ecad8"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/fixed_voltage_trace_display.csv": {
+        "rows": 20945,
+        "sha256": "2dc520e6c1f2781837f25aa2068475e0c1d20a75e0d921b0d2828c921e8a91f0"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/historical_matched_actuator_results.csv": {
+        "rows": 4,
+        "sha256": "a7a6b62953a9105de007e9c5a788cb948b0050fc7d37addefd2e3475e5a73b0c"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/screw_pitch_tradeoff.csv": {
+        "rows": 3,
+        "sha256": "ff627f7321793121df4f9c8d1526ec290a3fb8626d7001f102fd3c64b3b2fab2"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/sharp_bump_kinematics.csv": {
+        "rows": 10001,
+        "sha256": "ae827e942810c57577f05e7cb3b8c8b86a4c7d2fbef143b75565e58998114e0b"
+      },
+      "acf_simulink/validation/report_readability_20261006/actuator/voice_coil_parameter_targets.csv": {
+        "rows": 11,
+        "sha256": "8274090783e0a1308daf8d7160c351caa20d978fae924f02b92f6d7c7c22d3a3"
+      }
+    }
+  }
+}

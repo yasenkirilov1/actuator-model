@@ -1,0 +1,185 @@
+{
+  "bump_motion_and_inertia": {
+    "kind": "analytical_calculation",
+    "file": "acf_simulink/validation/inertial_bump_calculation.json",
+    "description": "Motion and downstream inertia calculated from the specified bump polynomial."
+  },
+  "inertial_controller_reference_comparison": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json",
+    "scope": "Rigid attachments; equal clean/three-seed light and heavy endpoint cohorts, not finite-cell qualification."
+  },
+  "inertial_PI_reference_gain_search": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json",
+    "scope": "72 completed native rigid-reference recordings; eight common cases per gain pair."
+  },
+  "inertial_cell_stiffness_sensitivity": {
+    "kind": "native_simulation",
+    "files": [
+      "acf_simulink/validation/inertial_mechanics_stiffness_chart_data_20260930.json",
+      "acf_simulink/validation/inertial_mechanics_structural_cell_rate_pilot_20260930_v7_110M_FF1ms_results.json"
+    ],
+    "scope": "Six common cases per stiffness/controller: finite undamped cell, upper rigid, sharp bump, no preview. Star is a separate six-case filtered-FF study; not a complete retuned stiffness grid."
+  },
+  "inertial_performance_limit_decomposition": {
+    "kind": "native_trace_analysis",
+    "file": "acf_simulink/validation/normal_mass_controller_v7_drive_shape_analysis_20260930.json",
+    "scope": "Exact decomposition of five retained native four-second v7 histories; zero new simulations. Each source is its controller's worst endpoint trace, so seeds may differ across rows. Physical truth is diagnostic only.",
+    "forceBalanceResidual_N": 3.191891195797325e-14,
+    "qualification": "Diagnostic force-balance decomposition, not extra simulations or equal-seed qualification. All five traces have zero voltage and effort clipping."
+  },
+  "screw_pitch_inertia_and_heating": {
+    "kind": "analytical_calculation",
+    "file": "acf_simulink/validation/inertial_actuators_chart_data_v7.json",
+    "rowsPath": [
+      "pitchSizing",
+      "points"
+    ],
+    "scope": "Analytical RE25 winding sizing, total rotating J1.58e-6kgm2,50N, no guide losses;90percent efficiency only a conservative sizing bound",
+    "qualification": "RE25 26.3mNm at 3mm lead and 90% motoring sizing gives 49.574597 N before guide loss; passing continuous current alone does not establish 50N continuous."
+  },
+  "inertial_mechanics_spring_tuning": {
+    "kind": "native_simulation",
+    "sourceManifest": "acf_simulink/validation/inertial_mechanics_figure_manifest_20260930.json",
+    "sourceManifestSHA256": "63c1ea21fff0b0f71e70deddeb7f7f6eee394abd5020c4982a8496522b589ce9",
+    "scope": "Selected lower spring/damper controller search and repeated-bump reference; retained original native recordings, not additional simulations."
+  },
+  "inertial_mechanics_selected_repeated": {
+    "kind": "native_simulation",
+    "sourceManifest": "acf_simulink/validation/inertial_mechanics_figure_manifest_20260930.json",
+    "sourceManifestSHA256": "63c1ea21fff0b0f71e70deddeb7f7f6eee394abd5020c4982a8496522b589ce9",
+    "scope": "Selected lower spring/damper controller search and repeated-bump reference; retained original native recordings, not additional simulations."
+  },
+  "inertial_mechanics_selected_bump_overlay": {
+    "kind": "native_simulation",
+    "sourceManifest": "acf_simulink/validation/inertial_mechanics_figure_manifest_20260930.json",
+    "sourceManifestSHA256": "63c1ea21fff0b0f71e70deddeb7f7f6eee394abd5020c4982a8496522b589ce9",
+    "scope": "Selected lower spring/damper controller search and repeated-bump reference; retained original native recordings, not additional simulations."
+  },
+  "inertial_final_current_response": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json",
+    "sha256": "6ae6636e1097b5fc4c797eb2dd185da9b3df37ed5b2405746127bda5de9f61ae",
+    "scope": "S = 2 kg, B = 0.6 kg, target 50 N, fixed 90 degrees, Coulomb drag coefficient 0.3; seven repeated 1 mm high, 10 mm wide bumps at 100 mm/s during 10 s; noise seeds 7 and 1729. Only configured inner current response and ideal available bus vary. It is not a full-range or hardware qualification.",
+    "rows": 12,
+    "nativeSamplesScored": 12000012.0,
+    "springMetadataScope": "The response probe used the prior 18.1 mm spring metadata, actual 33.6 N preload and unchanged 19,746 N/m plus 60 N s/m physical link. Final 20 mm approximate metadata is a separate force-identical candidate with its own packing audit; these probe packing lengths must not be relabeled.",
+    "qualification": "100\u00b5s is the final grid target.50\u00b5s and150\u00b5s are bounded alternatives; model bandwidth is not measured driver capability."
+  },
+  "inertial_mechanics_v8_actual_tolerance": {
+    "kind": "native_simulation_and_analytical_geometry_rescore",
+    "file": "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+    "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f",
+    "scope": "72 actual-k/c native recordings with fixed nominal controller;20mm packing analytically rescored, no new force runs.",
+    "copiedFigureSHA256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee",
+    "workerFigure": "acf_simulink/validation/inertial_mechanics_v8_actual_tolerance_20260930.png"
+  },
+  "inertial_uncertainty_v8_sensing": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_uncertainty_v8_summary.json",
+    "sha256": "d660d5c0c23c8bf5450d5fa7ed395fea637290fe41baaabc9b482c4a67eac717",
+    "scope": "42 final-acquisition sensing OAT native records; separate from joint allowance.",
+    "copiedFigureSHA256": "d2cde5a865f99f77a19f05eeb9d78212f69d0f04007b0d4f4fe28caeef365f7f",
+    "workerFigure": "acf_simulink/validation/inertial_uncertainty_v8_summary_sensing.png"
+  },
+  "inertial_uncertainty_v8_joint": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_uncertainty_v8_summary.json",
+    "sha256": "d660d5c0c23c8bf5450d5fa7ed395fea637290fe41baaabc9b482c4a67eac717",
+    "scope": "60 final-acquisition26-dimensional deterministic corners at two endpoints, three seeds; not exhaustive error box.",
+    "copiedFigureSHA256": "c06aea4d854bc04371add73eadd680ad978483b91a8ab1ab32fda81626f52363",
+    "workerFigure": "acf_simulink/validation/inertial_uncertainty_v8_summary_joint.png"
+  },
+  "inertial_final_voltage_headroom": {
+    "kind": "native_simulation_and_analytical_heat",
+    "file": "acf_simulink/validation/normal_voltage_20260930_final_sensor_summary.json",
+    "sha256": "d06b4769d767059c7496de6dc21a0223796ccdedf8694a8d8cc1569980e9a758",
+    "scope": "16 final-source native electrical records/15distinct conditions; steady linear-stage heat is an analytical calculation.",
+    "copiedFigureSHA256": "efd8df9ebc9b5436354ab45c5bdb682e6b95cec397fee2e8a72c3d91fdc35f09",
+    "workerFigure": "acf_simulink/validation/normal_voltage_20260930_final_sensor_headroom.png"
+  },
+  "inertial_final_range_coverage": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+    "sha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf",
+    "rowsCSV_SHA256": "59d53a66a3528663f761abbbaa82dac31f00bedb113d6a7596f147e947bd94f5",
+    "scope": "Finite nominal sharp-bump grid, exact known mass/tare, fixed orientations and Coulomb drag coefficients; every recorded native sample is scored. This is not hardware qualification or an uncertainty guarantee.",
+    "rows": 3500,
+    "nativeSamplesScored": 1400003500
+  },
+  "inertial_final_worst_native": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+    "sha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf",
+    "rowsCSV_SHA256": "59d53a66a3528663f761abbbaa82dac31f00bedb113d6a7596f147e947bd94f5",
+    "scope": "Finite nominal sharp-bump grid, exact known mass/tare, fixed orientations and Coulomb drag coefficients; every recorded native sample is scored. This is not hardware qualification or an uncertainty guarantee.",
+    "rows": 3500,
+    "nativeSamplesScored": 1400003500,
+    "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_worst_native_trace.mat",
+    "nativeTraceSHA256": "c9483c087549910f011480f696cb5d1fa3f24555e354e2b35559d54d538c6bb1",
+    "excerptFile": "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json",
+    "excerptSHA256": "dc72f67504a0bb3ff9d07c3bcc814e8c4c62a0a308173ffd85e62da42765c10e",
+    "plotScope": "All native samples in the displayed bump window; complete history determines the reported metric."
+  },
+  "inertial_mechanics_mixed_comparison": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+    "sha256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660",
+    "sourceFigure": "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930.png",
+    "sourceFigureSHA256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62",
+    "deliveredFigureSHA256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62",
+    "scope": [
+      "Six complete4s native histories at one heavy combined corner; actual k+20%/c\u221220%; exactly known actual k/c supplied in the mitigation.",
+      "A narrow paired comparison, not a k/c calibration-error allowance or full joint parameter box."
+    ]
+  },
+  "inertial_final_actuator_peak_errors": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+    "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+    "sourceFigure": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_peak_errors.png",
+    "sourceFigureSHA256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5",
+    "deliveredFigureSHA256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5",
+    "scope": [
+      "Four matched4s/one-bump pairs plus one5\u00b5s screw refinement; all nine full histories scored.",
+      "Screw has no complete range/joint calibration qualification and the RE25 continuous catalog rating fails."
+    ]
+  },
+  "inertial_final_actuator_heavy_bump": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+    "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d",
+    "sourceFigure": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_heavy_bump.png",
+    "sourceFigureSHA256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818",
+    "deliveredFigureSHA256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818",
+    "scope": [
+      "Four matched4s/one-bump pairs plus one5\u00b5s screw refinement; all nine full histories scored.",
+      "Screw has no complete range/joint calibration qualification and the RE25 continuous catalog rating fails."
+    ]
+  },
+  "inertial_calibration_refinement": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_uncertainty_v8_calibration_refinement.json",
+    "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e",
+    "sourceFigureSHA256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36",
+    "deliveredFigureSHA256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36",
+    "scope": [
+      "Eight full native histories in four exact paired conditions;16 static residual halves only, same noise/timing/robot/mechanics/current.",
+      "Original worst0.490396N and calibrated-static worst0.415311N; all3,000,001 samples per history determine metrics.",
+      "Figure history uses all-native min/max bins. Prototype targets require assembled verification; no complete refined hyperbox claim."
+    ]
+  },
+  "inertial_mixed_static_calibration": {
+    "kind": "native_simulation",
+    "file": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json",
+    "sha256": "d848e6290bda98baf244aa7863106fa7b5920c7c5c36438e225d112aa7d15666",
+    "sourceFigureSHA256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8",
+    "deliveredFigureSHA256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8",
+    "scope": [
+      "Three new4s native cases plus three reused known-actual k/c baselines; every400001 sample scored.",
+      "Exactly16 static residuals halved; all mechanics, identified k/c, noise, acquisition/robot timing and PI/current response unchanged.",
+      "One heavy combined mechanical corner/three seeds; no complete calibrated mechanical hyperbox."
+    ]
+  }
+}

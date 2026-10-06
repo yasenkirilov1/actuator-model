@@ -1,0 +1,91 @@
+{
+  "files": [
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/GETTING_STARTED_FIXED.md",
+      "sha256": "85a30b8ec16a60fda4ac8f8cd6e00aa9245e57d45c22d4f3ef01854aaf6add8a",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx",
+      "sha256": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/delivery_acceptance.json",
+      "sha256": "cbe6cda3a0355752501913b7dfa9eec03eb762bae26a7c167617057818a1bf14",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_force_controller.png",
+      "sha256": "b707c9408c08937cdf5652002b5e8cd542781b1c01143a4d93f6118688093064",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_root.png",
+      "sha256": "d47950f8e81ab27f3540492acae1331af3151204b9021c95d1fa51dd9e7a22e0",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/diagram_upper_observer.png",
+      "sha256": "761a2bbad2032b9941170c5be2f50cdbb158df99372f3e7bcfc383b676ec7237",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_adc_prepare.m",
+      "sha256": "1824aa920349ce3411aaa5decdc15cbad14784f347884dc81c37b60b7d1d86bc",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_apply.m",
+      "sha256": "9b24217528d0a4b9e53b042f6afac19eeede3b30022f546fc222bdfa4c5e00c7",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare.m",
+      "sha256": "b8eedbc32a214bb7871a5aa3283267f919febbc935523f183f83a1cd9b2f9acb",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_baseline_v8.m",
+      "sha256": "5ba68f2ead88f35c6e1c30a59036a256570bd10b11ae611fe4eaa0e98213d5ce",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_cell_modal.m",
+      "sha256": "77386214c5059efd023ef9bbf960643517e3082202e9dc130f49f8387486d6df",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_prepare_upper_observer.m",
+      "sha256": "fc16f7a5dc1cd19be32c55d57e295c7841dfd1b64bf7cbabe92fcf5498ba3a15",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_actuator.m",
+      "sha256": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6",
+      "matches_frozen": true
+    },
+    {
+      "path": "acf_simulink/generated/fixed_upper_20261005/helpers/acf_fixed_select_controller.m",
+      "sha256": "ac031acc9203d6d35605b58e120cf180be64fddd1577f1a8f587d3d490f9d55c",
+      "matches_frozen": true
+    },
+    {
+      "path": "reports/active-contact-flange-report.html",
+      "sha256": "8d0093fd0645957c6f614718b0f53decc0c5fcd6a5a0bd74c41349ff8e68ec60"
+    },
+    {
+      "path": "reports/active-contact-flange-report-design-explained-20261006.html",
+      "sha256": "f44740b9f6a5a7fd6f5b945797940747182060a71fc4c1296f6b0fec74881a91"
+    },
+    {
+      "path": "reports/prototype-design-20260930/src/data.json",
+      "sha256": "1d87387cefc838356904a03d254c895ffe9edf34e5b223a11c25f490ff2d19a8"
+    },
+    {
+      "path": "reports/prototype-design-20260930/src/content/report/ReportContent.jsx",
+      "sha256": "fb777fdc2eb74ffcb23ff116ceec916a49e51699ebb517c23dd6d06178e6a287"
+    }
+  ],
+  "frozen_bundle_unchanged": true
+}

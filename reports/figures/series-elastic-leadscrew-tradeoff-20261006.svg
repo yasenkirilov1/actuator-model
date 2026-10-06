@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="780" viewBox="0 0 900 780" role="img" aria-labelledby="title desc">
+<title id="title">A spring-coupled leadscrew trades force sensitivity for nut travel</title>
+<desc id="desc">The added spring is between screw nut and B, separate from the prescribed upper spring and B-S sensor. Graphs show arithmetic spring-force change for 0.1 millimetre relative lag and static nut-travel span across all stated force, gravity orientation and tool-mass endpoints. No controller performance is simulated.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="#374151"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#18263b} .small{font-size:12px} .body{font-size:14px} .label{font-size:13px} .axis{stroke:#7b8799;stroke-width:1} .grid{stroke:#e0e6ec;stroke-width:1} .blue{stroke:#176ba0;fill:none;stroke-width:3} .teal{stroke:#00866c;fill:none;stroke-width:3}</style>
+<rect width="900" height="780" rx="12" fill="#ffffff"/>
+<text x="40" y="35" font-size="24" font-weight="700">A leadscrew can control force through a spring</text>
+<text x="40" y="60" class="body">The spring belongs inside the actuator, between its nut and holder B.</text>
+<rect x="39" y="85" width="822" height="212" rx="9" fill="#f4f8fb" stroke="#d4e0e9"/>
+<text x="57" y="110" class="label" font-weight="700">Prescribed upper spring</text>
+<text x="57" y="127" class="small">20 N/mm · zero damping</text>
+<rect x="299" y="118" width="240" height="85" rx="7" fill="#e9f4f2" stroke="#70b7a8"/>
+<text x="419" y="136" class="small" text-anchor="middle">Actuator with an internal series spring</text>
+<line x1="84" y1="164" x2="802" y2="164" stroke="#61768a" stroke-width="2"/>
+<rect x="57" y="145" width="46" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="80" y="170" class="body" text-anchor="middle">R</text>
+<path d="M103 164 L120 164 L126 153 L138 175 L150 153 L162 175 L174 153 L186 175 L192 164 L214 164" fill="none" stroke="#176ba0" stroke-width="2.5"/>
+<rect x="214" y="145" width="47" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="237" y="170" class="body" text-anchor="middle">A</text>
+<rect x="310" y="145" width="92" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="356" y="162" class="small" text-anchor="middle">motor + screw</text><text x="356" y="177" class="small" text-anchor="middle">fixed to A</text>
+<rect x="411" y="145" width="43" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="432" y="170" class="label" text-anchor="middle">nut</text>
+<path d="M454 164 L462 164 L468 153 L480 175 L492 153 L504 175 L516 153 L522 164 L550 164" fill="none" stroke="#00866c" stroke-width="2.5"/>
+<rect x="550" y="145" width="44" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="572" y="170" class="body" text-anchor="middle">B</text>
+<rect x="616" y="145" width="77" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="654" y="170" class="label" text-anchor="middle">load cell</text>
+<rect x="713" y="145" width="44" height="38" rx="4" fill="#fff" stroke="#65758a"/><text x="735" y="170" class="body" text-anchor="middle">S</text>
+<line x1="802" y1="141" x2="802" y2="187" stroke="#374151" stroke-width="4"/>
+<text x="808" y="157" class="small">surface</text>
+<text x="421" y="223" class="body" text-anchor="middle" font-weight="700">Spring force = preload + stiffness × (nut position − B position)</text>
+<text x="58" y="255" class="label">Motor inertia J / ℓ² acts on the nut coordinate; the spring couples that motion to B.</text>
+<text x="58" y="277" class="label">ℓ = screw lead / (2π). B and S are separate from the nut, with finite cell stiffness.</text>
+<text x="40" y="333" font-size="18" font-weight="700">Softer springs reduce sensitivity, but require more travel</text>
+<text x="40" y="354" class="body">Static arithmetic · no damping · robot and surface positions fixed · no controller simulation</text>
+<text x="248.0" y="386" font-size="15" font-weight="700" text-anchor="middle">Spring-force change for 0.1 mm lag</text>
+<line x1="90" y1="644.000" x2="406" y2="644.000" class="grid"/>
+<text x="81" y="648.000" class="small" text-anchor="end">0</text>
+<line x1="90" y1="589.909" x2="406" y2="589.909" class="grid"/>
+<text x="81" y="593.909" class="small" text-anchor="end">0.5</text>
+<line x1="90" y1="535.818" x2="406" y2="535.818" class="grid"/>
+<text x="81" y="539.818" class="small" text-anchor="end">1</text>
+<line x1="90" y1="481.727" x2="406" y2="481.727" class="grid"/>
+<text x="81" y="485.727" class="small" text-anchor="end">1.5</text>
+<line x1="90" y1="427.636" x2="406" y2="427.636" class="grid"/>
+<text x="81" y="431.636" class="small" text-anchor="end">2</text>
+<text x="64" y="403" class="label">N</text>
+<line x1="90" y1="406" x2="90" y2="644" class="axis"/>
+<line x1="90" y1="644" x2="406" y2="644" class="axis"/>
+<line x1="90.000" y1="644" x2="90.000" y2="649" class="axis"/>
+<text x="90.000" y="665" class="small" text-anchor="middle">0.5</text>
+<circle cx="90.000" cy="638.591" r="4" fill="#176ba0"/>
+<text x="90.000" y="628.591" class="small" text-anchor="middle" fill="#176ba0">0.05</text>
+<line x1="149.377" y1="644" x2="149.377" y2="649" class="axis"/>
+<text x="149.377" y="665" class="small" text-anchor="middle">1</text>
+<circle cx="149.377" cy="633.182" r="4" fill="#176ba0"/>
+<text x="149.377" y="623.182" class="small" text-anchor="middle" fill="#176ba0">0.1</text>
+<line x1="208.754" y1="644" x2="208.754" y2="649" class="axis"/>
+<text x="208.754" y="665" class="small" text-anchor="middle">2</text>
+<circle cx="208.754" cy="622.364" r="4" fill="#176ba0"/>
+<text x="208.754" y="612.364" class="small" text-anchor="middle" fill="#176ba0">0.2</text>
+<line x1="256.692" y1="644" x2="256.692" y2="649" class="axis"/>
+<text x="256.692" y="665" class="small" text-anchor="middle">3.5</text>
+<circle cx="256.692" cy="606.136" r="4" fill="#176ba0"/>
+<text x="256.692" y="596.136" class="small" text-anchor="middle" fill="#176ba0">0.35</text>
+<line x1="287.246" y1="644" x2="287.246" y2="649" class="axis"/>
+<text x="287.246" y="665" class="small" text-anchor="middle">5</text>
+<circle cx="287.246" cy="589.909" r="4" fill="#176ba0"/>
+<text x="287.246" y="579.909" class="small" text-anchor="middle" fill="#176ba0">0.5</text>
+<line x1="346.623" y1="644" x2="346.623" y2="649" class="axis"/>
+<text x="346.623" y="665" class="small" text-anchor="middle">10</text>
+<circle cx="346.623" cy="535.818" r="4" fill="#176ba0"/>
+<text x="346.623" y="525.818" class="small" text-anchor="middle" fill="#176ba0">1</text>
+<line x1="406.000" y1="644" x2="406.000" y2="649" class="axis"/>
+<text x="406.000" y="665" class="small" text-anchor="middle">20</text>
+<circle cx="406.000" cy="427.636" r="4" fill="#176ba0"/>
+<text x="406.000" y="417.636" class="small" text-anchor="middle" fill="#176ba0">2</text>
+<polyline points="90.000,638.591 149.377,633.182 208.754,622.364 256.692,606.136 287.246,589.909 346.623,535.818 406.000,427.636" fill="none" stroke="#176ba0" stroke-width="2.3"/>
+<text x="248.0" y="692" class="label" text-anchor="middle">Spring rate (N/mm; logarithmic spacing)</text>
+<text x="692.5" y="386" font-size="15" font-weight="700" text-anchor="middle">Required static nut-position span</text>
+<line x1="535" y1="644.000" x2="850" y2="644.000" class="grid"/>
+<text x="526" y="648.000" class="small" text-anchor="end">0</text>
+<line x1="535" y1="606.812" x2="850" y2="606.812" class="grid"/>
+<text x="526" y="610.812" class="small" text-anchor="end">25</text>
+<line x1="535" y1="569.625" x2="850" y2="569.625" class="grid"/>
+<text x="526" y="573.625" class="small" text-anchor="end">50</text>
+<line x1="535" y1="495.250" x2="850" y2="495.250" class="grid"/>
+<text x="526" y="499.250" class="small" text-anchor="end">100</text>
+<line x1="535" y1="420.875" x2="850" y2="420.875" class="grid"/>
+<text x="526" y="424.875" class="small" text-anchor="end">150</text>
+<text x="509" y="403" class="label">mm</text>
+<line x1="535" y1="406" x2="535" y2="644" class="axis"/>
+<line x1="535" y1="644" x2="850" y2="644" class="axis"/>
+<line x1="535.000" y1="644" x2="535.000" y2="649" class="axis"/>
+<text x="535.000" y="665" class="small" text-anchor="middle">0.5</text>
+<circle cx="535.000" cy="427.932" r="4" fill="#00866c"/>
+<text x="535.000" y="417.932" class="small" text-anchor="middle" fill="#00866c">145.3</text>
+<line x1="594.189" y1="644" x2="594.189" y2="649" class="axis"/>
+<text x="594.189" y="665" class="small" text-anchor="middle">1</text>
+<circle cx="594.189" cy="532.796" r="4" fill="#00866c"/>
+<text x="594.189" y="522.796" class="small" text-anchor="middle" fill="#00866c">74.8</text>
+<line x1="653.378" y1="644" x2="653.378" y2="649" class="axis"/>
+<text x="653.378" y="665" class="small" text-anchor="middle">2</text>
+<circle cx="653.378" cy="585.229" r="4" fill="#00866c"/>
+<text x="653.378" y="575.229" class="small" text-anchor="middle" fill="#00866c">39.5</text>
+<line x1="701.165" y1="644" x2="701.165" y2="649" class="axis"/>
+<text x="701.165" y="665" class="small" text-anchor="middle">3.5</text>
+<circle cx="701.165" cy="607.700" r="4" fill="#00866c"/>
+<text x="701.165" y="581.700" class="small" text-anchor="middle" fill="#00866c">24.4</text>
+<line x1="731.622" y1="644" x2="731.622" y2="649" class="axis"/>
+<text x="731.622" y="665" class="small" text-anchor="middle">5</text>
+<circle cx="731.622" cy="616.688" r="4" fill="#00866c"/>
+<text x="731.622" y="606.688" class="small" text-anchor="middle" fill="#00866c">18.4</text>
+<line x1="790.811" y1="644" x2="790.811" y2="649" class="axis"/>
+<text x="790.811" y="665" class="small" text-anchor="middle">10</text>
+<circle cx="790.811" cy="627.175" r="4" fill="#00866c"/>
+<text x="790.811" y="601.175" class="small" text-anchor="middle" fill="#00866c">11.3</text>
+<line x1="850.000" y1="644" x2="850.000" y2="649" class="axis"/>
+<text x="850.000" y="665" class="small" text-anchor="middle">20</text>
+<circle cx="850.000" cy="632.418" r="4" fill="#00866c"/>
+<text x="850.000" y="622.418" class="small" text-anchor="middle" fill="#00866c">7.8</text>
+<polyline points="535.000,427.932 594.189,532.796 653.378,585.229 701.165,607.700 731.622,616.688 790.811,627.175 850.000,632.418" fill="none" stroke="#00866c" stroke-width="2.3"/>
+<text x="692.5" y="692" class="label" text-anchor="middle">Spring rate (N/mm; logarithmic spacing)</text>
+<line x1="535" y1="606.812" x2="850" y2="606.812" stroke="#a05a1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="539" y="600.812" class="small" fill="#a05a1a">25 mm reference</text>
+<text x="40" y="727" class="label">Span covers 5–50 N, S = 0.1–2 kg, and gravity angles 0–90°; A = 1.5 kg, B = 0.6 kg.</text>
+<text x="40" y="748" class="label">Lag sensitivity is spring-force arithmetic, not measured contact error. A screw may use more than 25 mm.</text>
+<text x="40" y="769" class="small">A fixed preload shifts the zero, not the span. This 25 mm static envelope needs k ≥ 3.40 N/mm; dynamics still need testing.</text>
+</svg>

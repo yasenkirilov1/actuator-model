@@ -1,0 +1,25 @@
+ <strong>Simulink.BlockDiagram.getInitialState</strong> - Get initial state data from block diagram
+
+    <strong>Syntax</strong>
+      x0 = Simulink.BlockDiagram.getInitialState(mdlName)
+
+    <strong>Input Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.blockdiagram.getinitialstate.html#mw_4b73336b-76fe-4acc-a0db-f2a33ff7563d">mdlName</a> - Model name
+        string | character vector
+
+    <strong>Output Arguments</strong>
+      <a href="matlab:web /home/tommie/.local/opt/MATLAB/R2026b/help/simulink/slref/simulink.blockdiagram.getinitialstate.html#mw_0cf9cd01-18d1-4da2-a70b-e7ec92564ae5">x0</a> - Initial values for block states
+        Simulink.SimulationData.Dataset object | structure
+
+    <strong>Examples</strong>
+      <a href="matlab:openExample('simulink/SpecifyInitialValueForBlockStateUsingDatasetObjectExample')">Specify Initial Value for Block State Using Dataset Object</a>
+      <a href="matlab:openExample('simulink/SpecifyInitialValueForBlockStateUsingStructureExample')">Specify Initial Value for Block State Using Structure</a>
+
+    <strong>See also</strong> <a href="matlab:help('Save format', '-displayBanner')">Save format</a>, <a href="matlab:help('Initial state', '-displayBanner')">Initial state</a>, <a href="matlab:help States -displayBanner">States</a>, <a href="matlab:help('Final states', '-displayBanner')">Final states</a>,
+      <a href="matlab:help('Save final operating point', '-displayBanner')">Save final operating point</a>, <a href="matlab:help Simulink.SimulationData.Dataset -displayBanner">Simulink.SimulationData.Dataset</a>,
+      <a href="matlab:help Simulink.op.ModelOperatingPoint -displayBanner">Simulink.op.ModelOperatingPoint</a>
+
+    Introduced in Simulink in R2006b
+    <a href="matlab:doc Simulink.BlockDiagram.getInitialState">Documentation for Simulink.BlockDiagram.getInitialState</a>
+
+

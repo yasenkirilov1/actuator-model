@@ -1,0 +1,45 @@
+{
+  "status": "completed_live_generated_signal_audit",
+  "reviewers": [
+    "upper_spring_native_contract",
+    "upper_measured_force_observer"
+  ],
+  "cause": "Root-local Goto tags were consumed from a nested subsystem; new From signals compiled to zero. Tag enumeration and zero algebraic loops did not establish live measurement/command routing.",
+  "oldIssuedCurrentObserver": {
+    "caseCount": 198,
+    "directories": [
+      "evaluation/upper_20k_lower_cell_undamped_development",
+      "evaluation/upper_20k_lower_19746_undamped_development"
+    ],
+    "input": "Identified current lag driven by 0.0 in generated C",
+    "consequence": "Holding-current initial state decays toward zero and produces fictitious negative transmitted-force deviation.",
+    "qualificationValid": false
+  },
+  "firstMeasuredForceObserver": {
+    "completedRetainedCaseCount": 8,
+    "input": "Selected cell deviation compiled to Bias=-Fref with no measured term",
+    "qualificationValid": false
+  },
+  "oldUpperRigidReferenceBranches": {
+    "completedCaseCount": 260,
+    "newFourStateUpperObserverAbsent": true,
+    "scope": "Reference comparisons only; incompatible with currently prescribed upper spring."
+  },
+  "nativeSources": [
+    {
+      "file": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_cell_undamped/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "1a0626792ddc932214f98f2cb8de72cf7d8bff93409f5286848015fa2bba4dc5"
+    },
+    {
+      "file": "acf_simulink/validation/upper_no_damping_20261005/native/upper_20k_lower_19746_undamped/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "a5987546735cf3f69fa0459f2ae158dd49bac817a752fb2dba1dd062fdade3cc"
+    },
+    {
+      "file": "acf_simulink/validation/upper_force_observer_20261005/native/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "d1ba3d40c793fe14f664fe781a9b44b57dd81b38861feae07bb5584e7690f891"
+    }
+  ],
+  "correctionRequired": "Explicit local acquired-cell-deviation wire plus zero and nonzero numerical source/sign guard; inspect live generated C; saved graph and independent native replay.",
+  "evidencePreserved": true,
+  "noPlantPhysicsChangedByAudit": true
+}

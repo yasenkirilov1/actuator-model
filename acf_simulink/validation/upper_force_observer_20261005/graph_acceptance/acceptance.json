@@ -1,0 +1,90 @@
+{
+  "status": "private_graph_acceptance_complete_no_episodes",
+  "createdEpisodes": 0,
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "2a21bd723b5f0a6f2875f4a9201d4df416fcd78c21f322ae3592f01e9c48f82c",
+  "configurationsSha256": "9032dddb995ff8994990ee79df24620052504f190c6b391d37cac0c6975fd1ab",
+  "audits": [
+    {
+      "scenario": 0,
+      "massA_kg": 0.4,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z",
+        "measured_force_N"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "observerGain": [
+        -2.649416480396642,
+        756.57601789628416,
+        0.40903835428480428,
+        1064.0721512669245
+      ],
+      "estimatorPoleMagnitude": 0.99274823075756857,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "identifiedHolderMass_kg": 0.6,
+      "identifiedCellStiffness_N_m": 6.4E+7,
+      "regularizedDerivativeCutoff_Hz": 1500,
+      "regularizedDerivativeDamping": 1,
+      "regularizedDerivativeHighFrequencyCorrectionGain": 0.83274787134191441,
+      "additionalAcquisitionStages": 0,
+      "issuedCurrentPredictorRemoved": true,
+      "truthUsedByObserver": false
+    },
+    {
+      "scenario": 11,
+      "massA_kg": 1.5,
+      "algebraicLoopCount": 0,
+      "observerFromTags": [
+        "command_based_robot_acceleration",
+        "command_based_robot_velocity",
+        "measured_S_acceleration_z",
+        "measured_force_N"
+      ],
+      "nativeSFunctionCount": 0,
+      "physicalEpisodes": 0,
+      "observerGain": [
+        -2.2126926692283542,
+        121.02410644609573,
+        0.28066125371043904,
+        460.27948331979763
+      ],
+      "estimatorPoleMagnitude": 0.99656055211846806,
+      "observerStateNames": [
+        "A_minus_R_m",
+        "vA_minus_vR_m_s",
+        "A_minus_S_m",
+        "vA_minus_vS_m_s"
+      ],
+      "observerInputNames": [
+        "measured_A_minus_S_m",
+        "aligned_delta_actuator_force_N",
+        "aligned_robot_acceleration_m_s2",
+        "measured_S_acceleration_m_s2"
+      ],
+      "identifiedHolderMass_kg": 0.6,
+      "identifiedCellStiffness_N_m": 6.4E+7,
+      "regularizedDerivativeCutoff_Hz": 1500,
+      "regularizedDerivativeDamping": 1,
+      "regularizedDerivativeHighFrequencyCorrectionGain": 0.83274787134191441,
+      "additionalAcquisitionStages": 0,
+      "issuedCurrentPredictorRemoved": true,
+      "truthUsedByObserver": false
+    }
+  ],
+  "scope": "Saved-copy compilation for both A masses, no algebraic loops, authorized existing sensor/issued-robot sources, stable observable upper estimator, proper causal measured-force derivative, no custom MATLAB/S-function dynamics. Preparation checks do not constitute force qualification or hardware measurements."
+}

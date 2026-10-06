@@ -1,0 +1,26 @@
+{
+  "version": "inertial-v3",
+  "modelFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/acf_force_control_normal_trial.slx",
+  "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/normal_contact_trial_candidate.mat",
+  "sourceFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2",
+  "configuration": {
+    "sourceFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2",
+    "workFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930",
+    "outputFolder": "/home/tommie/Projects/actuator-model/acf_simulink/validation"
+  },
+  "algebraicLoopCount": 0,
+  "controllerStrategies": [
+    "pi",
+    "pid"
+  ],
+  "activeCoilVariant": "Coil PI and PID",
+  "otherActuatorVariant": "Drive PI and PID",
+  "guideVelocityPrediction_s": 0,
+  "coilCurrentNotch": {
+    "enabled": false,
+    "frequency_Hz": 1643.7451841639995,
+    "zeroDamping": 0.01,
+    "poleDamping": 0.3
+  },
+  "currentNotchUnits": "A; coil control branch only"
+}

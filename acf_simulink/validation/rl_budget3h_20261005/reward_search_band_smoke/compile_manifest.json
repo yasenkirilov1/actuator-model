@@ -1,0 +1,23 @@
+{
+  "command": [
+    "cc",
+    "-std=c99",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_band_smoke/initial_policy",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search_native.c",
+    "acf_simulink/validation/rl_budget3h_20261005/reward_search_band_smoke/initial_policy/policy_inference.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_band/libacf_native.so",
+    "-Wl,-rpath,/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_band",
+    "-lm",
+    "-o",
+    "acf_simulink/validation/rl_budget3h_20261005/reward_search_band_smoke/reward_search_native.so"
+  ],
+  "sourceSha256": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+  "nativeLibrarySha256": "2715742e6f0929561c6f92eaff6cb525326071669682cf08a88063b2324d4a63",
+  "policySourceSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+  "evaluatorSha256": "67b1fd5d0acbc3263e19367e4a0af1e49803c84662973339e12afb99868045ec"
+}

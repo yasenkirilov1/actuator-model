@@ -1,0 +1,23 @@
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+[Warning: Directory already exists.] 
+[> In audit_adc_fast_restart_20261002 (line 8)] 
+ADC_FAST_RESTART_AUDIT 1/9 heavy7_first_short 0.0677099876N 9.1s
+ADC_FAST_RESTART_AUDIT 2/9 heavy29_warm_short 0.110907669N 10.1s
+ADC_FAST_RESTART_COMPARE seed_warm29_vs_cold29 nativeExact1 adcExact1 maxForceDelta0
+ADC_FAST_RESTART_COMPARE seed7_vs_cold29_contrast nativeExact0 adcExact0 maxForceDelta0.110496179
+ADC_FAST_RESTART_AUDIT 3/9 heavy29_cold_short 0.110907669N 11.7s
+ADC_FAST_RESTART_AUDIT 4/9 heavy7_cold_long 0.348237978N 19.1s
+ADC_FAST_RESTART_AUDIT 5/9 heavy7_first_long 0.348237978N 26.7s
+ADC_FAST_RESTART_AUDIT 6/9 light7_warm_long 0.0501060404N 33.9s
+ADC_FAST_RESTART_COMPARE physical_warmLight_vs_coldLight nativeExact1 adcExact1 maxForceDelta0
+ADC_FAST_RESTART_COMPARE heavy_first_vs_cold_repeat nativeExact1 adcExact1 maxForceDelta0
+ADC_FAST_RESTART_AUDIT 7/9 light7_cold_long 0.0501060404N 42.7s
+ADC_FAST_RESTART_AUDIT 8/9 heavy7_fc500_first_long 0.67183032N 50.0s
+ADC_FAST_RESTART_COMPARE cutoff_warm5100_vs_cold5100 nativeExact1 adcExact1 maxForceDelta0
+ADC_FAST_RESTART_COMPARE cutoff500_vs_cold5100_contrast nativeExact0 adcExact0 maxForceDelta0.422721373
+ADC_FAST_RESTART_AUDIT 9/9 heavy7_fc5100_warm_long 0.348237978N 58.4s

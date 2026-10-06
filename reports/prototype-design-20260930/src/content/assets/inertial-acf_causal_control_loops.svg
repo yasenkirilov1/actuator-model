@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="990" viewBox="0 0 1200 990" role="img" aria-labelledby="acf_causal_control_loops-title acf_causal_control_loops-desc">
+  <title id="acf_causal_control_loops-title">Two loops, two time scales</title>
+  <desc id="acf_causal_control_loops-desc">A 10 kHz force loop subtracts target from reconstructed normal force. A PI correction opposes that error and is combined with causal measured-inertia, gravity, drag and lower-link-inverse feedforward. Current dynamics and actuator limits are retained. A 100 Hz robot loop recenters stroke only after a force-stability dwell, with a delay-aware gain cap. Commands already sent remain in the robot queue and predictor when the gate closes.</desc>
+  <defs>
+    <marker id="arrow-182b49" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#182b49" />
+    </marker>
+    <marker id="arrow-285cc5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#285cc5" />
+    </marker>
+    <marker id="arrow-087d80" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#087d80" />
+    </marker>
+    <marker id="arrow-7750af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7750af" />
+    </marker>
+    <marker id="arrow-9a5b0a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#9a5b0a" />
+    </marker>
+    <marker id="arrow-ae3f70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ae3f70" />
+    </marker>
+    <marker id="arrow-52647c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#52647c" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="990" fill="#ffffff" stroke="none" stroke-width="1.8" rx="0" />
+  <text x="48" y="62" fill="#182b49" font-size="34" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Two loops, two time scales</text>
+  <text x="48" y="99" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Fast force regulation, slow gated recentering and a causal robot predictor</text>
+  <rect x="35" y="133" width="1130" height="472" fill="#eef3fe" stroke="#cbd5e3" stroke-width="1.8" rx="18" />
+  <text x="59" y="169" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">FAST LOOP · 10 kHz</text>
+  <text x="59" y="199" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Regulate reconstructed normal pressing force.</text>
+  <rect x="35" y="665" width="1130" height="247" fill="#f3eef9" stroke="#cbd5e3" stroke-width="1.8" rx="18" />
+  <text x="59" y="701" fill="#7750af" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">SLOW LOOP · 100 Hz</text>
+  <text x="59" y="731" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Recenter travel only when force has settled.</text>
+  <path d="M 230 287 L 265 287" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 321 287 L 357 287" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 562 287 L 600 287" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 644 287 L 673 287" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 878 287 L 927 287" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 1037 325 L 1037 426" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 892 520 L 294 520 L 294 315" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 620 372 L 620 310" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 892 466 L 821 466" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <rect x="55" y="242" width="175" height="88" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="55" y="255" width="5" height="62" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="77" y="276" fill="#285cc5" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Force target</text>
+  <text x="77" y="308" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Nref · 5–50 N</text>
+  <circle cx="294" cy="287" r="27" fill="#ffffff" stroke="#285cc5" stroke-width="2" />
+  <text x="294" y="294" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="middle" xml:space="preserve">e</text>
+  <text x="253" y="275" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">−</text>
+  <text x="310" y="330" fill="#087d80" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">+</text>
+  <text x="294" y="352" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="middle" xml:space="preserve">N̂ − Nref</text>
+  <rect x="357" y="242" width="205" height="88" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="357" y="255" width="5" height="62" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="379" y="276" fill="#285cc5" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">PI correction</text>
+  <text x="379" y="308" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Opposes force error</text>
+  <text x="361" y="358" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">1 kHz feedback filter</text>
+  <circle cx="620" cy="287" r="22" fill="#ffffff" stroke="#285cc5" stroke-width="2" />
+  <text x="620" y="295" fill="#285cc5" font-size="29" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="middle" xml:space="preserve">+</text>
+  <rect x="673" y="218" width="205" height="107" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="673" y="231" width="5" height="81" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="695" y="252" fill="#285cc5" font-size="21" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Current loop</text>
+  <text x="695" y="284.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Limits + antiwindup</text>
+  <text x="695" y="311.0" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">100 µs response</text>
+  <rect x="927" y="218" width="220" height="107" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="927" y="231" width="5" height="81" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="949" y="252" fill="#285cc5" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Coil + plant</text>
+  <text x="949" y="284.0" fill="#52647c" font-size="15" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Physical winding</text>
+  <text x="949" y="311.0" fill="#52647c" font-size="15" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Drive + travel limits</text>
+  <rect x="357" y="372" width="464" height="128" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="357" y="385" width="5" height="102" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="379" y="406" fill="#087d80" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Causal feedforward + observer</text>
+  <text x="379" y="438.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Gravity · measured S inertia · drag/geometry</text>
+  <text x="379" y="462.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Lower-link inverse: 1.5 kHz; identified k/c</text>
+  <text x="379" y="486.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Robot-motion prediction from issued commands</text>
+  <rect x="892" y="426" width="255" height="134" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="892" y="439" width="5" height="108" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="914" y="460" fill="#087d80" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Matched sensing</text>
+  <text x="914" y="492.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Force + S acceleration</text>
+  <text x="914" y="519.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">S–A relative position</text>
+  <text x="914" y="546.0" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Reconstructed force N̂</text>
+  <text x="343" y="551" fill="#087d80" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Reconstructed normal-force feedback</text>
+  <text x="58" y="584" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Feedback and feedforward have separate filters. The driver retains physical current response and voltage clipping.</text>
+  <path d="M 1016 560 L 1016 631 L 407 631 L 407 765" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <text x="649" y="652" fill="#087d80" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Force-stability input</text>
+  <path d="M 235 814 L 277 814" fill="none" stroke="#7750af" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-7750af)" />
+  <path d="M 537 814 L 569 814" fill="none" stroke="#7750af" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-7750af)" />
+  <path d="M 759 814 L 796 814" fill="none" stroke="#7750af" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-7750af)" />
+  <path d="M 986 814 L 1018 814" fill="none" stroke="#7750af" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-7750af)" />
+  <rect x="55" y="765" width="180" height="112" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="55" y="778" width="5" height="86" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="77" y="799" fill="#7750af" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Travel error</text>
+  <text x="77" y="831" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">S relative to A</text>
+  <text x="77" y="859" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Center stroke</text>
+  <rect x="277" y="765" width="260" height="112" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="277" y="778" width="5" height="86" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="299" y="799" fill="#7750af" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Force-stability gate</text>
+  <text x="299" y="831" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">100 ms stable dwell</text>
+  <text x="299" y="859" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">RMS variation &lt; 0.08 N</text>
+  <rect x="569" y="765" width="190" height="112" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="569" y="778" width="5" height="86" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="591" y="799" fill="#7750af" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Gain cap</text>
+  <text x="591" y="831" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Delay-aware</text>
+  <text x="591" y="859" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Bounded gain</text>
+  <rect x="796" y="765" width="190" height="112" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="796" y="778" width="5" height="86" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="818" y="799" fill="#7750af" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Robot queue</text>
+  <text x="818" y="831" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Commands sent</text>
+  <text x="818" y="859" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Still pending</text>
+  <rect x="1018" y="765" width="128" height="112" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="1018" y="778" width="5" height="86" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="1040" y="799" fill="#7750af" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Robot</text>
+  <text x="1040" y="831" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Delayed</text>
+  <text x="1040" y="859" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">motion</text>
+  <text x="57" y="952" fill="#182b49" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Gate closure blocks new corrections. The queue and predictor retain commands already sent.</text>
+</svg>

@@ -1,0 +1,280 @@
+{
+  "status": "complete",
+  "sourceRun": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/ppo_warm_10k_8301",
+  "sources": {
+    "rollout.npz": "21eb4c66492ccf09aed22f1f225d3b810ac102b9f9df5b4371f6a367cc20e948",
+    "initial_policy.pt": "754c7dd928283e0e5a7d4ffd9e993a78e84d2d74e46182437eeb8ff8b0b90f9a",
+    "run_snapshot.json": "7478794b56a9e6a1a30b5420260c0f7931350fcef6aece9e450d1278ac5b73bd"
+  },
+  "scope": "Independent scratch clones only; active experiment policy/optimizer unchanged.",
+  "torchThreads": 2,
+  "device": "NVIDIA GeForce RTX 3090",
+  "repetitions": [
+    {
+      "repetition": 0,
+      "device": "cpu",
+      "transfer_s": 6.716104689985514e-05,
+      "update_s": 0.7819796410039999,
+      "total_s": 0.7820468020508997,
+      "metrics": {
+        "policy_loss": 0.10120845958590508,
+        "value_loss": 0.0003107587775351324,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4090512720593345e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140764574209848,
+        "critic_grad_norm": 0.0034571511793425693,
+        "current_policy_loss": 5.5301934480667114e-06,
+        "robot_policy_loss": 0.10120292178665598,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250085026025772
+      }
+    },
+    {
+      "repetition": 0,
+      "device": "cuda",
+      "transfer_s": 0.028264393971767277,
+      "update_s": 0.8591883989865892,
+      "total_s": 0.8874527929583564,
+      "metrics": {
+        "policy_loss": 0.10120843847592671,
+        "value_loss": 0.0003107587945123669,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4098149652865097e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140771627426147,
+        "critic_grad_norm": 0.003457151285450285,
+        "current_policy_loss": 5.523363749186198e-06,
+        "robot_policy_loss": 0.10120291464651625,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250084839761257
+      }
+    },
+    {
+      "repetition": 1,
+      "device": "cpu",
+      "transfer_s": 4.2230007238686085e-05,
+      "update_s": 0.5613797270343639,
+      "total_s": 0.5614219570416026,
+      "metrics": {
+        "policy_loss": 0.10120845958590508,
+        "value_loss": 0.0003107587775351324,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4090512720593345e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140764574209848,
+        "critic_grad_norm": 0.0034571511793425693,
+        "current_policy_loss": 5.5301934480667114e-06,
+        "robot_policy_loss": 0.10120292178665598,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250085026025772
+      }
+    },
+    {
+      "repetition": 1,
+      "device": "cuda",
+      "transfer_s": 0.012744134990498424,
+      "update_s": 0.1706949159852229,
+      "total_s": 0.18343905097572133,
+      "metrics": {
+        "policy_loss": 0.10120843847592671,
+        "value_loss": 0.0003107587945123669,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4098149652865097e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140771627426147,
+        "critic_grad_norm": 0.003457151285450285,
+        "current_policy_loss": 5.523363749186198e-06,
+        "robot_policy_loss": 0.10120291464651625,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250084839761257
+      }
+    },
+    {
+      "repetition": 2,
+      "device": "cpu",
+      "transfer_s": 3.897998249158263e-05,
+      "update_s": 0.5488955060136504,
+      "total_s": 0.548934485996142,
+      "metrics": {
+        "policy_loss": 0.10120845958590508,
+        "value_loss": 0.0003107587775351324,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4090512720593345e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140764574209848,
+        "critic_grad_norm": 0.0034571511793425693,
+        "current_policy_loss": 5.5301934480667114e-06,
+        "robot_policy_loss": 0.10120292178665598,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250085026025772
+      }
+    },
+    {
+      "repetition": 2,
+      "device": "cuda",
+      "transfer_s": 0.009133971005212516,
+      "update_s": 0.17537081200862303,
+      "total_s": 0.18450478301383555,
+      "metrics": {
+        "policy_loss": 0.10120843847592671,
+        "value_loss": 0.0003107587945123669,
+        "latent_entropy": -3.1621467669804892,
+        "approx_kl": 3.4098149652865097e-05,
+        "clip_fraction": 0.0,
+        "grad_norm": 3.4140771627426147,
+        "critic_grad_norm": 0.003457151285450285,
+        "current_policy_loss": 5.523363749186198e-06,
+        "robot_policy_loss": 0.10120291464651625,
+        "optimizer_steps": 12,
+        "early_stop": false,
+        "update_count": 1,
+        "gamma": 0.9999000049998333,
+        "gae_lambda": 0.9996667222160499,
+        "chunk_length": 2048,
+        "burnin_steps": 256,
+        "rollout_transitions": 98304,
+        "eligible_current_actions": 98304,
+        "eligible_robot_actions": 744,
+        "optimizer_learning_rates": [
+          1e-05,
+          0.0003,
+          1e-05
+        ],
+        "critic_detached_shared_trunk": true,
+        "channelwise_policy_loss": true,
+        "std": [
+          0.01110826525837183,
+          0.22313329577445984
+        ],
+        "advantage_mean": -0.02166038751602173,
+        "advantage_std": 0.02250084839761257
+      }
+    }
+  ],
+  "batchShape": [
+    4096,
+    24,
+    40
+  ],
+  "tensorBytes": 45127680,
+  "parameterMaxResidualCPUvsCUDA": 1.4370016288012266e-09,
+  "summary": {
+    "cpu": {
+      "warmMedianUpdate_s": 0.5551376165240072,
+      "warmMedianIncludingTransfer_s": 0.5551782215188723
+    },
+    "cuda": {
+      "warmMedianUpdate_s": 0.17303286399692297,
+      "warmMedianIncludingTransfer_s": 0.18397191699477844
+    }
+  },
+  "cudaSpeedupIncludingTransfer": 3.0177335247021944,
+  "sameInitialPolicyAndOptimizer": true,
+  "sameMinibatchPermutations": true
+}

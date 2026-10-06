@@ -1,0 +1,90 @@
+{
+  "version": "inertial-v2",
+  "nativeControllerFromTags": [
+    "command_based_robot_acceleration",
+    "command_based_robot_velocity",
+    "measured_S_acceleration_x",
+    "measured_S_acceleration_z",
+    "measured_lateral_contact_N",
+    "inertial_robot_velocity_aligned"
+  ],
+  "controllerBlockTypes": [
+    "Bias",
+    "Constant",
+    "Delay",
+    "DiscreteIntegrator",
+    "DiscreteStateSpace",
+    "From",
+    "Gain",
+    "Goto",
+    "Inport",
+    "Math",
+    "Mux",
+    "Outport",
+    "Product",
+    "Saturate",
+    "Selector",
+    "SubSystem",
+    "Sum",
+    "Trigonometry",
+    "UnitDelay"
+  ],
+  "algebraicLoopCount": 0,
+  "modelStep_s": 5E-5,
+  "forceSampleTime_s": 0.0001,
+  "sensorSampleTime_s": 0.0001,
+  "sensorFilter_s": 0.0002,
+  "accelFilter_s": 0.0002,
+  "accelDelay_s": 0.0001,
+  "sensorDelay_s": 0.0001,
+  "reconstructionSigns": "R = tared cell force + known downstream S mass * measured S acceleration",
+  "currentFeedforwardSign": "iFF = -(B+S)*measured aS/Kf",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/acf_force_control_normal_trial.slx",
+  "checks": [
+    {
+      "caseIndex": 1,
+      "massS_kg": 2,
+      "force_N": 50,
+      "mu": 0.3,
+      "seed": 1729,
+      "step_s": 5E-5,
+      "samples": 80001,
+      "normalError_N": 0.34992276535191991,
+      "contactLoss": false,
+      "strokeStop": false,
+      "completed": true,
+      "accelNoiseRms_m_s2": [
+        0.012141398109864584,
+        0.011854097607872227
+      ],
+      "accelQuietMean_m_s2": [
+        0.0001226095394769736,
+        -4.3301462072284438E-5
+      ],
+      "traceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-audit-20260930/normal_contact_trial_inertial_audit_01.mat"
+    },
+    {
+      "caseIndex": 2,
+      "massS_kg": 2,
+      "force_N": 50,
+      "mu": 0.3,
+      "seed": 1729,
+      "step_s": 2.5E-5,
+      "samples": 160001,
+      "normalError_N": 0.34987624793076577,
+      "contactLoss": false,
+      "strokeStop": false,
+      "completed": true,
+      "accelNoiseRms_m_s2": [
+        0.012141125571142775,
+        0.011854101591235759
+      ],
+      "accelQuietMean_m_s2": [
+        0.0001227467561689048,
+        -4.2879533487517984E-5
+      ],
+      "traceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-audit-20260930/normal_contact_trial_inertial_audit_02.mat"
+    }
+  ],
+  "maxPeakRefinementDifference_N": 4.6517421154135263E-5
+}

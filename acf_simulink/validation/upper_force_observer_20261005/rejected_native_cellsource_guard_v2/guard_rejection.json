@@ -1,0 +1,5 @@
+{
+  "status": "numerical_wiring_guard_rejected_before_native_export",
+  "physicalQualificationEpisodes": 0,
+  "reason": "Guard injected top-level inlet while SDI recording was disabled and did not retainactualseries; cleanup found a residual destination line. Preserve attempt. Retry directly at Cell error to deviation input with private recording enabled, fresh-latch-aware check, actualseries evidence and safe complete wire restoration."
+}

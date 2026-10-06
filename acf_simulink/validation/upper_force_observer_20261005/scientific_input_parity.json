@@ -1,0 +1,24 @@
+{
+  "status": "all132_existing_scientific_input_sections_and_upper_observer_dynamics_exact",
+  "physicalEpisodes": 0,
+  "caseCount": 132,
+  "identicalSections": [
+    "mechanics",
+    "coil",
+    "sensor",
+    "acquisition",
+    "adcStudy",
+    "inertial",
+    "robot",
+    "robotPrediction",
+    "force",
+    "contact",
+    "surface",
+    "sim",
+    "uncertainty"
+  ],
+  "identicalUpperObserverMatrices": true,
+  "sourceConfigsSha256": "8deb93131870e4ac05c85ac6852f589c24e6273e8dd3d5253891c4979a6dc6d0",
+  "newConfigsSha256": "9032dddb995ff8994990ee79df24620052504f190c6b391d37cac0c6975fd1ab",
+  "changedScope": "Only observer force-source coefficients/metadata and descriptive upper unconstrained-length flags; pre-existing observer dynamics, physical/acquisition/control cases preserved."
+}

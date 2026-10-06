@@ -1,0 +1,49 @@
+{
+  "scope": "Read-only native diagnostic of T0 andT300us worst histories; no additional simulations or hardware qualification. Physical channels are diagnostic only.",
+  "rows": [
+    {
+      "controllerIndex": 1,
+      "sourceTrace": "acf_simulink/validation/normal_mass_controller_inertial_acceleration_command_prediction_20260930_broad_v5_finite_traces/controller_01_worst_native.mat",
+      "prediction_s": 0,
+      "peakTime_s": 2.00044,
+      "peakError_N": 0.4216100025058367,
+      "partsAtPeak_N": {
+        "currentTracking_N": 0.0657411161483986,
+        "totalCurrentNotch_N": 0.2795359320630794,
+        "predictedAccelerationFF_N": 0.17227433236311096,
+        "geometryFF_N": 0.0020323380992689,
+        "guideFF_N": -2.9927651596447216e-05,
+        "PI_N": -0.1832545349591182,
+        "finiteCellBInertia_N": 0.08531074644269225
+      },
+      "nativeCurrentReconstructionResidual_A": 1.7763568394002505e-15,
+      "forceDecompositionResidual_N": 2.864375403532904e-14,
+      "measuredAzAtPeak_m_s2": 0.09828,
+      "predictedAzAtPeak_m_s2": 0.09828,
+      "physicalAzAtPeak_m_s2": 0.1645320946926362,
+      "physicalBAccAtPeak_m_s2": 0.30670108462705475
+    },
+    {
+      "controllerIndex": 4,
+      "sourceTrace": "acf_simulink/validation/normal_mass_controller_inertial_acceleration_command_prediction_20260930_broad_v5_finite_traces/controller_04_worst_native.mat",
+      "prediction_s": 0.0003,
+      "peakTime_s": 2.0004,
+      "peakError_N": 0.39967766614446987,
+      "partsAtPeak_N": {
+        "currentTracking_N": 0.13069539339346897,
+        "totalCurrentNotch_N": 0.3942207165493157,
+        "predictedAccelerationFF_N": -0.04995462707572718,
+        "geometryFF_N": 0.0010873406840438795,
+        "guideFF_N": -4.2967003602241515e-05,
+        "PI_N": -0.18702868572846215,
+        "finiteCellBInertia_N": 0.11070049532543685
+      },
+      "nativeCurrentReconstructionResidual_A": 1.7763568394002505e-15,
+      "forceDecompositionResidual_N": 2.930988785010413e-14,
+      "measuredAzAtPeak_m_s2": 0.09828,
+      "predictedAzAtPeak_m_s2": 0.16914970156651535,
+      "physicalAzAtPeak_m_s2": 0.1499381268479839,
+      "physicalBAccAtPeak_m_s2": 0.3344222110636365
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+RL_SUSTAINED_BANK_FROZEN 144 cases,original128exact
+### Searching for referenced models in model 'acf_rl_native'.
+### Unable to find Simulink cache file "acf_rl_native.slxc".
+### Total of 1 models to build.
+### Starting top model code generation target build for: acf_rl_native
+### Build reason: "acf_rl_native.c" did not exist.
+### Build folder for generated code: /home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained/code/acf_rl_native_grt_rtw
+[Warning: Use fixed buffer size in 'acf_rl_native/Contact force measurement/Head
+motion estimator/Position ADC delivery pipeline' is not selected. When
+generating GRT/ERT code, Simulink will automatically use fixed buffer of the
+initial buffer size set by user. Code generation results and simulation results
+may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/Contact force measurement/Head
+motion estimator/Robot acceleration frame matching delay' is not selected. When
+generating GRT/ERT code, Simulink will automatically use fixed buffer of the
+initial buffer size set by user. Code generation results and simulation results
+may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/Contact force measurement/Head
+motion estimator/Robot velocity frame matching delay' is not selected. When
+generating GRT/ERT code, Simulink will automatically use fixed buffer of the
+initial buffer size set by user. Code generation results and simulation results
+may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/Force measurement/Sensor
+sample delay' is not selected. When generating GRT/ERT code, Simulink will
+automatically use fixed buffer of the initial buffer size set by user. Code
+generation results and simulation results may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/Lateral B-S force
+measurement/Sensor sample delay' is not selected. When generating GRT/ERT code,
+Simulink will automatically use fixed buffer of the initial buffer size set by
+user. Code generation results and simulation results may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/S accelerometer and ADC/X
+known channel delay' is not selected. When generating GRT/ERT code, Simulink
+will automatically use fixed buffer of the initial buffer size set by user.
+Code generation results and simulation results may differ] 
+[Warning: Use fixed buffer size in 'acf_rl_native/S accelerometer and ADC/Z
+known channel delay' is not selected. When generating GRT/ERT code, Simulink
+will automatically use fixed buffer of the initial buffer size set by user.
+Code generation results and simulation results may differ] 
+### TLC front end (took 0.134s).
+[Warning: The output(s) read after the base-rate model step reflects intervening
+minor time steps. To observe data that is a snapshot of output(s) at major time
+steps, do one of the following:
+ * Place a Zero-Order Hold block before the continuous output port
+ 'acf_rl_native/rl_scoring'.
+ * Clear Single output/update function, and read model output values after
+ model_output call and before model_update call.] 
+### Invoking Target Language Compiler on acf_rl_native.rtw
+### Using System Target File: /home/tommie/.local/opt/MATLAB/R2026b/rtw/c/grt/grt.tlc
+### Loading TLC function libraries
+..............
+### Initial pass through model to cache user defined code
+............
+### Caching model source code
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+.........
+### Writing header file acf_rl_native_types.h
+.
+### Writing header file acf_rl_native.h
+### Writing header file acf_rl_native_private.h
+### Writing header file rtwtypes.h
+### Writing header file multiword_types.h
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+### Writing header file rt_nonfinite.h
+.
+### Writing source file rt_nonfinite.c
+### Writing source file acf_rl_native.c
+### Writing header file rtmodel.h
+### Writing source file acf_rl_native_data.c
+..
+### TLC code generation complete (took 1.943s).
+.### Saving binary information cache.
+### Using toolchain: GNU gcc/g++ | gmake (64-bit Linux)
+### Creating '/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained/code/acf_rl_native_grt_rtw/acf_rl_native.mk' ...
+### Successful completion of code generation for: acf_rl_native
+### Simulink cache artifacts for 'acf_rl_native' were created in '/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_sustained/cache/acf_rl_native.slxc'.
+
+Build Summary
+
+Top model targets:
+
+Model          Build Reason                             Status           Build Duration
+=======================================================================================
+acf_rl_native  Target (acf_rl_native.c) did not exist.  Code generated.  0h 0m 14.083s
+
+1 of 1 models built (0 models already up to date)
+Build duration: 0h 0m 15.651s
+RL_NATIVE_EXPORT_GENERATED 17.361s

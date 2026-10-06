@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "kind": "locked_executing_controller_parameters",
+  "rows": [
+    {
+      "component": "Live normal-force PI",
+      "multiplier": 1,
+      "executingGainFields": [
+        "p.inertial.forceKp",
+        "p.inertial.forceKi",
+        "p.inertial.forceKd"
+      ],
+      "forceKp_A_N": 0.02459016393442623,
+      "forceKi_A_N_s": 16.393442622950822,
+      "forceKd_A_s_N": 0
+    },
+    {
+      "component": "Bounded phase-shaped cell-mode feedback",
+      "enabled": 1,
+      "carrier_Hz": 1643.7451841639995,
+      "filterDamping": 0.2,
+      "virtualDamping_Ns_m": 1500,
+      "currentBound_A": 0.05,
+      "acquiredTransferReal": -0.5839616579029474,
+      "acquiredTransferImag": -0.39363203922951734,
+      "phaseSourceSha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2",
+      "contract": "Zero-DC proper causal resonant cell feedback, after current notch before current limits; full measurement frame/noise/physical mechanics preserved.",
+      "identifiedCurrentResponse_s": 5e-05
+    },
+    {
+      "component": "Body-motion observer",
+      "enabled": 1,
+      "identifiedMassA_kg": 1.5,
+      "identifiedStiffness_N_m": 20000,
+      "identifiedDamping_Ns_m": 0,
+      "identifiedCurrentResponse_s": 5e-05,
+      "forceProcessDensity_N_sqrtHz": 0.0005,
+      "accelerationProcessDensity_m_s2_sqrtHz": 0.0004,
+      "positionMeasurementRms_m": 5e-06,
+      "contract": "Four-state causal upper observer driven by the explicit local matched acquired axial cell deviation, identified holder inertia and a proper critically damped cell derivative. Only observer Q/R design weights and derivative cutoff vary; actual sensor noise/timing, physical mechanics and PI/notch remain unchanged.",
+      "forceEstimator": "local_matched_cell_and_holder_force_balance",
+      "forceDerivativeCutoff_Hz": 150
+    },
+    {
+      "component": "Active acquisition and noise normalization",
+      "matchedTwoPoleCutoff_Hz": 1900,
+      "adcOutputRate_Hz": 30000,
+      "emaTimeConstant_s": 5e-05,
+      "emaExecutionClock_Hz": 30000,
+      "nominalEmaLowFrequencyDelay_s": 3.517161132699074e-05,
+      "referenceNoiseENBW_Hz": 3177.1265617575177,
+      "referenceConditionedForceNoiseRms_N": 0.02,
+      "referenceConditionedAccelerationNoiseRms_m_s2": 0.018655706922592906,
+      "referenceConditionedPositionNoiseRms_m": 1e-06,
+      "note": "Input PSD normalization uses immutable nominal reference response; actual filtered RMS depends on the active response. ADC noise/quantization are additional."
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/selected_native_contracts_v1.json": "f61df543c4edf48754c04599023fc003bec2e498b67e7db8abbebe1ab82024bd",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/bank/configs.mat": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_adc_prepare.m": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+  },
+  "scope": "Selected live parameter fields and independent modal identification. Observer coefficients depend on known mass; inherited source-build case0 metadata does not identify the selected controller.",
+  "qualificationEpisodes": 0
+}

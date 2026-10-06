@@ -1,0 +1,155 @@
+{
+  "status": "complete",
+  "canonicalModel": "/home/tommie/Projects/actuator-model/acf_simulink/generated/acf_force_control_simple.slx",
+  "all35MaxDifference": 0,
+  "observerStateMaxDifference": 0,
+  "pages": [
+    {
+      "system": "acf_force_control_simple",
+      "blocks": 65,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics",
+      "blocks": 64,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator",
+      "blocks": 8,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Ideal position",
+      "blocks": 55,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Leadscrew",
+      "blocks": 91,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Voice coil",
+      "blocks": 71,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/B to S spring and damper",
+      "blocks": 11,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Mass A",
+      "blocks": 13,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Mass B",
+      "blocks": 13,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Measurements and safety",
+      "blocks": 109,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/R to A spring and damper",
+      "blocks": 11,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator selection",
+      "blocks": 0,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller",
+      "blocks": 7,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller/Other actuators PI",
+      "blocks": 37,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller/Voice coil observer",
+      "blocks": 61,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller selection",
+      "blocks": 0,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force measurement",
+      "blocks": 30,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Issued-command robot predictor",
+      "blocks": 12,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Recenter travel",
+      "blocks": 23,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Recenter travel/Force settling gate",
+      "blocks": 31,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Relative position measurement",
+      "blocks": 14,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Robot command delay",
+      "blocks": 3,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Robot motion",
+      "blocks": 15,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Surface and nominal path",
+      "blocks": 71,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    }
+  ],
+  "danglingWireBranchesRemoved": 3,
+  "remainingDanglingWireBranches": 0,
+  "piFlatAll35MaxDifference": 0
+}

@@ -1,0 +1,935 @@
+{
+  "asOf": "2026-10-02",
+  "readyForDelivery": true,
+  "queries": [
+    {
+      "id": "bump_motion",
+      "file": "acf_simulink/validation/inertial_bump_calculation.json",
+      "label": "Specified polynomial bump: analytical motion and inertia",
+      "kind": "analytical_calculation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "Required motion, not native controller qualification."
+      ]
+    },
+    {
+      "id": "reference_PI_gains",
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json",
+      "label": "72 completed native rigid-reference PI gain cases",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Rigid attachments; not finite load-cell stiffness qualification."
+      ]
+    },
+    {
+      "id": "reference_strategies",
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json",
+      "label": "56 completed native equal-sensing controller cases",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Rigid attachments; equal eight-case cohorts, no surface preview."
+      ]
+    },
+    {
+      "id": "force_position_parts",
+      "file": "acf_simulink/validation/realistic_force_position_sensors.json",
+      "label": "Primary manufacturer force, position and acquisition references",
+      "kind": "manufacturer_document_review",
+      "rowsPath": [
+        "sources"
+      ],
+      "caveats": [
+        "No prototype accuracy or controller qualification established by catalog data."
+      ],
+      "dictionaryRows": true
+    },
+    {
+      "id": "coil_parts",
+      "file": "acf_simulink/validation/realistic_voice_coil_examples.json",
+      "label": "Primary voice-coil examples and continuous-force specifications",
+      "kind": "manufacturer_document_review",
+      "rowsPath": [
+        "sources"
+      ],
+      "caveats": [
+        "Manufacturer ratings; final native real-coil check is separately source-bound."
+      ],
+      "dictionaryRows": true
+    },
+    {
+      "id": "cell_stiffness",
+      "file": "acf_simulink/validation/inertial_report_structural_summary.json",
+      "label": "78 retained native load-cell stiffness recordings",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "72 common unshaped cases; six filtered-feedforward cases only at 110 MN/m. No new simulations in this report view."
+      ]
+    },
+    {
+      "id": "force_error_balance",
+      "file": "acf_simulink/validation/normal_mass_controller_v7_drive_shape_analysis_20260930.json",
+      "label": "Exact diagnostic balance of five retained native controller histories",
+      "kind": "native_trace_analysis",
+      "requiredStatus": [
+        "complete_read_only_analysis"
+      ],
+      "rowsPath": [
+        "traces"
+      ],
+      "caveats": [
+        "Different worst-case peak times and seeds; physical truth is diagnostic only."
+      ]
+    },
+    {
+      "id": "lower_spring_search",
+      "file": "acf_simulink/validation/inertial_mechanics_spring_chart_data_20260930.json",
+      "label": "168 completed native lower spring/damper tuning recordings",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "nativeRows"
+      ],
+      "requiredStatus": [
+        "bounded_design_and_controller_search"
+      ],
+      "caveats": [
+        "Best complete clean/noisy tuning per family; not equal gains. Search packing uses a feasible-preload interval."
+      ]
+    },
+    {
+      "id": "lower_series_repeated_reference",
+      "file": "acf_simulink/validation/inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json",
+      "label": "Three native ten-second repeated-heavy reference recordings",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Reference response envelopes; final actual acquisition and force gate qualified separately."
+      ]
+    },
+    {
+      "id": "screw_pitch_sizing",
+      "file": "acf_simulink/validation/inertial_actuators_chart_data_v7.json",
+      "label": "Analytical screw-pitch inertia and holding-current sizing",
+      "kind": "analytical_calculation",
+      "rowsPath": [
+        "pitchSizing",
+        "points"
+      ],
+      "caveats": [
+        "Current alone does not establish continuous motor torque. Dynamic controller qualification is separate."
+      ]
+    },
+    {
+      "id": "actuator_pair_reference",
+      "file": "acf_simulink/validation/inertial_actuators_lower_series_v1_reviewed_comparison.json",
+      "label": "Eight completed native lower-series actuator comparison recordings",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "allRows"
+      ],
+      "requiredStatus": [
+        "complete_bounded_nominal_native_comparison"
+      ],
+      "caveats": [
+        "Four matched conditions, one bump per ten-second recording, source reference sensing; continuous motor sizing separate."
+      ]
+    },
+    {
+      "id": "electrical_reference",
+      "file": "acf_simulink/validation/normal_voltage_20260930_core_summary.json",
+      "label": "92 distinct lower-series winding and supply configurations",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "groups"
+      ],
+      "caveats": [
+        "95 durable executions including three repeats; identified reference response envelopes, not final acquisition."
+      ]
+    },
+    {
+      "id": "lower_series_force_balance",
+      "file": "acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930.json",
+      "label": "Exact native force balance at the selected lower-series worst endpoint",
+      "kind": "native_trace_analysis",
+      "requiredStatus": [
+        "complete_read_only_analysis"
+      ],
+      "caveats": [
+        "One retained worst reference trace; signed components interact and are not separate uncertainty budgets."
+      ]
+    },
+    {
+      "id": "actual_mechanics_tolerance",
+      "file": "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+      "label": "72 executed actual-stiffness/damper force histories and analytical20mm packing",
+      "kind": "native_simulation_and_analytical_geometry_rescore",
+      "requiredStatus": [
+        "analytical_geometry_rescore_of_executed_native_histories_no_new_force_simulation"
+      ],
+      "caveats": [
+        "Force histories are unchanged;20mm geometry rescore adds zero force simulations."
+      ]
+    },
+    {
+      "id": "final_sensing_OAT",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_engineered_sensing/inertial_uncertainty_engineered_sensing_20260930_results.json",
+      "label": "42 final-acquisition native sensing calibration records",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "One-at-a-time channel changes; not an independently additive allowance."
+      ]
+    },
+    {
+      "id": "final_robot_OAT",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_robot_fine_delay/inertial_uncertainty_robot_fine_delay_20260930_results.json",
+      "label": "14 final-acquisition native robot response mismatch records",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Fixed timing mismatch is distinct from random jitter or changing loaded dynamics."
+      ]
+    },
+    {
+      "id": "final_joint_budget",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.json",
+      "label": "60 native simultaneous26-dimensional calibration-error samples",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Two endpoints, three seeds, ten deterministic corners; not full-range joint uncertainty or exhaustive hypercube."
+      ]
+    },
+    {
+      "id": "final_current_response",
+      "file": "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json",
+      "label": "12 native repeated-heavy current-response and ideal-voltage alternatives",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "completed_bounded_alternative_drive_comparison"
+      ],
+      "caveats": [
+        "Seven bumps in10s, two seeds;100us selected,50/150us bounded options; prior18.1mm metadata retained in these force-identical dynamics."
+      ]
+    },
+    {
+      "id": "final_electrical",
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_sensor_subset.json",
+      "label": "16 final-source native electrical records over15distinct conditions",
+      "kind": "native_simulation",
+      "caveats": [
+        "Includes one parity duplicate; cold/hot/headroom test is a bounded heavy endpoint study, not full-grid real-coil qualification."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "joint_budget_plan",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_budget_plan.json",
+      "label": "Declared26-dimensional residuals for executed60 native joint cases",
+      "kind": "executed_experiment_design",
+      "rowsPath": [
+        "corners"
+      ],
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Ten sampled sign patterns; no exhaustive26-dimensional bound."
+      ]
+    },
+    {
+      "id": "final_acquisition_endpoints",
+      "file": "acf_simulink/validation/normal_contact_trial_inertial_v8_manifest.json",
+      "label": "Nine full10s native final-acquisition endpoint recordings",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "endpointProof",
+        "pilotRows"
+      ],
+      "caveats": [
+        "One clean heavy and8noisy endpoints; final3500 range is separately scored."
+      ]
+    },
+    {
+      "id": "selected_settings",
+      "file": "acf_simulink/validation/inertial_report_selected_settings.json",
+      "label": "Frozen final mechanism and controller parameters",
+      "kind": "native_model_parameter_review",
+      "requiredStatus": [
+        "complete_read_only_frozen_parameters"
+      ],
+      "caveats": [
+        "Parameter values are source-bound; native qualification and real-coil variants are separately recorded."
+      ]
+    },
+    {
+      "id": "acceleration_and_drive_parts",
+      "file": "acf_simulink/validation/inertial_report_acceleration_drive_parts.json",
+      "label": "Primary ADXL1002, AD7606C-18 and TA115 specifications",
+      "kind": "manufacturer_document_review",
+      "requiredStatus": [
+        "complete_primary_document_review"
+      ],
+      "caveats": [
+        "Noise, calibration, hot load, timing and safe operating area remain assembled prototype requirements."
+      ]
+    },
+    {
+      "id": "qualified_range",
+      "file": "acf_simulink/validation/inertial_report_final_grid_rows_20260930.json",
+      "label": "3500 audited full-history final-acquisition nominal cases",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete_audited_report_rows"
+      ],
+      "caveats": [
+        "All400001 native samples per recording, including startup. Five knownS masses, tenforce targets, sevenfixed angles, twodrag ratios and fiveclean/noisy conditions; finite nominal qualification.",
+        "Original CSV and coverage audit are SHA-bound. Display id is globalCaseId; partitionCaseId and rawAngle_deg preserve original fields.",
+        "Two execution recipes differ only in owned temporary SDI storage; 122 earlier recovery histories are excluded from3500 unique identities."
+      ]
+    },
+    {
+      "id": "final_worst_excerpt",
+      "file": "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json",
+      "label": "Every native10us sample in the retained worst-case bump window",
+      "kind": "native_simulation_excerpt",
+      "requiredStatus": [
+        "complete_read_only_native_excerpt"
+      ],
+      "caveats": [
+        "22001 consecutive native samples in the displayed window; metric computed from all400001 original samples. No new simulation.",
+        "Force is actual workpiece-normal reaction; gate trace held from native100Hz decisions. Full original trace and aggregate are SHA-bound."
+      ]
+    },
+    {
+      "id": "mixed_mechanics_identification",
+      "file": "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+      "label": "Assembled lower-mechanics identification: three paired stress seeds",
+      "kind": "native_simulation",
+      "caveats": [
+        "Six complete4s native histories at one heavy combined corner; actual k+20%/c\u221220%; exactly known actual k/c supplied in the mitigation.",
+        "A narrow paired comparison, not a k/c calibration-error allowance or full joint parameter box."
+      ]
+    },
+    {
+      "id": "final_actuator_comparison",
+      "file": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+      "label": "Final actual-acquisition coil/screw native acceptance",
+      "kind": "native_simulation",
+      "caveats": [
+        "Four matched4s/one-bump pairs plus one5\u00b5s screw refinement; all nine full histories scored.",
+        "Screw has no complete range/joint calibration qualification and the RE25 continuous catalog rating fails."
+      ],
+      "requiredStatus": [
+        "reviewed_complete_final_native_comparison"
+      ]
+    },
+    {
+      "id": "full_grid_hot_headroom",
+      "file": "acf_simulink/validation/normal_voltage_final_grid_hot_mapping_20260930.json",
+      "label": "Conditional hot-winding headroom across all3500 nominal identities",
+      "kind": "read_only_analysis",
+      "caveats": [
+        "3498 sufficient conservative algebraic bounds plus two explicit native exception identities support31V under stated nominal constant-Kf/matched100\u00b5s assumptions.",
+        "Not3500 real-winding simulations, thermal/stroke qualification, unknown hot Kf or full joint uncertainty headroom."
+      ],
+      "requiredStatus": [
+        "complete_read_only_bound_plus_authorized_native_exception_audit"
+      ],
+      "rowsPath": [
+        "byMass"
+      ]
+    },
+    {
+      "id": "native_headroom_exception",
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof.json",
+      "label": "Native hot31V proof for the previously uncovered bound exception",
+      "kind": "native_simulation",
+      "caveats": [
+        "Exactly two new4s native histories: generic reference matching global3492 and normalized known real-hot coil31V.",
+        "Combined final electrical count18 native/17 unique; these two are additional to the original16-run figure."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "final_solver_refinement",
+      "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "label": "Final global-worst numerical refinement",
+      "kind": "native_simulation",
+      "caveats": [
+        "Original global3489 10\u00b5s history and two qualified5/2.5\u00b5s full-native reruns; four gate channels remain100Hz.",
+        "One extra unqualified native audit-return and wrapper-only rejection remain separately preserved."
+      ],
+      "requiredStatus": [
+        "complete_frozen_portable_numerical_evidence"
+      ]
+    },
+    {
+      "id": "final_long_joint_budget",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "label": "Four original30s simultaneous-error stress repeats",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Four30s/24-bump histories, heavy corner8 seeds7/29/1729 and light corner3 seed29; every3,000,001 native samples scored.",
+        "Worst0.490396N leaves only0.009604N stress reserve; finite corner scope, not a practical safety margin or full continuous error box."
+      ]
+    },
+    {
+      "id": "final_static_calibration_long",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "label": "Tighter static calibration: four paired30s repeats",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Exactly sixteen static bias/gain/frame/identified residuals halved; noise, AA/pipeline/robot residuals, actual mechanics and100\u00b5s current response unchanged.",
+        "Four finite corner repeats,24 bumps each, every3,000,001 native samples scored; worst0.415310748N. No full tighter hyperbox or full-grid joint qualification.",
+        "Targets require assembled warm calibration; catalog specifications alone do not guarantee them."
+      ]
+    },
+    {
+      "id": "static_calibration_comparison",
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibration_refinement.json",
+      "label": "Paired original/tighter static calibration30s histories",
+      "kind": "native_simulation",
+      "requiredStatus": [
+        "complete"
+      ],
+      "caveats": [
+        "Eight full native histories in four exact paired conditions;16 static residual halves only, same noise/timing/robot/mechanics/current.",
+        "Original worst0.490396N and calibrated-static worst0.415311N; all3,000,001 samples per history determine metrics.",
+        "Figure history uses all-native min/max bins. Prototype targets require assembled verification; no complete refined hyperbox claim."
+      ]
+    },
+    {
+      "id": "mixed_static_calibration",
+      "file": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json",
+      "label": "Static calibration at known assembled mechanical stress corner",
+      "kind": "native_simulation",
+      "caveats": [
+        "Three new4s native cases plus three reused known-actual k/c baselines; every400001 sample scored.",
+        "Exactly16 static residuals halved; all mechanics, identified k/c, noise, acquisition/robot timing and PI/current response unchanged.",
+        "One heavy combined mechanical corner/three seeds; no complete calibrated mechanical hyperbox."
+      ]
+    },
+    {
+      "id": "paired_static_peak_diagnostic",
+      "file": "acf_simulink/validation/inertial_report_paired_calibration_diagnostic_20260930.json",
+      "label": "Paired quiet-force offset and worst transient diagnosis",
+      "kind": "read_only_analysis",
+      "requiredStatus": [
+        "complete_read_only_paired_diagnostic"
+      ],
+      "caveats": [
+        "Worst entry shifts10us across a10kHz current-command update; individual balance terms at the two peaks must not be compared as isolated bottlenecks. Quiet windows are explicitly defined in the source diagnostic.",
+        "Derived from two retained native-worst diagnostics; zero additional simulations."
+      ]
+    },
+    {
+      "id": "calibrated_hot_headroom",
+      "file": "acf_simulink/validation/normal_voltage_calibrated_static_headroom_20260930.json",
+      "label": "Pointwise hot-winding demand of seven calibrated native histories",
+      "kind": "read_only_analysis",
+      "requiredStatus": [
+        "complete_conditional_pointwise_voltage_screen"
+      ],
+      "caveats": [
+        "Four existing30s and three existing4s native histories;13,200,007 samples examined, zero new real-coil simulations. Residual Kf identification is preserved under uniform current-domain rescaling.",
+        "Maximum31.107069V occurs for one10us sample;32V usable output has0.892931V minimum demand reserve under constant winding and matched100us response assumptions.",
+        "This is an algebraic unclipped-trajectory screen, not a native31V failure, native32V force qualification, dropout specification or thermal/hardware qualification."
+      ]
+    },
+    {
+      "id": "budget_adc_screen",
+      "file": "acf_simulink/validation/budget_adc_screen_summary_20261002.json",
+      "label": "168 native ADC bandwidth/rate recordings",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_adc_long",
+      "file": "acf_simulink/validation/budget_adc_long_summary_20261002.json",
+      "label": "Repeated-bump calibration comparisons",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_accelerometer_screen",
+      "file": "acf_simulink/validation/budget_accelerometer_screen_summary_20261002.json",
+      "label": "36 native required sensor-response envelope recordings",
+      "kind": "native_response_envelope_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_adc_parts",
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.json",
+      "label": "Primary ADC contracts and indicative component prices",
+      "kind": "manufacturer_document_review",
+      "rowsPath": [
+        "candidates"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ]
+    },
+    {
+      "id": "budget_adc_electrical",
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.json",
+      "label": "Noise, range and readout calculations",
+      "kind": "analytical_calculation",
+      "rowsPath": [
+        "derivedBudgets"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ]
+    },
+    {
+      "id": "budget_accelerometer_parts",
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.json",
+      "label": "Primary accelerometer contracts and indicative prices",
+      "kind": "manufacturer_document_review",
+      "rowsPath": [
+        "candidates"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ]
+    },
+    {
+      "id": "budget_adc_range",
+      "file": "acf_simulink/validation/budget_adc_range_grid_20261002.json",
+      "label": "700 native lower-cost acquisition grid recordings",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_sensing_robustness",
+      "file": "acf_simulink/validation/budget_sensing_robustness_20261002.json",
+      "label": "Executed noise, timing and solver followups",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_accelerometer_stress",
+      "file": "acf_simulink/validation/budget_accelerometer_stress_summary_20261002.json",
+      "label": "49 native sensor/calibration/drive envelope comparisons",
+      "kind": "native_response_envelope_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_dynamic_matching",
+      "file": "acf_simulink/validation/budget_dynamic_matching_summary_20261002.json",
+      "label": "Seven native tighter dynamic-matching comparisons",
+      "kind": "native_response_envelope_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_adc_hot_coil",
+      "file": "acf_simulink/validation/budget_adc_hot_coil_summary_20261002.json",
+      "label": "Seven native selected-acquisition hot-winding comparisons",
+      "kind": "native_simulation",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    },
+    {
+      "id": "budget_sensing_execution",
+      "file": "acf_simulink/validation/budget_sensing_execution_ledger_20261002.json",
+      "label": "Complete 999-recording sensing-cost execution ledger",
+      "kind": "native_execution_audit",
+      "rowsPath": [
+        "rows"
+      ],
+      "caveats": [
+        "New acquisition source b370; original 3500-case reference remains separate. Required accelerometer response envelopes do not qualify undisclosed real-part phase."
+      ],
+      "requiredStatus": [
+        "complete"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "file": "figures/bump_motion_and_inertia.png",
+      "queryId": "bump_motion"
+    },
+    {
+      "file": "figures/inertial_controller_reference_comparison.png",
+      "queryId": "reference_strategies"
+    },
+    {
+      "file": "figures/inertial_PI_reference_gain_search.png",
+      "queryId": "reference_PI_gains"
+    },
+    {
+      "file": "figures/inertial_cell_stiffness_sensitivity.png",
+      "queryId": "cell_stiffness"
+    },
+    {
+      "file": "figures/inertial_performance_limit_decomposition.png",
+      "queryId": "force_error_balance"
+    },
+    {
+      "file": "figures/inertial_mechanics_spring_tuning.png",
+      "queryId": "lower_spring_search"
+    },
+    {
+      "file": "figures/inertial_mechanics_selected_repeated.png",
+      "queryId": "lower_series_repeated_reference"
+    },
+    {
+      "file": "figures/screw_pitch_inertia_and_heating.png",
+      "queryId": "screw_pitch_sizing"
+    },
+    {
+      "file": "figures/inertial_mechanics_v8_actual_tolerance.png",
+      "queryId": "actual_mechanics_tolerance"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_sensing.png",
+      "queryId": "final_sensing_OAT"
+    },
+    {
+      "file": "figures/inertial_uncertainty_v8_joint.png",
+      "queryId": "final_joint_budget"
+    },
+    {
+      "file": "figures/inertial_final_current_response.png",
+      "queryId": "final_current_response"
+    },
+    {
+      "file": "figures/inertial_final_voltage_headroom.png",
+      "queryId": "final_electrical"
+    },
+    {
+      "file": "figures/inertial_final_range_coverage.png",
+      "queryId": "qualified_range",
+      "caption": "3500 unique audited native histories; worst over both drag ratios and all five clean/noisy conditions."
+    },
+    {
+      "file": "figures/inertial_final_worst_native.png",
+      "queryId": "final_worst_excerpt",
+      "caption": "Retained global worst; all native samples in shown window, complete-history metric."
+    },
+    {
+      "file": "figures/inertial_mechanics_mixed_comparison.png",
+      "queryId": "mixed_mechanics_identification"
+    },
+    {
+      "file": "figures/inertial_final_actuator_peak_errors.png",
+      "queryId": "final_actuator_comparison"
+    },
+    {
+      "file": "figures/inertial_final_actuator_heavy_bump.png",
+      "queryId": "final_actuator_comparison"
+    },
+    {
+      "file": "figures/inertial_calibration_refinement.png",
+      "queryId": "static_calibration_comparison"
+    },
+    {
+      "file": "figures/inertial_mixed_static_calibration.png",
+      "queryId": "mixed_static_calibration"
+    },
+    {
+      "file": "figures/budget_adc_bandwidth_rate.png",
+      "queryId": "budget_adc_screen"
+    },
+    {
+      "file": "figures/budget_adc_long_waveforms.png",
+      "queryId": "budget_adc_long"
+    },
+    {
+      "file": "figures/budget_accelerometer_envelopes.png",
+      "queryId": "budget_accelerometer_screen"
+    },
+    {
+      "file": "figures/budget_sensor_calibration_stress.png",
+      "queryId": "budget_accelerometer_stress"
+    },
+    {
+      "file": "figures/budget_sensing_response_noise.png",
+      "queryId": "budget_sensing_robustness"
+    }
+  ],
+  "sectionQueries": {
+    "contact-surface-force-and-the-sharp-bump": [
+      "bump_motion"
+    ],
+    "practical-force-position-and-drive-components": [
+      "force_position_parts",
+      "coil_parts"
+    ],
+    "experiments-and-results": [
+      "reference_PI_gains",
+      "reference_strategies",
+      "cell_stiffness",
+      "lower_spring_search",
+      "lower_series_repeated_reference"
+    ],
+    "what-limits-performance": [
+      "lower_series_force_balance",
+      "force_error_balance",
+      "final_current_response",
+      "final_long_joint_budget",
+      "final_static_calibration_long",
+      "paired_static_peak_diagnostic"
+    ],
+    "voice-coil-leadscrew-and-other-actuator-choices": [
+      "actuator_pair_reference",
+      "screw_pitch_sizing",
+      "final_actuator_comparison"
+    ],
+    "voltage-current-capacity-and-heat": [
+      "electrical_reference",
+      "coil_parts",
+      "final_electrical",
+      "full_grid_hot_headroom",
+      "native_headroom_exception",
+      "calibrated_hot_headroom"
+    ],
+    "final-acquisition-qualification-and-mechanical-tolerance": [
+      "qualified_range",
+      "actual_mechanics_tolerance",
+      "final_acquisition_endpoints",
+      "final_worst_excerpt",
+      "mixed_mechanics_identification",
+      "final_solver_refinement",
+      "mixed_static_calibration"
+    ],
+    "required-sensing-calibration-and-timing": [
+      "final_sensing_OAT",
+      "final_robot_OAT",
+      "final_joint_budget",
+      "joint_budget_plan",
+      "final_long_joint_budget",
+      "final_static_calibration_long",
+      "static_calibration_comparison"
+    ],
+    "realistic-acceleration-sensing": [
+      "acceleration_and_drive_parts"
+    ],
+    "why-a-cheaper-adc-can-be-enough": [
+      "budget_adc_parts",
+      "budget_adc_electrical"
+    ],
+    "native-experiments-justify-the-bandwidth-and-sample-rate": [
+      "budget_adc_screen",
+      "budget_adc_long",
+      "budget_adc_range",
+      "budget_sensing_robustness",
+      "budget_adc_hot_coil"
+    ],
+    "cheaper-accelerometers-are-limited-mainly-by-response": [
+      "budget_accelerometer_screen",
+      "budget_accelerometer_parts",
+      "budget_accelerometer_stress",
+      "budget_dynamic_matching"
+    ],
+    "acceptance-of-the-lower-cost-sensing-chain": [
+      "budget_accelerometer_screen",
+      "budget_adc_long",
+      "budget_accelerometer_stress",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_sensing_execution"
+    ],
+    "our-goal": [
+      "qualified_range",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_sensing_execution"
+    ],
+    "concrete-recommendation": [
+      "selected_settings",
+      "actual_mechanics_tolerance",
+      "joint_budget_plan",
+      "final_electrical",
+      "acceleration_and_drive_parts",
+      "coil_parts",
+      "mixed_mechanics_identification",
+      "full_grid_hot_headroom",
+      "final_static_calibration_long",
+      "mixed_static_calibration",
+      "calibrated_hot_headroom",
+      "budget_adc_parts",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_accelerometer_stress"
+    ]
+  },
+  "tableQueries": {
+    "why-the-compliant-candidate-needs-an-additional-feedforward-term": [
+      "selected_settings",
+      "lower_series_repeated_reference"
+    ],
+    "practical-force-position-and-drive-components": [
+      "force_position_parts",
+      "acceleration_and_drive_parts"
+    ],
+    "experiments-and-results": [
+      "reference_strategies"
+    ],
+    "required-sensing-calibration-and-timing": [
+      "joint_budget_plan",
+      "final_joint_budget",
+      "final_long_joint_budget",
+      "final_static_calibration_long"
+    ],
+    "voice-coil-leadscrew-and-other-actuator-choices": [
+      "actuator_pair_reference",
+      "final_actuator_comparison",
+      "screw_pitch_sizing"
+    ],
+    "concrete-recommendation": [
+      "selected_settings",
+      "actual_mechanics_tolerance",
+      "joint_budget_plan",
+      "final_electrical",
+      "acceleration_and_drive_parts",
+      "coil_parts",
+      "mixed_mechanics_identification",
+      "full_grid_hot_headroom",
+      "final_static_calibration_long",
+      "mixed_static_calibration",
+      "calibrated_hot_headroom",
+      "budget_adc_parts",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_accelerometer_stress"
+    ],
+    "why-a-cheaper-adc-can-be-enough": [
+      "budget_adc_parts",
+      "budget_adc_electrical"
+    ],
+    "native-experiments-justify-the-bandwidth-and-sample-rate": [
+      "budget_adc_screen",
+      "budget_adc_long",
+      "budget_adc_range",
+      "budget_sensing_robustness",
+      "budget_adc_hot_coil"
+    ],
+    "cheaper-accelerometers-are-limited-mainly-by-response": [
+      "budget_accelerometer_screen",
+      "budget_accelerometer_parts",
+      "budget_accelerometer_stress",
+      "budget_dynamic_matching"
+    ],
+    "acceptance-of-the-lower-cost-sensing-chain": [
+      "budget_accelerometer_screen",
+      "budget_adc_long",
+      "budget_accelerometer_stress",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_sensing_execution"
+    ],
+    "our-goal": [
+      "qualified_range",
+      "budget_adc_range",
+      "budget_adc_hot_coil",
+      "budget_sensing_execution"
+    ]
+  },
+  "tableTitles": {
+    "why-the-compliant-candidate-needs-an-additional-feedforward-term": "Selected mechanism and controller settings",
+    "practical-force-position-and-drive-components": "Representative sensing and drive components",
+    "experiments-and-results": "Common-cohort reference controller comparison",
+    "required-sensing-calibration-and-timing": "Calibration and timing targets",
+    "voice-coil-leadscrew-and-other-actuator-choices": "Paired actuator results, with recorded acquisition and duration",
+    "concrete-recommendation": "Prototype starting specification",
+    "why-a-cheaper-adc-can-be-enough": "ADC range, resolution and response",
+    "native-experiments-justify-the-bandwidth-and-sample-rate": "Native repeated-bump acquisition comparisons",
+    "cheaper-accelerometers-are-limited-mainly-by-response": "Sensor response and drive stress comparisons",
+    "acceptance-of-the-lower-cost-sensing-chain": "Acceptance of the lower cost sensing chain",
+    "our-goal": "Our goal"
+  }
+}

@@ -1,0 +1,3854 @@
+{
+  "status": "live_selected_normal_pi_coefficients_and_full_reference_parity_passed",
+  "qualificationEpisodes": 0,
+  "currentParameterBankFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_controller_gain_v9/native_parameter_bank.c",
+  "currentParameterBankSha256": "71a373e2c168a454cda052432d2d985227f63ba68e46b1f7e469a6bab282cdea",
+  "parentParameterBankFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/native_parameter_bank.c",
+  "parentParameterBankSha256": "13e6bbfca902d3c10cff439beab10da0c23557a3bf2e34d076813ca0bde36750",
+  "currentConfigsSha256": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+  "currentMappingSha256": "9f1efd2b6fc2ad1141ae5388c05a8de569312ffcb3532ebf09ecd527f041a4ad",
+  "exactReferenceRows": 22,
+  "allNativeFieldsExactlyEqual": true,
+  "all264RowsOnlyAllowedLivePIAndModalFieldsDiffer": true,
+  "uniqueExecutingProportionalGains": 4,
+  "uniqueExecutingIntegralGains": 4,
+  "maximumCurrentBackCalculationRateError_s_inv": 0.0,
+  "allowedChangedNativeFields": [
+    "Cellmodalfilter_C",
+    "Cellmodalfilter_D",
+    "Integralantiwindup_Gain",
+    "Normalforceintegralcurrent_Gain",
+    "Normalforceproportionalcurrent_"
+  ],
+  "rows": [
+    {
+      "scenario": 0,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 1,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 2,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 3,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 4,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 5,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 6,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 7,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 8,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 9,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 10,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 11,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 12,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 13,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 14,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 15,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 16,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 17,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 18,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 19,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 20,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 21,
+      "familyID": 1,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 22,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 23,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 24,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 25,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 26,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 27,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 28,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 29,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 30,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 31,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 32,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 33,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 34,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 35,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 36,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 37,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 38,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 39,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 40,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 41,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 42,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 43,
+      "familyID": 2,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 44,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 45,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 46,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 47,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 48,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 49,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 50,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 51,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 52,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 53,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 54,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 55,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 56,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 57,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 58,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 59,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 60,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 61,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 62,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 63,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 64,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 65,
+      "familyID": 3,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.016393442622950817,
+      "liveIntegralGain": -10.928961748633881,
+      "liveAntiWindupGain": -2.7449999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 66,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 67,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 68,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 69,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 70,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 71,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 72,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 73,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 74,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 75,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 76,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 77,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 78,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 79,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 80,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 81,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 82,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 83,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 84,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 85,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 86,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 87,
+      "familyID": 4,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 88,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 89,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 90,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 91,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 92,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 93,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 94,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 95,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 96,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 97,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 98,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 99,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 100,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 101,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 102,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 103,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 104,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 105,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 106,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 107,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 108,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 109,
+      "familyID": 5,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 110,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 111,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 112,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 113,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 114,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 115,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 116,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 117,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 118,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 119,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 120,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 121,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 122,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 123,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 124,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 125,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 126,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 127,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 128,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 129,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 130,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 131,
+      "familyID": 6,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.020491803278688527,
+      "liveIntegralGain": -13.661202185792352,
+      "liveAntiWindupGain": -2.1959999999999997,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 132,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 133,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 134,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 135,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 136,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 137,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 138,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 139,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 140,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 141,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 142,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 143,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 144,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 145,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 146,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 147,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 148,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 149,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 150,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 151,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 152,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 153,
+      "familyID": 7,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 154,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 155,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 156,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 157,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 158,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 159,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 160,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 161,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 162,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 163,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 164,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 165,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 166,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 167,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 168,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 169,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 170,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 171,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 172,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 173,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 174,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 175,
+      "familyID": 8,
+      "changedNativeFields": [],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": true
+    },
+    {
+      "scenario": 176,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 177,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 178,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 179,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 180,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 181,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 182,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 183,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 184,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 185,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 186,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 187,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 188,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 189,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 190,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 191,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 192,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 193,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 194,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 195,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 196,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 197,
+      "familyID": 9,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D"
+      ],
+      "liveProportionalGain": -0.02459016393442623,
+      "liveIntegralGain": -16.393442622950822,
+      "liveAntiWindupGain": -1.8299999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 198,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 199,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 200,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 201,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 202,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 203,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 204,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 205,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 206,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 207,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 208,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 209,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 210,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 211,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 212,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 213,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 214,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 215,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 216,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 217,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 218,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 219,
+      "familyID": 10,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 220,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 221,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 222,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 223,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 224,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 225,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 226,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 227,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 228,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 229,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 230,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 231,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 232,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 233,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 234,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 235,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 236,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 237,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 238,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 239,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 240,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 241,
+      "familyID": 11,
+      "changedNativeFields": [
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 242,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 243,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 244,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 245,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 246,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 247,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 248,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 249,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 250,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 251,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 252,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 253,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 254,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 255,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 256,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 257,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 258,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 259,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 260,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 261,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 262,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    },
+    {
+      "scenario": 263,
+      "familyID": 12,
+      "changedNativeFields": [
+        "Cellmodalfilter_C",
+        "Cellmodalfilter_D",
+        "Integralantiwindup_Gain",
+        "Normalforceintegralcurrent_Gain",
+        "Normalforceproportionalcurrent_"
+      ],
+      "liveProportionalGain": -0.032786885245901634,
+      "liveIntegralGain": -21.857923497267763,
+      "liveAntiWindupGain": -1.3724999999999998,
+      "effectiveCurrentBackCalculationRate_s_inv": 30.0,
+      "exactReference": false
+    }
+  ],
+  "scope": "Independent actual emitted-bank coefficient inspection: selected normal P/I and matching antiwindup vary, all other native parameters exactly match the correct V6parent17 case, and family8 has22 complete native parameter matches. No force experiment or hardware claim."
+}

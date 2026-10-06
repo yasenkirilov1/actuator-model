@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "nativeSimulations": 0,
+  "manifestSha256": "39d5e6c0ff55a9a687eb8d286275b6d0cd167428b24e0494fc8fc16a67693e21",
+  "filesVerified": 47,
+  "checks": [
+    {
+      "file": "source/acf_force_control_normal_trial.slx",
+      "passed": true
+    },
+    {
+      "file": "source/normal_contact_trial_candidate.mat",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_desktop_available.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_experiment.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_metrics.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_open.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_parameters.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_plot.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_prepare.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_run.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_select_actuator.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_select_controller.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_signals.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_start.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_start_visualizer.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_sweep.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_viewer_selftest.m",
+      "passed": true
+    },
+    {
+      "file": "source/helpers/acf_visualize.m",
+      "passed": true
+    },
+    {
+      "file": "models/original_long_instrumented.slx",
+      "passed": true
+    },
+    {
+      "file": "original/experiments/qualify_inertial_uncertainty.m",
+      "passed": true
+    },
+    {
+      "file": "original/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "passed": true
+    },
+    {
+      "file": "models/calibrated_long_instrumented.slx",
+      "passed": true
+    },
+    {
+      "file": "calibrated/experiments/qualify_inertial_uncertainty.m",
+      "passed": true
+    },
+    {
+      "file": "calibrated/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_results.mat",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_rows.csv",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_plot_traces.mat",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_repeated_20260930_storage_cleanup.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_results.mat",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_rows.csv",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_plot_traces.mat",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_storage_cleanup.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_results.mat",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_results.json",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_budget_joint_20260930_rows.csv",
+      "passed": true
+    },
+    {
+      "file": "data/inertial_uncertainty_calibrated_static_long_20260930_prepared_configs.mat",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.json",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.csv",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.svg",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement.png",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement_original_worst_envelope.csv",
+      "passed": true
+    },
+    {
+      "file": "chart_data/inertial_uncertainty_v8_calibration_refinement_calibrated_static_worst_envelope.csv",
+      "passed": true
+    },
+    {
+      "file": "run_original_long.m",
+      "passed": true
+    },
+    {
+      "file": "run_calibrated_long.m",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "passed": true
+    }
+  ],
+  "actualRelativeRecipePathsVerified": true,
+  "allSourceCandidateAndHelperHashesMatchTmpfsProof": true,
+  "recipeVersionsDistinct": true,
+  "exactExecutedRecipesPreserved": true,
+  "verificationScope": "Static portable-path and byte/hash verification only; no rerun execution is claimed."
+}

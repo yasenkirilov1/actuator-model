@@ -1,0 +1,17 @@
+{
+  "status": "recorded_before_5mm_extension_launch",
+  "time_utc": "2026-10-06T12:16:18.498954+00:00",
+  "extension_contract_sha256": "674b1217279f8a9ca689f55afbcecbd6640b63cf45c4240f63b2549074a5efff",
+  "forecast_hash_declared_in_extension_contract": "5a12862669d01b78fe07f061dddc014baebccfcdabaaac379145d66c92a8e017",
+  "operational_forecast_sha256": "e038e95fc43af9120ab22c34c21e5dd260c62eff0e6998ea2b560e16c1839f6f",
+  "operational_engine_limit_bytes": 18874368,
+  "owned_evidence_bytes_before_launch": 16255808,
+  "forecast_new_retained_upper_bound_bytes": 2097152,
+  "filesystem_free_bytes": 388232749056,
+  "temporary_peak_upper_bound_bytes": 134217728,
+  "new_bulk_array_bytes": 0,
+  "planned_grid_runs": 108,
+  "planned_matched_point_runs": 16,
+  "planned_guard_corners": 8,
+  "planned_selected_trace_command_reruns": 2
+}

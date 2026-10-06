@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": 23,
+    "baseline": true,
+    "wall_s": 0.31033420196035877,
+    "sampleCount": 180001,
+    "endTime": 0.6,
+    "peakNormalError_N": 0.110699508739323,
+    "physicalFailure": false,
+    "recordName": "baseline_case23"
+  },
+  {
+    "scenario": 40,
+    "baseline": true,
+    "wall_s": 0.21350271900882944,
+    "sampleCount": 120001,
+    "endTime": 0.4,
+    "peakNormalError_N": 0.14816960088942466,
+    "physicalFailure": false,
+    "recordName": "baseline_case40"
+  },
+  {
+    "scenario": 0,
+    "baseline": false,
+    "wall_s": 0.2083857399993576,
+    "sampleCount": 120001,
+    "endTime": 0.4,
+    "peakNormalError_N": 0.45145055782844956,
+    "physicalFailure": false,
+    "recordName": "external_case00"
+  }
+]

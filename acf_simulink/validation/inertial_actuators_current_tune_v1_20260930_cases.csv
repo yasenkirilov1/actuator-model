@@ -1,0 +1,135 @@
+caseIndex,purpose,scenario,actuator,controller,massS_kg,massB_kg,referenceForce_N,angle_deg,seed,forceNoiseRms_N,accelNoiseRms_m_s2,step_s,lowerRigid,upperRigid,cellStiffness_N_m,cellDamping_Ns_m,screwPitch_m,rotorInertia_kg_m2,reflectedRotorMass_kg,currentForceKp,currentForceKi,currentForceKd,speedForceKp,speedForceKi,speedForceKd,velocityFeedforwardScale,notchEnabled,notchFrequency_Hz,executed,passed,completed,contactLoss,strokeStop,overCurrent,peakNormalForceError_N,rmsNormalForceError_N,peakCurrent_A,rmsCurrent_A,peakVoltage_V,peakMotorSpeed_rad_s,currentSaturationFraction,voltageSaturationFraction,holdCurrent_A,holdCopperLoss_W,continuousStaticCatalogPassed,sizingEfficiency,holdCurrentEfficiencyBound_A,continuousStaticEfficiencyBoundPassed,continuousStaticTorqueBoundPassed,normalBalanceResidual_N,downstreamForceBalanceResidual_N,actuatedForceBalanceResidual_N,rotorForceBalanceResidual_N,actualDuration_s,minTravel_mm,maxTravel_mm,failureReason,executionSeconds,executionError,nativeTraceFile
+1,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.0122426879301458,8.16179195343053,0,0.0005,0.005,0,0,0,463.974088548618,1,0,0,1,0,0,50,1.32597478219469,1.34721280389001,1.02049448421791,3.27106660742458,5.54905940777053,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.55795384873636e-13,1.09263,12.4998437499997,12.5061351031735,"incomplete, contact loss, normal force error",4.202274,"",/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_current_tune_v1_20260930_native_0001.mat
+2,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00408089597671526,2.04044798835763,0,0.0005,0.005,0,0,0,463.974088548618,1,0,0,1,0,0,50,1.87172211557125,1.19919449826551,1.02122804887543,2.98167906202217,8.45259185078839,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.34479102800833e-13,1.11221,12.4998437499997,12.5355134958526,"incomplete, contact loss, normal force error",2.831464,"",
+3,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00122426879301458,0.408089597671526,0,0.0005,0.005,0,0,0,463.974088548618,1,0,0,1,0,0,50,3.02229875672156,1.10684370444326,1.02288848836124,2.8721857891655,13.1385643088551,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.48689957516035e-13,1.18115,12.4998437499997,12.7603978538695,"incomplete, contact loss, normal force error",2.700973,"",
+4,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00408089597671526,2.04044798835763,4.08089597671526e-07,0.0005,0.005,0,0,0,463.974088548618,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.048614,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+5,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00122426879301458,0.408089597671526,4.08089597671526e-07,0.0005,0.005,0,0,0,463.974088548618,1,0,0,1,0,0,50,2.63475934476595,1.12453193928596,1.02230967259422,2.87458863783557,12.1538443730942,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.55795384873636e-13,1.16278,12.4998437499997,12.6884573687659,"incomplete, contact loss, normal force error",3.551323,"",
+6,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.0122426879301458,8.16179195343053,4.08089597671526e-07,0.0005,0.005,0,0,0,463.974088548618,1,0,0,1,0,0,50,1.33667609212754,1.35952767242197,1.02048565288909,3.29272060555878,5.62328631025753,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.55795384873636e-13,1.0925,12.4998437499997,12.5060338736321,"incomplete, contact loss, normal force error",2.689008,"",
+7,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.0122426879301458,8.16179195343053,0,0.0005,0.005,0,0,1,463.974088548618,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.023414,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+8,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00408089597671526,2.04044798835763,0,0.0005,0.005,0,0,1,463.974088548618,1,0,1,0,0,0,30.2300739701404,4.41020696697277,1.51023366048964,1.01918926250223,4.8511700912914,83.6029049582146,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,2.8421709430404e-14,7.105427357601e-15,7.105427357601e-15,2.59348098552437e-13,4,12.4998437499997,17.2919365814308,"normal force error",10.63253,"",
+9,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00122426879301458,0.408089597671526,0,0.0005,0.005,0,0,1,463.974088548618,1,0,1,0,0,0,10.171700314218,0.757620569802564,1.50702708454895,1.01921296932529,4.70483749343408,78.3126014232476,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,2.1316282072803e-14,3.5527136788005e-15,3.5527136788005e-15,1.4210854715202e-13,4,11.6131214293544,16.4981804770992,"normal force error",9.581838,"",
+10,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00408089597671526,2.04044798835763,4.08089597671526e-07,0.0005,0.005,0,0,1,463.974088548618,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.023395,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+11,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.00122426879301458,0.408089597671526,4.08089597671526e-07,0.0005,0.005,0,0,1,463.974088548618,1,0,1,0,0,0,9.98267940962729,0.768638510061427,1.50687233219016,1.01917610989408,4.70327569857722,78.2480855287682,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,2.1316282072803e-14,3.5527136788005e-15,3.5527136788005e-15,1.3855583347322e-13,4,11.6356155726753,16.5216040862692,"normal force error",10.569733,"",
+12,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.003,1.58e-06,6.93065553498719,0.0122426879301458,8.16179195343053,4.08089597671526e-07,0.0005,0.005,0,0,1,463.974088548618,1,0,0,1,0,0,50,4.57431585436849,1.08211562341093,1.02951674482343,2.85688754704666,15.076934517526,0,0,1.02022399417882,2.41478823605177,1,0.9,1.13358221575424,1,0,0,1.20137850996355e-15,1.64546771981362e-15,2.52242671194836e-13,1.3582,12.4998437499997,13.5929666628552,"incomplete, contact loss, normal force error",3.271344,"",
+13,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.0204044798835763,13.6029865890509,0,0.0005,0.005,0,0,0,723.731152127314,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.018747,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+14,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00680149329452544,3.40074664726272,0,0.0005,0.005,0,0,0,723.731152127314,1,0,0,1,0,0,50,1.64328117168216,1.91900658260187,1.70108133398892,4.62676695315738,6.17659060357422,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,0,1.20137850996355e-15,2.08955692966368e-15,9.9475983006414e-14,1.10972,12.4998437499997,12.5308879468342,"incomplete, contact loss, normal force error",3.26297,"",
+15,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00204044798835763,0.680149329452544,0,0.0005,0.005,0,0,0,723.731152127314,1,0,0,1,0,0,50,2.57836055696486,1.80130339485902,1.70257747870404,4.4070506454256,9.1769719762089,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,0,1.20137850996355e-15,2.08955692966368e-15,9.9475983006414e-14,1.17332,12.4998437499997,12.7289900913869,"incomplete, contact loss, normal force error",2.687641,"",
+16,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00680149329452544,3.40074664726272,6.80149329452544e-07,0.0005,0.005,0,0,0,723.731152127314,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.017313,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+17,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00204044798835763,0.680149329452544,6.80149329452544e-07,0.0005,0.005,0,0,0,723.731152127314,1,0,0,1,0,0,51.6780277440959,2.25161998998633,1.84750619820872,1.70145508564477,4.49127870595071,8.20282634504637,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,0,1.20137850996355e-15,2.9777353493638e-15,9.2370555648813e-14,1.13537,12.4998437499997,12.595201188539,"incomplete, contact loss, normal force error",3.303963,"",
+18,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.0204044798835763,13.6029865890509,6.80149329452544e-07,0.0005,0.005,0,0,0,723.731152127314,1,0,0,1,0,0,58.9141108091309,1.37407924494082,2.27508796325946,1.70049632259655,5.47389688893954,6.07532456858596,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,0,1.20137850996355e-15,2.9777353493638e-15,9.59232693276135e-14,1.08997,12.4998437499997,12.5043545481398,"incomplete, contact loss, normal force error",2.523108,"",
+19,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.0204044798835763,13.6029865890509,0,0.0005,0.005,0,0,1,723.731152127314,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.016591,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+20,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00680149329452544,3.40074664726272,0,0.0005,0.005,0,0,1,723.731152127314,1,0,1,0,0,0,25.0435719993858,3.05917951673038,2.16026547424046,1.69871649923221,5.76191190100875,49.9135784042566,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,2.1316282072803e-14,3.5527136788005e-15,3.77475828372553e-15,9.9475983006414e-14,4,11.9529150856955,17.0647738627721,"normal force error",9.722314,"",
+21,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00204044798835763,0.680149329452544,0,0.0005,0.005,0,0,1,723.731152127314,1,0,1,0,0,0,3.02393955840208,0.247724534922768,2.153870272218,1.70031122176558,5.66614414682279,46.8025757839734,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,2.1316282072803e-14,3.5527136788005e-15,3.5527136788005e-15,5.59552404411079e-14,4,11.1390980447311,16.4126842925746,"normal force error",9.06265,"",
+22,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00680149329452544,3.40074664726272,6.80149329452544e-07,0.0005,0.005,0,0,1,723.731152127314,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.018106,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+23,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.00204044798835763,0.680149329452544,6.80149329452544e-07,0.0005,0.005,0,0,1,723.731152127314,1,0,1,0,0,0,2.90050526659597,0.266414571392075,2.15379683408179,1.69918505513966,5.6662006280049,46.8027965714555,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,2.1316282072803e-14,3.5527136788005e-15,3.5527136788005e-15,5.50670620214078e-14,4,11.0787796787247,16.4126850069769,"normal force error",9.580965,"",
+24,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.005,1.58e-06,2.49503599259539,0.0204044798835763,13.6029865890509,6.80149329452544e-07,0.0005,0.005,0,0,1,723.731152127314,1,0,0,1,0,0,50.8045597428096,3.9425008076084,1.76714711374791,1.71036920274631,4.35696897941009,10.7350211981268,0,0,1.70037332363136,6.70774510014381,0,0.9,1.88930369292373,0,0,0,1.20137850996355e-15,2.9777353493638e-15,9.9475983006414e-14,1.40306,12.4998437499997,13.8157337231807,"incomplete, contact loss, normal force error",3.174279,"",
+25,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0408089597671527,27.2059731781018,0,0.0005,0.005,0,0,0,1150.96513863441,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.017465,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+26,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0136029865890509,6.80149329452544,0,0.0005,0.005,0,0,0,1150.96513863441,1,0,0,1,0,0,50,2.39255589885209,3.49813077226659,3.40143434578168,8.24080019026524,5.09108452625824,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,0,1.20137850996355e-15,4.75409218876405e-15,4.08562073062058e-14,1.12867,12.4998437499997,12.5761819143654,"incomplete, contact loss, normal force error",3.219803,"",
+27,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.00408089597671527,1.36029865890509,0,0.0005,0.005,0,0,0,1150.96513863441,1,0,0,1,0,0,50.4734985434037,3.43862150950441,3.49733044928241,3.40477789767101,8.27277537926697,6.47211127300288,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,0,1.20137850996355e-15,4.75409218876405e-15,3.5527136788005e-14,1.24355,12.4998437499997,13.0364556952188,"incomplete, contact loss, normal force error",2.809707,"",
+28,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0136029865890509,6.80149329452544,1.36029865890509e-06,0.0005,0.005,0,0,0,1150.96513863441,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.017056,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+29,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.00408089597671527,1.36029865890509,1.36029865890509e-06,0.0005,0.005,0,0,0,1150.96513863441,1,0,0,1,0,0,50,2.46264691539007,3.49748816183298,3.40183983325427,8.25000771081631,5.50935998448925,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,0,1.20137850996355e-15,4.75409218876405e-15,3.90798504668055e-14,1.14817,12.4998437499997,12.6365067581696,"incomplete, contact loss, normal force error",3.288811,"",
+30,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0408089597671527,27.2059731781018,1.36029865890509e-06,0.0005,0.005,0,0,0,1150.96513863441,1,0,0,1,0,0,50,1.57733813029689,3.49798352556419,3.4002863982596,8.21586196394493,3.96649436195642,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,0,1.20137850996355e-15,4.75409218876405e-15,3.19744231092045e-14,1.09322,12.4998437499997,12.5070144616459,"incomplete, contact loss, normal force error",2.547153,"",
+31,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0408089597671527,27.2059731781018,0,0.0005,0.005,0,0,1,1150.96513863441,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.016978,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+32,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0136029865890509,6.80149329452544,0,0.0005,0.005,0,0,1,1150.96513863441,1,0,1,0,0,0,7.68863680234365,0.517481438332241,3.5,3.39834832205394,8.66703079503267,23.3773844031054,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,2.8421709430404e-14,3.5527136788005e-15,3.5527136788005e-15,2.17430240478933e-14,4,11.1241744013352,16.4109875581789,"normal force error",9.793555,"",
+33,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.00408089597671527,1.36029865890509,0,0.0005,0.005,0,0,1,1150.96513863441,1,0,1,0,0,0,7.72118098192727,0.502711384457724,3.5,3.39592725196526,8.66702032364208,23.3769369077812,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,2.8421709430404e-14,3.5527136788005e-15,3.5527136788005e-15,2.17603712826531e-14,4,11.2434507569755,16.4109670056914,"normal force error",9.131583,"",
+34,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.0136029865890509,6.80149329452544,1.36029865890509e-06,0.0005,0.005,0,0,1,1150.96513863441,0,0,0,0,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0.9,NaN,0,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,"preparation or simulation error",0.021286,"Error using acf_select_actuator (line 19)
+Cannot change parameter 'ControllerChoice' of
+'acf_force_control_normal_trial/Force controller selection' while simulation is
+running because its sample time is constant (inf). Constant sample times
+generally occur when 'Configuration Parameters > Code Generation > Optimization
+> Default parameter behavior' is set to 'Inlined'.
+
+Error in qualify_inertial_actuators (line 157)
+  q=acf_prepare(q);assignin(mw,'p',q);acf_select_actuator(mdl,q.actuator.kind);
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+35,current_PI_PID_tuning,sharp,leadscrew,current,2,0.6,50,90,7,0,0,1e-05,0,1,64000000,0,0.01,1.58e-06,0.623758998148847,0.00408089597671527,1.36029865890509,1.36029865890509e-06,0.0005,0.005,0,0,1,1150.96513863441,1,0,1,0,0,0,7.72590377426715,0.50294057764265,3.5,3.39592794670905,8.66702290307297,23.3773148583442,0,0,3.40074664726272,26.8309804005752,0,0.9,3.77860738584747,0,0,2.1316282072803e-14,3.5527136788005e-15,3.5527136788005e-15,2.17395546009413e-14,4,11.2434507566052,16.4109669154356,"normal force error",9.488327,"",

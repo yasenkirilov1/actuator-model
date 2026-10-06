@@ -1,0 +1,9 @@
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:8773/reports/active-contact-flange-report.html');
+```
+### Page
+- Page URL: http://127.0.0.1:8773/reports/active-contact-flange-report.html?view=1
+- Page Title: Active contact flange: control and prototype design
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-10-02T19-14-00-514Z.yml)

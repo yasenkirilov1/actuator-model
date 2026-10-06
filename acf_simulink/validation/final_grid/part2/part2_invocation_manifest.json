@@ -1,0 +1,92 @@
+{
+  "status": "stopped_by_coordinator",
+  "createdUtc": "2026-09-30T11:08:39.222005+00:00",
+  "phase": "full_range_mass",
+  "partitionIndex": 2,
+  "partitionCount": 4,
+  "expectedCases": 875,
+  "unpartitionedCases": 3500,
+  "indicesOneBasedStartStrideStop": [
+    2,
+    4,
+    3500
+  ],
+  "mesh": {
+    "massS_kg": [
+      0.1,
+      0.5,
+      1,
+      1.4,
+      2
+    ],
+    "forceValues_N": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "angleValues_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "muValues": [
+      0,
+      0.3
+    ],
+    "seeds": [
+      0,
+      7,
+      29,
+      97,
+      1729
+    ],
+    "loopOrder": [
+      "mass",
+      "force",
+      "angle",
+      "mu",
+      "seed"
+    ]
+  },
+  "simulationMode": "accelerator",
+  "nativePhysicalStep_s": 1e-05,
+  "nativeRunLength_s": 4,
+  "nativeSamplesPerCompletedCase": 400001,
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v8-contract-20260930/frozen-inertial-v8/acf_force_control_normal_trial.slx",
+  "sourceModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidate": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_final_candidate_20260930.mat",
+  "candidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "runner": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_inertial_mass_controller.m",
+  "runnerSHA256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+  "launchScript": "/home/tommie/.local/state/actuator-model/final-grid-part2-20260930/run_final_part2.m",
+  "launchScriptSHA256": "46e07b22efa857c27a34547a54c6a726e626c7b7bbcf61af0321071499c14253",
+  "resultFile": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.json",
+  "tag": "_v8_final_part2_r1",
+  "executionAccounting": "This invocation manifest records planned coverage; only validated native result rows count as executed cases.",
+  "preservation": "Shared r1 runner retains every failed validated native history, first case, controller worst and global worst; checkpoint every8, clear SDI everycase.",
+  "validatedNativeCases": 263,
+  "passedCases": 263,
+  "preparationRejects": 0,
+  "remainingCases": 612,
+  "remainingOriginalPartitionIndicesStartStop": [
+    264,
+    875
+  ],
+  "resultSHA256": "123d243f9819e22accdaede1f91e3566f920e9fc4b77b788b726071808ee3dc7",
+  "elapsedSeconds": 1903.101376,
+  "worstNormalForceError_N": 0.10317603627929373,
+  "processExitCode": 143,
+  "postReturnGuard": "The original875 completion assertion fired after an authorized partial return. Native rows were not rejected.",
+  "privateInputHashesIndependentlyVerifiedUnchanged": true
+}

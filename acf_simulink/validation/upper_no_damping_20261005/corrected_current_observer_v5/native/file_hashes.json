@@ -1,0 +1,224 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "createdEpisodes": 0,
+  "design": "upper_20k_lower_cell_undamped",
+  "caseCount": 132,
+  "nativeBankCase0MatchesCoder": true,
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e",
+  "sharedLibrarySha256": "de1c3dc76eebc7fe5569b253d26b18f5a57900dd39d70d73f79cf460cdc9a192",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/acf_rl_native.slx",
+      "sha256": "2e435049530f0e1e62f3bb8e5cdc64970586647e26efd713cf0188fbb370c1cd"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/metadata.json",
+      "sha256": "d7f15f16bd7f0d1719f21dc2cfbee249775b59d627f919d7b91cac669357c670"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/prepared_configs.mat",
+      "sha256": "d43454d49c51bef2c5a1b8496834b071c2603936348fb51be8f25c81ef2c59fb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/native_parameter_bank.c",
+      "sha256": "a7b207fb6647b64e6bec06dca23d85a7ff86b5e904767617121920c6e2c3d63c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/parameter_mapping.json",
+      "sha256": "e27e527f4fa058b3adaf2b514030b8fdcad68279db11dfdaef1f250c90f14430"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/parameter_mapping.mat",
+      "sha256": "60b51c9b32b7d85e82829e9de97c108dc644849d34d742bff1809f600fafaba1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/scenarios.json",
+      "sha256": "4b2b895c52f28761bb612bb9585c113bcfe36b069a9fde6a9e75b9288a7ad44f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/libacf_native.so",
+      "sha256": "de1c3dc76eebc7fe5569b253d26b18f5a57900dd39d70d73f79cf460cdc9a192"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/bridge_build.json",
+      "sha256": "f001a7858a333666cb750318e54a46e43e4acbeec0881d99dd1bc41742a97fae"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/acf_rl_native_context.c",
+      "sha256": "be074678d8816bc56f0b904b010cbd17153e8766fd121e3036c5972f11bc28a2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/native_bank_aux.h",
+      "sha256": "3e24639802fb7b8fa77a01bf492b16478f74c5870162528f67c7c53a7fec85cf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/bank/configs.mat",
+      "sha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/bank/manifest.json",
+      "sha256": "8d5e318d22303e8320b35d60bbaa389c95e188b3925409449368e43a583b343f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_prepare.m",
+      "sha256": "add113a661f85b7024b362021da53dfcadefd4a18168fffc14dc2936e51ef56e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_prepare_upper_observer.m",
+      "sha256": "28c7089fe0ad15bc93f85cc77ae0235daa8a0a65e468a9430edc50632065d21a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "4891ce4252177ccfa1664cf996597613c446394379fd4874bfd20af5500aa413"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "sha256": "63f63bef54410b24229f82f3dbc650774acc8d9d41d905eff07d8b9e3a630620"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "sha256": "5dd6f0c43294f45f8a1a77a22d67a46f00b5771135f8eb8cb7d79061e8089606"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "sha256": "dbc8c629ab656b25461145c68303536040703810f2404a0dc33729ef03737c60"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "sha256": "9164ce7bb89be575623fb10503d3271e2c9e7644d5f2c7274cbd4fa094b24aa2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "sha256": "6dbdc74a0ef48fc57203c032a4aa73761f9f636dae7ff29e29b0f175ce3a4881"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "sha256": "58413625dc78263465c9e09f8330848cc74f218dd7206abd8c7b01132e6ca8df"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "sha256": "7ca5205921ac0dcb81581efb3a98c2d3917f394130f5af2766637e206de78732"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "sha256": "f7edd525d3fe20993654d0060e727300053b85965a6c8b85617ec10a26d0be07"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "sha256": "4263811fe918cafced6afabbd76f5a4d3a5de869287a1621b5c566669fe64114"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "sha256": "70987164421d54fa74467de6ea9c934adaec1282c13732461d3199849595ef79"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "sha256": "f79a9910792d5280765748e5eb27977364b3057dd93b380ae01ee4c35a3c91e9"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/native_api.py",
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/native_bridge.c",
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/build_native.m",
+      "sha256": "deef6761635ca881de7dd464b83a0902ca91e217680f105db13dafebe266ed80"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/install_upper_observer_v5.m",
+      "sha256": "d905cc2e1a5a8770bccb9ca3ab6963e2e5e3874f8bd12bbb6e86138c5070f589"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/live_issued_command_guard.json",
+      "sha256": "608d03e284446e7804476ac87e78c713cfa506a3a73649587339ff04ffb3e218"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/emitted_current_input_guard.json",
+      "sha256": "95dc2d78fbfb46f6dce0969645049419f3e0cc3361fd753372ab1389dfaa8a96"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/assert_issued_command_chain.m",
+      "sha256": "58aa9b55cb0dc042aefa6e8462a4f22093e699e6b4d17aa4460332f2772531c3"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/verify_issued_command_source.m",
+      "sha256": "8b578e5b33145860829607141d9cff9a8f34dd424b7b4c92e33258524c77e0f0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_no_damping_20261005/corrected_current_observer_v5/verify_emitted_current_input.m",
+      "sha256": "b9a3944372533733ca297d490fa25a17a655dfbf34038a10da5107fa191ce2b0"
+    }
+  ]
+}

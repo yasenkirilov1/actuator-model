@@ -1,0 +1,179 @@
+{
+  "status": "accepted_development_probe",
+  "recordings": 12,
+  "fullNativeSamples": 7200012,
+  "fixedCheckpointSha256": "48618b8d21c4f5920d870a05f5eb198c958632f51ffab6f0abfd6a8255ef0ad4",
+  "directStaticContextProof": "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/context_independence.json",
+  "independentMatlabReplay": {
+    "status": "independent_native_replay_passed",
+    "scenario": 3,
+    "seed": 82002,
+    "modelSha256": "a06148ca789b8d6b43497e766c00b099509f8f7165261690a82f143cbfd6d964",
+    "recordingMatSha256": "1128f2455215f9f9046b9d9fdd91ecac6da167acd56e66d237f614e49c154c13",
+    "configsSha256": "32ab0ad01b87acae2ef599310ec5b1412a18ecca6cd0af30bf8e8ce477ee179e",
+    "nativeWall_s": 38.168227,
+    "nativeSamples": 600001,
+    "cSamples": 600001,
+    "sameSampleCount": true,
+    "nativeFirstTime_s": 0,
+    "nativeLastTime_s": 2,
+    "nativeNormalPeak_N": 0.37349915089378527,
+    "cNormalPeak_N": 0.37349915089378527,
+    "nativeContactLost": false,
+    "nativeTravelStop": false,
+    "sourceRecording": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/learned/development_V32_current050us_native.npz",
+    "sourceRecordingSha256": "a7ca9f3a57ba81f7a934311fd58056eb130a3150e1e4282dea521d76f94d21b6",
+    "algebraicLoopCount": 0,
+    "maximumTimeDifference_s": 0,
+    "truthPerChannelMaximumDifference": [
+      1.4210854715202004e-14,
+      1.4210854715202004e-14,
+      3.469446951953614e-18,
+      3.469446951953614e-18,
+      5.950795411990839e-14,
+      0,
+      1.2705494208814505e-20,
+      0,
+      1.734723475976807e-18,
+      2.5614276324970042e-18,
+      0,
+      1.7763568394002505e-14,
+      2.398081733190338e-14,
+      1.4210854715202004e-14,
+      4.440892098500626e-16,
+      3.197442310920451e-14,
+      0,
+      4.440892098500626e-15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1.4210854715202004e-14,
+      1.4210854715202004e-14,
+      0
+    ],
+    "allTruthMaximumDifference": 5.950795411990839e-14,
+    "passed": true
+  },
+  "helperChecks": [
+    {
+      "file": "helpers/acf_adc_prepare.m",
+      "sourceSha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "privateSha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_desktop_available.m",
+      "sourceSha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "privateSha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_experiment.m",
+      "sourceSha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "privateSha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_metrics.m",
+      "sourceSha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "privateSha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_open.m",
+      "sourceSha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "privateSha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_parameters.m",
+      "sourceSha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "privateSha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_plot.m",
+      "sourceSha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "privateSha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_prepare.m",
+      "sourceSha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4",
+      "privateSha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_run.m",
+      "sourceSha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "privateSha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_select_actuator.m",
+      "sourceSha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "privateSha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_select_controller.m",
+      "sourceSha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "privateSha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_signals.m",
+      "sourceSha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "privateSha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_start.m",
+      "sourceSha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "privateSha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_start_visualizer.m",
+      "sourceSha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "privateSha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_sweep.m",
+      "sourceSha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "privateSha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_viewer_selftest.m",
+      "sourceSha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "privateSha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_visualize.m",
+      "sourceSha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "privateSha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "same": true
+    },
+    {
+      "file": "helpers/acf_prepare_baseline_v8.m",
+      "sourceSha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "privateSha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "same": true
+    }
+  ],
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "freshHoldoutEpisodesExecuted": 0,
+  "policyTrainingUpdates": 0,
+  "qualificationClaim": false,
+  "preservedRejection": {
+    "log": "acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_parity.log",
+    "reason": "Integerseed exportedtoMAT wasrejected byRandomNumberblock parameterdtype. No simulatedresult. Replayedwithdouble seed exactlysameinteger numericalvalue. OriginalMAT/log/rejectedprivateoutput preserved."
+  },
+  "interpretation": "Atfixed100uscurrenttarget,V32\u219236/48removeslate clippingbutdoesnotchangefullrecordworstnormalforceerror in thissinglefrozencheckpoint/calibratedselectioncase.50uscurrenttargetwithmatchingidentifiedobserverimprovesforcepeak butincreasesvoltageclipping oflaterrequests. Thisdoesnotqualifyalltools/orientations oradifferent learnedcheckpoint."
+}

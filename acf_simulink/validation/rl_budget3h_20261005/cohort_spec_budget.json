@@ -1,0 +1,26 @@
+{
+  "holdout32": {
+    "bank": "scenario_bank_budget50/manifest.json",
+    "nativeBuild": "native_bank_budget50",
+    "evaluationSplit": "holdout",
+    "cases": 32,
+    "aggregateOnly": false,
+    "workers": 2
+  },
+  "nominal700": {
+    "bank": "qualification_bank_budget700/manifest.json",
+    "nativeBuild": "native_qualification_budget700",
+    "evaluationSplit": "qualification",
+    "cases": 700,
+    "aggregateOnly": true,
+    "workers": 4
+  },
+  "long4": {
+    "bank": "long_qualification_bank_budget/manifest.json",
+    "nativeBuild": "native_long_qualification_budget",
+    "evaluationSplit": "qualification",
+    "cases": 4,
+    "aggregateOnly": true,
+    "workers": 2
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "scope": "Read-only diagnostic of a retained software-rejected rollout; no optimizer updates, no native simulation and no held-out outcomes.",
+  "sources": {
+    "ppo_peak_8404/rollouts/initial_policy/policy_checkpoint.pt": "5e47078a7407e434d9378254c25e62ced3d91b59dcbcc7e52ae963b9abe389fd",
+    "ppo_peak_8404/rollouts/rollout_000000.npz": "d7b1718fd24ac681134dd937925efcd83f600f9104861694527119efa3268763",
+    "ppo_peak_8404/results.json": "d130bf1c05863c61466e8d59b133a8a5a57e438774324a721fa5f053c9e79a94",
+    "ppo_peak_8404/frozen_sources/policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1"
+  },
+  "shape": [
+    4096,
+    24,
+    40
+  ],
+  "sequenceReplay": {
+    "cpu": {
+      "latentMean": {
+        "maxByAction": [
+          0.00018037483096122742,
+          2.8848648071289062e-05
+        ],
+        "rmsByAction": [
+          3.822215074071417e-05,
+          7.494982998612347e-06
+        ]
+      },
+      "physicalRequest": {
+        "maxByAction": [
+          0.00036046653985977173,
+          1.8997350537119928e-07
+        ],
+        "rmsByAction": [
+          7.627065480140544e-05,
+          4.515862475416843e-08
+        ]
+      },
+      "logProbabilityMax": 0.039374351501464844,
+      "logProbabilityRMS": 0.0034596938639879227
+    },
+    "cuda": {
+      "latentMean": {
+        "maxByAction": [
+          0.0001605600118637085,
+          2.9087066650390625e-05
+        ],
+        "rmsByAction": [
+          3.615734801682005e-05,
+          7.4906138284799065e-06
+        ]
+      },
+      "physicalRequest": {
+        "maxByAction": [
+          0.00031554698944091797,
+          1.89291313290596e-07
+        ],
+        "rmsByAction": [
+          7.214951393655082e-05,
+          4.5155807350885945e-08
+        ]
+      },
+      "logProbabilityMax": 0.03558015823364258,
+      "logProbabilityRMS": 0.003272599307820201
+    }
+  },
+  "singleStepFromStoredCState": {
+    "cpu": {
+      "latentMean": {
+        "maxByAction": [
+          0.00013267435133457184,
+          9.5367431640625e-07
+        ],
+        "rmsByAction": [
+          2.709833608589335e-05,
+          1.0764227011306378e-07
+        ]
+      },
+      "internalStateMax": 1.1920928955078125e-07,
+      "internalStateRMS": 9.615834350995556e-09
+    },
+    "cuda": {
+      "latentMean": {
+        "maxByAction": [
+          0.00010685622692108154,
+          7.152557373046875e-07
+        ],
+        "rmsByAction": [
+          2.5555246742063625e-05,
+          8.832636247570617e-08
+        ]
+      },
+      "internalStateMax": 1.1920928955078125e-07,
+      "internalStateRMS": 9.744264950484194e-09
+    }
+  },
+  "arithmeticSplit": {
+    "cpuSequenceMinusCpuSerial": {
+      "maxByAction": [
+        0.0001678466796875,
+        2.8848648071289062e-05
+      ],
+      "rmsByAction": [
+        3.232294315513483e-05,
+        7.486227472660194e-06
+      ]
+    },
+    "cpuSerialMinusC": {
+      "maxByAction": [
+        0.00015512481331825256,
+        1.430511474609375e-06
+      ],
+      "rmsByAction": [
+        2.910139214228559e-05,
+        1.297249862851782e-07
+      ]
+    },
+    "CstatesTorchHighwayFloat32HeadsMinusC": {
+      "maxByAction": [
+        7.724389433860779e-05,
+        9.5367431640625e-07
+      ],
+      "rmsByAction": [
+        1.8964070819147703e-05,
+        1.0655974195798366e-07
+      ]
+    },
+    "CstatesTorchHighwayFloat64HeadsMinusC": {
+      "maxByAction": [
+        6.510048253657863e-05,
+        7.304291815835029e-07
+      ],
+      "rmsByAction": [
+        1.634971835598769e-05,
+        7.057705312326435e-08
+      ]
+    },
+    "float32VersusFloat64HeadsAtSameHidden": {
+      "maxByAction": [
+        8.426381949848925e-05,
+        9.92283407885708e-07
+      ],
+      "rmsByAction": [
+        2.0826079311410622e-05,
+        1.0648544357888302e-07
+      ]
+    }
+  },
+  "maximumAbsoluteWeights": {
+    "actor": 662.1097412109375,
+    "actor_skip": 0.5185891389846802,
+    "actor_aux": 86.32493591308594
+  },
+  "interpretation": "Large inverse readouts amplify both recurrent-state rounding and readout cancellation. Existing mean and likelihood guards stay unchanged. Native C evaluation of fixed weights and acceptability of PPO replay are separate evidence gates.",
+  "runDisposition": "Initial 28/28 selection passed; first rollout was retained but no optimizer update executed. Root started a separate bounded peak-objective lane from the earlier accepted checkpoint."
+}

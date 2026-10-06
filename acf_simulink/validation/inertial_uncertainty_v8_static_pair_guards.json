@@ -1,0 +1,552 @@
+{
+  "status": "passed",
+  "nativeSimulations": 0,
+  "source": "Independent offline verification of the exact executed original/refined configurations.",
+  "staticPrimitiveCount": 16,
+  "pairedConfigurations": 4,
+  "rows": [
+    {
+      "seed": 7,
+      "priorJointCaseId": 8,
+      "checks": [
+        {
+          "path": "sensor.bias",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "contact.lateralBias_N",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleZ",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleX",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossZFromX",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossXFromZ",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "accel.bias",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelBiasX_m_s2",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "accel.scaleError",
+          "original": -0.005,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0025,
+          "actual": -0.0025,
+          "passed": true
+        },
+        {
+          "path": "sensor.distalMassCalibrationScale",
+          "original": 0.995,
+          "reference": 1.0,
+          "expectedHalfResidual": 0.9975,
+          "actual": 0.9975,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.massB_model_kg",
+          "original": 0.6029999999999999,
+          "reference": 0.6,
+          "expectedHalfResidual": 0.6014999999999999,
+          "actual": 0.6014999999999999,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceConstant_model_N_A",
+          "original": 20.099999999999998,
+          "reference": 20,
+          "expectedHalfResidual": 20.049999999999997,
+          "actual": 20.049999999999997,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.positionScale",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "contact.commandedScanSpeed_m_s",
+          "original": 0.0999,
+          "reference": 0.1,
+          "expectedHalfResidual": 0.09995000000000001,
+          "actual": 0.09995000000000001,
+          "passed": true
+        }
+      ],
+      "allOtherPreparedDCoefficientsIdentical": true
+    },
+    {
+      "seed": 29,
+      "priorJointCaseId": 18,
+      "checks": [
+        {
+          "path": "sensor.bias",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "contact.lateralBias_N",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleZ",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleX",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossZFromX",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossXFromZ",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "accel.bias",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelBiasX_m_s2",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "accel.scaleError",
+          "original": -0.005,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0025,
+          "actual": -0.0025,
+          "passed": true
+        },
+        {
+          "path": "sensor.distalMassCalibrationScale",
+          "original": 0.995,
+          "reference": 1.0,
+          "expectedHalfResidual": 0.9975,
+          "actual": 0.9975,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.massB_model_kg",
+          "original": 0.6029999999999999,
+          "reference": 0.6,
+          "expectedHalfResidual": 0.6014999999999999,
+          "actual": 0.6014999999999999,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceConstant_model_N_A",
+          "original": 20.099999999999998,
+          "reference": 20,
+          "expectedHalfResidual": 20.049999999999997,
+          "actual": 20.049999999999997,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.positionScale",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "contact.commandedScanSpeed_m_s",
+          "original": 0.0999,
+          "reference": 0.1,
+          "expectedHalfResidual": 0.09995000000000001,
+          "actual": 0.09995000000000001,
+          "passed": true
+        }
+      ],
+      "allOtherPreparedDCoefficientsIdentical": true
+    },
+    {
+      "seed": 1729,
+      "priorJointCaseId": 28,
+      "checks": [
+        {
+          "path": "sensor.bias",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "contact.lateralBias_N",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleZ",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleX",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossZFromX",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossXFromZ",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "accel.bias",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelBiasX_m_s2",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "accel.scaleError",
+          "original": -0.005,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0025,
+          "actual": -0.0025,
+          "passed": true
+        },
+        {
+          "path": "sensor.distalMassCalibrationScale",
+          "original": 0.995,
+          "reference": 1.0,
+          "expectedHalfResidual": 0.9975,
+          "actual": 0.9975,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.massB_model_kg",
+          "original": 0.6029999999999999,
+          "reference": 0.6,
+          "expectedHalfResidual": 0.6014999999999999,
+          "actual": 0.6014999999999999,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceConstant_model_N_A",
+          "original": 20.099999999999998,
+          "reference": 20,
+          "expectedHalfResidual": 20.049999999999997,
+          "actual": 20.049999999999997,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.positionScale",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "contact.commandedScanSpeed_m_s",
+          "original": 0.0999,
+          "reference": 0.1,
+          "expectedHalfResidual": 0.09995000000000001,
+          "actual": 0.09995000000000001,
+          "passed": true
+        }
+      ],
+      "allOtherPreparedDCoefficientsIdentical": true
+    },
+    {
+      "seed": 29,
+      "priorJointCaseId": 43,
+      "checks": [
+        {
+          "path": "sensor.bias",
+          "original": 0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.01,
+          "actual": 0.01,
+          "passed": true
+        },
+        {
+          "path": "contact.lateralBias_N",
+          "original": -0.02,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.01,
+          "actual": -0.01,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleZ",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceScaleX",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceFrameAngle_rad",
+          "original": 0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0008726646259971648,
+          "actual": 0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelFrameAngle_rad",
+          "original": -0.0017453292519943296,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0008726646259971648,
+          "actual": -0.0008726646259971648,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossZFromX",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceCrossXFromZ",
+          "original": -0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.0005,
+          "actual": -0.0005,
+          "passed": true
+        },
+        {
+          "path": "accel.bias",
+          "original": 0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.005,
+          "actual": 0.005,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.accelBiasX_m_s2",
+          "original": -0.01,
+          "reference": 0.0,
+          "expectedHalfResidual": -0.005,
+          "actual": -0.005,
+          "passed": true
+        },
+        {
+          "path": "accel.scaleError",
+          "original": 0.005,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0025,
+          "actual": 0.0025,
+          "passed": true
+        },
+        {
+          "path": "sensor.distalMassCalibrationScale",
+          "original": 0.995,
+          "reference": 1.0,
+          "expectedHalfResidual": 0.9975,
+          "actual": 0.9975,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.massB_model_kg",
+          "original": 0.6029999999999999,
+          "reference": 0.6,
+          "expectedHalfResidual": 0.6014999999999999,
+          "actual": 0.6014999999999999,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.forceConstant_model_N_A",
+          "original": 19.9,
+          "reference": 20,
+          "expectedHalfResidual": 19.95,
+          "actual": 19.95,
+          "passed": true
+        },
+        {
+          "path": "uncertainty.positionScale",
+          "original": 0.001,
+          "reference": 0.0,
+          "expectedHalfResidual": 0.0005,
+          "actual": 0.0005,
+          "passed": true
+        },
+        {
+          "path": "contact.commandedScanSpeed_m_s",
+          "original": 0.0999,
+          "reference": 0.1,
+          "expectedHalfResidual": 0.09995000000000001,
+          "actual": 0.09995000000000001,
+          "passed": true
+        }
+      ],
+      "allOtherPreparedDCoefficientsIdentical": true
+    }
+  ],
+  "originalConfigurationsSha256": "ea022dfd4e9028a3d1e4683788a75926cd0105e92233d56c6d48a2551e09f2a7",
+  "refinedConfigurationsSha256": "7c5f313dba81cbfd07bdd018ef8021e01fab0721cd6a8f5ef7651726cbc5c354",
+  "preparedConfigurationsSha256": "be9e5f65ff211ee7a1d086574da499a74dcfde5f5168a4aad585d9c7a3701a7a"
+}

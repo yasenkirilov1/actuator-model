@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-05",
+  "status": "frozen_executed_evidence",
+  "study": "combined",
+  "files": [
+    {
+      "path": "acf_simulink/validation/adc_acquisition_trial_20261002/acquisition_contract.json",
+      "bytes": 89694,
+      "sha256": "ba2c79c33902d632caf3c143b5d09c186b576a78ea01630f7f0b4e47c53649e3"
+    },
+    {
+      "path": "acf_simulink/validation/adc_acquisition_trial_20261002/baseline_candidate.mat",
+      "bytes": 7161,
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "path": "acf_simulink/validation/adc_budget_range_20261002_part1/input_configs.mat",
+      "bytes": 1727344,
+      "sha256": "6b4075f774c5669db72dd27cd1ab45b3e1f669947fd16ea7999691ea44c0a2e6"
+    },
+    {
+      "path": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/ADXL1002_8000_M08_30k_current100_hot32V_configs.mat",
+      "bytes": 311069,
+      "sha256": "31ff22ba5ccb7fbbf20b4d4777275ecbc0028085437eafe6180fc005b06dd202"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/force_weights.mat",
+      "bytes": 1552,
+      "sha256": "e21982cf35ed2790e831bab0cdd45f76271bfb90b872195c9493bce094fc8b05"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/input_configs.mat",
+      "bytes": 134448,
+      "sha256": "931fea5c4f0f21105ce3a5fe05ac83fba763b4fa6bc9fbe487c4ad10c09cff8f"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/ml_combined_20261005_run.m",
+      "bytes": 18101,
+      "sha256": "3f5fcbc1d28de0d167f9cef41fc1846c9ece633f0076ac532d29123e78033fd8"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/ml_force_20261005_build.m",
+      "bytes": 7622,
+      "sha256": "521e5031495b9baedbc51b7a1fe435ec08a94197ce1b5d432032171d12333bd2"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/ml_robot_20261005_build_policy.m",
+      "bytes": 5135,
+      "sha256": "21700ff9f5db7b130a4351a333ec55574b6ee16537948494675aae081ca47415"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/acf_force_control_adc_trial.slx",
+      "bytes": 752295,
+      "sha256": "b6172d71fdbda43af44a814fa98de311447ec0d05065c7e7dc5e64773910eaa8"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_adc_prepare.m",
+      "bytes": 9332,
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_parameters.m",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_prepare.m",
+      "bytes": 122,
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_prepare_baseline_v8.m",
+      "bytes": 28898,
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_run.m",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_select_actuator.m",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_select_controller.m",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/private_worker/helpers/acf_visualize.m",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_001_compact.mat",
+      "bytes": 14265877,
+      "sha256": "1602a6d4e90b65d46d4abb536e5509f182cc081213c0ffaf3e25b53bd407c258"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_001_parameters.mat",
+      "bytes": 44859,
+      "sha256": "433f3ff40a7a227f53fc314e4eb82d4ecfd21d549ac92d4df0f3f243fcf7acd9"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_002_compact.mat",
+      "bytes": 14866246,
+      "sha256": "9bbe039d2bc0ddd55676cfedb36210786a2e5e44732c43f2e7b72e95c276c112"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_002_parameters.mat",
+      "bytes": 44862,
+      "sha256": "be54d3c4293030a92cec224d711cc11db21dc0920ddec2e01219d077051562e0"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_003_compact.mat",
+      "bytes": 14835211,
+      "sha256": "ec8ac23172f591788a1bf09068ef28a1afaee4580251ab1d2a77860746e00be6"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_003_parameters.mat",
+      "bytes": 44878,
+      "sha256": "703dabca36bf1dfdf745b09fef399a3355f32dc89f17d17b8bf7e63e81bd80a3"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_004_compact.mat",
+      "bytes": 15408609,
+      "sha256": "d1ba540a368355e662738145fc200d316127c43c57c24e33a5b203025b37785c"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_004_parameters.mat",
+      "bytes": 44881,
+      "sha256": "58ca379cd173e112c2af92e25876ec7ed87d4ed39b2bd47d6399ea3f5e0478f3"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_005_compact.mat",
+      "bytes": 14754223,
+      "sha256": "9d549fd270e3a3fe81c24e24e69fc19ba6c3f9ebe0a2d24aa0bf63eeaddc5fe5"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_005_parameters.mat",
+      "bytes": 44878,
+      "sha256": "0d2452c81d2902432649b49465ed6b7c873e086d02ce6233c466776ab1eaa70c"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_006_compact.mat",
+      "bytes": 15330568,
+      "sha256": "61a665b7ce965f4f10eec5005a7cffa532c8b0af99ed06e6b013c2d25f05a059"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_006_parameters.mat",
+      "bytes": 44881,
+      "sha256": "cad0c09b26d5e803a2a5d65aa8aeea80441e9b50ba8ac15d35dc0047bf87f4ba"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_007_compact.mat",
+      "bytes": 14958100,
+      "sha256": "1ae3c649fa3b01eb375158b82cbb0b6ec013db5a8452b8b7a778807d77d28c14"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_007_native.mat",
+      "bytes": 218332825,
+      "sha256": "10c3554d4b7c09ee1b101732b84b5dfc7c5838657cde16191d4ae28be2b219f8"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_007_parameters.mat",
+      "bytes": 45785,
+      "sha256": "5171cb41ad8bd6f3c7408b92d6f5c927e4e7a2271ad3be7d505e5dc83e5a1497"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_008_compact.mat",
+      "bytes": 15535963,
+      "sha256": "f5fcfe40ec971233767d57d10ca44779e8b351bd3c1fd7dc2bf9d7beb8831798"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_008_native.mat",
+      "bytes": 218347515,
+      "sha256": "db2257a7cdbcc10a73352fa451a8e45047ed54d709ee90d188879e4a91cde557"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/recording_008_parameters.mat",
+      "bytes": 45784,
+      "sha256": "ccb7c555c30558ad1994712ef1a289e8a3764033aeff08a404e7e4f389b13cae"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/results.json",
+      "bytes": 26778,
+      "sha256": "64b879f7d216837fd39bb974e89bace407706353577fe164203488634995a129"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/robot_weights.mat",
+      "bytes": 373,
+      "sha256": "1fc08b808bc43986bd927532d60edf27a930bcfe6ef5a5ff4f545f391406e52e"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005/rows.jsonl",
+      "bytes": 17570,
+      "sha256": "c29258b724bd0117cd6bd710884396d2a2f7e88949b0a32066c78bca001d6a94"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_20261005_README.md",
+      "bytes": 4329,
+      "sha256": "ca97e2e4bd3deae81f9e51e37364d314cff918bef39286e480f3d21a6936c470"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_20261005_plot.py",
+      "bytes": 8105,
+      "sha256": "89dbce89331ea6f80c6400782b6905c1d5bbc4bd342c8ae56779901c0ba2afe2"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_20261005_run.m",
+      "bytes": 18101,
+      "sha256": "3f5fcbc1d28de0d167f9cef41fc1846c9ece633f0076ac532d29123e78033fd8"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_paired_results.svg",
+      "bytes": 13836,
+      "sha256": "858fcc80473a26d65ffb78938605c5c715dde336ad13ca60fc17e401d74b7a20"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/ml_combined_worst_trajectory.svg",
+      "bytes": 1252151,
+      "sha256": "c9fb4896ecd701529e2f2452406b4b44c70c30fc30c8b33834461c76d99fa838"
+    },
+    {
+      "path": "acf_simulink/validation/ml_combined_20261005_figures/summary.json",
+      "bytes": 4766,
+      "sha256": "c139bcc20b3cae11aec187c448c4a6cc9c115410cb85c06bb1972562875fd2cb"
+    },
+    {
+      "path": "acf_simulink/validation/ml_force_20261005/selected_gain.json",
+      "bytes": 892,
+      "sha256": "97fa5f19beda0ceb9e2f97d5fea017fa0cae321daa10bb81ca8ff3b3f9153532"
+    }
+  ],
+  "scope": "Local ML native experiment inputs, weights, results, selected complete traces and SVGs. Historical public model and delivery package unchanged."
+}

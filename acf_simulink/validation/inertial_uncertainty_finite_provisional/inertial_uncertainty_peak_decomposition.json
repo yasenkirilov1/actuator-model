@@ -1,0 +1,46 @@
+{
+  "scope": "Exact postprocessing decomposition of matched/noisy provisional finite-cell candidate. No unknown calibration/mass/timing/robot mismatch injected. Fifth repeated bump starts6.8s and has apex6.85s. Native histories alone were scored.",
+  "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_finite_provisional/inertial_uncertainty_repeated_screen_20260930_native_traces/case_0001.mat",
+  "peak": {
+    "time_s": 6.8506100000000005,
+    "signedNormalForceError_N": 0.5443954709035665,
+    "normalForce_N": 50.54439547090357,
+    "estimatedNormalForce_N": 50.122306670671136,
+    "trueSlope": -0.014635642289141618,
+    "estimatedSlope": -0.010344768901046979,
+    "current_A": 2.8387298626589623,
+    "currentCommand_A": 2.8410984029527473,
+    "idealRigidCurrent_A": 2.8325798429604108,
+    "actualCoilGapVelocity_m_s": 0.0015059588306200434,
+    "actualHeadGapVelocity_m_s": 0.001500606193957005,
+    "measuredObserverHeadGapVelocity_m_s": 0.001071524405821242,
+    "predictedGuideVelocity_m_s": 0.002029975193334403,
+    "actualAccelerationS_m_s2": -2.397856969840143,
+    "measuredAccelerationS_m_s2": -2.39616,
+    "actualAccelerationB_m_s2": -1.6916456394322437,
+    "actualRobotVelocity_m_s": 3.7041965043567736e-05,
+    "predictedRobotVelocity_m_s": 3.7042294607072274e-05,
+    "alignedPredictedRobotAcceleration_m_s2": -3.303121709765825e-05,
+    "robotGateReady": 1.0,
+    "currentTrackingNormalError_N": -0.04716877546783022,
+    "commandAndFeedforwardNormalError_N": 0.1696445885434625,
+    "finiteCellBInertiaNormalError_N": 0.4219196578279368
+  },
+  "decompositionIdentityResidual_N": 2.4827362388180063e-14,
+  "gapSignIdentityResidual_m_s": 0.0,
+  "actuatorFrictionIdentityResidual_N": 7.105427357601002e-15,
+  "peakWindow": [
+    6.82061,
+    6.880610000000001
+  ],
+  "peakWindowDominantForceRinging_Hz": 1650.0,
+  "ringingBand_Hz": [
+    1000,
+    1500
+  ],
+  "ringingAtPeak_N": 0.2025710297379415,
+  "ringingPeakWithin3ms_N": 0.20970606376116926,
+  "ringingPeakToPeakWithin3ms_N": 0.4087680654890354,
+  "actualVsPredictedRobotVelocityPeakDifference_m_s": 1.5218381195066834e-05,
+  "gateReadyNearPeak": true
+}

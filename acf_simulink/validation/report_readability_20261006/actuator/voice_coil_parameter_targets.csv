@@ -1,0 +1,12 @@
+parameter,target,reason
+Useful actuator stroke,"25 mm, with controller kept near its central15 mm band","Travel allowance includes bump, upper-body motion and delayed recentering; stroke alone does not establish recentering success."
+Continuous force,At least55–60 N at hot operating temperature and every used stroke position,50 N pressing plus reserve; continuous thermal rating is separate from catalog peak force and must cover the actual mounting/cooling.
+Peak force at our driver current,Approximately85 N at a3.5 A bipolar current limit,Kf24.4×3.5=85.4 N; the manufacturer's204.3 N intermittent rating requires8.37 A and is not available from this driver.
+Force constant Kf,Approximately24.4–25 N/A or an equally capable current/thermal combination,50 N requires2.05 A at24.4 N/A. Kf alone is not efficiency; inspect Kf²/R and force variation across position and temperature.
+Motor constant,Prefer about10 N/√W or better at operating temperature,Copper loss is(F/Km)². The studied reference is9.64 cold and8.18 in the hot-resistance model; hot50 N already needs37.36 W.
+Winding resistance and inductance,"Start with R25C≈6.4 Ω, Rhot≈8.9 Ω, L≈4 mH; lower loss/slew demand is desirable","These are reference values, not universal minimums. Driver voltage must coverIR + L·di/dt + back EMF + losses."
+Moving mass,Prefer roughly0.24 kg actuator moving assembly inside the total B=0.6 kg budget,"The reference leaves0.36 kg for holder, guides/cables and hardware. Extra moving mass changes control and cell response."
+Stationary mass,Account for≈1.24 kg reference body plus mount inside A; current tests use A=1.5 kg,Stationary coil/magnet mass still moves on the prescribed upper spring; it cannot be omitted from A.
+Guidance and force smoothness,"Low drag/cable force, negligible transmission backlash, identified force-position map",A bare voice coil needs external guidance; direct drive removes screw backlash but not guide stiction or mounting modes.
+Driver usable output,Adjustable48 V-rated bipolar driver; aim for≥36 V usable development headroom,"The stress48 V diagnostic needed33.02 V and still failed.48 V rating is component capability;36 V usable is a design target, not a newly qualified controller."
+Driver current control,Bipolar3.5 A and separately measured50 µs current-response target,The model's first-order response target is not the winding's passiveL/R response or a guarantee from peak-force specification. Separate fast current sensing is required.

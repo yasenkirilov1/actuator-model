@@ -1,0 +1,63 @@
+{
+  "sourceResult": "inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json",
+  "sourceResultSHA256": "dbfff16f8f5fd1ac306b170cb61ddf262668657897717b4a40166d20d7d1b4fe",
+  "nativeTrace": "/home/tommie/.local/state/actuator-model/tp2049102a_0452_43f2_b227_ac8aba0b3d3e/traces/case_0002.mat",
+  "nativeTraceSHA256": "aec2f2aef25d4e75d29d132b571dae4484aaeb40043f17aab1cdb93d9c9deb98",
+  "sourceModelSHA256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "sampleCount": 1000001,
+  "metric": "All original native true normal-force samples, including startup",
+  "peakNormalError_N": 0.37262917991703404,
+  "peakTime_s": 8.00065,
+  "forceTarget_N": 50,
+  "seed": 29,
+  "peakLowerInverseCurrent_A": 0.49700955269240643,
+  "peakLowerRelativeSpeed_m_s": 0.03316712496565892,
+  "peakDamperForce_N": 1.9900274979395352,
+  "peakDamperDissipation_W": 0.06600349070925811,
+  "meanDamperDissipation_W": 0.0014809691275829784,
+  "minIndividualSpringForce_N": 5.695263893304077,
+  "maxIndividualSpringForce_N": 61.50473610669593,
+  "minIndividualCompression_mm": 0.5768524150009193,
+  "maxIndividualCompression_mm": 6.229589395998778,
+  "maxActualHeadVsActuatorGap_mm": 0.4336878161913058,
+  "configuredCommonPreload_N": 33.6,
+  "combinedFreeLengthMax_mm": 37.18000000000001,
+  "combinedInstalledLengthMax_mm": 30.37355818900031,
+  "perBumpPeaks": [
+    {
+      "startTime_s": 2.0,
+      "peakError_N": 0.3083545270240933,
+      "peakTime_s": 2.00064
+    },
+    {
+      "startTime_s": 3.2,
+      "peakError_N": 0.327062370797762,
+      "peakTime_s": 3.20059
+    },
+    {
+      "startTime_s": 4.4,
+      "peakError_N": 0.31092507198039954,
+      "peakTime_s": 4.40062
+    },
+    {
+      "startTime_s": 5.6000000000000005,
+      "peakError_N": 0.3055247043192111,
+      "peakTime_s": 5.60066
+    },
+    {
+      "startTime_s": 6.800000000000001,
+      "peakError_N": 0.34199957542520565,
+      "peakTime_s": 6.80055
+    },
+    {
+      "startTime_s": 8.0,
+      "peakError_N": 0.37262917991703404,
+      "peakTime_s": 8.00065
+    },
+    {
+      "startTime_s": 9.200000000000001,
+      "peakError_N": 0.33028536517953455,
+      "peakTime_s": 9.20064
+    }
+  ]
+}

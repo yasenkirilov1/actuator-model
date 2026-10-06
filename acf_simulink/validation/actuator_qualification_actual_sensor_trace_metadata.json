@@ -1,0 +1,61 @@
+{
+  "scope": "50N/90deg, seed1729, actual B/S cell with exact static gravity tare and S-A position, outer model nominal, no measured current",
+  "traces": [
+    {
+      "scenario": "nominal",
+      "csv": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_trace_nominal.csv",
+      "sourceMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_winding_checkpoint.mat",
+      "force_N": 50.0,
+      "angle_deg": 90,
+      "seed": 1729,
+      "peakError_N": 0.4263842803687865,
+      "peakCurrent_A": 2.7510046297433934,
+      "peakVoltage_V": 11.750091085733036,
+      "samples": 80001,
+      "start_s": 0.0,
+      "end_s": 4.0
+    },
+    {
+      "scenario": "Kf_minus10_unknown",
+      "csv": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_trace_Kf_minus10_unknown.csv",
+      "sourceMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_winding_checkpoint.mat",
+      "force_N": 50.0,
+      "angle_deg": 90,
+      "seed": 1729,
+      "peakError_N": 14.822196470136916,
+      "peakCurrent_A": 3.5,
+      "peakVoltage_V": 24.0,
+      "samples": 80001,
+      "start_s": 0.0,
+      "end_s": 4.0
+    },
+    {
+      "scenario": "tau_plus25_unknown",
+      "csv": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_trace_tau_plus25_unknown.csv",
+      "sourceMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_winding_checkpoint.mat",
+      "force_N": 50.0,
+      "angle_deg": 90,
+      "seed": 1729,
+      "peakError_N": 0.5594258330608497,
+      "peakCurrent_A": 2.751771791714974,
+      "peakVoltage_V": 11.68168721647287,
+      "samples": 80001,
+      "start_s": 0.0,
+      "end_s": 4.0
+    },
+    {
+      "scenario": "joint_winding",
+      "csv": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_trace_joint_winding.csv",
+      "sourceMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/actuator_qualification_actual_sensor_winding_checkpoint.mat",
+      "force_N": 50.0,
+      "angle_deg": 90,
+      "seed": 1729,
+      "peakError_N": 14.81913894842593,
+      "peakCurrent_A": 3.4999999999999996,
+      "peakVoltage_V": 24.0,
+      "samples": 80001,
+      "start_s": 0.0,
+      "end_s": 4.0
+    }
+  ]
+}

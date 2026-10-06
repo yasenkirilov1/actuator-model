@@ -1,0 +1,39 @@
+{
+  "all350GateEverReady": true,
+  "cleanReadyFractionRange": [
+    0.9750623441396509,
+    0.9750623441396509
+  ],
+  "noisyReadyFractionRange": [
+    0.20698254364089774,
+    0.3341645885286783
+  ],
+  "gateSmoothing_s": 0.1,
+  "gateDwell_s": 0.1,
+  "gateErrorBand_N": 0.2,
+  "gateRateBand_N_s": 2,
+  "effectiveRecenterGain_s_inv": 0.7352941176470588,
+  "selectedRunRoles": [
+    "force_worst_50us",
+    "force_worst_25us",
+    "clean_50N_90deg_50us"
+  ],
+  "selectedRunGateStats": [
+    {
+      "role": "force_worst_50us",
+      "readyFraction": 0.3192019950124688,
+      "stableFraction": 0.8329177057356608
+    },
+    {
+      "role": "force_worst_25us",
+      "readyFraction": 0.3192019950124688,
+      "stableFraction": 0.8329177057356608
+    },
+    {
+      "role": "clean_50N_90deg_50us",
+      "readyFraction": 0.9750623441396509,
+      "stableFraction": 1.0
+    }
+  ],
+  "scope": "Final100ms gate dense350, calibrated latency/model/bias and exact gravity tare. All saved selectedRuns are full native histories; clean is an existing grid run."
+}

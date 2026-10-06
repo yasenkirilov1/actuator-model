@@ -1,0 +1,16 @@
+WARNING: package sun.security.action not in java.base
+WARNING: package sun.security.action not in java.base
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.mathworks.jmi.Matlab in an unnamed module (file:/home/tommie/.local/opt/MATLAB/R2026b/java/jar/jmi.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+No algebraic loops were found.
+RL_INDEPENDENT_NATIVE_REPLAY {"status":"independent_native_replay_failed","scenario":673,"seed":730673,"modelSha256":"f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171","recordingMatSha256":"aa8fa98ddbf8210897f0a99efaba054ba9967e0748e97848b16584d47f8f25f2","configsSha256":"067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588","nativeWall_s":42.240059,"nativeSamples":600001,"cSamples":600001,"sameSampleCount":true,"nativeFirstTime_s":0,"nativeLastTime_s":2,"nativeNormalPeak_N":0.58046607349357515,"cNormalPeak_N":0.58046666050498885,"nativeContactLost":false,"nativeTravelStop":false,"sourceRecording":"/run/media/tommie/SATA SSD/actuator-model-evidence/20261005-mechanical-studies/new-runs/fixed_qualification_nominal700/case_0673/native_history.npz","sourceRecordingSha256":"8d87e503b946a4858e85aeb3ac039ec5a32dbc45161c2659e72921d6aa5baa45","algebraicLoopCount":0,"maximumTimeDifference_s":0,"truthPerChannelMaximumDifference":[1.6659169766342075E-5,1.6659169766342075E-5,4.1170106733490197E-10,4.8865285076984954E-8,0.0001152506068073933,4.1171447497199021E-10,2.6029952766668665E-13,0,4.7182616819867532E-8,3.2371922306018077E-9,0,3.08642431861017E-5,8.8927229766611049E-5,4.6676693413516546E-5,1.0252844734326416E-6,9.1529395694678328E-5,0,6.140592824621649E-5,0,0,0,0,0,0,1.6659169769894788E-5,8.2668221605963765E-6,0],"allTruthMaximumDifference":0.0001152506068073933,"passed":false}
+{Error using assert
+Assertion failed.
+
+Error in replay_mechanical_native (line 50)
+fprintf('RL_INDEPENDENT_NATIVE_REPLAY %s\n',jsonencode(report));assert(report.passed);
+                                                                ^^^^^^^^^^^^^^^^^^^^^
+} 

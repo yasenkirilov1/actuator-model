@@ -1,0 +1,405 @@
+{
+  "status": "sealed_preparation_only_zero_episodes",
+  "files": [
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/configs.mat",
+      "sha256": "74fabd7171abfc88e83a829b1c5b40b52eb3a58acecb0ca12461063717252c23",
+      "bytes": 177300
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "bytes": 9332
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "bytes": 6455
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "bytes": 1963
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "bytes": 1448
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_prepare.m",
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4",
+      "bytes": 122
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "bytes": 28898
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "bytes": 4276
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "bytes": 2746
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "bytes": 646
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "bytes": 732
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "bytes": 3332
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "bytes": 6907
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/manifest.json",
+      "sha256": "e4d93eee1f239bc8bc5475dcf3783289c0f73d46a85aac7913c39b2b12f6a616",
+      "bytes": 7719
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank/prepare_long_qualification.m",
+      "sha256": "7c756b0712cdee7be77427362e0525f2bd75131eb1a2a8c0da1aa5b51e1b5c92",
+      "bytes": 5456
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/acf_rl_native.slx",
+      "sha256": "9a88ae77a4afaf7862a7b521f120f813dbff55f121eb38554ec4b50c86ba8d53",
+      "bytes": 758909
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/acf_rl_native_context.c",
+      "sha256": "31d27195426f3edab87512058f525c2393cecd77795014355dbab027d714b2f6",
+      "bytes": 209412
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/bridge_build.json",
+      "sha256": "3b741dbe191bbec9cedadcffc5c329bf382b426f60d9c9814146350a39141012",
+      "bytes": 2092
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/build_native.m",
+      "sha256": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234",
+      "bytes": 19035
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/c_compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "9e4ea41fb8d9c809dd0a9903d9cf87283cc18ffb143dcfa4fa48e36050cf9c28",
+      "bytes": 209553
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "sha256": "08b2eb9ad80e1d6965fcf999c6f5cb1d0bb58ff2457880a79c08a7868978c314",
+      "bytes": 158850
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native.mk",
+      "sha256": "e181b8279cbad49b3a7201087f6d4e52b2be23724267514bbe469d2baa2964a7",
+      "bytes": 16180
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "sha256": "ef3c46c2967f2e8d5ca8f8714a18aa7af54bef5893587d641136739254304616",
+      "bytes": 18226
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "sha256": "053214791ced3d851e84c9b4b3bb6c2ffe19fdef45bc8c2143541bb1c860aee2",
+      "bytes": 1859
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "sha256": "49bc0ae3e47540f1a0b5562138eb9e06f51a123503574a725713b5b657381001",
+      "bytes": 1002
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/buildInfo.mat",
+      "sha256": "e0e1b4566d530002e029c3709549aafee84155e047edaf012643f08b7b1db878",
+      "bytes": 8479
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/codedescriptor.dmr",
+      "sha256": "7e9a7da15122a77d5087af0875fca29c081271e7e6f499f65b936b41f60d5f81",
+      "bytes": 4248576
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/compileInfo.mat",
+      "sha256": "7ae330bc412b474d80745656a435fc7b8cf2144b66f3bfd3a9d13ce257564063",
+      "bytes": 3794
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "sha256": "35ff9c6c64da50608580e8133c993d6b10118afbc6a2bd2cc3da4302bf765cbf",
+      "bytes": 28350
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/reportInfo.mat",
+      "sha256": "4c816c95b30c70616eb43d23f73ea5653addd396da5f230f31f45d55cdfa1fec",
+      "bytes": 12127
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "sha256": "49766b17536412de4d647aaa9b49a329cb90f2fd878844f4a9336246a309b55d",
+      "bytes": 900
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "sha256": "180ac0e06a57fd2942b685885dabaf068242084e8e2d30875afd660d7213f688",
+      "bytes": 877
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "sha256": "e1de26a4541c507714e67ffc301b268b672ac17e822ae49320ae921c835b739d",
+      "bytes": 1429
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "sha256": "791c9080b08fea39cf9217fa2770e513f3b324cd31262178457c0fc40eb234d5",
+      "bytes": 1115
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "sha256": "80403c99f162991d898f997a501adf3b8db16a69a52b049a05e2828b709d75b0",
+      "bytes": 830
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtw_proj.tmw",
+      "sha256": "ee0b3230620103c110eb6cafd4bdcd159a1701ad317ddf35f0a9ae2dc4707480",
+      "bytes": 380
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "sha256": "c0eccd36920ae77c18c75307c0195b35ece87045f4de7d5fa4f553e1956d2e96",
+      "bytes": 1051
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/rtwtypeschksum.mat",
+      "sha256": "d65b814806ec9d169135e7ae26e5e6bf2d3506d503bf4731e2f87d18985ebe8d",
+      "bytes": 1901
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/BlockTraceInfo.mat",
+      "sha256": "a789fd43f8363b35eff013a32aedb48c0f6a57fedd8b00566529832f354a6de0",
+      "bytes": 26984
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/CompileInfo.xml",
+      "sha256": "69397582cb78047789750ac0321b9e8abd3b59e2145ac450975820f9632e29d3",
+      "bytes": 41172
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/binfo.mat",
+      "sha256": "5d991c1cffb2e70c9ee10f301ef407a20ee6a4a48d2d34f1248242b511d853c5",
+      "bytes": 29186
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/buildStats.mat",
+      "sha256": "a3520883188d37f574fd61c896860973be8ab4cdf3c852481db8ce9d5be5ee6e",
+      "bytes": 674
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/minfo.mat",
+      "sha256": "ab6195aea69d1c425df4c01daac96ec59280491f6cdb3e72345cc562d206c8ca",
+      "bytes": 2226
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/acf_rl_native_grt_rtw/tmwinternal/simulink_cache.xml",
+      "sha256": "e172ed29c3e50d01c796f501d21ae633c4cf20219d9f4e008383cb178ea78156",
+      "bytes": 366
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/slprj/grt/_sharedutils/shared_file.dmr",
+      "sha256": "9df750e1234af78ff1b3bd90f4d651b05e7f1f68c31cd06009d092599aeba5f7",
+      "bytes": 198656
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/code/slprj/sl_proj.tmw",
+      "sha256": "5add05c0b566c6733e3af307738eba47062feae27d7894f5865b281657b13366",
+      "bytes": 83
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "bytes": 9332
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "bytes": 6455
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "bytes": 1963
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "bytes": 1448
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_prepare.m",
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4",
+      "bytes": 122
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "bytes": 28898
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "bytes": 4276
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "bytes": 2746
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "bytes": 646
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "bytes": 732
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "bytes": 3332
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "bytes": 6907
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/libacf_native.so",
+      "sha256": "cbad31353353cbf941b970feb0ab1388fca9feeda6422dfe3c5651402b85ce05",
+      "bytes": 147696
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/metadata.json",
+      "sha256": "2ab12cc633c4b348bef71bee428f1d0a7cbe15bf84654c42cab26ba3cc3763b8",
+      "bytes": 2579
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/native_bank_aux.h",
+      "sha256": "9adc89346b4506d0ab3091954714c4904e1ab7e8c11a0d7b9176292d655b6a77",
+      "bytes": 46740
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/native_parameter_bank.c",
+      "sha256": "a8c5b14946523d426fe80e22853bccd8bcf7945f4079aa94c7033b155d1780b0",
+      "bytes": 129050
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/parameter_mapping.json",
+      "sha256": "594a86edffe3add411ccb8ca43002b6da57c4ddd78ab4be02fd03f1e49b9dae7",
+      "bytes": 116935
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/parameter_mapping.mat",
+      "sha256": "61be8a0dd0ad49ebe237926dc08dd24d0426f5aebae31ffe3adf0872dd3b2b7f",
+      "bytes": 32162
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/preparation_acceptance.json",
+      "sha256": "d7514fd3970a4be93d6ce77f4b1a9e26cb529c03bf031f0e1ff9aa9b913368c0",
+      "bytes": 6866
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/prepared_configs.mat",
+      "sha256": "c9a24e1f80bb522a18f1f777f66ab042f1e6e1519f278d5c16c94f5f1568540e",
+      "bytes": 221601
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/native_long_qualification/scenarios.json",
+      "sha256": "4767b4ba54e96454bcbc05c132985f07a18d22b40032d6bfaf14cc34275c179a",
+      "bytes": 2086
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source": "https://www.gutekunst-net.de/ebook/Gutekunst-Federnkatalog-2013-E/files/assets/basic-html/page80.html",
+  "checkedDate": "2026-09-29",
+  "arrangement": "Two guided, opposed, preloaded compression springs per modeled elastic link; four springs in total.",
+  "dynamicRatingNote": "Catalogue cyclic stroke/working length ratings require the specified surface treatment and supplier confirmation. These are sizing envelopes, not hardware qualification.",
+  "springs": [
+    {"part":"D-180Y-08","rate_N_m":1977,"freeLength_m":0.020,"freeLengthTolerance_m":0.00140,"minWorkingLength_m":0.00710,"maxCyclicStroke_m":0.01050,"forceEnvelope_N":21.999},
+    {"part":"D-180N","rate_N_m":3673,"freeLength_m":0.0228,"freeLengthTolerance_m":0.00075,"minWorkingLength_m":0.00815,"maxCyclicStroke_m":0.00536,"forceEnvelope_N":50.267},
+    {"part":"D-180Q-01","rate_N_m":6413,"freeLength_m":0.0192,"freeLengthTolerance_m":0.00052,"minWorkingLength_m":0.00965,"maxCyclicStroke_m":0.00370,"forceEnvelope_N":56.792},
+    {"part":"D-180S","rate_N_m":9873,"freeLength_m":0.0181,"freeLengthTolerance_m":0.00049,"minWorkingLength_m":0.01055,"maxCyclicStroke_m":0.00318,"forceEnvelope_N":68.543}
+  ]
+}

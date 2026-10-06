@@ -1,0 +1,9 @@
+{
+  "status": "inactive_cancelled_after_user_rigid_lower_requirement",
+  "timestampUTC": "2026-10-05T17:13:56.533036+00:00",
+  "physicalEpisodes": 0,
+  "interruptedMatlabPids": [
+    552963
+  ],
+  "reason": "Lower connection must be rigid with finite64MN/m cell/c0. Lower compliant/damped partial preparation is preserved and excluded from eligible candidates."
+}

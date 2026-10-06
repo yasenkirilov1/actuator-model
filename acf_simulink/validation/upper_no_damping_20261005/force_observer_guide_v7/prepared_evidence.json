@@ -1,0 +1,48 @@
+{
+  "status": "force_observer_guide_v7_prepared_and_frozen",
+  "developmentConfigurations": 264,
+  "unscoredOriginalCoderSentinels": 1,
+  "families": 12,
+  "parentObserverProfiles": [
+    24,
+    33
+  ],
+  "physicalQualificationEpisodesCreatedByPreparation": 0,
+  "sourceWiringHarnessRuns": 3,
+  "rejectedPreparationAttempts": 1,
+  "nativeCGraphGenerated": false,
+  "nativeComputationAndContextByteIdenticalToAcceptedV4": true,
+  "privateControllerGraphSha256": "cd7bc6baedb8f7325ade3f10cf3a9036ec8f4a4310077b2a27fec130b08ca2df",
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "949a7de4752a9054afa7217c0e3ebda875bcc02b70020aedc6d14595c43472bf",
+  "sharedLibrarySha256": "0c1ed4540005af94a53e025c0fbb162047cd11fd1c71ffd13be934ad12d0952e",
+  "savedCopyAcceptancePassed": true,
+  "forceSourceExplicitAndLive": true,
+  "evidence": [
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/native/file_hashes.json",
+      "sha256": "776c1f6bd06829cf1b3828059601acf82d00f5136d3d1ab91900b63a2c370e52"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/native/tunable_coefficient_reuse_guard.json",
+      "sha256": "38c06e8512ef4f0a86b2aa323fe71462455a460ed312e7ff6c1294c852fc6045"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/native/local_cell_source_guard.json",
+      "sha256": "cd812fa981110c712d866d4d87d4800aa0dd0d3dd28d2be3cd817f2d448a5af4"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/saved_graph_scope.json",
+      "sha256": "74e0ebc00c3a0dab9609b9f3dc8d4afe7443dd02cb9817921b5814ad26e940e1"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/acceptance/acceptance.json",
+      "sha256": "e93015d9ee78876dd6f197be2f082e58cc98b424029ad42f2d26bdd3d76a8c76"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/endpoint_indices.json",
+      "sha256": "7de5228e2f94a16ba3c974f99bb8063c4abae9b7239af80d74cce9b610fbbed1"
+    }
+  ],
+  "qualificationStatus": "Prepared only. Parent owns actual endpoint recordings and controller selection. Sentinel0 is excluded from force evaluation; all old inputs/evidence/canonical models untouched."
+}

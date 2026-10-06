@@ -1,0 +1,1564 @@
+{
+  "date": "2026-10-02",
+  "status": "prepared_inputs_not_executed",
+  "sourceModelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/adc_acquisition_trial_20261002/acf_force_control_adc_trial.slx",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "recipeSha256": "66d789deae1fb02f6290c1f4a34eb8966254cf19eac816a906a429959eb57750",
+  "plannedGroups": 2,
+  "plannedCases": 14,
+  "primaryCases": 7,
+  "executedNativeCases": 0,
+  "groups": [
+    {
+      "name": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L0_current50_36V_dynamic_match_configs.mat",
+      "sha256": "d36a1478ad4a54108deca2709ec6c7e0b3288b4da58beac6b625b09282388f59",
+      "cases": 7,
+      "longCases": 4,
+      "mixedCases": 3,
+      "totalRecordingDuration_s": 132,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "primary": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "name": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L50_current50_36V_dynamic_match_configs.mat",
+      "sha256": "ebd8bde376ff55a726059d2ea943ea50bada6378df120f62def8236438eee362",
+      "cases": 7,
+      "longCases": 4,
+      "mixedCases": 3,
+      "totalRecordingDuration_s": 132,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "primary": false,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    }
+  ],
+  "rows": [
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 1,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 7,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 2,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 29,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 3,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 1729,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 4,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 29,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": 1E-5,
+          "updated": 2.0000000000000003E-6,
+          "delta": -8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": 1E-5,
+          "updated": 2.0000000000000003E-6,
+          "delta": -8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 4845,
+          "updated": 5074.5,
+          "delta": 229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 10,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        10,
+        0,
+        20,
+        20
+      ],
+      "newActualChannelPipelines_us": [
+        10,
+        8.0000000000000018,
+        12,
+        12
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 5,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 7,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 6,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 29,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L0_current50_36V_dynamic_match",
+      "caseIndex": 7,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "sourceSha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506",
+      "seed": 1729,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 30.000000000000004,
+      "identifiedCommonPipeline_us": 20,
+      "originalActualChannelPipelines_us": [
+        30.000000000000004,
+        20.000000000000004,
+        20.000000000000004,
+        20.000000000000004
+      ],
+      "newActualChannelPipelines_us": [
+        30.000000000000004,
+        28.000000000000004,
+        28.000000000000004,
+        28.000000000000004
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 1,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 7,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 2,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 29,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 3,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 1729,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 4,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 29,
+      "duration_s": 30,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": 1E-5,
+          "updated": 2.0000000000000003E-6,
+          "delta": -8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": 1E-5,
+          "updated": 2.0000000000000003E-6,
+          "delta": -8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 4845,
+          "updated": 5074.5,
+          "delta": 229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 59.999999999999993,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        59.999999999999993,
+        49.999999999999993,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        59.999999999999993,
+        57.999999999999993,
+        61.999999999999986,
+        61.999999999999986
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 5,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 7,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 6,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 29,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    },
+    {
+      "group": "ADXL354C_1900_L50_current50_36V_dynamic_match",
+      "caseIndex": 7,
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "sourceSha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff",
+      "seed": 1729,
+      "duration_s": 4,
+      "changes": [
+        {
+          "field": "p.acquisition.forceAntiAliasScale",
+          "original": 1,
+          "updated": 1,
+          "delta": 0,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.forceDelayOffset_s",
+          "original": 0,
+          "updated": 0,
+          "delta": 0,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.lateralAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.lateralDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.accelerationAntiAliasScale",
+          "original": 1.05,
+          "updated": 1.005,
+          "delta": -0.045000000000000151,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.accelerationDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.positionAntiAliasScale",
+          "original": 0.95,
+          "updated": 0.995,
+          "delta": 0.04500000000000004,
+          "target": 1,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.positionDelayOffset_s",
+          "original": -1E-5,
+          "updated": -2.0000000000000003E-6,
+          "delta": 8.0000000000000013E-6,
+          "target": 0,
+          "residualMultiplier": 0.2
+        },
+        {
+          "field": "p.acquisition.antiAliasCutoff_Hz",
+          "original": 5355,
+          "updated": 5125.5,
+          "delta": -229.5,
+          "target": 5100,
+          "residualMultiplier": 0.1
+        },
+        {
+          "field": "p.acquisition.emaTime_s",
+          "original": 5E-5,
+          "updated": 5E-5,
+          "delta": 0,
+          "target": 5E-5,
+          "residualMultiplier": 0.1
+        }
+      ],
+      "optionalPerChannelEmaFieldsFound": [],
+      "actualCommonPipeline_us": 80,
+      "identifiedCommonPipeline_us": 70,
+      "originalActualChannelPipelines_us": [
+        80,
+        70,
+        70,
+        70
+      ],
+      "newActualChannelPipelines_us": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "identifiedFrameUnchanged": true,
+      "scope": "Tighter assembled dynamic-matching acceptance target: AA and EMA residuals contracted by 0.1; relative delivery offsets contracted by 0.2. Common actual pipeline residual, static calibration, robot timing, mechanics, noise PSD, sensor range and 50 us / 36 V drive remain. This is neither perfect sensing nor measured manufacturer part qualification.",
+      "executed": false
+    }
+  ],
+  "guardSummary": {
+    "onlyRequestedInputFieldsChanged": true,
+    "commonActualPipelineResidualPreserved": true,
+    "allIdentifiedDynamicsPreserved": true,
+    "allStaticCalibrationAndRobotResidualsPreserved": true,
+    "mechanicsDriveNoiseAndRangePreserved": true,
+    "sourceModelUnchanged": true
+  },
+  "claim": "Prepared finite paired native-input comparisons only; actual execution is required. Tighter dynamic matching does not establish better static calibration or physical part qualification."
+}

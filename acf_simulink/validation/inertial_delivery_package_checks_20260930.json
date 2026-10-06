@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "archive": "acf_simulink/generated/active_contact_flange_inertial_20260930.zip",
+  "archiveBytes": 3317195898,
+  "archiveSha256": "0e91119ff142b20664d0a9620b37aef65e8d27a81f7dd5ecfeecbadff35934f0",
+  "includedFiles": 1765,
+  "uncompressedFileBytes": 3625365647,
+  "historicalArchiveSha256": "5e823a1b840b515c9e6690d2b0f85d18fddf2c44229dbc9f81a56396e6aafb2f",
+  "checks": {
+    "zipCRC": true,
+    "everyMemberSha256": true,
+    "sourceFilesUnchangedDuringPackaging": true,
+    "explicitFilePlan": true,
+    "finiteGridAudit": true,
+    "completeReportAndBrowserChecks": true,
+    "historicalArchivePreserved": true
+  }
+}

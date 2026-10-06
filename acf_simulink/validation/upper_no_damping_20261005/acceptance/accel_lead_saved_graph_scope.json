@@ -1,0 +1,41 @@
+{
+  "status": "saved_graph_current_feedforward_only_verified",
+  "physicalEpisodes": 0,
+  "baselineModelSha256": "8c2d1039a732b7bbc0c6f009007cea48fed4c1c328db2961b94837e43c7324fd",
+  "candidateModelSha256": "8f1d7b2c15334fdb3c4a89be90566655d48bf59646623141e7129a8a1c2a4eab",
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "nativeSystemCount": 48,
+  "unchangedNativeSystems": 47,
+  "changedNativeSystems": [
+    "simulink/systems/system_1324.xml"
+  ],
+  "newNativeBlocks": [
+    "Present-time acceleration lead for current FF"
+  ],
+  "normalization": "Ignore document-only SID renumbering; map every wire SID to its actual block name. Preserve all block parameters, other system attributes and wire structure.",
+  "conclusion": "Only acceleration current-feedforward subsystem changed. Physical plant, sensor/ADC processing, contact-force reconstruction, motion observer, normal projection, robot timing/gate and other controller blocks match the original finite-cell graph.",
+  "leadContract": {
+    "enabled": true,
+    "causal": true,
+    "input": "Matched-frame measured S acceleration",
+    "outputUse": "Current force feedforward ONLY",
+    "measurementFrameUnchanged": true,
+    "surfacePreview": false,
+    "robotFutureInputs": false,
+    "formula": "(1+(tauPole+tauAdvance)*s)/(1+tauPole*s)",
+    "discretization": "Bilinear at fresh 10 kHz force frame",
+    "initialState": 0,
+    "poleTime_s": 0.0002,
+    "advanceTime_s": 0.00015,
+    "discreteNumerator": [
+      1.6,
+      -1.2
+    ],
+    "discreteDenominator": [
+      1,
+      -0.6
+    ],
+    "highFrequencyGain": 1.75,
+    "sampleTime_s": 0.0001
+  }
+}

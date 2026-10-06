@@ -1,0 +1,215 @@
+{
+  "status": "bound",
+  "files": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/rl_budget3h_20261005/reward_search_budget_limits.py",
+      "bytes": 6569,
+      "sha256": "d8165d60a53ced4b6fbdffae47a46b8ea473001a662d102cb228393f9e30bb89"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/comparison.json",
+      "bytes": 34484,
+      "sha256": "0a389b32277a3a5146049441c5376868b653ced8f309cae1ebc2bf732179c9d0"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/budget_response_limits.svg",
+      "bytes": 15769,
+      "sha256": "95f0443d52cd7e735fda3ea5e98a04be6c11ee17d10f156d1912d1dcafcd694c"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limits/budget_response_limits.png",
+      "bytes": 150814,
+      "sha256": "b9926bba18f2a00695cbb1d5abebe820ce6c014d8e9cbe7cf678e03d58fddaae"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/reward_search_budget_screen.py",
+      "bytes": 4150,
+      "sha256": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/consumed_scenarios.json",
+      "bytes": 218999,
+      "sha256": "90c5d005c924b230f756e71ad0621911390ec01017e816bc19a4bad8921ca19e"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/reward_search_native.so",
+      "bytes": 24672,
+      "sha256": "2953c7fa5cb9ff029dd8db4d9d911516211f77ae8b209ca8b55f2e79daa91685"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/compile_manifest.json",
+      "bytes": 1277,
+      "sha256": "7ff3ef8189aa5fe7f12c95d2d37d54c853238d3a50989d55cd14f45292f2de18"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/run_configuration.json",
+      "bytes": 978,
+      "sha256": "57556c9515b1a6edee721b4ec5dd8eec85e9fbc2122c9ce5ad86911cd03779cd"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/partial_results.json",
+      "bytes": 99095,
+      "sha256": "14c353ef8d2c0dc37dd39e304e6e23a75bb29112026d998e7de7f6e01b4adf59"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/results.json",
+      "bytes": 100277,
+      "sha256": "6a2a6522df234bcc1450fa34a3d40a4f37000aa2c7a1486694c7b32fcaafefec"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_weights.npz",
+      "bytes": 36624,
+      "sha256": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_weights.f32",
+      "bytes": 32724,
+      "sha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_weights.json",
+      "bytes": 117882,
+      "sha256": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_inference.h",
+      "bytes": 886,
+      "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_inference.c",
+      "bytes": 3424,
+      "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_checkpoint.pt",
+      "bytes": 40840,
+      "sha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/policy_export_manifest.json",
+      "bytes": 986,
+      "sha256": "dd0c221f8a0e4b6f0e8cabad87c3ea2184ce0245ca48e57e129ad8fe2257c296"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/frozen_policy/initialization.json",
+      "bytes": 1455,
+      "sha256": "fb73de554d7ca97ed83cd20bdd4a7bd8f91842de0192cf3183168de46cd0b5e7"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_native.npz",
+      "bytes": 61734531,
+      "sha256": "816da108335d3824eeeb328af4c865b6d782b61e3e8a1635d8bf534f78489e42"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_actions.npz",
+      "bytes": 1538623,
+      "sha256": "4d8fb4ced37b7f57325c7b275730508b23368a5eda679705be3ddbdbc3a0c063"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_current100/failed_native/frozen_learned_policy/travel_stop/replay.json",
+      "bytes": 2298,
+      "sha256": "61ebd98a8e50d529d56f20bdf595418cabbee96f3e399cb01b9532d80618b703"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/reward_search_budget_screen.py",
+      "bytes": 4150,
+      "sha256": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/consumed_scenarios.json",
+      "bytes": 221591,
+      "sha256": "fe4e0851270d0516733f0a4c5653f763825406a26cfdb8fbaf80f13949cc6bf9"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/reward_search_native.so",
+      "bytes": 24672,
+      "sha256": "7adf7256eb5f4e07ed0959c9da51f5bc54de562a5e525def55ad75bfae635087"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/compile_manifest.json",
+      "bytes": 1292,
+      "sha256": "50a97956295d3974acd9bcf6703a23b58426f7232aa4bf278775fcf26a2e1e74"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/run_configuration.json",
+      "bytes": 995,
+      "sha256": "2ba6a333287996f260bd56f297b7490a586fa6db8568665d7d944bf2f95b53c0"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/partial_results.json",
+      "bytes": 99300,
+      "sha256": "17073b6ac6c9d5782089086b835725610210c71dfeced2e9bb381fd38acdaef4"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/results.json",
+      "bytes": 100499,
+      "sha256": "fccd4df4a657980b6977ae3bbf3f551daad5edad8356d1b112a8b0ec9d512fe4"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_weights.npz",
+      "bytes": 36624,
+      "sha256": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_weights.f32",
+      "bytes": 32724,
+      "sha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_weights.json",
+      "bytes": 117882,
+      "sha256": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_inference.h",
+      "bytes": 886,
+      "sha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_inference.c",
+      "bytes": 3424,
+      "sha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_checkpoint.pt",
+      "bytes": 40840,
+      "sha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/policy_export_manifest.json",
+      "bytes": 986,
+      "sha256": "dd0c221f8a0e4b6f0e8cabad87c3ea2184ce0245ca48e57e129ad8fe2257c296"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/frozen_policy/initialization.json",
+      "bytes": 1455,
+      "sha256": "fb73de554d7ca97ed83cd20bdd4a7bd8f91842de0192cf3183168de46cd0b5e7"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_native.npz",
+      "bytes": 35138764,
+      "sha256": "fb115d6e75927e399a8cc15afe5d1cc44ffe0ef46b902c306a1e05cfabaa7e14"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/failed_native/frozen_learned_policy/travel_stop/selection_sustained_02_actions.npz",
+      "bytes": 868581,
+      "sha256": "0af83f7fad338d31c6191b677fc38de685d85299c413c591a765666c5e78d7b3"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_limit_latency50/failed_native/frozen_learned_policy/travel_stop/replay.json",
+      "bytes": 2284,
+      "sha256": "1b071b020a0d19ebce29fbe402b8dc8772a336e41ee932d545f1f129b8bfe77e"
+    }
+  ]
+}

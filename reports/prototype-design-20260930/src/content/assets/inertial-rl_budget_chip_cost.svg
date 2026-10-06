@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="785.99952pt" height="356.282748pt" viewBox="0 0 785.99952 356.282748" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T17:20:55.831340</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 356.282748 
+L 785.99952 356.282748 
+L 785.99952 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 207.212187 292.198661 
+L 778.79952 292.198661 
+L 778.79952 23.229938 
+L 207.212187 23.229938 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 207.212187 292.198661 
+L 207.212187 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m61cfc88099" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m61cfc88099" x="207.212187" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="207.212187" y="307.556082" transform="rotate(-0 207.212187 307.556082)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 308.378087 292.198661 
+L 308.378087 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m61cfc88099" x="308.378087" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="308.378087" y="307.556082" transform="rotate(-0 308.378087 307.556082)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 409.543987 292.198661 
+L 409.543987 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m61cfc88099" x="409.543987" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="409.543987" y="307.556082" transform="rotate(-0 409.543987 307.556082)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 510.709886 292.198661 
+L 510.709886 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m61cfc88099" x="510.709886" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="510.709886" y="307.556082" transform="rotate(-0 510.709886 307.556082)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 611.875786 292.198661 
+L 611.875786 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m61cfc88099" x="611.875786" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="611.875786" y="307.556082" transform="rotate(-0 611.875786 307.556082)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 713.041685 292.198661 
+L 713.041685 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m61cfc88099" x="713.041685" y="292.198661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="713.041685" y="307.556082" transform="rotate(-0 713.041685 307.556082)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="493.005854" y="322.556942" transform="rotate(-0 493.005854 322.556942)">Quantity-one chip cost including 21% VAT (€)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <defs>
+       <path id="m029ee0f5e6" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m029ee0f5e6" x="207.212187" y="105.989545" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(108.44125 104.117718)">Planar prototype</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(7.2 117.320726)">6 bridge + 2 acceleration channels</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m029ee0f5e6" x="207.212187" y="209.439054" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(61.772031 207.567227)">Spatial channel provision</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(7.2 220.770235)">6 bridge + 3 acceleration channels</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 207.212187 129.265684 
+L 584.910521 129.265684 
+L 584.910521 82.713405 
+L 207.212187 82.713405 
+z
+" clip-path="url(#p104b68d729)" style="fill: #1768a6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 584.910521 129.265684 
+L 642.749595 129.265684 
+L 642.749595 82.713405 
+L 584.910521 82.713405 
+z
+" clip-path="url(#p104b68d729)" style="fill: #31a09b"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 207.212187 232.715193 
+L 584.910521 232.715193 
+L 584.910521 186.162914 
+L 207.212187 186.162914 
+z
+" clip-path="url(#p104b68d729)" style="fill: #1768a6"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 584.910521 232.715193 
+L 700.588669 232.715193 
+L 700.588669 186.162914 
+L 584.910521 186.162914 
+z
+" clip-path="url(#p104b68d729)" style="fill: #31a09b"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 713.041685 292.198661 
+L 713.041685 23.229938 
+" clip-path="url(#p104b68d729)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #b44f17; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 207.212187 292.198661 
+L 778.79952 292.198661 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #16314b" x="637.6913" y="72.312114" transform="rotate(-0 637.6913 72.312114)">€86.10</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #16314b" x="695.530374" y="175.761623" transform="rotate(-0 695.530374 175.761623)">€97.54</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #b44f17" x="707.98339" y="49.092315" transform="rotate(-0 707.98339 49.092315)">€100 chip budget</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="493.005854" y="17.229938" transform="rotate(-0 493.005854 17.229938)">Accelerometer and ADC fit the prototype chip budget</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_8">
+     <path d="M 217.112188 263.155223 
+L 239.112188 263.155223 
+L 239.112188 255.455223 
+L 217.112188 255.455223 
+z
+" style="fill: #1768a6"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="247.912188" y="263.155223" transform="rotate(-0 247.912188 263.155223)">One ADXL354C</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 217.112188 279.656082 
+L 239.112188 279.656082 
+L 239.112188 271.956082 
+L 217.112188 271.956082 
+z
+" style="fill: #31a09b"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="247.912188" y="279.656082" transform="rotate(-0 247.912188 279.656082)">ADS131M08 ADC(s)</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #536273" transform="translate(11.97576 335.217299)">DigiKey NL, 5 October 2026. One or two eight-channel ADCs; digital position is separate.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #536273" transform="translate(11.97576 346.01976)">Excludes amplifiers, PCB, assembly and shipping. Spatial channel provision is not 3D force qualification.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p104b68d729">
+   <rect x="207.212187" y="23.229938" width="571.587333" height="268.968723"/>
+  </clipPath>
+ </defs>
+</svg>

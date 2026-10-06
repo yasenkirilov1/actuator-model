@@ -1,0 +1,88 @@
+{
+  "status": "lossless_compact_native_representative_trace_archives",
+  "original_paths_restorable": true,
+  "full_native_arrays_retained": false,
+  "entries": [
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_coil_point_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_coil_point_native_500Hz.csv.gz",
+      "uncompressed_sha256": "d8deed9bd9f2645eb1b887915930acdb360361f20922d747338645bf7de4031e",
+      "archive_sha256": "c743d0f0b6601bae51e5fe3d2ad4941625ef54d7c9e9066ee1dbf92246f08de6",
+      "uncompressed_bytes": 390786,
+      "archive_bytes": 130011,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_point_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_point_native_500Hz.csv.gz",
+      "uncompressed_sha256": "aa9601e0ed7a5e7b3d2a44fb021c50fd6c7d0fd6cc06b5619294a1f2a02f8478",
+      "archive_sha256": "a6d7ec1020745e81835b299927b482bbf8bf66144f646bb4b454eebab28d20fe",
+      "uncompressed_bytes": 447709,
+      "archive_bytes": 154719,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_77mm_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/pilot_sea_77mm_native_500Hz.csv.gz",
+      "uncompressed_sha256": "3a0af55093c11564216187a634931bc06cd616f96d58ebcb4cdb415f5d284e83",
+      "archive_sha256": "f5b3833a9b1014ec4c38f8251a2382ed83ba68fa3f17b963293538d7afdab854",
+      "uncompressed_bytes": 452822,
+      "archive_bytes": 161437,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_coil_point_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_coil_point_native_500Hz.csv.gz",
+      "uncompressed_sha256": "03c999c41a424ea04b359e9dfe8a39fe51c26fcae38f3e40161b3a817b014a83",
+      "archive_sha256": "7f2ae1da150bde510ddf2a925be6b5be6d9afb2be3473b4bf67fb545b1afc932",
+      "uncompressed_bytes": 385045,
+      "archive_bytes": 153076,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_sea_point_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_sea_point_native_500Hz.csv.gz",
+      "uncompressed_sha256": "979957102f41ae11a758faf72557511c1fcf95fe5de6699b992c7f414413967e",
+      "archive_sha256": "9919fe4ae2bd09ae2d7233ba66306a5bc375a679748b76a19c3c0ec87088fb0d",
+      "uncompressed_bytes": 433701,
+      "archive_bytes": 177989,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_sea_wide_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/selected_sea_wide_native_500Hz.csv.gz",
+      "uncompressed_sha256": "d90cafbc8c1e73b50bd07e629013ab3d93b9ec5677575d0a251293d3e3cf0b32",
+      "archive_sha256": "a4bcf02be9a7e6856ef75fc2e5b97c024935db225a3002705670012f5ee2e317",
+      "uncompressed_bytes": 438524,
+      "archive_bytes": 179681,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/partial_wide_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/partial_wide_native_500Hz.csv.gz",
+      "uncompressed_sha256": "eee9094e8e7f454df94c30e29cccb08a557fc609b05093f4a3a68f6f63756101",
+      "archive_sha256": "73c6ab337d20b46f1cd76083d59cf8cf5717214f3560d03f627cbfef8ae557db",
+      "uncompressed_bytes": 390531,
+      "archive_bytes": 139080,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/coil_pad5mm_k50_c0_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/coil_pad5mm_k50_c0_native_500Hz.csv.gz",
+      "uncompressed_sha256": "21685998d4774fe253f047bb112f571b349c2f49ec9f9901cae775419cd81ddd",
+      "archive_sha256": "12cd146da3e56c712b4da605f980d4d6c2a322cb09b50c54862d06ef652c9639",
+      "uncompressed_bytes": 392830,
+      "archive_bytes": 155198,
+      "exact_roundtrip_verified": true
+    },
+    {
+      "original_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/sea_pad5mm_k50_c0_native_500Hz.csv",
+      "archive_path": "acf_simulink/validation/sea_pad_dynamic_20261006/native/sea_pad5mm_k50_c0_native_500Hz.csv.gz",
+      "uncompressed_sha256": "e29d52cc09a794cfeaf1fbfdfbf7cacf70edfbf349ee808abd7efae18152ff6e",
+      "archive_sha256": "61bebc9b26fbfdaecbf316007263461d3b760ccce09764c0b6724bd9e3089f0c",
+      "uncompressed_bytes": 458639,
+      "archive_bytes": 183945,
+      "exact_roundtrip_verified": true
+    }
+  ]
+}

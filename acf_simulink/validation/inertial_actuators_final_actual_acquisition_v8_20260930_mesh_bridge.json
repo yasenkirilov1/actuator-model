@@ -1,0 +1,45 @@
+{
+  "status": "matching_full_native_scalar_scores",
+  "scope": "Shared global3500 mesh condition matches donorcoilcase2 at4s10us. Full histories were scored separately; this is a scalar-metric bridge, not another native source-pair test.",
+  "meshGlobalCaseIndex": 3500,
+  "meshLocalCaseIndex": 875,
+  "donorCaseIndex": 2,
+  "metrics": [
+    {
+      "meshMetric": "peakNormalForceError_N",
+      "meshValue": 0.28352182307020257,
+      "donorValue": 0.28352182307020257,
+      "difference": 0.0
+    },
+    {
+      "meshMetric": "rmsNormalForceError_N",
+      "meshValue": 0.022128129507353773,
+      "donorValue": 0.022128129507353773,
+      "difference": 0.0
+    },
+    {
+      "meshMetric": "peakCurrent_A",
+      "meshValue": 2.8992333366500778,
+      "donorValue": 2.8992333366500778,
+      "difference": 0.0
+    },
+    {
+      "meshMetric": "peakVoltage_V",
+      "meshValue": 18.44488007638724,
+      "donorValue": 18.44488007638724,
+      "difference": 0.0
+    },
+    {
+      "meshMetric": "minTravel_mm",
+      "meshValue": 10.562104853065067,
+      "donorValue": 10.562104853065067,
+      "difference": 0.0
+    },
+    {
+      "meshMetric": "maxTravel_mm",
+      "meshValue": 16.107674278702703,
+      "donorValue": 16.107674278702703,
+      "difference": 0.0
+    }
+  ]
+}

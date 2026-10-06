@@ -1,0 +1,28 @@
+{
+  "status": "component_arithmetic_and_owned_file_consistency_checked",
+  "nativeExperimentsPerformedInThisLane": 0,
+  "densityNoiseRows": 55,
+  "densityVariants": 11,
+  "componentRecords": 5,
+  "rowIdentitiesUnique": true,
+  "ADCQuantizationScalingChecked": true,
+  "CSVSource": "derived.densityNoiseRows",
+  "files": {
+    "accelerometer_cost_component_review_20261002.json": {
+      "bytes": 66432,
+      "sha256": "4ce60370978e5a1dcb5de886481807eb491b5d6aa85cdbc4d9f9b496b9fab845"
+    },
+    "accelerometer_cost_component_review_20261002.csv": {
+      "bytes": 9103,
+      "sha256": "f3f8dc0f0b632c3fc3486b35dec05cb422ee83215febc5a2b55eeefc0f302d01"
+    },
+    "accelerometer_cost_component_review_20261002.py": {
+      "bytes": 10950,
+      "sha256": "d63525c299fd454785d6b381391b63edae252fb76263896c4d82955c6706e36b"
+    },
+    "accelerometer_cost_component_review_20261002.md": {
+      "bytes": 13485,
+      "sha256": "1b153fd19ef3001f0d82937935871d4a3ba5a0d8e169e1a7b458f0040c914342"
+    }
+  }
+}

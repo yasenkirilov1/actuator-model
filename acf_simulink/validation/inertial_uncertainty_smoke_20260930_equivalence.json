@@ -1,0 +1,62 @@
+{
+  "scope": "One frozen v2 baseline case verifies private residual calibration instrumentation does not change its zero-uncertainty native history. This is not the final selected-controller uncertainty qualification.",
+  "baselineTrace": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/traces/normal_contact_trial_001.mat",
+  "baselineSha256": "12e0af1da819db6ed7cc2aa2e32558a971c06db84e9623acd5d5dcd737885d97",
+  "instrumentedTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_smoke_20260930_native_traces/case_0001.mat",
+  "instrumentedSha256": "3c07aedbfdc16fb6dc4091b7f8dd37148f892504e779bc3ad7f5a7e92a83538b",
+  "allChecksIdentical": true,
+  "checks": {
+    "time": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "data": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "normalContact.time": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "normalContact.data": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "accelerometer.time": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "accelerometer.data": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "motionObserver.time": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "motionObserver.data": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "robotGate.time": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "robotGate.ready": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "robotGate.filteredError_N": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "robotGate.forceRate_N_s": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "robotGate.stableNow": {
+      "bitwiseIdentical": true,
+      "maximumAbsoluteDifference": 0.0
+    }
+  }
+}

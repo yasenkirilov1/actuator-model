@@ -1,0 +1,174 @@
+{
+  "status": "complete_read_only_frozen_parameters",
+  "kind": "native_model_parameter_review",
+  "candidateFile": "acf_simulink/validation/inertial_final_candidate_20260930.mat",
+  "candidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "rows": [
+    {
+      "parameter": "p.mechanics.mB",
+      "value": 0.6,
+      "unit": "kg"
+    },
+    {
+      "parameter": "p.mechanics.k1",
+      "value": 19746,
+      "unit": "N/m"
+    },
+    {
+      "parameter": "p.mechanics.c1",
+      "value": 60,
+      "unit": "N s/m"
+    },
+    {
+      "parameter": "p.mechanics.upperRigid",
+      "value": 1,
+      "unit": "logical"
+    },
+    {
+      "parameter": "p.mechanics.lowerRigid",
+      "value": 0,
+      "unit": "logical"
+    },
+    {
+      "parameter": "p.springs.lower.rate_N_m",
+      "value": 9873,
+      "unit": "N/m"
+    },
+    {
+      "parameter": "p.springs.lower.freeLength_m",
+      "value": 0.02,
+      "unit": "m"
+    },
+    {
+      "parameter": "p.springs.lower.freeLengthTolerance_m",
+      "value": 0.00049,
+      "unit": "m"
+    },
+    {
+      "parameter": "p.springs.commonPreload_N",
+      "value": 33.6,
+      "unit": "N/spring"
+    },
+    {
+      "parameter": "p.springs.maxCombinedLength_m",
+      "value": 0.1,
+      "unit": "m"
+    },
+    {
+      "parameter": "p.coil.forceConstant",
+      "value": 20,
+      "unit": "N/A"
+    },
+    {
+      "parameter": "p.coil.resistance",
+      "value": 4,
+      "unit": "ohm"
+    },
+    {
+      "parameter": "p.coil.inductance",
+      "value": 0.003,
+      "unit": "H"
+    },
+    {
+      "parameter": "p.coil.peakCurrent",
+      "value": 3.5,
+      "unit": "A"
+    },
+    {
+      "parameter": "p.coil.voltage",
+      "value": 24,
+      "unit": "V"
+    },
+    {
+      "parameter": "p.coil.currentResponse",
+      "value": 0.0001,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.inertial.forceKp",
+      "value": 0.3,
+      "unit": "A/N"
+    },
+    {
+      "parameter": "p.inertial.forceKi",
+      "value": 20,
+      "unit": "A/(N s)"
+    },
+    {
+      "parameter": "p.inertial.forceKd",
+      "value": 0,
+      "unit": "A s/N"
+    },
+    {
+      "parameter": "p.inertial.feedbackFilter.cutoff_Hz",
+      "value": 1000,
+      "unit": "Hz"
+    },
+    {
+      "parameter": "p.inertial.lowerLoadInverse.cutoff_Hz",
+      "value": 1500,
+      "unit": "Hz"
+    },
+    {
+      "parameter": "p.inertial.guideVelocityPrediction_s",
+      "value": 0.0004,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.contact.dragRatioFilter_s",
+      "value": 0.005,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.force.sampleTime",
+      "value": 0.0001,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.sim.step",
+      "value": 1e-05,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.acquisition.rawSampleTime_s",
+      "value": 1e-05,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.acquisition.antiAliasCutoff_Hz",
+      "value": 5100,
+      "unit": "Hz"
+    },
+    {
+      "parameter": "p.acquisition.emaTime_s",
+      "value": 5e-05,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.acquisition.pipelineDelay_s",
+      "value": 2e-05,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.robot.forceGate.variation.rmsLimit_N",
+      "value": 0.08,
+      "unit": "N"
+    },
+    {
+      "parameter": "p.robot.forceGate.dwellTime",
+      "value": 0.1,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.robot.delay",
+      "value": 0.08,
+      "unit": "s"
+    },
+    {
+      "parameter": "p.robot.responseTime",
+      "value": 0.06,
+      "unit": "s"
+    }
+  ],
+  "scope": "Common frozen final controller/mechanics. The real24.4N/A winding and calibration residual budgets are separately sourced; parameters alone are not native qualification."
+}

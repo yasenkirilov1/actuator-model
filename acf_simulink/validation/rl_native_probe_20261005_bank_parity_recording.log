@@ -1,0 +1,7 @@
+{Requested 120001x120001 (107.3GB) array exceeds maximum array size preference
+(31.3GB) and might cause MATLAB to become unresponsive.
+
+Error in rl_native_probe_20261005_parity (line 21)
+ 'timeMaximumDifference_s',max(abs(nativeTime-c.time)),'allTruthMaximumDifference',max(delta,[],'all'), ...
+                               ^^^^^^^^^^^^^^^^^^^^^^
+} 

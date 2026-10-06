@@ -1,0 +1,93 @@
+{
+  "status": "complete_verified",
+  "nativeForceExecutions": 6,
+  "additionalForceExecutionsForFigureAndPortableCopy": 0,
+  "scope": "Three seeds at one heavy combined mechanical/calibration corner, each paired with known-actual inverse k/c. Separate from nominal3500 and long nominal-mechanics uncertainty records.",
+  "unchangedMainCandidateSHA256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "originalMixedWorst_N": 0.48999572475288744,
+  "knownActualWorst_N": 0.4530257596136593,
+  "onlyIdentifiedInverseChangesVerified": true,
+  "visualInspection": "PNG inspected after rendering; legend overlap corrected; marks/labels/thresholds readable. Native waveform includes every sample of displayed interval. Redundant hatch/line-style encodings supplement color.",
+  "artifacts": [
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_results.json",
+      "sha256": "8b09dafb79ad4d467f28cc05375c2001c741f5508a07f0fba9761167018a524f"
+    },
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_invocation_manifest.json",
+      "sha256": "9b75c437ce8486dc3e556f4d62cbbca7154727cea23f42aee2132606ac24a868"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_results.json",
+      "sha256": "21f48187ecbf22bdb1ff0fec9a962da13454fe1fafa4638d91e58711db09d950"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_invocation_manifest.json",
+      "sha256": "5149934eb44aad096afb7a9b210e9b2032bcb33bb6ae39b1a619275c5f91057e"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_configuration.mat",
+      "sha256": "3ecea65676d370258032e928327ef0a4262975e6eea0a048e976f4d37a12848c"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930.svg",
+      "sha256": "b3fdcc8536479c017d23c8140345ef962d9d83f0e3617fee6c109f50e68064b2"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930.png",
+      "sha256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+      "sha256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930_figure_manifest.json",
+      "sha256": "1fb9036abe8b3895b9611499a43009d716e7f00d00a803fc85e2df25a253508b"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930.md",
+      "sha256": "29f6fd7eb4ee96df622f79628d07a96d0edc5e5ef1aed15803b6bc0c4a05ad2f"
+    },
+    {
+      "file": "inertial_mechanics_make_mixed_comparison_20260930.py",
+      "sha256": "52bff197e21649ac90df91ad695f8fed7d9516251777fcbead19bac1f8cd4a52"
+    },
+    {
+      "file": "inertial_mechanics_mixed_source_20260930/recipes/inertial_mechanics_run_mixed_corner_20260930.m",
+      "sha256": "c8219d9c3e0903da52074eb1e48b2525bea3cc702c96afcf70c3909dc4a2ba40"
+    },
+    {
+      "file": "inertial_mechanics_mixed_source_20260930/recipes/inertial_mechanics_run_calibrated_mechanics_20260930.m",
+      "sha256": "3d65820839be917e2c7ab9e2f5501e69d09840cd8011fb0c7359331e1ca40924"
+    },
+    {
+      "file": "inertial_mechanics_mixed_source_20260930/portable_input_manifest.json",
+      "sha256": "51706d54c4ad76ce243bddc5fc8ea69feab41bbcb1f3e23462ddc0cbdd6db69e"
+    },
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_case_01_native.mat",
+      "sha256": "4b24929ed7faaee8623d0df360746902aed91bda86f979cb90a2cf09d392600a"
+    },
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_case_02_native.mat",
+      "sha256": "d350da20af77133b99d2598716e267ea66a9d99852a08ed1c8ca517b77ce4925"
+    },
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_case_03_native.mat",
+      "sha256": "e800ee5b1354ed4316b68a259dbd0a37604194a95e03f5b0a2932eff07117c03"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_case_01_native.mat",
+      "sha256": "9de3a47f9f91ffe8bf16524b0bebe75beabfd567636ac6f2eb8a6cfb5a44949f"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_case_02_native.mat",
+      "sha256": "a975d3b872b594f84de6b16c969b4012e8f3d725477a30410502fa1293cf0fa6"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_case_03_native.mat",
+      "sha256": "0a5e7ed68caf0677d5b96b8b3f619126c6e4c184f8c6e8b753e67332e0e788a9"
+    }
+  ]
+}

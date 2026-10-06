@@ -1,0 +1,30 @@
+{
+  "status": "selected_before_final_test",
+  "selectedGain": 1.0,
+  "selectionRule": "Among predeclared nonzero gains 0.25, 0.5, 1, minimize failures then worst full-native peak, then mean peak. Baseline remains an explicit comparator.",
+  "baselineWorstError_N": 0.3322381903886509,
+  "gains": [
+    {
+      "gain": 0.25,
+      "passed": 4,
+      "worstError_N": 0.33343821405729557,
+      "meanPeakError_N": 0.192242179210806
+    },
+    {
+      "gain": 0.5,
+      "passed": 4,
+      "worstError_N": 0.33409262823165875,
+      "meanPeakError_N": 0.19403840440931663
+    },
+    {
+      "gain": 1.0,
+      "passed": 4,
+      "worstError_N": 0.3306100389780511,
+      "meanPeakError_N": 0.201130595017879
+    }
+  ],
+  "selectionSupportsImprovement": true,
+  "allSelectionRecordingsIndependentOfTraining": true,
+  "calibrationStressUsedForSelection": false,
+  "finalHoldoutReadOrUsed": false
+}

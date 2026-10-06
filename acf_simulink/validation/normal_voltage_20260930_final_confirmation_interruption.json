@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-30",
+  "exitCode": 143,
+  "signal": "SIGTERM",
+  "cause": "Unknown; parent explicitly did not stop the process. RAM/swap pressure observed separately, not OOM proof.",
+  "durableConfigurations": 40,
+  "durableNativeSimulations": 40,
+  "durablePasses": 40,
+  "lastCheckpointElapsed_s": 430.977971,
+  "lastCompletedConfigurationId": 40,
+  "checkpointPath": "acf_simulink/validation/normal_voltage_20260930_final_confirmation.json",
+  "sourceArchive": "acf_simulink/validation/normal_voltage_20260930_interrupted_source",
+  "uncheckpointedNativeWork": "Unknown; not credited.",
+  "selectedTraceState": "In-memory illustrative traces were not saved before process termination."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "root_approved_launch_prepared",
+  "approvedRecipeSha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+  "approvedRecipe": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_inertial_mass_controller.m",
+  "immutableProposal": "/home/tommie/.local/state/actuator-model/final-grid-resume-proposal-20260930/qualify_inertial_mass_controller.m",
+  "approvedPlan": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_resume_plan.json",
+  "part": 1,
+  "reusedValidatedNativeRows": 275,
+  "newNativeCasesPlanned": 600,
+  "firstNewLocalCase": 276,
+  "firstNewGlobalCaseIndex": 1101,
+  "launchScript": "/home/tommie/.local/state/actuator-model/final-grid-part1-r2-20260930/launch_part1_r2.m",
+  "launchScriptSha256": "1c1e7a1ba7fad602ae9f0777606ececc9c5bb228e38e8a51f146177c04bbc2b6",
+  "preferenceFolder": "/home/tommie/.local/state/actuator-model/final-grid-part1-r2-20260930/prefs",
+  "batchLog": "/home/tommie/.local/state/actuator-model/final-grid-part1-r2-20260930/batch.log",
+  "scientificModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "transientSDIStorage": "unique per-process owned tempname under /dev/shm, marker checked before cleanup",
+  "approvalScope": "Root reviewed 258-line diff and approved reuse of1060 complete r1 rows and2440 remaining unique native identities. No source/control/helper/solver/acquisition changes."
+}

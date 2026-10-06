@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "kind": "historical_native_acquisition_comparison",
+  "rows": [
+    {
+      "converter": "ADS131M08",
+      "samplesPerSecond": 15000,
+      "responseCutoff_Hz": 8000,
+      "recordingLength_s": 30,
+      "cases": 4,
+      "passed": 4,
+      "worstNormalForceError_N": 0.4943162231423912,
+      "mechanics": "Earlier upper-rigid/lower-compliant reference"
+    },
+    {
+      "converter": "ADS131M08",
+      "samplesPerSecond": 30000,
+      "responseCutoff_Hz": 5100,
+      "recordingLength_s": 30,
+      "cases": 4,
+      "passed": 4,
+      "worstNormalForceError_N": 0.4513297997943013,
+      "mechanics": "Earlier upper-rigid/lower-compliant reference"
+    },
+    {
+      "converter": "ADS131M08",
+      "samplesPerSecond": 30000,
+      "responseCutoff_Hz": 8000,
+      "recordingLength_s": 30,
+      "cases": 4,
+      "passed": 4,
+      "worstNormalForceError_N": 0.43882082755963836,
+      "mechanics": "Earlier upper-rigid/lower-compliant reference"
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/budget_adc_long_summary_20261002.json": "f08d9bfe33039170b0bc6ef2ab32fbe952332846540e28d57b775ed923593dbc"
+  },
+  "scope": "Explains acquisition tradeoffs; does not qualify the newly fixed upper-spring/rigid-lower design"
+}

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790" role="img" aria-labelledby="acf_force_reconstruction-title acf_force_reconstruction-desc">
+  <title id="acf_force_reconstruction-title">From cell load to workpiece force</title>
+  <desc id="acf_force_reconstruction-desc">Tared multi-axis load and measured dynamic tool acceleration multiplied by known S mass are added to reconstruct the workpiece reaction vector. A causal observer uses S–A position, S acceleration and issued robot commands to estimate the surface normal. The reaction is projected onto that matched normal to obtain pressing-force feedback.</desc>
+  <defs>
+    <marker id="arrow-182b49" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#182b49" />
+    </marker>
+    <marker id="arrow-285cc5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#285cc5" />
+    </marker>
+    <marker id="arrow-087d80" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#087d80" />
+    </marker>
+    <marker id="arrow-7750af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7750af" />
+    </marker>
+    <marker id="arrow-9a5b0a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#9a5b0a" />
+    </marker>
+    <marker id="arrow-ae3f70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ae3f70" />
+    </marker>
+    <marker id="arrow-52647c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#52647c" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="790" fill="#ffffff" stroke="none" stroke-width="1.8" rx="0" />
+  <text x="48" y="62" fill="#182b49" font-size="34" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">From cell load to workpiece force</text>
+  <text x="48" y="99" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Combine measurements from the same time and coordinate frame</text>
+  <path d="M 350 214 L 590 214 L 590 258" fill="none" stroke="#ae3f70" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-ae3f70)" />
+  <path d="M 350 401 L 413 401" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 548 401 L 590 401 L 590 320" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <path d="M 622 289 L 695 289" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 915 353 L 915 480" fill="none" stroke="#285cc5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-285cc5)" />
+  <path d="M 550 558 L 695 558" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-087d80)" />
+  <rect x="50" y="155" width="300" height="124" fill="#fceef4" stroke="#ae3f70" stroke-width="1.8" rx="14" />
+  <rect x="50" y="168" width="5" height="98" fill="#ae3f70" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="189" fill="#ae3f70" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Multi-axis load cell</text>
+  <text x="72" y="221" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Consistent gravity tare</text>
+  <text x="72" y="249" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Measured load vector L</text>
+  <rect x="50" y="331" width="300" height="144" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="50" y="344" width="5" height="118" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="365" fill="#087d80" font-size="22" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Acceleration on S</text>
+  <text x="72" y="397" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Consistent gravity removal</text>
+  <text x="72" y="425" fill="#52647c" font-size="17" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Dynamic acceleration a</text>
+  <rect x="413" y="357" width="135" height="88" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="413" y="370" width="5" height="62" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="435" y="391" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">× mS</text>
+  <text x="435" y="423" fill="#52647c" font-size="16" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">known</text>
+  <circle cx="590" cy="289" r="31" fill="#ffffff" stroke="#285cc5" stroke-width="2.5" />
+  <text x="590" y="298" fill="#285cc5" font-size="32" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" xml:space="preserve">+</text>
+  <rect x="695" y="220" width="450" height="133" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="695" y="233" width="5" height="107" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="717" y="254" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Reconstruct reaction vector</text>
+  <text x="717" y="286" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">R̂ = Ltared + mS ameasured</text>
+  <text x="717" y="314" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Recover contact reaction and drag.</text>
+  <rect x="50" y="501" width="500" height="144" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="50" y="514" width="5" height="118" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="72" y="535" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Estimate surface normal</text>
+  <text x="72" y="567" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Position S–A + measured S acceleration</text>
+  <text x="72" y="595" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Robot predictor: commands already issued</text>
+  <text x="72" y="623" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">No bump profile or future motion input</text>
+  <rect x="695" y="480" width="450" height="156" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="695" y="493" width="5" height="130" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="717" y="514" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Project onto surface normal</text>
+  <text x="717" y="546" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">N̂ = n̂ · R̂</text>
+  <text x="717" y="574" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Use n̂ at the measurement timestamp.</text>
+  <text x="717" y="602" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">This is the force supplied to feedback.</text>
+  <text x="619" y="547" fill="#087d80" font-size="26" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="middle" xml:space="preserve">n̂</text>
+  <text x="939" y="421" fill="#285cc5" font-size="25" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">R̂</text>
+  <rect x="50" y="694" width="1095" height="57" fill="#f2f5f9" stroke="none" stroke-width="1.8" rx="14" />
+  <text x="73" y="731" fill="#182b49" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Static tare removes gravity. Dynamic inertia compensation still matters: up to 4.8 N at S = 2 kg.</text>
+</svg>

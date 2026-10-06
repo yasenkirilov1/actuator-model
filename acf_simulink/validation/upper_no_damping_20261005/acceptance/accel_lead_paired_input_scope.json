@@ -1,0 +1,16 @@
+{
+  "status": "all_prepared_lead_inputs_match_original_physics_and_sensing",
+  "comparedPreparedCases": 66,
+  "createdPhysicalEpisodes": 0,
+  "baselineConfigsSha256": "e3349508253f0d8291c13eb7717dd4a1d1d3c58150435c9da37146373aa3589b",
+  "candidateConfigsSha256": "545851d3b5f6a2f6413192d4585a19e2825d2cc69e44fce7f1cb5fc562d4784e",
+  "allChangedParameterPaths": [
+    "p.accelLead",
+    "p.d.accelLead",
+    "p.mechanicalStudy.controlDevelopmentLane",
+    "p.mechanicalStudy.gainID"
+  ],
+  "physicalAndSensingParametersExactlyEqual": true,
+  "allSixFiltersStableAndDCGainOne": true,
+  "comparison": "Exact recursive comparison against original profile1 cases0:10. No tolerance or omitted physical/sensor fields. The only changes are the declared filter and development metadata."
+}

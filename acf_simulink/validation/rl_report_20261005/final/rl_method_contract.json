@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "kind": "method_and_user_constraints",
+  "rows": [
+    {
+      "topic": "Task",
+      "value": "Best one causal recurrent learned policy for current and robot requests, reward-trained against native Simulink physical plant. Final finite fresh tests score actual surface-normal force on all native samples including startup."
+    },
+    {
+      "topic": "Travel objective",
+      "value": "Zero centering cost inside \u00b17.5 mm; increasing soft cost outside; physical stops unchanged."
+    },
+    {
+      "topic": "Physical stop travel",
+      "minimum_m": 0,
+      "maximum_m": 0.025,
+      "midpoint_m": 0.0125
+    },
+    {
+      "topic": "Unified policy",
+      "causalInputs": 40,
+      "derivedCausalProducts": 8,
+      "recurrentLayers": 2,
+      "statesPerLayer": 32,
+      "storedParameters": 8101
+    },
+    {
+      "topic": "Decision clocks",
+      "force_Hz": 10000,
+      "robot_Hz": 100,
+      "nativePhysics_Hz": 300000
+    },
+    {
+      "topic": "Action mapping",
+      "current": "Known static equilibrium + 2 A \u00d7 tanh(current output)",
+      "rawRobot_m_s": 0.01
+    },
+    {
+      "topic": "Inputs",
+      "value": "Timestamp-aligned force/acceleration/position observers, identified physical context, and robot commands already issued; no surface preview or plant truth."
+    },
+    {
+      "topic": "Selection ranking",
+      "value": [
+        "fewest physical failures",
+        "most complete full-recording force passes",
+        "lowest joint score",
+        "lowest worst normal-force error",
+        "lowest mean RMS"
+      ],
+      "score": "(worstForce_N/0.45)^2 + 0.02*mean((rmsForce_N/0.05)^2) + mean(integral((intervalPeakBandExcess_m/0.001)^2 dt)/duration_s) + 0.5*mean((finalBandExcess_m/0.001)^2)"
+    },
+    {
+      "topic": "Selected checkpoint",
+      "sha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef"
+    },
+    {
+      "topic": "Finite evidence",
+      "value": "Native simulation recordings; no physical prototype qualification or full uncertainty-box proof."
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/rl_budget3h_20261005/study_contract.json": "51783197a333ea813fc85a08fc8636889e659b1fd960136a3f4d56fbb58d1d60",
+    "acf_simulink/validation/rl_budget3h_20261005/selection_contract_band_v2.json": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+    "acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e"
+  },
+  "caveats": []
+}

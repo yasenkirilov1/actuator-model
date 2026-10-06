@@ -1,0 +1,60 @@
+{
+  "baselineTrace": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/traces/normal_contact_trial_001.mat",
+  "instrumentedV3Trace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v3_smoke/inertial_uncertainty_smoke_20260930_native_traces/case_0001.mat",
+  "scope": "Zero residual calibration smoke only; finite-cell notch and tolerance cases not executed here.",
+  "checks": {
+    "time": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "data": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "normalContact.time": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "normalContact.data": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "accelerometer.time": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "accelerometer.data": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "motionObserver.time": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "motionObserver.data": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "robotGate.time": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "robotGate.ready": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "robotGate.filteredError_N": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "robotGate.forceRate_N_s": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    },
+    "robotGate.stableNow": {
+      "bitwiseIdentical": true,
+      "maximumDifference": 0.0
+    }
+  },
+  "allBitwiseIdentical": true
+}

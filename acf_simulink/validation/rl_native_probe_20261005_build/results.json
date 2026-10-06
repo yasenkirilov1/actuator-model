@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-05",
+  "status": "private_native_build_rejected",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "selectedReferenceParameters": "hot32V calibrated source case1, ADC30k/matched8k,100us current target",
+  "attempts": [
+    {
+      "target": "grt.tlc",
+      "success": false,
+      "error": "Error using coder.internal.slBuildAll\nSimulink Coder is required for code generation, however it has not been\ninstalled. Please install Simulink Coder to generate code.\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.codegenAndCompile\n\nError in coder.internal.buildSimulinkModel\n\nError in slbuild\n\nError in slbuild\n\nError in rl_native_probe_20261005_build (line 42)\n  save_system(mdl,modelFile);slbuild(mdl);attempt.success=true;\n  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "elapsed_s": 2.357488
+    },
+    {
+      "target": "ert.tlc",
+      "success": false,
+      "error": "Error using coder.internal.slBuildAll\nSimulink Coder is required for code generation, however it has not been\ninstalled. Please install Simulink Coder to generate code.\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.slBuildAll\n\nError in coder.internal.codegenAndCompile\n\nError in coder.internal.buildSimulinkModel\n\nError in slbuild\n\nError in slbuild\n\nError in rl_native_probe_20261005_build (line 42)\n  save_system(mdl,modelFile);slbuild(mdl);attempt.success=true;\n  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "elapsed_s": 0.366886
+    }
+  ]
+}

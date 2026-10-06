@@ -1,0 +1,99 @@
+{
+  "status": "private_runnable_native_model_prepared_pending_acceptance",
+  "modelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/acf_force_control_fixed_upper_20261005.slx",
+  "modelSha256": "d7ab81f65a0ea9993307109a27cb27cb690d3fe13e071ebb6c59e1ba7e8efddc",
+  "sourceModelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/acf_rl_native.slx",
+  "sourceModelSha256": "f004fdd7034adde20feca245233cf710909ec7cf4c82da426ecebbb2b1581171",
+  "configsSha256": "067fd3c9e8232fd2300a3769d2e10101612e5b0fa9549daa35a28e074a777588",
+  "canonicalChanged": false,
+  "externalInputNeeded": false,
+  "baselineHardSelected": true,
+  "physicalPlantNative": true,
+  "algebraicLoopCount": 0,
+  "toolMass_kg": 1.4,
+  "holderMass_kg": 0.6,
+  "bodyMass_kg": 1.5,
+  "defaultForce_N": 20,
+  "defaultOrientation_deg": 45,
+  "defaultSeed": 761400,
+  "normalForceKp_A_N": 0.024590163934426229,
+  "normalForceKi_A_N_s": 16.393442622950822,
+  "modalVirtualDamping_Ns_m": 1500,
+  "namespaceOnlyHelperCopies": [
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_prepare.m",
+      "sourceSha256": "213df34746c2831a652b13601a653c6b1991ac40f938277f97b45b14295754db",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_prepare.m",
+      "targetSha256": "b8eedbc32a214bb7871a5aa3283267f919febbc935523f183f83a1cd9b2f9acb",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_adc_prepare.m",
+      "sourceSha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_adc_prepare.m",
+      "targetSha256": "1824aa920349ce3411aaa5decdc15cbad14784f347884dc81c37b60b7d1d86bc",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_prepare_baseline_v8.m",
+      "sourceSha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_prepare_baseline_v8.m",
+      "targetSha256": "5ba68f2ead88f35c6e1c30a59036a256570bd10b11ae611fe4eaa0e98213d5ce",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_prepare_upper_observer.m",
+      "sourceSha256": "4201190ab88e55d161fd5ef044fefe6b6627623eb63a4e14f18b6d1cc61778e7",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_prepare_upper_observer.m",
+      "targetSha256": "fc16f7a5dc1cd19be32c55d57e295c7841dfd1b64bf7cbabe92fcf5498ba3a15",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_prepare_cell_modal.m",
+      "sourceSha256": "1d61689ac9852c5017064d75c759cc750b01c925a8468fb8a8ec03e38157168e",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_prepare_cell_modal.m",
+      "targetSha256": "77386214c5059efd023ef9bbf960643517e3082202e9dc130f49f8387486d6df",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_select_actuator.m",
+      "sourceSha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_select_actuator.m",
+      "targetSha256": "5d76c86f9ce41f7ea065cda0fd1aa8d7687735a5fca7749c59b5e9667cf943a6",
+      "inverseNamespaceTransformationExact": true
+    },
+    {
+      "sourceFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/helpers/acf_select_controller.m",
+      "sourceSha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "targetFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/qualification_v8/runnable_model/helpers/acf_fixed_select_controller.m",
+      "targetSha256": "ac031acc9203d6d35605b58e120cf180be64fddd1577f1a8f587d3d490f9d55c",
+      "inverseNamespaceTransformationExact": true
+    }
+  ],
+  "deletedRootBlocks": [
+    "rl_current_request_A",
+    "rl_robot_correction_m_s",
+    "rl_baseline_mode",
+    "RL input tag 1",
+    "RL input tag 2",
+    "RL input tag 3",
+    "ADC acquisition diagnostics",
+    "Inertial sensor recordings"
+  ],
+  "deletedRobotExternalBranches": [
+    "Baseline or external robot",
+    "RL baseline mode",
+    "RL robot correction request",
+    "RL fresh 100 Hz robot request",
+    "RL hard sign and gain envelope",
+    "RL negative recenter envelope",
+    "RL positive recenter envelope"
+  ],
+  "prunedLoggingLeaves": [],
+  "diagnosticInterfaceWidths": [
+    18,
+    27,
+    3
+  ],
+  "qualificationEpisodes": 0
+}

@@ -1,0 +1,22 @@
+{
+  "status": "exact_diagnostic_replay_complete",
+  "scenario": 7,
+  "resultFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/evaluation/measured_force_endpoint_development_v3/case_0007/result.json",
+  "resultSha256": "3eff7b92229f8009b0311864fd563288d94296af94912d2b02136a2fd2944e73",
+  "nativeBuild": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3",
+  "nativeLibrarySha256": "f52520d1748d3f8293da0acdada8e0527715615b139a3e8bb09ed3f9d7d71ae9",
+  "nativeArrayHashesExact": true,
+  "qualificationCasesAdded": 0,
+  "diagnosticRate_Hz": 10000.0,
+  "samples": 20001,
+  "observationFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/diagnostics/observer_frame_case0007_v3_v2/observer_10kHz.npz",
+  "observationSha256": "7fa1317fc3d495006a1e5f5cb0800ab511addf0de8cbe504c525c2b5e580fea2",
+  "flatWindow_s": [
+    0.2,
+    0.95
+  ],
+  "flatEstimatedNormalErrorRms_N": 0.27323470644222697,
+  "flatEstimatedSlopeRms": 0.0039095877666143215,
+  "flatEstimatedSVelocityRms_m_s": 0.0003909587766614321,
+  "scope": "Full native force histories are identical to original scored case. Diagnostic estimates sampled each controller tick. No truth supplied to controller."
+}

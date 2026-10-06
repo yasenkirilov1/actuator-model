@@ -1,0 +1,12 @@
+INITIAL {"recordings": 48, "passed": 48, "physicalFailures": 0, "recenterFailures": 6, "meanRecenterProgressFraction": -83.05117703652523, "worstNormalForceError_N": 0.4100238807040668, "meanRmsNormalForceError_N": 0.03375466668830513, "nativeSamples": 28800000.0, "controllerDecisions": 960000.0, "eligibleRobotDecisions": 8991.0, "issuedRobotFrames": 779031.0, "elapsed_s": 38.83577476697974}
+GEN 1 best=0.060649032 current=0.060649032 sigma=0.14422 peak=0.181734 failures=0 seconds=78.729
+SELECT {"recordings": 16, "passed": 16, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": -0.44396230536595116, "worstNormalForceError_N": 0.4399903322004022, "meanRmsNormalForceError_N": 0.04100150030487097, "nativeSamples": 9600000.0, "controllerDecisions": 320000.0, "eligibleRobotDecisions": 2804.0, "issuedRobotFrames": 239481.0, "proposal": "generation_best", "generation": 1, "trainingBestGeneration": 1, "rank": [0, 0, -16, 0.4399903322004022, 0.04100150030487097]}
+GEN 2 best=0.088389769 current=0.088389769 sigma=0.13996 peak=0.369139 failures=0 seconds=144.879
+GEN 3 best=0.078389165 current=0.078389165 sigma=0.13717 peak=0.349018 failures=0 seconds=184.906
+GEN 4 best=0.11079561 current=0.11079561 sigma=0.14068 peak=0.409896 failures=0 seconds=225.197
+GEN 5 best=0.096949659 current=0.096949659 sigma=0.14586 peak=0.409442 failures=0 seconds=265.272
+SELECT {"recordings": 16, "passed": 16, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": -0.3621978181249973, "worstNormalForceError_N": 0.4401252099136741, "meanRmsNormalForceError_N": 0.04058954524995466, "nativeSamples": 9600000.0, "controllerDecisions": 320000.0, "eligibleRobotDecisions": 2911.0, "issuedRobotFrames": 248688.0, "proposal": "distribution_mean", "generation": 5, "trainingBestGeneration": 5, "rank": [0, 0, -16, 0.4401252099136741, 0.04058954524995466]}
+GEN 6 best=0.083695241 current=0.083695241 sigma=0.15241 peak=0.34073 failures=0 seconds=332.706
+GEN 7 best=0.089352355 current=0.089352355 sigma=0.15705 peak=0.370126 failures=0 seconds=374.526
+GEN 8 best=0.037914025 current=0.037914025 sigma=0.15844 peak=0.190322 failures=0 seconds=415.405
+GEN 9 best=0.047457868 current=0.047457868 sigma=0.15977 peak=0.207928 failures=0 seconds=456.085

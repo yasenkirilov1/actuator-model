@@ -1,0 +1,9 @@
+{
+  "status": "rejected_controller_wiring_implementation",
+  "candidate": "native",
+  "forceQualificationValid": false,
+  "cause": "Root-local measured_force_N tag was not visible inside nested observer. Generated C selected only Bias -Fref, injecting false constant force. Permitted tag enumeration did not prove a live selected source.",
+  "preservedPhysicalRecordings": "evaluation/measured_force_endpoint_development_v1",
+  "correctedCandidate": "native_cellsource_v2",
+  "requiredAcceptance": "Explicit local acquired cell-deviation subsystem wire; numerical zero and +/-1N error perturbation sign guard before export; generated C measured-signal term; independent saved graph audit."
+}

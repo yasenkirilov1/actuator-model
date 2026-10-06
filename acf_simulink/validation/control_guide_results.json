@@ -1,0 +1,9 @@
+{
+  "strategy": "Proportional force plus holding feedforward",
+  "forceKp": 0.04,
+  "forceKi": 0,
+  "antiWindupRate": 0,
+  "baselinePeakError_N": 0.082827734250024321,
+  "candidatePeakError_N": 0.11566401534524218,
+  "candidatePassed": true
+}

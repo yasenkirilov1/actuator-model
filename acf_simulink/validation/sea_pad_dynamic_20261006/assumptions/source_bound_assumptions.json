@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "readDate": "2026-10-06",
+  "status": "source_bound_engineering_assumptions_no_simulation",
+  "nativeExperiments": 0,
+  "physicalMeasurements": 0,
+  "scope": "First-prototype total axial pressing force from one-axis B-S cell plus S acceleration; sanding drag ignored; no local-pressure objective or results",
+  "sources": [
+    {
+      "id": "re35",
+      "title": "RE35 273757",
+      "url": "https://www.maxongroup.com/maxon/view/product/motor/dcmotor/re/re35/273757",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "ec_i30",
+      "title": "EC-i30 539489",
+      "url": "https://www.maxongroup.com/maxon/view/product/539489",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "re25",
+      "title": "RE25 302005",
+      "url": "https://www.maxongroup.com/maxon/view/product/302005",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "motor_simulation",
+      "title": "Motor data and simulation",
+      "url": "https://support.maxongroup.com/hc/en-us/articles/360013761160-Motor-data-and-simulation",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "commutation",
+      "title": "Strength of BLDC EC motor with sinusoidal commutation",
+      "url": "https://support.maxongroup.com/hc/en-us/articles/360006288554-Strength-of-BLDC-EC-motor-with-sinusoidal-commutation",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "ec_catalogue",
+      "title": "EC-i30 catalogue page305 March2025",
+      "url": "https://www.maxongroup.com/medias/sys_master/root/9402695286814/Cataloge-Page-EN-305.pdf",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool",
+      "file": "maxon-ec-i30-539489-catalogue-2025.pdf",
+      "sha256": "134e61f4a6a8d04eb88908f538b2c91010a0b431d8706c0f6297b0df9d23ab32"
+    },
+    {
+      "id": "mirka_5mm",
+      "title": "Interface77mm6holes Grip",
+      "url": "https://www.mirka.com/cs-CZ/p/Interface-77---6-GRIP/?variant=94118",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "mirka_10mm",
+      "title": "Interface Pad3inch Grip",
+      "url": "https://www.mirka.com/en-ca/p/Interface-77---NONE-GRIP/",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "mirka_catalogue",
+      "title": "Tools for Sanding and Polishing brochure",
+      "url": "https://www.mirka.com/SharePoint/Marketing/Communications/WebContent/MSF_Printed_material/Tools%20for%20Sanding%20and%20Polishing/Tools%20for%20Sanding%20and%20Polishing%20brochure%20English.pdf",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "thk",
+      "title": "Ball-screw conversion efficiency FAQ",
+      "url": "https://www.thk.com/jp/en/products/faq/ball_screw/-/0089/modal.html",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "poron_general",
+      "title": "PORON4701-30 Very Soft publication17-006, July2023",
+      "url": "https://www.rogerscorp.com/-/media/project/rogerscorp/documents/elastomeric-material-solutions/poron/english/data-sheets/17-006-poron-4701-30-very-soft.pdf",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    },
+    {
+      "id": "poron_curve",
+      "title": "PORON4701-30 ideal CFD battery-pad curves publication17-388, July2023",
+      "url": "https://www.rogerscorp.com/-/media/project/rogerscorp/documents/elastomeric-material-solutions/poron/english/data-sheets/17-388-ideal-cfd-curves-for-battery-pad-applications-poron-4701-30-very-soft.pdf",
+      "readDate": "2026-10-06",
+      "method": "Official manufacturer source inspected with web tool"
+    }
+  ],
+  "motors": [
+    {
+      "id": "RE35_273757",
+      "sourceId": "re35",
+      "architecture": "brushed coreless DC",
+      "role": "adopted primary diagnostic motor",
+      "catalogueStatus": "NRND; motor-sized reference, not purchasing recommendation",
+      "nominalVoltage_V": 48,
+      "Kt_Nm_A": 0.0758,
+      "Ke_V_s_rad": 0.0758,
+      "R25_ohm": 4.68,
+      "L1kHz_H": 0.00129,
+      "Jrot_kg_m2": 6.54e-06,
+      "mass_kg": 0.34,
+      "continuousTorque_Nm": 0.104,
+      "continuousCurrent_A": 1.42,
+      "noLoadCurrent_A": 0.046,
+      "noLoadSpeed_rpm": 5990,
+      "nominalSpeed_rpm": 5160,
+      "maxSpeed_rpm": 12000,
+      "maxWindingTemperature_C": 155,
+      "RthHousingAmbient_K_W": 6.2,
+      "RthWindingHousing_K_W": 2,
+      "windingTimeConstant_s": 27.2,
+      "motorTimeConstant_s": 707,
+      "currentConvention": "Actual two-terminal armature current"
+    },
+    {
+      "id": "ECi30_539489",
+      "sourceId": "ec_i30",
+      "architecture": "three-phase iron-wound brushless, Hall sensors, four pole pairs",
+      "role": "source-bound future low-inertia option; not executed adopted plant",
+      "nominalVoltage_V": 48,
+      "Kt_Nm_A": 0.0554,
+      "equivalentKe_V_s_rad": 0.0554,
+      "R25_ohm": 1.39,
+      "L1kHz_H": 0.00146,
+      "Jrot_kg_m2": 1.55e-06,
+      "mass_kg": 0.242,
+      "continuousTorque_Nm": 0.103,
+      "continuousCurrent_A": 1.82,
+      "noLoadCurrent_A": 0.119,
+      "noLoadSpeed_rpm": 8210,
+      "nominalSpeed_rpm": 7150,
+      "maxSpeed_rpm": 10000,
+      "maxWindingTemperature_C": 155,
+      "RthHousingAmbient_K_W": 9.01,
+      "RthWindingHousing_K_W": 2.46,
+      "windingTimeConstant_s": 30.9,
+      "motorTimeConstant_s": 1090,
+      "currentConvention": "Catalogue block current in each commutation interval; Kt gives average block torque; R/L are phase-to-phase",
+      "linkedCatalogueDifferences": {
+        "R25_ohm": 1.37,
+        "continuousTorque_Nm": 0.104,
+        "continuousCurrent_A": 1.84,
+        "windingTimeConstant_s": 31.3,
+        "sourceId": "ec_catalogue",
+        "selection": "Use live-page values consistently; do not mix revisions"
+      }
+    },
+    {
+      "id": "RE25_302005",
+      "sourceId": "re25",
+      "architecture": "brushed coreless DC",
+      "role": "historical smaller comparison only",
+      "catalogueStatus": "NRND reference",
+      "nominalVoltage_V": 24,
+      "Kt_Nm_A": 0.0234,
+      "Ke_V_s_rad": 0.0234,
+      "R25_ohm": 2.32,
+      "L1kHz_H": 0.000238,
+      "Jrot_kg_m2": 1.08e-06,
+      "mass_kg": 0.13,
+      "continuousTorque_Nm": 0.0263,
+      "continuousCurrent_A": 1.16,
+      "noLoadCurrent_A": 0.0369,
+      "noLoadSpeed_rpm": 9560,
+      "maxWindingTemperature_C": 125
+    }
+  ],
+  "staticMotorSizing": [
+    {
+      "motorId": "RE35_273757",
+      "lead_mm_rev": 5.0,
+      "ell_m_rad": 0.0007957747154594768,
+      "totalRotaryInertia_kg_m2": 7.04e-06,
+      "reflectedInertiaAtNut_kg": 11.117122397387051,
+      "ideal50NCurrent_A": 0.5249173584825044,
+      "holding50NCurrent90PercentSizing_A": 0.5832415094250049,
+      "continuousAxialForce90PercentSizing_N": 117.62122895040184,
+      "static50NCurrentPassBeforeExtraLoss": true,
+      "static50NTorquePassBeforeExtraLoss": true,
+      "cold50NCopper_W": 1.5919986809205553
+    },
+    {
+      "motorId": "RE35_273757",
+      "lead_mm_rev": 10.0,
+      "ell_m_rad": 0.0015915494309189536,
+      "totalRotaryInertia_kg_m2": 7.04e-06,
+      "reflectedInertiaAtNut_kg": 2.779280599346763,
+      "ideal50NCurrent_A": 1.0498347169650089,
+      "holding50NCurrent90PercentSizing_A": 1.1664830188500097,
+      "continuousAxialForce90PercentSizing_N": 58.81061447520092,
+      "static50NCurrentPassBeforeExtraLoss": true,
+      "static50NTorquePassBeforeExtraLoss": true,
+      "cold50NCopper_W": 6.367994723682221
+    },
+    {
+      "motorId": "ECi30_539489",
+      "lead_mm_rev": 5.0,
+      "ell_m_rad": 0.0007957747154594768,
+      "totalRotaryInertia_kg_m2": 2.05e-06,
+      "reflectedInertiaAtNut_kg": 3.237230243557309,
+      "ideal50NCurrent_A": 0.7182082269489862,
+      "holding50NCurrent90PercentSizing_A": 0.7980091410544291,
+      "continuousAxialForce90PercentSizing_N": 116.4902555951095,
+      "static50NCurrentPassBeforeExtraLoss": true,
+      "static50NTorquePassBeforeExtraLoss": true,
+      "cold50NCopper_W": 0.8851778389969345
+    },
+    {
+      "motorId": "ECi30_539489",
+      "lead_mm_rev": 10.0,
+      "ell_m_rad": 0.0015915494309189536,
+      "totalRotaryInertia_kg_m2": 2.05e-06,
+      "reflectedInertiaAtNut_kg": 0.8093075608893272,
+      "ideal50NCurrent_A": 1.4364164538979725,
+      "holding50NCurrent90PercentSizing_A": 1.5960182821088582,
+      "continuousAxialForce90PercentSizing_N": 58.24512779755475,
+      "static50NCurrentPassBeforeExtraLoss": true,
+      "static50NTorquePassBeforeExtraLoss": true,
+      "cold50NCopper_W": 3.540711355987738
+    },
+    {
+      "motorId": "RE25_302005",
+      "lead_mm_rev": 5.0,
+      "ell_m_rad": 0.0007957747154594768,
+      "totalRotaryInertia_kg_m2": 1.5800000000000001e-06,
+      "reflectedInertiaAtNut_kg": 2.4950359925953896,
+      "ideal50NCurrent_A": 1.7003733236313605,
+      "holding50NCurrent90PercentSizing_A": 1.889303692923734,
+      "continuousAxialForce90PercentSizing_N": 29.74459924418816,
+      "static50NCurrentPassBeforeExtraLoss": false,
+      "static50NTorquePassBeforeExtraLoss": false,
+      "cold50NCopper_W": 8.281166790300999
+    },
+    {
+      "motorId": "RE25_302005",
+      "lead_mm_rev": 10.0,
+      "ell_m_rad": 0.0015915494309189536,
+      "totalRotaryInertia_kg_m2": 1.5800000000000001e-06,
+      "reflectedInertiaAtNut_kg": 0.6237589981488474,
+      "ideal50NCurrent_A": 3.400746647262721,
+      "holding50NCurrent90PercentSizing_A": 3.778607385847468,
+      "continuousAxialForce90PercentSizing_N": 14.87229962209408,
+      "static50NCurrentPassBeforeExtraLoss": false,
+      "static50NTorquePassBeforeExtraLoss": false,
+      "cold50NCopper_W": 33.124667161203995
+    }
+  ],
+  "recommendation": "Use adequately sized RE35 terminal-DC motor for adopted SEA diagnostic. Keep explicit independent rotor/nut states. EC-i30 is an unexecuted future option; RE25 is an undersized historical comparator.",
+  "drive": {
+    "assumedPeakCurrentLimit_A": 3.5,
+    "assumedUsableBipolarTerminalVoltage_V": 48,
+    "assumedCurrentResponseTarget_s": 5e-05,
+    "peakStatus": "3.5A is an assumed bounded driver limit, not motor continuous rating or established allowable peak duration",
+    "responseStatus": "Servo target subject to computed L*di/dt voltage clipping and installed measurement; not passive L/R",
+    "hotResistanceIfUsed": "Rhot=R25*(1+0.0039*100) is an assumed100C temperature rise, not a measured hot rating",
+    "heating": "Report measured model RMS current and copper loss separately from short transient force passes; continuous torque/current ratings do not validate this mounting/cooling",
+    "inductance": "Catalogue stationary1kHz measurement. Manufacturer says effective PWM inductance may be30\u201380percent of catalogue. Use catalogueL as a declared slew assumption, not identified driver phase response",
+    "ecCaveat": "EC catalogue constants/current apply to average block commutation. Supply current and FOC sinusoidal phase amplitude differ; no ripple/cogging/commutation model is established by the equivalent DC equations"
+  },
+  "screw": {
+    "transmission": "Efficient reversible ball-screw reference with no gearbox; generic sliding/trapezoidal leadscrew needs a separately identified loss/self-locking model",
+    "leadSweep_mm_rev": [
+      5,
+      10
+    ],
+    "efficiencyRole": "90percent is static sizing only, supported by THK ball-screw FAQ. Native dynamics should use reversible pitch mapping and explicit passive torque/guide loss, not a sign-independent efficiency multiplier",
+    "assumedScrewCouplerInertia_kg_m2": 5e-07,
+    "geometrySanity": {
+      "shaftDiameter_m": 0.008,
+      "shaftLength_m": 0.1,
+      "steelDensityAssumed_kg_m3": 7850,
+      "shaftMass_kg": 0.0394584037290878,
+      "shaftPolarInertia_kg_m2": 3.156672298327024e-07,
+      "status": "Order-of-magnitude check, not purchased screw inertia; actual root/journals/length/coupling change it"
+    },
+    "assumedAdditionalNutGuidedCarriageMass_kg": 0.075,
+    "carriageRange_kg": [
+      0.05,
+      0.1
+    ],
+    "carriageStatus": "Explicit added translating mass, not measured. Do not hide it in B or add rotary inertia to B",
+    "bearings": "Use dedicated axial screw-support/thrust bearings; small motor-shaft axial ratings are below50N",
+    "losses": "No-load current at high catalog speed identifies combined loss only. Coulomb/viscous/stiction split at our lower speed remains an engineering assumption pending identification",
+    "bodyMass": "Motor belongs in A. Matched A=1.5kg must include stated motor and remaining mount/ballast, not silently assume screw has same body mass as coil"
+  },
+  "pad": {
+    "diameter_m": 0.077,
+    "geometryReferences": [
+      {
+        "sourceId": "mirka_5mm",
+        "part": "8294700111",
+        "diameter_m": 0.077,
+        "thickness_m": 0.005,
+        "holes": 6
+      },
+      {
+        "sourceId": "mirka_10mm",
+        "part": "1033",
+        "diameter_m": 0.077,
+        "thickness_m": 0.01,
+        "holes": 0
+      }
+    ],
+    "rows": [
+      {
+        "kEffective_N_m": 20000,
+        "thickness_m": 0.01,
+        "compressionAt5N_m": 0.00025,
+        "compressionAt50N_m": 0.0025,
+        "maximumWorkingCompression_m": 0.005,
+        "fractionAt50N": 0.25,
+        "flat50NWithinWorkingRange": true,
+        "dampingSensitivity_N_s_m": [
+          0,
+          40,
+          80,
+          150
+        ]
+      },
+      {
+        "kEffective_N_m": 50000,
+        "thickness_m": 0.005,
+        "compressionAt5N_m": 0.0001,
+        "compressionAt50N_m": 0.001,
+        "maximumWorkingCompression_m": 0.0025,
+        "fractionAt50N": 0.2,
+        "flat50NWithinWorkingRange": true,
+        "dampingSensitivity_N_s_m": [
+          0,
+          40,
+          80,
+          150
+        ]
+      },
+      {
+        "kEffective_N_m": 100000,
+        "thickness_m": 0.005,
+        "compressionAt5N_m": 5e-05,
+        "compressionAt50N_m": 0.0005,
+        "maximumWorkingCompression_m": 0.0025,
+        "fractionAt50N": 0.1,
+        "flat50NWithinWorkingRange": true,
+        "dampingSensitivity_N_s_m": [
+          0,
+          40,
+          80,
+          150
+        ]
+      }
+    ],
+    "mechanicalPropertyStatus": "Whole-pad equivalent k/c sweep is representative engineering sensitivity, NOT measured Mirka stiffness/damping. Reviewed manufacturer pages list geometry/use, no dynamic k/c",
+    "materialPlausibility": {
+      "sourceId": "poron_general",
+      "material": "PORON4701-30 Very Soft,240kg/m3 nominal density grade; not Mirka pad material",
+      "manufacturerStockThicknessRange_m": [
+        0.00478,
+        0.0127
+      ],
+      "compressionForceDeflectionRangeAt25Percent_kPa": [
+        7,
+        35
+      ],
+      "testCrossheadSpeed_m_min": 0.0051,
+      "diskDiameterAssumption_m": 0.077,
+      "fullUnperforatedDiskArea_m2": 0.004656625710783471,
+      "conversion": "k_secant = manufacturer bulk compression stress * assumed disk area / (compression fraction * assumed thickness)",
+      "secantKAt25Percent_N_mm": [
+        {
+          "thickness_m": 0.005,
+          "low": 26.077103980387438,
+          "high": 130.3855199019372
+        },
+        {
+          "thickness_m": 0.01,
+          "low": 13.038551990193719,
+          "high": 65.1927599509686
+        }
+      ],
+      "limits": "Quasistatic bulk-material plausibility only, not tangent/dynamic stiffness, manufacturer sanding-pad specification, local-pressure analysis or a guarantee across amplitude/frequency"
+    },
+    "nonlinearityExample": {
+      "sourceId": "poron_curve",
+      "density_kg_m3": 240,
+      "stockThicknessRange_m": [
+        0.0013,
+        0.003
+      ],
+      "compressionFractions": [
+        0.25,
+        0.5,
+        0.6,
+        0.7
+      ],
+      "bulkCFD_kPa": [
+        21.6,
+        42.1,
+        68.3,
+        149.0
+      ],
+      "status": "Different thin battery-pad construction; illustrative material nonlinearity, not exact5/10mm sanding pad",
+      "limits": "Datasheet typical values are not specification limits; no dynamic damping coefficient is identified"
+    },
+    "damping": "Every nonzero c remains unvalidated material sensitivity; c=0 is a lossless counterfactual. Fit installed frequency/amplitude-dependent response before prototype claims",
+    "compressionGuard": "Stop/flag validity beyond50percent thickness. A positive force from extrapolated linear elasticity is not a valid pad beyond its declared working range",
+    "footprint": "Sum only compressive local-contact contributions before reporting total axial force. Clipping an already averaged height is not equivalent in partial contact. Do not publish local-pressure scores",
+    "causality": "Plant surface truth is unavailable to controller; controller inputs are acquired force, S acceleration, relative position and already-issued robot commands",
+    "omissions": [
+      "Nonlinear compression/hysteresis/creep/temperature/aging",
+      "Holes, hook-and-loop, abrasive and local workpiece compliance",
+      "Pad orbit/spin, distributed inertia and flexural modes",
+      "Unknown sanding drag deferred by prototype scope"
+    ]
+  },
+  "internalSEASprings": {
+    "purpose": "Opposed pair free-length/force bookkeeping only; not a qualified coil-spring design",
+    "upperSpringChanged": false,
+    "externalB_SChanged": false,
+    "assumedDamping_N_s_m": 0,
+    "rows": [
+      {
+        "netRate_N_m": 3500,
+        "individualRate_N_m": 1750.0,
+        "individualFreeLength_m": 0.05,
+        "nominalInstalledLength_m": 0.025,
+        "assumedMinInstalledLength_m": 0.008,
+        "assumedMaxInstalledLength_m": 0.042,
+        "combinedFreeLength_m": 0.1,
+        "individualNominalPreload_N": 43.75,
+        "signedTravelBookkeeping_m": 0.017,
+        "signedNetForceAtLimit_N": 59.50000000000001,
+        "individualForceRangeAtLimit_N": [
+          14.0,
+          73.5
+        ],
+        "actualSpringGeometryAndStressQualified": false
+      },
+      {
+        "netRate_N_m": 5000,
+        "individualRate_N_m": 2500.0,
+        "individualFreeLength_m": 0.05,
+        "nominalInstalledLength_m": 0.025,
+        "assumedMinInstalledLength_m": 0.008,
+        "assumedMaxInstalledLength_m": 0.042,
+        "combinedFreeLength_m": 0.1,
+        "individualNominalPreload_N": 62.5,
+        "signedTravelBookkeeping_m": 0.017,
+        "signedNetForceAtLimit_N": 85.0,
+        "individualForceRangeAtLimit_N": [
+          20.0,
+          105.0
+        ],
+        "actualSpringGeometryAndStressQualified": false
+      },
+      {
+        "netRate_N_m": 10000,
+        "individualRate_N_m": 5000.0,
+        "individualFreeLength_m": 0.05,
+        "nominalInstalledLength_m": 0.025,
+        "assumedMinInstalledLength_m": 0.008,
+        "assumedMaxInstalledLength_m": 0.042,
+        "combinedFreeLength_m": 0.1,
+        "individualNominalPreload_N": 125.0,
+        "signedTravelBookkeeping_m": 0.017,
+        "signedNetForceAtLimit_N": 170.0,
+        "individualForceRangeAtLimit_N": [
+          40.0,
+          210.0
+        ],
+        "actualSpringGeometryAndStressQualified": false
+      }
+    ],
+    "verification": "Check actual solid height, wire/diameter/turn count, stress/fatigue, buckling guidance, seats and frame flexibility.50mm free and8mm minimum do not establish manufacturability at these loads",
+    "topology": "Internal nut-to-B spring, not prescribed R-A upper spring or external B-S connection; rotor inertia acts at independent nut coordinate"
+  },
+  "storage": {
+    "retainedBytesUpperBound": 200000,
+    "temporaryBytesUpperBound": 300000,
+    "newExperimentArrayBytes": 0,
+    "sharedArrayBudget_GiB": 5,
+    "freeSpaceChecked": "df -h . showed362GiB available before writing on2026-10-06; root audits shared arrays",
+    "owner": "sea_pad_assumptions"
+  }
+}

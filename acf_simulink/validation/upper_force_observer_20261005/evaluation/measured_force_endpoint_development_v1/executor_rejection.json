@@ -1,0 +1,20 @@
+{
+  "status": "partial_attempt_storage_rejected",
+  "reason": "2 GiB free-space guard stopped history retention; preserve completed case files and exclude this partial attempt from complete-cohort claims.",
+  "requestedCases": 24,
+  "completedAndRetainedCases": 8,
+  "completedCaseIDs": [
+    2,
+    5,
+    6,
+    7,
+    13,
+    16,
+    17,
+    18
+  ],
+  "finalResultFileAbsent": true,
+  "recovery": "Further runs use a new output directory after byte-verified archival of owned histories to the secondary SSD.",
+  "controllerImplementationRejected": true,
+  "controllerRejectionReason": "Native Cell force deviation compiled to constant minus Fref because measured_force_N path was grounded. Candidate does not implement the declared measured-force observer; preserve outputs as implementation failure evidence, not design qualification."
+}

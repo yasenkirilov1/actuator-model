@@ -1,0 +1,58 @@
+{
+  "version": "inertial-v3-helpers1",
+  "scope": "Interface smoke checks, not selected controller qualification",
+  "rows": [
+    {
+      "caseIndex": 1,
+      "label": "coil PID on common normal measurement",
+      "status": "native_executed",
+      "strategy": "pid",
+      "actuator": "voice_coil",
+      "lowerRigid": true,
+      "upperRigid": true,
+      "effectiveLowerStiffness_N_m": 0,
+      "effectiveUpperStiffness_N_m": 0,
+      "peakNormalError_N": 0.40059500601307718,
+      "contactLoss": false,
+      "strokeStop": false,
+      "duration_s": 4,
+      "rejection": "",
+      "traceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-usability-20260930/normal_contact_trial_inertial_usability_01.mat"
+    },
+    {
+      "caseIndex": 2,
+      "label": "coil PI with acceleration feedforward disabled",
+      "status": "native_executed",
+      "strategy": "pi",
+      "actuator": "voice_coil",
+      "lowerRigid": true,
+      "upperRigid": true,
+      "effectiveLowerStiffness_N_m": 0,
+      "effectiveUpperStiffness_N_m": 0,
+      "peakNormalError_N": 1.2492242069967858,
+      "contactLoss": false,
+      "strokeStop": false,
+      "duration_s": 4,
+      "rejection": "",
+      "traceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-usability-20260930/normal_contact_trial_inertial_usability_02.mat"
+    },
+    {
+      "caseIndex": 3,
+      "label": "existing compliant-preset screw normal PI",
+      "status": "native_executed",
+      "strategy": "pi",
+      "actuator": "leadscrew",
+      "lowerRigid": false,
+      "upperRigid": false,
+      "effectiveLowerStiffness_N_m": 19746,
+      "effectiveUpperStiffness_N_m": 19746,
+      "peakNormalError_N": 6.7280774982924072,
+      "contactLoss": false,
+      "strokeStop": false,
+      "duration_s": 4,
+      "rejection": "",
+      "traceFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-usability-20260930/normal_contact_trial_inertial_usability_03.mat"
+    }
+  ],
+  "diagramFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-usability-20260930"
+}

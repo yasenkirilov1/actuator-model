@@ -1,0 +1,32 @@
+{
+  "status": "prepared_input_bytes_verified_not_experiments",
+  "caseCount": 36,
+  "optionalCaseCount": 4,
+  "files": [
+    {
+      "file": "configs.mat",
+      "bytes": 1577047,
+      "sha256": "0b17973c3079ef903414676527278499f4db5c60a0c9cf1f0cc89dff7527e697"
+    },
+    {
+      "file": "optional_adxl355_configs.mat",
+      "bytes": 175818,
+      "sha256": "222db138b5ae10df28204cc5d2a920684ce23a20d986500a11804e00a2c5464f"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 40589,
+      "sha256": "53b1a709626af3302946015b2c332bae36a9eb67db064c0c3b16e8cde00bf653"
+    },
+    {
+      "file": "prepare_budget_accelerometer_envelopes_20261002.m",
+      "bytes": 10912,
+      "sha256": "a59778ddfb83cc63a5c8fb9f11c5050a944fcadeff79ea267f700a6805b10d48"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3947,
+      "sha256": "0c355825689e06d39d29f4791c238de341780db443b3c695f43af85708413bf6"
+    }
+  ]
+}

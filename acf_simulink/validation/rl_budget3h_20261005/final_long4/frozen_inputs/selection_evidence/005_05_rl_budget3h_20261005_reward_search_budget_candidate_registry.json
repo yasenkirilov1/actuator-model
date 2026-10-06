@@ -1,0 +1,117 @@
+{
+  "status": "budget_selection_locked_before_final_tests",
+  "lockedUtc": "2026-10-05T15:28:06.817010+00:00",
+  "nativeLibrary": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50/libacf_native.so",
+  "nativeLibrarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+  "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget",
+  "sourceManifestSha256": "0f7df82c5f1adfeeace145d8f067e3bc02adddef210fb9def73fc032787f5221",
+  "candidates": [
+    {
+      "name": "history_0p25",
+      "method": "Reward-selected linearized-DC-preserving history attenuation of previously evolved weights; no new CMA update.",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25",
+      "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25/policy_checkpoint.pt",
+      "checkpointSha256": "23070fac00d3ae0da8a8444e471e3a37e90eee7f720f2103efd030108aa37b8e",
+      "flatWeightsSha256": "c6ac8fa6e4b2d09a07e2a4f94b7cc7a362d1ece0ad01adeff8a4719ca6883681",
+      "rank": [
+        0,
+        -28,
+        1.122926235436369,
+        0.45975827862731933,
+        0.04577852631272289
+      ],
+      "selectionRecordings": 28,
+      "selectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+      "selectionEvidenceSha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+      "selectionEntry": {
+        "name": "history_0p25",
+        "split": "selection"
+      },
+      "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget"
+    },
+    {
+      "name": "history_0p5",
+      "method": "Reward-selected linearized-DC-preserving history attenuation of previously evolved weights; no new CMA update.",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5",
+      "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_checkpoint.pt",
+      "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+      "flatWeightsSha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+      "rank": [
+        0,
+        -28,
+        1.1018482864130625,
+        0.4540594764313681,
+        0.047018795619866396
+      ],
+      "selectionRecordings": 28,
+      "selectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+      "selectionEvidenceSha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+      "selectionEntry": {
+        "name": "history_0p5",
+        "split": "selection"
+      },
+      "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget"
+    },
+    {
+      "name": "budget_cma_8211_selected",
+      "method": "Reward-only constrained CMA refinement, 37 independent directions; initial generation zero is inherited bootstrap if selected.",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001",
+      "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001/policy_checkpoint.pt",
+      "checkpointSha256": "e1c98ad22edeca8f528f7d5e3d293060a1f207797b331acf1ca1e13f5790778d",
+      "flatWeightsSha256": "ead2c5c03b37f34d37025cedf1619e7a65c9a2af823b1d99a9a3f59caca86847",
+      "rank": [
+        0,
+        -28,
+        1.1133142064268837,
+        0.45730204269547414,
+        0.046326341651007005
+      ],
+      "generation": 1,
+      "selectionRecordings": 28,
+      "selectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selection.json",
+      "selectionEvidenceSha256": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+      "selectionEntry": {
+        "generation": 1
+      },
+      "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget"
+    }
+  ],
+  "selectedLearnedController": {
+    "name": "history_0p5",
+    "method": "Reward-selected linearized-DC-preserving history attenuation of previously evolved weights; no new CMA update.",
+    "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5",
+    "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5/policy_checkpoint.pt",
+    "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+    "flatWeightsSha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+    "rank": [
+      0,
+      -28,
+      1.1018482864130625,
+      0.4540594764313681,
+      0.047018795619866396
+    ],
+    "selectionRecordings": 28,
+    "selectionEvidence": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json",
+    "selectionEvidenceSha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+    "selectionEntry": {
+      "name": "history_0p5",
+      "split": "selection"
+    },
+    "sourceDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/executors/v7_budget"
+  },
+  "baselineSelection": {
+    "rank": [
+      0,
+      -28,
+      1.1193117358573328,
+      0.4636818932983999,
+      0.025406692319346162
+    ],
+    "recordings": 28,
+    "passed": 28,
+    "physicalFailures": 0,
+    "worstNormalForceError_N": 0.4636818932983999,
+    "meanRmsNormalForceError_N": 0.025406692319346162
+  },
+  "scope": "All candidates ranked on the same 28 budget development cases. No final-case outcomes were inspected. The original checkpoint and provenance are preserved."
+}

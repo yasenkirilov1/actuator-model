@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Headgapandvelocityobserver_A",
+    "expr": "p.d.toolMotionObserver.A",
+    "kind": "nonzero_value",
+    "codegen": [
+      0.950360913568886,
+      0.0001,
+      -6.160097254289023,
+      1.0
+    ],
+    "bank": [
+      0.950360913568886,
+      -6.160097254289023,
+      0.0001,
+      1.0
+    ]
+  },
+  {
+    "name": "Headgapandvelocityobserver_B",
+    "expr": "p.d.toolMotionObserver.B",
+    "kind": "nonzero_value",
+    "codegen": [
+      0.04963908643111408,
+      5e-09,
+      -5e-09,
+      6.160097254289023,
+      0.0001,
+      -0.0001
+    ],
+    "bank": [
+      0.04963908643111408,
+      6.160097254289023,
+      5e-09,
+      0.0001,
+      -5e-09,
+      -0.0001
+    ]
+  }
+]

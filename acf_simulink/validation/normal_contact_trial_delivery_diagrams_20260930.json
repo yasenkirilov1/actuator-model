@@ -1,0 +1,139 @@
+{
+  "artifact": "generated/active_flange_native_model_pages_20260930.pdf",
+  "format": "PDF with lossless raster PNG pages",
+  "modelSHA256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "pages": [
+    {
+      "page": 1,
+      "nativePath": "acf_force_control_simple",
+      "image": "generated/native_block_pages_20260930/page_01.png",
+      "imageSHA256": "fe2409ea10edcc97ce22d9a890f99ce971ebfc9bc757e502bc98beb436e5d2d8",
+      "imagePixels": [
+        5447,
+        2602
+      ]
+    },
+    {
+      "page": 2,
+      "nativePath": "acf_force_control_simple/Contact force measurement",
+      "image": "generated/native_block_pages_20260930/page_02.png",
+      "imageSHA256": "c6a9a9ee12268ec5d626417db6fe8272f07f257aa29872c1acf6719e79d0e43c",
+      "imagePixels": [
+        2032,
+        482
+      ]
+    },
+    {
+      "page": 3,
+      "nativePath": "acf_force_control_simple/Contact force measurement/Contact force reconstruction",
+      "image": "generated/native_block_pages_20260930/page_03.png",
+      "imageSHA256": "7ce74c3567a750f32d9a9c35a405a9b3cab8ec31ee54882ab9b1712b091e4817",
+      "imagePixels": [
+        1498,
+        1017
+      ]
+    },
+    {
+      "page": 4,
+      "nativePath": "acf_force_control_simple/Contact force measurement/Head motion estimator",
+      "image": "generated/native_block_pages_20260930/page_04.png",
+      "imageSHA256": "9b9e05eaa88912778ae0f057087918bcf15ea34f567a0c01ad8f9bae4740d743",
+      "imagePixels": [
+        4539,
+        765
+      ]
+    },
+    {
+      "page": 5,
+      "nativePath": "acf_force_control_simple/Contact force measurement/Normal force projection",
+      "image": "generated/native_block_pages_20260930/page_05.png",
+      "imageSHA256": "08fc80e835db7331c9f78d97d6e5cd77590592b2ae92df1e6dda42c4347c7df2",
+      "imagePixels": [
+        4449,
+        1028
+      ]
+    },
+    {
+      "page": 6,
+      "nativePath": "acf_force_control_simple/Force controller/Coil PI and PID",
+      "image": "generated/native_block_pages_20260930/page_06.png",
+      "imageSHA256": "52bf63a74f7f605c444423d3f4970d0e6c7361424875ed7f8b8ef9d8e30ef367",
+      "imagePixels": [
+        2361,
+        1080
+      ]
+    },
+    {
+      "page": 7,
+      "nativePath": "acf_force_control_simple/Force controller/Coil PI and PID/Normal force PI and PID",
+      "image": "generated/native_block_pages_20260930/page_07.png",
+      "imageSHA256": "a759d23059825e176b43a78939ca2e588e8cf30136a85b12f4a14eddfa5eb287",
+      "imagePixels": [
+        3282,
+        1210
+      ]
+    },
+    {
+      "page": 8,
+      "nativePath": "acf_force_control_simple/Force controller/Coil PI and PID/Measured motion feedforward",
+      "image": "generated/native_block_pages_20260930/page_08.png",
+      "imageSHA256": "32710c2d972eb63c9c0c302cd0542ef556d95ce4d42621be06f1b2e1dc10fdde",
+      "imagePixels": [
+        3681,
+        1740
+      ]
+    },
+    {
+      "page": 9,
+      "nativePath": "acf_force_control_simple/Force controller/Coil PI and PID/Lower spring inverse feedforward",
+      "image": "generated/native_block_pages_20260930/page_09.png",
+      "imageSHA256": "52dccb07c69a803daa19da04d7ede14bdfd280981998248cb52afd923538508b",
+      "imagePixels": [
+        2834,
+        648
+      ]
+    },
+    {
+      "page": 10,
+      "nativePath": "acf_force_control_simple/Actuator and RABS mechanics",
+      "image": "generated/native_block_pages_20260930/page_10.png",
+      "imageSHA256": "a0cfafaf43842181b97bd42648019620e7e241e593988ef44de58ae415563059",
+      "imagePixels": [
+        3913,
+        2177
+      ]
+    },
+    {
+      "page": 11,
+      "nativePath": "acf_force_control_simple/Actuator and RABS mechanics/Actuator/Voice coil",
+      "image": "generated/native_block_pages_20260930/page_11.png",
+      "imageSHA256": "72c71e7454b41cc32a53229e797fb26c6cfd78fab35dc3df1dfe1fbd0796d08f",
+      "imagePixels": [
+        4718,
+        1948
+      ]
+    },
+    {
+      "page": 12,
+      "nativePath": "acf_force_control_simple/Recenter travel/Force settling gate",
+      "image": "generated/native_block_pages_20260930/page_12.png",
+      "imageSHA256": "29a4bf18e1c15fbad55653c81062ecb5e8e880e910b529d0ff03ee0cc0a57ef6",
+      "imagePixels": [
+        3432,
+        2052
+      ]
+    },
+    {
+      "page": 13,
+      "nativePath": "acf_force_control_simple/S accelerometer and ADC",
+      "image": "generated/native_block_pages_20260930/page_13.png",
+      "imageSHA256": "2b262396733269b4d9fd2acc6ad375d0dfe63a765bca3cc83c1a0e33d8c552f3",
+      "imagePixels": [
+        7457,
+        1585
+      ]
+    }
+  ],
+  "PDFSHA256": "e37dc0a3a9d775c1989c078b348ae1b2813461518d0891489fa2e3b2ca06f633",
+  "sourcePageManifestSHA256": "7bf980e525b2099964ef5a0ea500834a28dc2733804335c2daa720ec25b6ad56"
+}

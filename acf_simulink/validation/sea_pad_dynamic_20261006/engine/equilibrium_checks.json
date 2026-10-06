@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "count": 16,
+  "checks": [
+    {
+      "actuator": 0,
+      "mass": 0.1,
+      "force": 5,
+      "angle": 0,
+      "maximum_derivative_residual": 9.00435281891987e-12
+    },
+    {
+      "actuator": 0,
+      "mass": 0.1,
+      "force": 5,
+      "angle": 90,
+      "maximum_derivative_residual": 1.5312796439756803e-11
+    },
+    {
+      "actuator": 0,
+      "mass": 0.1,
+      "force": 50,
+      "angle": 0,
+      "maximum_derivative_residual": 1.1210410377771041e-10
+    },
+    {
+      "actuator": 0,
+      "mass": 0.1,
+      "force": 50,
+      "angle": 90,
+      "maximum_derivative_residual": 5.506646153728112e-11
+    },
+    {
+      "actuator": 0,
+      "mass": 2.0,
+      "force": 5,
+      "angle": 0,
+      "maximum_derivative_residual": 1.1013412404281553e-12
+    },
+    {
+      "actuator": 0,
+      "mass": 2.0,
+      "force": 5,
+      "angle": 90,
+      "maximum_derivative_residual": 2.5543927698773843e-12
+    },
+    {
+      "actuator": 0,
+      "mass": 2.0,
+      "force": 50,
+      "angle": 0,
+      "maximum_derivative_residual": 7.050360295579594e-12
+    },
+    {
+      "actuator": 0,
+      "mass": 2.0,
+      "force": 50,
+      "angle": 90,
+      "maximum_derivative_residual": 9.190286533290606e-12
+    },
+    {
+      "actuator": 1,
+      "mass": 0.1,
+      "force": 5,
+      "angle": 0,
+      "maximum_derivative_residual": 9.00435281891987e-12
+    },
+    {
+      "actuator": 1,
+      "mass": 0.1,
+      "force": 5,
+      "angle": 90,
+      "maximum_derivative_residual": 1.5312796439756803e-11
+    },
+    {
+      "actuator": 1,
+      "mass": 0.1,
+      "force": 50,
+      "angle": 0,
+      "maximum_derivative_residual": 1.1210410377771041e-10
+    },
+    {
+      "actuator": 1,
+      "mass": 0.1,
+      "force": 50,
+      "angle": 90,
+      "maximum_derivative_residual": 5.506646153728112e-11
+    },
+    {
+      "actuator": 1,
+      "mass": 2.0,
+      "force": 5,
+      "angle": 0,
+      "maximum_derivative_residual": 1.1013412404281553e-12
+    },
+    {
+      "actuator": 1,
+      "mass": 2.0,
+      "force": 5,
+      "angle": 90,
+      "maximum_derivative_residual": 2.5543927698773843e-12
+    },
+    {
+      "actuator": 1,
+      "mass": 2.0,
+      "force": 50,
+      "angle": 0,
+      "maximum_derivative_residual": 7.043254868221993e-12
+    },
+    {
+      "actuator": 1,
+      "mass": 2.0,
+      "force": 50,
+      "angle": 90,
+      "maximum_derivative_residual": 9.190286533290606e-12
+    }
+  ]
+}

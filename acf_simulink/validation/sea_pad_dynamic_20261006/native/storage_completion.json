@@ -1,0 +1,19 @@
+{
+  "status": "native_worker_completed_and_owned_temporaries_released",
+  "retained_limit_bytes": 10485760,
+  "observed_temporary_peak_bytes": 180756025,
+  "observed_5mm_temporary_bytes": 176224733,
+  "temporary_limit_bytes": 629145600,
+  "temporary_array_limit_bytes": 314572800,
+  "owned_sdi_cache_code_reference_arrays_preferences_absent": true,
+  "representative_trace_archives_count": 9,
+  "all_trace_archives_exact_roundtrip_verified": true,
+  "canonical_models_and_desktop_untouched": true,
+  "scope_folders": [
+    "acf_simulink/validation/sea_pad_dynamic_20261006/native",
+    "acf_simulink/generated/sea_pad_dynamic_20261006",
+    "acf_simulink/experiments/sea_pad_dynamic_20261006/native"
+  ],
+  "retained_bytes_including_sources": 9339660,
+  "retained_budget_passed": true
+}

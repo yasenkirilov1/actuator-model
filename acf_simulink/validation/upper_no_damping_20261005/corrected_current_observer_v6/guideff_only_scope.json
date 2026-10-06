@@ -1,0 +1,26 @@
+{
+  "status": "guideff_only_scope_and_physical_input_equality_verified",
+  "preparedConfigurationsCompared": 132,
+  "physicalQualificationEpisodes": 0,
+  "originalConfigsSha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e",
+  "candidateConfigsSha256": "d292bbf999b2d7e6b81a95c83285a7cbc0df6010fc36a4d6b5d1685de0db8695",
+  "allChangedParameterPaths": [
+    "p.guideFeedforwardStudy",
+    "p.mechanicalStudy.controlDevelopmentLane",
+    "p.mechanicalStudy.externalUpperPair.lengthAndTravelUnconstrained",
+    "p.mechanicalStudy.gainID"
+  ],
+  "originalGraphSha256": "2e435049530f0e1e62f3bb8e5cdc64970586647e26efd713cf0188fbb370c1cd",
+  "candidateGraphSha256": "516f47e24bbe4010aad0e4ef6cd6fe953ff26076ed52c65016a22106655f98f1",
+  "unchangedNativeSystems": 47,
+  "changedNativeSystems": [
+    "simulink/systems/system_1324.xml"
+  ],
+  "changedNativeBlocks": [
+    "Guide Coulomb friction current",
+    "Guide friction velocity scale"
+  ],
+  "physicalFrictionUnchanged": true,
+  "observerFrameFrictionEstimateUnchanged": true,
+  "algorithm": "Only controller Coulomb compensation scaling/smoothing varies. Viscous guideFF,400usguideprediction,allobservercoefficients/current lag/acquisition/mechanics/actuator/sensors/gates equal to paired V5profile1 cases. Upper inherited operation screen explicitly disabled."
+}

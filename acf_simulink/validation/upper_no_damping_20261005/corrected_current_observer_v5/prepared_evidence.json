@@ -1,0 +1,52 @@
+{
+  "status": "corrected_current_observer_v5_frozen_with_live_source_evidence",
+  "preparedConfigurations": 132,
+  "developmentProfileCount": 6,
+  "physicalQualificationEpisodesCreatedByPreparation": 0,
+  "wiringHarnessRuns": 3,
+  "wiringHarnessDurationEach_s": 0.0003,
+  "mechanics": {
+    "upperSpring_N_m": 20000,
+    "upperDamping_N_s_m": 0,
+    "upperLengthTravelUnlimited": true,
+    "lowerExternalMounting": "rigid",
+    "finiteCellStiffness_N_m": 64000000.0,
+    "cellDamping_N_s_m": 0
+  },
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "2e435049530f0e1e62f3bb8e5cdc64970586647e26efd713cf0188fbb370c1cd",
+  "configsSha256": "8bd3d99156621669e508f1ae26916cede350eb921e5f9558ff50eaa521bbc91e",
+  "sharedLibrarySha256": "de1c3dc76eebc7fe5569b253d26b18f5a57900dd39d70d73f79cf460cdc9a192",
+  "actualCurrentInputOperand": "acf_rl_native_B.Currentlimits",
+  "auditedAMasses_kg": [
+    0.4,
+    1.5
+  ],
+  "algebraicLoopCounts": [
+    0,
+    0
+  ],
+  "evidence": [
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/file_hashes.json",
+      "sha256": "6c4609bbae04638df931443af14e1d07806fb1228a6896b25d2fcd0f578c142a"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/live_issued_command_guard.json",
+      "sha256": "608d03e284446e7804476ac87e78c713cfa506a3a73649587339ff04ffb3e218"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/native/emitted_current_input_guard.json",
+      "sha256": "95dc2d78fbfb46f6dce0969645049419f3e0cc3361fd753372ab1389dfaa8a96"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/paired_input_scope.json",
+      "sha256": "0f14581987a266a0cbd197d0880abfc5afb6c8ea408ec017ac4cda7606088636"
+    },
+    {
+      "path": "acf_simulink/validation/upper_no_damping_20261005/corrected_current_observer_v5/acceptance/acceptance.json",
+      "sha256": "931b5bd850277dff86197892f3f0eaf53af5cdeabdf76a38d49518205b2d980a"
+    }
+  ],
+  "note": "Original upper recordings with grounded current request remain rejected implementations. Parent-owned bounded evaluation supplies executed qualification results; source restoration, codegen and preparation do not establish force performance."
+}

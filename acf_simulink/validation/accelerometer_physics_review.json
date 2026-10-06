@@ -1,0 +1,3252 @@
+{
+  "review_utc": "2026-09-30T07:33:31.687990+00:00",
+  "kind": "read_only_physics_datasheet_and_analytical_transfer_review",
+  "native_controller_qualification_runs": 0,
+  "frames_and_signs": {
+    "positive_z": "away from workpiece",
+    "Lraw": "R+mS*g_vec-mS*aS",
+    "accelerometer_specific_acceleration": "fS=aS-g_vec",
+    "raw_reconstruction": "R=Lraw+mS*fS",
+    "tared_reconstruction": "R=Ltared+mS*aS",
+    "raw_vs_tared_warning": "Do not add full specific acceleration to an already gravity-tared cell"
+  },
+  "matched_transfer_identity": "Rhat=HL*R+mS*(Ha-HL)*fS",
+  "synthetic_filter_checks": {
+    "plant_sample_step_s": 2.5e-05,
+    "duration_s": 4.0,
+    "bump_start_s": 1.8,
+    "bump_height_m": 0.001,
+    "bump_width_m": 0.01,
+    "scan_speed_m_s": 0.1,
+    "signal_generation_uses_true_profile": "validation only; no controller implemented",
+    "max_raw_force_identity_residual_N": 7.105427357601002e-15,
+    "max_normal_projection_residual_N": 2.842170943040401e-14,
+    "max_common200us_filter_cancellation_residual_N": 9.947598300641403e-14,
+    "max_cross200us400us_filter_cancellation_residual_N": 2.2737367544323206e-13,
+    "initial_filter_states": "matching loaded equilibrium rather than zero filter outputs"
+  },
+  "analytical_transfer_mismatch_cases": [
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 8.526512829121202e-14
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.0018714700851205635
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.003731556562087235
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.003616230722521152
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.005465266657495249
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.007302975915187915
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.007146009096146599
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.008972827090907742
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.010788375133813588
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 9.947598300641403e-14
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.0018714700851205635
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.0037315565620801294
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.0036162307225140466
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.005465266657495249
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.007302975915180809
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.007146009096139494
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.008972827090900637
+    },
+    {
+      "mS_kg": 0.1,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.010788375133806483
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 5.684341886080802e-14
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.037429401702354426
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.07463113124165943
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.07232461445030935
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.10930533314984814
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.14605951830365882
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.1429201819228041
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.1794565418180767
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 0.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.21576750267611544
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 9.947598300641403e-14
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.037429401702354426
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0002,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.07463113124165233
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.07232461445029514
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.10930533314984103
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0003,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.1460595183036446
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.14292018192279698
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 5e-05,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.17945654181806958
+    },
+    {
+      "mS_kg": 2.0,
+      "orientation_deg": 90.0,
+      "force_tau_s": 0.0002,
+      "accel_tau_s": 0.0004,
+      "extra_accel_delay_s": 0.0001,
+      "peak_axial_reconstruction_error_relative_common_force_transfer_N": 0.21576750267611544
+    }
+  ],
+  "analytical_projection_time_alignment_cases": [
+    {
+      "tangential_ratio": 0.0,
+      "common_tau_s": 0.0002,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.0017668806543085225,
+      "common_filtered_validation_slope_projection_error_N": 0.000574966683430489,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 0.0,
+      "common_tau_s": 0.0003,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.0034560235803695605,
+      "common_filtered_validation_slope_projection_error_N": 0.001293814582176367,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 0.0,
+      "common_tau_s": 0.0004,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.0057172951922410675,
+      "common_filtered_validation_slope_projection_error_N": 0.0022987205529858556,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 0.5,
+      "common_tau_s": 0.0002,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.17439783300394396,
+      "common_filtered_validation_slope_projection_error_N": 0.0005882961738592485,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 0.5,
+      "common_tau_s": 0.0003,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.23598466604806845,
+      "common_filtered_validation_slope_projection_error_N": 0.001323762665315087,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 0.5,
+      "common_tau_s": 0.0004,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.2981272997458717,
+      "common_filtered_validation_slope_projection_error_N": 0.002351820593688103,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 1.0,
+      "common_tau_s": 0.0002,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.3470288485438857,
+      "common_filtered_validation_slope_projection_error_N": 0.0006232769596081766,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 1.0,
+      "common_tau_s": 0.0003,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.46851368763963563,
+      "common_filtered_validation_slope_projection_error_N": 0.001402348148438648,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    },
+    {
+      "tangential_ratio": 1.0,
+      "common_tau_s": 0.0004,
+      "common_delay_s": 0.0001,
+      "instantaneous_validation_normal_projection_error_N": 0.5905384667111733,
+      "common_filtered_validation_slope_projection_error_N": 0.0024911442814783413,
+      "scope": "analytical open-loop fixed50N reaction; true slope is validation only, not a controller input"
+    }
+  ],
+  "noise_envelopes": [
+    {
+      "one_sided_density_ug_sqrtHz": 22.5,
+      "one_sided_density_m_s2_sqrtHz": 0.00022072499999999998,
+      "assumed_first_order_tau_s": 0.0002,
+      "continuous_enbw_Hz": 1250.0,
+      "acceleration_RMS_m_s2": 0.007803807213870035,
+      "S2_inertial_force_RMS_N": 0.01560761442774007,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.025369226005635254
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 22.5,
+      "one_sided_density_m_s2_sqrtHz": 0.00022072499999999998,
+      "assumed_first_order_tau_s": 0.0003,
+      "continuous_enbw_Hz": 833.3333333333334,
+      "acceleration_RMS_m_s2": 0.006371781908344007,
+      "S2_inertial_force_RMS_N": 0.012743563816688014,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.02371494083378662
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 22.5,
+      "one_sided_density_m_s2_sqrtHz": 0.00022072499999999998,
+      "assumed_first_order_tau_s": 0.0004,
+      "continuous_enbw_Hz": 625.0,
+      "acceleration_RMS_m_s2": 0.005518125,
+      "S2_inertial_force_RMS_N": 0.01103625,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.022842916058649344
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 33.75,
+      "one_sided_density_m_s2_sqrtHz": 0.00033108750000000004,
+      "assumed_first_order_tau_s": 0.0002,
+      "continuous_enbw_Hz": 1250.0,
+      "acceleration_RMS_m_s2": 0.011705710820805054,
+      "S2_inertial_force_RMS_N": 0.023411421641610107,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.03079114585852969
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 33.75,
+      "one_sided_density_m_s2_sqrtHz": 0.00033108750000000004,
+      "assumed_first_order_tau_s": 0.0003,
+      "continuous_enbw_Hz": 833.3333333333334,
+      "acceleration_RMS_m_s2": 0.009557672862516011,
+      "S2_inertial_force_RMS_N": 0.019115345725032023,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.02766579914239782
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 33.75,
+      "one_sided_density_m_s2_sqrtHz": 0.00033108750000000004,
+      "assumed_first_order_tau_s": 0.0004,
+      "continuous_enbw_Hz": 625.0,
+      "acceleration_RMS_m_s2": 0.008277187500000002,
+      "S2_inertial_force_RMS_N": 0.016554375000000003,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.025962421528829414
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 25.0,
+      "one_sided_density_m_s2_sqrtHz": 0.00024524999999999997,
+      "assumed_first_order_tau_s": 0.0002,
+      "continuous_enbw_Hz": 1250.0,
+      "acceleration_RMS_m_s2": 0.008670896904300038,
+      "S2_inertial_force_RMS_N": 0.017341793808600077,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.026471452784084217
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 25.0,
+      "one_sided_density_m_s2_sqrtHz": 0.00024524999999999997,
+      "assumed_first_order_tau_s": 0.0003,
+      "continuous_enbw_Hz": 833.3333333333334,
+      "acceleration_RMS_m_s2": 0.007079757675937785,
+      "S2_inertial_force_RMS_N": 0.01415951535187557,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.02450493572731828
+    },
+    {
+      "one_sided_density_ug_sqrtHz": 25.0,
+      "one_sided_density_m_s2_sqrtHz": 0.00024524999999999997,
+      "assumed_first_order_tau_s": 0.0004,
+      "continuous_enbw_Hz": 625.0,
+      "acceleration_RMS_m_s2": 0.0061312499999999995,
+      "S2_inertial_force_RMS_N": 0.012262499999999999,
+      "S2_plus_0p02N_independent_cell_RMS_N": 0.023459942588378174
+    }
+  ],
+  "ADC_quantization_example": {
+    "ADC": "AD7606C-18",
+    "input_range_V": [
+      0,
+      5
+    ],
+    "bits": 18,
+    "acceleration_sensitivity_V_g": 0.1,
+    "quantum_m_s2": 0.0018711090087890625,
+    "uniform_quantization_RMS_m_s2": 0.0005401426449537496,
+    "conversion_time_s_provision_no_oversampling": 6.5e-07,
+    "conversion_time_s_maximum": "Typ/max column attribution not independently verified from flattened PDF; approximately 0.65 us is used as a conversion provision.",
+    "not_included": [
+      "ADC/reference noise",
+      "offset",
+      "gain",
+      "electronic path delay",
+      "controller processing delay"
+    ]
+  },
+  "kinematic_observer_proposal": {
+    "states": [
+      "q=S-A",
+      "vS",
+      "residual_vA"
+    ],
+    "A_continuous": [
+      [
+        0.0,
+        1.0,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -16.666666666666668
+      ]
+    ],
+    "C_position_measurement": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "B_measured_dynamic_acceleration": [
+      0,
+      1,
+      0
+    ],
+    "B_predicted_robot_velocity": [
+      -1,
+      0,
+      0
+    ],
+    "residual_time_s": 0.06,
+    "observability_rank": 3,
+    "observability_determinant": 16.666666666666668,
+    "implemented_or_qualified": false,
+    "force_and_Kf_inputs": false
+  },
+  "mass_and_timing_budget": [
+    {
+      "mS_kg": 0.1,
+      "acceleration_error_for_separate0p1N_allocation_m_s2": 1.0,
+      "differential_delay_for_separate0p1N_allocation_s": 0.0026041666666666665,
+      "error_from100us_differential_delay_N": 0.003840000000000001
+    },
+    {
+      "mS_kg": 0.5,
+      "acceleration_error_for_separate0p1N_allocation_m_s2": 0.2,
+      "differential_delay_for_separate0p1N_allocation_s": 0.0005208333333333333,
+      "error_from100us_differential_delay_N": 0.019200000000000002
+    },
+    {
+      "mS_kg": 1.0,
+      "acceleration_error_for_separate0p1N_allocation_m_s2": 0.1,
+      "differential_delay_for_separate0p1N_allocation_s": 0.00026041666666666666,
+      "error_from100us_differential_delay_N": 0.038400000000000004
+    },
+    {
+      "mS_kg": 1.4,
+      "acceleration_error_for_separate0p1N_allocation_m_s2": 0.07142857142857144,
+      "differential_delay_for_separate0p1N_allocation_s": 0.0001860119047619048,
+      "error_from100us_differential_delay_N": 0.053759999999999995
+    },
+    {
+      "mS_kg": 2.0,
+      "acceleration_error_for_separate0p1N_allocation_m_s2": 0.05,
+      "differential_delay_for_separate0p1N_allocation_s": 0.00013020833333333333,
+      "error_from100us_differential_delay_N": 0.07680000000000001
+    }
+  ],
+  "suggested_native_stress_inputs": {
+    "accel_response_envelope_tau_s": [
+      0.0002,
+      0.0003,
+      0.0004
+    ],
+    "accel_cell_differential_delay_s": [
+      -0.0001,
+      -5e-05,
+      0.0,
+      5e-05,
+      0.0001
+    ],
+    "accel_bias_m_s2": [
+      -0.02,
+      0.0,
+      0.02
+    ],
+    "accel_gain_fraction": [
+      -0.01,
+      -0.005,
+      0.0,
+      0.005,
+      0.01
+    ],
+    "force_bias_N": [
+      -0.05,
+      -0.02,
+      0.0,
+      0.02,
+      0.05
+    ],
+    "distal_mass_gain_fraction": [
+      -0.01,
+      0.0,
+      0.01
+    ],
+    "scope": "Separate and joint tests needed; response envelope not an identified sensor transfer"
+  },
+  "primary_sources": [
+    {
+      "name": "ADXL354/ADXL355 Rev D",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf",
+      "datasheet_pages": [
+        4,
+        5,
+        23,
+        25,
+        26,
+        27
+      ],
+      "facts": {
+        "ADXL354_noise_density_2g_ug_sqrtHz": 22.5,
+        "ADXL354_8g_noise_density_estimated_multiple_of_2g": 1.5,
+        "ADXL354_8g_sensitivity_V_g": 0.1,
+        "ADXL354_initial_sensitivity_tolerance_fraction": 0.08,
+        "cross_axis_fraction": 0.01,
+        "internal_analog_antialias_3dB_Hz": 1500,
+        "overall_3dB_Hz": 1900,
+        "mechanical_resonance_Hz": 2400,
+        "Q_XY": 7.4,
+        "Q_Z": 1.5,
+        "output_series_resistance_ohm": 32000,
+        "ADXL355_4kODR_digital_group_delay_s": 0.00063,
+        "ADXL355_4kODR_interpolator_decimator_delay_s": 0.00088
+      },
+      "phase_scope": "No guaranteed full-path phase derived from bandwidth;200-400us is an explicit experimental envelope"
+    },
+    {
+      "name": "ADXL1001/ADXL1002 Rev A",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf",
+      "datasheet_pages": [
+        3,
+        10,
+        11,
+        12,
+        13
+      ],
+      "facts": {
+        "ADXL1002_noise_density_ug_sqrtHz": 25.0,
+        "ADXL1002_range_g": 50.0,
+        "ADXL1002_sensitivity_V_g_at5V": 0.04,
+        "ADXL1002_mechanical_resonance_Hz": 21000.0,
+        "ADXL1002_3dB_response_Hz": 11000.0
+      },
+      "response_warning": "11kHz point is a response-gain rise near mechanical resonance, not first-order low-pass cutoff;external anti-alias filtering required"
+    },
+    {
+      "name": "AD7606C-18 Rev B",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf?isDownload=true",
+      "datasheet_pages": [
+        9
+      ],
+      "facts": {
+        "simultaneous_channels": 8,
+        "bits": 18,
+        "no_oversampling_conversion_time_provision_s": 6.5e-07,
+        "maximum_conversion_time_s": "Typ/max column attribution not independently verified from flattened PDF; approximately 0.65 us is used as a conversion provision."
+      }
+    },
+    {
+      "name": "ADI AC acceleration calibration article",
+      "url": "https://www.analog.com/en/resources/technical-articles/2017/05/01/09/59/measuring-ac-accelerations-to-calibrate-or-not-to-calibrate.html",
+      "fact": "Manufacturer ADXL354 \u00b18g shaker study identifies approximate \u00b15percent flat band to1.3kHz; AC calibration depends on resonance and Q"
+    },
+    {
+      "name": "ADI ADXL1002 noise measurement guide",
+      "url": "https://wiki.analog.com/_media/mems/reference_document_on_achieving_best_noise_performance_with_adxl1002.pdf",
+      "fact": "70kHz electronics noise and200kHz clock require proper filtering and raw sampling; insufficient single-pole filtering can leave excess RMS"
+    },
+    {
+      "name": "ATI system interfaces",
+      "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+      "fact": "DAQ analog exposes six conditioned strain channels; manufacturer lists second-order5.1kHz AA and supports sameDAQ synchronization with other analog signals; tooling changes mechanical response"
+    }
+  ],
+  "scope_limits": [
+    "no native controller executed by this review",
+    "point/resultant 2D contact assumption",
+    "fixed orientation startup tare differs from moving-orientation raw reconstruction",
+    "requires calibrated common sensor frame and complete distal load path",
+    "requires distal center-of-mass acceleration or rotational compensation",
+    "vibration,rectification,clipping and mounting resonance need tool-running measurements",
+    "noise density not a peak or bias specification",
+    "unknown scan motion and robot compliance need joint tests"
+  ],
+  "faster_sensor_addendum": {
+    "review_utc": "2026-09-30T08:12:55.204826+00:00",
+    "candidate": "Orthogonal ADXL1002 analog axes, synchronized ATI analog strain acquisition",
+    "native_runs": 0,
+    "conclusion": "100us designed/identified dominant response plus100us acquisition/control allowance is a plausible acceptance envelope, not a manufacturer guarantee",
+    "ADXL1002_primary_facts": {
+      "noise_density_ug_sqrtHz": 25.0,
+      "nominal_sensitivity_V_g_at5V": 0.04,
+      "measurement_range_g": 50.0,
+      "five_percent_deviation_band_Hz": 4700.0,
+      "mechanical_resonance_Hz": 21000.0,
+      "output_amplifier_small_signal_single_pole_Hz": 70000.0,
+      "internal_clock_Hz": 200000.0,
+      "capacitive_load_min_series_R_ohm": 8000.0,
+      "max_output_capacitance_F": 2.2e-08,
+      "eleven_kHz_spec_is_lowpass_corner": false,
+      "gain_phase_tolerance_across_complete_chain": "must be identified, not supplied by100us envelope",
+      "five_percent_deviation_band_status": "typical datasheet value, not guaranteed complete-chain tolerance"
+    },
+    "dominant_RC_example": {
+      "series_R_ohm": 10000,
+      "capacitance_F": 1e-08,
+      "nominal_tau_s": 0.0001,
+      "nominal_corner_Hz": 1591.5494309189535,
+      "illustrative_ADC_input_R_ohm": 1000000.0,
+      "loaded_tau_s": 9.900990099009902e-05,
+      "loaded_DC_gain": 0.9900990099009901,
+      "complete_antialias_circuit": false
+    },
+    "noise_quantization_calculations": {
+      "one_sided_density_m_s2_sqrtHz": 0.00024525,
+      "assumed_tau_s": 0.0001,
+      "assumed_ENBW_Hz": 2500.0,
+      "white_noise_RMS_m_s2": 0.0122625,
+      "ADC_bits": 18,
+      "ADC_range_V": [
+        0,
+        5
+      ],
+      "ADC_acceleration_quantum_m_s2": 0.004677772521972656,
+      "ADC_uniform_quantization_RMS_m_s2": 0.001350356612384374,
+      "combined_acceleration_RMS_m_s2": 0.012336627141589803,
+      "S2_combined_inertial_RMS_N": 0.024673254283179607,
+      "S2_combined_plus0p02N_cell_RMS_N": 0.03176113154348316,
+      "additional_acceleration_RMS_stress_values_m_s2": [
+        0.015,
+        0.02
+      ],
+      "does_not_include": [
+        "nonwhite out-of-band noise",
+        "clock spur",
+        "aliasing",
+        "ADC analog noise",
+        "gain and offset",
+        "vibration rectification",
+        "mounting/temperature/calibration errors"
+      ]
+    },
+    "declared_envelope_frequency_response_examples": [
+      {
+        "frequency_Hz": 20.0,
+        "assumed_single_pole_tau_s": 0.0001,
+        "magnitude": 0.9999210525148337,
+        "phase_deg": -0.7199621043095836,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 20.0,
+        "assumed_single_pole_tau_s": 0.0002,
+        "magnitude": 0.9996843222008154,
+        "phase_deg": -1.439696920609419,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 20.0,
+        "assumed_single_pole_tau_s": 0.0003,
+        "magnitude": 0.999290145040236,
+        "phase_deg": -2.1589775911168205,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 20.0,
+        "assumed_single_pole_tau_s": 0.0004,
+        "magnitude": 0.9987390795331518,
+        "phase_deg": -2.877578116469354,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 100.0,
+        "assumed_single_pole_tau_s": 0.0001,
+        "magnitude": 0.9980319045036448,
+        "phase_deg": -3.5952737798681755,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 100.0,
+        "assumed_single_pole_tau_s": 0.0002,
+        "magnitude": 0.9921966153935916,
+        "phase_deg": -7.162455806725823,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 100.0,
+        "assumed_single_pole_tau_s": 0.0003,
+        "magnitude": 0.9826945254900029,
+        "phase_deg": -10.67474941236876,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 100.0,
+        "assumed_single_pole_tau_s": 0.0004,
+        "magnitude": 0.9698388315126839,
+        "phase_deg": -14.107802371590129,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 300.0,
+        "assumed_single_pole_tau_s": 0.0001,
+        "magnitude": 0.9826945254900029,
+        "phase_deg": -10.674749412368762,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 300.0,
+        "assumed_single_pole_tau_s": 0.0002,
+        "magnitude": 0.9357152202787049,
+        "phase_deg": -20.65599738233966,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 300.0,
+        "assumed_single_pole_tau_s": 0.0003,
+        "magnitude": 0.8704624098667851,
+        "phase_deg": -29.48758095751293,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 300.0,
+        "assumed_single_pole_tau_s": 0.0004,
+        "magnitude": 0.7984711550997486,
+        "phase_deg": -37.01564457318207,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 1600.0,
+        "assumed_single_pole_tau_s": 0.0001,
+        "magnitude": 0.7052320351631289,
+        "phase_deg": -45.151707132165285,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 1600.0,
+        "assumed_single_pole_tau_s": 0.0002,
+        "magnitude": 0.4453209967756784,
+        "phase_deg": -63.55612212608379,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 1600.0,
+        "assumed_single_pole_tau_s": 0.0003,
+        "magnitude": 0.3147234048671632,
+        "phase_deg": -71.65588318919139,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      },
+      {
+        "frequency_Hz": 1600.0,
+        "assumed_single_pole_tau_s": 0.0004,
+        "magnitude": 0.24132943797080011,
+        "phase_deg": -76.03498185075564,
+        "scope": "declared first-order envelope, not a fitted complete accelerometer transfer"
+      }
+    ],
+    "high_frequency_differential_timing_examples": [
+      {
+        "mS_kg": 0.1,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 5e-06,
+        "relative_phase_deg": 2.8800000000000003,
+        "force_error_amplitude_N": 0.005026019088667497,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      },
+      {
+        "mS_kg": 0.1,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 5e-05,
+        "relative_phase_deg": 28.8,
+        "force_error_amplitude_N": 0.04973797743297096,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      },
+      {
+        "mS_kg": 0.1,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 0.0001,
+        "relative_phase_deg": 57.6,
+        "force_error_amplitude_N": 0.09635073482034306,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      },
+      {
+        "mS_kg": 2.0,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 5e-06,
+        "relative_phase_deg": 2.8800000000000003,
+        "force_error_amplitude_N": 0.10052038177334992,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      },
+      {
+        "mS_kg": 2.0,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 5e-05,
+        "relative_phase_deg": 28.8,
+        "force_error_amplitude_N": 0.9947595486594192,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      },
+      {
+        "mS_kg": 2.0,
+        "acceleration_harmonic_amplitude_m_s2": 1.0,
+        "frequency_Hz": 1600.0,
+        "relative_delay_s": 0.0001,
+        "relative_phase_deg": 57.6,
+        "force_error_amplitude_N": 1.9270146964068613,
+        "scope": "hypothetical equal-magnitude harmonic, not a native trace amplitude"
+      }
+    ],
+    "S2_A1_1600Hz_relative_phase_for_separate0p1N_allocation": {
+      "max_phase_deg": 2.865087475133015,
+      "equivalent_delay_s": 4.974110199883707e-06
+    },
+    "acquisition": {
+      "ATI_conditioning": "six strain channels with calibration matrix",
+      "ATI_AA_filter": "second order5.1kHz from primary system interface documentation",
+      "two_acceleration_axes_plus_six_strain_channels": 8,
+      "three_acceleration_axes_plus_six_strain_channels": 9,
+      "supply_reference_monitoring": "may require additional channel",
+      "raw_acquisition_rate": "choose against actual analog filters/interferers; faster raw simultaneous acquisition then identified decimation to10kHz controller",
+      "ADC_conversion_time_maximum": "Typ/max column attribution not independently verified from flattened PDF; approximately 0.65 us is used as a conversion provision.",
+      "acquisition_and_control_allowance_s": 0.0001,
+      "allowance_is_verified": false
+    },
+    "acceptance_checks": [
+      "assembled magnitude/phase over bump and structural mode bands",
+      "matched sensor transfers and timing",
+      "actual complete sample-to-current-command latency",
+      "full-path RMS/PSD and alias/clock rejection",
+      "sander-running range,thermal,rectification and mounting tests",
+      "calibrated bias,scale and axes",
+      "native common-response,differential-phase,noise and gain/bias stress"
+    ],
+    "inferences": [
+      "ADXL1002 core frequency margin is larger than ADXL354 near1.6kHz",
+      "additional out-of-band filtering and decimation must fit inside the identified envelope",
+      "core bandwidth does not remove cell mechanical resonance or ensure closed-loop stability"
+    ],
+    "primary_sources_added": [
+      {
+        "name": "ADI AC acceleration calibration article",
+        "url": "https://www.analog.com/en/resources/technical-articles/2017/05/01/09/59/measuring-ac-accelerations-to-calibrate-or-not-to-calibrate.html",
+        "fact": "Manufacturer ADXL354 \u00b18g shaker study identifies approximate \u00b15percent flat band to1.3kHz; AC calibration depends on resonance and Q"
+      },
+      {
+        "name": "ADI ADXL1002 noise measurement guide",
+        "url": "https://wiki.analog.com/_media/mems/reference_document_on_achieving_best_noise_performance_with_adxl1002.pdf",
+        "fact": "70kHz electronics noise and200kHz clock require proper filtering and raw sampling; insufficient single-pole filtering can leave excess RMS"
+      },
+      {
+        "name": "ATI system interfaces",
+        "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+        "fact": "DAQ analog exposes six conditioned strain channels; manufacturer lists second-order5.1kHz AA and supports sameDAQ synchronization with other analog signals; tooling changes mechanical response"
+      }
+    ]
+  },
+  "native_noise_placement_audit": {
+    "scope": "Read-only noise placement audit of actual frozen native V4 wiring, checked against retained matched seed29 finite-cell trace. No changes to source distributions or model parameters.",
+    "source_model": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v4-20260930/frozen-inertial-v4/acf_force_control_normal_trial.slx",
+    "source_model_sha256": "2aaafd4da3b6f5593157f1667e84e2fb72ebdc994804f743f8e5c80d8202668b",
+    "trace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_finite_provisional/inertial_uncertainty_repeated_screen_20260930_native_traces/case_0001.mat",
+    "window_s": [
+      6.3,
+      6.7
+    ],
+    "force_grid_s": 0.0001,
+    "samples": 4001,
+    "native_blocks": {
+      "axial_force_system": "simulink/systems/system_244.xml",
+      "lateral_force_system": "simulink/systems/system_1030.xml",
+      "accelerometer_system": "simulink/systems/system_1059.xml"
+    },
+    "EMA_alpha": 0.36787944117144233,
+    "EMA_white_noise_std_factor": 0.6797919955839504,
+    "accelerometer_raw_injected_std_m_s2": 0.018093769976556043,
+    "accelerometer_postEMA_target_m_s2": 0.0123,
+    "accelerometer_quantum_m_s2": 0.00468,
+    "accelerometer_quantization_rms_m_s2": 0.0013509996299037243,
+    "accelerometer_combined_noise_std_m_s2": 0.012373972684631238,
+    "force_noise_after_filter_std_N": 0.02,
+    "force_uniform_support_N": [
+      -0.034641016151377546,
+      0.034641016151377546
+    ],
+    "ADXL1002_density_m_s2_per_sqrtHz": 0.00024525,
+    "density_equivalent_prefilter_white_std_at10kHz_m_s2": 0.01734179380860008,
+    "nativeEMA_equivalent_noise_bandwidth_Hz": 2310.5857863000483,
+    "unrenormalized_density_nativeEMA_output_std_m_s2": 0.011788812620153645,
+    "analog_tau100us_ENBW_Hz": 2500,
+    "analog_tau100us_density_output_std_m_s2": 0.0122625,
+    "configured_vs_measured": [
+      {
+        "signal": "cell_Z",
+        "configured_rms": 0.02,
+        "units": "N",
+        "ideal_output_noise_std": 0.02,
+        "measured_total_std": 0.04708956182556243,
+        "measured_total_mean": 50.00080707862234,
+        "measured_isolated_noise_std": 0.020083516285667184,
+        "measured_isolated_noise_mean": -0.0003052881745313394,
+        "noise_free_physical_signal_std_after_transfer": 0.04282792253445694,
+        "distribution": "bounded uniform",
+        "placement": "after true-signal EMA, before transport delay",
+        "measured_isolated_noise_max_abs": 0.03463516234771902
+      },
+      {
+        "signal": "cell_X",
+        "configured_rms": 0.02,
+        "units": "N",
+        "ideal_output_noise_std": 0.02,
+        "measured_total_std": 0.02376713458722607,
+        "measured_total_mean": -14.99948338497545,
+        "measured_isolated_noise_std": 0.019770150695642016,
+        "measured_isolated_noise_mean": 0.0008503250636104169,
+        "noise_free_physical_signal_std_after_transfer": 0.012848376760337106,
+        "distribution": "bounded uniform",
+        "placement": "after true-signal EMA, before transport delay",
+        "measured_isolated_noise_max_abs": 0.034633644003076114
+      },
+      {
+        "signal": "acceleration_Z",
+        "configured_rms": 0.0123,
+        "units": "m_s2",
+        "ideal_output_noise_std": 0.012373972684631238,
+        "measured_total_std": 0.012640662221531523,
+        "measured_total_mean": -0.00016843789052736822,
+        "measured_isolated_noise_std": 0.012640662221531523,
+        "measured_isolated_noise_mean": -0.00016843789052736822,
+        "noise_free_physical_signal_std_after_transfer": 0.0,
+        "distribution": "Gaussian followed by ADC quantization",
+        "placement": "raw noise before EMA, with inverse RMS attenuation normalization",
+        "measured_isolated_noise_max_abs": 0.0468
+      },
+      {
+        "signal": "acceleration_X",
+        "configured_rms": 0.0123,
+        "units": "m_s2",
+        "ideal_output_noise_std": 0.012373972684631238,
+        "measured_total_std": 0.012156118857639373,
+        "measured_total_mean": 0.0006012296925761102,
+        "measured_isolated_noise_std": 0.012156118857639373,
+        "measured_isolated_noise_mean": 0.0006012296925761102,
+        "noise_free_physical_signal_std_after_transfer": 0.0,
+        "distribution": "Gaussian followed by ADC quantization",
+        "placement": "raw noise before EMA, with inverse RMS attenuation normalization",
+        "measured_isolated_noise_max_abs": 0.04679999999999929
+      }
+    ],
+    "reconstructed_vector_measured_std_N": {
+      "Rz": 0.05201999922975363,
+      "Rx": 0.03395469833596653,
+      "normal_estimate": 0.051079497585992874
+    },
+    "unfiltered_true_contact_std_N": {
+      "Rz": 0.048122985094923326,
+      "Rx": 0.014436895528477019
+    },
+    "independent_sensor_only_reconstruction_budget": [
+      {
+        "massS_kg": 0.1,
+        "force_channel_rms_N": 0.02,
+        "inertial_accel_noise_rms_N": 0.0012373972684631238,
+        "combined_axis_rms_N": 0.020038242238280282
+      },
+      {
+        "massS_kg": 1.4,
+        "force_channel_rms_N": 0.02,
+        "inertial_accel_noise_rms_N": 0.017323561758483732,
+        "combined_axis_rms_N": 0.0264595123159895
+      },
+      {
+        "massS_kg": 2,
+        "force_channel_rms_N": 0.02,
+        "inertial_accel_noise_rms_N": 0.024747945369262475,
+        "combined_axis_rms_N": 0.031819189178858724
+      }
+    ],
+    "gaussian_tail_comparison": [
+      {
+        "samples": 100000,
+        "confidence": 0.95,
+        "abs_noise_max_quantile_N": 0.10042821916350382
+      },
+      {
+        "samples": 100000,
+        "confidence": 0.99,
+        "abs_noise_max_quantile_N": 0.10651622867053216
+      }
+    ],
+    "recommended_actions": [
+      "Keep accel.noiseRms=.0123 as the already-normalized output target; intentional .015/.02 stresses are also output targets.",
+      "Keep configured .02 N force noise identified explicitly as output bounded-uniform noise, not .0136 N filtered RMS.",
+      "Do not silently change source distributions. For thermal-noise realism, add an explicit equal-output-RMS Gaussian force-noise sensitivity with retained native trajectories before claiming margin against distribution tails.",
+      "Repeat quiet-window diagnostics on the selected final filter/geometry candidate, because physical force vibration depends on closed-loop dynamics.",
+      "Retain a calibrated dynamic phase envelope and appropriate acquisition antialiasing; nominal density is not a guaranteed installed-vibration noise bound."
+    ],
+    "primary_datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf"
+  },
+  "engineered_fast_common_sensor_path": {
+    "kind": "Engineering sensor-chain design calculation, not a guaranteed manufacturer transfer or native qualification",
+    "parts": {
+      "force": "ATI analog DAQ F/T, existing2pole5.1kHzAA; exact damping/phase of loadedassembly mustidentify",
+      "acceleration": "Orthogonal ADXL1002; buffer/highinputimpedanceactive2pole5.1kHzconditioning matchedtoidentifiedATI response, ratherthan arbitrary100us outputRC",
+      "ADC": "AD7606C-18 simultaneoussampling, suggestedraw100kS/sorhigher withhardwaretrigger/readout/decimation; .65usconversiontypicalnotworst-case",
+      "controller": "10kHz freshframe, deterministichardware/MCU/FPGApath, no desktop/networkdelay assumption"
+    },
+    "engineering_assumptions": {
+      "AA_cutoff_Hz": 5100.0,
+      "AA_order": 2,
+      "AA_damping": 0.7071067811865475,
+      "AA_damping_is_manufacturer_guaranteed": false,
+      "raw_sample_rate_Hz": 100000.0,
+      "digitalEMA_time_s": 5e-05,
+      "digitalEMA_alpha": 0.8187307530779818,
+      "control_sample_rate_Hz": 10000.0,
+      "ADXL1002_noise_density_m_s2_sqrt_Hz": 0.00024525,
+      "ADXL1002_intrinsic_phase": "Not specifiedasfullcomplextransferindatasheet; omitsmechanical21kresponse/70kamp exceptexplicitampnoisesensitivity",
+      "pipeline_target_s": [
+        0,
+        2e-05
+      ],
+      "pipeline_target_is_guaranteed": false
+    },
+    "lowfrequency_delay": {
+      "AA_Butterworth_DC_group_delay_s": 4.4133152752799314e-05,
+      "digitalEMA_DC_group_delay_s": 4.516655566126995e-05,
+      "common_response_DC_group_delay_s": 8.929970841406925e-05,
+      "unmodeled_intrinsic_purelatency_and_processing_must_add": true
+    },
+    "raw_discrete_filter_contract": {
+      "Ts_raw_s": 1e-05,
+      "AA_method": "Bilinearprewarp5100Hz;2poleAAengineeringapproximation",
+      "AA_numerator": [
+        0.020815671616020867,
+        0.041631343232041734,
+        0.020815671616020867
+      ],
+      "AA_denominator": [
+        1.0,
+        -1.5524225960790252,
+        0.6356852825431089
+      ],
+      "digitalEMA_numerator": [
+        0.18126924692201818,
+        0.0
+      ],
+      "digitalEMA_denominator": [
+        1.0,
+        -0.8187307530779818
+      ],
+      "common_numerator": [
+        0.003773241118012132,
+        0.007546482236024264,
+        0.003773241118012132,
+        0.0
+      ],
+      "common_denominator": [
+        1.0,
+        -2.371153349157007,
+        1.906701403726165,
+        -0.5204550900971091
+      ],
+      "recursion": "EMA[k]=alpha*EMA[k-1]+(1-alpha)*freshADC[k]",
+      "timing": "Runat10usrawgrid; latchfreshfilteredframeeach100us; do notadd an unintendedsamplefromstrictlyproperEMA numerator",
+      "pipeline": "ADC/read/compute/currentupdate needs measurednonzero bound; idealzero whole100usdelay is sensitivitytargetonly"
+    },
+    "noise": {
+      "continuous_chain_ENBW_Hz": 3180.096104333893,
+      "including_typical70k_amp_ENBW_Hz": 3174.8587727150098,
+      "AA_alone_Butterworth_ENBW_Hz": 5664.675746151916,
+      "AA_alone_accel_rms_m_s2": 0.018458505857298056,
+      "density_derived_common_accel_rms_m_s2": 0.01383022158865972,
+      "including70k_amp_accel_rms_m_s2": 0.01381882833168389,
+      "ADC_quantum_m_s2": 0.00468,
+      "rawADC_quantization_rms_m_s2": 0.0013509996299037243,
+      "postDigitalEMA_quantization_rms_m_s2": 0.0004265138025779112,
+      "combined_accel_rms_before_noisebudget_additions_m_s2": 0.013836796710771567,
+      "native_q_after_response_conservative_alternative_rms_m_s2": 0.01389605084876381,
+      "outer_control_alias_folded_ENBW_Hz": 3180.096138448353,
+      "outer_baseband_0_to_5k_ENBW_Hz": 2951.494784868368,
+      "outer_folded_from_above5k_ENBW_Hz": 228.60135357998524,
+      "outer_folded_noise_variance_fraction": 0.07188504486267684,
+      "raw_above50k_white_noise_ENBW_Hz": 1.8021658622168608,
+      "raw_above50k_with70k_amp_ENBW_Hz": 0.9174986695879754,
+      "raw_above50k_AA_white_noise_rms_m_s2": 0.00032923530162036853,
+      "white_noise_assumption_does_not_cover": "21kmechanicalresonance,narrowbandsanderlines,200kclockspur,cables/ADC/amplifiernoise,VRE/axis/temperatureerrors"
+    },
+    "frequency": [
+      {
+        "frequency_Hz": 10,
+        "AA_magnitude": 0.9999999999926092,
+        "AA_phase_deg": -0.1588795535227693,
+        "digital50us_magnitude": 0.9999950816507407,
+        "digital50us_phase_deg": -0.1625990082117497,
+        "common_magnitude": 0.9999950816433499,
+        "common_phase_deg": -0.32147856173451894,
+        "common_attenuation_dB": -4.2720408120280346e-05,
+        "analog_AA_only_attenuation_dB": -6.419527944868955e-11,
+        "rawTustin_common_magnitude": 0.9999950816435735,
+        "rawTustin_common_phase_deg": -0.3201167071716182,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9999818271868619,
+            "phase_deg": -0.20950689542649678
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9999571986838848,
+            "phase_deg": -0.37983742713038177
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.9999226769630121,
+            "phase_deg": -0.5548999836991613
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 20,
+        "AA_magnitude": 0.9999999998817477,
+        "AA_phase_deg": -0.31776032871041654,
+        "digital50us_magnitude": 0.9999803270403163,
+        "digital50us_phase_deg": -0.32519446349472586,
+        "common_magnitude": 0.9999803269220663,
+        "common_phase_deg": -0.6429547922051424,
+        "common_attenuation_dB": -0.00017087986464524107,
+        "analog_AA_only_attenuation_dB": -1.0271263998909e-09,
+        "rawTustin_common_magnitude": 0.9999803269260372,
+        "rawTustin_common_phase_deg": -0.6402310830264133,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9999273154086867,
+            "phase_deg": -0.41898547926739
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9998288293921241,
+            "phase_deg": -0.7595790234990775
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.9996908184771276,
+            "phase_deg": -1.1095727374467705
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 50,
+        "AA_magnitude": 0.999999995380773,
+        "AA_phase_deg": -0.7944221997276735,
+        "digital50us_magnitude": 0.999877063132397,
+        "digital50us_phase_deg": -0.8129239913183599,
+        "common_magnitude": 0.9998770585137379,
+        "common_phase_deg": -1.6073461910460334,
+        "common_attenuation_dB": -0.0010679218289061563,
+        "analog_AA_only_attenuation_dB": -4.012209603566763e-08,
+        "rawTustin_common_magnitude": 0.9998770586700145,
+        "rawTustin_common_phase_deg": -1.6005369172727528,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9995460125026092,
+            "phase_deg": -1.046968528003134
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9989316972321028,
+            "phase_deg": -1.8972726637464128
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.9980724400768998,
+            "phase_deg": -2.7699643380023606
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 100,
+        "AA_magnitude": 0.9999999260923742,
+        "AA_phase_deg": -1.5889970652797822,
+        "digital50us_magnitude": 0.9995085256056357,
+        "digital50us_phase_deg": -1.6254041819026943,
+        "common_magnitude": 0.9995084517343337,
+        "common_phase_deg": -3.2144012471824763,
+        "common_attenuation_dB": -0.004270583672368023,
+        "analog_AA_only_attenuation_dB": -6.419535048083094e-07,
+        "rawTustin_common_magnitude": 0.9995084542337777,
+        "rawTustin_common_phase_deg": -3.200782696582314,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9981881968377164,
+            "phase_deg": -2.090408177580334
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9957482580205397,
+            "phase_deg": -3.7826426477727733
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.9923578232878153,
+            "phase_deg": -5.511844181067981
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 300,
+        "AA_magnitude": 0.9999940135353965,
+        "AA_phase_deg": -4.7718666109193135,
+        "digital50us_magnitude": 0.9956027585139212,
+        "digital50us_phase_deg": -4.862084035065665,
+        "common_magnitude": 0.9955967983732483,
+        "common_phase_deg": -9.633950645984976,
+        "common_attenuation_dB": -0.03833017319068479,
+        "analog_AA_only_attenuation_dB": -5.1997926510040154e-05,
+        "rawTustin_common_magnitude": 0.9955969994293716,
+        "rawTustin_common_phase_deg": -9.59309572761771,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9840807076120066,
+            "phase_deg": -6.160591013987967
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9636703608768707,
+            "phase_deg": -10.983842383243964
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.9370847332540098,
+            "phase_deg": -15.704394950395686
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 500,
+        "AA_magnitude": 0.9999538109290412,
+        "AA_phase_deg": -7.9692713606049885,
+        "digital50us_magnitude": 0.9879272471737776,
+        "digital50us_phase_deg": -8.057035379916936,
+        "common_magnitude": 0.9878816157320557,
+        "common_phase_deg": -16.026306740521928,
+        "common_attenuation_dB": -0.10590193243375594,
+        "analog_AA_only_attenuation_dB": -0.0004012024384878994,
+        "rawTustin_common_magnitude": 0.9878831456638569,
+        "rawTustin_common_phase_deg": -15.958225254164505,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.9577727102712077,
+            "phase_deg": -9.918461522643089
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.9082406558073562,
+            "phase_deg": -17.225899142333
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.8501816733590356,
+            "phase_deg": -23.890013442927955
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 1000,
+        "AA_magnitude": 0.9992617420019675,
+        "AA_phase_deg": -16.086726180417767,
+        "digital50us_magnitude": 0.9541848523359333,
+        "digital50us_phase_deg": -15.70055846427278,
+        "common_magnitude": 0.953480417737095,
+        "common_phase_deg": -31.787284644690544,
+        "common_attenuation_dB": -0.413764438432992,
+        "analog_AA_only_attenuation_dB": -0.006414795673894744,
+        "rawTustin_common_magnitude": 0.9535033405736976,
+        "rawTustin_common_phase_deg": -31.651485642807426,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.8601323894146023,
+            "phase_deg": -17.11147770263637
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.7395672743968671,
+            "phase_deg": -27.301968986991653
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.632907904835799,
+            "phase_deg": -34.9916656983216
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 1643.7451841639995,
+        "AA_magnitude": 0.9946478321994398,
+        "AA_phase_deg": -26.959829414452802,
+        "digital50us_magnitude": 0.8889175495523343,
+        "digital50us_phase_deg": -24.451565098493234,
+        "common_magnitude": 0.8841599136662672,
+        "common_phase_deg": -51.41139451294603,
+        "common_attenuation_dB": -1.0693835834046965,
+        "analog_AA_only_attenuation_dB": -0.04661319122171956,
+        "rawTustin_common_magnitude": 0.8843034439359729,
+        "rawTustin_common_phase_deg": -51.192208543568405,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.7258959236286855,
+            "phase_deg": -21.270803426579974
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.5666272384213975,
+            "phase_deg": -30.891688494241947
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.45546952465456414,
+            "phase_deg": -37.079372593490596
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 2155.0,
+        "AA_magnitude": 0.9844316220573999,
+        "AA_phase_deg": -36.034429269886196,
+        "digital50us_magnitude": 0.8287064699539541,
+        "digital50us_phase_deg": -30.348772819088353,
+        "common_magnitude": 0.8158048544262329,
+        "common_phase_deg": -66.38320208897454,
+        "common_attenuation_dB": -1.7682742950572492,
+        "analog_AA_only_attenuation_dB": -0.13628888547853502,
+        "rawTustin_common_magnitude": 0.8161569183552797,
+        "rawTustin_common_phase_deg": -66.1075251788145,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.6394880037155951,
+            "phase_deg": -21.31267881821695
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.47650430816550193,
+            "phase_deg": -29.40739780491185
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.37397386239100505,
+            "phase_deg": -34.26264368034673
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 3000,
+        "AA_magnitude": 0.9450249437048167,
+        "AA_phase_deg": -51.82782407421929,
+        "digital50us_magnitude": 0.7288035003029816,
+        "digital50us_phase_deg": -38.08379376501595,
+        "common_magnitude": 0.6887374868456987,
+        "common_phase_deg": -89.91161783923525,
+        "common_attenuation_dB": -3.2389255687772014,
+        "analog_AA_only_attenuation_dB": -0.49113456483288287,
+        "rawTustin_common_magnitude": 0.6895605997060343,
+        "rawTustin_common_phase_deg": -89.58936793018415,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.5415021939913423,
+            "phase_deg": -17.44063828110805
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.3869935716590787,
+            "phase_deg": -22.85188643347504
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.29805409658803095,
+            "phase_deg": -25.91017999052984
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 5000,
+        "AA_magnitude": 0.720966212670116,
+        "AA_phase_deg": -88.39573793424454,
+        "digital50us_magnitude": 0.5392396449680501,
+        "digital50us_phase_deg": -48.81865667103436,
+        "common_magnitude": 0.38877356455419304,
+        "common_phase_deg": -137.2143946052789,
+        "common_attenuation_dB": -8.206065469491433,
+        "analog_AA_only_attenuation_dB": -2.8417017512356684,
+        "rawTustin_common_magnitude": 0.38889908083947683,
+        "rawTustin_common_phase_deg": -137.187167351487,
+        "no_extra_transport_nativeEMA": [
+          {
+            "EMA_time_s": 0.0001,
+            "DC_group_delay_s": 5.819767068693265e-05,
+            "magnitude": 0.46211715726000974,
+            "phase_deg": -1.8870837720880316e-15
+          },
+          {
+            "EMA_time_s": 0.00015,
+            "DC_group_delay_s": 0.00010551483398097219,
+            "magnitude": 0.3215127375316344,
+            "phase_deg": -2.380373941749626e-15
+          },
+          {
+            "EMA_time_s": 0.0002,
+            "DC_group_delay_s": 0.00015414940825367985,
+            "magnitude": 0.24491866240370913,
+            "phase_deg": -2.6490931213310234e-15
+          }
+        ]
+      },
+      {
+        "frequency_Hz": 9000,
+        "AA_magnitude": 0.30573521255574,
+        "AA_phase_deg": -130.26932475076825,
+        "digital50us_magnitude": 0.3379128563014741,
+        "digital50us_phase_deg": -54.864982201603816,
+        "common_magnitude": 0.1033118589466484,
+        "common_phase_deg": 174.86569304762799,
+        "common_attenuation_dB": -19.716996477742196,
+        "analog_AA_only_attenuation_dB": -10.293090784656073,
+        "rawTustin_common_magnitude": 0.0998840080178046,
+        "rawTustin_common_phase_deg": 173.85622503509822,
+        "no_extra_transport_nativeEMA": []
+      },
+      {
+        "frequency_Hz": 21000,
+        "AA_magnitude": 0.058877275720893636,
+        "AA_phase_deg": -159.94902380704727,
+        "digital50us_magnitude": 0.16128919530284655,
+        "digital50us_phase_deg": -44.8781151431129,
+        "common_magnitude": 0.009496268422646758,
+        "common_phase_deg": 155.1728610498398,
+        "common_attenuation_dB": -40.448940361215186,
+        "analog_AA_only_attenuation_dB": -24.60104586429255,
+        "rawTustin_common_magnitude": 0.006994381264611118,
+        "rawTustin_common_phase_deg": 152.24120525321135,
+        "no_extra_transport_nativeEMA": []
+      },
+      {
+        "frequency_Hz": 50000,
+        "AA_magnitude": 0.010403436964498533,
+        "AA_phase_deg": -171.70661377412392,
+        "digital50us_magnitude": 0.09966799462495585,
+        "digital50us_phase_deg": -3.1586839769418126e-15,
+        "common_magnitude": 0.0010368896994587067,
+        "common_phase_deg": -171.70661377412392,
+        "common_attenuation_dB": -59.685348796312006,
+        "analog_AA_only_attenuation_dB": -39.656463198397,
+        "rawTustin_common_magnitude": 5.8287894513915654e-36,
+        "rawTustin_common_phase_deg": 90.00000000000001,
+        "no_extra_transport_nativeEMA": []
+      },
+      {
+        "frequency_Hz": 100000,
+        "AA_magnitude": 0.00260099120190074,
+        "AA_phase_deg": -175.86397087478971,
+        "digital50us_magnitude": 1.0,
+        "digital50us_phase_deg": 6.338411821824517e-14,
+        "common_magnitude": 0.00260099120190074,
+        "common_phase_deg": -175.86397087478963,
+        "common_attenuation_dB": -51.69722233687779,
+        "analog_AA_only_attenuation_dB": -51.69722233687779,
+        "rawTustin_common_magnitude": 0.9999999999999761,
+        "rawTustin_common_phase_deg": 1.2478714457088238e-13,
+        "no_extra_transport_nativeEMA": []
+      },
+      {
+        "frequency_Hz": 200000,
+        "AA_magnitude": 0.0006502498625290451,
+        "AA_phase_deg": -177.93332637475729,
+        "digital50us_magnitude": 1.0,
+        "digital50us_phase_deg": 1.2676823643649033e-13,
+        "common_magnitude": 0.0006502498625290451,
+        "common_phase_deg": -177.93332637475714,
+        "common_attenuation_dB": -63.73839461894732,
+        "analog_AA_only_attenuation_dB": -63.73839461894732,
+        "rawTustin_common_magnitude": 0.9999999999999761,
+        "rawTustin_common_phase_deg": 2.4957428914176476e-13,
+        "no_extra_transport_nativeEMA": []
+      }
+    ],
+    "outer_noise_density": [
+      {
+        "control_frequency_Hz": 0,
+        "outer_alias_noise_amplification_ratio": 1.0123414720791017,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.00024675873229375246,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00024525
+      },
+      {
+        "control_frequency_Hz": 20,
+        "outer_alias_noise_amplification_ratio": 1.0123427947340045,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.0002467540389856492,
+        "inband_only_density_m_s2_sqrt_Hz": 0.0002452451751776368
+      },
+      {
+        "control_frequency_Hz": 100,
+        "outer_alias_noise_amplification_ratio": 1.012374568730606,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.0002466414701137145,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00024512944778784534
+      },
+      {
+        "control_frequency_Hz": 500,
+        "outer_alias_noise_amplification_ratio": 1.0131880509746514,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.0002438703205266474,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00024227796625828668
+      },
+      {
+        "control_frequency_Hz": 1000,
+        "outer_alias_noise_amplification_ratio": 1.0159796252869393,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.00023570201398447844,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00023384107245002258
+      },
+      {
+        "control_frequency_Hz": 1643.7451841639995,
+        "outer_alias_noise_amplification_ratio": 1.0239239184484508,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.00021941872185974348,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00021684021882665205
+      },
+      {
+        "control_frequency_Hz": 2155,
+        "outer_alias_noise_amplification_ratio": 1.036410460877967,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.00020368600734409502,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00020007614054803362
+      },
+      {
+        "control_frequency_Hz": 3000,
+        "outer_alias_noise_amplification_ratio": 1.0844706500242767,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.00017590234898285685,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00016891286864890762
+      },
+      {
+        "control_frequency_Hz": 4500,
+        "outer_alias_noise_amplification_ratio": 1.5217842874354492,
+        "effective_one_sided_noise_density_m_s2_sqrt_Hz": 0.000138318523055793,
+        "inband_only_density_m_s2_sqrt_Hz": 0.00011212534572054262
+      }
+    ],
+    "sources": [
+      {
+        "title": "ATI F/T system interfaces",
+        "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+        "supports": "DAQanalog fewuslatency,2pole5.1kHzAA,rawchannelsynchronization;doesnotpublishfullAAQhere"
+      },
+      {
+        "title": "ADXL1001/1002datasheet",
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf",
+        "supports": "ADXL1002typ25ug/rtHz,70koutputamp,200kclock,requiredproperfiltering/sampling;notanidentifiedinstalledphase"
+      },
+      {
+        "title": "AD7606C-18datasheet",
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf",
+        "supports": "simultaneous8channel1MS/s,tconv.65usnominalwithoutoversampling,conversionisnotfullcommandlatency"
+      }
+    ],
+    "calculation_source": "import numpy as np,json\nfrom scipy.integrate import simpson\nfrom scipy.signal import freqz\nfrom pathlib import Path\nfsraw=100000.;Tsraw=1/fsraw;fscontrol=10000.;Tscontrol=1/fscontrol\nfc=5100.;zeta=1/np.sqrt(2);tauD=50e-6;alpha=np.exp(-Tsraw/tauD);density=25e-6*9.81;q=.00468\nwp=np.tan(np.pi*fc*Tsraw);den=np.array([1+2*zeta*wp+wp*wp,2*(wp*wp-1),1-2*zeta*wp+wp*wp]);num=wp*wp*np.array([1.,2.,1.])/den[0];den/=den[0]\nbEMA=np.array([1-alpha,0.]);aEMA=np.array([1.,-alpha]);bCommon=np.polymul(num,bEMA);aCommon=np.polymul(den,aEMA)\ndef aa(f,damping=zeta):\n r=np.asarray(f)/fc\n return 1/(1-r*r+2j*damping*r)\ndef digital(f):return (1-alpha)/(1-alpha*np.exp(-2j*np.pi*np.asarray(f)/fsraw))\ndef h(f,damping=zeta):return aa(f,damping)*digital(f)\ngrid=np.linspace(0,500000,1000001)\nENBW=float(simpson(abs(h(grid))**2,x=grid));ENBWamp=float(simpson(abs(h(grid))**2/(1+(grid/70000)**2),x=grid));noise=float(density*np.sqrt(ENBW));noiseamp=float(density*np.sqrt(ENBWamp));quant_output=q/np.sqrt(12)*np.sqrt((1-alpha)/(1+alpha))\nanalogENBW=np.pi*fc/(2*np.sqrt(2))\nlow=np.linspace(0,5000,65537);sAlias=np.zeros_like(low);sBase=abs(h(low))**2\nfor n in range(-50,51):sAlias+=abs(h(low+n*fscontrol))**2\nfoldENBW=float(simpson(sAlias,x=low));baseENBW=float(simpson(sBase,x=low));outbandENBW=foldENBW-baseENBW\nalias_raw_ENBW=float(simpson(abs(aa(grid[grid>=50000]))**2,x=grid[grid>=50000]));alias_raw_amp_ENBW=float(simpson(abs(aa(grid[grid>=50000]))**2/(1+(grid[grid>=50000]/70000)**2),x=grid[grid>=50000]))\nfrequencies=[10,20,50,100,300,500,1000,1643.7451841639994,2155.,3000,5000,9000,21000,50000,100000,200000]\nrows=[]\nfor f in frequencies:\n H=h(f);Haa=aa(f);Hd=digital(f);zr=np.exp(2j*np.pi*f/fsraw);Ht=np.polyval(bCommon,zr)/np.polyval(aCommon,zr)\n native=[]\n if f<=5000:\n  zc=np.exp(2j*np.pi*f/fscontrol)\n  for tau in [100e-6,150e-6,200e-6]:\n   al=np.exp(-Tscontrol/tau);hn=(1-al)*zc/(zc-al);native.append({'EMA_time_s':tau,'DC_group_delay_s':float(Tscontrol*al/(1-al)),'magnitude':float(abs(hn)),'phase_deg':float(np.angle(hn,deg=True))})\n rows.append({'frequency_Hz':f,'AA_magnitude':float(abs(Haa)),'AA_phase_deg':float(np.angle(Haa,deg=True)),'digital50us_magnitude':float(abs(Hd)),'digital50us_phase_deg':float(np.angle(Hd,deg=True)),'common_magnitude':float(abs(H)),'common_phase_deg':float(np.angle(H,deg=True)),'common_attenuation_dB':float(20*np.log10(abs(H))),'analog_AA_only_attenuation_dB':float(20*np.log10(abs(Haa))),'rawTustin_common_magnitude':float(abs(Ht)),'rawTustin_common_phase_deg':float(np.angle(Ht,deg=True)),'no_extra_transport_nativeEMA':native})\nnoise_frequency=[]\nfor f in [0,20,100,500,1000,1643.7451841639994,2155,3000,4500]:\n alias=sum(abs(h(f+n*fscontrol))**2 for n in range(-50,51));base=abs(h(f))**2;noise_frequency.append({'control_frequency_Hz':f,'outer_alias_noise_amplification_ratio':float(alias/base),'effective_one_sided_noise_density_m_s2_sqrt_Hz':float(density*np.sqrt(alias)),'inband_only_density_m_s2_sqrt_Hz':float(density*np.sqrt(base))})\n",
+    "native_noise_recommendation": {
+      "minimum_density_budget_output_m_s2": 0.01383,
+      "proposed_round_nominal_output_m_s2": 0.014,
+      "additional_output_stresses_m_s2": [
+        0.015,
+        0.02
+      ],
+      "force_output_noise_rms_N": 0.02,
+      "ADC_quantization": "RawADC before digital EMA is physical; retaining earlier after-response quantum is a conservative named alternative",
+      "manufacturer_guaranteed": false
+    },
+    "acceptance_guidance": [
+      "Measure installed force and acceleration complex transfer, including ATI analog AA damping and ADXL intrinsic electronics/mechanics, over the bump band and all relevant loaded modes; identify each path.",
+      "Use simultaneous channels and common hardware trigger; calibrate all strain channels to force before reconstruction. Match effective force/acceleration transfer causally and validate residual mismatch against mS*acceleration amplitude.",
+      "At100kraw and10kcontrol, capture current frame, process force matrix/filters/projection/PI, and update winding-current request with a measured0\u201320us target. Stress50us pipeline as engineering bound, not a datasheet guarantee.",
+      "Apply the engineered2pole AA to the ADXL path; ATI already contains an AA response and must not receive an unaccounted duplicate2pole analog filter. The native common path represents one effective matched response per sensor.",
+      "ADC approximately0.65us conversion provision is only conversion, not data read/compute/output time. Do not infer the complete deterministic path from it.",
+      "Measure electronics noise,200kclock feedthrough/alias, mounted21k response, sanding vibration and rectification. Broadband white ENBW sizing does not certify those narrowband artifacts.",
+      "Retain physical sensor raw range, scale/cross-axis/bias calibration and mass/gravity compensation; matching filters does not eliminate those errors.",
+      "Retain equal-RMS force-noise distribution sensitivity; the native bounded-uniform force source is not evidence of Gaussian-tail margin.",
+      "Align measured head position and issued-robot predictor kinematics to the same effective acquisition frame as S acceleration; count their own delays and do not filter already conditioned acceleration twice. The40Hz head-motion observer has its separate causal direction-estimation response."
+    ],
+    "native_path_contract": "At raw10us, each force/accel true signal passes the engineering two-poleAA approximation and directEMA50us; latch latest filtered frame every100us; reconstruct contact vector using matched channels and original measured acceleration. Add explicit finite pipeline or test its bound, without adding an arbitrary extra whole100us sample. Keep physical ADC quantization at raw acquisition, or name an after-response conservative approximation. No surface profile or truth normal force enters control."
+  },
+  "engineered_fast_common_sensor_pole_summary": {
+    "kind": "Frozen sampled poles with engineering commonfast5.1kHz2poleAA+raw100kEMA50us, not guaranteed physicaltransfer or native qualification",
+    "AA_coefficients": {
+      "b": [
+        0.003773241118012132,
+        0.007546482236024264,
+        0.003773241118012132,
+        0.0
+      ],
+      "a": [
+        1.0,
+        -2.371153349157007,
+        1.906701403726165,
+        -0.5204550900971091
+      ],
+      "rawTs_s": 1e-05
+    },
+    "method": "ExactrawplantZOH10us interconnectedwithcausalrawAA/EMA3statefilter; lifted10steps to100uscontroller; optionalpipelineholdsoldcommandfirst2/5rawticks; forcefeedbackLP/PIexactnativecoefficients; \u00b5ratioremovesradialgeometryfeedback",
+    "grid": {
+      "k_N_m": [
+        40000000.0,
+        51200000.0,
+        64000000.0,
+        80000000.0,
+        96000000.0,
+        110000000.0
+      ],
+      "guide_tangent_N_s_m": [
+        2,
+        5,
+        50,
+        200,
+        1002
+      ],
+      "slopes": [
+        0,
+        0.34346004134,
+        -0.15,
+        -0.34346004134
+      ],
+      "mu": [
+        0.3,
+        0.5
+      ]
+    },
+    "current_response_s": 0.0001,
+    "summaries": [
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "stable_points": 237,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": 0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 0.0,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": false,
+          "max_pole_radius": 1.0095201756414391,
+          "largest_growth_rate_per_s": 94.75144347603919,
+          "worst_structural_frequency_Hz": 1032.0626665994266,
+          "worst_structural_growth_per_s": 94.75144347603919,
+          "poles": [
+            {
+              "real": 0.8046000637559256,
+              "imag": 0.609712819638133,
+              "radius": 1.0095201756414391
+            },
+            {
+              "real": 0.8046000637559256,
+              "imag": -0.609712819638133,
+              "radius": 1.0095201756414391
+            },
+            {
+              "real": 0.5279363609719567,
+              "imag": 0.4689019189076082,
+              "radius": 0.7061060903232242
+            },
+            {
+              "real": 0.5279363609719567,
+              "imag": -0.4689019189076082,
+              "radius": 0.7061060903232242
+            },
+            {
+              "real": -0.06506109219413911,
+              "imag": 0.08300066667899168,
+              "radius": 0.10546116055994903
+            },
+            {
+              "real": -0.06506109219413911,
+              "imag": -0.08300066667899168,
+              "radius": 0.10546116055994903
+            },
+            {
+              "real": 0.03956486292837347,
+              "imag": 0.069499551529567,
+              "radius": 0.07997228295698404
+            },
+            {
+              "real": 0.03956486292837347,
+              "imag": -0.069499551529567,
+              "radius": 0.07997228295698404
+            },
+            {
+              "real": 0.9786185052700468,
+              "imag": 0.0,
+              "radius": 0.9786185052700468
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": 0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 2e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9903965606111704,
+          "largest_growth_rate_per_s": -96.4984978484431,
+          "worst_structural_frequency_Hz": 992.9306322611424,
+          "worst_structural_growth_per_s": -96.4984978484431,
+          "poles": [
+            {
+              "real": 0.8038254962455252,
+              "imag": 0.5785757676018506,
+              "radius": 0.9903965606111703
+            },
+            {
+              "real": 0.8038254962455252,
+              "imag": -0.5785757676018506,
+              "radius": 0.9903965606111703
+            },
+            {
+              "real": 0.9785833114572243,
+              "imag": 0.0,
+              "radius": 0.9785833114572243
+            },
+            {
+              "real": 0.541576270281164,
+              "imag": 0.5110250420494149,
+              "radius": 0.7446149677069771
+            },
+            {
+              "real": 0.541576270281164,
+              "imag": -0.5110250420494149,
+              "radius": 0.7446149677069771
+            },
+            {
+              "real": -0.05706013434080952,
+              "imag": 0.0822357804659209,
+              "radius": 0.10009286947545447
+            },
+            {
+              "real": -0.05706013434080952,
+              "imag": -0.0822357804659209,
+              "radius": 0.10009286947545447
+            },
+            {
+              "real": 0.01892091311148942,
+              "imag": 0.08430593666516838,
+              "radius": 0.0864030781278301
+            },
+            {
+              "real": 0.01892091311148942,
+              "imag": -0.08430593666516838,
+              "radius": 0.0864030781278301
+            },
+            {
+              "real": -8.360971345196958e-07,
+              "imag": 0.0,
+              "radius": 8.360971345196958e-07
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 5e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9829339274353858,
+          "largest_growth_rate_per_s": -172.13376317427063,
+          "worst_structural_frequency_Hz": 2203.0156290989485,
+          "worst_structural_growth_per_s": -172.13376317427063,
+          "poles": [
+            {
+              "real": 0.1823536715968923,
+              "imag": 0.9658707181391747,
+              "radius": 0.9829339274353858
+            },
+            {
+              "real": 0.1823536715968923,
+              "imag": -0.9658707181391747,
+              "radius": 0.9829339274353858
+            },
+            {
+              "real": 0.9814828982828244,
+              "imag": 0.0,
+              "radius": 0.9814828982828244
+            },
+            {
+              "real": 0.7383342655304417,
+              "imag": 0.3639888206310222,
+              "radius": 0.8231800223527896
+            },
+            {
+              "real": 0.7383342655304417,
+              "imag": -0.3639888206310222,
+              "radius": 0.8231800223527896
+            },
+            {
+              "real": -0.028720191562948562,
+              "imag": 0.16818118630353798,
+              "radius": 0.1706158281926909
+            },
+            {
+              "real": -0.028720191562948562,
+              "imag": -0.16818118630353798,
+              "radius": 0.1706158281926909
+            },
+            {
+              "real": -0.00028958480996931304,
+              "imag": 0.0,
+              "radius": 0.00028958480996931304
+            },
+            {
+              "real": -0.05552627718694994,
+              "imag": 0.042268503711736266,
+              "radius": 0.06978390834763455
+            },
+            {
+              "real": -0.05552627718694994,
+              "imag": -0.042268503711736266,
+              "radius": 0.06978390834763455
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 0.0,
+          "Kp_A_N": 0.03,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.982897081254786,
+          "largest_growth_rate_per_s": -172.50862938038125,
+          "worst_structural_frequency_Hz": 2164.3107853508386,
+          "worst_structural_growth_per_s": -172.50862938038125,
+          "poles": [
+            {
+              "real": 0.20577870340124527,
+              "imag": 0.9611148722008622,
+              "radius": 0.982897081254786
+            },
+            {
+              "real": 0.20577870340124527,
+              "imag": -0.9611148722008622,
+              "radius": 0.982897081254786
+            },
+            {
+              "real": 0.973554019431759,
+              "imag": 0.0,
+              "radius": 0.973554019431759
+            },
+            {
+              "real": 0.6516963989198261,
+              "imag": 0.2181285285299953,
+              "radius": 0.6872323124851815
+            },
+            {
+              "real": 0.6516963989198261,
+              "imag": -0.2181285285299953,
+              "radius": 0.6872323124851815
+            },
+            {
+              "real": 0.047207020517021706,
+              "imag": 0.07108747597559625,
+              "radius": 0.0853342371306821
+            },
+            {
+              "real": 0.047207020517021706,
+              "imag": -0.07108747597559625,
+              "radius": 0.0853342371306821
+            },
+            {
+              "real": -0.06469613242980093,
+              "imag": 0.08191698410717771,
+              "radius": 0.10438381980263965
+            },
+            {
+              "real": -0.06469613242980093,
+              "imag": -0.08191698410717771,
+              "radius": 0.10438381980263965
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 2e-05,
+          "Kp_A_N": 0.03,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9853132856839418,
+          "largest_growth_rate_per_s": -147.95631847383927,
+          "worst_structural_frequency_Hz": 2171.129679466225,
+          "worst_structural_growth_per_s": -147.95631847383927,
+          "poles": [
+            {
+              "real": 0.20215471843060548,
+              "imag": 0.9643524981880474,
+              "radius": 0.9853132856839419
+            },
+            {
+              "real": 0.20215471843060548,
+              "imag": -0.9643524981880474,
+              "radius": 0.9853132856839419
+            },
+            {
+              "real": 0.9734561174379688,
+              "imag": 0.0,
+              "radius": 0.9734561174379688
+            },
+            {
+              "real": 0.6670537337955356,
+              "imag": 0.22709821003557804,
+              "radius": 0.7046518862331447
+            },
+            {
+              "real": 0.6670537337955356,
+              "imag": -0.22709821003557804,
+              "radius": 0.7046518862331447
+            },
+            {
+              "real": 0.02888956180307511,
+              "imag": 0.0881119326761092,
+              "radius": 0.09272712365372333
+            },
+            {
+              "real": 0.02888956180307511,
+              "imag": -0.0881119326761092,
+              "radius": 0.09272712365372333
+            },
+            {
+              "real": -0.057871162276931655,
+              "imag": 0.07995102778899989,
+              "radius": 0.09869771156313802
+            },
+            {
+              "real": -0.057871162276931655,
+              "imag": -0.07995102778899989,
+              "radius": 0.09869771156313802
+            },
+            {
+              "real": -7.941725246606986e-07,
+              "imag": 0.0,
+              "radius": 7.941725246606986e-07
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 5e-05,
+          "Kp_A_N": 0.03,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1000,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9906804719686445,
+          "largest_growth_rate_per_s": -93.6322654430519,
+          "worst_structural_frequency_Hz": 2178.475660801959,
+          "worst_structural_growth_per_s": -93.6322654430519,
+          "poles": [
+            {
+              "real": 0.1987784170358884,
+              "imag": 0.9705333268160978,
+              "radius": 0.9906804719686444
+            },
+            {
+              "real": 0.1987784170358884,
+              "imag": -0.9705333268160978,
+              "radius": 0.9906804719686444
+            },
+            {
+              "real": 0.9733076054284258,
+              "imag": 0.0,
+              "radius": 0.9733076054284258
+            },
+            {
+              "real": 0.6896630996203563,
+              "imag": 0.23689411803080596,
+              "radius": 0.7292146557328307
+            },
+            {
+              "real": 0.6896630996203563,
+              "imag": -0.23689411803080596,
+              "radius": 0.7292146557328307
+            },
+            {
+              "real": 0.006632508231698558,
+              "imag": 0.13481515973551575,
+              "radius": 0.1349782110562893
+            },
+            {
+              "real": 0.006632508231698558,
+              "imag": -0.13481515973551575,
+              "radius": 0.1349782110562893
+            },
+            {
+              "real": -0.05457478622070949,
+              "imag": 0.060589336222782716,
+              "radius": 0.08154431283022473
+            },
+            {
+              "real": -0.05457478622070949,
+              "imag": -0.060589336222782716,
+              "radius": 0.08154431283022473
+            },
+            {
+              "real": -0.00020693467702790185,
+              "imag": 0.0,
+              "radius": 0.00020693467702790185
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          600,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 0.0,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            600,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.987423840123393,
+          "largest_growth_rate_per_s": -126.55909106741068,
+          "worst_structural_frequency_Hz": 2169.3678405114088,
+          "worst_structural_growth_per_s": -126.55909106741068,
+          "poles": [
+            {
+              "real": 0.20365743332736597,
+              "imag": 0.9661932984111085,
+              "radius": 0.9874238401233929
+            },
+            {
+              "real": 0.20365743332736597,
+              "imag": -0.9661932984111085,
+              "radius": 0.9874238401233929
+            },
+            {
+              "real": -0.0676170525789784,
+              "imag": 0.07801021758786136,
+              "radius": 0.10323594261483644
+            },
+            {
+              "real": -0.0676170525789784,
+              "imag": -0.07801021758786136,
+              "radius": 0.10323594261483644
+            },
+            {
+              "real": 0.12974790570417985,
+              "imag": 0.092738134089568,
+              "radius": 0.15948316697706827
+            },
+            {
+              "real": 0.12974790570417985,
+              "imag": -0.092738134089568,
+              "radius": 0.15948316697706827
+            },
+            {
+              "real": 0.7395920132386908,
+              "imag": 0.2349054144299315,
+              "radius": 0.7760005797516891
+            },
+            {
+              "real": 0.7395920132386908,
+              "imag": -0.2349054144299315,
+              "radius": 0.7760005797516891
+            },
+            {
+              "real": 0.9809624959264549,
+              "imag": 0.0,
+              "radius": 0.9809624959264549
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          600,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 2e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            600,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9903859530790953,
+          "largest_growth_rate_per_s": -96.6056023084407,
+          "worst_structural_frequency_Hz": 2173.9038608167025,
+          "worst_structural_growth_per_s": -96.6056023084407,
+          "poles": [
+            {
+              "real": 0.2015055720433017,
+              "imag": 0.9696699647260865,
+              "radius": 0.9903859530790953
+            },
+            {
+              "real": 0.2015055720433017,
+              "imag": -0.9696699647260865,
+              "radius": 0.9903859530790953
+            },
+            {
+              "real": 0.9809278152855144,
+              "imag": 0.0,
+              "radius": 0.9809278152855144
+            },
+            {
+              "real": 0.7529979378551357,
+              "imag": 0.2395388996909301,
+              "radius": 0.7901802192406668
+            },
+            {
+              "real": 0.7529979378551357,
+              "imag": -0.2395388996909301,
+              "radius": 0.7901802192406668
+            },
+            {
+              "real": 0.11718804585698464,
+              "imag": 0.11009665696720566,
+              "radius": 0.16079276092888414
+            },
+            {
+              "real": 0.11718804585698464,
+              "imag": -0.11009665696720566,
+              "radius": 0.16079276092888414
+            },
+            {
+              "real": -0.06612309241122846,
+              "imag": 0.07694719410614882,
+              "radius": 0.10145508380969977
+            },
+            {
+              "real": -0.06612309241122846,
+              "imag": -0.07694719410614882,
+              "radius": 0.10145508380969977
+            },
+            {
+              "real": -1.8027564826471112e-07,
+              "imag": 0.0,
+              "radius": 1.8027564826471112e-07
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          600,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 5e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            600,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9958081805179466,
+          "largest_growth_rate_per_s": -42.006297867628426,
+          "worst_structural_frequency_Hz": 2177.851633658539,
+          "worst_structural_growth_per_s": -42.006297867628426,
+          "poles": [
+            {
+              "real": 0.20018977192395804,
+              "imag": 0.9754783378443096,
+              "radius": 0.9958081805179466
+            },
+            {
+              "real": 0.20018977192395804,
+              "imag": -0.9754783378443096,
+              "radius": 0.9958081805179466
+            },
+            {
+              "real": 0.9808755996211148,
+              "imag": 0.0,
+              "radius": 0.9808755996211148
+            },
+            {
+              "real": 0.772198474800317,
+              "imag": 0.24410785272878632,
+              "radius": 0.8098636479357464
+            },
+            {
+              "real": 0.772198474800317,
+              "imag": -0.24410785272878632,
+              "radius": 0.8098636479357464
+            },
+            {
+              "real": 0.09824873673240048,
+              "imag": 0.14254786942837347,
+              "radius": 0.1731262815059607
+            },
+            {
+              "real": 0.09824873673240048,
+              "imag": -0.14254786942837347,
+              "radius": 0.1731262815059607
+            },
+            {
+              "real": -0.06492518561558233,
+              "imag": 0.0722809413582242,
+              "radius": 0.09715870630493628
+            },
+            {
+              "real": -0.06492518561558233,
+              "imag": -0.0722809413582242,
+              "radius": 0.09715870630493628
+            },
+            {
+              "real": -6.514132298292279e-05,
+              "imag": 0.0,
+              "radius": 6.514132298292279e-05
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 0.0,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            800,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9813485558046051,
+          "largest_growth_rate_per_s": -188.27575892640934,
+          "worst_structural_frequency_Hz": 1194.9385229137506,
+          "worst_structural_growth_per_s": -420.1021716362807,
+          "poles": [
+            {
+              "real": 0.701062756073807,
+              "imag": 0.6541586049071771,
+              "radius": 0.9588599836930867
+            },
+            {
+              "real": 0.701062756073807,
+              "imag": -0.6541586049071771,
+              "radius": 0.9588599836930867
+            },
+            {
+              "real": -0.06802494980149977,
+              "imag": 0.07828585987946574,
+              "radius": 0.10371147309996086
+            },
+            {
+              "real": -0.06802494980149977,
+              "imag": -0.07828585987946574,
+              "radius": 0.10371147309996086
+            },
+            {
+              "real": 0.10230869530860717,
+              "imag": 0.0811155522715338,
+              "radius": 0.1305634020545779
+            },
+            {
+              "real": 0.10230869530860717,
+              "imag": -0.0811155522715338,
+              "radius": 0.1305634020545779
+            },
+            {
+              "real": 0.6492448206898975,
+              "imag": 0.3246793728502547,
+              "radius": 0.7259032527459096
+            },
+            {
+              "real": 0.6492448206898975,
+              "imag": -0.3246793728502547,
+              "radius": 0.7259032527459096
+            },
+            {
+              "real": 0.9813485558046051,
+              "imag": 0.0,
+              "radius": 0.9813485558046051
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 2e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            800,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9819163554299029,
+          "largest_growth_rate_per_s": -182.4915202545978,
+          "worst_structural_frequency_Hz": 2182.492203038876,
+          "worst_structural_growth_per_s": -182.4915202545978,
+          "poles": [
+            {
+              "real": 0.19459165065779988,
+              "imag": 0.962441592282366,
+              "radius": 0.9819163554299029
+            },
+            {
+              "real": 0.19459165065779988,
+              "imag": -0.962441592282366,
+              "radius": 0.9819163554299029
+            },
+            {
+              "real": 0.98131216677943,
+              "imag": 0.0,
+              "radius": 0.98131216677943
+            },
+            {
+              "real": 0.7279501947921898,
+              "imag": 0.30770426687228875,
+              "radius": 0.7903122180185498
+            },
+            {
+              "real": 0.7279501947921898,
+              "imag": -0.30770426687228875,
+              "radius": 0.7903122180185498
+            },
+            {
+              "real": 0.05264255428361281,
+              "imag": 0.1181663119559008,
+              "radius": 0.12936195655123026
+            },
+            {
+              "real": 0.05264255428361281,
+              "imag": -0.1181663119559008,
+              "radius": 0.12936195655123026
+            },
+            {
+              "real": -0.06017175476185283,
+              "imag": 0.07705957905690408,
+              "radius": 0.09776921190000361
+            },
+            {
+              "real": -0.06017175476185283,
+              "imag": -0.07705957905690408,
+              "radius": 0.09776921190000361
+            },
+            {
+              "real": -4.839055245164732e-07,
+              "imag": 0.0,
+              "radius": 4.839055245164732e-07
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "stable_points": 240,
+        "points": 240,
+        "worst": {
+          "k_N_m": 110000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": -0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 5e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            800,
+            1.5
+          ],
+          "stable": true,
+          "max_pole_radius": 0.9902861795402732,
+          "largest_growth_rate_per_s": -97.61307383553823,
+          "worst_structural_frequency_Hz": 2190.384178858948,
+          "worst_structural_growth_per_s": -97.61307383553823,
+          "poles": [
+            {
+              "real": 0.19143483593601782,
+              "imag": 0.9716066184308443,
+              "radius": 0.9902861795402733
+            },
+            {
+              "real": 0.19143483593601782,
+              "imag": -0.9716066184308443,
+              "radius": 0.9902861795402733
+            },
+            {
+              "real": 0.9812618387658897,
+              "imag": 0.0,
+              "radius": 0.9812618387658897
+            },
+            {
+              "real": 0.7531322651684214,
+              "imag": 0.30977362789876906,
+              "radius": 0.8143512199163715
+            },
+            {
+              "real": 0.7531322651684214,
+              "imag": -0.30977362789876906,
+              "radius": 0.8143512199163715
+            },
+            {
+              "real": 0.029917919003331017,
+              "imag": 0.15951730343851983,
+              "radius": 0.1622986505605844
+            },
+            {
+              "real": 0.029917919003331017,
+              "imag": -0.15951730343851983,
+              "radius": 0.1622986505605844
+            },
+            {
+              "real": -0.05923956431137826,
+              "imag": 0.06367687998610798,
+              "radius": 0.0869716679417333
+            },
+            {
+              "real": -0.05923956431137826,
+              "imag": -0.06367687998610798,
+              "radius": 0.0869716679417333
+            },
+            {
+              "real": -0.00014676936907775685,
+              "imag": 0.0,
+              "radius": 0.00014676936907775685
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1200,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "stable_points": 210,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": 0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 0.0,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1200,
+            1.5
+          ],
+          "stable": false,
+          "max_pole_radius": 1.0566154176074818,
+          "largest_growth_rate_per_s": 550.7079735795744,
+          "worst_structural_frequency_Hz": 1031.640100001757,
+          "worst_structural_growth_per_s": 550.7079735795744,
+          "poles": [
+            {
+              "real": 0.8423049589774063,
+              "imag": 0.6379329877094482,
+              "radius": 1.0566154176074818
+            },
+            {
+              "real": 0.8423049589774063,
+              "imag": -0.6379329877094482,
+              "radius": 1.0566154176074818
+            },
+            {
+              "real": 0.9787744667002523,
+              "imag": 0.0,
+              "radius": 0.9787744667002523
+            },
+            {
+              "real": 0.46376427144677757,
+              "imag": 0.47438869310904275,
+              "radius": 0.6634168611214716
+            },
+            {
+              "real": 0.46376427144677757,
+              "imag": -0.47438869310904275,
+              "radius": 0.6634168611214716
+            },
+            {
+              "real": -0.07129681754736766,
+              "imag": 0.0941327072372018,
+              "radius": 0.1180855739037897
+            },
+            {
+              "real": -0.07129681754736766,
+              "imag": -0.0941327072372018,
+              "radius": 0.1180855739037897
+            },
+            {
+              "real": 0.02896312338730915,
+              "imag": 0.0,
+              "radius": 0.02896312338730915
+            },
+            {
+              "real": -0.02535086258046651,
+              "imag": 0.0,
+              "radius": 0.02535086258046651
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1200,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "stable_points": 227,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": 0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 2e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1200,
+            1.5
+          ],
+          "stable": false,
+          "max_pole_radius": 1.0431760353495143,
+          "largest_growth_rate_per_s": 422.6993967707014,
+          "worst_structural_frequency_Hz": 998.6762760307055,
+          "worst_structural_growth_per_s": 422.6993967707014,
+          "poles": [
+            {
+              "real": 0.8444568292805812,
+              "imag": 0.6124613491551273,
+              "radius": 1.0431760353495143
+            },
+            {
+              "real": 0.8444568292805812,
+              "imag": -0.6124613491551273,
+              "radius": 1.0431760353495143
+            },
+            {
+              "real": 0.9787396021022068,
+              "imag": 0.0,
+              "radius": 0.9787396021022068
+            },
+            {
+              "real": 0.4753722927518865,
+              "imag": 0.5115830957225196,
+              "radius": 0.6983524042668013
+            },
+            {
+              "real": 0.4753722927518865,
+              "imag": -0.5115830957225196,
+              "radius": 0.6983524042668013
+            },
+            {
+              "real": -0.06541418247684205,
+              "imag": 0.10669420920475721,
+              "radius": 0.12515058748141014
+            },
+            {
+              "real": -0.06541418247684205,
+              "imag": -0.10669420920475721,
+              "radius": 0.12515058748141014
+            },
+            {
+              "real": -4.8467907440650185e-05,
+              "imag": 0.0,
+              "radius": 4.8467907440650185e-05
+            },
+            {
+              "real": -0.00352752044210216,
+              "imag": 0.0,
+              "radius": 0.00352752044210216
+            },
+            {
+              "real": -0.03152351201922189,
+              "imag": 0.0,
+              "radius": 0.03152351201922189
+            }
+          ]
+        }
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1200,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "stable_points": 231,
+        "points": 240,
+        "worst": {
+          "k_N_m": 40000000.0,
+          "guide_tangent_N_s_m": 2,
+          "slope": 0.34346004134,
+          "mu": 0.5,
+          "pipeline_s": 5e-05,
+          "Kp_A_N": 0.06,
+          "Ki_A_N_s": 20,
+          "feedback_LP": [
+            1200,
+            1.5
+          ],
+          "stable": false,
+          "max_pole_radius": 1.0250973820557134,
+          "largest_growth_rate_per_s": 247.87614961126192,
+          "worst_structural_frequency_Hz": 943.3710360188016,
+          "worst_structural_growth_per_s": 247.87614961126192,
+          "poles": [
+            {
+              "real": 0.8502306606560446,
+              "imag": 0.5726538800862727,
+              "radius": 1.0250973820557134
+            },
+            {
+              "real": 0.8502306606560446,
+              "imag": -0.5726538800862727,
+              "radius": 1.0250973820557134
+            },
+            {
+              "real": 0.4923565304924209,
+              "imag": 0.5674824665780696,
+              "radius": 0.7512997424411005
+            },
+            {
+              "real": 0.4923565304924209,
+              "imag": -0.5674824665780696,
+              "radius": 0.7512997424411005
+            },
+            {
+              "real": 0.9786871747346788,
+              "imag": 0.0,
+              "radius": 0.9786871747346788
+            },
+            {
+              "real": -0.055634241911082696,
+              "imag": 0.1386997788578395,
+              "radius": 0.14944161913012868
+            },
+            {
+              "real": -0.055634241911082696,
+              "imag": -0.1386997788578395,
+              "radius": 0.14944161913012868
+            },
+            {
+              "real": -0.0005477418101806726,
+              "imag": 0.0,
+              "radius": 0.0005477418101806726
+            },
+            {
+              "real": -0.04965615850327209,
+              "imag": 0.007935930298748823,
+              "radius": 0.05028631093059701
+            },
+            {
+              "real": -0.04965615850327209,
+              "imag": -0.007935930298748823,
+              "radius": 0.05028631093059701
+            }
+          ]
+        }
+      }
+    ],
+    "limits": [
+      "ADIintrinsictransferandATIactualAAQ omitted; commonmatchingassumedexact",
+      "No measnoise, geometryobserver/\u00b5 dynamics, nonlinearcontact, clipping, or nativeforcequalification",
+      "Pipelinebound20us is target not guaranteed; tested50us asadditionalphasebound",
+      "Sensortruefilterimplementedbilinearprewarp at100k; differsactualanalogoutsidebump/cellband asfrequencyreviewquantifies"
+    ],
+    "calculated_frozen_points": 3600
+  },
+  "engineered_fast_common_sensor_stationary_noise": {
+    "kind": "Engineering commonfastpath stationary noise, not native qualification",
+    "mS_kg": 2.0,
+    "M_BplusS_kg": 2.6,
+    "forcecell_noise_output_rms_N": 0.02,
+    "accel_output_rms_beforeADC_m_s2": 0.013830221662841527,
+    "ADC_output_quant_rms_m_s2": 0.00042651380257791125,
+    "combined_accel_rms_m_s2": 0.013836796784918122,
+    "ADC_quantum_raw_m_s2": 0.00468,
+    "noise_frequency_points": 32768,
+    "method": "Exactraw10usplant+AA/EMA3stateslifted10steps; separatelycomputeactualnormalGn andfilteredcellGs includingpurecompute/updatepipeline; physicalaccelerometerwhite25ug/rtHzshapedbyengineeredanalogAA+rawdigitalEMAandaliasfoldedto10k;forcecellpostresponsenoise.02Nunchanged;Ta=-Gn*(mS*Cfb+M)/(1+Gs*Cfb),Tf=-Gn*Cfb/(1+Gs*Cfb). DirectaccelFF,ratioFF,noextracommandfilter/prediction.",
+    "scope_limits": [
+      "Samechainengineeringassumptionsasphase/noisereview;ADXLintrinsicandATIactualQnotguaranteed",
+      "No position/slope/\u00b5 noise,calibration,mismatch,contactnonlinearity,guideforcevariation,clippingorintersamplemaxima",
+      "StationaryRMScannotqualify \u00b1.5N peakforce"
+    ],
+    "rows": [
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 40000000.0,
+        "noise_force_rms_N": 0.11364684381111416,
+        "accel_contribution_N": 0.1132647695631831,
+        "forcecell_contribution_N": 0.00931112689349736,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 64000000.0,
+        "noise_force_rms_N": 0.09050830265352722,
+        "accel_contribution_N": 0.09028114141100398,
+        "forcecell_contribution_N": 0.006408459623714974,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.03,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 110000000.0,
+        "noise_force_rms_N": 0.10371695927704372,
+        "accel_contribution_N": 0.10357057599488848,
+        "forcecell_contribution_N": 0.005508487066606875,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 40000000.0,
+        "noise_force_rms_N": 0.09654569241101124,
+        "accel_contribution_N": 0.09562306554946493,
+        "forcecell_contribution_N": 0.013315406792296255,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 64000000.0,
+        "noise_force_rms_N": 0.0760157245088923,
+        "accel_contribution_N": 0.07548536490063075,
+        "forcecell_contribution_N": 0.008963819410855589,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 0.0,
+        "cell_stiffness_N_m": 110000000.0,
+        "noise_force_rms_N": 0.08998427686758058,
+        "accel_contribution_N": 0.08965653921328681,
+        "forcecell_contribution_N": 0.007673008515423511,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 40000000.0,
+        "noise_force_rms_N": 0.0849048314745497,
+        "accel_contribution_N": 0.084038267507333,
+        "forcecell_contribution_N": 0.01209958685607185,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 64000000.0,
+        "noise_force_rms_N": 0.07352759729307824,
+        "accel_contribution_N": 0.07299245842952086,
+        "forcecell_contribution_N": 0.008854861721549086,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 110000000.0,
+        "noise_force_rms_N": 0.09685455788656355,
+        "accel_contribution_N": 0.09652782950006869,
+        "forcecell_contribution_N": 0.007948805910786894,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "cell_stiffness_N_m": 40000000.0,
+        "noise_force_rms_N": 0.07522965463359024,
+        "accel_contribution_N": 0.07439837483088098,
+        "forcecell_contribution_N": 0.011152701861567083,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "cell_stiffness_N_m": 64000000.0,
+        "noise_force_rms_N": 0.07269847366171091,
+        "accel_contribution_N": 0.07215558409027648,
+        "forcecell_contribution_N": 0.00886790602868086,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          800,
+          1.5
+        ],
+        "pipeline_s": 5e-05,
+        "cell_stiffness_N_m": 110000000.0,
+        "noise_force_rms_N": 0.12493559763875957,
+        "accel_contribution_N": 0.12461345157273666,
+        "forcecell_contribution_N": 0.008966116466076042,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 40000000.0,
+        "noise_force_rms_N": 0.11446427221860887,
+        "accel_contribution_N": 0.11278495824069691,
+        "forcecell_contribution_N": 0.019535168521926008,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 64000000.0,
+        "noise_force_rms_N": 0.07257115995062927,
+        "accel_contribution_N": 0.07173082069795886,
+        "forcecell_contribution_N": 0.011011930737935766,
+        "stationary_valid": true
+      },
+      {
+        "Kp_A_N": 0.06,
+        "Ki_A_N_s": 20,
+        "feedback_LP": [
+          1000,
+          1.5
+        ],
+        "pipeline_s": 2e-05,
+        "cell_stiffness_N_m": 110000000.0,
+        "noise_force_rms_N": 0.08118190424409216,
+        "accel_contribution_N": 0.08065352867341556,
+        "forcecell_contribution_N": 0.009247155736954105,
+        "stationary_valid": true
+      }
+    ],
+    "calculation_source": "exec(open('/tmp/acf-fast-common-sensor-poles-review.py').read().split('rows=[]')[0])\nM=2.6;ms=2.;Nfreq=32768;freq=(np.arange(Nfreq)+.5)*5000/Nfreq;zz=np.exp(2j*np.pi*freq*outerTs)\nfsraw=100000.;aDigital=np.exp(-1e-5/50e-6);fc=5100.;dA=25e-6*9.81;qA=.00468\nrawH=lambda f:(1-aDigital)/(1-aDigital*np.exp(-2j*np.pi*f/fsraw))\nAA=lambda f:1/(1-(f/fc)**2+2j/np.sqrt(2)*f/fc)\nSPa=np.zeros(Nfreq)\nfor n in range(-50,51):fa=freq+n*10000;SPa+=abs(AA(fa)*rawH(fa))**2\nSPa*=dA*dA*5000\nSPq=qA*qA/12/10*sum(abs(rawH(freq+n*10000))**2 for n in range(10));SP=SPa+SPq\nrows=[]\nfor kp,lp,pipeline in [(.03,(1000,1.5),0),(.06,(800,1.5),0),(.06,(800,1.5),2),(.06,(800,1.5),5),(.06,(1000,1.5),2)]:\n cb,ca=control_coeff(kp=kp,ki=20,lp=lp,geometry_loop=False);Cfb=np.polyval(cb,zz)/np.polyval(ca,zz)\n for kk in [40e6,64e6,110e6]:\n  Ts=rawTs;Ap,Bp,Cp,_=plant_coeff(k=kk,friction=2);Ts=outerTs\n  Ar=np.block([[Ap,np.zeros((3,len(Af)))],[Bf@Cp,Af]]);Br=np.vstack([Bp,np.zeros((len(Af),1))]);Cr=np.hstack([Df@Cp,Cf]);Cn=np.hstack([Cp,np.zeros((1,len(Af)))]);Ao=np.linalg.matrix_power(Ar,10)\n  Ball=sum(np.linalg.matrix_power(Ar,j)@Br for j in range(10));Bnew=sum(np.linalg.matrix_power(Ar,j)@Br for j in range(10-pipeline));Bold=Ball-Bnew\n  driveB=Bnew[None,:,:]+Bold[None,:,:]/zz[:,None,None]\n  resp=np.linalg.solve(zz[:,None,None]*np.eye(len(Ar))-Ao,driveB);Gn=(Cn@resp).reshape(-1);Gs=(Cr@resp).reshape(-1);den=1+Gs*Cfb\n  Ta=-Gn*(ms*Cfb+M)/den;Tf=-Gn*Cfb/den\n  rmsA=float(np.sqrt(np.mean(abs(Ta)**2*SP)));rmsF=float(np.sqrt(np.mean(abs(Tf)**2*.02**2)));rms=float(np.hypot(rmsA,rmsF));stable=common_closed(k=kk,friction=2,kp=kp,lp=lp,pipelineRaw=pipeline)['stable']\n  r={'Kp_A_N':kp,'Ki_A_N_s':20,'feedback_LP':lp,'pipeline_s':pipeline*rawTs,'cell_stiffness_N_m':kk,'noise_force_rms_N':rms,'accel_contribution_N':rmsA,'forcecell_contribution_N':rmsF,'stationary_valid':stable};rows.append(r);print(r)\n"
+  },
+  "manufacturer_acquisition_audit_20260930": {
+    "primary_sources": [
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL1001-1002.pdf",
+        "revision": "A",
+        "checked": "25 ug/sqrt(Hz) typical ADXL1002, +/-50 g, 40 mV/g at 5 V, 4.7 kHz 5% band, 11 kHz response gain-rise definition, 21 kHz mechanical resonance; external band limiting and installed mounting are required."
+      },
+      {
+        "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf",
+        "revision": "B",
+        "checked": "Eight simultaneous channels, 0-5 V supported. Analog input filter 25 kHz with 6.8 us phase delay in low-bandwidth mode; 220 kHz/1.1 us general high-bandwidth, 150 kHz/1.5 us in 0-5 V. Oversampling adds conversion/filter latency. Table3 tCONV extracted values 0.5 and 0.65 us; typ/max column attribution not relied upon here."
+      },
+      {
+        "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+        "checked": "DAQ six bridge outputs are amplified and conditioned, then matrix-converted after digitizing; DAQ anti-alias is two-pole 5.1 kHz. TWE supplies no built-in conditioning/AA and requires customer electronics. Tooling affects sensor mechanical response."
+      }
+    ],
+    "ADC_complete_transfer": {
+      "low_bandwidth_filter_corner_Hz": 25000,
+      "low_bandwidth_phase_delay_us_typ": 6.8,
+      "high_bandwidth_filter_corner_Hz_typ_general": 220000,
+      "high_bandwidth_phase_delay_us_typ_general": 1.1,
+      "high_bandwidth_corner_Hz_typ_0to5V": 150000,
+      "high_bandwidth_phase_delay_us_typ_0to5V": 1.5,
+      "phase_note": "Select and characterize corresponding complete transfers on both force and accel inputs; mismatched channel modes add differential phase."
+    },
+    "conversion_wording": "Use approximately 0.65 us no-oversampling conversion provision; previous typ/max labels were based on text extraction losing column positions and are not treated as verified here.",
+    "noise_wording": "18-bit quantum and ideal quantization noise do not include ADC PGA/conversion/reference noise, INL, gain/offset or temperature drift. Measure output PSD/RMS after actual analog/filter/decimation path, plus independently calibrate bias/gain/axis matrix.",
+    "no_native_parameter_changes": true
+  },
+  "final_V8_ratiometric_acceptance_note": {
+    "bias_target_m_s2": 0.01,
+    "ADXL_sensitivity_V_g": 0.04,
+    "equivalent_output_drift_V": 4.077471967380224e-05,
+    "uncompensated_midscale_supply_drift_V": 8.154943934760448e-05,
+    "uncompensated_midscale_supply_drift_ppm_at5V": 16.309887869520896,
+    "interpretation": "Simple datasheet transfer sensitivity; not a new native run or manufacturer drift guarantee. Fixed initial tare does not remove later supply/temperature changes."
+  }
+}

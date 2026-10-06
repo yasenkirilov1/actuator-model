@@ -1,0 +1,184 @@
+{
+  "selectedCheckpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "trainingSourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "trainingBankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+  "selectionBankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+  "selectionIDs": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    140,
+    141,
+    142,
+    143
+  ],
+  "selectionOnly": true,
+  "lockedUTC": "2026-10-05T15:29:55.132957+00:00",
+  "selectedCandidate": {
+    "run": "reward_search_budget_bootstrap_8210",
+    "candidate": "history_0p5",
+    "generation": null,
+    "method": "reward_selected_history_attenuation_of_evolved_policy",
+    "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5",
+    "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+    "rank": [
+      0,
+      -28,
+      1.1018482864130625,
+      0.4540594764313681,
+      0.047018795619866396
+    ],
+    "selection": {
+      "recordings": 28,
+      "passed": 28,
+      "physicalFailures": 0,
+      "worstNormalForceError_N": 0.4540594764313681,
+      "meanRmsNormalForceError_N": 0.047018795619866396,
+      "jointScore": 1.1018482864130625
+    }
+  },
+  "comparedFinalists": [
+    {
+      "run": "reward_search_budget_bootstrap_8210",
+      "candidate": "history_0p5",
+      "generation": null,
+      "method": "reward_selected_history_attenuation_of_evolved_policy",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p5",
+      "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+      "rank": [
+        0,
+        -28,
+        1.1018482864130625,
+        0.4540594764313681,
+        0.047018795619866396
+      ],
+      "selection": {
+        "recordings": 28,
+        "passed": 28,
+        "physicalFailures": 0,
+        "worstNormalForceError_N": 0.4540594764313681,
+        "meanRmsNormalForceError_N": 0.047018795619866396,
+        "jointScore": 1.1018482864130625
+      }
+    },
+    {
+      "run": "reward_search_budget_8211",
+      "candidate": "budget_cma_8211_selected",
+      "generation": 1,
+      "method": "evolutionary_reward_search",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/checkpoints/generation_0001",
+      "checkpointSha256": "e1c98ad22edeca8f528f7d5e3d293060a1f207797b331acf1ca1e13f5790778d",
+      "rank": [
+        0,
+        -28,
+        1.1133142064268837,
+        0.45730204269547414,
+        0.046326341651007005
+      ],
+      "selection": {
+        "recordings": 28,
+        "passed": 28,
+        "physicalFailures": 0,
+        "worstNormalForceError_N": 0.45730204269547414,
+        "meanRmsNormalForceError_N": 0.046326341651007005,
+        "jointScore": 1.1133142064268837
+      }
+    },
+    {
+      "run": "reward_search_budget_bootstrap_8210",
+      "candidate": "history_0p25",
+      "generation": null,
+      "method": "reward_selected_history_attenuation_of_evolved_policy",
+      "directory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/history_0p25",
+      "checkpointSha256": "23070fac00d3ae0da8a8444e471e3a37e90eee7f720f2103efd030108aa37b8e",
+      "rank": [
+        0,
+        -28,
+        1.122926235436369,
+        0.45975827862731933,
+        0.04577852631272289
+      ],
+      "selection": {
+        "recordings": 28,
+        "passed": 28,
+        "physicalFailures": 0,
+        "worstNormalForceError_N": 0.45975827862731933,
+        "meanRmsNormalForceError_N": 0.04577852631272289,
+        "jointScore": 1.122926235436369
+      }
+    }
+  ],
+  "selectionEvidence": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/00_rl_budget3h_20261005_selection_contract_band_v2.json",
+      "sha256": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selection_contract_band_v2.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/01_rl_budget3h_20261005_study_contract.json",
+      "sha256": "775bfef98290d159b60d8d131c709cb79658f51e007f23344e48a7393c585934",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/study_contract.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/02_rl_budget3h_20261005_reward_search_completed_ledger.json",
+      "sha256": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_completed_ledger.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json",
+      "sha256": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_auxiliary_ledger.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/04_ppo_final_ledger_v1_ledger.json",
+      "sha256": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/ppo_final_ledger_v1/ledger.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json",
+      "sha256": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_candidate_registry.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/06_reward_search_budget_bootstrap_8210_results.json",
+      "sha256": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_bootstrap_8210/results.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/07_reward_search_budget_8211_selection.json",
+      "sha256": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_8211/selection.json"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_evidence/08_rl_budget3h_20261005_reward_search_budget_ledger.json",
+      "sha256": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4",
+      "original": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_budget_ledger.json"
+    }
+  ],
+  "rule": "Lexicographic recorded common28-case ranking; no fresh outcomes inspected.",
+  "finalWeightsMayNotBeRetunedAfterFreshEvaluation": true,
+  "evaluationBankSha256": "3f28aa7b0384fb599f06bc190a52dd4950c25233929ab566f9405dff05833041",
+  "evaluationBank": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank_budget/manifest.json"
+}

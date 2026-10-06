@@ -1,0 +1,42 @@
+{
+  "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "rows": [
+    {
+      "scenario": 86,
+      "identity": "holdout_nominal_23",
+      "seed": 91023,
+      "nativeRecording": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_086/native.npz",
+      "nativeRecordingSha256": "628228e2432c7a4a4979561ee863b6525fa8c2fb38998d0547f0af51395b210d",
+      "actionRecording": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_086/actions.npz",
+      "actionRecordingSha256": "03a5e644d92952596d351d69fc8f31b9343000de51d628aa1b49e168ac3fc2cc",
+      "metricsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_086/metrics.json",
+      "metricsSha256": "23ee53087772185809630574a867d6d86f3168cd2fb037ddbf91985d519b9a1c",
+      "recordingMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_final_budget_inputs/case_086_replay.mat",
+      "recordingMatSha256": "05edae0d96dbed40caf04895c0a1a9d2d4d655850e4c345ce61fd71a1ac45561",
+      "requestSource": "Exact frozen physical-tick full current/robot/mode requests in native.npz; independent Run does not execute actor.",
+      "actorClock_s": 0.0001,
+      "nativePhysicsClock_s": 3.3333333333333333e-06,
+      "refinedPhysicsClock_s": 1.6666666666666667e-06,
+      "forceReference_N": 33.0
+    },
+    {
+      "scenario": 95,
+      "identity": "holdout_stress_08",
+      "seed": 92008,
+      "nativeRecording": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_095/native.npz",
+      "nativeRecordingSha256": "0664f8ef8173efc93c116bdd5d68a67fa987b7634edc49f81591668b1c8126bd",
+      "actionRecording": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_095/actions.npz",
+      "actionRecordingSha256": "3a5b15525bbfa4830e90eda7ea08f4627d3c1ab157e097296e1c12047c8ac777",
+      "metricsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/final_holdout32/selected/case_095/metrics.json",
+      "metricsSha256": "34101fd1c29037fd94d21ca89dd04c435cc712b5d90b34ad5e4914a6f0df6e1d",
+      "recordingMat": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_final_budget_inputs/case_095_replay.mat",
+      "recordingMatSha256": "19d18ea5b7c1d8c6ae4f9b4386ad957676968380a7aad0ce152013c49ab50f0b",
+      "requestSource": "Exact frozen physical-tick full current/robot/mode requests in native.npz; independent Run does not execute actor.",
+      "actorClock_s": 0.0001,
+      "nativePhysicsClock_s": 3.3333333333333333e-06,
+      "refinedPhysicsClock_s": 1.6666666666666667e-06,
+      "forceReference_N": 5.0
+    }
+  ],
+  "scope": "Locked budget50 policy; no retuning. Refinement replays requests, not closed-loop neural feedback."
+}

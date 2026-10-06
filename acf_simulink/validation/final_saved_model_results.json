@@ -1,0 +1,783 @@
+{
+  "date": "2026-09-30",
+  "status": "complete",
+  "modelFile": "/home/tommie/.local/state/actuator-model/qualification-20260930/root-native-checkpoint/acf_force_control_simple.slx",
+  "nativeBlocks": 815,
+  "hiddenCodeBlocks": 0,
+  "algebraicLoops": 0,
+  "maximumSubsystemDepth": 3,
+  "pages": [
+    {
+      "system": "acf_force_control_simple",
+      "blocks": 65,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics",
+      "blocks": 64,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator",
+      "blocks": 8,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Ideal position",
+      "blocks": 55,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Leadscrew",
+      "blocks": 91,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Actuator/Voice coil",
+      "blocks": 71,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/B to S spring and damper",
+      "blocks": 11,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Mass A",
+      "blocks": 13,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Mass B",
+      "blocks": 13,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/Measurements and safety",
+      "blocks": 109,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator and RABS mechanics/R to A spring and damper",
+      "blocks": 11,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Actuator selection",
+      "blocks": 0,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller",
+      "blocks": 7,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller/Other actuators PI",
+      "blocks": 37,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller/Voice coil observer",
+      "blocks": 61,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force controller selection",
+      "blocks": 0,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Force measurement",
+      "blocks": 30,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Issued-command robot predictor",
+      "blocks": 12,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Recenter travel",
+      "blocks": 23,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Recenter travel/Force settling gate",
+      "blocks": 31,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Relative position measurement",
+      "blocks": 14,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Robot command delay",
+      "blocks": 3,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Robot motion",
+      "blocks": 15,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    },
+    {
+      "system": "Surface and nominal path",
+      "blocks": 71,
+      "overlaps": 0,
+      "wireThroughBlocks": 0
+    }
+  ],
+  "controllerFromInputs": [
+    {
+      "block": "Force controller/Other actuators PI/Cell error without inertial reconstruction",
+      "tag": "force_error_N"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive derivative command",
+      "tag": "derivative_command"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive error for derivative",
+      "tag": "force_error_N"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive force_error_N 1",
+      "tag": "force_error_N"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive integral_command 2",
+      "tag": "integral_command"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive limited_command 4",
+      "tag": "limited_command"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive raw_command 3",
+      "tag": "raw_command"
+    },
+    {
+      "block": "Force controller/Other actuators PI/Receive tracking_correction 5",
+      "tag": "tracking_correction"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive clipped current",
+      "tag": "limited_current"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive contact error estimate",
+      "tag": "estimated_contact_error_local_N"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive direct force friction",
+      "tag": "local_direct_force_friction"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive friction current",
+      "tag": "friction_current"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive friction for contact reconstruction",
+      "tag": "friction_force"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive friction for observer",
+      "tag": "friction_force"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive integral current",
+      "tag": "integral_current"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive issued-command acceleration",
+      "tag": "command_based_robot_acceleration"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive limited current",
+      "tag": "limited_current"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive predicted state contribution",
+      "tag": "local_prediction_states"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive prediction for observer",
+      "tag": "local_command_prediction"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive raw current",
+      "tag": "raw_current"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive states for force",
+      "tag": "estimated_states"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive states for friction",
+      "tag": "estimated_states"
+    },
+    {
+      "block": "Force controller/Voice coil observer/Receive states for gap estimate",
+      "tag": "estimated_states"
+    },
+    {
+      "block": "Force controller/Voice coil observer/States for diagnostics",
+      "tag": "estimated_states"
+    },
+    {
+      "block": "Recenter travel/Force settling gate/Receive near_target",
+      "tag": "near_target"
+    },
+    {
+      "block": "Recenter travel/Force settling gate/Receive slow_force_rate",
+      "tag": "slow_force_rate"
+    },
+    {
+      "block": "Recenter travel/Receive estimated contact error",
+      "tag": "estimated_contact_error_N"
+    },
+    {
+      "block": "Recenter travel/Receive estimated travel",
+      "tag": "estimated_actuator_travel_m"
+    },
+    {
+      "block": "Recenter travel/Receive nominal_velocity 1",
+      "tag": "nominal_velocity"
+    },
+    {
+      "block": "Issued-command robot predictor/Receive predicted velocity",
+      "tag": "prediction_internal_velocity"
+    }
+  ],
+  "independentGoldenRegression": {
+    "all35MaxDifference": 0,
+    "observerStateMaxDifference": 0,
+    "forceIdentityResidual_N": 8.8817841970012523E-15,
+    "rigidPositionResidual_m": 5.4189686938306944E-14,
+    "fullLoggingRuntime_s": 2.453969,
+    "forcePeakError_N": 0.42634744327320107,
+    "nativeSampleCount": 80001,
+    "unusedScrewSettingDiagnosticChanges": {
+      "signal": [
+        "motorSpeed_rad_s"
+      ],
+      "maxDifference": 24.198003325860391
+    },
+    "physicalCoilSignalDifference": 0
+  },
+  "actuatorStrategySmokeCases": [
+    {
+      "case": "voice_coil_observer",
+      "sampleCount": 10001,
+      "metrics": {
+        "peakAbsForceError_N": 0.2252415292179144,
+        "rmsForceError_N": 0.0740319653339298,
+        "fractionWithinTolerance": 1,
+        "timeOutsideTolerance_s": 0,
+        "minTravel_mm": 12.5,
+        "maxTravel_mm": 12.5,
+        "peakGapSpeed_m_s": 6.5133084111342527E-19,
+        "peakGapAcceleration_m_s2": 2.7755575615628914E-15,
+        "peakBodyAcceleration_m_s2": 1.7763568394002505E-15,
+        "peakAxialForce_N": 0.60524152921791374,
+        "rmsAxialForce_N": 0.3862458231247996,
+        "peakCurrent_A": 0.030262076460895682,
+        "rmsCurrent_A": 0.019312291156239982,
+        "peakVoltage_V": 0.79413834398029137,
+        "peakMotorTorque_Nm": 0,
+        "rmsMotorTorque_Nm": 0,
+        "peakMotorSpeed_rad_s": 4.0924323709967945E-16,
+        "lostContact": false,
+        "impactCount": 0,
+        "totalImpactImpulse_Ns": 0,
+        "strokeStopHit": false,
+        "completed": true,
+        "effortSaturationFraction": 0,
+        "voltageSaturationFraction": 0,
+        "peakRobotSpeed_m_s": 0,
+        "peakRobotAcceleration_m_s2": 0,
+        "overCurrent": false,
+        "passed": true,
+        "springSizing": {
+          "passed": true,
+          "combinedFreeLengthMax_mm": 0,
+          "combinedInstalledLengthMax_mm": 0,
+          "limit_mm": 100,
+          "lower": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          },
+          "upper": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          }
+        },
+        "peakForceIncludingImpacts_N": 20.225241529217914,
+        "finalRecoveryTime_s": 0,
+        "recoveryAfterDisturbance_s": 0,
+        "reason": "pass"
+      }
+    },
+    {
+      "case": "voice_coil_pi",
+      "sampleCount": 10001,
+      "metrics": {
+        "peakAbsForceError_N": 0.02220624529812909,
+        "rmsForceError_N": 0.0079066260347135479,
+        "fractionWithinTolerance": 1,
+        "timeOutsideTolerance_s": 0,
+        "minTravel_mm": 12.5,
+        "maxTravel_mm": 12.5,
+        "peakGapSpeed_m_s": 1.2878587085651819E-18,
+        "peakGapAcceleration_m_s2": 2.7755575615628914E-15,
+        "peakBodyAcceleration_m_s2": 1.7763568394002505E-15,
+        "peakAxialForce_N": 0.40170125069112661,
+        "rmsAxialForce_N": 0.37946832281098952,
+        "peakCurrent_A": 0.020085062534556313,
+        "rmsCurrent_A": 0.018973416140549461,
+        "peakVoltage_V": 0.13681655952049276,
+        "peakMotorTorque_Nm": 0,
+        "rmsMotorTorque_Nm": 0,
+        "peakMotorSpeed_rad_s": 8.0918549153800263E-16,
+        "lostContact": false,
+        "impactCount": 0,
+        "totalImpactImpulse_Ns": 0,
+        "strokeStopHit": false,
+        "completed": true,
+        "effortSaturationFraction": 0,
+        "voltageSaturationFraction": 0,
+        "peakRobotSpeed_m_s": 0,
+        "peakRobotAcceleration_m_s2": 0,
+        "overCurrent": false,
+        "passed": true,
+        "springSizing": {
+          "passed": true,
+          "combinedFreeLengthMax_mm": 0,
+          "combinedInstalledLengthMax_mm": 0,
+          "limit_mm": 100,
+          "lower": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          },
+          "upper": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          }
+        },
+        "peakForceIncludingImpacts_N": 20.021701250691127,
+        "finalRecoveryTime_s": 0,
+        "recoveryAfterDisturbance_s": 0,
+        "reason": "pass"
+      }
+    },
+    {
+      "case": "voice_coil_pid",
+      "sampleCount": 10001,
+      "metrics": {
+        "peakAbsForceError_N": 0.035030483041239791,
+        "rmsForceError_N": 0.011709460472553886,
+        "fractionWithinTolerance": 1,
+        "timeOutsideTolerance_s": 0,
+        "minTravel_mm": 12.5,
+        "maxTravel_mm": 12.5,
+        "peakGapSpeed_m_s": 6.8093678843676289E-19,
+        "peakGapAcceleration_m_s2": 2.7755575615628914E-15,
+        "peakBodyAcceleration_m_s2": 1.7763568394002505E-15,
+        "peakAxialForce_N": 0.41438130842723864,
+        "rmsAxialForce_N": 0.37956724724469254,
+        "peakCurrent_A": 0.020719065421361944,
+        "rmsCurrent_A": 0.018978362362234616,
+        "peakVoltage_V": 0.1843773747767849,
+        "peakMotorTorque_Nm": 0,
+        "rmsMotorTorque_Nm": 0,
+        "peakMotorSpeed_rad_s": 4.2784520242239223E-16,
+        "lostContact": false,
+        "impactCount": 0,
+        "totalImpactImpulse_Ns": 0,
+        "strokeStopHit": false,
+        "completed": true,
+        "effortSaturationFraction": 0,
+        "voltageSaturationFraction": 0,
+        "peakRobotSpeed_m_s": 0,
+        "peakRobotAcceleration_m_s2": 0,
+        "overCurrent": false,
+        "passed": true,
+        "springSizing": {
+          "passed": true,
+          "combinedFreeLengthMax_mm": 0,
+          "combinedInstalledLengthMax_mm": 0,
+          "limit_mm": 100,
+          "lower": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          },
+          "upper": {
+            "part": "Rigid attachment",
+            "passed": true,
+            "minCompression_mm": 0,
+            "maxCompression_mm": 0,
+            "minIndividualLength_mm": 0,
+            "maxIndividualLength_mm": 0,
+            "cyclicExcursion_mm": 0,
+            "peakIndividualForce_N": 0,
+            "peakDamperSpeed_m_s": 0,
+            "peakDamperForce_N": 0,
+            "maxDamperPower_W": 0
+          }
+        },
+        "peakForceIncludingImpacts_N": 20.034381308427239,
+        "finalRecoveryTime_s": 0,
+        "recoveryAfterDisturbance_s": 0,
+        "reason": "pass"
+      }
+    },
+    {
+      "case": "leadscrew",
+      "sampleCount": 10001,
+      "metrics": {
+        "peakAbsForceError_N": 0.025845121398301529,
+        "rmsForceError_N": 0.0093358411615676561,
+        "fractionWithinTolerance": 1,
+        "timeOutsideTolerance_s": 0,
+        "minTravel_mm": 11.481784084378328,
+        "maxTravel_mm": 11.492664052522761,
+        "peakGapSpeed_m_s": 0.0019703434468276043,
+        "peakGapAcceleration_m_s2": 2.3150385563689846,
+        "peakBodyAcceleration_m_s2": 1.4518708607431421,
+        "peakAxialForce_N": 0.76581342630061755,
+        "rmsAxialForce_N": 0.38984657574994591,
+        "peakCurrent_A": 0.18771109028260669,
+        "rmsCurrent_A": 0.061397985514618947,
+        "peakVoltage_V": 0.4567372554316389,
+        "peakMotorTorque_Nm": 0.0093855545141303346,
+        "rmsMotorTorque_Nm": 0.0030698992757309477,
+        "peakMotorSpeed_rad_s": 1.2380032995204784,
+        "lostContact": false,
+        "impactCount": 0,
+        "totalImpactImpulse_Ns": 0,
+        "strokeStopHit": false,
+        "completed": true,
+        "effortSaturationFraction": 0,
+        "voltageSaturationFraction": 0,
+        "peakRobotSpeed_m_s": 0,
+        "peakRobotAcceleration_m_s2": 0,
+        "overCurrent": false,
+        "passed": true,
+        "springSizing": {
+          "passed": true,
+          "combinedFreeLengthMax_mm": 74.360000000000014,
+          "combinedInstalledLengthMax_mm": 60.58505823964348,
+          "limit_mm": 100,
+          "lower": {
+            "part": "D-180S",
+            "passed": true,
+            "minCompression_mm": 3.1253653626939761,
+            "maxCompression_mm": 3.7621055174842879,
+            "minIndividualLength_mm": 13.847894482515713,
+            "maxIndividualLength_mm": 15.464634637306025,
+            "cyclicExcursion_mm": 0.0021066402469838846,
+            "peakIndividualForce_N": 37.143267774122378,
+            "peakDamperSpeed_m_s": 0.00057627048708798934,
+            "peakDamperForce_N": 0.017288114612639679,
+            "maxDamperPower_W": 9.9626302286588537E-6
+          },
+          "upper": {
+            "part": "D-180S",
+            "passed": true,
+            "minCompression_mm": 3.2593996646289165,
+            "maxCompression_mm": 3.6280712155493475,
+            "minIndividualLength_mm": 13.981928784450654,
+            "maxIndividualLength_mm": 15.330600335371084,
+            "cyclicExcursion_mm": 0.010280329990072258,
+            "peakIndividualForce_N": 35.819947111118708,
+            "peakDamperSpeed_m_s": 0.0016068297154723217,
+            "peakDamperForce_N": 0.0080341485773616078,
+            "maxDamperPower_W": 1.2909508672624314E-5
+          }
+        },
+        "peakForceIncludingImpacts_N": 20.0258451213983,
+        "finalRecoveryTime_s": 0,
+        "recoveryAfterDisturbance_s": 0,
+        "reason": "pass"
+      }
+    },
+    {
+      "case": "ideal_position",
+      "sampleCount": 10001,
+      "metrics": {
+        "peakAbsForceError_N": 0.012668762111751164,
+        "rmsForceError_N": 0.0046483582753699647,
+        "fractionWithinTolerance": 1,
+        "timeOutsideTolerance_s": 0,
+        "minTravel_mm": 11.486229120594398,
+        "maxTravel_mm": 11.488072320791304,
+        "peakGapSpeed_m_s": 0.00017556178787679893,
+        "peakGapAcceleration_m_s2": 0.078054695339626251,
+        "peakBodyAcceleration_m_s2": 0.046490698674848119,
+        "peakAxialForce_N": 0.39569985117375456,
+        "rmsAxialForce_N": 0.3794635198989052,
+        "peakCurrent_A": 0,
+        "rmsCurrent_A": 0,
+        "peakVoltage_V": 0,
+        "peakMotorTorque_Nm": 0,
+        "rmsMotorTorque_Nm": 0,
+        "peakMotorSpeed_rad_s": 0.11030872460896821,
+        "lostContact": false,
+        "impactCount": 0,
+        "totalImpactImpulse_Ns": 0,
+        "strokeStopHit": false,
+        "completed": true,
+        "effortSaturationFraction": 0,
+        "voltageSaturationFraction": 0,
+        "peakRobotSpeed_m_s": 0,
+        "peakRobotAcceleration_m_s2": 0,
+        "overCurrent": false,
+        "passed": true,
+        "springSizing": {
+          "passed": true,
+          "combinedFreeLengthMax_mm": 74.360000000000014,
+          "combinedInstalledLengthMax_mm": 60.58505823964348,
+          "limit_mm": 100,
+          "lower": {
+            "part": "D-180S",
+            "passed": true,
+            "minCompression_mm": 3.1257871037526717,
+            "maxCompression_mm": 3.7616837764255928,
+            "minIndividualLength_mm": 13.848316223574408,
+            "maxIndividualLength_mm": 15.464212896247332,
+            "cyclicExcursion_mm": 0.0011692671286578186,
+            "peakIndividualForce_N": 37.139103924649874,
+            "peakDamperSpeed_m_s": 0.00010085325632830906,
+            "peakDamperForce_N": 0.003025597689849272,
+            "maxDamperPower_W": 3.0514137936070836E-7
+          },
+          "upper": {
+            "part": "D-180S",
+            "passed": true,
+            "minCompression_mm": 3.2637854682579532,
+            "maxCompression_mm": 3.6236854119203108,
+            "minIndividualLength_mm": 13.986314588079688,
+            "maxIndividualLength_mm": 15.32621453174205,
+            "cyclicExcursion_mm": 0.00094961325111924538,
+            "peakIndividualForce_N": 35.776646071889232,
+            "peakDamperSpeed_m_s": 9.1632735907841317E-5,
+            "peakDamperForce_N": 0.00045816367953920657,
+            "maxDamperPower_W": 4.1982791449780956E-8
+          }
+        },
+        "peakForceIncludingImpacts_N": 20.012668762111751,
+        "finalRecoveryTime_s": 0,
+        "recoveryAfterDisturbance_s": 0,
+        "reason": "pass"
+      }
+    }
+  ],
+  "contactLossStop": {
+    "endTime_s": 0.0228,
+    "metrics": {
+      "peakAbsForceError_N": 1471.9202985347013,
+      "rmsForceError_N": 367.31053220214392,
+      "fractionWithinTolerance": 0.87746170678336977,
+      "timeOutsideTolerance_s": 0.002749999999999999,
+      "minTravel_mm": 10.40245375312,
+      "maxTravel_mm": 12.5,
+      "peakGapSpeed_m_s": 1.3737734989000006,
+      "peakGapAcceleration_m_s2": 767.758032,
+      "peakBodyAcceleration_m_s2": 767.758032,
+      "peakAxialForce_N": 58.629561832986894,
+      "rmsAxialForce_N": 14.25935582446643,
+      "peakCurrent_A": 3.0010422327549318,
+      "rmsCurrent_A": 0.73640204738017323,
+      "peakVoltage_V": 24,
+      "peakMotorTorque_Nm": 0,
+      "rmsMotorTorque_Nm": 0,
+      "peakMotorSpeed_rad_s": 863.16734636811736,
+      "lostContact": true,
+      "impactCount": 0,
+      "totalImpactImpulse_Ns": 0,
+      "strokeStopHit": false,
+      "completed": false,
+      "effortSaturationFraction": 0.11597374179431072,
+      "voltageSaturationFraction": 0.11597374179431072,
+      "peakRobotSpeed_m_s": 0,
+      "peakRobotAcceleration_m_s2": 0,
+      "overCurrent": false,
+      "passed": false,
+      "springSizing": {
+        "passed": true,
+        "combinedFreeLengthMax_mm": 0,
+        "combinedInstalledLengthMax_mm": 0,
+        "limit_mm": 100,
+        "lower": {
+          "part": "Rigid attachment",
+          "passed": true,
+          "minCompression_mm": 0,
+          "maxCompression_mm": 0,
+          "minIndividualLength_mm": 0,
+          "maxIndividualLength_mm": 0,
+          "cyclicExcursion_mm": 0,
+          "peakIndividualForce_N": 0,
+          "peakDamperSpeed_m_s": 0,
+          "peakDamperForce_N": 0,
+          "maxDamperPower_W": 0
+        },
+        "upper": {
+          "part": "Rigid attachment",
+          "passed": true,
+          "minCompression_mm": 0,
+          "maxCompression_mm": 0,
+          "minIndividualLength_mm": 0,
+          "maxIndividualLength_mm": 0,
+          "cyclicExcursion_mm": 0,
+          "peakIndividualForce_N": 0,
+          "peakDamperSpeed_m_s": 0,
+          "peakDamperForce_N": 0,
+          "maxDamperPower_W": 0
+        }
+      },
+      "peakForceIncludingImpacts_N": 1476.9202985347013,
+      "finalRecoveryTime_s": null,
+      "recoveryAfterDisturbance_s": null,
+      "reason": "force error, loss of contact"
+    }
+  },
+  "travelStop": {
+    "endTime_s": 0.0263,
+    "metrics": {
+      "peakAbsForceError_N": 0.21460629793348218,
+      "rmsForceError_N": 0.095256262367845207,
+      "fractionWithinTolerance": 1,
+      "timeOutsideTolerance_s": 0,
+      "minTravel_mm": 24.9,
+      "maxTravel_mm": 25.000132852132555,
+      "peakGapSpeed_m_s": 0.0070977857977908287,
+      "peakGapAcceleration_m_s2": 0.33333333333333365,
+      "peakBodyAcceleration_m_s2": 0.33333333333333393,
+      "peakAxialForce_N": 0.45194582427373992,
+      "rmsAxialForce_N": 0.31742276795108743,
+      "peakCurrent_A": 0.033285385906006416,
+      "rmsCurrent_A": 0.025965753271316037,
+      "peakVoltage_V": 0.74583510431737576,
+      "peakMotorTorque_Nm": 0,
+      "rmsMotorTorque_Nm": 0,
+      "peakMotorSpeed_rad_s": 4.4596703438187264,
+      "lostContact": false,
+      "impactCount": 0,
+      "totalImpactImpulse_Ns": 0,
+      "strokeStopHit": true,
+      "completed": false,
+      "effortSaturationFraction": 0,
+      "voltageSaturationFraction": 0,
+      "peakRobotSpeed_m_s": 0.0070977857977908149,
+      "peakRobotAcceleration_m_s2": 0.33319448301665383,
+      "overCurrent": false,
+      "passed": false,
+      "springSizing": {
+        "passed": true,
+        "combinedFreeLengthMax_mm": 0,
+        "combinedInstalledLengthMax_mm": 0,
+        "limit_mm": 100,
+        "lower": {
+          "part": "Rigid attachment",
+          "passed": true,
+          "minCompression_mm": 0,
+          "maxCompression_mm": 0,
+          "minIndividualLength_mm": 0,
+          "maxIndividualLength_mm": 0,
+          "cyclicExcursion_mm": 0,
+          "peakIndividualForce_N": 0,
+          "peakDamperSpeed_m_s": 0,
+          "peakDamperForce_N": 0,
+          "maxDamperPower_W": 0
+        },
+        "upper": {
+          "part": "Rigid attachment",
+          "passed": true,
+          "minCompression_mm": 0,
+          "maxCompression_mm": 0,
+          "minIndividualLength_mm": 0,
+          "maxIndividualLength_mm": 0,
+          "cyclicExcursion_mm": 0,
+          "peakIndividualForce_N": 0,
+          "peakDamperSpeed_m_s": 0,
+          "peakDamperForce_N": 0,
+          "maxDamperPower_W": 0
+        }
+      },
+      "peakForceIncludingImpacts_N": 20.07194582427374,
+      "finalRecoveryTime_s": 0,
+      "recoveryAfterDisturbance_s": 0,
+      "reason": "stroke stop"
+    }
+  }
+}

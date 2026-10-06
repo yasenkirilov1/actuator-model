@@ -1,0 +1,29 @@
+{
+  "script": "inertial_mechanics_make_mixed_comparison_20260930.py",
+  "scriptSHA256": "52bff197e21649ac90df91ad695f8fed7d9516251777fcbead19bac1f8cd4a52",
+  "chartData": "inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+  "chartDataSHA256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660",
+  "nativeForceExecutions": 6,
+  "additionalForceExecutionsForFigure": 0,
+  "metric": "max(abs(true normal force - 50 N)) over all 400001 native samples, including startup",
+  "sources": [
+    {
+      "file": "inertial_mechanics_mixed_worst_corner_20260930_results.json",
+      "sha256": "8b09dafb79ad4d467f28cc05375c2001c741f5508a07f0fba9761167018a524f"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_results.json",
+      "sha256": "21f48187ecbf22bdb1ff0fec9a962da13454fe1fafa4638d91e58711db09d950"
+    }
+  ],
+  "figures": [
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930.svg",
+      "sha256": "b3fdcc8536479c017d23c8140345ef962d9d83f0e3617fee6c109f50e68064b2"
+    },
+    {
+      "file": "inertial_mechanics_mixed_comparison_20260930.png",
+      "sha256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "qualificationEpisodes": 0,
+  "design": "upper_20k_lower_cell_joint_pi_modal_v8",
+  "caseCount": 264,
+  "controllerGainFamilyCount": 12,
+  "exactReferenceFamilyID": 8,
+  "selectedParentObserverProfileIDs": [
+    33
+  ],
+  "selectedParentModalFamilyID": 17,
+  "nativeBankCase0MatchesCoder": true,
+  "scientificParity": {
+    "allPhysicalSensingObserverRobotNotchUnchanged": true,
+    "onlyPIGainsAndVirtualModalDampingChange": true,
+    "exactV6ParentReferenceFamilyID": 8,
+    "exactReferenceAllPreparedCoefficientsEqual": true,
+    "modalUsesExplicitIdentifiedCurrentResponse": true,
+    "modalCoefficientsInvariantToActualCurrentResponsePerturbation": true,
+    "noAccelerationLead": true,
+    "originalGuideFeedforwardUnchanged": true,
+    "createdQualificationEpisodes": 0
+  },
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "a5e66c087774c3d31a96942272d41a40b014ce786bae807defde39ad71c2390a",
+  "sharedLibrarySha256": "df86579dd723d0afa61cc387c65aa2a2f8ffa5591130175963b08f27ffa94244"
+}

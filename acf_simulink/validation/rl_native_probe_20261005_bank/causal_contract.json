@@ -1,0 +1,38 @@
+{
+  "observationNames": [
+    "estimated_normal_N",
+    "inertial_axial_N",
+    "inertial_lateral_N",
+    "measured_acceleration_z_m_s2",
+    "measured_acceleration_x_m_s2",
+    "relative_position_m",
+    "estimated_relative_velocity_m_s",
+    "estimated_actuator_travel_m",
+    "estimated_slope",
+    "issued_command_robot_velocity_m_s",
+    "issued_command_robot_acceleration_m_s2",
+    "aligned_issued_command_robot_velocity_m_s",
+    "aligned_issued_command_robot_acceleration_m_s2",
+    "issued_current_request_A",
+    "issued_robot_velocity_request_m_s",
+    "issued_robot_correction_m_s",
+    "force_gate_ready",
+    "recenter_error_m"
+  ],
+  "actions": [
+    "full current request A (external, before native notch/limit)",
+    "robot correction m/s (100Hzheld, before force gate and sign/gain envelope)"
+  ],
+  "reset": "Fresh t=0 snapshot without advancing clock or states; physical initial winding current remains actual equilibrium while actor offset is identified Flat holding current. Chosen seed changes native noise only, no episode parameters change after reset.",
+  "scoring": "True normal,25nativeplantdiagnostics andtrue slope are scoring only. Baseline comparator is not policy observation.",
+  "sourcePaths": [
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/adc_acquisition_trial_20261002/acf_force_control_adc_trial.slx",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_native_probe_20261005_bank/acf_rl_native.slx"
+  ],
+  "baselineAndActorIssuedTags": [
+    "RL actually issued current tap after Current limits",
+    "RL actually issued total robot tap after Robot speed limits",
+    "original rootrobot_velocity_request feeds actual delayed queue and issued-command predictor"
+  ],
+  "review": "Read generated C and the saved private graph; comparator paths remain separate from causal output18. No future bump profile or true motion signal was added to policy observations."
+}

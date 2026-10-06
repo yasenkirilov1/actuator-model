@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "kind": "locked_new_seed_fixed_mechanics_native_qualification",
+  "rows": [
+    {
+      "cohort": "nominal700",
+      "recordings": 700,
+      "passed": 683,
+      "hardFailures": 0,
+      "designMarginPassed": 633,
+      "travelBandExcursions": 0,
+      "nativeSamples": 420000700,
+      "worstNormalForceError_N": 0.5804666605049889,
+      "worstIdentity": "fixed_mechanics_v8_nominal700_673",
+      "worstScenario": 673,
+      "largestVoltage_V": 23.77301808350679,
+      "voltageClipSamples": 0,
+      "largestCurrent_A": 2.369542988046137,
+      "source": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json",
+      "sourceSha256": "f1cccf9fe7a356c8a7b39415b457d731d5a28eb52598ca0585b313455c4e4b7b",
+      "retentionReplaysExcluded": true
+    },
+    {
+      "cohort": "fresh32",
+      "recordings": 32,
+      "passed": 21,
+      "hardFailures": 0,
+      "designMarginPassed": 18,
+      "travelBandExcursions": 0,
+      "nativeSamples": 48300032,
+      "worstNormalForceError_N": 3.9483719894786873,
+      "worstIdentity": "fixed_mechanics_v8_fresh32_028",
+      "worstScenario": 728,
+      "largestVoltage_V": 32.0,
+      "voltageClipSamples": 5136,
+      "largestCurrent_A": 2.53668053371171,
+      "source": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/results.json",
+      "sourceSha256": "9b530268ac4212da06df6ae8488b206b3d31863b3df738ebded938d66eb0d151",
+      "retentionReplaysExcluded": true
+    },
+    {
+      "cohort": "long4",
+      "recordings": 4,
+      "passed": 1,
+      "hardFailures": 1,
+      "designMarginPassed": 1,
+      "travelBandExcursions": 2,
+      "nativeSamples": 28257807,
+      "worstNormalForceError_N": 0.6911072602160715,
+      "worstIdentity": "fixed_mechanics_v8_long4_001",
+      "worstScenario": 733,
+      "largestVoltage_V": 31.57662484403199,
+      "voltageClipSamples": 0,
+      "largestCurrent_A": 2.3790784475711417,
+      "source": "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/results.json",
+      "sourceSha256": "cc63465565a6411483f470074b4fab7ccd3dc377a7eeb951b3c0adfc63728717",
+      "retentionReplaysExcluded": true
+    }
+  ],
+  "totals": {
+    "recordings": 736,
+    "passed": 705,
+    "hardFailures": 1,
+    "nativeSamples": 496558539,
+    "designMarginPassed": 652,
+    "travelBandExcursions": 2,
+    "worstNormalForceError_N": 3.9483719894786873
+  },
+  "sourceHashes": {
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/candidate_lock.json": "6ff7c0e4e78530909f83e28ab1b785203829cada82e74eb64d982ce198c7a8fa",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/results.json": "f1cccf9fe7a356c8a7b39415b457d731d5a28eb52598ca0585b313455c4e4b7b",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/nominal700/input_lock.json": "3038d8110cbcdaf2500cf4646cf75c67c7a81ad87cde8db31523d22c1733aea5",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/results.json": "9b530268ac4212da06df6ae8488b206b3d31863b3df738ebded938d66eb0d151",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/fresh32/input_lock.json": "507499d9991dddcd9a044cf23f5ff0f96664b7e51314be815613263e9f1f91d9",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/results.json": "cc63465565a6411483f470074b4fab7ccd3dc377a7eeb951b3c0adfc63728717",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/evaluation/long4/input_lock.json": "3d91db835b1c0e95441a5541fc9b6eecc4f3ae399de10ded3190765f596f1fb8",
+    "acf_simulink/validation/upper_no_damping_20261005/qualification_v8/native/metadata.json": "b14d91254e52fc7c79aeea8fa521062e9d0b759542e4b0ddce0065032b5783f2"
+  },
+  "selectedIdentity": "upper_20k_lower_cell_joint_pi_modal_v8_gain03_modal02_A1.5_dev07",
+  "scope": "One candidate locked before these new-seed outcomes. Full native force/physical histories scored; finite tested grid and selected residual/schedule cases, not installed hardware qualification. No retuning on these results."
+}

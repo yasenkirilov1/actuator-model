@@ -1,0 +1,64 @@
+{
+  "status": "frozen_prepared_inputs_not_executed",
+  "date": "2026-10-02",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "cases": 49,
+  "executedNativeCases": 0,
+  "files": [
+    {
+      "file": "ADXL1002_reference_8000_L0_current100_24V_configs.mat",
+      "bytes": 310812,
+      "sha256": "23339a9fcefb2829aaf8252cf97b9de3aa8e1c3907d04b8128dabf9d361d7eb7"
+    },
+    {
+      "file": "ADXL354C_1900_L0_current100_24V_configs.mat",
+      "bytes": 311201,
+      "sha256": "2add6ef922bca33303035b1b75d7343225f802e378360c73bcbde815db9f3f25"
+    },
+    {
+      "file": "ADXL354C_1900_L0_current50_36V_configs.mat",
+      "bytes": 311688,
+      "sha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506"
+    },
+    {
+      "file": "ADXL354C_1900_L0_current50_hot32V_configs.mat",
+      "bytes": 312869,
+      "sha256": "e9b0c1cfdc524dda7e0c2ae08ba0d35b122b21305c442d2ebd9267aac9561153"
+    },
+    {
+      "file": "ADXL354C_1900_L50_current50_36V_configs.mat",
+      "bytes": 311661,
+      "sha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4410,
+      "sha256": "1e938625a1ce9f93857097fccd06cb82b1a2e3f46995bd3b950dc2d9e32e368b"
+    },
+    {
+      "file": "digital70_5100_L80_current100_24V_configs.mat",
+      "bytes": 310876,
+      "sha256": "e3844b8aea85f83ca51e2d88a6ba357b9b64b83fb82d0fcf4f60bbff4a560263"
+    },
+    {
+      "file": "digital70_5100_L80_current50_36V_configs.mat",
+      "bytes": 311456,
+      "sha256": "dd87a288d7f49fa57ae9fb6d51d125e4070de8b175043da481ff157c86949f3a"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 87269,
+      "sha256": "0c4c15bf9eeb29d558858d51a9e0ab6c66b041613837ba03551263b23bb1004d"
+    },
+    {
+      "file": "preparation_rejection_001.json",
+      "bytes": 468,
+      "sha256": "fdc681eec360146aa52a10c2cac3e715ef0a4616f2f7e0dbb8b73df62d9edecc"
+    },
+    {
+      "file": "prepare_budget_sensor_stress_20261002.m",
+      "bytes": 12866,
+      "sha256": "47ff9ec5a3bd00c9bd95ebcca5836085cf606db6965ad3ea109364ed9e8ff975"
+    }
+  ]
+}

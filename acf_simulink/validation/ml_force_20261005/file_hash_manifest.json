@@ -1,0 +1,861 @@
+{
+  "status": "sealed_completed_private_ml_force_study",
+  "date": "2026-10-05",
+  "scope": "Scientific inputs, selected native histories, metrics, trained weights, causal audit, numerical/software checks and SVGs. Compilation caches/preferences and worker copies excluded. Public model untouched.",
+  "files": [
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/acf_force_control_adc_trial.slx",
+      "bytes": 716875,
+      "sha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/acf_force_control_ml_force.slx",
+      "bytes": 738443,
+      "sha256": "0969caf376d01f0b597bf888e542a67a9cbd4721c4d90bf80c78e12a267b057e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_adc_prepare.m",
+      "bytes": 9332,
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_desktop_available.m",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_experiment.m",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_metrics.m",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_open.m",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_parameters.m",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_plot.m",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_prepare.m",
+      "bytes": 122,
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_prepare_baseline_v8.m",
+      "bytes": 28898,
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_run.m",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_select_actuator.m",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_select_controller.m",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_signals.m",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_start.m",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_start_visualizer.m",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_sweep.m",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_viewer_selftest.m",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/helpers/acf_visualize.m",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/source/ml_force_20261005.m",
+      "bytes": 19634,
+      "sha256": "679e343c00491cc7223fbf42c87f4171ac36d0ace3fa2817571d037cc5d94bc0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/executed_recipes/collect_ml_force_20261005.m",
+      "bytes": 19634,
+      "sha256": "679e343c00491cc7223fbf42c87f4171ac36d0ace3fa2817571d037cc5d94bc0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/executed_recipes/ml_force_20261005_train.py",
+      "bytes": 6411,
+      "sha256": "25a5ddfd668966e3ea7d1b49c38887cb6902a6dd04c1281ec9be336bf68b9a61"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/executed_recipes/refine_ml_force_20261005.m",
+      "bytes": 20372,
+      "sha256": "aaf5b1888a0d1d5d03ec39a8624e854cd2099385d63119d0b7ccbab5c927a8b7"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/executed_recipes/select_ml_force_20261005.m",
+      "bytes": 19784,
+      "sha256": "86f63504628caa64736edf59fb1449736ddf3c3501f024f74e5345e48192596a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/executed_recipes/test_ml_force_20261005.m",
+      "bytes": 19784,
+      "sha256": "86f63504628caa64736edf59fb1449736ddf3c3501f024f74e5345e48192596a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005.m",
+      "bytes": 20393,
+      "sha256": "192e42081de565c8e5b1364bbb833cd27d4ac71f5267af35e2aad4cd545ef431"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_README.md",
+      "bytes": 8880,
+      "sha256": "3d250a147289c297dfbdca902dae98c4ef523bc8e3e66cb564b49175899b655c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_acceptance.m",
+      "bytes": 3407,
+      "sha256": "f4a54948b834c4efb73792911d7ca17bea90376b91034df604dddcb612fbbad6"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_build.m",
+      "bytes": 7622,
+      "sha256": "521e5031495b9baedbc51b7a1fe435ec08a94197ce1b5d432032171d12333bd2"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_select.py",
+      "bytes": 1960,
+      "sha256": "efbd7e8da1927656decddf2775887015b50b546d1431e05957806c85616f2e98"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_summarize.py",
+      "bytes": 9657,
+      "sha256": "31d5c3638211dd2c5036fe1a3d5a99867d00e316a7c6189d038f6d31de8b6df0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/portable_recipes/ml_force_20261005_train.py",
+      "bytes": 6575,
+      "sha256": "2d5a6d1c325b9424a9176ef23ba77c7d37dc1942d83f54b1f971a61b2d37e150"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_001_excerpt.mat",
+      "bytes": 848796,
+      "sha256": "bd20554afc4a52c46ca802a7bbd2431c4b7de61b1802b701444e598277ff2b08"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_001_features.mat",
+      "bytes": 3527900,
+      "sha256": "008bd73d22bd802ecff098aefdf1906eb095cd802a5312c92e7f4ed8d9feba93"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_002_excerpt.mat",
+      "bytes": 886634,
+      "sha256": "dfd8a746786e25bf1f1a40ff65f024d8b2936492d8f1bcb9d9eede6d1d7d98a1"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_002_features.mat",
+      "bytes": 3510718,
+      "sha256": "8c1c708b54e949a59acc341bbd55b87c100f70c7ae0eac374c07eadd66db9e44"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_003_excerpt.mat",
+      "bytes": 905686,
+      "sha256": "3c1f7680ff4f7df1b187923d2b6eab3aa7e5c93221d66b1fe7373784cfabef16"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_003_features.mat",
+      "bytes": 3521038,
+      "sha256": "30edcb292c1f01e2a89ce4f15380844436884b4cd90d509796785d6917906048"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_004_excerpt.mat",
+      "bytes": 833525,
+      "sha256": "0d989a84eae9114d292c6d637ca907d680681d0d49801d7e35363f84b2ee97b1"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_004_features.mat",
+      "bytes": 3491733,
+      "sha256": "d515a45f2e6658b9254c19caa55175905c74edc7c81dbce6089151482d97013f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_005_excerpt.mat",
+      "bytes": 902885,
+      "sha256": "6a228b433da72f1e1408b75e01b298ad42fcfd6c460b6f219b54ad187bcac1c2"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_005_features.mat",
+      "bytes": 3511335,
+      "sha256": "dca04796df2ffe5834670132b1eed34f89231ede6775b6c6a8b0a7bd2339b795"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_006_excerpt.mat",
+      "bytes": 858429,
+      "sha256": "6fb5c009175d3a18822abb0863841b5a493d4ddad8322f73ce4c60fad85db235"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_006_features.mat",
+      "bytes": 3532066,
+      "sha256": "96fc284255927ba538290ebb3b50f8f12520e7778eec76251d0b6f30e173ab41"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_007_excerpt.mat",
+      "bytes": 918812,
+      "sha256": "6838f81f456be09a7f9cfcf7453190bd09d3149f3758f3f3c5c2690a5a7cacc4"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_007_features.mat",
+      "bytes": 3564376,
+      "sha256": "a9765c9981346d1231101856e287ff303696b561edfff8b192426c39a12b6273"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_008_excerpt.mat",
+      "bytes": 849179,
+      "sha256": "079dc958a5a66a6a7c6ef601989d93545f48a05ef6419c969164608bf187fa02"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_008_features.mat",
+      "bytes": 3507922,
+      "sha256": "586fb3c27bfd7da6e7ef975e1e5745d2626facf630ad03546c4d0a31ad071934"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_009_excerpt.mat",
+      "bytes": 890186,
+      "sha256": "a3d18ccf56bdd690d1140a4daca46c3178c26b4f85a8b3bf70c870f82515fadc"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_009_features.mat",
+      "bytes": 3505851,
+      "sha256": "fedd280fc44384ef419d10466c3b538227ec6734482bf28bcc267179ff8e64f9"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_010_excerpt.mat",
+      "bytes": 853410,
+      "sha256": "ed25e6ccc127d821dd4071b204f95968f4598cd260f46d790ceb430d679d797c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_010_features.mat",
+      "bytes": 3531759,
+      "sha256": "855f66633143752ff666628c9aa4eafac7574e0cf177881d0d46e3278f9bc703"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_011_excerpt.mat",
+      "bytes": 903456,
+      "sha256": "28f0751c32ed6c2459e0dd86a54e4bba20a9154c25af97548bb0c16f823574c3"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_011_features.mat",
+      "bytes": 3532470,
+      "sha256": "b0e3b32fbbd10c6184e4a90e7fdf0fe07a843c9b215ae40a6d8c3e5c29d70e46"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_012_excerpt.mat",
+      "bytes": 897337,
+      "sha256": "7da11de6a0dc2588d1c69a3ee3b9b5c0d90ce43fb8613c104f926c44c2765fd0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/case_012_features.mat",
+      "bytes": 3498029,
+      "sha256": "e7eae46029f1d330f624b74628b0e4517dc3c8ffc64507f361e4fe27d1b3e960"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/configs.mat",
+      "bytes": 520134,
+      "sha256": "1b06f0ed728cd1c8d80db7b562318adb8ee275d3036feeb9e6423b4cdf743e41"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/results.json",
+      "bytes": 15850,
+      "sha256": "1afcf060495fbb15578e0001dc5926f4fc9a33bfee381d251510524b560f9d74"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/collect/worst_native.mat",
+      "bytes": 88696899,
+      "sha256": "4522c567b66b3b9fefadcb5d09cbc75683cede19c8af73222bc5134e18dbe62b"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_001_excerpt.mat",
+      "bytes": 889591,
+      "sha256": "e4cf3f7eafec6a9bf3ff082f6009d3928a0452aa0432a76fcbdc511045bf8ee7"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_001_features.mat",
+      "bytes": 3810793,
+      "sha256": "e05a6187add5377fb2b2db1f76bde39f0cbe0a44257ba0820a344728a18fc0de"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_002_excerpt.mat",
+      "bytes": 853263,
+      "sha256": "88ec42fd8c11a87701313bb92f8f66825a4579ee5d2df41230a5d19272d7af90"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_002_features.mat",
+      "bytes": 3837121,
+      "sha256": "15a1a944829500d3e5fadac994dd1af1531063d6598f7cef5620f5e5a97f4fef"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_003_excerpt.mat",
+      "bytes": 903450,
+      "sha256": "f4c063da6e383869084b6c9a36fb4851c10947fb9ea5c9eddd782f5272147283"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_003_features.mat",
+      "bytes": 3837997,
+      "sha256": "76e943b71b53f3c3ac7b9faa4b54908e81375a31eaa5e1f4da2b75091c7c7beb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_004_excerpt.mat",
+      "bytes": 896902,
+      "sha256": "4280de479f7fdb683131ef85134ed316d42064ca1bcc77accfdea3a6c2502f40"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_004_features.mat",
+      "bytes": 3803215,
+      "sha256": "1062cc81ea633f2c2d1499d89ea400838c619d9373da092a383e653fcf297f29"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_005_excerpt.mat",
+      "bytes": 889159,
+      "sha256": "602578b368bcef931f4bc14ab8bcddd3aae1cc2509765f94fb4081aa4b51d169"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_005_features.mat",
+      "bytes": 3810318,
+      "sha256": "a5dfd3977e4e384d3b450374effb5567f34cf39ec3c5ed9ecb7fda627120b5a9"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_006_excerpt.mat",
+      "bytes": 853269,
+      "sha256": "6b3c04f1f81db13f55cfddd7243dbeed22eca101951cb04a80fc66bd0440e3c3"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_006_features.mat",
+      "bytes": 3836842,
+      "sha256": "08e812dc3dae082f065957839b2664e8d0007d970aff8b79705160f3925dd09d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_007_excerpt.mat",
+      "bytes": 902808,
+      "sha256": "a4c11707e14e2325b2c001160c4372f11a855357db7bfc99a8784e8f1ec880e9"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_007_features.mat",
+      "bytes": 3837606,
+      "sha256": "e8baeebe6a378ab7763d0a8cacb3b29b52cda874940d9a58b229134472d74d40"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_008_excerpt.mat",
+      "bytes": 896578,
+      "sha256": "d189dc00b52c3a854df6fa8ff3ba4da46fd5b010e7c122efc8c1d8dd9dec2adb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_008_features.mat",
+      "bytes": 3802789,
+      "sha256": "3924847b86308678fc459fdb24b0370bb818bbdb075bd51ca68a99e62bd94d8e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_009_excerpt.mat",
+      "bytes": 893138,
+      "sha256": "9195b1fe9b102212c4b37e788c6c3764ff6b5a5d163e9aaa5db1a07ccf1d0716"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_009_features.mat",
+      "bytes": 3814907,
+      "sha256": "0c3591e306c0bf7ab19aa551274a07b7a52823821fa798382664af05d395ddcb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_010_excerpt.mat",
+      "bytes": 853046,
+      "sha256": "de4e7922e14b7f531a4c6bfa1ecfc8499f4109525dc569b9d5f119d071f0eee7"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_010_features.mat",
+      "bytes": 3838392,
+      "sha256": "74b4d2214b80adcb6a6084aa2bae8c536c0756c6b559088229536da1fdbea358"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_011_excerpt.mat",
+      "bytes": 903591,
+      "sha256": "57327082161feeb407072ec8703f1ab604d8090645bac9a8f215dc14bfa67586"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_011_features.mat",
+      "bytes": 3838526,
+      "sha256": "76b6ff1ff48ce1e186c62dcd67319dae67ac711850579d9fc6d64e5debf9548d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_012_excerpt.mat",
+      "bytes": 896349,
+      "sha256": "13ad999c27844f7ac8402b628ef327d40919891e3de6dc099263d1d0305fe17f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/case_012_features.mat",
+      "bytes": 3803521,
+      "sha256": "c70bb79431d9d76b04074c75e692ed1e98bb0a336193173c84300278298ae8e2"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/configs.mat",
+      "bytes": 520156,
+      "sha256": "6d4065fc4c577e0a3323becf738851dee33fb2d95b5dac87a8e3afd557ee0b8a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/results.json",
+      "bytes": 16492,
+      "sha256": "afe76960bcb885024999986781f3ab06cc6c7e17a0cea1010de7f5ed8d4a9a6a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/select/worst_native.mat",
+      "bytes": 88182219,
+      "sha256": "9e4275689271b70cc494c4b53eafcc6185aa699417e95e4aa8fb5df2920431d6"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_001_excerpt.mat",
+      "bytes": 905320,
+      "sha256": "6b3fc50c173a7bbe59cd12fee3cb85e639a35a5c40ec94945384b8a06aa2643f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_001_features.mat",
+      "bytes": 3564499,
+      "sha256": "d9e3321889cd818ba03d8854305c1c5116fadb784f91ce6554f36f28b4a6eaa9"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_002_excerpt.mat",
+      "bytes": 906818,
+      "sha256": "1f211117c65405e9c5a79043c4e67ce3e71f199d79daa9388c7ba4ff9b8f910e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_002_features.mat",
+      "bytes": 3860244,
+      "sha256": "8dd5094b7604fb04ed72e10a6b641c1b43bd918db9264d50986268a809498acb"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_003_excerpt.mat",
+      "bytes": 827359,
+      "sha256": "bbf17b230c3f81cd49b3e34f7b1cacf53a098b0f3041e3c738f186c4e6a798e7"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_003_features.mat",
+      "bytes": 3495059,
+      "sha256": "2b184376b83d3b1bb33274e197620977fd6169b1b751e43838d429b2484ae801"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_004_excerpt.mat",
+      "bytes": 830188,
+      "sha256": "223248628ed9480ef4848437b217f3d4a490873b38e7e32f0c8741102489a62c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_004_features.mat",
+      "bytes": 3790369,
+      "sha256": "03bc74e2375b3dd584ebab7cad47847dd78e4d7a197c4115e1ce4842d765743f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_005_excerpt.mat",
+      "bytes": 915226,
+      "sha256": "e18fff26208ea12aae5180868b4331cd32e852bd3b71f4ffaf02d8829015dc5d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_005_features.mat",
+      "bytes": 3545100,
+      "sha256": "ba5f8a94dcdf52f735411b054ae05e9451434e1fb63cd1ed06922a312428d04d"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_006_excerpt.mat",
+      "bytes": 915569,
+      "sha256": "36fcb11459ea7e24883de245ad7595c549b45256f5b5d5f622b6f8500e66739a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_006_features.mat",
+      "bytes": 3840851,
+      "sha256": "38a08bc72a9f1e3910b7816b442e8ee94a9ae3ee6d84b48a479317a43ee0793c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_007_excerpt.mat",
+      "bytes": 840925,
+      "sha256": "ae39ef59c39e7c214ce9b9487bf1a3fea05b983383ae94dc1846388f353ab355"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_007_features.mat",
+      "bytes": 3513636,
+      "sha256": "bc6ddbf6dd9c6fbb116348178fc9c53d9bddac9d399d85283e9d8c0bbd8e8b38"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_008_excerpt.mat",
+      "bytes": 841351,
+      "sha256": "7d0d1de0ed9216b52a8bb1b7b3f74c1530a28e199273a0a8ec52e64639555d2e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_008_features.mat",
+      "bytes": 3807981,
+      "sha256": "5aa23e297da62c520c5dce59808066c9556bf02029a7da2d4ec1078fbfff6d24"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_009_excerpt.mat",
+      "bytes": 915862,
+      "sha256": "fced5f5212b040b52e12ae71d6566d973137ff59d02764eaa66b205e74bdd4e3"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_009_features.mat",
+      "bytes": 3528862,
+      "sha256": "e40dbfe09d6dd2214a26d286754cc6fdced939c6cd539e3423a591fb9b60e8f0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_010_excerpt.mat",
+      "bytes": 915202,
+      "sha256": "2bf795d78c54402a3455a4dae1eedaf7a69c628a4f45e91ccaedb528781c214b"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_010_features.mat",
+      "bytes": 3822802,
+      "sha256": "bc2c6e1de4598f35de5869e988a89bb365e1ac21d7623953945f1d7d8bf185da"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_011_excerpt.mat",
+      "bytes": 854181,
+      "sha256": "440715c924c5e1ba8a213506d6d82d311824ceec0efaca936fca7d1bbfee5bba"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_011_features.mat",
+      "bytes": 3551323,
+      "sha256": "8e2fae65cb60468e84c8f70deaa15218c48f768dcfa85131d5a2118f14dae793"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_012_excerpt.mat",
+      "bytes": 853683,
+      "sha256": "0f7a5302389707535e7a453d43e6b2b3ac0f44b898b2fd111922d87b38194863"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_012_features.mat",
+      "bytes": 3845472,
+      "sha256": "6053ccd743f9f49c0e6fffd3e2802f156aecdf9f448f4b93dd7b15fdc3377e0e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_013_excerpt.mat",
+      "bytes": 903487,
+      "sha256": "8715c37f82f6c1967efa06e333b6548cf22b8d2ea274808cf5d26515c0037819"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_013_features.mat",
+      "bytes": 3543925,
+      "sha256": "184713bfbf6a5cf1da9b612915ab17666603d016832875378be27867d5f36c73"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_014_excerpt.mat",
+      "bytes": 902591,
+      "sha256": "ef29153d128edcc33c53ff104a4d3efe9d42d60bdcdb046961d00f4f62d7d6cd"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_014_features.mat",
+      "bytes": 3837893,
+      "sha256": "43eafb3c547e751bf53a41bfecbc807c64b113beac9f6012b9b85f6f2e28f716"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_015_excerpt.mat",
+      "bytes": 902510,
+      "sha256": "2807e37fccb9af794d7922b28835669dc049b2e4607abb2537eebbe429d3a530"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_015_features.mat",
+      "bytes": 3515123,
+      "sha256": "aa5701938bb1bcb8fbd769a3e9df1546f106b61360c18702572c183c98df7a2e"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_016_excerpt.mat",
+      "bytes": 901747,
+      "sha256": "817a771157fa2b1fc05624ee24ae55da39a0dce65b3910a0f1829e5ec81c6782"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_016_features.mat",
+      "bytes": 3808214,
+      "sha256": "22096105d1a606be94c317988b62e75edacbf0f3cc3f69b8fa95846b6d6a5bbf"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_017_excerpt.mat",
+      "bytes": 900421,
+      "sha256": "57a2520a8fef6860a64ef3663db3a5d6373cbdddad01ae9c5237b8010e7f3e96"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_017_features.mat",
+      "bytes": 26306434,
+      "sha256": "8ac3f135d73adea6bc2780c81cd00f4478ea4586c3bc932a9c52bc2f290b3a7a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_018_excerpt.mat",
+      "bytes": 900384,
+      "sha256": "6c21fb6eff1b2767548c485b15e3c64bad5a3d181e99d39871e5618df19cd72a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_018_features.mat",
+      "bytes": 28553695,
+      "sha256": "dbfa8147a4fb3adf514cafaae8c59bfe62fbdea77b8b5763d605f975e6aa2c35"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_019_excerpt.mat",
+      "bytes": 900204,
+      "sha256": "eee6ba1677423a61cbe5ffd251c2dc46fac19692076d2e7ec128a76e12c01dbf"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_019_features.mat",
+      "bytes": 26300967,
+      "sha256": "968dbbf0daa3c8b28e826f62f5bcffe44c33b9c8c581d9f5149bf5f48fa685d0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_020_excerpt.mat",
+      "bytes": 900983,
+      "sha256": "30d722fe950efa09b68a90b8924a58f63cb30f01f0617b5399018f72526914c0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_020_features.mat",
+      "bytes": 28558206,
+      "sha256": "1696bbc2d97d389050ff10d2d1ac9be96ba2c57fff9c4dc6517ce51639056277"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_021_excerpt.mat",
+      "bytes": 901275,
+      "sha256": "a76465b5d36a9913774d2c871f30dbffc32c68b4dc4e983cd9ad25e8a9a66a5c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_021_features.mat",
+      "bytes": 3550720,
+      "sha256": "5f10a66703591953b934c9cd51b24ad0dd0bd1dfd533c4f59078937984fdc4e4"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_022_excerpt.mat",
+      "bytes": 904713,
+      "sha256": "588a2e41451cee41b9b228c979786cb6036e8c06b73b582f8f22b47c77758c12"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_022_features.mat",
+      "bytes": 3848549,
+      "sha256": "fc02cbcb4a56ad4f6308b1167461fea0d2b5ece2bba29d283c73befceada8020"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_023_excerpt.mat",
+      "bytes": 901522,
+      "sha256": "1c2280e4d8bfcb23cc96931ca999687ba55b3148a9276949be2d6bef6eaa8ae3"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_023_features.mat",
+      "bytes": 3550431,
+      "sha256": "02fdad4805ec88456077abe1ae368f45aa5696b94c56b40002dfd5b0d4d4367a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_024_excerpt.mat",
+      "bytes": 904745,
+      "sha256": "5dcf42f033c21423d6755c58f41692407912b098f86ccc4972180d4054e256d3"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/case_024_features.mat",
+      "bytes": 3848905,
+      "sha256": "77d1292591f199c2202a4a18719494091123443706d4f64746a9d0e9d4fb1c92"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/configs.mat",
+      "bytes": 1047676,
+      "sha256": "51ae03ef2dde49f46cf8ff7a408035fa19320d368ee001b618b478fde6b58b1b"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/results.json",
+      "bytes": 31680,
+      "sha256": "7d154bca1c138f2e2e5bfe0767645ed447310bb67539278d5d3163c009f0ed29"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/test/worst_native.mat",
+      "bytes": 657883369,
+      "sha256": "eeb1ffcaf5232a61c41fad1b579478926b415f417939a2d820b42ce64d1bb31a"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/case_001_excerpt.mat",
+      "bytes": 904359,
+      "sha256": "d0fe7eef67a79af0d427e6097561f284f3deb8a18ebf213cbaedb4e1028ccb45"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/case_001_features.mat",
+      "bytes": 3515109,
+      "sha256": "d5881437c2d9a04c72d516fb316f710324c8cf9e3d440afa1327060b191865f6"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/case_002_excerpt.mat",
+      "bytes": 903660,
+      "sha256": "3e4b4e92e5af179603653c2cb693dbc7ab9054568c0e598fee6669a5bc605995"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/case_002_features.mat",
+      "bytes": 3808546,
+      "sha256": "7e6adeb822b3a5d0bd052d164cec71328397a566886517e65ca9f9cd36232af2"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/configs.mat",
+      "bytes": 87066,
+      "sha256": "623d2b04d5ef70345e24da30391e66e1ccc6111f496d3050d9c6536c4eebc96c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/results.json",
+      "bytes": 3712,
+      "sha256": "6eb9d91ca6f245cb28964c34c5e63caee01ba7a9dad51261c883a315c93533fa"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/refine/worst_native.mat",
+      "bytes": 190960161,
+      "sha256": "41563287d4ffadca568464593bb201212f502c8df47b39d7730bf8eb89c5a6c0"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/figures/ml_force_holdout_peaks.svg",
+      "bytes": 16275,
+      "sha256": "8dd5bb55f62360eb1edc335638f30d311361aa0c054f11934cf08ba33c5fa17f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/figures/ml_force_holdout_peaks_review.png",
+      "bytes": 40271,
+      "sha256": "b3b75fade90ae8f360b6ac7249f3421e70972b3366611cd31ac520053f6e836c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/figures/ml_force_training.svg",
+      "bytes": 10933,
+      "sha256": "3146f4470f454e1cbafd7a82dc9b95ef8125394f443a4119db1beb65a5835d06"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/figures/ml_force_worst_bump.svg",
+      "bytes": 209691,
+      "sha256": "d6baed05fb41ce8a3b29438a92e1c528b5377820206a34a211074635e64f7824"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/acceptance/acf_force_control_adc_trial.slx",
+      "bytes": 735726,
+      "sha256": "087454eae9d24e9aabf1a396621e6e7a2333cff1ff605a4827111bf9c29c923c"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/acceptance/ml_force_20261005_acceptance.m",
+      "bytes": 3386,
+      "sha256": "de0456c2be2f445cf43f6036cff458794cc33d113dd526cf3ef3452d15037f10"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/acceptance/results.json",
+      "bytes": 1117,
+      "sha256": "216f0394714234103b8304d16bcdd63bb9466f5a1e0da879420e58412ed29bba"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/causal_graph_audit.json",
+      "bytes": 1788,
+      "sha256": "89f395ca5d64024595c2327fd712b04c1507cd1303833e5cd8cf1222a8280014"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/final_checks.json",
+      "bytes": 2668,
+      "sha256": "caeb79b71e28cab5c870115cf049e2e6959803bb2a58a2f9ed5d48de228bed91"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/paired_results.csv",
+      "bytes": 3373,
+      "sha256": "ba9d9a6a5a31b760d305f00004f8e675d6ebb3274991921b3595f417e87963ec"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/selected_gain.json",
+      "bytes": 892,
+      "sha256": "97fa5f19beda0ceb9e2f97d5fea017fa0cae321daa10bb81ca8ff3b3f9153532"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/summary.json",
+      "bytes": 42111,
+      "sha256": "ae14f7451b791621e787d5c8110a145e107368cb08a6bdf452ed79117d2f3687"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/trained_weights.json",
+      "bytes": 3765,
+      "sha256": "2472563d05218c1feafae693f0087b14f1c7100d14ed009cc6a14d8f318aae63"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/trained_weights.mat",
+      "bytes": 1552,
+      "sha256": "e21982cf35ed2790e831bab0cdd45f76271bfb90b872195c9493bce094fc8b05"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/training.json",
+      "bytes": 11122,
+      "sha256": "c4cb919beaefa2f9a6eed6712b27cce9a89914f8e22b39c3755296e53f0ba87f"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005.m",
+      "bytes": 20393,
+      "sha256": "192e42081de565c8e5b1364bbb833cd27d4ac71f5267af35e2aad4cd545ef431"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_README.md",
+      "bytes": 8880,
+      "sha256": "3d250a147289c297dfbdca902dae98c4ef523bc8e3e66cb564b49175899b655c"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_acceptance.m",
+      "bytes": 3407,
+      "sha256": "f4a54948b834c4efb73792911d7ca17bea90376b91034df604dddcb612fbbad6"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_build.m",
+      "bytes": 7622,
+      "sha256": "521e5031495b9baedbc51b7a1fe435ec08a94197ce1b5d432032171d12333bd2"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_select.py",
+      "bytes": 1960,
+      "sha256": "efbd7e8da1927656decddf2775887015b50b546d1431e05957806c85616f2e98"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_summarize.py",
+      "bytes": 9657,
+      "sha256": "31d5c3638211dd2c5036fe1a3d5a99867d00e316a7c6189d038f6d31de8b6df0"
+    },
+    {
+      "file": "acf_simulink/experiments/ml_force_20261005_train.py",
+      "bytes": 6575,
+      "sha256": "2d5a6d1c325b9424a9176ef23ba77c7d37dc1942d83f54b1f971a61b2d37e150"
+    }
+  ],
+  "sourceDependencies": [
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/acf_force_control_adc_trial.slx",
+      "sha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/input_configs.mat",
+      "sha256": "6b4075f774c5669db72dd27cd1ab45b3e1f669947fd16ea7999691ea44c0a2e6"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/ADXL1002_8000_M08_30k_current100_hot32V_configs.mat",
+      "sha256": "31ff22ba5ccb7fbbf20b4d4777275ecbc0028085437eafe6180fc005b06dd202"
+    }
+  ],
+  "sealedFiles": 167,
+  "totalBytes": 1353954836,
+  "mainRecordings": 48,
+  "totalRecordingsWithChecks": 52,
+  "prototypeValidation": false
+}

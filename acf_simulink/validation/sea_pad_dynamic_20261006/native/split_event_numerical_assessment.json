@@ -1,0 +1,30 @@
+{
+  "status": "executed_regular_grid_refinement_of_recorded_motor_commands",
+  "method": "Same recorded100us heldcurrentcommands; compare base2.5us andrefined1.25us regular physicalRK4 against originalevent-splitphysics at100us timestamps. Originalfailed10uN guardpreserved. No candidate retuning.",
+  "cases": [
+    {
+      "identity": "selected_sea_point",
+      "base_dt_s": 2.5e-06,
+      "refined_dt_s": 1.25e-06,
+      "base_vs_refined_force_peak_difference_N": 8.903380491176449e-05,
+      "base_vs_original_force_peak_difference_at_10k_N": 3.218111732650186e-05,
+      "refined_vs_original_force_peak_difference_at_10k_N": 8.284523221391282e-05,
+      "base_force_peak_error_N": 1.7593832283554178,
+      "refined_force_peak_error_N": 1.759360535053375,
+      "original_force_peak_error_N": 1.7593872155438817,
+      "original_force_guard_N": 1e-05
+    },
+    {
+      "identity": "selected_sea_wide",
+      "base_dt_s": 2.5e-06,
+      "refined_dt_s": 1.25e-06,
+      "base_vs_refined_force_peak_difference_N": 5.4605179215627686e-05,
+      "base_vs_original_force_peak_difference_at_10k_N": 1.7603782772823706e-05,
+      "refined_vs_original_force_peak_difference_at_10k_N": 4.8394522899286585e-05,
+      "base_force_peak_error_N": 0.047461606510140086,
+      "refined_force_peak_error_N": 0.04747825990679644,
+      "original_force_peak_error_N": 0.04746767753234593,
+      "original_force_guard_N": 0.0001
+    }
+  ]
+}

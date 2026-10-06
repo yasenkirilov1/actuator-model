@@ -1,0 +1,10 @@
+{
+  "status": "postprocessing_software_rejection",
+  "date": "2026-10-02",
+  "nativeExperimentsChanged": false,
+  "scope": "Delivery verification only; excluded from physical experiment counts.",
+  "completedBeforeRejection": "329 delivery-file byte/hash checks and grid identity checks passed.",
+  "reason": "The streaming history verifier attempted max(diff(t)) on the last one-sample chunk of a 9000001-sample recording, causing an empty-array reduction error.",
+  "correction": "Check within-chunk time differences only for chunks with more than one sample. The final sample still participates in inter-chunk continuity, force/current/voltage maxima, force balance, sample count and end-time checks.",
+  "preservedAttemptManifest": "acf_simulink/validation/budget_sensing_delivery_manifest_attempt01_20261002.json"
+}

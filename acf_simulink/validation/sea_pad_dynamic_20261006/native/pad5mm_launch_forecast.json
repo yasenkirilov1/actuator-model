@@ -1,0 +1,18 @@
+{
+  "status": "recorded_before_two_native_5mm_replays",
+  "timestamp_utc": "2026-10-06T12:19:05.778760+00:00",
+  "source_forecast_sha256": "e038e95fc43af9120ab22c34c21e5dd260c62eff0e6998ea2b560e16c1839f6f",
+  "private_matlab_process_count": 1,
+  "new_native_replay_count": 2,
+  "additional_refinement_runs": 0,
+  "retained_existing_bytes_excluding_private_preferences_and_temporary": 8864902,
+  "retained_forecast_bytes": 9464902,
+  "retained_limit_bytes": 10485760,
+  "temporary_reference_binary_bytes": 15680160,
+  "temporary_forecast_bytes": 190000000,
+  "temporary_limit_bytes": 629145600,
+  "temporary_array_limit_bytes": 314572800,
+  "filesystem_free_bytes": 388218155008,
+  "available_ram_meminfo": "MemAvailable:   22415692 kB",
+  "policy": "All native steps scored in RAM; selected traces losslessly gzipped; owned SDI/cache/preferences released. Prior results and partial model remain unchanged."
+}

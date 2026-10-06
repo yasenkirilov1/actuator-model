@@ -1,0 +1,102 @@
+{
+  "status": "generated_native_c",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "upperObserverContract": {
+    "enabled": false,
+    "nativeBlocksOnly": true
+  },
+  "accelerationLeadContract": {
+    "enabled": true,
+    "causal": true,
+    "input": "Matched-frame measured S acceleration",
+    "outputUse": "Current force feedforward ONLY",
+    "measurementFrameUnchanged": true,
+    "surfacePreview": false,
+    "robotFutureInputs": false,
+    "formula": "(1+(tauPole+tauAdvance)*s)/(1+tauPole*s)",
+    "discretization": "Bilinear at fresh 10 kHz force frame",
+    "initialState": 0,
+    "poleTime_s": 0.0002,
+    "advanceTime_s": 0.00015,
+    "discreteNumerator": [
+      1.6,
+      -1.2
+    ],
+    "discreteDenominator": [
+      1,
+      -0.6
+    ],
+    "highFrequencyGain": 1.75,
+    "sampleTime_s": 0.0001
+  },
+  "mechanicalDesign": "both_external_springs_absent",
+  "modelName": "acf_rl_native",
+  "modelFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/native/both_external_springs_absent_accel_lead_v1/acf_rl_native.slx",
+  "step_s": 3.3333333333333333E-6,
+  "actionStep_s": 0.0001,
+  "physicalTicksPerAction": 30,
+  "robotStep_s": 0.01,
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "installedProducts": [
+    {
+      "Name": "MATLAB",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "MATLAB Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    },
+    {
+      "Name": "Simulink Coder",
+      "Version": "26.2",
+      "Release": "(R2026b)",
+      "Date": "22-May-2026"
+    }
+  ],
+  "configsFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_no_damping_20261005/banks/both_external_springs_absent_accel_lead_v1/configs.mat",
+  "configsSha256": "545851d3b5f6a2f6413192d4585a19e2825d2cc69e44fce7f1cb5fc562d4784e",
+  "observationNames": [
+    "estimated_normal_N",
+    "inertial_axial_N",
+    "inertial_lateral_N",
+    "measured_acceleration_z_m_s2",
+    "measured_acceleration_x_m_s2",
+    "relative_position_m",
+    "estimated_relative_velocity_m_s",
+    "estimated_actuator_travel_m",
+    "estimated_slope",
+    "issued_command_robot_velocity_m_s",
+    "issued_command_robot_acceleration_m_s2",
+    "aligned_issued_command_robot_velocity_m_s",
+    "aligned_issued_command_robot_acceleration_m_s2",
+    "issued_current_request_A",
+    "issued_robot_velocity_request_m_s",
+    "issued_robot_correction_m_s",
+    "force_gate_ready",
+    "recenter_error_m"
+  ],
+  "scoringNames": [
+    "true_normal_N",
+    "plant_log_25",
+    "true_surface_slope"
+  ],
+  "comparatorNames": [
+    "baseline_current_request_A",
+    "baseline_robot_correction_m_s",
+    "known_loaded_equilibrium_current_A"
+  ],
+  "causalContract": "Observations use measured/estimated signals and actual already-issued commands only. Truth and disconnected baseline actions are separate scoring/comparator outputs. Actor current replaces all dynamic PI/FF actuation before current notch/limit; actor robot correction is 100Hz held and passes original gate and teacher sign/amplitude envelope.",
+  "algebraicLoopCount": 0,
+  "buildElapsed_s": 16.381153,
+  "privateModelSha256": "8f1d7b2c15334fdb3c4a89be90566655d48bf59646623141e7129a8a1c2a4eab"
+}

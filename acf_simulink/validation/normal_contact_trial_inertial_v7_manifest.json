@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-30",
+  "version": "inertial-v7",
+  "workFolder": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7",
+  "field": "p.inertial.accelerationFeedforwardFilter_s=0(defaultidentity) / positive identified FF-only commandfilter time",
+  "filterPath": "Force controller/Coil PI and PID/Measured motion feedforward/Acceleration FF command filter",
+  "filterDefinition": "a=exp(-Ts/tau), numerator[1-a,0], denominator[1,-a], initialstate0. tau0 uses[1,0]/[1,0] identity.",
+  "dcGroupDelay": "p.d.accelerationFeedforwardFilter.dcGroupDelay_s=Ts*a/(1-a)",
+  "logChange": "r.accelerationFeedforward expands to3: measured aZ, predicted aZ before FF commandfilter, final filtered aZ entering currentFF; original2columns unchanged.",
+  "unchangedSignals": "Force reconstruction, normal direction, guide acceleration and winding/currentrequest unchanged.",
+  "identityProof": "Four complete native bypass histories EXACTLYequalv6 physical35/normal8/IMU6/motion2/predictor/gate/variation5/measuredDrag3; first2FFcols exact; newcol3equalscol2exact.",
+  "pilotScope": "Heavy64MN/m zero damping LP1000/.03/20 no totalcurrentnotch, dragratio5ms, tauFF1ms withTprediction=discreteDCdelay+.308ms=1.258833194ms, rawderivativefilter300us, fast100us sensors/current100us/guide400us/gateoff; clean.411687N/noisy1729 .492670N full4s bothpass but not improvednominalmargin. FFfilterrecursion residual tested<1e-12. Broaderselectionstillpending.",
+  "files": [
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/acf_force_control_normal_trial.slx",
+      "sha256": "84fb8960b9c679341f6f1f290d2162f6c14db1b0aa8a100899df1f8e36984d56"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/build_normal_contact_trial_v7.m",
+      "sha256": "b9570a4587a3daef99da210b4328f747010a18f8656a585dedc8c8bcdeb35b31"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_prepare.m",
+      "sha256": "e927c450dc4d0e1efc74088cf6e78d9e81709153879567fcac71921e09785656"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_run.m",
+      "sha256": "2d3d5836cd3817364ae019cf7421c5a344ac860da050bfb9d1b6b5a81b842505"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/normal_contact_trial_candidate.mat",
+      "sha256": "71b3365b0e65dd0bbcf04a5a5cb59172042b4d6a0ae2f9f06eddcc39dae44437"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/normal_contact_trial_inertial_v7_equivalence.json",
+      "sha256": "81d59fe559ac664246388f73fec9784ea2dbeb9b8ed54885e9c72ac60250ec6c"
+    },
+    {
+      "path": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v7-20260930/frozen-inertial-v7/normal_contact_trial_inertial_v7_verify.m",
+      "sha256": "7d910ae077da81896198bc8dd1660a2ae8bc1c7f6c9549ecce00abd244a4e864"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "preparation_rejected_before_simulation",
+  "physicalQualificationEpisodes": 0,
+  "sourceGuardHarnessRuns": 0,
+  "reason": "Temporary source-guard logger destination already connected during name-based tap. Private loaded model discarded without saving; original input graph and all source evidence untouched.",
+  "retainedNativeFolder": "acf_simulink/validation/upper_no_damping_20261005/force_observer_guide_v7/rejected_preparations/native_logger_connection_attempt_1",
+  "guardFix": "Explicit source/sink port handles; disconnect any automatic logger-only branch before wiring the verified local cell source."
+}

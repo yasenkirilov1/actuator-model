@@ -1,0 +1,56 @@
+{
+  "status": "authorized_ready_to_launch",
+  "created_utc": "2026-09-30T13:35:48.865377+00:00",
+  "plannedCases": 3,
+  "seeds": [
+    7,
+    29,
+    1729
+  ],
+  "actualAndIdentifiedLowerStiffness_N_m": 23695.2,
+  "actualAndIdentifiedLowerDamping_Ns_m": 48,
+  "primitiveStaticResidualCount": 16,
+  "scope": "Only16 static residuals are halved around actual values; derived identified aliases/inverse B/Kf/coefficient arrays and inactive d.coilControl may update. Every other primitive and all other d.* must remain exactly equal. Native returned p must match the frozen prepared p. Three narrow4s paired cases, full native histories retained; main candidate and original records preserved.",
+  "inputs": [
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-calibrated-static-mixed-20260930/frozen-recipe/inertial_mechanics_run_calibrated_static_mixed_20260930.m",
+      "sha256": "3dbf23e27c29d15f7f3d91114e2fe24c494f67b6662497e74acd13ffbda48603"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/inertial-mechanics-calibrated-static-mixed-20260930/run_calibrated_static_mixed.m",
+      "sha256": "53a60c313a6b0da79ff69a46eeacdcfade1dd4dd6b678e8a0f2af68c291f78e2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_source_20260930/acf_force_control_normal_trial.slx",
+      "sha256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_source_20260930/joint_configs.mat",
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_mixed_source_20260930/portable_input_manifest.json",
+      "sha256": "51706d54c4ad76ce243bddc5fc8ea69feab41bbcb1f3e23462ddc0cbdd6db69e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_results.json",
+      "sha256": "21f48187ecbf22bdb1ff0fec9a962da13454fe1fafa4638d91e58711db09d950"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_inertial_uncertainty.m",
+      "sha256": "247d12963558899afe255fd5a7c8f24eb74e50b50234495839e53299de5dec0e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_01_native.mat",
+      "sha256": "9de3a47f9f91ffe8bf16524b0bebe75beabfd567636ac6f2eb8a6cfb5a44949f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_02_native.mat",
+      "sha256": "a975d3b872b594f84de6b16c969b4012e8f3d725477a30410502fa1293cf0fa6"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_mechanics_calibrated_mechanics_20260930_case_03_native.mat",
+      "sha256": "0a5e7ed68caf0677d5b96b8b3f619126c6e4c184f8c6e8b753e67332e0e788a9"
+    }
+  ]
+}

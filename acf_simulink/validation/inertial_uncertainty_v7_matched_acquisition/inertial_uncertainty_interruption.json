@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-30T09:59:11.824349+00:00",
+  "checkpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition/inertial_uncertainty_matched_acquisition_20260930_results.json",
+  "checkpointSha256": "d1ca85459d0d2456476f0fb1426bf4d360854f0839a8f3b68aead9905ce525a8",
+  "retainedCheckpointStatus": "running",
+  "lastValidatedCase": 34,
+  "validatedNativeHistories": 34,
+  "passed": 14,
+  "failedNative": 20,
+  "rejectedBeforeMetrics": 0,
+  "plannedOriginalCases": 40,
+  "processExitCode": 143,
+  "processSurvives": false,
+  "runnerStopMarkerPresent": false,
+  "coordinatorDidNotTerminate": true,
+  "cause": "Unknown external termination; no simulation qualification inference is made.",
+  "recovery": "Fresh private process executed original configurations33:40. Final preserved checkpoint contains34 validated cases; original33:34 are therefore duplicate benchmarks, not distinct test-grid coverage. Recovery evidence folder inertial_uncertainty_v7_matched_acquisition_remainder.",
+  "lastPrintedProgressCase": 32,
+  "recoveryExecutions": 8,
+  "repeatedBenchmarkExecutions": 2,
+  "totalExecutions": 42,
+  "uniqueConfigurations": 40
+}

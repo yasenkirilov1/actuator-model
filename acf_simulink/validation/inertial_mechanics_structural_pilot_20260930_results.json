@@ -1,0 +1,939 @@
+{
+  "date": "2026-09-30",
+  "phase": "structural_pilot",
+  "status": "interrupted_after_case_1",
+  "recipeVersion": "inertial_mechanics_v1",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/acf_force_control_normal_trial.slx",
+  "sourceModelSHA256": "3f502c5b5a3c80f20d95cbcce39a00fe5d9bb1bc2e9d0177fa58d66c972c597a",
+  "privateFolder": "/home/tommie/.local/state/actuator-model/tp55dd6a77_0acd_4ad8_866b_3976b485abaa",
+  "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/normal_contact_trial_candidate.mat",
+  "candidateSHA256": "1118dba1c517971418e7025367fd1ec42bfa838be21f35aaa8a26b21efa09914",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "26e7c50cd8bf4c76dae58ecd6945cea39a57abaee71bd3b865f58c238a173c51"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "7e56f1cf321aa2ad47c7870a42897cc192c2a5c76434dd5bdd545ae09a89055e"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "95abf2364460a3fbef718e98f348c3a6a8399c7e28914d4237b65a4bf6997b30"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "18e6fdc85998dff6fe992ccb0f52112388f7372410d0724803725ffe702848f9"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "recipeSHA256": "c4891cb85e1583e35099850771ef562d9acef737e311433bc4b581254a78f4a6",
+  "catalogueFile": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/spring_catalog.json",
+  "catalogueSHA256": "cd027b5dd04d283f8734f946e34007111cfb10625a8b517f9ed6072d7328083c",
+  "catalogue": {
+    "source": "https://www.gutekunst-net.de/ebook/Gutekunst-Federnkatalog-2013-E/files/assets/basic-html/page80.html",
+    "checkedDate": "2026-09-29",
+    "arrangement": "Two guided, opposed, preloaded compression springs per modeled elastic link; four springs in total.",
+    "dynamicRatingNote": "Catalogue cyclic stroke/working length ratings require the specified surface treatment and supplier confirmation. These are sizing envelopes, not hardware qualification.",
+    "springs": [
+      {
+        "part": "D-180Y-08",
+        "rate_N_m": 1977,
+        "freeLength_m": 0.02,
+        "freeLengthTolerance_m": 0.0014,
+        "minWorkingLength_m": 0.0071,
+        "maxCyclicStroke_m": 0.0105,
+        "forceEnvelope_N": 21.999
+      },
+      {
+        "part": "D-180N",
+        "rate_N_m": 3673,
+        "freeLength_m": 0.0228,
+        "freeLengthTolerance_m": 0.00075,
+        "minWorkingLength_m": 0.00815,
+        "maxCyclicStroke_m": 0.00536,
+        "forceEnvelope_N": 50.267
+      },
+      {
+        "part": "D-180Q-01",
+        "rate_N_m": 6413,
+        "freeLength_m": 0.0192,
+        "freeLengthTolerance_m": 0.00052,
+        "minWorkingLength_m": 0.00965,
+        "maxCyclicStroke_m": 0.0037,
+        "forceEnvelope_N": 56.792
+      },
+      {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    ]
+  },
+  "options": {
+    "step_s": 1e-05,
+    "stopTime_s": 4,
+    "cellStiffness_N_m": 64000000.0,
+    "cellDampingRatio": 0.02,
+    "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-imu-20260930/frozen-inertial-v2/normal_contact_trial_candidate.mat",
+    "forceKp": 0.03,
+    "forceKi": 20,
+    "forceKd": 0,
+    "derivativeFilter_s": 0.0003,
+    "accelerationFeedforwardScale": 1,
+    "guideFrictionFeedforwardScale": 1,
+    "caseLimit": null,
+    "label": ""
+  },
+  "plannedCases": 8,
+  "executedCases": 1,
+  "setupRejections": 0,
+  "rows": {
+    "caseIndex": 1,
+    "topology": "rigid",
+    "purpose": "structural_cell_initial_probe",
+    "massS_kg": 2,
+    "massB_kg": 0.6,
+    "referenceForce_N": 50,
+    "angle_deg": 90,
+    "frictionCoefficient": 0.3,
+    "k1_N_m": 0,
+    "k2_N_m": 0,
+    "c1_Ns_m": 0,
+    "c2_Ns_m": 0,
+    "lowerRigid": true,
+    "upperRigid": true,
+    "structuralDampingRatio": 0,
+    "lowerCatalogueIndex": 0,
+    "upperCatalogueIndex": 0,
+    "forceKp": 0.03,
+    "forceKi": 20,
+    "forceKd": 0,
+    "derivativeFilter_s": 0.0003,
+    "accelerationFeedforwardScale": 1,
+    "guideFrictionFeedforwardScale": 1,
+    "forceNoiseRms_N": 0,
+    "accelNoiseRms_m_s2": 0,
+    "seed": 7,
+    "step_s": 1e-05,
+    "executed": true,
+    "physicalPassed": true,
+    "packingPassed": true,
+    "jointPassed": true,
+    "completed": true,
+    "contactLoss": false,
+    "strokeStop": false,
+    "overCurrent": false,
+    "peakNormalForceError_N": 0.3616982780005813,
+    "rmsNormalForceError_N": 0.00985337492769025,
+    "minNormalForce_N": 49.667164662332574,
+    "maxNormalForce_N": 50.36169827800058,
+    "peakCurrent_A": 2.8802095638366105,
+    "rmsCurrent_A": 2.5003960768048024,
+    "peakVoltage_V": 11.919256146320262,
+    "currentSaturationFraction": 0,
+    "voltageSaturationFraction": 0,
+    "minTravel_mm": 10.701017187412472,
+    "maxTravel_mm": 16.408672280103445,
+    "peakLowerDeflection_mm": 4.628117976476374e-12,
+    "peakUpperDeflection_mm": 2.1293730667615307e-12,
+    "peakLowerDynamicForce_N": 8.813521571634418,
+    "peakUpperDynamicForce_N": 9.540096594555706,
+    "maxHeadGapVsActuatorGap_mm": 2.499736528882579e-12,
+    "maxNormalEstimateError_N": 0.3435667915554603,
+    "normalBalanceResidual_N": 2.1316282072803006e-14,
+    "actualDuration_s": 4,
+    "combinedFreeLengthMax_mm": 0,
+    "combinedInstalledLengthMax_mm": 0,
+    "feasibleCommonPreloadMin_N": null,
+    "feasibleCommonPreloadMax_N": null,
+    "executionSeconds": 10.811138,
+    "failureReason": "pass",
+    "executionError": ""
+  },
+  "metric": "All native recorded surface-normal force samples, including startup; +/-0.5 N, completion, contact retained, no travel stop, no overcurrent.",
+  "structuralPolicy": "Cell stiffness represents the B-S sensing structure, not an optional suspension spring. No spring catalogue packing screen applies to structural-cell cases. Structural damping ratios are sensitivity assumptions, not manufacturer specifications.",
+  "springPolicy": "Two guided opposed springs per optional compliant link. Common preload is post-screened from exactly recorded link deflection extrema. Both combined free and installed lengths must be <=100 mm.",
+  "controllerPolicy": "Measured S acceleration and tared multi-axis B-S force reconstruct contact force. PI/PID gains may be tuned per topology; force and acceleration phase remain matched. No bump preview or contact-force truth enters the controller.",
+  "feedforwardLimit": "The candidate acceleration-current feedforward assumes B shares S acceleration, and its recentering coordinate is S-A rather than actuator gap when B-S is compliant. Tuning tests preserve those causal assumptions; poor compliant performance must be interpreted with these controller limits.",
+  "scope": "Finite axial mechanics comparisons at prescribed tangential scan. The model omits lateral cell flexibility, distributed sanding-pad contact and manufacturer structural damping.",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "solver": "ode4",
+  "baseParameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 1e-05,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 1.4,
+      "k1": 0,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.5707963267948966,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": true,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 29,
+      "strokeNoiseRms": 1e-06,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 1.4,
+      "distalMass_model_kg": 1.4,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2e-05,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2e-05,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1e-06,
+        "frictionPower": 0.0009
+      },
+      "strategy": "observer",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625e-05,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 6.006892549817768e-16,
+      "keq": null,
+      "ell": 0.0007957747154594768,
+      "q10": 50,
+      "q20": 50,
+      "holdForce": 50,
+      "r0": 0,
+      "u0": 0,
+      "z0": 0,
+      "forceTicks": 2,
+      "sensorTicks": 2,
+      "robotTicks": 200,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.09999999999999999,
+      "screwHoldCurrent": 0.7957747154594766,
+      "coilHoldCurrent": 2.5,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.5,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.9048374180359595,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.151667927533109e-14,
+            -3.2950987628679425e-09
+          ],
+          [
+            0,
+            0.9048374180359596,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.9048374180359595,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.9048374180359596,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.01,
+            0,
+            -5.000000000000001e-05,
+            4.997223379243936e-05,
+            0.00010685087054838787,
+            0.030770463482978565
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.01,
+            0.00999167129436793,
+            0.006879597242909011,
+            0.045376629591045506
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -7.249491359052093e-13,
+            6.403000084199936e-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.22658504839104882,
+            0.0025190762906428335
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.9983347214509387,
+            -4.697072299051866e-08,
+            0.007748197744208084
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.07869386805747332,
+            7.8693868057473315,
+            2.3608160417242,
+            0,
+            -0.3573471964721436,
+            -0.0011559650818584928
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -4.938414814312574e-05,
+            -0.030316962500105533
+          ]
+        ],
+        "B": [
+          [
+            -4.151667927533109e-14,
+            3.2950987628679423e-06,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00010685087054838787,
+            -30.77046348297856,
+            0,
+            0,
+            5e-06
+          ],
+          [
+            -0.006879597242909011,
+            -45.376629591045514,
+            0,
+            0,
+            0.001
+          ],
+          [
+            7.249491359052093e-13,
+            -6.403000084199936e-11,
+            0.6321205588285577,
+            0,
+            0
+          ],
+          [
+            0.22658504839104882,
+            -2.5190762906428334,
+            0,
+            0,
+            0
+          ],
+          [
+            4.697072299051866e-08,
+            -7.748197744208085,
+            0,
+            0,
+            0
+          ],
+          [
+            0.963877856184777,
+            1.1559650818584926,
+            0,
+            -0.3934693402873666,
+            0
+          ],
+          [
+            4.938414814312574e-05,
+            30.316962500105532,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.588302655016988e-17,
+            -3.641647324908695e-12
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            4.9384148189008766e-08,
+            3.031695885845821e-05
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00046137472290973936,
+            0.004532427377230908
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.970616062688217e-12,
+            1.7405158776502423e-13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -2.265850483910488,
+            0.025190762906428334
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -4.7049072802209403e-07,
+            0.07761122174481894
+          ]
+        ],
+        "D": [
+          [
+            -4.588302655016988e-17,
+            3.641647324908695e-09,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -4.9384148189008766e-08,
+            -0.03031695885845821,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00046137472290973936,
+            -4.532427377230909,
+            0,
+            0,
+            0
+          ],
+          [
+            1.970616062688217e-12,
+            -1.7405158776502422e-10,
+            0,
+            0,
+            0
+          ],
+          [
+            2.265850483910488,
+            -25.190762906428333,
+            0,
+            0,
+            0
+          ],
+          [
+            4.7049072802209403e-07,
+            -77.61122174481893,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -0.5841329331165829,
+          -0.1584132933116583,
+          0
+        ],
+        "integralGain": 1.2641098067025676,
+        "force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          20,
+          2,
+          0
+        ]
+      },
+      "recenterGain": 0.7352941176470588,
+      "positionMeasurementBias": -0.0125,
+      "positionMeasurementInitial": 0.0125,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.160097254289023,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.04963908643111408,
+            5e-09,
+            -5e-09
+          ],
+          [
+            6.160097254289023,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.9509769232943148,
+            0
+          ],
+          [
+            -6.160097254289023,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.160097254289023,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "springs": {
+      "maxCombinedLength_m": 0.1,
+      "commonPreload_N": 32,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "lower": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1000000.0,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "noiseRms": 0.012,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 8,
+      "quantum": 0.00187038,
+      "delaySamples": 1
+    },
+    "inertial": {
+      "forceKp": 0.03,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1
+    }
+  },
+  "passedCases": 1,
+  "elapsedSeconds": 11.958199,
+  "harnessInterruption": "CSV serialization rejected a scalar structure with variable-length text fields; the first native recording is retained and later cases were not attempted. Corrected recipe repeats the cohort under the continued label."
+}

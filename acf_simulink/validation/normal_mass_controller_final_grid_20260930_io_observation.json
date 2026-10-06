@@ -1,0 +1,35 @@
+{
+  "elapsed_s": 48.215309381484985,
+  "workers": [
+    {
+      "pid": 3397083,
+      "diskReadMiB_s": 32.20255702841618,
+      "diskWriteMiB_s": 30.764589873597426,
+      "logicalReadMiB_s": 52.51750811138415,
+      "logicalWriteMiB_s": 29.84553100060765
+    },
+    {
+      "pid": 3397486,
+      "diskReadMiB_s": 27.444035374335414,
+      "diskWriteMiB_s": 34.88534729066579,
+      "logicalReadMiB_s": 58.14703525321075,
+      "logicalWriteMiB_s": 34.20624688272119
+    },
+    {
+      "pid": 3398262,
+      "diskReadMiB_s": 33.35890979199318,
+      "diskWriteMiB_s": 35.12499498033585,
+      "logicalReadMiB_s": 60.214454175157734,
+      "logicalWriteMiB_s": 34.19741844501399
+    },
+    {
+      "pid": 3398641,
+      "diskReadMiB_s": 31.3489640404636,
+      "diskWriteMiB_s": 31.100647553364634,
+      "logicalReadMiB_s": 56.614086088705136,
+      "logicalWriteMiB_s": 30.482467090078007
+    }
+  ],
+  "summedDiskReadMiB_s": 124.35446623520838,
+  "summedDiskWriteMiB_s": 131.8755796979637
+}

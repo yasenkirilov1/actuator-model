@@ -1,0 +1,22 @@
+{
+  "requestedBy": "root via rl_runner",
+  "reason": "No selection rank improvement through update 150; preserve best initial policy and reallocate compute.",
+  "pid": 510661,
+  "signal": "SIGTERM",
+  "utc": "2026-10-05T14:48:49.465261+00:00",
+  "initialRank": [
+    0,
+    -28,
+    0.933844882540765,
+    0.41871941146435887,
+    0.0424987327712742
+  ],
+  "selection150Rank": [
+    0,
+    -28,
+    0.9858824857748724,
+    0.43271383245019734,
+    0.03739713135924823
+  ],
+  "selection150File": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/ppo_peak_8405/selection/selection_update_000150.json"
+}

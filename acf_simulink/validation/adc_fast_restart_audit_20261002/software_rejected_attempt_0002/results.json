@@ -1,0 +1,142 @@
+{
+  "status": "software_rejection",
+  "date": "2026-10-02",
+  "scope": "Software cold/warm execution parity audit; full native histories including startup.",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateLoggingModelSha256": "e56fcfdc37c1a00c6b0a2a99684fb5b125ccc860de26a020dc3c92e4b776a9ea",
+  "helperManifestSha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48",
+  "recipeSha256": "8b7582098aa4424cb8fa3208d2f00fbe6eb9e404e1f46f8f4de7311be971f38a",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "simulationMode": "accelerator",
+  "controllerSampleTime_s": 0.0001,
+  "fineClock_s": 3.3333333333333333E-6,
+  "adcOutputRate_Hz": 30000,
+  "compactColumns": [
+    "Rz_N",
+    "travel_m",
+    "I_A",
+    "V_V",
+    "contact",
+    "stop",
+    "effortClip",
+    "voltageClip",
+    "impactImpulse_Ns",
+    "xB_m",
+    "xS_m",
+    "Fa_N",
+    "aB_m_s2",
+    "lowerForce_N",
+    "N_N",
+    "Nestimate_N",
+    "Rx_N",
+    "slope",
+    "aS_m_s2"
+  ],
+  "seedBlocks": [
+    {
+      "path": "acf_force_control_adc_trial/Force measurement/Engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+2594",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Force measurement/Uniform sensor noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+2808",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Lateral B-S force measurement/Independent lateral noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed+197",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/Relative position measurement/Position noise",
+      "blockType": "UniformRandomNumber",
+      "seedExpression": "p.sensor.seed+1",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+3540",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/X raw noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+336",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+3542",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    },
+    {
+      "path": "acf_force_control_adc_trial/S accelerometer and ADC/Z raw noise",
+      "blockType": "RandomNumber",
+      "seedExpression": "p.sensor.seed+239",
+      "seedAttributes": [
+        "read-write",
+        "not-accel",
+        "link-instance",
+        "run-to-run-tunable"
+      ]
+    }
+  ],
+  "plannedRuns": 9,
+  "rows": [],
+  "comparisons": [],
+  "executedRuns": 0,
+  "elapsed_s": 0.056719,
+  "failure": "Attempt to add \"out\" to a static workspace.\n\nError in audit_adc_fast_restart_20261002 (line 89)\n  lastwarn('');timer=tic;transcript=evalc('out=sim(mdl);');elapsed=toc(timer);\n                                    ^^^^^^^^^^^^^^^^^^^^^^"
+}

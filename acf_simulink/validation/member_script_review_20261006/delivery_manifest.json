@@ -1,0 +1,110 @@
+{
+  "status": "review_delivered",
+  "sourcePath": "/home/tommie/.t3/userdata/attachments/01841b08-301d-4777-adff-31fadb25efcb-88b1025a-6ce3-4001-9d13-cf2dc04258b1-txt.txt",
+  "sourceSha256": "332aa45edd7fd97fb3f596180e3209b49640250d4072825a1405af92d0b9675f",
+  "auditKind": "code_inspection_primary_catalogue_checks_and_deterministic_C_transcription",
+  "nativeMatlabReplay": false,
+  "gaussianNoiseEnabled": false,
+  "qualificationRuns": 0,
+  "deterministicCases": 7,
+  "savedFullHistoryArrays": false,
+  "newMatNpzBytes": 0,
+  "protectedInputs": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/generated/fixed_upper_20261005/acf_force_control_fixed_upper_20261005.slx",
+      "sha256": "4bd559bb48f2b9194737717ba9c2bfd9f38e2be322d801646974210e402b04e6"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/reports/active-contact-flange-report-design-explained-20261006.md",
+      "sha256": "3e48f09316d8fccc2e62b2c078b774cc25b42c6ffbdb69d8f14f97eec3365e58"
+    },
+    {
+      "path": "/home/tommie/.t3/userdata/attachments/01841b08-301d-4777-adff-31fadb25efcb-88b1025a-6ce3-4001-9d13-cf2dc04258b1-txt.txt",
+      "sha256": "332aa45edd7fd97fb3f596180e3209b49640250d4072825a1405af92d0b9675f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/member_script_review_20261006/check_member_equations.c",
+      "bytes": 6376,
+      "sha256": "bcc06a413824b1742262b9c1c4dd757337b9bd76d71a36a5a55edcaee987b1e0"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/member_script_review_20261006/make_review_figures.py",
+      "bytes": 7274,
+      "sha256": "d97723140e02838627407e1517c269dc7cf79f43bf96177f8b70bdf68d6bf769"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/member_script_review_20261006/README.md",
+      "bytes": 2594,
+      "sha256": "6043eee781a22e96eaa0f4a026efb090c50513378958e5fd62256e742a91e9f3"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/forecast.json",
+      "bytes": 580,
+      "sha256": "a8dcdb9ff9eecfb48b41811e9bc8c0ed8e242fb3346a9e69ecc9e5ed1893b32d"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/deterministic_checks.json",
+      "bytes": 4850,
+      "sha256": "2e960ec32115816df2a88e73ac7d3b0f89e4e787daac1f203dc2b4411d4aa9c3"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/robot_trace_downsampled.csv",
+      "bytes": 174029,
+      "sha256": "2006fafd4d5ee79f567e38541133a854886a9dd2d4f39af2268f94728c3e6d11"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/member_script_review_20261006/review_checks.json",
+      "bytes": 2227,
+      "sha256": "9ae01a8bc4ed1d67fc402a8adbd8129206730d69652038eae2dc8df57ca6d517"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/reports/reviews/group-member-polishing-model-review-20261006.md",
+      "bytes": 12759,
+      "sha256": "28ad819e33ee6c21a1dbc7d0ba9b2b0285d6978a0528305ded049b272db9df12"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/reports/reviews/group-member-polishing-model-review-20261006.html",
+      "bytes": 55599,
+      "sha256": "76728ca52264f69b6a657e484f3b170799e6ad60a43bcf03a3a0bb24d65246ef"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/reports/reviews/figures/member-pad-contact-check-20261006.svg",
+      "bytes": 18044,
+      "sha256": "6d8da315a1c44c87f4d7d2c9393320648d9c100917229df51bdc56ea532cfb78"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/reports/reviews/figures/member-robot-isolation-check-20261006.svg",
+      "bytes": 22580,
+      "sha256": "51d20ddfa5dc93764227f0b42f2914377bfa19ab6c08e6e96e0dc1e893a1353d"
+    },
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/group-member-polishing-model-review.md",
+      "bytes": 12759,
+      "sha256": "28ad819e33ee6c21a1dbc7d0ba9b2b0285d6978a0528305ded049b272db9df12"
+    },
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/group-member-polishing-model-review.html",
+      "bytes": 55599,
+      "sha256": "76728ca52264f69b6a657e484f3b170799e6ad60a43bcf03a3a0bb24d65246ef"
+    },
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/member-pad-contact-check-20261006.svg",
+      "bytes": 18044,
+      "sha256": "6d8da315a1c44c87f4d7d2c9393320648d9c100917229df51bdc56ea532cfb78"
+    },
+    {
+      "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/member-robot-isolation-check-20261006.svg",
+      "bytes": 22580,
+      "sha256": "51d20ddfa5dc93764227f0b42f2914377bfa19ab6c08e6e96e0dc1e893a1353d"
+    }
+  ],
+  "checks": {
+    "svgXmlValid": true,
+    "selfContainedHtmlFigures": 2,
+    "htmlExternalRuntimeDependencies": 0,
+    "deliveryCopiesByteIdentical": true,
+    "originalModelAndMainReportUnchanged": true
+  }
+}

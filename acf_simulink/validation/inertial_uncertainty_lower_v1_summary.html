@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lower-series native sensitivity evidence</title><style>body{font:16px/1.5 system-ui;background:#f7fafc;color:#172b3a;max-width:1120px;margin:32px auto;padding:0 20px}img{width:100%;height:auto;background:white}table{border-collapse:collapse;width:100%;background:white}th,td{padding:8px;border-bottom:1px solid #ccd8e2;text-align:left}code{overflow-wrap:anywhere}.limit{border-left:4px solid #b91c1c;padding:12px;background:#fff1f2}</style>
+<h1>Native lower-series sensitivity evidence</h1><p><strong>112 executed histories: 107 passes and 5 force failures.</strong> Two additional endpoint configurations have six paired software proof recordings with bitwise uninstrumented/zero-instrument and Normal/Accelerator equality.</p>
+<p class="limit">These are separate one-factor sensitivities on the legacy sensing source. They establish neither a combined sensor budget nor a full-range uncertainty qualification. Final actual-AA joint cases are pending their own recordings.</p>
+<p>Every force score uses the complete native normal-force history, including startup. The five failures vary actual robot transport while keeping the issued-command predictor fixed. All histories complete without contact loss or travel stops; the large added acceleration-noise points briefly clip drive effort or voltage.</p>
+<img src="inertial_uncertainty_lower_v1_summary.svg" alt="Separate one-factor peak normal-force error"><h2>Robot-delay failure</h2><img src="inertial_uncertainty_lower_v1_summary_robot_delay.svg" alt="Native actual force, estimated force, actual robot and predicted speed, and causal surface slope around the retained peak">
+<p>At 2.1263 s, the workpiece experiences 50.777479 N while the controller estimates 50.019716 N. Actual robot speed is +2.138 mm/s while its issued-command predictor gives −2.199 mm/s. The slope estimate is −0.0453 on a physically flat surface. No voltage clipping occurs in this failure. Queued motion and an incorrect robot predictor can therefore defeat the mean/rate force-stability gate.</p>
+<h2>Recorded groups</h2><table><thead><tr><th>Scenario</th><th>Executed</th><th>Passed</th><th>Worst normal error (N)</th></tr></thead><tbody><tr><td>baseline</td><td>4</td><td>4</td><td>0.328079499</td></tr>
+<tr><td>accelerometer_bias</td><td>8</td><td>8</td><td>0.488019149</td></tr>
+<tr><td>accelerometer_scale</td><td>8</td><td>8</td><td>0.328079478</td></tr>
+<tr><td>axial_force_bias</td><td>12</td><td>12</td><td>0.428090342</td></tr>
+<tr><td>force_vector_scale</td><td>8</td><td>8</td><td>0.428302476</td></tr>
+<tr><td>force_vector_noise</td><td>6</td><td>6</td><td>0.326877966</td></tr>
+<tr><td>accelerometer_noise</td><td>6</td><td>6</td><td>0.390943251</td></tr>
+<tr><td>identified_S_mass</td><td>8</td><td>8</td><td>0.328810623</td></tr>
+<tr><td>position_noise</td><td>2</td><td>2</td><td>0.319649996</td></tr>
+<tr><td>position_scale</td><td>8</td><td>8</td><td>0.333031543</td></tr>
+<tr><td>robot_actual_delay</td><td>6</td><td>1</td><td>0.777478700</td></tr>
+<tr><td>robot_actual_response</td><td>4</td><td>4</td><td>0.425442673</td></tr>
+<tr><td>light_accelerometer_bias</td><td>4</td><td>4</td><td>0.071954105</td></tr>
+<tr><td>light_force_bias</td><td>4</td><td>4</td><td>0.153007954</td></tr>
+<tr><td>light_identified_S_mass</td><td>4</td><td>4</td><td>0.053945112</td></tr>
+<tr><td>light_position_scale</td><td>4</td><td>4</td><td>0.053937584</td></tr>
+<tr><td>identified_B_mass</td><td>8</td><td>8</td><td>0.309876452</td></tr>
+<tr><td>identified_scan_speed</td><td>6</td><td>6</td><td>0.335360657</td></tr>
+<tr><td>light_identified_scan_speed</td><td>2</td><td>2</td><td>0.053133590</td></tr></tbody></table>
+<p>The configured 33.6 N common preload passes every history. The shared feasible interval is 30.449–36.786 N; combined free/installed spring lengths are 37.18/30.374 mm. This verifies the spring-only packing constraint for these traces.</p>
+<p>Frozen model SHA256:<code>a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81</code><br>Candidate SHA256:<code>94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738</code>. Exact source/helper/recipe hashes, actual and identified parameters, failed full histories and native balance audits are linked in <a href="inertial_uncertainty_lower_v1_summary.json">the machine-readable evidence</a>.</p></html>

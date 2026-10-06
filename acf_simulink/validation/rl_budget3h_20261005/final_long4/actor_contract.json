@@ -1,0 +1,50 @@
+{
+  "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+  "physicalActionScales": {
+    "currentOffset_A": 2.0,
+    "robotRequest_m_s": 0.01
+  },
+  "externalFeatureCount": 40,
+  "architecture": {
+    "obs_dim": 40,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dt": 0.0001,
+    "min_memory_s": 0.0003,
+    "max_memory_s": 0.3,
+    "physics_init_force_gain": 0.1,
+    "detach_critic_trunk": true,
+    "center_context": true,
+    "paired_filter_init": true,
+    "initial_log_std": [
+      -4.5,
+      -1.5
+    ]
+  },
+  "storedTrainableParameters": 8101,
+  "recurrentActionReadout": {
+    "current": {
+      "nonzeroParameters": 30,
+      "l2Norm": 818.4992065429688,
+      "maxAbs": 552.0850219726562
+    },
+    "robot": {
+      "nonzeroParameters": 10,
+      "l2Norm": 5.04777193069458,
+      "maxAbs": 3.4400932788848877
+    }
+  },
+  "checkpointProvenance": {
+    "method": "DC_preserving_attenuation_selected_by_native_episode_rewards",
+    "sourceCheckpoint": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reward_search_inverse_8207/checkpoints/generation_0025/policy_checkpoint.pt",
+    "sourceCheckpointSha256": "a90edbd6dc932aeedb8127b8ac652b17ada0d41ca9fe72af22f658675532e762",
+    "noTeacherActions": true,
+    "physicalActionScales": {
+      "currentOffset_A": 2.0,
+      "robotRequest_m_s": 0.01
+    },
+    "historyScale": 0.5
+  },
+  "fixtureResetStateEveryStep": false,
+  "sameActionMappingForAllComparisonActors": true
+}

@@ -1,0 +1,20 @@
+{
+  "group": "sinc3_7500",
+  "files": {
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/acf_rl_native.slx": "20c20df6d478356802d7e13e84cc450c6a21b466f75214bedb7c5c82cee41a26",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/bank/configs.mat": "cbbe6a0d6bcf98fc233ba6314f499b66647b03317918049c85529470d6e8a50c",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/metadata.json": "d65cb7d0b4db22bdb98a0f29fb9d342ad647755f3b2befd7654d219e52836b07",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/scenarios.json": "204532832de5da6ece61c437a714ac184913f8b6157b95d41d604c1d5bde6b53",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/parameter_mapping.json": "970229da200ba7ee8b95c857ab7c63040fb3613fc383476bf4524d9bae816c29",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/native_parameter_bank.c": "b47e283abe58cd7e6897ee63727870ef3ae1bc7ad5ba821e2d7f5db141d96535",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/code/acf_rl_native_grt_rtw/acf_rl_native.c": "5ef0e5fe4af47fa8139145d570e3546bb481c1e70bfb9f711e3ea4b1db444512",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/libacf_native.so": "4060ecad0518835eca4c6dfb0c24e796785eace1f1d823644e655868610143d3",
+    "/run/media/tommie/SATA SSD/actuator-model-evidence/20261006-report-readability/adc-private/sinc3_7500/bridge_build.json": "fe099c73efe2677d1f77c539aca4cb4021e2592f2b531c9ff43364d00fd4fc96"
+  },
+  "emittedSchedulePeriods_s": [
+    "0.0001s",
+    "0.000133333s",
+    "0.01s"
+  ],
+  "bankZeroExactlyMatchesCoder": true
+}

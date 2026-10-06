@@ -1,23 +1,25 @@
-function [summary,details] = acf_sweep(cases,path1,values1,path2,values2,backend)
+function [summary,details] = acf_sweep(cases,path1,values1,path2,values2)
 %ACF_SWEEP Test a rectangular parameter grid across specified scenarios.
 % Returns every case and configurations passing ALL cases. No global minimum
-% or optimal controller claim is made. Controller gains stay fixed.
+% or optimal controller claim is made. The native model is reused; preparation
+% updates known-mass, sensing and inverse coefficients for each parameter set.
 %
-% p=acf_parameters('ideal_position','bump');
-% [T,D]=acf_sweep({p},'ideal.maxAxialForce',[15 20 30], ...
-%     'ideal.maxAcceleration',[0.1 0.5 2],'simulink');
+% p=acf_parameters('voice_coil','sharp_bump');
+% [T,D]=acf_sweep({p},'inertial.forceKp',[0.15 0.3 0.45], ...
+%     'inertial.forceKi',[10 20 30]);
 % T(T.allPassed,:)  % candidates passing this particular test envelope
 %
-% backend: 'simulink' (default) or 'reference' (plain MATLAB, same equations).
+% Uses the saved Simulink diagram, including any loaded equation edits.
 if nargin<1, cases={acf_parameters}; end
 if ~iscell(cases), cases={cases}; end
-if nargin<2, path1='screw.peakCurrent'; end
-if nargin<3, values1=[0.5 1 2 3]; end
-if nargin<4, path2='robot.delay'; end
-if nargin<5, values2=[0 0.08 0.2]; end
-if nargin<6, backend='simulink'; end
-assert(any(strcmp(backend,{'simulink','reference'})),'Unknown backend.');
-if strcmp(backend,'simulink'), mdl=acf_build(cases{1}); end
+if nargin<2, path1='inertial.forceKp'; end
+if nargin<3, values1=[0.15 0.3 0.45]; end
+if nargin<4, path2='inertial.forceKi'; end
+if nargin<5, values2=[10 20 30]; end
+mdl=acf_open;mw=get_param(mdl,'ModelWorkspace');original=getVariable(mw,'p');
+step=get_param(mdl,'FixedStep');stop=get_param(mdl,'StopTime');
+choice=get_param([mdl '/Actuator selection'],'ActuatorChoice');
+cleanup=onCleanup(@() restore(mdl,original,step,stop,choice)); %#ok<NASGU>
 rows={}; groups={};
 for i=1:numel(values1)
     for j=1:numel(values2)
@@ -32,8 +34,7 @@ for i=1:numel(values1)
                 allPassed=false; worstError=inf;
                 continue
             end
-            if strcmp(backend,'simulink'), r=acf_run(mdl,p,false);
-            else, r=acf_reference(p); end
+            r=acf_run(mdl,p,false);
             m=r.metrics;
             rows(end+1,:)={values1(i),values2(j),p.surface.kind,m.passed, ...
                 m.peakAbsForceError_N,m.peakAxialForce_N,m.peakGapAcceleration_m_s2,m.reason}; %#ok<AGROW>
@@ -60,4 +61,10 @@ parts=strsplit(path,'.');
 assert(numel(parts)==2 && isfield(p,parts{1}) && isfield(p.(parts{1}),parts{2}), ...
     'Use an existing two-level parameter path, e.g. screw.peakCurrent.');
 p.(parts{1}).(parts{2})=value;
+end
+
+function restore(mdl,p,step,stop,choice)
+assignin(get_param(mdl,'ModelWorkspace'),'p',p);
+acf_select_actuator(mdl,choice);
+set_param(mdl,'FixedStep',step,'StopTime',stop);
 end

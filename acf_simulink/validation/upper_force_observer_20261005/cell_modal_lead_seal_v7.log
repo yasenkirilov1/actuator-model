@@ -1,0 +1,28 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "qualificationEpisodes": 0,
+  "design": "upper_20k_lower_cell_modal_lead_guide_v7",
+  "caseCount": 352,
+  "cellModalLeadFamilyCount": 16,
+  "selectedParentCellModalFamilyIDs": [
+    17,
+    18
+  ],
+  "selectedParentObserverProfileIDs": [
+    33
+  ],
+  "nativeBankCase0MatchesCoder": true,
+  "scientificParity": {
+    "allExistingPhysicalSensorControllerSectionsUnchanged": true,
+    "allExistingPreparedCoefficientsIncludingUpperObserverUnchanged": true,
+    "nominalModalCoefficientsExactlyEqualV6Parents": true,
+    "modalUsesExplicitIdentifiedCurrentResponse": true,
+    "modalCoefficientsInvariantToActualCurrentResponsePerturbation": true,
+    "forceReconstructionAndObserverMeasurementFrameUnchanged": true,
+    "newFunctions": "Proper causal current-FF Saccel lead and controller-only friction FF velocity scale",
+    "createdQualificationEpisodes": 0
+  },
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "3c634873fff8862a600cdf75dc399384e015a53456dcd7f0b27cf0c240d89927",
+  "sharedLibrarySha256": "4b1345b9d55eea69d4813e8ff6e74bdb1807b3b8178fa4a0e597a244d81808b3"
+}

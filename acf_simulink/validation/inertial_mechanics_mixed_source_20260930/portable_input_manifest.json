@@ -1,0 +1,94 @@
+{
+  "status": "portable_immutable_input_copy",
+  "recordedSourceDirectory": "/home/tommie/.local/state/actuator-model/inertial-mechanics-mixed-corner8-20260930/frozen-calibrated-source",
+  "recordedBaseV8NativeModelSHA256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "calibratedNativeModelSHA256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b",
+  "jointConfigurationsSHA256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2",
+  "scope": "Byte-identical copy of the calibrated native input model, helpers and complete joint configs used by the six paired mixed/known-actual mechanics histories. Copies and figure generation add zero force simulations. Recipes accept this folder explicitly to reproduce without .local/state paths.",
+  "files": [
+    {
+      "file": "acf_force_control_normal_trial.slx",
+      "sha256": "4ac684797c4a41d3a73c8146357baa97ba18098415b3940c942762330e2d3a4b"
+    },
+    {
+      "file": "helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "helpers/acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65"
+    },
+    {
+      "file": "helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "joint_configs.mat",
+      "sha256": "a766e3ec847544f491ac21388c0b9965258373849fcf41d521122e58b9632bb2"
+    },
+    {
+      "file": "prepared_manifest.json",
+      "sha256": "b737465c79ad58c07492f94694777746a556c94a37f59ab1b4713b4cdf0a7568"
+    },
+    {
+      "file": "recipes/inertial_mechanics_run_calibrated_mechanics_20260930.m",
+      "sha256": "3d65820839be917e2c7ab9e2f5501e69d09840cd8011fb0c7359331e1ca40924"
+    },
+    {
+      "file": "recipes/inertial_mechanics_run_mixed_corner_20260930.m",
+      "sha256": "c8219d9c3e0903da52074eb1e48b2525bea3cc702c96afcf70c3909dc4a2ba40"
+    }
+  ]
+}

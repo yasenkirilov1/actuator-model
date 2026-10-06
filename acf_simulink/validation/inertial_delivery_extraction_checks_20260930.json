@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "createdUtc": "2026-09-30T14:19:10.029300+00:00",
+  "archive": "acf_simulink/generated/active_contact_flange_inertial_20260930.zip",
+  "archiveSha256": "0e91119ff142b20664d0a9620b37aef65e8d27a81f7dd5ecfeecbadff35934f0",
+  "verification": {
+    "status": "verified",
+    "files": 1764,
+    "uniqueNominalCases": 3500,
+    "allCasesPass": true,
+    "nativeSamplesScored": 1400003500,
+    "worstNominalError_N": 0.3158109290657549,
+    "scope": "Delivered bytes and finite native evidence, not hardware qualification."
+  },
+  "checks": {
+    "freshPrivateExtraction": true,
+    "allDeliveredSizesAndHashes": true,
+    "fullFiniteGridIdentityAndNativeSamples": true,
+    "allNominalCasesPass": true,
+    "portableStandardLibraryVerifier": true,
+    "noNewSimulations": true
+  },
+  "temporaryExtraction": "Owned verification extraction removed after checks; no source or previous archive changed."
+}

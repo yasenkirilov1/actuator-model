@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-30",
+  "scope": "Read-only representative current-amplifier evidence, not a shopping list or hardware qualification.",
+  "currentManufacturerProduct": {
+    "publisher": "Copley Controls",
+    "title": "Accelnet Micro Module (ACK)",
+    "url": "https://copleycontrols.com/products/servo-drives/module-drives/accelnet-micro-module-ack",
+    "retrieval": "Official current product page/search read on2026-09-30.",
+    "exampleModel": "ACK-055-10",
+    "dcBusMin_V": 20,
+    "dcBusMax_V": 55,
+    "continuousCurrent_Adc": 5,
+    "peakCurrent_Adc": 10,
+    "voiceCoilSupported": true,
+    "commandInterfaces": [
+      "Analog",
+      "PWM",
+      "Step/Direction"
+    ],
+    "inference": "Voltage/current ratings cover24 V and3.5 A. The product page alone does not prove bandwidth on4ohm/3mH at24 V."
+  },
+  "manufacturerIndexedDatasheet": {
+    "publisher": "Copley Controls",
+    "title": "Accelnet Micro Module ACK, P/N16-01646 Rev03",
+    "indexedUrl": "https://copleycontrols.com/wp-content/uploads/2018/02/ACK-ds-1.pdf",
+    "currentManufacturerDownloadListing": "https://copleycontrols.com/downloads?type=datasheet",
+    "currentLinkedAssetUrl": "https://copleycontrols.directus.app/assets/e5d103dd-5c4e-437c-820c-e8d2515f3338?modified_on=2026-06-01T19%3A11%3A03.991Z",
+    "retrievalLimit": "Primary publisher PDF text is available in search-index result, including bandwidth/test conditions. Old URL now redirects to sitemap; current linked asset returns403 in this environment, so current PDF revision not independently opened.",
+    "smallSignalCurrentBandwidthTypical_Hz": 2500,
+    "currentLoopUpdate_Hz": 15000,
+    "pwmRippleFrequency_Hz": 30000,
+    "testLoadInductance_H": 0.001,
+    "testLoadResistance_ohm": 1,
+    "testBusCondition": "HVmax",
+    "qualification": "Typical bandwidth depends on tuning and load inductance; different from the modeled4ohm/3mH/24V operating point."
+  },
+  "primaryGeneralCurrentControl": {
+    "publisher": "Microchip Technology",
+    "title": "MCAF7.0.2 section5.1.6 Current loop tuning",
+    "url": "https://microchiptech.github.io/mcaf-doc/7.0.2/algorithms/foc/tuning.html",
+    "typicalIndustrial3dBCurrentBandwidth_Hz": [
+      1000,
+      3000
+    ],
+    "examplePWM_Hz": 20000,
+    "notes": "Manufacturer documentation stresses stability/overshoot, sample-to-output delay and testing. Loop update/PWM frequency is not closed-loop bandwidth."
+  },
+  "firstOrderCurrentResponseMapping": [
+    {
+      "tau_us": 50,
+      "firstOrder3dBBandwidth_Hz": 3183.098861837907
+    },
+    {
+      "tau_us": 100,
+      "firstOrder3dBBandwidth_Hz": 1591.5494309189535
+    },
+    {
+      "tau_us": 200,
+      "firstOrder3dBBandwidth_Hz": 795.7747154594767
+    }
+  ],
+  "derivedVoltageHeadroom": {
+    "formula": "Vrequired=R*i+L*di_dt+Kf*v_gap; remaining supply voltage bounds current slew.",
+    "exampleFullSinusoidAmplitude_A": 3.5,
+    "frequency_Hz": 3000,
+    "L_H": 0.003,
+    "inductiveVoltageAmplitude_V": 197.92033717615698,
+    "interpretation": "Full3.5 A sinusoid at3kHz is impossible on24 V for3mH;1.5-3kHz amplifier bandwidth must be a small-signal claim."
+  },
+  "derivedSwitchingRippleCheck": {
+    "formula": "Approximate unipolar \u0394I_pp=Vbus*d*(1-d)/(L*f_ripple), d=R*Ihold/Vbus.",
+    "assumptions": "Simple ideal unipolar switching around static hold; actual modulation/carrier cancellation/contact dynamics may change it. This is not an ACK measurement or model-simulation result.",
+    "Vbus_V": 24,
+    "R_ohm": 4,
+    "L_H": 0.003,
+    "Ihold_A": 2.5,
+    "effectiveRipple_Hz": 30000,
+    "currentRipple_pp_A": 0.0648148148148148,
+    "actuatorForceRipple_pp_N": 1.2962962962962963,
+    "importance": "Native study uses averaged voltage and has no PWM ripple. Low ripple and process/measurement force bandwidth need physical validation."
+  },
+  "prototypeVerification": "Measure current step and small-signal frequency response around2.5 A at the actual24 V bus and4ohm/3mH cold/hot coil; include command-path latency, jitter, ripple, overshoot and voltage clipping. Fit identified response including delay, then repeat native normal-force tests."
+}

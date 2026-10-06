@@ -1,0 +1,24 @@
+{
+  "status": "exported_unqualified",
+  "config": {
+    "obs_dim": 40,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dt": 0.0001,
+    "min_memory_s": 0.0003,
+    "max_memory_s": 0.3,
+    "initial_log_std": [
+      -4.500704765319824,
+      -1.5001789331436157
+    ]
+  },
+  "parameter_count": 7749,
+  "files": {
+    "policy_weights.npz": "90910e1b610f3031bcd65e621e808272091269734b7e27534d603f89588acb84",
+    "policy_weights.f32": "37900ed1e962b8c52edc18f163a6ef50710f54837cc462077eea30ba674f398d",
+    "policy_weights.json": "742a4115bb0b6649442f3dbc0c68176596141ae80b90474f6f43a37e81a80a98",
+    "policy_inference.h": "76b75cb8ad80be64b2d4c1741ae486a24c963b6763fbb4f043e10b4d3106fab1",
+    "policy_inference.c": "88101fa9314d7ebdee99192594c1f3f2bf843420c7c46600deedf2b88ff1c979",
+    "policy_checkpoint.pt": "803bcace653df0787cc3b93738be6386a5c975d551e8aeb1c42bb5233c15a47e"
+  }
+}

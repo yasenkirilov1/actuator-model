@@ -1,0 +1,66 @@
+{
+  "status": "stopped_by_coordinator",
+  "nativeProcessExit": 0,
+  "plannedCases": 875,
+  "attempted": 254,
+  "nativeReturned": 254,
+  "validated": 254,
+  "passed": 254,
+  "remaining": 621,
+  "sourceUnchangedVerifiedAfterExit": true,
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "recipeSha256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+  "resultSha256": "783afaa50b84e8c5616d7a2855e6076c60b8f3a62e404bbdfbfff45381fcdee3",
+  "worstNormalForceError_N": 0.09259210012304209,
+  "elapsedSeconds": 1883.70607,
+  "privateWorkerFolder": "/home/tommie/.local/state/actuator-model/tp79b91dd9_2e80_493c_b4d2_245aac1ec992",
+  "sourceArchive": "r1_source_archive/source_manifest.json",
+  "artifacts": [
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_configuration.mat",
+      "sha256": "f842c2ee3629f43d4c8001784960406066c6d934a20632cc43805bff0e30ee33",
+      "sizeBytes": 6200744
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_first_native_trace.mat",
+      "sha256": "55652ae5a5b5b3c766ee631e943b788e2ef6f07be7124b46b096eaad16737c3d",
+      "sizeBytes": 91807141
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_plot_traces.mat",
+      "sha256": "bd7a43b9fbb2c24453faa89f53b6246d6df5c9c7805b08ba87cf555eeb19c813",
+      "sizeBytes": 194
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.json",
+      "sha256": "783afaa50b84e8c5616d7a2855e6076c60b8f3a62e404bbdfbfff45381fcdee3",
+      "sizeBytes": 1762588
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.mat",
+      "sha256": "a47744c050198e36953c3d105c34b21e5b8541e9e4ba3751eff106a21709d4ae",
+      "sizeBytes": 329686
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.csv",
+      "sha256": "53901f3db7fd1242dfe5be143fb655963836b239e088792b0e888d8c027d733b",
+      "sizeBytes": 420883
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.jsonl",
+      "sha256": "c3b95bb3719a43cfcc9e2a024684472012abc2fd0aab2903de57200c30f58517",
+      "sizeBytes": 1400764
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_worst_native_trace.mat",
+      "sha256": "79f4367e11b13256cb86b80a82c81be66c51fab8f51082b7ef6f38bb6209cac4",
+      "sizeBytes": 93136909
+    },
+    {
+      "file": "normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_traces/controller_01_worst_native.mat",
+      "sha256": "43b632553711e859920462f4b84ca63b2b03db382d02066e0560bcf28f40a9ca",
+      "sizeBytes": 93137031
+    }
+  ]
+}

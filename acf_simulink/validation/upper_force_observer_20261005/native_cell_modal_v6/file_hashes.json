@@ -1,0 +1,288 @@
+{
+  "status": "native_graph_and_parameter_bank_frozen_not_executed",
+  "qualificationEpisodes": 0,
+  "design": "upper_20k_lower_cell_active_modal_damping_v6",
+  "caseCount": 396,
+  "cellModalFamilyCount": 18,
+  "selectedParentObserverProfileIDs": [
+    24,
+    33
+  ],
+  "nativeBankCase0MatchesCoder": true,
+  "scientificParity": {
+    "allExistingPhysicalSensorControllerSectionsUnchanged": true,
+    "allExistingPreparedCoefficientsIncludingUpperObserverUnchanged": true,
+    "forceReconstructionAndObserverMeasurementFrameUnchanged": true,
+    "soleNewFunction": "Bounded phase-shaped active cell-mode current feedback",
+    "createdQualificationEpisodes": 0
+  },
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "configsSha256": "a9f9ffc1732deaec9464bb4390fe6a577d922635ae466c0451b41d7fe0a5549c",
+  "sharedLibrarySha256": "6d41094b0e9ea536482da0d7805da7dc74066df175a2ce0a8baabf842d2bb1dd",
+  "files": [
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/acf_rl_native.slx",
+      "sha256": "6a56c6d45af0491388297889de0a2f60f2f9f3494c21054de62f854afd22e871"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/metadata.json",
+      "sha256": "7d1d7aa2e737b16c663fcc4a52dcc9bf757d46b3efaca0b015ee79fe6d9b22c8"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/prepared_configs.mat",
+      "sha256": "f955bb8fc89055941e0152b4f636c88e5d0dcc2b3b5e4cb60af5a203a330690e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/native_parameter_bank.c",
+      "sha256": "13e6bbfca902d3c10cff439beab10da0c23557a3bf2e34d076813ca0bde36750"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/parameter_mapping.json",
+      "sha256": "9f1efd2b6fc2ad1141ae5388c05a8de569312ffcb3532ebf09ecd527f041a4ad"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/parameter_mapping.mat",
+      "sha256": "78d60f16ccdd22a3988d0e05ad153593030030f774fdd46bc8d52a4ff9046bba"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/scenarios.json",
+      "sha256": "355c185d4c6623ae6cf3575c0caaa28a1a4dd72779b9614ce89b8142a2432f20"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/libacf_native.so",
+      "sha256": "6d41094b0e9ea536482da0d7805da7dc74066df175a2ce0a8baabf842d2bb1dd"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/bridge_build.json",
+      "sha256": "0fd40f61f1aa105337aa6c58c66b0fd33e79da6bab88c9b9bc33046ce32a46b2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/acf_rl_native_context.c",
+      "sha256": "bf9caa754b7f476f9ee675f224ed6790b0f36a387f8ac5d23604a7ead6f83a83"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/native_bank_aux.h",
+      "sha256": "f3d1d52a761b1e31877fd2746a38bad67dad0758baf8c565a25d92167885c1dc"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/build_native.m",
+      "sha256": "334ff85432fa3bc641e2c8894bb8dbff824d8bf11ccb7b6e2e769aac7ea898ac"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/local_cell_source_guard.json",
+      "sha256": "04d829772954f9607559d71d22e927985c748dc7dd5224ad92a4cffa7c67db82"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/modal_positive_damping_guard.json",
+      "sha256": "ee4e6c537ee26e5299ccd0018b40d8555ee9ee9a6b26c2890a8715f2fd27d118"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/generated_cell_source_audit.json",
+      "sha256": "585a3475cdbb89e857c78b43a81a678c7f15dfa4985e3e8be2d52c036d605533"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_v6/configs.mat",
+      "sha256": "a9f9ffc1732deaec9464bb4390fe6a577d922635ae466c0451b41d7fe0a5549c"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_v6/manifest.json",
+      "sha256": "7f2660de48b6fdc08b9a2026b97d0e9ec33338b2ef296baa4a127f5d471b3846"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/cell_modal_phase_v6/acquisition_phase.json",
+      "sha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_adc_prepare.m",
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_prepare.m",
+      "sha256": "213df34746c2831a652b13601a653c6b1991ac40f938277f97b45b14295754db"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_prepare_baseline_v8.m",
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_prepare_cell_modal.m",
+      "sha256": "e2d053759f0ca2f9ecc6947d4ef14a2cfb1dc32fd3f5bc06e4d47f06c12a883a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_prepare_upper_observer.m",
+      "sha256": "4201190ab88e55d161fd5ef044fefe6b6627623eb63a4e14f18b6d1cc61778e7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native.c",
+      "sha256": "0ddc3a794859dd70f2781c54be8178373a17afc88ad309509a3ed43f474026be"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+      "sha256": "b21136603db07841e17a03033fb0d14a27ebf0c5ec64a69a059ba74a8ce5051e"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+      "sha256": "904b19139e0612e17fde079e68051e0cb44d3a8f2fe3056e7f652ec9aee209fa"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+      "sha256": "6ff19dc9275c80b84a6b2326b5953ebdd5205f7b4617069916448f8e744808ed"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native.h",
+      "sha256": "3cfb3f584b24419ebe5d76f621c865916f3a07ee751f806fe8bbebb0c9ae7e63"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native_private.h",
+      "sha256": "3d99859d3eeedc089b360d1f92ab37dba0740a3d320b3dfd1ba06360e61bcba1"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/acf_rl_native_types.h",
+      "sha256": "b8dec0180e8ff472c53b1cf1759dfbc1d0125d451a7e5c6fea42c38b1def2334"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/multiword_types.h",
+      "sha256": "50b6c8574159006edf5565f49606e780080c43213cf84ac04725dc31a1439c8d"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rtGetNaN.h",
+      "sha256": "33d4c38d445e5e2aa6bfb8e042ce658dd306fe14e28e55431d2425fb05b81dd4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rt_nonfinite.h",
+      "sha256": "5c2964f8f3576fef25374cb220f4319e20af7b719f2c1a526137e147c9713e7f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rtmodel.h",
+      "sha256": "b28f43e0334e91f1cb3e5a3f9729ddc678375f66d7828e10281e44766844fb9b"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_v6/code/acf_rl_native_grt_rtw/rtwtypes.h",
+      "sha256": "43d73849c840108420c262114cf7d7befa4627d8741eac01ae8e6a7dafdb623a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/cell_modal_v6/acf_prepare.m",
+      "sha256": "213df34746c2831a652b13601a653c6b1991ac40f938277f97b45b14295754db"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/cell_modal_v6/acf_prepare_cell_modal.m",
+      "sha256": "e2d053759f0ca2f9ecc6947d4ef14a2cfb1dc32fd3f5bc06e4d47f06c12a883a"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/native_api.py",
+      "sha256": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/native_bridge.c",
+      "sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/observer_noise_v4/acf_prepare_upper_observer.m",
+      "sha256": "4201190ab88e55d161fd5ef044fefe6b6627623eb63a4e14f18b6d1cc61778e7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/build_upper_force_native_modal_v6.m",
+      "sha256": "334ff85432fa3bc641e2c8894bb8dbff824d8bf11ccb7b6e2e769aac7ea898ac"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/install_upper_force_observer_cellsource_v2.m",
+      "sha256": "e36d4126fe54b6d74882e6cf2fe7f1fcce2f80009f1fb8896cb2f8792266f2b8"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/install_cell_modal_v6.m",
+      "sha256": "1827a38e4e46ec413a8f10cde55d605c6e844cf29ef352816cddf765a8383af4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/prepare_cell_modal_bank_v6.m",
+      "sha256": "0926daf9a7251e2802286376299c90e6f0a0ad5d5d5173d279cdbac44211beec"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/prepare_and_build_cell_modal_v6.m",
+      "sha256": "a5b24334c6b496da9184ec8b12176033a2850e9e313c18c824dcabaed4a70ae3"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/verify_modal_cell_source_v6.m",
+      "sha256": "c7bec2cd185e72b26708b33ad76a11126b78012367a4d88460036535537c9fc7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/verify_cell_acquisition_phase_v6.m",
+      "sha256": "3daa92b890e999979ccc773a9731bff7dd546ccedc0dc6be09f926d846129081"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/verify_modal_positive_damping_v6.m",
+      "sha256": "f51a8e629a63a6b483398c2f688e1165d0072ff586e6628eb2ec8dd131b469ec"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/verify_cell_modal_graph_v6.m",
+      "sha256": "c000dd046c43db4bcab5725cde670f9077541be96160140b59da096a945254e7"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/audit_native_modal_v6.py",
+      "sha256": "20619082799b22aa321fd4aab5d4c1876c28288d3e0e10133ad7bc2e6cac1ece"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/seal_native_modal_v6.py",
+      "sha256": "cdda84cc63d9b94bd0ff9348fc3bf60ccf2fe6de4d9028f41d5a08cbb64f2e1e"
+    }
+  ]
+}

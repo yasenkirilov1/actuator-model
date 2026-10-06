@@ -1,0 +1,1770 @@
+{
+  "status": "complete_read_only_source_inventory",
+  "date": "2026-09-30",
+  "projectRoot": "/home/tommie/Projects/actuator-model",
+  "purpose": "Source/dependency and historical coverage inventory for portable final delivery. Archive members are suggestions; no files were copied and no package/model/helper/script/manifest was changed. Only this new inventory JSON is written.",
+  "files": [
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/README.md",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/README.md",
+      "sha256": "27453780b4a1c7d6db65cf9b9a92ffa8f350b31f853f5bebc50485ac787fcd24",
+      "bytes": 1296,
+      "role": "Frozen source restoration instructions",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "sha256": "497a674890dc644d26c84ea07caec7fb6f6e9a7ee6101bba874fe3539815a554",
+      "bytes": 24402,
+      "role": "Executed or audited source recipe",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "sha256": "1c33d770e78948a0d5d219f723f118b5f31806e4140762e417d269736986748f",
+      "bytes": 9077,
+      "role": "Executed or audited source recipe",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/audit_recipes/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "sha256": "7eb64c0b7a2a0ad73d3bb1bc662146adb8a30ca02bc7760397badbd3f9cdb782",
+      "bytes": 2154,
+      "role": "Frozen source evidence",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "sha256": "b67061381f1e6cef9a6bd366b2454ab5bd4295701c4ced789d470aa329242ace",
+      "bytes": 11571,
+      "role": "Original grid predecessor-prefix audit",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "sha256": "1cce0f53028417549dea63b166dcab5af3f897603d4c2d27bb176b0db8259027",
+      "bytes": 11691,
+      "role": "Original grid predecessor-prefix audit",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "sha256": "c0c732874882f3baa5b11be139b3083b7d27fcbd6245110dbf4b7e8c2ebeaf42",
+      "bytes": 11779,
+      "role": "Original grid predecessor-prefix audit",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/predecessor_audits/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "sha256": "ca6b4a22b1213f32e7efb819ba1af449b9693cd5b552f5e46e70d4d718bb2bcb",
+      "bytes": 11815,
+      "role": "Original grid predecessor-prefix audit",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "sha256": "04ae0ae95e61d44695338b1ac6f58e1afec8329825562c67121be55af116a2db",
+      "bytes": 65047,
+      "role": "Executed or audited source recipe",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320,
+      "role": "Executed or audited source recipe",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/acf_force_control_normal_trial.slx",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/acf_force_control_normal_trial.slx",
+      "sha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+      "bytes": 597741,
+      "role": "Native Simulink model",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_desktop_available.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_experiment.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_metrics.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "bytes": 6455,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_open.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_parameters.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "bytes": 1963,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_plot.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "bytes": 1448,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_prepare.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_prepare.m",
+      "sha256": "b7e378846d28e7827940e67bc925e58b5b2735667d0d49c14439adb099e4bd65",
+      "bytes": 28886,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_run.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_run.m",
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "bytes": 4276,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_actuator.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "bytes": 2746,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "bytes": 646,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_signals.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "bytes": 732,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start_visualizer.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_sweep.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "bytes": 3332,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_viewer_selftest.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_visualize.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "bytes": 6907,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/inertial_final_candidate_20260930.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/inertial_final_candidate_20260930.mat",
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+      "bytes": 7161,
+      "role": "Frozen prepared model parameters",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/source_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/source_manifest.json",
+      "sha256": "3747761258b37c37dccd47ae84da55e6a46a6bb6c2a53936aec8f617f0b4b361",
+      "bytes": 15474,
+      "role": "Immutable snapshot hash manifest",
+      "component": "immutable grid execution source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/offline_5us_collector/normal_mass_controller_final_grid_20260930_collect_retained_refinement.py",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_numerical_refinement_source/offline_5us_collector/normal_mass_controller_final_grid_20260930_collect_retained_refinement.py",
+      "sha256": "e3c26ecca300a334ca1a74ff025784f80ee50ccb40de2932a96f6760257e618a",
+      "bytes": 8526,
+      "role": "Executed or audited source recipe",
+      "component": "immutable numerical refinement source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/original_native_5us/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_numerical_refinement_source/original_native_5us/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "sha256": "8695b6684d35f1f93cf78aa3d328298951a4d570bff7b5f039a60e3f1f6effc0",
+      "bytes": 10104,
+      "role": "Executed or audited source recipe",
+      "component": "immutable numerical refinement source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/qualified_recipe/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_numerical_refinement_source/qualified_recipe/normal_mass_controller_final_grid_20260930_refine_solver.m",
+      "sha256": "ca01722162a58878490184fbc1423a67878d1db9d174ecc3b184e57f15eceaba",
+      "bytes": 10122,
+      "role": "Executed or audited source recipe",
+      "component": "immutable numerical refinement source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/source_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_numerical_refinement_source/source_manifest.json",
+      "sha256": "a3468151f69443d9655a9e7fce052975f6c8b28ea21b9ac279efd2309ad3641b",
+      "bytes": 2444,
+      "role": "Immutable snapshot hash manifest",
+      "component": "immutable numerical refinement source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/delivery_acceptance.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/delivery_acceptance.json",
+      "sha256": "39aa4bc3c23b2f9161f99c84b9383e632e6a189e41ac49c115dcea4b4dcdfbcb",
+      "bytes": 12789,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/delivery_candidate.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/delivery_candidate.mat",
+      "sha256": "212210dd362c411e27af067ae0008fbc0fc3641975da5dd73d03733964281186",
+      "bytes": 6677,
+      "role": "Frozen prepared model parameters",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/delivery_defaults_verification.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/delivery_defaults_verification.json",
+      "sha256": "885cb0bdc522637676ce1f6aff4492bece57759af7c3c146ee5b656cb6009de0",
+      "bytes": 2534,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/delivery_verification.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/delivery_verification.json",
+      "sha256": "d11a62bd606d4fea8ac60c3f2388526e3c3e3cd292bb3fb220d21f272584b47a",
+      "bytes": 1813,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/diagrams.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/diagrams.json",
+      "sha256": "3e4b377b50784014345302f919c7a014e45d75b627841f50c5d6a73391a706e8",
+      "bytes": 4751,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/executed_metadata_cleanup_export_recipe.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/executed_metadata_cleanup_export_recipe.m",
+      "sha256": "bd615581a6a03df40a10a6f4530e8fcf588041c6a34b401030cacc47f30ebe15",
+      "bytes": 718,
+      "role": "Executed or audited source recipe",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_01.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_01.png",
+      "sha256": "fe2409ea10edcc97ce22d9a890f99ce971ebfc9bc757e502bc98beb436e5d2d8",
+      "bytes": 562192,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_02.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_02.png",
+      "sha256": "c6a9a9ee12268ec5d626417db6fe8272f07f257aa29872c1acf6719e79d0e43c",
+      "bytes": 72196,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_03.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_03.png",
+      "sha256": "7ce74c3567a750f32d9a9c35a405a9b3cab8ec31ee54882ab9b1712b091e4817",
+      "bytes": 82819,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_04.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_04.png",
+      "sha256": "9b9e05eaa88912778ae0f057087918bcf15ea34f567a0c01ad8f9bae4740d743",
+      "bytes": 160482,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_05.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_05.png",
+      "sha256": "08fc80e835db7331c9f78d97d6e5cd77590592b2ae92df1e6dda42c4347c7df2",
+      "bytes": 212987,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_06.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_06.png",
+      "sha256": "52bf63a74f7f605c444423d3f4970d0e6c7361424875ed7f8b8ef9d8e30ef367",
+      "bytes": 91512,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_07.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_07.png",
+      "sha256": "a759d23059825e176b43a78939ca2e588e8cf30136a85b12f4a14eddfa5eb287",
+      "bytes": 117094,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_08.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_08.png",
+      "sha256": "32710c2d972eb63c9c0c302cd0542ef556d95ce4d42621be06f1b2e1dc10fdde",
+      "bytes": 164879,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_09.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_09.png",
+      "sha256": "52dccb07c69a803daa19da04d7ede14bdfd280981998248cb52afd923538508b",
+      "bytes": 70496,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_10.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_10.png",
+      "sha256": "a0cfafaf43842181b97bd42648019620e7e241e593988ef44de58ae415563059",
+      "bytes": 422964,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_11.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_11.png",
+      "sha256": "72c71e7454b41cc32a53229e797fb26c6cfd78fab35dc3df1dfe1fbd0796d08f",
+      "bytes": 367540,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_12.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_12.png",
+      "sha256": "29a4bf18e1c15fbad55653c81062ecb5e8e880e910b529d0ff03ee0cc0a57ef6",
+      "bytes": 288809,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/figures/page_13.png",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/figures/page_13.png",
+      "sha256": "2b262396733269b4d9fd2acc6ad375d0dfe63a765bca3cc83c1a0e33d8c552f3",
+      "bytes": 279862,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/generated/acf_force_control_simple.slx",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/generated/acf_force_control_simple.slx",
+      "sha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+      "bytes": 693988,
+      "role": "Native Simulink model",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_desktop_available.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_experiment.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_metrics.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_metrics.m",
+      "sha256": "cb1eb5796251cebe079f0cef21a1fd1cbaa02beca318908811485afedd719117",
+      "bytes": 6988,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_open.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_parameters.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_parameters.m",
+      "sha256": "4470fdf842dfb75c514f645a057b35b1a31f6852e9e47f7f9b1cd0b08c93be24",
+      "bytes": 1422,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_plot.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_plot.m",
+      "sha256": "47b930c35dae8d0359d499b4c4f0d975ebc966994d63fad7088637d7a71d304a",
+      "bytes": 1852,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_prepare.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_prepare.m",
+      "sha256": "7b9f288acf1770cf8e36c8edd5ce2d98e03a9051a3cf0d4f5127aa04a90cbf18",
+      "bytes": 32306,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_run.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_run.m",
+      "sha256": "67263fd09979ed2dc28f9ac8c411ea21dce2692e91dc510df0ad226e16bdd6b6",
+      "bytes": 5857,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_select_actuator.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_select_actuator.m",
+      "sha256": "e47ceffba24dfc93c05aab9fd680e09da3b5013ff093d5528da39712611c3ad4",
+      "bytes": 3504,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_select_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_select_controller.m",
+      "sha256": "51aed40a78c75737db9e4f107407a432742c4ccd4e13b108b7e0caa3325e6b73",
+      "bytes": 673,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_signals.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_signals.m",
+      "sha256": "3219911890249aa00cca36e323827d5203038c24a432b1fc88de6eec3deb4e0b",
+      "bytes": 960,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_start.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_start_visualizer.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_sweep.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_sweep.m",
+      "sha256": "af852ccce2cd71cac8ca37519c310c1ea1c296ae8f7fa745b995b58ae4a6aa03",
+      "bytes": 3338,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_viewer_selftest.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/helpers/acf_visualize.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/acf_visualize.m",
+      "sha256": "0c5f4302fcf20068681805fc776ea6cb5a9b171b068ca1ce5303e4a2ef55540c",
+      "bytes": 10206,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/line_cleanup_bridge.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/line_cleanup_bridge.json",
+      "sha256": "350aca2d8d0cc20f138762f1a3b96b7b380562ba025b99884d92d8f74f9fa660",
+      "bytes": 3881,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/manifest.json",
+      "sha256": "48c9ce5116ccc1b6d1d9a188ec341abbde89aadf8bef19ae181f14d538a3b412",
+      "bytes": 5405,
+      "role": "Immutable snapshot hash manifest",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/native_model_pages.pdf",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/native_model_pages.pdf",
+      "sha256": "e37dc0a3a9d775c1989c078b348ae1b2813461518d0891489fa2e3b2ca06f633",
+      "bytes": 3360179,
+      "role": "Accepted native model diagram artifact",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/sensor_metadata_bridge.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/sensor_metadata_bridge.json",
+      "sha256": "77b51818805b330c4271c75edd0b6200980b6c7df2071a16e5e119858aa3ded8",
+      "bytes": 2115,
+      "role": "Frozen source evidence",
+      "component": "frozen accepted public V8 source"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/delivery_candidate.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/delivery_candidate.mat",
+      "sha256": "65b97e2e4703b69f2a47a8d8d819fc22f82c94daf115e24d75f1dd84156b305f",
+      "bytes": 6718,
+      "role": "Frozen prepared model parameters",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/delivery_verification.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/delivery_verification.json",
+      "sha256": "d11a62bd606d4fea8ac60c3f2388526e3c3e3cd292bb3fb220d21f272584b47a",
+      "bytes": 1813,
+      "role": "Frozen source evidence",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/generated/acf_force_control_simple.slx",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/generated/acf_force_control_simple.slx",
+      "sha256": "7fa60a844f8d7d0b0b1d15d4afcdc901c6d7cbe26a463e41cb2e0b78e8d8e0f8",
+      "bytes": 689485,
+      "role": "Native Simulink model",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_desktop_available.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "bytes": 288,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_experiment.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "bytes": 1114,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_metrics.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_metrics.m",
+      "sha256": "cb1eb5796251cebe079f0cef21a1fd1cbaa02beca318908811485afedd719117",
+      "bytes": 6988,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_open.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "bytes": 526,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_parameters.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_parameters.m",
+      "sha256": "4470fdf842dfb75c514f645a057b35b1a31f6852e9e47f7f9b1cd0b08c93be24",
+      "bytes": 1422,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_plot.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_plot.m",
+      "sha256": "47b930c35dae8d0359d499b4c4f0d975ebc966994d63fad7088637d7a71d304a",
+      "bytes": 1852,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_prepare.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_prepare.m",
+      "sha256": "ff73275fb0ad2776432a9ebc50a30f4777b0cb3f41d1436df73ad00ea7eb08af",
+      "bytes": 30468,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_run.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_run.m",
+      "sha256": "67263fd09979ed2dc28f9ac8c411ea21dce2692e91dc510df0ad226e16bdd6b6",
+      "bytes": 5857,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_select_actuator.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_select_actuator.m",
+      "sha256": "e47ceffba24dfc93c05aab9fd680e09da3b5013ff093d5528da39712611c3ad4",
+      "bytes": 3504,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_select_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_select_controller.m",
+      "sha256": "51aed40a78c75737db9e4f107407a432742c4ccd4e13b108b7e0caa3325e6b73",
+      "bytes": 673,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_signals.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_signals.m",
+      "sha256": "3219911890249aa00cca36e323827d5203038c24a432b1fc88de6eec3deb4e0b",
+      "bytes": 960,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_start.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "bytes": 530,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_start_visualizer.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "bytes": 1311,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_sweep.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "bytes": 3332,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_viewer_selftest.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "bytes": 2298,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/helpers/acf_visualize.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/acf_visualize.m",
+      "sha256": "2cefe40a210de7e6765b367e539ada42eb062b128db9f6c72bce0b2de4b7a172",
+      "bytes": 7766,
+      "role": "Exact MATLAB runtime helper dependency",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/manifest.json",
+      "sha256": "34f52c27ecf399b85de2e568a23c56ad4ef12eb026feacead9f1840d0e6382c3",
+      "bytes": 3788,
+      "role": "Immutable snapshot hash manifest",
+      "component": "frozen actual-acquisition actuator donor V8"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/helpers/viewer/acf_viewer_template.html",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/viewer/acf_viewer_template.html",
+      "sha256": "9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d",
+      "bytes": 53532,
+      "role": "HTML viewer template required by the exact archived acf_visualize helper",
+      "component": "Explicit viewer dependency",
+      "provenanceNote": "Copied from the accepted private layoutd helper snapshot. Byte-identical to canonical viewer template. This dependency is not contained in the four frozen snapshot manifests; adding it to a delivery is separate from the qualified scientific input.",
+      "runtimeOnly": true
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/helpers/viewer/acf_viewer_template.html",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_public_v8/helpers/viewer/acf_viewer_template.html",
+      "sha256": "9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d",
+      "bytes": 53532,
+      "role": "HTML viewer template required by the exact archived acf_visualize helper",
+      "component": "Explicit viewer dependency",
+      "provenanceNote": "Copied from the accepted private layoutd helper snapshot. Byte-identical to canonical viewer template. This dependency is not contained in the four frozen snapshot manifests; adding it to a delivery is separate from the qualified scientific input.",
+      "runtimeOnly": true
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/helpers/viewer/acf_viewer_template.html",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8/helpers/viewer/acf_viewer_template.html",
+      "sha256": "9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d",
+      "bytes": 53532,
+      "role": "HTML viewer template required by the exact archived acf_visualize helper",
+      "component": "Explicit viewer dependency",
+      "provenanceNote": "Copied from the accepted private layoutd helper snapshot. Byte-identical to canonical viewer template. This dependency is not contained in the four frozen snapshot manifests; adding it to a delivery is separate from the qualified scientific input.",
+      "runtimeOnly": true
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/inertial-delivery-private-v8-layoutd-20260930/helpers/viewer/acf_viewer_template.html",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/scientific_source/helpers/viewer/acf_viewer_template.html",
+      "sha256": "9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d",
+      "bytes": 53532,
+      "role": "HTML viewer template required by the exact archived acf_visualize helper",
+      "component": "Explicit viewer dependency",
+      "provenanceNote": "Copied from the accepted private layoutd helper snapshot. Byte-identical to canonical viewer template. This dependency is not contained in the four frozen snapshot manifests; adding it to a delivery is separate from the qualified scientific input.",
+      "runtimeOnly": true
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_summary.json",
+      "sha256": "077d67941854241af9f738480be47de8bbc5554802a4f4991070c2b3208ab1bf",
+      "bytes": 325520,
+      "role": "Final3500 qualified nominal-grid summary",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_coverage.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_coverage.json",
+      "sha256": "73216ee2164009d08cc62fd95f1038fcc57a1fd3abef62f16c72bd2e58ad77a7",
+      "bytes": 84400,
+      "role": "Exact3500 identity and provenance coverage audit",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_rows.csv",
+      "sha256": "59d53a66a3528663f761abbbaa82dac31f00bedb113d6a7596f147e947bd94f5",
+      "bytes": 7737973,
+      "role": "All3500 scored rows and execution-segment bindings",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_groups.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_groups.csv",
+      "sha256": "51b4d0060b7f5261aefe0e5a90a9043b36087c1c8bc642fbe35afc22781e10bc",
+      "bytes": 45545,
+      "role": "All700 physical-case groups across five seeds",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_failures.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "role": "Final empty force/packing failure ledger",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_final_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_final_manifest.json",
+      "sha256": "a9e91d0163d1918bdaa8b8a8e6cce6f9d1d57e3a22a159f748f06791f723b9e7",
+      "bytes": 3473,
+      "role": "Frozen aggregate-result hash certificate",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_aggregate.py",
+      "sha256": "497a674890dc644d26c84ea07caec7fb6f6e9a7ee6101bba874fe3539815a554",
+      "bytes": 24402,
+      "role": "Exact read-only aggregate and historical coverage audit recipe",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_prepare_resume.py",
+      "sha256": "1c33d770e78948a0d5d219f723f118b5f31806e4140762e417d269736986748f",
+      "bytes": 9077,
+      "role": "Original stopped-prefix preparation and recovery audit recipe",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_resume_plan.json",
+      "sha256": "7eb64c0b7a2a0ad73d3bb1bc662146adb8a30ca02bc7760397badbd3f9cdb782",
+      "bytes": 2154,
+      "role": "Approved1060-prefix/2440-continuation execution plan",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_final_candidate_20260930.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/inertial_final_candidate_20260930.mat",
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+      "bytes": 7161,
+      "role": "Canonical final20mm-metadata scientific input, byte-identical to archived input",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_tmpfs_sdi_pilot_20260930_v8_results.json",
+      "sha256": "ca940ffc53256d4774f195b37496793d4bd6c294e8b0720363930a50035969f2",
+      "bytes": 32155,
+      "role": "Transient SDI storage all72-channel bitwise parity and timing certificate",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_contact_trial_delivery_manifest_v8_20260930.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_contact_trial_delivery_manifest_v8_20260930.json",
+      "sha256": "58bb3a49c1c71f1bc8890830c27f967820ab9b6bca9f34b38ebfeee8393cf92b",
+      "bytes": 8896,
+      "role": "Accepted public model promotion/source-equivalence bridge",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930.json",
+      "sha256": "1b4a3bcbdd84cc954da6653dcccf7fbd5a40435e32a486bcc5416e1b84e7a569",
+      "bytes": 33639,
+      "role": "Exact nine-case final actuator-donor source/configuration results",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_manifest.json",
+      "sha256": "e738e091da4ff9eabfc2861d6636f3f670b6fc17380dea21ba0895ac8f36d605",
+      "bytes": 7557,
+      "role": "Final actuator comparison hash manifest",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_configurations.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_configurations.mat",
+      "sha256": "7dfb0449931197da9cf59c08550c7a9b25a9305bbe434f4c510f8d859de72969",
+      "bytes": 60480,
+      "role": "Exact final actuator comparison prepared configurations",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "sha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35",
+      "bytes": 10295,
+      "role": "Numerical10/5/2.5us full sample counts, trace hashes and recipe provenance",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_manifest.json",
+      "sha256": "03420214056d41b7fb0ff0f2215fd0ec8d08d6062e7e152a67fcdaeef2a84a48",
+      "bytes": 1259,
+      "role": "Frozen portable numerical evidence certificate",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_final_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_final_manifest.json",
+      "sha256": "30c32454fb34b9b4ded499ad36aa59231ebb807be27367ec15accbc661f3f447",
+      "bytes": 3156,
+      "role": "Original numerical evidence hash certificate",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_results.json",
+      "sha256": "386001c7f46ae1ca5854d21d67a7545c54e13d55a1649ebcf8155f5ab14a7908",
+      "bytes": 3806,
+      "role": "Qualified retained5us native-return audit and full-grid scores",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_2500ns_results.json",
+      "sha256": "393792e2fa9b596041e6d5f199a88cf416f70479975f31936a7dc26c0d1355f9",
+      "bytes": 37336,
+      "role": "Qualified2.5us native-return audit and full-grid scores",
+      "component": "Coverage and final source certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_configuration.mat",
+      "sha256": "d9fd8e465b5578a62211903ab4e2ee0d8c1b54334e2df45eeb50ab6791be7367",
+      "bytes": 6201209,
+      "role": "Part1 r1: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_results.json",
+      "sha256": "5ea12b532fad6b8eed14f2667ab1b251963bd65ec1efa9fae5d01f2251e5bde9",
+      "bytes": 1904662,
+      "role": "Part1 r1: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_results.mat",
+      "sha256": "30409875f6f8d73469014125eab163d5296122e3765539993bac13260970ac07",
+      "bytes": 355590,
+      "role": "Part1 r1: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_rows.jsonl",
+      "sha256": "3a6b6796fcb4c94a9420b0c9c28a37baf44042f0bd492098d09f6ea32ce3498c",
+      "bytes": 1516596,
+      "role": "Part1 r1: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_rows.csv",
+      "sha256": "428e73d6bf8783c337d51f06d66155050f38f0c9436b6e8fd3ae949132bf6e07",
+      "bytes": 455229,
+      "role": "Part1 r1: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_configuration.mat",
+      "sha256": "f6c2e5688adeb17022a4536b6d1932e0bd6360119754c69e4a16d3a73e46da8e",
+      "bytes": 6201422,
+      "role": "Part1 r2: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.json",
+      "sha256": "7b7158252951d96588d58d3f35a6fc03dae55f462ed419d758894e6e655727fd",
+      "bytes": 6015011,
+      "role": "Part1 r2: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.mat",
+      "sha256": "3c76c7d39587ab42b1347ed48350a4e5dea4663d49801fd9a737647a24df4d8a",
+      "bytes": 1113506,
+      "role": "Part1 r2: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_rows.jsonl",
+      "sha256": "c0014261693256d69895f96c1fda8974ad9b8a4944578d3e82ff245ef84ad123",
+      "bytes": 3299246,
+      "role": "Part1 r2: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_rows.csv",
+      "sha256": "88691815617c55c8dfc7143043dc39a83d7c8278f8f68d0e78bd56f151662ad6",
+      "bytes": 1431054,
+      "role": "Part1 r2: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_predecessor_reused_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_predecessor_reused_results.json",
+      "sha256": "3d27cc515d4f59489a5f21f672e8dd28481e5bb35245409fc1319b60801f7e82",
+      "bytes": 1917670,
+      "role": "Part1: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_predecessor_reused_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_predecessor_reused_results.mat",
+      "sha256": "41e68f05f2e3b803565049ce82adfcf1ba57cd2d0fd91d558e1aa0a2dc97735d",
+      "bytes": 362907,
+      "role": "Part1: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "sha256": "b67061381f1e6cef9a6bd366b2454ab5bd4295701c4ced789d470aa329242ace",
+      "bytes": 11571,
+      "role": "Part1: hash-bound original complete-prefix/recovery audit",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/tpcddd806a_ee07_40e8_bc50_53000d02fed9/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/executed_r2_recipe/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320,
+      "role": "Part1: actual executed r2 recipe snapshot (identical to shared7cef archive)",
+      "component": "Final grid executed recipes"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/part1_r2_completion_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/part1_r2_completion_manifest.json",
+      "sha256": "3cd75fa0a7653ce16d981ff270600115e7b07790d846ab101ed6a1ec95c1c14d",
+      "bytes": 3415,
+      "role": "Part1: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_configuration.mat",
+      "sha256": "07c0cab937e0c949202db6774bc10e29a6faeba6970bacc9f25f02abb0033cae",
+      "bytes": 6197307,
+      "role": "Part2 r1: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.json",
+      "sha256": "123d243f9819e22accdaede1f91e3566f920e9fc4b77b788b726071808ee3dc7",
+      "bytes": 1823818,
+      "role": "Part2 r1: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_results.mat",
+      "sha256": "ecc4883bfb66488c159b1c1bb3758b5304be2105560455b2d0a85e607e7911c4",
+      "bytes": 340978,
+      "role": "Part2 r1: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.jsonl",
+      "sha256": "72dbbfe0e52aa9dcae38d42fa5adf6b7ee967dad2534d076b58d71e008dafbca",
+      "bytes": 1450740,
+      "role": "Part2 r1: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_rows.csv",
+      "sha256": "fbbb3cd26aefa696349894b8829fc6b06b4157714cce7b633c1cf5b5c7b80fa8",
+      "bytes": 435765,
+      "role": "Part2 r1: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_configuration.mat",
+      "sha256": "6bf4d5ee02fc6b99b2248c816d52665d75dd766e10f7215026c082d2104d7143",
+      "bytes": 6197519,
+      "role": "Part2 r2: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+      "sha256": "cfd4a280412e3c586c4201838975986a51e2ec9725ae7c97fd4ebdd54c0dff25",
+      "bytes": 6015703,
+      "role": "Part2 r2: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.mat",
+      "sha256": "b593a9b1eb8c6cd8796622da1ae6f27b14dd5dbe117d247e9fcd7fde561228dd",
+      "bytes": 1113963,
+      "role": "Part2 r2: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.jsonl",
+      "sha256": "ad142b6bfe908359b0277646b961b64c97f4265daaf39ea8c0b4b878ab8775c9",
+      "bytes": 3365677,
+      "role": "Part2 r2: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.csv",
+      "sha256": "49308ffed22eb0434d16d44d6303a02236d781eff04b7562e6164e41c2951d42",
+      "bytes": 1431758,
+      "role": "Part2 r2: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.json",
+      "sha256": "42c7080ee413e2e6f172910a19445ffab58e3eb2124e9ed091c774f2a9457aa3",
+      "bytes": 1836970,
+      "role": "Part2: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.mat",
+      "sha256": "31bc9ea137fec12033a5148a41efc3c6ac3063b595ff4ff256ad53ba094e6378",
+      "bytes": 348258,
+      "role": "Part2: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "sha256": "1cce0f53028417549dea63b166dcab5af3f897603d4c2d27bb176b0db8259027",
+      "bytes": 11691,
+      "role": "Part2: hash-bound original complete-prefix/recovery audit",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/tpd3cd9587_2134_4a8c_9812_95a416137986/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/executed_r2_recipe/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320,
+      "role": "Part2: actual executed r2 recipe snapshot (identical to shared7cef archive)",
+      "component": "Final grid executed recipes"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/part2_invocation_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/part2_invocation_manifest.json",
+      "sha256": "b9ec840eeb35160ac777d32be52714c64fad433033a1e85bf973ca7e05599bdb",
+      "bytes": 2828,
+      "role": "Part2: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/part2_r1_partial_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/part2_r1_partial_manifest.json",
+      "sha256": "176dd02bfb567680b6a6b0036c026b066d9621df32f991a6434afea0e3d9b5a1",
+      "bytes": 2467,
+      "role": "Part2: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/part2_r2_complete_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/part2_r2_complete_manifest.json",
+      "sha256": "25c764c2a4972621f4c2c50ad501626e1348e015f36d40d00dcaca31feafaa45",
+      "bytes": 4709,
+      "role": "Part2: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/part2_r2_invocation_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/part2_r2_invocation_manifest.json",
+      "sha256": "3629e4e800e2b73455bebfbf45cb7309b5ad645c82302bf5ec76b3c398813c5e",
+      "bytes": 2366,
+      "role": "Part2: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_configuration.mat",
+      "sha256": "f842c2ee3629f43d4c8001784960406066c6d934a20632cc43805bff0e30ee33",
+      "bytes": 6200744,
+      "role": "Part3 r1: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.json",
+      "sha256": "783afaa50b84e8c5616d7a2855e6076c60b8f3a62e404bbdfbfff45381fcdee3",
+      "bytes": 1762588,
+      "role": "Part3 r1: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_results.mat",
+      "sha256": "a47744c050198e36953c3d105c34b21e5b8541e9e4ba3751eff106a21709d4ae",
+      "bytes": 329686,
+      "role": "Part3 r1: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.jsonl",
+      "sha256": "c3b95bb3719a43cfcc9e2a024684472012abc2fd0aab2903de57200c30f58517",
+      "bytes": 1400764,
+      "role": "Part3 r1: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_rows.csv",
+      "sha256": "53901f3db7fd1242dfe5be143fb655963836b239e088792b0e888d8c027d733b",
+      "bytes": 420883,
+      "role": "Part3 r1: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_configuration.mat",
+      "sha256": "782d60a78de31a776b84bbbf457835b18b092b5637a9369c16bba66887a3c2fb",
+      "bytes": 6200955,
+      "role": "Part3 r2: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.json",
+      "sha256": "2a582b4f804f6fc2512b76135abd775ea3cd48636c0ebd6fd571352b90057137",
+      "bytes": 6014568,
+      "role": "Part3 r2: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.mat",
+      "sha256": "2c7ee2d8b715854e118d45e3d6c61fcc8f76175f3434450dafd839901c3327af",
+      "bytes": 1112958,
+      "role": "Part3 r2: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_rows.jsonl",
+      "sha256": "238d8c859163013ed1aa93af5ebb39220775871e52257725033f73aba2d7c3ce",
+      "bytes": 3414387,
+      "role": "Part3 r2: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_rows.csv",
+      "sha256": "089c857572154b68616b0f2a43acac19f0589614bd31ea2cd90fe8e9af3f1880",
+      "bytes": 1430639,
+      "role": "Part3 r2: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_predecessor_reused_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_predecessor_reused_results.json",
+      "sha256": "2829a5777b02a67d24a624c6736673dacf4fc9f5bc031552f3dfadb4caf13f99",
+      "bytes": 1775846,
+      "role": "Part3: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_predecessor_reused_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_predecessor_reused_results.mat",
+      "sha256": "d8ecb393ca6b71f0053f5a96112b4a9fc4f3f80606a786c75785343c2be75aff",
+      "bytes": 336896,
+      "role": "Part3: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "sha256": "c0c732874882f3baa5b11be139b3083b7d27fcbd6245110dbf4b7e8c2ebeaf42",
+      "bytes": 11779,
+      "role": "Part3: hash-bound original complete-prefix/recovery audit",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/tp8216a808_90ad_40a8_9750_ea3c3dbab0b0/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/executed_r2_recipe/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320,
+      "role": "Part3: actual executed r2 recipe snapshot (identical to shared7cef archive)",
+      "component": "Final grid executed recipes"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/r1_checkpoint_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/r1_checkpoint_manifest.json",
+      "sha256": "0cd2c754f72b65af19734419c3dae41d1861037dc3348af193db5a094624ca44",
+      "bytes": 2958,
+      "role": "Part3: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/r2_completion_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/r2_completion_manifest.json",
+      "sha256": "58e29899793dbfa904526ce25d9e54b57d94c81cad69875df78ab151e9bdcb4f",
+      "bytes": 10408,
+      "role": "Part3: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/r2_launch_manifest.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/r2_launch_manifest.json",
+      "sha256": "34858ea7fbf66fbac0e5e6d91ba18095f8138e00c28db6ce3fa8dad4898a67a7",
+      "bytes": 3415,
+      "role": "Part3: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_configuration.mat",
+      "sha256": "7ef74a472ec629d3a772cae725676dd508c943fc7aa1cd1a54047f8ed9f8d2ab",
+      "bytes": 6197490,
+      "role": "Part4 r1: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_results.json",
+      "sha256": "e27120e07f7ca293853136e7afebf36f01f9fa2849a5e477337a88c35306832b",
+      "bytes": 1830414,
+      "role": "Part4 r1: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_results.mat",
+      "sha256": "6a4f8b5105f98de1ddc278145d4824f47ab9970f41cbe528c327faff2724b164",
+      "bytes": 342228,
+      "role": "Part4 r1: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_rows.jsonl",
+      "sha256": "bdcd28529bfcf315b4da675a0e892a3c634472acf742efff518a41bb9cff0ede",
+      "bytes": 1478128,
+      "role": "Part4 r1: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_rows.csv",
+      "sha256": "eb5e456fda5794c9066ea0175a09fbe6330fb63d857544b2a12dcc4f033af7b9",
+      "bytes": 437339,
+      "role": "Part4 r1: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_configuration.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_configuration.mat",
+      "sha256": "268241052b7154ef1d72355b47ebade1ff02d0b72eae53812db4824257d7ef9b",
+      "bytes": 6197701,
+      "role": "Part4 r2: Full875 prepared configurations",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.json",
+      "sha256": "a66be5691e7046b0a4ee1c268bde754455a2c779df56b06e86bf6371d6566197",
+      "bytes": 6015568,
+      "role": "Part4 r2: Scored checkpoint/results and input/recipe provenance",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.mat",
+      "sha256": "d74c8ed8af55983e2f8490a5f7cbf9b37e937e6246652a5b344d4cb65c07a346",
+      "bytes": 1113697,
+      "role": "Part4 r2: Original MATLAB results needed for prefix restoration",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_rows.jsonl",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_rows.jsonl",
+      "sha256": "4fd2fffadbe299ec9d663e61c2171f1074a6ce5240647c539c37a560a08c41d6",
+      "bytes": 3338016,
+      "role": "Part4 r2: Durable append-only completed native-case records",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_rows.csv",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_rows.csv",
+      "sha256": "4b0cc2207ef16fc227df6241f42f729748baa4841f985ef73d5ef8eb056a1d00",
+      "bytes": 1431586,
+      "role": "Part4 r2: Readable scored rows",
+      "component": "Final grid shard evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_predecessor_reused_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_predecessor_reused_results.json",
+      "sha256": "2d99c469cc54c0163171115b730e51b97290a4a0a491a2f6734d785a145f8ae6",
+      "bytes": 1870782,
+      "role": "Part4: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_predecessor_reused_results.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_predecessor_reused_results.mat",
+      "sha256": "6565ef86d8ea6edc04351d062cfa51090591e248493f8b3ba84ac7e06614e151",
+      "bytes": 354792,
+      "role": "Part4: separately frozen reused complete r1 prefix",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "sha256": "ca6b4a22b1213f32e7efb819ba1af449b9693cd5b552f5e46e70d4d718bb2bcb",
+      "bytes": 11815,
+      "role": "Part4: hash-bound original complete-prefix/recovery audit",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/.local/state/actuator-model/tp0e652762_3a52_4a99_9e19_1b29b4461e68/qualify_inertial_mass_controller.m",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/executed_r2_recipe/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "bytes": 76320,
+      "role": "Part4: actual executed r2 recipe snapshot (identical to shared7cef archive)",
+      "component": "Final grid executed recipes"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/part4_r1_interruption_recovery.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/part4_r1_interruption_recovery.json",
+      "sha256": "1eefbc95e3b9f7e58b4a1214f2315e017c8cb074b799a1efd7e36f7c7d3e5dae",
+      "bytes": 4622,
+      "role": "Part4: interrupted264-row checkpoint plus268 complete JSONL records certificate",
+      "component": "Final grid predecessor evidence"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/part4_r2_completion.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/part4_r2_completion.json",
+      "sha256": "2333519e125543fa00ad8bf78695a1685071490c9563e2487bc0a19fb3d4e4d4",
+      "bytes": 7917,
+      "role": "Part4: launch/checkpoint/completion source-binding certificate",
+      "component": "Final grid execution certificates"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_results.json",
+      "sha256": "0cb685fb5446a48e6a06c8d227c8bdf43dce1c1e58b2a2929b0cfab593d51589",
+      "bytes": 457434,
+      "role": "Part1:61 extra recovery executions, certificate only; excluded from3500 unique grid",
+      "component": "Excluded recovery count certificates",
+      "excludedFromUniqueGrid": true
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_results.json",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_results.json",
+      "sha256": "410cf059761f38e4951d78c982a83d77f06b749908336de981b683288e4b6ee1",
+      "bytes": 457478,
+      "role": "Part4:61 extra recovery executions, certificate only; excluded from3500 unique grid",
+      "component": "Excluded recovery count certificates",
+      "excludedFromUniqueGrid": true
+    }
+  ],
+  "selectedNativeAuditDependencies": [
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_worst_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_worst_native_trace.mat",
+      "sha256": "e09e0ce28291209f74b1f329f1eec3c80af59247a8fab170cd0b4a5eeb25e32e",
+      "bytes": 92943421,
+      "role": "Part1: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_traces/controller_01_worst_native.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_traces/controller_01_worst_native.mat",
+      "sha256": "4e7c3edb5132a1d262cd66f5bf4bef87b645549ea513f889a266d7b7a53c7449",
+      "bytes": 92942886,
+      "role": "Part1: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_first_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r1_first_native_trace.mat",
+      "sha256": "2056f31d7a191e4e294e5f0a3edbb49eacc30f4d166d879615ab335dd5d3c9b4",
+      "bytes": 78806774,
+      "role": "Part1: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Optional: needed only to reproduce prefix preparation from scratch"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_worst_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_worst_native_trace.mat",
+      "sha256": "5abbf5cc43e75141a379c9c138acafa6601decd9ae10f138987b9bfc456ba27d",
+      "bytes": 92915833,
+      "role": "Part2: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_traces/controller_01_worst_native.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_traces/controller_01_worst_native.mat",
+      "sha256": "4ee53a54bf7c27a3c3a8d6d8b69abeed8856ee6150f1b028869a152729e6ebad",
+      "bytes": 92915113,
+      "role": "Part2: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_first_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r1_first_native_trace.mat",
+      "sha256": "9a4716afc1f5bbe750a90d1b1cd6801617bcc83e235fceb8cef68126a2f7f016",
+      "bytes": 91813466,
+      "role": "Part2: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Optional: needed only to reproduce prefix preparation from scratch"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_worst_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_worst_native_trace.mat",
+      "sha256": "79f4367e11b13256cb86b80a82c81be66c51fab8f51082b7ef6f38bb6209cac4",
+      "bytes": 93136909,
+      "role": "Part3: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_traces/controller_01_worst_native.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_traces/controller_01_worst_native.mat",
+      "sha256": "43b632553711e859920462f4b84ca63b2b03db382d02066e0560bcf28f40a9ca",
+      "bytes": 93137031,
+      "role": "Part3: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_first_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r1_first_native_trace.mat",
+      "sha256": "55652ae5a5b5b3c766ee631e943b788e2ef6f07be7124b46b096eaad16737c3d",
+      "bytes": 91807141,
+      "role": "Part3: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Optional: needed only to reproduce prefix preparation from scratch"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_worst_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_worst_native_trace.mat",
+      "sha256": "3204f37badcd37c9ca423f7d7bf957c42d69dfe13fdf290725dbbb42e3996f9e",
+      "bytes": 92927393,
+      "role": "Part4: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_traces/controller_01_worst_native.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_traces/controller_01_worst_native.mat",
+      "sha256": "f0d31cb77e48e15b0580f2f171bc5f855c6fdf7969ba71ab506eb03bec405dc0",
+      "bytes": 92927065,
+      "role": "Part4: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Required by unchanged historical aggregate reader"
+    },
+    {
+      "originalAbsolutePath": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_first_native_trace.mat",
+      "suggestedProjectRelativeArchiveMember": "acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r1_first_native_trace.mat",
+      "sha256": "50d42ddd3290662ac2cc1c4dac353b2fa8f4cbd06542fe9ecb0346c1ec4c3c5f",
+      "bytes": 91806190,
+      "role": "Part4: selected r1 native audit dependency",
+      "component": "Selected native audit dependencies",
+      "requiredFor": "Optional: needed only to reproduce prefix preparation from scratch"
+    }
+  ],
+  "snapshotRoots": [
+    {
+      "component": "immutable grid execution source",
+      "originalRoot": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source",
+      "suggestedArchiveRoot": "acf_simulink/validation/final_grid/immutable_execution_source",
+      "fileCount": 29,
+      "bytes": 908986
+    },
+    {
+      "component": "immutable numerical refinement source",
+      "originalRoot": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source",
+      "suggestedArchiveRoot": "acf_simulink/validation/final_grid/immutable_numerical_refinement_source",
+      "fileCount": 4,
+      "bytes": 31196
+    },
+    {
+      "component": "frozen accepted public V8 source",
+      "originalRoot": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930",
+      "suggestedArchiveRoot": "acf_simulink/validation/portable_sources/frozen_public_v8",
+      "fileCount": 40,
+      "bytes": 7061855
+    },
+    {
+      "component": "frozen actual-acquisition actuator donor V8",
+      "originalRoot": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930",
+      "suggestedArchiveRoot": "acf_simulink/validation/portable_sources/frozen_actuator_donor_v8",
+      "fileCount": 20,
+      "bytes": 770693
+    }
+  ],
+  "snapshotManifestChecks": [
+    {
+      "manifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_execution_source/source_manifest.json",
+      "sha256": "3747761258b37c37dccd47ae84da55e6a46a6bb6c2a53936aec8f617f0b4b361",
+      "listedFileHashesVerified": 27,
+      "passed": true
+    },
+    {
+      "manifest": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/immutable_numerical_refinement_source/source_manifest.json",
+      "sha256": "a3468151f69443d9655a9e7fce052975f6c8b28ea21b9ac279efd2309ad3641b",
+      "listedFileHashesVerified": 3,
+      "passed": true
+    },
+    {
+      "manifest": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-public-v8-20260930/manifest.json",
+      "sha256": "48c9ce5116ccc1b6d1d9a188ec341abbde89aadf8bef19ae181f14d538a3b412",
+      "listedFileHashesVerified": 39,
+      "passed": true
+    },
+    {
+      "manifest": "/home/tommie/.local/state/actuator-model/inertial-delivery-frozen-actual-acquisition-actuator-donor-v8-20260930/manifest.json",
+      "sha256": "34f52c27ecf399b85de2e568a23c56ad4ef12eb026feacead9f1840d0e6382c3",
+      "listedFileHashesVerified": 19,
+      "passed": true
+    }
+  ],
+  "helperDependencyClosure": [
+    {
+      "component": "immutable grid execution source",
+      "helpers": 16,
+      "missingAcfFunctionDependencies": [],
+      "passed": true
+    },
+    {
+      "component": "frozen accepted public V8 source",
+      "helpers": 16,
+      "missingAcfFunctionDependencies": [],
+      "passed": true
+    },
+    {
+      "component": "frozen actual-acquisition actuator donor V8",
+      "helpers": 16,
+      "missingAcfFunctionDependencies": [],
+      "passed": true
+    }
+  ],
+  "gridPartBindings": [
+    {
+      "part": 1,
+      "uniqueCases": 875,
+      "r1RowsReused": 275,
+      "newR2NativeHistories": 600,
+      "globalIndices": "1:4:3500",
+      "r2ConfigurationOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_configuration.mat",
+      "r2ResultsOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_results.json",
+      "actualR2RecipeOriginal": "/home/tommie/.local/state/actuator-model/tpcddd806a_ee07_40e8_bc50_53000d02fed9/qualify_inertial_mass_controller.m",
+      "actualR2RecipeSha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "sharedR2RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sharedR1RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "r1PredecessorAuditOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part1_r1_resume_audit.json",
+      "r1PredecessorAuditSha256": "b67061381f1e6cef9a6bd366b2454ab5bd4295701c4ced789d470aa329242ace"
+    },
+    {
+      "part": 2,
+      "uniqueCases": 875,
+      "r1RowsReused": 263,
+      "newR2NativeHistories": 612,
+      "globalIndices": "2:4:3500",
+      "r2ConfigurationOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_configuration.mat",
+      "r2ResultsOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+      "actualR2RecipeOriginal": "/home/tommie/.local/state/actuator-model/tpd3cd9587_2134_4a8c_9812_95a416137986/qualify_inertial_mass_controller.m",
+      "actualR2RecipeSha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "sharedR2RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sharedR1RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "r1PredecessorAuditOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part2_r1_resume_audit.json",
+      "r1PredecessorAuditSha256": "1cce0f53028417549dea63b166dcab5af3f897603d4c2d27bb176b0db8259027"
+    },
+    {
+      "part": 3,
+      "uniqueCases": 875,
+      "r1RowsReused": 254,
+      "newR2NativeHistories": 621,
+      "globalIndices": "3:4:3500",
+      "r2ConfigurationOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_configuration.mat",
+      "r2ResultsOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part3/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part3_r2_results.json",
+      "actualR2RecipeOriginal": "/home/tommie/.local/state/actuator-model/tp8216a808_90ad_40a8_9750_ea3c3dbab0b0/qualify_inertial_mass_controller.m",
+      "actualR2RecipeSha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "sharedR2RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sharedR1RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "r1PredecessorAuditOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part3_r1_resume_audit.json",
+      "r1PredecessorAuditSha256": "c0c732874882f3baa5b11be139b3083b7d27fcbd6245110dbf4b7e8c2ebeaf42"
+    },
+    {
+      "part": 4,
+      "uniqueCases": 875,
+      "r1RowsReused": 268,
+      "newR2NativeHistories": 607,
+      "globalIndices": "4:4:3500",
+      "r2ConfigurationOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_configuration.mat",
+      "r2ResultsOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part4/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part4_r2_results.json",
+      "actualR2RecipeOriginal": "/home/tommie/.local/state/actuator-model/tp0e652762_3a52_4a99_9e19_1b29b4461e68/qualify_inertial_mass_controller.m",
+      "actualR2RecipeSha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f",
+      "sharedR2RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r2_tmpfs_continuation_7cef/qualify_inertial_mass_controller.m",
+      "sharedR1RecipeArchiveMember": "acf_simulink/validation/final_grid/immutable_execution_source/recipes/r1_native_grid_04ae/qualify_inertial_mass_controller.m",
+      "r1PredecessorAuditOriginal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_part4_r1_resume_audit.json",
+      "r1PredecessorAuditSha256": "ca6b4a22b1213f32e7efb819ba1af449b9693cd5b552f5e46e70d4d718bb2bcb"
+    }
+  ],
+  "counts": {
+    "inventoryEntries": 185,
+    "selectedNativeAuditDependencies": 12,
+    "bytesExcludingSelectedNativeTraces": 141078511,
+    "selectedNativeAuditTraceBytes": 1098079222,
+    "snapshotFiles": 93,
+    "uniqueSourceAbsolutePaths": 194
+  },
+  "sourceModels": {
+    "scientificGridModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+    "scientificGridCandidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+    "acceptedPublicModelSha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+    "acceptedPublicCandidateSha256": "212210dd362c411e27af067ae0008fbc0fc3641975da5dd73d03733964281186",
+    "actualAcquisitionActuatorDonorModelSha256": "7fa60a844f8d7d0b0b1d15d4afcdc901c6d7cbe26a463e41cb2e0b78e8d8e0f8"
+  },
+  "dependencyNotes": [
+    "Each exact model snapshot has all16acf MATLAB helper definitions and no missingacf function calls. MATLAB/Simulink built-ins are external runtime dependencies.",
+    "Frozen snapshots store helpers in a helpers directory for source archival. acf_open expects generated beside its own directory; an installed user-facing copy normally places the helpers in acf_simulink beside generated and viewer, or places generated/viewer beside an archived helper directory. This inventory preserves original source layout and makes no restructuring changes.",
+    "The accepted private layoutd HTML template is byte-identical to the canonical template, hash9e78b70729b593a3bd370de31fe23c47bdfaa765671f6666f0eaed0748b5876d. Suggested additional template placements are explicit runtime dependencies, not changes to frozen scientific manifests.",
+    "The unchanged historical aggregate reader hashes eight selected r1 worst/controller-worst native traces. The four first-native traces are optional for rerunning prefix-preparation. They are listed individually outside the default source/certificate files; no whole native-trace folder is inventoried.",
+    "Original source certificates contain absolute paths. A portable audit needs a path mapping to the suggested archive members while preserving the original certificates/hashes. A fresh physical rerun can directly use the frozen source/candidate and recipe options instead of reproducing the historical stop/resume workflow.",
+    "Two61-case JSON certificates are included only to preserve the documented122 extra execution counter. Their full trajectories/configuration/legacy sources are excluded.",
+    "The native global worst, reports/figures/offline replay, selected additional proof traces and active30s campaign results are managed separately by the root delivery task. No all-history40GB inventory is attempted."
+  ]
+}

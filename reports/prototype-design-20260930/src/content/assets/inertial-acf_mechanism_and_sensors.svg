@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-labelledby="acf_mechanism_and_sensors-title acf_mechanism_and_sensors-desc">
+  <title id="acf_mechanism_and_sensors-title">Mechanical load path</title>
+  <desc id="acf_mechanism_and_sensors-desc">Conceptual mechanical chain from robot R through body A, actuator, holder B, lower opposed springs and damper, multi-axis load cell, tool S and workpiece. Position measures S relative to A. Acceleration is measured on S. The complete lower axial load passes through the cell. This is not a dimensional drawing.</desc>
+  <defs>
+    <marker id="arrow-182b49" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#182b49" />
+    </marker>
+    <marker id="arrow-285cc5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#285cc5" />
+    </marker>
+    <marker id="arrow-087d80" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#087d80" />
+    </marker>
+    <marker id="arrow-7750af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7750af" />
+    </marker>
+    <marker id="arrow-9a5b0a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#9a5b0a" />
+    </marker>
+    <marker id="arrow-ae3f70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ae3f70" />
+    </marker>
+    <marker id="arrow-52647c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#52647c" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="1020" fill="#ffffff" stroke="none" stroke-width="1.8" rx="0" />
+  <text x="48" y="62" fill="#182b49" font-size="34" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Mechanical load path</text>
+  <text x="48" y="99" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Selected prototype: rigid upper attachment, voice coil and lower compliance</text>
+  <path d="M 320 208 L 320 242" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 306 L 320 340" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 430 L 320 466" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 530 L 320 574" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 676 L 320 710" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 774 L 320 810" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 320 896 L 320 930" fill="none" stroke="#182b49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+  <rect x="90" y="144" width="460" height="64" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="90" y="157" width="5" height="38" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="178" fill="#7750af" font-size="24" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Robot boundary R</text>
+  <rect x="90" y="242" width="460" height="64" fill="#f3eef9" stroke="#7750af" stroke-width="1.8" rx="14" />
+  <rect x="90" y="255" width="5" height="38" fill="#7750af" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="276" fill="#7750af" font-size="24" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">A · robot-side body</text>
+  <rect x="90" y="340" width="460" height="90" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="90" y="353" width="5" height="64" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="374" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Guided voice coil</text>
+  <text x="112" y="406" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Fast correction between A and B</text>
+  <rect x="90" y="466" width="460" height="64" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="90" y="479" width="5" height="38" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="500" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">B · moving holder · 0.6 kg</text>
+  <rect x="90" y="574" width="460" height="102" fill="#fff5e7" stroke="#9a5b0a" stroke-width="1.8" rx="14" />
+  <rect x="90" y="587" width="5" height="76" fill="#9a5b0a" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="608" fill="#9a5b0a" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Lower compliant attachment</text>
+  <text x="112" y="640.0" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Opposed spring pair + parallel damper</text>
+  <text x="112" y="662.0" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Massless joining frame in this model</text>
+  <rect x="90" y="710" width="460" height="64" fill="#fceef4" stroke="#ae3f70" stroke-width="1.8" rx="14" />
+  <rect x="90" y="723" width="5" height="38" fill="#ae3f70" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="744" fill="#ae3f70" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Multi-axis load cell</text>
+  <rect x="90" y="810" width="460" height="86" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="90" y="823" width="5" height="60" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="112" y="844" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">S · sanding tool · 0.1–2 kg</text>
+  <text x="112" y="876" fill="#52647c" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Entire S mass lies beyond the cell</text>
+  <text x="344" y="230" fill="#7750af" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">upper rigid attachment</text>
+  <path d="M 575 274 L 575 852" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 7" />
+  <path d="M 553 274 L 587 274" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 553 852 L 587 852" fill="none" stroke="#087d80" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" />
+  <text x="586" y="555" fill="#087d80" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">S–A</text>
+  <rect x="650" y="160" width="490" height="150" fill="#eef3fe" stroke="#285cc5" stroke-width="1.8" rx="14" />
+  <rect x="650" y="173" width="5" height="124" fill="#285cc5" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="672" y="194" fill="#285cc5" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">1 · Actuator movement</text>
+  <text x="672" y="226" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Changing A–B separation moves the tool.</text>
+  <text x="672" y="254" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">A remains fixed to the modeled robot.</text>
+  <text x="672" y="282" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">The lower stage allows B–S relative motion.</text>
+  <rect x="650" y="362" width="490" height="206" fill="#fff5e7" stroke="#9a5b0a" stroke-width="1.8" rx="14" />
+  <rect x="650" y="375" width="5" height="180" fill="#9a5b0a" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="672" y="396" fill="#9a5b0a" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">2 · Selected passive stage</text>
+  <text x="672" y="428" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Net spring rate: 19.746 N/mm</text>
+  <text x="672" y="456" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Two springs: about 9.873 N/mm each</text>
+  <text x="672" y="484" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Common preload: 33.6 N per spring</text>
+  <text x="672" y="512" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Parallel damping: 60 N·s/m</text>
+  <text x="672" y="540" fill="#52647c" font-size="19" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">About 20 mm free length per spring</text>
+  <rect x="650" y="620" width="490" height="208" fill="#e9f7f5" stroke="#087d80" stroke-width="1.8" rx="14" />
+  <rect x="650" y="633" width="5" height="182" fill="#087d80" stroke="none" stroke-width="1.8" rx="2" />
+  <text x="672" y="654" fill="#087d80" font-size="23" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">3 · What is measured</text>
+  <text x="672" y="686" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Force: all lower axial load through the cell</text>
+  <text x="672" y="714" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Position: S relative to A, shown by bracket</text>
+  <text x="672" y="742" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Acceleration: mounted directly on S</text>
+  <text x="672" y="770" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Known mass: includes all downstream parts</text>
+  <text x="672" y="798" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Match sensor timing and coordinate frames</text>
+  <rect x="85" y="930" width="475" height="16" fill="#dce3ed" stroke="none" stroke-width="1.8" rx="0" />
+  <path d="M 85 930 L 560 930" fill="none" stroke="#182b49" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+  <text x="90" y="973" fill="#182b49" font-size="20" font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="start" xml:space="preserve">Workpiece · normal pressing force N</text>
+  <text x="650" y="881" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">Schematic only; dimensions are not to scale.</text>
+  <text x="650" y="917" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">The 100 mm packing limit applies to springs,</text>
+  <text x="650" y="943" fill="#52647c" font-size="18" font-family="DejaVu Sans, sans-serif" font-weight="normal" text-anchor="start" xml:space="preserve">not to the complete flange assembly.</text>
+</svg>

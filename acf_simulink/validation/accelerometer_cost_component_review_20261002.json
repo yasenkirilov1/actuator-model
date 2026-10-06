@@ -1,0 +1,1461 @@
+{
+  "schema": "acf.accelerometer_component_review.v1",
+  "reviewDate": "2026-10-02",
+  "scope": "Manufacturer specifications, indicative EU prices and reproducible electrical/inertial calculations. No native simulations, purchases, physical validation or model promotion were performed in this research lane.",
+  "forceRequirement_N": 0.5,
+  "gravity_m_s2": 9.80665,
+  "downstreamToolMassRange_kg": [
+    0.1,
+    2.0
+  ],
+  "conditionedAccelerationReferenceRMS_m_s2": 0.014,
+  "controllerRate_Hz": 10000,
+  "rawForceAcquisitionReference_Hz": 100000,
+  "sourcePolicy": "Electrical specifications come from manufacturer documents. Distributor prices are observations retrieved on the review date, sometimes from indexed/cached regional pages, and are not live order promises. All prices exclude VAT and shipping. Package suffixes and quantity breaks are preserved.",
+  "sources": {
+    "adxl1002": {
+      "title": "ADXL1001/ADXL1002 data sheet, Rev A",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl1001-1002.pdf",
+      "locations": "Table 1; frequency-response figures; ratiometric output discussion"
+    },
+    "adxl354_355": {
+      "title": "ADXL354/ADXL355 data sheet, Rev D",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf",
+      "locations": "Tables 1, 2, 10, 12; Figures 8-10; Filter, Data Synchronization and SPI Protocol sections"
+    },
+    "iis3dwb": {
+      "title": "IIS3DWB DS12569, Rev 8, July 2025",
+      "url": "https://www.st.com/resource/en/datasheet/iis3dwb.pdf",
+      "locations": "Tables 3, 4, 45; accelerometer filtering; FIFO; timestamps; INTERNAL_FREQ_FINE"
+    },
+    "iis3dwb_application": {
+      "title": "IIS3DWB application note AN5444",
+      "url": "https://www.st.com/resource/en/application_note/an5444-iis3dwb-ultrawide-bandwidth-lownoise-3axis-digital-vibration-sensor-stmicroelectronics.pdf",
+      "locations": "Filter chain, digital-interface, FIFO and timestamp descriptions; no complete LPF1 transfer/latency bound located"
+    },
+    "icm42688p": {
+      "title": "ICM-42688-P DS-000347, Rev 1.9, 11/12/2024; current manufacturer-linked PDF",
+      "manufacturerProductUrl": "https://www.invensense.tdk.com/en-us/products/6-axis/icm-42688-p",
+      "url": "https://d17t6iyxenbwp1.cloudfront.net/s3fs-public/2026-06/DS-000347%20ICM-42688-P%20v1.9.pdf?VersionId=XL060vOv88u6zsKx9dkBVJEyV452m0eq",
+      "locations": "Electrical/mechanical tables; section 5 filter tables; section 6.1 packet resolution; sections 12.5 and 12.7 external clock and timestamps"
+    },
+    "ism330dhcx": {
+      "title": "ISM330DHCX DS13012, Rev 7",
+      "url": "https://www.st.com/resource/en/datasheet/ism330dhcx.pdf",
+      "locations": "Mechanical table; accelerometer filtering; OIS bandwidth and phase table"
+    },
+    "ads8588s": {
+      "title": "ADS8588S data sheet",
+      "url": "https://www.ti.com/lit/ds/symlink/ads8588s.pdf",
+      "locations": "16-bit resolution, +/-5 V input range and 92.2/90.4 dB SNR at 200 kSPS, 1 kHz, -0.5 dBFS"
+    }
+  },
+  "candidates": [
+    {
+      "part": "ADXL1002BCPZ-RL7",
+      "role": "Existing fast analog reference; two parts for planar, three for general 3D inertia reconstruction",
+      "axesPerPart": 1,
+      "interface": "analog",
+      "ranges_g": [
+        50
+      ],
+      "sensitivity_V_per_g_at5V": 0.04,
+      "noiseDensity_ug_per_sqrtHz": {
+        "all": 25
+      },
+      "noiseDensityConditions": "100 Hz to 10 kHz; 1/f corner 0.1 Hz; typical manufacturer noise, not assembled sanding noise",
+      "response": {
+        "resonance_Hz": 21000,
+        "amplitude5PercentBandwidth_Hz": 4700,
+        "amplitude3dBBandwidth_Hz": 11000,
+        "interpretation": "Bandwidth points arise from resonant gain increase, not a first-order 11 kHz low-pass. The external engineered AA transfer is a separate design choice.",
+        "completeTransferPublished": false,
+        "maximumFullPathGroupDelayPublished": false
+      },
+      "calibration": {
+        "ratiometric": "Sensitivity scales with VDD; zero-g output is VDD/2.",
+        "sensitivityVariationOverTemperature_percent": 5,
+        "zeroGMaxMinusMinOverTemperature_g": 5,
+        "crossAxisSensitivity_percent": 1,
+        "nonlinearity_percentFS": 0.1,
+        "interpretation": "Do not convert the 5 g max-minus-min temperature excursion into an assumed constant linear drift. Initial and warm tare, scale, axis and temperature calibration are required."
+      },
+      "operatingTemperature_C": [
+        -40,
+        125
+      ],
+      "sourceId": "adxl1002",
+      "price": {
+        "distributor": "DigiKey Netherlands",
+        "url": "https://www.digikey.nl/nl/products/detail/analog-devices-inc/ADXL1002BCPZ-RL7/13180293",
+        "package": "LFCSP, reel part sold as cut tape",
+        "currency": "EUR",
+        "quantity1": 64.88,
+        "quantity10": 58.903,
+        "observedStock": 0,
+        "retrievedDate": "2026-10-02",
+        "observation": "Indexed listing shows future replenishment; availability must be rechecked. VAT excluded explicitly on page."
+      }
+    },
+    {
+      "part": "ADXL354CEZ",
+      "role": "Least disruptive cheaper 3-axis analog architecture; lower internal bandwidth and smaller range require qualification",
+      "axesPerPart": 3,
+      "interface": "analog",
+      "ranges_g": [
+        2,
+        8
+      ],
+      "sensitivity_V_per_g": {
+        "2": 0.4,
+        "8": 0.1
+      },
+      "noiseDensity_ug_per_sqrtHz": {
+        "2": 22.5,
+        "8": 33.75
+      },
+      "noiseDensityConditions": "+/-8 g noise is estimated by design as 50% above +/-2 g, not a measured maximum guarantee.",
+      "response": {
+        "internalAnalogFilterDescription": "Sinc-shaped analog antialias response, approximately 1.5 kHz -3 dB. Rev D does not state a complete order/impulse response.",
+        "internalAnalogFilterMinus3dB_Hz": 1500,
+        "overallMinus3dB_Hz": 1900,
+        "mechanicalResonance_Hz": 2400,
+        "mechanicalQ": {
+          "XY": 7.4,
+          "Z": 1.5
+        },
+        "outputSeriesResistance_ohm": 32000,
+        "externalCapacitorTransfer": "Additional first-order RC: H(s)=1/(1+s*32000*C). Buffer and ADC drive requirements remain separate.",
+        "completeTransferPublished": false,
+        "maximumFullPathGroupDelayPublished": false,
+        "simulationContract": "Do not replace this part's internal response by the reference 5.1 kHz envelope. Measured full sensor/frame/conditioning transfer or separately labeled conservative screening envelopes are required."
+      },
+      "conditioningExample": {
+        "range_g": 8,
+        "gain": 5,
+        "zeroReference_V": 0.9,
+        "adc": "ADS8588S +/-5 V range, 16 bits",
+        "outputAtNominalSensorFullScale_V": 4,
+        "meaning": "Bipolar centered gain around V1P8ANA/2, with the amplifier on suitable rails. This is a gain/range design example, not clipping qualification."
+      },
+      "calibration": {
+        "initialSensitivityTolerance_percent": 8,
+        "sensitivityTemperature_percent_per_C": 0.01,
+        "initialBiasLimit_mg": 75,
+        "biasTemperatureLimits_mg_per_C": [
+          -0.15,
+          0.15
+        ],
+        "biasTemperatureTableNote": "The Rev D ADXL354 typical entry is +/-0.2 mg/C between limits +/-0.15; this internally inconsistent typical entry is not used here.",
+        "nonlinearity_percent_at8g": 1.15,
+        "crossAxisSensitivity_percent": 1,
+        "ratiometric": "Output sensitivity and zero reference are relative to V1P8ANA, not an arbitrary external ADC reference."
+      },
+      "operatingTemperature_C": [
+        -40,
+        125
+      ],
+      "sourceId": "adxl354_355",
+      "price": {
+        "distributor": "Mouser Germany",
+        "url": "https://www.mouser.de/de/ProductDetail/Analog-Devices/ADXL354CEZ?qs=sGAEpiMZZMu5vlrqIFXt5fRj789CQj8hZTjIPfetPjCmoM2z2noYCA%3D%3D",
+        "package": "14-lead LCC, tray",
+        "currency": "EUR",
+        "quantity1": 60.44,
+        "quantity10": 53.45,
+        "observedStock": 23,
+        "retrievedDate": "2026-10-02",
+        "observation": "Latest regional indexed result. Earlier EU cache showed 55.38/48.90 EUR and 32 stock. Regional pages can also report restricted availability; these are indicative observations. Mouser regional terms exclude VAT."
+      }
+    },
+    {
+      "part": "IIS3DWBTR",
+      "role": "Industrial 3-axis digital vibration candidate; generous bandwidth but materially greater noise and incomplete phase specification",
+      "axesPerPart": 3,
+      "interface": "digital SPI",
+      "ranges_g": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "resolution_bits": 16,
+      "noiseDensity_ug_per_sqrtHz": {
+        "XY_typical": 75,
+        "Z_typical": 110,
+        "XY_characterizedUpper": 110,
+        "Z_characterizedUpper": 190
+      },
+      "noiseDensityConditions": "All three axes enabled, 100 Hz to 6.3 kHz, independent of selected full scale. Min/max are 3-sigma limited-sample characterization, not guaranteed production bounds. Single-axis noise specifications cannot be used for two simultaneous planar axes.",
+      "response": {
+        "nominalOutputRate_Hz": 26667,
+        "overallMinus3dBCharacterizedRange_Hz": [
+          5000,
+          6300
+        ],
+        "mechanicalResonance_Hz": {
+          "XY": 6900,
+          "Z": 7000
+        },
+        "configuration": "LPF2 bypassed, high-pass disabled; normal LPF1 chain remains active.",
+        "optionalLPF2CutoffDivisors": [
+          4,
+          10,
+          20,
+          45,
+          100,
+          200,
+          400,
+          800
+        ],
+        "completeTransferPublished": false,
+        "maximumFullPathGroupDelayPublished": false,
+        "simulationContract": "A 6.3 kHz magnitude point is not a disclosed low-pass order. Screen guessed phase separately, identify the physical impulse/group delay before calling a result component-qualified."
+      },
+      "interfaceTiming": {
+        "maximumSPIClock_Hz": 10000000,
+        "directReadBits": 56,
+        "timestampNominalQuantum_s": 1.25e-05,
+        "timestampCorrection": "TSRes=1/(80000+0.0015*INTERNAL_FREQ_FINE*80000); read the signed trim value.",
+        "externalSamplingClockPin": false,
+        "odrTypicalTolerance_percent": 1,
+        "odrCharacterizedUpperTolerance_percent": 2,
+        "odrTemperature_percent_per_C": 0.03,
+        "syncContract": "Capture DRDY on the MCU's force-ADC clock, calibrate sensor clock drift and reconstruct timestamp alignment. No same-clock or complete analog-delay guarantee follows from internal timestamps. Avoid FIFO batches that add many sample intervals."
+      },
+      "calibration": {
+        "initialBiasTypical_mg": 60,
+        "initialBiasCharacterizedLimit_mg": 180,
+        "biasTemperatureTypical_mg_per_C": 1,
+        "initialSensitivityTolerance_percent": 2,
+        "sensitivityVariationOverTemperatureTypical_percent": 1,
+        "sensitivityVariationOverTemperatureCharacterized_percent": 2,
+        "interpretation": "Temperature scale figures cover the range relative to 25 C; they are not per-degree coefficients."
+      },
+      "operatingTemperature_C": [
+        -40,
+        105
+      ],
+      "sourceIds": [
+        "iis3dwb",
+        "iis3dwb_application"
+      ],
+      "price": {
+        "distributor": "Mouser France",
+        "url": "https://www.mouser.fr/fr/ProductDetail/STMicroelectronics/IIS3DWBTR?qs=%252B6g0mu59x7IIEe51lWewNQ%3D%3D",
+        "package": "LGA-14, reel part sold as cut tape",
+        "currency": "EUR",
+        "quantity1": 19.9,
+        "quantity10": 17.38,
+        "observedStock": 19760,
+        "retrievedDate": "2026-10-02",
+        "observation": "Latest regional indexed result, crawled the previous day. Older Netherlands cache showed 17.55/15.42 EUR; not used as the primary comparison. Mouser regional terms exclude VAT."
+      }
+    },
+    {
+      "part": "ICM-42688-P",
+      "role": "Largest plausible cost reduction: 3-axis digital acceleration; high-rate phase/noise identification and supply availability required",
+      "axesPerPart": 3,
+      "interface": "digital SPI",
+      "ranges_g": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "resolution_bits": 16,
+      "noiseDensity_ug_per_sqrtHz": {
+        "XY": 65,
+        "Z": 70
+      },
+      "noiseDensityConditions": "Typical density at 10 Hz. Manufacturer 0.65/0.70 mg RMS at 100 Hz is a calculated figure. Neither specifies actual high-rate assembled sanding PSD.",
+      "highResolutionFIFO": {
+        "packetWordBits": 20,
+        "actualAccelerationBits": 18,
+        "lowBitsAlwaysZero": 2,
+        "onlyRange_g": 16,
+        "effectiveSensitivity_counts_per_g": 8192,
+        "meaning": "Use the manufacturer's 18-bit sensitivity after proper packet unpacking; an apparent 20-bit packet is not 20 acceleration bits."
+      },
+      "response": {
+        "nominalMaximumOutputRate_Hz": 32000,
+        "internalPath": "ADC/common decimation to 32 kHz, configurable second-order AAF, UI filtering, interface.",
+        "aafMinus3dBConfigRange_Hz": [
+          42,
+          3979
+        ],
+        "maximumAAFRegisters": {
+          "ACCEL_AAF_DELT": 63,
+          "ACCEL_AAF_DELTSQR": 3968,
+          "ACCEL_AAF_BITSHIFT": 3
+        },
+        "aafCanBeDisabled": true,
+        "uiFastRows": [
+          {
+            "odr_Hz": 32000,
+            "minus3dB_Hz": 8400,
+            "noiseBandwidth_Hz": 8831.7,
+            "dcGroupDelay_s": 0.0001
+          },
+          {
+            "odr_Hz": 16000,
+            "minus3dB_Hz": 4194.1,
+            "noiseBandwidth_Hz": 4410.6,
+            "dcGroupDelay_s": 0.0001
+          },
+          {
+            "odr_Hz": 8000,
+            "minus3dB_Hz": 2096.3,
+            "noiseBandwidth_Hz": 2204.6,
+            "dcGroupDelay_s": 0.0002
+          },
+          {
+            "odr_Hz": 4000,
+            "minus3dB_Hz": 1048.1,
+            "noiseBandwidth_Hz": 1102.2,
+            "dcGroupDelay_s": 0.0004
+          },
+          {
+            "odr_Hz": 2000,
+            "minus3dB_Hz": 524,
+            "noiseBandwidth_Hz": 551.1,
+            "dcGroupDelay_s": 0.0008
+          }
+        ],
+        "tableInterpretation": "At 32/16/8/4/2 kHz the table cells are merged across all UI bandwidth and filter-order settings. Selecting a first-order UI register does not make the full common-decimator chain a first-order RC. Group-delay table does not disclose the complete common/AAF impulse response or a worst-case bound.",
+        "completeTransferPublished": false,
+        "maximumFullPathGroupDelayPublished": false
+      },
+      "interfaceTiming": {
+        "maximumSPIClock_Hz": 24000000,
+        "directReadBits": 56,
+        "timestamped16ByteFIFOPacketReadBits": 136,
+        "highResolution20ByteFIFOPacketReadBits": 168,
+        "externalClockRange_Hz": [
+          31000,
+          50000
+        ],
+        "externalClockNominal_Hz": 32000,
+        "externalClockRateRule": "Output rates scale by CLKIN/32000, per section 12.5.",
+        "proposedExternalClock_Hz": 40000,
+        "proposedOutputRate_Hz": 40000,
+        "synchronousFramesPer10kHzController": 4,
+        "proposedFilterClockScalingStatus": "Frequency and group-delay inverse scaling are inferred if the common/filter clocks share CLKIN; the explicit guaranteed statement is output-rate scaling. Validate measured full response, not just output frequency.",
+        "timestampRule": "At external RTC clock the 1-us FIFO timestamps need the section 12.7 RTC-frequency scaling. Capture DRDY and map force-sampling timestamps; CLKIN alone does not align analog group delays.",
+        "invalidExample": "30 kHz CLKIN is below the 31 kHz minimum."
+      },
+      "calibration": {
+        "initialBiasCharacterized_mg": 20,
+        "biasTemperatureCharacterized_mg_per_C": 0.15,
+        "initialSensitivityTolerance_percent": 0.5,
+        "sensitivityTemperatureCharacterized_percent_per_C": 0.005,
+        "nonlinearity_percent_at2g": 0.1,
+        "crossAxisSensitivity_percent": 1
+      },
+      "operatingTemperature_C": [
+        -40,
+        85
+      ],
+      "sourceId": "icm42688p",
+      "price": {
+        "distributor": "Mouser Europe",
+        "url": "https://eu.mouser.com/en/ProductDetail/TDK-InvenSense/ICM-42688-P?qs=OlC7AqGiEDk8QrNAV728zw%3D%3D",
+        "package": "LGA-14, reel part sold as cut tape",
+        "currency": "EUR",
+        "quantity1": 5.33,
+        "quantity10": 4.17,
+        "observedStock": 0,
+        "retrievedDate": "2026-10-02",
+        "observation": "Regional cached price; listing indicates long replenishment. Manufacturer product page lists production. A low quoted price is not a stocked source or whole-channel system cost. Mouser regional terms exclude VAT."
+      }
+    },
+    {
+      "part": "ADXL355BEZ",
+      "role": "Slow precision comparator; no preferred fast sharp-bump replacement",
+      "axesPerPart": 3,
+      "interface": "digital SPI",
+      "ranges_g": [
+        2,
+        4,
+        8
+      ],
+      "resolution_bits": 20,
+      "sensitivity_counts_per_g": {
+        "2": 256000,
+        "8": 64000
+      },
+      "noiseDensity_ug_per_sqrtHz": {
+        "2": 22.5,
+        "8": 25
+      },
+      "response": {
+        "internalAnalogFilterDescription": "Same mechanical/analog sinc chain as ADXL354; additional digital decimation and optional interpolation.",
+        "maximumOutputRate_Hz": 4000,
+        "maximumDigitalPassband_Hz": 1000,
+        "digitalDelayByODR_s": {
+          "4000": 0.00063,
+          "2000": 0.001,
+          "1000": 0.00178,
+          "500": 0.00326
+        },
+        "digitalDelayWithExternalInterpolation_at4k_s": 0.00088,
+        "delayMeaning": "Delay from ADC input to interface, excluding preceding mechanical/analog response. It is the largest component but not the complete physical sensor delay.",
+        "completeTransferPublished": false,
+        "maximumFullPathGroupDelayPublished": false
+      },
+      "interfaceTiming": {
+        "maximumSPIClock_Hz": 10000000,
+        "directReadBits": 80
+      },
+      "calibration": {
+        "initialSensitivityTolerance_percent": 8,
+        "sensitivityTemperature_percent_per_C": 0.01,
+        "initialBiasLimit_mg": 75,
+        "biasTemperatureLimit_mg_per_C": 0.15,
+        "nonlinearity_percent_at8g": 1.6,
+        "crossAxisSensitivity_percent": 1
+      },
+      "operatingTemperature_C": [
+        -40,
+        125
+      ],
+      "sourceId": "adxl354_355",
+      "price": {
+        "distributor": "Mouser Europe",
+        "url": "https://eu.mouser.com/en/ProductDetail/Analog-Devices/ADXL355BEZ?qs=vcbl%252BK4rRld73tJrFMMu%2Fg%3D%3D",
+        "package": "14-lead LCC, tray",
+        "currency": "EUR",
+        "quantity1": 70.08,
+        "quantity10": 62.22,
+        "observedStock": 4707,
+        "retrievedDate": "2026-10-02",
+        "observation": "Cached current page reports both stock and restricted/last-stock warnings. Earlier French 58.65/52.21 EUR cache is not the primary comparison. Mouser regional terms exclude VAT."
+      }
+    }
+  ],
+  "briefComparator": {
+    "part": "ISM330DHCXTR",
+    "reasonNotPrioritized": "Cheaper, but high-rate UI response is incompletely specified; the documented fastest OIS response is too slow to offer a clear advantage over the selected fast digital candidates.",
+    "maximumOutputRate_Hz": 6667,
+    "noiseDensityTypical_ug_per_sqrtHz": 60,
+    "noiseDensityCharacterizedUpper_ug_per_sqrtHz": 100,
+    "fastestOISMinus3dB_Hz": 631,
+    "fastestOISPhaseAt20Hz_degree": -4.2,
+    "highRateUIWarning": "The ODR/2 LPF1 rule is documented only through 833 Hz; do not infer a 3333.5 Hz cutoff at 6667 Hz ODR.",
+    "sourceId": "ism330dhcx",
+    "price": {
+      "distributor": "Mouser Europe",
+      "url": "https://eu.mouser.com/fr/ProductDetail/STMicroelectronics/ISM330DHCXTR?qs=%252B6g0mu59x7Jv2Xps2dM6Xw%3D%3D",
+      "currency": "EUR",
+      "quantity1": 7.61,
+      "quantity10": 6.6,
+      "observedStock": 0,
+      "retrievedDate": "2026-10-02",
+      "package": "LGA-14, reel part sold as cut tape"
+    }
+  },
+  "inferenceInputs": {
+    "equivalentNoiseBandwidths_Hz": [
+      500,
+      1000,
+      2000,
+      4000,
+      5100
+    ],
+    "sharpBumpExampleMaximumJerk_m_s3": 384,
+    "sharpBumpJerkMeaning": "Analytical matched C2 compact bump h*(1-u^2)^3 over a 100 ms crossing: endpoint one-sided jerk is 384 m/s^3. Actual closed-loop S acceleration and compensation sensitivity must come from native histories; this is not a pass/fail bound.",
+    "exampleTimestampErrors_s": [
+      2e-05,
+      5e-05,
+      8e-05,
+      0.0001,
+      0.0002,
+      0.00063
+    ],
+    "ADS8588S": {
+      "span_V": 10,
+      "bits": 16,
+      "sineLevel_dBFS": -0.5,
+      "snrTypical_dB": 92.2,
+      "snrMinimum_dB": 90.4
+    },
+    "ADS131M08_gain1_OSR128": {
+      "span_V": 2.4,
+      "bits": 24,
+      "noiseTypicalRMS_uV": 21.31,
+      "analogConditioningGain": 1
+    },
+    "budgetMeaning": "Flat-white density integration and first-order small-time mismatch estimates are transparent analytical calculations. Neither proves native control performance, impulse response, noise autocorrelation, assembled vibration, clipping, calibration residuals or phase matching."
+  },
+  "derived": {
+    "schema": "acf.accelerometer_component_derived.v1",
+    "status": "reproducible_analytical_component_budgets_no_native_experiments",
+    "densityNoiseRows": [
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.005482084007887078,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0005482084007887078,
+        "inferredInertiaRMS_atS2kg_N": 0.010964168015774156,
+        "ratioToReference0p014RMS": 0.39157742913479127,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.007752837554022558,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0007752837554022558,
+        "inferredInertiaRMS_atS2kg_N": 0.015505675108045116,
+        "ratioToReference0p014RMS": 0.5537741110016113,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.010964168015774156,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0010964168015774156,
+        "inferredInertiaRMS_atS2kg_N": 0.021928336031548312,
+        "ratioToReference0p014RMS": 0.7831548582695825,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.015505675108045116,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0015505675108045116,
+        "inferredInertiaRMS_atS2kg_N": 0.031011350216090233,
+        "ratioToReference0p014RMS": 1.1075482220032227,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.017508372274692433,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0017508372274692434,
+        "inferredInertiaRMS_atS2kg_N": 0.035016744549384866,
+        "ratioToReference0p014RMS": 1.2505980196208881,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.00493387560709837,
+        "inferredInertiaRMS_atS0p1kg_N": 0.000493387560709837,
+        "inferredInertiaRMS_atS2kg_N": 0.00986775121419674,
+        "ratioToReference0p014RMS": 0.3524196862213121,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.006977553798620303,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0006977553798620303,
+        "inferredInertiaRMS_atS2kg_N": 0.013955107597240606,
+        "ratioToReference0p014RMS": 0.4983966999014502,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.00986775121419674,
+        "inferredInertiaRMS_atS0p1kg_N": 0.000986775121419674,
+        "inferredInertiaRMS_atS2kg_N": 0.01973550242839348,
+        "ratioToReference0p014RMS": 0.7048393724426242,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.013955107597240606,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0013955107597240606,
+        "inferredInertiaRMS_atS2kg_N": 0.02791021519448121,
+        "ratioToReference0p014RMS": 0.9967933998029004,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.015757535047223187,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0015757535047223187,
+        "inferredInertiaRMS_atS2kg_N": 0.031515070094446374,
+        "ratioToReference0p014RMS": 1.1255382176587991,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.007400813410647555,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0007400813410647555,
+        "inferredInertiaRMS_atS2kg_N": 0.01480162682129511,
+        "ratioToReference0p014RMS": 0.5286295293319682,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.010466330697930454,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0010466330697930454,
+        "inferredInertiaRMS_atS2kg_N": 0.02093266139586091,
+        "ratioToReference0p014RMS": 0.7475950498521753,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.01480162682129511,
+        "inferredInertiaRMS_atS0p1kg_N": 0.001480162682129511,
+        "inferredInertiaRMS_atS2kg_N": 0.02960325364259022,
+        "ratioToReference0p014RMS": 1.0572590586639363,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.02093266139586091,
+        "inferredInertiaRMS_atS0p1kg_N": 0.002093266139586091,
+        "inferredInertiaRMS_atS2kg_N": 0.04186532279172182,
+        "ratioToReference0p014RMS": 1.4951900997043506,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.023636302570834784,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0023636302570834784,
+        "inferredInertiaRMS_atS2kg_N": 0.04727260514166957,
+        "ratioToReference0p014RMS": 1.6883073264881987,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.016446252023661234,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0016446252023661235,
+        "inferredInertiaRMS_atS2kg_N": 0.03289250404732247,
+        "ratioToReference0p014RMS": 1.1747322874043737,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.023258512662067677,
+        "inferredInertiaRMS_atS0p1kg_N": 0.002325851266206768,
+        "inferredInertiaRMS_atS2kg_N": 0.046517025324135354,
+        "ratioToReference0p014RMS": 1.6613223330048341,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.03289250404732247,
+        "inferredInertiaRMS_atS0p1kg_N": 0.003289250404732247,
+        "inferredInertiaRMS_atS2kg_N": 0.06578500809464494,
+        "ratioToReference0p014RMS": 2.3494645748087475,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.046517025324135354,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004651702532413536,
+        "inferredInertiaRMS_atS2kg_N": 0.09303405064827071,
+        "ratioToReference0p014RMS": 3.3226446660096682,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.052525116824077296,
+        "inferredInertiaRMS_atS0p1kg_N": 0.00525251168240773,
+        "inferredInertiaRMS_atS2kg_N": 0.10505023364815459,
+        "ratioToReference0p014RMS": 3.751794058862664,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.024121169634703142,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0024121169634703146,
+        "inferredInertiaRMS_atS2kg_N": 0.048242339269406284,
+        "ratioToReference0p014RMS": 1.7229406881930815,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.034112485237699254,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0034112485237699254,
+        "inferredInertiaRMS_atS2kg_N": 0.06822497047539851,
+        "ratioToReference0p014RMS": 2.4366060884070895,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.048242339269406284,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004824233926940629,
+        "inferredInertiaRMS_atS2kg_N": 0.09648467853881257,
+        "ratioToReference0p014RMS": 3.445881376386163,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.06822497047539851,
+        "inferredInertiaRMS_atS0p1kg_N": 0.006822497047539851,
+        "inferredInertiaRMS_atS2kg_N": 0.13644994095079702,
+        "ratioToReference0p014RMS": 4.873212176814179,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.07703683800864669,
+        "inferredInertiaRMS_atS0p1kg_N": 0.007703683800864669,
+        "inferredInertiaRMS_atS2kg_N": 0.15407367601729338,
+        "ratioToReference0p014RMS": 5.502631286331907,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.024121169634703142,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0024121169634703146,
+        "inferredInertiaRMS_atS2kg_N": 0.048242339269406284,
+        "ratioToReference0p014RMS": 1.7229406881930815,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.034112485237699254,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0034112485237699254,
+        "inferredInertiaRMS_atS2kg_N": 0.06822497047539851,
+        "ratioToReference0p014RMS": 2.4366060884070895,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.048242339269406284,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004824233926940629,
+        "inferredInertiaRMS_atS2kg_N": 0.09648467853881257,
+        "ratioToReference0p014RMS": 3.445881376386163,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.06822497047539851,
+        "inferredInertiaRMS_atS0p1kg_N": 0.006822497047539851,
+        "inferredInertiaRMS_atS2kg_N": 0.13644994095079702,
+        "ratioToReference0p014RMS": 4.873212176814179,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.07703683800864669,
+        "inferredInertiaRMS_atS0p1kg_N": 0.007703683800864669,
+        "inferredInertiaRMS_atS2kg_N": 0.15407367601729338,
+        "ratioToReference0p014RMS": 5.502631286331907,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.04166383845994179,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004166383845994179,
+        "inferredInertiaRMS_atS2kg_N": 0.08332767691988358,
+        "ratioToReference0p014RMS": 2.9759884614244134,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.05892156541057144,
+        "inferredInertiaRMS_atS0p1kg_N": 0.005892156541057144,
+        "inferredInertiaRMS_atS2kg_N": 0.11784313082114288,
+        "ratioToReference0p014RMS": 4.208683243612246,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.08332767691988358,
+        "inferredInertiaRMS_atS0p1kg_N": 0.008332767691988359,
+        "inferredInertiaRMS_atS2kg_N": 0.16665535383976715,
+        "ratioToReference0p014RMS": 5.951976922848827,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.11784313082114288,
+        "inferredInertiaRMS_atS0p1kg_N": 0.011784313082114289,
+        "inferredInertiaRMS_atS2kg_N": 0.23568626164228576,
+        "ratioToReference0p014RMS": 8.417366487224491,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.13306362928766247,
+        "inferredInertiaRMS_atS0p1kg_N": 0.013306362928766247,
+        "inferredInertiaRMS_atS2kg_N": 0.26612725857532493,
+        "ratioToReference0p014RMS": 9.504544949118747,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.014253418420506403,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0014253418420506403,
+        "inferredInertiaRMS_atS2kg_N": 0.028506836841012805,
+        "ratioToReference0p014RMS": 1.0181013157504573,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.020157377640458652,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0020157377640458653,
+        "inferredInertiaRMS_atS2kg_N": 0.040314755280917304,
+        "ratioToReference0p014RMS": 1.4398126886041893,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.028506836841012805,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0028506836841012805,
+        "inferredInertiaRMS_atS2kg_N": 0.05701367368202561,
+        "ratioToReference0p014RMS": 2.0362026315009145,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.040314755280917304,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004031475528091731,
+        "inferredInertiaRMS_atS2kg_N": 0.08062951056183461,
+        "ratioToReference0p014RMS": 2.8796253772083786,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.045521767914200324,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004552176791420033,
+        "inferredInertiaRMS_atS2kg_N": 0.09104353582840065,
+        "ratioToReference0p014RMS": 3.251554851014309,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.015349835222083818,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0015349835222083818,
+        "inferredInertiaRMS_atS2kg_N": 0.030699670444167635,
+        "ratioToReference0p014RMS": 1.0964168015774156,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.02170794515126316,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0021707945151263164,
+        "inferredInertiaRMS_atS2kg_N": 0.04341589030252632,
+        "ratioToReference0p014RMS": 1.5505675108045114,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.030699670444167635,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0030699670444167635,
+        "inferredInertiaRMS_atS2kg_N": 0.06139934088833527,
+        "ratioToReference0p014RMS": 2.1928336031548312,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.04341589030252632,
+        "inferredInertiaRMS_atS0p1kg_N": 0.004341589030252633,
+        "inferredInertiaRMS_atS2kg_N": 0.08683178060505264,
+        "ratioToReference0p014RMS": 3.1011350216090228,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.0490234423691388,
+        "inferredInertiaRMS_atS0p1kg_N": 0.00490234423691388,
+        "inferredInertiaRMS_atS2kg_N": 0.0980468847382776,
+        "ratioToReference0p014RMS": 3.501674454938486,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.00493387560709837,
+        "inferredInertiaRMS_atS0p1kg_N": 0.000493387560709837,
+        "inferredInertiaRMS_atS2kg_N": 0.00986775121419674,
+        "ratioToReference0p014RMS": 0.3524196862213121,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.006977553798620303,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0006977553798620303,
+        "inferredInertiaRMS_atS2kg_N": 0.013955107597240606,
+        "ratioToReference0p014RMS": 0.4983966999014502,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.00986775121419674,
+        "inferredInertiaRMS_atS0p1kg_N": 0.000986775121419674,
+        "inferredInertiaRMS_atS2kg_N": 0.01973550242839348,
+        "ratioToReference0p014RMS": 0.7048393724426242,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.013955107597240606,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0013955107597240606,
+        "inferredInertiaRMS_atS2kg_N": 0.02791021519448121,
+        "ratioToReference0p014RMS": 0.9967933998029004,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.015757535047223187,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0015757535047223187,
+        "inferredInertiaRMS_atS2kg_N": 0.031515070094446374,
+        "ratioToReference0p014RMS": 1.1255382176587991,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 500,
+        "inferredAccelerationRMS_m_s2": 0.005482084007887078,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0005482084007887078,
+        "inferredInertiaRMS_atS2kg_N": 0.010964168015774156,
+        "ratioToReference0p014RMS": 0.39157742913479127,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 1000,
+        "inferredAccelerationRMS_m_s2": 0.007752837554022558,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0007752837554022558,
+        "inferredInertiaRMS_atS2kg_N": 0.015505675108045116,
+        "ratioToReference0p014RMS": 0.5537741110016113,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 2000,
+        "inferredAccelerationRMS_m_s2": 0.010964168015774156,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0010964168015774156,
+        "inferredInertiaRMS_atS2kg_N": 0.021928336031548312,
+        "ratioToReference0p014RMS": 0.7831548582695825,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 4000,
+        "inferredAccelerationRMS_m_s2": 0.015505675108045116,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0015505675108045116,
+        "inferredInertiaRMS_atS2kg_N": 0.031011350216090233,
+        "ratioToReference0p014RMS": 1.1075482220032227,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "assumedEquivalentNoiseBandwidth_Hz": 5100,
+        "inferredAccelerationRMS_m_s2": 0.017508372274692433,
+        "inferredInertiaRMS_atS0p1kg_N": 0.0017508372274692434,
+        "inferredInertiaRMS_atS2kg_N": 0.035016744549384866,
+        "ratioToReference0p014RMS": 1.2505980196208881,
+        "calculationStatus": "analytical_flat_white_band_inference_not_experiment"
+      }
+    ],
+    "densityOnlyENBWLimits": [
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "densityVariant": "all",
+        "density_ug_per_sqrtHz": 25,
+        "flatWhiteENBWForReferenceRMS_Hz": 3260.8791421115097,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "flatWhiteENBWForReferenceRMS_Hz": 4025.7767186561846,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ADXL354CEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 33.75,
+        "flatWhiteENBWForReferenceRMS_Hz": 1789.2340971805268,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_typical",
+        "density_ug_per_sqrtHz": 75,
+        "flatWhiteENBWForReferenceRMS_Hz": 362.3199046790566,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_typical",
+        "density_ug_per_sqrtHz": 110,
+        "flatWhiteENBWForReferenceRMS_Hz": 168.43383998509867,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "XY_characterizedUpper",
+        "density_ug_per_sqrtHz": 110,
+        "flatWhiteENBWForReferenceRMS_Hz": 168.43383998509867,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "IIS3DWBTR",
+        "densityVariant": "Z_characterizedUpper",
+        "density_ug_per_sqrtHz": 190,
+        "flatWhiteENBWForReferenceRMS_Hz": 56.45566381772006,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "XY",
+        "density_ug_per_sqrtHz": 65,
+        "flatWhiteENBWForReferenceRMS_Hz": 482.37857131827076,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ICM-42688-P",
+        "densityVariant": "Z",
+        "density_ug_per_sqrtHz": 70,
+        "flatWhiteENBWForReferenceRMS_Hz": 415.9284620040192,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "2",
+        "density_ug_per_sqrtHz": 22.5,
+        "flatWhiteENBWForReferenceRMS_Hz": 4025.7767186561846,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      },
+      {
+        "part": "ADXL355BEZ",
+        "densityVariant": "8",
+        "density_ug_per_sqrtHz": 25,
+        "flatWhiteENBWForReferenceRMS_Hz": 3260.8791421115097,
+        "meaning": "Density-only flat-white estimate; ENBW is not -3 dB cutoff or sample rate, and extra ADC/front-end noise uses part of the budget."
+      }
+    ],
+    "icmFastUIWhiteNoiseInferences": [
+      {
+        "odr_Hz": 32000,
+        "minus3dB_Hz": 8400,
+        "noiseBandwidth_Hz": 8831.7,
+        "dcGroupDelay_s": 0.0001,
+        "axis": "XY",
+        "assumedWhiteDensity_ug_per_sqrtHz": 65,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.05990405015837768,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 32000,
+        "minus3dB_Hz": 8400,
+        "noiseBandwidth_Hz": 8831.7,
+        "dcGroupDelay_s": 0.0001,
+        "axis": "Z",
+        "assumedWhiteDensity_ug_per_sqrtHz": 70,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.06451205401671442,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 16000,
+        "minus3dB_Hz": 4194.1,
+        "noiseBandwidth_Hz": 4410.6,
+        "dcGroupDelay_s": 0.0001,
+        "axis": "XY",
+        "assumedWhiteDensity_ug_per_sqrtHz": 65,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.0423333725724006,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 16000,
+        "minus3dB_Hz": 4194.1,
+        "noiseBandwidth_Hz": 4410.6,
+        "dcGroupDelay_s": 0.0001,
+        "axis": "Z",
+        "assumedWhiteDensity_ug_per_sqrtHz": 70,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.045589785847200644,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 8000,
+        "minus3dB_Hz": 2096.3,
+        "noiseBandwidth_Hz": 2204.6,
+        "dcGroupDelay_s": 0.0002,
+        "axis": "XY",
+        "assumedWhiteDensity_ug_per_sqrtHz": 65,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.029929463623083886,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 8000,
+        "minus3dB_Hz": 2096.3,
+        "noiseBandwidth_Hz": 2204.6,
+        "dcGroupDelay_s": 0.0002,
+        "axis": "Z",
+        "assumedWhiteDensity_ug_per_sqrtHz": 70,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.0322317300556288,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 4000,
+        "minus3dB_Hz": 1048.1,
+        "noiseBandwidth_Hz": 1102.2,
+        "dcGroupDelay_s": 0.0004,
+        "axis": "XY",
+        "assumedWhiteDensity_ug_per_sqrtHz": 65,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.021162366701184838,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 4000,
+        "minus3dB_Hz": 1048.1,
+        "noiseBandwidth_Hz": 1102.2,
+        "dcGroupDelay_s": 0.0004,
+        "axis": "Z",
+        "assumedWhiteDensity_ug_per_sqrtHz": 70,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.02279024106281444,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 2000,
+        "minus3dB_Hz": 524,
+        "noiseBandwidth_Hz": 551.1,
+        "dcGroupDelay_s": 0.0008,
+        "axis": "XY",
+        "assumedWhiteDensity_ug_per_sqrtHz": 65,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.014964053000364186,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      },
+      {
+        "odr_Hz": 2000,
+        "minus3dB_Hz": 524,
+        "noiseBandwidth_Hz": 551.1,
+        "dcGroupDelay_s": 0.0008,
+        "axis": "Z",
+        "assumedWhiteDensity_ug_per_sqrtHz": 70,
+        "inferredRMS_usingDocumentedUI_NBW_m_s2": 0.0161151340003922,
+        "meaning": "Uses the UI table noise bandwidth and flat extrapolation of typical 10-Hz density. Includes neither an enabled AAF's extra filtering nor its phase; not a measured high-rate noise guarantee."
+      }
+    ],
+    "adxl354WithSarBudgets": [
+      {
+        "adc": "ADS8588S",
+        "sensor": "ADXL354C +/-8 g",
+        "quality": "typical",
+        "conditioningGain": 5,
+        "sensorSensitivity_V_per_g": 0.1,
+        "adcTotalRMS_V": 8.193227358390676e-05,
+        "adcOnlyAccelerationRMS_m_s2": 0.0016069622614832385,
+        "accelerationQuantum_m_s2": 0.002992752075195312,
+        "adcRangeAfterConditioning_g": 10.0,
+        "analyticalSensorPlusADC_at1000HzENBW_RMS_m_s2": 0.01058897568173016,
+        "meaning": "SNR contains quantization; the noise and quantum are not two independent contributions. Actual sampling/filter correlation and front-end noise need separate treatment."
+      },
+      {
+        "adc": "ADS8588S",
+        "sensor": "ADXL354C +/-8 g",
+        "quality": "minimum_SNR",
+        "conditioningGain": 5,
+        "sensorSensitivity_V_per_g": 0.1,
+        "adcTotalRMS_V": 0.00010079871751193671,
+        "adcOnlyAccelerationRMS_m_s2": 0.0019769954861768683,
+        "accelerationQuantum_m_s2": 0.002992752075195312,
+        "adcRangeAfterConditioning_g": 10.0,
+        "analyticalSensorPlusADC_at1000HzENBW_RMS_m_s2": 0.010651412555656884,
+        "meaning": "SNR contains quantization; the noise and quantum are not two independent contributions. Actual sampling/filter correlation and front-end noise need separate treatment."
+      }
+    ],
+    "adxl354WithM08Budget": {
+      "adc": "ADS131M08, PGA1, OSR128",
+      "sensor": "ADXL354C +/-8 g",
+      "conditioningGain": 1,
+      "accelerationQuantum_m_s2": 1.4028525352478026e-05,
+      "adcOnlyAccelerationRMS_m_s2": 0.0020897971149999995,
+      "adcRangeAfterConditioning_g": 11.999999999999998,
+      "meaning": "The ADC noise is its already Sinc3-filtered typical input RMS. Add the actual analog sensor response and Sinc3 transfer, not another generic AA replacement."
+    },
+    "digitalQuantumExamples": [
+      {
+        "part": "ICM-42688-P",
+        "mode": "16-bit +/-16 g",
+        "accelerationQuantum_m_s2": 0.0047884033203125
+      },
+      {
+        "part": "ICM-42688-P",
+        "mode": "18 actual-bit high-resolution FIFO, +/-16 g",
+        "accelerationQuantum_m_s2": 0.001197100830078125
+      },
+      {
+        "part": "IIS3DWB",
+        "mode": "16-bit +/-16 g, ideal span",
+        "accelerationQuantum_m_s2": 0.0047884033203125
+      },
+      {
+        "part": "IIS3DWB",
+        "mode": "16-bit +/-8 g, ideal span",
+        "accelerationQuantum_m_s2": 0.00239420166015625
+      },
+      {
+        "part": "ADXL355",
+        "mode": "+/-8 g, manufacturer typical sensitivity",
+        "accelerationQuantum_m_s2": 0.00015322890625
+      }
+    ],
+    "timestampMismatchIllustrations": [
+      {
+        "timestampMismatch_s": 2e-05,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.015360000000000002,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      },
+      {
+        "timestampMismatch_s": 5e-05,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.038400000000000004,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      },
+      {
+        "timestampMismatch_s": 8e-05,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.06144000000000001,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      },
+      {
+        "timestampMismatch_s": 0.0001,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.07680000000000001,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      },
+      {
+        "timestampMismatch_s": 0.0002,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.15360000000000001,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      },
+      {
+        "timestampMismatch_s": 0.00063,
+        "exampleSurfaceJerk_m_s3": 384,
+        "firstOrderInertiaError_atS2kg_N": 0.48384000000000005,
+        "meaning": "Local small-time m*j*dt estimate on the analytical imposed profile, not actual tool-head jerk or a control pass/fail prediction. Native aligned histories decide performance."
+      }
+    ],
+    "minimumSPIWireTimes": [
+      {
+        "part": "IIS3DWBTR",
+        "directReadAtMaximumSPI_s": 5.6e-06,
+        "meaning": "Wire-time only, excluding sensor group delay, data age/hold, chip-select guards, firmware and scheduling."
+      },
+      {
+        "part": "ICM-42688-P",
+        "directReadAtMaximumSPI_s": 2.333333333333333e-06,
+        "meaning": "Wire-time only, excluding sensor group delay, data age/hold, chip-select guards, firmware and scheduling.",
+        "timestamped16BytePacketRead_s": 5.666666666666667e-06,
+        "highResolution20BytePacketRead_s": 7e-06
+      },
+      {
+        "part": "ADXL355BEZ",
+        "directReadAtMaximumSPI_s": 8e-06,
+        "meaning": "Wire-time only, excluding sensor group delay, data age/hold, chip-select guards, firmware and scheduling."
+      }
+    ],
+    "sensorOnlyPriceComparisons": [
+      {
+        "part": "ADXL1002BCPZ-RL7",
+        "quantity1UnitPrice_exVAT_EUR": 64.88,
+        "planarSensorOnlyCost_exVAT_EUR": 129.76,
+        "spatialSensorOnlyCost_exVAT_EUR": 194.64,
+        "planarSensorOnlySavingVersusReference_fraction": 0.0,
+        "spatialSensorOnlySavingVersusReference_fraction": 0.0,
+        "meaning": "Sensor silicon/packaging price only. Analog conditioning, PCB, clock/interface, testing, calibration, stock and full-system acquisition cost are separate."
+      },
+      {
+        "part": "ADXL354CEZ",
+        "quantity1UnitPrice_exVAT_EUR": 60.44,
+        "planarSensorOnlyCost_exVAT_EUR": 60.44,
+        "spatialSensorOnlyCost_exVAT_EUR": 60.44,
+        "planarSensorOnlySavingVersusReference_fraction": 0.5342170160295932,
+        "spatialSensorOnlySavingVersusReference_fraction": 0.6894780106863954,
+        "meaning": "Sensor silicon/packaging price only. Analog conditioning, PCB, clock/interface, testing, calibration, stock and full-system acquisition cost are separate."
+      },
+      {
+        "part": "IIS3DWBTR",
+        "quantity1UnitPrice_exVAT_EUR": 19.9,
+        "planarSensorOnlyCost_exVAT_EUR": 19.9,
+        "spatialSensorOnlyCost_exVAT_EUR": 19.9,
+        "planarSensorOnlySavingVersusReference_fraction": 0.8466399506781751,
+        "spatialSensorOnlySavingVersusReference_fraction": 0.8977599671187834,
+        "meaning": "Sensor silicon/packaging price only. Analog conditioning, PCB, clock/interface, testing, calibration, stock and full-system acquisition cost are separate."
+      },
+      {
+        "part": "ICM-42688-P",
+        "quantity1UnitPrice_exVAT_EUR": 5.33,
+        "planarSensorOnlyCost_exVAT_EUR": 5.33,
+        "spatialSensorOnlyCost_exVAT_EUR": 5.33,
+        "planarSensorOnlySavingVersusReference_fraction": 0.9589241676942046,
+        "spatialSensorOnlySavingVersusReference_fraction": 0.9726161117961365,
+        "meaning": "Sensor silicon/packaging price only. Analog conditioning, PCB, clock/interface, testing, calibration, stock and full-system acquisition cost are separate."
+      },
+      {
+        "part": "ADXL355BEZ",
+        "quantity1UnitPrice_exVAT_EUR": 70.08,
+        "planarSensorOnlyCost_exVAT_EUR": 70.08,
+        "spatialSensorOnlyCost_exVAT_EUR": 70.08,
+        "planarSensorOnlySavingVersusReference_fraction": 0.4599260172626387,
+        "spatialSensorOnlySavingVersusReference_fraction": 0.6399506781750924,
+        "meaning": "Sensor silicon/packaging price only. Analog conditioning, PCB, clock/interface, testing, calibration, stock and full-system acquisition cost are separate."
+      }
+    ],
+    "icm40kClockScreen": {
+      "clock_Hz": 40000,
+      "outputRate_Hz": 40000,
+      "rawFramesPer10kController": 4,
+      "inferredUIBandwidth_Hz": 10500.0,
+      "inferredUI_NBW_Hz": 11039.625,
+      "inferredUI_DCGroupDelay_s": 8e-05,
+      "inferredMaximumAAFMinus3dB_Hz": 4973.75,
+      "status": "Output-rate scaling is explicit; filter-frequency and inverse delay scaling are engineering inferences requiring physical verification. No complete AAF/common-decimator transfer is invented."
+    },
+    "ism330DocumentedOISEquivalentPhaseDelayAt20Hz_s": 0.0005833333333333334
+  }
+}

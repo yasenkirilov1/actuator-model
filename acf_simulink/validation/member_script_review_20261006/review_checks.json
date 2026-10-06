@@ -1,0 +1,54 @@
+{
+  "status": "bounded_audit_checks_complete",
+  "kind": "arithmetic_and_deterministic_code_transcription_not_qualification",
+  "gaussianNoiseDisabled": true,
+  "nativeMatlabReplay": false,
+  "robotExtraPidRejection_dB": 1.7531450861441924,
+  "padNominal": {
+    "diameter_m": 0.077,
+    "circularFeatureDiameter_m": 0.016,
+    "height_m": 0.00015,
+    "areaWeightedFraction35strips": 0.04398716576791266,
+    "areaWeightedHeight_m": 6.598074865186898e-06,
+    "elasticIncrement_N": 0.13196149730373796,
+    "unaveragedWholeSpringIncrement_N": 3
+  },
+  "partialContactCounterexample": {
+    "areaFractions": [
+      0.5,
+      0.5
+    ],
+    "localCompression_m": [
+      5e-05,
+      -5e-05
+    ],
+    "stiffness_N_m": 20000,
+    "localContactThenIntegrate_N": 0.5,
+    "heightAverageThenClip_N": 0,
+    "scope": "One mixed-height strip; geometry arithmetic, not a recorded default-state failure."
+  },
+  "electricalBounds": {
+    "named24VDriverMaximumOutput_V": 21.6,
+    "sourcePeak202p3NColdHoldVoltage_V": 45.043359375,
+    "source50NHorizontalCurrent_A": 1.953125,
+    "ratedContinuousCurrent_A": 1.8,
+    "scriptAdcCode_N": 0.01220703125,
+    "eposAnalogCodeAt100Nper10V_N": 0.056400000000000006
+  },
+  "sourceHashes": {
+    "acf_simulink/experiments/member_script_review_20261006/check_member_equations.c": "bcc06a413824b1742262b9c1c4dd757337b9bd76d71a36a5a55edcaee987b1e0",
+    "acf_simulink/experiments/member_script_review_20261006/make_review_figures.py": "d97723140e02838627407e1517c269dc7cf79f43bf96177f8b70bdf68d6bf769",
+    "acf_simulink/validation/member_script_review_20261006/deterministic_checks.json": "2e960ec32115816df2a88e73ac7d3b0f89e4e787daac1f203dc2b4411d4aa9c3",
+    "acf_simulink/validation/member_script_review_20261006/robot_trace_downsampled.csv": "2006fafd4d5ee79f567e38541133a854886a9dd2d4f39af2268f94728c3e6d11"
+  },
+  "figures": [
+    {
+      "file": "reports/reviews/figures/member-robot-isolation-check-20261006.svg",
+      "sha256": "51d20ddfa5dc93764227f0b42f2914377bfa19ab6c08e6e96e0dc1e893a1353d"
+    },
+    {
+      "file": "reports/reviews/figures/member-pad-contact-check-20261006.svg",
+      "sha256": "6d8da315a1c44c87f4d7d2c9393320648d9c100917229df51bdc56ea532cfb78"
+    }
+  ]
+}

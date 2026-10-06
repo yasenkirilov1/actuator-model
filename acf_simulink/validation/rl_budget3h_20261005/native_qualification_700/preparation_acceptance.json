@@ -1,0 +1,15 @@
+{
+  "status": "prepared_compiled_not_executed",
+  "native_scenarios": 700,
+  "parameter_case0_matches_codegen": true,
+  "physical_contexts_created": 0,
+  "trajectories_executed": 0,
+  "complete_unique_grid": true,
+  "all_mass_identification_matches_known_S": true,
+  "hot24p4_8p896_4mH_32V_verified": true,
+  "purebump_zeroaxialprogram_verified": true,
+  "library_sha256": "df33994c54308fb96fc790843d52bbcb94ea6ed6fb6bbeae1e73906f2ca1a74d",
+  "configs_sha256": "1d8a46862ce58eee5ac2d985de04a0c1950ca79509ce9f3f40ef26d8b8bd295e",
+  "causal_actor_clock_s": 0.0001,
+  "qualification_requirement": "Do notrununtilwinningweightsandselectiondecisionlocked;finiteone-seed-per-pointnominalgrid."
+}

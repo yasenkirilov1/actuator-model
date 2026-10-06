@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-30",
+  "status": "primary_source_parameters_and_engineering_assumptions",
+  "newNativeExecutions": 0,
+  "motor": {
+    "example": "maxon RE25 302005 (NRND)",
+    "url": "https://www.maxongroup.com/maxon/view/product/302005",
+    "voltage_V": 24,
+    "torqueConstant_Nm_A": 0.0234,
+    "resistance_ohm": 2.32,
+    "inductance_H": 0.000238,
+    "rotorInertia_kg_m2": 1.08e-06,
+    "mass_kg": 0.13,
+    "maxContinuousCurrent_A": 1.16,
+    "maxContinuousTorque_Nm": 0.0263,
+    "maxWindingTemperature_degC": 125,
+    "thermalResistanceHousingAmbient_K_W": 14,
+    "thermalResistanceWindingHousing_K_W": 3.1,
+    "windingThermalTimeConstant_s": 12.5
+  },
+  "transmissionAssumptions": {
+    "screwCouplerInertia_kg_m2": 5e-07,
+    "nativeEfficiency": "ideal reversible pitch conversion plus Coulomb and viscous loss torque",
+    "sizingEfficiency": 0.9,
+    "coulombTorque_Nm": 0.001,
+    "viscousTorque_Nm_s_rad": 1e-06,
+    "smoothFrictionSpeed_rad_s": 1,
+    "peakCurrent_A": 3.5,
+    "allowedPeakDuration_s": null,
+    "currentResponseTarget_s": 0.0001
+  },
+  "guideRealityCheck": {
+    "example": "THK crossed-roller VR2-60x11Z",
+    "dimensionalSource": "https://tech.thk.com/en/products/pdf/en_a07_007.pdf",
+    "frictionSource": "https://tech.thk.com/es/products/pdf/en_b00_015.pdf",
+    "productSource": "https://www.thk.com/us/en/products/other_linear_motion_guides/cross_roller_guide_ball_guide/vr/",
+    "railLength_mm": 60,
+    "maxStroke_mm": 30,
+    "combinedDimension_mm": 12,
+    "railHeight_mm": 6,
+    "rollingCoefficientRange": [
+      0.001,
+      0.0025
+    ],
+    "equivalentLoadAssumption_N": [
+      50,
+      100
+    ],
+    "rollingFrictionInference_N": [
+      0.05,
+      0.25
+    ],
+    "nominalModelCoulombFriction_N": 0.2,
+    "nominalModelViscousFriction_Ns_m": 2,
+    "nominalModelSmoothTransition_m_s": 0.0002,
+    "assembledTotalDragProven": false,
+    "viscousOrTransitionFactoryProof": false
+  },
+  "pitchSizing": [
+    {
+      "lead_m_rev": 0.003,
+      "forceConstant_N_A": 49.00884539600077,
+      "reflectedRotatingMass_kg": 6.930655534987193,
+      "holdingForce_N": 50,
+      "coldHoldingCurrent_A": 1.0202239941788163,
+      "coldHoldingCopperLoss_W": 2.414788236051771,
+      "holdingCurrent90percentSizing_A": 1.1335822157542403
+    },
+    {
+      "lead_m_rev": 0.005,
+      "forceConstant_N_A": 29.40530723760046,
+      "reflectedRotatingMass_kg": 2.495035992595389,
+      "holdingForce_N": 50,
+      "coldHoldingCurrent_A": 1.7003733236313605,
+      "coldHoldingCopperLoss_W": 6.70774510014381,
+      "holdingCurrent90percentSizing_A": 1.889303692923734
+    },
+    {
+      "lead_m_rev": 0.01,
+      "forceConstant_N_A": 14.70265361880023,
+      "reflectedRotatingMass_kg": 0.6237589981488473,
+      "holdingForce_N": 50,
+      "coldHoldingCurrent_A": 3.400746647262721,
+      "coldHoldingCopperLoss_W": 26.83098040057524,
+      "holdingCurrent90percentSizing_A": 3.778607385847468
+    }
+  ],
+  "continuousTorqueCaveat": "RE25 26.3mNm at 3mm lead and 90% motoring sizing gives 49.574597 N before guide loss; passing continuous current alone does not establish 50N continuous.",
+  "largerMotorStaticReference": {
+    "manufacturer": "maxon",
+    "model": "EC-i 30 539489",
+    "source": "https://www.maxongroup.com/maxon/view/product/539489",
+    "status": "primary-source static feasibility reference, not simulated",
+    "nominalVoltage_V": 48,
+    "continuousTorque_Nm": 0.103,
+    "continuousCurrent_A": 1.82,
+    "torqueConstant_Nm_A": 0.0554,
+    "rotorInertia_kg_m2": 1.55e-06,
+    "motorMass_kg": 0.242,
+    "lead_m": 0.01,
+    "assumedScrewCouplerInertia_kg_m2": 5e-07,
+    "idealContinuousAxialForce_N": 64.71680866394973,
+    "continuousAxialForce90PercentSizing_N": 58.24512779755475,
+    "reflectedInertia_kg": 0.8093075608893272,
+    "caveat": "Three-phase commutation, bus/phase/current conventions, cogging/ripple, screw losses/backlash, current-model identification and thermal validation are not implemented or qualified. Do not treat this source as an executed motor model."
+  }
+}

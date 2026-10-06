@@ -1,0 +1,121 @@
+{
+  "status": "updating",
+  "queries": [
+    {
+      "id": "rl_development",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_development.json",
+      "sha256": "f4630e7b59493c064bafd95644bd7ebc7128da931f6995a3880cd5297141a455",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_development_source.json"
+      ],
+      "label": "Completed generation25 selection:28 faster-sensor development cases",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    },
+    {
+      "id": "rl_method_contract",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_method_contract.json",
+      "sha256": "7a865e35e176e4246dbb371afc0ccc37f81e995b1d565d501c0b3f01610b2335",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_method_contract_source.json"
+      ],
+      "label": "Recorded task and current method",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    },
+    {
+      "id": "rl_memory_reliance",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_memory_reliance.json",
+      "sha256": "a8994ea69b6de113ada8a5cb8b5ed74dd7fe70153e4c701514536ddd3f4c260d",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_memory_reliance_source.json"
+      ],
+      "label": "Earlier fixedgen5 memory ablation",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    },
+    {
+      "id": "rl_actuator_response",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_actuator_response.json",
+      "sha256": "8211ef8436d360deb7e2a0e0b018bc804f3e20140216942b7e3ed369896944d1",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_actuator_response_source.json"
+      ],
+      "label": "Earlier fixedgen5 matched28case current-response experiment",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    },
+    {
+      "id": "rl_actuator_voltage",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_actuator_voltage.json",
+      "sha256": "7a2bbea32ae3f2a5a75c59c1425c48ecf6e4418921dde41d26446363be784ba5",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_actuator_voltage_source.json"
+      ],
+      "label": "Earlier fixedgen5 matched voltage experiment",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    },
+    {
+      "id": "rl_gate_tradeoff",
+      "file": "acf_simulink/validation/rl_report_20261005/interim/rl_gate_tradeoff.json",
+      "sha256": "feb8cde494e182a0279eed3405459057b5d7266386a0a7531a09a3ef5a9e7bef",
+      "sourceFiles": [
+        "acf_simulink/validation/rl_report_20261005/interim/rl_gate_tradeoff_source.json"
+      ],
+      "label": "Retained full and partial inverse native histories",
+      "kind": "completed_development_evidence",
+      "caveats": [
+        "Training continues; these are development cases, not fresh final qualification."
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "file": "figures/unified_recurrent_control_band10_v3.svg",
+      "queryId": "rl_method_contract",
+      "sha256": "a7b705d98167e0b7440e9817db7593459e743205367a12e61ece68a958962aa0"
+    },
+    {
+      "file": "figures/memory_reliance_v2.svg",
+      "queryId": "rl_memory_reliance",
+      "sha256": "7946dd26d418974b73162a544e471386dcc5a1d3f23966646c00542bff943fd2"
+    },
+    {
+      "file": "figures/current_response_28cases.svg",
+      "queryId": "rl_actuator_response",
+      "sha256": "45272e69e03a97cc2b503ba6ddf9701384894d1078c06ebf93d8b55fd06ee6e5"
+    },
+    {
+      "file": "figures/actuator_limit_peaks.svg",
+      "queryId": "rl_actuator_voltage",
+      "sha256": "707afa685874e408c29468c29513d646ee6a7dd43194c0945cd52f25afeed04f"
+    },
+    {
+      "file": "figures/force_gate_travel_tradeoff.svg",
+      "queryId": "rl_gate_tradeoff",
+      "sha256": "27e72ecf8470ee65b7cc1cb62d9f065f3e944eedb29c079ba216c319a245b2c2"
+    }
+  ],
+  "robotQueryIds": [
+    "rl_method_contract",
+    "rl_development"
+  ],
+  "actuatorQueryIds": [
+    "rl_actuator_response",
+    "rl_actuator_voltage"
+  ],
+  "methodQueryIds": [
+    "rl_method_contract"
+  ]
+}

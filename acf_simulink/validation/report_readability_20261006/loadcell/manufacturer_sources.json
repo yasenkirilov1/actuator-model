@@ -1,0 +1,130 @@
+{
+  "status": "complete",
+  "kind": "primary_manufacturer_load_cell_specification_review",
+  "reviewDate": "2026-10-06",
+  "scope": "Illustrative specifications and interface contracts; not a purchasing list, price survey, installed qualification or guarantee that a named cell meets the current controller assumptions.",
+  "sources": [
+    {
+      "id": "ati_mini27_titanium",
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini27+Titanium",
+      "publisher": "ATI Industrial Automation",
+      "title": "Mini27 Titanium force/torque sensor",
+      "quantities": {
+        "forceAxes": 3,
+        "momentAxes": 3,
+        "axialStiffness_N_m": 64000000,
+        "transverseStiffness_N_m": 31000000,
+        "SI80CalibrationAxialHalfRange_N": 160,
+        "SI80CalibrationTransverseHalfRange_N": 80,
+        "SI80CalibrationBendingMomentHalfRange_Nm": 4,
+        "SI80CalibrationTorsionHalfRange_Nm": 2,
+        "SI80QuotedEffectiveAxialResolution_N": 0.06,
+        "SI80QuotedEffectiveTransverseResolution_N": 0.03,
+        "sensorAndStandardPlatesMass_kg": 0.0334
+      },
+      "notes": "Published stiffness is calculated; quoted effective resolution is interface-dependent and includes dropping noisy counts. Accuracy requires manufacturer information. Sensing range and combined-load envelope are distinct from single-axis overload survival. These are examples of realistic stiffness and capacity, not the ADC resolution of our custom board."
+    },
+    {
+      "id": "ati_mini40",
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini40",
+      "publisher": "ATI Industrial Automation",
+      "title": "Mini40 force/torque sensor",
+      "quantities": {"axialStiffness_N_m": 20000000, "transverseStiffness_N_m": 11000000},
+      "notes": "A compact force/torque cell need not share the model's 64 MN/m axial stiffness. Its standalone catalog resonance is not the loaded flange mode."
+    },
+    {
+      "id": "ati_mini45",
+      "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini45",
+      "publisher": "ATI Industrial Automation",
+      "title": "Mini45 force/torque sensor",
+      "quantities": {"axialStiffness_N_m": 98000000, "transverseStiffness_N_m": 74000000},
+      "notes": "Stiffness differs from both Mini40 and the selected model, so installed modal identification remains necessary."
+    },
+    {
+      "id": "interface_3a60a_current",
+      "url": "https://www.interfaceforce.com/products/multi-axis-sensors/3-axis-sensors/3a60a-3-axis-force-load-cells/",
+      "publisher": "Interface Inc.",
+      "title": "3A60A three-axis force load cell current specifications",
+      "quantities": {
+        "forceAxes": 3,
+        "momentMeasurementAxes": 0,
+        "independentAnalogBridgeOutputs": 3,
+        "capacityOptions_N": [10, 20, 50, 100, 200, 500],
+        "nonlinearityFractionFullScale": 0.002,
+        "hysteresisFractionFullScale": 0.005,
+        "crossTalkFraction": 0.02,
+        "axialDeflectionAtFullScale_m": 0.00015,
+        "ratedOutput_V_V": 0.0005,
+        "effectOnZeroFractionRO_perC": 0.0002
+      },
+      "derivedExample": {
+        "capacity_N": 200,
+        "nonlinearityLimit_N": 0.4,
+        "hysteresisLimit_N": 1.0,
+        "nominalAxialStiffness_N_m": 1333333.3333333333,
+        "nominalLoadedMode_B0p6_Hz": 237.25418113905904
+      },
+      "notes": "Three force axes can use three ADC inputs, but axis count alone does not meet accuracy/stiffness targets. Derived stiffness uses rated force divided by rated deflection. Derived mode assumes S constrained by maintained contact and B=0.6 kg; it is an illustrative scale calculation, not a simulated or measured flange resonance. The current page's hysteresis value controls this review.",
+      "sourceDisagreement": {
+        "olderUrl": "https://www.interfaceforce.com/wp-content/uploads/Interface-Catalog-2019-Edition-Printable.pdf",
+        "olderHysteresisFractionFullScale": 0.0002,
+        "currentPageHysteresisFractionFullScale": 0.005,
+        "resolution": "Use the current manufacturer page conservatively and obtain the exact quoted-unit datasheet before selection; do not silently use the better historical figure."
+      }
+    },
+    {
+      "id": "ati_daq_manual",
+      "url": "https://www.ati-ia.com/app_content/documents/9620-05-DAQ.pdf",
+      "publisher": "ATI Industrial Automation",
+      "title": "DAQ force/torque sensor manual, section 3.3 Load Calculation",
+      "quantities": {"rawGaugeChannels": 6, "forceAxes": 3, "momentAxes": 3, "calibrationMatrixRows": 6, "calibrationMatrixColumns": 6},
+      "notes": "Six raw strain channels jointly reconstruct a wrench through a calibration matrix. They are not six separately measured Cartesian force axes. Keeping only axial/transverse force outputs does not generally permit dropping raw channels from an integrated six-axis cell."
+    },
+    {
+      "id": "ati_system_interfaces",
+      "url": "https://www.ati-ia.com/products/ft/ft_SystemInterfaces.aspx",
+      "publisher": "ATI Industrial Automation",
+      "title": "Force/torque system interfaces",
+      "quantities": {
+        "DAQAnalogAntiAliasCutoff_Hz": 5100,
+        "exampleNetRdtLatency_s": 0.000288,
+        "exampleLegacyEtherCATMaximumRate_Hz": 1000,
+        "exampleLegacyEtherCATLatencyUpTo_s": 0.001,
+        "exampleLegacyDigitalRate_Hz": 7000,
+        "exampleLegacyDigitalLatency_s": 0.000144
+      },
+      "notes": "Analog raw/TWE sensors require customer amplification and digitization. A digital sensor contains that acquisition internally, so a separate load-cell ADC chip is optional. Those listed digital interfaces have different response/timing from the selected 30 ksample/s synchronized chain and are not drop-in qualified replacements. ATI also states that frequency response depends on mounted tooling mass and configuration."
+    },
+    {
+      "id": "ati_axia80_rs485_manual",
+      "url": "https://www.ati-ia.com/app_content/Documents/9610-05-RS485%20Axia80.pdf",
+      "publisher": "ATI Industrial Automation",
+      "title": "Axia80 and RS485 interface manual",
+      "quantities": {
+        "selectableInternalSampleRates_Hz": [488, 976, 1953, 3906, 7812],
+        "noAdditionalFilteringCutoffAt7812Samples_Hz": 2000,
+        "exampleM20RatedAccuracyFractionRange": 0.02,
+        "exampleM20ForceRangeXY_N": 500,
+        "exampleM20ForceRangeZ_N": 900,
+        "exampleM20AccuracyLimitXY_N": 10,
+        "exampleM20AccuracyLimitZ_N": 18
+      },
+      "notes": "A fast-looking digital packet rate can repeat older ADC values; the manual distinguishes sample rate from data rate. The M20 factory accuracy example shows why fine digital resolution alone cannot guarantee ±0.5 N calibrated force accuracy. This is one product example, not a claim about every digital sensor."
+    },
+    {
+      "id": "interface_loadcell301",
+      "url": "https://www.interfaceforce.com/wp-content/uploads/Interface-Load-Cell-301-Guide-2024-Edition.pdf",
+      "publisher": "Interface Inc.",
+      "title": "Load Cell 301 Guide, revised 2024",
+      "notes": "Primary-axis stiffness can be estimated from rated force and deflection, whose values are generally typical rather than controlled. Low-cost utility cells may have important off-axis coupling. Loaded response depends on attached mass, and side loads/moments require mechanical isolation or characterized rejection."
+    },
+    {
+      "id": "futek_lsb205",
+      "url": "https://media.futek.com/content/futek/files/pdf/productdrawings/lsb205.pdf",
+      "publisher": "FUTEK Advanced Sensor Technology",
+      "title": "LSB205 miniature S-beam load cell specification",
+      "quantities": {"forceAxes": 1, "ratedOutput_V_V": 0.002, "nonlinearityFractionRO": 0.001, "hysteresisFractionRO": 0.001, "nonrepeatabilityFractionRO": 0.0005, "maximumExcitation_V": 10, "nominalBridgeResistance_ohm": 350},
+      "notes": "Illustrative single-axis bridge: 2 mV/V at full load gives only 10 mV at 5 V excitation. It needs amplification and digitization; nominal bit count does not remove hysteresis or missing drag information."
+    }
+  ]
+}

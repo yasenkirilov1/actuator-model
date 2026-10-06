@@ -1,0 +1,582 @@
+[
+  {
+    "name": "actor.weight",
+    "groups": [
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          2,
+          3
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          4,
+          5
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          6,
+          7
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          8,
+          9
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          10,
+          11
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          12,
+          13
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          14,
+          15
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          16,
+          17
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          18,
+          19
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          20,
+          21
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          22,
+          23
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          24,
+          25
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          26,
+          27
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          28,
+          29
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "actor.weight",
+    "groups": [
+      {
+        "indices": [
+          32,
+          33
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          34,
+          35
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          36,
+          37
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      },
+      {
+        "indices": [
+          38,
+          39
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 2.0
+  },
+  {
+    "name": "actor.weight",
+    "groups": [
+      {
+        "indices": [
+          62,
+          63
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 1.0
+  },
+  {
+    "name": "actor_skip.weight",
+    "indices": [
+      0,
+      6,
+      13
+    ],
+    "scale": 0.05
+  },
+  {
+    "name": "actor_skip.weight",
+    "groups": [
+      {
+        "indices": [
+          54,
+          55
+        ],
+        "factors": [
+          -1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.25
+  },
+  {
+    "name": "actor_aux.weight",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "scale": 0.2
+  },
+  {
+    "name": "actor.bias",
+    "indices": [
+      0
+    ],
+    "scale": 0.003
+  },
+  {
+    "name": "actor.bias",
+    "indices": [
+      1
+    ],
+    "scale": 0.02
+  },
+  {
+    "name": "encoder.weight",
+    "groups": [
+      {
+        "indices": [
+          1457,
+          1505
+        ],
+        "factors": [
+          1.0,
+          -1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  },
+  {
+    "name": "encoder.bias",
+    "groups": [
+      {
+        "indices": [
+          30,
+          31
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  },
+  {
+    "name": "recurrent.layers.0.bias",
+    "groups": [
+      {
+        "indices": [
+          32,
+          33
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          34,
+          35
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          36,
+          37
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          38,
+          39
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          40,
+          41
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          42,
+          43
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          44,
+          45
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          46,
+          47
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          48,
+          49
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          50,
+          51
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          52,
+          53
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          54,
+          55
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          56,
+          57
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          58,
+          59
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          60,
+          61
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "indices": [
+          62,
+          63
+        ],
+        "factors": [
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.6
+  },
+  {
+    "name": "encoder.weight",
+    "groups": [
+      {
+        "indices": [
+          408,
+          456,
+          504,
+          552,
+          600,
+          648,
+          696,
+          744
+        ],
+        "factors": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  },
+  {
+    "name": "encoder.weight",
+    "groups": [
+      {
+        "indices": [
+          409,
+          457,
+          505,
+          553,
+          601,
+          649,
+          697,
+          745
+        ],
+        "factors": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  },
+  {
+    "name": "encoder.weight",
+    "groups": [
+      {
+        "indices": [
+          792,
+          840,
+          888,
+          936,
+          984,
+          1032,
+          1080,
+          1128
+        ],
+        "factors": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  },
+  {
+    "name": "encoder.weight",
+    "groups": [
+      {
+        "indices": [
+          793,
+          841,
+          889,
+          937,
+          985,
+          1033,
+          1081,
+          1129
+        ],
+        "factors": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "scale": 0.5
+  }
+]

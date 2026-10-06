@@ -1,0 +1,18 @@
+{
+  "status": "native_returned_post_run_audit_rejected",
+  "nativeCasesAttempted": 1,
+  "nativeCasesReturned": 1,
+  "nativeCasesQualified": 0,
+  "integrationStep_s": 5e-06,
+  "globalCaseIndex": 3489,
+  "reportedExitCode": 1,
+  "reason": "Validation script counted68 time/data channels and omitted the4 scalar robotGate channels; fixed by explicit audit of ready,filteredError_N,forceRate_N_s,stableNow. No plant/controller/sensor change. Returned fine trace was not saved before original audit, so one justified rerun is necessary. Corrected script saves native history before audits.",
+  "originalExperimentSnapshot": "/home/tommie/.local/state/actuator-model/tp88443294_10d5_40a4_9941_8ee669398ef2/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "originalExperimentSha256": "f523bb63c6a1f7ad06a5a8387b27f1dcd3dd9f61aa844f0988684f902ac2c0ad",
+  "correctedRecipeFile": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "correctedRecipeSha256": "d9fba22c6526f21c4015f770b62e9065eadd86905ddfbccf2433be1eee7e4105",
+  "originalBatchLog": "/home/tommie/.local/state/actuator-model/final-grid-solver-5us-20260930/batch.log",
+  "sourceModelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "scope": "Software-audit rejection; no native force result is qualified or inferred from this execution."
+}

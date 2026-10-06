@@ -1,0 +1,249 @@
+{
+  "status": "complete",
+  "createdUtc": "2026-09-30T14:14:33.562113+00:00",
+  "scope": "Isolated headless Chromium checks of the completed36-query/20-figure report and official single-file offline export; no user desktop input. Print is media-emulation content verification, not a paper pagination claim.",
+  "checks": {
+    "completeLifecycle": true,
+    "twentySourceBoundFiguresLoaded": true,
+    "allEightStructuredTables": true,
+    "full3500RowsAvailable": true,
+    "massAndForceFilter": true,
+    "threeDecimalEffortAndError": true,
+    "pagination": true,
+    "searchAndClear": true,
+    "sourceProvenanceAndCaveats": true,
+    "sourceNativeCountsAndRecipeHashes": true,
+    "desktopDarkReviewed": true,
+    "desktopLightReviewed": true,
+    "mobile390Reviewed": true,
+    "printContentPresent": true,
+    "offlineFileLoadsWithoutNetworkAssets": true,
+    "calibratedResultAnd32VRecommendation": true,
+    "protectedRuntimePreserved": true
+  },
+  "artifacts": [
+    {
+      "path": "reports/active-contact-flange-report.html",
+      "sha256": "babb6b7d078cd6a741f4e8511e3b64067d14112a9a97a1149c0e88c6768482d6",
+      "bytes": 37217757
+    },
+    {
+      "path": "reports/active-contact-flange-report.md",
+      "sha256": "f05566c2f80e36934ceb89d048fb6a4954af930e1197cf15d7109dc258a3678e",
+      "bytes": 86731
+    },
+    {
+      "path": "reports/prototype-design-20260930/dist/index.html",
+      "sha256": "873e7f729d77318b37dbed2bc1deb539b8f6b8604e22da8847ab3bd6c9571059",
+      "bytes": 7875580
+    },
+    {
+      "path": "reports/prototype-design-20260930/dist/data-app-build.json",
+      "sha256": "a84e178018dea399ada5e7ba45f5bbbf2b4f37972521f29052fe110be12742e3",
+      "bytes": 595
+    },
+    {
+      "path": "acf_simulink/validation/inertial_html_report_manifest.json",
+      "sha256": "dcbdd9b723674af292f20abb838538d7029c7f669bc149c30d2eadd15ffeacb1",
+      "bytes": 13816
+    },
+    {
+      "path": "output/playwright/inertial_report_final_dark.png",
+      "sha256": "bbdf34f9e57d9835eeb267ebbec70ed783281a35211410a087c25def04d57312",
+      "bytes": 146109
+    },
+    {
+      "path": "output/playwright/inertial_report_final_light.png",
+      "sha256": "df2415dc7170b635bcace4263dd8c99f5375ea456cafbc6c226b30d567859936",
+      "bytes": 151718
+    },
+    {
+      "path": "output/playwright/inertial_report_final_mobile.png",
+      "sha256": "d9145d8b05af0bf51d82e4bff86c18cb1c623d0c29d2706f9e3d30e89020b585",
+      "bytes": 91046
+    },
+    {
+      "path": "output/playwright/inertial_report_final_offline.png",
+      "sha256": "1ac75d02cae4aaace29580bb6dfb187cbdb4d219642e45651d3d8b297b67464a",
+      "bytes": 231651
+    }
+  ],
+  "observations": {
+    "base": {
+      "workingNotice": false,
+      "updating": false,
+      "figures": [
+        {
+          "alt": "Specified bump motion and required tool-inertia compensation",
+          "loaded": true
+        },
+        {
+          "alt": "Measured acceleration improves the equal-cohort controller comparison",
+          "loaded": true
+        },
+        {
+          "alt": "PI gain sweep for the rigid reference",
+          "loaded": true
+        },
+        {
+          "alt": "Load-cell stiffness and controller sensitivity",
+          "loaded": true
+        },
+        {
+          "alt": "Controller, lower spring rate and damper search",
+          "loaded": true
+        },
+        {
+          "alt": "Native repeated sharp-bump force, current and spring motion",
+          "loaded": true
+        },
+        {
+          "alt": "Full nominal force, orientation and tool-mass qualification",
+          "loaded": true
+        },
+        {
+          "alt": "Native worst case from the complete nominal grid",
+          "loaded": true
+        },
+        {
+          "alt": "Actual spring and damper tolerance with fixed nominal controller",
+          "loaded": true
+        },
+        {
+          "alt": "Assembled mechanical identification improves the combined stress corner",
+          "loaded": true
+        },
+        {
+          "alt": "Static calibration at the assembled mechanical stress corner",
+          "loaded": true
+        },
+        {
+          "alt": "Tighter calibration recovers margin through repeated sharp bumps",
+          "loaded": true
+        },
+        {
+          "alt": "Final sensing and robot-response sensitivity",
+          "loaded": true
+        },
+        {
+          "alt": "Simultaneous calibration errors at the two declared endpoints",
+          "loaded": true
+        },
+        {
+          "alt": "Native force-error balance and the faster-drive tradeoff",
+          "loaded": true
+        },
+        {
+          "alt": "Current-response speed and voltage headroom in the selected mechanism",
+          "loaded": true
+        },
+        {
+          "alt": "Final matched native voice-coil and leadscrew results",
+          "loaded": true
+        },
+        {
+          "alt": "Final heavy-tool bump with the two actuators",
+          "loaded": true
+        },
+        {
+          "alt": "Screw lead, reflected inertia and continuous holding current",
+          "loaded": true
+        },
+        {
+          "alt": "Real-coil usable voltage, tracking and steady holding heat",
+          "loaded": true
+        }
+      ],
+      "tableRows": [
+        12,
+        4,
+        6,
+        8,
+        11,
+        4,
+        4,
+        13
+      ],
+      "grid3500": true,
+      "overflow": false,
+      "calibratedResult": true,
+      "output32V": true
+    },
+    "filter": {
+      "filtered70": true,
+      "allVisibleRowsMatch": true,
+      "threeDecimals": true,
+      "firstRow": [
+        "2",
+        "50",
+        "0",
+        "0",
+        "0",
+        "0.283",
+        "1.504",
+        "6.577",
+        "true"
+      ]
+    },
+    "source": {
+      "dataPreview3500": true,
+      "allSourceColumns": 163,
+      "nativeColumns": [
+        "Cell separate native state",
+        "Native samples",
+        "Contact constrained balance samples",
+        "Native actuator force residual N",
+        "Native returned",
+        "Execution recipe sha256",
+        "Native rows file"
+      ],
+      "hasRecipeHash": true,
+      "hasNativeSampleCount": true
+    },
+    "overview": {
+      "sourceFile": true,
+      "scopeCaveat": true,
+      "excerpt": "venfixed angles, twodrag ratios and fiveclean/noisy conditions; finite nominal qualification.\nOriginal CSV and coverage audit are SHA-bound. Display id is globalCaseId; partitionCaseId and rawAngle_deg preserve original fields.\nTwo execution recipes differ only in owned temporary SDI storage; 122 earlier recovery histories are excluded from3500 unique identities.\n\nSources\n\nacf_simulink/validation/inertial_report_final_grid_rows_20260930.json\nFile"
+    },
+    "light": {
+      "overflow": false,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(26, 28, 31)",
+      "tableRows": [
+        12,
+        4,
+        6,
+        8,
+        11,
+        4,
+        4,
+        13
+      ]
+    },
+    "mobile": {
+      "width": 390,
+      "overflow": false,
+      "figuresFit": true,
+      "tablesInternalScroll": true
+    },
+    "print": {
+      "figures": 20,
+      "figuresVisible": true,
+      "tables": 8,
+      "recommendation": true
+    },
+    "offline": {
+      "url": "file:///home/tommie/Projects/actuator-model/reports/active-contact-flange-report.html?view=1",
+      "requestedHttpAssets": [],
+      "grid3500": true,
+      "figures20Loaded": true,
+      "completed": true,
+      "output32V": true,
+      "overflow": false
+    },
+    "pager": "9\u201316 of70/Page2of9 observed after Next page",
+    "search": "No results observed for acf-no-match-sentinel,3500 restored after clear/all filters"
+  },
+  "runtimeSha256": "9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e",
+  "replayChecks": "acf_simulink/validation/inertial_native_worst_replay_browser_20260930.json"
+}

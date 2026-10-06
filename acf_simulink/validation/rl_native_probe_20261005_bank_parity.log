@@ -1,0 +1,18 @@
+[Warning: Simulating model 'acf_rl_native' with recording turned off.  Data will
+be visible in Data Inspector during simulation but no logged data will be
+available after simulation.
+Suggested Actions:
+    • Enable recording - Fix
+    • Open Simulation Data Inspector preferences and change Storage options
+] 
+[> In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In rl_native_probe_20261005_parity (line 16)] 
+{Error using assert
+Assertion failed.
+
+Error in rl_native_probe_20261005_parity (line 18)
+c=load(fullfile(folder,'baseline_c_record.mat'));assert(isequal(size(truth),size(c.truth)));
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

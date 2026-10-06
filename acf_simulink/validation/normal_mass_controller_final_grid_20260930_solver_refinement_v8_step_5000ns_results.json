@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "scope": "Numerical convergence of final nominal-grid worst global3489; no retuning or hardware qualification.",
+  "executedNativeReruns": 1,
+  "nativeCasesExecutedByThisCollector": 0,
+  "retainedNativeHistoriesValidated": 1,
+  "nativeSamplesScored": 800001,
+  "modelSha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643",
+  "candidateSha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7",
+  "baselineTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part1/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part1_r2_worst_native_trace.mat",
+  "baselineTraceSha256": "c9483c087549910f011480f696cb5d1fa3f24555e354e2b35559d54d538c6bb1",
+  "originalNativeExperimentSnapshot": "/home/tommie/.local/state/actuator-model/tp0d0e04f2_a35d_45ef_85be_d04346ed0f1f/normal_mass_controller_final_grid_20260930_refine_solver.m",
+  "originalNativeExperimentSha256": "8695b6684d35f1f93cf78aa3d328298951a4d570bff7b5f039a60e3f1f6effc0",
+  "collectorFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_collect_retained_refinement.py",
+  "collectorSha256": "e3c26ecca300a334ca1a74ff025784f80ee50ccb40de2932a96f6760257e618a",
+  "parameterChanges": [
+    "sim.step",
+    "d.forceTicks",
+    "d.sensorTicks",
+    "d.robotTicks"
+  ],
+  "rows": [
+    {
+      "integrationStep_s": 5e-06,
+      "nativeSamples": 800001,
+      "peakNormalForceError_N": 0.31582297621351074,
+      "normalPeakTime_s": 2.0006250000000003,
+      "peakScoreDifferenceFrom10us_N": 1.2047147755822607e-05,
+      "rmsNormalForceError_N": 0.023376768748300678,
+      "peakNormalEstimationError_N": 0.1738295016782203,
+      "trueNormalForceDifferenceAt10usTimes_N": 5.007858305816626e-08,
+      "peakCurrent_A": 2.608931658479159,
+      "peakVoltage_V": 16.789314201441805,
+      "voltageClipFraction": 0.0,
+      "currentClipFraction": 0.0,
+      "lostContact": false,
+      "strokeStop": false,
+      "springPackingPassed": true,
+      "minimumCommonSpringPreload_N": 27.834046205458304,
+      "maximumCommonSpringPreload_N": 43.177203794541704,
+      "combinedFreeSpringLength_mm": 40.980000000000004,
+      "combinedInstalledSpringLength_mm": 34.17355818900031,
+      "nativeChannelsCompared": 72,
+      "coarseGridChannelDifferences": {
+        "originalPhysicalAndControl": 3.972432013554794e-06,
+        "normalContact": 5.007858305816626e-08,
+        "accelerometer": 2.0160463520824123e-08,
+        "motionObserver": 2.9524993561125257e-15,
+        "measuredDrag": 6.976086375232171e-13,
+        "forceVariation": 2.343990626596515e-09,
+        "accelerationFeedforward": 0.0,
+        "commandPrediction": 1.734723475976807e-15,
+        "lowerInverse": 9.094947017729282e-13,
+        "robotGate": {
+          "ready": 0.0,
+          "filteredError_N": 3.56129454832238e-09,
+          "forceRate_N_s": 1.220918637301338e-07,
+          "stableNow": 0.0
+        }
+      },
+      "nativeTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_v8_step_5000ns_step_5000ns_native.mat",
+      "nativeTraceSha256": "338d565e6b9167b7be5cbf212de3e6a5282a8ddb78436e54b72b45fa3aff5ca2",
+      "passed": true
+    }
+  ],
+  "gateSamplingNote": "The68 physical/measurement/control channels have800001 fine native points. The4 robot-gate channels retain their own401-point10ms grid and are compared on that unchanged grid.",
+  "recoveryNote": "Retained native return from attempt03 is scored offline. Original post-run gate-grid assertion rejection is preserved; no extra5us simulation or trace rewrite occurred. Attempt01 returned without a durable trace; attempt02 wrapper rejected before experiment execution."
+}

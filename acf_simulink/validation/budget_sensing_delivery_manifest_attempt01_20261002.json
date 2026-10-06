@@ -1,0 +1,1992 @@
+{
+  "status": "complete_versioned_workspace_delivery",
+  "date": "2026-10-02",
+  "reportId": "report:578d0259-115c-40f2-9264-4c57b68ab138",
+  "modelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "publicModelUnchangedSha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "originalArchivePreservedSha256": "0e91119ff142b20664d0a9620b37aef65e8d27a81f7dd5ecfeecbadff35934f0",
+  "executedRecordings": 999,
+  "nominalGridConditions": 700,
+  "selectedFullHistoryCohorts": [
+    "adc_sinc_long8000_20261002",
+    "budget_adc_hot_coil_20261002",
+    "budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V"
+  ],
+  "scope": "Local versioned reports and inspectable numerical evidence. Original archive retained; no new hardware validation or public-model promotion.",
+  "files": [
+    {
+      "file": "acf_simulink/experiments/README_budget_sensing_20261002.md",
+      "role": "reproduction_recipe",
+      "bytes": 6958,
+      "sha256": "c4d0957f4ceabde18633c2dc84b1532fbf3c841cebb3a53a40dd6483c790e29b"
+    },
+    {
+      "file": "acf_simulink/experiments/audit_adc_fast_restart_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 16354,
+      "sha256": "c0adf3ab91d911e700427ba5697e78259fc2be50478b6d240f3dad1dfee933d6"
+    },
+    {
+      "file": "acf_simulink/experiments/build_adc_acquisition_trial_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 25297,
+      "sha256": "9b51fb7d2aa1f6c6e18e3a8670e27fb6fdcbdeed194217c7dedb37ebac93bf85"
+    },
+    {
+      "file": "acf_simulink/experiments/integrate_budget_sensing_report_20261002.py",
+      "role": "reproduction_recipe",
+      "bytes": 10327,
+      "sha256": "b4bcfc3dc9b3bd14a9db29b70ec3d9eac2ca441239ab2ec4b5dfa5af349d6b1c"
+    },
+    {
+      "file": "acf_simulink/experiments/prepare_budget_accelerometer_envelopes_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 10912,
+      "sha256": "a59778ddfb83cc63a5c8fb9f11c5050a944fcadeff79ea267f700a6805b10d48"
+    },
+    {
+      "file": "acf_simulink/experiments/prepare_budget_adc_hot_coil_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 7268,
+      "sha256": "0ded8e179a2331049e0e8750882b1a07004bed81f4667c06dee687c7cd7d5995"
+    },
+    {
+      "file": "acf_simulink/experiments/prepare_budget_dynamic_matching_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 7986,
+      "sha256": "66d789deae1fb02f6290c1f4a34eb8966254cf19eac816a906a429959eb57750"
+    },
+    {
+      "file": "acf_simulink/experiments/prepare_budget_sensor_stress_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 12866,
+      "sha256": "47ff9ec5a3bd00c9bd95ebcca5836085cf606db6965ad3ea109364ed9e8ff975"
+    },
+    {
+      "file": "acf_simulink/experiments/qualify_adc_acquisition_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 23507,
+      "sha256": "d9cad2a4ac4a99f03008f0557d02edda08de4c4b480dfd56d35313bf61f3eda1"
+    },
+    {
+      "file": "acf_simulink/experiments/run_adc_followups_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 1375,
+      "sha256": "c75fd673b0767920ef2fb400ddc3fbe54dd502ef92e781934f3299f878623d9c"
+    },
+    {
+      "file": "acf_simulink/experiments/run_budget_sensor_stress_20261002.m",
+      "role": "reproduction_recipe",
+      "bytes": 776,
+      "sha256": "27e27809fea13dcbdf02f78040e0fef0d47eaca138249dfc457954c7ce076ae7"
+    },
+    {
+      "file": "acf_simulink/experiments/summarize_budget_sensing_20261002.py",
+      "role": "reproduction_recipe",
+      "bytes": 18605,
+      "sha256": "eb4202187f0bafa687f53ff5ecbb2bc09163663cd90078f551e641680a2491aa"
+    },
+    {
+      "file": "acf_simulink/experiments/verify_budget_sensing_delivery_20261002.py",
+      "role": "reproduction_recipe",
+      "bytes": 11124,
+      "sha256": "289914dc02dbe1c9e0ffa71db40b7fff45aff33b4614667e3c311e76b39b6730"
+    },
+    {
+      "file": "acf_simulink/generated/acf_force_control_simple.slx",
+      "role": "unchanged_public_model",
+      "bytes": 693988,
+      "sha256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de"
+    },
+    {
+      "file": "acf_simulink/generated/active_contact_flange_inertial_20260930.zip",
+      "role": "preserved_original_archive",
+      "bytes": 3317195898,
+      "sha256": "0e91119ff142b20664d0a9620b37aef65e8d27a81f7dd5ecfeecbadff35934f0"
+    },
+    {
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.checks.json",
+      "role": "component_or_workflow_evidence",
+      "bytes": 1005,
+      "sha256": "875a3ae68ac80bee5a40d49844c92a3ac6c1a37607984e666342c86f947ac440"
+    },
+    {
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.csv",
+      "role": "component_or_workflow_evidence",
+      "bytes": 9103,
+      "sha256": "f3f8dc0f0b632c3fc3486b35dec05cb422ee83215febc5a2b55eeefc0f302d01"
+    },
+    {
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 66432,
+      "sha256": "4ce60370978e5a1dcb5de886481807eb491b5d6aa85cdbc4d9f9b496b9fab845"
+    },
+    {
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.md",
+      "role": "component_or_workflow_evidence",
+      "bytes": 13485,
+      "sha256": "1b153fd19ef3001f0d82937935871d4a3ba5a0d8e169e1a7b458f0040c914342"
+    },
+    {
+      "file": "acf_simulink/validation/accelerometer_cost_component_review_20261002.py",
+      "role": "component_or_workflow_evidence",
+      "bytes": 10950,
+      "sha256": "d63525c299fd454785d6b381391b63edae252fb76263896c4d82955c6706e36b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/README.md",
+      "role": "frozen_native_source",
+      "bytes": 6285,
+      "sha256": "f5b1c9e705472c899fdd104704f114f3566b26e9fa1583342cc930d5d1f745aa"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/acf_force_control_adc_trial.slx",
+      "role": "frozen_native_source",
+      "bytes": 716875,
+      "sha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/acquisition_contract.json",
+      "role": "frozen_native_source",
+      "bytes": 89694,
+      "sha256": "ba2c79c33902d632caf3c143b5d09c186b576a78ea01630f7f0b4e47c53649e3"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/adc_trial_candidate.mat",
+      "role": "frozen_native_source",
+      "bytes": 11307,
+      "sha256": "1afe7ee7650360ecb4fb2b1e11a69381332bc5d29cbfda0eb2632449d486ff25"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/baseline_candidate.mat",
+      "role": "frozen_native_source",
+      "bytes": 7161,
+      "sha256": "d8c49dd39bbb3417c294a79ebb061efdff04d2625b91794066d7b8ad087979c7"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/build_adc_acquisition_trial_20261002.m",
+      "role": "frozen_native_source",
+      "bytes": 25297,
+      "sha256": "9b51fb7d2aa1f6c6e18e3a8670e27fb6fdcbdeed194217c7dedb37ebac93bf85"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helper_manifest.json",
+      "role": "frozen_native_source",
+      "bytes": 2900,
+      "sha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_adc_prepare.m",
+      "role": "frozen_helper",
+      "bytes": 9332,
+      "sha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_desktop_available.m",
+      "role": "frozen_helper",
+      "bytes": 288,
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_experiment.m",
+      "role": "frozen_helper",
+      "bytes": 1114,
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_metrics.m",
+      "role": "frozen_helper",
+      "bytes": 6455,
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_open.m",
+      "role": "frozen_helper",
+      "bytes": 526,
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_parameters.m",
+      "role": "frozen_helper",
+      "bytes": 1963,
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_plot.m",
+      "role": "frozen_helper",
+      "bytes": 1448,
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_prepare.m",
+      "role": "frozen_helper",
+      "bytes": 122,
+      "sha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_prepare_baseline_v8.m",
+      "role": "frozen_helper",
+      "bytes": 28898,
+      "sha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_run.m",
+      "role": "frozen_helper",
+      "bytes": 4276,
+      "sha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_select_actuator.m",
+      "role": "frozen_helper",
+      "bytes": 2746,
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_select_controller.m",
+      "role": "frozen_helper",
+      "bytes": 646,
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_signals.m",
+      "role": "frozen_helper",
+      "bytes": 732,
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_start.m",
+      "role": "frozen_helper",
+      "bytes": 530,
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_start_visualizer.m",
+      "role": "frozen_helper",
+      "bytes": 1311,
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_sweep.m",
+      "role": "frozen_helper",
+      "bytes": 3332,
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_viewer_selftest.m",
+      "role": "frozen_helper",
+      "bytes": 2298,
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_visualize.m",
+      "role": "frozen_helper",
+      "bytes": 6907,
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/smoke_native_trace.mat",
+      "role": "frozen_native_source",
+      "bytes": 14081024,
+      "sha256": "d0745b3608dd55844e5516858805eee4eb337cd721ae62169042202bea2cf988"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/software_check_sinc3_20261002.m",
+      "role": "frozen_native_source",
+      "bytes": 5340,
+      "sha256": "040b126938ab47bfb532a8a6394ac132d674ddeaa3acef0412b1289de60cba36"
+    },
+    {
+      "file": "acf_simulink/validation/adc_acquisition_trial_20261002/source_software_seal_20261002.json",
+      "role": "frozen_native_source",
+      "bytes": 2262,
+      "sha256": "72c80d7157ce1cc8dfb79d3b5327ecea1d5a7fe9ce3e4553f10f0bca66cd2fde"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1727344,
+      "sha256": "6b4075f774c5669db72dd27cd1ab45b3e1f669947fd16ea7999691ea44c0a2e6"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 73017344,
+      "sha256": "ee8eac1298405afc378e12fb6f83d55a1c84cba2d4b09437239154732583dfc9"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 754052,
+      "sha256": "ce28651215c22b84f4d2f64579b371dd6033676109ddb004e70772de6600c6bc"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part1/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 582563,
+      "sha256": "cb1fac242d5a7d8b8abf469c95f1e95edbe13c711b3555247a2713c865eac5b1"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part2/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1719965,
+      "sha256": "694aff7e7acceb29794aa82e7c4649a1c47e03b0b8640b2f4b5073fc8ce701a1"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part2/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 72706536,
+      "sha256": "d1e08c66ed7a579f7722029eb67406f60e214b8594afda6bbfba512b8fdd9f62"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part2/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 750969,
+      "sha256": "35ec047e1d83bf2a413c40472bd415252dd8c1ffbbb36fe8d5b8e418b5b42f7e"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part2/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 580195,
+      "sha256": "9426d3ab485278dcdb1f9b51e0bb93227cc3016ce89a4c4a9b0c083603add1a0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part3/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1719863,
+      "sha256": "81c15c5ea9cadf7b496aece462ab32de0a6f7e87d4de699851a54d06984a4a22"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part3/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 72706536,
+      "sha256": "7c4025bae43e3ca6dc007737990f57e2f57d5da25427d7adfa1de5262507a41b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part3/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 750959,
+      "sha256": "3260b95a1f6d1fb0253b903957a55fa7bc7a0d4966ae4dc9d00abacfd81dcbd9"
+    },
+    {
+      "file": "acf_simulink/validation/adc_budget_range_20261002_part3/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 580187,
+      "sha256": "e82728dfce62f265ea1c3c77c074ab2203bd3d0e14ce76c57a1c6c9c80d0045b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.checks.json",
+      "role": "component_or_workflow_evidence",
+      "bytes": 1332,
+      "sha256": "ea5f67d48f3a0b3f2623c83c81e5a4dca821487e0cf242c07a3445e3a3538d19"
+    },
+    {
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.csv",
+      "role": "component_or_workflow_evidence",
+      "bytes": 7415,
+      "sha256": "bf7a78af53adbc0abe3886bafc4fe9f69a0f1b40e5b8716df7337481ed1ee4a0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 43438,
+      "sha256": "8ca1de208dea39dc3de782851346c9b9b9569fbacd6d04700e3583821d15ffd2"
+    },
+    {
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.md",
+      "role": "component_or_workflow_evidence",
+      "bytes": 18189,
+      "sha256": "03c8b3195d0746d2ef9628739c1226b3e002f50bbe1713d4da93b97f8efed249"
+    },
+    {
+      "file": "acf_simulink/validation/adc_cost_component_review_20261002.py",
+      "role": "component_or_workflow_evidence",
+      "bytes": 5977,
+      "sha256": "726a61779aa1d9e36f99c6e98bc16ec189d5da3e80fd6ee14012f1c43b7003f7"
+    },
+    {
+      "file": "acf_simulink/validation/adc_fast_restart_audit_20261002/README.md",
+      "role": "compilation_parity_audit",
+      "bytes": 3684,
+      "sha256": "1089c8385ff1371263c102e3d5b7c8c726b331b797ff1c56d9221657f5adb625"
+    },
+    {
+      "file": "acf_simulink/validation/adc_fast_restart_audit_20261002/audit_seal.json",
+      "role": "compilation_parity_audit",
+      "bytes": 6216,
+      "sha256": "ff4714df813d3859ecedae0ee0f89cc959497b6694e3e2f1c1df151f97d59d0a"
+    },
+    {
+      "file": "acf_simulink/validation/adc_fast_restart_audit_20261002/clock_delay_parameter_inventory.json",
+      "role": "compilation_parity_audit",
+      "bytes": 37306,
+      "sha256": "18bdd4e489043f3dbcbedd73a7afb23babfaeb301f0fd3f0d52960ac4b9a8c47"
+    },
+    {
+      "file": "acf_simulink/validation/adc_fast_restart_audit_20261002/frozen_helper_manifest.json",
+      "role": "compilation_parity_audit",
+      "bytes": 2900,
+      "sha256": "bdd5329343416004cee552cb8b18ca2048e023735ca1e13e58d55b108b91cc48"
+    },
+    {
+      "file": "acf_simulink/validation/adc_fast_restart_audit_20261002/results.json",
+      "role": "compilation_parity_audit",
+      "bytes": 103479,
+      "sha256": "b2b7d1cbaf4bedd1a4a01e3aa6367a21a6dc4c9aced779d23e1737c11be96f49"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_alias_probe_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 23123,
+      "sha256": "0be4659d50d336d8c010ee5a48d82406e4eb225f4ce6efbc1b0334741919e319"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_alias_probe_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 938832,
+      "sha256": "a01d312f56cae11ecd33993e88910901261e45754e46d55ba6b44a3a027020a4"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_alias_probe_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 13139,
+      "sha256": "4c338cecd687e09d2f4f45ed038a49048ad69c8c1e943ef2214f59b48d69b01c"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_alias_probe_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 7030,
+      "sha256": "5950fa882cd542f1a4b122eaa3e1df68b1783ac2790587073d620a62f8b01b8e"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 32713,
+      "sha256": "335e1bd9dfc4ad807c2a8f385d25b17722cbf20acc4dcba6cfc03a18539ad392"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1256096,
+      "sha256": "e3ad5eba478d19ae2fd8b2b2df0ba9ce69c360c02a6604bb273d1899f4053f5c"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 16638,
+      "sha256": "8223a5f44fd47971aeeb82393fe07b7b3a590baa94cf0bdf8de5d840524dc58d"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_long5100_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 9814,
+      "sha256": "8ebb6073eac6e41d4967f2373e45094bb5e4c3dfbcbceacef142d64d4245a3c0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0001_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 26466503,
+      "sha256": "d3448d4ceb926bfc05a576fd5bfe6257292d328c5f3e2544cc3e1f12431d083f"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 42862143,
+      "sha256": "93090de0fbdbbac247f284f07004420f4f97f8cc3473bd859e9e6107ffe22faa"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0025_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 23889109,
+      "sha256": "5d4ce10d24aabb65993a5b36b802acc5bd526de35095a0b827e34fb934971e6c"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0026_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 36227767,
+      "sha256": "0716e9db359da336cfde8bad3c1a6a538e18c5a9eb2aa1908fbfecfa2d891f86"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0049_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 22206286,
+      "sha256": "07c4460e3b8d5a574dcc4b4ed816b2a0b520834d350406ad8863b8b1c46470aa"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0050_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 32193016,
+      "sha256": "d55e4234a212d1e3d186830e9c5f98b8ff3675469413e035a301e0560bcbfb48"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0073_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 21680731,
+      "sha256": "0e650eb3cb54fea0ffb6203837ec41b46eb55d200bd0b104b67279e339373fd7"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/case_0074_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 30935393,
+      "sha256": "e2282c2561757eb405538ca1ff7fbe8a578a192ee4c4b39fb628e03b2f3420a9"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 705161,
+      "sha256": "3e237ca4ade0c01320a3e5db06ec652c371b9a72f241785fc7af673fbeb3328a"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 29863336,
+      "sha256": "e7dcf2ca657b7f2da686838de094cb1df862b3e1d45cd26feb991e86a83ad65d"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 302414,
+      "sha256": "e9c589f45b0043f1a62734266ba5d77a92cf802f70b6a77b379b913da267a0f5"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sar_screen_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 229817,
+      "sha256": "5030be4d30b385624ff6674226d7e7aa7509a5bc762dffb5923ade5fca43c26e"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 15707,
+      "sha256": "8382fb9e6c97811b4717ff7c1d4e1cbe054903092a37ca6def22664ae5cdf408"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 626784,
+      "sha256": "4c503a503b49f062b21a38361525fe88139fb68a0c3b0447f11a5db2fb5a5d77"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 10346,
+      "sha256": "ff02bfc146505a745c2ed890373f985a422a0195d96b8050034889b14989e1e8"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew20us_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 4948,
+      "sha256": "2752d84b5c3d4d87ece6a1a2040bfffbb41473b0d8216c85ff4e73e9cf18ea6f"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 15705,
+      "sha256": "167ff2a6342147656e3756cc5ec4ca11ec6a67c6d3d3ae91856215ef9d65f5c3"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 626784,
+      "sha256": "8eb1546fca4f2a7eb0f3831de2b273f385f774665ec55c29846bcf806d4eb3c1"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 10358,
+      "sha256": "5160a762d3c084bde78099b20ae753c74f62182145628e959d83a236ee45a647"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_acc_skew50us_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 4960,
+      "sha256": "df3025f6d70c3bdda2e53cea19c57a4007909d2ba540d376e8ebb2fba2c1de32"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_alias_probe_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 23121,
+      "sha256": "ff3df78b6b2d6e818f7445de253641836b0647eeb227fa38c68ccf7f2070cdcc"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_alias_probe_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 940608,
+      "sha256": "b6431033bd448ab81364d008ff84887bbaaa4d11b30233710eea2d041ff03a35"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_alias_probe_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 13345,
+      "sha256": "9ffb48a276c573673ad002645c326c2e5dec04f976f2df2c9f03a97b80bb012c"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_alias_probe_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 7234,
+      "sha256": "90bc2cb1cc9736a3983f4483f6b31d1357af708367694277197d8309e0049267"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 32780,
+      "sha256": "f5480f7674f7c174a43aba8320dd26aa07c0596c140cb648660452a54d096617"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1261344,
+      "sha256": "30a637ff3c7e0395370fd8493ff8d5e39a9b62ca83ff09a0d392e067cfc2dd6f"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 16790,
+      "sha256": "97c391e5fd6f419561efe4c648e2f38b782bd4559d0b9015f58318d9a3cf3ece"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long15000_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 9963,
+      "sha256": "d15537180dc605a8caab768a116a339aa3521c299b9d410e7b9a3a18a77f00bc"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 32773,
+      "sha256": "e27da1bb04412d665c4d3be143b590dcbf3c5359626da016816397ba18073730"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1258464,
+      "sha256": "98b87cb547f2b819681ef012902408d302615005b826fcc8321846760afae4d3"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 16779,
+      "sha256": "f965cdb9f62ecbadcb67d7d0fd96173849ca3f3bc3d8e132126af15c472e0618"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long5100_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 9953,
+      "sha256": "c85471e310e81cfffd2fe496000afe0b386bf34e168619382c6a4e12e83983ce"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 32777,
+      "sha256": "8745d25e857e20b8ab227fb61873d8c1f00663f57bfccd8a3fb8a4ec6dd13d76"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1258464,
+      "sha256": "b77361794328dfc552fe5cf8215d1efa7d529eec67d76afcbd76acfb841d3a7e"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 16790,
+      "sha256": "6ddf03ca05687b24365a7ff314c45c7beaa74dced986db17e775f8e3ecb173a2"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 9964,
+      "sha256": "9007e82f8bffd42979926d672e52f31c3c53121a3e2db67283970a8dc5f6c1b5"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/worst_native.mat",
+      "role": "selected_full_native_history",
+      "bytes": 689541536,
+      "sha256": "c0c10155eba8c4ae508cd01378c81734af43a9763d84349f1edfbbb43d95bc7b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise2x_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 15676,
+      "sha256": "a51198a04688ea7354545cfaffc52705b04cb40a4fe44fbe8eff9f711312fceb"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise2x_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 626784,
+      "sha256": "241e272cbbef07dfb5f1e4a4175e4f1ce17792cd0bd014e07a3743425d310237"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise2x_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 10331,
+      "sha256": "a6e086fb4ffe925c38f76e6ab4528e3fa6eaf15b70b87f65fe9a3d8a9482a2e8"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise2x_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 4938,
+      "sha256": "a3944ba445bc648677314360b4130e7887c334e2f3120e2060ef2b3df8cd12b0"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 15708,
+      "sha256": "0e8f1009eecc132ab9b9db36276321e35af7e0387014765ae95598a34b8eadda"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 626784,
+      "sha256": "7c6f69282dd2e541ff88cc2c15e582968ad6c7901c9e706924baa6cb3012ff38"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 10337,
+      "sha256": "ae83e695009a441413ce46cc14d0e15083aac34e9b1d6c5f3d656934797aa52a"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_noise_corr200us_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 4936,
+      "sha256": "6b67b2185541fcb3416edb53f326955f43badfac389af857f678de266d2f369a"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_refine_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 15685,
+      "sha256": "dbcb742ffb822be04319d983da44e9f398cdfa5962db07ad081ab6fa9e4f4da4"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_refine_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 626784,
+      "sha256": "9531f4b9fe92d48d61e1f81d911440c3145fa769f7172e4df375b8de0982586f"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_refine_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 10337,
+      "sha256": "529971e91e05f38825de6c07db09d36665509f60321b259f6b49505d67d23902"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_refine_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 4948,
+      "sha256": "9f9b22c306ba53efdbb76025958b43538b62842791e92fcb460e4b687ce63085"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0001_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 62414205,
+      "sha256": "d4e226923df1147b8f00fcacd1289f22d6139e2afacfc8d4b93639da297e1bc8"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 91522845,
+      "sha256": "cbea7f308f86b1495ae512130981c8731af8490cb7b6bb6f5f1e16932b147237"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0025_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 63886091,
+      "sha256": "1eb183353df71e385d29228281e2876abf4c5c5b6ce813bfbd32b91488ea8f24"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0026_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 89283303,
+      "sha256": "52b9896dc6f177475ff578def5f68aa9ea7fc77d064a53f5954db28eee3383a2"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0029_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 63784039,
+      "sha256": "419ca2f7ccd03b2aeaa81228453ecaeeb1284d5cfbba63a9bc493c660cd54b8b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0030_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 89851751,
+      "sha256": "b1cbb0acd7e1902c3a298fb9577c5ee703e7e9fb111cd9657ea2fca7dffbd8a8"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0049_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 71628336,
+      "sha256": "e7df7765612cd51c44d60e11137642aeb54041805ac8b24f7db8731e00913a5b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0050_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 88231876,
+      "sha256": "2fbee79fba897bc700364da38251fe8346a7e83fa26a88cb45bc9a2878514498"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0053_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 71625871,
+      "sha256": "f20509c0e606e40ecdb51dba06d271ae1cb4313f03421396aee93e72edaa76a4"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0054_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 88785855,
+      "sha256": "b51da544010163a7107335ebbadd510bd89a1a7d0b1041de591e74315c81da92"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0057_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 71567708,
+      "sha256": "ad1a8f63b62b5d4bfb988f401d6633a37c5c14c27fcb7f0118069d8ab6660969"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0058_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 89081811,
+      "sha256": "7e4684ff51bf619f641ee892cba1127c38e35aee8bbfd83c6c726a20e367dc0b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/case_0062_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 89139529,
+      "sha256": "c8abb71996dce10a3630b061549bcc855c33f434d6488e7d97e95c2c55055955"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 529753,
+      "sha256": "7afd6bbc5b354a0553471a4f43baebfb708cb274de8ae965befcbc413dd5fa39"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 22495768,
+      "sha256": "567908347f6c58d7fc9f36201d9ecf65614d7b9d59608dbc8771943dc205929b"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 232670,
+      "sha256": "e6f9c92dcd76bbc5c072811689d9c3304cab4cb8fb7aeec49b4be1ae1ead522c"
+    },
+    {
+      "file": "acf_simulink/validation/adc_sinc_screen_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 177231,
+      "sha256": "a0ed85ab5ecce5e0a220ab3c1bcf91c12ebbbf5254613b29b6b47a08ac726502"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/README.md",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 3947,
+      "sha256": "0c355825689e06d39d29f4791c238de341780db443b3c695f43af85708413bf6"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 1577047,
+      "sha256": "0b17973c3079ef903414676527278499f4db5c60a0c9cf1f0cc89dff7527e697"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/input_seal.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 918,
+      "sha256": "abf50de325322114b217229a409710d262dfea984aabccd9e3e0e27d3ef2da3a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/manifest.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 40589,
+      "sha256": "53b1a709626af3302946015b2c332bae36a9eb67db064c0c3b16e8cde00bf653"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/optional_adxl355_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 175818,
+      "sha256": "222db138b5ae10df28204cc5d2a920684ce23a20d986500a11804e00a2c5464f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_envelopes_20261002_inputs/prepare_budget_accelerometer_envelopes_20261002.m",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 10912,
+      "sha256": "a59778ddfb83cc63a5c8fb9f11c5050a944fcadeff79ea267f700a6805b10d48"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_response_review_20261002.md",
+      "role": "component_or_workflow_evidence",
+      "bytes": 11531,
+      "sha256": "153bc00ec72f991523267cb1e2a6fc253688eeabbf524fbec06b49b24f95fb47"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_screen_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 13229,
+      "sha256": "82fa2daba3321b3166f076e8075872e4d0638bb61e9b21c92b7b04e04e7e3d0f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_accelerometer_stress_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 10795,
+      "sha256": "4486f1f02a1c3108024d82b13ce9a293eead1558d6e71bff88337db5ec1bee55"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 311904,
+      "sha256": "fa73e3be8883db7e1533c9ec5de4ed63ed8d7e6da2891e5bdb2adbeac56470de"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2242592,
+      "sha256": "8ef3039c113f1a47979c0c0f1732731e413512df7510011771cbd6a9d41fc97f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26676,
+      "sha256": "fb321979a4dca87bfc4ca1d2719f95a558a851a563d7fceafec00b1957485924"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17693,
+      "sha256": "7804c845f4c2f68fe56f753da98b89ded6840e1e59f2aa7cc5f78cfe71be5e8f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/worst_native.mat",
+      "role": "selected_full_native_history",
+      "bytes": 689374148,
+      "sha256": "3aacbd907f0d67ef132a9c298f7b292fa56024c44cdf8c8299cce383d66bc672"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/ADXL1002_8000_M08_30k_current100_hot32V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311069,
+      "sha256": "31ff22ba5ccb7fbbf20b4d4777275ecbc0028085437eafe6180fc005b06dd202"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/README.md",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 2444,
+      "sha256": "6ba5734130351864b2a99d703d84f45cc871bda24fe27ed6acf1d41de7b73cc3"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/input_seal.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 791,
+      "sha256": "f6528f387d57ab1d5936ec768f7bdfd8005b3a0b668277bd5c2d3b042ad67f5f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/manifest.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 23581,
+      "sha256": "e3b49f7e5fab4a2faa771e94dfdf681bf69c0e9bbebcfa1806ce28347b99e28f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002_inputs/prepare_budget_adc_hot_coil_20261002.m",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 7268,
+      "sha256": "0ded8e179a2331049e0e8750882b1a07004bed81f4667c06dee687c7cd7d5995"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 2042,
+      "sha256": "0af83dfc3ad3516198dfca5aa877af1fdcc61f99bea35324fb02470ab4099c72"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_long_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 5670,
+      "sha256": "f08d9bfe33039170b0bc6ef2ab32fbe952332846540e28d57b775ed923593dbc"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_range_grid_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 2240232,
+      "sha256": "d9652fb7ff8e4de9667efe461e0caef0ea52b1ad222d4e2adc02c06530eb3ae3"
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_screen_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 46294,
+      "sha256": "1f11d4426fa219e6a8b6d0e7cffc36a893da1b5f86c559c6e84cc920cc250712"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L0_current50_36V_dynamic_match_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311729,
+      "sha256": "d36a1478ad4a54108deca2709ec6c7e0b3288b4da58beac6b625b09282388f59"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/ADXL354C_1900_L50_current50_36V_dynamic_match_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311742,
+      "sha256": "ebd8bde376ff55a726059d2ea943ea50bada6378df120f62def8236438eee362"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/README.md",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 2821,
+      "sha256": "f02639f49141f46056a2a9f9e8192f8c2234465ae2cc70122704106506acd595"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/input_seal.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 1166,
+      "sha256": "ae6045a5adab018dc0403f3fc64031a4349b962f0297dba9c8861497c3ec22e2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/manifest.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 53130,
+      "sha256": "b630f15e5ba199cbda3d257d8e2d49a10172c8c7cf6b5509cd1f45f4f91b2b21"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/preparation_rejection_001.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 494,
+      "sha256": "bebc943cc605409e0a5e6cfe1273feb7d2fb7432128f95efaa0097e45f4ce0fd"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_20261002_inputs/prepare_budget_dynamic_matching_20261002.m",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 7986,
+      "sha256": "66d789deae1fb02f6290c1f4a34eb8966254cf19eac816a906a429959eb57750"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 312565,
+      "sha256": "3471e90ba91528ac4d5e60ae2bad92e07d4b2a12a80883a0ac2d37834378f68a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2243880,
+      "sha256": "97c9080e1587494b0ea5931e4763b33fe20b55b579e01739e1ca43d97100caf3"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26765,
+      "sha256": "dca9c15f34bc4474c7cadc3a04eef3137e4c278bbbcf7cc1b0aa969b5825f843"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_L0_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17773,
+      "sha256": "7e784c319a82d627a7f33776e314df69895fb54f3e01ca4e8c43c9e2db0316b8"
+    },
+    {
+      "file": "acf_simulink/validation/budget_dynamic_matching_summary_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 1950,
+      "sha256": "275e54f949e9c152c0d9623b6b98285172f8ea348d913ec7e8480baefeb8e8ef"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_browser_checks_20261002.json",
+      "role": "browser_check_receipt",
+      "bytes": 1663,
+      "sha256": "64ce4bc3401b4f2bcc82cfecd8aff9766191b9d9312f055caa14d1a701f8f424"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_execution_ledger_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 13795,
+      "sha256": "d1e8ea985a6ea9eaf4f74c21841f858c4ab853280c9ca4830378f949d8d7dad0"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_html_report_manifest_20261002.json",
+      "role": "current_report",
+      "bytes": 17770,
+      "sha256": "ca385b6521bb9842c267238acb219cfc2b6c0a3900c5d513b4498c3a58e05549"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/acf_simulink/validation/inertial_html_report_manifest.json",
+      "role": "preserved_pre_study_report",
+      "bytes": 13816,
+      "sha256": "dcbdd9b723674af292f20abb838538d7029c7f669bc149c30d2eadd15ffeacb1"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/acf_simulink/validation/inertial_report_inputs.json",
+      "role": "preserved_pre_study_report",
+      "bytes": 26083,
+      "sha256": "258bf205186b9b3e7d38207daa54d049103a793c4b4ebdfd447695ac17a799a2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/manifest.json",
+      "role": "preserved_pre_study_report",
+      "bytes": 1253,
+      "sha256": "683d5aa34fe3f125147e48cb5df53a3fbd423e731552aa0fcf4bc93603af5375"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/reports/active-contact-flange-report.html",
+      "role": "preserved_pre_study_report",
+      "bytes": 37217757,
+      "sha256": "babb6b7d078cd6a741f4e8511e3b64067d14112a9a97a1149c0e88c6768482d6"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/reports/active-contact-flange-report.md",
+      "role": "preserved_pre_study_report",
+      "bytes": 86731,
+      "sha256": "f05566c2f80e36934ceb89d048fb6a4954af930e1197cf15d7109dc258a3678e"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/reports/prototype-design-20260930/src/content/report/ReportContent.jsx",
+      "role": "preserved_pre_study_report",
+      "bytes": 105985,
+      "sha256": "842c89096055f249f2d1c05d6f1bad383351a75e7ea6dafdbd4f26807e668511"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/reports/prototype-design-20260930/src/content/report/report.css",
+      "role": "preserved_before_mobile_path_wrap_fix",
+      "bytes": 10635,
+      "sha256": "e764b7ddc5b88aceb2cac2b87e864668a58dbe1f42b8bac6fd44555c42749481"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_base_20261002/reports/prototype-design-20260930/src/data.json",
+      "role": "preserved_pre_study_report",
+      "bytes": 29313456,
+      "sha256": "6e63086665e7d9b226b7ddf7199c3908cce3da2c5ae69c6d6cc2cf3693715341"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_report_inputs_20261002.json",
+      "role": "current_report",
+      "bytes": 35878,
+      "sha256": "77215a032854447e63cd8170c974f641a6a2d6d8d4701dd45af33f6ee375aba7"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensing_robustness_20261002.json",
+      "role": "report_source_or_figure",
+      "bytes": 14237,
+      "sha256": "b49ebc4ca9053a057ae5455261bfc685d491cfd7bb58940c9a332f0ff2ef56f6"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_parallel_handoff_20261002.json",
+      "role": "component_or_workflow_evidence",
+      "bytes": 709,
+      "sha256": "8ae9d748507563ebe0535a6ecba6dc95491e172ebead83c87c5e4b437d7a6b86"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 311647,
+      "sha256": "e3a2d015e7362813d9446b39d84edb4e89a875a73fec46152ef252f63bc6bcbd"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2242592,
+      "sha256": "1fbfe05e1ca3d580f5886c1486c91ba92710417a588ed7aeabd3669c87e8b08f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26697,
+      "sha256": "0c3fd7796535365e9feb1a6dd20249dd94ab9a48c231c92b5bfe217201da4036"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL1002_reference_8000_L0_current100_24V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17674,
+      "sha256": "b99ca9e224ade8bb767c5615332fd4b902f89f3338509be237edb199c89d9398"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 690451440,
+      "sha256": "1098c30f83ff82ea01808fc86b1bcbfacfb4c016aae48f84924486ff572c02b0"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/case_0003_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 690475123,
+      "sha256": "c9baf1144adf6b57e7dec4f647f4d7d70868d18004d4ab56905c2b4f1f516d3a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 312032,
+      "sha256": "e0c6d77e6597555a221e73aee61aef52701121ad29542d3f7806bb0bfc4fccb2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2242928,
+      "sha256": "c306732c5757c3e0512faea9d0c54a503bd2dd550008ddf27be1cf4c3aa574a3"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26759,
+      "sha256": "8260b0497bb608983049ced8f60e809452433a1b607faef6803d81f8541f7cb2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current100_24V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17745,
+      "sha256": "f86cde3bdf5250697026024d91d4d0006e503da82577bb6473ddf9bee4244cc0"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 312520,
+      "sha256": "e1ba3a1e89dbca8017805dbb6a16d952c877eb1f1753c35b77cfaa556c71e34c"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2243880,
+      "sha256": "c9b6a239d858881ac9b93dff2a351061f58aa1a503b8552ec446be08d0ff0c85"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26751,
+      "sha256": "37e3ba5ac72a008fb4359e50d194b7b2abffd814bcd8c49b10ffd52a6b576369"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_36V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17738,
+      "sha256": "5272d19d331fd5d9c2b7fdf6edc62f89855bb569024112da71f4817f84defac2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 313702,
+      "sha256": "5370af06538298903e585f32eb0debe57578967182f203a5d55f2a5d7e9356f9"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2251832,
+      "sha256": "bae0ad6a6f30df0a200e1d767bf6e81b275af9e8e4bc665ab5d1ae797aebffcc"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26787,
+      "sha256": "2ac4e8d2091b9a0b0f771de696c36ce3677f2a12cbeb018cfded400c0d5f8f2b"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L0_current50_hot32V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17771,
+      "sha256": "69ce331363caa4b05b63c737fc56b4021b2dd1cb14baf564957e5c8655ea9bcf"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/case_0001_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 691539670,
+      "sha256": "237e509e579c914e0bbbd27e3bc4c921612a58a6d2f2a04d7fe2b7c31562ae18"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 691547457,
+      "sha256": "43776a4ee038cc653796718832b288ac8aedd2eed6a8787b62710665c73bc21d"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/case_0003_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 691597859,
+      "sha256": "db2c1b7f876ec1ba8eec751f84373e33d25b354139c2e84f59f8407a04872698"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 312493,
+      "sha256": "f3fdead44c935bc0f9202ae6975050b4ab1120d45d35f025e157a9814cdad4a8"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2243880,
+      "sha256": "f5498d147bccad41eff577592b62b151f82ac42f9c8c5c7125f0cd62f96d0bac"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26754,
+      "sha256": "23f13377c2ec2d3d2407751102421aa5c6744569dc1495bda058a271e90177b4"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17740,
+      "sha256": "d31683ccea7e6349bb3066d21211744b3e2ac193ec98e2c3e6ec51f28b8249a1"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/worst_native.mat",
+      "role": "selected_full_native_history",
+      "bytes": 691597859,
+      "sha256": "e9fcbaa551919a316a8f40ffe12d223cc8d98790b931efe15fee0a63435c8090"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/case_0001_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 698193369,
+      "sha256": "16d68d790dd0cfa388832c1fd7f785e69548bd127bec83fad2095d6c38d8b164"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 698190997,
+      "sha256": "03104ff73a748a3b936b5e4f574f911a91ae60a502953a5323692dc935c5918a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/case_0003_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 698259430,
+      "sha256": "feb6e4e16a96972bf4c4a8058fff3126bf59665661330df5f0e65ddbd6dd3e3c"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/case_0005_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 93084792,
+      "sha256": "4e0217a99e9daaf86ac3221e46edd8246f38745f70bdcfbb5db0d1a5ae0d8801"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 311705,
+      "sha256": "175fb7ec9f36497cb1c20564ca7b4b77ae79ec391d236e44049a11af3ee5294b"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2242592,
+      "sha256": "8d477c2e6748b04a9ee159d1155856263d87c1f7fb14d3c94a77705e203732d0"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26665,
+      "sha256": "15d517d4d85b2d21444aa5f3ed619bffa3a1d0ff76b5bfba52426d02020bdc0f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current100_24V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17649,
+      "sha256": "cb059efefd3f6e78765319926801a4d430ca31b80e1013f8ccc2556f2a1ad218"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/case_0001_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 699705675,
+      "sha256": "67480badc41da50702b2003f8935338b5cdbe96e8bdae2f40bc018df502b6b36"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/case_0002_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 699699877,
+      "sha256": "686c632a0af2fb3dfa995eaa80d0ca912d325e793e1f817cee712c4f8dfd5a4f"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/case_0003_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 699768292,
+      "sha256": "b85404285f868f706fe05254b5184deb34306e1d2ee4171c8b7236051cec502c"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/case_0005_native.mat",
+      "role": "retained_failed_native_history",
+      "bytes": 93284506,
+      "sha256": "315ba62d93296dd884d5c4259731228fa4af2dc87f89ceb8fb7b60d993b261bd"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 312285,
+      "sha256": "849cfeead63cec2a83afaad61786e642c941cba5e5220b2cf8976c2a40c37c37"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 2243544,
+      "sha256": "4e1e24f2b49e97f4af420b1cb55b0b0506dce096fab6904b83dda5aacb0cedf2"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 26678,
+      "sha256": "5bdbcd24f0501da4379fee40dd703f26742e1eb5450091d833e9a89f68438129"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_digital70_5100_L80_current50_36V/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 17663,
+      "sha256": "e9f32156d2bd632ca68408d254bf74c7b73966d07ef47e39eea9c886b20a5ac9"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL1002_reference_8000_L0_current100_24V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 310812,
+      "sha256": "23339a9fcefb2829aaf8252cf97b9de3aa8e1c3907d04b8128dabf9d361d7eb7"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current100_24V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311201,
+      "sha256": "2add6ef922bca33303035b1b75d7343225f802e378360c73bcbde815db9f3f25"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_36V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311688,
+      "sha256": "ec3af2bb47f59778fd73fb6b0214716889ef665448e8c512e7b9c85346bd0506"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L0_current50_hot32V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 312869,
+      "sha256": "e9b0c1cfdc524dda7e0c2ae08ba0d35b122b21305c442d2ebd9267aac9561153"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/ADXL354C_1900_L50_current50_36V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311661,
+      "sha256": "effa773a1c1a29cea589c46d0ecec51d30804fa2b395c1b4239bbc98006735ff"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/README.md",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 4410,
+      "sha256": "1e938625a1ce9f93857097fccd06cb82b1a2e3f46995bd3b950dc2d9e32e368b"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/digital70_5100_L80_current100_24V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 310876,
+      "sha256": "e3844b8aea85f83ca51e2d88a6ba357b9b64b83fb82d0fcf4f60bbff4a560263"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/digital70_5100_L80_current50_36V_configs.mat",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 311456,
+      "sha256": "dd87a288d7f49fa57ae9fb6d51d125e4070de8b175043da481ff157c86949f3a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/input_seal.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 2135,
+      "sha256": "5ebdc4ba71b7641718d405ee71967de5d2fc77800d80abece24023db96ab083d"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/manifest.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 87269,
+      "sha256": "0c4c15bf9eeb29d558858d51a9e0ab6c66b041613837ba03551263b23bb1004d"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/preparation_rejection_001.json",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 468,
+      "sha256": "fdc681eec360146aa52a10c2cac3e715ef0a4616f2f7e0dbb8b73df62d9edecc"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_inputs/prepare_budget_sensor_stress_20261002.m",
+      "role": "frozen_preparation_inputs_not_execution_claim",
+      "bytes": 12866,
+      "sha256": "47ff9ec5a3bd00c9bd95ebcca5836085cf606db6965ad3ea109364ed9e8ff975"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensors_screen_20261002/input_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 1577883,
+      "sha256": "0ded584c88ba664c68b4216be069dd6331c4a8013974d6f50129c3f6c1cb710a"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensors_screen_20261002/prepared_configs.mat",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 11428352,
+      "sha256": "c259ee5f1e0bffa21ffcd4532f29c1812c2fd2379b0160044fbd0c88d758bd55"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensors_screen_20261002/results.json",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 121092,
+      "sha256": "851b5c9d07ef36db6b2d15835651f423cd029258bea55d497ed8162198e0c5af"
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensors_screen_20261002/rows.jsonl",
+      "role": "executed_cohort_receipt_or_exact_inputs",
+      "bytes": 91374,
+      "sha256": "1e5f4ecebfafc66f891cc825b6a39d4f10c84a27f2e1e795a72ea1f4e419a32f"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_chart_data_v7.json",
+      "role": "report_source_or_figure",
+      "bytes": 4244,
+      "sha256": "13867b3f3d5c81289da503a2d334de8087c68b71866ccbe18577ea6eb92b4640"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_final_actual_acquisition_v8_20260930_reviewed_comparison.json",
+      "role": "report_source_or_figure",
+      "bytes": 29531,
+      "sha256": "73383bf946b37c98da1c6885471bd6f444ff0fb58fff8cbcec3d6d07fddd904d"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_actuators_lower_series_v1_reviewed_comparison.json",
+      "role": "report_source_or_figure",
+      "bytes": 34393,
+      "sha256": "81add0605fd00841068f69ac0fba91fef5b0aecbc93debb70662effb452336a6"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_bump_calculation.json",
+      "role": "report_source_or_figure",
+      "bytes": 339625,
+      "sha256": "a9425546df11a016e29d9358ce5fb1ff54cc3dfec661ea9427753cbc142eb8b4"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_final_worst_native_excerpt_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 6473694,
+      "sha256": "dc72f67504a0bb3ff9d07c3bcc814e8c4c62a0a308173ffd85e62da42765c10e"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json",
+      "role": "report_source_or_figure",
+      "bytes": 108410,
+      "sha256": "d848e6290bda98baf244aa7863106fa7b5920c7c5c36438e225d112aa7d15666"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_lower_spring_repeated_20260930_lower_series_v1_10s_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 46547,
+      "sha256": "dbfff16f8f5fd1ac306b170cb61ddf262668657897717b4a40166d20d7d1b4fe"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_mixed_comparison_20260930_chart_data.json",
+      "role": "report_source_or_figure",
+      "bytes": 106370,
+      "sha256": "b3e44629dc8bf9abb3bb5e5f440690bdf26ee8338e31a600a9706ad97015f660"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_spring_chart_data_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 167668,
+      "sha256": "8621d86a454739c69d129b27223863567cb7d0732c22c31dfd1003e3bc9af9ec"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_mechanics_v8_20mm_geometry_rescore_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 89052,
+      "sha256": "85a32b40672b7024b0517627c1c18f1f8d6b9372b49117c7f89cab2b9776f69f"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_acceleration_drive_parts.json",
+      "role": "report_source_or_figure",
+      "bytes": 1992,
+      "sha256": "725a16d445385d69ca51195c688a79a4e3e748a9ce464dcda44bffda24740f82"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_final_grid_rows_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 21303877,
+      "sha256": "f75bd5c1bc927083d16952cb390cfb18923f07891da700936b5569038fbc40b7"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_paired_calibration_diagnostic_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 906,
+      "sha256": "037867622785b34af6e4b5627a1baf84ac3476aae2c014f7c19efeaf98d47ffa"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_selected_settings.json",
+      "role": "report_source_or_figure",
+      "bytes": 3749,
+      "sha256": "c3b98e99b0c98d3cefa5cc0473d32e5abccd952ae6a72aac0901609a48705f9c"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_report_structural_summary.json",
+      "role": "report_source_or_figure",
+      "bytes": 38562,
+      "sha256": "5ffd23828a0130f45dacf4bb2b2bc5fbfcc0fc146f46b8bfab5812f4b319a589"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibrated_static_long/inertial_uncertainty_calibrated_static_long_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 98051,
+      "sha256": "34386cf4796359563a3e98955ae4eb0cdf82577bd11a7fcb5919a01204f13711"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_calibration_refinement.json",
+      "role": "report_source_or_figure",
+      "bytes": 17420,
+      "sha256": "b4896a1946e5522ca6c2beb536c9f25f0a92a73e00da6452d9a09d19ff5f658e"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_engineered_sensing/inertial_uncertainty_engineered_sensing_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 271144,
+      "sha256": "a7e931117af9de95b0f0735b12ff283fe39bccbec1cb5e0378eab3d06f839ebc"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint/inertial_uncertainty_budget_joint_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 364277,
+      "sha256": "2cfaa5e372a72df1c7003b33d1f4a2dec3ab0dd6ec4c7d1c563d85c5149ad8ed"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_budget_plan.json",
+      "role": "report_source_or_figure",
+      "bytes": 16518,
+      "sha256": "14648b6a1b23bd67d2bafe77897b8fdc32dd479e4ad6e0380e981cf6f707ecef"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_joint_long/inertial_uncertainty_budget_repeated_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 88193,
+      "sha256": "7900999f5090b2e9c1e1ca3f2a6b359359a9c494d7ec8518b4b1aeeb00a3a23e"
+    },
+    {
+      "file": "acf_simulink/validation/inertial_uncertainty_v8_robot_fine_delay/inertial_uncertainty_robot_fine_delay_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 132525,
+      "sha256": "a2610b8951f3dd82f883afe387d5229b8f91f0c0e972967654de8a1dce91900f"
+    },
+    {
+      "file": "acf_simulink/validation/normal_contact_trial_inertial_v8_manifest.json",
+      "role": "report_source_or_figure",
+      "bytes": 26587,
+      "sha256": "89b0b7d60edff5d6723256a36e33534b662dc55fa5362efda155ad82781470c2"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_final_grid_20260930_solver_refinement_portable_summary.json",
+      "role": "report_source_or_figure",
+      "bytes": 10295,
+      "sha256": "72afc0d4b3122d077f310458514f7e4cf301a08f5990f584c35831be3eab9d35"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_final_performance_20260930_summary.json",
+      "role": "report_source_or_figure",
+      "bytes": 26151,
+      "sha256": "6ae6636e1097b5fc4c797eb2dd185da9b3df37ed5b2405746127bda5de9f61ae"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_pi_screen_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 251131,
+      "sha256": "ebff7b32e22a068588a37f0e8cf0c232de18bd569d38e79c9fd15c4ed5b7ab07"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_inertial_strategy_screen_20260930_results.json",
+      "role": "report_source_or_figure",
+      "bytes": 205066,
+      "sha256": "3d81e89f862dcd8141b9991f2f0048786936f6c259a28540b90a3707caadae50"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_lower_series_limits_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 2443,
+      "sha256": "3ff306905ce8cb29fd48a04facc458d58a85ec9c0c42997735a9a801d53782d2"
+    },
+    {
+      "file": "acf_simulink/validation/normal_mass_controller_v7_drive_shape_analysis_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 18125,
+      "sha256": "b358d898721f6b78909d98b3c7a86b0cf95995bdc82f08b69992d520f30d323f"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_core_summary.json",
+      "role": "report_source_or_figure",
+      "bytes": 7340,
+      "sha256": "643654871fcbacb8eee2513b360a6013950649ca9b4f1319eaa719818f9bff18"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_grid_missing_headroom_proof.json",
+      "role": "report_source_or_figure",
+      "bytes": 45457,
+      "sha256": "e0e0b4ed3c949efae9c81f115974e12087518076d6b55ddd8f3e43970042f9ef"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_20260930_final_sensor_subset.json",
+      "role": "report_source_or_figure",
+      "bytes": 116794,
+      "sha256": "d272e3b7cef0b8a5cdcd3e1cceec2f7c925d3996b69936fcd4d32a55b1c2cb8b"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_calibrated_static_headroom_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 59432,
+      "sha256": "9f15e7dc080d058d77bd3766ccaeff87eb90f9a7fc925d5f2f2ba9ed85c240b1"
+    },
+    {
+      "file": "acf_simulink/validation/normal_voltage_final_grid_hot_mapping_20260930.json",
+      "role": "report_source_or_figure",
+      "bytes": 38050,
+      "sha256": "e917319f0009e0073d1f257c1becd502f6c1eb4e809442780fe804d79ab5c54e"
+    },
+    {
+      "file": "acf_simulink/validation/realistic_force_position_sensors.json",
+      "role": "report_source_or_figure",
+      "bytes": 14541,
+      "sha256": "e975bf49330d76ddbf9be869ef8696fcce76af7c4a87021ed8244ed1a19c511b"
+    },
+    {
+      "file": "acf_simulink/validation/realistic_voice_coil_examples.json",
+      "role": "report_source_or_figure",
+      "bytes": 7614,
+      "sha256": "8f240405786f6747be94c3510289c86be4b7fcfc5b8aa65935fe8acd7e47bdf7"
+    },
+    {
+      "file": "output/playwright/acf-sensing-20261002/bandwidth-final.png",
+      "role": "rendered_browser_check",
+      "bytes": 113787,
+      "sha256": "a19f4b9ec5265fc53f1c04e40069967b518d5c3eebd350477b5ab131e028830b"
+    },
+    {
+      "file": "output/playwright/acf-sensing-20261002/mobile-final.png",
+      "role": "rendered_browser_check",
+      "bytes": 90993,
+      "sha256": "0037551a92d29003e892fc51c9f8954624f9888157a297b70f1ef9d95b76b37f"
+    },
+    {
+      "file": "output/playwright/acf-sensing-20261002/offline-final.png",
+      "role": "rendered_browser_check",
+      "bytes": 217914,
+      "sha256": "a73778e2e3d125b983ef4376fc46d3aec50b63024aa1c1dc92fd8ad556703226"
+    },
+    {
+      "file": "output/playwright/acf-sensing-20261002/stress-final.png",
+      "role": "rendered_browser_check",
+      "bytes": 96858,
+      "sha256": "b6cf20e5389015b1e4621d654792d62a010b2ba9fd09df4acd09f1dc8e231966"
+    },
+    {
+      "file": "output/playwright/acf-sensing-20261002/waveforms-final.png",
+      "role": "rendered_browser_check",
+      "bytes": 128832,
+      "sha256": "f4ca20440d1b306da9c6a7840633575985380c9fdf2521b8fc11286cc2cb9eb4"
+    },
+    {
+      "file": "reports/active-contact-flange-report.html",
+      "role": "current_report",
+      "bytes": 40236818,
+      "sha256": "8d0093fd0645957c6f614718b0f53decc0c5fcd6a5a0bd74c41349ff8e68ec60"
+    },
+    {
+      "file": "reports/active-contact-flange-report.md",
+      "role": "current_report",
+      "bytes": 108346,
+      "sha256": "7f66a008c2a62027cdf79f10a6e317815a2a7698871da00d0c6dbca8d3f455a8"
+    },
+    {
+      "file": "reports/figures/budget_accelerometer_envelopes.png",
+      "role": "report_source_or_figure",
+      "bytes": 137001,
+      "sha256": "35cb778682fa9d8e05b9037a1aa078e221a0c6f966c1b2fa99af714d6a8abd1c"
+    },
+    {
+      "file": "reports/figures/budget_accelerometer_envelopes.svg",
+      "role": "exportable_figure",
+      "bytes": 76044,
+      "sha256": "ced9333783577ea8681febe76dd4062acd1a582087f4e4c5110d7f451ee7b6b2"
+    },
+    {
+      "file": "reports/figures/budget_adc_bandwidth_rate.png",
+      "role": "report_source_or_figure",
+      "bytes": 182661,
+      "sha256": "3c8fc640a14d1a72ad166c6ed2c4aabdc42632fe3dc865e5e0366551d4397dd0"
+    },
+    {
+      "file": "reports/figures/budget_adc_bandwidth_rate.svg",
+      "role": "exportable_figure",
+      "bytes": 92669,
+      "sha256": "61be2766e33e643474631a6e1112e6d7de1412e94784d508fc64219611957563"
+    },
+    {
+      "file": "reports/figures/budget_adc_long_waveforms.png",
+      "role": "report_source_or_figure",
+      "bytes": 236904,
+      "sha256": "09b501c2e0478e2f5531e2d3989ac2163fac9b329cd8b2e559a2fccb367518c8"
+    },
+    {
+      "file": "reports/figures/budget_adc_long_waveforms.svg",
+      "role": "exportable_figure",
+      "bytes": 230123,
+      "sha256": "413e2a6c4c316246b11e945935103985a6d449adba826e2a77d755510fd1ed0d"
+    },
+    {
+      "file": "reports/figures/budget_sensing_response_noise.png",
+      "role": "report_source_or_figure",
+      "bytes": 62481,
+      "sha256": "21a0939d3eaeb886b77dec59e694ed199f64c8a1cf9b149a77218d6ace033b6a"
+    },
+    {
+      "file": "reports/figures/budget_sensing_response_noise.svg",
+      "role": "exportable_figure",
+      "bytes": 43252,
+      "sha256": "3a0ddb25d856a36cea065db9559bd8f81725685f04e003ac35fa5b2a0a481510"
+    },
+    {
+      "file": "reports/figures/budget_sensor_calibration_stress.png",
+      "role": "report_source_or_figure",
+      "bytes": 138567,
+      "sha256": "de265512d117a157928f63b78db62d077ef10d43ac8714a8de286a1a1733e10a"
+    },
+    {
+      "file": "reports/figures/budget_sensor_calibration_stress.svg",
+      "role": "exportable_figure",
+      "bytes": 80302,
+      "sha256": "6b57da4a5b5a665bbae0b04bf3aa8f75e9a1c1eca2d34e8c5aa34ade8c0517e0"
+    },
+    {
+      "file": "reports/figures/bump_motion_and_inertia.png",
+      "role": "report_source_or_figure",
+      "bytes": 163291,
+      "sha256": "793187bbecf03f68246a40e13519f27926b942ba8f4bf106f50c0f289f632cbe"
+    },
+    {
+      "file": "reports/figures/inertial_PI_reference_gain_search.png",
+      "role": "report_source_or_figure",
+      "bytes": 74519,
+      "sha256": "2216c7b16ae90fe44ee1caa4bbedc8350d91c837f7722ca115161dcaafac005c"
+    },
+    {
+      "file": "reports/figures/inertial_calibration_refinement.png",
+      "role": "report_source_or_figure",
+      "bytes": 262398,
+      "sha256": "bd709f71dd70864a3c28e32100c3bcaebf0bfef4aaaaa5699ff9bf4455c86d36"
+    },
+    {
+      "file": "reports/figures/inertial_cell_stiffness_sensitivity.png",
+      "role": "report_source_or_figure",
+      "bytes": 89824,
+      "sha256": "945a25c1799fd159a0ab30b60b05a1c9c79e5b5faba4d9ae1dc6cc10494f3e14"
+    },
+    {
+      "file": "reports/figures/inertial_controller_reference_comparison.png",
+      "role": "report_source_or_figure",
+      "bytes": 93170,
+      "sha256": "51457b96f1c57d1db708a1877e9f8868dc44ccad9ebeb4c565f0896fb229623c"
+    },
+    {
+      "file": "reports/figures/inertial_final_actuator_heavy_bump.png",
+      "role": "report_source_or_figure",
+      "bytes": 305412,
+      "sha256": "421c75a664d923089c2efd58954ffc4f2a8a377647e1200f70bf50e9a9439818"
+    },
+    {
+      "file": "reports/figures/inertial_final_actuator_peak_errors.png",
+      "role": "report_source_or_figure",
+      "bytes": 70107,
+      "sha256": "6a1a5502cc64189ab7da19f96030f7dd5e29344d81964c3e9cef201ed36191b5"
+    },
+    {
+      "file": "reports/figures/inertial_final_current_response.png",
+      "role": "report_source_or_figure",
+      "bytes": 86655,
+      "sha256": "b8f6557210125669860e2da3826e4c71a1b26f46b95a585907029f6976cfc1d6"
+    },
+    {
+      "file": "reports/figures/inertial_final_range_coverage.png",
+      "role": "report_source_or_figure",
+      "bytes": 578388,
+      "sha256": "fec3b2f07664d0f103bb17fc1e5b8ff6ade51c9a34b9559e66a8f3d13a21b06b"
+    },
+    {
+      "file": "reports/figures/inertial_final_voltage_headroom.png",
+      "role": "report_source_or_figure",
+      "bytes": 199005,
+      "sha256": "efd8df9ebc9b5436354ab45c5bdb682e6b95cec397fee2e8a72c3d91fdc35f09"
+    },
+    {
+      "file": "reports/figures/inertial_final_worst_native.png",
+      "role": "report_source_or_figure",
+      "bytes": 366090,
+      "sha256": "166b0e793cd8aa6575e82fef8dfb1d22701f04ba1b244ea1dff7c0a82c4053d5"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_mixed_comparison.png",
+      "role": "report_source_or_figure",
+      "bytes": 159949,
+      "sha256": "71b3e44a645de44b2cddf92e28ebabf6e1295982898f27cba58e2b5761080b62"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_selected_repeated.png",
+      "role": "report_source_or_figure",
+      "bytes": 192988,
+      "sha256": "a3d4f6ead9ef89168dff1ddd709d7c166b1cb04517be990d64c14df6115ede59"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_spring_tuning.png",
+      "role": "report_source_or_figure",
+      "bytes": 165707,
+      "sha256": "bb7211b61b522abd12f107035f11c908e49af8af333efc4bdbc0161d5e1504c5"
+    },
+    {
+      "file": "reports/figures/inertial_mechanics_v8_actual_tolerance.png",
+      "role": "report_source_or_figure",
+      "bytes": 169076,
+      "sha256": "21f37e58a4d4083c4a034411e947067469113db9bb97ed9caf40d960208acfee"
+    },
+    {
+      "file": "reports/figures/inertial_mixed_static_calibration.png",
+      "role": "report_source_or_figure",
+      "bytes": 166051,
+      "sha256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8"
+    },
+    {
+      "file": "reports/figures/inertial_performance_limit_decomposition.png",
+      "role": "report_source_or_figure",
+      "bytes": 199990,
+      "sha256": "943a0c21cd4d2d6e3397c0b71ef26486b72069b4d7142a1e673abcd287fa03d4"
+    },
+    {
+      "file": "reports/figures/inertial_uncertainty_v8_joint.png",
+      "role": "report_source_or_figure",
+      "bytes": 116764,
+      "sha256": "c06aea4d854bc04371add73eadd680ad978483b91a8ab1ab32fda81626f52363"
+    },
+    {
+      "file": "reports/figures/inertial_uncertainty_v8_sensing.png",
+      "role": "report_source_or_figure",
+      "bytes": 104472,
+      "sha256": "d2cde5a865f99f77a19f05eeb9d78212f69d0f04007b0d4f4fe28caeef365f7f"
+    },
+    {
+      "file": "reports/figures/screw_pitch_inertia_and_heating.png",
+      "role": "report_source_or_figure",
+      "bytes": 127346,
+      "sha256": "2630c47af1f10a6557d9b0b3008716a7c12f4b6afaa7b8945b48901b2be68bf9"
+    },
+    {
+      "file": "reports/prototype-design-20260930/dist/data-app-build.json",
+      "role": "current_report",
+      "bytes": 595,
+      "sha256": "407caa4f66b8f0e385636ee1ef4e6076cb812fb6c837b2424ba3103c2aa625ed"
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/content/report/ReportContent.jsx",
+      "role": "current_report",
+      "bytes": 132905,
+      "sha256": "98e01819c04452356beb2a117d099e225d4f357875d76abce6454b00f634831b"
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/content/report/report.css",
+      "role": "current_report",
+      "bytes": 10694,
+      "sha256": "27fe2b2b7ed83592ed299157aed031143a96276cb040b5553709baa9a3f91e2f"
+    },
+    {
+      "file": "reports/prototype-design-20260930/src/data.json",
+      "role": "current_report",
+      "bytes": 31293532,
+      "sha256": "57e0b4903cb747aa88277d2179d4507017d0b7527ecbdd111bdee6300b4cf18e"
+    },
+    {
+      "file": "reports/sensing-cost-study-20261002.md",
+      "role": "current_report",
+      "bytes": 21723,
+      "sha256": "885b6b86c02dea5df85f6e426cd1d81b6a9a4d5b71a77e10bbcaa3c89770a001"
+    }
+  ]
+}

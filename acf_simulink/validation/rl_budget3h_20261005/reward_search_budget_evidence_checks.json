@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "fastStageBoundFileRecords": 583,
+  "budgetBoundFileRecords": 148,
+  "fileHashMismatches": [],
+  "fastStageManifestSha256": "a52bee9aa51637e4f752a93f727c7326668678992960798a1850d84210ddd5ca",
+  "budgetSourceManifestSha256": "51aa212d6f0d5917fc6f7535552ebf8ceec01e06e4b412a73f3b7a30291587b6",
+  "budgetLedgerSha256": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4",
+  "budgetCandidateRegistrySha256": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+  "scope": "Local source/evidence integrity. No final-test outcomes or physical hardware qualification."
+}

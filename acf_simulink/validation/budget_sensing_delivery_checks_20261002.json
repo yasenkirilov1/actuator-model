@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "manifestSha256": "f00c8e6ff01c424419dc3b925ad092daa1894e351220f3ea20b026c643bbb8d4",
+  "verifiedFiles": 329,
+  "originalArchiveAndPublicModelUnchanged": true,
+  "completeRecordingCount": 999,
+  "uniqueNominalGridConditions": 700,
+  "nativeForceSamplesInExecutedCohorts": 1502400999,
+  "selectedCompleteNativeHistories": [
+    {
+      "file": "acf_simulink/validation/adc_sinc_long8000_20261002/worst_native.mat",
+      "samples": 9000001.0,
+      "peakError_N": 0.43882082755963836,
+      "peakCurrent_A": 2.979824598624058,
+      "peakVoltage_V": 20.255299014926457,
+      "maximumForceBalanceResidual_N": 2.842170943040401e-14,
+      "matchesCompleteReceipt": true
+    },
+    {
+      "file": "acf_simulink/validation/budget_adc_hot_coil_20261002/worst_native.mat",
+      "samples": 9000001.0,
+      "peakError_N": 0.4388208275612797,
+      "peakCurrent_A": 2.4424791792002565,
+      "peakVoltage_V": 30.183071940266778,
+      "maximumForceBalanceResidual_N": 2.842170943040401e-14,
+      "matchesCompleteReceipt": true
+    },
+    {
+      "file": "acf_simulink/validation/budget_sensor_stress_20261002_ADXL354C_1900_L50_current50_36V/worst_native.mat",
+      "samples": 9000001.0,
+      "peakError_N": 0.5309652789559607,
+      "peakCurrent_A": 3.0192723007013784,
+      "peakVoltage_V": 29.60473407675968,
+      "maximumForceBalanceResidual_N": 2.842170943040401e-14,
+      "matchesCompleteReceipt": true
+    }
+  ],
+  "caveat": "Checks verify retained software/artifact evidence, not physical prototype or manufacturer response."
+}

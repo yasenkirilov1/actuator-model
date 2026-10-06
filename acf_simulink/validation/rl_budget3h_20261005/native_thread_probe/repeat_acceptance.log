@@ -1,0 +1,53 @@
+{"threads": 1, "contexts": 16, "actor_decisions": 16000, "native100us_steps": 160000, "elapsed_s": 5.740495464007836, "native_steps_s": 27872.158597316087, "actor_decisions_s": 2787.215859731609}
+{"threads": 2, "contexts": 16, "actor_decisions": 16000, "native100us_steps": 160000, "elapsed_s": 4.748967261984944, "native_steps_s": 33691.535690461715, "actor_decisions_s": 3369.1535690461715}
+{"threads": 4, "contexts": 16, "actor_decisions": 16000, "native100us_steps": 160000, "elapsed_s": 2.484016354952473, "native_steps_s": 64411.81423020916, "actor_decisions_s": 6441.181423020916}
+{"threads": 8, "contexts": 16, "actor_decisions": 16000, "native100us_steps": 160000, "elapsed_s": 1.3071951669990085, "native_steps_s": 122399.47334514691, "actor_decisions_s": 12239.94733451469}
+{
+  "repeat10_vs_10individual_bit_identical_native_histories": true,
+  "contexts": 8,
+  "repeat_groups": 600,
+  "paired_physical_samples": 1440008,
+  "all_endpoint_obs_truth_comparator_exact": true,
+  "largest_mse_aggregation_roundoff": 2.220446049250313e-15,
+  "failure_stops_inside_repeat": true,
+  "contact_failure_time_s": 0.00095,
+  "contact_failure_samples": 285,
+  "trials": [
+    {
+      "threads": 1,
+      "contexts": 16,
+      "actor_decisions": 16000,
+      "native100us_steps": 160000,
+      "elapsed_s": 5.740495464007836,
+      "native_steps_s": 27872.158597316087,
+      "actor_decisions_s": 2787.215859731609
+    },
+    {
+      "threads": 2,
+      "contexts": 16,
+      "actor_decisions": 16000,
+      "native100us_steps": 160000,
+      "elapsed_s": 4.748967261984944,
+      "native_steps_s": 33691.535690461715,
+      "actor_decisions_s": 3369.1535690461715
+    },
+    {
+      "threads": 4,
+      "contexts": 16,
+      "actor_decisions": 16000,
+      "native100us_steps": 160000,
+      "elapsed_s": 2.484016354952473,
+      "native_steps_s": 64411.81423020916,
+      "actor_decisions_s": 6441.181423020916
+    },
+    {
+      "threads": 8,
+      "contexts": 16,
+      "actor_decisions": 16000,
+      "native100us_steps": 160000,
+      "elapsed_s": 1.3071951669990085,
+      "native_steps_s": 122399.47334514691,
+      "actor_decisions_s": 12239.94733451469
+    }
+  ]
+}

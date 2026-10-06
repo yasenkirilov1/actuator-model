@@ -1,0 +1,66 @@
+{
+  "sourceJSON": [
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_current_uncertainty_current_model_noise.json",
+      "sha256": "3d0c75f618f8819fca2829739958f7ffe110c822fe7b10a36ded97a6b54bd988"
+    },
+    {
+      "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/controller_current_uncertainty_force_bias_state.json",
+      "sha256": "73d18bdc5f2d78e49a7552035c14ad944aad3c665e7d9fadf5e87a02a1d84a78"
+    }
+  ],
+  "summary": "controller_current_uncertainty_summary.json",
+  "scope": "50 N / 90 degrees; each cohort is nominal Kf = 20 and actual Kf = 19.98 / 20.02 N/A, noise seeds 7 / 1729. Upstream B/S load cell + S-A position; fixed costs.",
+  "targetMaxPeakError_N": 0.5,
+  "series": [
+    {
+      "kind": "current_model_noise",
+      "powers": [
+        1e-05,
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1
+      ],
+      "units": "A^2/s",
+      "worstPeakError_N": [
+        0.8833969611963326,
+        0.8834610919702683,
+        0.8840060212422003,
+        0.8827329217066904,
+        0.8640929333943248,
+        0.5934305857158151
+      ],
+      "casesPerCohort": 6,
+      "cohortPassed": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "kind": "force_bias_state",
+      "powers": [
+        0.01,
+        0.1,
+        1
+      ],
+      "units": "N^2/s",
+      "worstPeakError_N": [
+        0.5165667408848478,
+        0.5976858074910609,
+        0.613890401467259
+      ],
+      "casesPerCohort": 6,
+      "cohortPassed": [
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "best tested worst-of-clean/noisy difficult corner; not full force qualification",
+  "screw": {
+    "lead": 0.01,
+    "rotorInertia": 1.5800000000000001e-06,
+    "torqueConstant": 0.0234,
+    "backEmfConstant": 0.0234,
+    "resistance": 2.32,
+    "inductance": 0.000238,
+    "peakCurrent": 5,
+    "voltage": 24,
+    "currentResponse": 0.0001,
+    "coulombTorque": 0.001,
+    "viscousTorque": 1e-06,
+    "frictionSpeed": 1,
+    "speedBandwidth": 1000,
+    "speedDamping": 0.9,
+    "speedAntiWindup": 1000,
+    "maxLinearSpeedRequest": 0.1,
+    "forceKp": 0.0005,
+    "forceKi": 0.005,
+    "forceKd": 0,
+    "motorReference": "maxon RE25 302005 (NRND): winding reference only",
+    "motorRotorInertia_kg_m2": 1.08e-06,
+    "screwCouplerInertia_kg_m2": 5e-07,
+    "motorMass_kg": 0.13,
+    "continuousCurrent_A": 1.16,
+    "continuousTorque_Nm": 0.0263,
+    "sizingEfficiency": 0.9,
+    "currentDerivativeFilter": 0.0003,
+    "currentNotch": {
+      "enabled": false,
+      "frequency_Hz": 1150.965138634405,
+      "zeroDamping": 0.01,
+      "poleDamping": 0.3
+    },
+    "controlStrategy": "current",
+    "velocityFeedforwardScale": 0,
+    "currentForceKp": 0.04080895976715265,
+    "currentForceKi": 27.20597317810177,
+    "currentForceKd": 0,
+    "accelerationPrediction_s": 0.0002,
+    "accelerationDerivativeFilter_s": 0.0003,
+    "feedbackFilter": {
+      "kind": "lowpass",
+      "cutoff_Hz": 800,
+      "damping": 0.7071067811865476,
+      "zeroDamping": 0.01,
+      "poleDamping": 0.3
+    },
+    "accelerationFeedforwardFilter_s": 0
+  },
+  "selectedActualCaseIndices": [
+    5,
+    6
+  ],
+  "selectionReport": "inertial_actuators_corrected_selected_v6_20260930.json",
+  "fullRunCleanPeakError_N": 0.5149602254981858,
+  "fullRunSeed1729PeakError_N": 0.5436114496353355,
+  "thermal": "RE25 continuous force fails 50N at10mm pitch; 5A peak drive provision is an unqualified-duration engineering assumption."
+}

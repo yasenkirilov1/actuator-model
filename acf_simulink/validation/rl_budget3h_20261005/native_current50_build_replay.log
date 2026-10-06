@@ -1,0 +1,16 @@
+WARNING: package sun.security.action not in java.base
+WARNING: package sun.security.action not in java.base
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.mathworks.jmi.Matlab in an unnamed module (file:/home/tommie/.local/opt/MATLAB/R2026b/java/jar/jmi.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+No algebraic loops were found.
+RL_INDEPENDENT_NATIVE_REPLAY {"status":"independent_native_replay_passed","scenario":3,"seed":82002,"modelSha256":"a06148ca789b8d6b43497e766c00b099509f8f7165261690a82f143cbfd6d964","recordingMatSha256":"1128f2455215f9f9046b9d9fdd91ecac6da167acd56e66d237f614e49c154c13","configsSha256":"32ab0ad01b87acae2ef599310ec5b1412a18ecca6cd0af30bf8e8ce477ee179e","nativeWall_s":38.168227,"nativeSamples":600001,"cSamples":600001,"sameSampleCount":true,"nativeFirstTime_s":0,"nativeLastTime_s":2,"nativeNormalPeak_N":0.37349915089378527,"cNormalPeak_N":0.37349915089378527,"nativeContactLost":false,"nativeTravelStop":false,"sourceRecording":"/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_actuator_probe_results/learned/development_V32_current050us_native.npz","sourceRecordingSha256":"a7ca9f3a57ba81f7a934311fd58056eb130a3150e1e4282dea521d76f94d21b6","algebraicLoopCount":0,"maximumTimeDifference_s":0,"truthPerChannelMaximumDifference":[1.4210854715202004E-14,1.4210854715202004E-14,3.4694469519536142E-18,3.4694469519536142E-18,5.9507954119908391E-14,0,1.2705494208814505E-20,0,1.7347234759768071E-18,2.5614276324970042E-18,0,1.7763568394002505E-14,2.3980817331903381E-14,1.4210854715202004E-14,4.4408920985006262E-16,3.1974423109204508E-14,0,4.4408920985006262E-15,0,0,0,0,0,0,1.4210854715202004E-14,1.4210854715202004E-14,0],"allTruthMaximumDifference":5.9507954119908391E-14,"passed":true}
+{Error using assert
+Assertion failed.
+
+Error in prepare_bank_current50 (line 12)
+ p=old.configs(k).p;assert(p.coil.currentResponse==100e-6&&p.coil.voltage==32);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

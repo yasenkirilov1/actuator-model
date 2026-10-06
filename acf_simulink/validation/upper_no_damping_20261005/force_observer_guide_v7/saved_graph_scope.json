@@ -1,0 +1,52 @@
+{
+  "status": "reused_graph_all_native_blocks_and_connections_match_except_two_controller_gain_expressions",
+  "physicalQualificationEpisodes": 0,
+  "nativeSystemsCompared": 48,
+  "allNativeConnectedEdgesEqual": true,
+  "allNativeBlockNamesTypesPortsEqual": true,
+  "allowedChangedBlocks": [
+    {
+      "system": "simulink/systems/system_1324.xml",
+      "block": "Guide Coulomb friction current",
+      "before": {
+        "type": "Gain",
+        "parameters": {
+          "FontSize": "11",
+          "Gain": "p.inertial.guideFrictionFeedforwardScale*p.coil.coulombForce/p.coil.forceConstant"
+        },
+        "ports": {}
+      },
+      "after": {
+        "type": "Gain",
+        "parameters": {
+          "FontSize": "11",
+          "Gain": "p.inertial.guideFrictionFeedforwardScale*p.guideFeedforwardStudy.coulombScale*p.coil.coulombForce/p.coil.forceConstant"
+        },
+        "ports": {}
+      }
+    },
+    {
+      "system": "simulink/systems/system_1324.xml",
+      "block": "Guide friction velocity scale",
+      "before": {
+        "type": "Gain",
+        "parameters": {
+          "FontSize": "11",
+          "Gain": "1/p.coil.frictionSpeed"
+        },
+        "ports": {}
+      },
+      "after": {
+        "type": "Gain",
+        "parameters": {
+          "FontSize": "11",
+          "Gain": "1/p.guideFeedforwardStudy.smoothingSpeed_m_s"
+        },
+        "ports": {}
+      }
+    }
+  ],
+  "parentControllerGraphSha256": "2ce5be2a3dedbc7c68201c7b268dcfe8137b731be729ba4e17d4574a06c9a6d6",
+  "candidateControllerGraphSha256": "cd7bc6baedb8f7325ade3f10cf3a9036ec8f4a4310077b2a27fec130b08ca2df",
+  "ignoredOnlyDiagramLayoutAndDocumentIds": true
+}

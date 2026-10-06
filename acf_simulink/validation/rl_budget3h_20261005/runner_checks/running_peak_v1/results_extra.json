@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "scope": "Training-case acceptance only; one CUDA optimizer update, no selection or held-out access.",
+  "physicalFailure": {
+    "steps": 79,
+    "peak_N": 50.0,
+    "nativeSamples": 2350,
+    "sumReward": -12345.679012345678,
+    "telescopingResidual": 1.8189894035458565e-12,
+    "firstTime_s": 0.0,
+    "lastRecordedTime_s": 0.00783
+  },
+  "failureResetClearsNativePeak": true,
+  "cudaIntegration": {
+    "collection": {
+      "collectionElapsed_s": 1.1527840369963087,
+      "transitions": 8192,
+      "totalTransitions": 8192,
+      "episodesCompleted": 0,
+      "episodePasses": 0,
+      "physicalFailures": 0,
+      "meanReward": -0.0007902408833615482,
+      "nativeTicks": 245760,
+      "rolloutPeakNormalForceError_N": 0.1030247410192473,
+      "nonzeroIssuedRobotCorrectionFrames": 3408,
+      "peakIssuedRobotCorrection_m_s": 0.00675797317025821,
+      "heldCorrectionWhileGateClosedFrames": 0,
+      "meanSquaredNormalError_N2": 0.000944668467914017,
+      "peakAbsTravelError_m": 0.009705135216845757,
+      "peakTravelBandExcess_m": 0.002205135216845757,
+      "bootstrapInferenceCalls": 1,
+      "ordinaryNextValuesReused": true,
+      "vectorizedNativeScoring": true,
+      "completedRolloutSteps": 2048,
+      "requestedRolloutSteps": 2048,
+      "forceRunningPeakCostSum": 0.18807395028851528,
+      "forceRunningPeakCostNonzeroFrames": 69,
+      "rolloutFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/runner_checks/running_peak_v1/cuda_smoke/rollout_000000.npz",
+      "rolloutSha256": "e44a2793fc78841906fccb63fe509e18b484475bacb13559b86c55a19f00b07e",
+      "behaviorReplayMeanMaxResidual": 8.58306884765625e-06,
+      "behaviorReplayValueMaxResidual": 0.0,
+      "behaviorReplayLogProbMaxResidual": 5.91278076171875e-05
+    },
+    "optimization": {
+      "policy_loss": 0.11141535639762878,
+      "value_loss": 0.2644623927772045,
+      "latent_entropy": -3.1418633460998535,
+      "approx_kl": 0.00047639913682373525,
+      "clip_fraction": 0.00946044921875,
+      "grad_norm": 17.555030584335327,
+      "critic_grad_norm": 0.12632061261683702,
+      "current_policy_loss": 6.769225001335144e-05,
+      "robot_policy_loss": 0.11134766042232513,
+      "optimizer_steps": 4,
+      "early_stop": false,
+      "update_count": 1,
+      "gamma": 0.9999000049998333,
+      "gae_lambda": 0.9996667222160499,
+      "chunk_length": 512,
+      "burnin_steps": 64,
+      "rollout_transitions": 8192,
+      "eligible_current_actions": 8192,
+      "eligible_robot_actions": 44,
+      "optimizer_learning_rates": [
+        1e-05,
+        0.0003,
+        1e-05
+      ],
+      "critic_detached_shared_trunk": true,
+      "channelwise_policy_loss": true,
+      "multiscale_gae": true,
+      "force_gae_lambda": 0.9801986733067553,
+      "force_lambda_time_s": 0.005,
+      "robot_gae_lambda": 0.9996667222160499,
+      "critic_gae_lambda": 0.9996667222160499,
+      "force_advantage_mean": -0.03526118025183678,
+      "force_advantage_std": 0.04018735513091087,
+      "std": [
+        0.011108731850981712,
+        0.22313202917575836
+      ],
+      "advantage_mean": -0.5110705494880676,
+      "advantage_std": 0.5709935426712036
+    },
+    "maximumParameterChange": 0.0011691392865031958
+  },
+  "sourceHashes": {
+    "train.py": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c",
+    "env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+    "ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940"
+  }
+}

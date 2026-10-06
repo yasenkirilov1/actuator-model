@@ -1,0 +1,83 @@
+{
+  "status": "complete_verified",
+  "created_utc": "2026-09-30T12:27:15.714177+00:00",
+  "partitionIndex": 2,
+  "partitionCount": 4,
+  "uniqueValidatedNativeCases": 875,
+  "predecessorValidatedNativeCases": 263,
+  "newValidatedNativeCases": 612,
+  "forceAndPackingPassed": 875,
+  "preparationRejects": 0,
+  "worstNormalForceError_N": 0.30339640872149687,
+  "worstIdentity": {
+    "id": 871,
+    "massS_kg": 2,
+    "reference_N": 50,
+    "angle_deg": 75.00000000000001,
+    "mu": 0,
+    "seedRequested": 7,
+    "peakNormalForceErrorTime_s": 2.00054
+  },
+  "peakCurrent_A": 2.9456728338897573,
+  "peakVoltage_V": 18.510217139805,
+  "minimumFeasibleCommonPreload_N": 30.368580795008377,
+  "maximumFeasibleCommonPreload_N": 40.64266920499163,
+  "maximumCombinedFreeSpringLength_mm": 40.980000000000004,
+  "maximumCombinedInstalledSpringLength_mm": 34.17355818900031,
+  "newWarmNativeRuntimeMedian_s": 2.028475,
+  "tmpfsCleanupPassed": true,
+  "identityDefinition": "Exact mass/force/angle/mu/seedRequested loop order, part2 global indices2:4:3500. Clean noise request0 preserves the native seed field29 but disables all four noise targets.",
+  "predecessorFilesUntouched": true,
+  "resultFile": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+  "resultSHA256": "cfd4a280412e3c586c4201838975986a51e2ec9725ae7c97fd4ebdd54c0dff25",
+  "artifacts": [
+    {
+      "file": "/home/tommie/.local/state/actuator-model/tpd3cd9587_2134_4a8c_9812_95a416137986/acf_force_control_normal_trial.slx",
+      "sha256": "73bbc46529f3c28d51d17766c4b0042d278446d29b5fdb21910f93c310937643"
+    },
+    {
+      "file": "/home/tommie/.local/state/actuator-model/tpd3cd9587_2134_4a8c_9812_95a416137986/qualify_inertial_mass_controller.m",
+      "sha256": "7cef2cdd2d302ccbaaeb877406b067843f64d606f8b8ba78b8cb2d5e1af5516f"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_configuration.mat",
+      "sha256": "6bf4d5ee02fc6b99b2248c816d52665d75dd766e10f7215026c082d2104d7143"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_plot_traces.mat",
+      "sha256": "14a74e56e08d974fc94a6db254a467f56231f897aca747a301b96bcde9904b55"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.json",
+      "sha256": "42c7080ee413e2e6f172910a19445ffab58e3eb2124e9ed091c774f2a9457aa3"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_predecessor_reused_results.mat",
+      "sha256": "31bc9ea137fec12033a5148a41efc3c6ac3063b595ff4ff256ad53ba094e6378"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.json",
+      "sha256": "cfd4a280412e3c586c4201838975986a51e2ec9725ae7c97fd4ebdd54c0dff25"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_results.mat",
+      "sha256": "b593a9b1eb8c6cd8796622da1ae6f27b14dd5dbe117d247e9fcd7fde561228dd"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.csv",
+      "sha256": "49308ffed22eb0434d16d44d6303a02236d781eff04b7562e6164e41c2951d42"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_rows.jsonl",
+      "sha256": "ad142b6bfe908359b0277646b961b64c97f4265daaf39ea8c0b4b878ab8775c9"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/normal_mass_controller_inertial_full_range_mass_20260930_v8_final_part2_r2_worst_native_trace.mat",
+      "sha256": "f91765b139d1af10772c73da642644784a2c099cf7b7b817adba575eddc869e4"
+    },
+    {
+      "file": "/home/tommie/Projects/actuator-model/acf_simulink/validation/final_grid/part2/part2_r2_invocation_manifest.json",
+      "sha256": "3629e4e800e2b73455bebfbf45cb7309b5ad645c82302bf5ec76b3c398813c5e"
+    }
+  ]
+}

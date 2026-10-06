@@ -1,0 +1,1422 @@
+{
+  "date": "2026-09-30",
+  "status": "complete",
+  "recipeVersion": "native_runner_parity_v2",
+  "sourceModel": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/frozen-inertial-v3-helpers1/acf_force_control_normal_trial.slx",
+  "modelSha256": "a16c8a2deaa98efafda008a82017bbc211d21a2022c375608211a6d7bea892ed",
+  "candidateFile": "/home/tommie/.local/state/actuator-model/normal-contact-trial-inertial-v3-20260930/frozen-inertial-v3-helpers1/normal_contact_trial_candidate.mat",
+  "candidateSha256": "6b8838aed5a01e23e9cf6ee5fecabb5db4dbda8e0ed0b0cd9ac1b9007c84843e",
+  "privateModel": "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/acf_force_control_normal_trial.slx",
+  "experimentSnapshot": "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/benchmark_inertial_native_runner.m",
+  "experimentSha256": "0a7a4c0d94dc139bf0c66e191935019216fe267248c03d3d2b428f04efee1806",
+  "helperSources": [
+    {
+      "file": "acf_desktop_available.m",
+      "sha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "acf_experiment.m",
+      "sha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "acf_metrics.m",
+      "sha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "acf_open.m",
+      "sha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "acf_parameters.m",
+      "sha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "acf_plot.m",
+      "sha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "acf_prepare.m",
+      "sha256": "1e8024cc120bb2aeff347651bb99f09cde90d1c8e85d83c15529902e26c246fc"
+    },
+    {
+      "file": "acf_run.m",
+      "sha256": "7e56f1cf321aa2ad47c7870a42897cc192c2a5c76434dd5bdd545ae09a89055e"
+    },
+    {
+      "file": "acf_select_actuator.m",
+      "sha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "acf_select_controller.m",
+      "sha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "acf_signals.m",
+      "sha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "acf_start.m",
+      "sha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "acf_start_visualizer.m",
+      "sha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "acf_sweep.m",
+      "sha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "acf_viewer_selftest.m",
+      "sha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "acf_visualize.m",
+      "sha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "baseParameters": {
+    "actuator": {
+      "kind": "voice_coil"
+    },
+    "sim": {
+      "step": 5E-5,
+      "stopTime": 4,
+      "evaluateFrom": 0
+    },
+    "force": {
+      "reference": 50,
+      "tolerance": 0.5,
+      "sampleTime": 0.0001,
+      "antiWindupRate": 30,
+      "derivativeFilter": 0.001
+    },
+    "mechanics": {
+      "mA": 0.4,
+      "mB": 0.6,
+      "mS": 2,
+      "k1": 0,
+      "k2": 0,
+      "c1": 0,
+      "c2": 0,
+      "gravity": 9.81,
+      "angle": 1.5707963267948966,
+      "travelMin": 0,
+      "travelMax": 0.025,
+      "midTravel": 0.0125,
+      "lowerRigid": true,
+      "upperRigid": true
+    },
+    "robot": {
+      "initialExcessForce": 10,
+      "sampleTime": 0.01,
+      "delay": 0.08,
+      "recenterGain": 0.8,
+      "deadband": 0.0005,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "nominalVelocity": 0.005,
+      "errorRiseTime": 0.2,
+      "errorForce": 20,
+      "forceGate": {
+        "enabled": true,
+        "errorBand_N": 0.2,
+        "maxRate_N_s": 2,
+        "dwellTime": 0.1,
+        "filterTime": 0.1,
+        "maxDelayGainProduct": 0.25
+      },
+      "initialPositionOffset_m": 0
+    },
+    "sensor": {
+      "sampleTime": 0.0001,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "bias": 0,
+      "noiseRms": 0.02,
+      "seed": 29,
+      "strokeNoiseRms": 1E-6,
+      "strokeDelay": 0.0001,
+      "distalMass_kg": 2,
+      "distalMass_model_kg": 2,
+      "strokeBias": 0,
+      "positionTarget": "tool_relative_A",
+      "positionModel": 1
+    },
+    "surface": {
+      "kind": "sharp_bump",
+      "startTime": 2,
+      "height": 0.001,
+      "width": 0.01,
+      "scanSpeed": 0.1,
+      "repeatPeriod": 1.2
+    },
+    "screw": {
+      "lead": 0.005,
+      "rotorInertia": 2E-5,
+      "torqueConstant": 0.05,
+      "backEmfConstant": 0.05,
+      "resistance": 1,
+      "inductance": 0.001,
+      "peakCurrent": 3,
+      "voltage": 24,
+      "currentResponse": 0.001,
+      "coulombTorque": 0.004,
+      "viscousTorque": 2E-5,
+      "frictionSpeed": 0.2,
+      "speedBandwidth": 150,
+      "speedDamping": 1,
+      "speedAntiWindup": 100,
+      "maxLinearSpeedRequest": 0.1,
+      "forceKp": 0.02,
+      "forceKi": 0.008,
+      "forceKd": 0
+    },
+    "coil": {
+      "forceConstant": 20,
+      "resistance": 4,
+      "inductance": 0.003,
+      "peakCurrent": 3.5,
+      "voltage": 24,
+      "currentResponse": 0.0001,
+      "coulombForce": 0.2,
+      "viscousFriction": 2,
+      "frictionSpeed": 0.0002,
+      "control": {
+        "forceScale_N": 0.32,
+        "integralScale_Ns": 0.02,
+        "velocityScale_m_s": 0.1,
+        "currentScale_A": 1,
+        "surfaceJerkPower": 70,
+        "robotJerkPower": 0.2,
+        "forceNoise_N": 0.02,
+        "strokeNoise_m": 1E-6,
+        "frictionPower": 0.0009
+      },
+      "strategy": "pi",
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "directCoulombCorrection": true
+    },
+    "ideal": {
+      "positionGain": 100,
+      "velocityTime": 0.005,
+      "maxSpeed": 0.1,
+      "maxAcceleration": 20,
+      "maxAxialForce": null,
+      "forceKp": 7.4999999999625E-5,
+      "forceKi": 0.01799999999991,
+      "forceKd": 0
+    },
+    "d": {
+      "M": 1,
+      "alpha": 0.4,
+      "beta": 0.6,
+      "mu": 0.24,
+      "g": 6.0068925498177676E-16,
+      "keq": null,
+      "ell": 0.00079577471545947678,
+      "q10": 50,
+      "q20": 50,
+      "holdForce": 50,
+      "r0": 0,
+      "u0": 0,
+      "z0": 0,
+      "forceTicks": 2,
+      "sensorTicks": 2,
+      "robotTicks": 200,
+      "sensorDelaySamples": 1,
+      "robotDelaySamples": 8,
+      "strokeDelaySamples": 1,
+      "duration": 0.099999999999999992,
+      "screwHoldCurrent": 0.79577471545947664,
+      "coilHoldCurrent": 2.5,
+      "speedKp": 0.12091189065278106,
+      "speedKi": 9.06839179895858,
+      "forceKp": 0,
+      "forceKi": 0,
+      "forceFeedforward": 2.5,
+      "commandMax": 3.5,
+      "commandMin": -3.5,
+      "coilControl": {
+        "A": [
+          [
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.1516679275331093E-14,
+            -3.2950987628679425E-9
+          ],
+          [
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.90483741803595952,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.90483741803595963,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.01,
+            0,
+            -5.0000000000000009E-5,
+            4.9972233792439362E-5,
+            0.00010685087054838787,
+            0.030770463482978565
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.01,
+            0.00999167129436793,
+            0.0068795972429090109,
+            0.045376629591045506
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.36787944117144233,
+            0,
+            0,
+            -7.2494913590520927E-13,
+            6.4030000841999364E-14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.22658504839104882,
+            0.0025190762906428335
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.99833472145093871,
+            -4.6970722990518662E-8,
+            0.0077481977442080841
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.078693868057473318,
+            7.8693868057473315,
+            2.3608160417242,
+            0,
+            -0.35734719647214358,
+            -0.0011559650818584928
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -4.9384148143125737E-5,
+            -0.030316962500105533
+          ]
+        ],
+        "B": [
+          [
+            -4.1516679275331093E-14,
+            3.2950987628679423E-6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00010685087054838787,
+            -30.77046348297856,
+            0,
+            0,
+            5E-6
+          ],
+          [
+            -0.0068795972429090109,
+            -45.376629591045514,
+            0,
+            0,
+            0.001
+          ],
+          [
+            7.2494913590520927E-13,
+            -6.4030000841999357E-11,
+            0.63212055882855767,
+            0,
+            0
+          ],
+          [
+            0.22658504839104882,
+            -2.5190762906428334,
+            0,
+            0,
+            0
+          ],
+          [
+            4.6970722990518662E-8,
+            -7.7481977442080847,
+            0,
+            0,
+            0
+          ],
+          [
+            0.963877856184777,
+            1.1559650818584926,
+            0,
+            -0.39346934028736658,
+            0
+          ],
+          [
+            4.9384148143125737E-5,
+            30.316962500105532,
+            0,
+            0,
+            0
+          ]
+        ],
+        "C": [
+          [
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.5883026550169879E-17,
+            -3.6416473249086951E-12
+          ],
+          [
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0.001,
+            0,
+            0,
+            0,
+            0,
+            4.9384148189008766E-8,
+            3.0316958858458208E-5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0.00046137472290973936,
+            0.0045324273772309083
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.9706160626882172E-12,
+            1.7405158776502423E-13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            -2.265850483910488,
+            0.025190762906428334
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            -4.7049072802209403E-7,
+            0.077611221744818937
+          ]
+        ],
+        "D": [
+          [
+            -4.5883026550169879E-17,
+            3.6416473249086951E-9,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -4.9384148189008766E-8,
+            -0.030316958858458209,
+            0,
+            0,
+            0
+          ],
+          [
+            -0.00046137472290973936,
+            -4.5324273772309089,
+            0,
+            0,
+            0
+          ],
+          [
+            1.9706160626882172E-12,
+            -1.7405158776502422E-10,
+            0,
+            0,
+            0
+          ],
+          [
+            2.265850483910488,
+            -25.190762906428333,
+            0,
+            0,
+            0
+          ],
+          [
+            4.7049072802209403E-7,
+            -77.611221744818934,
+            0,
+            0,
+            0
+          ]
+        ],
+        "feedback": [
+          -0,
+          -0,
+          -0,
+          -0,
+          0,
+          0,
+          -0.58413293311658288,
+          -0.20593728130515576,
+          0
+        ],
+        "integralGain": 1.2641098067025676,
+        "force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          20,
+          2.6,
+          0
+        ]
+      },
+      "recenterGain": 0.73529411764705876,
+      "positionMeasurementBias": -0.0125,
+      "positionMeasurementInitial": 0.0125,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "toolMotionObserver": {
+        "A": [
+          [
+            0.950360913568886,
+            0.0001
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "B": [
+          [
+            0.049639086431114081,
+            5E-9,
+            -5E-9
+          ],
+          [
+            6.1600972542890231,
+            0.0001,
+            -0.0001
+          ]
+        ],
+        "C": [
+          [
+            0.95097692329431482,
+            0
+          ],
+          [
+            -6.1600972542890231,
+            1
+          ]
+        ],
+        "D": [
+          [
+            0.049023076705685176,
+            0,
+            0
+          ],
+          [
+            6.1600972542890231,
+            0,
+            0
+          ]
+        ]
+      },
+      "currentNotch": {
+        "numerator": [
+          1,
+          0,
+          0
+        ],
+        "denominator": [
+          1,
+          0,
+          0
+        ],
+        "initialStates": [
+          2.5,
+          2.5
+        ]
+      }
+    },
+    "springs": {
+      "maxCombinedLength_m": 0.1,
+      "commonPreload_N": 32,
+      "workingClearance_m": 0.0005,
+      "unseatingClearance_m": 0.00025,
+      "lower": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      },
+      "upper": {
+        "part": "D-180S",
+        "rate_N_m": 9873,
+        "freeLength_m": 0.0181,
+        "freeLengthTolerance_m": 0.00049,
+        "minWorkingLength_m": 0.01055,
+        "maxCyclicStroke_m": 0.00318,
+        "forceEnvelope_N": 68.543
+      }
+    },
+    "robotPrediction": {
+      "enabled": true,
+      "delay": 0.08,
+      "responseTime": 0.06,
+      "maxSpeed": 0.02,
+      "maxAcceleration": 0.5,
+      "residualTime": 0.06,
+      "residualJerkPower": 0.0002,
+      "boundedNominalPath": true,
+      "delaySamples": 8,
+      "surfaceJerkEnabled": false,
+      "surfaceSnapPower": 1.0E+6,
+      "surfaceJerkDecayTime": null,
+      "surfaceJerkFeedforwardGain": 0
+    },
+    "contact": {
+      "mu": 0,
+      "lateralNoiseRms_N": 0.02,
+      "lateralBias_N": 0,
+      "slopeFilterTime_s": 0,
+      "normalIntegralScale": 1,
+      "geometryFeedforwardScale": 1,
+      "lateralPredictionTime_s": 0,
+      "lateralDerivativeFilterTime_s": 0.0003,
+      "commandedScanSpeed_m_s": 0.1,
+      "lateralDelaySamples": 1
+    },
+    "accel": {
+      "enabled": true,
+      "filterTime": 0.0002,
+      "delay": 0.0001,
+      "noiseRms": 0.012,
+      "bias": 0,
+      "scaleError": 0,
+      "range_g": 8,
+      "quantum": 0.00187038,
+      "delaySamples": 1
+    },
+    "inertial": {
+      "forceKp": 0.03,
+      "forceKi": 20,
+      "forceKd": 0,
+      "derivativeFilter": 0.0003,
+      "positionBandwidth_Hz": 40,
+      "accelerationFeedforwardScale": 1,
+      "guideFrictionFeedforwardScale": 1,
+      "guideVelocityPrediction_s": 0,
+      "currentNotch": {
+        "enabled": false,
+        "frequency_Hz": 1643.7451841639995,
+        "zeroDamping": 0.01,
+        "poleDamping": 0.3
+      }
+    }
+  },
+  "options": {
+    "tag": "_rigid_accelerator",
+    "massS_kg": 2,
+    "simulationStep_s": null,
+    "tryAccelerator": true,
+    "includeSDIOff": false
+  },
+  "conditions": [
+    [
+      50,
+      90,
+      7
+    ],
+    [
+      50,
+      90,
+      29
+    ],
+    [
+      50,
+      90,
+      7
+    ],
+    [
+      5,
+      0,
+      7
+    ],
+    [
+      50,
+      90,
+      1729
+    ]
+  ],
+  "plannedAttempts": 15,
+  "scope": "Fixed-mass/fixed-topology full native histories, force/orientation/seed changes. Sampling and notch remain fixed; no hardware qualification.",
+  "parityChannels": [
+    "time",
+    "original35",
+    "normal8",
+    "accelerometer6",
+    "motion2",
+    "commandPrediction_if_available",
+    "robotGate_if_available"
+  ],
+  "strictGate": "Each faster path must honor requested seeds and preserve every manual full-rate channel. Exact equality is reported separately from small numeric differences.",
+  "rows": [
+    {
+      "mode": "normal_recompile_SDI_on",
+      "modeIndex": 1,
+      "caseIndex": 1,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "off",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 4.52345,
+      "nativeSimulationAndMetrics_s": 4.266931,
+      "validationAndReferenceIO_s": 0.25651900000000083,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {},
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_recompile_SDI_on",
+      "modeIndex": 1,
+      "caseIndex": 2,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 29,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "off",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.721973,
+      "nativeSimulationAndMetrics_s": 2.459632,
+      "validationAndReferenceIO_s": 0.26234100000000016,
+      "peakNormalForceError_N": 0.37387926061279586,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {},
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_recompile_SDI_on",
+      "modeIndex": 1,
+      "caseIndex": 3,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "off",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.666411,
+      "nativeSimulationAndMetrics_s": 2.41049,
+      "validationAndReferenceIO_s": 0.25592100000000029,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {},
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_recompile_SDI_on",
+      "modeIndex": 1,
+      "caseIndex": 4,
+      "force_N": 5,
+      "angle_deg": 0,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "off",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.632484,
+      "nativeSimulationAndMetrics_s": 2.380291,
+      "validationAndReferenceIO_s": 0.25219299999999967,
+      "peakNormalForceError_N": 0.29494075394853336,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {},
+      "SDIBytesAfterRun": 3.8105088E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_recompile_SDI_on",
+      "modeIndex": 1,
+      "caseIndex": 5,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 1729,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "off",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.800272,
+      "nativeSimulationAndMetrics_s": 2.541351,
+      "validationAndReferenceIO_s": 0.25892099999999996,
+      "peakNormalForceError_N": 0.34992276535191991,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {},
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "modeIndex": 2,
+      "caseIndex": 1,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.523155,
+      "nativeSimulationAndMetrics_s": 2.442843,
+      "validationAndReferenceIO_s": 0.080312000000000161,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "modeIndex": 2,
+      "caseIndex": 2,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 29,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.562958,
+      "nativeSimulationAndMetrics_s": 2.484953,
+      "validationAndReferenceIO_s": 0.0780050000000001,
+      "peakNormalForceError_N": 0.37387926061279586,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8096896E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "modeIndex": 2,
+      "caseIndex": 3,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.309185,
+      "nativeSimulationAndMetrics_s": 2.234498,
+      "validationAndReferenceIO_s": 0.074686999999999948,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "modeIndex": 2,
+      "caseIndex": 4,
+      "force_N": 5,
+      "angle_deg": 0,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.282706,
+      "nativeSimulationAndMetrics_s": 2.209724,
+      "validationAndReferenceIO_s": 0.0729820000000001,
+      "peakNormalForceError_N": 0.29494075394853336,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8096896E+7,
+      "reason": ""
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "modeIndex": 2,
+      "caseIndex": 5,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 1729,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "normal",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 2.351068,
+      "nativeSimulationAndMetrics_s": 2.25168,
+      "validationAndReferenceIO_s": 0.099388000000000254,
+      "peakNormalForceError_N": 0.34992276535191991,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8100992E+7,
+      "reason": ""
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "modeIndex": 3,
+      "caseIndex": 1,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "accelerator",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 4.391141,
+      "nativeSimulationAndMetrics_s": 4.30299,
+      "validationAndReferenceIO_s": 0.088150999999999868,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8096896E+7,
+      "reason": ""
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "modeIndex": 3,
+      "caseIndex": 2,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 29,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "accelerator",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 0.61543,
+      "nativeSimulationAndMetrics_s": 0.532638,
+      "validationAndReferenceIO_s": 0.082792000000000088,
+      "peakNormalForceError_N": 0.37387926061279586,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.80928E+7,
+      "reason": ""
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "modeIndex": 3,
+      "caseIndex": 3,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "accelerator",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 0.570881,
+      "nativeSimulationAndMetrics_s": 0.486651,
+      "validationAndReferenceIO_s": 0.084229999999999972,
+      "peakNormalForceError_N": 0.33450702088378392,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8096896E+7,
+      "reason": ""
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "modeIndex": 3,
+      "caseIndex": 4,
+      "force_N": 5,
+      "angle_deg": 0,
+      "seed": 7,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "accelerator",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 0.591268,
+      "nativeSimulationAndMetrics_s": 0.509362,
+      "validationAndReferenceIO_s": 0.081906000000000034,
+      "peakNormalForceError_N": 0.29494075394853336,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.80928E+7,
+      "reason": ""
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "modeIndex": 3,
+      "caseIndex": 5,
+      "force_N": 50,
+      "angle_deg": 90,
+      "seed": 1729,
+      "massS_kg": 2,
+      "simulationStep_s": 5E-5,
+      "recordSDI": true,
+      "simulationMode": "accelerator",
+      "fastRestart": "on",
+      "nativeReturned": true,
+      "completed": true,
+      "duration_s": 4,
+      "samples": 80001,
+      "runtimeIncludingValidation_s": 0.468209,
+      "nativeSimulationAndMetrics_s": 0.396226,
+      "validationAndReferenceIO_s": 0.071982999999999964,
+      "peakNormalForceError_N": 0.34992276535191991,
+      "exactManualHistoryParity": true,
+      "maximumAbsoluteDifference": 0,
+      "channelDifferences": {
+        "time": 0,
+        "data": 0,
+        "normalContact": 0,
+        "accelerometer": 0,
+        "motionObserver": 0,
+        "commandPrediction": 0,
+        "robotGate": 0
+      },
+      "SDIBytesAfterRun": 3.8096896E+7,
+      "reason": ""
+    }
+  ],
+  "attempts": 15,
+  "nativeReturns": 15,
+  "setupFailures": 0,
+  "elapsedSeconds": 35.228265,
+  "referenceRepeatedSeedParity": {
+    "exact": true,
+    "maximumAbsoluteDifference": 0,
+    "channelDifferences": {
+      "time": 0,
+      "data": 0,
+      "normalContact": 0,
+      "accelerometer": 0,
+      "motionObserver": 0,
+      "commandPrediction": 0,
+      "robotGate": 0
+    }
+  },
+  "differentSeedsChangeManualHistories": true,
+  "referenceNativeTraceFiles": [
+    "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/reference/case_01.mat",
+    "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/reference/case_02.mat",
+    "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/reference/case_03.mat",
+    "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/reference/case_04.mat",
+    "/home/tommie/.local/state/actuator-model/tpf5f0840c_8b58_4766_932e_47290c7187af/reference/case_05.mat"
+  ],
+  "referenceSeed7PeakNormal_N": 0.33450702088378392,
+  "referenceSeed29PeakNormal_N": 0.37387926061279586,
+  "modeSummaries": [
+    {
+      "mode": "normal_recompile_SDI_on",
+      "attempts": 5,
+      "nativeReturns": 5,
+      "exactPairedCases": 5,
+      "allExpectedCasesCompleted": true,
+      "allManualHistoriesExact": true,
+      "firstCaseRuntime_s": 4.52345,
+      "medianWarmRuntime_s": 2.694192,
+      "firstCaseNativeSimulationAndMetrics_s": 4.266931,
+      "medianWarmNativeSimulationAndMetrics_s": 2.435061,
+      "nativeWarmSpeedupVersusOrdinaryNative": 1,
+      "warmSpeedupVersusOrdinaryNative": 1,
+      "maximumManualHistoryDifference": 0,
+      "maximumSDIBytesAfterRun": 3.8105088E+7
+    },
+    {
+      "mode": "normal_FastRestart_SDI_on",
+      "attempts": 5,
+      "nativeReturns": 5,
+      "exactPairedCases": 5,
+      "allExpectedCasesCompleted": true,
+      "allManualHistoriesExact": true,
+      "firstCaseRuntime_s": 2.523155,
+      "medianWarmRuntime_s": 2.3301265,
+      "firstCaseNativeSimulationAndMetrics_s": 2.442843,
+      "medianWarmNativeSimulationAndMetrics_s": 2.243089,
+      "nativeWarmSpeedupVersusOrdinaryNative": 1.0855837641752066,
+      "warmSpeedupVersusOrdinaryNative": 1.1562428048434281,
+      "maximumManualHistoryDifference": 0,
+      "maximumSDIBytesAfterRun": 3.8100992E+7
+    },
+    {
+      "mode": "accelerator_FastRestart_SDI_on",
+      "attempts": 5,
+      "nativeReturns": 5,
+      "exactPairedCases": 5,
+      "allExpectedCasesCompleted": true,
+      "allManualHistoriesExact": true,
+      "firstCaseRuntime_s": 4.391141,
+      "medianWarmRuntime_s": 0.58107449999999994,
+      "firstCaseNativeSimulationAndMetrics_s": 4.30299,
+      "medianWarmNativeSimulationAndMetrics_s": 0.4980065,
+      "nativeWarmSpeedupVersusOrdinaryNative": 4.8896169025906291,
+      "warmSpeedupVersusOrdinaryNative": 4.6365689769556235,
+      "maximumManualHistoryDifference": 0,
+      "maximumSDIBytesAfterRun": 3.8096896E+7
+    }
+  ],
+  "sourceModelUnchanged": true,
+  "privateFrozenModelUnchanged": true
+}

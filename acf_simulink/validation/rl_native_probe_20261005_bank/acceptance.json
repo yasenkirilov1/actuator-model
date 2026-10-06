@@ -1,0 +1,258 @@
+{
+  "status": "accepted_native_generated_plant_bridge",
+  "sourceModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateModelSha256": "ba3b5f74dfab892aef6c70a8ab904298924a5fbb29ea58ef878cbbac05f66511",
+  "sharedLibrarySha256": "4c6b005a4056e38b3b446fed2345657cd3210828a52fb2f45bb3244d66172fa4",
+  "parameterBankSha256": "631268da442fef361609068ffd1cdd765cf6ef29219d23a2722a50b0b3206314",
+  "scenarioBankCount": 44,
+  "nativeStep_s": 3.3333333333333333e-06,
+  "actorStep_s": 0.0001,
+  "ticksPerAction": 30,
+  "robotStep_s": 0.01,
+  "nativeParityRecordings": 6,
+  "nativeParitySamples": 540329,
+  "maximumNativeTruthChannelDifference": 3.893774191965349e-12,
+  "sourceOriginalNormalMaximumDifference_N": 5.062616992290714e-14,
+  "noAlgebraicLoops": true,
+  "contactStopNativeParity": true,
+  "travelStopNativeParity": true,
+  "travelStopFixture": "Lower limit deliberately narrowed to initial travel -100nm in an isolated fixture, not a scientific design case. Source bank and shared library remain unchanged.",
+  "contextSameSeedMaxDifference": 0.0,
+  "contextDifferentSeedMaxDifference": 0.8117151255794506,
+  "clockResetPrimedWithoutAdvance": true,
+  "robotClock": [
+    {
+      "decision": 1900,
+      "request": 0.004,
+      "end": 0.1901,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1901,
+      "request": 0.004,
+      "end": 0.1902,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1998,
+      "request": 0.004,
+      "end": 0.1999,
+      "issued_robot": 0.0007355237150401169,
+      "gate": 1.0
+    },
+    {
+      "decision": 1999,
+      "request": 0.004,
+      "end": 0.2,
+      "issued_robot": 0.0007346769608534991,
+      "gate": 1.0
+    },
+    {
+      "decision": 2000,
+      "request": 0,
+      "end": 0.2001,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2001,
+      "request": 0,
+      "end": 0.2002,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2098,
+      "request": 0,
+      "end": 0.2099,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2099,
+      "request": 0,
+      "end": 0.21,
+      "issued_robot": 0.0,
+      "gate": 1.0
+    },
+    {
+      "decision": 2100,
+      "request": 0.004,
+      "end": 0.2101,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2101,
+      "request": 0.004,
+      "end": 0.2102,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2198,
+      "request": 0.004,
+      "end": 0.2199,
+      "issued_robot": 0.0007339784095400191,
+      "gate": 1.0
+    },
+    {
+      "decision": 2199,
+      "request": 0.004,
+      "end": 0.22,
+      "issued_robot": 0.0007329789184053121,
+      "gate": 1.0
+    }
+  ],
+  "physicalOnlyInScoring": "27-valued scoring port plus reward aggregates.18-valued actor observations contain conditioned measurements, causal observers, real issued commands, gate and recenter error. Comparator3 must not enter actor/critic.",
+  "nativePackaging": "GRT emitted globals rebound to independent context pointers; single output/update-boundary hook primes fresh outputs without state/time/PRNG/queue advance. Recovery of generated computation is byte-exact. Native fixed queues converted in privateSLX to reset-fixed variable-length circular Delay blocks; original source parity verified.",
+  "intervalMetricContract": "Interval extrema include every physical grid point and fresh endpoint. Integral mean-square/clip sample counts use the30 advanced physical samples; optional full recording stores all unique grid points from startup to endpoint, N*30+1, replacing endpoint preview when next actual command is issued. Full qualification is computed from that recording.",
+  "helperHashes": [
+    {
+      "file": "helpers/acf_adc_prepare.m",
+      "sourceSha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf",
+      "privateSha256": "d8123e9c4d47250a9295c76e8cad3f7495a016214df90304f6673202eb80bbbf"
+    },
+    {
+      "file": "helpers/acf_desktop_available.m",
+      "sourceSha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+      "privateSha256": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0"
+    },
+    {
+      "file": "helpers/acf_experiment.m",
+      "sourceSha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+      "privateSha256": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb"
+    },
+    {
+      "file": "helpers/acf_metrics.m",
+      "sourceSha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+      "privateSha256": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1"
+    },
+    {
+      "file": "helpers/acf_open.m",
+      "sourceSha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+      "privateSha256": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16"
+    },
+    {
+      "file": "helpers/acf_parameters.m",
+      "sourceSha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa",
+      "privateSha256": "7681e954ebfbde0a1a775c46549a435a5d89530a23e0efb4a5d2036c1ad1b4fa"
+    },
+    {
+      "file": "helpers/acf_plot.m",
+      "sourceSha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+      "privateSha256": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b"
+    },
+    {
+      "file": "helpers/acf_prepare.m",
+      "sourceSha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4",
+      "privateSha256": "5201aede6ff85eac556ca26324d58ea0c873e1d58bda734d97ab8402c9ddb3c4"
+    },
+    {
+      "file": "helpers/acf_prepare_baseline_v8.m",
+      "sourceSha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253",
+      "privateSha256": "94daab9b16aba41b6015b5d555fc8132a4f7a1e8040ab2634743e3e9fb436253"
+    },
+    {
+      "file": "helpers/acf_run.m",
+      "sourceSha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46",
+      "privateSha256": "170f7f5edec6ca50821d1faecc6e789b0dc67d2c2342cc986ad4c1bdccf92a46"
+    },
+    {
+      "file": "helpers/acf_select_actuator.m",
+      "sourceSha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286",
+      "privateSha256": "1013fac2a1cd26e703e6403e546cf954b9c9c507e8ffd1540295b26b1acaf286"
+    },
+    {
+      "file": "helpers/acf_select_controller.m",
+      "sourceSha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a",
+      "privateSha256": "e8315d666882671889d4c54922c1c8cefb3c72e16d761cd1b8ac508372c49a0a"
+    },
+    {
+      "file": "helpers/acf_signals.m",
+      "sourceSha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+      "privateSha256": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0"
+    },
+    {
+      "file": "helpers/acf_start.m",
+      "sourceSha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+      "privateSha256": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746"
+    },
+    {
+      "file": "helpers/acf_start_visualizer.m",
+      "sourceSha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+      "privateSha256": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519"
+    },
+    {
+      "file": "helpers/acf_sweep.m",
+      "sourceSha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+      "privateSha256": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73"
+    },
+    {
+      "file": "helpers/acf_viewer_selftest.m",
+      "sourceSha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+      "privateSha256": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2"
+    },
+    {
+      "file": "helpers/acf_visualize.m",
+      "sourceSha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d",
+      "privateSha256": "f594c15fcf2a561be6fea5d0793d6295679436e2517c306011716cb556e7dd8d"
+    }
+  ],
+  "installation": "Simulink_Coder plus required MATLAB_Coder installed into existing MATLAB R2026bU0 with official MPM; before/after MATLAB VersionInfo identical. Log and product lists retained separately.",
+  "hostBenchmark": {
+    "steps": 4000,
+    "elapsed_wall_s": 0.21757787402020767,
+    "actions_per_s": 18384.222283689094,
+    "physical_samples": 120001,
+    "last": {
+      "elapsed_s": 0.0001000000000000445,
+      "start_s": 0.3999,
+      "end_s": 0.4,
+      "native_samples": 30,
+      "min_normal_N": 4.991983641790726,
+      "max_normal_N": 4.992399269874614,
+      "peak_normal_error_N": 0.008016358209274266,
+      "mean_squared_normal_error_N2": 6.111247655083537e-05,
+      "min_travel_m": 0.011121891731549816,
+      "max_travel_m": 0.011121976848878303,
+      "mean_squared_travel_error_m2": 1.899069263310686e-06,
+      "peak_current_A": 0.06606964684384549,
+      "peak_voltage_V": 0.5677970707103851,
+      "mean_squared_current_A2": 0.004364484462363453,
+      "voltage_clip_samples": 0,
+      "current_limit_samples": 0,
+      "force_outside_samples": 0,
+      "contact_loss": false,
+      "travel_stop": false,
+      "nonfinite": false,
+      "terminated": false,
+      "record_samples": 120001,
+      "physical_tick": 120000,
+      "last_normal_N": 4.992399269874614
+    },
+    "peak_error": 0.03504052691711568,
+    "obs_last": [
+      4.970490903542751,
+      4.971262811448585,
+      -1.5056856271100991,
+      0.006608693227907025,
+      -0.012540579403038,
+      0.00012269519326127122,
+      0.0010007299310033284,
+      0.011122609337209247,
+      -0.0005122289918410854,
+      0.0009510963376485137,
+      0.0067682452904292475,
+      0.0009495070318192198,
+      0.007978278410101833,
+      -0.06340689176921743,
+      0.0006451401932284954,
+      0.0006451401932284954,
+      1.0,
+      0.0013773906627907537
+    ]
+  }
+}

@@ -1,0 +1,816 @@
+{
+  "status": "complete",
+  "kind": "software_verification",
+  "rows": [
+    {
+      "file": "acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json",
+      "evidence": {
+        "status": "complete",
+        "sourceRun": "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/ppo_warm_10k_8301",
+        "sources": {
+          "rollout.npz": "21eb4c66492ccf09aed22f1f225d3b810ac102b9f9df5b4371f6a367cc20e948",
+          "initial_policy.pt": "754c7dd928283e0e5a7d4ffd9e993a78e84d2d74e46182437eeb8ff8b0b90f9a",
+          "run_snapshot.json": "7478794b56a9e6a1a30b5420260c0f7931350fcef6aece9e450d1278ac5b73bd"
+        },
+        "scope": "Independent scratch clones only; active experiment policy/optimizer unchanged.",
+        "torchThreads": 2,
+        "device": "NVIDIA GeForce RTX 3090",
+        "repetitions": [
+          {
+            "repetition": 0,
+            "device": "cpu",
+            "transfer_s": 6.716104689985514e-05,
+            "update_s": 0.7819796410039999,
+            "total_s": 0.7820468020508997,
+            "metrics": {
+              "policy_loss": 0.10120845958590508,
+              "value_loss": 0.0003107587775351324,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4090512720593345e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140764574209848,
+              "critic_grad_norm": 0.0034571511793425693,
+              "current_policy_loss": 5.5301934480667114e-06,
+              "robot_policy_loss": 0.10120292178665598,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250085026025772
+            }
+          },
+          {
+            "repetition": 0,
+            "device": "cuda",
+            "transfer_s": 0.028264393971767277,
+            "update_s": 0.8591883989865892,
+            "total_s": 0.8874527929583564,
+            "metrics": {
+              "policy_loss": 0.10120843847592671,
+              "value_loss": 0.0003107587945123669,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4098149652865097e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140771627426147,
+              "critic_grad_norm": 0.003457151285450285,
+              "current_policy_loss": 5.523363749186198e-06,
+              "robot_policy_loss": 0.10120291464651625,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250084839761257
+            }
+          },
+          {
+            "repetition": 1,
+            "device": "cpu",
+            "transfer_s": 4.2230007238686085e-05,
+            "update_s": 0.5613797270343639,
+            "total_s": 0.5614219570416026,
+            "metrics": {
+              "policy_loss": 0.10120845958590508,
+              "value_loss": 0.0003107587775351324,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4090512720593345e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140764574209848,
+              "critic_grad_norm": 0.0034571511793425693,
+              "current_policy_loss": 5.5301934480667114e-06,
+              "robot_policy_loss": 0.10120292178665598,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250085026025772
+            }
+          },
+          {
+            "repetition": 1,
+            "device": "cuda",
+            "transfer_s": 0.012744134990498424,
+            "update_s": 0.1706949159852229,
+            "total_s": 0.18343905097572133,
+            "metrics": {
+              "policy_loss": 0.10120843847592671,
+              "value_loss": 0.0003107587945123669,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4098149652865097e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140771627426147,
+              "critic_grad_norm": 0.003457151285450285,
+              "current_policy_loss": 5.523363749186198e-06,
+              "robot_policy_loss": 0.10120291464651625,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250084839761257
+            }
+          },
+          {
+            "repetition": 2,
+            "device": "cpu",
+            "transfer_s": 3.897998249158263e-05,
+            "update_s": 0.5488955060136504,
+            "total_s": 0.548934485996142,
+            "metrics": {
+              "policy_loss": 0.10120845958590508,
+              "value_loss": 0.0003107587775351324,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4090512720593345e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140764574209848,
+              "critic_grad_norm": 0.0034571511793425693,
+              "current_policy_loss": 5.5301934480667114e-06,
+              "robot_policy_loss": 0.10120292178665598,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250085026025772
+            }
+          },
+          {
+            "repetition": 2,
+            "device": "cuda",
+            "transfer_s": 0.009133971005212516,
+            "update_s": 0.17537081200862303,
+            "total_s": 0.18450478301383555,
+            "metrics": {
+              "policy_loss": 0.10120843847592671,
+              "value_loss": 0.0003107587945123669,
+              "latent_entropy": -3.1621467669804892,
+              "approx_kl": 3.4098149652865097e-05,
+              "clip_fraction": 0.0,
+              "grad_norm": 3.4140771627426147,
+              "critic_grad_norm": 0.003457151285450285,
+              "current_policy_loss": 5.523363749186198e-06,
+              "robot_policy_loss": 0.10120291464651625,
+              "optimizer_steps": 12,
+              "early_stop": false,
+              "update_count": 1,
+              "gamma": 0.9999000049998333,
+              "gae_lambda": 0.9996667222160499,
+              "chunk_length": 2048,
+              "burnin_steps": 256,
+              "rollout_transitions": 98304,
+              "eligible_current_actions": 98304,
+              "eligible_robot_actions": 744,
+              "optimizer_learning_rates": [
+                1e-05,
+                0.0003,
+                1e-05
+              ],
+              "critic_detached_shared_trunk": true,
+              "channelwise_policy_loss": true,
+              "std": [
+                0.01110826525837183,
+                0.22313329577445984
+              ],
+              "advantage_mean": -0.02166038751602173,
+              "advantage_std": 0.02250084839761257
+            }
+          }
+        ],
+        "batchShape": [
+          4096,
+          24,
+          40
+        ],
+        "tensorBytes": 45127680,
+        "parameterMaxResidualCPUvsCUDA": 1.4370016288012266e-09,
+        "summary": {
+          "cpu": {
+            "warmMedianUpdate_s": 0.5551376165240072,
+            "warmMedianIncludingTransfer_s": 0.5551782215188723
+          },
+          "cuda": {
+            "warmMedianUpdate_s": 0.17303286399692297,
+            "warmMedianIncludingTransfer_s": 0.18397191699477844
+          }
+        },
+        "cudaSpeedupIncludingTransfer": 3.0177335247021944,
+        "sameInitialPolicyAndOptimizer": true,
+        "sameMinibatchPermutations": true
+      }
+    },
+    {
+      "file": "acf_simulink/validation/rl_budget3h_20261005/runner_checks/inverse_replay_v1/results.json",
+      "evidence": {
+        "scope": "Read-only diagnostic of a retained software-rejected rollout; no optimizer updates, no native simulation and no held-out outcomes.",
+        "sources": {
+          "ppo_peak_8404/rollouts/initial_policy/policy_checkpoint.pt": "5e47078a7407e434d9378254c25e62ced3d91b59dcbcc7e52ae963b9abe389fd",
+          "ppo_peak_8404/rollouts/rollout_000000.npz": "d7b1718fd24ac681134dd937925efcd83f600f9104861694527119efa3268763",
+          "ppo_peak_8404/results.json": "d130bf1c05863c61466e8d59b133a8a5a57e438774324a721fa5f053c9e79a94",
+          "ppo_peak_8404/frozen_sources/policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1"
+        },
+        "shape": [
+          4096,
+          24,
+          40
+        ],
+        "sequenceReplay": {
+          "cpu": {
+            "latentMean": {
+              "maxByAction": [
+                0.00018037483096122742,
+                2.8848648071289062e-05
+              ],
+              "rmsByAction": [
+                3.822215074071417e-05,
+                7.494982998612347e-06
+              ]
+            },
+            "physicalRequest": {
+              "maxByAction": [
+                0.00036046653985977173,
+                1.8997350537119928e-07
+              ],
+              "rmsByAction": [
+                7.627065480140544e-05,
+                4.515862475416843e-08
+              ]
+            },
+            "logProbabilityMax": 0.039374351501464844,
+            "logProbabilityRMS": 0.0034596938639879227
+          },
+          "cuda": {
+            "latentMean": {
+              "maxByAction": [
+                0.0001605600118637085,
+                2.9087066650390625e-05
+              ],
+              "rmsByAction": [
+                3.615734801682005e-05,
+                7.4906138284799065e-06
+              ]
+            },
+            "physicalRequest": {
+              "maxByAction": [
+                0.00031554698944091797,
+                1.89291313290596e-07
+              ],
+              "rmsByAction": [
+                7.214951393655082e-05,
+                4.5155807350885945e-08
+              ]
+            },
+            "logProbabilityMax": 0.03558015823364258,
+            "logProbabilityRMS": 0.003272599307820201
+          }
+        },
+        "singleStepFromStoredCState": {
+          "cpu": {
+            "latentMean": {
+              "maxByAction": [
+                0.00013267435133457184,
+                9.5367431640625e-07
+              ],
+              "rmsByAction": [
+                2.709833608589335e-05,
+                1.0764227011306378e-07
+              ]
+            },
+            "internalStateMax": 1.1920928955078125e-07,
+            "internalStateRMS": 9.615834350995556e-09
+          },
+          "cuda": {
+            "latentMean": {
+              "maxByAction": [
+                0.00010685622692108154,
+                7.152557373046875e-07
+              ],
+              "rmsByAction": [
+                2.5555246742063625e-05,
+                8.832636247570617e-08
+              ]
+            },
+            "internalStateMax": 1.1920928955078125e-07,
+            "internalStateRMS": 9.744264950484194e-09
+          }
+        },
+        "arithmeticSplit": {
+          "cpuSequenceMinusCpuSerial": {
+            "maxByAction": [
+              0.0001678466796875,
+              2.8848648071289062e-05
+            ],
+            "rmsByAction": [
+              3.232294315513483e-05,
+              7.486227472660194e-06
+            ]
+          },
+          "cpuSerialMinusC": {
+            "maxByAction": [
+              0.00015512481331825256,
+              1.430511474609375e-06
+            ],
+            "rmsByAction": [
+              2.910139214228559e-05,
+              1.297249862851782e-07
+            ]
+          },
+          "CstatesTorchHighwayFloat32HeadsMinusC": {
+            "maxByAction": [
+              7.724389433860779e-05,
+              9.5367431640625e-07
+            ],
+            "rmsByAction": [
+              1.8964070819147703e-05,
+              1.0655974195798366e-07
+            ]
+          },
+          "CstatesTorchHighwayFloat64HeadsMinusC": {
+            "maxByAction": [
+              6.510048253657863e-05,
+              7.304291815835029e-07
+            ],
+            "rmsByAction": [
+              1.634971835598769e-05,
+              7.057705312326435e-08
+            ]
+          },
+          "float32VersusFloat64HeadsAtSameHidden": {
+            "maxByAction": [
+              8.426381949848925e-05,
+              9.92283407885708e-07
+            ],
+            "rmsByAction": [
+              2.0826079311410622e-05,
+              1.0648544357888302e-07
+            ]
+          }
+        },
+        "maximumAbsoluteWeights": {
+          "actor": 662.1097412109375,
+          "actor_skip": 0.5185891389846802,
+          "actor_aux": 86.32493591308594
+        },
+        "interpretation": "Large inverse readouts amplify both recurrent-state rounding and readout cancellation. Existing mean and likelihood guards stay unchanged. Native C evaluation of fixed weights and acceptability of PPO replay are separate evidence gates.",
+        "runDisposition": "Initial 28/28 selection passed; first rollout was retained but no optimizer update executed. Root started a separate bounded peak-objective lane from the earlier accepted checkpoint."
+      }
+    },
+    {
+      "file": "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/acceptance_results.json",
+      "evidence": {
+        "status": "complete",
+        "trainOnly": true,
+        "guards": {
+          "guard_default_holdout": {
+            "rejected": true,
+            "reason": "holdout requires explicit --run-locked-holdout after selection",
+            "noPhysicalEpisode": true
+          },
+          "guard_fixture_holdout": {
+            "rejected": true,
+            "reason": "this mode may execute only train cases",
+            "noPhysicalEpisode": true
+          },
+          "guard_reset_holdout": {
+            "rejected": true,
+            "reason": "ValueError: state-reset ablation is permitted only on TRAIN fixtures",
+            "noPhysicalEpisode": true
+          },
+          "guard_bad_native": {
+            "rejected": true,
+            "reason": "native seal mismatch: libacf_native.so",
+            "noPhysicalEpisode": true
+          },
+          "guard_bad_feature": {
+            "rejected": true,
+            "reason": "checkpoint feature names differ from frozen env",
+            "noPhysicalEpisode": true
+          },
+          "guard_bad_action_scale": {
+            "rejected": true,
+            "reason": "checkpoint and supplied frozen env physical action scales differ",
+            "noPhysicalEpisode": true
+          }
+        },
+        "benchmarks": {
+          "aggregate_serial2s": {
+            "workers": 1,
+            "elapsed_s": 19.668928685016,
+            "uniqueRecordings": 8,
+            "uniqueNativeSamples": 4800008,
+            "replaySamples": 2400004,
+            "summedOrdinaryCaseElapsed_s": 7.466560809931252
+          },
+          "aggregate_workers4_2s": {
+            "workers": 4,
+            "elapsed_s": 17.34539616899565,
+            "uniqueRecordings": 8,
+            "uniqueNativeSamples": 4800008,
+            "replaySamples": 2400004,
+            "summedOrdinaryCaseElapsed_s": 13.348262471030466
+          }
+        },
+        "serialFourWorkerBitExact": true,
+        "driverSha256": "53e4ecbf735aea4f5914f7d1c11a354f2e63753ec4420a7bb2daf803696fbb98",
+        "freshHoldoutEpisodesExecuted": 0,
+        "qualification700EpisodesExecuted": 0
+      }
+    },
+    {
+      "file": "acf_simulink/validation/final_driver_checks/final_budget_selected_acceptance/results.json",
+      "evidence": {
+        "status": "complete",
+        "checkpointSha256": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+        "cohortManifestSha256": "e65c62eb1cd7f6d30aca572ac3e6c2025b34649bb51e5e2fe8ffef912f109cdb",
+        "launcherSha256": "361a30d093ed4bd7881ab2ff674e7406b03cb27400191a8b2ebb2cdbee39015c",
+        "dryRuns": [
+          {
+            "cohort": "holdout32",
+            "accepted": true,
+            "command": [
+              "/home/tommie/Pesten/puffer4-native/.venv/bin/python",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source/final_evaluate.py",
+              "--checkpoint",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/policy_checkpoint.pt",
+              "--policy-source-dir",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source",
+              "--native-build",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_bank_budget50",
+              "--bank",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+              "--selection-review",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_holdout.json",
+              "--output",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reproductions/holdout32_20261005T153403057169Z",
+              "--baseline",
+              "--run-locked-holdout",
+              "--workers",
+              "2"
+            ],
+            "nativeLibrarySha256": "f04eeb7e3d9dcf87269060f9a747db7bd04061f1e2901124258ffeedaeca58af",
+            "bankSha256": "5948a733d60f2a58721bc865abdb0fb31270f981232956ab7099c232b0a3ee9c",
+            "processes": 2,
+            "aggregateOnly": false,
+            "noOutputDirectoryCreated": true
+          },
+          {
+            "cohort": "nominal700",
+            "accepted": true,
+            "command": [
+              "/home/tommie/Pesten/puffer4-native/.venv/bin/python",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source/final_evaluate.py",
+              "--checkpoint",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/policy_checkpoint.pt",
+              "--policy-source-dir",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source",
+              "--native-build",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_qualification_budget700",
+              "--bank",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/qualification_bank_budget700/manifest.json",
+              "--selection-review",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_grid.json",
+              "--output",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reproductions/nominal700_20261005T153403125796Z",
+              "--baseline",
+              "--run-locked-holdout",
+              "--workers",
+              "4",
+              "--evaluation-split",
+              "qualification",
+              "--selection-bank",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+              "--aggregate-only"
+            ],
+            "nativeLibrarySha256": "30e55889886de9fd00cc6eb227a884e0693cd14b2ead7edcd0c449c7370ce1ad",
+            "bankSha256": "173445a54844fb337c57937e08408f458336c4f1fcf0824c761b83a09bb9cc5d",
+            "processes": 4,
+            "aggregateOnly": true,
+            "noOutputDirectoryCreated": true
+          },
+          {
+            "cohort": "long4",
+            "accepted": true,
+            "command": [
+              "/home/tommie/Pesten/puffer4-native/.venv/bin/python",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source/final_evaluate.py",
+              "--checkpoint",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/policy_checkpoint.pt",
+              "--policy-source-dir",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/source",
+              "--native-build",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/native_long_qualification_budget",
+              "--bank",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/long_qualification_bank_budget/manifest.json",
+              "--selection-review",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/selected_controller/selection_review_long.json",
+              "--output",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/reproductions/long4_20261005T153403191908Z",
+              "--baseline",
+              "--run-locked-holdout",
+              "--workers",
+              "2",
+              "--evaluation-split",
+              "qualification",
+              "--selection-bank",
+              "/home/tommie/Projects/actuator-model/acf_simulink/validation/rl_budget3h_20261005/scenario_bank_budget50/manifest.json",
+              "--aggregate-only"
+            ],
+            "nativeLibrarySha256": "cf10919870a1e205deef6260437052df91b76bdc14d2a714e21313d449f95d12",
+            "bankSha256": "3f28aa7b0384fb599f06bc190a52dd4950c25233929ab566f9405dff05833041",
+            "processes": 2,
+            "aggregateOnly": true,
+            "noOutputDirectoryCreated": true
+          }
+        ],
+        "architecture": {
+          "obs_dim": 40,
+          "hidden_size": 32,
+          "num_layers": 2,
+          "dt": 0.0001,
+          "min_memory_s": 0.0003,
+          "max_memory_s": 0.3,
+          "physics_init_force_gain": 0.1,
+          "detach_critic_trunk": true,
+          "center_context": true,
+          "paired_filter_init": true,
+          "initial_log_std": [
+            -4.5,
+            -1.5
+          ]
+        },
+        "featureNames": [
+          "estimated_normal_error_over_0p5N",
+          "inertial_axial_error_over_5N",
+          "inertial_lateral_over_50N",
+          "measured_S_acceleration_z_over_10m_s2",
+          "measured_S_acceleration_x_over_10m_s2",
+          "relative_position_over_25mm",
+          "estimated_relative_velocity_over_20mm_s",
+          "estimated_travel_error_over_5mm",
+          "estimated_slope_over_0p2",
+          "issued_robot_prediction_velocity_over_5mm_s",
+          "issued_robot_prediction_acceleration_over_0p2m_s2",
+          "aligned_issued_robot_prediction_velocity_over_5mm_s",
+          "aligned_issued_robot_prediction_acceleration_over_0p2m_s2",
+          "issued_current_error_over_2A",
+          "issued_robot_velocity_request_over_5mm_s",
+          "issued_robot_correction_over_5mm_s",
+          "force_gate_ready",
+          "causal_recenter_error_over_5mm",
+          "force_target_over_50N",
+          "identified_S_mass_over_2kg",
+          "known_B_mass_over_1kg",
+          "known_A_mass_over_2kg",
+          "sin_fixed_orientation",
+          "cos_fixed_orientation",
+          "identified_stiffness_over_20kN_m",
+          "identified_damping_over_60Ns_m",
+          "identified_Kf_over_25N_A",
+          "known_hot_resistance_over_10ohm",
+          "identified_inductance_over_4mH",
+          "usable_voltage_over_32V",
+          "peak_current_limit_over_3p5A",
+          "travel_range_over_25mm",
+          "known_equilibrium_current_over_3p5A",
+          "identified_current_response_over_100us",
+          "identified_robot_delay_over_80ms",
+          "identified_robot_response_over_60ms",
+          "identified_AA_cutoff_over_8kHz",
+          "known_EMA_time_over_50us",
+          "identified_pipeline_over_20us",
+          "robot_decision_clock_phase"
+        ],
+        "externalFeatureCount": 40,
+        "derivedCausalProductCount": 8,
+        "recurrentStateFloats": 64,
+        "flatWeightFloats": 8181,
+        "storedParameters": 8101,
+        "physicalActionScales": {
+          "currentOffset_A": 2.0,
+          "robotRequest_m_s": 0.01
+        },
+        "CExportRegenerationParity": {
+          "policy_inference.c": {
+            "originalSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+            "regeneratedSha256": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+            "matched": true
+          },
+          "policy_inference.h": {
+            "originalSha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+            "regeneratedSha256": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+            "matched": true
+          },
+          "policy_weights.f32": {
+            "originalSha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+            "regeneratedSha256": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+            "matched": true
+          },
+          "policy_weights.json": {
+            "originalSha256": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37",
+            "regeneratedSha256": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37",
+            "matched": true
+          },
+          "policy_weights.npz": {
+            "originalSha256": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82",
+            "regeneratedSha256": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82",
+            "matched": true
+          }
+        },
+        "nativeRuntimeUsesDeterministicC": true,
+        "TorchForwardInvoked": false,
+        "qualifiedPhysicalImplementation": "Regenerated byte-identical C with original float32 accumulation and tanhf; no Torch sequence substitution.",
+        "massAFeatureColumn": 21,
+        "massAWeights": {
+          "encoder": {
+            "nonzero": 0,
+            "maxAbs": 0.0,
+            "l2Norm": 0.0
+          },
+          "directActionSkip": {
+            "nonzero": 0,
+            "maxAbs": 0.0,
+            "l2Norm": 0.0
+          }
+        },
+        "massAAuxiliaryDependency": false,
+        "recurrentReadout": {
+          "current": {
+            "nonzero": 30,
+            "l2Norm": 818.4992065429688,
+            "maxAbs": 552.0850219726562
+          },
+          "robot": {
+            "nonzero": 10,
+            "l2Norm": 5.04777193069458,
+            "maxAbs": 3.4400932788848877
+          }
+        },
+        "sourceManifestFilesVerified": 40,
+        "selectedPackageBytesUnchanged": true,
+        "selectedPackageFiles": {
+          "cohort_manifest.json": "e65c62eb1cd7f6d30aca572ac3e6c2025b34649bb51e5e2fe8ffef912f109cdb",
+          "initialization.json": "fb73de554d7ca97ed83cd20bdd4a7bd8f91842de0192cf3183168de46cd0b5e7",
+          "policy_checkpoint.pt": "ca74a1be34ff2cb801f2a094aeae2e30968f52b3aaec6aacea216ca2b11ddaef",
+          "policy_export_manifest.json": "dd0c221f8a0e4b6f0e8cabad87c3ea2184ce0245ca48e57e129ad8fe2257c296",
+          "policy_inference.c": "4cdc5f95b061f78b507dabfaa9590ed016c4b77fb5a5f3fc1f3c8eeea263e570",
+          "policy_inference.h": "604f20d025444ebca65b79416e258d6fcfcc7430c1d794379c2eb6b54be48f1c",
+          "policy_weights.f32": "6a6ce374ea8b4bb6ba13225dd81e691d42e200b36e88128f168cda4c4135241e",
+          "policy_weights.json": "ba7906b27cbf0212a560426e51871e5b6be073825a34f305bfec95e924c1cd37",
+          "policy_weights.npz": "a5c284d5fe62e1bcc72c99984efc037bac4d67a63f1ce00952d6023c1cd15a82",
+          "selection_evidence/00_rl_budget3h_20261005_selection_contract_band_v2.json": "41107597016cd749304c94e8244071f130b7b61a1764c9e28ef1e8f010b4299d",
+          "selection_evidence/01_rl_budget3h_20261005_study_contract.json": "775bfef98290d159b60d8d131c709cb79658f51e007f23344e48a7393c585934",
+          "selection_evidence/02_rl_budget3h_20261005_reward_search_completed_ledger.json": "b3962faf90f7a269583c67dab1c9ac7e2124b0c1a6ce55eef816a8dca013839f",
+          "selection_evidence/03_rl_budget3h_20261005_reward_search_auxiliary_ledger.json": "2fd95279e9d34d5e2d199816bde586e38eb39cb5d2904d7d352f87d1f583d2f6",
+          "selection_evidence/04_ppo_final_ledger_v1_ledger.json": "1a6e5e49d15c087aaae329036a279bc2dc3f5916e85ea01ee47fc8dacd06b946",
+          "selection_evidence/05_rl_budget3h_20261005_reward_search_budget_candidate_registry.json": "d3e127596af4de6c96b07dbd628fd12ace37d547bd05445c7acb6c4952cfa9af",
+          "selection_evidence/06_reward_search_budget_bootstrap_8210_results.json": "fa69cf722316ed042b0c4d1b02fa46bd91d00b099b20dcebd4b5f00e6bad6e69",
+          "selection_evidence/07_reward_search_budget_8211_selection.json": "146e405fff79afcafe634f1d7ae38e26eb7fec4a17a7ac7dd903e51d22a31f0f",
+          "selection_evidence/08_rl_budget3h_20261005_reward_search_budget_ledger.json": "d5bf46e549bf7f913fa789383859c078a2c2e8fa9414b0c14a3f2302c1bbb2a4",
+          "selection_lock.json": "5126878d5e4c3dcd2284c1e9fa78cdba84de90a7b1d535c223fbe2267c182c77",
+          "selection_review_grid.json": "65a83286aceb703b0f5b1708a74659b60354169a7d52c06bf44c834f7c112312",
+          "selection_review_holdout.json": "875d069a8c1750b396660243570fba9c990a8017f5b39833a74c4f548b9ab93e",
+          "selection_review_long.json": "4123e153f69bceb1d014c4a6e99adc9e44bc73d251feeee4900c45cbfbf26cd3",
+          "source/README.md": "147c3960a50f31a6fc1b9cd9f1441d2dd3bb839593d09dfa1cf410aa7599a4df",
+          "source/build_native.m": "0e153fc03028362dcba4cff204781d08d3b0fdf165881c4f66752598b25ef234",
+          "source/env.py": "68a6c64196497a06fbe6c721bed2d296232359051ecef65acedb0561bd7b53b2",
+          "source/final_evaluate.py": "03bb4501aeadac7849bdf94dc40f680fd09ee58947f384ba3afcdd300158fd81",
+          "source/frozen_source_manifest.json": "0f7df82c5f1adfeeace145d8f067e3bc02adddef210fb9def73fc032787f5221",
+          "source/legacy_pilot.py": "16b42e2e8f52d698969d9885200971b4b21d085cd6d1e469fc3f79a8c4fbaa78",
+          "source/native_api.py": "d671f5f8282e997e390f2a21893959b49b7aff05d726867316012b045d66e488",
+          "source/native_bridge.c": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+          "source/native_repeat.py": "4d16b897425b5ce4fd9d1ef1d33f9c0b174130528706a76c11e4b42ad2d3d536",
+          "source/policy.py": "a2ebf752664ffebb14d2f5883c994dafca7a65c67adaab7f7a23785bd9afc9d1",
+          "source/policy_checks.py": "3ee07c86684a38dc8300c72578b99ca76715e60436bd7f3394a2f49e7bffee23",
+          "source/policy_export.py": "8cc049ab9d3856177aa464858f60a633d7a826180458b1bebe0c3ed384c89735",
+          "source/ppo.py": "19890f3bfa8ad3b9592847cd3b11972f4cb13260639030582ba810d920fa8f17",
+          "source/ppo_multiscale.py": "c36a8247bb9c31bdd639c5b1691f18ea2c85840fb6b83023ed1ac4a8175c1940",
+          "source/prepare_actuator_probe.m": "0718695cbcbdc1c6e59ef5c183e55cd5d8912f398559eec84eff0d2fd0ad53aa",
+          "source/prepare_bank.m": "1638adcb88ab19856c1723cd051e2929fbbb0308991556aa57ce499ef4fb0b11",
+          "source/prepare_bank_band.m": "6ef4c6149919a4df49b75abb0768d32334c10ca86f07e43f2a6df2f218baf38d",
+          "source/prepare_bank_current50.m": "77fa227af04ec8ec7d216a057e0864325deb9dde96a49e49889c4988cf5b4b2b",
+          "source/prepare_bank_sustained.m": "6ea7b3e2f6a060f62f1079f114c0428c13ffcf25e0f97a169c32dad6469f099a",
+          "source/prepare_long_qualification.m": "7c756b0712cdee7be77427362e0525f2bd75131eb1a2a8c0da1aa5b51e1b5c92",
+          "source/prepare_qualification_700.m": "e09c097df3ee04d2af31e169ed04b7f6e3fba0c761bcb5d2bcd5cb812b24677f",
+          "source/qualify.py": "ff023b84e41df7fa4180b59f5eb575fcfd3d86625e8bd20e54608358b6272e5d",
+          "source/replay_native.m": "c4ac204cee0c3cc2b358ee0367b7a4fb71d411799ab6ba0c0f0c916eb7ef44fa",
+          "source/reward_search.py": "bee11ab000b46d917001637dde60acb4dc3b4a7a1bde6bb2131322cc2d2b38b7",
+          "source/reward_search_auxiliary_ledger.py": "f722748a57413ad22d9a2ce08febbbbd827919a7890180890046bee73b925fc0",
+          "source/reward_search_band_spec.json": "2fb8730355378770a77c12eea0af7e74e1979e8cea1d0cffd4cfc7bbb225b3fb",
+          "source/reward_search_budget_screen.py": "e7890194b9c4e595f6cc253bf4b906d24b991e8d7e4331de5aa3f4fb1d489803",
+          "source/reward_search_current_spec.json": "1cd811f286ada4866afd5e7eb129819a5c2e33e203d152b09c383be736606b19",
+          "source/reward_search_direct_spec.json": "5dc7d3c138f287b44ef1df4e909d75dda0e19b4f5e689ea7a3153d0457d14c0c",
+          "source/reward_search_finalize.py": "f7006e52d0dac128690c046b19e8e9cefc1f57ecc31e79f1e66f11bcc0511646",
+          "source/reward_search_gate_plot.py": "c5242cd4f1faf92f84f42707d7ea42545e60f21f45660e90404be5e05f8a357a",
+          "source/reward_search_inverse_followup.py": "5e8d28980b7a7ca059bd1edc91d74f04d11e2a89ff48fdbc7dd686c8fef1ff99",
+          "source/reward_search_inverse_probe.py": "fac30108aea8e525a0ae375ebbf7ab421a55a4e8790249038e41e28eafd3afc0",
+          "source/reward_search_inverse_spec.json": "43e9acb4937e57cc6c2e065ffffcb0f4c245b1eae2ad03a3454ae2d1ea263665",
+          "source/reward_search_ledger.py": "0b07eaf386d548195e16f897653d145182a57692e3bbabde91d8fd557024de47",
+          "source/reward_search_methods.md": "096e1e0f1127b2931b1fce700c88e873201ada5e26952194bdf11a7f1b1bed24",
+          "source/reward_search_native.c": "5c134b5d3340471b9aec87d4425c8b9530ec8894590a20696c20c9c38ebf8185",
+          "source/reward_search_progress_plot.py": "93c310d953c7d8982db2ece316af5bf287035076236dcc4ee13cb16e3ba2d900",
+          "source/reward_search_recurrent_spec.json": "4bb9e08c9675280cf81a86a1ad53d398edc85632626ddeccc79ebe0156dd8d47",
+          "source/reward_search_rolloff_probe.py": "db6371536aacee5b04f266fe88960d4849acefd7bbf09fa850d838fc36f48f15",
+          "source/train.py": "23e95fb238b04cd69142911f949686cd3f2aee228f0ee1f7fd62af567d97ae8c"
+        },
+        "plantContextsCreated": 0,
+        "freshEpisodesExecuted": 0,
+        "qualificationResultsRead": false
+      }
+    }
+  ],
+  "sourceHashes": {
+    "acf_simulink/validation/rl_budget3h_20261005/runner_checks/cpu_cuda_benchmark_v1/results.json": "bd904fed5412d7fc92cb56de316bea0955396190dfe9e841236d499542770cb3",
+    "acf_simulink/validation/rl_budget3h_20261005/runner_checks/inverse_replay_v1/results.json": "d9b66129ddef9cc7351a7fd653be40720c4f571a11cbb3662c8de2305bff89ae",
+    "acf_simulink/validation/rl_puffer_probe_20261005_final_driver_checks/acceptance_v3/run_v2/acceptance_results.json": "35f8e589cba5629a7c4b2d9322734cc58955933ee18bfe09706279235d737be2",
+    "acf_simulink/validation/final_driver_checks/final_budget_selected_acceptance/results.json": "6f835a9242e971706a00d28a1b20cbfc41c4a8ecc79aa386d1a229a0cf9a5ad3"
+  },
+  "caveats": [
+    "Desktop timing is not a microcontroller deadline measurement; high-gain C and PyTorch arithmetic are not interchangeable."
+  ]
+}

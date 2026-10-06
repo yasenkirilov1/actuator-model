@@ -1,0 +1,88 @@
+{
+  "status": "bounded_observer_lead_v5_ready_for_development_endpoint_scoring",
+  "createdQualificationEpisodes": 0,
+  "numericalSourceWiringHarnessCount": 3,
+  "candidatePromoted": false,
+  "frozenNativeDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5",
+  "frozenBankDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_observer_lead_v5",
+  "configsSha256": "488e7f3fcfc07a7724d3701f53e82a5c3bdc26bb9b7ce8ee6193b465c7f1ab6a",
+  "sharedLibrarySha256": "34cdf506574d98a242f8845d070cb270cefcfeb3cb3dfe8f95a08f0cad488877",
+  "privateNativeSlxSha256": "3715825eba76935404d3a6a32bad8c4b16d73580ad5c0fab76a1afdf8fa95b00",
+  "nativeCSha256": "87847f6a060c82f7de887a38709c0c06bd13bead03bb27f6207958017cd455a4",
+  "fileSeal": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/file_hashes.json",
+    "sha256": "b811d9f519265f74f27d6125f63942cb7326c20784648c3433f98624a2b8a7ae"
+  },
+  "savedCopyAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/graph_acceptance_observer_lead_v5/acceptance.json",
+    "sha256": "d686d01de01a90fe4483304268c0ff877a7aabb49da346389e1b042da6b26bcc"
+  },
+  "liveSourceAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_observer_lead_v5/generated_cell_source_audit.json",
+    "sha256": "f79d0dc6065957350a65824f81168ab53cad68cba73ba44ffe8d6bdf60923421"
+  },
+  "scenarioCount": 352,
+  "leadFamilyCount": 16,
+  "selectedParentObserverProfileIDs": [
+    24,
+    33
+  ],
+  "actualSensorNoiseAndTimingUnchanged": true,
+  "piControlBaseGainID": 1,
+  "guideCompensationUnchanged": true,
+  "leadPairsAdvancePole_us": [
+    [
+      150,
+      200
+    ],
+    [
+      150,
+      400
+    ],
+    [
+      250,
+      200
+    ],
+    [
+      250,
+      400
+    ],
+    [
+      350,
+      200
+    ],
+    [
+      350,
+      400
+    ],
+    [
+      350,
+      1000
+    ],
+    [
+      500,
+      1000
+    ]
+  ],
+  "indexContract": "zero-based scenario=176*observerIndex0+22*(leadID1-1)+11*massAIndex0+caseID0; observerIndex0=0\u2192parent24,1\u2192parent33; massAIndex0=0\u2192.4kg,1\u21921.5kg. gainID=leadFamilyID1=8*observerIndex0+leadID1.",
+  "initialHighForceCase7Indices": [
+    7,
+    29,
+    51,
+    73,
+    95,
+    117,
+    139,
+    161,
+    183,
+    205,
+    227,
+    249,
+    271,
+    293,
+    315,
+    337
+  ],
+  "dataContracts": "All existing p sections and existing d coefficients including the full upper observer exactly equal selected v4 parents. Sole new native DiscreteTransferFcn on S-acceleration current FF, bilinear at10kHz, zeroIC, DCgain1. Reconstruction, normal projection and observer measurement frame unchanged.",
+  "scope": "Frozen preparation, live source and saved-copy implementation acceptance; four observer/mass combinations zero loops. No force qualification, no physical/guide/noise changes, no future surface/robot inputs, no training or fresh-test tuning. Root owns full-native histories and scoring."
+}

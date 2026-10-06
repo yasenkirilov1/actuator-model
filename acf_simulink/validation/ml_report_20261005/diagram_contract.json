@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "kind": "explanatory_configuration_not_new_force_qualification",
+  "rows": [
+    {
+      "diagram": "mechanism",
+      "status": "documented configuration",
+      "B_kg": 0.6,
+      "S_min_kg": 0.1,
+      "S_max_kg": 2,
+      "lowerNetStiffness_N_m": 19746,
+      "parallelDamping_N_s_m": 60,
+      "preloadPerSpring_N": 33.6,
+      "nominalFreeLengthPerSpring_mm": 20,
+      "springOnlyPackingLimit_mm": 100,
+      "upperAttachment": "rigid",
+      "forceSensor": "between lower attachment and S",
+      "positionSensor": "S relative to A",
+      "accelerometer": "on S"
+    },
+    {
+      "diagram": "force reconstruction",
+      "status": "documented translational model",
+      "taredReactionEquation": "Rhat = Ltared + mS * aDynamicMeasured",
+      "pressingForceEquation": "Nhat = nhat dot Rhat",
+      "timingContract": "force, acceleration and estimated normal share an effective timestamp and frame",
+      "observerInputs": "measured S-A position, measured S acceleration, already-issued robot commands",
+      "surfaceTruthAtInference": false
+    },
+    {
+      "diagram": "control",
+      "status": "documented selected controller",
+      "forceUpdate_Hz": 10000,
+      "robotUpdate_Hz": 100,
+      "currentResponseTarget_us": 100,
+      "feedbackCutoff_Hz": 1000,
+      "inverseCutoff_Hz": 1500,
+      "stableDwell_ms": 100,
+      "forceVariationThreshold_N_RMS": 0.08,
+      "queueRetainedWhenGateCloses": true
+    },
+    {
+      "diagram": "acquisition",
+      "status": "nominal engineering envelope and delay calculation",
+      "ADC": "ADS131M08",
+      "simultaneousRate_sample_s": 30000,
+      "OSR": 128,
+      "matchedCompleteResponse_Hz": 8000,
+      "EMA_setting_us": 50,
+      "analogDCdelay_us": 28.1,
+      "sincGroupDelay_us": 49.6,
+      "sampledEMA_DCdelay_us": 35.2,
+      "totalReadoutAndMCUpipeline_us": 20,
+      "SPIincludedInPipeline_us": 15.625,
+      "componentDelaySum_us": 132.9,
+      "additionalSampleAgeAndLatchEffects": true,
+      "position": "separate timestamped encoder"
+    }
+  ],
+  "sourceMarkdown": {
+    "file": "acf_simulink/validation/ml_report_20261005/report_before_restructure.md",
+    "sha256": "2d335307b9ebc5feb05f9c01252548b3a2b090cac5e8eb69abc5523183d810b1"
+  },
+  "scientificReferences": [
+    "acf_simulink/validation/inertial_final_candidate_20260930.mat",
+    "acf_simulink/validation/budget_sensing_report_inputs_20261002.json",
+    "acf_simulink/validation/adc_acquisition_trial_20261002/helpers/acf_adc_prepare.m"
+  ],
+  "caveats": [
+    "The conceptual layouts are not dimensional drawings or new experiments.",
+    "The acquisition cutoff is a complete-response envelope, not an unqualified sensor specification.",
+    "Delay sums are low-frequency calculations; native filters and clocks retain their full behavior."
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-30",
+  "scope": "Exact lower_series_v1 controller/model and candidate: force/accelerometer signal filters of100 us,100 us measurement transport, and100 us current response. This precedes the later model of the physical acquisition hardware. True normal-force target50 N, full0–4 s, S=2 kg and B=0.6 kg, original1 mm/10 mm/100 mm/s bump. This is a core electrical diagnostic and representative real-motor study; it does not qualify the complete mass/force/orientation range or physical hardware.",
+  "sourceModelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "selectedCandidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+  "durableNativeSimulations": 95,
+  "uniqueConditions": 92,
+  "uniquePasses": 80,
+  "duplicateOrModeParityNativeRuns": 3,
+  "uncheckpointedNativeWorkBeforeSIGTERM": "Unknown count; not credited.",
+  "nativeIntegration_us": 10,
+  "baselineNormalRuntimeTo40Cases_s": 430.977971,
+  "continuation55NativeRuntime_s": 197.633601,
+  "provenanceFiles": [
+    "normal_voltage_20260930_final_confirmation.json",
+    "normal_voltage_20260930_final_confirmation_interruption.json",
+    "normal_voltage_20260930_final_continuation.json",
+    "normal_voltage_20260930_interrupted_source/source_manifest.json",
+    "normal_voltage_20260930_continuation_source/source_manifest.json"
+  ],
+  "groups": [
+    {
+      "family": "nominal_voltage",
+      "uniqueConditions": 24,
+      "passed": 24,
+      "peakNormalError_N": 0.3218362554455325,
+      "peakCurrent_A": 2.96478839601141,
+      "peakRequestedVoltage_V": 17.937776498998282,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "hot_resistance",
+      "uniqueConditions": 8,
+      "passed": 8,
+      "peakNormalError_N": 0.3218362554455325,
+      "peakCurrent_A": 2.9647883960114103,
+      "peakRequestedVoltage_V": 21.880418314075214,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "identified_inductance",
+      "uniqueConditions": 4,
+      "passed": 4,
+      "peakNormalError_N": 0.3083545270240933,
+      "peakCurrent_A": 2.9647883960114108,
+      "peakRequestedVoltage_V": 18.87588626974596,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "Kf_unknown",
+      "uniqueConditions": 24,
+      "passed": 16,
+      "peakNormalError_N": 0.9274853382592951,
+      "peakCurrent_A": 3.2715095877752645,
+      "peakRequestedVoltage_V": 19.048568470688565,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "current_limit",
+      "uniqueConditions": 4,
+      "passed": 4,
+      "peakNormalError_N": 0.3218362554455325,
+      "peakCurrent_A": 2.96478839601141,
+      "peakRequestedVoltage_V": 17.937776498998282,
+      "maximumVoltageSaturationFraction": 0
+    },
+    {
+      "family": "real_coil",
+      "uniqueConditions": 24,
+      "passed": 24,
+      "peakNormalError_N": 0.32808006801663225,
+      "peakCurrent_A": 2.380155798515499,
+      "peakRequestedVoltage_V": 26.985126221403306,
+      "maximumVoltageSaturationFraction": 0.00023249941875145313
+    },
+    {
+      "family": "real_coil_amp_drop",
+      "uniqueConditions": 4,
+      "passed": 0,
+      "peakNormalError_N": 5.714334138962855,
+      "peakCurrent_A": 2.20600866608758,
+      "peakRequestedVoltage_V": 77.8553662838419,
+      "maximumVoltageSaturationFraction": 0.3983690040774898
+    }
+  ],
+  "equalityEvidence": {
+    "nominal36_48_vs24": "All16 full72-channel pairs are bitwise identical in the durable first40-case study.",
+    "hotRNormal_vsAccelerator_vs48V": "Continuation rows1/2/3, hotR=5.56 ohm,S=2 kg,50 N,90 degrees,mu=0.3,seed29, are bitwise identical across72 channels.",
+    "unknownKf5_10percent24_vs48": "All8 new full-history pairs are bitwise identical.",
+    "unknownKf1percent24_vs48": "All4 scalar-statistic pairs are exactly equal. The24 V histories were lost, so full-history equality is not claimed.",
+    "currentLimit3_5vs3.5": "All4 scalar-statistic pairs are exactly equal, with zero effort clipping. The original nominal histories were lost, so full-history equality is not claimed.",
+    "realMotorHigherVoltage": "All12 cases without voltage clipping at36/48 V are bitwise identical to the corresponding same-temperature24 V baseline. Four hot horizontal cases with higher voltage eliminate the rare ideal24 V clipping and have slightly different full histories; all pass."
+  },
+  "conclusions": {
+    "genericCoil": "Higher ideal bus voltage/current adds no response while the drive remains unclipped. Generic24 V peak requested voltage is17.9377765 V; identified hotR=5.56 ohm peak is21.8804183 V.",
+    "realCoil": "Cold24 V and ideal hot24 V cases all pass. Hot horizontal request reaches26.9851262 V; ideal24 V briefly clips but the worst normal-force error is0.3280801 N.",
+    "linearStageHeadroom": "At a physical24 V supply with a hypothetical4/5 V linear-stage loss, effective20/19 V hot cases fail: worst normal-force errors2.8141071/5.7143341 N. This explicit envelope does not claim a TA11524 V output specification. A36 V supply with effective31/32 V has arithmetic headroom over the26.985 V demand.48 V adds driver heat and no unclipped response.",
+    "unknownKf": "Nominal outer calibration and loaded initial conditions remain fixed. UnknownKf errors of+/-1% and+/-5% pass; +/-10% fails loaded startup with worst0.9274853 N, but errors after50 ms stay below0.3483798 N. Higher48 V does not fix this."
+  },
+  "selectedTraceFiles": [
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_001_original_028.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_002_original_028.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_003_original_032.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_011_original_048.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_023_original_060.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_031_original_068.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_035_original_072.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_051_original_088.mat",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_voltage_20260930_final_continuation_individual_traces/case_053_original_090.mat"
+  ],
+  "traceIndex": "normal_voltage_20260930_final_continuation_traces.mat",
+  "realMotorScope": "Known constant24.4 N/A,R=6.4 ohm,L=4 mH,A=1.5 kg,B=0.6 kg,S=2 kg. Identified hot resistance factor1.39 assumes a100 degree C copper-winding temperature rise. Supplier hot-force/safe-temperature conditions and theKf(x) map remain unqualified. Current-unit PI/PID gains scale by20/24.4 and the lower-load inverse uses an explicitly identifiedKf=24.4 N/A."
+}

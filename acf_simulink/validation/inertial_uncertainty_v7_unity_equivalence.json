@@ -1,0 +1,98 @@
+{
+  "scope": "Read-only unity-instrument V7 equivalence benchmark, heavyS2/F50/90/seed1729,10s repeated. Duplicate benchmark coverage, not an additional execution.",
+  "ourTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_v7_matched_acquisition/inertial_uncertainty_matched_acquisition_20260930_native_traces/case_0009.mat",
+  "referenceTrace": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_repeated_bump_confirmation_20260930_v7_common_provisional_worst_native_trace.mat",
+  "ourTraceSha256": "22aafb05689617b083214dce762bbe8a6d81306e5f2793d35c7ac9ee88d84310",
+  "referenceTraceSha256": "1af1800bcc5037ad3fe8a213f68f7f93adaad03fad4ff556b4cc4c875480fa0d",
+  "checks": {
+    "time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "data": {
+      "equal": false,
+      "maxDifference": 2.572755342100663e-10
+    },
+    "normalContact.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "normalContact.data": {
+      "equal": false,
+      "maxDifference": 1.488515977143834e-10
+    },
+    "accelerometer.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "accelerometer.data": {
+      "equal": false,
+      "maxDifference": 9.728751138027292e-11
+    },
+    "motionObserver.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "motionObserver.data": {
+      "equal": false,
+      "maxDifference": 4.961309141293668e-16
+    },
+    "commandPrediction.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "commandPrediction.data": {
+      "equal": false,
+      "maxDifference": 1.0636023312082798e-16
+    },
+    "forceVariation.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "forceVariation.data": {
+      "equal": false,
+      "maxDifference": 3.574099349812343e-12
+    },
+    "accelerationFeedforward.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "accelerationFeedforward.data": {
+      "equal": false,
+      "maxDifference": 8.881784197001252e-16
+    },
+    "measuredDrag.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "measuredDrag.data": {
+      "equal": false,
+      "maxDifference": 6.106226635438361e-15
+    },
+    "robotGate.time": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "robotGate.ready": {
+      "equal": true,
+      "maxDifference": 0.0
+    },
+    "robotGate.filteredError_N": {
+      "equal": false,
+      "maxDifference": 1.0548457940462441e-11
+    },
+    "robotGate.forceRate_N_s": {
+      "equal": false,
+      "maxDifference": 4.5953152394417884e-10
+    },
+    "robotGate.stableNow": {
+      "equal": true,
+      "maxDifference": 0.0
+    }
+  },
+  "allBitwiseEqual": false,
+  "numericTolerance": 1e-08,
+  "allNumericallyEquivalent": true,
+  "maximumTrueNormalForceDifference_N": 1.488515977143834e-10,
+  "note": "Zero-instrument private Gain/Sum instrumentation and fixed identified recenter gain change evaluation rounding at subnanonewton scale; sample grids and gate decisions are bitwise equal. This is numerical equivalence, not bitwise equality."
+}

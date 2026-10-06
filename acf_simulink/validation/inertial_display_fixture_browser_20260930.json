@@ -1,0 +1,22 @@
+{
+  "status": "complete_browser_display_fixture_check",
+  "scope": "Software display regression; single synthetic contact-loss and stop events inserted in a retained V7 record. This is not another force qualification recording.",
+  "fixtureFile": "/home/tommie/.local/state/actuator-model/tpd66c0dbc_1b74_490a_b017_84ff15f1dadd/reduced_display_fixture.html",
+  "fixtureSha256": "c3eb200b7bd63a95fb5f9faff528491db0db776af4ad79fb1b23c865f54507f2",
+  "browser": "isolated Chromium through Playwright CLI",
+  "url": "http://127.0.0.1:8875/reduced_display_fixture.html",
+  "originalSamples": 400001,
+  "exportedSamples": 10416,
+  "nativePeakError_N": 0.49160601260081904,
+  "nativeWorstTime_s": 2.00044,
+  "checks": {
+    "fullNativeMetricPreserved": true,
+    "singleContactAndStopEventsPreserved": true,
+    "globalRunFailsVisible": true,
+    "worstErrorButtonReachesNativePeak": true,
+    "nextEventReachesSingleEvent": true,
+    "horizontalOverflow": false
+  },
+  "screenshot": "acf_simulink/validation/inertial_display_fixture_browser_20260930.png",
+  "matlabDisplayCheck": "acf_simulink/validation/public_force_helper_checks_20260930_v8_display.json"
+}

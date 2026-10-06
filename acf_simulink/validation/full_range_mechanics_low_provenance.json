@@ -1,0 +1,54 @@
+{
+  "createdUtc": "2026-09-29T22:22:28.130194+00:00",
+  "sha256": {
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/acf_force_control_simple.slx": "d9dd1c45eaae940ea12bebcd8b60ad5f805a85874adc4bb8edbc52c52b7cd3f8",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/base_parameters.mat": "b7b7ae8cd4def072d8de0864c8f0e6424dfce102f5ce4e64208d9061e02a93ad",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/base_parameters.json": "99df9f69831026a97f19beef349772926fd7f27be8fccb894a8b1d0567193c9a",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/spring_catalog.json": "cd027b5dd04d283f8734f946e34007111cfb10625a8b517f9ed6072d7328083c",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_desktop_available.m": "331268832a6baa1d8e5d108bc0a4ff6b1168d8556196e2c054666b4cae2488a0",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_experiment.m": "d124216b14a29c27ef2674dc8db6e661f5b5cea3175b2ee99860e930a036bfdb",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_metrics.m": "0412ea85d3a4f52c6458710de0cbba66248e5fdaba726d1ec58f443339ce91b1",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_open.m": "28dc39512901a0cefaa6223a8e4ba56ea7ce59aa4c43bb0a63fcfc2e80888e16",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_parameters.m": "8915c349b2f39f091a2a32c87f99364a205dc23a6921092e0415bf1bd96bec0c",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_plot.m": "d4b9d54aca226cc8985b811cac4b4bc5010788caa511a6803b6164555912a32b",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_prepare.m": "9defc4686576538b4d3a251e063036482a1efa57c26831d9e5e73ae5b7fcaf56",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_run.m": "d608422a71bcd64138a544f8669e1e7c03bd19230e3f8061dba25ee5ccec45d6",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_select_actuator.m": "9121eee4c6e87c32fcd93f7ba80c539c79c9e9c86192fd052597cf6b769dc9a2",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_signals.m": "bd8f744645e283affab9483cf297a177fd57d958d4e174951b4a86865472b3c0",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_start.m": "766970ca73eb63159477f2f9f8098723ecbcee519f45e8471ffb568ef4556746",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_start_visualizer.m": "f93d836292149b4fe805175d3dfe20f08f2b2a42677dce1747bd5a2826a11519",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_sweep.m": "3b11a217624de1d29adca0ebe94b00a44b6c0443b3d62ca381b4344ed80ddf73",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_viewer_selftest.m": "6ce78f978c3c979d7afb6427731a78fbd6cb64554c356af73cff69e5b84ff6b2",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers/acf_visualize.m": "d5a35b070c05072b9c0e6b0cac961a6ef1908e676c8c13203298665590df48f9",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/qualify_mechanics_low.m": "7c2fca687d35c9d1e50f410f2f68555c0f2d3fd71565c6548263b55998741a6b",
+    "/home/tommie/.local/state/actuator-model/qualification-20260930/helpers-v2/acf_prepare.m": "5b7e58b7488f371dbe274a572894fd4d5e8b9f00c09cfcae205e9c368b159889"
+  },
+  "migratedExperimentSha256": "acd407c682d38c35ecaf0456debe8edaa9074e62a158f9f01893e95a98b17fee",
+  "migration": {
+    "completedSimulationsAtCheckpoint": 400,
+    "previousCovarianceFailuresReexecuted": 6,
+    "equationEquivalentSolverRegression": "acf_simulink/validation/riccati_solver_regression_results.json"
+  },
+  "finalExperimentSha256": "7fca4aafbbb5cccd0c84162861a9a7026412f7d3e0a59a788d0d19d7024d5bbd",
+  "executionRecovery": {
+    "exitStatus": 143,
+    "actualRowsRecovered": 625,
+    "sourceRowDecisionsPreserved": true,
+    "recoveredGeometrySizingDetailUnavailable": true,
+    "remainingNativeRows": 175,
+    "unobservedCause": "external SIGTERM",
+    "atomicCheckpointReplacementAfterRecovery": true
+  },
+  "resultSha256": "978cb184faa8726a16911a8fb2b170d8aebfc7cfd2e27ca6406c1de9a7fedbfc",
+  "selectedHistoriesSha256": "23ece91beb40d944d4df4d0e0bd7296a5ad08cee533612028d5ad43dc62097f3",
+  "finalExportValidation": {
+    "matFormat": "MATLABv7",
+    "ordinaryHistories": 4,
+    "samplesPerHistory": 40001,
+    "channelsPerSample": 35,
+    "historyNumericalEqualityAfterMetadataCorrection": true,
+    "csvRows": 800,
+    "nativeCaseUniquenessVerified": true,
+    "noStressPerformed": true
+  }
+}

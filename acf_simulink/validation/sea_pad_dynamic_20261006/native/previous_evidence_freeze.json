@@ -1,0 +1,29 @@
+{
+  "status": "prior_native_scientific_results_unchanged_before_5mm_append",
+  "files": {
+    "preparation.json": {
+      "sha256": "8635b25b6bfc5cb0f7216c134d62a63363741e42397498ae4f6090c0814b9ec7",
+      "bytes": 1822
+    },
+    "pilot_replay_results.json": {
+      "sha256": "4ea40abf4ad5e3048d2a2bee164abbca0dec3c4fcbc965a8f41d162227326ce7",
+      "bytes": 13584
+    },
+    "replay_results.json": {
+      "sha256": "cd136c897ec2c51989336a44ebff467cbfc2d28194a57a9d2d68b5b6d9c22296",
+      "bytes": 19549
+    },
+    "partial_replay_results.json": {
+      "sha256": "7cd18a1c8f9bdae03786a885f071283bd84b58c66499d295d2fa986ec36bc1a4",
+      "bytes": 7898
+    },
+    "failure_checks.json": {
+      "sha256": "b3ed42c2224dbc82e141b3c7b2edb611953e218c6004fddc13a05a7fa8762ecf",
+      "bytes": 2992
+    },
+    "split_event_numerical_assessment.json": {
+      "sha256": "ac66926b876711736a2e33e20af2f106a696216a7cf2110864c06167f66422c6",
+      "bytes": 1428
+    }
+  }
+}

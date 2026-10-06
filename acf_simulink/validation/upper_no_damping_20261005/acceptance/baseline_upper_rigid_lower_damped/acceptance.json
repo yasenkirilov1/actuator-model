@@ -1,0 +1,28 @@
+{
+  "status": "private_graph_acceptance_complete_no_episodes",
+  "createdEpisodes": 0,
+  "sourcePhysicalModelSha256": "b3701daabf1f7a9712511580fe20fde1f10b3d7d83b68b778909d1ff051da1d5",
+  "privateControllerGraphSha256": "31e82543da3a9b9624f3acf92000e0341ac8f6828ac5fc1de623de855b181daa",
+  "configurationsSha256": "c08a5838c6c9546bd36eaf15ad15a0f2a9c8203dda87cc0249bfb9afc07bb3a2",
+  "audits": {
+    "scenario": 0,
+    "massA_kg": 0.4,
+    "algebraicLoopCount": 0,
+    "observerFromTags": [
+      "command_based_robot_acceleration",
+      "command_based_robot_velocity",
+      "measured_S_acceleration_z"
+    ],
+    "nativeSFunctionCount": 0,
+    "physicalEpisodes": 0,
+    "upperObserverEnabled": false,
+    "loadedEquilibriumICIsZero": true,
+    "observerGain": [],
+    "estimatorPoleMagnitude": [],
+    "observerStateNames": [],
+    "observerInputNames": [],
+    "forcePredictionInputTag": "",
+    "measurementFrameFrictionHasNoPredictionLead": true
+  },
+  "scope": "Saved private native diagram compilation, no algebraic loops, authorized causal observer tags, stable observable upper estimator, no dynamic actor/plant MATLAB function. These are preparation checks, not force qualification or prototype measurements."
+}

@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-29",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "comparedSignals": 35,
+  "comparisons": [
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxAll35Difference": 1.1970893026846952E-14,
+      "endTime_s": 6,
+      "passed": true
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "maxAll35Difference": 1.1970893026846952E-14,
+      "endTime_s": 6,
+      "passed": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "bump",
+      "maxAll35Difference": 8.2989171090730451E-15,
+      "endTime_s": 6,
+      "passed": true
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "sharp_bump",
+      "maxAll35Difference": 8.43769498715119E-15,
+      "endTime_s": 6,
+      "passed": false
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "bump",
+      "maxAll35Difference": 8.2919782151691379E-15,
+      "endTime_s": 6,
+      "passed": true
+    },
+    {
+      "actuator": "ideal_position",
+      "scenario": "sharp_bump",
+      "maxAll35Difference": 8.43769498715119E-15,
+      "endTime_s": 6,
+      "passed": false
+    },
+    {
+      "actuator": "voice_coil",
+      "scenario": "flat",
+      "maxAll35Difference": 8.2989171090730451E-15,
+      "endTime_s": 0.4,
+      "passed": true
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "sharp_bump",
+      "maxAll35Difference": 5.9063864910058328E-14,
+      "endTime_s": 2.0602,
+      "passed": false
+    },
+    {
+      "actuator": "leadscrew",
+      "scenario": "bump",
+      "maxAll35Difference": 1.1970893026846952E-14,
+      "endTime_s": 2.2438000000000002,
+      "passed": false
+    }
+  ],
+  "pages": [
+    {
+      "system": "acf_force_control_simple",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Actuator",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Actuator/Ideal position",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Actuator/Leadscrew",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Actuator/Voice coil",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/B to S spring and damper",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Mass A",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Mass B",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/Measurements and safety",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator and RABS mechanics/R to A spring and damper",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Actuator selection",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Force controller",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Force measurement",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Recenter travel",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Robot command delay",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Robot motion",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    },
+    {
+      "system": "acf_force_control_simple/Surface and nominal path",
+      "blockOverlaps": 0,
+      "wireBlockIntersections": 0
+    }
+  ],
+  "allMotorChoicesChecked": true,
+  "customParametersPreserved": true,
+  "savedChoiceRetained": true,
+  "defaultRunUsesDropdown": true,
+  "totalBlockCount": 611,
+  "signalTagBlockCount": 289,
+  "physicalAndInterfaceBlockCount": 322,
+  "baselineTimingSeconds": [
+    0.664921,
+    0.654698,
+    0.644247
+  ],
+  "medianBaselineSeconds": 0.654698,
+  "realDialogCallbackAndSaveChecked": true
+}

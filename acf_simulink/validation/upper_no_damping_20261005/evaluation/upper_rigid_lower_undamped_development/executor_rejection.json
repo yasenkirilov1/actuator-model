@@ -1,0 +1,5 @@
+{
+  "status": "software_rejected_partial_execution",
+  "reason": "Early physical stop left the requested final-half-second window empty; scalar RMS became NaN and strict JSON publication rejected it. All partial native histories and input/executor locks retained. Rerun in a new folder after scoring fix.",
+  "uniqueFinalExperimentCases": 0
+}

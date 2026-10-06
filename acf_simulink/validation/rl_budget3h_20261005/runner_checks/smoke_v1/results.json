@@ -1,0 +1,6 @@
+{
+  "status": "preparation_rejection",
+  "trainedTransitionsThisAttempt": 0,
+  "error": "Native API required acf_set_threads; the older shared library did not export that symbol. The rejection occurred before collecting any rollout.",
+  "observedExitCode": 1
+}

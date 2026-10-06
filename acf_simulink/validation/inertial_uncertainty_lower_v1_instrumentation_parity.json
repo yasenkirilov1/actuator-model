@@ -1,0 +1,445 @@
+{
+  "scope": "Two4s endpoint configurations, eachnativeunmodified Normal/reference,privatezero-residual instruments Normal,and sameinstruments Accelerator. Sixnativeexecutions are pairedsoftwarequalification benchmarks,not sixindependent operating points. All histories score actualnormal force and actualconfigured springpacking.",
+  "sourceModelSha256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "candidateSha256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+  "comparisons": [
+    {
+      "case": 1,
+      "physicalS_kg": 2,
+      "target_N": 50,
+      "angle_rad": 1.5707963267948966,
+      "seed": 1729,
+      "traces": {
+        "reference": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_reference/inertial_uncertainty_proof_reference_20260930_native_traces/case_0001.mat",
+        "normal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_normal/inertial_uncertainty_proof_normal_20260930_native_traces/case_0001.mat",
+        "accelerator": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_accelerator/inertial_uncertainty_proof_accelerator_20260930_native_traces/case_0001.mat"
+      },
+      "traceHashes": {
+        "reference": "7964c752efa3da680796712a298bbe023390969be091a416c9cef65a8a97c1c9",
+        "normal": "0f8e6813b5256d7de6173e8a61aea786fe7f0a300fa0575dcde03a9bc72977c0",
+        "accelerator": "2719b47566c35a0cd0fc3f74bf550bfc9fc33237841577dd604f57385adf82d8"
+      },
+      "comparisons": {
+        "referenceTonormal": {
+          "checks": {
+            "time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.ready": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.filteredError_N": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.forceRate_N_s": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.stableNow": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            }
+          },
+          "allBitwiseEqual": true,
+          "allNumericallyEquivalent": true,
+          "nativeSignalChannelsCompared": 72,
+          "maxTrueNormalDifference_N": 0.0
+        },
+        "normalToaccelerator": {
+          "checks": {
+            "time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.ready": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.filteredError_N": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.forceRate_N_s": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.stableNow": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            }
+          },
+          "allBitwiseEqual": true,
+          "allNumericallyEquivalent": true,
+          "nativeSignalChannelsCompared": 72,
+          "maxTrueNormalDifference_N": 0.0
+        }
+      }
+    },
+    {
+      "case": 2,
+      "physicalS_kg": 0.1,
+      "target_N": 5,
+      "angle_rad": 0,
+      "seed": 29,
+      "traces": {
+        "reference": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_reference/inertial_uncertainty_proof_reference_20260930_native_traces/case_0002.mat",
+        "normal": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_normal/inertial_uncertainty_proof_normal_20260930_native_traces/case_0002.mat",
+        "accelerator": "/home/tommie/Projects/actuator-model/acf_simulink/validation/inertial_uncertainty_lower_v1_proof_accelerator/inertial_uncertainty_proof_accelerator_20260930_native_traces/case_0002.mat"
+      },
+      "traceHashes": {
+        "reference": "567b0131cd227da9c187989b5fbe3a49e316e22b69cee7fd2530adbd6c8e1768",
+        "normal": "4e17b1376c73d1745246c3a6449c533d53a36905e0af163ae7f80356451f3507",
+        "accelerator": "7d96c3e1acd1d382d0d5148327752918d3f55b6cde575572340fca50a7e7c10c"
+      },
+      "comparisons": {
+        "referenceTonormal": {
+          "checks": {
+            "time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.ready": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.filteredError_N": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.forceRate_N_s": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.stableNow": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            }
+          },
+          "allBitwiseEqual": true,
+          "allNumericallyEquivalent": true,
+          "nativeSignalChannelsCompared": 72,
+          "maxTrueNormalDifference_N": 0.0
+        },
+        "normalToaccelerator": {
+          "checks": {
+            "time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "normalContact.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerometer.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "motionObserver.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "commandPrediction.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "forceVariation.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "accelerationFeedforward.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "measuredDrag.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "lowerInverse.data": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.time": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.ready": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.filteredError_N": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.forceRate_N_s": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            },
+            "robotGate.stableNow": {
+              "bitwiseEqual": true,
+              "maxDifference": 0.0
+            }
+          },
+          "allBitwiseEqual": true,
+          "allNumericallyEquivalent": true,
+          "nativeSignalChannelsCompared": 72,
+          "maxTrueNormalDifference_N": 0.0
+        }
+      }
+    }
+  ]
+}

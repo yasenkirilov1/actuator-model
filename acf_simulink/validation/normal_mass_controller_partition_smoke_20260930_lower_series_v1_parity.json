@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "scope": "One already-recorded ordinary native case repeated to verify deterministic full-mesh partition selection, per-case SDI clearing, disk-retained worst history and native metrics. This is not the planned3500-case mesh.",
+  "executedCases": 1,
+  "uniqueNewPhysicalConditions": 0,
+  "reference": "/home/tommie/.local/state/actuator-model/tp3a602b1f_ee05_4f59_b450_fe84d0bad9c6/reference/case_04.mat",
+  "referenceSHA256": "d4cbb11e3e6e753e07b26e28dd5e7a8685d8fd2cd0587de99ecce41bf07eb93f",
+  "partitionTrace": "acf_simulink/validation/normal_mass_controller_inertial_full_range_mass_20260930_lower_series_v1_partition_smoke_worst_native_trace.mat",
+  "partitionTraceSHA256": "b27de84d8d0685f50bd98bae8203af5754060ec3a61ed1f44698fdb1b9ce4569",
+  "partitionStudy": "/home/tommie/Projects/actuator-model/acf_simulink/validation/normal_mass_controller_inertial_full_range_mass_20260930_lower_series_v1_partition_smoke_results.json",
+  "partitionStudySHA256": "78424224f28788fee1b417684bbb165dad212d912be95b5a2eb19e330728502e",
+  "allManualHistoriesBitwiseIdentical": true,
+  "channelMaximumDifferences": {
+    "time": 0.0,
+    "data": 0.0,
+    "normalContact": 0.0,
+    "accelerometer": 0.0,
+    "motionObserver": 0.0,
+    "commandPrediction": 0.0,
+    "robotGate": 0.0,
+    "forceVariation": 0.0,
+    "accelerationFeedforward": 0.0,
+    "measuredDrag": 0.0,
+    "lowerInverse": 0.0
+  },
+  "processResidentMiB": 2941.23828125,
+  "processPeakResidentMiB": 3131.421875,
+  "sourceModelSHA256": "a0c2e358503d51c53c630ca436f20c1a618c5d024f98dd46338ee328f6c94f81",
+  "candidateSHA256": "94fcfa29c708c705c2dccf3db34296568fd90f53f6b3b51cfe929e5a52e53738",
+  "recipeSHA256": "f6e0e01f881552912ff51a73ec617e26d289c0a7d42947d2037e05eb93bdc252"
+}

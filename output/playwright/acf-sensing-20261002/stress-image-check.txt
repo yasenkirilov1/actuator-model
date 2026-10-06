@@ -1,0 +1,9 @@
+### Result
+{
+  "width": 1683,
+  "height": 1134
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {const i=Array.from(document.querySelectorAll("figure img")).find(i=>i.alt==="Cheaper sensing under calibration and drive stress"); i.scrollIntoView({block:"center"}); if(!i.complete||!i.naturalWidth) await new Promise((resolve,reject)=>{i.addEventListener("load",resolve,{once:true});i.addEventListener("error",reject,{once:true});}); await i.decode();i.scrollIntoView({block:"center"});return {width:i.naturalWidth,height:i.naturalHeight};}');
+```

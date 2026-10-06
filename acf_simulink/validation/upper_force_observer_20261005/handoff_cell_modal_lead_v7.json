@@ -1,0 +1,119 @@
+{
+  "status": "bounded_cell_modal_lead_v7_ready_for_development_endpoint_scoring",
+  "createdQualificationEpisodes": 0,
+  "candidatePromoted": false,
+  "frozenNativeDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7",
+  "frozenBankDirectory": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/bank_cell_modal_lead_v7",
+  "configsSha256": "3c634873fff8862a600cdf75dc399384e015a53456dcd7f0b27cf0c240d89927",
+  "sharedLibrarySha256": "4b1345b9d55eea69d4813e8ff6e74bdb1807b3b8178fa4a0e597a244d81808b3",
+  "privateNativeSlxSha256": "6a713e253303fd29e63d784d6390fda46562f597b1a39b8e096b82c7e77f0681",
+  "nativeCSha256": "d0a571056a7e5a838c89d77429a27b85da356bef34456ddfc79c9495464b030c",
+  "fileSeal": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/file_hashes.json",
+    "sha256": "67c0ad08eadddbc2c5e41354b6801c6a2dc4438ef2ad261b3928408915c94535"
+  },
+  "savedCopyAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/graph_acceptance_cell_modal_lead_v7/acceptance.json",
+    "sha256": "0a817a35a733f65f077cf1246c1cff9bf456f145e2e290404cfd77c11b8a7e3c"
+  },
+  "liveSourceAcceptance": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/generated_cell_source_audit.json",
+    "sha256": "6b8d9f704fec5e5b6c0112020600e6f2408df3ce30cd8e7cec562dd38f31347d"
+  },
+  "localSourceSignGuard": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/local_cell_source_guard.json",
+    "sha256": "04d829772954f9607559d71d22e927985c748dc7dd5224ad92a4cffa7c67db82"
+  },
+  "positiveDampingGuard": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cell_modal_lead_v7/modal_positive_damping_guard.json",
+    "sha256": "748e722f66c7d81246e9ef580e19352674c46bf67fa793bca341372e969c5b9e"
+  },
+  "actualCellAcquisitionPhaseHarness": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/cell_modal_phase_v6/acquisition_phase.json",
+    "sha256": "1ac23abfd515cd0a9b43ff9bb85d3be43aa31df2d893b3327fef0c69eb99b6c2"
+  },
+  "recipeExplanation": {
+    "path": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/CELL_MODAL_LEAD_V7.md",
+    "sha256": "0b7895f1ee870acdd0dda9b3477525d0cea534ed27d39acd8fceb96f3c6baf8c"
+  },
+  "scenarioCount": 352,
+  "combinedFamilyCount": 16,
+  "selectedParentCellModalFamilyIDs": [
+    17,
+    18
+  ],
+  "selectedParentObserverProfileIDs": [
+    33
+  ],
+  "actualSensorNoiseAndTimingUnchanged": true,
+  "physicalGuideFrictionAndExternalDampingUnchanged": true,
+  "piControlBaseGainID": 1,
+  "guideCoulombCompensationScale": 1,
+  "guideFeedforwardSmoothingSpeeds_m_s": [
+    0.0002,
+    0.001
+  ],
+  "leadPairsAdvancePole_us": [
+    [
+      150,
+      400
+    ],
+    [
+      250,
+      400
+    ],
+    [
+      350,
+      1000
+    ],
+    [
+      500,
+      1000
+    ]
+  ],
+  "identifiedModalCurrentResponse_s": 5e-05,
+  "identifiedModalCurrentResponseField": "p.cellModal.identifiedCurrentResponse_s",
+  "acquiredComplexTransferFrozen": true,
+  "nominalModalCoefficientsExactlyEqualV6Parents": true,
+  "modalCoefficientsInvariantToActualCurrentResponsePerturbation": true,
+  "auxiliaryCurrentBound_A": 0.05,
+  "indexContract": "zero-based scenario=176*parentIndex0+44*(leadID1-1)+22*guideID0+11*massAIndex0+caseID0; parentIndex0=0/1 selects V6modal17/18; guideID0=0/1 selects FFsmooth0.2/1mm/s; globalfamily=8*parentIndex0+2*(leadID1-1)+guideID0+1.",
+  "initialHeavyAHighForceCase7Indices": [
+    18,
+    40,
+    62,
+    84,
+    106,
+    128,
+    150,
+    172,
+    194,
+    216,
+    238,
+    260,
+    282,
+    304,
+    326,
+    348
+  ],
+  "initialLightALowForceCase5Indices": [
+    5,
+    27,
+    49,
+    71,
+    93,
+    115,
+    137,
+    159,
+    181,
+    203,
+    225,
+    247,
+    269,
+    291,
+    313,
+    335
+  ],
+  "dataContracts": "All original p sections and d coefficients including upper observer and modal controller exactly equal the selected V6 parent. Sole new d section is proper causal Sacceleration lead for currentFF. Controller friction velocity-scale Gain selects .2/1mm/s without changing actual/observer friction. Modal lag design uses explicit identified50\u00b5s, with no retuning from actual current response; acquired complex transfer frozen. Existing force reconstruction/normal estimate/observer frame untouched. Modal branch remains postnotch bounded\u00b1.05A before current limit and total-request antiwindup.",
+  "scope": "Frozen preparation, numerical live-source and carrier-phase guards, independent read-only all352 parity review, and saved-copy compilation of16 modal-parent/mass/guide/lead-extreme combinations with zero loops. No force qualification episodes run by worker, no hardware claim or candidate promotion. Off-carrier negative-damping limitation from V6 remains. Root owns development scoring and must lock candidate before fresh qualification."
+}

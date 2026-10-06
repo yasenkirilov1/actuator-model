@@ -1,0 +1,23 @@
+{
+  "status": "completed_owned_evidence_audit",
+  "time_utc": "2026-10-06T12:20:36.263001+00:00",
+  "source_and_metrics_manifest_hashes_verified": true,
+  "final_summary_sha256": "3959b1b6b4789ff896fe4975cd798466f35b1499740b132365193370d72fc086",
+  "evidence_manifest_sha256": "1cb5b36a3867858a7df5428aca1ea0d2e6aa7663dac28e9c2189d2d7b2b1c2eb",
+  "owned_evidence_bytes_before_this_small_audit": {
+    "engine": 6477676,
+    "development": 2518122,
+    "evaluation": 9359350
+  },
+  "owned_recipe_bytes": 99757,
+  "combined_owned_bytes_before_this_small_audit": 18454905,
+  "engine_allocation_bytes": 18874368,
+  "bulk_array_files_created": 0,
+  "extension_retained_increment_before_this_small_audit": 2099340,
+  "extension_prelaunch_estimate_bytes": 2097152,
+  "extension_prelaunch_estimate_difference_bytes": 2188,
+  "forecast_interpretation": "Small final manifest bookkeeping exceeded the 2MiB increment estimate by roughly2kiB; unchanged18MiB allocation and shared32MiB cap remain satisfied.",
+  "runs_stopped": true,
+  "engine_source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+  "native_evidence": "Independent native worker owns native results and remaining temporary cleanup; source replay parity is separate from controller qualification."
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-30",
+  "status": "complete",
+  "browser": "isolated Chromium through Playwright; no user browser or desktop automation",
+  "report": {
+    "desktopViewport": [
+      1440,
+      1080
+    ],
+    "articleWidth_px": 980,
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileArticleWidth_px": 335,
+    "mobileDocumentWidth_px": 375,
+    "figuresLoaded": 18,
+    "sourceComponents": 34,
+    "tables": 9,
+    "forceFilter": "20 N selected and restored",
+    "geometryFilter": "feasible selected and restored",
+    "sourceInspector": "Overview and full-data preview opened",
+    "fullRangeCopy": {
+      "rows": 350,
+      "headerPlusRows": 351,
+      "characters": 200584
+    },
+    "consoleErrors": 0,
+    "completedProgressCleared": true,
+    "forceFilterReviewedRows": 35,
+    "feasibleGeometryReviewedRows": 25
+  },
+  "replay": {
+    "runs": 2,
+    "nativeSamplesPerRun": 80001,
+    "signalsPerRun": 35,
+    "worstErrorDisplay_N": 0.426,
+    "worstTimeDisplay_s": 2.005,
+    "cellAtWorst_N": 48.4,
+    "estimateAtWorst_N": 50.36,
+    "forcePathsWithBothOverlays": 3,
+    "forcePathsWithEstimateOff": 2,
+    "cleanWorstErrorDisplay_N": 0.275,
+    "timeSeek_s": 1.83,
+    "desktopDocumentWidth_px": 1440,
+    "mobileDocumentWidth_px": 390,
+    "mechanismVisibleBothSizes": true,
+    "consoleErrors": 0
+  },
+  "screenshots": [
+    "final_report_desktop.png",
+    "final_report_mobile.png",
+    "final_report_graph.png",
+    "final_replay_desktop.png",
+    "final_replay_mobile.png",
+    "final_offline_report.png"
+  ],
+  "singleFileExport": {
+    "loadedAs": "one self-contained HTML through loopback HTTP",
+    "networkDisabledAfterLoad": true,
+    "filterControlsWorked": true,
+    "sourceInspectorRetainedRows": 350,
+    "inlineFigureLoaded": true,
+    "consoleErrors": 0,
+    "directFileProtocolTest": "Blocked by the automation browser; not claimed as executed."
+  }
+}

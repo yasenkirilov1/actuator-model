@@ -1,0 +1,37 @@
+INITIAL {"recordings": 84, "passed": 84, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.23282015870410347, "worstNormalForceError_N": 0.40414599758234715, "meanRmsNormalForceError_N": 0.04087316341189521, "nativeSamples": 82800000.0, "controllerDecisions": 2760000.0, "eligibleRobotDecisions": 26219.0, "issuedRobotFrames": 1652409.0, "elapsed_s": 110.25292684498709}
+INITIAL_SELECTION {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.27041437160081966, "worstNormalForceError_N": 0.41872787035814696, "meanRmsNormalForceError_N": 0.04249872295408722, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8754.0, "issuedRobotFrames": 547965.0, "jointScore": 0.9338798572447795, "generation": 0, "proposal": "initial_policy", "rank": [0, -28, 0.9338798572447795, 0.41872787035814696, 0.04249872295408722]}
+GEN 1 best=0.40235652 current=0.40235652 sigma=0.11447 peak=0.272047 failures=0 seconds=213.525
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.2703454508503373, "worstNormalForceError_N": 0.41777138536365044, "meanRmsNormalForceError_N": 0.04371413724006092, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8649.0, "issuedRobotFrames": 542322.0, "jointScore": 0.9307210475037024, "proposal": "generation_best", "generation": 1, "trainingBestGeneration": 1, "rank": [0, -28, 0.9307210475037024, 0.41777138536365044, 0.04371413724006092]}
+GEN 2 best=1.0326468 current=1.0326468 sigma=0.10993 peak=0.402993 failures=0 seconds=354.317
+GEN 3 best=0.54611835 current=0.54611835 sigma=0.10632 peak=0.321114 failures=0 seconds=419.942
+GEN 4 best=0.57411518 current=0.57411518 sigma=0.10347 peak=0.327743 failures=0 seconds=483.797
+GEN 5 best=0.36711095 current=0.36711095 sigma=0.10122 peak=0.252677 failures=0 seconds=550.360
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.2640223603590276, "worstNormalForceError_N": 0.4172893857690525, "meanRmsNormalForceError_N": 0.04380986083292121, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8702.0, "issuedRobotFrames": 586575.0, "jointScore": 0.9287841335594857, "proposal": "generation_best", "generation": 5, "trainingBestGeneration": 5, "rank": [0, -28, 0.9287841335594857, 0.4172893857690525, 0.04380986083292121]}
+GEN 6 best=0.58899183 current=0.58899183 sigma=0.09949 peak=0.316783 failures=0 seconds=689.771
+GEN 7 best=0.52875344 current=0.52875344 sigma=0.097491 peak=0.297569 failures=0 seconds=753.141
+GEN 8 best=0.27096917 current=0.27096917 sigma=0.095311 peak=0.223715 failures=0 seconds=823.547
+GEN 9 best=0.46707742 current=0.46707742 sigma=0.094342 peak=0.245984 failures=0 seconds=893.126
+GEN 10 best=0.5209827 current=0.5209827 sigma=0.093021 peak=0.314419 failures=0 seconds=956.952
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.26876136845811727, "worstNormalForceError_N": 0.41721053948298703, "meanRmsNormalForceError_N": 0.042250300680975364, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8658.0, "issuedRobotFrames": 544698.0, "jointScore": 0.9229765023323748, "proposal": "generation_best", "generation": 10, "trainingBestGeneration": 10, "rank": [0, -28, 0.9229765023323748, 0.41721053948298703, 0.042250300680975364]}
+GEN 11 best=0.54746969 current=0.54746969 sigma=0.091786 peak=0.328412 failures=0 seconds=1100.898
+GEN 12 best=0.47193581 current=0.47193581 sigma=0.089943 peak=0.282597 failures=0 seconds=1159.083
+GEN 13 best=0.34966426 current=0.34966426 sigma=0.088428 peak=0.252395 failures=0 seconds=1228.694
+GEN 14 best=0.90705394 current=0.90705394 sigma=0.087142 peak=0.401295 failures=0 seconds=1293.310
+GEN 15 best=0.50384096 current=0.50384096 sigma=0.085631 peak=0.30532 failures=0 seconds=1359.645
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.26707109762210585, "worstNormalForceError_N": 0.41607414987213076, "meanRmsNormalForceError_N": 0.04285369329602379, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8709.0, "issuedRobotFrames": 560736.0, "jointScore": 0.9232193115802593, "proposal": "generation_best", "generation": 15, "trainingBestGeneration": 15, "rank": [0, -28, 0.9232193115802593, 0.41607414987213076, 0.04285369329602379]}
+GEN 16 best=0.45296402 current=0.45296402 sigma=0.084861 peak=0.239102 failures=0 seconds=1498.362
+GEN 17 best=0.48042642 current=0.48042642 sigma=0.084387 peak=0.299626 failures=0 seconds=1566.297
+GEN 18 best=0.54928681 current=0.54928681 sigma=0.083743 peak=0.321218 failures=0 seconds=1627.576
+GEN 19 best=0.50446661 current=0.50446661 sigma=0.083915 peak=0.285234 failures=0 seconds=1691.784
+GEN 20 best=0.58470154 current=0.58470154 sigma=0.083979 peak=0.327501 failures=0 seconds=1755.964
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.26708295400605536, "worstNormalForceError_N": 0.4156933735277377, "meanRmsNormalForceError_N": 0.04198767524640521, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8772.0, "issuedRobotFrames": 567864.0, "jointScore": 0.916485682369593, "proposal": "distribution_mean", "generation": 20, "trainingBestGeneration": 20, "rank": [0, -28, 0.916485682369593, 0.4156933735277377, 0.04198767524640521]}
+GEN 21 best=0.68325632 current=0.68325632 sigma=0.084111 peak=0.317119 failures=0 seconds=1883.556
+GEN 22 best=0.45258292 current=0.45258292 sigma=0.084573 peak=0.2965 failures=0 seconds=1949.709
+GEN 23 best=0.82399384 current=0.82399384 sigma=0.085067 peak=0.399856 failures=0 seconds=2014.565
+GEN 24 best=0.50487806 current=0.50487806 sigma=0.085509 peak=0.306805 failures=0 seconds=2079.215
+GEN 25 best=0.59531764 current=0.59531764 sigma=0.085032 peak=0.32027 failures=0 seconds=2146.890
+SELECT {"recordings": 28, "passed": 28, "physicalFailures": 0, "recenterFailures": 0, "meanRecenterProgressFraction": 0.2674635546284325, "worstNormalForceError_N": 0.41497265335794964, "meanRmsNormalForceError_N": 0.04225181971110288, "nativeSamples": 27900000.0, "controllerDecisions": 930000.0, "eligibleRobotDecisions": 8780.0, "issuedRobotFrames": 574497.0, "jointScore": 0.9136341284907399, "proposal": "distribution_mean", "generation": 25, "trainingBestGeneration": 25, "rank": [0, -28, 0.9136341284907399, 0.41497265335794964, 0.04225181971110288]}
+GEN 26 best=0.55965992 current=0.55965992 sigma=0.085551 peak=0.314339 failures=0 seconds=2276.387
+GEN 27 best=0.57584125 current=0.57584125 sigma=0.086523 peak=0.32617 failures=0 seconds=2339.797
+GEN 28 best=0.81692083 current=0.81692083 sigma=0.088121 peak=0.399622 failures=0 seconds=2405.493
+GEN 29 best=0.58092797 current=0.58092797 sigma=0.089668 peak=0.295776 failures=0 seconds=2466.002

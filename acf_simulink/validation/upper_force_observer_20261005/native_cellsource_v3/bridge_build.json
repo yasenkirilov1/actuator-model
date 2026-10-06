@@ -1,0 +1,33 @@
+{
+  "emitted_c_sha256": "309397b5f74a131ca7cdb5127863cb74c26ff7ec047645d971690995a6ff6f9c",
+  "adapted_c_sha256": "89148e1b9313488b625cf2791a6b0175df55532d916d2b6206a5025221c1f14a",
+  "bridge_sha256": "16de9d5e081affacb9c6a7125c7b79e8c8fb33e57f99222cd29a8364a12b33e4",
+  "parameter_bank_sha256": "413a9522e1f292c770ba8dc30112d4c2c05e226d8fd6321666994f9cbace02c9",
+  "shared_library_sha256": "f52520d1748d3f8293da0acdada8e0527715615b139a3e8bb09ed3f9d7d71ae9",
+  "native_computation_recovered_exactly": true,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fopenmp",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/code/acf_rl_native_grt_rtw",
+    "-I/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/simulink/include",
+    "-I/home/tommie/.local/opt/MATLAB/R2026b/extern/include",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/upper_force_observer_20261005/native_bridge.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/native_parameter_bank.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/code/acf_rl_native_grt_rtw/acf_rl_native_data.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/code/acf_rl_native_grt_rtw/rtGetNaN.c",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/code/acf_rl_native_grt_rtw/rt_nonfinite.c",
+    "-lm",
+    "-pthread",
+    "-o",
+    "/home/tommie/Projects/actuator-model/acf_simulink/validation/upper_force_observer_20261005/native_cellsource_v3/libacf_native.so"
+  ],
+  "seed_override": "Add chosen_seed - bank_sensor_seed to every emitted native sensor seed; baseline bank values unchanged when seed=None."
+}

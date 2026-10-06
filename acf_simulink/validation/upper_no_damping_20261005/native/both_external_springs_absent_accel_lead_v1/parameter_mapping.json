@@ -1,0 +1,4418 @@
+[
+  {
+    "type": "real_T",
+    "name": "Guardprojectiondenominator_Uppe",
+    "count": 1,
+    "kind": "plain",
+    "expression": "inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Guardprojectiondenominator_Lowe",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.dragRatioMinForce_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Boundsigneddragratio_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Boundsigneddragratio_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Dragcorrectionsign_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Axialnormalforcegeometryfactor_",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforcereference_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalreferenceprojection_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Onemorefaststablesample_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Resetfastdwell_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Onemorestablesample_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Resetcount_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Dwellsamplecount_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+ceil(p.robot.forceGate.dwellTime/p.robot.sampleTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Baselineorexternalrobot_Thresho",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ToolSrelativetoA_Gain",
+    "count": 2,
+    "kind": "plain",
+    "expression": "[-1 1]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rampcomponent1_Coefs",
+    "count": 6,
+    "kind": "plain",
+    "expression": "[6 -15 10 0 0 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Bumpcomponent1_Coefs",
+    "count": 7,
+    "kind": "plain",
+    "expression": "[-64 192 -192 64 0 0 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rampcomponent2_Coefs",
+    "count": 5,
+    "kind": "plain",
+    "expression": "[30 -60 30 0 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Bumpcomponent2_Coefs",
+    "count": 6,
+    "kind": "plain",
+    "expression": "[-384 960 -768 192 0 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rampcomponent3_Coefs",
+    "count": 4,
+    "kind": "plain",
+    "expression": "[120 -180 60 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Bumpcomponent3_Coefs",
+    "count": 5,
+    "kind": "plain",
+    "expression": "[-1920 3840 -2304 384 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Requestedforce_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Sensorsampledelay_Delay",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.force.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Sensorsampledelay_InitOutput",
+    "count": 1,
+    "kind": "plain",
+    "expression": "round((((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))+(p.adcStudy.d.forceGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.forceGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))+(p.sensor.bias)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Cellerrortodeviation_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Taredaxialcellforce_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zknownchanneldelay_Delay",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zknownchanneldelay_InitOutput",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.accel.bias",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "DownstreamZinertia_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.distalMass_model_kg",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Sensorsampledelay_Delay_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.lateral.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Sensorsampledelay_InitOutput_h",
+    "count": 1,
+    "kind": "plain",
+    "expression": "round((((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))+(p.adcStudy.d.lateralGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.lateralGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))+(p.contact.lateralBias_N)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xknownchanneldelay_Delay",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xknownchanneldelay_InitOutput",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.uncertainty.accelBiasX_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "DownstreamXinertia_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.distalMass_model_kg",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematchingdelay",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematchingdel_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "PositionADCdeliverypipeline_Del",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.position.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "PositionADCdeliverypipeline_Ini",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchingd",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.pipelineDelay_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchin_f",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapandvelocityobserver_A",
+    "count": 4,
+    "kind": "nonzero_value",
+    "expression": "p.d.toolMotionObserver.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Head gap and velocity observer"
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapandvelocityobserver_B",
+    "count": 6,
+    "kind": "nonzero_value",
+    "expression": "p.d.toolMotionObserver.B",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Head gap and velocity observer"
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapandvelocityobserver_C",
+    "count": 3,
+    "kind": "nonzero_value",
+    "expression": "p.d.toolMotionObserver.C",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Head gap and velocity observer"
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapandvelocityobserver_D",
+    "count": 2,
+    "kind": "nonzero_value",
+    "expression": "p.d.toolMotionObserver.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Head gap and velocity observer"
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapandvelocityobserver_Init",
+    "count": 2,
+    "kind": "plain",
+    "expression": "zeros(2,1)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Causalsurfacedirection_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.contact.commandedScanSpeed_m_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Squaredslopeplusone_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Estimatedheadtravel_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.midTravel+p.d.u0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Predictedvelocity_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "RLresetfixedqueuelength_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robotPrediction.delaySamples",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedcommanddelay_InitialCon",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.nominalVelocity*double(~p.robotPrediction.boundedNominalPath)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedspeedlimit_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robotPrediction.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedspeedlimit_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robotPrediction.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedvelocityresponse_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.robotPrediction.responseTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedaccelerationlimit_Upper",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robotPrediction.maxAcceleration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Expectedaccelerationlimit_Lower",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robotPrediction.maxAcceleration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Enablerobotaccelerationpredicti",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.robotPrediction.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Flatholdingcurrent_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(p.force.reference-(p.uncertainty.massB_model_kg+p.sensor.distalMass_model_kg)*p.d.g)/p.uncertainty.forceConstant_model_N_A",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Measurednormalforcedeviation_Bi",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceerrorsign_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Errortonormaldeviation_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceproportionalcurrent_",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.inertial.forceKp",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceerrorintegral_gainva",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.sampleTime",
+    "block": "acf_rl_native/Force controller/Coil PI and PID/Normal force PI and PID/Normal force error integral"
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceerrorintegral_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceintegralcurrent_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.inertial.forceKi",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalerrorprevioussample_Initi",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalerrornewderivativeweight_",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(1-exp(-p.force.sampleTime/p.inertial.derivativeFilter))/p.force.sampleTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalerrorderivativememory_Ini",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalerroroldderivativeweight_",
+    "count": 1,
+    "kind": "plain",
+    "expression": "exp(-p.force.sampleTime/p.inertial.derivativeFilter)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforcederivativecurrent_Ga",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.inertial.forceKd*double(strcmp(p.coil.strategy,'pid'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalfeedbackrolloff_NumCoef",
+    "count": 3,
+    "kind": "plain",
+    "expression": "p.d.feedbackFilter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalfeedbackrolloff_DenCoef",
+    "count": 3,
+    "kind": "plain",
+    "expression": "p.d.feedbackFilter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalfeedbackrolloff_Initial",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.feedbackFilter.initialStates",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Filteredmeasuredaccelerationrat",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.accelerationPrediction.derivativeNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Filteredmeasuredaccelerationr_f",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.accelerationPrediction.derivativeDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Filteredmeasuredaccelerationr_g",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "AccelerationFFpredictiontime_Ga",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.inertial.accelerationPrediction_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Presenttimeaccelerationleadforc",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.accelLead.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Presenttimeaccelerationleadfo_f",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.accelLead.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Presenttimeaccelerationleadfo_a",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Measuredaccelerationcurrentfeed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.inertial.accelerationFeedforwardScale*(p.uncertainty.massB_model_kg+p.sensor.distalMass_model_kg)/p.uncertainty.forceConstant_model_N_A",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Minimumobservablenormalforce_Va",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.dragRatioMinForce_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousfiltereddragratio_Initi",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Newdragestimateweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.dragRatio.inputWeight",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousdragestimateweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.dragRatio.memoryWeight",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Measureddraggeometryselected_Va",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(strcmp(p.contact.geometryMode,'measured_drag_ratio'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Selectaxialforcegeometryrequest",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Axialreferencedeviation_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.force.reference",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Geometrycurrentfeedforward_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.geometryFeedforwardScale/p.coil.forceConstant",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Identifiedguidepredictiontime_G",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.inertial.guideVelocityPrediction_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Guideviscousfrictioncurrent_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.inertial.guideFrictionFeedforwardScale*p.coil.viscousFriction/p.coil.forceConstant",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Guidefrictionvelocityscale_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.coil.frictionSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "GuideCoulombfrictioncurrent_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.inertial.guideFrictionFeedforwardScale*p.coil.coulombForce/p.coil.forceConstant",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "KnowndownstreamSinertia_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.distalMass_model_kg",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Properidentifiedlowerlinkinvers",
+    "count": 4,
+    "kind": "plain",
+    "expression": "p.inertial.lowerLoadInverse.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Properidentifiedlowerlinkinve_p",
+    "count": 4,
+    "kind": "plain",
+    "expression": "p.inertial.lowerLoadInverse.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Properidentifiedlowerlinkinve_a",
+    "count": 3,
+    "kind": "plain",
+    "expression": "zeros(3,1)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalinversefeedforwardscale",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.inertial.lowerLoadInverse.enabled)*p.inertial.lowerLoadInverse.scale",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Baselineorexternalcurrent_Thres",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalstructuralmodecurrentno",
+    "count": 3,
+    "kind": "plain",
+    "expression": "p.d.currentNotch.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalstructuralmodecurrent_c",
+    "count": 3,
+    "kind": "plain",
+    "expression": "p.d.currentNotch.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Optionalstructuralmodecurrent_i",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.currentNotch.initialStates",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Currentlimits_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.peakCurrent",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Currentlimits_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.coil.peakCurrent",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange1_Time",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange1_Y0",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange1_YFinal",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange2_Time",
+    "count": 1,
+    "kind": "plain",
+    "expression": "2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange2_Y0",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange2_YFinal",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange3_Time",
+    "count": 1,
+    "kind": "plain",
+    "expression": "3",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange3_Y0",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalcommandchange3_YFinal",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nominalrobotvelocity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.nominalVelocity",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Boundedprogramselected_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.robotPrediction.boundedNominalPath)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Boundedorconstantnormalprogram_",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Eventstart_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.surface.startTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Roboterrortimescale_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.robot.errorRiseTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Roboterrortransition_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Roboterrortransition_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Smoothroboterrorslope_Coefs",
+    "count": 5,
+    "kind": "plain",
+    "expression": "[30 -60 30 0 0]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotpositioningerrorvelocity_G",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robot.errorForce/p.d.keq/p.robot.errorRiseTime*double(strcmp(p.surface.kind,'robot_error'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Midstroke_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.midTravel",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Toolsensorneedsgapestimate_Valu",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.positionModel",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Position_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.u0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Repeatinterval_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.surface.repeatPeriod",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Repeatselected_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(strcmp(p.surface.kind,'repeated'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Scanspeedoverwidth_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.d.duration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionwithinevent_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionwithinevent_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rampselected_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(strcmp(p.surface.kind,'ramp'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Surfacedisplacementenabled_Valu",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(~any(strcmp(p.surface.kind,{'flat','robot_error'})))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zero_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Disabled_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "SurfaceSIscale1_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.surface.height",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Coordinatereference_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.midTravel",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Usetoolheadposition_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.positionModel",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Position_IC_n",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Midtravel_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.midTravel",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positioncalibratedzero_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.d.positionMeasurementInitial",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Residualpositioncalibration_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+p.uncertainty.positionScale",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positioncalibratedorigin_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.positionMeasurementInitial",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionnoise_Minimum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionnoise_Maximum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionnoise_Seed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "PositionnoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.positionNoiseInputRms_m",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Measurementdelay_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Recenterdeadband_Start",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robot.deadband",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Recenterdeadband_End",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.deadband",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Recentergain_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.uncertainty.recenterGain",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Holdrecentering_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Gatedisabled_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(~p.robot.forceGate.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousfaststablecount_Initial",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Usereconstructedcontacterror_Va",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.sensor.distalMass_kg>0 && strcmp(p.actuator.kind,'voice_coil') && strcmp(p.coil.strategy,'observer'))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceband_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.forceGate.errorBand_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forcetrendfilter_NumCoef",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1-exp(-p.robot.sampleTime/p.robot.forceGate.filterTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forcetrendfilter_DenCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "[1 -exp(-p.robot.sampleTime/p.robot.forceGate.filterTime)]",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forcetrendfilter_InitialStates",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousforcetrend_InitialCondi",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Changepersecond_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.robot.sampleTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceratelimit_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.forceGate.maxRate_N_s",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Normalforceabovetarget_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastnormalforcemean_NumCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.variationGate.meanNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastnormalforcemean_DenCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.variationGate.meanDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastnormalforcemean_InitialStat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastforcevariance_NumCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.variationGate.varianceNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastforcevariance_DenCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.d.variationGate.varianceDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastforcevariance_InitialStates",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Allowedforcevariance_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.forceGate.variation.rmsLimit_N^2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Capfaststablecount_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.variationGate.dwellSamples",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Capfaststablecount_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Requiredfastdwellcount_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.variationGate.dwellSamples",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Fastvariationgateenabled_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.robot.forceGate.variation.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousstablecount_InitialCond",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Capstablecount_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+ceil(p.robot.forceGate.dwellTime/p.robot.sampleTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Capstablecount_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Selectcontinuousfastdwell_Thres",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotspeedlimits_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotspeedlimits_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robot.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Preload_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.q10",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "SurfaceSIscale2_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.surface.height/p.d.duration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Velocity_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Stiffness_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.k1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Damping_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.c1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "SurfaceSIscale3_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.surface.height/p.d.duration^2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Gravityalongflangeaxis_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Toolmass_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.mS",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Unilateralcontactforce_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Unilateralcontactforce_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Surfaceslope_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.surface.scanSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Squaredslopeplusone_Bias_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Unity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Frictiontimesslope_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.mu",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Velocity_IC_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Windingcurrent_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.coilHoldCurrent",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Coilforceconstant_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.forceConstant",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Frictionspeedscale_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.coil.frictionSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Coulombfriction_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.coulombForce",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Viscousfriction_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.viscousFriction",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "RLresetfixedqueuelength_Value_o",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.robotDelaySamples",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotcommandsamples_InitialCond",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.nominalVelocity*double(~p.robotPrediction.boundedNominalPath)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Requestedrobotspeed_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Requestedrobotspeed_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robot.maxSpeed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocity_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Velocityresponse_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.robot.responseTime",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationlimits_UpperSa",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.robot.maxAcceleration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationlimits_LowerSa",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.robot.maxAcceleration",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Gravityatupperrigidattachment_V",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Upperattachmentinertia_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.mA",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Upperspringloadshare_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.beta",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lowerspringloadshare_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.alpha",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Inversereducedmass_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.d.mu",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Inversemass_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.mechanics.mA",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Gravity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Inversemass_Gain_h",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.mechanics.mB",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Gravity_Value_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Resistance_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.resistance",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "BackEMF_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.forceConstant",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Currentrequestlimit_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.peakCurrent",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Currentrequestlimit_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.coil.peakCurrent",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Currentregulator_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.inductance/p.coil.currentResponse",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Supplyvoltagelimits_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.voltage",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Supplyvoltagelimits_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.coil.voltage",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zero_Value_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Equivalentscrewangularspeed_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.d.ell",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zero_Value_d",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Minimumtravel_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.travelMin",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Maximumtravel_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.travelMax",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Peakcurrentthreshold_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.peakCurrent*(1-1e-9)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Supplyvoltage_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.coil.voltage",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "PhysicalSaccelerationX_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xgravity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.mechanics.gravity*sin(p.mechanics.angle)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "AccelerationXframediagonal_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "cos(p.uncertainty.accelFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zgravity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "AccelerationXframecrossaxis_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-sin(p.uncertainty.accelFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "AccelerationZframediagonal_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "cos(p.uncertainty.accelFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "AccelerationZframecrossaxis_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "sin(p.uncertainty.accelFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_pr",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Initia",
+    "count": 2,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))*p.adcStudy.d.channels.acceleration.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialCon",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulseresponse_",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_b",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_h",
+    "count": 30,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoise",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_o",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Independent converter output noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_e",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+3540",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ConverteroutputnoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.accelerationAdcNoiseRms_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_NumCo",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_DenCo",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Initi",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Restorephysicalstaticoffset_Bia",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "min(p.adcStudy.accelerationAdcRange_g,p.accel.range_g)*p.mechanics.gravity",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-(min(p.adcStudy.accelerationAdcRange_g,p.accel.range_g)*p.mechanics.gravity)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Actualconverterquantization_Int",
+    "count": 1,
+    "kind": "plain",
+    "expression": "max(p.adcStudy.accelerationQuantum_m_s2,1e-15)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knownquantizedstaticoffset_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_InitialSt",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(round(((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))+(0))/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*p.adcStudy.d.channels.acceleration.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xuseengineeredacquisition_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xsensorscale_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+p.accel.scaleError",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xrawnoise_Mean",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xrawnoise_StdDev",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/S accelerometer and ADC/X raw noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Xrawnoise_Seed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+336",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "XrawnoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.accelerationNoiseInputRms_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xanalogvibrationprobe_Amp",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.accelerationXAnalogToneAmplitude_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xanalogvibrationprobe_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xanalogvibrationprobe_Freq",
+    "count": 1,
+    "kind": "plain",
+    "expression": "2*pi*p.adcStudy.analogToneFrequency_Hz",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xanalogvibrationprobe_Phase",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.analogTonePhase_rad",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xnewsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1-exp(-p.sensor.sampleTime/p.accel.filterTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xfiltermemory_InitialCondition",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xoldsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "exp(-p.sensor.sampleTime/p.accel.filterTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xselectidentifiedsensorresponse",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xaccelerationrange_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xaccelerationrange_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "XADCquantization_Interval",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1e-15",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xdriftaftertare_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.uncertainty.accelBiasX_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Xknownstatictare_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "round((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle))-sin(p.uncertainty.accelFrameAngle_rad)*(p.d.g))))/p.accel.quantum)*p.accel.quantum",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_g",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr_a",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_pr_m",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Init_k",
+    "count": 2,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))*p.adcStudy.d.channels.acceleration.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_g",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_g",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialC_c",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_k",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_d",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_dz",
+    "count": 30,
+    "kind": "plain",
+    "expression": "(((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_k",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_p",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Independent converter output noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_a",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+3542",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ConverteroutputnoiseRMS_Gain_f",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.accelerationAdcNoiseRms_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Num_p",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Den_f",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Ini_f",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Restorephysicalstaticoffset_B_a",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_UpperSat_e",
+    "count": 1,
+    "kind": "plain",
+    "expression": "min(p.adcStudy.accelerationAdcRange_g,p.accel.range_g)*p.mechanics.gravity",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_LowerSat_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-(min(p.adcStudy.accelerationAdcRange_g,p.accel.range_g)*p.mechanics.gravity)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Actualconverterquantization_I_f",
+    "count": 1,
+    "kind": "plain",
+    "expression": "max(p.adcStudy.accelerationQuantum_m_s2,1e-15)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knownquantizedstaticoffset_Bi_g",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef_m",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef_h",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.acceleration.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initial_g",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(round(((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))+(0))/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15))-round((0)/(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*(max(p.adcStudy.accelerationQuantum_m_s2,1e-15)))*p.adcStudy.d.channels.acceleration.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zuseengineeredacquisition_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zsensorscale_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+p.accel.scaleError",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zrawnoise_Mean",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zrawnoise_StdDev",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/S accelerometer and ADC/Z raw noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Zrawnoise_Seed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+239",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ZrawnoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.accelerationNoiseInputRms_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zanalogvibrationprobe_Amp",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.accelerationZAnalogToneAmplitude_m_s2",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zanalogvibrationprobe_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zanalogvibrationprobe_Freq",
+    "count": 1,
+    "kind": "plain",
+    "expression": "2*pi*p.adcStudy.analogToneFrequency_Hz",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zanalogvibrationprobe_Phase",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.analogTonePhase_rad",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Znewsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1-exp(-p.sensor.sampleTime/p.accel.filterTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zfiltermemory_InitialCondition",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zoldsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "exp(-p.sensor.sampleTime/p.accel.filterTime)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zselectidentifiedsensorresponse",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zaccelerationrange_UpperSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zaccelerationrange_LowerSat",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-inf",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ZADCquantization_Interval",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1e-15",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zdriftaftertare_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.accel.bias",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Zknownstatictare_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "round((((1+p.accel.scaleError)*(cos(p.uncertainty.accelFrameAngle_rad)*(p.d.g)+sin(p.uncertainty.accelFrameAngle_rad)*(p.mechanics.gravity*sin(p.mechanics.angle)))))/p.accel.quantum)*p.accel.quantum",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Slopeplusfriction_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.mu",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lateralsign_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Inverseinductance_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1/p.coil.inductance",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Measuredheadcoordinatedeviation",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.positionMeasurementBias",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Headgapcoordinatesign_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_a",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.position.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr_d",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.position.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_pr_d",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.position.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Init_j",
+    "count": 2,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.position.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_o",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_f",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialC_m",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_kh",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_n",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_kc",
+    "count": 30,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef_l",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.position.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef_j",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.position.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initial_h",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.position.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionuseengineeredacquisitio",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionframematching_A",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Positionframematching_B",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Positionframematching_C",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Positionframematching_D",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Positionframematching_InitialCo",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Positionacquisitionframe_Thresh",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_i",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr_j",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_pr_e",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Init_o",
+    "count": 2,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.frame.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_h",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_j",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialC_p",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_dh",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_dv",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_e",
+    "count": 30,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef_o",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef_p",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initia_h0",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.frame.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationuseengineereda",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematching_",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchin_k",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchi_f0",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchin_d",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationframematchi_ka",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotaccelerationacquisitionfra",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_j",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_p_jg",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_pr_f",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Init_l",
+    "count": 2,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.frame.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_m",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_a",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialC_k",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_hz",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_a",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_ew",
+    "count": 30,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef_b",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoe_pq",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.frame.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initial_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(0)*p.adcStudy.d.channels.frame.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityuseengineeredacqui",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematching_A",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematching_B",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematching_C",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematching_D",
+    "count": 1,
+    "kind": "nonzero_value",
+    "expression": "1-exp(-p.sensor.sampleTime/p.sensor.filterTime)",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity frame matching"
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityframematching_Init",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotvelocityacquisitionframe_T",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Integralantiwindup_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-p.force.antiWindupRate/p.inertial.forceKi",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Axialgravity_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_n",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.force.analogA",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr_b",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.force.analogB",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_p_ft",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.force.analogC",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Init_a",
+    "count": 2,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))*p.adcStudy.d.channels.force.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_f",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_p",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_Initial_me",
+    "count": 1,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_j",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_l",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_hk",
+    "count": 30,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputno_pm",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_l",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Independent converter output noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputno_px",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+2594",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ConverteroutputnoiseRMS_Gain_l",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.forceAdcNoiseRms_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Nu_pq",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Den_d",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Ini_o",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Restorephysicalstaticoffset_B_l",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.forceGravityOffset_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_UpperSat_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.forceAdcRange_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_LowerSat_c",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-(p.adcStudy.forceAdcRange_N)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Actualconverterquantization_I_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": "max(p.adcStudy.forceQuantum_N,1e-15)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knownquantizedstaticoffset_Bi_c",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-round((p.adcStudy.d.forceGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoef_n",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.force.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef_g",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.force.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initial_a",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(round((((p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))))+(p.adcStudy.d.forceGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.forceGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15)))*p.adcStudy.d.channels.force.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Sensorbias_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.bias",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Previousfilteredforce_InitialCo",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference*(1+p.uncertainty.forceScaleZ)*(cos(p.uncertainty.forceFrameAngle_rad)-p.contact.mu*(sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Filtermemory_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "exp(-p.sensor.sampleTime/max(p.sensor.filterTime,realmin))*double(p.sensor.filterTime>0)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knowndownstreamtoolmass_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.distalMass_kg",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knownweighttare_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.distalMass_kg*p.d.g",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ForceZframediagonal_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "cos(p.uncertainty.forceFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ForceZframecrossaxis_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossZFromX",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceanalogvibrationprobe_Amp",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.forceAnalogToneAmplitude_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceanalogvibrationprobe_Bias",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceanalogvibrationprobe_Freq",
+    "count": 1,
+    "kind": "plain",
+    "expression": "2*pi*p.adcStudy.analogToneFrequency_Hz",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Forceanalogvibrationprobe_Phase",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.analogTonePhase_rad",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Residualaxialcalibration_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+p.uncertainty.forceScaleZ",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Newsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1-(exp(-p.sensor.sampleTime/max(p.sensor.filterTime,realmin))*double(p.sensor.filterTime>0))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Uniformsensornoise_Minimum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Uniformsensornoise_Maximum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Uniformsensornoise_Seed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "SensornoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.forceNoiseInputRms_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rawoutputnoisenormalization_Gai",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Useengineeredacquisition_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Selectidentifiedsensorresponse_",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Predictedrelativeposition_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Robotposition_IC",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.d.r0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_A_pr_p",
+    "count": 3,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.lateral.analogA",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_B_pr_f",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.lateral.analogB",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_C_p_ms",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.channels.lateral.analogC",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "real_T",
+    "name": "Continuousanalogfrontend_Ini_j5",
+    "count": 2,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))*p.adcStudy.d.channels.lateral.analogSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_A_pr_n",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_D_pr_p5",
+    "count": 1,
+    "kind": "sparse_value",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "real_T",
+    "name": "ADCanaloginputfilter_InitialC_l",
+    "count": 1,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))*p.adcStudy.d.converterAnalog.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_e5",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespon_al",
+    "count": 31,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converter.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Nativeconverterimpulserespons_o",
+    "count": 30,
+    "kind": "plain",
+    "expression": "((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))*p.adcStudy.d.converter.steadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputno_pu",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_f",
+    "count": 1,
+    "kind": "sqrt",
+    "expression": "1",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Independent converter output noise"
+  },
+  {
+    "type": "real_T",
+    "name": "Independentconverteroutputnoi_n",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+2808",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ConverteroutputnoiseRMS_Gain_c",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.forceAdcNoiseRms_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Nu_pw",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.numerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Den_j",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.converterNoise.denominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ADCoutputnoisecorrelation_Ini_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Restorephysicalstaticoffset_B_b",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.lateralGravityOffset_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_UpperSat_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.forceAdcRange_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ActualADCinputrange_LowerSat_n",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-(p.adcStudy.forceAdcRange_N)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Actualconverterquantization_I_b",
+    "count": 1,
+    "kind": "plain",
+    "expression": "max(p.adcStudy.forceQuantum_N,1e-15)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knownquantizedstaticoffset_Bi_o",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-round((p.adcStudy.d.lateralGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_NumCoe_b0",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.lateral.emaNumerator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_DenCoef_k",
+    "count": 2,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.channels.lateral.emaDenominator",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "FreshperconversionEMA_Initial_m",
+    "count": 1,
+    "kind": "plain",
+    "expression": "(round((((p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)))+(p.adcStudy.d.lateralGravityOffset_N))/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15))-round((p.adcStudy.d.lateralGravityOffset_N)/(max(p.adcStudy.forceQuantum_N,1e-15)))*(max(p.adcStudy.forceQuantum_N,1e-15)))*p.adcStudy.d.channels.lateral.emaSteadyStatePerUnitInput",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Knowntareresidualbias_Value",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.contact.lateralBias_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Filtermemory_InitialCondition",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.force.reference*(1+p.uncertainty.forceScaleX)*(-p.contact.mu*cos(p.uncertainty.forceFrameAngle_rad)-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ForceXframediagonal_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "cos(p.uncertainty.forceFrameAngle_rad)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "ForceXframecrossaxis_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-sin(p.uncertainty.forceFrameAngle_rad)+p.uncertainty.forceCrossXFromZ",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentlateralnoise_Minimum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "-sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentlateralnoise_Maximum",
+    "count": 1,
+    "kind": "plain",
+    "expression": "sqrt(3)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Independentlateralnoise_Seed",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.sensor.seed+197",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lateralanalogvibrationprobe_Amp",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.lateralAnalogToneAmplitude_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lateralanalogvibrationprobe_Bia",
+    "count": 1,
+    "kind": "plain",
+    "expression": "0",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lateralanalogvibrationprobe_Fre",
+    "count": 1,
+    "kind": "plain",
+    "expression": "2*pi*p.adcStudy.analogToneFrequency_Hz",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Lateralanalogvibrationprobe_Pha",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.analogTonePhase_rad",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Residuallateralcalibration_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1+p.uncertainty.forceScaleX",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Newsampleweight_Gain_j",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1-exp(-p.sensor.sampleTime/max(p.sensor.filterTime,realmin))*double(p.sensor.filterTime>0)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "NoiseRMS_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "p.adcStudy.d.lateralNoiseInputRms_N",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Oldsampleweight_Gain",
+    "count": 1,
+    "kind": "plain",
+    "expression": "exp(-p.sensor.sampleTime/max(p.sensor.filterTime,realmin))*double(p.sensor.filterTime>0)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Rawoutputnoisenormalization_G_a",
+    "count": 1,
+    "kind": "plain",
+    "expression": "1",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Useengineeredacquisition_Valu_f",
+    "count": 1,
+    "kind": "plain",
+    "expression": "double(p.acquisition.enabled)",
+    "block": ""
+  },
+  {
+    "type": "real_T",
+    "name": "Selectidentifiedsensorrespons_i",
+    "count": 1,
+    "kind": "plain",
+    "expression": ".5",
+    "block": ""
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/X engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_l",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc_n",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogA",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir_n",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc_m",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogB",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir_m",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_p",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.acceleration.analogC",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_c",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_i",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_n",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_k",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/S accelerometer and ADC/Z engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_a",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.position.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc_f",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.position.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir_o",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.position.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc_c",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.position.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir_d",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.position.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_o",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.position.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_f",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_f",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_f",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_e",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Position common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_d",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc_p",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir_a",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc_a",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir_p",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_l",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_n",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_ir",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_fn",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_c",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot acceleration common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_i",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_j_nh",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogA",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir_p",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc_f",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogB",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir_l",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_n",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.frame.analogC",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_m",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_o",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_fr",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_a",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Contact force measurement/Head motion estimator/Robot velocity common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_g",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.force.analogA",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc_g",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.force.analogA",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_ir_l",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.force.analogB",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_j_co",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.force.analogB",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_ir_h",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.force.analogC",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_d",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.force.analogC",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_b",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_e",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_a",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_f",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_ir_m",
+    "count": 3,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.lateral.analogA",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_A_jc_m",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.lateral.analogA",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_i_ow",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.lateral.analogB",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_B_jc_g",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.lateral.analogB",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_i_lc",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.channels.lateral.analogC",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "Continuousanalogfrontend_C_jc_k",
+    "count": 3,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.channels.lateral.analogC",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/Continuous analog front end"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_ir_nf",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_A_jc_j",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.A",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_ir_e",
+    "count": 1,
+    "kind": "sparse_row",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  },
+  {
+    "type": "uint32_T",
+    "name": "ADCanaloginputfilter_D_jc_fu",
+    "count": 2,
+    "kind": "sparse_col",
+    "expression": "p.adcStudy.d.converterAnalog.D",
+    "block": "acf_rl_native/Lateral B-S force measurement/Engineered common AA and EMA/ADC analog input filter"
+  }
+]

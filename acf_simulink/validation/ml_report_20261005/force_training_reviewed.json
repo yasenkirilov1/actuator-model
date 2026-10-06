@@ -1,0 +1,202 @@
+{
+  "status": "complete",
+  "kind": "reviewed_native_study_excerpt",
+  "scope": "180-epoch supervised approximate-current teacher fit. Whole-trajectory training/selection split. Teacher fit is not closed-loop force qualification.",
+  "rows": [
+    {
+      "epoch": 1,
+      "trainMse_A2": 7.227452600292417e-05,
+      "selectionMse_A2": 7.984882690109312e-05
+    },
+    {
+      "epoch": 6,
+      "trainMse_A2": 2.4224115913099225e-05,
+      "selectionMse_A2": 3.068612041581675e-05
+    },
+    {
+      "epoch": 11,
+      "trainMse_A2": 2.25952573813437e-05,
+      "selectionMse_A2": 2.846111223267127e-05
+    },
+    {
+      "epoch": 16,
+      "trainMse_A2": 2.1814062131327523e-05,
+      "selectionMse_A2": 2.747581260124345e-05
+    },
+    {
+      "epoch": 21,
+      "trainMse_A2": 2.1425240040604258e-05,
+      "selectionMse_A2": 2.6780783158400697e-05
+    },
+    {
+      "epoch": 26,
+      "trainMse_A2": 2.1215577874291583e-05,
+      "selectionMse_A2": 2.6643360736278704e-05
+    },
+    {
+      "epoch": 31,
+      "trainMse_A2": 2.100420800741804e-05,
+      "selectionMse_A2": 2.635988410690166e-05
+    },
+    {
+      "epoch": 36,
+      "trainMse_A2": 2.083201641631452e-05,
+      "selectionMse_A2": 2.6002458235054884e-05
+    },
+    {
+      "epoch": 41,
+      "trainMse_A2": 2.0640193444859885e-05,
+      "selectionMse_A2": 2.5895241495714988e-05
+    },
+    {
+      "epoch": 46,
+      "trainMse_A2": 2.0447174222529974e-05,
+      "selectionMse_A2": 2.5728541627385583e-05
+    },
+    {
+      "epoch": 51,
+      "trainMse_A2": 2.0260487933130927e-05,
+      "selectionMse_A2": 2.5531221514388863e-05
+    },
+    {
+      "epoch": 56,
+      "trainMse_A2": 2.009979487381193e-05,
+      "selectionMse_A2": 2.5358286933195435e-05
+    },
+    {
+      "epoch": 61,
+      "trainMse_A2": 1.9895761132247153e-05,
+      "selectionMse_A2": 2.4881145013479456e-05
+    },
+    {
+      "epoch": 66,
+      "trainMse_A2": 1.9732586770374348e-05,
+      "selectionMse_A2": 2.4750001319802573e-05
+    },
+    {
+      "epoch": 71,
+      "trainMse_A2": 1.952122902664125e-05,
+      "selectionMse_A2": 2.431084269618958e-05
+    },
+    {
+      "epoch": 76,
+      "trainMse_A2": 1.9294544111251232e-05,
+      "selectionMse_A2": 2.3901079994393817e-05
+    },
+    {
+      "epoch": 81,
+      "trainMse_A2": 1.92004610338064e-05,
+      "selectionMse_A2": 2.366102315777653e-05
+    },
+    {
+      "epoch": 86,
+      "trainMse_A2": 1.9108378801547462e-05,
+      "selectionMse_A2": 2.364241710341172e-05
+    },
+    {
+      "epoch": 91,
+      "trainMse_A2": 1.9069853675799565e-05,
+      "selectionMse_A2": 2.3484748049958407e-05
+    },
+    {
+      "epoch": 96,
+      "trainMse_A2": 1.899098445593334e-05,
+      "selectionMse_A2": 2.350319155137891e-05
+    },
+    {
+      "epoch": 101,
+      "trainMse_A2": 1.8948661715750732e-05,
+      "selectionMse_A2": 2.362196516871976e-05
+    },
+    {
+      "epoch": 106,
+      "trainMse_A2": 1.8900654127874898e-05,
+      "selectionMse_A2": 2.3406708078397774e-05
+    },
+    {
+      "epoch": 111,
+      "trainMse_A2": 1.8832115739823397e-05,
+      "selectionMse_A2": 2.3505815434514738e-05
+    },
+    {
+      "epoch": 116,
+      "trainMse_A2": 1.88228151856822e-05,
+      "selectionMse_A2": 2.346303956233659e-05
+    },
+    {
+      "epoch": 121,
+      "trainMse_A2": 1.8804526833962284e-05,
+      "selectionMse_A2": 2.3105044116347375e-05
+    },
+    {
+      "epoch": 126,
+      "trainMse_A2": 1.8680549787228632e-05,
+      "selectionMse_A2": 2.3170118496294103e-05
+    },
+    {
+      "epoch": 131,
+      "trainMse_A2": 1.863522207263376e-05,
+      "selectionMse_A2": 2.3135212308482838e-05
+    },
+    {
+      "epoch": 136,
+      "trainMse_A2": 1.861168175727327e-05,
+      "selectionMse_A2": 2.3125778943968636e-05
+    },
+    {
+      "epoch": 141,
+      "trainMse_A2": 1.8596404329458145e-05,
+      "selectionMse_A2": 2.3071658709748385e-05
+    },
+    {
+      "epoch": 146,
+      "trainMse_A2": 1.8567194713752863e-05,
+      "selectionMse_A2": 2.302875526378343e-05
+    },
+    {
+      "epoch": 151,
+      "trainMse_A2": 1.8545709922857723e-05,
+      "selectionMse_A2": 2.3148690396587423e-05
+    },
+    {
+      "epoch": 156,
+      "trainMse_A2": 1.85336063069528e-05,
+      "selectionMse_A2": 2.3174531647049764e-05
+    },
+    {
+      "epoch": 161,
+      "trainMse_A2": 1.8514724535150842e-05,
+      "selectionMse_A2": 2.2891200702439533e-05
+    },
+    {
+      "epoch": 166,
+      "trainMse_A2": 1.846811894061641e-05,
+      "selectionMse_A2": 2.301104926009483e-05
+    },
+    {
+      "epoch": 171,
+      "trainMse_A2": 1.8451699846863644e-05,
+      "selectionMse_A2": 2.2954533324801864e-05
+    },
+    {
+      "epoch": 176,
+      "trainMse_A2": 1.8439522275940568e-05,
+      "selectionMse_A2": 2.3094225279766622e-05
+    },
+    {
+      "epoch": 180,
+      "trainMse_A2": 1.8405550895612606e-05,
+      "selectionMse_A2": 2.2981579373476694e-05
+    }
+  ],
+  "sources": [
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/training.json",
+      "sha256": "c4cb919beaefa2f9a6eed6712b27cce9a89914f8e22b39c3755296e53f0ba87f"
+    },
+    {
+      "file": "acf_simulink/validation/ml_force_20261005/selected_gain.json",
+      "sha256": "97fa5f19beda0ceb9e2f97d5fea017fa0cae321daa10bb81ca8ff3b3f9153532"
+    }
+  ]
+}

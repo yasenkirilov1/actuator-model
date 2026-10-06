@@ -1,0 +1,88 @@
+RL_UPDATE seed=7101 update=1/80 transitions=32768 errorRms=0.105459N peak=2.80208N fails=0 collect=2.67s learn=0.22s
+RL_UPDATE seed=7101 update=2/80 transitions=65536 errorRms=1.64779N peak=10.2549N fails=0 collect=2.59s learn=0.33s
+RL_UPDATE seed=7101 update=3/80 transitions=98304 errorRms=1.69048N peak=7.29532N fails=0 collect=2.68s learn=0.12s
+RL_UPDATE seed=7101 update=4/80 transitions=131072 errorRms=0.494868N peak=4.2088N fails=0 collect=2.67s learn=0.34s
+RL_UPDATE seed=7101 update=5/80 transitions=163840 errorRms=0.409549N peak=4.00582N fails=0 collect=2.60s learn=0.26s
+RL_UPDATE seed=7101 update=6/80 transitions=196608 errorRms=1.50935N peak=10.1172N fails=0 collect=2.58s learn=0.12s
+RL_UPDATE seed=7101 update=7/80 transitions=229376 errorRms=1.29433N peak=5.99607N fails=0 collect=2.61s learn=0.23s
+RL_UPDATE seed=7101 update=8/80 transitions=262144 errorRms=0.351346N peak=3.44143N fails=0 collect=2.63s learn=0.32s
+RL_UPDATE seed=7101 update=9/80 transitions=294912 errorRms=0.498468N peak=7.42679N fails=0 collect=2.60s learn=0.13s
+RL_UPDATE seed=7101 update=10/80 transitions=327680 errorRms=1.21256N peak=8.29939N fails=0 collect=2.59s learn=0.09s
+RL_SELECTION seed=7101 update=10 pass=0/8 peak=11.0482N fails=1
+RL_UPDATE seed=7101 update=11/80 transitions=360448 errorRms=1.45696N peak=6.879N fails=0 collect=2.59s learn=0.22s
+RL_UPDATE seed=7101 update=12/80 transitions=393216 errorRms=0.184953N peak=2.35565N fails=0 collect=2.62s learn=0.32s
+RL_UPDATE seed=7101 update=13/80 transitions=425984 errorRms=0.650654N peak=8.5288N fails=0 collect=2.60s learn=0.25s
+RL_UPDATE seed=7101 update=14/80 transitions=458752 errorRms=1.99639N peak=10.9098N fails=0 collect=2.59s learn=0.11s
+RL_UPDATE seed=7101 update=15/80 transitions=491520 errorRms=1.01784N peak=4.89967N fails=0 collect=2.61s learn=0.27s
+RL_UPDATE seed=7101 update=16/80 transitions=524288 errorRms=0.194773N peak=0.252288N fails=0 collect=2.62s learn=0.32s
+RL_UPDATE seed=7101 update=17/80 transitions=557056 errorRms=0.487787N peak=4.16502N fails=0 collect=2.60s learn=0.25s
+RL_UPDATE seed=7101 update=18/80 transitions=589824 errorRms=1.70533N peak=10.1668N fails=2 collect=3.61s learn=0.11s
+RL_UPDATE seed=7101 update=19/80 transitions=622592 errorRms=1.0235N peak=4.6449N fails=0 collect=2.64s learn=0.07s
+RL_UPDATE seed=7101 update=20/80 transitions=655360 errorRms=0.302158N peak=4.78215N fails=0 collect=2.64s learn=0.18s
+RL_SELECTION seed=7101 update=20 pass=0/8 peak=10.82N fails=1
+RL_UPDATE seed=7101 update=21/80 transitions=688128 errorRms=1.75022N peak=10.7812N fails=0 collect=2.61s learn=0.35s
+RL_UPDATE seed=7101 update=22/80 transitions=720896 errorRms=1.35958N peak=6.97303N fails=0 collect=2.61s learn=0.11s
+RL_UPDATE seed=7101 update=23/80 transitions=753664 errorRms=0.908826N peak=4.98994N fails=0 collect=2.61s learn=0.23s
+RL_UPDATE seed=7101 update=24/80 transitions=786432 errorRms=0.498544N peak=4.65045N fails=0 collect=2.62s learn=0.10s
+RL_UPDATE seed=7101 update=25/80 transitions=819200 errorRms=1.29743N peak=10.7215N fails=0 collect=2.61s learn=0.22s
+RL_UPDATE seed=7101 update=26/80 transitions=851968 errorRms=1.52751N peak=10.1478N fails=1 collect=3.12s learn=0.28s
+RL_UPDATE seed=7101 update=27/80 transitions=884736 errorRms=0.619662N peak=4.76924N fails=0 collect=2.62s learn=0.10s
+RL_UPDATE seed=7101 update=28/80 transitions=917504 errorRms=1.09758N peak=7.04473N fails=0 collect=2.62s learn=0.26s
+RL_UPDATE seed=7101 update=29/80 transitions=950272 errorRms=1.17693N peak=7.52156N fails=0 collect=2.61s learn=0.12s
+RL_UPDATE seed=7101 update=30/80 transitions=983040 errorRms=1.54341N peak=10.1675N fails=0 collect=2.62s learn=0.25s
+RL_SELECTION seed=7101 update=30 pass=0/8 peak=11.034N fails=1
+RL_UPDATE seed=7101 update=31/80 transitions=1015808 errorRms=1.26896N peak=8.29581N fails=0 collect=2.63s learn=0.36s
+RL_UPDATE seed=7101 update=32/80 transitions=1048576 errorRms=0.549188N peak=4.80984N fails=0 collect=2.62s learn=0.12s
+RL_UPDATE seed=7101 update=33/80 transitions=1081344 errorRms=2.12319N peak=10.7765N fails=0 collect=2.61s learn=0.24s
+RL_UPDATE seed=7101 update=34/80 transitions=1114112 errorRms=1.29607N peak=10.3988N fails=1 collect=3.13s learn=0.10s
+RL_UPDATE seed=7101 update=35/80 transitions=1146880 errorRms=0.700452N peak=3.11523N fails=0 collect=2.60s learn=0.12s
+RL_UPDATE seed=7101 update=36/80 transitions=1179648 errorRms=0.864616N peak=7.36567N fails=0 collect=2.62s learn=0.10s
+RL_UPDATE seed=7101 update=37/80 transitions=1212416 errorRms=1.52917N peak=10.7901N fails=0 collect=2.62s learn=0.07s
+RL_UPDATE seed=7101 update=38/80 transitions=1245184 errorRms=1.2208N peak=7.02949N fails=0 collect=2.61s learn=0.09s
+RL_UPDATE seed=7101 update=39/80 transitions=1277952 errorRms=0.981661N peak=7.40803N fails=0 collect=2.62s learn=0.26s
+RL_UPDATE seed=7101 update=40/80 transitions=1310720 errorRms=0.623492N peak=4.87844N fails=0 collect=2.61s learn=0.03s
+RL_SELECTION seed=7101 update=40 pass=0/8 peak=11.3596N fails=1
+RL_UPDATE seed=7101 update=41/80 transitions=1343488 errorRms=1.72728N peak=11.1791N fails=0 collect=2.61s learn=0.38s
+RL_UPDATE seed=7101 update=42/80 transitions=1376256 errorRms=1.43798N peak=8.65024N fails=0 collect=2.60s learn=0.11s
+RL_UPDATE seed=7101 update=43/80 transitions=1409024 errorRms=1.58714N peak=10.8275N fails=0 collect=2.61s learn=0.28s
+RL_UPDATE seed=7101 update=44/80 transitions=1441792 errorRms=0.725403N peak=5.46202N fails=0 collect=2.61s learn=0.04s
+RL_UPDATE seed=7101 update=45/80 transitions=1474560 errorRms=1.55136N peak=10.5749N fails=0 collect=2.61s learn=0.27s
+RL_UPDATE seed=7101 update=46/80 transitions=1507328 errorRms=1.25721N peak=5.3189N fails=0 collect=2.61s learn=0.06s
+RL_UPDATE seed=7101 update=47/80 transitions=1540096 errorRms=1.32085N peak=11.653N fails=0 collect=2.64s learn=0.10s
+RL_UPDATE seed=7101 update=48/80 transitions=1572864 errorRms=1.3194N peak=9.09004N fails=0 collect=2.60s learn=0.05s
+RL_UPDATE seed=7101 update=49/80 transitions=1605632 errorRms=1.91613N peak=11.1641N fails=0 collect=2.61s learn=0.10s
+RL_UPDATE seed=7101 update=50/80 transitions=1638400 errorRms=1.71378N peak=9.23216N fails=0 collect=2.61s learn=0.06s
+RL_SELECTION seed=7101 update=50 pass=0/8 peak=11.8886N fails=0
+RL_UPDATE seed=7101 update=51/80 transitions=1671168 errorRms=1.43391N peak=7.04984N fails=0 collect=2.63s learn=0.37s
+RL_UPDATE seed=7101 update=52/80 transitions=1703936 errorRms=1.04336N peak=5.39371N fails=0 collect=2.60s learn=0.04s
+RL_UPDATE seed=7101 update=53/80 transitions=1736704 errorRms=2.23225N peak=11.6773N fails=0 collect=2.61s learn=0.21s
+RL_UPDATE seed=7101 update=54/80 transitions=1769472 errorRms=1.38324N peak=7.52851N fails=0 collect=2.61s learn=0.03s
+RL_UPDATE seed=7101 update=55/80 transitions=1802240 errorRms=1.56343N peak=11.0721N fails=0 collect=2.62s learn=0.19s
+RL_UPDATE seed=7101 update=56/80 transitions=1835008 errorRms=0.971864N peak=8.08809N fails=0 collect=2.62s learn=0.03s
+RL_UPDATE seed=7101 update=57/80 transitions=1867776 errorRms=1.6668N peak=8.842N fails=0 collect=2.61s learn=0.10s
+RL_UPDATE seed=7101 update=58/80 transitions=1900544 errorRms=1.08294N peak=5.62467N fails=0 collect=2.61s learn=0.02s
+RL_UPDATE seed=7101 update=59/80 transitions=1933312 errorRms=0.929447N peak=7.59474N fails=0 collect=2.63s learn=0.05s
+RL_UPDATE seed=7101 update=60/80 transitions=1966080 errorRms=1.57186N peak=11.6633N fails=0 collect=2.61s learn=0.13s
+RL_SELECTION seed=7101 update=60 pass=0/8 peak=11.9305N fails=0
+RL_UPDATE seed=7101 update=61/80 transitions=1998848 errorRms=2.04357N peak=11.0646N fails=0 collect=2.60s learn=0.21s
+RL_UPDATE seed=7101 update=62/80 transitions=2031616 errorRms=1.10005N peak=9.02615N fails=0 collect=2.61s learn=0.04s
+RL_UPDATE seed=7101 update=63/80 transitions=2064384 errorRms=1.14345N peak=6.89397N fails=0 collect=2.63s learn=0.18s
+RL_UPDATE seed=7101 update=64/80 transitions=2097152 errorRms=1.2803N peak=8.97694N fails=0 collect=2.61s learn=0.10s
+RL_UPDATE seed=7101 update=65/80 transitions=2129920 errorRms=1.57338N peak=10.5542N fails=2 collect=3.62s learn=0.05s
+RL_UPDATE seed=7101 update=66/80 transitions=2162688 errorRms=1.32337N peak=6.97839N fails=0 collect=2.64s learn=0.10s
+RL_UPDATE seed=7101 update=67/80 transitions=2195456 errorRms=0.842775N peak=6.77267N fails=0 collect=2.64s learn=0.03s
+RL_UPDATE seed=7101 update=68/80 transitions=2228224 errorRms=0.714858N peak=4.46625N fails=0 collect=2.62s learn=0.10s
+RL_UPDATE seed=7101 update=69/80 transitions=2260992 errorRms=1.11014N peak=10.2884N fails=0 collect=2.61s learn=0.02s
+RL_UPDATE seed=7101 update=70/80 transitions=2293760 errorRms=1.02623N peak=8.36664N fails=0 collect=2.62s learn=0.20s
+RL_SELECTION seed=7101 update=70 pass=0/8 peak=11.314N fails=1
+RL_UPDATE seed=7101 update=71/80 transitions=2326528 errorRms=1.00905N peak=6.53048N fails=0 collect=2.65s learn=0.37s
+RL_UPDATE seed=7101 update=72/80 transitions=2359296 errorRms=0.683451N peak=4.51063N fails=0 collect=2.63s learn=0.08s
+RL_UPDATE seed=7101 update=73/80 transitions=2392064 errorRms=0.963286N peak=7.01132N fails=0 collect=2.63s learn=0.02s
+RL_UPDATE seed=7101 update=74/80 transitions=2424832 errorRms=1.16717N peak=10.5873N fails=0 collect=2.63s learn=0.10s
+RL_UPDATE seed=7101 update=75/80 transitions=2457600 errorRms=0.753859N peak=6.58498N fails=0 collect=2.64s learn=0.05s
+RL_UPDATE seed=7101 update=76/80 transitions=2490368 errorRms=1.06N peak=8.37397N fails=0 collect=2.64s learn=0.10s
+RL_UPDATE seed=7101 update=77/80 transitions=2523136 errorRms=1.12356N peak=7.89725N fails=0 collect=2.64s learn=0.17s
+RL_UPDATE seed=7101 update=78/80 transitions=2555904 errorRms=1.57714N peak=11.4354N fails=0 collect=2.64s learn=0.10s
+RL_UPDATE seed=7101 update=79/80 transitions=2588672 errorRms=0.968591N peak=5.71559N fails=0 collect=2.64s learn=0.02s
+RL_UPDATE seed=7101 update=80/80 transitions=2621440 errorRms=1.13659N peak=9.25089N fails=0 collect=2.64s learn=0.05s
+RL_SELECTION seed=7101 update=80 pass=0/8 peak=11.4574N fails=1

@@ -1,0 +1,31 @@
+{
+  "script": "inertial_mechanics_make_calibrated_static_mixed_comparison_20260930.py",
+  "scriptSHA256": "fb44dfa35d5fc81db60f9ff7a1223eff96fceda3cd2ef4d43781d12e1f7afb13",
+  "chartData": "inertial_mechanics_calibrated_static_mixed_comparison_20260930_chart_data.json",
+  "chartDataSHA256": "d848e6290bda98baf244aa7863106fa7b5920c7c5c36438e225d112aa7d15666",
+  "displayedNativeHistories": 6,
+  "newNativeCohortExecutions": 3,
+  "reusedBaselineNativeHistories": 3,
+  "additionalForceExecutionsForFigure": 0,
+  "metric": "max(abs(true normal force - 50 N)) over all 400001 native samples, including startup",
+  "sources": [
+    {
+      "file": "inertial_mechanics_calibrated_mechanics_20260930_results.json",
+      "sha256": "21f48187ecbf22bdb1ff0fec9a962da13454fe1fafa4638d91e58711db09d950"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_static_mixed_20260930_results.json",
+      "sha256": "27ae79689baaa6c3ec3270738f1d0a8514523111d0ea037b9d379a2f4a626011"
+    }
+  ],
+  "figures": [
+    {
+      "file": "inertial_mechanics_calibrated_static_mixed_comparison_20260930.svg",
+      "sha256": "96c4c605625c3c0e7dca7c23a90862d33f9feff55c458f1711bcc8c0c429a3e5"
+    },
+    {
+      "file": "inertial_mechanics_calibrated_static_mixed_comparison_20260930.png",
+      "sha256": "a01a04eb91fbade291c2f3e9b22a1df0bcc049872f177bf1b0428118587009e8"
+    }
+  ]
+}

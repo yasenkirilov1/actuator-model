@@ -1,0 +1,183 @@
+{
+  "status": "complete",
+  "newNativeSimulations": 0,
+  "beforeModelSHA256": "f50e4742dcaa674b223089262c7bfd2f5fb53923cd9a3b2c7db52dbaffd2ecb4",
+  "modelSHA256": "48287e6a17bc9d3144e3d6a77c59ecc601ba4fa26a7ec748173dc89d9bf718de",
+  "nativeBlockParametersIdentical": true,
+  "nativeSystemParametersIdentical": true,
+  "connectedSourceDestinationEdgesIdentical": true,
+  "modelWorkspaceIdentical": true,
+  "blockCount": 1161,
+  "systemCount": 42,
+  "connectedEdgeCount": 1092,
+  "destinationlessLeavesBefore": 33,
+  "destinationlessLeavesAfter": 0,
+  "removedDestinationlessLeaves": [
+    [
+      "simulink/systems/system_1696.xml",
+      "1724#out:1",
+      "[90, 0; 0, -25]"
+    ],
+    [
+      "simulink/systems/system_1696.xml",
+      "1719#out:1",
+      "[59, 0; 0, 95]"
+    ],
+    [
+      "simulink/systems/system_1696.xml",
+      "1706#out:1",
+      "[109, 0; 0, -40]"
+    ],
+    [
+      "simulink/systems/system_1696.xml",
+      "1715#out:1",
+      "[82, 0; 0, 125]"
+    ],
+    [
+      "simulink/systems/system_1696.xml",
+      "1711#out:1",
+      "[20, 0; 0, 110; 35, 0]"
+    ],
+    [
+      "simulink/systems/system_1696.xml",
+      "1710#out:1",
+      "[90, 0; 0, -35]"
+    ],
+    [
+      "simulink/systems/system_1304.xml",
+      "1311#out:1",
+      "[227, 0; 0, 140]"
+    ],
+    [
+      "simulink/systems/system_1304.xml",
+      "1307#out:1",
+      "[87, 0; 0, 150]"
+    ],
+    [
+      "simulink/systems/system_1304.xml",
+      "1310#out:1",
+      "[221, 0; 0, -75]"
+    ],
+    [
+      "simulink/systems/system_821.xml",
+      "845#out:1",
+      "[19, 0; 0, -220; -208, 0]"
+    ],
+    [
+      "simulink/systems/system_1514.xml",
+      "1527#out:1",
+      "[251, 0; 0, 215]"
+    ],
+    [
+      "simulink/systems/system_1514.xml",
+      "1528#out:1",
+      "[87, 0; 0, 215]"
+    ],
+    [
+      "simulink/systems/system_1514.xml",
+      "1525#out:1",
+      "[257, 0; 0, 225]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      "1568#out:1",
+      "[202, 0; 0, -330; -130, 0]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      "1571#out:1",
+      "[60, 0; 0, -330]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      [],
+      "[72, 0]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      [],
+      "[72, 0; 0, 20]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      "1569#out:1",
+      "[8, 0; 0, -265; -12, 0; 0, -160]"
+    ],
+    [
+      "simulink/systems/system_1539.xml",
+      "1542#out:1",
+      "[40, 0; 0, -275; 52, 0]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      "1608#out:1",
+      "[10, 0; 0, 164; 58, 0; 0, 126]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      "1581#out:1",
+      "[118, 0; 0, 300]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      [],
+      "[31, 0; 0, -15]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      [],
+      "[31, 0]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      "1596#out:1",
+      "[42, 0; 0, 300]"
+    ],
+    [
+      "simulink/systems/system_1579.xml",
+      "1591#out:1",
+      "[101, 0; 0, 300]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      [],
+      "[0, -80; 111, 0]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      [],
+      "[111, 0; 0, -95]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      [],
+      "[111, 0; 0, -20]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      [],
+      "[111, 0]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      "1617#out:1",
+      "[70, 0; 0, 155]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      "1626#out:1",
+      "[102, 0; 0, 168; 121, 0; 0, -73]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      "1650#out:1",
+      "[272, 0; 0, 160]"
+    ],
+    [
+      "simulink/systems/system_1610.xml",
+      "1641#out:1",
+      "[70, 0; 0, 110]"
+    ]
+  ],
+  "removedNativeLineSegments": 33
+}
