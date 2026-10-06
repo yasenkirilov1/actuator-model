@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "ready_for_bounded_development_and_native_replay",
+  "created_utc": "2026-10-06T22:08:20.353033+00:00",
+  "engine_source_path": "acf_simulink/experiments/current_model_matrix_20261006/engine.c",
+  "engine_source_sha256": "5d155f361e7a31531af6884a911e5ee6f03a10d590208aff0a7161954adf2960",
+  "api_path": "acf_simulink/experiments/current_model_matrix_20261006/engine_api.py",
+  "api_sha256": "e6c6d4a5774f9fbaa644e52547d8614a851d68793a82c3c48af590c71150c884",
+  "contract_path": "acf_simulink/experiments/current_model_matrix_20261006/study_contract.json",
+  "contract_sha256": "0936fd73866223e0a1f8c884f8ee2eed28627e3882b78adf9127eafff57e521f",
+  "checks_path": "acf_simulink/validation/current_model_matrix_20261006/plant/checks.json",
+  "checks_sha256": "1a540a477537b96f0abac221c3b657ee92e44696f7dc601e0f5d07aafc93a06d",
+  "check_recipe_sha256": "7a5a3291a018febc3a8d5c56845241a50720aa6f649267b67d07aff3d3aedf77",
+  "unchanged_abi": {
+    "Parameters_bytes": 720,
+    "Metrics_bytes": 272,
+    "trace_columns": 23
+  },
+  "positive_pad_parity": "Both selected original5mm cases: all33 nonruntime Cmetrics exactly equal original replay and stored metrics;501x23trace doubles bitwise identical percase.",
+  "event_convention": "Analytic geometric envelope; right-continuous ordinary endpoints; extra left-force limit at each acceleration jump; RK4 k4 uses left event limit;1e-12s timestamp equality tolerance; explicit event scheduling.",
+  "force_sample_count": "Metrics.steps = scored integration endpoints + extra one-sided limits; per-call8-column event arrays avoid global state.",
+  "physical_contact_stop": "Either side Fc<=0 stops at the reached event; left is first checked invalid side; no integration after stop; terminal rigid trace captures stop endpoint.",
+  "preserved_failed_fixture": {
+    "path": "acf_simulink/validation/current_model_matrix_20261006/plant/checks_failed_fixture_001.json",
+    "sha256": "2d8ca81c875730b7c508e6dea725c90aba224e5fb3dff53a7dd6beac5429a2ea",
+    "meaning": "Soft-gain rigid verification fixture physically lost contact before the first peak. The guard was retained unchanged. A constant-equilibrium-current physical probe separately exercises all events; no controller gain retuning or relaxed force/contact guard."
+  },
+  "executed_verification_recordings_current_attempt": 8,
+  "executed_verification_recordings_all_attempts": 13,
+  "campaign_or_tuning_runs": 0,
+  "qualification": false,
+  "retained_arrays": 0,
+  "private_binary_cleanup": "cleanup_engine(lib) or TemporaryDirectory object lifetime; no compiled binary retained in project."
+}

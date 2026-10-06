@@ -1,0 +1,39 @@
+{
+  "status": "current_report_delivered_and_audited",
+  "qualification": false,
+  "protected_files_unchanged": 28,
+  "primary_recordings": 852,
+  "word_count": {
+    "all_words": 3531,
+    "prose_words": 2991,
+    "figure_count": 8
+  },
+  "retention": {
+    "conservative_incremental_retained_bytes": 2619585,
+    "cap_bytes": 3145728,
+    "owner_bytes": {
+      "control": 755325,
+      "acquisition": 667327,
+      "native": 417307,
+      "plant": 79387,
+      "report": 700239
+    },
+    "preexisting_root_document_bytes_excluded": 31344,
+    "note": "All new source/evidence/report copies and existing architecture diagrams charged; root README/AGENTS charged by incremental byte growth. Bytecode caches excluded. No bulk arrays retained by current study."
+  },
+  "shared_arrays": {
+    "scopes": [
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation",
+      "/run/media/tommie/SATA SSD/actuator-model-evidence"
+    ],
+    "deduplicated_array_count": 2770,
+    "array_bytes": 4349417189,
+    "current_compact_trace_bytes_also_counted": 212697,
+    "conservative_total_bytes": 4349629886,
+    "cap_bytes": 5368709120
+  },
+  "notes_narrative_matches_repository": true,
+  "all_local_links_and_svg_xml_valid": true,
+  "all_new_figures_visually_inspected": true,
+  "temporary_full_histories_released": true
+}

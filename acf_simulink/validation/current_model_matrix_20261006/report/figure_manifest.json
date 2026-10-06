@@ -1,0 +1,79 @@
+{
+  "status": "generated_current_matrix_svg_figures",
+  "date": "2026-10-07",
+  "script_sha256": "59705d5d3d793b6c37f6d45d5ca68b2db29a6185741c5271617bc450dfac8e73",
+  "figures": [
+    {
+      "path": "reports/figures/current-four-configuration-results-20261007.svg",
+      "sha256": "22f74497f4cd297c5e1883dd1fa74691e16b28b36664683d57618fee9ba20756",
+      "question": "Which actuator and contact arrangement should we develop?",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/current_model_matrix_20261006/control/matrix_completion.json",
+          "sha256": "c229fce99c9695c76d149b162b811b1f507ab52feb598ca8a6ddc261339ecbc3"
+        }
+      ],
+      "method": "All selected-bank full-record metrics, including startup. Four54-case grids; copper-loss panels only use force-eligible soft-pad grids."
+    },
+    {
+      "path": "reports/figures/current-pad-versus-rigid-geometry-20261007.svg",
+      "sha256": "e40da67eeccd1372389341fd85996c9fd54a1854d4819b84b787ca46db205682",
+      "question": "How do soft pads influence our results?",
+      "sources": [
+        {
+          "path": "acf_simulink/experiments/current_model_matrix_20261006/study_contract.json",
+          "sha256": "0936fd73866223e0a1f8c884f8ee2eed28627e3882b78adf9127eafff57e521f"
+        }
+      ],
+      "method": "Analytic ridge/envelope and minmaxlower bound1.2*mS; theoretical geometry, not a simulated force recording. Same77mm footprint."
+    },
+    {
+      "path": "reports/figures/current-adc-resolution-20261007.svg",
+      "sha256": "16b5c28c08f61fee55d0868b96dd2b07d3ee07c287f127d533ec47b3ef6ce45c",
+      "question": "How many ADC bits do we need?",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/diagnostic_results.json",
+          "sha256": "44e0a8f96ec9658b7381e7f13d03e88161664039b5352c0bc1e096a101a9e970"
+        }
+      ],
+      "method": "Largest full-record error across threecorners at each code spacing, same noise and timing. Not hardware ADC/ENOB proof."
+    },
+    {
+      "path": "reports/figures/current-acquisition-timing-20261007.svg",
+      "sha256": "0646933d2831590c6feb8e0a5053e1dbefed8c298e6435d0cf948204286e30f4",
+      "question": "How fast must the amplifier, ADC and accelerometer be?",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/diagnostic_results.json",
+          "sha256": "44e0a8f96ec9658b7381e7f13d03e88161664039b5352c0bc1e096a101a9e970"
+        }
+      ],
+      "method": "Three-corner worst diagnostics. Range-ineligible peaks omitted and failures marked at0.6N only as categorical marker, not a force value. Physical-stop outcomes marked."
+    },
+    {
+      "path": "reports/figures/current-mass-calibration-20261007.svg",
+      "sha256": "75c4239fe883a5e161507f41789fe0a08f548ff1b5122e5e26dad0baa828e6ea",
+      "question": "What calibration accuracy matters most?",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/current_model_matrix_20261006/report/calibration_followup.json",
+          "sha256": "3b16b1cc123c15eb3ddd4cebe43a03e3c1d5b6b769e64ce2da79d673f5ddecd4"
+        }
+      ],
+      "method": "Follow-up afterknown1%mass failure. Identifiedmass changes inertia/gravity/bodyestimation while acquisitiontare remainsnominal. No independent qualification or fullresidualbox."
+    },
+    {
+      "path": "reports/figures/current-acceleration-diagnostics-20261007.svg",
+      "sha256": "a96441936947a1aea67d49f8ed2b46a5e946179d964b19dbf16a6d9634ddbe3d",
+      "question": "Do we need an accelerometer, and how quiet must it be?",
+      "sources": [
+        {
+          "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/diagnostic_results.json",
+          "sha256": "44e0a8f96ec9658b7381e7f13d03e88161664039b5352c0bc1e096a101a9e970"
+        }
+      ],
+      "method": "Normalizedinputnoise is not filteredRMS or manufacturernoiseguarantee; removal affects multiple controlleruses. Counts include force/physical/sensor/actuator/continuous-current screens."
+    }
+  ]
+}

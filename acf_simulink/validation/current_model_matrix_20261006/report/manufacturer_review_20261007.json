@@ -1,0 +1,29 @@
+{
+  "status": "primary_manufacturer_review_technical_features_not_hardware_qualification",
+  "date": "2026-10-07",
+  "sources": [
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf",
+      "part": "ADXL354C",
+      "revision": "D",
+      "verified": "Three analogue axes; selectable \u00b12/\u00b18g; typical overall3dB bandwidth1.9kHz, mechanical resonance2.4kHz; noise22.5ug/sqrtHz at\u00b12g and estimated50%higher at\u00b18g. A matched two-pole1900Hz envelope is not the complete part response."
+    },
+    {
+      "url": "https://www.ti.com/product/ADS131M02",
+      "part": "ADS131M02",
+      "verified": "Two simultaneously sampled channels permit one axial force and one aligned acceleration axis in this reduced scope. Not all three acceleration axes."
+    },
+    {
+      "url": "https://www.ti.com/product/ADS131M04",
+      "part": "ADS131M04",
+      "verified": "Four simultaneous channels permit axial force plus three analogue acceleration axes. Relative position/current sensing need separate inputs."
+    },
+    {
+      "url": "https://www.microchip.com/en-us/product/MCP3208",
+      "part": "MCP3208",
+      "verified": "12-bit multiplexed converter. Reviewed100ksps aggregate at5V; channel sequencing does not inherit simultaneous-converter diagnostics."
+    }
+  ],
+  "prices": "Existing quantity-one reviews from2026-10-05/06, not refreshed quotations. ADXL354C74.6691EUR plus M04 7.1511EUR =81.8202EUR including21%VAT; excludes front end, board, MCU, driver and shipping.",
+  "prototype_recommendation": "Voice coil with measured pad and custom integrated sensing/control PCB; mass/phase robustness and thermal operation remain developmental."
+}

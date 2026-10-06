@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "controller_bank_declared_before_rigid_execution",
+  "scope": "Current reduced one-axis axial-contact-force plant; 2 s loaded equilibrium, fixed robot, no drag. Not long-term normal-force or hardware qualification.",
+  "retained_cap_bytes": 972800,
+  "temporary_cap_bytes": 8388608,
+  "full_record_scoring": "Every executed integration endpoint including startup and stopped endpoint, plus both force limits at rigid-envelope acceleration transitions; no full histories retained.",
+  "comparison_groups": [
+    "coil_soft", "screw_soft",
+    "coil_rigid_plate_transfer", "screw_rigid_plate_transfer",
+    "coil_rigid_plate", "screw_rigid_plate"
+  ],
+  "nominal_records_per_group": 54,
+  "final_records_total": 324,
+  "development_families_per_actuator": 18,
+  "development_records_per_actuator": 72,
+  "all_development_trials_retained": true,
+  "selection": "Lowest ineligible-case count, then force-failure count, worst force error and largest mean hot winding loss; no evaluation retuning.",
+  "fixed_mechanics": {
+    "upper_k_N_m": 20000, "upper_c_N_s_m": 0, "upper_travel": "unlimited ideal",
+    "external_B_S": "rigid mounting with finite 64000000 N/m cell",
+    "mass_a_kg": 1.5, "mass_b_kg": 0.6,
+    "screw": "Independent nut, internal 5000 N/m spring with zero damping, 10 mm/rev lead, 0.075 kg translating nut, total rotary inertia 7.04e-6 kg m2"
+  },
+  "causal_controller": "Acquired gravity-tared cell plus identified S mass times acquired S acceleration; optional ordinary force PI/filter and acceleration-derived velocity/inertia terms. SEA also sampled quantized nut encoder and causal position servo. No bump profile, truth, preview or future motion.",
+  "old_cell_mode_feedback": "absent and ineligible",
+  "root_contract": {
+    "path": "acf_simulink/experiments/current_model_matrix_20261006/study_contract.json",
+    "sha256": "0936fd73866223e0a1f8c884f8ee2eed28627e3882b78adf9127eafff57e521f",
+    "rigid_geometry": "Ideal rigid77mm flat plate translating without tilt; analytic continuous maximum across the full footprint, not a finite-stiffness pad or old rigid-point branch",
+    "rigid_force_limit": "Envelope acceleration jumps2.4m/s2; two one-sided force limits differ by2.4*mS N, giving maximum error lower bound1.2*mS N independently of controller."
+  },
+  "existing_no_pad_findings": {
+    "source": "acf_simulink/validation/sea_pad_dynamic_20261006/evaluation/rigid_point_matched_diagnostic.json",
+    "scope": "8 unchanged old c80-gain rigid-point transfer diagnostics, not retuned current no-pad comparison",
+    "coil": {"force_passes": 0, "count": 4, "contact_loss_count": 4},
+    "sea": {"force_passes": 0, "count": 4, "worst_force_error_N": 2.5103404627059636, "current_rms_range_A": [2.962713828310168, 3.3185050849486575], "continuous_limit_A": 1.42}
+  },
+  "estimated_runtime": "Approximately 2 to 4 minutes with four streaming C workers; original soft worst-case parity measured1.54/1.62s per serial record locally.",
+  "native_handoff": "resolve_record(lock_path, record_id) reconstructs the exact selected config and retained full-step metrics; native worker owns command capture/replay storage."
+}

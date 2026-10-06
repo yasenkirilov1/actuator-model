@@ -1,0 +1,119 @@
+{
+  "status": "markdown_and_eight_svg_delivery",
+  "date": "2026-10-07",
+  "html_updated": false,
+  "repository_markdown": "reports/active-contact-flange-report-design-explained-20261006.md",
+  "repository_markdown_sha256": "51d40b64ad58dc977504589ad75c45bbc3935c6621196b9a07922411508961d0",
+  "notes_markdown": "/home/tommie/Documents/Notes Remote/S7 Project/active-contact-flange-report.md",
+  "notes_markdown_sha256": "39c578b5ba68bfaa73f57aa798bdcb446a5115a0d32a589c17e94fd9b3786091",
+  "report_inputs_sha256": "f5e85239dd951586cf1fb8772e4713c31ca9472062ab3c027a6b05007e0664e3",
+  "notes_only_evidence_link_rewrites": [
+    {
+      "repository_target": "../acf_simulink/experiments/current_model_matrix_20261006/README.md",
+      "notes_target": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/current_model_matrix_20261006/README.md"
+    },
+    {
+      "repository_target": "../acf_simulink/experiments/report_readability_20261006/adc/README.md",
+      "notes_target": "/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/adc/README.md"
+    }
+  ],
+  "figures": [
+    {
+      "repository": {
+        "path": "reports/figures/current-four-configuration-results-20261007.svg",
+        "sha256": "22f74497f4cd297c5e1883dd1fa74691e16b28b36664683d57618fee9ba20756"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-four-configuration-results-20261007.svg",
+        "sha256": "22f74497f4cd297c5e1883dd1fa74691e16b28b36664683d57618fee9ba20756"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+        "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+        "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/current-pad-versus-rigid-geometry-20261007.svg",
+        "sha256": "e40da67eeccd1372389341fd85996c9fd54a1854d4819b84b787ca46db205682"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-pad-versus-rigid-geometry-20261007.svg",
+        "sha256": "e40da67eeccd1372389341fd85996c9fd54a1854d4819b84b787ca46db205682"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/current-acceleration-diagnostics-20261007.svg",
+        "sha256": "a96441936947a1aea67d49f8ed2b46a5e946179d964b19dbf16a6d9634ddbe3d"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-acceleration-diagnostics-20261007.svg",
+        "sha256": "a96441936947a1aea67d49f8ed2b46a5e946179d964b19dbf16a6d9634ddbe3d"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/current-mass-calibration-20261007.svg",
+        "sha256": "75c4239fe883a5e161507f41789fe0a08f548ff1b5122e5e26dad0baa828e6ea"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-mass-calibration-20261007.svg",
+        "sha256": "75c4239fe883a5e161507f41789fe0a08f548ff1b5122e5e26dad0baa828e6ea"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/current-adc-resolution-20261007.svg",
+        "sha256": "16b5c28c08f61fee55d0868b96dd2b07d3ee07c287f127d533ec47b3ef6ce45c"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-adc-resolution-20261007.svg",
+        "sha256": "16b5c28c08f61fee55d0868b96dd2b07d3ee07c287f127d533ec47b3ef6ce45c"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/current-acquisition-timing-20261007.svg",
+        "sha256": "0646933d2831590c6feb8e0a5053e1dbefed8c298e6435d0cf948204286e30f4"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/current-acquisition-timing-20261007.svg",
+        "sha256": "0646933d2831590c6feb8e0a5053e1dbefed8c298e6435d0cf948204286e30f4"
+      }
+    },
+    {
+      "repository": {
+        "path": "reports/figures/integrated-sensing-pcb-20261006.svg",
+        "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca"
+      },
+      "notes": {
+        "path": "/home/tommie/Documents/Notes Remote/S7 Project/figures/integrated-sensing-pcb-20261006.svg",
+        "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca"
+      }
+    }
+  ],
+  "previous_reports": [
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/previous_report_11febde/Notes.md",
+      "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/previous_report_11febde/repository.md",
+      "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d"
+    }
+  ],
+  "word_count": {
+    "all_words": 3531,
+    "prose_words": 2991,
+    "figure_count": 8
+  },
+  "source_hash_and_xml_checks": true,
+  "current_experiment_qualification": false
+}

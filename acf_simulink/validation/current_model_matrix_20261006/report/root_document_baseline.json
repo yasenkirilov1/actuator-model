@@ -1,0 +1,18 @@
+{
+  "status": "existing_root_document_baseline_for_incremental_storage_accounting",
+  "files": [
+    {
+      "path": "README.md",
+      "baseline_commit": "11febde",
+      "baseline_bytes": 3330,
+      "baseline_sha256": "7c4be5db652772104ca1911482f9143fc011026cc2b330f6701bc65a9a3c9f57"
+    },
+    {
+      "path": "AGENTS.md",
+      "baseline_commit": "11febde",
+      "baseline_bytes": 28014,
+      "baseline_sha256": "7dadd133122dcef2fcb81d216e38432207b1b3ee22018866b451e1ac79caf301"
+    }
+  ],
+  "rule": "Only positive byte growth of these pre-existing root documents is charged to this study. All new study files, report snapshots, figures and delivered report/figure copies are charged in full."
+}

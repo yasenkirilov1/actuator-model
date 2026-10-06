@@ -1,0 +1,20 @@
+{
+  "source_sha256": "5d155f361e7a31531af6884a911e5ee6f03a10d590208aff0a7161954adf2960",
+  "compiler_command": [
+    "gcc",
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fPIC",
+    "-shared",
+    "/home/tommie/Projects/actuator-model/acf_simulink/experiments/current_model_matrix_20261006/engine.c",
+    "-lm",
+    "-o",
+    "/tmp/acf_current_matrix_engine_brkr3j2a/engine_5d155f361e7a3153.so"
+  ],
+  "binary_sha256": "36dff55110816cd7dbf3ae55071de0b65f92a04d687ba128cf1d1e9de1a00a02",
+  "binary_retained": false,
+  "flags": "No fast-math; double precision; source-hash private lazy build."
+}

@@ -2,335 +2,248 @@
 
 ## Intro
 
-Our goal is a flange that keeps the **normal pressing force experienced by the workpiece within ±0.5 N**, including a **1 mm high, 10 mm wide bump crossed at 100 mm/s**. The required operating range is **5–50 N**, tool masses of **0.1–2 kg**, and fixed flange orientations from **0–90°**.
+Our goal is an active flange that keeps the **normal pressing force experienced by the workpiece within ±0.5 N**, including a **1 mm high, 10 mm wide bump crossed at 100 mm/s**. We want operation over **5–50 N**, tool masses **S = 0.1–2 kg**, and fixed flange orientations **0–90°**.
 
-For the **first prototype**, we will use a **one-axis load cell plus tool acceleration** and ignore drag coupling into that axis. Separating normal force from sanding drag on slopes remains an open problem requiring multi-axis force sensing. We defer that extension for now.
+For the **first prototype**, we use a **one-axis B–S load cell and an accelerometer on S**, ignoring axial coupling from sanding drag. The current experiments therefore evaluate **total axial pressing force**. On slopes, separating normal pressing force from unknown drag remains an open problem requiring multi-axis force sensing. That extension is deferred.
 
-The prescribed mechanics are a **20 N/mm upper spring with zero external damping and unlimited ideal travel**, and a **rigid lower attachment** with a finite-stiffness load cell. Actuator stroke remains limited. The controller receives force, acceleration, S–A position and issued robot commands, with no surface preview.
-
-**A** is the 1.5 kg actuator body/mount, **B** the 0.6 kg holder, and **S** the tool beyond the load cell. Taring weight removes gravity, but not dynamic inertia.
+The prescribed upper spring remains **20 N/mm, with zero damping and unlimited ideal travel**. The lower attachment is rigid, while the sensing cell retains its finite stiffness. **A** is the 1.5 kg actuator body/mount; **B** is the 0.6 kg moving holder; **S** is everything downstream of the cell, including the tool, sensing PCB and its mounting. Actuator travel is limited.
 
 ## Question
 
-Can this arrangement meet the force requirement, and how should we build a voice-coil prototype with integrated, programmable sensing electronics? Where can we reduce cost without excessive error?
+Which actuator, contact arrangement, controller and sensing electronics should we develop? Can a voice coil and custom PCB give accurate, understandable control at reasonable cost, and where do the present results leave design risk?
 
 ## Results
 
-**The locked rigid-contact reference missed the complete requirement. The new soft-pad tests are substantially more promising.** The reference tests below used multi-axis reconstruction and a controller locked before evaluation; they do not qualify the one-axis prototype:
+The newest model compares **four configurations with the same 77 mm footprint**. The soft interface is **5 mm thick**, with assumed **50 N/mm whole-pad stiffness and zero damping**. Without it, contact is an ideal **rigid 77 mm backing plate**, translating without tilt.
 
-| Test group | Passed | Largest force error | Hard stops |
+| Configuration | Passing nominal records | Largest force error | Contact stops |
 |---|---:|---:|---:|
-| 700 nominal combinations of mass, force and orientation | 683/700 | 0.580 N | 0 |
-| 32 sensing/calibration and motion stresses | 21/32 | 3.948 N | 0 |
-| Four repeated-bump/drift recordings, up to 30 s | 1/4 | 0.691 N | 1 |
+| Voice coil + soft pad | **54/54** | **0.053 N** | 0 |
+| Spring-driven screw + soft pad | **54/54** | **0.115 N** | 0 |
+| Voice coil + rigid plate | **0/54** | **7.465 N** | 12 |
+| Spring-driven screw + rigid plate | **0/54** | **7.775 N** | 12 |
 
-Every simulation sample counts, including startup. Contact loss or a travel stop fails the recording. Two long tests leave the ±7.5 mm band; one reaches a hard stop after 4.19 s.
+Each grid covers S = **0.1/1.4/2 kg**, targets **5/20/50 N**, orientations to gravity **0/45/90°**, and two fresh noise seeds. Controllers were locked before evaluation. The rigid controllers received their own bounded gain search; these are not simply the soft controllers reused unsuccessfully.
 
-The new comparison uses **total axial pressing force**, one-axis cell plus S acceleration, and the same upper spring. Two-second recordings start loaded, with the robot fixed. For the selected **77 mm × 5 mm pad geometry**, assuming **50 N/mm stiffness and zero damping**, both actuators pass their 54-case grids: **0.046 N worst for the coil, 0.118 N for the spring-driven screw**. Engagement, calibration stresses and delayed recentering still need testing.
+![Four current configurations: force regulation and heat](figures/current-four-configuration-results-20261007.svg)
 
-![Where the nominal fixed design meets the force requirement](figures/fixed-force-operating-grid-20261006.svg)
+These are **two-second recordings starting at loaded equilibrium, with the robot fixed**. Every integration endpoint and rigid-contact event side counts, including startup. Force error above 0.5 N, contact loss or a travel stop fails a recording; sensor ranges and actuator ratings are additional screens. This demonstrates promising nominal soft-pad performance, **not complete sanding qualification**.
 
-*Each square contains the largest recorded error across seven orientations. Outlines use the unrounded 0.5 N threshold. This finite grid does not include the separate calibration/motion stresses or long tests.*
+The current campaign contains **852 primary recordings**, including development and diagnostics. Fast sweeps use compiled physical equations; selected histories are checked independently against native Simulink blocks. Its [study guide and compact evidence](../acf_simulink/experiments/current_model_matrix_20261006/README.md) distinguish the fresh grids from tuning and sensitivity tests. Older report numbers are retained as historical evidence rather than used to assess this model.
 
-### Mechanics: load path, springs and guides
+### Mechanics and contact
 
 #### Intro
 
-The upper spring connects the robot to A. The actuator moves B relative to A. The cell connects B to S, and the pad supports S against the workpiece.
+The upper spring connects the robot to A. The actuator moves B relative to A. The cell joins B to S, and the pad supports S against the workpiece. Position measures **S relative to A**. There is no extra compliant lower suspension.
 
-![Voice-coil mechanics and first-prototype measurement locations](figures/prototype-mechanics-voice-coil-pcb-20261006.svg)
+The physical equations integrate A/B/S motion and winding current, including gravity, springs, cell deformation and assumed guide friction of **0.2 N Coulomb plus 2 N·s/m viscous**. The screw adds independent nut and motor dynamics. Electrical saturation, actuator stroke and contact limits are checked as the motion develops.
 
-*The coil acts between A and B. Position measures S relative to A; the cell carries S, including its sensing PCB. The upper spring remains prescribed.*
+![Voice-coil load path and measurement locations](figures/prototype-mechanics-voice-coil-pcb-20261006.svg)
 
 #### Question
 
-What is a mechanical “mode,” and why can a nominally rigid connection still cause force ringing?
+**How do soft pads influence our results?** Is the improvement merely averaging the bump, and what does a mechanical “mode” mean?
 
 #### Results
 
-A **mode** is a characteristic pattern of vibration: which parts move relative to one another, and how quickly they oscillate. A disturbed mass on a spring rings in one such pattern; a structure can have several. [Modal-analysis explanation](https://www.mathworks.com/discovery/modal-analysis.html).
+A broad pad changes how contact develops, but the model does not replace the surface with an averaged height. The soft pad is divided into **61 weighted strips** across its circular footprint. Each strip compresses independently and carries no tensile contact force. Their forces are summed; S moves according to its own force balance. We assess **total force**, without making claims about local pressure or sanding quality.
 
-The upper spring permits relatively slow body motion. A faster mode involves tiny load-cell deformation and B moving relative to S. With the reference **64 MN/m cell stiffness** and 0.6 kg holder, it is about **1.64 kHz when S is constrained by rigid contact**. With a soft pad, both masses move and the corresponding mode is roughly **1.87–4.35 kHz** across the tool-mass range. A 0.5 N cell-force change needs only **7.8 nanometres** of deformation. Rigid mounting does not eliminate this vibration.
+The rigid plate instead follows the **highest point beneath its footprint**. This prevents geometric penetration without inventing pad softness. At the beginning and end of the flat top of its height envelope, acceleration changes abruptly by **2.4 m/s²**. Cell force remains continuous, so the surface force jumps by **S mass × 2.4 m/s²**.
 
-The native Simulink plant applies mass force balances, gravity, contact and electrical dynamics. Zero external damping leaves assumed guide friction of **0.2 N Coulomb and 2 N·s/m viscous**. The new pad model lets S move independently of the surface; contact loss and hard travel limits still stop the run.
+Consequently, at least half that jump must miss a continuous force target: **0.12 N for S = 0.1 kg, 1.68 N for 1.4 kg, and 2.4 N for 2 kg**. No causal controller removes an instantaneous mechanical discontinuity. Both sides are scored explicitly. Real backing, workpiece compliance or tilt could soften the transition; the ideal rigid result is not proof that every real bare tool fails.
 
-![Load-cell mode and the purpose of its feedback](figures/load-cell-mode-explained-20261006.svg)
+![Matched footprint and the ideal rigid-contact force bound](figures/current-pad-versus-rigid-geometry-20261007.svg)
 
+The example geometry resembles the [Mirka 77 mm × 5 mm interface](https://www.mirka.com/nl-nl/p/Interface-77---6-GRIP/?variant=94118). **50 N/mm and zero damping are our assumptions, not Mirka specifications.** At 50 N, flat compression is 1 mm. The model stops if compression exceeds its assumed **2.5 mm working allowance**. Real foam has nonlinear stiffness, hysteresis, temperature dependence and changing contact area.
+
+A **mode** is a characteristic vibration pattern: which masses move relative to each other, and at what frequency. The calculated upper-body mode is about **18.4 Hz**. Tiny load-cell deformation creates a much faster B–S mode: about **1.64 kHz with rigid contact**, or **1.87–4.35 kHz with the soft pad**, depending on S. The assumed cell stiffness is **64 MN/m**; a 0.5 N force change corresponds to only **7.8 nm** deformation. “Rigidly mounted” does not mean vibration-free. These are linearized mechanical calculations, not measured resonances or closed-loop stability proofs.
 
 #### Recommendation
 
-Keep the prescribed spring and lower attachment. Measure assembled cell/frame/guide modes and friction before tuning. The illustration explains the rigid-contact reference; its specific vibration correction does not transfer automatically to soft contact.
+Develop with the **77 mm × 5 mm soft interface**, while measuring its actual compression and frequency response. Keep the prescribed upper spring and rigid lower mounting. Identify cell/frame/guide modes before tuning; guide friction and foam response cannot safely be inferred from nominal dimensions alone.
 
 ### Actuator and electrical drive
 
 #### Intro
 
-The actuator must change force quickly and support sustained sanding loads without excessive mass or heat.
+The actuator must alter force quickly, provide sufficient travel, and sustain the load without excessive heat or moving mass.
 
 #### Question
 
-How does a voice coil compare with a leadscrew driving a spring, and which voice-coil parameters should we look for?
+Why favour a voice coil over a leadscrew, and what parameters should the coil have? Would more voltage help?
 
 #### Results
 
-A voice coil makes force directly: **force ≈ force constant × current**. The tested screw compresses an internal **5 N/mm spring between its independent nut and B**. Force feedback adjusts spring deflection through an encoder-based nut servo. The prescribed upper spring and rigid B–S mounting remain. Rotary inertia loads the nut coordinate; it is not automatically extra tool mass. [Series-elastic principles](https://fab.cba.mit.edu/classes/865.15/people/rebecca.kleinberger/assets/papers/SEA_Pratt.pdf).
+The coil makes force approximately proportional to current: **F = Kf × I**. The screw comparison is a proper **series-elastic actuator**: an independent nut compresses a **5 N/mm internal spring** against B. A nut encoder and motor servo control that deflection. This internal spring does not replace the prescribed upper spring or the rigid B–S connection.
 
-The screw uses an **RE35-class motor**, **10 mm lead**, assumed **75 g nut/carriage**, and a **60 Hz nut servo**, with zero added spring damping. [Parameters, sources and reproduction](/home/tommie/Projects/actuator-model/acf_simulink/experiments/sea_pad_dynamic_20261006/README.md).
+The screw uses an **RE35-class motor, 10 mm lead, 75 g nut/carriage and 60 Hz nut servo**. Its rotor inertia loads the nut coordinate, rather than being added directly to S. It includes modeled shaft/guide friction, but not backlash, stiction or a holding brake. Both arrangements still require guidance and structural stiffness.
 
-Each grid tests S = **0.1/1.4/2 kg**, force **5/20/50 N**, orientation **0/45/90°**, and two fresh noise seeds. With the **5 mm pad at an assumed 50 N/mm**, the coil's **0.046 N** peak leaves **0.454 N nominal reserve** against the limit; the screw's **0.118 N** leaves **0.382 N**. Their largest two-second average hot-winding losses are **37.4 W versus 7.4 W**. Screw RMS current reaches **1.07 A**, below its 1.42 A catalogue limit.
+With the soft pad, the coil has lower nominal worst error: **0.053 versus 0.115 N**. It also gives a direct programmable force interface without an internal spring and nut servo. The screw has a substantial advantage in heat: maximum average winding losses are **7.4 W versus 37.4 W** for the coil. Its maximum RMS current is **1.07 A**, below the modeled 1.42 A continuous-current screen. Two seconds does not establish installed continuous thermal performance.
 
-![Voice-coil and series-elastic screw force errors and winding losses](figures/pad5mm-force-and-actuator-results-20261006.svg)
-
-*All samples count. Both wide-pad grids pass physical, sensor-range and peak-actuator checks. Copper loss estimates heat generation; neither two seconds nor a catalogue current screen establishes installed thermal performance.*
-
-A separate damped **20 N/mm, 10 mm-thick** narrow-contact study also favours the coil: **54/54 at 0.338 N**, versus screw **0/54 at 1.730 N**. With the new 5 mm pad's unchanged gains, both fail all eight matched point-contact cases. Width, material response and tuning jointly determine performance.
-
-For a coil, examine the following parameters together:
-
-| Parameter | Development target and reason |
+| Coil parameter | Prototype development target |
 |---|---|
-| Force constant | Around **24.4–25 N/A**, specified over the used stroke; converts force demand into current |
-| Continuous force | At least **55–60 N at the actual hot temperature and stroke**, with the specified mounting/cooling |
-| Peak force/current | About **85 N / 3.5 A**, with permitted pulse duration and duty cycle |
-| Travel | **25 mm**, retaining a ±7.5 mm working band about the midpoint |
-| Resistance and inductance | Reference: **6.4 Ω cold, 8.896 Ω modeled hot, 4 mH**; these set heat and current-slew voltage |
-| Mass | Include moving coil in B and stationary body/mount in A; the reference body alone is about **1.24 kg** |
+| Force constant | About **24.4–25 N/A**, characterized over the working stroke |
+| Continuous hot force | **55–60 N**, with specified cooling and mounting |
+| Peak force/current | About **85 N / 3.5 A**, with a defined pulse duty |
+| Stroke | **25 mm**; retain the ±7.5 mm preferred working band |
+| Winding | Reference **6.4 Ω cold, 8.896 Ω hot, 4 mH** |
+| Mass allocation | Moving parts belong in B; stationary coil/body/mount belong in A |
 
-Voltage demand is **V = RI + L·dI/dt + Kf·v**: winding resistance, changing current and motion-induced voltage all matter. A steady 50 N hot-coil hold needs **2.05 A and 37.4 W**. Check sustained hot force near stroke ends, not just catalog cold/centre ratings.
+Voltage demand includes **RI**, **L·dI/dt**, and motion-induced voltage. A steady 50 N hot-coil hold needs approximately **2.05 A and 37.4 W**. The stationary reference actuator body alone is around 1.24 kg, which explains the present A = 1.5 kg allowance.
 
-Higher voltage helps when clipping limits current slew. Earlier unchanged-controller **32/48 V pairs** with the 10 mm broad pad are identical when unclipped. A rigid-contact stress improves **2.748→0.650 N**; both runs fail. The new 5 mm grids request at most **21.1 V coil / 26.4 V screw**, so voltage is currently ample at 32 V.
-
-#### Recommendation
-
-**Choose the voice coil for the first prototype.** It gives the lower force error and a direct current-to-force interface for experimenting with controllers. It also avoids the screw's nut servo, internal spring calibration and backlash mechanism. This choice prioritizes force regulation and mechanical simplicity. The screw remains a credible, lower-heating alternative if energy use becomes the deciding constraint.
-
-Use an adjustable **48 V-rated bipolar current driver**, **3.5 A peak capacity** and at least **32 V usable output**. Verify the **50 µs modeled current-response target**, hot force across the stroke and sustained cooling. The approximately **37 W winding-loss case** makes thermal design part of the coil recommendation.
-
-### Soft pads
-
-#### Intro
-
-A soft pad lets the tool move while the pad compresses. Its width also spreads the encounter with a bump over time. Compliance and footprint are separate physical effects.
-
-#### Question
-
-**How do soft pads influence our results?**
-
-#### Results
-
-The reference is **77 mm diameter and 5 mm thickness**, like the [Mirka interface](https://www.mirka.com/nl-nl/p/Interface-77---6-GRIP/?variant=94118). **50 N/mm is our unmeasured whole-pad assumption**, not a Mirka specification. Tests cover softer/stiffer material, **0/40/80/150 N·s/m damping**, and point versus circular contact. The original full-width ridge remains. Forces are summed from compressed strips after allowing each strip to separate; tool motion stays dynamic.
-
-![Effects of stiffness and assumed damping for a 5 mm pad](figures/pad5mm-material-sensitivity-20261006.svg)
-
-*Four matched conditions per material setting, with conservative gains held fixed. Changing a pad can change stability, rather than merely smooth the disturbance.*
-
-At **50 N/mm and 5 mm thickness**, all **32** material-sensitivity recordings pass, including zero damping. At **100 N/mm**, **23/32** pass; five fail through contact loss. Exact width comparisons give **0/8 point versus 8/8 wide** for each actuator. Some narrow cases exceed sensor ranges and are ineligible diagnostics, not usable prototype trajectories.
-
-The **20 N/mm, 5 mm** cases use the entire assumed **2.5 mm working-compression allowance at 50 N** and stop during startup. This is a linear-model validity limit, not measured Mirka bottoming. Published foam data support the stiffness scale, while constant modeled damping can overstate high-frequency suppression. [Material sources](https://www.rogerscorp.com/-/media/project/rogerscorp/documents/elastomeric-material-solutions/poron/english/data-sheets/17-006-poron-4701-30-very-soft.pdf).
+Fresh three-corner drive pairs show that increasing usable voltage **32→48 V at unchanged 50 µs current response produces identical soft-pad results**. Neither actuator clips there; the nominal grids request at most **21.0 V coil / 26.5 V screw**. At 48 V with deliberately faster **25 µs** response, the coil diagnostic worst error improves **0.0450→0.0422 N**. Neither voltage nor faster response rescues the rigid plate. Current voltage headroom is therefore adequate for these cases; more voltage alone is not the main performance opportunity.
 
 #### Recommendation
 
-Use the **77 mm × 5 mm geometry** and measure compression and frequency response. Around **50 N/mm**, flat compression is **1 mm at 50 N**; the selected tests stay below **1.99 mm maximum**. Retune for the actual pad and confirm nonlinear compression, partial contact and long-term behaviour.
+**Choose the voice coil for the first prototype**, prioritizing force tracking, direct control and mechanical simplicity. Accept its cooling requirement explicitly. Retain the spring-driven screw as the lower-heating alternative: the tests do not establish universal coil superiority, and calibration diagnostics below actually favour the screw's tolerance.
 
-### Force and position measurement
+Use an adjustable **48 V-rated bipolar driver**, **3.5 A peak**, at least **32 V usable output**, and a measured **50 µs current-response target**. The current loop needs its own fast current measurement; the force ADC does not provide this guarantee.
+
+### Controller
 
 #### Intro
 
-The B–S load cell measures the force supporting the tool. That includes the surface reaction, tool inertia and, before tare, gravity. It is not automatically the force pressing normally into the workpiece.
+The controller receives acquired cell force, S acceleration and S–A position. The screw also receives its nut encoder. It has **no surface preview, known bump profile or future robot motion**.
 
 #### Question
 
-What kind of load cell do we need, and can we get away with a single force axis?
+Which strategy works now, and what does “cell mode feedback” mean here?
 
 #### Results
 
-**Yes, for our reduced first-prototype scope.** With known tool mass and consistent gravity tare, add **S mass × measured S acceleration** to the axial cell reading. In the rigid-contact reference, the heavy tool's inertial term reaches **4.8 N**; a soft pad changes its motion. Static zeroing alone is insufficient. Holder B is upstream of the cell and is not part of the inertia correction.
+The selected soft-pad controllers use **proportional force feedback plus gravity holding feedforward and estimated-velocity damping**. Their force-integral gains are zero. The coil proportional gain is **10 N/N**, equivalent to **0.410 A/N** with Kf = 24.4 N/A; velocity correction is **200 N·s/m**. The screw uses **0.5 N/N**, or **0.1 mm/N** internal-spring deflection correction, plus **100 N·s/m** velocity correction.
 
-On an aligned flat test surface, axial contact force is normal pressing force. On a slope, conversion also needs surface direction. **With a soft pad, tool motion alone does not reveal surface slope**: some motion is pad compression. The new diagnostics therefore report total axial force without inferring an unmeasured normal.
+Filtered acceleration is integrated with a **1 Hz leak**, producing an approximate velocity estimate while limiting drift. The coil uses an 80 Hz acceleration filter; the screw uses 100 Hz. The screw converts desired force into a nut-position target, filters it at 300 Hz, then uses the 60 Hz encoder servo. Position and speed errors determine current, so its force gain is not a single A/N number.
 
-**Open problem: sanding drag.** Tangential drag can project onto a fixed sensor axis on a slope. Acceleration removes inertia, but cannot separate unknown pressing and drag components. That needs two force axes for planar sanding, or three spatially. We defer it; [measurement evidence](/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/loadcell/README.md) supports the later extension.
+“Cell mode feedback” means deliberately targeting the vibration involving load-cell deformation, usually by shaping a measured signal near that frequency. The older reference used such an extra correction. **The current selected controllers do not use that historical correction.** The present velocity term is motion feedback, not evidence of robust suppression of every structural mode.
 
-The selected 5 mm wide-pad grids span **−19.2 to +55.0 N** raw cell force. Use roughly **±100 N physical range** with overload reserve. Some narrow-contact diagnostics exceed sensor ratings and are rejected. The ±160 N ADC scaling is electrical headroom, not a required cell rating.
+Loaded-equilibrium startup supplies nominal holding effort. Without a force integrator, persistent friction or sensor offsets can leave a steady error. The 18-family search per rigid actuator found no family passing every development corner; those selected branches remain failed comparison cases.
 
 #### Recommendation
 
-Use a **one-axis cell between B and S**, with an accelerometer on S and position measured from S to A. Target **±0.01 N residual zero**, **±0.05% residual gain error** and **±0.05° alignment** after calibration. Check off-axis sensitivity, stiffness, overload survival and mounting. Reserve multi-axis sensing for the drag problem.
+Start with the transparent deterministic soft-coil controller, then improve calibration and measured phase robustness. Do not substitute an older PI or learned policy and assume these results transfer. Engagement and steady offset rejection require new tests with the selected controller.
 
-### Acceleration measurement
+### Load cell and acceleration
 
 #### Intro
 
-An accelerometer on S measures the tool motion needed to remove its inertial contribution from the force reading.
+The cell supports S, so its reading includes tool weight and inertia as well as surface reaction. Taring removes static gravity; it does not remove acceleration force.
 
 #### Question
 
-How accurate must it be, and does it also need an ADC?
+Can one load-cell axis and an accelerometer reconstruct pressing force? How accurate do the sensors and tool-mass estimate need to be?
 
 #### Results
 
-An acceleration error of **0.01 m/s² becomes 0.02 N force error at S = 2 kg**. Averaging can reduce random noise; it cannot remove fixed bias, scale error or a timing mismatch with the load-cell signal.
+For the reduced axial model, **estimated contact force = tared cell force + identified S mass × measured S acceleration**. Only downstream S belongs in this correction. The acceleration must be kinematic acceleration with gravity handled consistently; a real accelerometer measures specific force and needs the corresponding compensation.
 
-The **ADXL354C** has three analogue outputs, so it needs conversion. Four ADC channels accommodate force and all three acceleration axes. [Manufacturer specifications](https://www.analog.com/en/products/adxl354.html). Earlier acquisition studies use **0.0187 m/s² reference-normalized noise plus ADC noise**. The new pad diagnostics use **0.014 m/s² normalized noise**, about **0.0104 m/s² filtered RMS**, and simplified converter modeling. Neither guarantees installed sensor performance.
+An acceleration error of **0.01 m/s² adds 0.02 N error at S = 2 kg**. S includes the board, bracket and other downstream attachments. The prototype therefore needs a measured tool profile, not just the nominal weight printed on the tool.
+
+Removing the whole acceleration channel fails all three tested soft-coil corners. The soft screw passes force in all three but exceeds its RMS-current screen in both heavy cases. This removal disables **both inertia reconstruction and estimated-velocity damping**; it does not isolate reconstruction alone. All rigid-plate variants remain force failures.
+
+![Acceleration noise and removal in all four configurations](figures/current-acceleration-diagnostics-20261007.svg)
+
+The baseline assumes **0.02 N force noise, 0.014 m/s² acceleration noise and 1 µm position noise**, normalized at a fixed reference bandwidth. Force noise is bounded uniform; acceleration noise is Gaussian. Filtered baseline acceleration noise is about **0.0104 m/s² RMS**. These values exclude real spindle vibration and unmeasured temperature drift.
+
+Increasing acceleration noise to **0.028 and 0.056 m/s²** retains all six soft-pad corner passes; worst error at the larger value is **0.161 N**. A **+0.02 m/s² acceleration bias** also passes, but raises screw worst error to **0.306 N**. Random-noise tolerance does not imply equal tolerance to bias, timing error or resonance.
+
+The sharper limitation is calibration. A **+1% S-mass estimate fails both heavy coil cases**, including sensor ranges. A follow-up with a new seed finds **+0.25% passes 3/3 soft-coil corners**, while **+0.5% fails both heavy corners**. The soft screw passes all these mass follow-ups. Mass identification therefore matters to controller stability as well as static accuracy. Do not interpret large continuation peaks after sensor ineligibility as usable prototype predictions.
+
+![Current mass-calibration sensitivity](figures/current-mass-calibration-20261007.svg)
+
+The follow-up also passes separate **±0.25% acceleration scale**, **±0.05% force scale**, and one combined signed mismatch. This is not a validated box of simultaneous errors. Identified mass affects controller inertia/gravity calculations while acquisition tare stays nominal; the experiment tests that combined dependency.
+
+**Open problem: sanding drag.** Acceleration removes inertia, but cannot distinguish unknown normal force from tangential drag projected onto the sensing axis. That needs two force axes in a planar model or three for general spatial sanding. Soft-pad compression also prevents inferring surface slope from tool motion alone. We defer these problems without claiming normal-force reconstruction on arbitrary sanding surfaces.
 
 #### Recommendation
 
-Mount ADXL354C rigidly on S. Target **±0.005 m/s² residual bias**, **±0.25% scale residual** and synchronized acquisition. Test the running spindle: digital resolution alone does not establish useful acceleration accuracy.
+Use roughly a **±100 N axial load cell**, with overload reserve and characterized finite stiffness. Start with calibration targets of **±0.01 N force zero**, **±0.05% force gain**, **±0.005 m/s² acceleration bias**, **±0.25% acceleration gain**, and **±0.1% identified S mass**. At 2 kg, that mass target is ±2 g. These are development targets supported by individual diagnostics, not joint accuracy guarantees.
 
-### Acquisition electronics: amplifier, ADC and timing
+Choose **ADXL354C on S** as the initial sensor. Its analogue outputs permit synchronized conversion. The datasheet's nominal 1.9 kHz bandwidth includes a **2.4 kHz mechanical resonance**, so our simple matched response is not its exact transfer function. Its ±8 g mode also has higher noise than ±2 g. Measure installed amplitude, phase and temperature behaviour before relying on cancellation. [Manufacturer datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf).
+
+### Amplifier, ADC and acquisition timing
 
 #### Intro
 
-An **ADC** turns analogue voltages into numbers. The controller uses them to estimate contact force and decide actuator current. The instrumentation amplifier strengthens the small bridge signal and limits unwanted high-frequency content.
+An ADC converts analogue sensor voltages into numbers. The instrumentation amplifier strengthens the bridge output and provides a chosen analogue cutoff. **Resolution** is code spacing; **sampling rate** is fresh readings per second; **bandwidth** describes changes the chain follows. None alone establishes accuracy.
 
 #### Question
 
-Is a separate ADC necessary? How good must it be, and what is the cheapest option for an acceptable force error?
+Is a separate ADC necessary, what performance is sufficient, and what is the cheapest sensible route?
 
 #### Results
 
-**Conversion is necessary for analogue sensors; a separate converter chip is not inherently necessary.** A microcontroller may already contain ADCs, or a digital load cell may contain one. What matters is the complete acquisition path, including noise, analogue filtering, conversion, communication and timestamps.
+Analogue force and acceleration require conversion somewhere. A separate ADC chip is optional if a microcontroller's ADC has adequate noise, settling and synchronization.
 
-**Resolution** sets one digital step; advertised bits do not guarantee accuracy. **Sampling rate** counts fresh readings per channel. **Bandwidth** describes changes the sensor/filter can follow; rapid sampling cannot restore changes a slow filter removed. Delay and channel mismatch affect inertia correction and vibration feedback.
+The current model uses **30 ksample/s per channel**, **10 kHz controller updates**, matched two-pole **1.9 kHz responses**, approximately **49.6 µs converter delay**, **50 µs smoothing at the ADC output rate**, and a **20 µs pipeline**. This is a simplified response/delay model, not an exact ADS131M04 filter or measured amplifier chain.
 
-The reference **ADS131M08** supplies eight simultaneous channels at **30,000 fresh samples/s per channel**, with **10,000 controller updates/s**. The model includes matched two-pole **1.9 kHz responses**, approximately **49.6 µs converter delay**, **50 µs smoothing at the ADC output rate**, and a **20 µs pipeline including SPI**. Matched means comparable timing/filtering for force and acceleration. [TI datasheet](https://www.ti.com/lit/ds/symlink/ads131m08.pdf).
-
-The fixed-controller diagnostics compare seven known development cases, changing either code spacing or actual converter rate/noise/delay. All startup samples count; the controller was not retuned.
-
-| Converter setting | Cases passing ±0.5 N | Largest recorded error |
+| Fixed-controller diagnostic | Soft coil, worst error | Soft screw, worst error |
 |---|---:|---:|
-| 30 ksample/s, 24-bit codes | 7/7 | 0.495 N |
-| 30 ksample/s, 16-bit codes | 7/7 | 0.492 N |
-| 30 ksample/s, 14-bit codes | 6/7 | 0.502 N |
-| 30 ksample/s, 12-bit codes | 4/7 | 0.553 N |
-| 15 ksample/s, 24-bit codes | 6/7 | 0.539 N |
-| 7.5 ksample/s, 24-bit codes | 0/7 | 52.218 N; all stopped during startup |
+| 24-bit codes, 30 ksample/s | 3/3; 0.045 N | 3/3; 0.113 N |
+| 16-bit codes, 30 ksample/s | 3/3; 0.045 N | 3/3; 0.113 N |
+| 12-bit codes, 30 ksample/s | 3/3; 0.067 N | 3/3; 0.109 N |
+| 24-bit codes, 15 ksample/s | 3/3; 0.058 N | 3/3; 0.113 N |
+| 24-bit codes, 7.5 ksample/s | 2/3; one contact stop | 3/3; 0.114 N |
 
-![ADC resolution and sampling-rate comparisons on fixed mechanics](figures/adc-fixed-diagnostics-20261006.svg)
+![ADC code spacing in all four configurations](figures/current-adc-resolution-20261007.svg)
 
-*42 completed diagnostic recordings, not a fresh qualification grid. Bit tests retain M08 noise and timing; rate tests change converter delay too. The stopped 7.5 ksample/s recordings are shown separately because they never reach the bump.*
+Bit tests retain source noise and timing. The small screw improvement at 12 bits is a noise/quantization coincidence, not evidence that fewer bits improve hardware. With ±160 N electrical force scaling, code steps are **0.00488 N at 16 bits** and **0.0781 N at 12 bits**. Acceleration steps are **0.00359 and 0.0575 m/s²**, respectively. Amplifier gain and reference quality remain important.
 
-At modeled scaling, **16 bits gives 0.00488 N per force step and 0.00359 m/s² per acceleration step**. This supports testing a real 16-bit converter; its noise/timing remain unproven. Lower rates reduce converter noise but increase delay to **99.6 or 199.6 µs**, worsening this controller's result. Keep 30 ksample/s initially; this is not a universal minimum or an optimized cutoff.
+Rate tests increase converter delay as sampling slows. Separately, matched **500/950 Hz bandwidth** loses contact in the light coil case; **1.9/3.8 kHz** passes the soft corners. The experiments, together with the cell-mode frequencies, support keeping adequate bandwidth and low delay. They do not establish a universal minimum: different controller tuning could change the boundary. All corresponding rigid-plate diagnostics fail force because improved acquisition does not remove their contact limitation.
 
-| ADC option | Recorded chip cost, VAT included | Decision |
+![Measured diagnostic outcomes for sampling and bandwidth](figures/current-acquisition-timing-20261007.svg)
+
+| ADC route | Recorded chip cost including VAT | Practical interpretation |
 |---|---:|---|
-| ADS131M04, four simultaneous channels | €7.15 | Fits one force plus three acceleration outputs |
-| ADS131M08, eight simultaneous channels | €11.43 | Keep for the recorded eight-channel arrangement or later expansion |
-| MCP3208, multiplexed 12-bit | €2.95 | Code spacing, channel skew and rate need a different qualified design |
-| Existing microcontroller ADC | €0 additional chip cost | Potential saving; measured noise, filtering and timing still unproven |
+| MCU's existing ADC | €0 additional chip | Cheapest possibility; real noise, skew and filtering unproven |
+| MCP3208, 12-bit multiplexed | €2.95 | Promising code spacing; sequential timing needs separate validation |
+| ADS131M02, two simultaneous channels | €4.79 | One axial force plus one aligned acceleration axis |
+| **ADS131M04, four simultaneous channels** | **€7.15** | One force plus all three acceleration outputs |
 
-*Quantity-one prices observed 6 October 2026; other electronics and shipping excluded. [Parts, sources and experiment details](/home/tommie/Projects/actuator-model/acf_simulink/experiments/report_readability_20261006/adc/README.md).*
+*Quantity-one observations from 5–6 October 2026, not current quotations; shipping and other electronics excluded. [Reviewed sources and prices](../acf_simulink/experiments/report_readability_20261006/adc/README.md).*
 
-MCP3208's **100 ksample/s is aggregate**, giving at most 25 ksample/s each for four sequential channels at 5 V. Neither it nor a built-in microcontroller ADC inherits the simultaneous-converter results. M04's reviewed OSR128 noise and filter topology match M08's corresponding setting. [M04 datasheet](https://www.ti.com/lit/ds/symlink/ads131m04.pdf).
+MCP3208's **100 ksample/s is aggregate**, at most 25 ksample/s each for four sequential channels. Combining reduced bits, slower sampling and channel skew has not been tested here. The [M02](https://www.ti.com/product/ADS131M02) and [M04](https://www.ti.com/product/ADS131M04) provide simultaneous sampling. The M04's extra two channels cost about €2.36 over M02 and help characterize gravity alignment and off-axis vibration.
 
 #### Recommendation
 
-Choose **ADS131M04**, the cheapest reviewed option plausibly retaining reference timing/noise. ADXL354C plus ADC chips stay below €100 at the recorded prices. Start at **30 ksample/s per channel** with matched **1.9 kHz responses**; validate the assembled chain and one-axis controller. The new soft-pad tests have not reswept ADC limits.
+Use **ADS131M04 at 30 ksample/s**, with matched installed force/acceleration response around the tested **1.9 kHz** envelope. ADXL354C plus M04 total approximately **€81.82** at the recorded prices, below the €100 chip budget. Cheaper ADCs and accelerometers remain plausible: these tests reveal noise/code margin, but do not identify a qualified cheapest hardware chain. Test measured transfer functions and channel skew before cutting cost further.
 
-### Custom PCB: integrated sensing and local control
+### Integrated PCB and robot interface
 
 #### Intro
 
-A **custom PCB** brings amplification, acquisition and control into one configurable assembly. Mount its accelerometer on S so it measures the same downstream mass used in force reconstruction.
+A custom board on S can combine bridge amplification, filtering, acceleration, acquisition and local control. The hot power driver stays on A, physically separated from low-level sensing.
 
 #### Question
 
-Why design our own board, and how does integration improve customization, ease of use, programming and robustness?
+Why integrate the electronics, and how should local control interact with robot recentering?
 
 #### Results
 
-The acquisition experiments show why timing belongs in the system design: halving converter rate increased worst error from **0.495 to 0.539 N**, while 12-bit codes reached **0.553 N**. These are historical controller diagnostics, rather than measurements of a PCB. They support controlling the full signal chain instead of selecting modules by advertised resolution alone.
+![Integrated sensing, acquisition and control proposal](figures/integrated-sensing-pcb-20261006.svg)
 
-![Proposed custom PCB integrating amplification, acceleration sensing, ADC and local control](figures/integrated-sensing-pcb-20261006.svg)
-
-*Proposed architecture. The B–S cell connects to the PCB on S; the power driver sits on A, away from the small analogue signals. Include board and mounting mass in S.*
-
-| Design benefit | Concrete implementation |
+| Design objective | What the board provides |
 |---|---|
-| **Customizability** | Selectable amplifier gain and filter components; firmware settings for tool mass, calibration, controller gains and acquisition rate |
-| **Ease of use** | One configuration/tare interface, consistent connectors and saved tool presets; calibrated data and fault status in one log |
-| **Programming** | Accessible USB/debug connection; timer-driven ADC acquisition and a local 10 kHz force loop, independent of robot communication delays |
-| **Robustness** | Short differential bridge wiring, stable excitation/reference, controlled power layout, protected connectors and strain relief; watchdog and driver-disable path |
+| Customizability | Configurable amplifier/filter settings, sensor calibration and controller gains |
+| Ease of use | One tool profile, connector scheme and calibration interface |
+| Programming | MCU firmware with timestamped logging, USB/debug access and selectable control strategies |
+| Robustness | Short differential bridge paths, shared acquisition timing, protected connectors and defined driver-disable behaviour |
 
-Use the **ADS131M04's four simultaneous channels** for amplified force and the ADXL354C's three outputs. Common acquisition timing makes channel alignment easier to characterize. Match the complete sensor/filter responses; sample simultaneity alone does not remove phase differences. Keep coil-current switching and its heat near the driver on A. [ADC specifications](https://www.ti.com/product/ADS131M04).
+Integration creates a controlled platform for testing these properties; it does not make them proven. Buffer the accelerometer appropriately, manage supply/reference drift, and keep switching-current return paths away from bridge inputs. Store identified S mass, sensor scales, zeros and timing with each tool configuration. Provide an independent watchdog and stop path.
 
-#### Recommendation
+S–A position needs a separate digital or separately acquired input; all four M04 channels are allocated. The modeled **1 µm RMS position noise** is a starting assumption whose allowable degradation has not been swept in this campaign.
 
-**Build one custom sensing/control PCB for the prototype**, including the instrumentation amplifier, analogue filtering, accelerometer, ADC, microcontroller and programming/robot interfaces. Provide gain/filter options and calibration test points. The under-€100 target covers accelerometer and ADC chips; PCB, amplifier, MCU and driver costs are additional. Verify noise, timing, temperature drift and powered-spindle behaviour on the assembled board before claiming an improvement in robustness or force accuracy.
+The fast force loop runs locally at 10 kHz. Robot commands should recenter slowly when force is stable, with hysteresis and dwell to avoid repeatedly opening and closing the gate. Already-issued commands continue through robot delay after the gate closes, so the predictor must track that queue. Staying within **±7.5 mm** has no centering penalty; the **±12.5 mm hard stroke limits** still apply.
 
-### Fast force controller
-
-#### Intro
-
-The actuator handles rapid force changes; the robot slowly recenters its travel.
-
-#### Question
-
-Which controller should run on the PCB, and what does “cell-mode feedback” do?
-
-#### Results
-
-The rigid-contact reference uses **PI**: proportional current reacts to force error, while integral action corrects accumulated error. Gains are **0.0246 A/N and 16.4 A/(N·s)**, with 1 kHz feedback filtering. Measured-inertia feedforward and a body-motion observer supply additional correction.
-
-**Cell-mode feedback selects the load-cell ringing band** and times a small extra coil force to oppose that oscillation. It contributes nothing at steady state; the main force loop sets average force. Correction is bounded to **±0.05 A**, approximately **±1.22 N coil force**.
-
-By the time a delayed correction arrives, the holder may have reversed direction, so the correction could feed vibration. The reference filter compensates phase near 1.64 kHz. Soft contact changes the response; the pad controllers disable that correction.
-
-![Measured improvement from cell-mode feedback in a development case](figures/fixed-mechanics-force-limit-20261005.svg)
-
-*Same 2 kg tool, 50 N target, 90° orientation and noise seed. Complete-recording error falls from 1.074 to 0.459 N, and post-bump cell-band power falls by 14.6 dB. This is a matched development example, not the worst fresh test.*
-
-The recurrent learned controller remains research evidence: on earlier mechanics it passed **700 nominal, 30/32 fresh and 3/4 long tests**, with one travel stop. Its results do not transfer to this pad; retain deterministic control for the first prototype.
+**The newest four-way tests hold the robot fixed.** They do not validate the gate, queued commands, engagement, long-term drift or recentering. Old robot-controller results cannot be transferred automatically to this soft-pad controller.
 
 #### Recommendation
 
-For the coil and soft pad, start with tested **force feedback plus estimated-velocity damping**: **10 N correction per N force error** and **200 N·s/m velocity correction**, with no integral or extra inertia feedforward. Acceleration still reconstructs contact force. The screw comparison uses **0.5 N/N, 100 N·s/m and a 60 Hz nut servo**. Identify installed pad/cell/driver response before adopting or changing gains.
-
-### Robot commands and recentering
-
-#### Intro
-
-A robot correction can arrive after the force condition that triggered it has disappeared.
-
-#### Question
-
-How do we avoid turning recentering into delayed positive feedback?
-
-#### Results
-
-The reference recentering controller permits **100 Hz commands** only after stable force: a **0.08 N RMS variation gate** resets a **100 ms dwell**, alongside a slower stability condition. Its predictor retains issued commands, approximately 80 ms delay and 60 ms robot response. Closing the gate does not cancel queued commands. Travel within **±7.5 mm** about the midpoint incurs no centering cost.
-
-#### Recommendation
-
-Keep conservative, delay-aware recentering and the stability gate. Identify the robot's actual timing and test repeated bumps plus sustained drift. The long-test travel stop shows why a good short bump response is insufficient.
-
-### Calibration, model qualification and prototype validation
-
-#### Intro
-
-The simulation tests a stated physical and sensing model, not every disturbance from a real sanding machine.
-
-#### Question
-
-Which checks turn this development recommendation into an accepted system?
-
-#### Results
-
-The new pad model assumes fixed orientation, translation, known tool mass and initially loaded contact. Stiffness is linear within a guarded range; damping is a sensitivity. Nonlinearity, spindle rotation, angular inertia, frame flexibility and sanding vibration need assembled tests. Force noise is bounded uniform and acceleration noise Gaussian, normalized to a **3,177 Hz reference bandwidth**. The new grids use zero residual bias/gain error; they do not replace calibration stress tests.
-
-Independent native Simulink command replays check the new physical plant. A screw replay retains a failed **32.18 µN** strict numerical guard, with matching force-failure outcome. A separate partial-contact diagnostic has timestep-sensitive waveforms. [Numerical checks and retained failures](/home/tommie/Projects/actuator-model/acf_simulink/experiments/sea_pad_dynamic_20261006/README.md) distinguish these from qualification. Compact metrics and selected traces replace bulk histories.
-
-#### Recommendation
-
-Measure assembled masses, modes, friction, current response and sensor timing; calibrate axial load response, off-axis sensitivity and acceleration alignment. Target **≤2 µs relative timing residual**. Compare reconstructed force with an independent reference on the scoped bench setup through repeated bumps and long drift. Then test powered sanding and the deferred drag extension. Aim for **≤0.45 N peak error**, leaving 0.05 N reserve.
-
-The [native pad-model guide](/home/tommie/Projects/actuator-model/acf_simulink/generated/sea_pad_dynamic_20261006/GETTING_STARTED.md) explains opening its physical command replay. The [study recipe](/home/tommie/Projects/actuator-model/acf_simulink/experiments/sea_pad_dynamic_20261006/README.md) documents the closed-loop experiments.
+Build the custom sensing/control PCB and separate bipolar driver. Then test calibration/phase robustness, pad response, engagement, sustained recentering, powered-spindle vibration and continuous heating. Native Simulink replays already reproduce the four selected physical histories, including the rigid failures, and finer rigid steps preserve their outcomes; this is plant verification with recorded commands, not a promoted closed-loop desktop model or physical prototype validation.
 
 ## Recommendation
 
-The complete sanding requirement remains **unqualified**. The soft-pad fast-loop results provide useful margin for development, while long drift, calibration and powered sanding remain acceptance work.
+**Develop a voice-coil flange with the 77 mm × 5 mm soft interface and a custom integrated sensing/control PCB.** Use a characterized **approximately 25 N/A, 25 mm-stroke coil**, a **3.5 A bipolar driver with at least 32 V usable output**, an axial B–S load cell, **ADXL354C on S**, **ADS131M04**, and local deterministic control. Preserve the required upper spring and rigid lower attachment.
 
-**Build the first prototype around a voice coil and custom sensing/control PCB.** Keep the prescribed **20 N/mm undamped upper spring**, rigid B–S mounting and selected **77 mm × 5 mm pad geometry**. Choose approximately **25 N/A**, **25 mm stroke**, **55–60 N continuous hot force** and **85 N peak force**, with a **48 V-rated bipolar driver delivering at least 32 V usable output**. Verify actual pad stiffness and provide cooling for the modeled **37 W winding-loss case**.
-
-Integrate **load-cell amplification, filtering, ADXL354C, ADS131M04 and a programmable MCU** on a PCB mounted on S. Connect the **one-axis B–S cell** and **S–A position sensor**; acquire force and acceleration at **30 ksample/s**. This gives us a configurable, calibratable control platform with fewer separate sensing assemblies. Keep the hot power driver on A and defer multi-axis drag separation.
-
-Start with the tested coil force/velocity controller at **10 kHz**, with the robot fixed. Integrate and separately test stability-gated **100 Hz robot recentering** after the fast loop is verified. The coil's lower nominal error and simpler direct actuation justify this development choice; the screw remains the lower-heating comparison if thermal tests make the coil impractical.
+This gives the best nominal force tracking of the tested practical candidates and a flexible platform for programming and measurement. Budget for approximately **37 W worst modeled winding heat**, and resolve the demonstrated **mass/phase sensitivity before calling the controller robust**. The spring-driven screw remains the credible cooler, more calibration-tolerant alternative. The soft pad is essential to the present successful model; its properties, electronics timing and assembled behaviour must be measured before claiming the complete sanding requirement.

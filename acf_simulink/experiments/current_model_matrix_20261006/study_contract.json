@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "study": "current_model_matrix_20261006",
+  "declared_utc": "2026-10-06T22:02:17.534980+00:00",
+  "status": "declared_before_new_hard_execution",
+  "goal": "All main report quantitative evidence based on current reduced one-axis physical model; compare voice coil vs internal-spring screw, each with5mm pad and without soft pad. Voicecoil/custom-PCB is user-preferred development recommendation, not instruction to falsify results.",
+  "physics_lineage": {
+    "base_contract_sha256": "c2077261ffff69e10682ea524577eb669d2f47641e02154358043ba3dc3e26b6",
+    "pad5mm_contract_sha256": "674b1217279f8a9ca689f55afbcecbd6640b63cf45c4240f63b2549074a5efff",
+    "base_engine_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+    "base_api_sha256": "4bc06898fef060577454f0139f2b3012cf6dc81af40ca17a02ceb13af78630c9",
+    "unchanged": "A1.5/B.6/S.1-2, upper20k c0, rigid B-S finite64MN cell, SEA independentnut/internal5k spring with10mm lead, hot electrical/current parameters, guide/shaft friction, one-axis+taredS inertia, no drag, no preview"
+  },
+  "contacts": {
+    "soft": {
+      "geometry": "77mm diameter x5mm pad",
+      "k_N_m": 50000,
+      "c_N_s_m": 0,
+      "working_compression_m": 0.0025,
+      "material_status": "unmeasured model assumption, notMirka spec"
+    },
+    "rigid_plate": {
+      "geometry": "Ideal rigid77mm flat plate translating without tilt, no soft pad",
+      "law": "S follows continuous analytic maximum of the same polynomial ridge across full footprint; Fc=L+mS*(aS+g)",
+      "force_scoring": "Every integration endpoint AND both one-sided force values at envelope acceleration transitions",
+      "ideal_limit_bound": "jump in aS2.4m/s^2 implies maxerror at least1.2*mS N over two one-sided limits;2.4N at2kg. Not physical hard-interface validation.",
+      "real_compliance": "Unknown remaining surface/backing compliance may regularize transitions; finite Winkler stiffness will not be relabelled as no pad."
+    }
+  },
+  "surface": {
+    "height_m": 0.001,
+    "width_m": 0.01,
+    "scan_speed_m_s": 0.1,
+    "ridge": "full width",
+    "point_start_s": 0.8,
+    "duration_s": 2
+  },
+  "controller": "Use original soft locks. Show same-controller rigid transfer separately, then at most18 families x4designcorners per actuator of rigid development; freeze allselectedcandidate sources before fresh evaluation. No tuning on final or acquisition diagnostics.",
+  "development": {
+    "seed": 260700,
+    "cases_per_family": [
+      {
+        "mass_s": 0.1,
+        "force_target": 5,
+        "angle_deg": 0
+      },
+      {
+        "mass_s": 2,
+        "force_target": 5,
+        "angle_deg": 0
+      },
+      {
+        "mass_s": 0.1,
+        "force_target": 50,
+        "angle_deg": 90
+      },
+      {
+        "mass_s": 2,
+        "force_target": 50,
+        "angle_deg": 90
+      }
+    ]
+  },
+  "evaluation": {
+    "mass_s": [
+      0.1,
+      1.4,
+      2
+    ],
+    "force_target": [
+      5,
+      20,
+      50
+    ],
+    "angle_deg": [
+      0,
+      45,
+      90
+    ],
+    "seeds": [
+      260701,
+      260702
+    ],
+    "count_per_bank": 54
+  },
+  "acquisition_diagnostics": {
+    "fresh_seed": 260741,
+    "corners": [
+      {
+        "mass_s": 0.1,
+        "force_target": 5,
+        "angle_deg": 0
+      },
+      {
+        "mass_s": 2,
+        "force_target": 5,
+        "angle_deg": 0
+      },
+      {
+        "mass_s": 2,
+        "force_target": 50,
+        "angle_deg": 90
+      }
+    ],
+    "fixed_gains": true,
+    "maximum_runs": 228,
+    "scope": "Latest simplified matched two-pole response, scalar converter group-delay approximation, noise normalizedat3177.13Hz; no claim exact chip transfer or installed acquisition qualification."
+  },
+  "robot": "Fixed in all comparisons. No newly validated engagement/recentering/thermal/powered-spindle claims. Current nativeplant cannotexecute robot_enabled=1; remove old robot numerical results from main report and state this current scope.",
+  "qualification": false,
+  "failure_rules": "Every startup sample counted; force>0.5N fails; anyphysical/modelworkingstopfails; sensors/actuator ratings screenedseparately; trajectoriesbeyondratingineligibility are not usable prototype predictions.",
+  "storage_forecast": {
+    "path": "acf_simulink/validation/current_model_matrix_20261006/storage_forecast.json",
+    "sha256": "30cb7efa60812bba2de75e72c6546c862a9a7b06737210a0af6c9a584628c1fa"
+  },
+  "expected_private_source_paths": {
+    "engine": "acf_simulink/experiments/current_model_matrix_20261006/engine.c",
+    "api": "acf_simulink/experiments/current_model_matrix_20261006/engine_api.py"
+  },
+  "selected_bank_interface": "validation/current_model_matrix_20261006/control/selected_banks.json: engine_source_sha256,contract_sha256,banks:[{id,config:fullscalarFIELDS...}],harddevelopment/final/sourcebindings"
+}

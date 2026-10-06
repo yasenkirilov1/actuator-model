@@ -1,5 +1,78 @@
 # Active contact flange: agent context
 
+## Current four-configuration report — 2026-10-07
+
+For the active report and new actuator/contact/sensing work, read
+`acf_simulink/experiments/current_model_matrix_20261006/README.md` and its
+predeclared `study_contract.json` first, then the historical pad contracts
+linked there. This handoff supersedes earlier report comparisons below.
+The user chose **an ideal rigid 77 mm backing plate** for the no-pad branch,
+matching the **77 mm × 5 mm soft pad** footprint. The upper spring, rigid
+external B–S connection and one-axis axial-force prototype scope remain fixed.
+
+The current versioned engine adds a continuous analytic rigid-plate contact
+envelope and explicit left/right force scoring at acceleration transitions.
+Soft physical/control equations remain unchanged. The ideal plate has an
+instantaneous force-jump lower bound of **1.2 × S mass N**; real remaining
+compliance or tilt may regularize this model limit. Do not silently call an
+arbitrarily stiff compliant interface a rigid plate, or return to point contact.
+
+Fresh selected grids: **coil + soft pad 54/54 at 0.053004803 N**, **spring-driven
+screw + soft pad 54/54 at 0.115305276 N**. Selected rigid coil/screw each pass
+**0/54**, at **7.465322396/7.774783703 N**, with **12 contact stops each**.
+Soft coil/screw maximum average hot winding losses are **37.3565/7.4354 W**.
+The user requests a **voice-coil and custom integrated sensing/control PCB**
+recommendation; preserve the screw's heat and calibration advantages honestly.
+
+Current selected soft controllers are **P + gravity hold + acceleration-derived
+velocity feedback**, with zero force-integral gain. Coil Kp = **10 N/N
+(0.40984 A/N)** and velocity gain **200 N·s/m**; screw Kp = **0.5 N/N
+(0.1 mm/N internal-spring deflection)** and velocity gain **100 N·s/m**.
+The earlier PI/cell-mode feedback and learned-policy results do not describe
+these banks. Read `validation/current_model_matrix_20261006/control/selected_banks.json`
+for all four locks before reusing a gain or result.
+
+The 228 acquisition diagnostics show soft-corner passes at ideal 12/14/16/24-bit
+codes and 15/30 ksample/s. The light coil loses contact at 7.5 ksample/s and at
+matched 500/950 Hz response. This is not actual ADC or channel-skew qualification.
+Removing acceleration removes both reconstruction and velocity feedback;
+it is not a reconstruction-only ablation. +1% identified S mass fails both
+heavy soft-coil corners. The 120-record follow-up passes +0.25% in 3/3 coil
+corners, but **+0.5% fails both heavy corners and sensor screens**. The screw
+passes these mass sensitivities. Large ineligible continuation peaks are not
+prototype predictions. Smaller mass/calibration targets remain developmental.
+
+The 36 drive records show soft-case 32/48 V equality at unchanged 50 µs current
+response; no clipping occurs. Deliberately faster 25 µs at 48 V provides only
+a small coil improvement and does not rescue the rigid plate. More voltage
+alone is not the current soft-case limitation.
+
+There are **852 primary recordings**, **649,849,019 integration endpoints**
+and **948 extra event-side force limits**. Native command replays separately
+score **6,400,014 force values** and pass all four unchanged 100 µN guards.
+Half-step rigid replays preserve both failures; no new soft refinement,
+partial-contact native exercise or native stop probes ran. The native model
+is rebuilt privately from ordinary blocks and is not a promoted closed-loop
+desktop SLX. All histories are loaded-equilibrium 2 s, fixed-robot axial tests;
+engagement, recentering, drag, thermal duty and installed electronics remain
+unqualified.
+
+The readable main report remains
+`reports/active-contact-flange-report-design-explained-20261006.md`, now roughly
+3,000 prose words with eight SVGs and current results throughout. Its Notes copy
+is under `Documents/Notes Remote/S7 Project/`. Six figures show current data;
+two unchanged diagrams describe proposed mechanics/PCB architecture. HTML
+remains frozen. Previous 11febde report copies remain under the new validation
+directory's `previous_report_11febde/`.
+
+Root source and delivery manifests live in
+`validation/current_model_matrix_20261006/report/`. Use the new study's
+`finalize_report.py --verify`; older finalizers describe earlier deliveries.
+The new study adds at most **3 MiB retained** and **640 MiB temporary** under
+the existing 5 GiB shared array budget. Score full histories in memory and
+retain compact metrics/selected display traces. New experiments need new
+contracts and output paths; do not overwrite these frozen comparisons.
+
 ## Internal-spring screw and 5 mm pad study — 2026-10-06
 
 For actuator/pad work, read

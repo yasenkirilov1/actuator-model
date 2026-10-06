@@ -1,0 +1,27 @@
+{
+  "status": "declared_after_initial_diagnostics_before_followup_execution",
+  "trigger": "Current fixed-controller diagnostics fail heavy coil cases with +1% identified S mass. This followup locates sensitivity at smaller mismatches; no controller retuning.",
+  "seed": 260751,
+  "corners": [
+    {"mass_s": 0.1, "force_target": 5, "angle_deg": 0},
+    {"mass_s": 2, "force_target": 5, "angle_deg": 0},
+    {"mass_s": 2, "force_target": 50, "angle_deg": 90}
+  ],
+  "variants": [
+    {"id": "baseline", "identified_mass_factor": 1, "deltas": {}},
+    {"id": "mass_plus0p1pct", "identified_mass_factor": 1.001, "deltas": {}},
+    {"id": "mass_plus0p25pct", "identified_mass_factor": 1.0025, "deltas": {}},
+    {"id": "mass_plus0p5pct", "identified_mass_factor": 1.005, "deltas": {}},
+    {"id": "mass_minus0p5pct", "identified_mass_factor": 0.995, "deltas": {}},
+    {"id": "accel_gain_minus0p25pct", "identified_mass_factor": 1, "deltas": {"accel_scale": 0.9975}},
+    {"id": "accel_gain_plus0p25pct", "identified_mass_factor": 1, "deltas": {"accel_scale": 1.0025}},
+    {"id": "force_gain_minus0p05pct", "identified_mass_factor": 1, "deltas": {"force_scale": 0.9995}},
+    {"id": "force_gain_plus0p05pct", "identified_mass_factor": 1, "deltas": {"force_scale": 1.0005}},
+    {"id": "joint_positive_cancellation_mismatch", "identified_mass_factor": 1.001, "deltas": {"accel_scale": 1.001, "force_scale": 0.9995}}
+  ],
+  "maximum_executed_records": 120,
+  "interpretation": "Fixed controller one-at-a-time and one combined signed corner. Not a full joint calibration box or hardware qualification. Acquisition gravity tare remains exact nominal, so identified mass also perturbs control gravity compensation rather than its recorded tare.",
+  "retained_budget_bytes": 98304,
+  "owner": "root report allocation within existing3MiB incremental cap",
+  "retention": "Compact scalar metrics and deltas only; no histories; full endpoint and rigid-side scoring."
+}

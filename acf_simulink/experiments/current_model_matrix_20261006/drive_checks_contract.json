@@ -1,0 +1,21 @@
+{
+  "status": "declared_before_drive_runs",
+  "purpose": "Use current four locked actuator/contact banks to distinguish voltage headroom from deliberately faster current response.",
+  "seed": 260741,
+  "corners": [
+    {"mass_s": 0.1, "force_target": 5, "angle_deg": 0},
+    {"mass_s": 2, "force_target": 5, "angle_deg": 0},
+    {"mass_s": 2, "force_target": 50, "angle_deg": 90}
+  ],
+  "variants": [
+    {"id": "32V_50us", "voltage_limit": 32, "current_response": 0.00005},
+    {"id": "48V_50us", "voltage_limit": 48, "current_response": 0.00005},
+    {"id": "48V_25us", "voltage_limit": 48, "current_response": 0.000025}
+  ],
+  "maximum_executed_records": 36,
+  "comparison": "All force/controller/acquisition parameters and noise seeds fixed within each pair. Current and physical/rating guards unchanged. Each endpoint plus rigid event limits scored.",
+  "interpretation": "A voltage change alone improves modeled slew only if clipping is active. A shorter response changes tuning too. Ideal rigid-plate force jumps remain an independent mechanical limit.",
+  "retained_budget_bytes": 65536,
+  "owner": "root report allocation; included in the existing3MiB incremental cap",
+  "retention": "Compact scalar metrics and config deltas only; no traces or bulk arrays."
+}

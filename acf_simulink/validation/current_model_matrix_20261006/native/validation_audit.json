@@ -1,0 +1,228 @@
+{
+  "status": "compact_native_audit_passed",
+  "qualification": false,
+  "controller_independently_verified": false,
+  "native_results_sha256": "9b0b12fb2452d7a782deb736fe378c25c795f5078ad7f267ab6d5247db40c880",
+  "selection_sha256": "ba69da9523f5d7d30fb8597bb2f06e40c2a64a95910dcf0d72a9041466001c83",
+  "launch_audit_sha256": "91a8c599bc815a7348e206560134758de7a186476a9c807c81fbbda27706b8d2",
+  "recipe_bindings": [
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/README.md",
+      "sha256": "f427828c59d125efb20d74a75157824ae219e28e2637c0635d379fa9fcf3d14d"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/audit_matrix_native.py",
+      "sha256": "d3c0559310f1e8c7cc52588e36ed87bedb5afa697b8c94cf3d6252a41c157508"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/launch_matrix_native.py",
+      "sha256": "d0fa2ee44294399dca020d76db8728ab6d964fc56b9459b28871216da8fcfd2e"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/matrix_native_build.m",
+      "sha256": "2572436e76e808daee8cdc155d05589b7c4521c025a3189463ed1bddd32a3e65"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/matrix_native_preparation.m",
+      "sha256": "05428eb2e5c860f91f7ebe84cf5369015a0bbc67a0f9a935363822a597137801"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/prepare_matrix_native.py",
+      "sha256": "1b50e6064776b4b8b2204877d9a0b09a3a577ca1ee94e4c568b7a25a78ef1635"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/run_matrix_native.m",
+      "sha256": "4f615090231d83f7d8c1111ea24927bebfa2609fe0abde0acfcf756776020a2a"
+    }
+  ],
+  "physical_source_bindings_verified": true,
+  "native_force_balance_max_N": 1.1368683772161603e-13,
+  "native_base_endpoints": 3200004,
+  "native_extra_left_limits": 4,
+  "native_scored_values": 3200008,
+  "refinement_scored_values": 3200006,
+  "total_native_and_refinement_scored_values": 6400014,
+  "left_limits_share_event_timestamps": true,
+  "guard_results": [
+    {
+      "identity": "coil_soft_evaluation_004",
+      "force_guard_N": 0.0001,
+      "native_regular_C_difference_N": 1.0746958878371515e-13,
+      "native_regular_C_pass": true,
+      "native_original_split_event_difference_at_10k_N": 1.9649357696494008e-09,
+      "native_original_split_event_pass": true,
+      "peak_error_all_endpoints_and_sides_N": 0.053004803891512076,
+      "force_requirement_met_in_replay": true
+    },
+    {
+      "identity": "screw_soft_evaluation_036",
+      "force_guard_N": 0.0001,
+      "native_regular_C_difference_N": 3.836930773104541e-13,
+      "native_regular_C_pass": true,
+      "native_original_split_event_difference_at_10k_N": 2.864375403532904e-12,
+      "native_original_split_event_pass": true,
+      "peak_error_all_endpoints_and_sides_N": 0.11530527578781147,
+      "force_requirement_met_in_replay": true
+    },
+    {
+      "identity": "coil_rigid_plate_evaluation_043",
+      "force_guard_N": 0.0001,
+      "native_regular_C_difference_N": 2.609024107869118e-09,
+      "native_regular_C_pass": true,
+      "native_original_split_event_difference_at_10k_N": 6.229391402712281e-08,
+      "native_original_split_event_pass": true,
+      "peak_error_all_endpoints_and_sides_N": 7.465322395297912,
+      "force_requirement_met_in_replay": false
+    },
+    {
+      "identity": "screw_rigid_plate_evaluation_046",
+      "force_guard_N": 0.0001,
+      "native_regular_C_difference_N": 2.796362252865947e-09,
+      "native_regular_C_pass": true,
+      "native_original_split_event_difference_at_10k_N": 1.5913381723464681e-06,
+      "native_original_split_event_pass": true,
+      "peak_error_all_endpoints_and_sides_N": 7.774783889558011,
+      "force_requirement_met_in_replay": false
+    }
+  ],
+  "command_capture_results": [
+    {
+      "identity": "coil_soft_evaluation_004",
+      "controller_lock_sha256": "591d2aa8b4dcbb284bd014eee4d93b8da95dc3588b26f69ae05e0f1cb86e756b",
+      "config_sha256": "acbd38228fbd8d7c993d5202c1fa765a2c797100bb6be3446a69ee43317d969a",
+      "commands_uncompressed_sha256": "00e522036ba239d8b6ca48a5dee3caa6033100eaa33eea2649e403db42f4e2fc",
+      "source_record": "coil_soft_evaluation_004",
+      "nonruntime_metrics_exact": true,
+      "event_limits_exact": false,
+      "command_capture_count": 1,
+      "temporary_commands_released": true
+    },
+    {
+      "identity": "screw_soft_evaluation_036",
+      "controller_lock_sha256": "9f542981595e2b28819f2ee4f786f7fefbbc6575220a7c68aafeac106f552bff",
+      "config_sha256": "d2c26d5fbff57d5709bf9a1930ba3fbb257e6311655aff3e4690ba1cc155ff8a",
+      "commands_uncompressed_sha256": "5e693db16974aa5717a5ece7d7c4316c62b4f81cb55a2b4b6b4b3a1083e16a19",
+      "source_record": "screw_soft_evaluation_036",
+      "nonruntime_metrics_exact": true,
+      "event_limits_exact": false,
+      "command_capture_count": 1,
+      "temporary_commands_released": true
+    },
+    {
+      "identity": "coil_rigid_plate_evaluation_043",
+      "controller_lock_sha256": "c2d56693552b7694b2b10f17fdbeb34de736b9c57c7c609b603b37f3a662552c",
+      "config_sha256": "a45f680dd3a78d068af298db127925f9ad6d33e70824ff42880a602ab2b5655e",
+      "commands_uncompressed_sha256": "0b68b7534dde768e3333baf2915762e4d859cfc6068dceb3a2154175136393b5",
+      "source_record": "coil_rigid_plate_evaluation_043",
+      "nonruntime_metrics_exact": true,
+      "event_limits_exact": true,
+      "command_capture_count": 1,
+      "temporary_commands_released": true
+    },
+    {
+      "identity": "screw_rigid_plate_evaluation_046",
+      "controller_lock_sha256": "40dffc03436b483176bb0c2961ab2b6010d75daf858c5ac83c7ddaa94c882488",
+      "config_sha256": "0546af6e272bf5b30109f4039d30d2250a662a2aef13d283fc6ddcdc03defdf4",
+      "commands_uncompressed_sha256": "e3ebbf3e1d523890c2200f580e6f39801fde3ca53c8d3c32f8bec12af5a90a0b",
+      "source_record": "screw_rigid_plate_evaluation_046",
+      "nonruntime_metrics_exact": true,
+      "event_limits_exact": true,
+      "command_capture_count": 1,
+      "temporary_commands_released": true
+    }
+  ],
+  "rigid_base_event_pairs": [
+    {
+      "identity": "coil_rigid_plate_evaluation_043",
+      "transition": "enter_plateau",
+      "time_s": 0.465,
+      "left_acceleration_m_s2": -2.4,
+      "right_acceleration_m_s2": 0,
+      "cell_at_event_N": 5.003813076595587,
+      "left_force_N": 19.817113076595586,
+      "right_force_N": 24.617113076595587,
+      "left_force_error_N": 0.18288692340441415,
+      "right_force_error_N": 4.617113076595587
+    },
+    {
+      "identity": "coil_rigid_plate_evaluation_043",
+      "transition": "leave_plateau",
+      "time_s": 1.2349999999999999,
+      "left_acceleration_m_s2": 0,
+      "right_acceleration_m_s2": -2.4,
+      "cell_at_event_N": 0.6351837660567572,
+      "left_force_N": 20.248483766056758,
+      "right_force_N": 15.448483766056755,
+      "left_force_error_N": 0.24848376605675782,
+      "right_force_error_N": 4.551516233943245
+    },
+    {
+      "identity": "screw_rigid_plate_evaluation_046",
+      "transition": "enter_plateau",
+      "time_s": 0.465,
+      "left_acceleration_m_s2": -2.4,
+      "right_acceleration_m_s2": 0,
+      "cell_at_event_N": 24.536934163918446,
+      "left_force_N": 19.73693416391845,
+      "right_force_N": 24.536934163918446,
+      "left_force_error_N": 0.26306583608155165,
+      "right_force_error_N": 4.5369341639184455
+    },
+    {
+      "identity": "screw_rigid_plate_evaluation_046",
+      "transition": "leave_plateau",
+      "time_s": 1.2349999999999999,
+      "left_acceleration_m_s2": 0,
+      "right_acceleration_m_s2": -2.4,
+      "cell_at_event_N": 19.989870111591923,
+      "left_force_N": 19.989870111591923,
+      "right_force_N": 15.189870111591924,
+      "left_force_error_N": 0.010129888408076937,
+      "right_force_error_N": 4.810129888408076
+    }
+  ],
+  "refinement_results": [
+    {
+      "identity": "coil_rigid_plate_evaluation_043",
+      "base_step_s": 2.5e-06,
+      "half_step_s": 1.25e-06,
+      "matched_waveform_peak_difference_N": 5.941110785556702e-07,
+      "base_peak_error_N": 7.465322395297912,
+      "refined_all_endpoint_peak_error_N": 7.465322383890371,
+      "peak_metric_change_N": -1.1407541578023483e-08,
+      "endpoint_count": 1600001,
+      "extra_left_limit_count": 2,
+      "outcome_unchanged_force_failure": true,
+      "predeclared_refinement_pass_guard": null
+    },
+    {
+      "identity": "screw_rigid_plate_evaluation_046",
+      "base_step_s": 2.5e-06,
+      "half_step_s": 1.25e-06,
+      "matched_waveform_peak_difference_N": 1.0112563565201071e-05,
+      "base_peak_error_N": 7.774783889558011,
+      "refined_all_endpoint_peak_error_N": 7.774860560692092,
+      "peak_metric_change_N": 7.66711340816073e-05,
+      "endpoint_count": 1600001,
+      "extra_left_limit_count": 2,
+      "outcome_unchanged_force_failure": true,
+      "predeclared_refinement_pass_guard": null
+    }
+  ],
+  "physical_stops_in_selected_native_histories": 0,
+  "new_native_failure_probe_count": 0,
+  "current_soft_partial_contact_observed": false,
+  "scope_limits": [
+    "External current-command replay; no independent native controller or acquisition test.",
+    "Loaded-equilibrium2s fixed-robot axial force; no engagement/recentering/normal-force/thermal qualification.",
+    "Rigid ideal plate, no tilt and no remaining interface compliance; force jumps are model-limit evidence.",
+    "Two rigid waveform refinements only; no new soft spatial/time refinement or native physical-stop probes.",
+    "500Hz display traces may miss high-frequency extrema; all-step metrics and exact side-event pairs are authoritative.",
+    "Half-step maxima include every intervening endpoint; matched-grid waveform difference is a distinct metric."
+  ],
+  "saved_reopened_private_model_verified": true,
+  "saved_model_retained": false,
+  "temporary_reference_and_command_arrays_released": true,
+  "temporary_bytes_peak": 321319394,
+  "temporary_cap_bytes": 629145600
+}

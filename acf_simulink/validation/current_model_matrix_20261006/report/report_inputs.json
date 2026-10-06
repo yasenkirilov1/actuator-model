@@ -1,0 +1,431 @@
+{
+  "status": "current_matrix_source_bound_report_inputs",
+  "qualification": false,
+  "source_report_commit": "11febde",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d3209156642c4f8e29e040804d141430d686d2c54e56cbad949efd9398e10e20"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ab4678e91ab6db07a9954df11dfbdcb60e0838f81952e535692e684a43e6a7ec"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/README.md",
+      "sha256": "901fc0eac9d1be4cdd15c9891c3861c24a9aa95fecadba4c7619af409da23a35"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/acquisition/README.md",
+      "sha256": "ea971ba0ee6f240b47c21995d8b6fc18a9cf3e220cf0a2a5085a8aa1a165264a"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/acquisition/diagnostic_contract.json",
+      "sha256": "0b477a556ef74a117a82f670a40ef6bf52eb04cf8fad5b46b57d61f6f2fab4d9"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/acquisition/runner.py",
+      "sha256": "ad7cf5ca3ec6e8fa3010fc291fd59a47e873114f3bc54f567af1d64df4fbd815"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/build_report_figures.py",
+      "sha256": "59705d5d3d793b6c37f6d45d5ca68b2db29a6185741c5271617bc450dfac8e73"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/calibration_followup.py",
+      "sha256": "ead4ffe2b80437afad49f46a0b6cd0bee1057d1c76939ba028d6317a1dff761f"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/calibration_followup_contract.json",
+      "sha256": "7da22a008f0e6d9779741e4499ef2f8d07ca9d8b8188445c342bc174c9117e08"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/control/README.md",
+      "sha256": "34091147570c7dd3a4843ddd205436a0fcdb44522abb16a1d05b228c1f832a64"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/control/bounded_runner.py",
+      "sha256": "b2599a4757a8c36ff305e56f8e9eba2e7ceb1f9c7424918b295c9748cbf7a572"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/control/controller_plan.json",
+      "sha256": "3a57f29e619d6edd66138165346386baa1dd9826bca292c7c2f7d12abe3f927c"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/control/verify_controller_matrix.py",
+      "sha256": "0560c7b219cf4bb183c6ba701facc62ab5955e42075fd5875382a1ec23767620"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/drive_checks.py",
+      "sha256": "ddccd75493a0b049506e1358805db3d0b03637fd242baaf5332643c72efad6d6"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/drive_checks_contract.json",
+      "sha256": "ac3e88eb755bb1ca46f98515b015c7575dfe1348074edce8c674694abcc55ccc"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/engine.c",
+      "sha256": "5d155f361e7a31531af6884a911e5ee6f03a10d590208aff0a7161954adf2960"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/engine_api.py",
+      "sha256": "e6c6d4a5774f9fbaa644e52547d8614a851d68793a82c3c48af590c71150c884"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/finalize_report.py",
+      "sha256": "ddd4be7f90ae31fdcebd89008bed8fe13b75674749f135055359ad07866455cb"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/initial_banks.json",
+      "sha256": "1693b6041de5fadc5e7e3ed438a74cf37a8531f6adda270775b2aa1c0eee9393"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/model_modes.py",
+      "sha256": "ffde541dbea99e6479053779e7ff49f354dd2e81536aeeacd58746d756871a8d"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/README.md",
+      "sha256": "f427828c59d125efb20d74a75157824ae219e28e2637c0635d379fa9fcf3d14d"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/audit_matrix_native.py",
+      "sha256": "d3c0559310f1e8c7cc52588e36ed87bedb5afa697b8c94cf3d6252a41c157508"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/launch_matrix_native.py",
+      "sha256": "d0fa2ee44294399dca020d76db8728ab6d964fc56b9459b28871216da8fcfd2e"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/matrix_native_build.m",
+      "sha256": "2572436e76e808daee8cdc155d05589b7c4521c025a3189463ed1bddd32a3e65"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/matrix_native_preparation.m",
+      "sha256": "05428eb2e5c860f91f7ebe84cf5369015a0bbc67a0f9a935363822a597137801"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/prepare_matrix_native.py",
+      "sha256": "1b50e6064776b4b8b2204877d9a0b09a3a577ca1ee94e4c568b7a25a78ef1635"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/native/run_matrix_native.m",
+      "sha256": "4f615090231d83f7d8c1111ea24927bebfa2609fe0abde0acfcf756776020a2a"
+    },
+    {
+      "path": "acf_simulink/experiments/current_model_matrix_20261006/study_contract.json",
+      "sha256": "0936fd73866223e0a1f8c884f8ee2eed28627e3882b78adf9127eafff57e521f"
+    },
+    {
+      "path": "acf_simulink/experiments/sea_pad_dynamic_20261006/voice_coil_pcb_proposal.json",
+      "sha256": "734b065a7fa27d946933705a6a38869a09593c6441dff893231be7d5470dee47"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/audit.json",
+      "sha256": "bfd5fff1e7618eb566cfad7752f9664d5ef595b28bc71068df0c0496a0983b7f"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/diagnostic_results.json",
+      "sha256": "44e0a8f96ec9658b7381e7f13d03e88161664039b5352c0bc1e096a101a9e970"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/paired_deltas.json",
+      "sha256": "20cb38b73309a42952d32c63adc27863baa937fd6b238a7b3eb615532d36e69f"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/pilot_contract_original_engine_snapshot.json",
+      "sha256": "22482e85b3f382dffea43de7fd79de2b486e95dfe5452892e258c46ff306ebd0"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/pilot_contract_snapshot.json",
+      "sha256": "30f41873742bf56075c19e92b2a80bddfccdf84c2bf89be4b89f85a9ea9b7cb4"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/pilot_parity.json",
+      "sha256": "1f03dd8fa38da4556075405900d7b7ffc94e5209d8d5ef87d93324712c3409b5"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/pilot_parity_original_engine.json",
+      "sha256": "4dcff423643c8e4a20c07e8c30fa787e7f1222094515d2ef0a530df473e9cf70"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/prelaunch.json",
+      "sha256": "e5591fa05bdf42ff5230e85f5368b53ab744ef0e3199afbefcc9dc11081877cd"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/acquisition/progress.json",
+      "sha256": "0711d1b453c2ff350b3051b1b1cf0fb60d8d13131cfdbbde362e7be42082ab83"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_development_declaration.json",
+      "sha256": "f6477f29aa424939a08c34acde3d5254533f94f9a3d155becd2fb2bf48dc800a"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_development_records.jsonl",
+      "sha256": "a746c0588f52fa109e48b5e264a544abb7b477c2083a25f16d7bc424f52edfd1"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_development_summary.json",
+      "sha256": "0436c03cea54f8f0a094e8cec4f0e2ae917e63592733c9accd24e9d0234b9841"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_evaluation_records.jsonl",
+      "sha256": "c9fb00f20a7e28973fa954231c7d33465d6a5fe729ad6701da96f605edab20e5"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_evaluation_summary.json",
+      "sha256": "1acbca300c572473a67d5b45934181e4c350ef5c095332502a974b542d9027c2"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_lock.json",
+      "sha256": "c2d56693552b7694b2b10f17fdbeb34de736b9c57c7c609b603b37f3a662552c"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_transfer_evaluation_records.jsonl",
+      "sha256": "4334f064fac0f8fdfba769547ffadffb85a822ee0bc1d47044533d5948a955bc"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_transfer_evaluation_summary.json",
+      "sha256": "c4f865765dfd58474cd49c3b8928dcff43190a44ed6214ba2a3719b2ba398b32"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_rigid_plate_transfer_lock.json",
+      "sha256": "17ddb0532742eda0a7000711c253c0df8b59c85b010026989cb95ed235276322"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_soft_evaluation_records.jsonl",
+      "sha256": "ad70c31f5466a60ef1ddbd50d3ad1e3a7ee9f8e4cc567866f92009f1d6232af3"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_soft_evaluation_summary.json",
+      "sha256": "b4aa8b2232bf53cf91d976449b7640b1c70a988f8a606bd87671a3de59db78b6"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/coil_soft_lock.json",
+      "sha256": "591d2aa8b4dcbb284bd014eee4d93b8da95dc3588b26f69ae05e0f1cb86e756b"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/completion_audit.json",
+      "sha256": "c3f50b3a159f9450bf7d3b4fb28f6596107d10614087530dda358b2f24ddb78b"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/engine_source_binding.json",
+      "sha256": "e5acdcd00874e12440e641cb1f7d86a7a9594453769ab242d3f306f7b73e6c85"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/final_matrix_declaration.json",
+      "sha256": "2d835329b32f6bc274df192211ebeebbcb3408cd0f9bdd6b2dc7b98fb8b79c82"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/matrix_completion.json",
+      "sha256": "c229fce99c9695c76d149b162b811b1f507ab52feb598ca8a6ddc261339ecbc3"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/metric_schema.json",
+      "sha256": "c463a18267cb79f42b589ff1599a78739f6b3ff3256d9468235bd4b8a21201b6"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_development_declaration.json",
+      "sha256": "baff46990ca63dc153766ced383a0d9b0650b7ebadd3b3b8438386c0c590798c"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_development_records.jsonl",
+      "sha256": "3a8e34388bcee3c69bb6dff848bba6e3acd8d661353fe870c02c86099193686a"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_development_summary.json",
+      "sha256": "b567febda0c061987fdb25612ff73ac767284a7d502c221f4aea41ef2b9b6dc7"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_evaluation_records.jsonl",
+      "sha256": "80db5428ab5bea175bef430900cbe2c432b0a7165fc3c7a2531005c40be10d16"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_evaluation_summary.json",
+      "sha256": "34156fd6d844de15760186076e7416b007a30fe5f813edcaddde5cc62980b18c"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_lock.json",
+      "sha256": "40dffc03436b483176bb0c2961ab2b6010d75daf858c5ac83c7ddaa94c882488"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_transfer_evaluation_records.jsonl",
+      "sha256": "b80074790c09f7e38d3e7931d3dfdd49c3e7b046770fcc98cdca16ff492e61a4"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_transfer_evaluation_summary.json",
+      "sha256": "20dddcb581ab81612978fe950ebef03fe515e8a309ec76d83b0d12b48c7e8de1"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_rigid_plate_transfer_lock.json",
+      "sha256": "4f1df0d54ca3c4e9ae601f5963dd1c38aa6a94ed41cee7d3653d92cdeda327fe"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_soft_evaluation_records.jsonl",
+      "sha256": "eeeafde0a18266cd1b5b60811ccb561336830655ff58cc3c1bfa2be73cc56b7d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_soft_evaluation_summary.json",
+      "sha256": "3988fcb5399ed53aaa9ea94f326b6ddf507a5b854176269d506a4b6550f1d0c4"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/screw_soft_lock.json",
+      "sha256": "9f542981595e2b28819f2ee4f786f7fefbbc6575220a7c68aafeac106f552bff"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/selected_banks.json",
+      "sha256": "af0dce080d6dec0840a2fdab267ca7695984dfbeadb1067f1b1f4842cf6705b6"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/control/soft_pilot_parity.json",
+      "sha256": "2e94e867feba8e845e21434bc8456eb79ffc25de5bf0882bd0f4a3832995b45f"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/coil_rigid_plate_evaluation_043_native_500Hz.csv.gz",
+      "sha256": "a9e4911ccfd551d6cb30fadf88ff90b6bebcdce9208a437ad1ba2100df483ae8"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/coil_soft_evaluation_004_native_500Hz.csv.gz",
+      "sha256": "9a3401f452b3fd8981702e719f8bc224965eb53636c5b70cfbac517f5344c7ae"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/launch_attempt01.json",
+      "sha256": "91a8c599bc815a7348e206560134758de7a186476a9c807c81fbbda27706b8d2"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/native_results.json",
+      "sha256": "9b0b12fb2452d7a782deb736fe378c25c795f5078ad7f267ab6d5247db40c880"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/preparation_checks.json",
+      "sha256": "f2c0230f0b8f56ad5e5b994f999fdf385714fee77a9d75b0cab8d74d04dc786d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/screw_rigid_plate_evaluation_046_native_500Hz.csv.gz",
+      "sha256": "bffaa28cab173a6915ee96049f4eaca275f7d1d3e3b9aaa59e627d6634038b6f"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/screw_soft_evaluation_036_native_500Hz.csv.gz",
+      "sha256": "126652df96f5af3a1e8b4124d162e08d84d9b4f17f9141ad76ba011d64f1f1cb"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/selection.json",
+      "sha256": "ba69da9523f5d7d30fb8597bb2f06e40c2a64a95910dcf0d72a9041466001c83"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/native/validation_audit.json",
+      "sha256": "9801a881198d6f2bab01a07741306c6c8e5217e4ad264d5b9da6505c77634111"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/plant/build.json",
+      "sha256": "47a87e8f3b742931636553229178bd1f26ef61c0b9a7559e32c004ba6d52d41a"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/plant/check_engine.py",
+      "sha256": "7a5a3291a018febc3a8d5c56845241a50720aa6f649267b67d07aff3d3aedf77"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/plant/checks.json",
+      "sha256": "1a540a477537b96f0abac221c3b657ee92e44696f7dc601e0f5d07aafc93a06d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/plant/checks_failed_fixture_001.json",
+      "sha256": "2d8ca81c875730b7c508e6dea725c90aba224e5fb3dff53a7dd6beac5429a2ea"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/plant/readiness.json",
+      "sha256": "2b3f3837aa046f32ad48009ad4802116e61f6501d599df6c5c19e268b3f28d4a"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/previous_report_11febde/Notes.md",
+      "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/previous_report_11febde/repository.md",
+      "sha256": "7a0aa6b5b33abaf145e312c5b42442cc492d486839bb9096c584c6860a44dd2d"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/protected_sources_before.json",
+      "sha256": "735723e425321dd4da3b347737f1982b0f46d1407502201e42e020b1b7037966"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/calibration_followup.json",
+      "sha256": "3b16b1cc123c15eb3ddd4cebe43a03e3c1d5b6b769e64ce2da79d673f5ddecd4"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/drive_diagnostics.json",
+      "sha256": "e318a8a97b308aecb96aade539803a6450f3e4ab310e988d488aacd7d0d5c9b5"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/figure_manifest.json",
+      "sha256": "1cca55395bf5a8411b5d1b486c1414688fb825832306df66d35469700482ce87"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/manufacturer_review_20261007.json",
+      "sha256": "8e35d2fa53da88b1126bfa0ff8824301ec74d42c989c2d1bbccdae6f48fd32fe"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/mechanical_modes.json",
+      "sha256": "75a8e90345155fd8ea5adb6e8e3c65c1658d98f56e7e569c9ac25543f69e78ca"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/read_only_review.json",
+      "sha256": "7b46d1c309be0030cb980a97b374765a15545f3a8a204f5f014d851a48ca57a9"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/report_facts.json",
+      "sha256": "dc6b5f97c2a55e870e56468c3d087a15efb599faedee1fedd300ca7b75f8b42f"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/report/root_document_baseline.json",
+      "sha256": "e525264323719513c5852cf44202a356e5710e9af59ac3947d5d0609f8636f09"
+    },
+    {
+      "path": "acf_simulink/validation/current_model_matrix_20261006/storage_forecast.json",
+      "sha256": "30cb7efa60812bba2de75e72c6546c862a9a7b06737210a0af6c9a584628c1fa"
+    },
+    {
+      "path": "acf_simulink/validation/report_readability_20261006/adc/parts_review_20261006.json",
+      "sha256": "d6149bd15d160b01eca451bc0683197bee7851aa5c59957c1acb27b69b0d05dd"
+    },
+    {
+      "path": "acf_simulink/validation/rl_budget3h_20261005/budget_parts_review_20261005.json",
+      "sha256": "86fa106b813b962ab7cdfbe763cd905d630d68f1d4fd85a0a4a95e5b48197329"
+    },
+    {
+      "path": "reports/figures/current-acceleration-diagnostics-20261007.svg",
+      "sha256": "a96441936947a1aea67d49f8ed2b46a5e946179d964b19dbf16a6d9634ddbe3d"
+    },
+    {
+      "path": "reports/figures/current-acquisition-timing-20261007.svg",
+      "sha256": "0646933d2831590c6feb8e0a5053e1dbefed8c298e6435d0cf948204286e30f4"
+    },
+    {
+      "path": "reports/figures/current-adc-resolution-20261007.svg",
+      "sha256": "16b5c28c08f61fee55d0868b96dd2b07d3ee07c287f127d533ec47b3ef6ce45c"
+    },
+    {
+      "path": "reports/figures/current-four-configuration-results-20261007.svg",
+      "sha256": "22f74497f4cd297c5e1883dd1fa74691e16b28b36664683d57618fee9ba20756"
+    },
+    {
+      "path": "reports/figures/current-mass-calibration-20261007.svg",
+      "sha256": "75c4239fe883a5e161507f41789fe0a08f548ff1b5122e5e26dad0baa828e6ea"
+    },
+    {
+      "path": "reports/figures/current-pad-versus-rigid-geometry-20261007.svg",
+      "sha256": "e40da67eeccd1372389341fd85996c9fd54a1854d4819b84b787ca46db205682"
+    },
+    {
+      "path": "reports/figures/integrated-sensing-pcb-20261006.svg",
+      "sha256": "cbf70f83391752ea24add373b3ea5ad2c297b4d8e22a073102ac7c2a9d6a08ca"
+    },
+    {
+      "path": "reports/figures/prototype-mechanics-voice-coil-pcb-20261006.svg",
+      "sha256": "9501a4df80e542fab49926294ef630fe5c425f6eade594b177d48d6f4507f7e6"
+    }
+  ],
+  "main_report": "reports/active-contact-flange-report-design-explained-20261006.md",
+  "scope": "All quantitative controller/contact/sensing/drive claims use the current matrix; dated price inputs and proposed architecture diagrams are separately labeled.",
+  "historical_models_and_html": "preserved by protected_sources_before.json; old report snapshots retained",
+  "raw_traces": "No bulk histories retained; native500Hz gzip traces are display-only, never peak scoring."
+}

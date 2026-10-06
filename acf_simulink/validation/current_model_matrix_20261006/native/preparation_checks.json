@@ -1,0 +1,246 @@
+{
+  "status": "native_graphs_prepared_reopened_no_simulation",
+  "simulationsExecuted": 0,
+  "qualification": false,
+  "graphs": [
+    {
+      "rigidWide": false,
+      "algebraicLoopCount": 0,
+      "reopenedAlgebraicLoopCount": 0,
+      "ordinaryIntegratorCount": 9,
+      "shallowSubsystemCount": 6,
+      "hiddenMatlabPlantFunctionCount": 0,
+      "graphPrepared": {
+        "status": "native_research_plant_prepared_not_simulated",
+        "modelFile": "/tmp/acf_matrix_native_graph_lif1x10c/acf_matrix_graphcheck_1.slx",
+        "physicalPlantNative": true,
+        "hiddenMatlabPlantSolver": false,
+        "controllerMode": "external_command_replay",
+        "outputNames": [
+          "xA",
+          "vA",
+          "xB",
+          "vB",
+          "xS",
+          "vS",
+          "q",
+          "vq",
+          "i",
+          "Fc_axial",
+          "Fn_sum",
+          "active_weight",
+          "minimum_compression",
+          "maximum_compression",
+          "qUpper",
+          "qCell",
+          "Vreq",
+          "Vactual",
+          "backEMF",
+          "aA",
+          "aB",
+          "aS",
+          "net_internal_force",
+          "qdd"
+        ],
+        "physicalStateNames": [
+          "xA",
+          "vA",
+          "xB",
+          "vB",
+          "xS",
+          "vS",
+          "q",
+          "vq",
+          "i"
+        ],
+        "subsystemCount": 6,
+        "blockCount": 287
+      },
+      "savedReopened": true
+    },
+    {
+      "rigidWide": true,
+      "algebraicLoopCount": 0,
+      "reopenedAlgebraicLoopCount": 0,
+      "ordinaryIntegratorCount": 9,
+      "shallowSubsystemCount": 6,
+      "hiddenMatlabPlantFunctionCount": 0,
+      "graphPrepared": {
+        "status": "native_research_plant_prepared_not_simulated",
+        "modelFile": "/tmp/acf_matrix_native_graph_lif1x10c/acf_matrix_graphcheck_2.slx",
+        "physicalPlantNative": true,
+        "hiddenMatlabPlantSolver": false,
+        "controllerMode": "external_command_replay",
+        "outputNames": [
+          "xA",
+          "vA",
+          "xB",
+          "vB",
+          "xS",
+          "vS",
+          "q",
+          "vq",
+          "i",
+          "Fc_axial",
+          "Fn_sum",
+          "active_weight",
+          "minimum_compression",
+          "maximum_compression",
+          "qUpper",
+          "qCell",
+          "Vreq",
+          "Vactual",
+          "backEMF",
+          "aA",
+          "aB",
+          "aS",
+          "net_internal_force",
+          "qdd"
+        ],
+        "physicalStateNames": [
+          "xA",
+          "vA",
+          "xB",
+          "vB",
+          "xS",
+          "vS",
+          "q",
+          "vq",
+          "i"
+        ],
+        "subsystemCount": 6,
+        "blockCount": 287
+      },
+      "savedReopened": true
+    }
+  ],
+  "matlabCodeDiagnostics": [
+    {
+      "file": "matrix_native_build.m",
+      "items": [
+        {
+          "id": "MSNU",
+          "message": "A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+          "fix": 1,
+          "line": 10,
+          "column": [
+            60,
+            70
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 66,
+          "column": [
+            8,
+            8
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 70,
+          "column": [
+            26,
+            26
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 72,
+          "column": [
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "file": "run_matrix_native.m",
+      "items": [
+        {
+          "id": "MSNU",
+          "message": "A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+          "fix": 1,
+          "line": 19,
+          "column": [
+            51,
+            61
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 194,
+          "column": [
+            4,
+            4
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 195,
+          "column": [
+            4,
+            4
+          ]
+        },
+        {
+          "id": "MSNU",
+          "message": "A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+          "fix": 1,
+          "line": 211,
+          "column": [
+            130,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "file": "matrix_native_preparation.m",
+      "items": [
+        {
+          "id": "MSNU",
+          "message": "A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+          "fix": 1,
+          "line": 21,
+          "column": [
+            43,
+            53
+          ]
+        },
+        {
+          "id": "NOCOMMA",
+          "message": "Extra comma is unnecessary.",
+          "fix": 1,
+          "line": 45,
+          "column": [
+            31,
+            31
+          ]
+        }
+      ]
+    }
+  ],
+  "loadSystemPath": "/home/tommie/.local/opt/MATLAB/R2026b/toolbox/simulink/slx/m/load_system.m",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "simulinkVersion": {
+    "Name": "Simulink",
+    "Version": "26.2",
+    "Release": "(R2026b)",
+    "Date": "22-May-2026"
+  },
+  "temporary_file_bytes": 1539222,
+  "top_and_contact_diagrams_visually_inspected": true,
+  "nativeBuilderSha256": "2572436e76e808daee8cdc155d05589b7c4521c025a3189463ed1bddd32a3e65",
+  "temporary_directory_released": true
+}

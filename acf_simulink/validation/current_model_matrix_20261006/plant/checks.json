@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "status": "passed_analytic_balance_event_and_exact_soft_parity_checks",
+  "started_utc": "2026-10-06T22:07:58.938196+00:00",
+  "contract_sha256": "0936fd73866223e0a1f8c884f8ee2eed28627e3882b78adf9127eafff57e521f",
+  "engine_sha256": "5d155f361e7a31531af6884a911e5ee6f03a10d590208aff0a7161954adf2960",
+  "api_sha256": "e6c6d4a5774f9fbaa644e52547d8614a851d68793a82c3c48af590c71150c884",
+  "check_recipe_sha256": "7a5a3291a018febc3a8d5c56845241a50720aa6f649267b67d07aff3d3aedf77",
+  "old_source_sha256": "be43185291e39e6348efd5fb687482db29615a13e516fc52cc0bc306ed3de4a5",
+  "old_api_sha256": "4bc06898fef060577454f0139f2b3012cf6dc81af40ca17a02ceb13af78630c9",
+  "retained_arrays": 0,
+  "campaign_or_tuning_runs": 0,
+  "temporary_disk_forecast_bytes": 262144,
+  "trace_array_peak_forecast_bytes": 294912,
+  "checks": {
+    "abi": {
+      "pass": true,
+      "parameter_bytes": 720,
+      "metric_bytes": 272,
+      "trace_columns": 23
+    },
+    "analytic_geometry": {
+      "pass": true,
+      "event_times_s": [
+        0.4150000000000001,
+        0.46500000000000014,
+        1.235,
+        1.285
+      ],
+      "derivative_points": 125,
+      "max_height_derivative_error_m_s": 5.650322481491436e-11,
+      "max_velocity_derivative_error_m_s2": 7.327550899383084e-09,
+      "limits": [
+        {
+          "time_s": 0.46500000000000014,
+          "left_h_v_a": [
+            0.001,
+            0.0,
+            -2.4
+          ],
+          "right_h_v_a": [
+            0.001,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "time_s": 1.235,
+          "left_h_v_a": [
+            0.001,
+            0.0,
+            0.0
+          ],
+          "right_h_v_a": [
+            0.001,
+            0.0,
+            -2.4
+          ]
+        }
+      ],
+      "endpoint_convention": "right continuous; 1e-12s equality tolerance; integration k4 uses left event limit"
+    },
+    "force_balance_and_bound": {
+      "pass": true,
+      "loaded_equilibria": 36,
+      "max_equilibrium_derivative": 1.2442863055977924e-14,
+      "max_force_balance_residual_N": 1.887379141862766e-15,
+      "one_sided_pairs": [
+        {
+          "mass_s_kg": 0.1,
+          "time_s": 0.46500000000000014,
+          "force_jump_N": 0.240000000000002,
+          "minimum_peak_error_N": 0.12,
+          "centered_peak_error_N": 0.12000000000541178
+        },
+        {
+          "mass_s_kg": 0.1,
+          "time_s": 1.235,
+          "force_jump_N": 0.240000000000002,
+          "minimum_peak_error_N": 0.12,
+          "centered_peak_error_N": 0.12000000000541178
+        },
+        {
+          "mass_s_kg": 1.4,
+          "time_s": 0.46500000000000014,
+          "force_jump_N": 3.3599999999999994,
+          "minimum_peak_error_N": 1.68,
+          "centered_peak_error_N": 1.6800000000038722
+        },
+        {
+          "mass_s_kg": 1.4,
+          "time_s": 1.235,
+          "force_jump_N": 3.3599999999999994,
+          "minimum_peak_error_N": 1.68,
+          "centered_peak_error_N": 1.6800000000038722
+        },
+        {
+          "mass_s_kg": 2.0,
+          "time_s": 0.46500000000000014,
+          "force_jump_N": 4.799999999999997,
+          "minimum_peak_error_N": 2.4,
+          "centered_peak_error_N": 2.4000000000057184
+        },
+        {
+          "mass_s_kg": 2.0,
+          "time_s": 1.235,
+          "force_jump_N": 4.799999999999997,
+          "minimum_peak_error_N": 2.4,
+          "centered_peak_error_N": 2.4000000000057184
+        }
+      ],
+      "analytic_S_overrides_integrated_S": true
+    },
+    "causal_control": {
+      "pass": true,
+      "controller_block_byte_identical": true,
+      "truth_motion_routed_only_to_physical_contact_and_sensor_inputs": true,
+      "no_surface_preview_or_true_force_controller_input_added": true
+    },
+    "soft_parity": {
+      "pass": true,
+      "source_manifest_sha256": "8311d0573178d29442c47008980d143aaaf231bed2aa358727767961e5a77165",
+      "cases": [
+        {
+          "id": "coil_pad5mm_k50_c0_evaluation_034",
+          "all_nonruntime_metrics_bitwise_equal": true,
+          "metrics_compared": 33,
+          "trace_rows": 501,
+          "trace_columns": 23,
+          "trace_float64_sha256": "beb2fc89c92f9e703b8008706d063a7e53086a0c66739eb12fd43a89ca6e9744",
+          "trace_max_abs_difference": 0.0,
+          "force_peak_error_N": 0.04607506420735774,
+          "recorded_metric_guard": "unchanged exact equality; no tolerance relaxation"
+        },
+        {
+          "id": "sea_pad5mm_k50_c0_evaluation_039",
+          "all_nonruntime_metrics_bitwise_equal": true,
+          "metrics_compared": 33,
+          "trace_rows": 501,
+          "trace_columns": 23,
+          "trace_float64_sha256": "964f8726d2e1cfc5ab2dbfd41a00a3c86f6dfc446f69c69e5d99e1fd1c968f6a",
+          "trace_max_abs_difference": 0.0,
+          "force_peak_error_N": 0.11830740686522212,
+          "recorded_metric_guard": "unchanged exact equality; no tolerance relaxation"
+        }
+      ]
+    },
+    "event_scoring": {
+      "pass": true,
+      "cases": [
+        {
+          "bump_start_offset_s": 0.0,
+          "metrics": {
+            "steps": 900001.0,
+            "stop_code": 0.0,
+            "stop_time": 0.0,
+            "force_peak_error": 3.220243165812434,
+            "force_rms_error": 0.2929766436397868,
+            "force_peak_time": 1.2359175,
+            "force_min": 46.779756834187566,
+            "force_max": 52.37141999797746,
+            "current_peak": 2.0491803278688527,
+            "current_rms": 2.049180327870316,
+            "voltage_peak_request": 19.050174230550944,
+            "voltage_clipped_fraction": 0.0,
+            "current_clipped_fraction": 0.0,
+            "tool_peak_deviation": 0.002505949134119107,
+            "nut_peak_deviation": 0.0,
+            "spring_peak_deflection": 0.0,
+            "pad_peak_compression": 0.0,
+            "force_reconstruction_peak_error": 3.08519283222455,
+            "force_balance_peak": 3.552713678800501e-15,
+            "centering_band_fraction": 0.0,
+            "robot_command_count": 0.0,
+            "runtime_s": 0.388939847,
+            "adc_count": 60001.0,
+            "control_count": 20001.0,
+            "force_noise_filtered_rms": 0.0,
+            "accel_noise_filtered_rms": 0.0,
+            "flat_peak_error": 1.3334723150926777,
+            "bump_window_peak_error": 3.220243165812434,
+            "nut_velocity_peak": 0.0,
+            "rotor_speed_peak_rpm": 0.0,
+            "cell_raw_min": 47.01927208984602,
+            "cell_raw_max": 52.179471158281515,
+            "specific_acceleration_peak": 2.3999999999999995,
+            "kinematic_acceleration_peak": 2.4,
+            "stop_reason": "completed",
+            "force_pass": false,
+            "completed": true,
+            "static_current_A": 2.0491803278688527,
+            "continuous_static_current_pass": null,
+            "continuous_rms_current_pass": null,
+            "copper_loss_average_W": 37.35554958349867,
+            "actuator_ratings_pass": true,
+            "sensor_ratings_pass": true,
+            "event_force_limits": [
+              {
+                "time_s": 0.46500000000000014,
+                "force_left_N": 48.486145651295516,
+                "force_right_N": 48.72614565129552,
+                "acceleration_left_m_s2": -2.4,
+                "acceleration_right_m_s2": 0.0,
+                "continuous_cell_raw_N": 48.72614565129552,
+                "first_invalid_side": 0.0,
+                "scored_side_count": 2.0
+              },
+              {
+                "time_s": 1.235,
+                "force_left_N": 49.99999999999449,
+                "force_right_N": 49.75999999999449,
+                "acceleration_left_m_s2": 0.0,
+                "acceleration_right_m_s2": -2.4,
+                "continuous_cell_raw_N": 49.99999999999449,
+                "first_invalid_side": 0.0,
+                "scored_side_count": 2.0
+              }
+            ],
+            "one_sided_extra_limit_count": 2,
+            "scored_integration_endpoint_count": 899999,
+            "force_sample_count": 900001,
+            "event_endpoint_convention": "right-continuous ordinary endpoint; additional left limit; first invalid contact side stops at that time"
+          },
+          "trace_rows_checked": 201,
+          "constant_equilibrium_current_physical_probe": true,
+          "analytic_trace_S_exact": true,
+          "regular_endpoint_plus_extra_limit_count_exact": true
+        },
+        {
+          "bump_start_offset_s": 1.37e-07,
+          "metrics": {
+            "steps": 900005.0,
+            "stop_code": 0.0,
+            "stop_time": 0.0,
+            "force_peak_error": 3.220249559247648,
+            "force_rms_error": 0.2929766455098109,
+            "force_peak_time": 1.2359175,
+            "force_min": 46.77975044075235,
+            "force_max": 52.37141976049216,
+            "current_peak": 2.0491803278688527,
+            "current_rms": 2.049180327870316,
+            "voltage_peak_request": 19.050174153098805,
+            "voltage_clipped_fraction": 0.0,
+            "current_clipped_fraction": 0.0,
+            "tool_peak_deviation": 0.0025059491341469066,
+            "nut_peak_deviation": 0.0,
+            "spring_peak_deflection": 0.0,
+            "pad_peak_compression": 0.0,
+            "force_reconstruction_peak_error": 3.08525464455807,
+            "force_balance_peak": 3.552713678800501e-15,
+            "centering_band_fraction": 0.0,
+            "robot_command_count": 0.0,
+            "runtime_s": 0.388611033,
+            "adc_count": 60001.0,
+            "control_count": 20001.0,
+            "force_noise_filtered_rms": 0.0,
+            "accel_noise_filtered_rms": 0.0,
+            "flat_peak_error": 1.3334921833172402,
+            "bump_window_peak_error": 3.220249559247648,
+            "nut_velocity_peak": 0.0,
+            "rotor_speed_peak_rpm": 0.0,
+            "cell_raw_min": 47.01926584112226,
+            "cell_raw_max": 52.17947085393859,
+            "specific_acceleration_peak": 2.3999999999999995,
+            "kinematic_acceleration_peak": 2.4,
+            "stop_reason": "completed",
+            "force_pass": false,
+            "completed": true,
+            "static_current_A": 2.0491803278688527,
+            "continuous_static_current_pass": null,
+            "continuous_rms_current_pass": null,
+            "copper_loss_average_W": 37.35554958349867,
+            "actuator_ratings_pass": true,
+            "sensor_ratings_pass": true,
+            "event_force_limits": [
+              {
+                "time_s": 0.46500013700000015,
+                "force_left_N": 48.48614565189226,
+                "force_right_N": 48.72614565189226,
+                "acceleration_left_m_s2": -2.4,
+                "acceleration_right_m_s2": 0.0,
+                "continuous_cell_raw_N": 48.72614565189226,
+                "first_invalid_side": 0.0,
+                "scored_side_count": 2.0
+              },
+              {
+                "time_s": 1.235000137,
+                "force_left_N": 49.99999999999449,
+                "force_right_N": 49.75999999999449,
+                "acceleration_left_m_s2": 0.0,
+                "acceleration_right_m_s2": -2.4,
+                "continuous_cell_raw_N": 49.99999999999449,
+                "first_invalid_side": 0.0,
+                "scored_side_count": 2.0
+              }
+            ],
+            "one_sided_extra_limit_count": 2,
+            "scored_integration_endpoint_count": 900003,
+            "force_sample_count": 900005,
+            "event_endpoint_convention": "right-continuous ordinary endpoint; additional left limit; first invalid contact side stops at that time"
+          },
+          "trace_rows_checked": 201,
+          "constant_equilibrium_current_physical_probe": true,
+          "analytic_trace_S_exact": true,
+          "regular_endpoint_plus_extra_limit_count_exact": true
+        }
+      ]
+    },
+    "physical_stop": {
+      "pass": true,
+      "metrics": {
+        "steps": 200467.0,
+        "stop_code": 1.0,
+        "stop_time": 0.44548250000000006,
+        "force_peak_error": 5.234283061362634,
+        "force_rms_error": 0.9420590036214744,
+        "force_peak_time": 0.42641,
+        "force_min": -0.0005485812811194535,
+        "force_max": 6.234283061362634,
+        "current_peak": 0.04098360655737699,
+        "current_rms": 0.040983606557421455,
+        "voltage_peak_request": 0.46288082028632377,
+        "voltage_clipped_fraction": 0.0,
+        "current_clipped_fraction": 0.0,
+        "tool_peak_deviation": 0.0005346921512468473,
+        "nut_peak_deviation": 0.0,
+        "spring_peak_deflection": 0.0,
+        "pad_peak_compression": 0.0,
+        "force_reconstruction_peak_error": 0.3855601442634704,
+        "force_balance_peak": 4.440892098500626e-16,
+        "centering_band_fraction": 0.0,
+        "robot_command_count": 0.0,
+        "runtime_s": 0.077098705,
+        "adc_count": 13365.0,
+        "control_count": 4455.0,
+        "force_noise_filtered_rms": 0.0,
+        "accel_noise_filtered_rms": 0.0,
+        "flat_peak_error": 1.1102230246251565e-16,
+        "bump_window_peak_error": 5.234283061362634,
+        "nut_velocity_peak": 0.0,
+        "rotor_speed_peak_rpm": 0.0,
+        "cell_raw_min": 0.9683271337684873,
+        "cell_raw_max": 2.3947390093148613,
+        "specific_acceleration_peak": 1.9199999996804935,
+        "kinematic_acceleration_peak": 1.9199999996804928,
+        "stop_reason": "contact_loss",
+        "force_pass": false,
+        "completed": false,
+        "static_current_A": 0.04098360655737699,
+        "continuous_static_current_pass": null,
+        "continuous_rms_current_pass": null,
+        "copper_loss_average_W": 0.014942219833410505,
+        "actuator_ratings_pass": true,
+        "sensor_ratings_pass": true,
+        "event_force_limits": [],
+        "one_sided_extra_limit_count": 0,
+        "scored_integration_endpoint_count": 200467,
+        "force_sample_count": 200467,
+        "event_endpoint_convention": "right-continuous ordinary endpoint; additional left limit; first invalid contact side stops at that time"
+      },
+      "terminal_trace_is_scored_stop_endpoint": true
+    },
+    "startup_scoring": {
+      "pass": true,
+      "metrics": {
+        "steps": 1.0,
+        "stop_code": 1.0,
+        "stop_time": 0.0,
+        "force_peak_error": 0.0,
+        "force_rms_error": 0.0,
+        "force_peak_time": 0.0,
+        "force_min": 0.0,
+        "force_max": 0.0,
+        "current_peak": 0.0,
+        "current_rms": 0.0,
+        "voltage_peak_request": 0.0,
+        "voltage_clipped_fraction": 0.0,
+        "current_clipped_fraction": 0.0,
+        "tool_peak_deviation": 0.0,
+        "nut_peak_deviation": 0.0,
+        "spring_peak_deflection": 0.0,
+        "pad_peak_compression": 0.0,
+        "force_reconstruction_peak_error": 0.0,
+        "force_balance_peak": 0.0,
+        "centering_band_fraction": 0.0,
+        "robot_command_count": 0.0,
+        "runtime_s": 5.6e-07,
+        "adc_count": 1.0,
+        "control_count": 1.0,
+        "force_noise_filtered_rms": 0.0,
+        "accel_noise_filtered_rms": 0.0,
+        "flat_peak_error": 0.0,
+        "bump_window_peak_error": 0.0,
+        "nut_velocity_peak": 0.0,
+        "rotor_speed_peak_rpm": 0.0,
+        "cell_raw_min": 0.0,
+        "cell_raw_max": 0.0,
+        "specific_acceleration_peak": 0.0,
+        "kinematic_acceleration_peak": 0.0,
+        "stop_reason": "contact_loss",
+        "force_pass": false,
+        "completed": false,
+        "static_current_A": 0.0,
+        "continuous_static_current_pass": null,
+        "continuous_rms_current_pass": null,
+        "copper_loss_average_W": 0.0,
+        "actuator_ratings_pass": true,
+        "sensor_ratings_pass": true,
+        "event_force_limits": [],
+        "one_sided_extra_limit_count": 0,
+        "scored_integration_endpoint_count": 1,
+        "force_sample_count": 1,
+        "event_endpoint_convention": "right-continuous ordinary endpoint; additional left limit; first invalid contact side stops at that time"
+      },
+      "loaded_zero_force_deliberate_stop_probe": true
+    }
+  },
+  "executed_verification_recordings": [
+    {
+      "role": "frozen_oracle",
+      "id": "coil_pad5mm_k50_c0_evaluation_034",
+      "steps": 899999.0
+    },
+    {
+      "role": "new_soft_parity",
+      "id": "coil_pad5mm_k50_c0_evaluation_034",
+      "steps": 899999.0
+    },
+    {
+      "role": "frozen_oracle",
+      "id": "sea_pad5mm_k50_c0_evaluation_039",
+      "steps": 899999.0
+    },
+    {
+      "role": "new_soft_parity",
+      "id": "sea_pad5mm_k50_c0_evaluation_039",
+      "steps": 899999.0
+    },
+    {
+      "role": "rigid_event_alignment",
+      "bump_start_offset_s": 0.0,
+      "steps": 900001.0,
+      "stop_reason": "completed"
+    },
+    {
+      "role": "rigid_event_alignment",
+      "bump_start_offset_s": 1.37e-07,
+      "steps": 900005.0,
+      "stop_reason": "completed"
+    },
+    {
+      "role": "physical_contact_stop",
+      "steps": 200467.0,
+      "stop_time": 0.44548250000000006
+    },
+    {
+      "role": "startup_stop_probe",
+      "steps": 1.0
+    }
+  ],
+  "preserved_prior_verification_attempts": [
+    {
+      "path": "checks_failed_fixture_001.json",
+      "sha256": "2d8ca81c875730b7c508e6dea725c90aba224e5fb3dff53a7dd6beac5429a2ea",
+      "executed_recording_count": 5
+    }
+  ],
+  "executed_verification_recording_count": 8,
+  "total_verification_recordings_including_preserved_attempts": 13,
+  "closed_loop_controller_or_hardware_qualification": false,
+  "completed_utc": "2026-10-06T22:08:06.652498+00:00"
+}

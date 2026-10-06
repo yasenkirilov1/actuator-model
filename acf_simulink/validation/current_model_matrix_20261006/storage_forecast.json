@@ -1,0 +1,62 @@
+{
+  "status": "forecast_before_launch",
+  "source_report_commit": "11febde",
+  "shared_array_audit": {
+    "scopes": [
+      "/home/tommie/Projects/actuator-model/acf_simulink/validation",
+      "/run/media/tommie/SATA SSD/actuator-model-evidence"
+    ],
+    "count": 2770,
+    "bytes": 4349417189,
+    "extensions": [
+      ".mat",
+      ".npz",
+      ".npy",
+      ".bin"
+    ],
+    "symlinks_and_hardlinks_deduplicated": true
+  },
+  "shared_array_limit_bytes": 5368709120,
+  "incremental_retained_cap_bytes": 3145728,
+  "temporary_all_workers_cap_bytes": 671088640,
+  "allocations": {
+    "plant": {
+      "retained": 153600,
+      "temporary": 1048576
+    },
+    "controller": {
+      "retained": 972800,
+      "temporary": 8388608
+    },
+    "acquisition": {
+      "retained": 716800,
+      "temporary": 8388608
+    },
+    "native": {
+      "retained": 512000,
+      "temporary": 629145600
+    },
+    "report": {
+      "retained": 716800,
+      "temporary": 16777216
+    }
+  },
+  "retention": "Full integration endpoints scored in memory; compact parameter deltas and metrics, selected gzip CSV traces; no saved bulk arrays. Existing 32 MiB pad study and its frozen evidence are unchanged. New report-matrix work adds at most3MiB, including source, evidence, figures and prior report snapshot.",
+  "free_space": {
+    "/home/tommie/Projects/actuator-model": {
+      "total": 995907784704,
+      "used": 604374179840,
+      "free": 387324502016
+    },
+    "/run/media/tommie/SATA SSD/actuator-model-evidence": {
+      "total": 1000186310656,
+      "used": 849297338368,
+      "free": 150888972288
+    },
+    "/tmp": {
+      "total": 16780943360,
+      "used": 117633024,
+      "free": 16663310336
+    }
+  }
+}

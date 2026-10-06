@@ -1,0 +1,127 @@
+{
+  "status": "computed_flat_contact_mechanical_modes",
+  "initial_banks_sha256": "1693b6041de5fadc5e7e3ed438a74cf37a8531f6adda270775b2aa1c0eee9393",
+  "scope": "Ideal linearized mechanics at flat loaded contact. Excludes controller/current dynamics, damping, spindle and angular motion. Rigid S is imposed; its mass affects force but not the remaining free mechanical modes.",
+  "records": [
+    {
+      "bank": "coil_soft",
+      "mass_s_kg": 0.1,
+      "frequency_Hz": [
+        18.37762984739307,
+        42.523744450620015,
+        4350.189018002501
+      ],
+      "relative_eigen_residual": 2.7645409958401406e-16
+    },
+    {
+      "bank": "coil_soft",
+      "mass_s_kg": 1.4,
+      "frequency_Hz": [
+        18.37762984739307,
+        25.16372126057067,
+        1964.720350458024
+      ],
+      "relative_eigen_residual": 1.2928070039638653e-16
+    },
+    {
+      "bank": "coil_soft",
+      "mass_s_kg": 2.0,
+      "frequency_Hz": [
+        18.37762984739307,
+        22.070360362922827,
+        1874.1968563073247
+      ],
+      "relative_eigen_residual": 1.284622607693688e-16
+    },
+    {
+      "bank": "coil_rigid_plate",
+      "mass_s_kg": 0.1,
+      "frequency_Hz": [
+        18.37762984739307,
+        1643.7451841639995
+      ],
+      "relative_eigen_residual": 1.8034983889289137e-16
+    },
+    {
+      "bank": "coil_rigid_plate",
+      "mass_s_kg": 1.4,
+      "frequency_Hz": [
+        18.37762984739307,
+        1643.7451841639995
+      ],
+      "relative_eigen_residual": 1.8034983889289137e-16
+    },
+    {
+      "bank": "coil_rigid_plate",
+      "mass_s_kg": 2.0,
+      "frequency_Hz": [
+        18.37762984739307,
+        1643.7451841639995
+      ],
+      "relative_eigen_residual": 1.8034983889289137e-16
+    },
+    {
+      "bank": "screw_soft",
+      "mass_s_kg": 0.1,
+      "frequency_Hz": [
+        5.7003829080922594,
+        19.92876605122485,
+        44.747651140518514,
+        4350.19248003487
+      ],
+      "relative_eigen_residual": 7.288752446758057e-16
+    },
+    {
+      "bank": "screw_soft",
+      "mass_s_kg": 1.4,
+      "frequency_Hz": [
+        5.693112034943926,
+        19.716217893721527,
+        26.79888610558713,
+        1964.757949933498
+      ],
+      "relative_eigen_residual": 6.239154163025813e-16
+    },
+    {
+      "bank": "screw_soft",
+      "mass_s_kg": 2.0,
+      "frequency_Hz": [
+        5.689605576023063,
+        19.474282960803865,
+        23.811090096172652,
+        1874.2401724974495
+      ],
+      "relative_eigen_residual": 4.847883045156997e-16
+    },
+    {
+      "bank": "screw_rigid_plate",
+      "mass_s_kg": 0.1,
+      "frequency_Hz": [
+        5.920113834555127,
+        20.19186832487253,
+        1643.809394574856
+      ],
+      "relative_eigen_residual": 5.756912848047656e-16
+    },
+    {
+      "bank": "screw_rigid_plate",
+      "mass_s_kg": 1.4,
+      "frequency_Hz": [
+        5.920113834555127,
+        20.19186832487253,
+        1643.809394574856
+      ],
+      "relative_eigen_residual": 5.756912848047656e-16
+    },
+    {
+      "bank": "screw_rigid_plate",
+      "mass_s_kg": 2.0,
+      "frequency_Hz": [
+        5.920113834555127,
+        20.19186832487253,
+        1643.809394574856
+      ],
+      "relative_eigen_residual": 5.756912848047656e-16
+    }
+  ]
+}

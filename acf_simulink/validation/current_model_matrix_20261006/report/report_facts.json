@@ -1,0 +1,163 @@
+{
+  "status": "current_source_and_compact_evidence_audit_passed",
+  "qualification": false,
+  "protected_file_count": 28,
+  "counts_by_group": {
+    "controller": {
+      "records": 468,
+      "integration_endpoints": 332471397,
+      "extra_force_limits": 568
+    },
+    "acquisition": {
+      "records": 228,
+      "integration_endpoints": 185927578.0,
+      "extra_force_limits": 224
+    },
+    "drive_diagnostics": {
+      "records": 36,
+      "integration_endpoints": 30334627,
+      "extra_force_limits": 36
+    },
+    "calibration_followup": {
+      "records": 120,
+      "integration_endpoints": 101115417,
+      "extra_force_limits": 120
+    }
+  },
+  "primary_totals": {
+    "records": 852,
+    "integration_endpoints": 649849019,
+    "extra_force_limits": 948
+  },
+  "nominal_selected_grids": {
+    "coil_soft": {
+      "executed_count": 54,
+      "execution_rejected_count": 0,
+      "force_and_eligibility_pass_count": 54,
+      "force_pass_count": 54,
+      "integration_endpoints_scored": 48599946,
+      "maximum_average_hot_copper_loss_W": 37.35654259996954,
+      "maximum_centering_band_fraction": 0.0,
+      "maximum_current_rms_A": 2.0492075642022276,
+      "maximum_voltage_clipped_fraction": 0.0,
+      "maximum_voltage_request_V": 20.991322450683985,
+      "motor_continuous_rms_failure_count": 0,
+      "motor_continuous_static_failure_count": 0,
+      "nonfinite_execution_count": 0,
+      "one_sided_extra_limits_scored": 0,
+      "peak_current_or_speed_failure_count": 0,
+      "physical_stop_count": 0,
+      "planned_count": 54,
+      "preparation_rejected_count": 0,
+      "sensor_range_failure_count": 0,
+      "stop_and_rejection_counts": {
+        "completed": 54
+      },
+      "worst_force_error_N": 0.05300480278454245
+    },
+    "screw_soft": {
+      "executed_count": 54,
+      "execution_rejected_count": 0,
+      "force_and_eligibility_pass_count": 54,
+      "force_pass_count": 54,
+      "integration_endpoints_scored": 48599946,
+      "maximum_average_hot_copper_loss_W": 7.435390418983799,
+      "maximum_centering_band_fraction": 0.0,
+      "maximum_current_rms_A": 1.069107957525957,
+      "maximum_voltage_clipped_fraction": 0.0,
+      "maximum_voltage_request_V": 26.539617360978866,
+      "motor_continuous_rms_failure_count": 0,
+      "motor_continuous_static_failure_count": 0,
+      "nonfinite_execution_count": 0,
+      "one_sided_extra_limits_scored": 0,
+      "peak_current_or_speed_failure_count": 0,
+      "physical_stop_count": 0,
+      "planned_count": 54,
+      "preparation_rejected_count": 0,
+      "sensor_range_failure_count": 0,
+      "stop_and_rejection_counts": {
+        "completed": 54
+      },
+      "worst_force_error_N": 0.1153052757887485
+    },
+    "coil_rigid_plate": {
+      "executed_count": 54,
+      "execution_rejected_count": 0,
+      "force_and_eligibility_pass_count": 0,
+      "force_pass_count": 0,
+      "integration_endpoints_scored": 44469636,
+      "maximum_average_hot_copper_loss_W": 37.36852543796303,
+      "maximum_centering_band_fraction": 0.0,
+      "maximum_current_rms_A": 2.0495361994520978,
+      "maximum_voltage_clipped_fraction": 0.0,
+      "maximum_voltage_request_V": 23.82885639451557,
+      "motor_continuous_rms_failure_count": 0,
+      "motor_continuous_static_failure_count": 0,
+      "nonfinite_execution_count": 0,
+      "one_sided_extra_limits_scored": 108,
+      "peak_current_or_speed_failure_count": 0,
+      "physical_stop_count": 12,
+      "planned_count": 54,
+      "preparation_rejected_count": 0,
+      "sensor_range_failure_count": 0,
+      "stop_and_rejection_counts": {
+        "completed": 42,
+        "contact_loss": 12
+      },
+      "worst_force_error_N": 7.465322395769757
+    },
+    "screw_rigid_plate": {
+      "executed_count": 54,
+      "execution_rejected_count": 0,
+      "force_and_eligibility_pass_count": 0,
+      "force_pass_count": 0,
+      "integration_endpoints_scored": 44469505,
+      "maximum_average_hot_copper_loss_W": 9.754777751245838,
+      "maximum_centering_band_fraction": 0.0,
+      "maximum_current_rms_A": 1.2245551887624118,
+      "maximum_voltage_clipped_fraction": 0.0027387499999999843,
+      "maximum_voltage_request_V": 58.651472855762876,
+      "motor_continuous_rms_failure_count": 0,
+      "motor_continuous_static_failure_count": 0,
+      "nonfinite_execution_count": 0,
+      "one_sided_extra_limits_scored": 108,
+      "peak_current_or_speed_failure_count": 0,
+      "physical_stop_count": 12,
+      "planned_count": 54,
+      "preparation_rejected_count": 0,
+      "sensor_range_failure_count": 0,
+      "stop_and_rejection_counts": {
+        "completed": 42,
+        "contact_loss": 12
+      },
+      "worst_force_error_N": 7.774783703054423
+    }
+  },
+  "native_scored_values": 6400014,
+  "root_diagnostics": {
+    "drive_diagnostics": {
+      "records": 36,
+      "integration_endpoints": 30334627,
+      "extra_force_limits": 36,
+      "source_hashes_and_full_configurations_verified": true,
+      "summaries_recomputed": true,
+      "aggregate_label_correction_only": {
+        "original_result_sha256": "62a5077876eea55d8ef4cbd93320741c8567c6c75c25a369438ba7a89503c66a",
+        "correction": "The original aggregate named scored_endpoint_count included additional left limits. Labels corrected from retained per-record metrics; no simulation rerun or change to any recording, configuration or outcome."
+      }
+    },
+    "calibration_followup": {
+      "records": 120,
+      "integration_endpoints": 101115417,
+      "extra_force_limits": 120,
+      "source_hashes_and_full_configurations_verified": true,
+      "summaries_recomputed": true,
+      "aggregate_label_correction_only": {
+        "original_result_sha256": "2d4dbc2559c6b1c333f05673f3046cef5b33cccee4a6d79f4d2a0cae002b03fb",
+        "correction": "The original aggregate named scored_endpoint_count included additional left limits. Labels corrected from retained per-record metrics; no simulation rerun or change to any recording, configuration or outcome."
+      }
+    }
+  },
+  "current_controller": "P/gravity hold/acceleration-derived velocity; no force integral",
+  "scope": "Loaded-equilibrium2s fixed robot, axial force; no normal/drag/engagement/recentering/thermal hardware qualification."
+}
